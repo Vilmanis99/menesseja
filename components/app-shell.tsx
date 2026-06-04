@@ -40,7 +40,7 @@ function Sidebar() {
   return (
     <aside className="fixed left-0 top-0 z-30 hidden h-screen w-64 flex-col border-r border-outline-variant/20 bg-surface-container px-sm py-md shadow-lg shadow-primary/5 md:flex">
       <div className="mb-lg px-xs">
-        <h2 className="text-headline-md text-primary">Mēness Sēja</h2>
+        <span className="block text-headline-md text-primary">Mēness Sēja</span>
         <p className="mt-xs text-label-sm uppercase tracking-widest text-on-surface-variant/70">
           Modern Folklore
         </p>
@@ -63,8 +63,8 @@ function Sidebar() {
 function TopBar() {
   return (
     <header className="sticky top-0 z-40 flex items-center justify-between bg-surface/80 px-gutter py-sm backdrop-blur-md md:hidden">
-      <Link href="/">
-        <h1 className="text-headline-md text-primary">Mēness Sēja</h1>
+      <Link href="/" aria-label="Mēness Sēja — sākums">
+        <span className="text-headline-md text-primary">Mēness Sēja</span>
       </Link>
       <div className="flex items-center gap-1">
         <Link
