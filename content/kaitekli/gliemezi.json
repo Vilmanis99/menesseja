@@ -1,0 +1,60 @@
+{
+  "slug": "gliemezi",
+  "name": "Gliemeži (kailgliemeži)",
+  "emoji": "🐌",
+  "type": "kaiteklis",
+  "tagline": "Mitrās naktīs gliemeži apgrauž jaunos stādus un salātu lapas, atstājot aiz sevis sudrabainu gļotu pēdu.",
+  "severity": "vidējs",
+  "affects": [
+    "Salāti",
+    "Kāposti un citi krustziežu dārzeņi",
+    "Jaunie stādi un dīgsti",
+    "Spināti",
+    "Zemenes",
+    "Mīkstlapu puķes (piem., samtenes, dālijas)"
+  ],
+  "signs": [
+    "Neregulāri, izgrauzti caurumi lapās un apgrauzti lapu malu robi, biežāk lapas apakšā vai augam tuvu zemei",
+    "Sudrabaina, spīdīga gļotu pēda uz lapām, augsnes un dobes malām, kas labi redzama no rīta",
+    "Jauni dīgsti un stādi pa nakti pazūd gandrīz pavisam vai paliek tikai stublāja gabaliņš",
+    "Bojājumi parādās pēc lietus vai siltām, mitrām naktīm, bet dienā kaitēkli neredz",
+    "Zem akmeņiem, dēļiem, podiem un mulčas dienā atrodami paši gliemeži — pelēki vai brūngani, bez gliemežvāka"
+  ],
+  "intro": [
+    "Kailgliemeži ir vieni no neatlaidīgākajiem dārza apēdājiem, īpaši mitrās un siltās vasarās. Tie ir aktīvi naktī un pievakarē, bet pa dienu slēpjas vēsās, mitrās paslēptuvēs — zem dēļiem, akmeņiem, podiem, lapām un biezas mulčas. Tāpēc bieži vien redz tikai bojājumus un sudrabaino pēdu, bet ne pašus vainīgos. Visvairāk cieš mīkstie, sulīgie augi — salāti, kāposti, spināti, zemenes un tikko izstādīti jaunie stādi.",
+    "Pret gliemežiem nav viena brīnumlīdzekļa. Godīgi sakot, visdrošākais un efektīvākais paņēmiens ir regulāra mehāniska vākšana ar roku vakaros, kā arī mitru paslēptuvju samazināšana dārzā. Barjeras un slazdi palīdz, bet labāk darbojas kopā ar vākšanu, nevis to vietā. Vissvarīgāk ir pasargāt tieši jaunos, neaizsargātos stādiņus, kamēr tie izaug stiprāki."
+  ],
+  "control": [
+    "Vāc gliemežus ar roku vakarā krēslā vai agri no rīta, kad tie ir aktīvi — paņem cimdus vai lukturīti, pārstaigā dobes un savāktos iemet ziepjūdens spainī (ar dažām pilēm trauku mazgājamā līdzekļa). Tas ir nepatīkami, bet patiešām visefektīvākais paņēmiens, un dažu vakaru laikā skaits krasi samazinās. Sāli dārza augsnē neber — tā kaitē augiem.",
+    "Ieliec dārzā lamatas-paslēptuves: mitru dēli, kāļa vai kāpostu lapu, izdobtu greipfrūta vai apelsīna mizu uz dobes. Naktī gliemeži tur sapulcējas, un no rīta tos viegli savākt un iznīcināt.",
+    "Liec alus slazdus: ierok zemē trauciņu tā, lai mala ir augsnes līmenī, un ielej alu. Gliemežus pievilina rauga smarža, un tie iekrīt. Pārbaudi un atjauno alu ik pēc dažām dienām, īpaši pēc lietus. Liec slazdus pie apdraudētajiem augiem, bet ne pārāk tuvu, lai nepievilinātu gliemežus vēl vairāk.",
+    "Veido sausas barjeras ap jaunajiem stādiem — gredzenu no sausiem koku pelniem, sasmalcinātām olu čaumalām vai rupjām smiltīm. Svarīgi: tās darbojas tikai sausas, tāpēc pēc katra lietus barjera jāatjauno. Mitrā laikā, kad gliemeži ir visaktīvākie, šis paņēmiens ir tikai palīgs, ne galvenais risinājums.",
+    "Padari dārzu nedraudzīgu gliemežiem — novāc lieko mulču, dēļus, akmeņus un atkritumu kaudzes augu tuvumā, kur tie dienā slēpjas. Sausāka, atklātāka augsne ap stādiem gliemežus neatbaida pavisam, bet samazina to skaitu.",
+    "Aicini dārzā gliemežu dabiskos ienaidniekus: ezīšus, krupjus, strazdus un citus putnus. Atstāj klusu, mierīgu nostūri ar lapu kaudzi ezim, ūdens trauciņu putniem — dabiskais līdzsvars ilgtermiņā palīdz visvairāk.",
+    "Laisti dārzu no rīta, ne vakarā. Tad augsnes virsa līdz naktij paspēj apžūt, un gliemežiem nav tik patīkami mitri pārvietoties pa dobi."
+  ],
+  "recipeSlugs": [],
+  "prevention": [
+    "Audzē jaunos stādus podiņos vai kastēs, līdz tie kļūst lielāki un stiprāki, un izstādi dārzā tikai tad — pieaugušus augus gliemeži apgrauž mazāk nekā maigos dīgstus.",
+    "Tur dobes kārtīgas un sausākas: nelej lieko mulču tieši pie augiem, atstāj starp augiem gaisīgu atstatumu, lai augsnes virsa ātrāk apžūst un labāk vēdinās.",
+    "Apkārt dobēm un takās novāc dēļus, akmeņus, podus un atkritumu kaudzes, kur gliemeži dienā paslēpjas un vairojas.",
+    "Visjutīgākos augus (salātus, jaunos kāpostus) stādi vietā, kur tiem var ātri piekļūt vakara vākšanai, un seko līdzi jau no pavasara, nevis tad, kad bojājumi jau lieli.",
+    "Rudenī un agrā pavasarī pārrok un izlīdzini dobes — tā atklāj un izposti gliemežu olu perēkļus augsnē, samazinot nākamās paaudzes skaitu."
+  ],
+  "moonNote": "Tradicionāli kaitēkļus un nezāles apkaro dilstošā Mēnesī, tāpēc daudzi dārznieki tieši šajā laikā cītīgāk vāc gliemežus un izrok dobes. Tā ir tradīcija — galvenais tomēr ir darīt to regulāri un mitrās naktīs, neatkarīgi no Mēness fāzes.",
+  "folklore": "Vecie ļaudis teica, ka gliemeži nāk lietus pavadā, un mitrā vasarā tos gaidīja vairāk. Tāpēc krūmu un dobju malas turēja tīras un sausas, bet vakaros bērnus sūtīja ar trauciņu gliemežus salasīt — vienkāršs paņēmiens, kas der vēl šodien.",
+  "faq": [
+    {
+      "q": "Vai koku pelni un olu čaumalas tiešām aiztur gliemežus?",
+      "a": "Daļēji jā, bet tikai kamēr tās ir sausas. Sausa, asa pelnu vai sasmalcinātu olu čaumalu barjera gliemežiem ir nepatīkama, un tie to nelabprāt šķērso. Tomēr pēc pirmā lietus vai rasas barjera samirkst un vairs nedarbojas — un tieši mitrā laikā gliemeži ir visaktīvākie. Tāpēc uztver to kā palīgu, ko regulāri jāatjauno, nevis kā galveno aizsardzību. Vākšana ar roku ir daudz drošāka."
+    },
+    {
+      "q": "Kāpēc alus slazdi ne vienmēr palīdz?",
+      "a": "Alus slazdi pievilina gliemežus ar rauga smaržu un daļu noķer, taču tie var pievilināt arī gliemežus no kaimiņu dobēm vai pāri sētai, tāpēc dažkārt bojājumi pat nemainās. Slazdi der kā papildinājums vākšanai un paslēptuvju novākšanai, bet paši vien problēmu neatrisina. Pēc lietus alu vajag mainīt, citādi tas atšķaidās un vairs nevilina."
+    },
+    {
+      "q": "Kā pasargāt tieši jaunos stādus?",
+      "a": "Jaunie dīgsti un tikko izstādīti stādi cieš visvairāk, tāpēc tos audzē podiņos, līdz tie paaugas, un izstādi dārzā stiprākus. Ap katru stādu vari likt sausu barjeru, vakaros pārbaudi un savāc gliemežus, un netur stādu tuvumā mitru mulču vai dēļus. Kad augs izaug lielāks un stingrāks, gliemeži tam vairs tik bīstami nav."
+    }
+  ]
+}

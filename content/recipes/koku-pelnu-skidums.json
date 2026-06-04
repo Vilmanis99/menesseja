@@ -1,0 +1,35 @@
+{
+  "name": "Koku pelnu šķīdums",
+  "tagline": "Dabīgs kālija un kalcija mēslojums, kas paceļ skābas augsnes pH.",
+  "purpose": "meslojums",
+  "difficulty": "viegli",
+  "timeText": "10 min + ūdenī ļauj nostāvēties pāris stundas vai pa nakti",
+  "intro": [
+    "Koku malkas pelni ir vecs un godīgs dārznieka palīgs. Tajos ir daudz kālija, kalcija un mikroelementu, bet nav slāpekļa — tāpēc tie der ziedēšanai, augļu briešanai un saknēm, ne lapu dzīšanai. Turklāt pelni ir sārmaini un lēnām paceļ skābas augsnes pH.",
+    "Izmanto tikai tīrus koksnes pelnus no nekrāsotas, neapstrādātas malkas. Ogļu, papīra glancēta, krāsotu dēļu vai atkritumu pelni nederēs — tajos var būt smagie metāli un ķīmija."
+  ],
+  "ingredients": [
+    "1 glāze (apm. 100–150 g) tīru koku pelnu",
+    "10 l ūdens (viena spainis)",
+    "Siets vai vecs audums šķīduma kāšanai",
+    "Cimdi — pelni žāvē un kairina ādu"
+  ],
+  "steps": [
+    "Izsijā pelnus, lai atdalītu ogles un nesadegušos gabaliņus — paliek tikai smalkie pelni.",
+    "Ieber 1 glāzi pelnu 10 l ūdens spainī un kārtīgi izmaisi.",
+    "Ļauj nostāvēties pāris stundas vai pa nakti, ik pa laikam pamaisot — kālijs un kalcijs izšķīst ūdenī.",
+    "Pārlej dzidrāko šķīdumu caur sietu vai audumu citā traukā; biezumus izmet kompostā vai ieroc dobē.",
+    "Lej šķīdumu ap augu sakņu zonu, ne uz lapām. Vai arī sausus pelnus tievā kārtā kaisi pa augsnes virsu un viegli iestrādā ar grābekli, pēc tam aplej."
+  ],
+  "application": [
+    "Sakņu zonai: aplej ar pelnu šķīdumu apm. 0,5–1 l uz augu, mitrā augsnē, ne sausā. Kāpostiem, tomātiem, gurķiem, augļu kokiem un ogulājiem (izņemot skābi mīlošos) — reizi 2–3 nedēļās sezonas laikā.",
+    "Sausā veidā: 1 glāze pelnu uz 1 m² gultnes, gadā ne vairāk kā 1–2 reizes, lai pārāk nepaceltu pH.",
+    "Vienmēr aplej pēc tam ar ūdeni un nekaisi pa lapām saulainā dienā."
+  ],
+  "moonPhase": "dilstošs",
+  "moonElement": "saknes",
+  "moonText": "Pēc biodinamiskās tradīcijas augsnes un sakņu darbus — arī pelnu iestrādi un sakņu mēslošanu — veic dilstošā Mēnesī sakņu dienā, kad spēks tradicionāli virzās uz leju, augsnē un saknēs.",
+  "caution": "Pelni ceļ pH, tāpēc NElieto skābi mīlošiem augiem — mellenēm, brūklenēm, rododendriem, azalejām, hortenzijām. Ja augsne jau ir neitrāla vai sārmaina, pelni var pH pacelt par augstu un bloķēt dažu barvielu uzņemšanu, tāpēc labāk vispirms pārbaudi augsnes pH. Pelni nav brīnumlīdzeklis un neaizstāj slāpekli saturošu mēslojumu — tie ir papildinājums, ne vienīgais barotājs. Nelej pelnu šķīdumu kopā ar svaigiem kūtsmēsliem vai amonija mēsliem — sārms atbrīvo amonjaku un slāpeklis pazūd.",
+  "folklore": "Vecie ļaudis pelnus no krāsns nemeta laukā velti — tos glabāja sausā kublā un pavasarī kaisīja pa kāpostu un sakņaugu dobēm, sakot, ka pelni dod dārzam spēku un attur kāpurus.",
+  "slug": "koku-pelnu-skidums"
+}

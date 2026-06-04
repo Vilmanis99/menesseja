@@ -1,0 +1,67 @@
+{
+  "slug": "kapostu-baltenis",
+  "name": "Kāpostu baltenis",
+  "emoji": "🦋",
+  "type": "kaiteklis",
+  "latin": "Pieris brassicae",
+  "tagline": "Skaistais baltais tauriņš dēj olas uz kāpostu lapām, bet tā kāpuri spēj nograuzt veselu dobi līdz dzīslām.",
+  "severity": "vidējs",
+  "affects": [
+    "Galviņkāposti",
+    "Ziedkāposti",
+    "Brokoļi",
+    "Kolrābji",
+    "Briseles kāposti",
+    "Lapu kāposti (grūnkols)",
+    "Rāceņi",
+    "Redīsi",
+    "Kreses un citi krustzieži"
+  ],
+  "signs": [
+    "Lapu apakšpusē dzelteni, podziņveida olu kopiņas — pa 20–50 olām vienkopus",
+    "Zaļi vai dzeltenraibi kāpuri ar melniem punktiņiem un gareniskām svītrām, kas grupās grauž lapas",
+    "Lapas apgrauztas līdz dzīslām, palikuši tikai dzīslu tīkliņi",
+    "Tumši zaļi vai brūni izkārnījumu graudiņi uz lapām un lapu pamatnēs",
+    "Vasarā ap dobi vairāki balti tauriņi ar melniem spārnu galiem, kas lidinās un dēj olas"
+  ],
+  "intro": [
+    "Kāpostu baltenis ir viens no biežākajiem un pamanāmākajiem kāpostu dobes kaitēkļiem Latvijā. Pieaugušais ir liels, balts tauriņš ar melniem spārnu galiem — pats par sevi tas augus nebojā, bet tā mātītes vasaras gaitā dēj olas uz krustziežu lapām. No olām izšķiļas kāpuri, kas barojas grupās un dažās dienās spēj kailu nograuzt veselu jaunu kāpostu lapu. Latvijā parasti attīstās divas paaudzes — pirmā jūnijā, otra, parasti kuplākā un kaitīgākā, jūlijā un augustā.",
+    "Labā ziņa ir tā, ka šo kaitēkli ir viegli pamanīt laikus un apkarot pilnīgi dabiski. Galvenais ir regulāri pārbaudīt lapu apakšpuses un rīkoties, kamēr kāpuri vēl ir mazi un sēž kopā. Tieši olu un kāpuru savākšana ar roku, kā arī augu nosegšana ar tīklu ir efektīvākās metodes — uzlējumi un pelni vairāk palīdz atbaidīt un apgrūtināt, nevis iznīcināt jau iesēdušos kāpurus."
+  ],
+  "control": [
+    "Regulāri, ik pēc 3–4 dienām, pārbaudi lapu apakšpuses un nolasi dzeltenās olu kopiņas, vienkārši saberžot tās ar pirkstiem. Tā ir visiedarbīgākā metode — iznīcinot olas, tu novērš visu kāpuru paaudzi.",
+    "Jaunos kāpurus, kamēr tie vēl sēž ciešās grupās, savāc kopā ar lapu vai noslauki tieši ūdens spainī. Vienlaikus tā ir vieglākā darbība, jo vēlāk kāpuri izklīst un to ir grūtāk atrast.",
+    "Nosedz dobi ar smalku kukaiņu tīklu vai gaišu agroplēvi (agrotīklu) jau no stādu izstādīšanas. Ja tauriņi nevar piekļūt lapām, tie nevar arī izdēt olas — tā ir drošākā ilgtermiņa aizsardzība.",
+    "Apsmidzini augus ar vērmeļu uzlējumu — tā rūgtā smarža atbaida tauriņus un mazina dēšanas vēlmi. Atceries, ka uzlējums kāpurus nenokauj, tāpēc to lieto kā profilaksi kopā ar mehānisko vākšanu, un atkārto pēc katra lietus.",
+    "Pārkaisi mitras lapas ar koksnes pelnu plānu kārtiņu — tā apgrūtina kāpuru pārvietošanos un atbaida tauriņus no dēšanas. Pelni nedrīkst būt no krāsotas vai apstrādātas koksnes, un pēc lietus kaisījums jāatkārto.",
+    "Veicini dabiskos palīgus — plēsīgo lapseņu un putnu klātbūtni; ap dobi atstāj ziedošus augus. Lapsenes un putni paši savāc daļu kāpuru.",
+    "Smagi bojātās, gandrīz pliki nograuztās lapas noplūc un iznīcini — uz tām bieži paslēpušies kāpuri, un to noņemšana mazina turpmāko bojājumu."
+  ],
+  "recipeSlugs": [
+    "vermelu-uzlejums",
+    "koku-pelnu-skidums"
+  ],
+  "prevention": [
+    "Ievēro augu maiņu — krustziežus (kāpostus, kolrābjus, redīsus) tajā pašā vietā audzē ne biežāk kā reizi 3–4 gados, lai dobē neuzkrātos kaitēkļi.",
+    "Pietiekami liels atstatums starp stādiem ļauj vieglāk apskatīt lapu apakšpuses un savlaicīgi pamanīt olas.",
+    "Stādi blakus atbaidošus augus — kliņģerītes, timiānu, ārstniecības raudeni vai piparmētras; to smarža mulsina tauriņus un palīdz pievilināt derīgos kukaiņus.",
+    "No paša stādīšanas brīža tur gatavu kukaiņu tīklu vai agrotīklu, lai dobi varētu pasargāt aktīvajā tauriņu lidošanas laikā jūnijā–augustā.",
+    "Pēc ražas novākšanas savāc kāpostu lapu atliekas. Ja uz tām vēl ir kāpuri vai kūniņas, atliekas iznīcini, nevis liec kompostā, jo kaitēklis uz tām var pārziemot."
+  ],
+  "moonNote": "Pēc tradīcijas kaitēkļus apkaro un nezāles ravē dilstošā Mēness laikā. Tomēr kāpostu baltenis jāierobežo tad, kad parādās olas un kāpuri — proti, tiklīdz tos ieraugi, neatkarīgi no Mēness fāzes.",
+  "folklore": "Vecie dārznieki saka: kad ap kāpostiem sāk lidot baltie tauriņi, jāiet apskatīt lapu apakšas — kur tauriņš nolaidies, tur drīz būs olas. Tāpēc agrāk bērniem uzticēja tauriņus aizbaidīt un olas nolasīt.",
+  "faq": [
+    {
+      "q": "Vai baltais tauriņš pats apēd kāpostus?",
+      "a": "Nē. Pieaugušais tauriņš barojas ar ziedu nektāru un augiem nekaitē. Postu nodara tā kāpuri, kas izšķiļas no olām, tāpēc galvenais ir nepieļaut olu dēšanu un savākt olas, kamēr no tām nav izšķīlušies kāpuri."
+    },
+    {
+      "q": "Kā atšķirt kāpostu baltenī no derīgiem tauriņiem?",
+      "a": "Kāpostu baltenis ir liels, balts tauriņš ar izteiktiem melniem spārnu galiem, un tas riņķo tieši virs kāpostu dobes. Ja tauriņi lido pie ziediem un nepulcējas pie krustziežiem, tie parasti ir nekaitīgi. Drošākā pazīme tomēr ir dzeltenās olu kopiņas un kāpuri lapu apakšpusē."
+    },
+    {
+      "q": "Vai ar vērmeļu uzlējumu un pelniem pietiek, lai tiktu galā?",
+      "a": "Pilnībā ne. Uzlējums un pelni galvenokārt atbaida tauriņus un apgrūtina kāpuru dzīvi, bet tie nenokauj jau iesēdušos kāpurus. Visdrošāk ir tos apvienot ar olu un kāpuru regulāru savākšanu ar roku, bet stiprākā aizsardzība ir dobes nosegšana ar kukaiņu tīklu."
+    }
+  ]
+}

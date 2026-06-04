@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="lv"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,400..700;1,400..700&amp;family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-low": "#131b2e",
+                    "primary-fixed": "#c7ebd1",
+                    "on-secondary-fixed": "#390c00",
+                    "secondary-fixed": "#ffdbcf",
+                    "outline": "#8c928c",
+                    "surface-variant": "#2d3449",
+                    "surface-container-high": "#222a3d",
+                    "on-tertiary-fixed-variant": "#41474e",
+                    "surface-container": "#171f33",
+                    "on-error": "#690005",
+                    "primary-fixed-dim": "#accfb6",
+                    "on-secondary": "#5c1900",
+                    "on-error-container": "#ffdad6",
+                    "background": "#0b1326",
+                    "outline-variant": "#424843",
+                    "surface-dim": "#0b1326",
+                    "on-primary-fixed-variant": "#2e4d3a",
+                    "secondary-fixed-dim": "#ffb59c",
+                    "on-primary-fixed": "#012111",
+                    "inverse-surface": "#dae2fd",
+                    "inverse-on-surface": "#283044",
+                    "secondary": "#ffb59c",
+                    "on-secondary-fixed-variant": "#7b2e10",
+                    "error": "#ffb4ab",
+                    "tertiary-fixed": "#dde3eb",
+                    "tertiary": "#c1c7cf",
+                    "primary-container": "#2d4c39",
+                    "surface": "#0b1326",
+                    "surface-container-lowest": "#060e20",
+                    "on-surface": "#dae2fd",
+                    "on-surface-variant": "#c2c8c1",
+                    "error-container": "#93000a",
+                    "secondary-container": "#7b2e10",
+                    "on-tertiary": "#2b3137",
+                    "tertiary-container": "#40464d",
+                    "surface-container-highest": "#2d3449",
+                    "on-primary": "#173625",
+                    "on-tertiary-container": "#aeb4bb",
+                    "tertiary-fixed-dim": "#c1c7cf",
+                    "on-tertiary-fixed": "#161c22",
+                    "surface-bright": "#31394d",
+                    "on-background": "#dae2fd",
+                    "inverse-primary": "#466551",
+                    "surface-tint": "#accfb6",
+                    "primary": "#accfb6",
+                    "on-secondary-container": "#ff9b79",
+                    "on-primary-container": "#99bca3"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "sm": "12px",
+                    "md": "24px",
+                    "xs": "4px",
+                    "xl": "80px",
+                    "gutter": "24px",
+                    "base": "8px",
+                    "lg": "48px",
+                    "container-max": "1200px"
+            },
+            "fontFamily": {
+                    "headline-lg-mobile": ["Literata"],
+                    "headline-lg": ["Literata"],
+                    "body-md": ["Hanken Grotesk"],
+                    "display-lg": ["Literata"],
+                    "label-sm": ["Hanken Grotesk"],
+                    "headline-md": ["Literata"],
+                    "body-lg": ["Hanken Grotesk"],
+                    "label-md": ["Hanken Grotesk"]
+            },
+            "fontSize": {
+                    "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "500"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #0b1326;
+            background-image: radial-gradient(circle at 50% 50%, rgba(27, 48, 34, 0.15) 0%, transparent 80%);
+            min-height: 100vh;
+        }
+        .linen-texture {
+            position: relative;
+        }
+        .linen-texture::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-image: url("https://www.transparenttextures.com/patterns/linen-design.png");
+            opacity: 0.02;
+            pointer-events: none;
+            border-radius: inherit;
+        }
+        .garden-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 4px;
+            background-color: rgba(45, 52, 73, 0.3);
+            padding: 8px;
+            border-radius: 12px;
+            border: 1px solid rgba(172, 207, 182, 0.1);
+        }
+        .grid-cell {
+            aspect-ratio: 1 / 1;
+            background-color: rgba(11, 19, 38, 0.5);
+            border-radius: 4px;
+            transition: all 0.2s ease;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid transparent;
+        }
+        .grid-cell:hover {
+            background-color: rgba(172, 207, 182, 0.1);
+            border-color: rgba(172, 207, 182, 0.3);
+            transform: scale(1.05);
+        }
+        .grid-cell.active {
+            background-color: rgba(45, 76, 57, 0.4);
+            border-color: #accfb6;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: rgba(172, 207, 182, 0.2);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body class="font-body-md text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation Bar -->
+<header class="w-full top-0 sticky bg-surface dark:bg-surface text-primary dark:text-primary shadow-sm shadow-primary/10 z-40">
+<div class="flex justify-between items-center px-gutter py-sm max-w-container-max mx-auto">
+<div class="font-headline-md text-headline-md font-bold text-primary dark:text-primary">Mēness Sēja</div>
+<div class="hidden md:flex items-center gap-md">
+<nav class="flex gap-md">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Dārzs</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Kalendārs</a>
+<a class="font-body-md text-body-md text-primary font-bold transition-colors" href="#">Plānotājs</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Kopiena</a>
+</nav>
+<div class="h-6 w-px bg-outline-variant mx-2"></div>
+<div class="flex gap-sm">
+<button class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-transform active:scale-90" data-icon="settings">settings</button>
+<button class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-transform active:scale-90" data-icon="account_circle">account_circle</button>
+</div>
+</div>
+</div>
+</header>
+<div class="flex max-w-container-max mx-auto min-h-[calc(100vh-64px)] relative">
+<!-- Side Navigation Bar (Desktop Only) -->
+<aside class="hidden md:flex h-[calc(100vh-64px)] w-64 sticky top-16 left-0 flex-col bg-surface-container dark:bg-surface-container shadow-lg shadow-primary/5 py-md px-sm z-30">
+<div class="mb-lg px-xs">
+<h2 class="font-headline-md text-headline-md text-primary mb-xs">Mēness Sēja</h2>
+<p class="font-body-md text-body-md text-on-surface-variant opacity-70">Modern Folklore Gardening</p>
+</div>
+<nav class="flex-grow space-y-1">
+<a class="flex items-center gap-sm px-sm py-md rounded-lg text-on-surface-variant hover:bg-surface-variant/50 transition-all duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="nature_people">nature_people</span>
+<span class="font-body-md text-body-md">Dārzs</span>
+</a>
+<a class="flex items-center gap-sm px-sm py-md rounded-lg text-on-surface-variant hover:bg-surface-variant/50 transition-all duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="calendar_month">calendar_month</span>
+<span class="font-body-md text-body-md">Kalendārs</span>
+</a>
+<a class="flex items-center gap-sm px-sm py-md rounded-lg text-primary border-r-2 border-primary font-bold bg-surface-variant/30 transition-all duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="architecture">architecture</span>
+<span class="font-body-md text-body-md">Plānotājs</span>
+</a>
+<a class="flex items-center gap-sm px-sm py-md rounded-lg text-on-surface-variant hover:bg-surface-variant/50 transition-all duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="groups">groups</span>
+<span class="font-body-md text-body-md">Kopiena</span>
+</a>
+<a class="flex items-center gap-sm px-sm py-md rounded-lg text-on-surface-variant hover:bg-surface-variant/50 transition-all duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="menu_book">menu_book</span>
+<span class="font-body-md text-body-md">Dienasgrāmata</span>
+</a>
+<a class="flex items-center gap-sm px-sm py-md rounded-lg text-on-surface-variant hover:bg-surface-variant/50 transition-all duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="brightness_3">brightness_3</span>
+<span class="font-body-md text-body-md">Mēness</span>
+</a>
+</nav>
+<div class="mt-auto pt-md space-y-1">
+<a class="flex items-center gap-sm px-sm py-md rounded-lg text-on-surface-variant hover:bg-surface-variant/50 transition-all duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span class="font-body-md text-body-md">Iestatījumi</span>
+</a>
+<a class="flex items-center gap-sm px-sm py-md rounded-lg text-on-surface-variant hover:bg-surface-variant/50 transition-all duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="help_outline">help_outline</span>
+<span class="font-body-md text-body-md">Palīdzība</span>
+</a>
+</div>
+</aside>
+<!-- Main Workspace Canvas -->
+<main class="flex-grow p-gutter md:p-lg lg:grid lg:grid-cols-12 lg:gap-gutter pb-32 md:pb-lg">
+<!-- Left Column: Tooling & Grid -->
+<div class="lg:col-span-8 flex flex-col gap-md">
+<header class="flex flex-col gap-xs mb-sm">
+<h1 class="font-display-lg text-display-lg text-primary">Dārza plānotājs</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">Izveidojiet savu dārza izkārtojumu, sekojot mēness cikliem un kaimiņaugu gudrībai. Velciet augus uz režģa, lai sāktu.</p>
+</header>
+<!-- Grid Workspace Area -->
+<section class="linen-texture bg-surface-container-low rounded-xl p-md border border-outline-variant/30 shadow-lg relative overflow-hidden">
+<div class="flex justify-between items-center mb-md">
+<div class="flex gap-sm">
+<button class="bg-primary text-on-primary px-sm py-xs rounded-lg font-label-md flex items-center gap-xs shadow-sm hover:brightness-110 active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[20px]" data-icon="save">save</span> Saglabāt plānu
+                            </button>
+<button class="border border-outline-variant text-on-surface-variant px-sm py-xs rounded-lg font-label-md flex items-center gap-xs hover:bg-surface-variant transition-all">
+<span class="material-symbols-outlined text-[20px]" data-icon="grid_on">grid_on</span> Režģis: 12x8
+                            </button>
+</div>
+<div class="flex items-center gap-sm text-tertiary-fixed font-label-sm uppercase tracking-widest">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+                            Augošs mēness
+                        </div>
+</div>
+<!-- The interactive grid -->
+<div class="garden-grid" id="main-grid">
+<!-- 96 cells for 12x8 -->
+<script>
+                            const grid = document.getElementById('main-grid');
+                            for (let i = 0; i < 96; i++) {
+                                const cell = document.createElement('div');
+                                cell.className = 'grid-cell';
+                                cell.dataset.index = i;
+                                cell.onclick = () => {
+                                    document.querySelectorAll('.grid-cell').forEach(c => c.classList.remove('active'));
+                                    cell.classList.add('active');
+                                    showSuggestions(i);
+                                };
+                                grid.appendChild(cell);
+                            }
+                        </script>
+</div>
+<!-- Decorative watermark -->
+<div class="absolute -bottom-12 -right-12 opacity-[0.03] text-[200px] pointer-events-none select-none material-symbols-outlined">
+                        eco
+                    </div>
+</section>
+<!-- Crop Library (Horizontal Scroll on Mobile) -->
+<section>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-sm flex items-center gap-sm">
+<span class="material-symbols-outlined text-primary" data-icon="local_library">local_library</span>
+                        Augu bibliotēka
+                    </h3>
+<div class="flex gap-sm overflow-x-auto pb-4 custom-scrollbar snap-x">
+<!-- Crop Cards -->
+<div class="flex-shrink-0 w-32 snap-start flex flex-col items-center gap-2 p-sm bg-surface-container-high rounded-xl border border-outline-variant/20 hover:border-primary/50 cursor-grab active:cursor-grabbing transition-all group">
+<div class="w-16 h-16 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[32px]" data-icon="nutrition">nutrition</span>
+</div>
+<span class="font-label-md text-on-surface">Burkāni</span>
+</div>
+<div class="flex-shrink-0 w-32 snap-start flex flex-col items-center gap-2 p-sm bg-surface-container-high rounded-xl border border-outline-variant/20 hover:border-primary/50 cursor-grab active:cursor-grabbing transition-all group">
+<div class="w-16 h-16 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[32px]" data-icon="energy_savings_leaf">energy_savings_leaf</span>
+</div>
+<span class="font-label-md text-on-surface">Sīpoli</span>
+</div>
+<div class="flex-shrink-0 w-32 snap-start flex flex-col items-center gap-2 p-sm bg-surface-container-high rounded-xl border border-outline-variant/20 hover:border-primary/50 cursor-grab active:cursor-grabbing transition-all group">
+<div class="w-16 h-16 rounded-full bg-tertiary-container flex items-center justify-center text-on-tertiary-container group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[32px]" data-icon="potted_plant">potted_plant</span>
+</div>
+<span class="font-label-md text-on-surface">Salāti</span>
+</div>
+<div class="flex-shrink-0 w-32 snap-start flex flex-col items-center gap-2 p-sm bg-surface-container-high rounded-xl border border-outline-variant/20 hover:border-primary/50 cursor-grab active:cursor-grabbing transition-all group">
+<div class="w-16 h-16 rounded-full bg-surface-variant flex items-center justify-center text-on-surface-variant group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[32px]" data-icon="psychology_alt">psychology_alt</span>
+</div>
+<span class="font-label-md text-on-surface">Dilles</span>
+</div>
+<div class="flex-shrink-0 w-32 snap-start flex flex-col items-center gap-2 p-sm bg-surface-container-high rounded-xl border border-outline-variant/20 hover:border-primary/50 cursor-grab active:cursor-grabbing transition-all group">
+<div class="w-16 h-16 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[32px]" data-icon="spa">spa</span>
+</div>
+<span class="font-label-md text-on-surface">Bietes</span>
+</div>
+<div class="flex-shrink-0 w-32 snap-start flex flex-col items-center gap-2 p-sm bg-surface-container-high rounded-xl border border-outline-variant/20 hover:border-primary/50 cursor-grab active:cursor-grabbing transition-all group">
+<div class="w-16 h-16 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[32px]" data-icon="psychology">psychology</span>
+</div>
+<span class="font-label-md text-on-surface">Kāposti</span>
+</div>
+</div>
+</section>
+</div>
+<!-- Right Column: Companion Planting & Insights -->
+<div class="lg:col-span-4 mt-lg lg:mt-0 space-y-md">
+<div class="bg-surface-container-highest rounded-2xl p-md border-t-2 border-secondary shadow-xl linen-texture">
+<h4 class="font-headline-md text-headline-md text-secondary mb-md flex items-center gap-sm">
+<span class="material-symbols-outlined" data-icon="groups">groups</span>
+                        Kaimiņaugu ieteikumi
+                    </h4>
+<div class="space-y-sm" id="suggestion-box">
+<div class="bg-background/50 p-sm rounded-xl border border-outline-variant/30 flex gap-sm items-start">
+<div class="p-xs bg-primary-container rounded-lg text-on-primary-container">
+<span class="material-symbols-outlined" data-icon="info">info</span>
+</div>
+<div>
+<p class="font-body-md text-on-surface font-semibold">Sēj burkānus blakus sīpoliem</p>
+<p class="font-label-sm text-on-surface-variant mt-xs">Sīpolu smarža atvaira burkānu mušu, savukārt burkāni palīdz irdināt augsni sīpoliem.</p>
+</div>
+</div>
+<div class="bg-background/50 p-sm rounded-xl border border-outline-variant/30 flex gap-sm items-start">
+<div class="p-xs bg-secondary-container rounded-lg text-on-secondary-container">
+<span class="material-symbols-outlined" data-icon="eco">eco</span>
+</div>
+<div>
+<p class="font-body-md text-on-surface font-semibold">Salāti un dilles</p>
+<p class="font-label-sm text-on-surface-variant mt-xs">Dilles piesaista labvēlīgus kukaiņus, kas pasargā maigo salātu lapu sistēmu.</p>
+</div>
+</div>
+<div class="bg-background/50 p-sm rounded-xl border border-outline-variant/30 flex gap-sm items-start">
+<div class="p-xs bg-tertiary-container rounded-lg text-on-tertiary-container">
+<span class="material-symbols-outlined" data-icon="tips_and_updates">tips_and_updates</span>
+</div>
+<div>
+<p class="font-body-md text-on-surface font-semibold">Zalkša padoms</p>
+<p class="font-label-sm text-on-surface-variant mt-xs">Neliec pupiņas blakus sīpoliem – tie kavē viena otras augšanu saskaņā ar seno gudrību.</p>
+</div>
+</div>
+</div>
+<button class="w-full mt-md py-sm border border-secondary text-secondary rounded-xl font-label-md hover:bg-secondary/10 transition-colors uppercase tracking-widest">
+                        Skatīt visus saderības noteikumus
+                    </button>
+</div>
+<!-- Monthly Cycle Tip -->
+<div class="bg-surface-container rounded-2xl p-md border border-outline-variant/20 flex flex-col gap-sm">
+<div class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-primary-fixed" data-icon="brightness_high" style="font-variation-settings: 'FILL' 1;">brightness_high</span>
+<span class="font-label-sm text-tertiary uppercase tracking-[0.2em]">Mēness fāze: 1. ceturksnis</span>
+</div>
+<p class="font-headline-md text-headline-md text-on-surface">Labākais laiks lapu dārzeņiem</p>
+<p class="font-body-md text-on-surface-variant italic">"Kad mēness ragi griežas uz augšu, zeme elpo un dzen sulas uz lapām."</p>
+<div class="h-2 w-full bg-surface-variant rounded-full overflow-hidden mt-xs">
+<div class="h-full bg-primary w-[35%] shadow-[0_0_8px_#accfb6]"></div>
+</div>
+</div>
+<!-- Visual Accent: Ethnographic Sign -->
+<div class="relative w-full h-48 rounded-2xl overflow-hidden group">
+<img class="w-full h-full object-cover opacity-40 group-hover:scale-110 transition-transform duration-700" data-alt="A dark, moody garden at twilight with dew-glistening leaves. The atmosphere is mystical and serene, reflecting Latvian folklore traditions. The lighting is low-key with cool navy and deep forest green tones, accented by subtle moonlight silver highlights catching the edges of intricate plant textures. The visual style is premium and evocative, creating a rhythmic connection to the earth's natural seasonal cycles." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyr_Jt0HuydqvomegVnyJhZ5qfbc292wiCb6BfH2WGBwBrXrECqpD35MTHj8gblvtXQQWOulaIXvfUeZt7ZfSuW-PSLaVmhW9zN2Hpdz4XJRDYNmqW7iJdphABksWYBAGgQ9GD9SEDYKAphR2WTxBZe6nCBGaiaX_pmn7VNWadEPFNRfvcrl_Jh2ftK4HBSdj8csCwlLrK9DIFNWSe4rxmIsP1no5OWEEb6kglfC_XMzXCue0svfjzGOCEJvbrmBi2se-rzQqnveE7"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+<div class="absolute bottom-4 left-4">
+<span class="font-display-lg text-primary text-[40px] opacity-40">ᛗ</span>
+<p class="font-label-md text-on-surface-variant">Senču gudrība dārzā</p>
+</div>
+</div>
+</div>
+</main>
+</div>
+<!-- Mobile Bottom Navigation -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-4 pt-2 md:hidden bg-surface-container-high dark:bg-surface-container-high shadow-[0_-4px_12px_rgba(27,48,34,0.3)] rounded-t-xl">
+<a class="flex flex-col items-center justify-center text-on-surface-variant active:scale-95 transition-all hover:text-primary" href="#">
+<span class="material-symbols-outlined" data-icon="nature_people">nature_people</span>
+<span class="font-label-sm text-label-sm">Dārzs</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant active:scale-95 transition-all hover:text-primary" href="#">
+<span class="material-symbols-outlined" data-icon="calendar_month">calendar_month</span>
+<span class="font-label-sm text-label-sm">Kalendārs</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-xl px-4 py-1 active:scale-95 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="architecture">architecture</span>
+<span class="font-label-sm text-label-sm">Plānotājs</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant active:scale-95 transition-all hover:text-primary" href="#">
+<span class="material-symbols-outlined" data-icon="groups">groups</span>
+<span class="font-label-sm text-label-sm">Kopiena</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant active:scale-95 transition-all hover:text-primary" href="#">
+<span class="material-symbols-outlined" data-icon="brightness_3">brightness_3</span>
+<span class="font-label-sm text-label-sm">Mēness</span>
+</a>
+</nav>
+<!-- Floating Action Button (Mobile Contextual - Reset Plan) -->
+<button class="fixed bottom-24 right-6 w-14 h-14 bg-error-container text-on-error-container rounded-full shadow-lg flex items-center justify-center md:hidden active:scale-90 transition-transform">
+<span class="material-symbols-outlined" data-icon="delete_sweep">delete_sweep</span>
+</button>
+<script>
+        function showSuggestions(index) {
+            // Mock interaction for showing specific suggestions based on grid selection
+            const box = document.getElementById('suggestion-box');
+            // Flash effect for the suggestion box to show something happened
+            box.style.opacity = '0.5';
+            setTimeout(() => {
+                box.style.opacity = '1';
+            }, 100);
+        }
+
+        // Lightweight atmospheric interaction: hover glow following cursor on the linen texture
+        const mainCard = document.querySelector('.linen-texture');
+        if (mainCard) {
+            mainCard.addEventListener('mousemove', (e) => {
+                const rect = mainCard.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                mainCard.style.backgroundImage = `radial-gradient(circle at ${x}px ${y}px, rgba(172, 207, 182, 0.04) 0%, transparent 40%), url("https://www.transparenttextures.com/patterns/linen-design.png")`;
+            });
+        }
+    </script>
+</body></html>

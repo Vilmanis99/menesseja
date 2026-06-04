@@ -1,0 +1,62 @@
+{
+  "slug": "narcises",
+  "name": "Narcises",
+  "latin": "Narcissus",
+  "emoji": "🌼",
+  "type": "sipolpuke",
+  "tagline": "Pirmais īstais pavasara prieks — iestādi rudenī un aizmirsti uz gadiem.",
+  "bloom": "Aprīlis–maijs",
+  "height": "15–45 cm",
+  "sun": "Saule / pussēna",
+  "hardy": true,
+  "difficulty": "viegli",
+  "plantWhen": "Sīpolus stāda rudenī, sept.–okt.",
+  "moonPhase": "dilstošs",
+  "moonElement": "saknes",
+  "moonText": "Sīpolu stādīšana ir sakņu darbs, tāpēc pēc biodinamiskās tradīcijas to dara dilstošā Mēnesī un sakņu dienā, kad uzskata, ka spēks plūst uz augu apakšdaļu. Tā ir tradīcija, ne garantija — daudz svarīgāk ir iestādīt laikus, kamēr augsne vēl silta, lai sīpols paspēj apsakņoties pirms sala.",
+  "intro": [
+    "Narcises ir viena no pateicīgākajām pavasara puķēm Latvijas dārzam. Tās zied tieši tad, kad gribas krāsu visvairāk — kad sniegs tikko nokusis un pārējais dārzs vēl guļ. Dzeltenās, baltās un krēmkrāsas trompetītes pacietīgi pārcieš mūsu pavasara untumus, un pat vēla aprīļa salna tām parasti nekaitē.",
+    "Lielākais ieguvums ir tas, ka narcises ir patiesi neprasīgas. Iestādi sīpolus rudenī, un nākamajos pavasaros tās uzdīgs pašas, gadu no gada, pamazām vairojoties un veidojot arvien kuplākus pudurus. Tās pārziemo Latvijā atklātā laukā bez izrakšanas, un atšķirībā no tulpēm tās nemēdz ēst peles un strupastes — narcišu sīpoli ir indīgi, tāpēc grauzēji tos neaiztiek."
+  ],
+  "planting": [
+    "Stādi sīpolus rudenī, septembrī–oktobrī, kamēr augsne vēl silta — sīpolam vajag 4–6 nedēļas, lai apsakņotos pirms īstā sala.",
+    "Stādīšanas dziļums: aptuveni 2–3 sīpola augstumi, parasti 12–15 cm līdz sīpola pamatnei; mazākiem savvaļas tipiem pietiek ar 8–10 cm.",
+    "Atstatums starp sīpoliem 8–12 cm; lai dobe izskatās dabiskāka, stādi grupās pa 5–9 sīpoliem, nevis rindā pa vienam.",
+    "Izvēlies saulainu vai puspēnainu vietu ar labi caurlaidīgu augsni — narcises necieš mitru, applūstošu vietu, kur sīpoli var sapūt.",
+    "Liec sīpolu ar smailo galu uz augšu un saknīšu plāksnīti uz leju; ja šaubies, kā sīpols turējies, var stādīt sāniski, tas pats izlīdzinās.",
+    "Pēc stādīšanas viegli aplaisti, lai augsne piegulst sīpolam, un atzīmē vietu — pavasarī viegli aizmirst, kur tieši kas iestādīts."
+  ],
+  "care": [
+    "Pavasarī, kad parādās asni, narcises gandrīz nav jālaista — pavasara mitrums parasti pietiek; sausā periodā ziedēšanas laikā var papildus aplaistīt.",
+    "Mēslošanu, ja gribi, dod agri pavasarī ar kālijā un fosforā bagātu mēslojumu vai komposta kārtu; izvairies no liela slāpekļa, kas dod lapas, bet vāji ziedus.",
+    "Atbalsts nav vajadzīgs — narcises stāv pašas; augstākās šķirnes lietū var nedaudz noliekties, bet pašas atkal izslejas.",
+    "Nokaltušos ziedus noņem, lai augs netērē spēku sēklu veidošanā — tā nākamgad būs vairāk ziedu.",
+    "Lapas NEDRĪKST nogriezt, kamēr tās zaļas — ļauj tām dabiski nodzeltēt un nokalst (parasti 6 nedēļas pēc ziedēšanas), jo tieši tad sīpols uzkrāj spēku nākamajai sezonai.",
+    "Reizi 4–5 gados, ja pudurs sabiezējis un sāk vāji ziedēt, sīpolus var izrakt pēc lapu nokalšanas, atdalīt un pārstādīt."
+  ],
+  "winter": "Narcises ir pilnībā ziemcietīgas Latvijā un paliek zemē — izrakt nav vajadzības. Tikko iestādītus sīpolus pirmajā ziemā vēsākā vietā vai jaunā dobē var piesegt ar lapu vai skuju kārtu, bet vēlākos gados arī tas nav obligāti. Pavasarī piesegumu noņem, tiklīdz parādās pirmie asni.",
+  "problems": [
+    "Sapuvuši sīpoli — gandrīz vienmēr mitras, smagas augsnes dēļ; risinājums ir caurlaidīga vieta un nepārlaistīt.",
+    "Lapas ir, ziedu nav (\"aklās\" narcises) — biežākais iemesls ir pāragra lapu nogriešana iepriekšējā gadā vai pārāk sabiezējis, izsmelts pudurs; ļauj lapām nokalst un ik pa gadiem pārstādi.",
+    "Narcišu muša, kuras kāpurs izgrauž sīpolu — bojātie sīpoli pavasarī dod tikai vārgas, plānas lapiņas; izrok un iznīcini bojātos sīpolus."
+  ],
+  "folklore": "Latvijā narcises pieder pie pirmajām dārza puķēm, ko nes mājā kā pavasara zīmi, un tās bieži redzamas vecajos lauku dārzos pie mājām un kapsētās — reiz iestādītas, tās pārdzīvo paaudzes un turpina ziedēt arī tad, kad māju vairs nav.",
+  "faq": [
+    {
+      "q": "Vai narcises rudenī obligāti jāizrok un jāglabā?",
+      "a": "Nē. Narcises ir ziemcietīgas un paliek zemē visu gadu — atšķirībā no dālijām vai bumbuļbegonijām tās nav jāizrok. Izrakt vajag tikai tad, ja gribi pudurus pārdalīt vai pārstādīt, un to dara pēc lapu nokalšanas."
+    },
+    {
+      "q": "Kāpēc manas narcises uzdīga, bet neziedēja?",
+      "a": "Visbiežāk tāpēc, ka iepriekšējā gadā lapas tika nogrieztas vai nopļautas, kamēr vēl bija zaļas — tad sīpols nepaspēja uzkrāt spēku. Otrs iemesls ir pārāk sabiezējis vecs pudurs. Ļauj lapām katru gadu dabiski nokalst un ik pa dažiem gadiem sīpolus pārstādi."
+    },
+    {
+      "q": "Vai narcises var stādīt pavasarī?",
+      "a": "Īsti nē — narcišu sīpoliem vajag aukstuma periodu ziemā, lai pavasarī ziedētu, tāpēc tos stāda rudenī (sept.–okt.). Ja sīpoli palikuši pāri, pavasarī iestādīti tie parasti gadu izlaiž un labi ziedēt sāk tikai nākamajā sezonā."
+    }
+  ],
+  "related": [
+    "tulpes",
+    "peonijas"
+  ]
+}

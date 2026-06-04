@@ -1,0 +1,74 @@
+{
+  "title": "TOP augi ziemas glabāšanai — dārzeņi, kas tevi pabaro līdz pavasarim",
+  "subtitle": "Pārbaudīti pagraba dārzeņi Latvijas klimatam, kas glabājas mēnešiem ilgi",
+  "category": "Raža un glabāšana",
+  "intro": [
+    "Pašpietiekamība nesākas ar ražu, bet ar to, cik ilgi tā noglabājas. Latvijā veikala plaukti ziemā ir pilni, bet pašaudzēti dārzeņi pagrabā nozīmē, ka tava vasara turpina barot tevi vēl janvārī un februārī.",
+    "Šeit ir dārzeņi, kas patiešām glabājas — ne nedēļu, bet mēnešus. Lielākā daļa ir vienkārši audzējami pat iesācējam, un tos novāc rudenī (septembrī–oktobrī), pirms pirmajām spēcīgajām salnām.",
+    "Godīgi: bez vēsa un mitra pagraba (ap 0–5 °C) daļa šī saraksta glabāsies īsāk. Ja tev ir tikai silts dzīvoklis, koncentrējies uz sīpoliem, ķiplokiem un ķirbjiem — tie iztur arī istabas temperatūru."
+  ],
+  "items": [
+    {
+      "rank": 1,
+      "cropId": "burkani",
+      "name": "Burkāni",
+      "blurb": "Klasiskais pagraba dārzenis — novāc oktobrī pirms salnām, nogriez lakstus un glabā mitrās smiltīs vai kastē pie 0–2 °C, kur tie viegli izdzīvo līdz pavasarim. Sēj tieši laukā maijā–jūnijā, jo pārstādīšanu burkāni neieredz."
+    },
+    {
+      "rank": 2,
+      "cropId": "bietes",
+      "name": "Bietes",
+      "blurb": "Vienas no izturīgākajām glabāšanā un ļoti viegli audzējamas iesācējam — vēsā mitrā pagrabā smiltīs tās paliek cietas līdz februārim un tālāk. Sēj maijā–jūnijā, novāc pirms pirmajām spēcīgajām salnām oktobrī."
+    },
+    {
+      "rank": 3,
+      "cropId": "kalji",
+      "name": "Kāļi",
+      "blurb": "Īsts latviešu ziemas dārzenis, kas pagrabā glabājas gandrīz visu sezonu un kļūst saldāks pēc vieglas salnas. Nedaudz mitras smiltis vai vienkārši vēsa, tumša vieta — un kāļi tevi pabaros sautējumos līdz martam."
+    },
+    {
+      "rank": 4,
+      "cropId": "kiploki",
+      "name": "Ķiploki",
+      "blurb": "Stāda RUDENĪ (septembrī–oktobrī), novāc jūlijā–augustā, un pēc kārtīgas izžāvēšanas tie glabājas siltā, sausā virtuvē 6–8 mēnešus bez pagraba. Iesācējam praktiski neiznīcināmi un visu ziemu pa rokai."
+    },
+    {
+      "rank": 5,
+      "cropId": "sipoli",
+      "name": "Sīpoli",
+      "blurb": "Pēc novākšanas augustā labi jāizžāvē, un tad tie glabājas sausā, vēdināmā vietā istabas temperatūrā līdz pat pavasarim. Visvieglāk audzēt no sīpolu lociņiem — gandrīz garantēta raža pat pirmajā gadā."
+    },
+    {
+      "rank": 6,
+      "cropId": "kartupeli",
+      "name": "Kartupeļi",
+      "blurb": "Pašpietiekamības pamats — no viena maisa stādu rudenī iegūsti kasti, kas pabaro mēnešiem. Glaba pilnīgi tumšā, vēsā (4–6 °C) pagrabā, citādi tie sadīgst vai kļūst zaļi; stāda maija sākumā, kad augsne sasilusi līdz ~8 °C."
+    },
+    {
+      "rank": 7,
+      "cropId": "kaposti",
+      "name": "Kāposti",
+      "blurb": "Vēlīnie ziemas kāposti iztur vieglas salnas un pagrabā, pakārti aiz saknes vai ietīti papīrā, glabājas vairākus mēnešus. Liels, bet pateicīgs — viena galviņa pārvēršas par skābētu kāpostu mucu visai ziemai."
+    },
+    {
+      "rank": 8,
+      "cropId": "pastinaks",
+      "name": "Pastinaks",
+      "blurb": "Vienīgais saraksta dārzenis, ko vari atstāt augsnē zem mulčas un izrakt pa ziemu — salna padara to saldāku. Aug lēni un nesteidzīgi, tāpēc ideāls aizmāršīgam iesācējam; pagrabā smiltīs glabājas tāpat kā burkāni."
+    },
+    {
+      "rank": 9,
+      "cropId": "raceni",
+      "name": "Rāceņi",
+      "blurb": "Ātraudzīgi un nepretenciozi — vēlīno sēju jūlijā novāc rudenī, un vēsā pagrabā tie glabājas vairākus mēnešus. Vecs latviešu ziemas ēdiens, kas iesācējam ļauj iegūt glabājamu ražu pat tad, ja pavasaris palaists garām."
+    },
+    {
+      "rank": 10,
+      "cropId": "topinamburs",
+      "name": "Topinambūrs",
+      "blurb": "Visizturīgākais variants — bumbuļus var atstāt zemē visu ziemu un rakt pēc vajadzības, jo tie nesalst. Reiz iestādīts, tas atgriežas katru gadu pats; pagrabā gan glabājas slikti, tāpēc labākais \"pagrabs\" tam ir pati dārza zeme."
+    }
+  ],
+  "outro": "Sāc ar bietēm, burkāniem un sīpoliem — tie ir vieglākie un visuzticamākie, un jau pirmajā ziemā tu pats redzēsi, ka pašaudzēts pagrabs ir reālāks, nekā šķiet.",
+  "slug": "ziemas-glabasanai"
+}

@@ -1,0 +1,62 @@
+{
+  "slug": "petunijas",
+  "name": "Petūnijas",
+  "latin": "Petunia",
+  "emoji": "🌸",
+  "type": "viengadiga",
+  "tagline": "Latvijas balkonu karaliene — kupls ziedu klājiens no jūnija līdz salnām.",
+  "bloom": "Jūnijs–septembris (līdz pirmajām salnām)",
+  "height": "20–40 cm (kaskādes šķirnes nokarājas 50–80 cm)",
+  "sun": "Saule",
+  "hardy": false,
+  "difficulty": "vidēji",
+  "plantWhen": "Sēklas sēj telpās feb.–martā; stādus laukā pēc pēdējām salnām, maija beigās.",
+  "moonPhase": "augošs",
+  "moonElement": "ziedi",
+  "moonText": "Biodinamikā petūnijas — tāpat kā citas puķes — sēj un kopj ziedu (gaisa elementa) dienās, augošā Mēnesī, jo augam svarīgākā daļa ir tieši ziedi. Tā tomēr ir tradīcija, ne garantija: petūniju sīkajām sēklām daudz svarīgāks ir siltums, gaisma un mitrums, tāpēc kalendāru uztver kā darba ritmu, ne kā likumu.",
+  "intro": [
+    "Petūnija (Petunia) ir bez pārspīlējuma populārākā Latvijas balkonu un podu puķe — neviena cita viengadīgā nedod tik kuplu, nepārtrauktu ziedu klājienu visu vasaru, turklāt visdažādākajās krāsās: no tīri baltas līdz tumši violetai, sārtai, dzeltenai un pat svītrotai. Tā lieliski jūtas puķu kastēs pie palodzes, piekaramajos podos un terases traukos, un karstā vasarā ar regulāru kopšanu pārvēršas par īstu ziedu kaskādi. Tieši tāpēc petūnija ir tā puķe, ko vasarā ierauga teju uz katra otrā balkona.",
+    "Petūnija nāk no siltām zemēm un ir izteikti jutīga pret aukstumu — pat viegla salna to nogalina, tāpēc laukā to nes tikai pēc pēdējām pavasara salnām, mūsu pusē maija beigās. Sēklas ir ļoti sīkas, gandrīz kā putekļi, un tām dīgšanai vajadzīga gaisma, tāpēc audzēšana no sēklas prasa nedaudz pacietības un siltu palodzi. Iesācējam vienkāršāk ir pirkt gatavus stādus maijā, bet, ja gribi izaudzēt pats, sēšanu sāc jau februārī vai martā."
+  ],
+  "planting": [
+    "Sēj telpās februārī–martā: sīkās sēklas izkaisi pa mitra sējas substrāta virsmu un NEAPBER ar zemi — tām dīgšanai vajadzīga gaisma; tikai viegli piespied.",
+    "Sēklas dīgst 22–24 °C siltumā un gaišā vietā 7–14 dienu laikā; turi substrātu mitru, bet ne slapju, un pārklāj trauku ar caurspīdīgu plēvi vai stiklu, līdz parādās dīgsti.",
+    "Kad dēstiem ir 2–3 īstās lapiņas, pārpiķē tos atsevišķās podiņās; lai augi kuplotu, galotnes vēlāk vari nokniebt.",
+    "Pirms stādīšanas laukā 7–10 dienas dēstus rūdi — iznes dienā ārā pakāpeniski, lai pierod pie saules un vēja.",
+    "Stādus laukā vai podos stāda tikai pēc pēdējām salnām, maija beigās, saulainā vietā; atstatums dobē 20–30 cm, podā 3–5 augi uz balkona kasti.",
+    "Trauka apakšā nodrošini drenāžu un izmanto auglīgu, labi drenētu zemi — petūnija ir izsalkusi un slāpst pārmitrā augsnē."
+  ],
+  "care": [
+    "Laisti regulāri un bagātīgi, īpaši podos un karstā laikā — vasarā dažkārt katru dienu; lej pie saknes, ne pa ziediem, jo slapji ziedi viegli sapūst.",
+    "Mēslo ik pa 7–14 dienām ar puķēm domātu, kālijā un fosforā bagātu mēslojumu — petūnija ir liela ēdāja, un tieši regulāra barošana nodrošina nepārtrauktu ziedēšanu.",
+    "Regulāri noņem novītušos ziedus un sēklu pogaļas (deadheading) — tas pamudina augu dzīt arvien jaunus pumpurus un netērēt spēku sēklām.",
+    "Ja augs izstiepjas un kļūst pliks vidusdaļā, vasaras vidū drosmīgi apgriez dzinumus par trešdaļu — pēc pāris nedēļām tas atjaunosies kuplāks un ziedēs no jauna.",
+    "Saulainā, vēja aizvējā vietā petūnija zied viskošāk; ēnā tā izstiepjas un ziedu ir maz.",
+    "Pēc stipra lietus pārskati augus — lielziedu šķirņu ziedi lietū viegli saplok un kļūst lipīgi; mazziedu (surfīnijas, miljonu zvaniņu tipa) šķirnes lietu panes labāk."
+  ],
+  "winter": "Petūnija Latvijā ATKLĀTĀ laukā nepārziemo — tā ir viengadīga, siltummīloša puķe, ko pirmā rudens salna iznīcina. Parasti to rudenī vienkārši izrok un izmet (vai liek kompostā). Teorētiski podā augušu augu var pārziemot kā istabas augu gaišā, vēsā (10–15 °C) telpā, taču praksē tas ir grūti un reti atmaksājas — vienkāršāk un drošāk katru pavasari sākt ar jauniem stādiem vai izsēt no jauna.",
+  "problems": [
+    "Pārmitra augsne un slikta drenāža izraisa sakņu un stublāja puvi — podiem obligāti vajag drenāžas caurumus, un nedrīkst ļaut ūdenim stāvēt paliktnī.",
+    "Laputis un baltblusiņas (siltumnīcas baltblusiņa) mēdz apmesties uz jaunajiem dzinumiem un lapu apakšpusēm; palīdz ziepjūdens apsmidzināšana vai bioloģiski līdzekļi.",
+    "Bālas, dzeltenīgas lapas un vāja ziedēšana parasti nozīmē barības vai gaismas trūkumu — pārbaudi, vai augs saņem pietiekami saules un regulāru mēslojumu."
+  ],
+  "folklore": "Petūnija Latvijā ir samērā jauna ienācēja, tāpēc senu tautas ticējumu tai nav — toties tā kļuvusi par mūsdienu vasaras balkonu neatņemamu simbolu, un daudzās mājās košās petūniju kastes pie palodzes ir kā ģimenes lepnums un sava stūrīša rota, ko kaimiņi cits citam mēdz pat apskaust.",
+  "faq": [
+    {
+      "q": "Kāpēc manas petūnijas izstiepušās un zied tikai galotnēs?",
+      "a": "Tas notiek, ja augam trūkst saules vai tas nav apgriezts. Pārvieto podu saulainākā vietā un vasaras vidū drosmīgi apgriez dzinumus par trešdaļu — pēc pāris nedēļām augs atjaunosies kuplāks un ziedēs no jauna. Palīdz arī regulāra mēslošana un novītušo ziedu noņemšana."
+    },
+    {
+      "q": "Vai petūnijas var sēt tieši dobē vai podā ārā?",
+      "a": "Praksē nē. Sēklas ir ļoti sīkas, tām vajadzīga gaisma un silta (22–24 °C) vide, un Latvijas īsajā vasarā tieši laukā sētas petūnijas paspētu uzziedēt par vēlu. Tāpēc tās sēj telpās februārī–martā vai pērk gatavus stādus un laukā stāda pēc salnām, maija beigās."
+    },
+    {
+      "q": "Vai petūnijas pārziemo Latvijā?",
+      "a": "Nē. Petūnija ir viengadīga, siltummīloša puķe, ko jau pirmā rudens salna nogalina — atklātā laukā tā nepārziemo. Rudenī augus izrok un izmet, bet nākampavasar sēj no jauna vai pērc jaunus stādus."
+    }
+  ],
+  "related": [
+    "pelargonijas",
+    "begonijas"
+  ]
+}

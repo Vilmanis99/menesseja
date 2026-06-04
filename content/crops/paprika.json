@@ -1,0 +1,30 @@
+{
+  "intro": "Paprika ir viens no siltākprasīgākajiem dārzeņiem mūsu platuma grādos, un tieši tāpēc tā Latvijā ir gana izaicinoša kultūra (grūtības pakāpe 3 no 5). Augs ir izteikti saulesmīlis, aug lēni un raibajai vasarai bieži neuztic — tāpēc to gandrīz vienmēr stāda no agri sētiem dēstiem un audzē siltumnīcā vai labi aizvēsinātā saulainā vietā. No sējas līdz pirmajai ražai paiet ilgs ceļš: stādus mēdz sēt jau februārī vai martā, dārzā vai siltumnīcā tos pārstāda maijā–jūnijā, bet sulīgos augļus var lasīt no jūlija līdz septembrim.",
+  "sections": [
+    {
+      "heading": "Kā sēt",
+      "body": "Paprika aug lēni, tāpēc dēstus sēj agri — februāra beigās vai martā — siltā telpā, kur augsne ir vismaz 22–25 °C; vēsumā sēklas dīgst gausi un nevienmērīgi. Sēj 0,5–1 cm dziļi un nodrošini papildu apgaismojumu, jo īsajās ziemas dienās dēsti izstiepjas. Tieši zemē Latvijā sēt nav vērts — līdz augļu nogatavošanai vienkārši pietrūkst siltuma. Pārstādi dārzā vai siltumnīcā tikai tad, kad augsne sasilusi vismaz līdz 15 °C un salnu vairs nedraud (parasti maija beigās vai jūnija sākumā)."
+    },
+    {
+      "heading": "Augsne un vieta",
+      "body": "Izvēlies vissaulaināko un no vēja pasargāto vietu — vislabāk siltumnīcā vai pie sienas dienvidu pusē, kur uzkrājas siltums. Augsnei jābūt irdenai, barības vielām bagātai un labi caurlaidīgai, ar pH ap 6,0–6,8; pirms stādīšanas iestrādā kompostu vai pārpuvušus kūtsmēslus. Paprika nepanes ne pastāvīgu slapjumu, ne sablīvētu zemi, tāpēc smagās māla augsnēs ieteicams paaugstinātas dobes. Neaudzē to vietā, kur pērn auga tomāti, kartupeļi vai baklažāni — šiem nakteņu dzimtas radiniekiem ir kopīgas slimības."
+    },
+    {
+      "heading": "Kopšana un laistīšana",
+      "body": "Laisti regulāri un vienmērīgi — pie saknes, ar siltu (atstāvējušos) ūdeni, jo aukstums un mitruma svārstības augam ir nepatīkamas un veicina augļu galotnes puvi. Garākās šķirnes piesien pie mietiņa, lai augļu smagums nenolauztu stublāju. Reizi divās nedēļās piebaro ar kālijbagātu mēslojumu vai nātru fermentu, taču nepārspīlē ar slāpekli, citādi aug kupli laksti bez augļiem. Siltumnīcā raugies, lai būtu laba vēdināšana — karstās dienās temperatūra virs 30 °C noliek ziedus."
+    },
+    {
+      "heading": "Biežākās problēmas un kaitēkļi",
+      "body": "Visbiežākā nelaime ir laputis un, sevišķi siltumnīcā, baltblusiņas un tīklērces, kas savairojas sausā, karstā gaisā — palīdz vēdināšana, mitruma uzturēšana un kaitēkļu noskalošana. Ja krīt ziedi, parasti vainojama pārāk zema (zem 12 °C) vai pārāk augsta temperatūra, kā arī mitruma trūkums. Augļu galotnes puve ar melnganu, iegrimušu plankumu liecina par kalcija trūkumu un nevienmērīgu laistīšanu. Pārmitrumā un blīvā stādījumā draud sēnīšu slimības, tāpēc neaudzē augus pārāk cieši."
+    },
+    {
+      "heading": "Šķirnes Latvijai",
+      "body": "Mūsu īsajai un nesiltai vasarai izvēlies agrīnas, ātri nogatavojošās šķirnes, kas augļus nogatavina arī siltumnīcā. Labi sevi pierādījušas tādas agrīnās un produktīvās šķirnes kā 'Jubilejnij Semko', 'Zdorovije', 'Belozjorka' un saldā 'Kalifornijas brīnums' (California Wonder). Iesācējam droši der vietējos veikalos pieejamie agrīnie hibrīdi (F1) ar atzīmi par izturību pret vēsumu. Atklātā laukā riskē tikai paši agrīnākie sortimenti, un pat tad raža būs drošāka zem agroplēves loka."
+    },
+    {
+      "heading": "Novākšana un glabāšana",
+      "body": "Augļus var lasīt tehniskajā gatavībā (zaļus, dzeltenus pēc šķirnes) jau ap jūlija beigām vai gaidīt pilno gatavību, kad tie kļūst sarkani, oranži vai dzelteni un saldāki. Lasīšana ar dārza šķērēm, atstājot kātiņu, rosina augu veidot jaunus augļus. Svaigu papriku ledusskapī glabā 1–2 nedēļas; ilgākai uzglabāšanai to sasaldē sagrieztu vai kaltē. Pirms pirmajām rudens salnām novāc visus augļus — arī tos, kas vēl nav nogatavojušies, jo telpā tie var pakāpeniski sārtoties."
+    }
+  ],
+  "folklore": "Senču gudrība māca, ka siltumprasīgos augus, tādus kā papriku un tomātus, dārzā nesteidzas izstādīt pirms \"ledus vīru\" un Mātaru dienām maija vidū, kad atkāpjas pēdējās naktssalnas; mēness rituālā paprika kā augļu kultūra tradicionāli tiek saistīta ar Uguns (augļu) dienām, taču atceries — tā ir kultūras mantojuma un sezonas ritma tradīcija, nevis zinātniski pierādīta garantija, un patiesībā vislielāko nozīmi dod laikapstākļi un augsnes temperatūra."
+}

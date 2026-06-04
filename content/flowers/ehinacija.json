@@ -1,0 +1,62 @@
+{
+  "slug": "ehinacija",
+  "name": "Ehinācija",
+  "latin": "Echinacea purpurea",
+  "emoji": "🌸",
+  "type": "daudzgadiga",
+  "tagline": "Saulmīļa daudzgadīgā, kas zied vasaras otrā pusē un pievelk bites un taureņus.",
+  "bloom": "Jūlijs–septembris",
+  "height": "60–120 cm",
+  "sun": "Saule",
+  "hardy": true,
+  "difficulty": "viegli",
+  "plantWhen": "Stādus laukā pavasarī (maijā) vai vasaras sākumā; sēklas sēj agri pavasarī",
+  "moonPhase": "augošs",
+  "moonElement": "ziedi",
+  "moonText": "Ehināciju kā ziedu augu pēc biodinamiskās tradīcijas sēj un stāda ziedu (gaisa) dienās — kad Mēness ir Dvīņos, Svaros vai Ūdensvīrā — un labāk augošā Mēnesī, kad uzskata, ka spēks virzās uz augšu. Tā ir veca dārznieku tradīcija, ne garantija: daudz svarīgāk ir iestādīt siltā augsnē saulainā vietā un nogaidīt, kamēr pavasara salnu vairs nav.",
+  "intro": [
+    "Ehinācija, ko mēdz saukt arī par sārto saules cepurīti, ir viena no pateicīgākajām daudzgadīgajām puķēm saulainai Latvijas dobei. Tās lielie, rožaini violetie ziedi ar paceltu, smailu vidusdaļu zied vasaras otrā pusē — no jūlija līdz pat rudens salnām — tieši tad, kad daudzas pavasara puķes jau atziedējušas. Augs ir izturīgs, sausumu panesošs un Latvijā pilnīgi ziemcietīgs, tāpēc reiz iestādīts tas priecē gadiem.",
+    "Papildus skaistumam ehinācija ir īsts dārza dzīvības magnēts: tās ziedi vilina bites, kamenes un taureņus visu vasaras nogali, bet rudenī nogatavojušās sēklas labprāt knābā putni, piemēram, dadzīši. Ehinācija pazīstama arī kā ārstniecības augs — tradicionāli no tās gatavo tējas un tinktūras imunitātes atbalstam. Šajā rakstā runa ir par dārza audzēšanu; pirms jebkādas lietošanas uzturā vienmēr ieteicams konsultēties ar speciālistu."
+  ],
+  "planting": [
+    "Izvēlies saulainu vietu — ehinācija mīl pilnu sauli (vismaz 6 stundas dienā) un labi caurlaidīgu augsni; smagā, mitrā augsnē tā vāji aug un var izsalt.",
+    "Stādus laukā stādi pavasarī vai vasaras sākumā, kad augsne sasilusi un pavasara salnu vairs nav (iekšzemē drošāk pēc maija beigām), lai augs paspēj labi apsakņoties līdz ziemai.",
+    "Atstatums starp stādiem 40–50 cm — ehinācija ar gadiem izaug brangā pudurā, tāpēc nestādi pārāk blīvi.",
+    "Stādīšanas bedrīti rok tā, lai stāda sakņu kakls (vieta, kur saknes pāriet stublājā) būtu augsnes līmenī, nevis ierakts dziļāk — pārāk dziļi iestādīts augs var trupēt.",
+    "Ja audzē no sēklām, sēj agri pavasarī podos uz palodzes vai siltumnīcā; daļa sēklu labāk dīgst pēc auksta perioda (stratifikācijas), tāpēc var sēt arī ziemā/rudenī uz vietas laukā.",
+    "Pēc stādīšanas labi aplej un pirmajās nedēļās uzturi augsni mitru, līdz stāds ieaug; vēlāk ehinācija sausumu pacieš labi."
+  ],
+  "care": [
+    "Laisti mēreni — iesakņojusies ehinācija ir izteikti sausumu izturīga un pārliešanu necieš; karstā, sausā vasarā ziedēšanas laikā aplej dziļi, bet retāk.",
+    "Mēslo pieticīgi: pietiek ar komposta vai trūdvielu kārtu pavasarī. Pārāk daudz slāpekļa dod sulīgas lapas, garus, klūpošus stublājus un mazāk ziedu.",
+    "Atbalsts parasti nav vajadzīgs — stublāji ir stingri; treknā augsnē vai vējainā vietā augstākās šķirnes var nedaudz pieturēt.",
+    "Nokaltušos ziedus vasaras laikā vari noņemt, lai pamudinātu jaunu ziedu veidošanos un augs neizsmeltos sēklās.",
+    "Rudenī daļu izziedējušo ziedu galviņu atstāj nenogrieztas — sēklas pārtiks putni, un stingrie stublāji ziemā izskatās dekoratīvi; pavasarī veco virsdaļu nogriez līdz zemei.",
+    "Reizi 3–4 gados, ja pudurs sabiezējis un sāk vāji ziedēt, to var pavasarī izrakt, sadalīt un pārstādīt, tā atjaunojot augu."
+  ],
+  "winter": "Ehinācija ir ziemcietīga un Latvijā atklātā laukā pārziemo bez izrakšanas — tā paliek zemē. Rudenī virszemes daļa nokalst; veco stublāju daļu vari atstāt kā ziemas dekoru un putnu barību, bet nogriezt to līdz zemei drīzāk pavasarī. Tikko iestādītus jaunus stādus pirmajā ziemā drošības labad var piesegt ar lapu, komposta vai skuju kārtu, jo izsalšanas risks lielāks ir nevis no aukstuma, bet no mitras, applūstošas augsnes — tāpēc vissvarīgākā ir laba drenāža. Pavasarī piesegumu noņem, tiklīdz parādās jaunie asni.",
+  "problems": [
+    "Sapuvušas saknes un sakņu kakls — gandrīz vienmēr smagas, mitras augsnes vai pārliešanas dēļ; risinājums ir saulaina vieta ar labu drenāžu un nestādīt pārāk dziļi.",
+    "Vāja ziedēšana un izstiepušies, klūpoši stublāji — visbiežāk no pārāk maz saules vai pārāk daudz slāpekļa mēslojuma; pārvieto saulainā vietā un mēslo pieticīgi.",
+    "Gliemeži var apgrauzt jaunos pavasara asnus, bet pieaudzis augs no tiem necieš; vajadzības gadījumā jaunos stādus pasargā."
+  ],
+  "folklore": "Ehinācija nāk no Ziemeļamerikas prērijām, kur to par ārstniecības augu izmantoja jau pamatiedzīvotāji, un mūsdienās tā Latvijā iemīļota gan kā dobes puķe, gan kā tējas un imunitātes augs. Mūsu dārzos to bieži stāda kopā ar citām saulmīļām daudzgadīgajām un kā labu medus augu, kas vasaras nogalē nodrošina barību bitēm un taureņiem.",
+  "faq": [
+    {
+      "q": "Vai ehinācija rudenī jāizrok un jāglabā telpā?",
+      "a": "Nē. Ehinācija ir ziemcietīga daudzgadīgā puķe un Latvijā paliek zemē visu gadu — atšķirībā no dālijām vai bumbuļbegonijām to izrakt nevajag. Izrakt un sadalīt to var tikai tad, ja gribi atjaunot vai pavairot vecu, sabiezējušu puduru, un to dara pavasarī."
+    },
+    {
+      "q": "Kāpēc mana ehinācija aug lapās, bet maz zied?",
+      "a": "Biežākie iemesli ir par maz saules vai pārāk treknā, ar slāpekli bagāta augsne. Ehinācijai vajag pilnu sauli un pieticīgu mēslojumu — pārvieto to saulainā vietā un mēslo mēreni, tikai ar kompostu pavasarī."
+    },
+    {
+      "q": "Vai ehināciju var izmantot tējai un ārstniecībai?",
+      "a": "Ehinācija ir tradicionāli pazīstams ārstniecības augs, no kura gatavo tējas un tinktūras imunitātes atbalstam. Tomēr pirms jebkādas lietošanas uzturā vai veselības nolūkos ieteicams konsultēties ar ārstu vai fitoterapeitu, īpaši ja lieto medikamentus."
+    }
+  ],
+  "related": [
+    "peonijas",
+    "narcises"
+  ]
+}

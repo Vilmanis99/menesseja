@@ -1,0 +1,61 @@
+{
+  "slug": "tulpes",
+  "name": "Tulpes",
+  "emoji": "🌷",
+  "latin": "Tulipa",
+  "type": "sipolpuke",
+  "tagline": "Pavasara klasika, ko iestādi rudenī un gaidi krāsu sprādzienu pēc ziemas.",
+  "bloom": "Aprīlis–maijs",
+  "height": "15–70 cm (atkarībā no šķirnes)",
+  "sun": "Saule / pussēna",
+  "hardy": true,
+  "difficulty": "viegli",
+  "plantWhen": "Sīpolus stāda rudenī, sept.–okt., pirms zeme sasalst",
+  "moonPhase": "dilstošs",
+  "moonElement": "ziedi",
+  "moonText": "Tulpes ir ziedu augs, tāpēc biodinamikā tās piesaista ziedu (gaisa) dienām — Mēness Dvīņos, Svaros vai Ūdensvīrā. Sīpolus tradicionāli liek zemē dilstošā Mēnesī, kad spēks virzās uz saknēm, taču daudz svarīgāk ir vienkārši paspēt iestādīt sausā, vēl neaizsalušā augsnē līdz oktobra beigām.",
+  "intro": [
+    "Tulpes ir tā pavasara puķe, kas Latvijas dārzā uzzied tieši tad, kad acs visvairāk ilgojas pēc krāsas — kad sniegs jau nokusis, bet īstā vasara vēl tālu. Tās ir pateicīgas un viegli audzējamas: tu iestādi sīpolus rudenī, aizmirsti par tiem pa ziemu, un aprīlī–maijā tās pašas izlec no zemes un sazied. Tieši tāpēc tulpes ir lieliska puķe iesācējam — gandrīz neiespējami sabojāt.",
+    "Botaniski tulpes ir pavasara sīpolpuķe, kas Latvijas klimatā (USDA zona 5b–6a) pārziemo atklātā laukā bez izrakšanas — auksta ziema tām pat ir vajadzīga, lai sīpolā ieslēgtos ziedēšana. Tomēr ne visas šķirnes ir vienlīdz izturīgas: daudzās krāšņās lielziedu hibrīdtulpes ar gadiem sīkst, ziedi paliek mazāki, un tās ik pēc dažiem gadiem jāizrok un jāatjauno ar svaigiem sīpoliem. Savukārt savvaļas (botāniskās) tulpes un izturīgie Darvina hibrīdi labi savairojas un priecē gadiem."
+  ],
+  "planting": [
+    "Stādi rudenī — no septembra līdz oktobra beigām, kamēr augsne vēl nav sasalusi. Sīpoliem vajag dažas nedēļas, lai pirms ziemas iesakņotos.",
+    "Izvēlies saulainu vai daļēji saulainu vietu ar irdenu, labi caurlaidīgu augsni. Tulpes nepanes ūdens stāvēšanu — mitrā, smagā zemē sīpoli pūst.",
+    "Stādīšanas dziļums — apmēram 3 reizes sīpola augstums, parasti 10–15 cm (lieliem sīpoliem dziļāk, maziem seklāk). Smilšainā augsnē var stādīt nedaudz dziļāk.",
+    "Atstatums starp sīpoliem 8–12 cm. Grupās pa 7–15 sīpoliem dobe izskatās daudz iespaidīgāk nekā rindā pa vienam.",
+    "Liec sīpolu zemē ar smailo galu uz augšu, plakano (sakņu) pamatni uz leju. Pēc stādīšanas viegli aplej, ja augsne sausa.",
+    "Smagā vai mitrā augsnē iztādi grants vai rupju smilšu slānīti zem sīpola — tas uzlabo drenāžu un pasargā no puves."
+  ],
+  "care": [
+    "Pavasarī, kad parādās dīgsti, mēslo ar kompleksu vai sīpolpuķēm domātu mēslojumu — tas baro sīpolu nākamajam gadam.",
+    "Laisti tikai sausā pavasarī; pārmērīgs mitrums tulpēm ir bīstamāks nekā sausums. Ziedēšanas laikā augsnei jābūt mēreni mitrai.",
+    "Pēc noziedēšanas noņem tikai pašu ziedu (sēklu pogaļu), bet lapas atstāj — caur tām sīpols uzkrāj spēku nākamā gada ziedam.",
+    "Lapas nogriez vai novāc tikai tad, kad tās pašas nodzeltējušas un nokaltušas, parasti jūnijā–jūlijā. Negriez zaļas lapas!",
+    "Garstublu, lielziedu šķirnes vējainā vietā var palīdzēt ar nelielu atbalstu, taču lielākā daļa tulpju iztiek bez tā.",
+    "Lielziedu hibrīdtulpes ik pēc 2–4 gadiem izroc pēc lapu nokalšanas, izšķiro, izžāvē vēsā vietā un rudenī iestādi atpakaļ vai aizstāj ar jauniem sīpoliem."
+  ],
+  "winter": "Tulpes Latvijā pārziemo atklātā laukā bez izrakšanas — sīpolus stāda rudenī, un tie paliek zemē visu ziemu. Sniega sega un mulča (lapu vai kūdras kārtiņa) palīdz pasargāt bezsniega salos. Sīpolus izrok tikai tad, ja gribi tos pārstādīt vai atjaunot krāšņās šķirnes: to dara pēc lapu nokalšanas vasarā, izžāvē un glabā sausā, vēdināmā, vēsā telpā līdz rudens stādīšanai.",
+  "problems": [
+    "Sīpolu puve mitrā augsnē — galvenais tulpju ienaidnieks. Risinājums: laba drenāža un nestādīšana vietā, kur stāv ūdens.",
+    "Pelēkā puve (tulpju uguns, Botrytis) — uz lapām un ziediem parādās plankumi un pelēks pārklājums. Slimos augus izrauj un iznīcini, nestādi tulpes tajā pašā vietā vairākus gadus.",
+    "Grauzēji (peles, strupastes) un stirnas — peles grauž sīpolus zemē, stirnas noēd pumpurus. Sīpolus var aizsargāt ar stādīšanas groziņiem vai narcišu kaimiņiem, kurus grauzēji neēd."
+  ],
+  "folklore": "Tulpe Latvijā jau sen kļuvusi par pavasara un Lieldienu vēstnesi — ziedus plūc un dāvina kā siltuma atgriešanās zīmi, tieši tad, kad dārzi un koki sāk plaukt.",
+  "faq": [
+    {
+      "q": "Vai tulpju sīpoli katru gadu jāizrok?",
+      "a": "Nē, lielākajai daļai nav. Latvijā tulpes droši pārziemo zemē. Izrakt der tikai krāšņās lielziedu hibrīdtulpes, kas ar gadiem sīkst — tās ik pēc dažiem gadiem izroc, izšķiro un atjauno. Savvaļas un Darvina tulpes var atstāt zemē gadiem."
+    },
+    {
+      "q": "Kad īsti stādīt tulpju sīpolus Latvijā?",
+      "a": "Rudenī — no septembra līdz oktobra beigām, kamēr augsne vēl nav sasalusi. Sīpoliem vajag dažas nedēļas, lai iesakņotos pirms ziemas. Pavasarī tulpes vairs nestāda."
+    },
+    {
+      "q": "Kāpēc pēc noziedēšanas nedrīkst nogriezt lapas?",
+      "a": "Tieši caur zaļajām lapām sīpols uzkrāj barību nākamā gada ziedam. Ja nogriez lapas, kamēr tās vēl zaļas, sīpols paliek vājš un nākamgad var nesaziedēt. Noņem tikai noziedējušo ziedu, bet lapas ļauj dabiski nokalst."
+    }
+  ],
+  "related": [
+    "narcises"
+  ]
+}

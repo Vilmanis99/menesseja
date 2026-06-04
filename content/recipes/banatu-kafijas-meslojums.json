@@ -1,0 +1,34 @@
+{
+  "name": "Banānu mizu un kafijas biezumu mēslojums",
+  "tagline": "Virtuves atkritumi pārvēršas par kālija un slāpekļa barību saknēm.",
+  "purpose": "meslojums",
+  "difficulty": "viegli",
+  "timeText": "15 min + 3-5 dienas žāvēšana",
+  "intro": [
+    "Banānu mizas un kafijas biezumi katru dienu krājas tavā virtuvē — un tā vietā, lai tos izmestu, vari padarīt par lētu, dabīgu mēslojumu. Mizās ir daudz kālija, kas palīdz augiem ziedēt un nest augļus, savukārt kafijas biezumi pievieno mazliet slāpekļa un uzlabo augsnes struktūru.",
+    "Šis nav burvju līdzeklis, kas aizstās visu mēslošanu, bet kā regulāra piedeva tas baro augsni un samazina atkritumus. Vislabāk noder tomātiem, rozēm, ziedošiem podaugiem un ogulājiem."
+  ],
+  "ingredients": [
+    "3-4 banānu mizas (svaigas vai sažāvētas)",
+    "1-2 glāzes izlietoto kafijas biezumu (atdzesētu)",
+    "Sausa augsne vai komposts, kur iejaukt"
+  ],
+  "steps": [
+    "Izklāj banānu mizas uz papīra vai cepešpannas ar iekšpusi uz augšu un ļauj tām nožūt 3-5 dienas siltā, sausā vietā (vai ceptuves cepeškrāsnī uz 50-60 °C ap stundu).",
+    "Sasmalcini sausās mizas dzirnaviņās, blenderī vai vienkārši saplēs sīkos gabaliņos — jo smalkāk, jo ātrāk augsnē sadalās.",
+    "Izlietotos kafijas biezumus ļauj atdzist un nedaudz apžūt, lai tie nesāktu pelēt.",
+    "Sajauc sasmalcinātās mizas ar kafijas biezumiem vienlīdzīgās daļās.",
+    "Iejauc maisījumu augsnes virskārtā ap auga sakņu zonu vai pievieno kompostam."
+  ],
+  "application": [
+    "Ap vienu vidēju podaugu vai dārza augu iestrādā 1-2 ēdamkarotes maisījuma augsnes virskārtā un viegli iemaisi.",
+    "Reizi 3-4 nedēļās augšanas sezonā (aprīlis-augusts) — biežāk nav vajadzīgs, jo augsne sadalās lēni.",
+    "Nelej kaudzē pie stumbra; izkliedē plānā kārtā un piesedz ar nedaudz augsnes vai mulčas."
+  ],
+  "moonPhase": "dilstošs",
+  "moonElement": "saknes",
+  "moonText": "Pēc biodinamiskās tradīcijas saknes un augsnes barošanu veic dilstošā Mēnesī sakņu dienās, kad uzskata, ka augu spēks virzās uz leju, uz saknēm.",
+  "caution": "Nepārspīlē ar daudzumu — kafijas biezumi ir skābi un mitri, tāpēc liela kaudze var sapelēt, piesaistīt mušas vai pārskābināt augsni. Svaigas, nesažāvētas mizas augsnē sadalās lēni un var piesaistīt kaitēkļus, tāpēc labāk tās vispirms izžāvēt. Šis ir papildmēslojums, ne pilnvērtīga barošana — augiem joprojām vajadzīgs kvalitatīvs komposts vai mēslojums.",
+  "folklore": "Vecmāmiņas teica: ko zeme dod, to zemei atdod — virtuves atlikas pieder dārza dobei, ne miskastei.",
+  "slug": "banatu-kafijas-meslojums"
+}

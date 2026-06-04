@@ -1,0 +1,37 @@
+{
+  "name": "Vērmeļu uzlējums",
+  "tagline": "Rūgts vērmeļu uzlējums, kas atbaida laputis, kāpurus un gliemežus.",
+  "purpose": "kaitekli",
+  "difficulty": "viegli",
+  "timeText": "20 min + 1 diennakts ievilkšanās",
+  "intro": [
+    "Vērmele (Artemisia absinthium) ir viens no rūgtākajiem augiem mūsu dārzos un ceļmalās — un tieši šī rūgtenā, stiprā smarža ir tās spēks. Uzlējums no tās palīdz atbaidīt laputis, kāpostu baltenīšu kāpurus un citus mazos rijējus, kuriem nepatīk apsēsties uz rūgti smaržojošām lapām.",
+    "Svarīgi saprast: vērmeļu uzlējums atbaida, nevis pilnībā iznīcina kaitēkļus. Tas ir maigs, dabīgs palīgs, ko vislabāk lietot regulāri un savlaicīgi — pirms invāzija kļuvusi liela, nevis kad augi jau pilnībā noēsti."
+  ],
+  "ingredients": [
+    "100 g svaigu vērmeļu lapu un stublāju (vai 10 g žāvētu) — vērmele ir spēcīga, tāpēc ņem maz",
+    "10 l ūdens",
+    "Spainis vai katls ar vāku",
+    "Pēc izvēles: 1 ēd.k. smalki saberztu ziepju (zaļo vai trauku) labākai pielipšanai uz lapām",
+    "Sieta vai marles gabals uzlējuma izkāšanai"
+  ],
+  "steps": [
+    "Saplūc vērmeles ziedēšanas sākumā vai pirms tās — tieši tad augā ir visvairāk rūgto vielu. Sagriez vai saplēs lapas un stublājus sīkākos gabalos.",
+    "Ieber sasmalcinātās vērmeles spainī un aplej ar 10 l auksta ūdens, lai augs pilnībā nosegts.",
+    "Apsedz ar vāku un ļauj ievilkties vēsā, ēnainā vietā 1 diennakti (žāvētām vērmelēm pietiek ar dažām stundām karstā ūdenī).",
+    "Pēc ievilkšanās izkāš uzlējumu caur sietu vai marli, lai smidzinātājs neaizsērētu.",
+    "Ja vēlies labāku pielipšanu, iemaisi izkāstajā šķidrumā ēdamkaroti saberztu ziepju un viegli samaisi."
+  ],
+  "application": [
+    "Atšķaidi gatavo uzlējumu ar ūdeni vismaz 1:3 (viena daļa uzlējuma, trīs daļas ūdens) — sāc ar vēl vājāku šķīdumu un skaties, kā augi to panes.",
+    "Smidzini taupīgi lapu virspusi un apakšu, kur slēpjas laputis. NEsmidzini dīgstus, sējas vagas un jaunus dēstus, un izvairies, ka šķidrums notek augsnē ap saknēm.",
+    "Smidzini agri no rīta vai vakarā, ne karstā saulē, lai neapdedzinātu lapas.",
+    "Atkārto ne biežāk kā reizi 7–10 dienās un pēc lietus. Pret gliemežiem labāk kaisi sausu vērmeļu mulču kā barjeru ap dobi — nelej uzlējumu augsnē pie saknēm."
+  ],
+  "moonPhase": "augošs",
+  "moonElement": "lapas",
+  "moonText": "Pēc biodinamiskās tradīcijas smidzināšanu pa lapām veic augošā Mēnesī un lapu dienā, kad sulas tradicionāli plūst uz augšu; galvenais tomēr ir smidzināt savlaicīgi un regulāri, pirms kaitēkļu kļūst daudz.",
+  "caution": "Vērmele (Artemisia) ir alelopātiska — tās rūgtās vielas var kavēt blakus augu dīgšanu un sakņu augšanu, un par stipru vai par biežu lietota var apdedzināt pat tos augus, ko gribi pasargāt. Tāpēc vienmēr stipri atšķaidi, vispirms izmēģini uz dažām lapām, NEsmidzini dīgstus, sējas vagas vai jaunus dēstus un nepieļauj, ka šķidrums notek augsnē pie saknēm. Tā kaitēkļus atbaida, nevis iznīcina — tas ir regulārs palīgs, ne brīnumlīdzeklis.",
+  "folklore": "Senāk vērmeles kāra pie kūts durvīm un lika starp drēbēm, lai atbaidītu kodes un nelabu — rūgtums, kas attīra un aizsargā, tautā vienmēr ticis cienīts.",
+  "slug": "vermelu-uzlejums"
+}

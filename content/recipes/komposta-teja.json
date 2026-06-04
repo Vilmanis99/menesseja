@@ -1,0 +1,37 @@
+{
+  "name": "Komposta tēja",
+  "tagline": "Dzīva, brūna tēja, kas baro augsni un tās sīkos palīgus — vispārējs mēslojums visam dārzam.",
+  "purpose": "meslojums",
+  "difficulty": "viegli",
+  "timeText": "10 min sagatavošana + 1–2 dienas mērcēšana",
+  "intro": [
+    "Komposta tēja ir vienkāršākais veids, kā dabūt gatava komposta labumu šķidrā veidā — tieši pie augu saknēm. Tu nemēslo augu ar mēslojumu, bet pabaro augsni un tās neredzamos iemītniekus: baktērijas, sēnītes un sliekas, kas pārvērš barību augam pieejamā formā.",
+    "Tā nav burvju mikstūra, bet maiga, regulāra uzpošana, kas labi der gandrīz visam — dārzeņiem, puķēm, podaugiem. Galvenais nosacījums: komposts jāņem tikai labi sadalījies, irdens un ar svaigas meža zemes smaržu."
+  ],
+  "ingredients": [
+    "1–2 lāpstas (apm. 2–3 litri) gatava, sadalījušās komposta",
+    "10 litri lietus ūdens vai nostāvējies krāna ūdens (bez hlora)",
+    "Audekla maisiņš, veca spilvendrāna vai zeķubikses (lai komposts neizbirst)",
+    "Spainis vai muca ar vāku (10 l vai lielāka)",
+    "Pēc izvēles: 1 ēdamkarote melnās melases vai biešu sīrupa — pabaro mikroorganismus"
+  ],
+  "steps": [
+    "Ieber kompostu audekla maisiņā un sasien — sanāks tāds liels \"tējas maisiņš\".",
+    "Iegremdē maisiņu spainī ar ūdeni. Ja pievieno sīrupu, izmaisi to ūdenī vispirms.",
+    "Atstāj mērcēties siltā, ēnainā vietā, bet maisi vairākas reizes dienā un turi vāku tikai uzliktu, ne hermētiski — mikroorganismiem vajag skābekli. Ilgāk par 2 dienām nemērcē, citādi tēja sāk smirdēt un kļūst nederīga.",
+    "Pa reizei ar koka mietu pamaisi, lai ūdens piesātinās ar gaisu — mikroorganismiem vajag skābekli.",
+    "Kad tēja ieguvusi gaiši brūnu, vāji uzvilktas tējas krāsu, izņem maisiņu. Saturu izber atpakaļ kompostā vai dobē."
+  ],
+  "application": [
+    "Atšķaidi pirms lietošanas: 1 daļu tējas pret 5–10 daļām ūdens, līdz iznāk gaišs salmu krāsas šķidrums.",
+    "Lej pie saknēm uz mitras augsnes (ne uz sausas) — apm. 0,5–1 l uz augu, lielākiem krūmiem vairāk.",
+    "Lieto ik pa 2–3 nedēļām augšanas sezonā (maijs–augusts). Podaugiem pietiek reizi mēnesī.",
+    "Vislabāk lej no rīta vai vakarā, ne karstā saulē. Pārpalikušo tēju izlej tajā pašā dienā — uzglabāta tā ātri sabojājas."
+  ],
+  "moonPhase": "dilstošs",
+  "moonElement": "saknes",
+  "moonText": "Pēc biodinamiskās tradīcijas sakņu darbus un augsnes barošanu veic dilstošā Mēnesī un sakņu dienās, kad augu spēks vairāk virzās uz leju, uz saknēm.",
+  "caution": "Komposta tēja ir maigs barotājs, nevis brīnumlīdzeklis — tā neizārstē slimas augsni un neaizstāj rūpīgu kompostēšanu. Lieto tikai labi sadalījušos kompostu; svaiga vai puves smaka nozīmē, ka tēja sapuvusi (anaeroba) un to nedrīkst lietot — izlej kompostā. Nelej uz ēdamām lapām un mazgā dārzeņus pirms ēšanas. Nepārcenties: pārāk biežs vai stiprs šķīdums nepalīdz vairāk, bet var pārbarot augus. Ja pievieno melasi vai sīrupu, izlieto tēju 24 stundu laikā — cukurs paātrina pāriešanu anaerobā (smirdošā) stāvoklī.",
+  "folklore": "Vecmāmiņas teica, ka labs komposts smaržo pēc meža zemes — ja maisiņš smaržo tīkami, arī augi būs priecīgi.",
+  "slug": "komposta-teja"
+}

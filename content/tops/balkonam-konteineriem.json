@@ -1,0 +1,74 @@
+{
+  "title": "TOP augi balkonam un podiem",
+  "subtitle": "Ko stādīt konteineros, kastēs un uz palodzes, ja dārza nav",
+  "category": "Balkonam",
+  "intro": [
+    "Tev nav vajadzīgs dārzs, lai audzētu pašu pārtiku. Lieliska raža izaug arī podā uz balkona, puķu kastē pie palodzes vai pāris spaiņos uz terases — galvenais ir pietiekami liels trauks, laba zeme un saule.",
+    "Esi godīgs pats pret sevi par apstākļiem: lielākā daļa garšaugu un salātu grib vismaz 4–6 saules stundas dienā. Ja balkons ir ziemeļu pusē un ēnains, izvēlies salātus, mētru un pētersīļus — tie panes pussēnu. Saulei mīlošos baziliku un tomātus turpretī taupi saulainākajai vietai.",
+    "Atceries divas lietas: podi izžūst daudz ātrāk nekā dobe (vasarā dažkārt jālej katru dienu), un siltummīlošos augus laukā nes tikai pēc salnām — mūsu pusē tas ir maija beigas. Sāc ar pāris vienkāršiem augiem, nevis visu uzreiz."
+  ],
+  "items": [
+    {
+      "rank": 1,
+      "cropId": "rediisi",
+      "name": "Redīsi",
+      "blurb": "Ātrākais balkona dārza prieks — no sēklas līdz redīsam tikai 25–35 dienas. Sēj seklā kastē jau aprīlī un pa nedaudz visu sezonu; bērniem ideāli, jo rezultāts redzams ātri."
+    },
+    {
+      "rank": 2,
+      "cropId": "salati",
+      "name": "Salāti",
+      "blurb": "Aug praktiski jebkurā traukā un panes pussēnu, tāpēc der arī ēnainākam balkonam. Sēj ik pa 2 nedēļām no aprīļa, plūc ārējās lapas un augs ražo visu vasaru."
+    },
+    {
+      "rank": 3,
+      "cropId": "baziliks",
+      "name": "Baziliks",
+      "blurb": "Klasisks palodzes augs, kam patīk silts un saulains stūris — laukā ej tikai pēc salnām, maija beigās. Regulāri knaibi galotnītes, lai krūmiņš kuplo un nepaspēj ziedēt."
+    },
+    {
+      "rank": 4,
+      "cropId": "metra",
+      "name": "Piparmētra",
+      "blurb": "Daudzgadīga, nenogalināma un balkonam ideāla tieši tāpēc, ka podā tā nevar pārņemt dobi. Panes pussēnu un dod svaigas lapas tējai no jūnija līdz septembrim."
+    },
+    {
+      "rank": 5,
+      "cropId": "zemenes",
+      "name": "Zemenes",
+      "blurb": "Lieliski jūtas puķu kastēs un piekaramos podos, kur ogas karājas tīras un sausas. Stādi pavasarī vai augustā saulainā vietā; klasiskajām šķirnēm pilna raža būs tikai nākamgad, bet remontējošās (mūžziedošās) šķirnes dod dažas ogas jau pirmajā vasarā."
+    },
+    {
+      "rank": 6,
+      "cropId": "timians",
+      "name": "Timiāns",
+      "blurb": "Daudzgadīgs, kompakts un sausuma izturīgs — piedod, ja kādu reizi aizmirsti aplaistīt. Grib saulainu vietu un labi izturētu zemi; mazā podā jūtas kā mājās."
+    },
+    {
+      "rank": 7,
+      "cropId": "samtenes",
+      "name": "Samtenes",
+      "blurb": "Krāšņa, neprasīga balkona puķe, kas zied no jūnija līdz pirmajām salnām un atbaida kaitēkļus. Stādi blakus dārzeņu podiem — gan skaisti, gan praktiski."
+    },
+    {
+      "rank": 8,
+      "cropId": "petersili",
+      "name": "Pētersīļi",
+      "blurb": "Panes pussēnu un mierīgi aug arī dziļākā podā uz ēnaināka balkona. Dīgst lēni (līdz 3 nedēļām), tāpēc nepacietīgajiem labāk pirkt jau stādu."
+    },
+    {
+      "rank": 9,
+      "cropId": "dilles",
+      "name": "Dilles",
+      "blurb": "Sēj tieši kastē, jo pārstādīšanu nemīl, un atkārto sēju ik pa pāris nedēļām. Grib sauli; balkonā ērti audzēt svaigam pavasara salātam un mērcēm."
+    },
+    {
+      "rank": 10,
+      "cropId": "kalendula",
+      "name": "Kliņģerītes",
+      "blurb": "Viegli audzējamas no sēklas, zied ilgi un piesaista derīgos kukaiņus pie balkona dārza. Ziedlapiņas vari likt salātos — gan acij, gan šķīvim."
+    }
+  ],
+  "outro": "Sāc ar diviem trim podiem, lej regulāri un nebaidies kļūdīties — pat mazs balkons var pabarot ar svaigiem garšaugiem un salātiem visu vasaru.",
+  "slug": "balkonam-konteineriem"
+}

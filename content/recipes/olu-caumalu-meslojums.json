@@ -1,0 +1,34 @@
+{
+  "name": "Olu čaumalu mēslojums",
+  "tagline": "Kalcija papildinājums no virtuves atkritumiem — palīdz pret tomātu galotņu puvi.",
+  "purpose": "meslojums",
+  "difficulty": "viegli",
+  "timeText": "15 min + čaumalu krāšana visu gadu",
+  "intro": [
+    "Olu čaumalas ir gandrīz tīrs kalcija karbonāts — tas pats minerāls, kura trūkums izraisa tomātu un papriku galotņu (apakšas) puvi. Tā vietā, lai čaumalas mestu kompostā vai miskastē, tu vari tās izžāvēt, sasmalcināt un atdot dārzam.",
+    "Svarīgi saprast: kalcijs no čaumalām atbrīvojas lēni, tāpēc tas vairāk noder kā ilgtermiņa augsnes uzlabotājs, ko iestrādā jau pavasarī, nevis kā ātrs glābiņš jau slimam augam."
+  ],
+  "ingredients": [
+    "10–15 olu čaumalas (jo vairāk, jo labāk — krāj visu gadu)",
+    "Tīrs ūdens skalošanai",
+    "Java un piesta vai kafijas dzirnaviņas / blenderis pulverim",
+    "Pēc izvēles: ūdens uzlējumam (1 litrs)"
+  ],
+  "steps": [
+    "Izskalo čaumalas no olas baltuma paliekām, lai tās nesāktu smirdēt un nepievilinātu kaitēkļus.",
+    "Izžāvē tās pilnībā — uz palodzes, virs plīts vai cepeškrāsnī 10 minūtes pie ~100 °C. Sausas čaumalas sasmalcina daudz labāk.",
+    "Sasmalcini čaumalas pēc iespējas smalkākā pulverī ar javu vai kafijas dzirnaviņām. Jo smalkāks pulveris, jo ātrāk kalcijs nonāk augsnē — rupji gabaliņi var gulēt augsnē gadiem.",
+    "Pulveri uzglabā sausā burkā līdz lietošanai pavasarī vai stādīšanas laikā."
+  ],
+  "application": [
+    "Augsnes iestrādei: iejauc 1–2 ēdamkarotes čaumalu pulvera katrā stādīšanas bedrē tomātiem, paprikām un baklažāniem, kad tos pārstādi siltumnīcā vai dārzā. Pievieno arī sauju komposta — kalcijs labāk uzsūcas no skābākas, dzīvas augsnes.",
+    "Uzlējumam: 2 ēdamkarotes pulvera ielej 1 litrā ūdens, atstāj uz 2–3 dienām, ik pa laikam pakratot, un ar šo ūdeni aplej augus pie saknes reizi 2–3 nedēļās. Tas darbojas vājāk nekā sausā iestrāde, bet ir ērti jau augošiem augiem.",
+    "Atkārto sezonas laikā 1–2 reizes — vairāk nav vajadzīgs."
+  ],
+  "moonPhase": "dilstošs",
+  "moonElement": "saknes",
+  "moonText": "Pēc biodinamiskās tradīcijas augsnes un sakņu darbus — mēslojuma iestrādi un aplaistīšanu pie saknes — labāk darīt dilstošā Mēnesī un sakņu dienā, kad spēks tiek vērsts uz augu apakšdaļu.",
+  "caution": "Olu čaumalas nav brīnumlīdzeklis. Galotņu puve visbiežāk rodas nevis kalcija trūkuma augsnē, bet nevienmērīgas laistīšanas dēļ — augs vienkārši nespēj kalciju uzņemt, kad sausuma un lieces periodi mijas. Tāpēc vispirms parūpējies par regulāru, vienmērīgu laistīšanu un mulčēšanu. Čaumalas arī nedaudz ceļ augsnes pH (mazina skābumu), tāpēc nepievieno tās augiem, kam patīk skāba augsne (mellenes, rododendri, brūklenes).",
+  "folklore": "Senāk latviešu mājās neko nemeta laukā — olu čaumalas izkaltēja uz krāsns un pavasarī iestrādāja dobēs vai bēra vistām atpakaļ, lai olas būtu ar stiprāku čaulu.",
+  "slug": "olu-caumalu-meslojums"
+}

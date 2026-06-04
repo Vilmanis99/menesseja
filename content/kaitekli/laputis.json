@@ -1,0 +1,67 @@
+{
+  "slug": "laputis",
+  "name": "Laputis",
+  "emoji": "🐛",
+  "type": "kaiteklis",
+  "latin": "Aphidoidea",
+  "severity": "vidējs",
+  "tagline": "Sīki sulu sūcoši kukaiņi, kas savairojas zibenīgi un ātri novājina augu, bet ar laiku ņemšanos no tiem var atbrīvoties bez ķīmijas.",
+  "affects": [
+    "Pupas un pupiņas",
+    "Ābeles",
+    "Plūmes un ķirši",
+    "Rozes",
+    "Upenes un jāņogas",
+    "Gurķi",
+    "Paprika un tomāti",
+    "Salāti un kāposti",
+    "Daudzi puķu un dārzeņu stādi"
+  ],
+  "signs": [
+    "Sīki, 1–3 mm gari kukaiņi (zaļi, melni, pelēki vai dzeltenīgi) blīvās kolonijās uz jaunajām lapām, dzinumu galotnēm un ziedpumpuru kātiņiem.",
+    "Lapas čokurojas, sarullējas, kļūst līkas un sāk dzeltēt; jaunie dzinumi aug kropli.",
+    "Lapas un apkārtējās virsmas kļūst lipīgas no medusrasas — salda, spīdīga pārklājuma.",
+    "Uz lipīgās medusrasas vēlāk uzmetas melnas kvēpsēnītes, un lapas izskatās kā ar sodrējiem.",
+    "Ap augu rosās daudz skudru — tās aizsargā laputis un barojas ar medusrasu."
+  ],
+  "intro": [
+    "Laputis ir vienas no biežākajām dārza viešņām, un gandrīz katrs dārznieks ar tām agrāk vai vēlāk sastopas. Tās ir sīki, mīkstmiesas kukaiņi, kas ar smailo snuķīti caurdur lapas un dzinumus un sūc augu sulu. Pa vienai tās gandrīz nemana, taču laputis vairojas neticami ātri — siltā laikā jauna paaudze nāk dažu dienu laikā, tāpēc no pāris kukaiņiem ātri izveidojas blīva kolonija.",
+    "Pati sulas sūkšana augu novājina: lapas čokurojas, dzinumi aug kropli, raža sarūk. Bet bīstamāka par tiešo kaitējumu bieži ir netiešā nelaime — laputis pārnēsā augu vīrusus, un to izdalītā lipīgā medusrasa kļūst par augsni kvēpsēnītēm, kas aizsedz lapas un traucē fotosintēzei. Tieši tāpēc laputis ir vērts pamanīt agri un rīkoties, kamēr kolonija vēl nav milzīga."
+  ],
+  "control": [
+    "Noskalo laputis ar spēcīgu ūdens strūklu no šļūtenes — vienkāršākais un pārsteidzoši efektīvs paņēmiens. Liela daļa nokritušo laputu uz augu vairs neuzrāpjas. Atkārto pēc dažām dienām, jo allaž kāda paliek pāri.",
+    "Mazākiem stādiem un ļaunākajām kolonijām strādā mehāniska vākšana — saberz laputis ar pirkstiem (var cimdā) vai nogriez stipri apsēstos dzinumu galus un iznes no dārza. Tā ir lēna, taču visdrošākā metode mazā platībā.",
+    "Apsmidzini ar maigu ziepjūdeni: dažas tējkarotes šķidru ķernes (saimniecības) vai augu eļļas ziepju — nevis trauku mazgāšanas līdzekli — uz litru ūdens. Ziepes bojā laputu mīksto apvalku. Smidzini vēsā laikā vai vakarā, noteikti arī lapu apakšpusē, un pēc dienas vai divām atkārto. Vispirms pārbaudi uz dažām lapām, vai augs ziepes panes.",
+    "Pievelc laputu dabiskos ienaidniekus — mārītes un to kāpurus, zeltacītes, plēsīgās ziedmušas. Tās noēd laputis lielos daudzumos. Palīdz, ja dārzā aug ziedoši augi (kliņģerītes, salvija, dilles, pelašķi) un netiek izsmidzināta ķīmija, kas iznīcina arī derīgos kukaiņus.",
+    "Atbaidi laputis ar vērmeļu uzlejumu — rūgtā smarža tās attur no augu apdzīvošanas. Tas ir profilaktisks un atbaidošs līdzeklis, nevis triecienierocis pret jau esošu blīvu koloniju, tāpēc smidzini regulāri un iesāc, tiklīdz parādās pirmās laputis.",
+    "Apputini lapas ar smalkiem koku pelniem (vislabāk uz rasas vai pēc vieglas apsmidzināšanas, lai pelni pielīp). Pelni padara lapas laputīm nepatīkamas un attur tās. Tas ir palīglīdzeklis, ko der apvienot ar noskalošanu vai ziepjūdeni.",
+    "Ierobežo skudras, kas laputis sargā un pat pārnēsā uz jauniem augiem. Ja apkaro skudru takas (piemēram, ar lipīgu joslu ap stumbru), dabiskie laputu ienaidnieki var darīt savu darbu netraucēti."
+  ],
+  "recipeSlugs": [
+    "vermelu-uzlejums",
+    "koku-pelnu-skidums"
+  ],
+  "prevention": [
+    "Nepārbaro augus ar slāpekli. Tieši pārmērīgs slāpeklis dod mīkstus, sulīgus dzinumus, ko laputis ļoti iemīļo — tāpēc nātru virca šeit NAV palīgs, bet drīzāk pat veicina laputu savairošanos. Mēslo mēreni un līdzsvaroti.",
+    "Regulāri pārlūko augus, īpaši dzinumu galotnes un lapu apakšpuses. Jo agrāk pamani pirmās laputis, jo vieglāk ar tām tikt galā, kamēr kolonija vēl maza.",
+    "Veido dārzā daudzveidību un atstāj vietu ziedošiem augiem (kliņģerītes, dilles, pelašķi, salvija), kas pievelk mārītes, zeltacītes un ziedmušas — dabiskos laputu ēdājus.",
+    "Ievēro pietiekamu atstatumu starp augiem un nodrošini labu vēdināšanu — blīvi, ēnaini un mitri sabiezinājumi laputīm patīk vislabāk.",
+    "Stādi stiprus, veselīgus stādus pareizā laikā un pieturies pie augu maiņas dārzā — novājināti vai sastresoti augi piesaista kaitēkļus vieglāk nekā spirgti."
+  ],
+  "moonNote": "Tradicionāli kaitēkļu apkarošanu un atbaidošo uzlejumu smidzināšanu veic dilstošā Mēness laikā. Tā ir senču ieraža, nevis garantija — galvenais tomēr ir pamanīt laputis agri un rīkoties, neatkarīgi no Mēness fāzes.",
+  "folklore": "Vecie dārznieki teic: kur dārzā daudz skudru ap kādu krūmu, tur jau gaidāmas laputis — skudras tās gana kā savu lopiņu. Tāpēc rosīgas skudru takas augšup pa stumbru bija vecā zīme aplūkot dzinumu galus tuvāk.",
+  "faq": [
+    {
+      "q": "Vai nātru virca palīdz pret laputīm?",
+      "a": "Nē. Pret laputīm nātru virca nav pretlīdzeklis. Tā ir slāpekļa bagāts mēslojums, un tieši pārmērīgs slāpeklis dod mīkstus, sulīgus dzinumus, kas laputis pievelk — tāpēc nātru virca laputu problēmu var pat saasināt. Atbaidīšanai labāk der vērmeļu uzlejums, bet pašu koloniju visefektīvāk noskalo ar ūdeni vai apstrādā ar maigu ziepjūdeni."
+    },
+    {
+      "q": "Kāpēc ap manu augu ir tik daudz skudru?",
+      "a": "Skudras barojas ar laputu izdalīto saldo medusrasu un par to laputis aizsargā no plēsējiem, pat pārnēsā uz jauniem dzinumiem. Daudz skudru parasti ir droša zīme, ka tuvumā ir laputu kolonija. Ja ierobežo skudru takas, dabiskie laputu ienaidnieki — mārītes un zeltacītes — var darīt savu darbu netraucēti."
+    },
+    {
+      "q": "Kas ir lipīgais pārklājums un melnais aplikums uz lapām?",
+      "a": "Lipīgā, saldā kārtiņa ir medusrasa — laputu izdalījumi. Uz tās vēlāk uzmetas melnās kvēpsēnītes, kas lapas pārklāj ar sodrējiem līdzīgu aplikumu un traucē augam fotosintēzi. Tā nav atsevišķa slimība, bet gan laputu klātbūtnes sekas — tiklīdz tiec galā ar laputīm, problēma pamazām pāriet, un lapas var noskalot ar ūdeni."
+    }
+  ]
+}

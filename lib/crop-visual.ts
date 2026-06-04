@@ -1,0 +1,60 @@
+/**
+ * A concrete little picture (emoji) per crop, so each plant is visually
+ * distinct in the library, planner grid and pickers.
+ */
+export const CROP_EMOJI: Record<string, string> = {
+  // Dārzeņi
+  rediisi: "🌱",
+  salati: "🥬",
+  zirni: "🫛",
+  kartupeli: "🥔",
+  burkani: "🥕",
+  bietes: "🍠",
+  sipoli: "🧅",
+  kiploki: "🧄",
+  tomati: "🍅",
+  gurki: "🥒",
+  kabaci: "🍈",
+  kirbji: "🎃",
+  paprika: "🫑",
+  kaposti: "🥬",
+  brokoli: "🥦",
+  spinati: "🌿",
+  pupas: "🫘",
+  // Garšaugi
+  dilles: "🌿",
+  petersili: "☘️",
+  baziliks: "🪴",
+  metra: "🌱",
+  timians: "🌿",
+  // Ogas un augļi
+  zemenes: "🍓",
+  avenes: "🍇",
+  upenes: "🫐",
+  janogas: "🔴",
+  erkskogas: "🟢",
+  rabarberi: "🌿",
+  // Dārzeņi (papildu)
+  pastinaks: "🥕",
+  kalji: "🟤",
+  raceni: "⚪",
+  selerijas: "🥬",
+  puravi: "🧅",
+  marrutki: "🌿",
+  topinamburs: "🥔",
+  laukapupas: "🫘",
+  // Garšaugi (papildu)
+  koriandrs: "🌿",
+  salvija: "🌿",
+  melisa: "🍃",
+  oregano: "🌿",
+  // Puķes
+  kalendula: "🌼",
+  samtenes: "🌼",
+  saulespukes: "🌻",
+  nelkes: "🌸",
+};
+
+export function cropEmoji(cropId: string): string {
+  return CROP_EMOJI[cropId] ?? "🌱";
+}

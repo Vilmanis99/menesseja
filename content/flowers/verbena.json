@@ -1,0 +1,62 @@
+{
+  "slug": "verbena",
+  "name": "Verbēna",
+  "latin": "Verbena",
+  "emoji": "💜",
+  "type": "viengadiga",
+  "tagline": "Nenogurstoša saulmīle, kas balkona kastes un dobes klāj ar krāsu līdz pat rudens salnām.",
+  "bloom": "Jūnijs–septembris",
+  "height": "20–40 cm",
+  "sun": "Saule",
+  "hardy": false,
+  "difficulty": "viegli",
+  "plantWhen": "Stādus laukā un balkonā pēc pēdējām salnām, maija beigās",
+  "moonPhase": "augošs",
+  "moonElement": "ziedi",
+  "moonText": "Verbēnu kā ziedu augu pēc biodinamiskās tradīcijas sēj un stāda ziedu (gaisa) dienās — kad Mēness ir Dvīņos, Svaros vai Ūdensvīrā — un labāk augošā Mēnesī, kad spēks virzās uz augšu. Tā ir veca dārznieku tradīcija, ne garantija: daudz svarīgāk ir nogaidīt, līdz salnas beigušās, un iestādīt siltā, saulainā vietā.",
+  "intro": [
+    "Verbēna ir pateicīga viengadīga puķe balkona kastēm, podiem un dobju malām. Tā veido zemus, plašus pleķus, kas vasaras gaitā pārklājas ar maziem ziediņiem ciešās ķekaros — sarkanā, rozā, violetā, zilganā un baltā krāsā, bieži ar gaišāku actiņu vidū. Daudzas mūsdienu šķirnes aug noliekušās un labi pārkaras pār poda malu, tāpēc verbēna ir iecienīta arī piekaramajos groziņos un kastēs.",
+    "Latvijā verbēnu audzē kā viengadīgu puķi — mūsu ziemu atklātā laukā tā neiztur un sasalst. Tās lielā priekšrocība ir izturība pret karstumu un sausumu: kad citas balkona puķes vasaras svelmē noplok, verbēna saulītē tikai uzplaukst. Tā zied ilgi un nenogurstoši, gandrīz bez pārtraukuma no jūnija līdz pirmajām rudens salnām, un ir lieliska pirmā puķe iesācējam, kas grib daudz krāsas par mazu piepūli."
+  ],
+  "planting": [
+    "Stādus laukā un balkonā stādi tikai pēc pēdējām salnām — iekšzemē (Vidzemē, Latgalē) drošāk maija beigās, Zemgalē ap 15. maiju, piekrastē var jau ap maija vidu. Verbēna ir siltummīle un aukstumu nepanes.",
+    "Dobē atstāj 20–30 cm atstatumu starp augiem, lai tie izplešas un saaug kuplā paklājā; balkona kastēs un podos pietiek ar 15–20 cm.",
+    "Stādi tikpat dziļi, cik augs auga podiņā, vieglā, labi caurlaidīgā augsnē. Podu un kastu dibenā ieliec drenāžu (keramzītu vai akmentiņus), jo verbēna necieš ūdens sastāvēšanu pie saknēm.",
+    "Izvēlies pašu saulaināko vietu, kāda dārzā ir — jo vairāk saules, jo kuplāka ziedēšana; ēnā verbēna stiepjas un zied vāji.",
+    "Ja audzē no sēklas, sēj jau februārī–martā uz palodzes, jo no sēklas līdz ziedam paiet vairāki mēneši; sēklas dīgst lēni un nevienmērīgi, tāpēc iesācējam vieglāk ir nopirkt gatavus stādus.",
+    "Stādīšanas dienu izvēlies bez karstuma, vēlams vakarpusē, un pēc stādīšanas labi aplej, lai augsne piegulst saknēm."
+  ],
+  "care": [
+    "Laisti mēreni un regulāri — verbēna panes īslaicīgu sausumu labāk nekā pārliešanu. Ļauj augsnes virskārtai apžūt starp laistīšanas reizēm; karstā vasarā balkona kastes var prasīt ūdeni katru dienu, vēsā laikā retāk. Laisti pie saknes, ne pa lapām.",
+    "Mēslo ziedēšanas laikā ik pa 1–2 nedēļām ar mēslojumu ziedošajiem augiem (vairāk kālija un fosfora, mazāk slāpekļa) — citādi būs daudz lapu, bet maz ziedu. Podos un kastēs barības vielas izskalojas ātrāk, tāpēc tur mēslošana ir īpaši svarīga.",
+    "Regulāri noņem nokaltušos ziedu ķekarus — tas pamudina augu ziedēt no jauna un pagarina ziedēšanas laiku. Daudzas mūsdienu šķirnes pašas atjauno ziedus, bet kopšana joprojām palīdz.",
+    "Ja augs vasaras vidū izstiepies vai ziedēšana atslābst, apgriez to par apmēram trešdaļu — pēc tam tas atkal kļūst kuplāks un saražo jaunus ziedus.",
+    "Tur saulainā, vējainā vietā ar labu gaisa kustību; pārāk blīvi un mitri novietoti augi vieglāk slimo ar miltrasu. Atbalsts verbēnai nav vajadzīgs, jo tā aug zema un pārkarena."
+  ],
+  "winter": "Verbēna Latvijā atklātā laukā nepārziemo — to audzē kā viengadīgu puķi. Rudenī pēc pirmajām salnām augs nokalst, un to vienkārši izņem no dobes vai kastes un liek kompostā; nākamsezon stāda no jauna. Atšķirībā no dālijām vai bumbuļbegonijām verbēnai nav gumu vai bumbuļu, ko izrakt un glabāt. Ja gribi saglabāt kādu īpašu šķirni, vasaras beigās var apsakņot dažus spraudeņus un pārziemot jaunos augus uz gaišas, vēsas palodzes (ideāli +10…+15 °C), taču iesācējam vienkāršāk ir pavasarī iegādāties svaigus stādus.",
+  "problems": [
+    "Miltrasa (balta pūkaina aplikums uz lapām) — uzbrūk blīvi novietotiem, vēsā un mitrā stāvošiem augiem; risinājums ir saulaina, vējaina vieta, atstatums starp augiem un laistīšana pie saknes, ne pa lapām.",
+    "Daudz lapu, bet maz ziedu parasti nozīmē pārāk maz saules vai pārāk daudz slāpekļa mēslojuma — pārvieto saulītē un izvēlies mēslojumu ziedošajiem augiem.",
+    "Pārliešana un slikta drenāža izraisa sakņu puvi (lapas kļūst dzeltenas un ļenganas) — laisti retāk un nodrošini ūdens noteci no poda vai kastes."
+  ],
+  "folklore": "Verbēna ir sena dārza un balkona puķe, kas Latvijas lauku dārzos un pilsētu palodzēs iekoptas dobēs sastopama jau paaudzēm — tās zemais, ziedošais paklājs bijis pateicīgs veids, kā piepildīt dobes malas un balkona kastes ar krāsu visu vasaru.",
+  "faq": [
+    {
+      "q": "Vai verbēna pārziemos Latvijā dārzā vai uz balkona?",
+      "a": "Nē. Verbēnu Latvijā audzē kā viengadīgu puķi — tā nav ziemcietīga un mūsu ziemu atklātā laukā nepārcieš. Rudenī augs nokalst un to izņem; nākampavasar stāda no jauna. Gumu vai bumbuļu, ko izrakt un glabāt, tai nav."
+    },
+    {
+      "q": "Kad verbēnu drīkst izstādīt laukā vai balkonā?",
+      "a": "Tikai pēc pēdējām pavasara salnām. Iekšzemē (Vidzemē, Latgalē) drošāk gaidīt līdz maija beigām, Zemgalē ap 15. maiju, piekrastē var jau ap maija vidu. Verbēna ir siltummīle, un pāragri iznests augs no nakts salnas var aiziet bojā."
+    },
+    {
+      "q": "Kāpēc mana verbēna zied vāji?",
+      "a": "Visbiežāk trūkst saules vai ir par daudz slāpekļa mēslojuma. Verbēnai vajag pašu saulaināko vietu dārzā. Pārvieto to saulītē, baro ar mēslojumu ziedošajiem augiem un regulāri noņem nokaltušos ziedus; ja augs izstiepies, apgriez to par trešdaļu."
+    }
+  ],
+  "related": [
+    "petunijas",
+    "pelargonijas",
+    "begonijas"
+  ]
+}

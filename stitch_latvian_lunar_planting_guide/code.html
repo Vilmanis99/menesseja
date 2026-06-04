@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="lv"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mēness Sēja | Reģionālie Mikroklimati</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Literata:wght@400;600;700&amp;family=Hanken+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "secondary-fixed": "#ffdbcf",
+                "tertiary-fixed": "#dde3eb",
+                "on-primary-container": "#99bca3",
+                "inverse-surface": "#dae2fd",
+                "secondary-fixed-dim": "#ffb59c",
+                "background": "#0b1326",
+                "secondary-container": "#7b2e10",
+                "on-tertiary-fixed-variant": "#41474e",
+                "surface-bright": "#31394d",
+                "inverse-primary": "#466551",
+                "primary-fixed": "#c7ebd1",
+                "on-error-container": "#ffdad6",
+                "error": "#ffb4ab",
+                "surface-container-high": "#222a3d",
+                "on-primary-fixed": "#012111",
+                "on-tertiary-fixed": "#161c22",
+                "on-secondary-container": "#ff9b79",
+                "on-surface": "#dae2fd",
+                "on-primary-fixed-variant": "#2e4d3a",
+                "on-surface-variant": "#c2c8c1",
+                "tertiary-container": "#40464d",
+                "surface-container": "#171f33",
+                "primary": "#accfb6",
+                "on-secondary": "#5c1900",
+                "outline": "#8c928c",
+                "on-tertiary": "#2b3137",
+                "on-tertiary-container": "#aeb4bb",
+                "surface-variant": "#2d3449",
+                "surface-container-lowest": "#060e20",
+                "on-background": "#dae2fd",
+                "primary-container": "#2d4c39",
+                "primary-fixed-dim": "#accfb6",
+                "tertiary-fixed-dim": "#c1c7cf",
+                "surface": "#0b1326",
+                "tertiary": "#c1c7cf",
+                "inverse-on-surface": "#283044",
+                "surface-container-highest": "#2d3449",
+                "error-container": "#93000a",
+                "surface-tint": "#accfb6",
+                "surface-container-low": "#131b2e",
+                "outline-variant": "#424843",
+                "on-primary": "#173625",
+                "on-error": "#690005",
+                "on-secondary-fixed-variant": "#7b2e10",
+                "surface-dim": "#0b1326",
+                "secondary": "#ffb59c",
+                "on-secondary-fixed": "#390c00"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+            },
+            "spacing": {
+                "container-max": "1200px",
+                "gutter": "24px",
+                "xs": "4px",
+                "md": "24px",
+                "base": "8px",
+                "sm": "12px",
+                "lg": "48px",
+                "xl": "80px"
+            },
+            "fontFamily": {
+                "body-lg": ["Hanken Grotesk"],
+                "label-sm": ["Hanken Grotesk"],
+                "display-lg": ["Literata"],
+                "headline-lg-mobile": ["Literata"],
+                "body-md": ["Hanken Grotesk"],
+                "label-md": ["Hanken Grotesk"],
+                "headline-md": ["Literata"],
+                "headline-lg": ["Literata"]
+            },
+            "fontSize": {
+                "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "500"}],
+                "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
+                "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .linen-texture {
+            background-image: url("https://www.transparenttextures.com/patterns/pinstripe-dark.png");
+            opacity: 0.05;
+        }
+        .latvia-map-container {
+            mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+        }
+        .region-card-active {
+            border-top: 4px solid #7b2e10;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background selection:bg-primary/30 min-h-screen">
+<!-- Top Navigation Bar -->
+<header class="w-full top-0 bg-surface-container-low/80 backdrop-blur-md shadow-sm shadow-primary/5 z-50">
+<div class="flex justify-between items-center px-gutter py-4 w-full max-w-container-max mx-auto">
+<h1 class="font-display-lg text-display-lg text-primary tracking-tight">Mēness Sēja</h1>
+<div class="flex gap-4">
+<button class="text-primary hover:text-primary-fixed transition-colors active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="partly_sunny">partly_cloudy_day</span>
+</button>
+<button class="text-on-surface-variant hover:text-primary-fixed transition-colors active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+</div>
+</div>
+</header>
+<main class="max-w-container-max mx-auto px-gutter pt-8 pb-32">
+<!-- Hero Section -->
+<section class="mb-12">
+<h2 class="font-headline-lg text-headline-lg mb-4 text-on-surface">Izvēlieties savu reģionu</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                Latvijas mikroklimats ir dažāds. No Kurzemes maigajām brīzēm līdz Latgales kontinentālajām salnām – pielāgojiet savu dārza kalendāru precīziem sējas logiem.
+            </p>
+</section>
+<!-- Main Content Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Map Interaction Area (Bento Left) -->
+<div class="md:col-span-7 lg:col-span-8 bg-surface-container rounded-xl overflow-hidden shadow-lg border border-outline/10 relative group h-[400px] md:h-auto min-h-[500px]">
+<div class="absolute inset-0 linen-texture pointer-events-none"></div>
+<!-- Stylized Latvia Map -->
+<div class="absolute inset-0 flex items-center justify-center p-8">
+<div class="relative w-full h-full max-w-3xl latvia-map-container">
+<img alt="Latvia Map" class="w-full h-full object-cover rounded-xl opacity-40 grayscale hover:grayscale-0 transition-all duration-1000" data-alt="A stylized, top-down satellite view of Latvia's geography, emphasizing the lush green forests and complex river networks. The image is filtered with a deep navy and forest green overlay, creating a mystical, nighttime aesthetic consistent with a lunar gardening application. Soft glowing borders delineate the historical regions of Kurzeme, Vidzeme, Latgale, and Zemgale. The lighting is ethereal, with silver moonlight highlights reflecting off the Baltic coastline and major lakes like Lubāns." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZ3ZuteQEWH-lgDm0vxyFa8yq9pAGNaMDRxWQr76IasakwJ591-HeJi9jSY64QhF3tcAwYq0vNo3JtjmCjCWUnyd3P8D2z4568jBQsOfLFEKEGT4qrT307oQlW1c9YnOWutEAdlQ_GlOTRaSDXUDr01hwz5IhJU-c4eNIOCbpCbTtpDx2V0U41EnU_9V-aoQYS-IJtKthJGX3xsJ6G8aCRKg42HCnUa8iVhXU8o0CUiWSfxNcX7p0t2qk32UfCUAaFPOUkoggdVr5H"/>
+<!-- Region Overlays/Pins -->
+<div class="absolute inset-0 grid grid-cols-2 grid-rows-2 p-12 gap-8">
+<button class="relative flex flex-col items-center justify-center group/pin" onclick="selectRegion('kurzeme')">
+<span class="material-symbols-outlined text-secondary text-4xl drop-shadow-[0_0_10px_rgba(255,181,156,0.5)] animate-bounce" data-icon="location_on">location_on</span>
+<span class="font-label-md text-label-md text-white mt-2 bg-background/60 backdrop-blur-sm px-3 py-1 rounded-full border border-primary/20">Kurzeme</span>
+</button>
+<button class="relative flex flex-col items-center justify-center group/pin" onclick="selectRegion('vidzeme')">
+<span class="material-symbols-outlined text-primary text-4xl drop-shadow-[0_0_10px_rgba(172,207,182,0.5)]" data-icon="location_on">location_on</span>
+<span class="font-label-md text-label-md text-white mt-2 bg-background/60 backdrop-blur-sm px-3 py-1 rounded-full border border-primary/20">Vidzeme</span>
+</button>
+<button class="relative flex flex-col items-center justify-center group/pin" onclick="selectRegion('zemgale')">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="location_on">location_on</span>
+<span class="font-label-md text-label-md text-white mt-2 bg-background/60 backdrop-blur-sm px-3 py-1 rounded-full border border-primary/20">Zemgale</span>
+</button>
+<button class="relative flex flex-col items-center justify-center group/pin" onclick="selectRegion('latgale')">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="location_on">location_on</span>
+<span class="font-label-md text-label-md text-white mt-2 bg-background/60 backdrop-blur-sm px-3 py-1 rounded-full border border-primary/20">Latgale</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Climate Legend -->
+<div class="absolute bottom-6 left-6 right-6 flex flex-wrap gap-4 bg-surface-container-lowest/60 backdrop-blur-md p-4 rounded-xl border border-outline/5">
+<div class="flex items-center gap-2">
+<div class="w-3 h-3 rounded-full bg-secondary"></div>
+<span class="font-label-sm text-label-sm opacity-80">Jūras klimats</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-3 h-3 rounded-full bg-primary"></div>
+<span class="font-label-sm text-label-sm opacity-80">Kontinentāls</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-3 h-3 rounded-full bg-tertiary"></div>
+<span class="font-label-sm text-label-sm opacity-80">Augstienes</span>
+</div>
+</div>
+</div>
+<!-- Region Details Panel (Bento Right) -->
+<div class="md:col-span-5 lg:col-span-4 flex flex-col gap-6" id="details-panel">
+<!-- Placeholder / Initial State -->
+<div class="bg-surface-container-low border border-outline/10 rounded-xl p-8 flex flex-col items-center text-center justify-center h-full" id="region-empty-state">
+<span class="material-symbols-outlined text-primary-fixed/30 text-6xl mb-4" data-icon="map">map</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Izvēlieties novadu</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Spiediet uz kartes vai saraksta, lai apskatītu specifisko klimata profilu.</p>
+</div>
+<!-- Kurzeme Data (Hidden by default) -->
+<div class="hidden flex flex-col gap-6 animate-in fade-in slide-in-from-right duration-500" id="region-kurzeme">
+<div class="bg-surface-container-high border-t-4 border-secondary p-6 rounded-xl shadow-lg relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-5">
+<span class="material-symbols-outlined text-9xl" data-icon="water">water</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-secondary mb-2">Kurzeme</h3>
+<p class="font-label-md text-label-md text-on-secondary-container bg-secondary-container/30 px-2 py-1 rounded inline-block mb-4">Mērens jūras klimats</p>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Maigākās ziemas Latvijā, bet vējains piekrastes klimats prasa vēja aizsegus dārzeņiem.</p>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-surface-container-lowest p-3 rounded-lg border border-outline/5">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Pēdējā salna</span>
+<p class="font-headline-md text-headline-md text-primary mt-1">5. Maijs</p>
+</div>
+<div class="bg-surface-container-lowest p-3 rounded-lg border border-outline/5">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Augšanas dienas</span>
+<p class="font-headline-md text-headline-md text-primary mt-1">195 dienas</p>
+</div>
+</div>
+</div>
+<div class="bg-surface-container p-6 rounded-xl border border-outline/10">
+<h4 class="font-label-md text-label-md text-on-surface mb-4">Galvenie izaicinājumi</h4>
+<ul class="space-y-3">
+<li class="flex gap-3 items-start">
+<span class="material-symbols-outlined text-secondary-fixed text-sm mt-1" data-icon="air">air</span>
+<p class="font-body-md text-body-md text-on-surface-variant">Sāļais jūras gaiss un brāzmaini vēji.</p>
+</li>
+<li class="flex gap-3 items-start">
+<span class="material-symbols-outlined text-secondary-fixed text-sm mt-1" data-icon="rainy">rainy</span>
+<p class="font-body-md text-body-md text-on-surface-variant">Augsts gaisa mitrums veicina miltrasu.</p>
+</li>
+</ul>
+<button class="w-full mt-6 bg-primary text-on-primary font-label-md text-label-md py-3 rounded-full hover:brightness-110 active:scale-95 transition-all">
+                            Izvēlēties Kurzemi
+                        </button>
+</div>
+</div>
+<!-- Vidzeme Data -->
+<div class="hidden flex flex-col gap-6 animate-in fade-in slide-in-from-right duration-500" id="region-vidzeme">
+<div class="bg-surface-container-high border-t-4 border-primary p-6 rounded-xl shadow-lg relative overflow-hidden">
+<h3 class="font-headline-lg text-headline-lg text-primary mb-2">Vidzeme</h3>
+<p class="font-label-md text-label-md text-on-primary-container bg-primary-container/30 px-2 py-1 rounded inline-block mb-4">Augstienes klimats</p>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Izteiktas reljefa svārstības. Ziemeļvidzemē salnas var atgriezties pat jūnija sākumā.</p>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-surface-container-lowest p-3 rounded-lg border border-outline/5">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Pēdējā salna</span>
+<p class="font-headline-md text-headline-md text-primary mt-1">28. Maijs</p>
+</div>
+<div class="bg-surface-container-lowest p-3 rounded-lg border border-outline/5">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Augšanas dienas</span>
+<p class="font-headline-md text-headline-md text-primary mt-1">175 dienas</p>
+</div>
+</div>
+</div>
+<button class="w-full bg-primary text-on-primary font-label-md text-label-md py-3 rounded-full hover:brightness-110 active:scale-95 transition-all">
+                        Izvēlēties Vidzemi
+                    </button>
+</div>
+</div>
+</div>
+<!-- Region List (Mobile Quick Select) -->
+<section class="mt-12">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-6">Visi reģioni</h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+<button class="p-4 bg-surface-container-low hover:bg-surface-container-high border border-outline/10 rounded-xl transition-all flex items-center justify-between group" onclick="selectRegion('kurzeme')">
+<span class="font-label-md text-label-md text-on-surface">Kurzeme</span>
+<span class="material-symbols-outlined text-secondary opacity-0 group-hover:opacity-100 transition-opacity" data-icon="chevron_right">chevron_right</span>
+</button>
+<button class="p-4 bg-surface-container-low hover:bg-surface-container-high border border-outline/10 rounded-xl transition-all flex items-center justify-between group" onclick="selectRegion('vidzeme')">
+<span class="font-label-md text-label-md text-on-surface">Vidzeme</span>
+<span class="material-symbols-outlined text-primary opacity-0 group-hover:opacity-100 transition-opacity" data-icon="chevron_right">chevron_right</span>
+</button>
+<button class="p-4 bg-surface-container-low hover:bg-surface-container-high border border-outline/10 rounded-xl transition-all flex items-center justify-between group" onclick="selectRegion('latgale')">
+<span class="font-label-md text-label-md text-on-surface">Latgale</span>
+<span class="material-symbols-outlined text-primary opacity-0 group-hover:opacity-100 transition-opacity" data-icon="chevron_right">chevron_right</span>
+</button>
+<button class="p-4 bg-surface-container-low hover:bg-surface-container-high border border-outline/10 rounded-xl transition-all flex items-center justify-between group" onclick="selectRegion('zemgale')">
+<span class="font-label-md text-label-md text-on-surface">Zemgale</span>
+<span class="material-symbols-outlined text-primary opacity-0 group-hover:opacity-100 transition-opacity" data-icon="chevron_right">chevron_right</span>
+</button>
+<button class="p-4 bg-surface-container-low hover:bg-surface-container-high border border-outline/10 rounded-xl transition-all flex items-center justify-between group" onclick="selectRegion('pieriga')">
+<span class="font-label-md text-label-md text-on-surface">Pierīga</span>
+<span class="material-symbols-outlined text-primary opacity-0 group-hover:opacity-100 transition-opacity" data-icon="chevron_right">chevron_right</span>
+</button>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-3 bg-surface-container dark:bg-surface-container shadow-[0_-4px_20px_rgba(27,48,34,0.3)] rounded-t-xl">
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 hover:opacity-100 active:scale-90 transition-all duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="eco">eco</span>
+<span class="font-label-sm text-label-sm">Šodien</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 hover:opacity-100 active:scale-90 transition-all duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="calendar_month">calendar_month</span>
+<span class="font-label-sm text-label-sm">Kalendārs</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-full px-5 py-1.5 transition-all active:scale-90 duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="map">map</span>
+<span class="font-label-sm text-label-sm">Reģioni</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 hover:opacity-100 active:scale-90 transition-all duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="database">database</span>
+<span class="font-label-sm text-label-sm">Dārziņš</span>
+</a>
+</nav>
+<script>
+        function selectRegion(regionId) {
+            // Hide all panels
+            const panels = ['region-empty-state', 'region-kurzeme', 'region-vidzeme'];
+            panels.forEach(id => {
+                const el = document.getElementById(id);
+                if (el) el.classList.add('hidden');
+            });
+
+            // Show selected panel
+            const activePanel = document.getElementById('region-' + regionId);
+            if (activePanel) {
+                activePanel.classList.remove('hidden');
+            } else {
+                // For demo purposes, fallback if other regions aren't built
+                document.getElementById('region-empty-state').classList.remove('hidden');
+            }
+
+            // Simple visual feedback for map (could be more complex SVG manipulation)
+            console.log("Selected Region: " + regionId);
+        }
+
+        // Mouse trail effect for mystical feel
+        document.addEventListener('mousemove', (e) => {
+            const glow = document.createElement('div');
+            glow.className = 'fixed pointer-events-none w-2 h-2 rounded-full bg-primary/20 blur-sm z-[9999]';
+            glow.style.left = e.clientX + 'px';
+            glow.style.top = e.clientY + 'px';
+            document.body.appendChild(glow);
+            
+            setTimeout(() => {
+                glow.style.opacity = '0';
+                glow.style.transform = 'scale(2)';
+                setTimeout(() => glow.remove(), 300);
+            }, 50);
+        });
+    </script>
+</body></html>

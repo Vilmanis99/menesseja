@@ -1,0 +1,62 @@
+{
+  "slug": "kolorado-vabole",
+  "name": "Kolorādo vabole",
+  "latin": "Leptinotarsa decemlineata",
+  "emoji": "🪲",
+  "type": "kaiteklis",
+  "tagline": "Dzelteni svītrainās vaboles un sarkanīgie kāpuri spēj dažās dienās noēst kartupeļu lapas līdz kātiem — tāpēc tos vāc ar roku, tiklīdz parādās.",
+  "severity": "nopietns",
+  "affects": [
+    "Kartupeļi",
+    "Tomāti",
+    "Baklažāni",
+    "Pipari (retāk)",
+    "Citi nakteņu dzimtas augi"
+  ],
+  "signs": [
+    "Ovālas, izliektas vaboles ar dzeltenīgi oranžu ķermeni un 10 melnām gareniskām svītrām uz spārniem.",
+    "Resni, kupli, sarkanīgi oranži kāpuri ar melnu galviņu un divām melnu punktiņu rindām sānos — tieši tie nodara vislielāko postu.",
+    "Spilgti oranžu, iegarenu olu kopas, salipušas blīvās rindās lapas APAKŠPUSĒ.",
+    "Apgrauztas, izrobotas lapas; smagā gadījumā no lapas paliek tikai dzīslas un kāti.",
+    "Uz lapām un zemes melni, mitri kāpuru izkārnījumi — pazīme, ka barošanās notiek tepat virs galvas."
+  ],
+  "intro": [
+    "Kolorādo vabole ir, iespējams, pazīstamākais kartupeļu lauka kaitēklis Latvijā. Gan pieaugušās svītrainās vaboles, gan to sarkanīgie kāpuri barojas ar nakteņu dzimtas augu lapām — visbiežāk kartupeļiem, bet arī tomātiem un baklažāniem. Lielākais posts ir tieši no kāpuriem: tie barojas nepārtraukti un, ja to ir daudz, spēj augu noēst gandrīz pilnībā, kas tieši samazina ražu.",
+    "Vaboles pārziemo augsnē un pavasarī, sasilstot, iznāk meklēt jaunos kartupeļu dīgstus. Tās dēj spilgti oranžas olu kopas lapas apakšā, un no tām izšķiļas jaunie kāpuri. Sezonā var attīstīties vairākas paaudzes, tāpēc galvenais ir nepalaist garām pirmās vaboles un olas — savlaicīga, regulāra vākšana ar roku ir vienkāršākais un patiesi efektīvākais dabīgais risinājums."
+  ],
+  "control": [
+    "Vāc ar roku — tā ir efektīvākā dabīgā metode. Regulāri (ideāli katru dienu vai pāris reizes nedēļā) pārbaudi augus un ievāc visas vaboles un kāpurus spainī ar ziepjūdeni vai sālsūdeni; pēc tam tos iznīcini. Tieši rūpīga vākšana, nevis kāda recepte, izšķir, vai ražu paspēsi pasargāt.",
+    "Apgriez un saspaid oranžās olu kopas lapas apakšā. Olu iznīcināšana ir visiedarbīgākā — viena ievākta olu kopa ir desmitiem nākamo kāpuru, kas augu neapēdīs.",
+    "Pārbaudi laukus jau agri pavasarī, tiklīdz dīgst pirmie kartupeļi, un iznīcini pirmās pārziemojušās vaboles, pirms tās paspēj sadēt olas. Agra reaģēšana ietaupa daudz vēlāka darba.",
+    "Apsmidzini augus ar vērmeļu uzlējumu — tā rūgtā smarža vaboles atbaida un padara lapas mazāk pievilcīgas. Atceries: tas atbaida, nevis iznīcina, tāpēc lieto to kā papildinājumu vākšanai, ne tās vietā.",
+    "Tievā kārtā pārkaisi kartupeļu lapas ar sausiem koku pelniem (vislabāk pa rasu, lai pieliptu) — daudzi dārznieki novērojuši, ka pelni vaboles attur. Pēc lietus kaisīšanu atkārto.",
+    "Sēj kartupeļu tuvumā vaboles atbaidošus augus — kliņģenes, neļķes, kā arī sīpolus un ķiplokus dobes malās. Tas nedod simtprocentīgu aizsardzību, bet samazina spiedienu kopā ar pārējām metodēm.",
+    "Pievilini dabīgos palīgus — mārītes, plēsīgās blaktis un mājas vistas, ja tādas ir, labprāt knābā kāpurus. Daudzveidīgs, neizsmidzināts dārzs pats palīdz turēt kaitēkli savās robežās."
+  ],
+  "recipeSlugs": [
+    "vermelu-uzlejums"
+  ],
+  "prevention": [
+    "Ievēro augu maiņu: nestādi kartupeļus (un citas nakteņus) tajā pašā vietā katru gadu. Pārvieto kartupeļu dobi pēc iespējas tālāk no pagājušā gada vietas, jo vaboles pārziemo augsnē tieši tur.",
+    "Rudenī rūpīgi novāc kartupeļu lakstus un nezāles — tā samazini vietas, kur vaboles var paslēpties un pārziemot.",
+    "Rok augsni rudenī un agri pavasarī: aparot vai pārrokot dobi, daļa pārziemojošo vaboļu nonāk virspusē un aiziet bojā vai kļūst par putnu lomu.",
+    "Stādi spēcīgus, veselīgus dēstus labi mēslotā augsnē — spēcīgs augs vieglāk pārcieš daļēju apgraušanu nekā novājināts.",
+    "Sezonas sākumā un pēc tam regulāri apskati augu apakšpuses, lai pamanītu pirmās olu kopas, pirms invāzija kļuvusi liela."
+  ],
+  "moonNote": "Pēc tradīcijas kaitēkļu apkarošanu un nezāļu ravēšanu veic dilstošā Mēnesī, kad spēks tradicionāli virzās uz leju. Tā ir jauka tradīcija, taču ar Kolorādo vaboli negaidi uz \"pareizo\" Mēness laiku — vāc to, tiklīdz pamani, jo kāpuri nodara postu ļoti ātri.",
+  "folklore": "Vecie ļaudis kartupeļu vaboles tradicionāli lasīja ar roku bļodiņā vai spainītī un teica, ka katra rīta apgaita pa kartupeļu vagām ir lētākā un drošākā \"zāle\" pret šo rijēju — kas darbojas vēl šodien.",
+  "faq": [
+    {
+      "q": "Vai ar vērmeļu uzlējumu vai pelniem pietiek, lai tiktu galā ar Kolorādo vaboli?",
+      "a": "Nē, ar tiem vien parasti nepietiek. Vērmeļu uzlējums un pelni vaboles ATBAIDA un samazina to skaitu, bet neiznīcina jau esošos kāpurus. Visefektīvākā dabīgā metode ir regulāra vākšana ar roku — uzlējums un pelni ir tikai papildinājums tai."
+    },
+    {
+      "q": "Kur jāmeklē olas un kāpuri?",
+      "a": "Apskati lapu APAKŠPUSI — tur vaboles dēj spilgti oranžas, blīvi salipušas olu kopas, un tur sākotnēji barojas arī jaunie kāpuri. Olu kopu iznīcināšana ir vissvarīgākā, jo viena kopa ir desmitiem nākamo kāpuru."
+    },
+    {
+      "q": "Kā pasargāt kartupeļus jau nākamgad?",
+      "a": "Galvenais ir augu maiņa — stādi kartupeļus citā vietā, tālāk no pagājušā gada dobes, jo vaboles pārziemo augsnē. Papildus rudenī novāc lakstus, pārrok augsni un agri pavasarī iznīcini pirmās pārziemojušās vaboles, pirms tās sadēj olas."
+    }
+  ]
+}

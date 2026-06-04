@@ -1,0 +1,60 @@
+{
+  "slug": "pelargonijas",
+  "name": "Pelargonijas (ģerānijas)",
+  "latin": "Pelargonium",
+  "emoji": "🌸",
+  "type": "daudzgadiga",
+  "tagline": "Klasiskā balkona puķe, kas zied visu vasaru un viegli pārziemo telpā uz palodzes.",
+  "bloom": "Jūnijs–septembris",
+  "height": "25–50 cm",
+  "sun": "Saule",
+  "hardy": false,
+  "difficulty": "viegli",
+  "plantWhen": "Stādus laukā un balkonā pēc pēdējām salnām, maija beigās",
+  "moonPhase": "augošs",
+  "moonElement": "ziedi",
+  "moonText": "Pelargonijas kā ziedu augu tradicionāli stāda un pārstāda ziedu (gaisa) dienās — kad Mēness ir Dvīņos, Svaros vai Ūdensvīrā — un labāk augošā Mēnesī, kad spēks virzās uz augšu. Tā ir veca dārznieku tradīcija, nevis garantija: daudz svarīgāk ir nogaidīt, līdz salnu vairs nav, un iestādīt siltā, sausā augsnē.",
+  "intro": [
+    "Pelargonijas, ko Latvijā ierasti sauc par ģerānijām, ir, iespējams, visizplatītākā balkona un palodzes puķe. Tās zied nenogurstoši no jūnija līdz pat pirmajām rudens salnām, prasa maz un piedod gandrīz visas iesācēja kļūdas — tāpēc tā ir lieliska pirmā puķe podos un balkona kastēs. Krāsu klāsts ir plašs: no ugunīgi sarkanas un rozā līdz baltai, lillā un dažādiem toņu pārejām.",
+    "Svarīgi atcerēties vienu lietu: pelargonija NAV ziemcietīga. Tā ir daudzgadīgs augs, bet mūsu ziemu atklātā laukā neiztur un sasalst. Toties tās lielā priekšrocība ir tā, ka rudenī augu var vienkārši ienest istabā un pārziemot uz gaišas palodzes — un nākampavasar tā jau ir liels, brangs stāds, kas zied agrāk nekā svaigi nopirkti dēsti."
+  ],
+  "planting": [
+    "Stādus laukā un balkonā stādi tikai pēc pēdējām salnām — iekšzemē (Vidzemē, Latgalē) drošāk maija beigās, piekrastē un Zemgalē var jau ap maija vidu. Pirms tam tos var turēt uz palodzes vai siltumnīcā.",
+    "Balkona kastēs un podos atstāj 20–25 cm atstatumu starp augiem; vienā 25–30 cm podā pietiek ar vienu stādu, kas ātri aizpilda telpu.",
+    "Stādi nedaudz dziļāk, nekā augs auga podiņā, līdz pirmajām lapām, labi vieglā, ūdenscaurlaidīgā augsnē ar drenāžu (akmentiņi vai keramzīts poda dibenā).",
+    "Vislabāk aug saulainā vietā — jo vairāk saules, jo kuplāka ziedēšana. Stādīšanas dienu izvēlies bez lietus un karstuma, vēlams vakarpusē, un pēc stādīšanas labi aplej.",
+    "Ja audzē no sēklām, sēj jau februārī–martā uz palodzes, jo no sēklas līdz ziedam paiet 4–5 mēneši; vieglāk un ātrāk ir pavairot no spraudeņiem vai nopirkt gatavus stādus."
+  ],
+  "care": [
+    "Laisti mēreni — pelargonija labāk panes nelielu sausumu nekā pārliešanu. Ļauj augsnes virskārtai apžūt starp laistīšanas reizēm; karstā vasarā balkona kastes var prasīt ūdeni katru dienu, vēsā laikā retāk.",
+    "Mēslo ziedēšanas laikā ik pa 1–2 nedēļām ar mēslojumu ziedošajiem augiem (vairāk kālija un fosfora, mazāk slāpekļa) — citādi būs daudz lapu, bet maz ziedu.",
+    "Regulāri noņem nokaltušos ziedu kātus un dzeltējušās lapas — tas pamudina augu ziedēt no jauna un neļauj iemesties puvei.",
+    "Vasaras vidū, ja augs izstiepies, vari to apgriezt — tas kļūs kuplāks un atkal saražos jaunus ziedus.",
+    "Tur saulainā, vējainā vietā; pārāk blīvi un mitri novietoti augi vieglāk slimo. Augstajām šķirnēm vējainā balkonā noder neliels atbalsts."
+  ],
+  "winter": "Pelargonija Latvijā atklātā laukā nepārziemo — to izglābj, ienesot telpā. Pirms pirmajām rudens salnām (iekšzemē jau septembra beigās, piekrastē oktobra vidū) augu ievāc podā un noliec uz gaišas, vēsas palodzes (ideāli +5…+12 °C). Pirms ienešanas apgriez to par apmēram trešdaļu līdz pusei un noņem dzeltējušās lapas. Ziemā laisti ļoti taupīgi — tikai tik, lai zeme pilnībā neizžūst, un nemēslo. Pavasarī, ap martu, atjauno laistīšanu, vēlāk apgriez un pārstādi svaigā augsnē; laukā atkal iznes tikai pēc maija salnām.",
+  "problems": [
+    "Pārliešana un slikta drenāža izraisa sakņu un stublāju puvi (lapas kļūst dzeltenas un ļenganas) — laisti retāk un nodrošini ūdens noteci no poda.",
+    "Daudz lapu, bet maz ziedu parasti nozīmē pārāk maz saules vai pārāk daudz slāpekļa mēslojuma — pārvieto saulītē un izvēlies mēslojumu ziedošajiem augiem.",
+    "Telpā ziemā un siltumnīcā uzbrūk balti spārnotie kukaiņi (baltblusiņas) un laputis — regulāri apskati lapu apakšpusi un laikus apkaro."
+  ],
+  "folklore": "Latviešu mājās logu palodze ar sarkanu ģerāniju bijusi tik pierasts skats, ka tā kļuvusi gandrīz par mājas sajūtas zīmi — vasarā tā krāsoja balkonu un palodzi, bet ziemā augs gaidīja siltajā istabā, līdz atkal pienāca pavasaris.",
+  "faq": [
+    {
+      "q": "Vai pelargonija pārziemos Latvijā uz balkona vai dārzā?",
+      "a": "Nē. Pelargonija nav ziemcietīga un atklātā laukā vai aukstā balkonā mūsu ziemu nepārcieš. Lai to saglabātu, rudenī pirms salnām augs jāienes telpā un jāpārziemo uz gaišas, vēsas palodzes."
+    },
+    {
+      "q": "Kad pelargoniju drīkst iznest laukā vai izstādīt balkonā?",
+      "a": "Tikai pēc pēdējām pavasara salnām. Iekšzemē (Vidzemē, Latgalē) drošāk gaidīt līdz maija beigām, Zemgalē ap 15. maiju, piekrastē var jau maija vidū. Pārāk agri iznests augs no nakts salnas var aiziet bojā."
+    },
+    {
+      "q": "Kāpēc mana pelargonija aug lapās, bet maz zied?",
+      "a": "Visbiežāk trūkst saules vai ir par daudz slāpekļa mēslojuma. Pārvieto augu saulainākā vietā un baro ar mēslojumu ziedošajiem augiem (ar vairāk kālija un fosfora), kā arī regulāri noņem nokaltušos ziedus."
+    }
+  ],
+  "related": [
+    "petunijas",
+    "begonijas"
+  ]
+}

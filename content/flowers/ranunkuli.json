@@ -1,0 +1,62 @@
+{
+  "slug": "ranunkuli",
+  "name": "Ranunkuli (Āzijas gundegas)",
+  "latin": "Ranunculus asiaticus",
+  "emoji": "🌼",
+  "type": "sipolpuke",
+  "tagline": "Daudzkārtu ziedi kā no rozes un peonijas vienlaikus — tikai gumi rudenī jāizrok un jāglabā.",
+  "bloom": "Jūnijs–jūlijs",
+  "height": "25–45 cm",
+  "sun": "Saule / pussēna",
+  "hardy": false,
+  "difficulty": "vidēji",
+  "plantWhen": "Gumus stāda pavasarī pēc salnām, maija beigās (vai priekšaudzē podos no aprīļa)",
+  "moonPhase": "augošs",
+  "moonElement": "ziedi",
+  "moonText": "Ranunkulus kā ziedu augu pēc biodinamiskās tradīcijas kopj ziedu (gaisa) dienās — kad Mēness ir Dvīņos, Svaros vai Ūdensvīrā — un priekšaudzēšanu un stādīšanu mēdz plānot augošā Mēnesī, kad spēks virzās uz augšu. Tā ir veca dārznieku tradīcija, ne garantija: daudz svarīgāk ir nogaidīt salnu beigas un iestādīt vēsā, mitrā, bet ne pārmitrā augsnē.",
+  "intro": [
+    "Ranunkuli jeb Āzijas gundegas ir vienas no greznākajām vasaras puķēm — to blīvie, daudzkārtu ziedi atgādina gan miniatūras rozes, gan peonijas, un nāk košās krāsās: dzeltenā, oranžā, sarkanā, rozā, baltā un dažādos pasteļtoņos. Tās ir iemīļotas ne tikai dobēs, bet arī kā griežami ziedi vāzei, jo plūktā stāvoklī tās stāv ilgi un labi.",
+    "Svarīgākais, kas jāzina iesācējam: ranunkuli Latvijā NAV ziemcietīgi. To gumus mūsu ziema atklātā laukā nepārcieš un tie sasalst, tāpēc rudenī tos izrok un glabā vēsā, bezsala telpā līdz nākamajam pavasarim — līdzīgi kā dālijas vai bumbuļbegonijas. Otra īpatnība: sausie gumi ir cieti un izskatās gandrīz beigti, tāpēc pirms stādīšanas tos mērcē ūdenī, lai tie uzbriest un ātrāk atmostas."
+  ],
+  "planting": [
+    "Pirms stādīšanas izžuvušos gumus mērcē remdenā ūdenī aptuveni 3–4 stundas (ne ilgāk par dažām stundām, lai tie nesapūtu) — tie uzbriest un kļūst apaļāki; ilgāku mērcēšanu var aizstāt ar mitrā substrātā ietīšanu.",
+    "Gumus stāda ar 'kājiņām' (sazarotajiem izaugumiem) uz LEJU un apaļo daļu uz augšu, 4–5 cm dziļumā, 10–15 cm atstatumā cits no cita.",
+    "Laukā stādi tikai pēc pēdējām salnām, maija beigās; lai ziedi būtu agrāk, gumus var priekšaudzēt podos vēsā, gaišā telpā jau no aprīļa un izstādīt ar visu zemes kamolu pēc salnām.",
+    "Izvēlies saulainu vai vieglu pussēnas vietu ar irdenu, labi caurlaidīgu augsni — ranunkuli mīl mitrumu, bet sapūst stāvošā ūdenī, tāpēc smagā augsnē vērts pievienot smiltis un kompostu.",
+    "Pēc stādīšanas viegli aplaisti; ja gaidāma vēla nakts salna, jaunos asnus piesedz ar agroplēvi vai lupatu, jo tie ir jutīgi."
+  ],
+  "care": [
+    "Laisti regulāri un vienmērīgi, lai augsne būtu mitra, bet ne izmirkusi — ranunkuli labi aug vēsākā, mitrā pavasarī, bet karstā vasaras vidū ziedēšana dabiski rimst.",
+    "Mēslo ik pa 1–2 nedēļām ar mēslojumu ziedošajiem augiem (vairāk kālija un fosfora, mazāk slāpekļa), jo pārāk daudz slāpekļa dod lapas, bet vāji ziedus.",
+    "Regulāri noņem nokaltušos ziedus ar visu kātu — tas pamudina augu raisīt jaunus pumpurus un pagarina ziedēšanu.",
+    "Garākajām, smagajām ziedu kātu šķirnēm noder neliels atbalsts vai stādīšana ciešākā grupā, lai ziedi pēc lietus nenoliektos zemē.",
+    "Augstā karstumā nodrošini ēnu pusdienlaikā un papildu mitrumu — vēsums pagarina ziedēšanu; karstumā augs aiziet miera periodā un lapas dabiski nodzeltē.",
+    "Lapas nogriež tikai tad, kad tās pēc ziedēšanas dabiski nodzeltē — tieši tad gums uzkrāj spēku uzglabāšanai."
+  ],
+  "winter": "Ranunkuli Latvijā atklātā laukā nepārziemo — to gumi sasalst. Rudenī, kad lapas nodzeltējušas (vai pirms pirmajām salnām — iekšzemē jau septembra beigās, piekrastē oktobra vidū), gumus uzmanīgi izrok ar dakšiņu, notīra no zemes un ļauj dažas dienas nožūt vēsā, vēdināmā vietā. Pēc tam noņem nokaltušās lapas un saknes un glabā gumus vēsā, sausā, bezsala telpā (ideāli +5…+10 °C) papīra maisiņā vai kastē ar sausām skaidām, smiltīm vai kūdru, kur tie 'guļ' līdz pavasarim. Reizēm pārbaudi — sapuvušos vai sapelējušos izmet. Pavasarī pirms stādīšanas gumus atkal mērcē ūdenī, lai tie uzbriest, un izstādi tikai pēc maija salnām.",
+  "problems": [
+    "Gumu un sakņu puve — gandrīz vienmēr pārliešanas vai smagas, mitras augsnes dēļ; arī pārāk ilga mērcēšana pirms stādīšanas var likt gumiem sapūt. Risinājums: caurlaidīga augsne, mērena laistīšana un mērcēšana tikai dažas stundas.",
+    "Karstumā ziedēšana strauji rimst un augs aiziet miera periodā — tas ir dabiski; vēsa, mitra vieta un ēna pusdienlaikā pagarina ziedēšanu.",
+    "Laputis un miltrasa mitrā, blīvā stādījumā — apskati lapu apakšpusi, nodrošini gaisa kustību starp augiem un laikus apkaro."
+  ],
+  "folklore": "Ranunkuli Latvijas dārzos ir samērā jauna, dekoratīva puķe, ko vairāk pazīst kā greznu griežamo ziedu līgavu pušķos un vāzēs; to košie, daudzkārtu ziedi mūsu vecajos lauku dārzos sastopami reti, jo gumus katru gadu nācies izrakt un glabāt, taču pēdējos gados tie kļuvuši iecienīti tieši savas peoniju un rožu līdzības dēļ.",
+  "faq": [
+    {
+      "q": "Vai ranunkulu gumi rudenī obligāti jāizrok?",
+      "a": "Jā. Ranunkuli nav ziemcietīgi un atklātā laukā Latvijas ziemu nepārcieš — gumi sasalst. Rudenī, kad lapas nodzeltē vai pirms salnām, gumus izrok, nožāvē un glabā vēsā, sausā, bezsala telpā līdz pavasarim, līdzīgi kā dālijas vai bumbuļbegonijas."
+    },
+    {
+      "q": "Kāpēc gumi pirms stādīšanas jāmērcē?",
+      "a": "Sausie ranunkulu gumi ir cieti, sažuvuši un izskatās gandrīz beigti. Mērcējot remdenā ūdenī aptuveni 3–4 stundas, tie uzbriest, atgūst apaļumu un ātrāk sāk dīgt. Svarīgi nepārmērcēt — pārāk ilga mērcēšana liek tiem sapūt, tāpēc dažas stundas pietiek, un pēc tam uzreiz jāstāda."
+    },
+    {
+      "q": "Kad ranunkulus drīkst stādīt laukā?",
+      "a": "Gumus laukā stāda tikai pēc pēdējām pavasara salnām — iekšzemē (Vidzemē, Latgalē) drošāk maija beigās, Zemgalē ap 15. maiju, piekrastē var jau maija vidū. Lai ziedi būtu agrāk, gumus var priekšaudzēt podos vēsā telpā no aprīļa un izstādīt ar zemes kamolu pēc salnām."
+    }
+  ],
+  "related": [
+    "begonijas",
+    "narcises",
+    "tulpes"
+  ]
+}

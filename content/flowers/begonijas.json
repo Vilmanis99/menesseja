@@ -1,0 +1,61 @@
+{
+  "slug": "begonijas",
+  "name": "Begonijas",
+  "latin": "Begonia",
+  "emoji": "🌺",
+  "type": "viengadiga",
+  "tagline": "Ēnaino dobju un balkonu krāšņākā puķe, kas zied no vasaras sākuma līdz pat salnām.",
+  "bloom": "Jūnijs–septembris",
+  "height": "20–40 cm",
+  "sun": "Pussēna",
+  "hardy": false,
+  "difficulty": "vidēji",
+  "plantWhen": "Bumbuļus dīdzina mājās marts–aprīlis, laukā stāda pēc salnām maija beigās.",
+  "moonPhase": "augošs",
+  "moonElement": "ziedi",
+  "moonText": "Pēc biodinamikas tradīcijas (Marija Tūna) puķes sēj un kopj ziedu jeb gaisa dienās — kad Mēness Dvīņos, Svaros vai Ūdensvīrā —, un virszemes daļas labāk stāda augošā Mēnesī. Tomēr atceries: tā ir tradīcija, ne garantija, un siltums, augsne un laikapstākļi begonijai ir daudz svarīgāki par Mēness dienu.",
+  "intro": [
+    "Begonijas ir viena no retajām puķēm, kas patiesi mīl ēnu un pussēnu — tieši tur, kur lielākā daļa vasaras puķu kļūst gareni un izstīdz, begonija zied bagātīgi un nepārtraukti. Tāpēc tā ir ideāla izvēle ēnainām dobēm zem kokiem, ziemeļu pusē pie mājas sienas un balkona kastēm, kur saule nedaudz pīpina vien no rīta vai vakarā. Latvijā visbiežāk audzē bumbuļbegonijas (Begonia × tuberhybrida) ar lielajiem, rožu vai neļķu līdzīgajiem ziediem, kā arī sīkziedu pastāvīgi ziedošās begonijas (Begonia semperflorens) dobju malām un paklājiem.",
+    "Svarīgākais, kas jāzina iesācējam: begonija Latvijā NEPĀRZIEMO atklātā laukā. Tā ir izteikti siltummīļa puķe un iet bojā jau pie pirmās vieglās salnas. Bumbuļbegonijas bumbuļus rudenī izrok un glabā vēsā, bezsala telpā līdz nākamajam pavasarim — tad tos vēlreiz var izmantot. Pastāvīgi ziedošās begonijas parasti audzē kā viengadīgas puķes un pavasarī pērk no jauna, lai gan to var arī ievietot podā un pārziemot mājās uz palodzes."
+  ],
+  "planting": [
+    "Bumbuļus dīdzini jau marta beigās–aprīlī: ieliec tos podiņos ar mitru augsni ar ieliekto (cauruma) pusi uz augšu, viegli apber un turi siltā, gaišā vietā +18…+20 °C.",
+    "Laukā vai balkona kastē stādus pārvieto tikai pēc pēdējās salnas — Latvijā tās ir maija beigas (Zemgalē ap 15. maiju, Vidzemē un Latgalē līdz pat maija beigām). Pirms tam stādus pāris dienas norūdi svaigā gaisā.",
+    "Stādu atstatums dobē 20–25 cm, sīkziedu pastāvīgi ziedošajām begonijām pietiek ar 15–20 cm. Stādīšanas dziļumu saglabā tādu pašu, kāds bija podā — bumbuli neapber pārāk dziļi.",
+    "Izvēlies pussēnu vai izkliedētu ēnu un irdenu, humusbagātu, mitrumu turošu, bet labi drenētu augsni. Smagā, mitrā augsnē bumbuļi viegli pūst.",
+    "Balkona kastēs un podos noteikti gādā par drenāžas caurumiem un kārtīgu kvalitatīvu puķu substrātu — begonija podos jūtas lieliski."
+  ],
+  "care": [
+    "Laisti regulāri, lai augsne ir vienmērīgi mitra, bet ne slapja. Lej pie saknes, ne uz lapām un ziediem — uz mitrām lapām viegli parādās pelēkā puve.",
+    "No jūnija līdz augustam ik pa 2 nedēļām pamēslo ar puķu mēslojumu, kurā ir vairāk kālija un fosfora nekā slāpekļa — tas dod bagātīgu ziedēšanu, nevis tikai lapas.",
+    "Lielo ziedu bumbuļbegonijām karstā laikā var noderēt neliels atbalsta mietiņš, jo smagie ziedi un trauslie kāti viegli lūst.",
+    "Regulāri izlauz nokaltušos ziedus un bojātās lapas — tas pagarina ziedēšanu un mazina puves risku.",
+    "Karstās, sausās dienās begonija labprāt aug vēsākā, vējainā vietā; pārāk saulainā vietā lapas apdeg un kļūst brūnas malās.",
+    "Podu un balkona begonijas vasarā žūst ātrāk — karstā laikā tās var nākties laistīt katru dienu."
+  ],
+  "winter": "Begonija Latvijā atklātā laukā nepārziemo. Bumbuļbegonijas izrok rudenī, pirms pirmajām salnām (iekšzemē septembra beigās, piekrastē ap oktobra vidu) vai tūlīt pēc tam, kad pirmā viegla salna nokaltējusi virszemes daļu. Stublājus nogriez, bumbuļus ļauj dažas dienas apžūt, notīri zemi un glabā kastē ar sausu kūdru vai smiltīm vēsā, bezsala telpā +5…+10 °C (piemēram, pagrabā). Pavasarī tos no jauna dīdzina. Pastāvīgi ziedošās begonijas parasti audzē kā viengadīgas un nākampavasar pērk no jauna, vai arī ieved podā istabā uz gaišas palodzes.",
+  "problems": [
+    "Pelēkā puve (Botrytis) — uz lapām un ziediem parādās pelēks, pūkains aplikums mitrā, vēsā laikā. Laisti pie saknes, neturi augus pārāk blīvi un noņem bojātās daļas.",
+    "Bumbuļu puve — pārāk slapjā, smagā augsnē vai pārlaistot bumbulis sapūst. Gādā par drenāžu un nepārlej.",
+    "Salna un aukstums — begonija iet bojā jau pie vieglas salnas. Nesteidzies ar stādīšanu laukā pirms maija beigām un rudenī laikus izroc bumbuļus."
+  ],
+  "folklore": "Latvijā begonija ilgi bijusi tradicionāla \"vecmāmiņas palodzes\" un balkona puķe — to nodeva no rokas rokā, dāvinot kaimiņienei kādu bumbuli vai spraudeni. Tā kļuva par pilsētu balkonu un lauku māju lieveņu pazīmi, kur vasarā plīvoja sarkani un rozā ziedi pat tur, kur saule reti spīdēja.",
+  "faq": [
+    {
+      "q": "Vai begonijas bumbuļus var atstāt zemē pārziemot?",
+      "a": "Nē. Latvijā begonija atklātā laukā nepārziemo — to nogalina jau pirmā viegla salna. Bumbuļi rudenī jāizrok un jāglabā vēsā, bezsala telpā +5…+10 °C, un pavasarī tos var stādīt no jauna."
+    },
+    {
+      "q": "Kad begoniju drīkst stādīt laukā?",
+      "a": "Tikai pēc pēdējās pavasara salnas — Latvijā tās ir maija beigas (Zemgalē ap 15. maiju, Vidzemē un Latgalē vēlāk). Pirms tam bumbuļus dīdzina mājās jau no marta beigām."
+    },
+    {
+      "q": "Kāpēc begonijas lapas kļūst brūnas vai apdeg?",
+      "a": "Visbiežāk tāpēc, ka aug pārāk saulainā vai sausā vietā. Begonija ir ēnu un pussēnu puķe — pārvieto to vēsākā, izkliedētas gaismas vietā un laisti regulāri, lej pie saknes, ne uz lapām."
+    }
+  ],
+  "related": [
+    "pelargonijas",
+    "petunijas"
+  ]
+}

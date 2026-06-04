@@ -1,0 +1,61 @@
+{
+  "slug": "balkona-pukes",
+  "name": "Balkona puķes",
+  "latin": "",
+  "emoji": "🪴",
+  "type": "viengadiga",
+  "tagline": "Krāšņs balkons visu vasaru — ja izvēlies pareizās puķes un iznes tās laukā tikai pēc salnām.",
+  "bloom": "Jūnijs–septembris",
+  "height": "15–50 cm",
+  "sun": "Saule / pussēna",
+  "hardy": false,
+  "difficulty": "viegli",
+  "plantWhen": "Stādus laukā un balkonā izliek tikai pēc pēdējām salnām, maija beigās",
+  "moonPhase": "augošs",
+  "moonElement": "ziedi",
+  "moonText": "Balkona puķes kā ziedu augus tradicionāli stāda un kopj ziedu (gaisa) dienās — kad Mēness ir Dvīņos, Svaros vai Ūdensvīrā — un labāk augošā Mēnesī, kad spēks virzās uz augšu. Šī ir veca dārznieku tradīcija, ne garantija: daudz svarīgāk ir nogaidīt, līdz salnu vairs nav, un iestādīt augus siltā augsnē un labos laikapstākļos.",
+  "intro": [
+    "Balkona puķes ir vasaras viegluma sajūta pavisam mazā telpā — dažas labas kastes vai podi, un balkons visu sezonu zied. Latvijā vispateicīgākās un visizplatītākās ir pelargonijas (ģerānijas), petūnijas un to kuplākās māsīcas surfīnijas, begonijas un lobēlijas. Visas tās zied nenogurstoši no jūnija līdz pat pirmajām rudens salnām, prasa maz un piedod iesācēja kļūdas — tāpēc tā ir lieliska vieta, kur sākt dārzošanu, ja īsta dārza vēl nav.",
+    "Šis ir ceļvedis, nevis stāsts par vienu augu: te ir kopīgie principi, kā balkona puķes izvēlēties, salikt podos un kopt visu vasaru. Galvenais, kas jāatceras: gandrīz visas šīs puķes ir siltummīlītes un Latvijā NAV ziemcietīgas. Tās nedrīkst izlikt laukā par agru — siltummīļus stāda tikai pēc pēdējās pavasara salnas, iekšzemē drošāk maija beigās. Pārsteidzīga izlikšana aukstā maija naktī var visu sezonu sabojāt."
+  ],
+  "planting": [
+    "Izvēlies puķes pēc balkona pulksteņa: saulainā, dienvidu pusē labi jūtas pelargonijas, petūnijas un surfīnijas; ēnainā, ziemeļu pusē — begonijas un lobēlijas, kas panes pussēnu. Saplāno, ko stādīt augšā (vertikāli) un ko nokarenās malās (surfīnijas, lobēlijas).",
+    "Stādus laukā un balkona kastēs izliec tikai pēc pēdējām salnām — iekšzemē (Vidzemē, Latgalē) drošāk maija beigās, Zemgalē ap 15. maiju, piekrastē var jau ap maija vidu. Līdz tam tur tos uz palodzes vai siltumnīcā.",
+    "Lieto labu podu zemi (universālu puķu substrātu) ar drenāžu — poda dibenā ieber keramzītu vai akmentiņus un pārliecinies, ka podam ir caurums ūdens notecei; stāvošs ūdens ir balkona puķu galvenais slepkava.",
+    "Atstatumu stādi blīvāk nekā dobē: 15–25 cm starp augiem atkarībā no šķirnes; balkona kastē izskatās bagātīgāk, ja augi aizpilda telpu. Pēc stādīšanas augus labi aplej; pelargonijas nestādi par dziļu, jo mitrā zemē iemiedzies stublājs viegli sapūst.",
+    "Stādīšanas dienu izvēlies bez karstuma un lietus, vēlams vakarpusē, lai stādi pa nakti apmierinās. Dažas pirmās aukstās naktis, ja prognozē salnu, augus uz nakti var apsegt vai ienest pajumtē."
+  ],
+  "care": [
+    "Laisti regulāri, bet ar mēru: balkona podi un kastes karstā vasarā bieži prasa ūdeni katru dienu, vēsā laikā retāk. Laisti pie saknes, no rīta vai vakarā; ļauj virskārtai starp reizēm nedaudz apžūt, jo pastāvīgi slapja zeme izraisa puvi.",
+    "Mēslo ziedēšanas laikā ik pa 1–2 nedēļām ar mēslojumu ziedošajiem augiem (vairāk kālija un fosfora, mazāk slāpekļa). Podu zeme ātri izsīkst, tāpēc bez papildmēslojuma augi sāk skopoties ar ziediem un dzeltēt.",
+    "Regulāri noņem nokaltušos ziedus un dzeltējušās lapas — tas pamudina augu ziedēt no jauna un neļauj iemesties puvei. Īpaši petūnijām un pelargonijām tas dod kuplāku, ilgāku ziedēšanu.",
+    "Ja augs vasaras vidū izstiepjas un kļūst kails, drosmīgi apgriez to par trešdaļu — pēc pāris nedēļām tas atkal būs kupls un ziedos no jauna.",
+    "Vējainā, augstā balkonā nostiprini kastes un augstākajiem augiem pieliec nelielu atbalstu; nokarenajām surfīnijām un lobēlijām atbalsts nav vajadzīgs."
+  ],
+  "winter": "Lielākā daļa balkona puķu Latvijā atklātā laukā nepārziemo — pelargonijas, petūnijas, surfīnijas, begonijas un lobēlijas ir siltummīlītes, kas sasalst. Vienkāršākais ceļš ir tās uzskatīt par vienas sezonas augiem un rudenī izmest, bet dažas var saglabāt. Pelargonijas pirms pirmajām rudens salnām (iekšzemē jau septembra beigās, piekrastē oktobra vidū) ievāc podā, apgriež par trešdaļu un pārziemo uz gaišas, vēsas palodzes (+5…+12 °C), ziemā laistot ļoti taupīgi un nemēslojot. Bumbuļbegonijām rudenī, kad laksti nokaltuši, gumus (bumbuļus) izrok, apžāvē un glabā vēsā, bezsala (apmēram +5…+10 °C), sausā telpā kūdrā vai smiltīs līdz pavasarim. Petūnijas, surfīnijas un lobēlijas parasti nesaglabā — tās katru pavasari stāda no jauna.",
+  "problems": [
+    "Pārliešana un slikta drenāža izraisa sakņu un stublāju puvi — lapas kļūst dzeltenas un ļenganas. Laisti retāk, pārliecinies, ka podam ir notekas caurums, un nekad neturi podā stāvošu ūdeni.",
+    "Daudz lapu, bet maz ziedu parasti nozīmē par maz saules vai par daudz slāpekļa mēslojuma. Pārvieto augus saulītē un baro ar mēslojumu ziedošajiem augiem, regulāri noņemot nokaltušos ziedus.",
+    "Karstā, sausā balkonā uzbrūk laputis un tīklērces; lapu apakšpusi laiku pa laikam apskati un laikus apkaro, pirms kaitēkļi savairojas."
+  ],
+  "folklore": "Latviešu mājās logu palodze un balkons ar sarkanu ģerāniju bijis tik pierasts skats, ka tas gandrīz kļuvis par mājas sajūtas zīmi — vasarā krāšņoja balkonu, bet rudenī ģerānijas ienesa istabā un pārziemoja uz palodzes līdz nākamai sezonai.",
+  "faq": [
+    {
+      "q": "Kuras balkona puķes ir vieglākās iesācējam?",
+      "a": "Pelargonijas (ģerānijas) un begonijas ir pateicīgākās — tās piedod gan aizmāršīgu laistīšanu, gan mazāk ideālu vietu. Petūnijas un surfīnijas zied vēl kuplāk, bet prasa biežāku laistīšanu un mēslošanu, jo ātri izsīkst podu zeme."
+    },
+    {
+      "q": "Kad balkona puķes drīkst izlikt laukā?",
+      "a": "Tikai pēc pēdējām pavasara salnām. Iekšzemē (Vidzemē, Latgalē) drošāk gaidīt līdz maija beigām, Zemgalē ap 15. maiju, piekrastē var jau maija vidū. Par agri izlikts augs no nakts salnas var aiziet bojā vai visu sezonu vairs neatkopties."
+    },
+    {
+      "q": "Kāpēc manas balkona puķes pārstāj ziedēt jūlija vidū?",
+      "a": "Visbiežāk pietrūkst barības un netiek noņemti nokaltušie ziedi. Podu zeme ir maza un ātri izsīkst, tāpēc mēslo ik pa 1–2 nedēļām ar mēslojumu ziedošajiem augiem un regulāri izknibini nokaltušos ziedus; ja augs izstiepies, apgriez to par trešdaļu."
+    }
+  ],
+  "related": [
+    "pelargonijas",
+    "petunijas",
+    "begonijas"
+  ]
+}

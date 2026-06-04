@@ -1,0 +1,36 @@
+{
+  "name": "Kumelīšu uzlējums",
+  "tagline": "Maigs pretsēnīšu uzlējums sēklu un dēstu stiprināšanai",
+  "purpose": "slimibas",
+  "difficulty": "viegli",
+  "timeText": "15 min + 8-12 h ievilkšanās",
+  "intro": [
+    "Kumelīte ir viens no maigākajiem dārza palīgiem. Tās uzlējums neko nelauž ar varu — tas tikai uzmundrina jaunās sēklas un dēstus un palīdz noturēt savaldībā mazos sēnīšu draudus, kas mēdz uzbrukt vārīgiem stādiņiem.",
+    "Šo izmanto divējādi: sēklas pirms sējas iemērc atšķaidītā uzlējumā, bet jaunos lapu dēstus ar to viegli apsmidzina. Tas ir profilakses, nevis ārstniecības līdzeklis — vislabāk darbojas tad, kad augi vēl ir veseli."
+  ],
+  "ingredients": [
+    "2 ēdamkarotes sausu kumelīšu ziedu (vai sauja svaigu)",
+    "1 litrs verdoša ūdens",
+    "marle vai sietiņš procēšanai",
+    "tīra pudele vai burka uzglabāšanai"
+  ],
+  "steps": [
+    "Ieber kumelīšu ziedus tīrā traukā vai termosā.",
+    "Aplej ar 1 litru tikko uzvārīta ūdens — neturpini vārīt, lai nepazūd vērtīgās vielas.",
+    "Apsedz un ļauj ievilkties 8-12 stundas (ērti atstāt uz nakti), līdz šķidrums atdziest un kļūst gaiši dzeltens.",
+    "Izkāš caur marli vai sietiņu, lai paliek tīrs uzlējums bez ziedu daļiņām.",
+    "Atdzesē līdz istabas temperatūrai pirms lietošanas."
+  ],
+  "application": [
+    "Sēklu mērcēšanai: lieto neatšķaidītu uzlējumu, iemērc sēklas uz 4-8 stundām tieši pirms sējas, tad nosusini un sēj.",
+    "Dēstu apsmidzināšanai: atšķaidi 1:1 ar ūdeni un viegli apsmidzini lapas no rīta vai pievakarē, ne saulē.",
+    "Atkārto smidzināšanu reizi 7-10 dienās, ja gribi profilaktiski atbalstīt vārīgos dēstus.",
+    "Svaigu uzlējumu izlieto 1-2 dienu laikā — ledusskapī tas uzglabājas līdz 3 dienām, pēc tam pagatavo jaunu."
+  ],
+  "moonPhase": "augošs",
+  "moonElement": "lapas",
+  "moonText": "Pēc biodinamiskās tradīcijas lapu apsmidzināšanu veic augošā Mēnesī un lapu dienā, kad uzskata, ka augi vislabāk uzņem mitrumu un spēku augšdaļā.",
+  "caution": "Kumelīte ir maiga un nav brīnumlīdzeklis — tā palīdz profilaktiski, bet jau iesākušos sēnīšu slimību (piemēram, melno kājiņu vai miltrasu) tā neizārstēs. Tādā gadījumā vajadzīga labāka ventilācija, retāka laistīšana un, ja nepieciešams, spēcīgāks līdzeklis. Vienmēr vispirms izmēģini uz dažām lapām un pārliecinies, ka dēsti to panes.",
+  "folklore": "Senāk Latvijā kumelītes vāca Jāņos un sauca par \"dārza dakteri\" — to lika gan tējā cilvēkam, gan klāt vārgajiem stādiņiem.",
+  "slug": "kumelisu-uzlejums"
+}

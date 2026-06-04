@@ -1,0 +1,68 @@
+{
+  "title": "TOP augi ēnainai vietai: ko stādīt, kur saule netiek",
+  "subtitle": "Lapu dārzeņi un garšaugi, kas iztiek ar dažām saules stundām dienā",
+  "category": "Apstākļiem",
+  "intro": [
+    "Vai tavs dārzs vai balkons lielāko dienas daļu ir ēnā? Tā nav nekāda katastrofa — tikai citas iespējas. Augļaugi un siltummīļi (tomāti, paprika, gurķi) ēnā tiešām neaugs, bet daudzi lapu dārzeņi un garšaugi jūtas lieliski arī ar 3-4 saules stundām dienā.",
+    "Esi godīgs pret sevi: pussēna nozīmē rītasaule vai pēcpusdienas saule, vai izkliedēta gaisma cauri koku zariem. Pilnīgā ēnā (zem bieza koka, pie ziemeļu sienas, kur saule netiek nemaz) neaugs gandrīz nekas — pat ēnmīļi grib gaismu. Ņem vērā arī, ka ēnā augi aug lēnāk un raža būs mazāka nekā saulē.",
+    "Labā ziņa: ēnā lapu salāti un spināti karstā vasarā NEiziet tik ātri ziedos, tāpēc tev ir ilgāka raža. Zemāk — augi, ar kuriem ēnainā stūrī tiešām vērts sākt."
+  ],
+  "items": [
+    {
+      "rank": 1,
+      "cropId": "salati",
+      "name": "Salāti",
+      "blurb": "Pati labākā izvēle ēnai — lapu salātiem pietiek ar pāris saules stundām, un pussēnā tie karstā vasarā neiziet tik ātri ziedos kā saulē. Sēj tieši laukā vai podā ik pa 2 nedēļām no aprīļa līdz augustam, un raža būs visu sezonu."
+    },
+    {
+      "rank": 2,
+      "cropId": "spinati",
+      "name": "Spināti",
+      "blurb": "Vieni no retajiem, kam pussēna patīk labāk nekā pilna saule — karstumā tie ātri iziet ziedos, tāpēc vēsāka, ēnaināka vieta dod garāku ražu. Sēj agri pavasarī (aprīlī) un atkal augustā rudens ražai."
+    },
+    {
+      "rank": 3,
+      "cropId": "petersili",
+      "name": "Pētersīļi",
+      "blurb": "Panes daļēju ēnu un dod lapas visu sezonu — der gan dobē, gan podā uz ēnaina balkona. Sēj tieši laukā no aprīļa līdz jūnijam un esi pacietīgs: sēklas dīgst lēni, līdz pat 3 nedēļām, tāpēc neuztraucies, ja sākumā nekas nav redzams."
+    },
+    {
+      "rank": 4,
+      "cropId": "metra",
+      "name": "Piparmētra",
+      "blurb": "Panes pussēnu labi, lai gan viskuplākā aug saulē — ēnainā stūrī tā aug mazliet lēnāk, toties ražo visu sezonu. Obligāti audzē podā, citādi tā pārņem visu dobi. Daudzgadīga: iestādi vienreiz un plūc lapas tējai no jūnija līdz septembrim gadu no gada."
+    },
+    {
+      "rank": 5,
+      "cropId": "melisa",
+      "name": "Melisa",
+      "blurb": "Citronkrāsas garšaugs, kas labi panes pussēnu un ir daudzgadīgs — viena reize iestādīts krūms atgriežas katru pavasari. Tāpat kā piparmētra mēdz izplesties, tāpēc ierobežo to vai turi podā; ideāls iesācēja garšaugs nomierinošai tējai."
+    },
+    {
+      "rank": 6,
+      "cropId": "rediisi",
+      "name": "Redīsi",
+      "blurb": "Ātri un viegli arī pussēnā — gatavi jau 25-35 dienās, tāpēc lielisks veids ātri ieraudzīt rezultātu ēnainā stūrī. Sēj pa nedaudz visu sezonu no aprīļa; ēnā tie aug mazliet lēnāk, toties karstumā retāk kļūst sūri un cieti."
+    },
+    {
+      "rank": 7,
+      "cropId": "upenes",
+      "name": "Upenes",
+      "blurb": "Izturīgs ogu krūms, kas mierīgi panes pussēnu un lieliski der Latvijas klimatam — viena no drošākajām ogām iesācējam. Iestādi pavasarī vai rudenī ēnaināka dārza malā, un pēc pāris gadiem būs raža jūlijā bez liekas rūpes."
+    },
+    {
+      "rank": 8,
+      "cropId": "avenes",
+      "name": "Avenes",
+      "blurb": "Panes daļēju ēnu, lai gan saulē oga ir saldāka — ēnaināka vieta dod nedaudz mazāku, bet joprojām labu ražu jūlijā līdz septembrim. Vajag atbalstu un vietu izplesties; daudzgadīgas, tāpēc viena stādīšana atmaksājas ilgi."
+    },
+    {
+      "rank": 9,
+      "cropId": "dilles",
+      "name": "Dilles",
+      "blurb": "Sauli tās mīl vairāk, bet pussēnā arī aug — vienkārši lēnāk un mazāk kuplas. Sēj tieši laukā vai podā atkārtoti no aprīļa, jo pārstādīšanu dilles nemīl; svaigam zaļumam pietiek arī ar daļēju gaismu."
+    }
+  ],
+  "outro": "Ēnains dārzs nav šķērslis — tikai cita izvēlne: lapu salāti, spināti un garšaugi tev dos svaigu ražu arī tur, kur saule paskatās tikai uz pāris stundām. Sāc ar diviem trim no šī saraksta un redzēsi, ka pat ēnainā stūrī ir vērts rakt.",
+  "slug": "enai"
+}

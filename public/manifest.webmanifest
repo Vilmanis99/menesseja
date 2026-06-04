@@ -1,0 +1,21 @@
+{
+  "name": "Mēness Sēja",
+  "short_name": "Mēness Sēja",
+  "description": "Latviešu Mēness sējas kalendārs — sēj saskaņā ar Mēnesi, laikapstākļiem un senču gudrību.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0b1326",
+  "theme_color": "#0b1326",
+  "lang": "lv",
+  "categories": ["lifestyle", "education", "utilities"],
+  "icons": [
+    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "/icon-maskable.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Mans dārzs", "url": "/", "description": "Šodienas Mēness fāze un padomi" },
+    { "name": "Mēness kalendārs", "url": "/kalendars", "description": "Sējas dienas pēc Mēness" },
+    { "name": "Pievienot augu", "url": "/?pievienot=tomati", "description": "Pievieno augu savā dārzā" },
+    { "name": "Augu diagnostika", "url": "/diagnoze", "description": "Nofotografē augu, saņem padomu" }
+  ]
+}

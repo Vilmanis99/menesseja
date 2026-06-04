@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="lv"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Tautas Gudrību un Receptūru Krātuve - Mēness Sēja</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary": "#ffb59c",
+                        "on-primary-fixed": "#012111",
+                        "surface-container-low": "#131b2e",
+                        "outline": "#8c928c",
+                        "on-tertiary": "#2b3137",
+                        "tertiary-container": "#40464d",
+                        "surface-variant": "#2d3449",
+                        "surface-container-lowest": "#060e20",
+                        "tertiary": "#c1c7cf",
+                        "on-surface-variant": "#c2c8c1",
+                        "surface-bright": "#31394d",
+                        "surface-container-high": "#222a3d",
+                        "secondary-fixed": "#ffdbcf",
+                        "surface-container": "#171f33",
+                        "on-tertiary-fixed-variant": "#41474e",
+                        "primary-container": "#2d4c39",
+                        "surface-tint": "#accfb6",
+                        "background": "#0b1326",
+                        "on-background": "#dae2fd",
+                        "outline-variant": "#424843",
+                        "primary": "#accfb6",
+                        "surface": "#0b1326",
+                        "on-error": "#690005",
+                        "error-container": "#93000a",
+                        "inverse-surface": "#dae2fd",
+                        "primary-fixed": "#c7ebd1",
+                        "on-surface": "#dae2fd",
+                        "surface-dim": "#0b1326",
+                        "on-tertiary-container": "#aeb4bb",
+                        "on-secondary-fixed": "#390c00",
+                        "on-secondary": "#5c1900",
+                        "inverse-on-surface": "#283044",
+                        "on-secondary-container": "#ff9b79",
+                        "tertiary-fixed": "#dde3eb",
+                        "on-primary-container": "#99bca3",
+                        "on-primary": "#173625",
+                        "secondary-container": "#7b2e10",
+                        "tertiary-fixed-dim": "#c1c7cf",
+                        "on-primary-fixed-variant": "#2e4d3a",
+                        "error": "#ffb4ab",
+                        "on-tertiary-fixed": "#161c22",
+                        "secondary-fixed-dim": "#ffb59c",
+                        "inverse-primary": "#466551",
+                        "surface-container-highest": "#2d3449",
+                        "primary-fixed-dim": "#accfb6",
+                        "on-secondary-fixed-variant": "#7b2e10",
+                        "on-error-container": "#ffdad6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "sm": "12px",
+                        "container-max": "1200px",
+                        "xs": "4px",
+                        "xl": "80px",
+                        "gutter": "24px",
+                        "md": "24px",
+                        "base": "8px",
+                        "lg": "48px"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Hanken Grotesk"],
+                        "display-lg": ["Literata"],
+                        "headline-lg": ["Literata"],
+                        "body-md": ["Hanken Grotesk"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "label-sm": ["Hanken Grotesk"],
+                        "headline-md": ["Literata"],
+                        "headline-lg-mobile": ["Literata"]
+                    },
+                    "fontSize": {
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "500" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&amp;family=Literata:opsz,wght@7..72,600;7..72,700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        body {
+            background-image: radial-gradient(circle at 50% 0%, #131b2e 0%, #0b1326 70%);
+            background-attachment: fixed;
+        }
+        .texture-overlay {
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col font-body-md relative">
+<div class="fixed inset-0 texture-overlay z-[-1]"></div>
+<!-- TopAppBar (Mobile & Web Context) -->
+<header class="bg-surface-container-low/80 backdrop-blur-md shadow-sm shadow-sm flex justify-between items-center px-gutter py-base w-full sticky top-0 z-50">
+<div class="flex items-center gap-base">
+<h1 class="font-headline-md text-headline-md text-primary tracking-tight">Mēness Sēja</h1>
+</div>
+<div class="flex items-center gap-base">
+<button aria-label="partly_sunny" class="p-2 text-primary hover:text-primary transition-colors hover:scale-95 duration-150 rounded-full">
+<span class="material-symbols-outlined">early_on</span>
+</button>
+<button aria-label="brightness_4" class="p-2 text-primary hover:text-primary transition-colors hover:scale-95 duration-150 rounded-full">
+<span class="material-symbols-outlined">brightness_4</span>
+</button>
+<button aria-label="sync" class="p-2 text-primary hover:text-primary transition-colors hover:scale-95 duration-150 rounded-full">
+<span class="material-symbols-outlined">sync</span>
+</button>
+<img alt="User profile gardener avatar" class="w-8 h-8 rounded-full border border-outline-variant/30 ml-2" data-alt="A small, circular avatar portrait of a calm individual with earthy, natural tones, fitting a modern folklore gardening theme, set against a dark navy background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-l8vh4MkovaX1OpUKH8BPKnxPEKtA7I537LczkQlH2wjUm2tc4mP5bbSiBZVFmomY9Ra9GWdyBVpLDP5eSYEikvpenoblAQicDPrvr0JCDZ34Nd372RfaUnmWqfNhjyStKD5wsQV2IfG2B6Dh2dxnKfqRCagK5YjC4lXUzvQZgOpKqWtA6cnDfM_bYuuyUa5V3kSC2FLTVlRQGRM9egdLEWAo9s7k3a8cZH1PIkylzHlp-NFovKloZBtHlzx4ig4mhIx1bxDsAmkf"/>
+</div>
+</header>
+<div class="flex flex-1 max-w-container-max mx-auto w-full">
+<!-- SideNavBar (Desktop) -->
+<nav class="bg-surface-container-lowest border-r border-outline-variant/10 shadow-lg shadow-primary/5 hidden md:flex flex-col h-full sticky left-0 top-0 py-md docked left-0 h-full w-64 z-40" style="top: 64px; height: calc(100vh - 64px);">
+<div class="px-md mb-lg">
+<p class="font-headline-md text-headline-md text-secondary">Mēness Sēja</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Modern Folklore Gardening</p>
+</div>
+<button class="mx-md mb-lg bg-primary-container text-on-primary-container font-label-md text-label-md py-3 px-4 rounded-lg flex items-center justify-center gap-2 hover:bg-primary-container/80 transition-colors">
+<span class="material-symbols-outlined">add</span> Quick Plant
+            </button>
+<div class="flex-1 overflow-y-auto px-xs">
+<ul class="space-y-1">
+<li><a class="flex items-center gap-base text-on-tertiary-container hover:bg-surface-variant rounded-lg p-3 mx-2 hover:bg-surface-variant/50 transition-all duration-200 font-label-md text-label-md" href="#"><span class="material-symbols-outlined">potted_plant</span> Garden</a></li>
+<li><a class="flex items-center gap-base text-on-tertiary-container hover:bg-surface-variant rounded-lg p-3 mx-2 hover:bg-surface-variant/50 transition-all duration-200 font-label-md text-label-md" href="#"><span class="material-symbols-outlined">calendar_month</span> Calendar</a></li>
+<li><a class="flex items-center gap-base text-on-tertiary-container hover:bg-surface-variant rounded-lg p-3 mx-2 hover:bg-surface-variant/50 transition-all duration-200 font-label-md text-label-md" href="#"><span class="material-symbols-outlined">deceased</span> Seed Bank</a></li>
+<li><a class="flex items-center gap-base bg-primary-container text-on-primary-container rounded-lg p-3 mx-2 hover:bg-surface-variant/50 transition-all duration-200 font-label-md text-label-md" href="#"><span class="material-symbols-outlined">bug_report</span> Pest Guide</a></li>
+<li><a class="flex items-center gap-base text-on-tertiary-container hover:bg-surface-variant rounded-lg p-3 mx-2 hover:bg-surface-variant/50 transition-all duration-200 font-label-md text-label-md" href="#"><span class="material-symbols-outlined">monitoring</span> Statistics</a></li>
+<li><a class="flex items-center gap-base text-on-tertiary-container hover:bg-surface-variant rounded-lg p-3 mx-2 hover:bg-surface-variant/50 transition-all duration-200 font-label-md text-label-md" href="#"><span class="material-symbols-outlined">groups</span> Community</a></li>
+<li><a class="flex items-center gap-base text-on-tertiary-container hover:bg-surface-variant rounded-lg p-3 mx-2 hover:bg-surface-variant/50 transition-all duration-200 font-label-md text-label-md" href="#"><span class="material-symbols-outlined">psychology</span> Phenology</a></li>
+<li><a class="flex items-center gap-base text-on-tertiary-container hover:bg-surface-variant rounded-lg p-3 mx-2 hover:bg-surface-variant/50 transition-all duration-200 font-label-md text-label-md" href="#"><span class="material-symbols-outlined">temp_preferences_custom</span> AI Planner</a></li>
+</ul>
+</div>
+<div class="mt-auto px-xs border-t border-outline-variant/10 pt-4 pb-md">
+<ul class="space-y-1">
+<li><a class="flex items-center gap-base text-on-tertiary-container hover:bg-surface-variant rounded-lg p-3 mx-2 hover:bg-surface-variant/50 transition-all duration-200 font-label-md text-label-md" href="#"><span class="material-symbols-outlined">settings</span> Settings</a></li>
+<li><a class="flex items-center gap-base text-on-tertiary-container hover:bg-surface-variant rounded-lg p-3 mx-2 hover:bg-surface-variant/50 transition-all duration-200 font-label-md text-label-md" href="#"><span class="material-symbols-outlined">help</span> Support</a></li>
+</ul>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="flex-1 w-full px-4 md:px-gutter py-lg pb-xl">
+<!-- Hero Section -->
+<div class="mb-lg">
+<h2 class="font-display-lg text-display-lg text-inverse-surface mb-2">Tautas Gudrību un Receptūru Krātuve</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">Senču zināšanas par dabīgo mēslojumu un kaitēkļu atbaidīšanu, kas saskaņotas ar Mēness fāzēm mūsdienīgā dārzā.</p>
+</div>
+<!-- Search and Filter -->
+<div class="flex flex-col md:flex-row gap-4 mb-xl">
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant">search</span>
+<input class="w-full bg-surface-container-high border-b border-outline-variant text-on-surface font-body-md py-3 pl-12 pr-4 focus:outline-none focus:border-primary focus:ring-0 transition-colors placeholder:text-on-surface-variant/50 rounded-t-DEFAULT" placeholder="Meklēt receptes, augus, kaitēkļus..." type="text"/>
+</div>
+<div class="flex gap-2 overflow-x-auto pb-2 md:pb-0 scrollbar-hide">
+<button class="whitespace-nowrap px-4 py-2 bg-primary-container text-on-primary-container rounded-full font-label-md text-label-md border border-primary/20">Viss</button>
+<button class="whitespace-nowrap px-4 py-2 bg-surface-container-high text-on-surface-variant rounded-full font-label-md text-label-md border border-outline-variant/30 hover:border-primary/50 transition-colors">Mēslojums</button>
+<button class="whitespace-nowrap px-4 py-2 bg-surface-container-high text-on-surface-variant rounded-full font-label-md text-label-md border border-outline-variant/30 hover:border-primary/50 transition-colors">Kaitēkļu kontrole</button>
+<button class="whitespace-nowrap px-4 py-2 bg-surface-container-high text-on-surface-variant rounded-full font-label-md text-label-md border border-outline-variant/30 hover:border-primary/50 transition-colors">Uzlējumi</button>
+</div>
+</div>
+<!-- Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Card 1: Nātru Virca -->
+<article class="bg-surface-container-low/50 backdrop-blur-sm border border-outline-variant/20 rounded-xl overflow-hidden hover:border-primary/40 transition-colors group relative flex flex-col h-full shadow-[0_4px_24px_rgba(27,48,34,0.1)]">
+<div class="h-48 relative overflow-hidden">
+<img alt="Nātru attēls" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80 mix-blend-luminosity hover:mix-blend-normal" data-alt="Close up photograph of lush green stinging nettles growing in a wild, mystical forest setting. Soft, ethereal lighting filtering through the canopy, highlighting the textures of the leaves. Dark navy and deep green color palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuApxvGj4eEKezZtNhl1bwbaQdWTekRfvKZZUzPY3npsZmtxTNl9J3hNQaSaCEDne4kAu8EdBoQ9KQCcvwN3OSewqSl2q8b7ZbQK4PdqRZr37GCjW_RMiYw_bhpDIbebEBntygUfy5F3o3uer0MYll-dgcMA1RD-MYjzxDwiZiPrqLv9E2vwNhr-19xccYXOtWbD8ZfjCeYFOzFX8DTfnGmiYkk_EyBZR4KTCqMpdQk9RHE5kCtS0Kwv7VxwjEO1gySMk61yGzbk3fVZ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low to-transparent"></div>
+<div class="absolute top-4 right-4 bg-tertiary-container/80 backdrop-blur-md px-3 py-1 rounded-full flex items-center gap-1 border border-outline-variant/30">
+<span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-md text-label-md text-on-surface">4.9</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-1 relative z-10 -mt-8">
+<span class="self-start px-3 py-1 bg-secondary/20 text-secondary border border-secondary/30 rounded-full font-label-sm text-label-sm mb-3 backdrop-blur-md">Mēslojums</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface mb-2 group-hover:text-primary transition-colors">Nātru Virca</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4 line-clamp-2">Spēcīgs slāpekļa avots. Klasisks augu stiprinātājs aktīvās augšanas fāzē.</p>
+<div class="mt-auto space-y-3 pt-4 border-t border-outline-variant/20">
+<div class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-outline">eco</span>
+<span class="font-body-md text-body-md">Svaigas nātres, lietus ūdens</span>
+</div>
+<div class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-outline">hourglass_empty</span>
+<span class="font-body-md text-body-md">10-14 dienas</span>
+</div>
+<div class="flex items-center gap-3 text-primary bg-primary/10 px-3 py-2 rounded-lg border border-primary/20">
+<span class="material-symbols-outlined">dark_mode</span>
+<span class="font-label-md text-label-md">Labākais laiks: Dilstošs mēness</span>
+</div>
+</div>
+</div>
+</article>
+<!-- Card 2: Pelnu Šķīdums -->
+<article class="bg-surface-container-low/50 backdrop-blur-sm border border-tertiary/20 rounded-xl overflow-hidden hover:border-tertiary/40 transition-colors group relative flex flex-col h-full shadow-[0_4px_24px_rgba(27,48,34,0.1)]">
+<div class="h-48 relative overflow-hidden">
+<img alt="Koka pelni un ogles" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80 mix-blend-luminosity hover:mix-blend-normal" data-alt="A macro shot of fine wood ash and small charcoal pieces resting on dark soil, illuminated by dramatic, moody lighting. High contrast with deep navy shadows and silvery-grey highlights. Earthy and tactile modern folklore aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoT5bHqwHg4DnQb2lw0nd7Q3VvasnMWYPmotGFV4cvXpXmdoNRVdK7qAh5ucbOrMgC458yzqI-sZafR7wt6N1iL_n4qvGiwacVLXCnzZe2te_kv80LG4uttqKU2GnDMwvn1lCLnos1urUmnwfhjN4Z8_PBnFByDIxFlrqeylMsjyD3omF98gtcTInRf2rg14mMKfSc_d5pIBznFoOexBN7WwbQR4EvRknOLw8oUN5VEe7Bp80k0EdZ_toO08pze5Q6R3yi96tn_v8I"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low to-transparent"></div>
+<div class="absolute top-4 right-4 bg-tertiary-container/80 backdrop-blur-md px-3 py-1 rounded-full flex items-center gap-1 border border-outline-variant/30">
+<span class="material-symbols-outlined text-[16px] text-tertiary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-md text-label-md text-on-surface">4.7</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-1 relative z-10 -mt-8">
+<div class="flex gap-2 mb-3">
+<span class="px-3 py-1 bg-tertiary/20 text-tertiary border border-tertiary/30 rounded-full font-label-sm text-label-sm backdrop-blur-md">Kaitēkļi</span>
+<span class="px-3 py-1 bg-secondary/20 text-secondary border border-secondary/30 rounded-full font-label-sm text-label-sm backdrop-blur-md">Mēslojums</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface mb-2 group-hover:text-tertiary transition-colors">Pelnu Šķīdums</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4 line-clamp-2">Kālija avots un efektīvs līdzeklis pret laputīm. Pazemina augsnes skābumu.</p>
+<div class="mt-auto space-y-3 pt-4 border-t border-outline-variant/20">
+<div class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-outline">science</span>
+<span class="font-body-md text-body-md">Koka pelni, ūdens, zaļās ziepes</span>
+</div>
+<div class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-outline">hourglass_empty</span>
+<span class="font-body-md text-body-md">2-3 dienas</span>
+</div>
+<div class="flex items-center gap-3 text-tertiary bg-tertiary/10 px-3 py-2 rounded-lg border border-tertiary/20">
+<span class="material-symbols-outlined">clear_night</span>
+<span class="font-label-md text-label-md">Labākais laiks: Jauns mēness</span>
+</div>
+</div>
+</div>
+</article>
+</div>
+</main>
+</div>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant/20 flex flex-col md:flex-row justify-between items-center px-lg py-md w-full mt-auto max-w-container-max mx-auto z-40 relative">
+<div class="font-label-md text-label-md text-on-surface uppercase tracking-widest mb-4 md:mb-0">
+            Mēness Sēja
+        </div>
+<div class="font-label-sm text-label-sm text-on-tertiary-fixed-variant mb-4 md:mb-0 text-center md:text-left">
+            © 2024 Mēness Sēja. Rooted in Latvian Tradition.
+        </div>
+<ul class="flex flex-wrap justify-center gap-4">
+<li><a class="font-label-sm text-label-sm text-on-tertiary-fixed-variant hover:text-primary transition-colors hover:opacity-80" href="#">Privacy Policy</a></li>
+<li><a class="font-label-sm text-label-sm text-on-tertiary-fixed-variant hover:text-primary transition-colors hover:opacity-80" href="#">Terms of Service</a></li>
+<li><a class="font-label-sm text-label-sm text-secondary underline hover:text-primary transition-colors hover:opacity-80" href="#">Folklore Archive</a></li>
+<li><a class="font-label-sm text-label-sm text-on-tertiary-fixed-variant hover:text-primary transition-colors hover:opacity-80" href="#">API</a></li>
+</ul>
+</footer>
+</body></html>

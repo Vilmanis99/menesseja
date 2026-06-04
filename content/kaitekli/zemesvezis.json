@@ -1,0 +1,63 @@
+{
+  "slug": "zemesvezis",
+  "name": "Zemesvēzis",
+  "emoji": "🦗",
+  "type": "kaiteklis",
+  "tagline": "Liels, pazemē dzīvojošs kukainis, kas rok ejas un grauž saknes, sīpolus un bumbuļus, visvairāk postot mitrās, kūdrainās un stipri mēslotās augsnēs.",
+  "severity": "nopietns",
+  "affects": [
+    "Kartupeļi",
+    "Burkāni",
+    "Sīpoli",
+    "Ķiploki",
+    "Salāti",
+    "Kāposti un citi dēsti",
+    "Gurķi un tomāti (jaunie stādi)",
+    "Zemenes",
+    "Puķu sīpoli un bumbuļi"
+  ],
+  "signs": [
+    "Augsnes virspusē redzami uzbērti, irdeni zemes valnīši un nelielas caurumiņu rindas, līdzīgas kurmja darbam, tikai sīkākas",
+    "Jauni dēsti un stādi pēkšņi novīst vai sagāžas, jo zem augsnes pārkostas saknes vai stumbra pamatne",
+    "Sīpolos, kartupeļos un bumbuļos izgrauztas neregulāras ejas un dobumi",
+    "Stādījumu rindas vietām izirušas — augi izcelti vai aizvirzīti, jo kukainis rakdams izjauc augsni",
+    "Siltos vakaros un naktīs dzirdama klusa, čirkstoša sisināšana no augsnes (pieauguša tēviņa skaņa)"
+  ],
+  "intro": [
+    "Zemesvēzis ir viens no lielākajiem mūsu dārzu kukaiņiem — pieaudzis var sasniegt 4–5 cm garumu, ar spēcīgām, lāpstveida priekškājām, ar kurām tas rok ejas augsnē gluži kā kurmis. Lielāko mūža daļu tas pavada zem zemes, tāpēc bieži vien dārznieks pamana nevis pašu kukaini, bet gan tā postījumus: novītušus dēstus, izgrauztus sīpolus un irdenus zemes valnīšus. Visvairāk tas iemīļo siltas, mitras, kūdrainas un stipri ar svaigiem kūtsmēsliem mēslotas augsnes — tieši tādas, kur ir daudz organikas un viegli rakt. Latvijā tas senāk bija izplatīts galvenokārt piejūrā un Zemgalē, taču mūsdienās sastopams arvien plašāk, kaut nevienmērīgi.",
+    "Apkarošana ir grūta un prasa pacietību, jo kukainis dzīvo pazemē un ir kustīgs. Godīgi sakot, augu uzlejumi un izsmidzināmas receptes te gandrīz nepalīdz — galvenais darbs ir MEHĀNISKS: slazdi, ligzdu iznīcināšana un dabīgo ienaidnieku atbalstīšana. Zemesvēzis ir aktīvs no pavasara līdz vasaras beigām, bet visizdevīgākais brīdis tā ierobežošanai ir rudens, kad var pārtvert pārziemošanai sapulcējušos kukaiņus."
+  ],
+  "control": [
+    "Rudens kompostu/mēslu slazdi — tas ir efektīvākais paņēmiens. Rudenī (septembrī–oktobrī) izrok 40–50 cm dziļas bedres un piepilda ar siltiem, pussadalošiem kūtsmēsliem vai kompostu. Zemesvēži tur sapulcējas pārziemošanai. Iestājoties pirmajām salnām (iekšzemē septembra beigās–oktobrī), bedru saturu izvelk laukā uz sasalšanu — atklātie kukaiņi nosalst.",
+    "Eļļas/ūdens slazdi bedrēs — augsnē ierok stikla burkas vai bļodas tā, lai mala būtu vienā līmenī ar augsni, un to malas viegli ieziež ar augu eļļu vai ielej nedaudz ūdens ar eļļas plēvīti. Pa virsu rakdams, zemesvēzis iekrīt slazdā un netiek ārā. Slazdus regulāri pārbauda un iztukšo.",
+    "Eju applūdināšana — kad pamana svaigu eju vai ieeju, tajā lēni lej ūdeni (var pievienot nedaudz ziepju šķīduma vai augu eļļas). Kukainis nāk ārā elpot pēc gaisa, un to var savākt ar roku. Tas ir laikietilpīgi, bet pret atsevišķiem īpatņiem labi strādā.",
+    "Mehāniska savākšana ar roku — pavasarī un vasarā, rokot un kopjot dobes, atrastos zemesvēžus un to balti dzeltenās olu ligzdas (siltā, irdenā augsnē, parasti 10–30 cm dziļumā) iznīcina ar roku. Olu kamoliņu izrakšana jūnijā–jūlijā ievērojami samazina nākamās paaudzes skaitu.",
+    "Dabīgo ienaidnieku atbalstīšana — vārnas, kraukļi, žagatas, eži, kurmji un slapjos gados arī krupji medī zemesvēžus. Neaizdzen putnus no svaigi raktas augsnes, atstāj dārzā mierīgus stūrīšus un akmeņu/zaru kaudzes ežiem. Tas ilgtermiņā dabiski ierobežo populāciju.",
+    "Barjeras jutīgiem stādiem — vērtīgākos dēstus var stādīt apakšā un sānos atvērtos podiņos, plastmasas vai metāla apkaklēs, kas ierakti dažus centimetrus augsnē, tā pasargājot stumbra pamatni un saknes no apgraušanas.",
+    "Atturēšanās no svaigiem kūtsmēsliem augšanas vietās — tā kā svaiga, silta organika tieši pievelk zemesvēžus, daļa no to ierobežošanas ir augsnes apsaimniekošana (sk. profilaksi), nevis kāda izsmidzināma recepte."
+  ],
+  "recipeSlugs": [],
+  "prevention": [
+    "Nemēslo dobes ar svaigiem, neizvietotiem kūtsmēsliem — tieši silta, svaiga organika visvairāk pievelk zemesvēžus. Lieto labi sadalījušos kompostu vai pārpuvušus mēslus, un tos iestrādā rudenī, nevis tieši pirms stādīšanas.",
+    "Uzlabo pārāk mitru un kūdrainu augsni — ierīko notekas, pacel dobes, jauc smago augsni ar smiltīm. Sausāka, vēsāka augsne zemesvēžiem nepatīk un kavē to vairošanos.",
+    "Rudenī un agri pavasarī dziļi pārroc augsni — tas izjauc ejas un olu ligzdas, atklāj kukaiņus putniem un salam.",
+    "Regulāri pārbaudi un atjauno slazdu bedres katru rudeni vienā un tajā pašā dārza daļā, kur zemesvēži jau manīti — tā gadu no gada noturi populāciju zemu.",
+    "Vērtīgākajiem un jutīgākajiem stādiem (jaunie dēsti, puķu sīpoli) izvēlies sausākas, vieglākas vietas un aizsargā ar ieraktām apkaklēm; mitrās, mēslotās dobes atstāj robustākiem augiem."
+  ],
+  "moonNote": "Pēc tradīcijas kaitēkļu ierobežošanas un augsnes pārrakšanas darbus saista ar dilstošo Mēnesi. Tomēr pret zemesvēzi izšķir nevis Mēness fāze, bet gan pareizais sezonas brīdis — galvenais ir rudens slazdi un olu ligzdu iznīcināšana vasarā.",
+  "folklore": "Zemesvēzi tautā dēvē arī par racēju vai racējcirceni — tā nemitīgo pazemes raktuvju dēļ. Vecie dārznieki teica, ka tas vienmēr velkas turp, kur \"zeme silta un trekna\", tāpēc svaigu mēslu kaudzes turēja tālāk no jaunajiem dēstiem.",
+  "faq": [
+    {
+      "q": "Vai pret zemesvēzi var izsmidzināt kādu augu uzlejumu vai novārījumu?",
+      "a": "Īsti nē. Tā kā kukainis dzīvo dziļi augsnē un ātri pārvietojas, izsmidzināmas receptes to nesasniedz un nepalīdz. Efektīvi ir tikai mehāniskie paņēmieni — slazdi, eju applūdināšana, olu ligzdu iznīcināšana un dabīgo ienaidnieku atbalsts."
+    },
+    {
+      "q": "Kā atšķirt zemesvēža un kurmja darbu?",
+      "a": "Kurmis met lielus, augstus zemes kupacus un pats neēd augus — tas medī tārpus. Zemesvēzis met sīkākus, plakanākus valnīšus, atstāj nelielus caurumiņus un, galvenais, grauž saknes, sīpolus un bumbuļus, tāpēc augi novīst vai tiek izgrauzti."
+    },
+    {
+      "q": "Kurš ir labākais laiks zemesvēža apkarošanai?",
+      "a": "Rudens. Septembrī–oktobrī ierīko mēslu vai komposta slazdu bedres, kur kukaiņi sapulcējas ziemot, un pie pirmajām salnām bedru saturu izvelk laukā nosalšanai. Vasarā papildus iznīcina atrastās olu ligzdas."
+    }
+  ]
+}

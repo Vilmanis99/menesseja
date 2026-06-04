@@ -1,0 +1,66 @@
+{
+  "slug": "miltrasa",
+  "name": "Miltrasa",
+  "emoji": "🍂",
+  "latin": "Erysiphe",
+  "type": "slimiba",
+  "severity": "vidējs",
+  "tagline": "Balts, miltains aplikums uz lapām, kas izplatās siltā laikā ar mitrām naktīm un sablīvētos, slikti vēdinātos stādījumos.",
+  "affects": [
+    "Ķirbji",
+    "Gurķi",
+    "Kabači",
+    "Cukīni",
+    "Rozes",
+    "Flokši (phlox)",
+    "Vīnogas",
+    "Krizantēmas un citi dekoratīvie augi"
+  ],
+  "signs": [
+    "Uz lapu virspuses parādās balts vai pelēkbalts, miltains aplikums, ko viegli notrīt ar pirkstu",
+    "Sākumā tikai atsevišķi plankumi, vēlāk klājums izplešas pa visu lapu un kātiem",
+    "Skartās lapas dzeltē, savīst, kļūst trauslas un priekšlaicīgi nokalst",
+    "Augi vājāk aug un ziedēšana vai ražošana samazinās",
+    "Smagos gadījumos aplikums pārklāj arī pumpurus, ziedus un jaunos dzinumus"
+  ],
+  "intro": [
+    "Miltrasa ir viena no izplatītākajām sēņu slimībām Latvijas dārzos. To viegli atpazīt pēc baltā, it kā ar miltiem apkaisītā aplikuma uz lapām. Atšķirībā no daudzām citām slimībām, miltrasa labi attīstās tieši siltā un sausā laikā, taču ar augstu gaisa mitrumu naktīs un rītos — tādā sutīgā gaisā, kāds bieži veidojas blīvos, slikti vēdinātos stādījumos vai siltumnīcās.",
+    "Slimība pati par sevi reti nogalina augu uzreiz, bet tā nopietni vājina to: lapas zaudē spēju normāli fotosintezēt, augs nogurst, raža un ziedēšana mazinās. Tāpēc svarīgi rīkoties laikus — jau pie pirmajām pazīmēm. Pilnībā izskaust miltrasu ar dabīgiem līdzekļiem ne vienmēr izdodas, taču ar laicīgu rīcību, slimo lapu noņemšanu un labu gaisa cirkulāciju to var noturēt savaldāmu līdz pat sezonas beigām."
+  ],
+  "control": [
+    "Tiklīdz pamani pirmos baltos plankumus, nogriez un iznīcini skartās lapas un dzinumus. Šī mehāniskā vākšana ir efektīvākais solis — tā tieši samazina sēnes daudzumu. Slimās lapas nemet kompostā, bet izved no dārza vai sadedzini.",
+    "Atretini stādījumu: izgriez liekos dzinumus un blakus augus, lai uzlabotu gaisa plūsmu. Brīva gaisa cirkulācija ir viens no svarīgākajiem faktoriem — tā ļauj lapām ātri nožūt un apgrūtina sēnes attīstību.",
+    "Laisti augus zem saknes, nevis pa lapām, un to dari no rīta, lai lapas dienas laikā pagūst nožūt. Mitras lapas vakarā veicina slimību.",
+    "Pārmiglo augus ar atšķaidītu piena šķīdumu (aptuveni 1 daļa piena uz 9 daļām ūdens) ik pēc dažām dienām saulainā laikā. Tā ir maiga, dabīga palīgmetode, kas dažkārt bremzē izplatīšanos, taču negaidi no tās brīnumu — tā vislabāk darbojas profilaktiski un kombinācijā ar pārējiem soļiem.",
+    "Stiprini augu izturību ar kosas novārījumu — tajā esošais silīcijs nostiprina lapu audus un palīdz augiem labāk pretoties sēnei. Smidzini profilaktiski un atkārto pēc lietus.",
+    "Atbalsti augu vispārējo veselību ar komposta teju kā lapu mēslojumu — spēcīgs, labi barots augs vieglāk iztur slimības spiedienu. Tas ir atbalsta, nevis tiešas apkarošanas līdzeklis.",
+    "Smagi skartus, gandrīz pilnībā aplipušus augus (piemēram, atsevišķas ķirbju vai gurķu lapas) ir vērtīgāk pavisam noņemt, nekā centīgi ārstēt — tā pasargā pārējos stādījumus."
+  ],
+  "recipeSlugs": [
+    "kosas-novarijums",
+    "komposta-teja"
+  ],
+  "prevention": [
+    "Ievēro atstatumu starp augiem un nestādi pārāk blīvi — gaiss starp augiem ir labākā profilakse pret miltrasu.",
+    "Izvēlies pret miltrasu izturīgākas šķirnes (daudziem gurķiem, ķirbjiem, flokšiem un rozēm tādas ir pieejamas) — tas ievērojami atvieglo sezonu.",
+    "Ievēro augu maiņu: nestādi vienu un to pašu kultūru gadu pēc gada tajā pašā vietā, lai augsnē neuzkrātos slimības.",
+    "Rudenī rūpīgi savāc un iznīcini nokritušās slimās lapas — sēne pārziemo augu atliekās un pavasarī atkal uzbrūk.",
+    "Nepārmēslo ar slāpekli — pārāk daudz slāpekļa rada mīkstas, sulīgas lapas, kuras miltrasa skar vieglāk. Stādi saulainās, labi vēdinātās vietās."
+  ],
+  "moonNote": "Tradicionāli slimību un kaitēkļu apkarošanu saista ar dilstošo Mēnesi, taču pret miltrasu izšķirošais ir rīkoties uzreiz, tiklīdz to pamani — negaidi konkrētu Mēness fāzi, jo slimība izplatās ātri.",
+  "folklore": "Vecie dārznieki teica, ka miltrasa \"uzsēžas\" tur, kur augiem trūkst gaisa un saules — un pieredze to apstiprina: gaisīgā, saulainā dārzā balto aplikumu redz daudz retāk.",
+  "faq": [
+    {
+      "q": "Vai miltrasu var pilnībā izārstēt ar dabīgiem līdzekļiem?",
+      "a": "Pilnībā izskaust to dabīgi ne vienmēr izdodas, it īpaši smagos gadījumos. Tomēr ar laicīgu slimo lapu noņemšanu, labu gaisa cirkulāciju un atbalstošu smidzināšanu (kosas novārījums, atšķaidīts piens) slimību parasti var noturēt savaldāmu un saglabāt ražu. Galvenais ir rīkoties agri."
+    },
+    {
+      "q": "Vai miltrasa pāriet no viena auga uz citu?",
+      "a": "Jā, sēnes sporas izplatās ar gaisu un var pārnest slimību uz blakus augiem. Tāpēc svarīgi laikus noņemt skartās lapas un nodrošināt atstatumu starp stādījumiem. Ievēro arī, ka dažādiem augiem (piemēram, gurķiem un rozēm) miltrasu izraisa nedaudz atšķirīgas sēnes, taču profilakses principi ir vienādi."
+    },
+    {
+      "q": "Vai balto aplikumu var vienkārši noskalot ar ūdeni?",
+      "a": "Noskalošana īslaicīgi samazina aplikumu, bet neiznīcina sēni, un mitrās lapas pat var veicināt tālāku izplatīšanos. Daudz drošāk ir nogriezt un iznīcināt skartās lapas, nevis tās slapināt. Ja smidzini, dari to no rīta, lai lapas pa dienu nožūst."
+    }
+  ]
+}

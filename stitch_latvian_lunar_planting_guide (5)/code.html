@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="lv"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,400..700;1,400..700&amp;family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        body {
+            font-family: 'Hanken+Grotesk', sans-serif;
+            background-color: #0b1326;
+            color: #dae2fd;
+            -webkit-font-smoothing: antialiased;
+        }
+        .linen-texture {
+            background-image: url("https://www.transparenttextures.com/patterns/linen.png");
+            opacity: 0.03;
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #131b2e;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #2d4c39;
+            border-radius: 10px;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                "surface-container-low": "#131b2e",
+                "primary-fixed": "#c7ebd1",
+                "on-secondary-fixed": "#390c00",
+                "secondary-fixed": "#ffdbcf",
+                "outline": "#8c928c",
+                "surface-variant": "#2d3449",
+                "surface-container-high": "#222a3d",
+                "on-tertiary-fixed-variant": "#41474e",
+                "surface-container": "#171f33",
+                "on-error": "#690005",
+                "primary-fixed-dim": "#accfb6",
+                "on-secondary": "#5c1900",
+                "on-error-container": "#ffdad6",
+                "background": "#0b1326",
+                "outline-variant": "#424843",
+                "surface-dim": "#0b1326",
+                "on-primary-fixed-variant": "#2e4d3a",
+                "secondary-fixed-dim": "#ffb59c",
+                "on-primary-fixed": "#012111",
+                "inverse-surface": "#dae2fd",
+                "inverse-on-surface": "#283044",
+                "secondary": "#ffb59c",
+                "on-secondary-fixed-variant": "#7b2e10",
+                "error": "#ffb4ab",
+                "tertiary-fixed": "#dde3eb",
+                "tertiary": "#c1c7cf",
+                "primary-container": "#2d4c39",
+                "surface": "#0b1326",
+                "surface-container-lowest": "#060e20",
+                "on-surface": "#dae2fd",
+                "on-surface-variant": "#c2c8c1",
+                "error-container": "#93000a",
+                "secondary-container": "#7b2e10",
+                "on-tertiary": "#2b3137",
+                "tertiary-container": "#40464d",
+                "surface-container-highest": "#2d3449",
+                "on-primary": "#173625",
+                "on-tertiary-container": "#aeb4bb",
+                "tertiary-fixed-dim": "#c1c7cf",
+                "on-tertiary-fixed": "#161c22",
+                "surface-bright": "#31394d",
+                "on-background": "#dae2fd",
+                "inverse-primary": "#466551",
+                "surface-tint": "#accfb6",
+                "primary": "#accfb6",
+                "on-secondary-container": "#ff9b79",
+                "on-primary-container": "#99bca3"
+              },
+              "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+              },
+              "spacing": {
+                "sm": "12px",
+                "md": "24px",
+                "xs": "4px",
+                "xl": "80px",
+                "gutter": "24px",
+                "base": "8px",
+                "lg": "48px",
+                "container-max": "1200px"
+              },
+              "fontFamily": {
+                "headline-lg": ["Literata"],
+                "body-md": ["Hanken Grotesk"],
+                "display-lg": ["Literata"],
+                "label-sm": ["Hanken Grotesk"],
+                "headline-md": ["Literata"],
+                "body-lg": ["Hanken Grotesk"],
+                "label-md": ["Hanken Grotesk"]
+              }
+            },
+          }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-surface custom-scrollbar">
+<!-- Desktop Side Navigation -->
+<aside class="hidden md:flex flex-col h-screen w-64 fixed left-0 top-0 bg-surface-container dark:bg-surface-container shadow-lg shadow-primary/5 py-md px-sm z-50">
+<div class="mb-lg px-sm">
+<h1 class="font-headline-md text-headline-md text-primary">Mēness Sēja</h1>
+<p class="font-body-md text-label-sm text-on-surface-variant opacity-70">Modern Folklore Gardening</p>
+</div>
+<nav class="flex-1 space-y-1">
+<a class="flex items-center gap-3 px-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-variant/50 transition-all duration-200" href="#">
+<span class="material-symbols-outlined">nature_people</span>
+<span class="font-body-md text-body-md">Dārzs</span>
+</a>
+<a class="flex items-center gap-3 px-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-variant/50 transition-all duration-200" href="#">
+<span class="material-symbols-outlined">calendar_month</span>
+<span class="font-body-md text-body-md">Kalendārs</span>
+</a>
+<a class="flex items-center gap-3 px-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-variant/50 transition-all duration-200" href="#">
+<span class="material-symbols-outlined">architecture</span>
+<span class="font-body-md text-body-md">Plānotājs</span>
+</a>
+<a class="flex items-center gap-3 px-sm py-2 rounded-lg text-primary border-r-2 border-primary font-bold bg-primary-container/10" href="#">
+<span class="material-symbols-outlined">groups</span>
+<span class="font-body-md text-body-md">Kopiena</span>
+</a>
+<a class="flex items-center gap-3 px-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-variant/50 transition-all duration-200" href="#">
+<span class="material-symbols-outlined">menu_book</span>
+<span class="font-body-md text-body-md">Dienasgrāmata</span>
+</a>
+<a class="flex items-center gap-3 px-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-variant/50 transition-all duration-200" href="#">
+<span class="material-symbols-outlined">brightness_3</span>
+<span class="font-body-md text-body-md">Mēness</span>
+</a>
+</nav>
+<div class="mt-auto space-y-1 border-t border-outline-variant/20 pt-md">
+<a class="flex items-center gap-3 px-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-variant/50 transition-all duration-200" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span class="font-body-md text-body-md">Iestatījumi</span>
+</a>
+<a class="flex items-center gap-3 px-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-variant/50 transition-all duration-200" href="#">
+<span class="material-symbols-outlined">help_outline</span>
+<span class="font-body-md text-body-md">Palīdzība</span>
+</a>
+</div>
+</aside>
+<!-- Top AppBar (Mobile/Tablet Only) -->
+<header class="md:hidden w-full top-0 sticky bg-surface dark:bg-surface shadow-sm shadow-primary/10 flex justify-between items-center px-gutter py-sm z-40">
+<h1 class="font-headline-md text-headline-md font-bold text-primary dark:text-primary">Mēness Sēja</h1>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary scale-95 active:scale-90 transition-transform">settings</span>
+<span class="material-symbols-outlined text-primary scale-95 active:scale-90 transition-transform">account_circle</span>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="md:ml-64 min-h-screen p-sm md:p-lg max-w-[1200px] mx-auto pb-32 md:pb-lg">
+<!-- Header & Search -->
+<header class="mb-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div>
+<h2 class="font-display-lg text-display-lg text-primary mb-xs">Kopiena</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Augsim kopā ar dabu un tautas viedumu.</p>
+</div>
+<div class="relative w-full md:w-80 group">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant">search</span>
+<input class="w-full bg-surface-container-low border-b border-outline-variant focus:border-primary transition-all rounded-t-lg px-10 py-3 text-on-surface placeholder:text-on-surface-variant/50 focus:ring-0" placeholder="Meklēt padomus vai dalībniekus..." type="text"/>
+</div>
+</div>
+</header>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Regional Chat Filter & Preview (4 Cols) -->
+<section class="md:col-span-4 space-y-gutter">
+<div class="bg-surface-container rounded-xl p-md shadow-lg shadow-primary/5 relative overflow-hidden group">
+<div class="linen-texture absolute inset-0 pointer-events-none"></div>
+<div class="relative z-10">
+<h3 class="font-headline-md text-headline-md text-primary-fixed mb-md flex items-center gap-2">
+<span class="material-symbols-outlined">forum</span> Reģionālā tērzētava
+                        </h3>
+<div class="flex flex-wrap gap-2 mb-md">
+<button class="px-3 py-1 rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md transition-transform active:scale-95">Vidzeme</button>
+<button class="px-3 py-1 rounded-full bg-surface-variant text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-highest transition-colors">Kurzeme</button>
+<button class="px-3 py-1 rounded-full bg-surface-variant text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-highest transition-colors">Zemgale</button>
+<button class="px-3 py-1 rounded-full bg-surface-variant text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-highest transition-colors">Latgale</button>
+<button class="px-3 py-1 rounded-full bg-surface-variant text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-highest transition-colors">Sēlija</button>
+</div>
+<div class="space-y-4 max-h-[400px] overflow-y-auto custom-scrollbar pr-2">
+<!-- Chat Message 1 -->
+<div class="bg-surface-container-low p-sm rounded-lg border-l-4 border-primary/30">
+<div class="flex items-center gap-2 mb-xs">
+<span class="font-label-md text-label-md text-primary-fixed">Jānis B.</span>
+<span class="text-[10px] text-on-surface-variant opacity-50 uppercase tracking-widest">Pirms 5 min</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface">Kāds Vidzemē jau sācis sēt tomātus siltumnīcā? Mēness rāda labvēlīgu laiku.</p>
+</div>
+<!-- Chat Message 2 -->
+<div class="bg-surface-container-low p-sm rounded-lg">
+<div class="flex items-center gap-2 mb-xs">
+<span class="font-label-md text-label-md text-secondary">Aiga Kalna</span>
+<span class="text-[10px] text-on-surface-variant opacity-50 uppercase tracking-widest">Pirms 12 min</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface">Siguldas pusē vēl zeme par aukstu, labāk nogaidīt līdz nākamajai ceturtdaļai.</p>
+</div>
+<!-- Chat Message 3 -->
+<div class="bg-surface-container-low p-sm rounded-lg">
+<div class="flex items-center gap-2 mb-xs">
+<span class="font-label-md text-label-md text-primary-fixed">Oskars</span>
+<span class="text-[10px] text-on-surface-variant opacity-50 uppercase tracking-widest">Pirms 1st</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface">Līgatnē vakar redzēju pirmos gājputnus. Pavasaris ir klāt!</p>
+</div>
+</div>
+<div class="mt-md pt-sm border-t border-outline-variant/30">
+<div class="flex gap-2">
+<input class="flex-1 bg-surface-container-lowest border-none rounded-lg px-sm py-2 text-body-md focus:ring-1 focus:ring-primary" placeholder="Rakstīt ziņu..." type="text"/>
+<button class="bg-primary text-on-primary p-2 rounded-lg flex items-center justify-center transition-transform active:scale-90">
+<span class="material-symbols-outlined">send</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Folk Wisdom Section -->
+<div class="bg-surface-container rounded-xl p-md shadow-lg shadow-primary/5 border-t-2 border-secondary/50">
+<h3 class="font-headline-md text-headline-md text-secondary mb-md flex items-center gap-2">
+<span class="material-symbols-outlined">auto_stories</span> Tradicionālās gudrības
+                    </h3>
+<div class="space-y-4">
+<div class="group/wisdom relative">
+<p class="italic font-headline-md text-body-lg text-on-surface mb-2 leading-relaxed">"Sēj kāpostus tajā dienā, kad pirmā vārna ligzdā iesēžas."</p>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant italic">— Vidzemes ticējums</span>
+<div class="flex gap-4">
+<button class="flex items-center gap-1 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[18px]">thumb_up</span>
+<span class="text-label-sm">124</span>
+</button>
+<button class="text-on-surface-variant hover:text-secondary transition-colors">
+<span class="material-symbols-outlined text-[18px]">bookmark</span>
+</button>
+</div>
+</div>
+</div>
+<hr class="border-outline-variant/20"/>
+<div class="group/wisdom relative">
+<p class="italic font-headline-md text-body-lg text-on-surface mb-2 leading-relaxed">"Ja mēness spīd caur ābeļu zariem, būs auglīgs gads."</p>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant italic">— Latgales viedums</span>
+<div class="flex gap-4">
+<button class="flex items-center gap-1 text-primary transition-colors">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">thumb_up</span>
+<span class="text-label-sm">89</span>
+</button>
+<button class="text-on-surface-variant hover:text-secondary transition-colors">
+<span class="material-symbols-outlined text-[18px]">bookmark</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Community Feed (8 Cols) -->
+<section class="md:col-span-8 space-y-gutter">
+<div class="flex items-center justify-between mb-sm">
+<h3 class="font-headline-md text-headline-md text-on-surface">Jaunākais dārzos</h3>
+<div class="flex gap-2">
+<button class="p-2 text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined">grid_view</span></button>
+<button class="p-2 text-primary border-b-2 border-primary"><span class="material-symbols-outlined">view_agenda</span></button>
+</div>
+</div>
+<!-- Feed Card 1 -->
+<article class="bg-surface-container rounded-xl overflow-hidden shadow-lg shadow-primary/5 group border border-outline-variant/10 transition-all hover:border-primary/20">
+<div class="h-64 overflow-hidden relative">
+<img alt="Harvesting fresh vegetables" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A detailed, high-resolution close-up of a rustic wooden basket filled with vibrant, freshly harvested Latvian vegetables like earth-stained carrots, deep purple radishes, and bright green dill. The lighting is soft and golden, mimicking a late summer sunset in a lush countryside garden. The composition follows the modern folklore aesthetic with deep greens and earthy tones, evoking a sense of rhythmic natural abundance and seasonal precision." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0v6-WURSnH3DQrPL6qcsaPB7tKzxayg22EtP8uU_sTSmfy3ZPxk86IBtcgfhPQLIDOYL7aO4Z_3ESuTbSvpVNKJmJE2fw0TVqCqma0cSGsAGTK71_TakVZAS0mfx8azdCk45DXuSodYkeT_7pLZDqGAGTc8j3VZTVBpNEfMwB-BIw6_a-CgQrdGdmbo7j70ELQLQ2M5pgHNeXCmep8yMUBne3yc49n46fSg7w8VFERf6CtSo0ILbNYJGxNoApYVCjH-3wPtQD5LTT"/>
+<div class="absolute bottom-4 left-4 flex gap-2">
+<span class="bg-primary/90 backdrop-blur-md text-on-primary px-3 py-1 rounded-full text-label-md font-label-md">Raža</span>
+<span class="bg-secondary/90 backdrop-blur-md text-on-secondary px-3 py-1 rounded-full text-label-md font-label-md">Organisks</span>
+</div>
+</div>
+<div class="p-md">
+<div class="flex items-center justify-between mb-md">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container overflow-hidden">
+<img alt="User avatar" data-alt="A professional portrait of a modern Latvian gardener with a warm, confident expression. She is wearing a dark forest-green linen apron with subtle ethnographic patterns. The background is a blurred, moonlit garden setting at dusk. The lighting is high-contrast yet soft, highlighting a connection to nature and digital precision in a dark-mode UI aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLQ3kxsQ7v4mFBEL1_lTA2EE2xAPzj1kSCyGOA6GDj0xfD06M158Oe4Qq-9u4vxEM8pMzBD8B3EqW0s_BZy4XZsSEw0Fr4N4cbv7eudKnlga6VAKPBMheD6Ps4p4wyoT_2kVCJULjVy53pr-Hm1uomw5o_NClZrX5Jnht8BxfGTDPHuksJWFZ7L77iLnIBIWHtIuhlnVxt9-M7kLSD21YI02x1r7_Q51zwyzwnsJ-xJVCCTLMj-z8yNmDoTcD4KkGAlOA7Zg9S1JRL"/>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Marta Bērziņa</p>
+<p class="text-[12px] text-on-surface-variant">Priekuļi, Vidzeme</p>
+</div>
+</div>
+<button class="text-on-surface-variant hover:text-primary transition-transform active:scale-90">
+<span class="material-symbols-outlined">more_vert</span>
+</button>
+</div>
+<h4 class="font-headline-md text-headline-md text-primary-fixed mb-sm">Pirmie redīsi šopavasar!</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md leading-relaxed">
+                            Pateicoties siltajai februāra nogalei un Mēness kalendāra ieteikumiem, izdevās sēt agrāk nekā citus gadus. Kraukšķīgi, sulīgi un bez asuma. Iesaku šo šķirni visiem Vidzemniekiem!
+                        </p>
+<div class="flex items-center gap-gutter pt-md border-t border-outline-variant/20">
+<button class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined">favorite</span>
+<span class="font-label-md text-label-md">452</span>
+</button>
+<button class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined">chat_bubble</span>
+<span class="font-label-md text-label-md">28</span>
+</button>
+<button class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined">share</span>
+<span class="font-label-md text-label-md">Kopīgot</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Feed Card 2 (Tip Card) -->
+<article class="bg-surface-container rounded-xl p-md shadow-lg shadow-primary/5 border-l-4 border-primary group relative overflow-hidden">
+<div class="linen-texture absolute inset-0 pointer-events-none"></div>
+<div class="relative z-10">
+<div class="flex items-center gap-4 mb-md">
+<div class="w-12 h-12 rounded-xl bg-primary-container flex items-center justify-center text-primary-fixed">
+<span class="material-symbols-outlined text-[32px]">lightbulb</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-primary-fixed">Eksperta Padoms</p>
+<h4 class="font-headline-md text-headline-md text-on-surface">Kā pasargāt jaunos stādus no salnām?</h4>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md leading-relaxed">
+                            Mūsu senči izmantoja dūmu aizsegu, bet modernajā dārzā vislabāk strādā dubultais agrotīkls kombinācijā ar mulčēšanu. Svarīgi to uzklāt pirms saulrieta, lai saglabātu zemes siltumu.
+                        </p>
+<div class="flex items-center justify-between">
+<div class="flex -space-x-2">
+<div class="w-8 h-8 rounded-full border-2 border-surface-container bg-surface-variant overflow-hidden"><img alt="avatar" data-alt="Small thumbnail of a man with a beard and straw hat." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRWaOFy1knOmLH6GwuSy8OuLTugPGQz0XgAWEezKqW13K25G2hqY957mXIhIurLbOYnCgGmgtkjL43Em6DZDeZjmrCF7C1Vdfv_yYj729ZAdAYHC6QJHLwvrm8dAV5TNpHWsbNqlWBoOwRf8TKdgUSzdcTJN_fd_7byDPyC1HC1QXCc5ZfQZPD5rvd0MuLf1SD50pFBhoWO5gVegKphFws_RUOXCRHnSJC73WHV3N_Nopo7MjnvV1vbFz6ZcD4UaE1KV79e0-0K2zR"/></div>
+<div class="w-8 h-8 rounded-full border-2 border-surface-container bg-surface-variant overflow-hidden"><img alt="avatar" data-alt="Small thumbnail of a woman in gardening clothes." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpcwBK7owffharKVhImL0qeCQV-ygNPtWWri7GLr3Rb4CLvKLEpQaThXhjBylp1sUfa8xvErJ9vJ0r-3UXVhnJ9u3MDc6llXikccfR3mjj7E6qR_f7GFyZkD8yrhVe8FZGqNdrNmDxiwyO3kcmKM6LrEFmjI7MRXnTCL8AblQ3WOgMJgSRu_wWPVEIzmwZjfL-90kD9_ABlZ2DyK_aao1Bi8oPX2Jm--XdbPajeNUozkTywG0w9nl4BXk4_k2qtROINhKZB7HyzqBw"/></div>
+<div class="w-8 h-8 rounded-full border-2 border-surface-container bg-surface-variant flex items-center justify-center text-[10px] font-bold">+12</div>
+</div>
+<button class="bg-primary-container text-on-primary-container px-4 py-2 rounded-lg font-label-md text-label-md transition-all active:scale-95 hover:bg-primary-container/80">Lasīt vairāk</button>
+</div>
+</div>
+</article>
+</section>
+</div>
+</main>
+<!-- Mobile Bottom Navigation -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-4 pt-2 md:hidden bg-surface-container-high dark:bg-surface-container-high shadow-[0_-4px_12px_rgba(27,48,34,0.3)] rounded-t-xl">
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary active:scale-95 transition-all" href="#">
+<span class="material-symbols-outlined">nature_people</span>
+<span class="font-label-sm text-label-sm">Dārzs</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary active:scale-95 transition-all" href="#">
+<span class="material-symbols-outlined">calendar_month</span>
+<span class="font-label-sm text-label-sm">Kalendārs</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary active:scale-95 transition-all" href="#">
+<span class="material-symbols-outlined">architecture</span>
+<span class="font-label-sm text-label-sm">Plānotājs</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-xl px-4 py-1 active:scale-95 transition-all" href="#">
+<span class="material-symbols-outlined">groups</span>
+<span class="font-label-sm text-label-sm">Kopiena</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary active:scale-95 transition-all" href="#">
+<span class="material-symbols-outlined">brightness_3</span>
+<span class="font-label-sm text-label-sm">Mēness</span>
+</a>
+</nav>
+<!-- Contextual FAB -->
+<button class="fixed bottom-24 right-6 md:bottom-8 md:right-8 w-14 h-14 bg-primary text-on-primary rounded-full shadow-2xl flex items-center justify-center transition-transform hover:scale-110 active:scale-90 z-40 group">
+<span class="material-symbols-outlined text-[28px]">add</span>
+<span class="absolute right-16 bg-surface-container-highest text-on-surface px-3 py-1 rounded-lg text-label-md font-label-md opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap shadow-xl">Dalīties ar ražu</span>
+</button>
+<script>
+        // Micro-interactions
+        document.querySelectorAll('button, a').forEach(el => {
+            el.addEventListener('click', () => {
+                // Haptic feedback simulation could go here
+            });
+        });
+
+        // Search Bar Focus Effect
+        const searchInput = document.querySelector('input[type="text"]');
+        searchInput.addEventListener('focus', () => {
+            searchInput.parentElement.classList.add('scale-[1.02]');
+        });
+        searchInput.addEventListener('blur', () => {
+            searchInput.parentElement.classList.remove('scale-[1.02]');
+        });
+
+        // Chat region toggle logic (simplified)
+        const regionButtons = document.querySelectorAll('.bg-surface-variant, .bg-primary-container');
+        regionButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                regionButtons.forEach(b => {
+                    b.classList.remove('bg-primary-container', 'text-on-primary-container');
+                    b.classList.add('bg-surface-variant', 'text-on-surface-variant');
+                });
+                btn.classList.add('bg-primary-container', 'text-on-primary-container');
+                btn.classList.remove('bg-surface-variant', 'text-on-surface-variant');
+            });
+        });
+    </script>
+</body></html>

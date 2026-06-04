@@ -1,0 +1,62 @@
+{
+  "slug": "budlejas",
+  "name": "Budlejas (tauriņu krūms)",
+  "latin": "Buddleja davidii",
+  "emoji": "🦋",
+  "type": "krums",
+  "tagline": "Garie, smaržīgie ziedu vālīši vasaras otrā pusē pievelk tauriņus kā magnēts.",
+  "bloom": "Jūlijs–septembris",
+  "height": "1,5–2,5 m (Latvijā parasti zemāks)",
+  "sun": "Saule",
+  "hardy": true,
+  "difficulty": "vidēji",
+  "plantWhen": "Stādu stāda pavasarī pēc salnām vai vasaras sākumā, lai krūms paspēj iesakņoties",
+  "moonPhase": "augošs",
+  "moonElement": "ziedi",
+  "moonText": "Budleju kā skaista zieda krūmu pēc biodinamiskās tradīcijas stāda un apgriež ziedu (gaisa) dienās — kad Mēness ir Dvīņos, Svaros vai Ūdensvīrā — un labāk augošā Mēnesī, kad spēks virzās uz augšu. Tā ir veca dārznieku tradīcija, ne garantija: daudz svarīgāk ir iestādīt siltā, saulainā vietā un pavasara apgriešanu veikt tikai tad, kad lielie sali jau garām.",
+  "intro": [
+    "Budleja, ko tās ziedu pievilcības dēļ mīļi sauc par tauriņu krūmu, ir viens no skaistākajiem vasaras otrās puses ziedošajiem krūmiem. No jūlija līdz pat rudens salnām tā veido garus, koniskus ziedkopu vālīšus — visbiežāk lillā, violetos, sārtos vai baltos toņos — kuri silti smaržo un tiešām pulcē ap sevi tauriņus, kamenes un bites. Tieši tāpēc tā ir lieliska izvēle dārzniekam, kas grib piesaistīt dārzam dzīvību un kustību.",
+    "Latvijā budleja jārēķina kā tā saucamais \"piesalstošais\" krūms. Mūsu zonā (iekšzemē 4b–5a, piejūrā siltāk līdz 5b–6a) bargā ziemā tās virszemes dzinumi nereti apsalst līdz pat sakņu kaklam, taču saknes parasti izdzīvo, un pavasarī krūms no apakšas dzen jaunus, spēcīgus dzinumus. Tas nav defekts, bet gan budlejas dabiskais ritms mūsu klimatā: tā zied uz tekošā gada dzinumiem, tāpēc pat pēc stipras apsalšanas tā paspēj ataugt un to pašu vasaru saziedēt no jauna."
+  ],
+  "planting": [
+    "Stādi pavasarī pēc pēdējām salnām (iekšzemē drošāk maija beigās) vai vasaras sākumā, lai krūms līdz ziemai paspēj labi iesakņoties; rudenī stādītam jaunam stādam mūsu ziema var būt par grūtu.",
+    "Izvēlies saulainu, no aukstajiem ziemeļvējiem aizvēja vietu — jo vairāk saules un siltuma, jo kuplāka ziedēšana un labāka pārziemošana. Budleja necieš mitru, applūstošu vietu, kur saknes ziemā var sapūt.",
+    "Stādīšanas bedri rok aptuveni divreiz platāku par sakņu kamolu un tikpat dziļu; sakņu kaklu novieto tādā pašā dziļumā, kā augs audzis konteinerā, vai tikai pavisam nedaudz dziļāk.",
+    "Smagā, mālainā augsnē bedres dibenā ieber drenāžas kārtu (granti vai rupjas smiltis) un piejauc kompostu — budleja vislabāk jūtas vieglā, caurlaidīgā, ne pārāk barīgā zemē.",
+    "Ja stādi vairākus krūmus, atstāj starp tiem 1,5–2 m, jo budleja, labi pārziemojusi, var izaugt plata; pēc stādīšanas krietni aplej un pirmajā sezonā uzturi augsni mēreni mitru."
+  ],
+  "care": [
+    "Laisti regulāri pirmajā sezonā, kamēr krūms iesakņojas, un vēlāk ilgstošā sausumā; iesakņojusies budleja sausumu panes labi un nemīl pastāvīgu mitrumu pie saknēm.",
+    "Mēslo taupīgi — pietiek ar komposta kārtu vai vieglu mēslojumu pavasarī. Pārāk daudz slāpekļa dod garus, lapainus, vārgus dzinumus, kas sliktāk pārziemo un mazāk zied.",
+    "Pavasara apgriešana ir galvenais kopšanas darbs: tā kā budleja zied uz tekošā gada dzinumiem, to pavasarī apgriež stipri — veco dzinumu atstāj tikai 20–40 cm garumā vai nogriež līdz veselajai daļai virs sakņu kakla. No šādas apgriešanas krūms kļūst kuplāks un ziedi lielāki.",
+    "Apgriešanu veic tikai tad, kad lielie sali jau garām un sāk briest pumpuri (parasti aprīlī) — pārāk agra apgriešana var pakļaut svaigos griezumus salam.",
+    "Noņem nokaltušos, brūnos ziedu vālīšus visas vasaras garumā — tas pamudina krūmu dot jaunas ziedkopas un neļauj tam izsēties; budleja mēdz pati izsēties un dažviet uzvesties kā nezāle.",
+    "Rudenī apsalušos vai bojātos dzinumus uzreiz negriez — atstāj tos līdz pavasarim, jo tie ziemā nedaudz aizsargā sakņu kaklu; visu sakopj pavasara apgriešanā."
+  ],
+  "winter": "Budleja Latvijā paliek augt dārzā — to neizrok. Tā ir mēreni ziemcietīga, taču bargā ziemā tās virszemes daļa var apsalt līdz sakņu kaklam; saknes parasti izdzīvo, un pavasarī krūms ataug no apakšas. Lai palīdzētu pārziemot, rudenī sakņu kaklu un pamatni piesedz ar biezu kārtu kūdras, komposta, lapu vai skuju (10–20 cm), īpaši jauniem stādiem un atklātās, vējainās vietās. Apsalušos dzinumus rudenī negriez — atstāj tos līdz pavasarim. Pavasarī piesegumu noņem, tiklīdz pamatne sāk atkust, un pēc tam veic stipro apgriešanu.",
+  "problems": [
+    "Stipra apsalšana ziemā — Latvijā gaidāma parasti — virszemes dzinumi apsalst līdz sakņu kaklam; tas nav traģēdija, jo pavasarī krūms ataug, bet jaunus stādus palīdz pasargāt saknes piesegšana un aizvēja vieta.",
+    "Krūms neataug vai aug ļoti vēlu — visbiežāk tāpēc, ka apgriešana veikta par agru un sals bojājis svaigos griezumus, vai saknes ziemā sapuvušas mitrā augsnē; griez tikai pēc saliem un stādi caurlaidīgā vietā.",
+    "Pašizsēšanās — budleja var izsēties pa visu dārzu un savvaļā uzvesties agresīvi; lai to ierobežotu, savlaicīgi noņem nokaltušos ziedu vālīšus, pirms tie izsējas."
+  ],
+  "folklore": "Budleja Latvijas dārzos ienākusi salīdzinoši nesen un īstu tautas ticējumu tai nav, taču dārznieku vidū tā ātri ieguvusi sirsnīgu vārdu — tauriņu krūms — jo silti smaržojošie vālīši patiešām pulcē ap sevi tauriņus, un daudzi to stāda tieši tāpēc, lai vasaras dārzā būtu šis dzīvais, plīvojošais skats.",
+  "faq": [
+    {
+      "q": "Vai budleja pārziemos Latvijā, vai tā ik gadu jāizrok?",
+      "a": "Budleju neizrok — tā paliek dārzā. Mūsu bargajās ziemās tās dzinumi gan bieži apsalst līdz pat sakņu kaklam, taču saknes parasti izdzīvo, un pavasarī krūms ataug no apakšas. Jaunus stādus un krūmus vējainā vietā palīdz pasargāt biezs sakņu pamatnes piesegums rudenī."
+    },
+    {
+      "q": "Kad un cik stipri budleju apgriež?",
+      "a": "Apgriež pavasarī, kad lielie sali jau garām un sāk briest pumpuri (parasti aprīlī). Apgriež stipri — vecos dzinumus atstāj tikai 20–40 cm garumā vai nogriež līdz veselajai daļai virs sakņu kakla. Tā kā budleja zied uz tekošā gada dzinumiem, no stipras apgriešanas tā kļūst kuplāka un ziedi lielāki."
+    },
+    {
+      "q": "Kāpēc mana budleja vāji zied?",
+      "a": "Biežākie iemesli ir par maz saules, pārāk daudz slāpekļa mēslojuma (daudz lapu, maz ziedu) vai tas, ka krūms pavasarī nav apgriezts. Pārliecinies, ka tā aug saulainā vietā, mēslo taupīgi un katru pavasari apgriez stipri — tad ziedēšana būs daudz kuplāka."
+    }
+  ],
+  "related": [
+    "pelargonijas",
+    "narcises",
+    "peonijas"
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "title": "TOP augi siltumnīcai Latvijā",
+  "subtitle": "Siltummīļi, kas mūsu klimatā dod labāko ražu tieši zem stikla",
+  "category": "Apstākļiem",
+  "intro": [
+    "Latvijā vasara ir īsa un kaprīza — pēdējās salnas mēdz pieķerties pat līdz maija beigām, bet jau augusta naktīs gaiss kļūst dzestrs. Siltummīļiem ar to ir par maz. Tieši tāpēc siltumnīca nav greznība, bet gan veids, kā dabūt nogatavojušos ražu, nevis zaļus augļus, kas tā arī nepaspēj.",
+    "Siltumnīca dod divas lietas: siltumu un aizsardzību. Naktis ir par dažiem grādiem siltākas, augi pasargāti no lietus un vēja, un sezona pastiepjas par pāris nedēļām abos galos. Tomātiem tas nozīmē mazāk lapu puves, gurķiem — vairāk augļu, paprikai — vispār iespēju nogatavoties.",
+    "Esi godīgs ar sevi: siltumnīca nav burvju kaste. Karstās jūlija dienās tā jāvēdina, citādi augi cep, un laistīt vajadzēs biežāk nekā laukā. Bet šie augi to atmaksā ar uzviju — sāksim ar tiem, kam siltumnīca vajadzīga visvairāk."
+  ],
+  "items": [
+    {
+      "rank": 1,
+      "cropId": "tomati",
+      "name": "Tomāti",
+      "blurb": "Siltumnīcas karalis Latvijā — zem stikla tie izvairās no lapu puves, ko atklātā laukā parasti atnes augusta lietus un rasa. Stādi pēc salnām (maija beigās), un raža sniegsies līdz pat septembrim, kamēr lauka tomāti jau būtu padevušies."
+    },
+    {
+      "rank": 2,
+      "cropId": "paprika",
+      "name": "Paprika",
+      "blurb": "Mūsu vasara paprikai ir uz robežas par vēsu — laukā tā bieži paliek zaļa un sīka. Siltumnīcā nakts siltums ļauj tai patiešām nogatavoties un kļūt sarkanai; sēj telpās jau februārī, jo aug lēni."
+    },
+    {
+      "rank": 3,
+      "cropId": "gurki",
+      "name": "Gurķi",
+      "blurb": "Īsti siltummīļi, kas mīl mitru, siltu gaisu — tieši to siltumnīca dod vislabāk. Zem stikla tie sāk ražot ātrāk un dod krietni vairāk augļu nekā vēsajā laukā, kur dzestras naktis tos kavē."
+    },
+    {
+      "rank": 4,
+      "cropId": "baziliks",
+      "name": "Baziliks",
+      "blurb": "Latvijas laukā baziliks bieži tikai kūņojas un nesalec — viena vēsa nakts to apdedzina. Siltumnīcā tas aug kupls un aromātisks, un labi jūtas blakus tomātiem, ar kuriem dala mīlestību pret siltumu."
+    },
+    {
+      "rank": 5,
+      "cropId": "kabaci",
+      "name": "Kabači/cukīni",
+      "blurb": "Iesācēja sapnis — viens augs dod ražu kaudzēm. Siltumnīcā to vērts iesēt rasādei dažas nedēļas agrāk, bet pēc salnām droši pārcel uz lauku: kabačiem siltumnīcas vieta nav obligāta, un atklātā laukā tie ražo lieliski."
+    },
+    {
+      "rank": 6,
+      "cropId": "kirbji",
+      "name": "Ķirbji",
+      "blurb": "Ķirbjiem vajag garu, siltu sezonu, tāpēc stādu izaudzē zem stikla agrākam startam — bet pašu augu pēc salnām izstādi laukā, kur vīteņiem ir vieta izplesties. Visu vasaru siltumnīcā tos turēt nav vērts: tie aizņem pārāk daudz dārgās vietas."
+    },
+    {
+      "rank": 7,
+      "cropId": "salati",
+      "name": "Salāti",
+      "blurb": "Ne siltummīlis, bet siltumnīca tiem dod ko citu — agrāku un vēlāku ražu. Iesēj aprīlī un ēd jau tad, kad lauks vēl tukšs; karstā vasarā labāk pārcelt ēnainākā stūrī, citādi siltumnīcā tie ātri izšaujas ziedos."
+    },
+    {
+      "rank": 8,
+      "cropId": "dilles",
+      "name": "Dilles",
+      "blurb": "Agrai sējai siltumnīcā dilles sniedz svaigu garšaugu jau maijā, krietni pirms lauka. Sēj tās brīvajos stūros starp tomātiem — vietu prasa maz, bet virtuvē noder visu sezonu."
+    }
+  ],
+  "outro": "Siltumnīca nepadarīs tevi par dārznieku vienā naktī, bet siltummīļiem tā ir tā vieta, kur Latvijas klimats beidzot strādā tev par labu — sāc ar tomātiem un gurķiem, un pārējais nāks pats no sevis.",
+  "slug": "siltumnicai"
+}

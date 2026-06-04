@@ -1,0 +1,62 @@
+{
+  "slug": "peonijas",
+  "name": "Peonijas",
+  "latin": "Paeonia",
+  "emoji": "🌸",
+  "type": "daudzgadiga",
+  "tagline": "Vecmāmiņas dārza karaliene, kas zied gadu desmitiem un kļūst tikai skaistāka.",
+  "bloom": "Jūnijs (vēlīnajām šķirnēm līdz jūlija sākumam)",
+  "height": "60–100 cm",
+  "sun": "Saule / pussēna",
+  "hardy": true,
+  "difficulty": "viegli",
+  "plantWhen": "Sakneņus stāda rudenī (sept.–okt.), pumpurus seklu — 2–5 cm dziļumā",
+  "moonPhase": "dilstošs",
+  "moonElement": "ziedi",
+  "moonText": "Peonija ir ziedu augs, tāpēc kopšanu un ziedu vērošanu tradicionāli saista ar ziedu jeb gaisa dienām (Mēness Dvīņos, Svaros, Ūdensvīrā). Tā kā stāda saknenī ar pumpuriem, sakņu darbu tradicionāli dara dilstošā Mēness laikā — taču daudz svarīgāks par konkrēto dienu ir tas, lai stādītu rudenī un pumpurus neaprok pārāk dziļi.",
+  "intro": [
+    "Peonija ir viena no tām puķēm, ko Latvijā atrast teju katrā vecā lauku dārzā — pie mājas stūra, gar dārza taku vai vecmāmiņas dobē, kur tā zied jau gadu desmitiem. Tieši ar to peonija ir tik mīļa: iestādi reizi, un, ja vieta izvēlēta pareizi, tā tevi pāraugs un priecēs visu mūžu, ar katru gadu kuplāka un ar vairāk ziediem. Tā ir pilnībā ziemcietīga, izturīga pret mūsu salnām un slimībām samērā nejutīga — droša izvēle pat tam, kas dārzā tikai sāk.",
+    "Vienīgais, kur iesācēji visbiežāk kļūdās, ir stādīšanas dziļums — un tieši tas izšķir, vai peonija vispār ziedēs. Sakneņa pumpuri (tos sauc par actiņām) jāstāda pavisam seklu, tikai 2–5 cm zem augsnes virsmas; ja tos aprok dziļāk, augs gan dzīs lapas, bet ziedu var nebūt gadiem ilgi. Atceries to vienu lietu, un pārējais peonijai izdosies gandrīz pats no sevis. Tā zied īsi, bet spoži — pašā jūnija pilnvasarā, kad dārzs vēl pilns spēka."
+  ],
+  "planting": [
+    "Labākais stādīšanas laiks ir rudenī, no septembra līdz oktobra vidum, lai saknenis paspēj iesakņoties pirms ziemas; pavasarī stādīt arī var, bet rudens ir drošāks.",
+    "Izvēlies saulainu vai viegli pusēnainu vietu, ko nevajadzēs pārstādīt — peonija nemīl, ka to traucē, un vienā vietā var augt 20–30 gadus.",
+    "Izrok plašu bedri, ielej tajā labi sadalījušos kompostu vai trūdu, samaisi ar zemi un izveido stingru pamatu, lai saknenis pēc tam nenosēstos dziļāk.",
+    "Stādi saknenī tā, lai sārtie pumpuri-actiņas paliek tikai 2–5 cm zem virsmas — tas ir vissvarīgākais solis. Pārāk dziļi iestādīta peonija nezied.",
+    "Starp augiem atstāj 80–100 cm, jo ar gadiem krūms izaug plats un kupls; pēc stādīšanas labi aplej un mulčē, bet pumpurus ar mulču neaprok dziļi."
+  ],
+  "care": [
+    "Laisti pamatīgi un dziļi sausās vasarās, īpaši pumpuru veidošanās un ziedēšanas laikā; iesakņojies krūms ir samērā sausumizturīgs, tāpēc bieža virspusēja laistīšana nav vajadzīga.",
+    "Mēslo mēreni — pavasarī un pēc ziedēšanas dod kālijā un fosforā bagātu mēslojumu vai komposta kārtu; par daudz slāpekļa dod kuplas lapas, bet maz ziedu.",
+    "Lielziedu šķirnēm liec atbalstu jeb stīpu jau pirms ziedēšanas, jo smagās, pildītās ziedu galvas pēc lietus viegli noliecas līdz zemei.",
+    "Novācušos ziedus nogriez, lai augs nevelta spēku sēklām; lapotni atstāj veselu līdz rudenim, jo tā baro nākamā gada pumpurus.",
+    "Rudenī, kad lapas nokaltušas, stublājus nogriez pie zemes un aizvāc — tas mazina sēņu slimību risku nākamsezon.",
+    "Ja peonija stāv vietā labi, neaiztiec to — pārstādīšana un dalīšana to atmet atpakaļ, un pēc tās bieži paiet pāris gadi līdz nākamajiem ziediem."
+  ],
+  "winter": "Peonija Latvijā ir pilnīgi ziemcietīga un pārziemo atklātā laukā bez izrakšanas vai īpašas segšanas. Jaunus, rudenī iestādītus augus pirmajā ziemā var viegli apmulčēt ar kūdru vai lapām, ko pavasarī noņem, lai pumpuri netiek aprakti pārāk dziļi. Pieaugušiem krūmiem nekāda aizsardzība nav vajadzīga.",
+  "problems": [
+    "Nezied vai zied vāji — visbiežākais cēlonis ir pārāk dziļi iestādīti pumpuri (dziļāk par 5 cm), pārāk ēnaina vieta, par jaunu augs vai nesen pārstādīts krūms; pārbaudi dziļumu un dod laiku.",
+    "Pelēkā puve (Botrytis) mitrā pavasarī — jaunie dzinumi un pumpuri kļūst brūni un satrūd; palīdz retāks stādījums, laba gaisa kustība un nokaltušo stublāju aizvākšana rudenī.",
+    "Skudras uz pumpuriem — tās nāk pēc saldās sulas un peonijai nekaitē, tāpēc nekas nav jādara; tā nav slimība, bet pavisam dabiska parādība."
+  ],
+  "folklore": "Peonija ir viena no klasiskajām Latvijas lauku dārza puķēm, ko nereti var atrast vecu māju vietās ziedam jau gadu desmitiem pēc tam, kad mājas vairs nav — sava ilgmūžības un izturības dēļ tā ir kļuvusi par paaudzēs nodotu dārza augu, ko bieži dāvina kā stādiņu no sava krūma. Ziedu augus pēc biodinamiskās tradīcijas saista ar ziedu jeb gaisa dienām, taču to der uztvert kā jauku dārza ritmu, ne ražas garantiju.",
+  "faq": [
+    {
+      "q": "Kāpēc mana peonija nezied?",
+      "a": "Visbiežākais iemesls ir pārāk dziļi iestādīti pumpuri — tiem jāpaliek tikai 2–5 cm zem augsnes virsmas. Citi iemesli ir pārāk ēnaina vieta, par jaunu vai nesen pārstādīts augs (pēc pārstādīšanas bieži paiet 2–3 gadi līdz ziediem) un pārāk daudz slāpekļa mēslojuma. Pārbaudi stādīšanas dziļumu un, ja vajag, uzmanīgi pacel sakneni augstāk."
+    },
+    {
+      "q": "Vai peonija jāizrok ziemai?",
+      "a": "Nē. Peonija Latvijā ir pilnībā ziemcietīga un paliek augsnē visu gadu — to izrakt nevajag. Tikai pirmajā ziemā jaunu stādu var viegli apmulčēt, ko pavasarī noņem."
+    },
+    {
+      "q": "Kad un kā stādīt peoniju?",
+      "a": "Vislabāk rudenī, no septembra līdz oktobra vidum. Izvēlies saulainu vietu, ko nevajadzēs mainīt, un iestādi sakneni tā, lai sārtie pumpuri-actiņas paliek tikai 2–5 cm zem virsmas. Atstāj starp augiem 80–100 cm, jo krūms ar gadiem kļūst plats."
+    }
+  ],
+  "related": [
+    "narcises",
+    "tulpes",
+    "pelargonijas"
+  ]
+}

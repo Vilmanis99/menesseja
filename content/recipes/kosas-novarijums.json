@@ -1,0 +1,36 @@
+{
+  "name": "Kosas novārījums",
+  "tagline": "Silīcijam bagāts uzlējums, kas stiprina lapas pret miltrasu un citām sēnīšu slimībām.",
+  "purpose": "slimibas",
+  "difficulty": "videji",
+  "timeText": "30 min vārīšana + nakts ievilkšanās + atdzišana",
+  "intro": [
+    "Tīruma kosa (Equisetum arvense) ir bagāta ar silīciju un kālija sāļiem. Novārījums neiznīcina sēnītes kā ķīmisks fungicīds, bet nostiprina lapu virskārtu un padara augus izturīgākus pret miltrasu, kraupi un citām sēnīšu slimībām. Tā ir profilakse, nevis brīnumlīdzeklis — vislabāk to lietot regulāri, jau pirms slimība parādās.",
+    "Kosu vari salasīt pats vasaras sākumā mitrās malās un grāvjos vai nopirkt sausu aptiekā. Uzmanies — nesajauc to ar indīgo purva kosu; tīruma kosa aug sausākās vietās un tās stublāji ir raupji."
+  ],
+  "ingredients": [
+    "100 g svaigas kosas vai 20-30 g sausas kosas",
+    "1 litrs ūdens (vislabāk lietus ūdens)",
+    "Šķipsna ziepju vai augu eļļas (neobligāti, kā pielipinātājs smidzinot)"
+  ],
+  "steps": [
+    "Sasmalcini kosu un ieber to katlā ar 1 litru auksta ūdens.",
+    "Ļauj ievilkties 12-24 stundas (vislabāk pa nakti) — tas palīdz silīcijam labāk izdalīties.",
+    "Uzvāri un vāri uz lēnas uguns ar vāku apmēram 30 minūtes, līdz šķidrums kļūst brūngans.",
+    "Noņem no uguns un ļauj pilnībā atdzist.",
+    "Izkāš novārījumu caur smalku sietu vai marli, lai smidzinātāja sprausla neaizsērē.",
+    "Ja netaisies lietot uzreiz, glabā vēsumā ne ilgāk par 1-2 nedēļām."
+  ],
+  "application": [
+    "Atšķaidi novārījumu ar ūdeni attiecībā 1:5 (viena daļa novārījuma uz piecām daļām ūdens).",
+    "Pievieno šķipsnu ziepju vai dažus pilienus eļļas, lai šķidrums labāk pieliptu lapām.",
+    "Smidzini no rīta vai vakarā, kad nav tiešas saules, vienmērīgi pārklājot lapas no abām pusēm.",
+    "Profilaksei smidzini ik pēc 1-2 nedēļām; mitros, lietainos periodos biežāk, jo tieši tad sēnītes uzbrūk."
+  ],
+  "moonPhase": "augošs",
+  "moonElement": "lapas",
+  "moonText": "Pēc biodinamiskās tradīcijas lapu smidzinājumus dara augošā Mēnesī lapu dienās, kad uzskata, ka sulas vairāk virzās uz augšu pa stublājiem un lapām.",
+  "caution": "Tā ir profilakse, ne ārstniecība — jau stipri saslimušu augu kosa neizglābs, un slimās lapas labāk nogriezt. Vienmēr vispirms izsmidzini uz dažām lapām un pagaidi dienu, jo pārāk koncentrēts šķīdums var apdedzināt. Nesajauc tīruma kosu ar indīgo purva kosu. Glabā novārījumu vēsumā un nelieto, ja tas sācis pelēt vai nepatīkami smird.",
+  "folklore": "Senāk kosu sauca par \"skalbārdi\" un ar tās raupjajiem stublājiem beržot tīrīja alvas traukus un katlus — tāpat kā tā \"notīra\" augus no sēnītēm.",
+  "slug": "kosas-novarijums"
+}

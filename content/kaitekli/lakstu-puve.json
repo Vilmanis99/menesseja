@@ -1,0 +1,60 @@
+{
+  "slug": "lakstu-puve",
+  "name": "Lakstu puve",
+  "emoji": "🍂",
+  "latin": "Phytophthora infestans",
+  "type": "slimiba",
+  "severity": "nopietns",
+  "tagline": "Bīstamākā kartupeļu un tomātu slimība mitrā, siltā vasarā — strauji iznīcina lakstus un sapūdē bumbuļus un augļus.",
+  "affects": [
+    "Kartupeļi",
+    "Tomāti",
+    "Retāk baklažāni un citi nakteņu dzimtas augi"
+  ],
+  "signs": [
+    "Uz lapām parādās brūni vai melni, slapji izskatīgi plankumi, bieži sākumā uz lapu malām un galiem",
+    "Plankumu apakšpusē mitrā laikā veidojas tievs, balts pūkains pelējums",
+    "Uz stumbriem un lapu kātiem rodas tumši brūni, gandrīz melni svītrveida plankumi",
+    "Lakstu puve izplatās ļoti strauji — dažas siltas, lietainas dienas, un visi laksti var nomelnēt un sabrukt",
+    "Kartupeļu bumbuļiem ādā ieliekti pelēkbrūni plankumi, mīkstums brūns un pūstošs; tomātiem augļi kļūst cieti brūni un puvst"
+  ],
+  "intro": [
+    "Lakstu puve ir sēnei līdzīgs organisms, kas vasaras siltajā un mitrajā laikā — parasti jūlijā un augustā — var dažu dienu laikā iznīcināt visu kartupeļu un tomātu lauku. Sporas izplatās ar lietus pilieniem, rasu un vēju, tāpēc slimība uzliesmo tieši pēc siltām, lietainām vai miglainām dienām, kad lapas ilgi paliek slapjas.",
+    "Šī ir tā pati slimība, kas 19. gadsimtā izraisīja Īrijas badu, un tā joprojām ir nopietnākā nakteņu dzimtas augu slimība. Svarīgi saprast — ar dabīgām metodēm lakstu puvi nevar izārstēt, kad tā jau plosās. Tāpēc galvenais ir PROFILAKSE un ātra rīcība: pamanot pirmos plankumus, slimās daļas tūlīt jānoņem, lai izglābtu pārējo ražu."
+  ],
+  "control": [
+    "Pamanot pirmos plankumus, nekavējoties nogriez un iznīcini slimās lapas un stumbrus — tā ir efektīvākā rīcība, jo izsmidzināmie līdzekļi infekciju neapturēs.",
+    "Ja slimība strauji izplatās pa kartupeļu lakstiem, nopļauj un aizvāc visus lakstus 2–3 nedēļas pirms rakšanas — tā sporas neaizskalojas līdz bumbuļiem augsnē.",
+    "Visas slimās lapas, stumbrus un augļus iznīcini — sadedzini vai izved ar atkritumiem. NEKAD nemet kompostā, jo infekcija saglabājas.",
+    "Tomātiem noņem apakšējās lapas un visus skartos augļus; izlauz papildu dzinumus, lai krūms būtu gaisīgs un ātri apžūtu pēc lietus.",
+    "Slapjā laikā nestrādā augu vidū un nesmidzini neko no augšas — staigājot pa slapjiem lakstiem un slacinot lapas, tu pats iznēsā sporas.",
+    "Kartupeļus, kas jau ir izrakti, pirms uzglabāšanas labi nožāvē un pāršķiro — slimos bumbuļus izmet, lai puve neizplatās glabātavā.",
+    "Profilaktiski, vēl pirms slimības pazīmēm, augus var stiprināt ar kosas novārījumu — silīcijs nostiprina lapu virskārtu. Tā ir tikai profilakse, kas neaizvieto pārējos pasākumus un neizārstē jau saslimušu augu."
+  ],
+  "recipeSlugs": [
+    "kosas-novarijums"
+  ],
+  "prevention": [
+    "Audzē izturīgas šķirnes — ir kartupeļu un tomātu šķirnes, kas pret lakstu puvi ir noturīgākas; iesācējam tas ir vienkāršākais ceļš uz veselīgu ražu.",
+    "Ievēro augu maiņu — kartupeļus un tomātus tajā pašā vietā atkārtoti stādi ne biežāk kā reizi 3–4 gados, lai augsnē neuzkrātos infekcija.",
+    "Stādi retināti un gaisīgi, lai pēc lietus un rasas laksti ātri apžūtu; biezi sastādīti augi ilgāk paliek slapji un saslimst pirmie.",
+    "Tomātus pēc iespējas audzē zem nojumes vai siltumnīcā, lai lapas nesaslapst no lietus — sausas lapas saslimst daudz retāk.",
+    "Nesmidzini augus no augšas un laisti tikai pie saknes no rīta, lai lapas paspētu apžūt; vakara laistīšana atstāj lapas slapjas visu nakti."
+  ],
+  "moonNote": "Tradicionāli dilstošā Mēnesī veic slimo lakstu griešanu un kartupeļu lakstu pļaušanu pirms rakšanas. Tomēr atceries — lakstu puve negaida Mēness fāzes: pamanot slimību, rīkojies nekavējoties, neatkarīgi no kalendāra.",
+  "folklore": "Veci dārznieki zina: ja jūlijā uznāk silti, smacīgi un lietaini laiki ar rīta miglu, kartupeļu lauks jāapskata katru dienu — \"puve nāk ar siltu lietu\". Senāk lakstus steidzās nopļaut tūlīt, tiklīdz tie sāka melnēt, lai paglābtu bumbuļus zemē.",
+  "faq": [
+    {
+      "q": "Vai slimos lakstus drīkst likt kompostā?",
+      "a": "Nē, nekādā gadījumā. Lakstu puves infekcija kompostā var saglabāties un nākamgad atgriezties dārzā. Slimās lapas, stumbrus un augļus sadedzini vai izved ar atkritumiem."
+    },
+    {
+      "q": "Vai ar kosas novārījumu var izārstēt jau slimu augu?",
+      "a": "Nē. Kosas novārījums tikai stiprina lapas profilaktiski, pirms slimība parādījusies. Kad plankumi jau redzami, vienīgais, kas palīdz, ir ātri noņemt un iznīcināt slimās daļas, lai izglābtu pārējo ražu."
+    },
+    {
+      "q": "Vai kartupeļus no slima lauka var ēst un glabāt?",
+      "a": "Veselos, neskartos bumbuļus var ēst. Pirms glabāšanas tos rūpīgi nožāvē un pāršķiro — visus bumbuļus ar brūniem, ieliektiem plankumiem vai pūstošu mīkstumu izmet, jo glabātavā tie sabojās arī pārējos."
+    }
+  ]
+}

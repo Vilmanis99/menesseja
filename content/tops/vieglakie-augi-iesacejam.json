@@ -1,0 +1,74 @@
+{
+  "title": "TOP vieglākie dārzeņi iesācējam",
+  "subtitle": "Neprasīgi, piedodoši un ātri — kultūras, ar kurām pirmā gada dārznieks Latvijā tiešām dabū ražu",
+  "category": "Iesācējiem",
+  "intro": [
+    "Pirmais gads dārzā nav par to, lai izaudzētu visu — tas ir par to, lai gūtu pirmo veiksmes sajūtu. Tāpēc sāc ar dārzeņiem, kas piedod kļūdas: ja aizmirsi aplaistīt, iesēji par dziļu vai par biezu, tie tik un tā kaut ko dos.",
+    "Esi godīgs ar sevi: Latvijas klimats nav viegls. Pēdējās salnas pie mums ir maija vidū vai pat beigās, un siltummīļus (tomātus, gurķus, papriku) laukā nedrīkst likt agrāk — viena salna nakts tos nogalina. Tāpēc šajā sarakstā lielākā daļa ir aukstumizturīgas, tieši laukā sējamas kultūras, kuras vari sākt jau aprīlī.",
+    "Galvenais padoms iesācējam: sēj maz, bet bieži, un izvēlies dārzeņus, kas ražu dod ātri. Nekas tā nemotivē kā pirmie redīsi pēc trim nedēļām."
+  ],
+  "items": [
+    {
+      "rank": 1,
+      "cropId": "rediisi",
+      "name": "Redīsi",
+      "blurb": "Visātrākā raža dārzā — gatavi jau 25–35 dienās. Sēj tieši laukā no aprīļa, pa nedaudz ik pārnedēļas, un tev būs kraukšķīgi redīsi visu sezonu; ideāla pirmā sēja arī bērnam."
+    },
+    {
+      "rank": 2,
+      "cropId": "salati",
+      "name": "Salāti",
+      "blurb": "Neprasīgi, panes arī pussēnu, un plūcamos lapu salātus vari plūkt pa lapai pēc 40 dienām. Sēj ik pa 2 nedēļām, lai svaigi salāti būtu uz galda visu vasaru."
+    },
+    {
+      "rank": 3,
+      "cropId": "zirni",
+      "name": "Zirņi",
+      "blurb": "Aukstumizturīgi — drīksti sēt jau aprīlī, ilgi pirms salnu beigām. Vienīgais, kas vajadzīgs, ir kāds zariņš vai tīkls rāpšanai, un saldie zirņi no pāksts tāpat nekad netiek līdz virtuvei."
+    },
+    {
+      "rank": 4,
+      "cropId": "pupas",
+      "name": "Pupas",
+      "blurb": "Lielas sēklas, ko viegli iesēt pa vienai pareizā dziļumā — grūti kļūdīties. Lauka pupas ir aukstumizturīgas, tāpēc sēj agri — jau aprīlī, tiklīdz augsni var apstrādāt; raža no jūlija, un pupas vēl padara augsni auglīgāku."
+    },
+    {
+      "rank": 5,
+      "cropId": "kabaci",
+      "name": "Kabači/cukīni",
+      "blurb": "Viens no pateicīgākajiem augiem — viens stāds dod tik daudz, ka iesācējam pietiek ar 2–3. Stāda jūnijā pēc salnām, un no jūlija plūc gandrīz katru dienu."
+    },
+    {
+      "rank": 6,
+      "cropId": "bietes",
+      "name": "Bietes",
+      "blurb": "Sēj tieši laukā maijā–jūnijā, gandrīz nav slimību un kaitēkļu, un rudenī novāc pilnu spaini. Labi glabājas pagrabā līdz pavasarim — pirmā gada uzvara arī uzglabāšanā."
+    },
+    {
+      "rank": 7,
+      "cropId": "dilles",
+      "name": "Dilles",
+      "blurb": "Iemet vagā un aizmirsti — bieži pat pašsējas atkārtojas nākamgad. Sēj tieši laukā no aprīļa atkārtoti; svaigas dilles pie jaunajiem kartupeļiem ir vesela vasara podiņā."
+    },
+    {
+      "rank": 8,
+      "cropId": "kartupeli",
+      "name": "Kartupeļi",
+      "blurb": "Iemet bedrītē iedīgušu bumbuli, apber un gaidi — gandrīz nav iespējams sabojāt. Stāda maija pirmajā pusē, kad augsne ~8 °C, un septembrī izrok visu sezonu glabājamu ražu."
+    },
+    {
+      "rank": 9,
+      "cropId": "spinati",
+      "name": "Spināti",
+      "blurb": "Ātri, aukstumizturīgi un pat mīl vēsumu — labākie pavasarī un rudenī. Sēj agri aprīlī; karstā vasaras vidū tie ātri iziet ziedos, tāpēc nesēj jūlijā."
+    },
+    {
+      "rank": 10,
+      "cropId": "sipoli",
+      "name": "Sīpoli",
+      "blurb": "Visvieglāk no sīpolu loka (mazajiem sīpoliņiem) — iespraud aprīlī augsnē un praktiski neko vairāk nedari. Augustā galviņas izvelk, izžāvē, un tie glabājas līdz pavasarim."
+    }
+  ],
+  "outro": "Nesāc ar visu uzreiz — izvēlies 3–4 no šī saraksta, un pirmajā gadā tev būs gan raža, gan pārliecība turpināt nākamajā.",
+  "slug": "vieglakie-augi-iesacejam"
+}

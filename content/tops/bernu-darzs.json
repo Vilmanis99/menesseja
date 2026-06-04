@@ -1,0 +1,68 @@
+{
+  "title": "TOP augi, ko izaudzēt kopā ar bērnu",
+  "subtitle": "Ātri, lieli un garšīgi augi, kas tiešām aizrauj mazos dārzniekus",
+  "category": "Iesācējiem",
+  "intro": [
+    "Bērns dārzā grib redzēt rezultātu — un labāk ātri. Tāpēc šajā sarakstā ir augi, kas dīgst pāris dienās, aug acīm redzami vai kļūst tik lieli un krāsaini, ka pie tiem gribas atgriezties katru rītu.",
+    "Esi godīgs pats ar sevi: daļu šo augu — piemēram, tomātus un kabačus — sāc siltumnīcā vai uz palodzes, bet stādus un sēklas pa īstam zemē liec tikai pēc pēdējām salnām — pie mums tas ir maija vidū vai beigās. Līdz tam lieliski der palodze.",
+    "Iedod bērnam savu rindiņu vai puķupodu, ko viņš pats laista un kopj. Daļa neizdosies — tā ir normāli. Galvenais ir prieks par to, kas izaug."
+  ],
+  "items": [
+    {
+      "rank": 1,
+      "cropId": "saulespukes",
+      "name": "Saulespuķes",
+      "blurb": "Lielas sēklas, ko mazi pirkstiņi viegli iestāda, un augs, kas vasarā izstiepjas augstāks par pašu bērnu. Sēj zemē maija beigās saulainā vietā un mēri augstumu kopā — efekts garantēts."
+    },
+    {
+      "rank": 2,
+      "cropId": "rediisi",
+      "name": "Redīsi",
+      "blurb": "Ātrākā raža no visām — gatavi jau 25–35 dienās, tāpēc bērns nepaspēj zaudēt interesi. Sēj zemē jau no aprīļa pa nedaudz un atkārto visu sezonu, lai vienmēr būtu ko rakt ārā."
+    },
+    {
+      "rank": 3,
+      "cropId": "zirni",
+      "name": "Zirņi",
+      "blurb": "Saldie zirnīši ir kā konfektes tieši no dobes — bērni tos ēd ātrāk, nekā tu paspēj novākt. Aukstumizturīgi, tāpēc sēj agri (aprīlī–maijā), un dod bērnam uzdevumu piesiet vītnes pie atbalsta."
+    },
+    {
+      "rank": 4,
+      "cropId": "kabaci",
+      "name": "Kabači/cukīni",
+      "blurb": "Lielas sēklas un satriecošs ātrums — viens augs dod tik daudz, ka pārsteigums būs vesela vasara. Sēj uz palodzes maijā, izstādi zemē jūnijā, un ļauj bērnam meklēt slēptos augļus zem milzu lapām."
+    },
+    {
+      "rank": 5,
+      "cropId": "kirbji",
+      "name": "Ķirbji",
+      "blurb": "Nekas neiespaido bērnu vairāk par milzu ķirbi, ko viņš pats izaudzējis. Vajag daudz vietas un visu vasaru pacietības (raža septembrī–oktobrī), tāpēc tas ir lielisks projekts garai sezonai."
+    },
+    {
+      "rank": 6,
+      "cropId": "zemenes",
+      "name": "Zemenes",
+      "blurb": "Saldas ogas tieši mutē — neviens bērns nepaliks vienaldzīgs. Stādi pavasarī, bet esi godīgs: pirmā īstā raža būs tikai nākamgad, tāpēc tā ir mācība par gaidīšanu."
+    },
+    {
+      "rank": 7,
+      "cropId": "samtenes",
+      "name": "Samtenes",
+      "blurb": "Spilgti oranžas un dzeltenas puķes, kas zied nenogurstoši līdz pat salnām un piedod arī aizmāršīgu laistīšanu. Iestādi tās dobes malā — tās gan priecē aci, gan attur kaitēkļus no dārzeņiem."
+    },
+    {
+      "rank": 8,
+      "cropId": "salati",
+      "name": "Salāti",
+      "blurb": "Aug acīm redzami un panes pussēnu, tāpēc der arī podam uz palodzes. Sēj ik pa divām nedēļām un māci bērnam plūkt pa lapai, nevis rauj visu augu ārā."
+    },
+    {
+      "rank": 9,
+      "cropId": "kalendula",
+      "name": "Kliņģerītes",
+      "blurb": "Vienkāršas kā nezāle, sējamas tieši zemē, un zied visu vasaru oranžos toņos. Ziedlapiņas pat var likt salātos, tāpēc bērnam tas ir gan puķe, gan rotaļa, gan garšviela."
+    }
+  ],
+  "outro": "Ne viss izdīgs un ne viss izdosies — bet pat viena saulespuķe vai sauja redīsu var padarīt bērnu par īstu dārznieku. Sāc ar mazumiņu un priecājies par katru asniņu.",
+  "slug": "bernu-darzs"
+}

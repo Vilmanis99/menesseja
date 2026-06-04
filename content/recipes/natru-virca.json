@@ -1,0 +1,37 @@
+{
+  "name": "Nātru virca",
+  "tagline": "Slāpekļa bagāts, raudzēts šķidrais mēslojums spēcīgai lapu augšanai.",
+  "purpose": "meslojums",
+  "difficulty": "viegli",
+  "timeText": "15 min sagatavošana + 1–2 nedēļas raudzēšana",
+  "intro": [
+    "Nātru virca ir vecs, pārbaudīts dārznieka palīgs — raudzētas nātres ūdenī atdod augiem slāpekli un mikroelementus, kas baro zaļo masu. Tā ir lieliska kāpostiem, tomātiem, gurķiem un visam, kam vajag spēcīgu lapu augšanu sezonas sākumā.",
+    "Brīdinu uzreiz: tā smird! Bet tieši tā smaka nozīmē, ka raugs strādā. Pagatavo to tālāk no mājas un kaimiņu logiem, un balva būs zaļi, dzīvespriecīgi augi."
+  ],
+  "ingredients": [
+    "1 kg svaigu, jaunu nātru (vislabāk pirms ziedēšanas, bez sēklām)",
+    "10 l lietus vai nostāvējušos ūdens",
+    "Liela plastmasas muca vai spainis ar vāku (ne metāla — virca to korodē)",
+    "Sauja akmens miltu vai šķipsna baldriāna — neobligāti, mazina smaku",
+    "Cimdi un koka nūja maisīšanai"
+  ],
+  "steps": [
+    "Saplūc nātres cimdos un sagriez vai saplēs tās lielākos gabalos — jo sīkāk, jo ātrāk raudzē.",
+    "Iebāz nātres mucā un aplej ar 10 l ūdens tā, lai zaļā masa būtu pārklāta. Atstāj kādus 10 cm līdz malai, jo raudzējoties putos.",
+    "Uzliec vāku, bet ne hermētiski — gāzei jāizplūst. Novieto saulainā, siltā vietā, lai raudzēšana iet ātrāk.",
+    "Maisi katru dienu ar koka nūju. Sākumā putos un smirdēs asi — tas ir normāli.",
+    "Pēc 1–2 nedēļām virca vairs neputo un kļūst tumša — tā ir gatava. Siltā laikā tas notiek ātrāk, vēsā lēnāk.",
+    "Izkāš augu atliekas (tās der kompostā) un pārlej vircu tīrā traukā lietošanai."
+  ],
+  "application": [
+    "Saknei (laistīšanai): atšķaidi ~1:10 — viena daļa virca uz 10 daļām ūdens. Lej pie auga saknes, ne uz lapām, mitrā augsnē.",
+    "Lapu mēslojumam (smidzināšanai): atšķaidi vājāk, ~1:20, izkāš caur smalku sietu un smidzini no rīta vai vakarā, ne saulē.",
+    "Lieto ik pa 1–2 nedēļām zaļās augšanas posmā (maijs–jūlijs). No augusta pārtrauc, lai augi pagūst nobriest pirms rudens."
+  ],
+  "moonPhase": "augošs",
+  "moonElement": "lapas",
+  "moonText": "Pēc senās tradīcijas lapu barošanu un smidzināšanu veic augošā Mēness laikā lapu dienā, kad uzskatīts, ka sulas plūst uz augšu — saknes barošanai der dilstošs Mēness.",
+  "caution": "Nātru virca ir bagāta ar slāpekli, tāpēc nepārcenties — pārāk daudz dod garas, lunkanas lapas, vāji ziedi un augļi, un augi kļūst jutīgāki pret laputīm un slimībām. Vienmēr atšķaidi (nekad nelej tīru!) un nelieto sakņu dārzeņiem (burkāniem, sīpoliem) vai pākšaugiem, kam slāpekļa nevajag. Tas ir mēslojums, ne brīnumlīdzeklis — slimu augu tas neizārstēs.",
+  "folklore": "Latviešu sētās nātres allaž tikušas cienītas — saka, ka kur aug nātres, tur laba, trekna zeme, un veca māte tās lika ne tikai dārzā, bet arī putrā un pirts slotā.",
+  "slug": "natru-virca"
+}

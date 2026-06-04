@@ -1,0 +1,68 @@
+{
+  "title": "TOP ātrāk novācamie dārzeņi — raža jau pēc dažām nedēļām",
+  "subtitle": "Augi, ko nepacietīgais dārznieks var novākt visātrāk pēc sējas",
+  "category": "Ātrā raža",
+  "intro": [
+    "Ne visiem ir pacietība gaidīt visu vasaru, līdz no dobes parādās kaut kas ēdams. Labā ziņa — daļa dārzeņu un garšaugu aug tik ātri, ka pirmo ražu vari novākt jau pāris nedēļās. Saraksts sakārtots no ātrākā (redīsi ~3 nedēļas) līdz lēnākajiem siltummīļiem (gurķi, pupas ~2 mēneši), tāpēc sāc no augšas, ja gribi ražu pēc iespējas ātrāk.",
+    "Šie augi ir ideāli arī vēlai sējai — Latvijā vēl jūlijā droši vari iesēt redīsus, salātus vai spinātus un paspēt nogaršot ražu pirms rudens. Daudzus no tiem var sēt atkārtoti ik pa 2 nedēļām, lai svaigi salāti būtu uz galda visu sezonu.",
+    "Godīgi: \"ātri\" nenozīmē \"tūlīt\". Pat redīsiem vajag vismaz 3–4 nedēļas, un karstā, sausā laikā viss aug lēnāk un rūgtāk. Bet salīdzinājumā ar kāļiem vai ķirbjiem, kas dārzā stāv visu vasaru, šie ir īsts sprints."
+  ],
+  "items": [
+    {
+      "rank": 1,
+      "cropId": "rediisi",
+      "name": "Redīsi",
+      "blurb": "Ātrākais dārzenis no visiem — gatavs jau 25–35 dienās, dažkārt mēneša laikā. Sēj tieši laukā no aprīļa pa nedaudz; karstā jūlijā tos liec vēsākā, daļēji ēnainā vietā, citādi tie ātri iziet ziedos un kļūst cieti."
+    },
+    {
+      "rank": 2,
+      "cropId": "spinati",
+      "name": "Spināti",
+      "blurb": "Lapas vari plūkt jau pēc 40–50 dienām, un tie panes pussēnu. Pavasarī un rudenī aug vislabāk — karstumā ātri iziet ziedos un kļūst rūgti, tāpēc vēlā sēja augustā ir gudrāka par vasaras vidu."
+    },
+    {
+      "rank": 3,
+      "cropId": "dilles",
+      "name": "Dilles",
+      "blurb": "Pirmos zaļumus vari griezt jau pēc 4–6 nedēļām, sēj tieši laukā no aprīļa līdz jūlijam. Pārstādīšanu nemīl, tāpēc sēj uzreiz pareizajā vietā un atkārto ik pa pāris nedēļām."
+    },
+    {
+      "rank": 4,
+      "cropId": "salati",
+      "name": "Salāti",
+      "blurb": "Lapu salātus vari plūkt pa lapai jau pēc 40–60 dienām, negaidot pilnu galviņu. Sēj ik pa 2 nedēļām no aprīļa līdz augustam, un tie labi aug arī podos uz balkona vai pussēnā."
+    },
+    {
+      "rank": 5,
+      "cropId": "baziliks",
+      "name": "Baziliks",
+      "blurb": "Lapas gatavas 6–7 nedēļās, bet ir ķeksītis — tas ir īsts siltummīlis. Latvijā labāk audzē uz palodzes vai siltumnīcā un laukā stādi tikai pēc salnām maija beigās."
+    },
+    {
+      "rank": 6,
+      "cropId": "kabaci",
+      "name": "Kabači/cukīni",
+      "blurb": "Pirmos augļus plūc jau 50–60 dienās, un viens augs dod tik daudz, ka iesācējam pietiek ar 2–3 stādiem. Stādi laukā tikai pēc salnām jūnijā, jo salna stādu nogalina."
+    },
+    {
+      "rank": 7,
+      "cropId": "gurki",
+      "name": "Gurķi",
+      "blurb": "Pirmie gurķi gatavi 50–70 dienās, ja tos stādi siltumnīcā vai laukā pēc salnām jūnijā. Tas ir samērā ātri, taču siltummīļa raksturs prasa siltu vasaru un regulāru laistīšanu."
+    },
+    {
+      "rank": 8,
+      "cropId": "zirni",
+      "name": "Zirņi",
+      "blurb": "Pirmās pākstis vari ēst jau pēc 60–70 dienām, un tos var sēt agri — aprīlī, jo zirņi panes aukstumu. Vajag tikai mietiņus vai tīklu rāpšanai, pārējais notiek pats no sevis."
+    },
+    {
+      "rank": 9,
+      "cropId": "pupas",
+      "name": "Pupas",
+      "blurb": "Pirmā raža 55–70 dienās; lauka pupas ir aukstumizturīgas, tāpēc tās sēj agri — jau aprīlī aukstā augsnē, negaidot salnu beigas. Vienkāršas un izturīgas, labs nākamais solis nepacietīgam iesācējam."
+    }
+  ],
+  "outro": "Sāc ar redīsiem un lapu salātiem — pēc mēneša jau būsi novācis pirmo ražu, un tas ir labākais veids, kā noticēt, ka dārzkopība tev padodas.",
+  "slug": "atrakie-augi"
+}

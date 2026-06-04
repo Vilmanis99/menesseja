@@ -1,0 +1,37 @@
+{
+  "name": "Zaļmēslojums",
+  "tagline": "Sēj augus, kas pabaro tavu augsni — dzīvs mēslojums tieši dobē.",
+  "purpose": "augsne",
+  "difficulty": "viegli",
+  "timeText": "20 min sēšana + 6–8 nedēļas augšana",
+  "intro": [
+    "Zaļmēslojums ir pats vienkāršākais veids, kā uzlabot augsni — tu vienkārši iesēj ātraudzīgus augus tukšajā dobē, ļauj tiem paaugties un pēc tam iestrādā augsnē. Saknes irdina zemi, lapas un stublāji satrūdot pabaro to ar organiku, un augsne kļūst tumšāka, irdenāka un dzīvāka.",
+    "Vislabāk tas der dobēm, kas pēc ražas novākšanas stāv tukšas — sinepes un facēlija paspēj uzaugt pat vēlā vasarā, bet āboliņš pieved augsnei slāpekli. Tā vietā, lai zeme stāvētu kaila un izskalotos, tā strādā tev par labu."
+  ],
+  "ingredients": [
+    "Sinepju sēklas — ~20–30 g uz 10 m² (ātrākais, dīgst 3–5 dienās)",
+    "Facēlijas sēklas — ~10–15 g uz 10 m² (mīl bites, smuki zied)",
+    "Sarkanais vai baltais āboliņš — ~5–10 g uz 10 m² (slāpekļa pievedējs, lēnāks)",
+    "Grābeklis sēklu iestrādei",
+    "Lāpsta vai dakša iestrādei augsnē"
+  ],
+  "steps": [
+    "Pēc ražas novākšanas attīri dobi no nezālēm un sekli irdini augsnes virskārtu ar grābekli.",
+    "Izkaisi sēklas pēc iespējas vienmērīgāk — sinepes un facēliju var izsēt izkliedus, āboliņu sēj retāk. Nesēj pārāk biezi, citādi augi būs tievi.",
+    "Viegli iegrāb sēklas ~1–2 cm dziļumā un piespied augsni ar grābekļa muguru, lai sēkla saskaras ar zemi.",
+    "Ja zeme sausa, viegli aplej. 6–8 nedēļās augi sasniedz 30–50 cm un sāk veidot pumpurus.",
+    "Pirms ziedēšanas (vai tieši ziedēšanas sākumā) nopļauj vai noliec augus pie zemes — tad tie ir vissulīgākie un satrūd ātrāk.",
+    "Iestrādā zaļo masu augsnē ar lāpstu vai dakšu, aprokot ~10–15 cm dziļumā. Atstāj 2–3 nedēļas, lai sadalās, pirms stādi nākamo kultūru."
+  ],
+  "application": [
+    "Zaļmēslojums nav šķidrums, ko atšķaida — to neizmanto kā mēslojuma uzlējumu. Tu to iesēj un iestrādā vietā.",
+    "Sēj tukšajās dobēs no agra pavasara līdz augusta beigām; vēlākai sējai (septembrī) izvēlies sinepes — tās paspēj uzaugt visātrāk.",
+    "Vienu un to pašu dobi vari atjaunot 1–2 reizes sezonā. Sinepes nesēj tur, kur audzēsi kāpostus, redīsus vai citus krustziežus — tās ir tā pati dzimta un dalās ar slimībām."
+  ],
+  "moonPhase": "jebkurš",
+  "moonElement": "jebkurs",
+  "moonText": "Pēc biodinamiskās tradīcijas zaļmēslojumu sēj augošā Mēnesī (kad augi aug strauji uz augšu), bet apar un iestrādā augsnē dilstošā Mēnesī, kad spēks virzās uz saknēm un zemi — taču augsnei tas izdosies labi jebkurā fāzē, ja vien laiks un mitrums ir piemēroti.",
+  "caution": "Zaļmēslojums uzlabo augsnes struktūru un organikas saturu pakāpeniski, vairāku sezonu laikā — tas nav ātrs mēslojums un viens iestrādājums neaizvietos kompostu vai trūkstošu barības vielu papildināšanu. Neļauj augiem ieiet sēklās, citādi tie paši kļūs par nezālēm. Svaigi iestrādātu zaļo masu sadalei vajag 2–3 nedēļas — ja stādi uzreiz, jaunie stādi var ciest no slāpekļa īslaicīga trūkuma sadalīšanās laikā.",
+  "folklore": "Senāk lauki nekad nestāvēja kaili — tukšo zemi apsēja vai ļāva tai atpūsties, jo teica, ka kaila zeme \"raud\" un izskalojas. Sinepju dzeltenais ziedu lauks rudenī bija zīme, ka saimnieks par savu zemi rūpējas.",
+  "slug": "zalmeslojums"
+}
