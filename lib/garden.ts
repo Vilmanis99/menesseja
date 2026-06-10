@@ -92,11 +92,15 @@ export function plantStatus(plant: Plant, now: Date = new Date()): PlantStatus {
   }
 
   // Fallback for perennials / overwintering crops with no day count.
+  // Modulo-12 arithmetic so windows that wrap the year work: garlic is planted
+  // in Sep–Oct and harvested next Jul–Aug — "month > harvest" would call it
+  // ready the day it went into the ground.
   const harvest = harvestMonth(crop);
   if (!harvest) return { label: "Aug", progress: 50, tone: "primary" };
   const month = now.getMonth() + 1;
-  if (month > harvest) return { label: "Gatavs novākšanai", progress: 100, tone: "secondary" };
-  const start = startMonth(crop) ?? month;
-  const span = harvest - start || 1;
-  return label(Math.max(5, Math.min(100, Math.round(((month - start) / span) * 100))));
+  const sownDate = new Date(plant.sownAt);
+  const sownMonth = isNaN(sownDate.getTime()) ? startMonth(crop) ?? month : sownDate.getMonth() + 1;
+  const span = (Math.ceil(harvest) - sownMonth + 12) % 12 || 1;
+  const elapsed = (month - sownMonth + 12) % 12;
+  return label(Math.max(5, Math.min(100, Math.round((elapsed / span) * 100))));
 }

@@ -4,6 +4,8 @@
  *   0 / 1 = jauns mēness (new), 0.5 = pilns mēness (full).
  */
 
+import { dayAnchor } from "@/lib/day-anchor";
+
 export interface MoonInfo {
   /** 0..1 synodic fraction */
   phase: number;
@@ -36,9 +38,10 @@ export function phaseName(phase: number): string {
   return PHASE_NAMES.find((b) => p < b.max)?.name ?? "Jauns mēness";
 }
 
-/** Moon phase for a given date (defaults to now). */
+/** Moon phase for a given date (defaults to now). Anchored to the date's
+ *  Latvian calendar day so every surface (and the UTC build server) agrees. */
 export function moonForDate(date: Date = new Date()): MoonInfo {
-  const days = date.getTime() / 86400000 - KNOWN_NEW;
+  const days = dayAnchor(date).getTime() / 86400000 - KNOWN_NEW;
   const phase = ((days / SYNODIC) % 1 + 1) % 1;
   const illumination = (1 - Math.cos(2 * Math.PI * phase)) / 2;
   return {

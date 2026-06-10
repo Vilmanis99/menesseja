@@ -1,7 +1,8 @@
 "use client";
 
 import { createContext, useContext, useEffect, useState } from "react";
-import { type RegionId, getRegion, nearestRegion } from "@/lib/regions";
+import { REGIONS, type RegionId, getRegion, nearestRegion } from "@/lib/regions";
+import { storageGet, storageSet, storageGetJson } from "@/lib/safe-storage";
 
 export type GeoStatus = "idle" | "locating" | "granted" | "denied";
 
@@ -19,28 +20,37 @@ const RegionCtx = createContext<RegionState | null>(null);
 const REGION_KEY = "meness-seja:region";
 const GEO_KEY = "meness-seja:coords";
 
+const isRegionId = (v: string): v is RegionId => REGIONS.some((r) => r.id === v);
+const isCoords = (v: unknown): v is { lat: number; lon: number } => {
+  const c = v as { lat?: unknown; lon?: unknown } | null;
+  return (
+    !!c &&
+    typeof c === "object" &&
+    typeof c.lat === "number" && Number.isFinite(c.lat) && Math.abs(c.lat) <= 90 &&
+    typeof c.lon === "number" && Number.isFinite(c.lon) && Math.abs(c.lon) <= 180
+  );
+};
+
 export function RegionProvider({ children }: { children: React.ReactNode }) {
   const [regionId, setRegionId] = useState<RegionId>("vidzeme");
   const [coords, setCoords] = useState<{ lat: number; lon: number } | null>(null);
   const [geoStatus, setGeoStatus] = useState<GeoStatus>("idle");
 
-  // Restore region + any previously granted location across sessions
+  // Restore region + any previously granted location across sessions.
+  // Storage access and stored values are both untrusted: private-mode browsers
+  // throw on access, and a corrupt value must not wedge the whole app.
   useEffect(() => {
-    const savedRegion = localStorage.getItem(REGION_KEY) as RegionId | null;
-    if (savedRegion) setRegionId(savedRegion);
-    const savedGeo = localStorage.getItem(GEO_KEY);
+    const savedRegion = storageGet(REGION_KEY);
+    if (savedRegion && isRegionId(savedRegion)) setRegionId(savedRegion);
+    const savedGeo = storageGetJson(GEO_KEY, isCoords);
     if (savedGeo) {
-      try {
-        setCoords(JSON.parse(savedGeo));
-        setGeoStatus("granted");
-      } catch {
-        /* ignore */
-      }
+      setCoords(savedGeo);
+      setGeoStatus("granted");
     }
   }, []);
 
   useEffect(() => {
-    localStorage.setItem(REGION_KEY, regionId);
+    storageSet(REGION_KEY, regionId);
   }, [regionId]);
 
   const requestLocation = () => {
@@ -54,7 +64,7 @@ export function RegionProvider({ children }: { children: React.ReactNode }) {
         const next = { lat: pos.coords.latitude, lon: pos.coords.longitude };
         setCoords(next);
         setGeoStatus("granted");
-        localStorage.setItem(GEO_KEY, JSON.stringify(next));
+        storageSet(GEO_KEY, JSON.stringify(next));
         setRegionId(nearestRegion(next.lat, next.lon).id);
       },
       () => setGeoStatus("denied"),

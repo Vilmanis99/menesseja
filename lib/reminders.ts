@@ -3,7 +3,7 @@ import { sowingDay } from "@/lib/biodynamic";
 import { cropPart } from "@/lib/crop-part";
 import { soilReadiness } from "@/lib/sowing-thresholds";
 import { nextSowing } from "@/lib/succession";
-import { cropById, type Plant } from "@/lib/garden";
+import { cropById, plantStatus, type Plant } from "@/lib/garden";
 import type { Region } from "@/lib/regions";
 import type { Weather } from "@/lib/weather";
 
@@ -65,11 +65,15 @@ export function buildReminders({ plants, region, weather, date = new Date() }: I
     });
   }
 
-  // 2) A plant is ready to harvest or transplant this month
+  // 2) A plant is ready to harvest or transplant this month.
+  // Both checks respect WHEN this plant was actually sown — the crop's generic
+  // window alone would say "harvest the lettuce" on the day it was sown.
   for (const plant of plants) {
     const crop = cropById(plant.cropId);
     if (!crop) continue;
-    if (inMonth(crop.harvest, month)) {
+    const ageDays = (date.getTime() - new Date(plant.sownAt).getTime()) / 86400000;
+    const grown = plantStatus(plant, date).progress >= 80;
+    if (inMonth(crop.harvest, month) && grown) {
       out.push({
         id: `harvest-${plant.id}`,
         icon: "agriculture",
@@ -77,7 +81,7 @@ export function buildReminders({ plants, region, weather, date = new Date() }: I
         title: `Laiks novākt — ${crop.name}`,
         meta: `${plant.area} • raža ${MONTHS_LV_FULL[month - 1]}`,
       });
-    } else if (inMonth(crop.transplant, month)) {
+    } else if (inMonth(crop.transplant, month) && ageDays >= 21) {
       out.push({
         id: `transplant-${plant.id}`,
         icon: "yard",
@@ -99,13 +103,16 @@ export function buildReminders({ plants, region, weather, date = new Date() }: I
     }
   }
 
-  // 3) Today's Moon element-day → suggest a fitting in-season crop to sow
+  // 3) Today's Moon element-day → suggest a fitting in-season crop.
+  // The verb must match the window that's actually open: "sēj" only when a sow
+  // window is open, otherwise "stādi" (e.g. strawberries in August).
   const candidate: Crop | undefined = CROPS.find(
     (c) =>
       cropPart(c.id) === sow.part &&
       (inMonth(c.sowOutdoors, month) || inMonth(c.sowIndoors, month) || inMonth(c.transplant, month)),
   );
   if (candidate) {
+    const canSow = inMonth(candidate.sowOutdoors, month) || inMonth(candidate.sowIndoors, month);
     const ready = soilReadiness(candidate.id, weather?.soilC);
     const soilNote =
       weather && ready.min !== undefined
@@ -117,7 +124,7 @@ export function buildReminders({ plants, region, weather, date = new Date() }: I
       id: "element-day",
       icon: sow.element === "udens" ? "water_drop" : sow.element === "zeme" ? "spa" : "eco",
       tone: "primary",
-      title: `${sow.partLabel} diena — sēj ${candidate.name.toLowerCase()}`,
+      title: `${sow.partLabel} diena — ${canSow ? "sēj" : "stādi"} ${candidate.name.toLowerCase()}`,
       meta: `${sow.sign.symbol} ${sow.sign.name} • ${soilNote}`,
     });
   }

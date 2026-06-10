@@ -27,21 +27,28 @@ export interface NextSowing {
   inWindow: boolean;
 }
 
-/** When to sow the next batch of a succession crop, or null if not applicable. */
+/** When to sow the next batch of a succession crop, or null if not applicable.
+ *  Rolls forward past missed dates, so the rhythm keeps suggesting all season
+ *  (not only the first batch after the original sowing). */
 export function nextSowing(plant: Plant, now: Date = new Date()): NextSowing | null {
   const weeks = SUCCESSION[plant.cropId];
   if (!weeks) return null;
   const crop = cropById(plant.cropId);
   if (!crop) return null;
 
-  const date = new Date(plant.sownAt);
-  date.setDate(date.getDate() + weeks * 7);
+  const base = new Date(plant.sownAt);
+  if (isNaN(base.getTime())) return null;
+
+  // First interval after sowing, then skip any occurrences already missed by
+  // more than a couple of days — suggesting a 3-weeks-ago date helps nobody.
+  const interval = weeks * 7 * 86400000;
+  let t = base.getTime() + interval;
+  while (t < now.getTime() - 2 * 86400000) t += interval;
+  const date = new Date(t);
 
   const m = date.getMonth() + 1;
   const sow = crop.sowOutdoors ?? crop.sowIndoors;
   const inWindow = !!sow && m >= sow[0] && m <= sow[1];
 
-  // Only suggest if the next batch is in the future-ish (not long past)
-  if (date.getTime() < now.getTime() - 14 * 86400000) return null;
   return { date, weeks, inWindow };
 }

@@ -99,6 +99,7 @@ export default function KalendarsPage() {
           <div className="mb-md flex items-center justify-between">
             <button
               onClick={() => setCursor(new Date(year, month - 1, 1))}
+              aria-label="Iepriekšējais mēnesis"
               className="rounded-lg p-2 text-on-surface-variant transition-colors hover:bg-surface-variant hover:text-primary"
             >
               <Icon name="chevron_left" />
@@ -108,6 +109,7 @@ export default function KalendarsPage() {
             </h2>
             <button
               onClick={() => setCursor(new Date(year, month + 1, 1))}
+              aria-label="Nākamais mēnesis"
               className="rounded-lg p-2 text-on-surface-variant transition-colors hover:bg-surface-variant hover:text-primary"
             >
               <Icon name="chevron_right" />

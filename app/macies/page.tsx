@@ -18,8 +18,8 @@ export const metadata: Metadata = {
 const ELEMENTS: { el: Element; desc: string }[] = [
   { el: "zeme", desc: "Sakņaugi — burkāni, bietes, kartupeļi, sīpoli, redīsi." },
   { el: "udens", desc: "Lapu dārzeņi un garšaugi — salāti, spināti, kāposti, dilles." },
-  { el: "gaiss", desc: "Ziedaugi un ziedkāposti — brokoļi, puķes, ogu krūmi." },
-  { el: "uguns", desc: "Augļi un sēklas — tomāti, gurķi, pupas, ķirbji, paprika." },
+  { el: "gaiss", desc: "Ziedaugi un ziedkāposti — brokoļi, ziedkāposti, puķes." },
+  { el: "uguns", desc: "Augļi un sēklas — tomāti, gurķi, pupas, ķirbji, ogas." },
 ];
 
 const FAQ = [

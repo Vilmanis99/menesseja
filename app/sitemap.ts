@@ -28,6 +28,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: url("/par"), priority: 0.6, changeFrequency: "monthly" },
     { url: url("/iesutit"), priority: 0.6, changeFrequency: "monthly" },
     { url: url("/planotajs"), priority: 0.5, changeFrequency: "monthly" },
+    { url: url("/kopiena"), priority: 0.5, changeFrequency: "weekly" },
     { url: url("/meness"), priority: 0.5, changeFrequency: "daily" },
     { url: url("/regioni"), priority: 0.6, changeFrequency: "monthly" },
   ];

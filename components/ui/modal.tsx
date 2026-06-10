@@ -34,6 +34,15 @@ export function Modal({
 }: ModalProps) {
   const panelRef = useRef<HTMLDivElement>(null);
 
+  // Parents typically pass an inline arrow for onClose, so its identity changes
+  // every render. Keep it in a ref: the trap effect must run ONCE per modal
+  // lifetime — re-running it steals focus from whatever field the user is
+  // typing in (the rAF below refocuses the first focusable element).
+  const onCloseRef = useRef(onClose);
+  useEffect(() => {
+    onCloseRef.current = onClose;
+  });
+
   useEffect(() => {
     const prevOverflow = document.body.style.overflow;
     const prevActive = document.activeElement as HTMLElement | null;
@@ -56,7 +65,7 @@ export function Modal({
     function onKey(e: KeyboardEvent) {
       if (e.key === "Escape") {
         e.preventDefault();
-        onClose();
+        onCloseRef.current();
         return;
       }
       if (e.key !== "Tab") return;
@@ -79,7 +88,7 @@ export function Modal({
       document.removeEventListener("keydown", onKey);
       prevActive?.focus?.();
     };
-  }, [onClose]);
+  }, []);
 
   return (
     <div

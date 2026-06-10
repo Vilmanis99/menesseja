@@ -27,7 +27,8 @@ export default async function TopiPage() {
     name: "Dārza Topi",
     inLanguage: "lv",
     isPartOf: { "@type": "WebSite", name: SITE_NAME, url: canonical("/") },
-    hasPart: lists.map((l) => ({ "@type": "ItemList", name: l.title, url: canonical(`/topi/${l.slug}`) })),
+    // CreativeWork, not ItemList: ItemList requires itemListElement (the detail pages have it).
+    hasPart: lists.map((l) => ({ "@type": "CreativeWork", name: l.title, url: canonical(`/topi/${l.slug}`) })),
   };
 
   return (

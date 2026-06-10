@@ -12,6 +12,7 @@
  */
 
 import type { Category } from "@/lib/planting-crops";
+import { dayAnchor } from "@/lib/day-anchor";
 
 export type Element = "zeme" | "udens" | "gaiss" | "uguns";
 export type PlantPart = "saknes" | "lapas" | "ziedi" | "augli";
@@ -104,7 +105,7 @@ const CONSTELLATIONS: { start: number; zodiac: number }[] = [
 ];
 
 export function moonSign(date: Date = new Date()): ZodiacSign {
-  const lon = moonLongitude(date);
+  const lon = moonLongitude(dayAnchor(date));
   for (let i = CONSTELLATIONS.length - 1; i >= 0; i--) {
     if (lon >= CONSTELLATIONS[i].start) return ZODIAC[CONSTELLATIONS[i].zodiac];
   }
@@ -139,8 +140,9 @@ function moonDeclination(date: Date): number {
  * root & soil work.
  */
 export function moonAscending(date: Date = new Date()): boolean {
-  const next = new Date(date.getTime() + 86400000);
-  return moonDeclination(next) > moonDeclination(date);
+  const anchored = dayAnchor(date);
+  const next = new Date(anchored.getTime() + 86400000);
+  return moonDeclination(next) > moonDeclination(anchored);
 }
 
 /**
@@ -148,7 +150,7 @@ export function moonAscending(date: Date = new Date()): boolean {
  * calendars mark these as unfavourable; better to skip sowing and tend/observe.
  */
 export function isRestDay(date: Date = new Date()): boolean {
-  const F = ((93.272 + 13.22935 * days2000(date)) % 180 + 180) % 180;
+  const F = ((93.272 + 13.22935 * days2000(dayAnchor(date))) % 180 + 180) % 180;
   return Math.min(F, 180 - F) < 6.6; // within ~½ day of a node
 }
 

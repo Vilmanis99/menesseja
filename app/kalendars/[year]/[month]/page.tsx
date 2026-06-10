@@ -8,6 +8,7 @@ import { JsonLd } from "@/components/json-ld";
 import { DataNote } from "@/components/data-note";
 import { moonForDate } from "@/lib/moon";
 import { sowingDay, isRestDay, ELEMENT_META, type Element } from "@/lib/biodynamic";
+import { latviaNoon } from "@/lib/day-anchor";
 import { cropPart } from "@/lib/crop-part";
 import { cropEmoji } from "@/lib/crop-visual";
 import { CROPS, MONTHS_LV_FULL, ACTIVITY_KEYS } from "@/lib/planting-crops";
@@ -74,7 +75,8 @@ export default async function MonthCalendarPage({
 
   const count = new Date(year, month, 0).getDate();
   const days = Array.from({ length: count }, (_, i) => {
-    const date = new Date(year, month - 1, i + 1, 12);
+    // latviaNoon → classification is identical no matter the build server's TZ
+    const date = latviaNoon(year, month, i + 1);
     return { date, day: i + 1, moon: moonForDate(date), sow: sowingDay(date), rest: isRestDay(date) };
   });
 

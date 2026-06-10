@@ -30,7 +30,8 @@ export default function ReceptesPage() {
     name: "Dabīgā mēslojuma receptes",
     inLanguage: "lv",
     isPartOf: { "@type": "WebSite", name: SITE_NAME, url: canonical("/") },
-    hasPart: recipes.map((r) => ({ "@type": "HowTo", name: r.name, url: canonical(`/receptes/${r.slug}`) })),
+    // CreativeWork, not HowTo: HowTo requires `step`, which lives on the detail pages.
+    hasPart: recipes.map((r) => ({ "@type": "CreativeWork", name: r.name, url: canonical(`/receptes/${r.slug}`) })),
   };
 
   return (
