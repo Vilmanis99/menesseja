@@ -1,0 +1,51 @@
+{
+  "slug": "krustziezu-spradzis",
+  "name": "Krustziežu spradži",
+  "latin": "Phyllotreta",
+  "emoji": "🪲",
+  "type": "kaiteklis",
+  "tagline": "Sīkās lecošās vabolītes, kas karstā pavasarī pāris dienās var sacaurumot visu redīsu un kāpostu dīgstu dobi.",
+  "severity": "vidējs",
+  "affects": ["redīsi", "kāposti", "rāceņi", "kāļi", "rukola", "sinepes"],
+  "signs": [
+    "Sīki, apaļi caurumiņi dīgstu lapās — lapa kā ar skrotīm sašauta.",
+    "Pieskaroties augiem, no lapām augstu aizlec sīkas (2–3 mm) melnas vai svītrainas vabolītes.",
+    "Bojājumi strauji pieaug sausā, karstā laikā (virs +20 °C).",
+    "Jaunie dīgsti panīkst vai iet bojā; vecākiem augiem lapas izskatās mežģīņainas."
+  ],
+  "intro": [
+    "Krustziežu spradži ir sīkas, spīdīgas vabolītes, kas lec kā blusas — un tieši tā tās vieglāk pamanīt: pabrauc ar roku pār redīsu lapām, un dobe «uzsprāgst». Tās grauž visus krustziežus: redīsus, kāpostus, rāceņus, rukolu. Lielākais posts ir dīgstu stadijā — pāris karstu, sausu dienu, un sējums var būt pagalam.",
+    "Spradžu vājā vieta ir mitrums un vēsums: tie ir karstā, sausā laika kaitēkļi. Tāpēc galvenie ieroči ir laistīšana, agra vai vēla sēja (lai dīgsti neaug spradžu zelta laikā) un putekļošana ar pelniem — vecs, godīgs paņēmiens, kas tiešām strādā."
+  ],
+  "control": [
+    "Laisti dīgstus regulāri — mitras lapas un mitra augsne spradžiem ļoti nepatīk; karstā laikā vari pasmidzināt arī dienas vidū.",
+    "Apputeklē slapjas lapas ar izsijātiem koku pelniem (vai pelnu un tabakas putekļu maisījumu) — atkārto pēc katra lietus, kamēr dīgstiem 3–4 īstās lapas.",
+    "Pārklāj sējumus ar smalku tīklu vai plānu agroplēvi līdz dīgstu nostiprināšanai — fiziskā barjera ir visdrošākā.",
+    "Sēj redīsus agri (aprīlī) vai vēlu (augustā) — spradžu masu lidojums ir maijā–jūnijā karstajā laikā.",
+    "Starp kāpostiem iestādi salātus vai dilles — jaukts stādījums spradžiem patīk mazāk nekā tīra krustziežu dobe.",
+    "Dzeltenās līmes plāksnes horizontāli virs dobes noķer daudz lecošo vaboļu."
+  ],
+  "recipeSlugs": ["koku-pelnu-skidums"],
+  "prevention": [
+    "Ravē krustziežu nezāles (pērkones, ganu plikstiņus) dobes apkārtnē — uz tām spradži savairojas pirms tavu dīgstu parādīšanās.",
+    "Augu maiņa un rudens dziļā pārrakšana — spradži ziemo augsnes virskārtā un lapu atliekās.",
+    "Sēj blīvāk un retini vēlāk — par daudz atklātas, izretinātas rindas karstā laikā ir spradžu paradīze.",
+    "Stipri, ātri augoši dīgsti (laba augsne, mitrums) bojājumus apsteidz — spradzis nopietni kaitē tikai lēni augošiem."
+  ],
+  "moonNote": "Tradicionāli kaitēkļus ierobežo un ravē dilstošā Mēnesī; redīsu sēju savukārt plāno sakņu dienās — apvieno abus, sējot agri pavasarī.",
+  "folklore": "Pelnu putekļošana pret «zemes blusām» ir viens no vecākajiem latviešu dārza paņēmieniem — pelnus no krāsns sijāja caur sietu tieši uz rasotām lapām, kamēr saule nav uzkāpusi.",
+  "faq": [
+    {
+      "q": "Kāpēc redīsu lapas ir caurumainas?",
+      "a": "Sīkie apaļie caurumiņi ir krustziežu spradžu darbs. Pārbaudi: pabrauc ar roku pār lapām — ja sīkas vabolītes lec kā blusas, diagnoze skaidra. Laisti, apputeklē ar pelniem un vajadzības gadījumā pārsedz ar tīklu."
+    },
+    {
+      "q": "Vai spradži apēdīs arī pieaugušos kāpostus?",
+      "a": "Pieauguši augi ar rupjām lapām pārcieš grauzumus viegli — kritiskā ir dīgstu un jauno stādu stadija pirmajās 2–3 nedēļās. Tad arī jākoncentrē visa aizsardzība."
+    },
+    {
+      "q": "Kad spradži ir visbīstamākie?",
+      "a": "Sausā, karstā laikā no maija līdz jūnija beigām. Agra aprīļa sēja un vēla augusta sēja praktiski izvairās no to masu perioda."
+    }
+  ]
+}

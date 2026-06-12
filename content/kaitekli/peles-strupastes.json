@@ -1,0 +1,51 @@
+{
+  "slug": "peles-strupastes",
+  "name": "Peles un strupastes",
+  "latin": "Microtus, Apodemus",
+  "emoji": "🐭",
+  "type": "kaiteklis",
+  "tagline": "Ziemas klusie postītāji — zem sniega apgrauž ābelīšu mizu un izēd tulpju sīpolus, kamēr dārznieks neredz.",
+  "severity": "vidējs",
+  "affects": ["jaunie augļu koki", "tulpes un krokusi", "sakņu dārzeņi glabātavā", "zemenes"],
+  "signs": [
+    "Pavasarī pēc sniega nokušanas — apgrauzta miza ap jauno koku stumbra pamatni, bieži pilnā riņķī.",
+    "Tulpes un krokusi pavasarī vienkārši neuznāk — sīpoli zem zemes izēsti (narcises paliek neskartas).",
+    "Apaļas aliņu ieejas (2–3 cm) dobēs un pie komposta, virszemes «tuneļi» zālienā pēc sniega.",
+    "Glabātavā apgrauzti burkāni, bietes, kartupeļi un raksturīgas melnas spirās."
+  ],
+  "intro": [
+    "Pelēm un strupastēm dārzā ir divas galvenās noziegumu sezonas. Ziemā zem sniega tās apgrauž jauno augļu koku mizu pie pašas zemes — ja miza norauta pilnā riņķī, kociņš pavasarī iet bojā. Un rudenī–ziemā tās izēd tikko iestādītos tulpju, krokusu un hiacinšu sīpolus — pavasarī dobē paliek tukšums.",
+    "Labā ziņa: pret abām nelaimēm ir vienkārša, pārbaudīta aizsardzība, kas neprasa nekādu ķīmiju — mehāniskas barjeras rudenī un gudra stādīšana. Un viens dabas triks: narcišu sīpoli grauzējiem ir indīgi, tāpēc tos neviens neaiztiek — izmanto tās kā dzīvu sardzi."
+  ],
+  "control": [
+    "Jaunajiem augļu kokiem RUDENĪ aptin stumbra apakšu ar smalku metāla sietu vai speciālu spirāli līdz ~50 cm augstumam (ar rezervi virs gaidāmā sniega) — tas ir efektīvākais līdzeklis pret ziemas grauzumiem.",
+    "Pēc katras lielas snigšanas piemin sniegu ap jauno koku stumbriem — blīvā sniegā grauzēji netiek pie mizas.",
+    "Tulpes, krokusus un hiacintes stādi plastmasas sīpolu groziņos vai ietin sīpolu grupu metāla sietiņā — saknes izaug cauri, grauzēji netiek klāt.",
+    "Sajauc stādījumus ar narcisēm — to indīgos sīpolus grauzēji apiet, un tie nosargā arī kaimiņus.",
+    "Glabātavā turi sakņu dārzeņus slēgtās kastēs ar sietu; ķer grauzējus ar klasiskajām lamatām pie sienām (kur tie skrien), ne telpas vidū.",
+    "Atbalsti dabiskos ienaidniekus: ezis, vanags un kaimiņu kaķis ir labākā ilgtermiņa «peļu kontrole»."
+  ],
+  "recipeSlugs": [],
+  "prevention": [
+    "Rudenī izpļauj garo zāli ap augļu kokiem un novāc nezāļu kaudzes — gara zāle ir grauzēju maģistrāle un slēptuve.",
+    "Neatstāj ziemā pie kokiem mulčas kalnu pie paša stumbra — tajā grauzēji iekārto ziemas mājas tieši pie mizas.",
+    "Komposta kaudzi turi tālāk no dobēm un augļu dārza.",
+    "Sīpolpuķes stādi vēlāk rudenī (oktobrī) — mazāk laika grauzējiem tās atrast pirms sala."
+  ],
+  "moonNote": "",
+  "folklore": "Vecsaimnieki ziemās ap ābelītēm mīdīja sniegu pēc katra puteņa — teica: «cieta taka — vesela miza». Šis simtgadīgais paņēmiens darbojas tieši tāpat arī šodien.",
+  "faq": [
+    {
+      "q": "Pele apgrauza ābelītes mizu riņķī — vai koks glābjams?",
+      "a": "Ja miza norauta pilnā riņķī (gredzenā), koks pats barību vairs nevada — vajadzīga tūlītēja potēšana «ar tiltiņu» pavasarī vai koks parasti iet bojā. Ja gredzens nepilns, brūci nogludini un apziedz ar dārza vasku; koks bieži atkopjas. Tāpēc siets rudenī ir zelta vērts."
+    },
+    {
+      "q": "Kāpēc tulpes pazuda, bet narcises zied?",
+      "a": "Klasiska grauzēju pēda: tulpju sīpoli tiem garšo, narcišu — ir indīgi un netiek aiztikti. Stādi tulpes groziņos vai sietiņā un apkārt narcises kā sardzi."
+    },
+    {
+      "q": "Vai dārzā drīkst likt peļu indi?",
+      "a": "Neiesakām: inde apdraud arī ežus, putnus un kaķus, kas apēd saindēto grauzēju, — tu iznīcini pats savus sabiedrotos. Mehāniskās barjeras + lamatas glabātavā + dabiskie ienaidnieki ir drošāka un ilgtspējīgāka stratēģija."
+    }
+  ]
+}

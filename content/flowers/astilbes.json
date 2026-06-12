@@ -1,0 +1,57 @@
+{
+  "slug": "astilbes",
+  "name": "Astilbes",
+  "latin": "Astilbe",
+  "emoji": "🌸",
+  "type": "daudzgadiga",
+  "tagline": "Pūkainās ziedu skaras ēnainajam un mitrajam dārza stūrim — tur, kur citas puķes padodas, astilbe plaukst.",
+  "bloom": "Jūnijs–augusts",
+  "height": "40–100 cm",
+  "sun": "Pussēna",
+  "hardy": true,
+  "difficulty": "viegli",
+  "plantWhen": "Stāda vai dala pavasarī (apr.–maijs) vai augusta beigās",
+  "moonPhase": "augošs",
+  "moonElement": "ziedi",
+  "moonText": "Astilbe ir ziedu augs — biodinamikā to kopj ziedu (gaisa) dienās, bet dalīšanu un stādīšanu tradicionāli veic dilstošā Mēnesī, kad spēks saknēs. Tradīcija dod ritmu; astilbei pašai izšķirošais ir viens — mitrums.",
+  "intro": [
+    "Astilbe ir labākā atbilde mitrajam, ēnainajam dārza stūrim, kur vairums puķu nīkuļo. Tās pūkainās ziedu skaras — baltas, rozā, koši sarkanas vai violetas — paceļas virs glītas, paparžveida lapotnes un zied tieši vasaras vidū, kad ēnu dārzam visvairāk vajag krāsas.",
+    "Latvijā astilbes ir pilnībā ziemcietīgas un ļoti ilgmūžīgas. Tām ir tikai viens stingrs noteikums: augsne nedrīkst izžūt. Sausā smiltī saulē astilbe burtiski sadeg — toties dīķa malā, ziemeļu pusē vai zem koku ažūrās ēnas tā gadu desmitiem aug bez bēdu."
+  ],
+  "planting": [
+    "Stādi pavasarī (aprīlī–maijā) vai augusta beigās, lai puduris ieaug pirms ziemas.",
+    "Vieta — pusēna vai ažūra ēna ar mitru, barojošu augsni; ideāli ūdenstilpes tuvumā vai ziemeļu pusē.",
+    "Bedrē iemaisi kompostu un kūdru — tie tur mitrumu; sakņu kakls ~3–5 cm zem virsmas.",
+    "Atstatums 30–50 cm pēc šķirnes auguma.",
+    "Pēc stādīšanas bagātīgi aplej un apmulčē ar 5 cm mulčas kārtu — mulča astilbei ir gandrīz obligāta."
+  ],
+  "care": [
+    "Laisti sausā laikā regulāri — izžuvusi astilbe nokaltē lapu malas un pārstāj ziedēt; mulča darbu atvieglo uz pusi.",
+    "Pavasarī dod kompostu, vasaras vidū var atkārtot — astilbe ir ēdelīga.",
+    "Novītušās skaras vari nogriezt vai atstāt — sakaltušās tās izskatās dekoratīvi arī ziemā.",
+    "Ar gadiem sakneņi «izlien» no zemes — ik rudeni piemet kompostu vai zemi pie pamatnes.",
+    "Reizi 4–6 gados puduri pavasarī sadali — ziedēšana atjaunojas."
+  ],
+  "winter": "Astilbes Latvijā ir pilnībā ziemcietīgas un ziemo bez seguma. Vienīgais ziemas darbs — rudenī piemest zemi vai kompostu pie pamatnes, ja sakneņi pacēlušies virs augsnes (tiem nepatīk kailsals).",
+  "problems": [
+    "Izžūšana — galvenais astilbes ienaidnieks: brūnas, čaukstošas lapu malas un skopa ziedēšana; laisti un mulčē.",
+    "Sakneņi izceļas no zemes ar gadiem — apber rudenī, citādi pavasarī puduris vājāks.",
+    "Saulē izbalē ziedu krāsa un deg lapas — pārstādi pusēnā."
+  ],
+  "folklore": "Latvijas dārzkopju vidū astilbi mēdz saukt par slinkā dārznieka lepnumu — vieta jāizvēlas tikai vienreiz pareizi, un tālāk tā zied pati. Vecos dārzos astilbes tradicionāli stādīja gar mājas ziemeļu sienu, kur «nekas cits negrib augt».",
+  "faq": [
+    {
+      "q": "Kāpēc astilbei brūnē lapu malas?",
+      "a": "Tas gandrīz vienmēr ir mitruma trūkums — astilbe necieš izžūšanu. Laisti dziļi, apmulčē ar biezu kārtu un, ja vieta ļoti saulaina, apsver pārstādīšanu pusēnā."
+    },
+    {
+      "q": "Vai astilbe aug saulē?",
+      "a": "Pacieš rīta un vakara sauli, ja augsne pastāvīgi mitra, bet pusdienas saulē Latvijas vasarā lapas deg un ziedu krāsa izbalē. Drošākā vieta — pusēna."
+    },
+    {
+      "q": "Kad dalīt astilbes?",
+      "a": "Reizi 4–6 gados, pavasarī (aprīlī) vai augusta beigās. Izrok puduri, sagriez ar lāpstu vai nazi daļās ar 2–3 pumpuriem un izstādi mitrā, barojošā vietā."
+    }
+  ],
+  "related": ["hostas", "floksi", "begonijas", "rudbekijas"]
+}

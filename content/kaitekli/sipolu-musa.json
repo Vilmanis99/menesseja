@@ -1,0 +1,51 @@
+{
+  "slug": "sipolu-musa",
+  "name": "Sīpolu muša",
+  "latin": "Delia antiqua",
+  "emoji": "🪰",
+  "type": "kaiteklis",
+  "tagline": "Ja sīpolu loki maijā pēkšņi dzeltē un vīst — pamatnē, visticamāk, jau strādā sīpolu mušas kāpuri.",
+  "severity": "vidējs",
+  "affects": ["sīpoli", "ķiploki", "puravi", "maurloki"],
+  "signs": [
+    "Loki dzeltē un vīst no galiem, sākot ar jaunākajiem — augs izskatās kā izkaltis, lai gan augsne mitra.",
+    "Skartais sīpols viegli izvelkams — pamatne mīksta, ar bālganiem kāpuriem iekšā.",
+    "Sīpola pamatne pūst un nepatīkami smaržo.",
+    "Bojājumi parādās viļņos: pirmais maijā–jūnija sākumā, otrs jūlijā."
+  ],
+  "intro": [
+    "Sīpolu muša ir burkānu mušas māsa ar tādu pašu darba stilu: pati nevainīga izskata, bet tās kāpuri iegraužas sīpola pamatnē un izēd to no iekšpuses. Pirmā paaudze lido maijā — tautas kalendārā precīzs orientieris ir ceriņu un pieneņu ziedēšana —, otrā nāk jūlijā.",
+    "Tāpat kā ar burkānu mušu, cīņa pēc fakta ir vēla: kāpuru no sīpola vairs neizdabūsi. Toties profilakse ir vienkārša un efektīva — smaržas maskēšana ar burkāniem blakus, tīkls lidošanas laikā un stingra augu maiņa. Sējas sīpoliņi no pavasara stādījuma cieš mazāk nekā sēklas sīpoli."
+  ],
+  "control": [
+    "Pārklāj sīpolu dobi ar smalku pretkukaiņu tīklu maijā un jūlijā — muša netiek pie augsnes izdēt olas; tas ir drošākais līdzeklis.",
+    "Stādi burkānus blakus sīpoliem mijus rindās — burkānu smarža maskē sīpolus (un otrādi); vecā pāru sēja strādā abos virzienos.",
+    "Skartos augus izrok un iznīcini līdz ar kāpuriem (NE kompostā) — katrs izrauts slimais sīpols ir desmitiem mušu mazāk nākamajā paaudzē.",
+    "Pēc katra lietus vai laistīšanas viegli irdini rindas un apkaisi tās ar koku pelniem — sausa, pelnaina virskārta mušai dēšanai nepatīk.",
+    "Stādi agri: spēcīgs, ieaudzis sīpols pirmajā lidojumā cieš mazāk nekā tikko dīgstošs.",
+    "Vēlams stādīt sējas sīpoliņus, ne sēt sēklas — jaunie sēklu dīgsti ir visneaizsargātākie."
+  ],
+  "recipeSlugs": ["koku-pelnu-skidums"],
+  "prevention": [
+    "Augu maiņa: sīpolus tajā pašā vietā ne ātrāk kā pēc 3–4 gadiem — mušas kūniņas ziemo turpat augsnē.",
+    "Rudenī sīpolu dobi dziļi pārroc, atklājot kūniņas salam un putniem.",
+    "Nestādi sīpolus svaigi mēslotā augsnē — organikas smarža mušu pievelk.",
+    "Pārbaudi stādāmos sīpoliņus: mīkstos un bojātos izbrāķē."
+  ],
+  "moonNote": "Sīpolus pēc biodinamiskās tradīcijas stāda sakņu (zemes) dienās dilstošā Mēnesī — agrīna stādīšana piemērotā dienā dod augam pārsvaru pār mušas pirmo lidojumu.",
+  "folklore": "«Sīpols burkānu sargā, burkāns — sīpolu» — vecā pāru sēja der abām pusēm. Vēl sentēvi sīpolu rindas pēc lietus apbēra ar pelniem no krāsns — paradums, kam ir pavisam praktisks pamats arī šodien.",
+  "faq": [
+    {
+      "q": "Kāpēc sīpolu loki dzeltē jau maijā?",
+      "a": "Ja dzeltēšana sākas ar jaunākajiem lokiem un augi viegli izvelkami ar mīkstu, pūstošu pamatni — tā ir sīpolu muša. Ja dzeltē tikai galu galiņi sausā laikā, visticamāk vienkārši trūkst mitruma."
+    },
+    {
+      "q": "Vai skartos sīpolus var ēst?",
+      "a": "Pamatīgi bojātus — nē, tie pūst. Viegli skartiem nogriez bojāto daļu un izlieto uzreiz; glabāšanai tie neder."
+    },
+    {
+      "q": "Kad sīpolu dobei vajag tīklu?",
+      "a": "Divos lidošanas viļņos: maijā–jūnija sākumā (ceriņu ziedēšanas laiks) un jūlijā. Ja negribi turēt tīklu visu sezonu, šie divi mēneši ir kritiskie."
+    }
+  ]
+}

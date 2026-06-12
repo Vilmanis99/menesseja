@@ -1,0 +1,57 @@
+{
+  "slug": "rudbekijas",
+  "name": "Rudbekijas",
+  "latin": "Rudbeckia",
+  "emoji": "🌼",
+  "type": "daudzgadiga",
+  "tagline": "«Zelta lodes» un saules cepures, kas bez kaprīzēm zied no jūlija līdz pat oktobrim — viena no pateicīgākajām puķēm Latvijā.",
+  "bloom": "Jūlijs–oktobris",
+  "height": "50–200 cm (atkarībā no sugas)",
+  "sun": "Saule",
+  "hardy": true,
+  "difficulty": "viegli",
+  "plantWhen": "Sēj telpās martā–aprīlī vai stāda/dala pavasarī",
+  "moonPhase": "augošs",
+  "moonElement": "ziedi",
+  "moonText": "Rudbekijas ir ziedu augi — pēc biodinamiskās tradīcijas tās sēj un kopj ziedu (gaisa) dienās augošā Mēnesī. Tradīcija dod jauku ritmu, bet rudbekija uzziedēs tāpat — tā ir viena no visnepretenciozākajām dārza puķēm.",
+  "intro": [
+    "Augstās dzeltenās «zelta lodes» gar žogu ir tikpat latviska aina kā flokši pie lieveņa — šī vecā rudbekiju šķirne aug pie lauku mājām jau simts gadu un netaisās nekur pazust. Mūsdienu dārzos tām piebiedrojušās zemākas radinieces — saules cepures (Rudbeckia fulgida un viengadīgā Rudbeckia hirta) ar lielajiem dzeltenajiem ziediem un tumšo actiņu vidū.",
+    "Rudbekiju lielā vērtība ir laiks, kad tās zied: no jūlija līdz pat oktobrim, kad lielākā daļa dārza jau nogurusi. Tās ir ziemcietīgas, izturīgas pret slimībām, mīl sauli un piedod pat paviršu kopšanu — iesācēja drošākā likme krāšņam rudens dārzam."
+  ],
+  "planting": [
+    "Daudzgadīgās rudbekijas visvieglāk iegūt, sadalot esošu puduri pavasarī vai nopērkot stādu; viengadīgās sēj telpās martā–aprīlī un stāda laukā pēc salnām.",
+    "Vieta — saulaina; pusēnā zied vēlāk un skopāk.",
+    "Augsne — parasta dārza zeme ar kompostu; pārmēslotā augsnē augstās šķirnes izstīdz un krīt.",
+    "Atstatums 40–60 cm zemajām, 60–80 cm augstajām «zelta lodēm».",
+    "Pēc stādīšanas aplej un apmulčē."
+  ],
+  "care": [
+    "Laisti tikai ilgstošā sausumā — ieaugušās rudbekijas ir izturīgas.",
+    "Augstajām «zelta lodēm» vējainā vietā ieliec atbalstu vai stādi pie žoga — tradicionālā vieta nav nejauša.",
+    "Novītušos ziedus nogriez, lai ziedēšana turpinās; rudenī daļu ziedu galviņu vari atstāt putniem — sēklas mīl ķivuļi.",
+    "Pavasarī dod sauju komposta — ar to pietiek.",
+    "Reizi 4–5 gados puduri pavasarī sadali, lai vidus neizplok."
+  ],
+  "winter": "Rudbekijas Latvijā ir pilnībā ziemcietīgas un ziemo bez seguma. Stublājus var nogriezt rudenī vai atstāt līdz pavasarim — sniegoti ziedu kāti ar sēklu galviņām ziemā baro putnus un izskatās gleznaini.",
+  "problems": [
+    "Augstās šķirnes vējā nolokās — atbalsts vai aizvēja vieta.",
+    "Miltrasa sausā, sutīgā augustā — retināts stādījums un laistīšana pie saknes.",
+    "Vecā pudura vidus izplok — sadali pavasarī."
+  ],
+  "folklore": "«Zelta lodes» pie žoga ir viens no atpazīstamākajiem latviešu viensētas tēliem — tās stādīja tā, lai dzeltenais zelts redzams jau no ceļa, un mēdza teikt, ka kamēr zelta lodes zied, rudens vēl nav atnācis.",
+  "faq": [
+    {
+      "q": "Ar ko atšķiras «zelta lodes» no saules cepurēm?",
+      "a": "Abas ir rudbekijas. «Zelta lodes» ir vecā, augstā (līdz 2 m) pildīto ziedu šķirne, kas aug pie lauku mājām paaudzēm. Saules cepures ir zemākas (50–80 cm) ar vienkāršiem dzelteniem ziediem un tumšu vidu — tās der dobes priekšplānam."
+    },
+    {
+      "q": "Vai rudbekijas jālaista?",
+      "a": "Ieaugušas — tikai ilgstošā sausumā. Tās ir vienas no izturīgākajām dārza puķēm; vairāk par sausumu tām kaitē slapja, smaga augsne ziemā."
+    },
+    {
+      "q": "Kāpēc manas rudbekijas nolokās?",
+      "a": "Augstās šķirnes pārmēslotā augsnē vai vējainā vietā izstīdz un krīt. Stādi pie žoga vai sienas, dod mazāk slāpekļa un vajadzības gadījumā apliec atbalsta riņķi."
+    }
+  ],
+  "related": ["floksi", "ehinacija", "peonijas", "astilbes"]
+}

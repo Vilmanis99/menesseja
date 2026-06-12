@@ -1,0 +1,58 @@
+{
+  "slug": "hostas",
+  "name": "Hostas",
+  "latin": "Hosta",
+  "emoji": "🌿",
+  "type": "daudzgadiga",
+  "tagline": "Ēnas karaliene — augs, kas krāšņs ne ar ziediem, bet ar lapām, un padara skaistu pat tumšāko dārza stūri.",
+  "bloom": "Jūlijs–augusts (audzē galvenokārt lapu dēļ)",
+  "height": "20–80 cm",
+  "sun": "Pussēna",
+  "hardy": true,
+  "difficulty": "viegli",
+  "plantWhen": "Stāda vai dala pavasarī (apr.–maijs) vai augustā",
+  "moonPhase": "augošs",
+  "moonElement": "lapas",
+  "moonText": "Hostu audzē lapu dēļ, tāpēc biodinamikā tā ir lapu auga izņēmums puķu dobē — to kopj lapu (ūdens) dienās. Tradīcija dod ritmu; hostai pašai galvenais ir ēna, mitrums un miers no gliemežiem.",
+  "intro": [
+    "Hosta ir atbilde uz jautājumu, ko stādīt tur, kur «nekas neaug» — ziemeļu pusē aiz mājas, zem ābeles, gar ēnaino žogu. Tās vērtība nav ziedos (lai gan vasaras vidū tā izmet glītus zvaniņu ziedkātus), bet lapās: no sīkām zilganām rozetēm līdz milzīgām, gandrīz metru platām lapu kupenām zaļā, zilganā, dzeltenā un baltsvītrainā tonī.",
+    "Latvijā hostas ir pilnībā ziemcietīgas un ārkārtīgi ilgmūžīgas — puduris vienā vietā mierīgi dzīvo 10–20 gadus un ar katru gadu kļūst krāšņāks. Vienīgais īstais ienaidnieks ir gliemeži, kuriem hostu lapas ir delikatese."
+  ],
+  "planting": [
+    "Stādi pavasarī (aprīlī–maijā) vai augustā; konteinerstādus var visu sezonu.",
+    "Vieta — pusēna vai ēna; zilganlapu šķirnēm vairāk ēnas (saulē zilgme zūd), dzeltenlapu šķirnes pacieš vairāk gaismas.",
+    "Augsne — barojoša, mitrumu turoša; bedrē iemaisi kompostu.",
+    "Atstatums pēc šķirnes pieaugušā izmēra: sīkajām 25–30 cm, lielajām 60–80 cm — hosta savu platumu sasniedz 3–4 gados.",
+    "Pēc stādīšanas aplej un apmulčē; mulča tur mitrumu, bet pavasarī to nestiep tieši pie dzinumiem — tur slēpjas gliemeži."
+  ],
+  "care": [
+    "Laisti sausā laikā — kuplas lapas iztvaiko daudz ūdens; mitruma trūkumā lapu malas brūnē.",
+    "Pavasarī dod kompostu; vairāk mēslojuma nevajag.",
+    "Gliemežu kontrole no maija: pelnu/olu čaumalu barjeras, alus slazdi, vakara vākšana — sevišķi ap jaunajiem dzinumiem.",
+    "Noziedējušos ziedkātus nogriez; daļa dārznieku tos izgriež jau pumpuros, lai viss spēks paliek lapām.",
+    "Rudenī nokaltušās lapas savāc — zem tām ziemo gliemežu olas.",
+    "Dalīšana nav obligāta — tikai ja gribi vairāk stādu; to dara pavasarī vai augustā."
+  ],
+  "winter": "Hostas Latvijā ir pilnībā ziemcietīgas un ziemo bez seguma. Rudenī nokaltušo lapotni novāc, lai mazinātu gliemežu ziemošanas vietas.",
+  "problems": [
+    "Gliemeži un kailgliemeži izgrauž lapās caurumus — galvenā problēma; barjeras, slazdi un vakara vākšana no agra pavasara.",
+    "Saules apdegumi — zilganās un baltsvītrainās šķirnes saulē izbalē un apdeg; pārstādi ēnaināk.",
+    "Sausumā brūnas lapu malas — laisti dziļi un mulčē."
+  ],
+  "folklore": "Latviešu dārzkopji mēdz teikt: ja gliemeži neēd tavas hostas, tu vēl neaudzē hostas. Vecākos dārzos hostu pudurus dala un dāvina tāpat kā peonijas — labs ēnas dārzs Latvijā gandrīz vienmēr sākas ar kaimiņienes iedotu hostas gabalu.",
+  "faq": [
+    {
+      "q": "Kā pasargāt hostas no gliemežiem?",
+      "a": "Apvieno vairākas dabīgas metodes: sausu pelnu vai olu čaumalu barjeru ap puduri, alus slazdus, vakara vākšanu ar lukturīti un rudens lapu novākšanu. Sāc agri pavasarī — bojājumi jaunajiem dzinumiem redzami visu sezonu."
+    },
+    {
+      "q": "Vai hosta aug saulē?",
+      "a": "Dažas dzeltenlapu un biezlapu šķirnes pacieš rīta sauli, ja augsne mitra, bet pusdienas saulē lapas apdeg un izbalē. Drošākā vieta Latvijā — pusēna ar barojošu, mitru augsni."
+    },
+    {
+      "q": "Cik bieži hostas jādala?",
+      "a": "Nemaz nav obligāti — hosta vienā vietā labi dzīvo 10–20 gadus. Dala tikai tad, ja gribi jaunus stādus, pavasarī vai augustā, izrokot un sagriežot ar lāpstu."
+    }
+  ],
+  "related": ["astilbes", "begonijas", "floksi", "peonijas"]
+}

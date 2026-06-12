@@ -1,0 +1,51 @@
+{
+  "slug": "baltblusina",
+  "name": "Siltumnīcas baltblusiņa",
+  "latin": "Trialeurodes vaporariorum",
+  "emoji": "🦟",
+  "type": "kaiteklis",
+  "tagline": "Pakrati tomāta lapu — ja gaisā paceļas balts «putenis», siltumnīcā saimnieko baltblusiņa.",
+  "severity": "vidējs",
+  "affects": ["tomāti siltumnīcā", "gurķi", "paprika", "baklažāni", "fuksijas un citi puķu stādi"],
+  "signs": [
+    "Pakratot augu, no lapu apakšām paceļas sīku (1–2 mm) baltu «taurenīšu» mākonis.",
+    "Lapu apakšpusē sīkas, bālganas nimfas un olas riņķīšos.",
+    "Lapas lipīgas no medusrasas, uz tās vēlāk apmetas melnas kvēpsēnītes.",
+    "Augi panīkst, lapas dzeltē un deformējas — sevišķi jūlijā–augustā karstā siltumnīcā."
+  ],
+  "intro": [
+    "Baltblusiņa ir sīks, balts spārnotais sulu sūcējs, kas Latvijā praktiski dzīvo tikai siltumnīcās — mūsu ziemu laukā tā nepārdzīvo. Toties siltumnīcā tā atrod mūžīgo vasaru un vairojas nepārtraukti: visas attīstības stadijas vienlaikus sēž lapu apakšpusēs un sūc augu sulu, atstājot lipīgu medusrasu.",
+    "Tās kontroles atslēga ir agrīna pamanīšana un neatlaidība: pret pieaugušajiem lieliski strādā vienkāršas dzeltenās līmes plāksnes (baltblusiņu dzeltenā krāsa pievelk neatvairāmi), bet olas un nimfas jānoskalo vai jānosmacē ar ziepjūdeni vairākos piegājienos. Un rudenī — kārtīga siltumnīcas tīrīšana, lai ziemot nav kam."
+  ],
+  "control": [
+    "Izkar dzeltenās līmes plāksnes virs augu galotnēm (1 plāksne uz ~2 m²) jau maijā — tās ķer pieaugušos nepārtraukti un rāda invāzijas līmeni.",
+    "Noskalo lapu apakšpuses ar ūdens strūklu vai apsmidzini ar zaļo ziepju šķīdumu — mērķē tieši uz apakšām, kur sēž nimfas; atkārto ik 5–7 dienas vismaz 3 reizes.",
+    "Stipri skartās apakšējās lapas noplūc un iznes no siltumnīcas slēgtā maisā.",
+    "Vēdini agresīvi: baltblusiņa mīl sastāvējušu karstumu; caurvējš un vēsākas naktis tās vairošanos bremzē.",
+    "Lielākā siltumnīcā vari izmantot parazitoīdo lapseni Encarsia formosa (pārdod bioloģiskās aizsardzības veikali) — tā ir klasiska un ļoti efektīva bioloģiskā kontrole.",
+    "Atbaidīšanai starp tomātiem iestādi samtenes vai baziliku — blīvā monokultūrā baltblusiņa jūtas vislabāk."
+  ],
+  "recipeSlugs": ["vermelu-uzlejums"],
+  "prevention": [
+    "Rudenī pēc sezonas siltumnīcu pilnībā iztīri: izvāc visas augu atliekas, nomazgā stiklus/plēvi un konstrukcijas — baltblusiņa un tās olas ziemo atliekās un spraugās.",
+    "Ziemā ļauj siltumnīcai kārtīgi izsalt (atver durvis salā) — Latvijas sals ir tavs sabiedrotais.",
+    "Pavasarī apskati katru ienesto stādu (īpaši pirktos puķu un dārzeņu dēstus) — baltblusiņa visbiežāk «atbrauc» tieši ar stādiem.",
+    "Nepārmēslo ar slāpekli — mīkstas, treknas lapas ir tās mīļākā barība."
+  ],
+  "moonNote": "",
+  "folklore": "",
+  "faq": [
+    {
+      "q": "No kurienes baltblusiņa uzradās manā siltumnīcā?",
+      "a": "Gandrīz vienmēr — ar pirktajiem stādiem pavasarī vai pārziemojusi augu atliekās un spraugās, ja rudenī siltumnīca netika tīrīta. Latvijā laukā tā neziemo, tāpēc tava siltumnīca ir tās vienīgā pils."
+    },
+    {
+      "q": "Vai ar līmes plāksnēm vien pietiek?",
+      "a": "Plāksnes ķer tikai lidojošos pieaugušos — olas un nimfas lapu apakšās paliek. Apvieno plāksnes ar lapu apakšu skalošanu/ziepjūdeni ik 5–7 dienas, un pēc 3–4 nedēļām kolonija sabrūk."
+    },
+    {
+      "q": "Vai baltblusiņa pāries uz āra dobēm?",
+      "a": "Vasarā tā var īslaicīgi parādīties arī laukā pie siltumnīcas, bet Latvijas ziemu ārā tā nepārdzīvo — problēma vienmēr atgriežas no siltumnīcas vai jauniem stādiem, tāpēc rudens tīrīšana ir izšķirošā."
+    }
+  ]
+}

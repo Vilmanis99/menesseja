@@ -1,0 +1,63 @@
+{
+  "slug": "dalijas",
+  "name": "Dālijas",
+  "latin": "Dahlia",
+  "emoji": "🌺",
+  "type": "sipolpuke",
+  "tagline": "Latvijas dārzu rudens karaliene, kas zied bagātīgi no jūlija līdz pat pirmajām salnām.",
+  "bloom": "Jūlijs–oktobris (līdz pirmajām salnām)",
+  "height": "30–150 cm (atkarībā no šķirnes)",
+  "sun": "Saule",
+  "hardy": false,
+  "difficulty": "vidēji",
+  "plantWhen": "Laukā stāda pēc pēdējām salnām — maija beigās; siltumnīcā vai podos var uzdiedzēt jau aprīlī",
+  "moonPhase": "dilstošs",
+  "moonElement": "ziedi",
+  "moonText": "Dālijas gumu stādīšana ir sakņu darbs, tāpēc to tradicionāli plāno dilstošā Mēness laikā, bet kā ziedu augam tai labi der ziedu jeb gaisa dienas (Mēness Dvīņos, Svaros, Ūdensvīrā). Tā ir sena dārza tradīcija, ne garantija — daudz svarīgāk ir sagaidīt, kad pāri pēdējās salnas, un izvēlēties saulainu vietu."
+  ,
+  "intro": [
+    "Dālija ir īsta Latvijas dārzu klasika — puķe, kas vasaras otrajā pusē, kad daudzas citas jau nogurušas, tikai uzņem apgriezienus un zied arvien kuplāk līdz pat pirmajām salnām. Šķirņu dažādība ir milzīga: no maziem, apaļiem pomponiem līdz milzu ziediem šķīvja lielumā, visās krāsās, izņemot zilu. Tieši tāpēc dālijas tik bieži redzamas gan lauku sētu dobēs, gan svētku pušķos — viena dobe spēj dot ziedus vāzei visu rudeni.",
+    "Vienīgā dālijas īpatnība, kas jāzina jau pirms stādīšanas: tās gumi Latvijas ziemu atklātā laukā nepārcieš. Katru rudeni pēc pirmajām salnām tos izrok un glabā vēsā, bezsala telpā, bet pavasarī stāda no jauna. Tas izklausās pēc liela darba, taču patiesībā ir vienkārša rutīna, kas turklāt ļauj gumus sadalīt un dāliju kolekciju ar katru gadu paplašināt. Ja šo ritmu pieņem, dālija atalgo dāsnāk par gandrīz jebkuru citu vasaras puķi."
+  ],
+  "planting": [
+    "Pavasarī, marta beigās vai aprīlī, izņem gumus no ziemas glabātavas, apskati un izgriez bojātās vietas; ja gribi agrāku ziedēšanu, uzdiedzē tos podos gaišā, vēsā telpā.",
+    "Laukā dālijas stāda tikai pēc pēdējām pavasara salnām — Latvijā tas parasti nozīmē maija beigas, iekšzemē pat jūnija sākumu, jo jaunos dzinumus nosaldē pat viegla salna.",
+    "Izvēlies saulainu, no vēja pasargātu vietu ar irdenu, auglīgu augsni; smagā mālā iestrādā kompostu un smilti, jo stāvošā mitrumā gumi pūst.",
+    "Stādi gumu guļus apmēram 10 cm dziļumā ar dzinuma aizmetni uz augšu; garajām šķirnēm jau stādot blakus iedzen mietiņu, lai vēlāk nesabojātu gumu.",
+    "Starp augiem atstāj 60–80 cm lielajām šķirnēm un 30–40 cm zemajām; pēc stādīšanas aplej un, kamēr nav sadzinuši dzinumi, nelaisti pārmērīgi."
+  ],
+  "care": [
+    "Laisti pamatīgi un reti — vienu vai divas reizes nedēļā sausā laikā, lai mitrums sasniedz gumus; virspusēja laistīšana katru dienu vairāk kaitē nekā palīdz.",
+    "Mēslo mēreni ar kālijā un fosforā bagātu mēslojumu jūnijā un jūlijā; pārāk daudz slāpekļa dod kuplus lakstus, vājus stublājus un maz ziedu.",
+    "Garās šķirnes piesien pie mieta vairākos augstumos, jo smagie ziedi un rudens vēji stublājus viegli nolauž.",
+    "Regulāri nogriez noziedējušos ziedus — jo čaklāk to dari, jo vairāk jaunu pumpuru dālija veido.",
+    "Lielziedu šķirnēm var izlauzt sānu pumpurus, atstājot tikai galotnes pumpuru — ziedu būs mazāk, bet tie būs ievērojami lielāki.",
+    "Augusta beigās mēslošanu pārtrauc, lai gumi paspēj nobriest un labāk glabājas ziemā."
+  ],
+  "winter": "Dālijas gumi Latvijā ziemā laukā iet bojā, tāpēc tos izrok katru rudeni. Pēc pirmajām salnām, kad lakstus nokodusi salna un tie nomelnējuši, nogriez stublājus 10–15 cm augstumā un uzmanīgi izrok cerus ar dakšām. Notīri lieko zemi, ļauj gumiem nedēļu apžūt vēsā, vēdināmā vietā, tad sagulda kastēs kūdrā, smiltīs vai zāģu skaidās un glabā tumšā, vēsā bezsala telpā ap 5 °C (pagrabā). Ziemā pāris reižu pārbaudi — sačervelējušos gumus viegli apsmidzini, puvušos izmet.",
+  "problems": [
+    "Gumi sapūst glabāšanā — visbiežāk vainīga pārāk silta vai mitra telpa, vai arī gumi nebija apžuvuši pirms noglabāšanas; glabā ap 5 °C, sausā substrātā un regulāri pārbaudi.",
+    "Gliemeži apēd jaunos dzinumus pavasarī — tikko sadīgušas dālijas gliemežiem ir gardums; palīdz savākšana vakaros, gliemežu barjeras vai uzdiedzēšana podos, lai laukā nonāk jau paaugušies augi.",
+    "Miltrasa lapas vasaras beigās pārklāj ar baltu apsarmi — palīdz retāks stādījums, laistīšana pie saknes (ne pa lapām) un slimo lapu aizvākšana."
+  ],
+  "folklore": "Dālija Latvijā ir cieši ieaugusi rudens svētku tradīcijās — kopā ar gladiolām tā gadu desmitiem bijusi klasiskā 1. septembra skolas pušķa puķe, un daudzās lauku sētās dāliju dobe pie mājas ir tikpat pašsaprotama kā kartupeļu lauks. Gumu izrakšanu rudenī un stādīšanu pavasarī dārza tradīcijā mēdz saistīt ar dilstošu Mēnesi kā sakņu darbu, taču to der uztvert kā jauku dārza ritmu, ne ražas garantiju.",
+  "faq": [
+    {
+      "q": "Vai dālijas obligāti jāizrok ziemai?",
+      "a": "Jā. Latvijas ziemā gumi atklātā laukā sasalst un iet bojā, tāpēc tos izrok katru rudeni pēc pirmajām salnām, ļauj apžūt un glabā vēsā bezsala telpā ap 5 °C — pagrabā, kūdrā vai zāģu skaidās ieguldītus. Pavasarī tos stāda no jauna."
+    },
+    {
+      "q": "Kad dālijas drīkst stādīt laukā?",
+      "a": "Tikai pēc pēdējām pavasara salnām — Latvijā parasti maija beigās, aukstākās iekšzemes vietās pat jūnija sākumā. Jaunos dzinumus nosaldē pat viegla salna. Ja gribi agrāku ziedēšanu, uzdiedzē gumus podos aprīlī un laukā stādi jau paaugušies augus."
+    },
+    {
+      "q": "Kāpēc dālija zied maz, lai gan kupli aug?",
+      "a": "Visbiežāk vainīgs pārāk daudz slāpekļa mēslojuma vai par ēnainu vieta — dālijai vajag pilnu sauli un kālijā bagātu barību. Palīdz arī regulāra noziedējušo ziedu izgriešana, kas mudina augu veidot jaunus pumpurus."
+    }
+  ],
+  "related": [
+    "gladiolas",
+    "begonijas",
+    "lilijas"
+  ]
+}

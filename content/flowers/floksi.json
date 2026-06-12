@@ -1,0 +1,58 @@
+{
+  "slug": "floksi",
+  "name": "Flokši",
+  "latin": "Phlox paniculata",
+  "emoji": "🌸",
+  "type": "daudzgadiga",
+  "tagline": "Vecmāmiņas dārza vasaras pamats — smaržīgi ziedu cepuri jūlijā un augustā, gadu no gada bez liekām rūpēm.",
+  "bloom": "Jūlijs–septembris",
+  "height": "60–120 cm",
+  "sun": "Saule / pussēna",
+  "hardy": true,
+  "difficulty": "viegli",
+  "plantWhen": "Stāda vai dala pavasarī (apr.–maijs) vai augusta beigās",
+  "moonPhase": "augošs",
+  "moonElement": "ziedi",
+  "moonText": "Flokši ir ziedu augs — biodinamikā tos sēj un kopj ziedu (gaisa) dienās, bet dalīšanu un pārstādīšanu tradicionāli veic dilstošā Mēnesī, kad spēks saknēs. Tradīcija dod ritmu; flokšiem galvenais ir barojoša augsne un pietiekams mitrums.",
+  "intro": [
+    "Ja ir viena puķe, kuras smarža uzreiz aizved atpakaļ uz vecmāmiņas dārzu, tā ir flokša. Lielās, kuplās ziedu cepures baltā, rozā, sarkanā un violetā tonī jūlijā–augustā tur vasaras dobes pamatu, un vakara dārzā to saldā smarža jūtama jau no attāluma.",
+    "Flokši ir īsti Latvijas augi — pilnībā ziemcietīgi, ilgmūžīgi un nekaprīzi. Vienā vietā puduris labi jūtas 5–7 gadus, tad to sadala un dārzs tiek pie jauniem stādiem par brīvu. Vienīgais, ko flokši tiešām nemīl, ir sausums un sablīvēts, neretināts stādījums, kurā ieperinās miltrasa."
+  ],
+  "planting": [
+    "Stādi pavasarī (aprīlī–maijā) vai augusta beigās–septembra sākumā, lai puduris ieaug pirms ziemas.",
+    "Vieta — saulaina vai viegli pusēnaina, ar barojošu, mitrumu turošu augsni; pavisam sausā smiltī flokši nīkuļo.",
+    "Bedrē iemaisi kompostu; stādīšanas dziļums tāds pats, kā audzis (sakņu kakls ~3 cm zem virsmas), atstatums 40–50 cm.",
+    "Pēc stādīšanas labi aplej un apmulčē — mulča flokšiem ir pusdarba padarīšana, jo tur mitrumu.",
+    "Veco puduri dala pavasarī vai augustā: izrok, sadala ar lāpstu daļās ar 3–5 dzinumiem un izstāda."
+  ],
+  "care": [
+    "Laisti sausās vasarās pamatīgi pie saknes — sausumā flokši nomet apakšējās lapas un zied skopi.",
+    "Pavasarī dod kompostu vai pilnvērtīgu mēslojumu; ziedēšanas sākumā var atkārtot.",
+    "Augstos pudurus pavasarī var par trešdaļu retināt, izlaužot vājākos dzinumus — atlikušie zied kuplāk un gaiss cirkulē labāk (mazāk miltrasas).",
+    "Novītušās cepures nogriez — bieži seko otrs, mazāks ziedēšanas vilnis.",
+    "Rudenī stublājus nogriez pie zemes un aizvāc no dobes.",
+    "Reizi 5–7 gados puduri atjauno dalot — vidus ar gadiem izplok un zied vājāk."
+  ],
+  "winter": "Flokši Latvijā ir pilnībā ziemcietīgi un ziemo bez seguma. Rudenī stublājus nogriež pie zemes; jaunstādītus pudurus pirmajā ziemā var viegli apmulčēt.",
+  "problems": [
+    "Miltrasa — balts apsarme uz lapām vasaras otrā pusē; palīdz retināts stādījums, laistīšana pie saknes un profilaktisks kosas novārījums.",
+    "Sausumā nokaltušas apakšējās lapas — mulčē un laisti dziļi.",
+    "Vecā pudura vidus izplok — laiks dalīt un pārstādīt."
+  ],
+  "folklore": "Flokši Latvijā ir tik ierasti, ka tos dēvē par lauku dārzu pamatakmeni — teju katrā viensētā pie lieveņa zied no paaudzes paaudzē dalīts flokšu puduris. Mēdza teikt: kamēr flokši smaržo, vasara vēl nav galā.",
+  "faq": [
+    {
+      "q": "Kāpēc flokšiem ir balts aplikums uz lapām?",
+      "a": "Tā ir miltrasa — sēņu slimība, kas ieperinās sabiezētos, slikti vēdinātos stādījumos un sausumā novājinātos augos. Retini dzinumus pavasarī, laisti pie saknes un profilaktiski apsmidzini ar kosas novārījumu."
+    },
+    {
+      "q": "Kad dalīt flokšus?",
+      "a": "Pavasarī (aprīlī–maija sākumā) vai augusta beigās. Dalīšana reizi 5–7 gados atjauno pudura spēku — vecam puduram vidus izplok un zied vājāk."
+    },
+    {
+      "q": "Vai flokši aug pusēnā?",
+      "a": "Vieglā pusēnā aug un zied labi, tikai nedaudz vēlāk un mazliet skopāk nekā saulē. Dziļā ēnā flokši stiepjas un zied vāji."
+    }
+  ],
+  "related": ["peonijas", "rudbekijas", "astilbes", "rozes"]
+}

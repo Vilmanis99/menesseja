@@ -1,0 +1,57 @@
+{
+  "slug": "gladiolas",
+  "name": "Gladiolas",
+  "latin": "Gladiolus",
+  "emoji": "🌷",
+  "type": "sipolpuke",
+  "tagline": "Staltie ziedu zobeni vasaras otrai pusei — griezto ziedu klasika, bez kuras neiztiek neviens jubilejas pušķis.",
+  "bloom": "Jūlijs–septembris",
+  "height": "80–150 cm",
+  "sun": "Saule",
+  "hardy": false,
+  "difficulty": "vidēji",
+  "plantWhen": "Bumbuļsīpolus stāda maijā, kad augsne sasilusi",
+  "moonPhase": "dilstošs",
+  "moonElement": "saknes",
+  "moonText": "Gladiolu bumbuļsīpolu likšana zemē ir sakņu darbs, tāpēc pēc biodinamiskās tradīcijas to dara dilstošā Mēnesī. Tā ir tradīcija, ne garantija — svarīgāk ir sagaidīt siltu augsni ap +10 grādiem.",
+  "intro": [
+    "Gladiolas ir tas augs, ko Latvijā pazīst pat cilvēki, kuri dārzā neko neaudzē — staltās ziedu vārpas septembrī ceļo uz skolu un jubileju pušķiem jau paaudzēm ilgi. Krāsu izvēle ir milzīga, no balta un maiga rozā līdz dziļi bordo un pat zaļganam, un viens labi kopts stādījums dod grieztos ziedus visai vasaras otrai pusei.",
+    "Vienīgais, kas jāpieņem: gladiolas Latvijā nepārziemo. Bumbuļsīpoli katru rudeni jāizrok un jāuzglabā vēsā telpā — tas ir neliels rituāls, kas atmaksājas ar katru gadu kuplāku krāsu saimi, jo ap veco bumbuļsīpolu izaug jauni mazuļi."
+  ],
+  "planting": [
+    "Stādi maijā, kad augsne ~10 cm dziļumā sasilusi vismaz līdz +10 °C — aukstā zemē bumbuļsīpoli stāv un var sapūt.",
+    "Izvēlies saulainu, no vēja pasargātu vietu ar irdenu, caurlaidīgu augsni — gladiolas necieš stāvošu ūdeni.",
+    "Stādīšanas dziļums ~10–12 cm lieliem bumbuļsīpoliem (sīkākiem seklāk), atstatums 15–20 cm.",
+    "Smagākā augsnē bedrītes dibenā ieber sauju smilšu — drenāža pasargā no puves.",
+    "Ja gribi ziedus ilgākam laikam, stādi vairākos piegājienos ik pa 10–14 dienām līdz jūnija sākumam."
+  ],
+  "care": [
+    "Laisti vienmērīgi, īpaši vārpu veidošanās laikā — sausumā ziedu vārpa sanāk īsa un skopa.",
+    "Garajām šķirnēm ieliec mietiņu vai nostiepj atbalsta auklu — pilna vārpa pēc lietus viegli nolokās.",
+    "Griezumam ņem vārpu, kad atveras pirmie 1–2 apakšējie ziedi, un atstāj augam vismaz 4 lapas — tās baro bumbuļsīpolu nākamajam gadam.",
+    "Pēc noziedēšanas vārpu nogriez, lai augs neveido sēklas, bet lapas atstāj līdz rudenim.",
+    "Ravē un mulčē — gladiolas nemīl nezāļu konkurenci."
+  ],
+  "winter": "Gladiolas Latvijā nepārziemo. Septembra beigās–oktobrī, ~6 nedēļas pēc noziedēšanas, bumbuļsīpolus izrok, nogriež lakstus ~2 cm virs bumbuļsīpola, ļauj pāris nedēļas apžūt siltā, vēdināmā vietā, tad notīra veco bumbuļsīpolu un glabā tīklā vai papīra maisā vēsā (+3…+8 °C), sausā, bezsala telpā.",
+  "problems": [
+    "Tripši — sīki kukaiņi, kas bojā lapas un ziedpumpurus (sudrabaini švīkājumi, neatveras ziedi); palīdz savlaicīga izrakšana un bumbuļsīpolu glabāšana vēsumā.",
+    "Bumbuļsīpolu puve — visbiežāk no stādīšanas aukstā vai slapjā augsnē; glābj laba drenāža un bojāto eksemplāru izbrāķēšana pirms stādīšanas.",
+    "Vārpas lūst vējā — stādi aizvējā un piesien pie mietiņa."
+  ],
+  "folklore": "Latvijā gladiolas ir septembra pirmā skolas diena ziedu valodā — gandrīz katrs ir reiz nesis skolotājai gladiolu klēpi. Nosaukums cēlies no latīņu vārda gladius — zobens — staltās lapas patiešām atgādina asmeņus.",
+  "faq": [
+    {
+      "q": "Kad izrakt gladiolas?",
+      "a": "Septembra beigās vai oktobrī, apmēram 6 nedēļas pēc noziedēšanas, pirms stabilām salnām. Lakstus nogriež īsus, bumbuļsīpolus apžāvē un glabā vēsā, sausā telpā."
+    },
+    {
+      "q": "Kāpēc gladiolas zied īsu, skopu vārpu?",
+      "a": "Visbiežāk vainīgs sausums vārpas veidošanās laikā, pārāk ēnaina vieta vai sīks, novājināts bumbuļsīpols. Liels, vesels bumbuļsīpols saulainā vietā ar vienmērīgu laistīšanu dod pilnu vārpu."
+    },
+    {
+      "q": "Vai gladiolas var atstāt zemē pa ziemu?",
+      "a": "Nē — Latvijas ziemā tās izsalst. Bumbuļsīpoli katru rudeni jāizrok un jāuzglabā bezsala telpā; pavasarī tos stāda no jauna."
+    }
+  ],
+  "related": ["dalijas", "lilijas", "ranunkuli", "peonijas"]
+}

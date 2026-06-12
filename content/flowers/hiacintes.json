@@ -1,0 +1,57 @@
+{
+  "slug": "hiacintes",
+  "name": "Hiacintes",
+  "latin": "Hyacinthus orientalis",
+  "emoji": "🌸",
+  "type": "sipolpuke",
+  "tagline": "Smaržīgākā pavasara puķe — viens pats hiacinšu pudurītis piesmaržo visu dārza stūri.",
+  "bloom": "Aprīlis–maijs",
+  "height": "20–30 cm",
+  "sun": "Saule",
+  "hardy": true,
+  "difficulty": "viegli",
+  "plantWhen": "Sīpolus stāda rudenī, sept.–okt., ~15 cm dziļi",
+  "moonPhase": "dilstošs",
+  "moonElement": "saknes",
+  "moonText": "Sīpolu stādīšana ir sakņu darbs, tāpēc pēc biodinamiskās tradīcijas hiacintes liek zemē dilstošā Mēnesī. Tradīcija dod ritmu, bet svarīgākais ir paspēt rudenī laikus, lai sīpols apsakņojas pirms sala.",
+  "intro": [
+    "Hiacinte ir pavasara smaržu karaliene — blīvā ziedu vālīte smaržo tā, ka vienu pudurīti sajutīsi jau no celiņa otra gala. Latvijā tās zied aprīlī–maijā, reizē ar vēlajām narcisēm, un krāsu izvēle sniedzas no balta un maigi rozā līdz dziļi zilam un violetam.",
+    "Dārzā hiacintes ir pateicīgākas, nekā daudzi domā: Latvijas ziemu tās pārcieš labi, sevišķi, ja iestādītas pietiekami dziļi un vieta nav slapja. Gadu gaitā vālītes kļūst dabiskākas un irdenākas nekā pirmajā pavasarī — daudziem tieši tā patīk labāk."
+  ],
+  "planting": [
+    "Stādi rudenī, septembrī–oktobrī, lai sīpols paspēj apsakņoties pirms sala.",
+    "Dziļums ~15 cm līdz sīpola pamatnei — dziļāka stādīšana Latvijā ir hiacintes labākā ziemas aizsardzība; atstatums 10–15 cm.",
+    "Vieta — saulaina, ar irdenu, caurlaidīgu augsni; slapjums sīpoliem ir bīstamāks par salu.",
+    "Smagā augsnē bedrītes dibenā ieber 3–5 cm smilšu spilventiņu.",
+    "Strādā cimdos — hiacinšu sīpoli jutīgai ādai var izraisīt niezi."
+  ],
+  "care": [
+    "Pavasarī, asniem parādoties, var dot nedaudz komposta — ar to pietiek visam gadam.",
+    "Ziedēšanas laikā sausā pavasarī palaisti — vālīte noturēsies ilgāk.",
+    "Novītušo vālīti nogriez, bet lapas atstāj, līdz tās pilnībā nodzeltē — tās baro sīpolu.",
+    "Smagas vālītes pirmajā gadā var atbalstīt ar neuzkrītošu mietiņu.",
+    "Reizi vairākos gados sabiezējušu puduri vasarā (pēc lapu nokalšanas) izrok un izstādi plašāk."
+  ],
+  "winter": "Latvijā hiacintes ziemo atklātā laukā, ja iestādītas ~15 cm dziļi caurlaidīgā augsnē. Pirmajā ziemā un aukstākos iekšzemes dārzos stādījumu der viegli piesegt ar lapām vai egļu zariem — pavasarī segumu noņem agri, tiklīdz parādās asni.",
+  "problems": [
+    "Sīpolu puve slapjā vietā — stādi caurlaidīgā augsnē ar smilšu drenāžu.",
+    "Peles un strupastes var aiztikt sīpolus — palīdz stādīšana sietiņos un narcises blakus.",
+    "Otrajā gadā vālīte irdenāka — tas ir normāli; hiacinte dārzā pamazām pāriet uz dabiskāku ziedēšanu."
+  ],
+  "folklore": "Hiacintes smarža vecajās Latvijas mājās bija pavasara svētku smarža — podiņā uzdzītas hiacintes lika uz palodzes Lieldienām, un dārza hiacinšu pudurītis pie celiņa skaitījās viesmīlīgas mājas zīme.",
+  "faq": [
+    {
+      "q": "Vai hiacintes pārziemo Latvijā?",
+      "a": "Jā — ja iestādītas ~15 cm dziļi, caurlaidīgā, ne slapjā augsnē. Pirmajā ziemā un aukstākos novados der viegls lapu vai skuju segums."
+    },
+    {
+      "q": "Kāpēc hiacinte otrajā gadā zied irdenāk?",
+      "a": "Tas ir dabiski: pirmā gada superblīvā vālīte nāk no audzētavas uzkrātā spēka. Dārzā hiacinte pāriet uz dabiskāku, vieglāku ziedēšanu — augs ir vesels, tikai izskatās dabiskāk."
+    },
+    {
+      "q": "Vai podiņa hiacinti no veikala var iestādīt dārzā?",
+      "a": "Var! Pēc noziedēšanas telpās ļauj lapām nodzeltēt, tad sīpolu pavasarī vai rudenī iestādi dārzā ~15 cm dziļi. Nākamajā vai aiznākamajā pavasarī tā uzziedēs dobē."
+    }
+  ],
+  "related": ["krokusi", "narcises", "tulpes", "lilijas"]
+}

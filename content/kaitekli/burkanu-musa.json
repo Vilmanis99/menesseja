@@ -1,0 +1,51 @@
+{
+  "slug": "burkanu-musa",
+  "name": "Burkānu muša",
+  "latin": "Psila rosae",
+  "emoji": "🪰",
+  "type": "kaiteklis",
+  "tagline": "Neredzamais burkānu ienaidnieks — kāpuri izgrauž rūsganas ejas saknēs, un bojājumu pamana tikai ražu novācot.",
+  "severity": "vidējs",
+  "affects": ["burkāni", "pētersīļi", "pastinaki", "selerijas"],
+  "signs": [
+    "Burkānos novācot — rūsgani brūnas, līkumotas ejas un tuneļi, bieži ar sīkiem bālganiem kāpuriem.",
+    "Lapas vasarā iegūst sarkanīgi violetu nokrāsu un vīst, lai gan augsne mitra.",
+    "Jaunie augi maijā–jūnijā nīkuļo un viegli izraujami — sakne jau bojāta.",
+    "Bojātie burkāni glabātavā ātri pūst."
+  ],
+  "intro": [
+    "Burkānu muša pati ir necils, sīks kukainis, ko dārzā pat nepamanīsi — posts ir tās kāpuri, kas iegraužas burkānos un izrok tajos rūsganas ejas. Mušai ir divas lidošanas paaudzes: pirmā maijā (ap ievu ziedēšanu), otrā jūlija beigās–augustā, tāpēc cieš gan agrīnie, gan vēlie burkāni.",
+    "Pret burkānu mušu nelīdz nekādi uzlējumi pēc fakta — kāpurs jau ir saknē. Visa cīņa ir profilakse, un tās stūrakmens ir vienkāršs: muša burkānus ATROD PĒC SMARŽAS. Viss, kas smaržu maskē vai fiziski aizšķērso ceļu, strādā teicami."
+  ],
+  "control": [
+    "Smalks pretkukaiņu tīkls vai plāna agroplēve virs dobes no maija sākuma ir efektīvākais līdzeklis — muša fiziski netiek pie augsnes izdēt olas.",
+    "Sēj burkānus un sīpolus mijus rindās — sīpolu smarža jauc mušai pēdas (un burkānu smarža atbaida sīpolu mušu; abpusējs izdevīgums).",
+    "Retināšanu veic vakarā un mierīgā laikā, izrautos burkāniņus tūlīt aizvāc — saspiestu lapu smarža mušu sasauc no visas apkārtnes.",
+    "Vēlā sēja (jūnija sākumā) izlaiž pirmās paaudzes lidojumu — vēlajiem burkāniem bojājumu parasti mazāk.",
+    "Izvēlies vēdinātu, atklātu dobi — muša mīl aizvēju un mitrumu; paaugstinātā, saulainā dobē tās spiediens mazāks.",
+    "Stipri bojātos burkānus novācot atšķiro un izlieto pirmos — glabātavā tie nepastāvēs."
+  ],
+  "recipeSlugs": [],
+  "prevention": [
+    "Augu maiņa: burkānus tajā pašā vietā ne biežāk kā reizi 3–4 gados, un ne blakus pērnajai burkānu dobei — muša ziemo turpat augsnē.",
+    "Sēj skrajāk, lai mazāk jāretina — katra retināšana ir smaržas signāls mušai.",
+    "Rudenī dobi dziļi pārroc — saulei un salam atklātās kūniņas iet bojā.",
+    "Nekaisi svaigus kūtsmēslus burkānu dobē — to smarža mušu pievelk."
+  ],
+  "moonNote": "Burkānus pēc biodinamiskās tradīcijas sēj sakņu (zemes) dienās dilstošā Mēnesī — un, ja sēju pārceļ uz jūnija sākumu pret mušu, vari to apvienot ar tuvāko sakņu dienu.",
+  "folklore": "Vecie dārznieki burkānus un sīpolus vienmēr sēja blakus un teica: «sīpols burkānu sargā, burkāns — sīpolu». Aiz šī teiciena stāv pilnīgi reāla abu mušu smaržu maskēšana — viens no labākajiem tautas agronomijas piemēriem.",
+  "faq": [
+    {
+      "q": "Burkāni ar ejām — vai tos drīkst ēst?",
+      "a": "Jā — bojātās vietas izgriež, pārējais ir pilnvērtīgs ēdiens. Tikai glabāšanai tie neder: caur ejām ātri ienāk puve, tāpēc bojātos izlieto pirmos."
+    },
+    {
+      "q": "Kad lido burkānu muša?",
+      "a": "Divreiz: pirmā paaudze maijā (tautas orientieris — ievu un ceriņu ziedēšana), otrā jūlija beigās–augustā. Tīklam jābūt virs dobes abos periodos."
+    },
+    {
+      "q": "Vai pret burkānu mušu līdz kāds uzlējums?",
+      "a": "Godīgi — ne īsti: kad kāpurs ir saknē, neviens apsmidzinājums to vairs nesasniedz. Drošie līdzekļi ir tīkls, sīpoli blakus, vēlā sēja un augu maiņa. Profilakse šeit ir viss."
+    }
+  ]
+}

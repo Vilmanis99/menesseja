@@ -1,0 +1,57 @@
+{
+  "slug": "atraitnites",
+  "name": "Atraitnītes",
+  "latin": "Viola × wittrockiana",
+  "emoji": "🌸",
+  "type": "viengadiga",
+  "tagline": "Pirmā un pēdējā krāsa sezonā — atraitnītes pacieš salnas, tāpēc zied, kad balkonā un dobē vēl (vai jau) nekā cita nav.",
+  "bloom": "Aprīlis–oktobris",
+  "height": "15–25 cm",
+  "sun": "Saule / pussēna",
+  "hardy": false,
+  "difficulty": "viegli",
+  "plantWhen": "Stādus laukā no aprīļa (pacieš salnas!); sēj telpās febr.–martā vai jūlijā nākamajam pavasarim",
+  "moonPhase": "augošs",
+  "moonElement": "ziedi",
+  "moonText": "Atraitnītes ir ziedu augi — pēc biodinamiskās tradīcijas tās sēj un stāda ziedu (gaisa) dienās augošā Mēnesī. Tradīcija dod ritmu, bet atraitnīšu lielais pluss ir tieši praktisks: tās drīkst stādīt agri, negaidot salnu beigas.",
+  "intro": [
+    "Atraitnītes ir drosmīgākās puķes Latvijas pavasarī — tās mierīgi pacieš nakts salnas, tāpēc balkona kastes un dobes ar tām var piepildīt jau aprīlī, mēnesi pirms pelargonijām un petūnijām. Samtainās «sejiņas» visās iedomājamās krāsās zied bez apstājas, kamēr vien nav īsta karstuma, un rudenī turpina līdz pat oktobrim.",
+    "Audzē tās vienkārši: pavasarī pērk vai audzē stādus pavasara ziedēšanai, bet īstie meistari sēj jūlijā — tādi augi pārziemo zem sniega un uzzied agrā pavasarī vēl pirms pirktajiem stādiem. Karstajā jūlijā atraitnītes mēdz paņemt pauzi; apgriez tās, palaisti, un augusta vēsumā tās uzzied no jauna."
+  ],
+  "planting": [
+    "Pavasara ziedēšanai stādus stādi laukā no aprīļa — salnas tiem nekaitē; atstatums 15–20 cm.",
+    "Sēšanai telpās: februārī–martā, dīgšanai vajag tumsu un ~15–18 °C; laukā stādi no aprīļa.",
+    "Vasaras sējai (pārziemojošiem augiem): sēj jūlijā lecektī vai dobē, rudenī izstādi vietā — pavasarī uzziedēs pirmie.",
+    "Vieta — saule vai pusēna; vasaras karstumā pusēna pat labāka.",
+    "Augsne — parasta dārza zeme ar kompostu; podos un kastēs svaiga stādu zeme."
+  ],
+  "care": [
+    "Regulāri norauj novītušos ziedus — tas ir viss atraitnīšu noslēpums: jo čaklāk ravē ziedus, jo ilgāk un kuplāk tās zied.",
+    "Laisti vienmērīgi, kastēs un podos — katru dienu vasarā; izkaltusi atraitnīte pārstāj ziedēt.",
+    "Karstajā jūlijā izstīdzējušus augus apgriez uz pusi — augusta vēsumā tie atjaunosies un uzziedēs no jauna.",
+    "Mēslo viegli ik pa 2 nedēļām kastēs; dobē pietiek ar kompostu stādot.",
+    "Ziedus var likt arī salātos un kūku rotāšanai — tie ir ēdami."
+  ],
+  "winter": "Pavasarī stādītās atraitnītes ir vienas sezonas augi — rudenī tās nokalst. Toties jūlijā sētie jaunie augi Latvijā pārziemo atklātā laukā zem sniega (bargā kailsala ziemā viegli piesedz ar zariem) un uzzied agrā pavasarī — tas ir tradicionālais divgadīgais audzēšanas veids.",
+  "problems": [
+    "Karstumā pārstāj ziedēt un izstīdz — apgriez, palaisti, sagaidi vēsumu; tas ir normāli.",
+    "Miltrasa vasaras beigās — retināts stādījums un laistīšana pie saknes.",
+    "Gliemeži jaunajiem stādiem — pelnu barjera vai vākšana."
+  ],
+  "folklore": "Atraitnītes latviski sauc arī par «sejiņām» — bērniem rādīja, ka katrā ziedā redzama sejiņa. Tās gadsimtu ir bijušas arī piemiņas puķes, ko latvieši pavasarī stāda kapos kā pirmo krāsu pēc ziemas — puķe, kas simbolizē atcerēšanos un uzticību.",
+  "faq": [
+    {
+      "q": "Vai atraitnītes izturēs pavasara salnas?",
+      "a": "Jā — tā ir to lielākā priekšrocība. Stādus var likt balkona kastēs un dobēs jau aprīlī; nakts salnas līdz aptuveni −4 °C tām nekaitē."
+    },
+    {
+      "q": "Kāpēc atraitnītes vasarā pārstāja ziedēt?",
+      "a": "Karstums — atraitnītes ir vēsa laika puķes. Apgriez augus uz pusi, laisti, un augustā, kad naktis kļūst vēsākas, tās uzziedēs no jauna līdz pat oktobrim."
+    },
+    {
+      "q": "Kā izaudzēt atraitnītes, kas zied agrā pavasarī?",
+      "a": "Sēj jūlijā lecektī, rudenī izstādi vietā — jaunie augi pārziemo zem sniega un uzzied aprīlī, agrāk par jebkuru pavasarī pirktu stādu. Tas ir vecais divgadīgais audzēšanas veids."
+    }
+  ],
+  "related": ["balkona-pukes", "petunijas", "pelargonijas", "begonijas"]
+}

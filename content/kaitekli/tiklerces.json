@@ -1,0 +1,51 @@
+{
+  "slug": "tiklerces",
+  "name": "Tīklērces",
+  "latin": "Tetranychus urticae",
+  "emoji": "🕷️",
+  "type": "kaiteklis",
+  "tagline": "Mikroskopiskais siltumnīcas rēgs — kad uz gurķu lapām parādās smalki tīkliņi, kolonija jau ir milzīga.",
+  "severity": "vidējs",
+  "affects": ["gurķi siltumnīcā", "tomāti", "telpaugi", "zemenes", "pupiņas"],
+  "signs": [
+    "Lapas kļūst raibas — sīki gaiši punktiņi (dūrieni), vēlāk lapa dzeltē un kalst.",
+    "Smalki zirnekļtīkliņi lapu apakšā un starp lapu un stublāju — vēlīna stadija.",
+    "Pati ērce ar neapbruņotu aci tikko saskatāma (~0,5 mm) — paskaties ar lupu lapas apakšpusē.",
+    "Problēma eksplodē karstā, sausā gaisā — siltumnīcā jūlijā, telpaugiem ziemā pie radiatora."
+  ],
+  "intro": [
+    "Tīklērce nav kukainis, bet sīciņa ērce, kas dzīvo lapu apakšpusē un sūc augu sulu šūnu pa šūnai. Tā vairojas neticami ātri — karstā siltumnīcā paaudze nomainās nedēļā —, tāpēc no pirmajiem raibumiņiem līdz tīkliņiem pārklātam, kalstošam gurķim paiet pavisam īss laiks.",
+    "Tīklērces lielā vājība ir mitrums: tā plaukst tikai sausā, karstā gaisā. Tāpēc visa dabīgā cīņa griežas ap vienu asi — celt gaisa mitrumu un regulāri skalot lapas. Siltumnīcā, kur gaiss tiek miglots un augi dušoti, tīklērce nekad nekļūst par katastrofu."
+  ],
+  "control": [
+    "Cel gaisa mitrumu: miglo siltumnīcu karstās dienās, lej ūdeni uz celiņiem — mitrums virs 60 % ērces vairošanos strauji bremzē.",
+    "Noskalo augus ar spēcīgu ūdens strūklu, īpaši lapu APAKŠAS — mehāniski aizskalo lielāko koloniju daļu; atkārto ik pēc 3–4 dienām.",
+    "Stipri skartās lapas un dzinumus nogriez un iznes no siltumnīcas (ne kompostā pie siltumnīcas).",
+    "Apsmidzini lapu apakšas ar ziepjūdeni (zaļās ziepes) — tas nosmacē ērces; atkārto pēc nedēļas, jo olas izdzīvo.",
+    "Telpaugiem: nodušo augu, uzliec caurspīdīgu maisu uz pāris dienām — mitruma šoks ērces iznīcina.",
+    "Smagos gadījumos siltumnīcā var izmantot plēsējērces (Phytoseiulus persimilis) — bioloģiskā kontrole, ko pārdod arī Latvijā."
+  ],
+  "recipeSlugs": [],
+  "prevention": [
+    "Regulāra vēdināšana + miglošana karstās dienās — neļauj siltumnīcai kļūt par sausu pirti.",
+    "Apskati lapu apakšas ar lupu jau jūnijā — agri pamanīta kolonija ir viegli apturama.",
+    "Rudenī siltumnīcu iztīri un nomazgā (arī rāmjus un spraugas) — tīklērces ziemo plaisās un augu atliekās.",
+    "Neturi siltumnīcā pārziemojošus telpaugus — tie bieži ienes ērces pavasarī."
+  ],
+  "moonNote": "",
+  "folklore": "",
+  "faq": [
+    {
+      "q": "Kā atšķirt tīklērci no slimības?",
+      "a": "Tīklērces raibums ir sīki, vienmērīgi gaiši punktiņi (dūrieni), kas sākas pie lapas dzīslām, un lapas apakšā ar lupu redzamas kustīgas ērcītes vai tīkliņi. Sēņu slimības veido plankumus, ne punktiņu rakstu."
+    },
+    {
+      "q": "Kāpēc tīklērce uzbrūk tieši siltumnīcai?",
+      "a": "Tur ir tās ideālie apstākļi: karsts un sauss gaiss. Mitrums ir tās vājība — miglošana un lapu skalošana siltumnīcā problēmu parasti notur zem kontroles."
+    },
+    {
+      "q": "Vai ar vienu apstrādi pietiek?",
+      "a": "Nē — ērces olas pārdzīvo gan skalošanu, gan ziepjūdeni, tāpēc apstrāde jāatkārto 2–3 reizes ar 4–7 dienu intervālu, lai noķertu arī tikko šķīlušās paaudzes."
+    }
+  ]
+}

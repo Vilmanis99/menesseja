@@ -101,6 +101,18 @@ export const CROPS: Crop[] = [
   { id: "budlejas", name: "Budlejas", category: "pukes", difficulty: 2, daysToHarvest: "Zied no jūlija", sun: "Saule", transplant: [5, 6], harvest: [7, 9], note: "Tauriņu krūms. Pavasarī stipri apgriež — zied uz jaunajiem dzinumiem." },
   { id: "ranunkuli", name: "Ranunkuli", category: "pukes", difficulty: 2, daysToHarvest: "Zied vasarā", sun: "Saule", sowOutdoors: [4, 5], harvest: [6, 7], note: "Gumus pirms stādīšanas izmērcē. Rudenī izrok un glabā vēsumā." },
   { id: "verbena", name: "Verbēna", category: "pukes", difficulty: 2, daysToHarvest: "Zied visu vasaru", sun: "Saule", sowIndoors: [2, 3], transplant: [5, 6], harvest: [6, 9], note: "Zied nenogurstoši līdz salnām. Audzē kā viengadīgu." },
+  { id: "dalijas", name: "Dālijas", category: "pukes", difficulty: 2, daysToHarvest: "Zied līdz salnām", sun: "Saule", sowOutdoors: [5, 6], harvest: [7, 10], note: "Gumus stāda pēc salnām; rudenī izrok un glabā vēsumā." },
+  { id: "gladiolas", name: "Gladiolas", category: "pukes", difficulty: 2, daysToHarvest: "Zied vasaras otrā pusē", sun: "Saule", sowOutdoors: [5, 5], harvest: [7, 9], note: "Bumbuļsīpolus stāda maijā, rudenī izrok. Griezto ziedu klasika." },
+  { id: "lilijas", name: "Lilijas", category: "pukes", difficulty: 2, daysToHarvest: "Daudzgadīga", sun: "Saule / pussēna", sowOutdoors: [9, 10], harvest: [6, 8], note: "Ziemcietīgas — neizrok. Āzijas hibrīdi Latvijā visdrošākie." },
+  { id: "rozes", name: "Rozes", category: "pukes", difficulty: 3, daysToHarvest: "Daudzgadīga", sun: "Saule", transplant: [4, 5], harvest: [6, 10], note: "Stādot potcelma vietu 5–10 cm zem augsnes; ziemai apkrauj." },
+  { id: "krokusi", name: "Krokusi", category: "pukes", difficulty: 1, daysToHarvest: "Zied agri pavasarī", sun: "Saule", sowOutdoors: [9, 10], harvest: [3, 4], note: "Pirmie pavasara ziedi. Naturalizējas zālienā — neizrok." },
+  { id: "hiacintes", name: "Hiacintes", category: "pukes", difficulty: 1, daysToHarvest: "Zied pavasarī", sun: "Saule", sowOutdoors: [9, 10], harvest: [4, 5], note: "Stāda rudenī ~15 cm dziļi. Smaržo visa dobe." },
+  { id: "floksi", name: "Flokši", category: "pukes", difficulty: 1, daysToHarvest: "Daudzgadīga", sun: "Saule / pussēna", transplant: [4, 5], harvest: [7, 9], note: "Vecmāmiņu dārzu klasika. Retināts stādījums pasargā no miltrasas." },
+  { id: "rudbekijas", name: "Rudbekijas", category: "pukes", difficulty: 1, daysToHarvest: "Daudzgadīga", sun: "Saule", sowIndoors: [3, 4], transplant: [5, 6], harvest: [7, 10], note: "«Zelta lodes» pie lauku mājām — zied līdz pat oktobrim." },
+  { id: "hostas", name: "Hostas", category: "pukes", difficulty: 1, daysToHarvest: "Daudzgadīga", sun: "Pussēna", transplant: [4, 5], harvest: [7, 8], note: "Ēnas karaliene ar krāšņām lapām. Galvenais ienaidnieks — gliemeži." },
+  { id: "lavanda", name: "Lavanda", category: "pukes", difficulty: 3, daysToHarvest: "Daudzgadīga", sun: "Saule", sowIndoors: [2, 3], transplant: [5, 6], harvest: [7, 8], note: "Tikai šaurlapu lavanda ziemo Latvijā — saulē, sausā augsnē, ar segumu." },
+  { id: "astilbes", name: "Astilbes", category: "pukes", difficulty: 1, daysToHarvest: "Daudzgadīga", sun: "Pussēna", transplant: [4, 5], harvest: [6, 8], note: "Pussēnai un mitrākai vietai — nekad neļauj izžūt." },
+  { id: "atraitnites", name: "Atraitnītes", category: "pukes", difficulty: 1, daysToHarvest: "Zied no agra pavasara", sun: "Saule / pussēna", sowIndoors: [2, 3], transplant: [4, 5], harvest: [4, 10], note: "Pacieš pavasara salnas — var stādīt agri. Balkona klasika." },
 ];
 
 export const MONTHS_LV = [

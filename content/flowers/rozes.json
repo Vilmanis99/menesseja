@@ -1,0 +1,58 @@
+{
+  "slug": "rozes",
+  "name": "Rozes",
+  "latin": "Rosa",
+  "emoji": "🌹",
+  "type": "krums",
+  "tagline": "Puķu karaliene, kas Latvijā zied no jūnija līdz pat oktobrim — ja vien zini divus galvenos noslēpumus: stādīšanas dziļumu un ziemas segumu.",
+  "bloom": "Jūnijs–oktobris (atkārtoti ziedošās šķirnes)",
+  "height": "40–200 cm (atkarībā no grupas)",
+  "sun": "Saule",
+  "hardy": true,
+  "difficulty": "grūti",
+  "plantWhen": "Stāda pavasarī (aprīlis–maijs) vai septembrī",
+  "moonPhase": "augošs",
+  "moonElement": "ziedi",
+  "moonText": "Rozes ir ziedu augs — biodinamikā to stādīšanu un kopšanu saista ar ziedu (gaisa) dienām, bet stādīšanu un apgriešanu tradicionāli veic dilstošā Mēnesī, kad spēks saknēs. Tradīcija dod ritmu, taču izšķirošais rozēm ir vieta, dziļums un ziemas segums.",
+  "intro": [
+    "Roze ir vienīgā puķe, kurai dārzā piedod visu — gan ērkšķus, gan kaprīzes — jo neviens cits augs nedod tādu ziedēšanu no jūnija līdz pat vēlam rudenim. Latvijā rozes aug lieliski, ja izvēlas izturīgas šķirnes (krūmrozes un parka rozes iesācējam ir visdrošākās) un ievēro divus zelta likumus.",
+    "Pirmais: stādot acotā roze jāiegremdē tā, lai potējuma vieta ir 5–10 cm zem augsnes virsmas — tas pasargā šķirni no izsalšanas. Otrais: ziemai rozes apkrauj. Šie divi paradumi izšķir, vai roze pie tevis dzīvos gadu vai gadu desmitus."
+  ],
+  "planting": [
+    "Izvēlies saulainu (vismaz 6 h tiešas saules), vēdinātu, bet no asiem vējiem pasargātu vietu — sastāvīgs gaiss veicina sēņu slimības.",
+    "Stādi pavasarī (aprīlī–maijā) vai septembrī; konteinerstādus var visu sezonu.",
+    "Izrok plašu bedri (~50 cm), iemaisi kompostu; acotām rozēm potējuma vietai jāpaliek 5–10 cm ZEM augsnes virsmas — tas ir pats svarīgākais solis.",
+    "Pirms stādīšanas kailsakņu stādu saknes pamērcē ūdenī pāris stundas un bojātās piegriež.",
+    "Pēc stādīšanas bagātīgi aplej un apkrauj pamatni ar zemi vai mulču, kamēr stāds ieaug."
+  ],
+  "care": [
+    "Laisti reti, bet pamatīgi, pie saknes — nekad pa lapām (slapjas lapas = melnplankumainība).",
+    "Mēslo pavasarī (komposts vai rožu mēslojums) un pēc pirmā ziedēšanas viļņa; no augusta slāpekli vairs nedod, lai dzinumi pagūst nobriest ziemai.",
+    "Novītušos ziedus regulāri izgriez līdz pirmajai pilnajai lapai — tas dzen jaunu ziedēšanas vilni.",
+    "Galvenā apgriešana — pavasarī, kad pumpuri briest: izgriez nosalušo, veco un uz iekšu augošo; vājus dzinumus īsina stiprāk.",
+    "Seko lapām: laputis noskalo vai apstrādā ar ziepjūdeni, pret miltrasu un melnplankumainību palīdz retināts stādījums un slimo lapu savākšana.",
+    "Savāc un iznīcini (ne kompostā!) rudens lapas zem krūma — tajās ziemo slimību sporas."
+  ],
+  "winter": "Latvijā rozes ziemo ar segumu. Pēc pirmajām salnām (parasti novembrī, kad zeme sāk salt) krūma pamatni apkrauj ar 15–20 cm sausas zemes, kūdras vai komposta; jutīgākas šķirnes papildus piesedz ar egļu zariem. Vijīgās rozes noliec pie zemes un piesedz. Pavasarī, aprīlī, segumu pakāpeniski noņem — pārāk ilgi sasegta roze izsust.",
+  "problems": [
+    "Melnplankumainība — melni plankumi uz lapām, lapas dzeltē un birst; palīdz laistīšana pie saknes, retināts stādījums un kritušo lapu iznīcināšana.",
+    "Miltrasa — balts apsarme uz jaunajām lapām sutīgā laikā; profilaksei gaisa kustība un kosas novārījums.",
+    "Laputis uz jaunajiem dzinumiem un pumpuriem — noskalo ar ūdeni vai ziepjūdeni, piesaisti mārītes."
+  ],
+  "folklore": "Roze latviešu dainās un sētās vienmēr bijusi goda puķe — to stādīja pie mājas durvīm un istabas loga, lai «skaistums sargā māju». Vecticībā rozes ērkšķi pasargājot no ļauna, tāpēc rožu krūmu nereti stādīja arī sētas malā.",
+  "faq": [
+    {
+      "q": "Cik dziļi stādīt rozi?",
+      "a": "Acotām rozēm potējuma vietai (resnumam pie saknēm) jābūt 5–10 cm zem augsnes virsmas. Pārāk sekli stādīta roze Latvijas ziemā var zaudēt šķirnes daļu — paliek tikai mežrozes potcelms."
+    },
+    {
+      "q": "Kā sagatavot rozes ziemai Latvijā?",
+      "a": "No augusta nemēslo ar slāpekli, rudenī savāc lapas zem krūma, un pēc pirmajām salnām apkrauj pamatni ar 15–20 cm sausas zemes vai kūdras. Jutīgākām šķirnēm virsū vēl egļu zarus. Pavasarī segumu noņem pakāpeniski."
+    },
+    {
+      "q": "Kuras rozes ir visizturīgākās iesācējam?",
+      "a": "Parka un krūmrozes (piemēram, kanādiešu selekcijas šķirnes) — tās Latvijā ziemo ar minimālu segumu un mazāk slimo. Smalkās tējhibrīdrozes prasa vairāk rūpju un rūpīgāku ziemas aizsardzību."
+    }
+  ],
+  "related": ["peonijas", "budlejas", "lavanda", "floksi"]
+}

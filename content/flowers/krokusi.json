@@ -1,0 +1,57 @@
+{
+  "slug": "krokusi",
+  "name": "Krokusi",
+  "latin": "Crocus",
+  "emoji": "🌷",
+  "type": "sipolpuke",
+  "tagline": "Pirmie pavasara vēstneši — zied, kad dārzā vēl pa vietai sniegs, un gadu gaitā paši izplešas krāsainos paklājos.",
+  "bloom": "Marts–aprīlis",
+  "height": "8–15 cm",
+  "sun": "Saule",
+  "hardy": true,
+  "difficulty": "viegli",
+  "plantWhen": "Bumbuļsīpolus stāda rudenī, sept.–okt.",
+  "moonPhase": "dilstošs",
+  "moonElement": "saknes",
+  "moonText": "Krokusu bumbuļsīpolu stādīšana rudenī ir sakņu darbs, ko tradīcija liek darīt dilstošā Mēnesī. Praktiski svarīgāk ir paspēt līdz oktobra beigām, lai sīpoliņi apsakņojas pirms sala.",
+  "intro": [
+    "Krokuss ir tas zieds, kas pasaka: ziema garām. Latvijā tie atveras martā–aprīlī, bieži cauri pēdējam sniegam, un vienlaikus ir arī pirmā lielā bišu ganība — saulainā dienā krokusu pudurī san kā jūlijā. Krāsas no sniegbalta un dzeltena līdz tumši violetam, un visi ir pilnībā ziemcietīgi.",
+    "Pats jaukākais — krokusi neprasa neko. Iestādi rudenī, un tie ne tikai atgriežas katru gadu, bet pamazām savairojas paši, veidojot arvien platākus paklājus. Tos var stādīt pat tieši zālienā: kamēr zāli sāk pļaut, krokusu lapas jau nodzeltējušas un savu darbu padarījušas."
+  ],
+  "planting": [
+    "Stādi septembrī–oktobrī saulainā vietā — zem lapu kokiem arī der, jo pavasarī, krokusiem ziedot, koki vēl ir kaili un saule tiek cauri.",
+    "Dziļums ~8–10 cm, atstatums 5–8 cm; stādi grupās pa 10–20, nevis pa vienam — tikai pudurī tie izskatās pēc paklāja.",
+    "Augsnei jābūt caurlaidīgai — slapjā vietā bumbuļsīpoli pūst.",
+    "Zālienā stādīšanai izgriez velēnas gabalu, saliec sīpoliņus, uzliec velēnu atpakaļ — pavasarī tie izlien cauri zālei.",
+    "Vietās, kur saimnieko peles un strupastes, stādi krokusus plastmasas groziņos vai sietiņā — grauzējiem tie garšo."
+  ],
+  "care": [
+    "Kopšanas praktiski nav — pavasarī ziedi, tad lapas, un jūnijā augs jau dus.",
+    "Lapas pēc noziedēšanas neapgriez un zālienā nepļauj, kamēr tās dzeltenas — tās uzkrāj spēku nākamajam pavasarim.",
+    "Mēslot nevajag; pietiek, ja reizi pa reizei uzber plānu komposta kārtu rudenī.",
+    "Reizi 4–5 gados sabiezējušus pudurus jūnijā (kad lapas nokaltušas) var izrakt, sadalīt un izstādīt plašāk.",
+    "Pavasarī necīnies ar sniegu — krokusiem salnas un sniegs ziedēšanas laikā nekaitē."
+  ],
+  "winter": "Krokusi Latvijā ir pilnībā ziemcietīgi un ziemo atklātā laukā bez jebkāda seguma vai izrakšanas.",
+  "problems": [
+    "Peles un strupastes izēd bumbuļsīpolus — stādi groziņos/sietiņā vai jauc kopā ar narcisēm, kuras grauzēji neaiztiek.",
+    "Slapjā augsnē sīpoliņi pūst — izvēlies caurlaidīgu vietu.",
+    "Puduris ar gadiem zied skopāk — pārāk sabiezējis; izrok un sadali."
+  ],
+  "folklore": "Latviešu dārzkopji krokusus mēdz saukt par bišu pavasara pirmo maizi — vecie biškopji pēc krokusu atvēršanās sprieda, ka saimes var sākt pavasara dravošanu. Krokusa parādīšanās cauri sniegam daudzās sētās skaitījusies labas dārza sezonas zīme.",
+  "faq": [
+    {
+      "q": "Kad stādīt krokusus?",
+      "a": "Rudenī, septembrī–oktobrī, kamēr augsne vēl silta un sīpoliņi paspēj apsakņoties. Pavasarī stādīti krokusi tajā pašā gadā parasti nezied."
+    },
+    {
+      "q": "Vai krokusus var stādīt zālienā?",
+      "a": "Jā — tas ir viens no skaistākajiem veidiem. Tikai nepļauj zāli, kamēr krokusu lapas nav nodzeltējušas (parasti līdz maija beigām), lai sīpoliņi paspēj uzkrāt spēku."
+    },
+    {
+      "q": "Kāpēc krokusi pazūd?",
+      "a": "Visbiežāk vainojami grauzēji (peles, strupastes), kas izēd sīpoliņus, vai pārāk slapja augsne, kurā tie sapūst. Stādi sietiņos un caurlaidīgā vietā."
+    }
+  ],
+  "related": ["narcises", "tulpes", "hiacintes", "lilijas"]
+}

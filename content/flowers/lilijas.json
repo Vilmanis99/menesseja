@@ -1,0 +1,58 @@
+{
+  "slug": "lilijas",
+  "name": "Lilijas",
+  "latin": "Lilium",
+  "emoji": "🌸",
+  "type": "sipolpuke",
+  "tagline": "Karaliskā vasaras puķe, kas Latvijā ziemo bez raizēm — iestādi reizi un priecājies gadiem.",
+  "bloom": "Jūnijs–augusts (atkarībā no grupas)",
+  "height": "60–150 cm",
+  "sun": "Saule / pussēna",
+  "hardy": true,
+  "difficulty": "vidēji",
+  "plantWhen": "Sīpolus stāda rudenī (sept.–okt.) vai agri pavasarī",
+  "moonPhase": "dilstošs",
+  "moonElement": "saknes",
+  "moonText": "Liliju sīpolu stādīšana ir sakņu darbs, ko pēc biodinamiskās tradīcijas veic dilstošā Mēnesī. Kā vienmēr — tradīcija ir ritms, ne noteikums: svarīgāk iestādīt laikus, lai sīpols apsakņojas pirms ziemas.",
+  "intro": [
+    "Lilijas ir tās puķes, kas Latvijas dārzam piešķir svinīgumu — lielie, bieži skaisti smaržojošie ziedi jūlijā paceļas pāri pārējai dobei kā sveces. Un pretēji daudzu priekšstatam tās nemaz nav kaprīzas: lielākā daļa dārza liliju Latvijā ir pilnībā ziemcietīgas un gadu no gada kuplo bez izrakšanas.",
+    "Iesācējam visdrošākie ir Āzijas hibrīdi — tie ir visizturīgākie pret salu un slimībām, zied pirmie un krāsu izvēle ir milzīga. Austrumu (orientālās) lilijas smaržo spēcīgāk, bet ir jutīgākas un prasa siltāku, pasargātāku vietu un labāku drenāžu."
+  ],
+  "planting": [
+    "Labākais laiks ir septembris–oktobris, lai sīpols apsakņojas pirms ziemas; var stādīt arī agri pavasarī.",
+    "Dziļums — apmēram 3 sīpola augstumi (parasti 12–15 cm), atstatums 20–30 cm; lilijām patīk «galva saulē, kājas ēnā» — apakšu var piesegt ar zemākiem augiem.",
+    "Augsnei jābūt irdenai un caurlaidīgai — stāvošā ūdenī sīpoli pūst; smagā mālā bedres dibenā liek smilšu kārtu.",
+    "Sīpolu pirms stādīšanas apskati: tam jābūt cietam, ar dzīvām saknēm; sakaltušus vai pelējušus brāķē.",
+    "Pēc iestādīšanas vietu atzīmē — pavasarī liliju asni parādās vēlu, un tos viegli nejauši norakt."
+  ],
+  "care": [
+    "Laisti sausā laikā pie saknes, ne pa lapām — mitras lapas veicina pelēko puvi.",
+    "Pavasarī, asniem parādoties, dod kompostu vai pilnvērtīgu mēslojumu; ziedēšanas laikā lilijas vairs nemēslo.",
+    "Garajām šķirnēm vējainā vietā ieliec atbalstu.",
+    "Novītušos ziedus nogriez, bet stublāju ar lapām atstāj līdz rudenim — tas baro sīpolu nākamajam gadam.",
+    "Reizi 4–5 gados sabiezējušus pudurus rudenī izrok un sadala — ziedēšana atjaunojas.",
+    "Uzmanies no lilijapšu vabolēm (sarkanās vaboles) — tās vāc ar roku, tiklīdz parādās."
+  ],
+  "winter": "Dārza lilijas (īpaši Āzijas hibrīdi) Latvijā ziemo atklātā laukā bez izrakšanas. Jutīgākās austrumu lilijas rudenī viegli piesedz ar lapām vai egļu zariem un parūpējas, lai vieta nav slapja — slapjums ziemā tām ir bīstamāks par salu.",
+  "problems": [
+    "Lilijapšu vabole (spilgti sarkana) un tās kāpuri apgrauž lapas — efektīvākā ir regulāra vākšana ar roku no maija.",
+    "Pelēkā puve mitrās vasarās — brūni plankumi uz lapām; palīdz retināts stādījums un laistīšana pie saknes.",
+    "Sīpolu puve slapjā augsnē — stādi caurlaidīgā vietā ar drenāžu."
+  ],
+  "folklore": "Baltā lilija latviešu puķu dārzos no seniem laikiem stādīta kā šķīstības un svētku puķe — to nesa gan uz baznīcu, gan kāzām. Dārza lilijas vecajās lauku sētās bieži aug turpat, kur pirms gadu desmitiem iestādītas — tās pārdzīvo pat savus stādītājus.",
+  "faq": [
+    {
+      "q": "Vai lilijas jāizrok ziemai?",
+      "a": "Nē — dārza lilijas Latvijā ir ziemcietīgas un paliek zemē. Tikai jutīgākajām austrumu šķirnēm der viegls segums un sausa vieta; izrok tikai tad, ja puduris jādala."
+    },
+    {
+      "q": "Kuras lilijas vislabāk der iesācējam Latvijā?",
+      "a": "Āzijas hibrīdi — tie ir visizturīgākie pret salu, necieš no kaprīzēm un zied jau jūnija beigās–jūlijā. Kad rokas ievingrinājušās, vari pamēģināt smaržīgās austrumu lilijas."
+    },
+    {
+      "q": "Kāpēc lilijas nezied?",
+      "a": "Biežākie iemesli: pārāk sekli vai nesen stādīts sīpols, pārāk ēnaina vieta, sabiezējis puduris vai slapja augsne, kurā sīpols nīkuļo. Pārstādi saulainā, caurlaidīgā vietā pareizā dziļumā un dod gadu iedzīvoties."
+    }
+  ],
+  "related": ["peonijas", "gladiolas", "dalijas", "tulpes"]
+}

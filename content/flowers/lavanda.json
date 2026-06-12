@@ -1,0 +1,57 @@
+{
+  "slug": "lavanda",
+  "name": "Lavanda",
+  "latin": "Lavandula angustifolia",
+  "emoji": "💜",
+  "type": "daudzgadiga",
+  "tagline": "Provansas smarža Latvijas dārzā — iespējama, ja zini trīs noteikumus: saule, sausa augsne un tikai šaurlapu lavanda.",
+  "bloom": "Jūlijs–augusts",
+  "height": "30–60 cm",
+  "sun": "Saule",
+  "hardy": true,
+  "difficulty": "grūti",
+  "plantWhen": "Stādus laukā maijā–jūnijā; sēklas telpās febr.–martā (vajag aukstuma apstrādi)",
+  "moonPhase": "augošs",
+  "moonElement": "ziedi",
+  "moonText": "Lavanda ir ziedu augs — biodinamikā to sēj un kopj ziedu (gaisa) dienās, un ziedus smaržai tradicionāli vāc augošā Mēnesī sausā rītā. Tradīcija dod ritmu, bet lavandas likteni Latvijā izšķir vieta: saule un sausa, kaļķaina augsne.",
+  "intro": [
+    "Lavandu Latvijā izaudzēt VAR — bet tikai tad, ja samierinies ar vienu patiesību: šeit izdzīvo vienīgi šaurlapu lavanda (Lavandula angustifolia). Skaistā, lielziedu franču lavanda no dārza centra ziemu nepārdzīvos. Šaurlapu šķirnes (piemēram, 'Munstead' un 'Hidcote') turpretī mūsu klimatā ziemo gadiem, ja vieta izvēlēta pareizi.",
+    "Lavandas noslēpums nav siltums, bet sausums: tā iet bojā nevis no sala, bet no slapjuma ziemā. Saulaina nogāze, smilšaina vai grantaina augsne ar kaļķi un nekāda trekna komposta — jo nabadzīgāka vieta, jo laimīgāka lavanda un spēcīgāka smarža."
+  ],
+  "planting": [
+    "Stādus stādi maijā–jūnijā saulainākajā, sausākajā dārza vietā — ideāli pret dienvidiem vērsta nogāze vai paaugstināta dobe.",
+    "Augsne — caurlaidīga, smilšaina/grantaina, ar kaļķi (pH virs 6,5); smagā mālā bedrē obligāti iemaisi granti un smiltis vai stādi uzbērumā.",
+    "Atstatums 30–40 cm; dobi NEmulčē ar mitru organiku — labāk balta grants vai oļi, kas atstaro gaismu un tur sakņu kaklu sausu.",
+    "No sēklām: sēklām vajag ~3 nedēļu aukstuma apstrādi (stratifikāciju) ledusskapī, sēj telpās februārī–martā; dīgst lēni un nevienmērīgi — stādi ir krietni vieglākais ceļš.",
+    "Pirmajā vasarā regulāri palaisti, kamēr ieaug; pēc tam laistīšana praktiski nav vajadzīga."
+  ],
+  "care": [
+    "Galvenais darbs ir griešana: katru pavasari (aprīlī–maija sākumā) apgriez krūmiņu par trešdaļu, formējot puslodi — bet NEKAD negriez vecajā, kailajā koksnē, no tās lavanda neataug.",
+    "Pēc noziedēšanas augustā nogriez ziedkātus — viegla otrā apcirpšana notur krūmu blīvu.",
+    "Nemēslo ar slāpekli un kompostu — treknā augsnē lavanda izstīdz, vāji smaržo un sliktāk ziemo.",
+    "Ziedus smaržai vāc, kad atvērusies puse vārpiņas ziedu, sausā rītā — tad ēterisko eļļu visvairāk.",
+    "Ap krūmu uzturi sausu, nezāļainu joslu — slapja veģetācija pie sakņu kakla ir lavandas nāve."
+  ],
+  "winter": "Šaurlapu lavanda Latvijā ziemo, ja augsne sausa un vieta saulaina. Vēlā rudenī krūmiņu piesedz ar egļu zariem (tie pasargā no kailsala un mitruma, bet ļauj elpot) — nekādu lapu vai plēves, zem tām lavanda izsust. Pavasarī zarus noņem agri. Bargā ziemā daļa dzinumu var apsalt — pavasara griešana tos aizvāc, un krūms atjaunojas.",
+  "problems": [
+    "Izsušana ziemā zem blīva seguma vai slapjuma — sedz tikai ar skujām un nodrošini drenāžu; tas nogalina vairāk lavandu nekā sals.",
+    "Izstīdzis, izirdis krūms — par treknu augsni vai izlaista pavasara griešana; griez katru gadu, bet ne vecajā koksnē.",
+    "Franču/platlapu lavanda neziemo — Latvijā audzē tikai šaurlapu (angustifolia) šķirnes; pārējās tur podos un ziemā ienes."
+  ],
+  "folklore": "Lavandas zariņš veļas skapī ir paradums, kas Latvijā ienācis jau pirms simts gadiem ar aptieku dārziem — pret kodēm un «labai smaržai». Vecajos zolīšu dārzos lavandu stādīja gar celiņu, lai, garām ejot un pieskaroties, tā atdod smaržu.",
+  "faq": [
+    {
+      "q": "Vai lavanda pārziemo Latvijā?",
+      "a": "Šaurlapu lavanda (Lavandula angustifolia, piem. 'Munstead', 'Hidcote') — jā, ja aug saulē, sausā, caurlaidīgā augsnē un ziemā piesegta ar egļu zariem. Franču un platlapu lavandas Latvijā laukā neziemo."
+    },
+    {
+      "q": "Kāpēc mana lavanda nokalta pavasarī, lai gan ziema nebija barga?",
+      "a": "Gandrīz vienmēr vainīgs slapjums, ne sals: slapja augsne, blīvs segums vai mulča pie sakņu kakla. Lavandai vajag sausu ziemu — stādi uzbērumā, drenē un sedz tikai ar skujām."
+    },
+    {
+      "q": "Kā pareizi apgriezt lavandu?",
+      "a": "Katru pavasari par aptuveni trešdaļu, veidojot blīvu puslodi, un viegli vēlreiz pēc noziedēšanas. Nekad negriez līdz vecajai, kailajai koksnei — no tās lavanda jaunus dzinumus nedzen."
+    }
+  ],
+  "related": ["rozes", "ehinacija", "rudbekijas", "verbena"]
+}

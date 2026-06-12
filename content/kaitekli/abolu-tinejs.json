@@ -1,0 +1,51 @@
+{
+  "slug": "abolu-tinejs",
+  "name": "Ābolu tinējs",
+  "latin": "Cydia pomonella",
+  "emoji": "🐛",
+  "type": "kaiteklis",
+  "tagline": "«Tārpaino ābolu» autors — neuzkrītošs naktstauriņš, kura kāpurs izurbjas līdz ābola serdei.",
+  "severity": "vidējs",
+  "affects": ["ābeles", "bumbieres", "retāk cidonijas un valrieksti"],
+  "signs": [
+    "Ābolā apaļš ieejas caurums, bieži ar brūnu «zāģu skaidu» drupatām (kāpura izkārnījumiem) ap to.",
+    "Pārgriežot — brūna eja līdz serdei un tajā rožains kāpurs vai tukša, brūna serde.",
+    "Skartie āboli nogatavojas un nokrīt priekšlaicīgi — jūlija «kritalas» pārsvarā ir tinēja darbs.",
+    "Sezonā parasti divi bojājumu viļņi: jūnijā–jūlijā un augustā."
+  ],
+  "intro": [
+    "Ābolu tinējs ir mazs, pelēkbrūns naktstauriņš, ko dārzā praktiski neredz — toties tā kāpuru pazīst katrs, kurš jebkad iekodis «tārpainā» ābolā. Tauriņš dēj olas uz jaunajiem augļiem un lapām jūnijā, kāpurs iegraužas auglī, izēd ceļu līdz serdei un, paēdis, pa to pašu eju dodas ārā kūņoties zem mizas plaisām.",
+    "Šis dzīves cikls arī pasaka priekšā visu dabīgo cīņu: kāpurs ir neaizsargāts divos brīžos — kamēr ābols ar viņu vēl karājas kokā (tāpēc vāc kritalas!) un kamēr viņš meklē kūņošanās vietu uz stumbra (tāpēc kartona jostas). Ar šiem diviem paņēmieniem vien tārpaino ābolu skaitu var samazināt vairākkārt."
+  ],
+  "control": [
+    "Regulāri (2–3 reizes nedēļā vasarā) salasi un aizvāc kritalas — kāpurs no nokrituša ābola izlien 1–2 dienās un dodas atpakaļ kokā; kritalu izbarošana vai dziļa aprakšana pārtrauc ciklu. Šis ir pats svarīgākais darbs.",
+    "Jūnija vidū aptin stumbru ar gofrēta kartona joslu (15–20 cm platu) ~50 cm augstumā — kāpuri tajā labprāt kūņojas; reizi 2 nedēļās jostu noņem un sadedzini, uzliec jaunu. Turpini līdz ražas novākšanai.",
+    "Izkar feromonu slazdus (pārdod dārza veikalos) maija beigās — tie ķer tēviņus un rāda lidojuma intensitāti; mazā dārzā ar 1–2 slazdiem arī jūtami samazina apaugļošanos.",
+    "Piesaisti zīlītes: ziemā barotava, pavasarī būrīši — zīlīšu pāris ar mazuļiem izlasa tūkstošiem kāpuru, arī tinēja.",
+    "Vasarā nomizo atmirušās mizas plēksnes no vecu ābeļu stumbriem — zem tām ziemo tinēja kūniņas.",
+    "Skartos, vēl kokā karājošos «tārpainos» augļus, ja vari aizsniegt, noplūc pirmos — kāpurs vēl iekšā."
+  ],
+  "recipeSlugs": [],
+  "prevention": [
+    "Rudenī notīri un iznīcini vecās mizas plēksnes un mumificētos augļus kokā — tur ziemo kūniņas.",
+    "Ziemā pie ābelēm izkar zīlīšu barotavas — putni pārmeklē mizas plaisas visu ziemu.",
+    "Uztur zemo zāli un tīrību zem kokiem — kritalas redzamas un savācamas uzreiz.",
+    "Vēlās šķirnes cieš vairāk (paspēj abas paaudzes) — tām jostas un kritalu vākšana īpaši svarīga."
+  ],
+  "moonNote": "",
+  "folklore": "Vecsaimnieki teica: «kas kritalas lasa, tam āboli tīri» — un tā ir tīra patiesība, nevis ticējums. Kritalu cūkām izbarošana vakaros bija ierasta lauku sētas kārtība, kas reizē bija arī labākā augu aizsardzība.",
+  "faq": [
+    {
+      "q": "Vai tārpaino ābolu var ēst?",
+      "a": "Var — izgriez eju un bojāto daļu ap to, pārējais ābols ir labs. Glabāšanai gan tārpainie āboli neder: pa kāpura eju ienāk puve, tāpēc tos izlieto pirmos vai pārstrādā."
+    },
+    {
+      "q": "Kad likt kartona jostas?",
+      "a": "Jūnija vidū, kad pirmie kāpuri sāk meklēt kūņošanās vietas. Reizi divās nedēļās jostu nomaini un veco sadedzini — citādi tā kļūst par tinēja audzētavu. Turi jostas līdz ražas beigām."
+    },
+    {
+      "q": "Kāpēc kritalu vākšana ir tik svarīga?",
+      "a": "Kāpurs no nokrituša ābola izlien 1–2 dienu laikā un kāpj atpakaļ kokā kūņoties — katrs savlaicīgi savākts kritalu spainis ir simtiem nākamās paaudzes tauriņu mazāk. Tas ir efektīvākais atsevišķais darbs pret tinēju."
+    }
+  ]
+}

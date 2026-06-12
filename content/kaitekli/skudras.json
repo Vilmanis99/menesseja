@@ -1,0 +1,51 @@
+{
+  "slug": "skudras",
+  "name": "Skudras",
+  "latin": "Lasius niger u.c.",
+  "emoji": "🐜",
+  "type": "kaiteklis",
+  "tagline": "Pašas augus gandrīz neēd — īstā problēma ir tas, ka skudras «gana» laputis kā govis un būvē pūžņus dobēs.",
+  "severity": "viegls",
+  "affects": ["dobju puķes", "augļu koki", "zemenes", "zāliens", "siltumnīca"],
+  "signs": [
+    "Skudru taciņas augšup pa auga stublāju vai koka stumbru — gandrīz droša zīme, ka augšā ir laputis.",
+    "Smilšaini uzbērumiņi un caurumiņi dobē, zālienā vai starp bruģa šuvēm — pūžņa ieeja.",
+    "Laputu kolonijas uz jaunajiem dzinumiem, ko skudras aktīvi apmeklē un sargā.",
+    "Apvītuši augi dobē, zem kuriem izrakts pūznis — saknes paliek gaisā."
+  ],
+  "intro": [
+    "Skudras dārzā ir divdomīgs ciemiņš. No vienas puses tās ir derīgas — vāc kāpurus un irdina augsni. No otras — melnās dārza skudras dzīvo simbiozē ar laputīm: tās laputis sargā, pārnēsā uz jauniem dzinumiem un «slauc» to saldo medusrasu. Tāpēc tur, kur pa stublāju ritmiski kāpj skudras, gandrīz vienmēr augšā sēž laputu kolonija.",
+    "Tāpēc gudrākā cīņa ar skudrām vispār nav cīņa ar skudrām — tā ir laputu ierobežošana. Tiklīdz pazūd «ganāmpulks», skudru interese par augu beidzas. Pret pūžņiem nepiemērotās vietās savukārt der maigas pārvietošanas metodes."
+  ],
+  "control": [
+    "Sāc ar laputīm, ne skudrām: noskalo laputu kolonijas ar spēcīgu ūdens strūklu vai ziepjūdeni — bez medusrasas skudras zaudē motivāciju (skat. mūsu laputu lapu).",
+    "Augļu kokiem uzliec līmes jostu ap stumbru — skudras netiek augšā pie laputīm, un dabīgie laputu ienaidnieki tās apēd.",
+    "Pūzni nevēlamā vietā «pārceļ»: vairākas dienas pēc kārtas to pārrok un pārlej ar ūdeni — skudras pārvācas uz mierīgāku vietu.",
+    "Atbaidīšanai ap dobēm der stipras smaržas: piparmētra, kanēlis, citronu mizas — skudras šķērso tās nelabprāt.",
+    "Uz celiņiem un terasēs pūžņa ieeju var aplet ar verdošu ūdeni — bet dobē to nedari, cietīs augu saknes.",
+    "Saglabā mieru pret skudrām zālienā un kompostā — tur tās dara vairāk laba nekā ļauna."
+  ],
+  "recipeSlugs": ["vermelu-uzlejums"],
+  "prevention": [
+    "Turi laputis kontrolē visu sezonu — tas ir skudru problēmas kodols.",
+    "Neatstāj dārzā saldas ēsmas: kritušus saldus augļus, vaļējus kompostus ar virtuves atkritumiem pie dobēm.",
+    "Blīvs, veselīgs zāliens un regulāri irdinātas dobes skudrām patīk mazāk — tās izvēlas netraucētas, sausas vietas.",
+    "Stādi piparmētru vai citus smaržīgos augus gar dobju malām kā dabisku barjeru."
+  ],
+  "moonNote": "Tradicionāli kaitēkļu ierobežošanu un ravēšanu veic dilstošā Mēnesī — to vari izmantot kā atgādinājumu regulārai laputu kontrolei.",
+  "folklore": "Senči skudru pūzni dārza tuvumā ne vienmēr uzskatīja par nelaimi — meža skudras turēja par čaklām palīdzēm, kas «izlasa» kāpurus. Toties teica: kur skudras kāpj kokā, tur lūko laputis — novērojums, kas ir precīzs arī pēc simts gadiem.",
+  "faq": [
+    {
+      "q": "Vai skudras ēd manus augus?",
+      "a": "Tieši — gandrīz nē. Skudras augiem kaitē netieši: tās izplata un sargā laputis (kas gan sūc augu sulu) un reizēm ar pūžņa rakumiem atkailina sakņu sistēmu. Atrisini laputu jautājumu, un skudras pārstās būt problēma."
+    },
+    {
+      "q": "Kā tikt vaļā no skudru pūžņa dobē bez ķīmijas?",
+      "a": "Vairākas dienas pēc kārtas pūzni pārrok un pārlej ar aukstu ūdeni — skudrām tas ir «mūžīgais remonts», un kolonija pārceļas. Dobē neizmanto verdošu ūdeni, tas bojā augu saknes."
+    },
+    {
+      "q": "Vai skudras zālienā jāapkaro?",
+      "a": "Parasti nē — tās irdina augsni un vāc kāpurus. Ja smilšu uzbērumiņi traucē, tos vienkārši izlīdzini ar grābekli pirms pļaušanas; kolonijas zālienā lielu ļaunumu nenodara."
+    }
+  ]
+}

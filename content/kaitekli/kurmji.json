@@ -1,0 +1,51 @@
+{
+  "slug": "kurmji",
+  "name": "Kurmji",
+  "latin": "Talpa europaea",
+  "emoji": "⛰️",
+  "type": "kaiteklis",
+  "tagline": "Godīgi: kurmis augus neēd un dārzam drīzāk palīdz — problēma ir tikai rakumi zālienā. Tāpēc strādā atbaidīšana, ne karš.",
+  "severity": "viegls",
+  "affects": ["zāliens", "dobes (netieši — rakumi)", "siltumnīcas pamatne"],
+  "signs": [
+    "Svaigas zemes kupicas zālienā vai dobē — raksturīgākā kurmja pēda.",
+    "Iegrimusi augsnes josla virs sekli raktas ejas.",
+    "Augi dobē sasvērušies vai «iegrimuši» — eja izrakta tieši zem saknēm.",
+    "Rakumi parādās viļņveidīgi: aktivitāte lielāka pavasarī un rudenī, pēc lietus."
+  ],
+  "intro": [
+    "Vispirms godīgā daļa, ko tautas cīņas padomi mēdz noklusēt: kurmis ir gaļēdājs. Viņš neēd ne sīpolus, ne burkānus, ne puķu saknes — viņa ēdienkarte ir sliekas, kāpuri un augsnes kukaiņi, tostarp maijvaboļu kāpuri un zemesvēži. Turklāt kurmja ejas dabiski irdina un drenē augsni. Dārzeņus zem zemes grauž nevis kurmis, bet strupastes, kas mēdz izmantot kurmja izraktās ejas — tāpēc kurmim bieži tiek nepelnīta slava.",
+    "Īstā kurmja «vaina» ir kosmētiska: kupicas zālienā un reizēm sajaukta dobe. Tāpēc saprātīgā taktika Latvijas dārzā ir nevis iznīcināšana, bet atbaidīšana un samierināšanās — kurmi padzen no zonām, kur tas traucē, un ļauj strādāt tur, kur netraucē."
+  ],
+  "control": [
+    "Vibrācija un skaņa ir efektīvākā atbaidīšana: zemē iespraustas vēja grabuļu nūjas, pudeles uz mietiņa vai nopērkami vibroatbaidītāji — kurmis nepanes regulāru drebēšanu un pārceļas.",
+    "Svaigās kupicas nolīdzini un zālienu pievelc ar rulli — biežs traucējums vienā zonā kurmim apnīk.",
+    "Smaržu atbaidīšana ejās: ķiploku daiviņas, rūgtās vērmeles vai valriekstu lapas, iespiestas svaigā ejā, liek kurmim to pamest (efekts pagaidu, jāatkārto).",
+    "Vērtīgo dobi vai siltumnīcu nākotnē var pasargāt ar pretkurmju sietu 20–30 cm dziļumā pa perimetru — vienreizējs darbs, paliekoša aizsardzība.",
+    "NELIETOT lamatas, indes un «applūdināšanu» — tas ir gan nehumāni, gan bezjēdzīgi: atbrīvoto teritoriju ātri ieņem nākamais kurmis. Atbaidīšana darbojas ilgāk.",
+    "Padomā, vai jācīnās vispār: kurmis tavā dārzā tieši šobrīd ēd maijvaboļu kāpurus un zemesvēžus."
+  ],
+  "recipeSlugs": [],
+  "prevention": [
+    "Jaunas dobes un siltumnīcas pamatni jau ierīkojot noklāj ar pretkurmju sietu — lētāk nekā cīnīties vēlāk.",
+    "Uzturi zālienā vibrāciju avotus (vēja dekori uz mietiņiem) zonās, kur kupicas visvairāk traucē.",
+    "Ja dārzā parādās apgrauzti sīpoli un saknes — meklē strupastes, ne kurmi; tām palīdz cita taktika (skat. peļu un strupastu lapu).",
+    "Izmanto kurmja darbu: kupicu zeme ir lieliska, irdena augsne podiem un kastēm."
+  ],
+  "moonNote": "",
+  "folklore": "Latviešu lauku gudrība kurmi vērtēja divējādi: kupicas zālienā skaitījās posts, bet aramzemē teica — kur kurmis rok, tur zeme trekna. Kurmja rakumi tiešām biežāk parādās tieši auglīgā, slieku bagātā augsnē.",
+  "faq": [
+    {
+      "q": "Vai kurmis ēd manus dārzeņus un puķu sīpolus?",
+      "a": "Nē — kurmis ir gaļēdājs un ēd sliekas un kukaiņus. Sīpolus un sakņu dārzeņus grauž strupastes, kas gan mēdz staigāt pa kurmja ejām, tāpēc vaina bieži tiek piedēvēta nepareizajam."
+    },
+    {
+      "q": "Kā padzīt kurmi no zāliena bez nogalināšanas?",
+      "a": "Regulāra vibrācija un troksnis (vēja grabuļi, vibroatbaidītāji), kupicu tūlītēja nolīdzināšana un smaržīgas «dāvanas» ejās — ķiploks, vērmeles. Pēc pāris nedēļām pastāvīga traucējuma kurmis parasti pārceļas."
+    },
+    {
+      "q": "Vai kurmis dārzam arī palīdz?",
+      "a": "Jā — tas iznīcina maijvaboļu kāpurus, zemesvēžus un citus augsnes kaitēkļus, bet tā ejas drenē un vēdina augsni. Daudzi pieredzējuši dārznieki kurmi pacieš un izmanto kupicu zemi stādiem."
+    }
+  ]
+}

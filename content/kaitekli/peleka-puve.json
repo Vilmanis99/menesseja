@@ -1,0 +1,53 @@
+{
+  "slug": "peleka-puve",
+  "name": "Pelēkā puve",
+  "latin": "Botrytis cinerea",
+  "emoji": "🍂",
+  "type": "slimiba",
+  "tagline": "Pūkainais pelēkais aplikums, kas slapjā vasarā apēd zemeņu ražu ātrāk nekā saimnieks.",
+  "severity": "vidējs",
+  "affects": ["zemenes", "salāti", "gurķi", "tomāti", "peonijas", "vīnogas"],
+  "signs": [
+    "Pūkains, pelēks aplikums uz ogām, lapām vai stublājiem — pieskaroties paceļas «putekļu» mākonītis (sporas).",
+    "Zemeņu ogas brūnē un pārklājas ar pelēko pūku, bieži sākot ar to, kas pieskaras zemei.",
+    "Salātu un gurķu stublāji kļūst ūdeņaini, brūni un pārlūst.",
+    "Peonijām pavasarī jaunie dzinumi un pumpuri nobrūnē un sakrīt — pavasara botrytis forma.",
+    "Slimība uzliesmo ilgstoši mitrā, vēsā laikā un blīvos, nevēdinātos stādījumos."
+  ],
+  "intro": [
+    "Pelēkā puve ir sēne-oportūniste: tā vienmēr ir gaisā, bet par problēmu kļūst tikai tad, kad augam piedāvā to, ko tā mīl — mitrumu, vēsumu un stāvošu gaisu. Slapjā jūlijā tā spēj pāris dienās pārvērst zemeņu dobi pelēkā paklājā, un tieši zemenes Latvijā ir tās biežākais upuris.",
+    "Pret pelēko puvi nav brīnumlīdzekļa pēc fakta — sapuvušu ogu vairs neglābsi. Toties profilakse ir ārkārtīgi efektīva un pavisam vienkārša: gaiss, sausums ap augu un tīrība. Salmu mulča zem zemenēm vien samazina puvi uz pusi."
+  ],
+  "control": [
+    "Slimās ogas, lapas un dzinumus savāc tūlīt un iznīcini (NE kompostā) — katra pelēkā oga ir miljoniem sporu nākamajai lietavai.",
+    "Izretina stādījumu un lapotni: zemenēm pēc ražas nogriež vecās lapas, gurķiem siltumnīcā izgriež liekos dzinumus — gaisam jākustas.",
+    "Laisti tikai no rīta un pie saknes, ne pa lapām — augam jānožūst līdz vakaram.",
+    "Zem zemeņu ogām paklāj salmu vai skaidu mulču, lai ogas nepieskaras mitrai zemei — vecākais un joprojām labākais paņēmiens.",
+    "Siltumnīcā vēdini arī mākoņainās dienās — kondensāts uz augiem ir puves ielūgums.",
+    "Profilaktiskai stiprināšanai mitros periodos apsmidzini ar kosas novārījumu — silīcijs stiprina audus pret sēņu ieeju."
+  ],
+  "recipeSlugs": ["kosas-novarijums", "komposta-teja"],
+  "prevention": [
+    "Stādi zemenes saulainā, vēdinātā vietā ar pietiekamu atstatumu (30–35 cm) — blīva dobe slapjā gadā ir garantēta puve.",
+    "Augu maiņa un veco lapu novākšana rudenī — sēne ziemo augu atliekās.",
+    "Nepārbaro ar slāpekli: trekni, mīksti audi pūst pirmie.",
+    "Peonijām pavasarī nogriez un aizvāc visus pērnos stublājus līdz zemei — tur ziemo pavasara formas sporas.",
+    "Novāc ogas regulāri un negaidi pārgatavošanos — pārgatava oga ir sēnes pirmais mērķis."
+  ],
+  "moonNote": "Tradīcija augu stiprināšanu (kosas novārījumu) iesaka veikt augošā Mēnesī lapu dienā — mitrās vasarās to var izmantot kā regulāru profilakses ritmu.",
+  "folklore": "Salmi zem zemenēm ir tik sens un universāls paņēmiens, ka angliski zemenes joprojām sauc par «strawberry» — salmu ogu. Arī latviešu sētās zem ogām lika salmus vai sūnas: «lai oga guļ sausā gultā».",
+  "faq": [
+    {
+      "q": "Vai ogas no dobes ar pelēko puvi drīkst ēst?",
+      "a": "Veselās — jā, tikai rūpīgi pārlasi un izlieto ātri. Ogas ar pelēko aplikumu met ārā (ne kompostā) — tās nav ēdamas pat «nogriežot galu», micēlijs iet cauri visai ogai."
+    },
+    {
+      "q": "Kāpēc puve uzbrūk tieši manām zemenēm?",
+      "a": "Gandrīz vienmēr atbilde ir blīvums un mitrums: sabiezēta dobe, ogas guļ uz kailas, mitras zemes, laistīts pa virsu vakarā. Salmu mulča, retināšana un rīta laistīšana pie saknes situāciju maina radikāli."
+    },
+    {
+      "q": "Peonijām pavasarī nobrūnē jaunie dzinumi — vai tā arī ir pelēkā puve?",
+      "a": "Jā, tā ir peoniju pavasara botrytis forma. Nogriez skartos dzinumus līdz veselam audam, aizvāc tos un rudenī vienmēr novāc visus vecos stublājus — sēne ziemo tieši tajos."
+    }
+  ]
+}
