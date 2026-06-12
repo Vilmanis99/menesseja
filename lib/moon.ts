@@ -38,6 +38,24 @@ export function phaseName(phase: number): string {
   return PHASE_NAMES.find((b) => p < b.max)?.name ?? "Jauns mēness";
 }
 
+/** Genitive forms, for sentences like "Dilstoša sirpja laikā …" — the
+ *  nominative phase name dropped into prose reads as a case error in Latvian. */
+const PHASE_GENITIVE: Record<string, string> = {
+  "Jauns mēness": "Jauna mēness",
+  "Augošs sirpis": "Augoša sirpja",
+  "Pirmais ceturksnis": "Pirmā ceturkšņa",
+  "Augošs mēness": "Augoša mēness",
+  "Pilns mēness": "Pilna mēness",
+  "Dilstošs mēness": "Dilstoša mēness",
+  "Pēdējais ceturksnis": "Pēdējā ceturkšņa",
+  "Dilstošs sirpis": "Dilstoša sirpja",
+};
+
+export function phaseNameGenitive(phase: number): string {
+  const name = phaseName(phase);
+  return PHASE_GENITIVE[name] ?? name;
+}
+
 /** Moon phase for a given date (defaults to now). Anchored to the date's
  *  Latvian calendar day so every surface (and the UTC build server) agrees. */
 export function moonForDate(date: Date = new Date()): MoonInfo {

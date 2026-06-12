@@ -5,7 +5,7 @@ import { PageHeader } from "@/components/ui/page-header";
 import { Card } from "@/components/ui/card";
 import { Icon } from "@/components/ui/icon";
 import { MoonPhase } from "@/components/moon-phase";
-import { moonForDate, phaseName } from "@/lib/moon";
+import { moonForDate, phaseNameGenitive } from "@/lib/moon";
 import { sowingDays, ELEMENT_META } from "@/lib/biodynamic";
 import { useMounted } from "@/lib/use-mounted";
 
@@ -116,7 +116,7 @@ export default function MenessPage() {
           <Card tone="container" className="flex items-start gap-sm p-md">
             <Icon name="format_quote" className="text-primary-fixed" />
             <p className="text-body-md italic text-on-surface-variant">
-              «{phaseName(moon.phase)} laikā senči teica: sēj to, kas tev dārgs — Mēness vairo, ko zeme saņem.»
+              «{phaseNameGenitive(moon.phase)} laikā senči teica: sēj to, kas tev dārgs — Mēness vairo, ko zeme saņem.»
             </p>
           </Card>
         </div>
