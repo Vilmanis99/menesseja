@@ -54,7 +54,7 @@ export function TodayBanner() {
               <InfoTip
                 text={
                   moon.waxing
-                    ? "Augošs mēness (no jauna līdz pilnam): sula ceļas uz augšu — labs laiks sēt to, kas aug virs zemes (lapas, augļi)."
+                    ? "Augošs mēness (no jauna līdz pilnam): sulas ceļas uz augšu — labs laiks sēt to, kas aug virs zemes (lapas, augļi)."
                     : "Dilstošs mēness (no pilna līdz jaunam): enerģija iet saknēm — labs laiks sakņaugiem, ravēšanai un ražas vākšanai."
                 }
               />
