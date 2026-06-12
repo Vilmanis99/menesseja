@@ -11,6 +11,7 @@ import { MoonPhase } from "@/components/moon-phase";
 import { REGIONS } from "@/lib/regions";
 import { useRegion } from "@/components/region-context";
 import { moonForDate } from "@/lib/moon";
+import { storageGet, storageSet } from "@/lib/safe-storage";
 
 const FLAG = "meness-seja:onboarded";
 
@@ -24,11 +25,11 @@ export function Onboarding() {
   // Only greet on the app dashboard — never interrupt SEO content pages
   // (/augi, /kalendars/2026/…, /macies) where visitors arrive from Google.
   useEffect(() => {
-    if (pathname === "/" && !localStorage.getItem(FLAG)) setShow(true);
+    if (pathname === "/" && !storageGet(FLAG)) setShow(true);
   }, [pathname]);
 
   function finish() {
-    localStorage.setItem(FLAG, "1");
+    storageSet(FLAG, "1");
     setShow(false);
   }
 
@@ -67,7 +68,9 @@ export function Onboarding() {
               Sēj un stādi saskaņā ar Mēnesi, laikapstākļiem un latviešu senču gudrību — vienkārši
               un Latvijas klimatam.
             </p>
-            <Link href="/macies" onClick={finish} className="text-label-md text-primary underline-offset-2 hover:underline">
+            {/* Close WITHOUT the onboarded flag — the user hasn't picked a region
+                yet, so the intro (and its region step) returns on the next visit. */}
+            <Link href="/macies" onClick={() => setShow(false)} className="text-label-md text-primary underline-offset-2 hover:underline">
               Kas ir Mēness sēja? →
             </Link>
             <Button fullWidth icon="arrow_forward" onClick={() => setStep(1)} className="mt-sm">

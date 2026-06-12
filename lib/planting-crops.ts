@@ -90,6 +90,17 @@ export const CROPS: Crop[] = [
   { id: "samtenes", name: "Samtenes", category: "pukes", difficulty: 1, daysToHarvest: "50–70 dienas", sun: "Saule", sowIndoors: [3, 4], transplant: [5, 6], harvest: [6, 10], note: "Atbaida nematodes un laputis — sēj starp dārzeņiem." },
   { id: "saulespukes", name: "Saulespuķes", category: "pukes", difficulty: 1, daysToHarvest: "80–100 dienas", sun: "Saule", sowOutdoors: [5, 5], harvest: [8, 9], note: "Sēj tieši laukā pēc salnām. Bērniem ļoti pateicīgas." },
   { id: "nelkes", name: "Neļķes", category: "pukes", difficulty: 2, daysToHarvest: "Daudzgadīgas", sun: "Saule", sowIndoors: [3, 4], transplant: [5, 6], harvest: [6, 8], note: "Smaržīgas dobju malām. Daudzgadīgās šķirnes ziemo zem vieglas segas." },
+  // Dekoratīvās puķes no /pukes ceļveža — "harvest" = ziedēšana.
+  { id: "peonijas", name: "Peonijas", category: "pukes", difficulty: 1, daysToHarvest: "Daudzgadīga", sun: "Saule / pussēna", sowOutdoors: [9, 10], harvest: [6, 7], note: "Sakneņus stāda rudenī, pumpurus tikai 2–5 cm dziļi — citādi neziedēs." },
+  { id: "tulpes", name: "Tulpes", category: "pukes", difficulty: 1, daysToHarvest: "Zied pavasarī", sun: "Saule", sowOutdoors: [9, 10], harvest: [4, 5], note: "Sīpolus stāda rudenī ~15 cm dziļi. Pavasara klasika." },
+  { id: "narcises", name: "Narcises", category: "pukes", difficulty: 1, daysToHarvest: "Zied pavasarī", sun: "Saule / pussēna", sowOutdoors: [9, 10], harvest: [4, 5], note: "Stāda rudenī; grauzēji sīpolus neaiztiek. Vairojas pati." },
+  { id: "begonijas", name: "Begonijas", category: "pukes", difficulty: 2, daysToHarvest: "Zied visu vasaru", sun: "Pussēna", sowIndoors: [3, 4], transplant: [6, 6], harvest: [6, 9], note: "Ēnas karaliene. Bumbuļus rudenī izrok un glabā vēsumā." },
+  { id: "pelargonijas", name: "Pelargonijas", category: "pukes", difficulty: 1, daysToHarvest: "Zied visu vasaru", sun: "Saule", sowIndoors: [2, 3], transplant: [5, 6], harvest: [6, 9], note: "Balkona klasika. Rudenī ienes telpās pārziemot uz palodzes." },
+  { id: "petunijas", name: "Petūnijas", category: "pukes", difficulty: 2, daysToHarvest: "Zied visu vasaru", sun: "Saule", sowIndoors: [2, 3], transplant: [5, 6], harvest: [6, 9], note: "Sēklas ļoti sīkas — sēj virspusē, neapber. Laukā pēc salnām." },
+  { id: "ehinacija", name: "Ehinācija", category: "pukes", difficulty: 1, daysToHarvest: "Daudzgadīga", sun: "Saule", sowIndoors: [3, 4], sowOutdoors: [5, 6], harvest: [7, 9], note: "Ziemcietīga saulmīle, pievelk bites un tauriņus. Arī ārstniecības augs." },
+  { id: "budlejas", name: "Budlejas", category: "pukes", difficulty: 2, daysToHarvest: "Zied no jūlija", sun: "Saule", transplant: [5, 6], harvest: [7, 9], note: "Tauriņu krūms. Pavasarī stipri apgriež — zied uz jaunajiem dzinumiem." },
+  { id: "ranunkuli", name: "Ranunkuli", category: "pukes", difficulty: 2, daysToHarvest: "Zied vasarā", sun: "Saule", sowOutdoors: [4, 5], harvest: [6, 7], note: "Gumus pirms stādīšanas izmērcē. Rudenī izrok un glabā vēsumā." },
+  { id: "verbena", name: "Verbēna", category: "pukes", difficulty: 2, daysToHarvest: "Zied visu vasaru", sun: "Saule", sowIndoors: [2, 3], transplant: [5, 6], harvest: [6, 9], note: "Zied nenogurstoši līdz salnām. Audzē kā viengadīgu." },
 ];
 
 export const MONTHS_LV = [

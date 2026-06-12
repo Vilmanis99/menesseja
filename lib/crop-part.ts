@@ -56,6 +56,16 @@ export const CROP_PART: Record<string, PlantPart> = {
   samtenes: "ziedi",
   saulespukes: "ziedi",
   nelkes: "ziedi",
+  peonijas: "ziedi",
+  tulpes: "ziedi",
+  narcises: "ziedi",
+  begonijas: "ziedi",
+  pelargonijas: "ziedi",
+  petunijas: "ziedi",
+  ehinacija: "ziedi",
+  budlejas: "ziedi",
+  ranunkuli: "ziedi",
+  verbena: "ziedi",
 };
 
 /** Element whose days favour a given plant part (inverse of ELEMENT_META). */

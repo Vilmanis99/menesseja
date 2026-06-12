@@ -9,6 +9,8 @@ import { DataNote } from "@/components/data-note";
 import { moonForDate } from "@/lib/moon";
 import { sowingDay, isRestDay, ELEMENT_META, type Element } from "@/lib/biodynamic";
 import { latviaNoon } from "@/lib/day-anchor";
+import { namedaysForDay } from "@/lib/vardadienas";
+import { PrintButton } from "@/components/print-button";
 import { cropPart } from "@/lib/crop-part";
 import { cropEmoji } from "@/lib/crop-visual";
 import { CROPS, MONTHS_LV_FULL, ACTIVITY_KEYS } from "@/lib/planting-crops";
@@ -77,7 +79,14 @@ export default async function MonthCalendarPage({
   const days = Array.from({ length: count }, (_, i) => {
     // latviaNoon → classification is identical no matter the build server's TZ
     const date = latviaNoon(year, month, i + 1);
-    return { date, day: i + 1, moon: moonForDate(date), sow: sowingDay(date), rest: isRestDay(date) };
+    return {
+      date,
+      day: i + 1,
+      moon: moonForDate(date),
+      sow: sowingDay(date),
+      rest: isRestDay(date),
+      names: namedaysForDay(month, i + 1),
+    };
   });
 
   // New & full moon dates this month (extremes of illumination)
@@ -112,7 +121,7 @@ export default async function MonthCalendarPage({
     <article className="mx-auto max-w-3xl">
       <JsonLd data={jsonLd} />
 
-      <nav className="mb-md flex items-center gap-1 text-label-sm text-on-surface-variant">
+      <nav className="mb-md flex items-center gap-1 text-label-sm text-on-surface-variant print:hidden">
         <Link href="/kalendars" className="hover:text-primary">Kalendārs</Link>
         <Icon name="chevron_right" size="14px" />
         <span className="text-on-surface capitalize">{name} {year}</span>
@@ -124,10 +133,15 @@ export default async function MonthCalendarPage({
           Mēness kalendārs — {name} {year}
         </h1>
         <p className="mt-xs max-w-2xl text-body-lg text-on-surface-variant">
-          Kad sēt un stādīt {year}. gada {name} saskaņā ar Mēnesi: katras dienas fāze, elementu diena
-          un nelabvēlīgās dienas Latvijas dārzkopjiem.
+          Kad sēt un stādīt {year}. gada {name} saskaņā ar Mēnesi: katras dienas fāze, elementu diena,
+          vārda dienas un nelabvēlīgās dienas Latvijas dārzkopjiem.
         </p>
-        <DataNote variant="moon" className="mt-md" />
+        <div className="mt-sm print:hidden">
+          <PrintButton />
+        </div>
+        <div className="print:hidden">
+          <DataNote variant="moon" className="mt-md" />
+        </div>
       </header>
 
       {/* Seasonal tasks + folklore — unique per month */}
@@ -196,13 +210,18 @@ export default async function MonthCalendarPage({
                   {d.sow.sign.symbol} {meta.partLabel}
                 </span>
               )}
+              {d.names.length > 0 && (
+                <span className="ml-auto hidden min-w-0 truncate text-right text-label-sm text-tertiary sm:block print:block">
+                  {d.names.join(", ")}
+                </span>
+              )}
             </div>
           );
         })}
       </Card>
 
       {/* Prev / next month navigation */}
-      <nav className="mb-md flex items-center justify-between gap-2 border-y border-outline-variant/10 py-sm">
+      <nav className="mb-md flex items-center justify-between gap-2 border-y border-outline-variant/10 py-sm print:hidden">
         {prev ? (
           <Link href={prev.href} className="inline-flex items-center gap-1 text-label-md text-primary hover:underline">
             <Icon name="chevron_left" size="18px" /> <span className="capitalize">{prev.label}</span>
@@ -216,7 +235,7 @@ export default async function MonthCalendarPage({
       </nav>
 
       {/* By region */}
-      <div className="mb-md">
+      <div className="mb-md print:hidden">
         <p className="mb-2 text-label-sm uppercase tracking-wide text-on-surface-variant">Pēc reģiona</p>
         <div className="flex flex-wrap gap-2">
           {REGIONS.map((reg) => (
@@ -227,7 +246,7 @@ export default async function MonthCalendarPage({
         </div>
       </div>
 
-      <div className="flex flex-wrap gap-3">
+      <div className="flex flex-wrap gap-3 print:hidden">
         <Link href="/kalendars" className="inline-flex items-center gap-1 text-label-md text-primary hover:underline">
           Interaktīvais kalendārs <Icon name="arrow_forward" size="16px" />
         </Link>

@@ -17,7 +17,7 @@ const LINKS = [
 /** Slim trust footer shown under content on every page (good for SEO + honesty). */
 export function SiteFooter() {
   return (
-    <footer className="mt-xl border-t border-outline-variant/10 pt-md pb-md text-on-surface-variant">
+    <footer className="mt-xl border-t border-outline-variant/10 pt-md pb-md text-on-surface-variant print:hidden">
       <div className="flex flex-wrap gap-x-md gap-y-2">
         {LINKS.map((l) => (
           <Link key={l.href} href={l.href} className="text-label-md hover:text-primary">

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
+import { flowerSlugs } from "@/lib/flowers";
 import { Card } from "@/components/ui/card";
 import { Icon } from "@/components/ui/icon";
 import { ActivityBar } from "@/components/activity-bar";
@@ -55,6 +56,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 export default async function CropPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
+  // Ornamental flowers have a much richer page under /pukes — one canonical
+  // home per plant, no thin duplicate competing in search.
+  if (flowerSlugs().includes(slug)) redirect(`/pukes/${slug}`);
   const crop = CROPS.find((c) => c.id === slug);
   if (!crop) notFound();
 

@@ -11,6 +11,7 @@ import { useRegion } from "@/components/region-context";
 import { useWeather } from "@/lib/use-weather";
 import { weatherMeta } from "@/lib/weather";
 import { useMounted } from "@/lib/use-mounted";
+import { namedaysFor } from "@/lib/vardadienas";
 
 const DATE_FMT = new Intl.DateTimeFormat("lv-LV", {
   day: "numeric",
@@ -62,6 +63,12 @@ export function TodayBanner() {
               {Math.round(moon.illumination * 100)}% apgaismojums ·{" "}
               {moon.waxing ? "augošs" : "dilstošs"}
             </p>
+            {namedaysFor(today).length > 0 && (
+              <p className="mt-0.5 flex items-center gap-1 text-label-sm text-tertiary">
+                <Icon name="celebration" size="14px" />
+                Vārda dienas: {namedaysFor(today).join(", ")}
+              </p>
+            )}
           </div>
         </div>
 

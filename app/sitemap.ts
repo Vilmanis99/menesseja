@@ -82,7 +82,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: "monthly",
   }));
 
-  const cropPages: MetadataRoute.Sitemap = CROPS.map((c) => ({
+  // Flowers with a /pukes content page redirect there from /augi — list only the canonical URL.
+  const flowerSet = new Set(flowerSlugs());
+  const cropPages: MetadataRoute.Sitemap = CROPS.filter((c) => !flowerSet.has(c.id)).map((c) => ({
     url: url(`/augi/${c.id}`),
     lastModified: reviewed,
     priority: 0.8,

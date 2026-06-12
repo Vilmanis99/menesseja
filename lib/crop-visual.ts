@@ -53,6 +53,16 @@ export const CROP_EMOJI: Record<string, string> = {
   samtenes: "🌼",
   saulespukes: "🌻",
   nelkes: "🌸",
+  peonijas: "🌸",
+  tulpes: "🌷",
+  narcises: "🌼",
+  begonijas: "🌺",
+  pelargonijas: "🌹",
+  petunijas: "🌸",
+  ehinacija: "🌸",
+  budlejas: "🦋",
+  ranunkuli: "🌼",
+  verbena: "💜",
 };
 
 export function cropEmoji(cropId: string): string {

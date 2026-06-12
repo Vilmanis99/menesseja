@@ -7,6 +7,7 @@ import { JsonLd } from "@/components/json-ld";
 import { DataNote } from "@/components/data-note";
 import { RecipeTodayBadge } from "@/components/recipe-today-badge";
 import { getFlower, getAllFlowers, flowerSlugs, FLOWER_TYPE_META } from "@/lib/flowers";
+import { CROPS } from "@/lib/planting-crops";
 import { canonical, SITE_NAME } from "@/lib/seo";
 import { DATA_REVIEWED } from "@/lib/sources";
 
@@ -103,6 +104,18 @@ export default async function FlowerPage({ params }: { params: Promise<{ slug: s
           <p className="mt-1 text-body-lg text-on-surface-variant">{f.tagline}</p>
         </div>
       </header>
+
+      {/* Conversion into the app — only for flowers tracked in the crop data */}
+      {CROPS.some((c) => c.id === f.slug) && (
+        <Link
+          href={`/?pievienot=${f.slug}`}
+          className="mb-lg flex items-center gap-2 rounded-xl bg-primary px-md py-sm font-bold text-on-primary shadow-md shadow-primary/20 transition-all hover:brightness-110"
+        >
+          <Icon name="add" size="20px" />
+          Pievienot {f.name.toLowerCase()} savā dārzā
+          <Icon name="arrow_forward" size="18px" className="ml-auto" />
+        </Link>
+      )}
 
       <div className="mb-lg space-y-sm">
         {f.intro.map((p, i) => (

@@ -38,7 +38,7 @@ function SideLink({ item, active }: { item: NavItem; active: boolean }) {
 function Sidebar() {
   const pathname = usePathname();
   return (
-    <aside className="fixed left-0 top-0 z-30 hidden h-screen w-64 flex-col border-r border-outline-variant/20 bg-surface-container px-sm py-md shadow-lg shadow-primary/5 md:flex">
+    <aside className="fixed left-0 top-0 z-30 hidden h-screen w-64 flex-col border-r border-outline-variant/20 bg-surface-container px-sm py-md shadow-lg shadow-primary/5 md:flex print:hidden">
       <div className="mb-lg px-xs">
         <span className="block text-headline-md text-primary">Mēness Sēja</span>
         <p className="mt-xs text-label-sm uppercase tracking-widest text-on-surface-variant/70">
@@ -62,7 +62,7 @@ function Sidebar() {
 
 function TopBar() {
   return (
-    <header className="sticky top-0 z-40 flex items-center justify-between bg-surface/80 px-gutter py-sm backdrop-blur-md md:hidden">
+    <header className="sticky top-0 z-40 flex items-center justify-between bg-surface/80 px-gutter py-sm backdrop-blur-md md:hidden print:hidden">
       <Link href="/" aria-label="Mēness Sēja — sākums">
         <span className="text-headline-md text-primary">Mēness Sēja</span>
       </Link>
@@ -91,7 +91,7 @@ function BottomNav() {
   const pathname = usePathname();
   const items = NAV_ITEMS.filter((i) => i.primary);
   return (
-    <nav className="fixed bottom-0 left-0 z-50 flex w-full items-center justify-around rounded-t-xl bg-surface-container-high px-4 pb-4 pt-2 shadow-[0_-4px_20px_rgba(27,48,34,0.3)] md:hidden">
+    <nav className="fixed bottom-0 left-0 z-50 flex w-full items-center justify-around rounded-t-xl bg-surface-container-high px-4 pb-4 pt-2 shadow-[0_-4px_20px_rgba(27,48,34,0.3)] md:hidden print:hidden">
       {items.map((item) => {
         const active = isActive(pathname, item.href);
         return (
@@ -123,7 +123,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
         <GardenProvider>
           <Sidebar />
           <TopBar />
-          <div className="mx-auto mb-24 max-w-container-max px-gutter py-md md:mb-0 md:ml-64 md:py-lg">
+          <div className="mx-auto mb-24 max-w-container-max px-gutter py-md md:mb-0 md:ml-64 md:py-lg print:m-0 print:max-w-none print:p-0">
             {children}
             <SiteFooter />
           </div>

@@ -12,6 +12,7 @@ import { CROPS, MONTHS_LV_FULL, ACTIVITY_META } from "@/lib/planting-crops";
 import { cropPart } from "@/lib/crop-part";
 import { cropEmoji } from "@/lib/crop-visual";
 import { useMounted } from "@/lib/use-mounted";
+import { namedaysFor } from "@/lib/vardadienas";
 import { DataNote } from "@/components/data-note";
 
 const WEEKDAYS = ["P", "O", "T", "C", "Pk", "S", "Sv"]; // Mon-first
@@ -180,6 +181,11 @@ export default function KalendarsPage() {
                 <p className="text-body-md text-on-surface-variant">
                   {Math.round(selMoon.illumination * 100)}% · {selMoon.waxing ? "augošs" : "dilstošs"}
                 </p>
+                {namedaysFor(selected).length > 0 && (
+                  <p className="mt-0.5 text-label-sm text-tertiary">
+                    🎉 {namedaysFor(selected).join(", ")}
+                  </p>
+                )}
               </div>
             </div>
             {isRestDay(selected) ? (

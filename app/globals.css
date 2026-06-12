@@ -188,3 +188,29 @@
   -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
   mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
 }
+
+/* ── Print: A4 newspaper-style calendar ─────────────────────────────────
+   The dark theme would print as solid ink blocks. Force a light page and
+   strip app chrome; the month pages are the primary print target (the
+   audience that grew up with newspaper Moon calendars prints these). */
+@media print {
+  html,
+  body {
+    background: #fff !important;
+    color: #111 !important;
+  }
+  /* Flatten dark surfaces; keep SVG (moon discs) untouched */
+  *:not(svg):not(svg *) {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    color: #111 !important;
+    border-color: #d6d3cc !important;
+  }
+  a {
+    text-decoration: none !important;
+  }
+  article {
+    max-width: 100% !important;
+  }
+}

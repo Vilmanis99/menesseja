@@ -13,6 +13,7 @@ import { useMounted } from "@/lib/use-mounted";
 import { cropById, plantStatus, type Plant } from "@/lib/garden";
 import { cropEmoji } from "@/lib/crop-visual";
 import { PlantDetail } from "@/components/plant-detail";
+import { AddPlantButton } from "@/components/add-plant-sheet";
 
 export function DashboardReminders() {
   const mounted = useMounted();
@@ -148,6 +149,8 @@ export function GardenAreas() {
         <p className="text-body-md text-on-surface-variant">
           Pievieno pirmo augu, un mēs sekosim tā augšanai saskaņā ar Mēness ritmu.
         </p>
+        {/* The header button scrolls out of view on mobile — act right here. */}
+        <AddPlantButton />
       </Card>
     );
   }
