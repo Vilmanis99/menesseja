@@ -1,5 +1,5 @@
 /** Canonical site origin (override via NEXT_PUBLIC_SITE_URL when deploying). */
-export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || "https://menessseja.lv").replace(/\/$/, "");
+export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || "https://www.menesseja.lv").replace(/\/$/, "");
 export const SITE_NAME = "Mēness Sēja";
 
 /** ASCII-safe month slugs (URL-friendly) ↔ month number 1–12. */

@@ -1,6 +1,6 @@
-# Mēness Sēja — palaišanas ceļvedis (Vercel + menessseja.lv)
+# Mēness Sēja — palaišanas ceļvedis (Vercel + menesseja.lv)
 
-Lēmumi: **Vercel** hostings, **menessseja.lv** domēns, kopiena uz **Neon (Postgres)**,
+Lēmumi: **Vercel** hostings, **menesseja.lv** domēns, kopiena uz **Neon (Postgres)**,
 AI foto-diagnostika (`/diagnoze`) pagaidām paslēpta.
 
 ---
@@ -26,7 +26,7 @@ Repo ir publicēts: **github.com/Vilmanis99/menesseja**. Vercel auto-izvieto kat
 | Key | Value | Vides |
 |---|---|---|
 | `DATABASE_URL` | tava Neon connection string (pooled) | Production + Preview |
-| `NEXT_PUBLIC_SITE_URL` | `https://menessseja.lv` | visas |
+| `NEXT_PUBLIC_SITE_URL` | `https://menesseja.lv` | visas |
 
 ⚠️ **`DATABASE_URL`:**
 - Key tieši tā — **lielie burti, apakšsvītra, BEZ atstarpes** (kods lasa `process.env.DATABASE_URL`).
@@ -40,10 +40,10 @@ Repo ir publicēts: **github.com/Vilmanis99/menesseja**. Vercel auto-izvieto kat
 
 ---
 
-## 4. Domēns menessseja.lv
+## 4. Domēns menesseja.lv
 
-1. Reģistrē `menessseja.lv` pie LV reģistratora.
-2. Vercel → **Settings → Domains** → pievieno `menessseja.lv` + `www.menessseja.lv`.
+1. Reģistrē `menesseja.lv` pie LV reģistratora.
+2. Vercel → **Settings → Domains** → pievieno `menesseja.lv` + `www.menesseja.lv`.
 3. Ievadi parādītos DNS ierakstus pie reģistratora (izplatās līdz 48 h).
 4. Vercel automātiski izsniedz bezmaksas SSL.
 
@@ -54,7 +54,7 @@ Repo ir publicēts: **github.com/Vilmanis99/menesseja**. Vercel auto-izvieto kat
 Kopiena ir **pseidonīma** — bez login, lietotājs izvēlas vārdu. Vajag tikai `DATABASE_URL`.
 Tabulas (`community_posts`, `community_likes`) jau izveidotas Neon (`db/neon-community.sql`).
 
-- Pēc deploy atver `https://menessseja.lv/kopiena` → ja rāda ieraksta lauku (nevis "drīz būs"),
+- Pēc deploy atver `https://menesseja.lv/kopiena` → ja rāda ieraksta lauku (nevis "drīz būs"),
   datubāze ir pieslēgta. Publicē testa ierakstu un pārbaudi «patīk».
 - Spam aizsardzība: 5 ieraksti / 10 min uz ierīci, validācija servera pusē.
 - Īsti konti (login + sinhronizācija starp ierīcēm) — pievienojami vēlāk, ja vajag.
@@ -62,7 +62,7 @@ Tabulas (`community_posts`, `community_likes`) jau izveidotas Neon (`db/neon-com
 **Senču gudrība (`/iesutit`)** — tā pati Neon datubāze (`community_contributions` tabula).
 Iesūtījumi ir **moderēti**: nonāk statusā `pending` un parādās krātuvē tikai pēc apstiprināšanas.
 - Pievieno **`ADMIN_KEY`** vides mainīgo (servera noslēpums, garš nejaušs teksts, **bez** `NEXT_PUBLIC`).
-- Atver `https://menessseja.lv/iesutit?key=TAVS-ADMIN-KEY` → redzēsi rindu «Gaida apstiprināšanu»
+- Atver `https://menesseja.lv/iesutit?key=TAVS-ADMIN-KEY` → redzēsi rindu «Gaida apstiprināšanu»
   ar pogām Apstiprināt / Noraidīt. Bez `ADMIN_KEY` iesūtījumi joprojām pienāk, bet apstiprināmi tikai caur SQL.
 
 > 🔒 Ja Neon parole kādreiz noplūdusi — Neon → Reset password → atjauno `DATABASE_URL`
