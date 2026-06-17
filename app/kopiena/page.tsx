@@ -1,16 +1,14 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
 import { PageHeader } from "@/components/ui/page-header";
 import { Card } from "@/components/ui/card";
 import { Chip } from "@/components/ui/chip";
 import { Icon } from "@/components/ui/icon";
-import { useAuth } from "@/components/auth-context";
-import { isSupabaseConfigured } from "@/lib/supabase/config";
-import { createClient } from "@/lib/supabase/client";
-import { fetchFeed, createPost, deletePost, setLike, type FeedPost } from "@/lib/supabase/community";
 import { REGIONS, getRegion, type RegionId } from "@/lib/regions";
+import { getClientId, getStoredName, storeName } from "@/lib/community-identity";
+import type { FeedPost } from "@/lib/neon/community";
 
 const WISDOM = [
   { text: "Sēj kāpostus tajā dienā, kad pirmā vārna ligzdā iesēžas.", src: "Vidzemes ticējums" },
@@ -36,41 +34,77 @@ function timeAgo(iso: string): string {
 }
 
 export default function KopienaPage() {
-  const { enabled, loading: authLoading, user, profile } = useAuth();
-  const supabase = useMemo(() => (isSupabaseConfigured ? createClient() : null), []);
-
+  const [clientId, setClientId] = useState("");
+  const [name, setName] = useState("");
   const [tab, setTab] = useState<"all" | RegionId>("all");
   const [posts, setPosts] = useState<FeedPost[]>([]);
-  const [loading, setLoading] = useState(isSupabaseConfigured);
+  const [configured, setConfigured] = useState<boolean | null>(null);
+  const [loading, setLoading] = useState(true);
   const [draft, setDraft] = useState("");
   const [busy, setBusy] = useState(false);
   const [pending, setPending] = useState<Set<string>>(new Set());
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
+  // Identity is client-only (localStorage) — load after mount.
+  useEffect(() => {
+    setClientId(getClientId());
+    setName(getStoredName());
+  }, []);
+
   const load = useCallback(async () => {
-    if (!supabase) return;
+    if (!clientId) return;
     setLoading(true);
-    const data = await fetchFeed(supabase, {
-      region: tab === "all" ? null : tab,
-      currentUserId: user?.id ?? null,
-    });
-    setPosts(data);
-    setLoading(false);
-  }, [supabase, tab, user?.id]);
+    try {
+      const region = tab === "all" ? "" : tab;
+      const res = await fetch(
+        `/api/community?clientId=${encodeURIComponent(clientId)}${region ? `&region=${region}` : ""}`,
+      );
+      if (res.status === 503) {
+        setConfigured(false);
+        return;
+      }
+      setConfigured(true);
+      const data = await res.json();
+      setPosts(data.posts ?? []);
+    } catch {
+      setErrorMsg("Neizdevās ielādēt. Mēģini vēlreiz.");
+    } finally {
+      setLoading(false);
+    }
+  }, [clientId, tab]);
 
   useEffect(() => {
-    if (!authLoading) load();
-  }, [authLoading, load]);
+    if (clientId) load();
+  }, [clientId, load]);
 
   async function send() {
     const body = draft.trim();
-    if (!body || !supabase || !user) return;
+    const author = name.trim();
+    if (!body) return;
+    if (!author) {
+      setErrorMsg("Vispirms ievadi savu vārdu (kā parādīsies blakus ierakstam).");
+      return;
+    }
     setBusy(true);
-    const region = tab === "all" ? profile?.region ?? null : tab;
+    storeName(author);
     try {
-      await createPost(supabase, user.id, region, body);
-      setDraft("");
-      await load();
+      const region = tab === "all" ? null : tab;
+      const res = await fetch("/api/community", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ clientId, authorName: author, region, body }),
+      });
+      if (!res.ok) {
+        const e = await res.json().catch(() => ({}));
+        setErrorMsg(
+          e.error === "rate-limited"
+            ? "Pārāk daudz ierakstu īsā laikā — pagaidi dažas minūtes."
+            : "Neizdevās publicēt. Mēģini vēlreiz.",
+        );
+      } else {
+        setDraft("");
+        await load();
+      }
     } catch {
       setErrorMsg("Neizdevās publicēt. Mēģini vēlreiz.");
     } finally {
@@ -79,20 +113,21 @@ export default function KopienaPage() {
   }
 
   async function toggleLike(post: FeedPost) {
-    if (!supabase || !user || pending.has(post.id)) return; // guard double-clicks
+    if (pending.has(post.id)) return;
     setPending((s) => new Set(s).add(post.id));
     const next = !post.likedByMe;
-    // optimistic
     setPosts((ps) =>
-      ps.map((p) =>
-        p.id === post.id ? { ...p, likedByMe: next, likeCount: p.likeCount + (next ? 1 : -1) } : p,
-      ),
+      ps.map((p) => (p.id === post.id ? { ...p, likedByMe: next, likeCount: p.likeCount + (next ? 1 : -1) } : p)),
     );
     try {
-      await setLike(supabase, post.id, user.id, next);
+      await fetch("/api/community/like", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ postId: post.id, clientId, like: next }),
+      });
     } catch {
       setErrorMsg("Neizdevās. Mēģini vēlreiz.");
-      load(); // reconcile on failure
+      load();
     } finally {
       setPending((s) => {
         const n = new Set(s);
@@ -103,10 +138,9 @@ export default function KopienaPage() {
   }
 
   async function remove(post: FeedPost) {
-    if (!supabase) return;
     setPosts((ps) => ps.filter((p) => p.id !== post.id));
     try {
-      await deletePost(supabase, post.id);
+      await fetch(`/api/community/${post.id}?clientId=${encodeURIComponent(clientId)}`, { method: "DELETE" });
     } catch {
       setErrorMsg("Neizdevās izdzēst. Mēģini vēlreiz.");
       load();
@@ -118,7 +152,6 @@ export default function KopienaPage() {
       <PageHeader title="Kopiena" subtitle="Augsim kopā ar dabu un tautas viedumu." />
 
       <div className="grid grid-cols-1 gap-gutter lg:grid-cols-12">
-        {/* Live feed */}
         <div className="flex flex-col gap-md lg:col-span-8">
           {/* Region tabs */}
           <div className="flex flex-wrap gap-2">
@@ -130,9 +163,19 @@ export default function KopienaPage() {
             ))}
           </div>
 
-          {/* Composer */}
-          {enabled && user ? (
+          {/* Composer — no login, just a chosen display name */}
+          {configured !== false ? (
             <Card tone="container" className="p-md">
+              <div className="mb-2 flex items-center gap-2">
+                <Icon name="badge" size="18px" className="text-on-surface-variant" />
+                <input
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  maxLength={40}
+                  placeholder="Tavs vārds (piem. Anna no Vidzemes)"
+                  className="w-full max-w-[18rem] rounded-lg bg-surface-container-high px-3 py-1.5 text-body-md text-on-surface outline-none placeholder:text-on-surface-variant/50"
+                />
+              </div>
               <textarea
                 value={draft}
                 onChange={(e) => setDraft(e.target.value)}
@@ -152,14 +195,6 @@ export default function KopienaPage() {
                 </button>
               </div>
             </Card>
-          ) : enabled ? (
-            <Link href="/ienakt">
-              <Card tone="container" className="flex items-center gap-md p-md transition-colors hover:bg-surface-container-high">
-                <Icon name="lock_open" className="text-primary" />
-                <p className="flex-1 text-body-md text-on-surface">Ienāc, lai rakstītu un atzīmētu «patīk»</p>
-                <Icon name="arrow_forward" size="18px" className="text-on-surface-variant" />
-              </Card>
-            </Link>
           ) : (
             <Card tone="container" className="flex items-center gap-md p-md">
               <Icon name="cloud_off" className="text-on-surface-variant/50" />
@@ -218,7 +253,7 @@ export default function KopienaPage() {
                 <div className="mt-md flex items-center gap-md border-t border-outline-variant/10 pt-sm">
                   <button
                     onClick={() => toggleLike(p)}
-                    disabled={!user || pending.has(p.id)}
+                    disabled={pending.has(p.id)}
                     aria-pressed={p.likedByMe}
                     className={`flex items-center gap-1 text-label-md transition-colors disabled:opacity-50 ${
                       p.likedByMe ? "text-secondary" : "text-on-surface-variant hover:text-secondary"
