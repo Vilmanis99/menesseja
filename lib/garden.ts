@@ -89,7 +89,7 @@ function cropKind(crop: Crop, hasNumericDays: boolean): CropKind {
 /**
  * Rough growth status from the crop calendar + how long it's been in the ground.
  * Good enough to drive the dashboard bars without per-crop day counts. Wording
- * matches the crop kind so a freshly-added rose reads "Ieaugas" (taking root),
+ * matches the crop kind so a freshly-added rose reads "Iesakņojas" (taking root),
  * not "Dīgst" (germinating), and tops out at "Zied" rather than "Gatavs novākšanai".
  */
 function label(progress: number, kind: CropKind): PlantStatus {
@@ -97,12 +97,12 @@ function label(progress: number, kind: CropKind): PlantStatus {
     if (progress >= 100) return { label: "Zied", progress: 100, tone: "secondary" };
     if (progress >= 80) return { label: "Gatavojas ziedēšanai", progress, tone: "secondary" };
     if (progress >= 40) return { label: "Aug", progress, tone: "primary" };
-    return { label: "Ieaugas", progress, tone: "outline" };
+    return { label: "Iesakņojas", progress, tone: "outline" };
   }
   if (progress >= 100) return { label: "Gatavs novākšanai", progress: 100, tone: "secondary" };
   if (progress >= 80) return { label: "Gatavojas ražai", progress, tone: "secondary" };
   if (progress >= 40) return { label: "Aug", progress, tone: "primary" };
-  return { label: kind === "planted" ? "Ieaugas" : "Dīgst", progress, tone: "outline" };
+  return { label: kind === "planted" ? "Iesakņojas" : "Dīgst", progress, tone: "outline" };
 }
 
 export function plantStatus(plant: Plant, now: Date = new Date()): PlantStatus {
