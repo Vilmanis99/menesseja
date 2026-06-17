@@ -1,32 +1,26 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useState } from "react";
-import Link from "next/link";
 import { PageHeader } from "@/components/ui/page-header";
 import { Card } from "@/components/ui/card";
 import { Chip } from "@/components/ui/chip";
 import { Icon } from "@/components/ui/icon";
 import { Button } from "@/components/ui/button";
-import { useAuth } from "@/components/auth-context";
-import { isSupabaseConfigured } from "@/lib/supabase/config";
-import { createClient } from "@/lib/supabase/client";
+import { REGIONS } from "@/lib/regions";
+import { getClientId, getStoredName, storeName } from "@/lib/community-identity";
 import {
-  submitContribution,
-  fetchApproved,
-  fetchMine,
   CONTRIBUTION_META,
   type ContributionType,
   type ApprovedContribution,
-} from "@/lib/supabase/contributions";
-import { REGIONS } from "@/lib/regions";
+  type MyContribution,
+  type PendingContribution,
+} from "@/lib/contributions";
 
 const TYPES: ContributionType[] = ["recepte", "ticejums", "paraza"];
 const regionName = (id: string | null) => (id ? REGIONS.find((r) => r.id === id)?.name ?? null : null);
 
 export default function IesutitPage() {
-  const { enabled, loading: authLoading, user, profile } = useAuth();
-  const supabase = useMemo(() => (isSupabaseConfigured ? createClient() : null), []);
-
+  const [clientId, setClientId] = useState("");
   const [type, setType] = useState<ContributionType>("ticejums");
   const [title, setTitle] = useState("");
   const [body, setBody] = useState("");
@@ -36,35 +30,91 @@ export default function IesutitPage() {
   const [done, setDone] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
+  const [configured, setConfigured] = useState<boolean | null>(null);
   const [approved, setApproved] = useState<ApprovedContribution[]>([]);
-  const [mine, setMine] = useState<{ id: string; type: string; title: string; status: string }[]>([]);
+  const [mine, setMine] = useState<MyContribution[]>([]);
+  const [pending, setPending] = useState<PendingContribution[]>([]);
 
-  const load = useCallback(async () => {
-    if (!supabase) return;
-    setApproved(await fetchApproved(supabase, 30));
-    if (user) setMine((await fetchMine(supabase, user.id)) as typeof mine);
-  }, [supabase, user]);
+  // Moderation unlocks when the page is opened with ?key=<ADMIN_KEY>. The key is
+  // only ever verified server-side; here it just gets forwarded with requests.
+  const adminKey = useMemo(() => {
+    if (typeof window === "undefined") return "";
+    return new URLSearchParams(window.location.search).get("key") ?? "";
+  }, []);
 
   useEffect(() => {
-    if (!authLoading) load();
-  }, [authLoading, load]);
+    setClientId(getClientId());
+    setAuthorName(getStoredName());
+  }, []);
+
+  const load = useCallback(async () => {
+    if (!clientId) return;
+    try {
+      const qs = new URLSearchParams({ clientId });
+      if (adminKey) qs.set("key", adminKey);
+      const res = await fetch(`/api/contributions?${qs.toString()}`);
+      if (res.status === 503) {
+        setConfigured(false);
+        return;
+      }
+      setConfigured(true);
+      const data = await res.json();
+      setApproved(data.approved ?? []);
+      setMine(data.mine ?? []);
+      setPending(data.pending ?? []);
+    } catch {
+      setError("Neizdevās ielādēt. Mēģini vēlreiz.");
+    }
+  }, [clientId, adminKey]);
+
+  useEffect(() => {
+    if (clientId) load();
+  }, [clientId, load]);
 
   async function submit(e: React.FormEvent) {
     e.preventDefault();
-    if (!supabase || !user || !title.trim() || !body.trim()) return;
+    if (!clientId || !title.trim() || !body.trim()) return;
     setBusy(true);
     setError(null);
+    if (authorName.trim()) storeName(authorName);
     try {
-      await submitContribution(supabase, user.id, { type, title, body, region, authorName });
-      setDone(true);
-      setTitle("");
-      setBody("");
-      setAuthorName("");
-      await load();
+      const res = await fetch("/api/contributions", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ clientId, type, title, body, region, authorName }),
+      });
+      if (!res.ok) {
+        const err = await res.json().catch(() => ({}));
+        setError(
+          err.error === "rate-limited"
+            ? "Pārāk daudz iesūtījumu īsā laikā — pagaidi dažas minūtes."
+            : "Neizdevās iesūtīt. Mēģini vēlreiz.",
+        );
+      } else {
+        setDone(true);
+        setTitle("");
+        setBody("");
+        await load();
+      }
     } catch {
       setError("Neizdevās iesūtīt. Mēģini vēlreiz.");
     } finally {
       setBusy(false);
+    }
+  }
+
+  async function moderate(id: string, status: "approved" | "rejected") {
+    setPending((ps) => ps.filter((p) => p.id !== id)); // optimistic
+    try {
+      await fetch(`/api/contributions/${id}`, {
+        method: "PATCH",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ status, key: adminKey }),
+      });
+      await load();
+    } catch {
+      setError("Neizdevās. Mēģini vēlreiz.");
+      load();
     }
   }
 
@@ -84,20 +134,41 @@ export default function IesutitPage() {
         </p>
       </Card>
 
+      {/* Admin review queue (only with a valid ?key=) */}
+      {pending.length > 0 && (
+        <div className="mb-lg">
+          <h2 className="mb-sm flex items-center gap-2 text-headline-md text-on-surface">
+            <Icon name="gavel" size="20px" className="text-secondary" /> Gaida apstiprināšanu ({pending.length})
+          </h2>
+          <div className="space-y-md">
+            {pending.map((c) => {
+              const meta = CONTRIBUTION_META[c.type];
+              return (
+                <Card key={c.id} tone="container" accent="secondary" className="p-md">
+                  <div className="mb-1 flex items-center gap-2 text-label-sm text-tertiary">
+                    <Icon name={meta.icon} size="16px" /> {meta.label}
+                    {regionName(c.region) ? <span className="text-on-surface-variant/70">· {regionName(c.region)}</span> : null}
+                  </div>
+                  <h3 className="text-headline-md text-on-surface">{c.title}</h3>
+                  <p className="mt-1 whitespace-pre-wrap text-body-md text-on-surface-variant">{c.body}</p>
+                  {c.authorName && <p className="mt-sm text-label-sm text-on-surface-variant">— {c.authorName}</p>}
+                  <div className="mt-md flex gap-2">
+                    <Button icon="check" onClick={() => moderate(c.id, "approved")}>Apstiprināt</Button>
+                    <Button variant="outline" icon="close" onClick={() => moderate(c.id, "rejected")}>Noraidīt</Button>
+                  </div>
+                </Card>
+              );
+            })}
+          </div>
+        </div>
+      )}
+
       {/* Form */}
-      {!enabled ? (
+      {configured === false ? (
         <Card tone="container" className="mb-lg flex items-center gap-md p-md">
           <Icon name="cloud_off" className="text-on-surface-variant/50" />
           <p className="text-body-md text-on-surface-variant">Iesūtīšana drīz būs pieejama.</p>
         </Card>
-      ) : authLoading ? null : !user ? (
-        <Link href="/ienakt" className="mb-lg block">
-          <Card tone="container" className="flex items-center gap-md p-md transition-colors hover:bg-surface-container-high">
-            <Icon name="lock_open" className="text-primary" />
-            <p className="flex-1 text-body-md text-on-surface">Ienāc, lai iesūtītu savu gudrību</p>
-            <Icon name="arrow_forward" size="18px" className="text-on-surface-variant" />
-          </Card>
-        </Link>
       ) : done ? (
         <Card tone="container" accent="primary" className="mb-lg flex flex-col items-center gap-sm p-lg text-center">
           <Icon name="check_circle" size="40px" className="text-primary" />
@@ -185,7 +256,7 @@ export default function IesutitPage() {
           <Card tone="low" className="divide-y divide-outline-variant/10 p-0">
             {mine.map((m) => (
               <div key={m.id} className="flex items-center gap-3 px-md py-2">
-                <Icon name={CONTRIBUTION_META[m.type as ContributionType]?.icon ?? "circle"} size="18px" className="text-on-surface-variant" />
+                <Icon name={CONTRIBUTION_META[m.type]?.icon ?? "circle"} size="18px" className="text-on-surface-variant" />
                 <span className="flex-1 truncate text-body-md text-on-surface">{m.title}</span>
                 <span
                   className={`rounded-full px-2 py-0.5 text-label-sm ${
@@ -221,7 +292,7 @@ export default function IesutitPage() {
                   </div>
                   <h3 className="text-headline-md text-on-surface">{c.title}</h3>
                   <p className="mt-1 whitespace-pre-wrap text-body-md text-on-surface-variant">{c.body}</p>
-                  {c.author_name && <p className="mt-sm text-label-sm text-on-surface-variant">— {c.author_name}</p>}
+                  {c.authorName && <p className="mt-sm text-label-sm text-on-surface-variant">— {c.authorName}</p>}
                 </Card>
               );
             })}

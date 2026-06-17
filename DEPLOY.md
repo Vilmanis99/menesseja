@@ -59,6 +59,12 @@ Tabulas (`community_posts`, `community_likes`) jau izveidotas Neon (`db/neon-com
 - Spam aizsardzība: 5 ieraksti / 10 min uz ierīci, validācija servera pusē.
 - Īsti konti (login + sinhronizācija starp ierīcēm) — pievienojami vēlāk, ja vajag.
 
+**Senču gudrība (`/iesutit`)** — tā pati Neon datubāze (`community_contributions` tabula).
+Iesūtījumi ir **moderēti**: nonāk statusā `pending` un parādās krātuvē tikai pēc apstiprināšanas.
+- Pievieno **`ADMIN_KEY`** vides mainīgo (servera noslēpums, garš nejaušs teksts, **bez** `NEXT_PUBLIC`).
+- Atver `https://menessseja.lv/iesutit?key=TAVS-ADMIN-KEY` → redzēsi rindu «Gaida apstiprināšanu»
+  ar pogām Apstiprināt / Noraidīt. Bez `ADMIN_KEY` iesūtījumi joprojām pienāk, bet apstiprināmi tikai caur SQL.
+
 > 🔒 Ja Neon parole kādreiz noplūdusi — Neon → Reset password → atjauno `DATABASE_URL`
 > gan Vercel, gan `.env.local`, tad Redeploy.
 
