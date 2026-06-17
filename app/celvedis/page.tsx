@@ -47,9 +47,9 @@ export default function CelvedisPage() {
     });
   }, [cat, query, thisMonth, currentMonth]);
 
-  if (!mounted) return null;
-
-  return (
+  // Server-rendered scaffold (date-independent) so crawlers/AI see the H1 + intro
+  // + key links even before the interactive filter UI mounts.
+  const staticHeader = (
     <>
       <PageHeader
         eyebrow="Interaktīvais rīks"
@@ -57,6 +57,20 @@ export default function CelvedisPage() {
         display
         subtitle="Katras kultūras sējas, stādīšanas un ražas logi Latvijas klimatam — kopā ar labākajām Mēness dienām un augsnes siltumu."
       />
+      <p className="mb-md max-w-2xl text-body-lg text-on-surface-variant">
+        Sējas ceļvedis apkopo katras dārza kultūras sējas, stādīšanas un ražas logus Latvijas
+        klimatam, kopā ar tās labāko Mēness elementu dienu un augsnes siltuma slieksni. Pārlūko visu{" "}
+        <Link href="/augi" className="text-primary hover:underline">augu enciklopēdiju</Link> vai atver{" "}
+        <Link href="/kalendars" className="text-primary hover:underline">Mēness kalendāru</Link>.
+      </p>
+    </>
+  );
+
+  if (!mounted) return staticHeader;
+
+  return (
+    <>
+      {staticHeader}
 
       <DataNote variant="planting" withSources className="mb-md" />
 

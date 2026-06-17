@@ -211,15 +211,26 @@ export default function PlanotajsPage() {
     setTimeout(() => setSavedFlash(false), 1800);
   }
 
-  if (!mounted) return null;
-
-  return (
+  // Server-rendered scaffold (date-independent) so crawlers see the H1 + intro.
+  const staticHeader = (
     <>
       <PageHeader
         title="Dārza plānotājs"
         display
         subtitle="Izvēlies augu no bibliotēkas un uzklikšķini uz režģa, lai to iestādītu. Plāns saglabājas automātiski."
       />
+      <p className="mb-md max-w-2xl text-body-lg text-on-surface-variant">
+        Dārza plānotājs ļauj izkārtot dobes un sekot, kuri augi sader kā labi kaimiņi un kuri ne.
+        Plāns saglabājas automātiski tavā pārlūkā.
+      </p>
+    </>
+  );
+
+  if (!mounted) return staticHeader;
+
+  return (
+    <>
+      {staticHeader}
 
       {/* Plan selector */}
       <div className="mb-md flex flex-wrap items-center gap-2">

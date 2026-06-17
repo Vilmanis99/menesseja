@@ -83,9 +83,10 @@ export default function KalendarsPage() {
   const sameDay = (a: Date, b: Date) =>
     a.getDate() === b.getDate() && a.getMonth() === b.getMonth() && a.getFullYear() === b.getFullYear();
 
-  if (!mounted) return null;
-
-  return (
+  // Server-rendered scaffold (date-independent → no hydration mismatch): H1,
+  // intro prose, and links to every static month calendar. Crawlers/AI engines
+  // see this even before the interactive grid mounts client-side.
+  const staticHeader = (
     <>
       <PageHeader
         eyebrow="Senču gudrība · Maria Thun"
@@ -93,6 +94,37 @@ export default function KalendarsPage() {
         display
         subtitle="Katra diena nes sava elementa ritmu. Sēj saskaņā ar Mēness fāzi un zodiaka zīmi."
       />
+      <div className="mb-lg">
+        <p className="mb-sm max-w-2xl text-body-lg text-on-surface-variant">
+          Mēness sējas kalendārs apvieno Mēness fāzes, zodiaka zīmi un biodinamiskās elementu dienas
+          (sakņu, lapu, ziedu un augļu dienas) ar Latvijas klimatu. Izvēlies mēnesi un skaties katras
+          dienas ieteikumus vai atver drukājamu mēneša kalendāru.
+        </p>
+        <div className="space-y-1.5">
+          {CALENDAR_YEARS.map((y) => (
+            <div key={y} className="flex flex-wrap items-center gap-1.5">
+              <span className="w-10 shrink-0 text-label-md text-on-surface-variant">{y}.</span>
+              {MONTH_SLUGS.map((slug, i) => (
+                <Link
+                  key={slug}
+                  href={`/kalendars/${y}/${slug}`}
+                  className="rounded-full bg-surface-container px-2.5 py-1 text-label-sm capitalize text-on-surface hover:text-primary"
+                >
+                  {MONTHS_LV_FULL[i]}
+                </Link>
+              ))}
+            </div>
+          ))}
+        </div>
+      </div>
+    </>
+  );
+
+  if (!mounted) return staticHeader;
+
+  return (
+    <>
+      {staticHeader}
 
       <div className="mb-md flex flex-wrap items-center justify-between gap-2">
         <DataNote variant="moon" />

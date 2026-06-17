@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo } from "react";
+import Link from "next/link";
 import { PageHeader } from "@/components/ui/page-header";
 import { Card } from "@/components/ui/card";
 import { Icon } from "@/components/ui/icon";
@@ -36,16 +37,29 @@ export default function MenessPage() {
   const upcoming = useMemo(() => nextPrincipalPhases(today), [today]);
   const week = useMemo(() => sowingDays(today, 7), [today]);
 
-  if (!mounted) return null;
-
-  return (
+  // Server-rendered scaffold (date-independent) so crawlers/AI see the H1 + intro.
+  const staticHeader = (
     <>
       <PageHeader
         eyebrow="Debesu ritms"
         title="Mēness"
         display
-        subtitle="Sekojiet Mēness ceļam pa zodiaku un sēklas dzīšanas ritmam."
+        subtitle="Seko Mēness ceļam pa zodiaku un sēklas dzīšanas ritmam."
       />
+      <p className="mb-md max-w-2xl text-body-lg text-on-surface-variant">
+        Mēness fāzes (jauns, augošs, pilns un dilstošs Mēness) un zodiaka zīme nosaka biodinamiskās
+        elementu dienas — sakņu, lapu, ziedu un augļu dienas. Atver{" "}
+        <Link href="/kalendars" className="text-primary hover:underline">Mēness kalendāru</Link> vai uzzini,{" "}
+        <Link href="/macies" className="text-primary hover:underline">kas ir Mēness sēja</Link>.
+      </p>
+    </>
+  );
+
+  if (!mounted) return staticHeader;
+
+  return (
+    <>
+      {staticHeader}
 
       <div className="grid grid-cols-1 gap-gutter lg:grid-cols-12">
         {/* Hero moon */}
