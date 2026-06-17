@@ -1,102 +1,89 @@
 # Mēness Sēja — palaišanas ceļvedis (Vercel + menessseja.lv)
 
-Šis ir soli-pa-solim ceļvedis projekta palaišanai. Lēmumi: **Vercel** hostings,
-**menessseja.lv** domēns, AI foto-diagnostika (`/diagnoze`) pagaidām paslēpta.
+Lēmumi: **Vercel** hostings, **menessseja.lv** domēns, kopiena uz **Neon (Postgres)**,
+AI foto-diagnostika (`/diagnoze`) pagaidām paslēpta.
 
 ---
 
-## 1. Iecel kodu GitHub (vajadzīgs Vercel auto-deploy)
+## 1. Kods GitHub ✅ (jau izdarīts)
 
-Repo jau ir izveidots lokāli (`git init` + pirmais commit). Atliek nopublicēt:
+Repo ir publicēts: **github.com/Vilmanis99/menesseja**. Vercel auto-izvieto katru `git push` uz `main`.
 
-```bash
-# 1) Izveido tukšu privātu repo github.com (piem. "meness-seja"), TAD:
-cd "/Users/karlis/Documents/meness fazes"
-git remote add origin https://github.com/<tavs-lietotajs>/meness-seja.git
-git push -u origin main
-```
-
-> `.env.local` NETIEK augšupielādēts (to slēdz `.gitignore`) — atslēgas paliek tikai pie tevis.
+> `.env.local` NETIEK augšupielādēts (`.gitignore`) — paroles paliek tikai pie tevis.
 
 ---
 
 ## 2. Savieno ar Vercel
 
-1. Ej uz [vercel.com](https://vercel.com) → **Add New → Project** → importē GitHub repo.
-2. Framework tiek atpazīts automātiski (**Next.js**). Build komandas mainīt nevajag.
-3. Pirms **Deploy** pievieno vides mainīgos (skat. 3. punktu).
+1. [vercel.com](https://vercel.com) → **Add New → Project** → importē `Vilmanis99/menesseja`.
+2. Framework atpazīst automātiski (**Next.js**). Build komandas nemaini.
+3. Pirms **Deploy** pievieno vides mainīgos (3. punkts).
 
 ---
 
-## 3. Vides mainīgie (Vercel → Project → Settings → Environment Variables)
+## 3. Vides mainīgie (Vercel → Settings → Environment Variables)
 
-Pievieno visiem trim vidēm (Production, Preview, Development):
+| Key | Value | Vides |
+|---|---|---|
+| `DATABASE_URL` | tava Neon connection string (pooled) | Production + Preview |
+| `NEXT_PUBLIC_SITE_URL` | `https://menessseja.lv` | visas |
 
-| Mainīgais | Vērtība |
-|---|---|
-| `NEXT_PUBLIC_SUPABASE_URL` | `https://yvbndcvlntyjwguinwif.supabase.co` |
-| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | *(anon atslēga no tava `.env.local`)* |
-| `NEXT_PUBLIC_SITE_URL` | `https://menessseja.lv` |
+⚠️ **`DATABASE_URL`:**
+- Key tieši tā — **lielie burti, apakšsvītra, BEZ atstarpes** (kods lasa `process.env.DATABASE_URL`).
+- Tā ir **servera noslēpums** — NEKAD `NEXT_PUBLIC_` prefiksu.
+- Neon → projekts → **Connect** → izvēlies `production` / `neondb` / `neondb_owner` + **Pooled connection** → Copy.
 
-> `ANTHROPIC_API_KEY` pagaidām **nav vajadzīga** — `/diagnoze` ir paslēpta no navigācijas.
-> Kad gribēsi AI rīku ieslēgt, skat. 7. punktu.
+> Pēc env mainīgā pievienošanas/maiņas vajag **Redeploy** (Deployments → ⋯ → Redeploy) —
+> mainīgais netiek paņemts automātiski.
+>
+> `ANTHROPIC_API_KEY` pagaidām **nav vajadzīga** — `/diagnoze` paslēpta (skat. 6. punktu).
 
 ---
 
 ## 4. Domēns menessseja.lv
 
-1. Reģistrē `menessseja.lv` pie LV reģistratora (piem. nic.lv pārstāvja).
-2. Vercel → Project → **Settings → Domains** → pievieno `menessseja.lv` un `www.menessseja.lv`.
-3. Vercel parādīs DNS ierakstus (parasti `A` → `76.76.21.21` un `CNAME www → cname.vercel-dns.com`).
-   Ievadi tos pie reģistratora. Izplatās dažās stundās (līdz 48 h).
-4. Vercel automātiski izsniedz bezmaksas SSL (https).
+1. Reģistrē `menessseja.lv` pie LV reģistratora.
+2. Vercel → **Settings → Domains** → pievieno `menessseja.lv` + `www.menessseja.lv`.
+3. Ievadi parādītos DNS ierakstus pie reģistratora (izplatās līdz 48 h).
+4. Vercel automātiski izsniedz bezmaksas SSL.
 
 ---
 
-## 5. Supabase auth produkcijai ⚠️ (bez šī login e-pasts vedīs uz localhost)
+## 5. Kopiena (Neon) — pārbaude pēc deploy
 
-Supabase panelis → **Authentication → URL Configuration**:
+Kopiena ir **pseidonīma** — bez login, lietotājs izvēlas vārdu. Vajag tikai `DATABASE_URL`.
+Tabulas (`community_posts`, `community_likes`) jau izveidotas Neon (`db/neon-community.sql`).
 
-- **Site URL:** `https://menessseja.lv`
-- **Redirect URLs** (pievieno abus):
-  - `https://menessseja.lv/auth/callback`
-  - `https://menessseja.lv/auth/confirm`
+- Pēc deploy atver `https://menessseja.lv/kopiena` → ja rāda ieraksta lauku (nevis "drīz būs"),
+  datubāze ir pieslēgta. Publicē testa ierakstu un pārbaudi «patīk».
+- Spam aizsardzība: 5 ieraksti / 10 min uz ierīci, validācija servera pusē.
+- Īsti konti (login + sinhronizācija starp ierīcēm) — pievienojami vēlāk, ja vajag.
 
-Supabase panelis → **Authentication → Email Templates → Confirm signup / Magic Link**:
-- Pārliecinies, ka saite izmanto `token_hash` un norāda uz `/auth/confirm` (ierīču-neatkarīgā plūsma).
-  Piemērs saitei veidnē:
-  ```
-  {{ .SiteURL }}/auth/confirm?token_hash={{ .TokenHash }}&type=email
-  ```
-
-> Pēc deploy: pārbaudi login uz īsta telefona — ievadi e-pastu, atver saiti, pārliecinies, ka ielogojas.
+> 🔒 Ja Neon parole kādreiz noplūdusi — Neon → Reset password → atjauno `DATABASE_URL`
+> gan Vercel, gan `.env.local`, tad Redeploy.
 
 ---
 
-## 6. Pēc palaišanas (indeksēšana + traffic)
+## 6. Vēlāk: ieslēgt AI foto-diagnostiku (`/diagnoze`)
 
-- **Google Search Console** → pievieno `menessseja.lv` → iesniedz `https://menessseja.lv/sitemap.xml`
-- **Saite no globalverticalgardening.net** → ievieto saiti uz menessseja.lv (tavs galvenais SEO sviras punkts)
-- **Vercel Analytics** → Project → Analytics → Enable (viens klikšķis)
-- Pārbaudi `https://menessseja.lv/robots.txt` un `/sitemap.xml` ielādējas
-
----
-
-## 7. Vēlāk: ieslēgt AI foto-diagnostiku (`/diagnoze`)
-
-Kad būsi gatavs:
-1. Vercel → pievieno `ANTHROPIC_API_KEY` (no console.anthropic.com).
-2. Atjauno navigāciju: `components/nav-config.ts` → pievieno atpakaļ
-   `{ href: "/diagnoze", label: "Diagnostika", icon: "photo_camera", primary: true }`.
-3. `app/robots.ts` → noņem `/diagnoze` no `disallow`.
-4. (Neobligāti) atjauno foto-CTA kaitēkļu lapās.
+1. Vercel → pievieno `ANTHROPIC_API_KEY`.
+2. `components/nav-config.ts` → pievieno atpakaļ `/diagnoze` ierakstu.
+3. `app/diagnoze/layout.tsx` + `app/robots.ts` → noņem noindex/disallow.
 
 ---
 
-## Ātrā atgādne — kas jau ir gatavs
+## 7. Pēc palaišanas (indeksēšana + traffic)
 
-- ✅ Build zaļš · visas lapas SSG · 0 kļūdu
-- ✅ Supabase backend (3 migrācijas, RLS, auth kods)
-- ✅ Saturs: augi, puķes (11), kaitēkļi (8), receptes, topi, raksti
-- ✅ SEO: sitemap, robots, JSON-LD, OG bilde
-- ✅ `.gitignore` slēdz atslēgas
+- **Google Search Console** → pievieno domēnu → iesniedz `/sitemap.xml`
+- **Saite no globalverticalgardening.net** → galvenais SEO sviras punkts
+- **Vercel Analytics** → Enable (1 klikšķis)
+
+---
+
+## Ātrā atgādne — kas gatavs
+
+- ✅ Build zaļš · 237 lapas · 0 kļūdu
+- ✅ Saturs: augi, **puķes (23)**, **kaitēkļi (18)**, receptes, topi, raksti, vārda dienas
+- ✅ Kopiena uz **Neon** (pseidonīma, rate-limited)
+- ✅ SEO: sitemap, robots, llms.txt, JSON-LD, OG, drukājams kalendārs
+- ✅ `.gitignore` slēdz paroles
