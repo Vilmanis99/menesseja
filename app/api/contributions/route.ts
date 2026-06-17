@@ -5,6 +5,7 @@ import {
   fetchMine,
   fetchPending,
 } from "@/lib/neon/contributions";
+import { notifyNewContribution } from "@/lib/notify";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -48,7 +49,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "bad-request" }, { status: 400 });
   }
   try {
-    const id = await submitContribution({
+    const created = await submitContribution({
       clientId: body.clientId ?? "",
       type: body.type ?? "",
       title: body.title ?? "",
@@ -56,7 +57,10 @@ export async function POST(req: NextRequest) {
       region: body.region ?? null,
       authorName: body.authorName ?? null,
     });
-    return NextResponse.json({ id });
+    // Best-effort email to the admin; awaited so it runs before the serverless
+    // function freezes, but never allowed to fail the (already-saved) submission.
+    await notifyNewContribution(created).catch(() => {});
+    return NextResponse.json({ id: created.id });
   } catch (e) {
     const m = (e as Error).message;
     if (m === "db-not-configured") return NextResponse.json({ error: "not-configured" }, { status: 503 });

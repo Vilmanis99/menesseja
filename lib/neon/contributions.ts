@@ -25,6 +25,15 @@ const MAX_NAME = 120;
 const MAX_CLIENT = 64;
 const RATE_MAX = 5; // submissions per 10-minute window per device
 
+export interface CreatedContribution {
+  id: string;
+  type: ContributionType;
+  title: string;
+  body: string;
+  region: string | null;
+  authorName: string | null;
+}
+
 export async function submitContribution(input: {
   clientId: string;
   type: string;
@@ -32,7 +41,7 @@ export async function submitContribution(input: {
   body: string;
   region?: string | null;
   authorName?: string | null;
-}): Promise<string> {
+}): Promise<CreatedContribution> {
   const sql = getSql();
   if (!sql) throw new Error("db-not-configured");
 
@@ -57,7 +66,7 @@ export async function submitContribution(input: {
     insert into community_contributions (client_id, type, title, body, region, author_name)
     values (${clientId}, ${input.type}, ${title}, ${body}, ${region}, ${authorName})
     returning id`) as { id: string }[];
-  return rows[0].id;
+  return { id: rows[0].id, type: input.type as ContributionType, title, body, region, authorName };
 }
 
 type ApprovedRow = {
