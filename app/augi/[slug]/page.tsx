@@ -103,8 +103,8 @@ export default async function CropPage({ params }: { params: Promise<{ slug: str
   // Data-driven FAQ (real answers from the crop data)
   const sowWhen = rangeText(crop.sowOutdoors ?? crop.sowIndoors);
   const faq: { q: string; a: string }[] = [
-    sowWhen ? { q: `Kad sēt ${crop.name.toLowerCase()} Latvijā?`, a: `${crop.name} parasti sēj ${sowWhen}. Precīzs laiks atkarīgs no laikapstākļiem un tava reģiona — siltummīļus laukā tikai pēc pēdējās salnas.` } : null,
-    soil ? { q: `Cik silta augsne vajadzīga ${crop.name.toLowerCase()}?`, a: `Sējai augsnei vajadzētu būt vismaz ${soil}°C. Vēsākā augsnē sēklas dīgst lēni vai sapūst.` } : null,
+    sowWhen ? { q: `${crop.name} — kad sēt Latvijā?`, a: `Parasti sēj ${sowWhen}. Precīzs laiks atkarīgs no laikapstākļiem un tava reģiona — siltummīļus laukā tikai pēc pēdējās salnas.` } : null,
+    soil ? { q: `${crop.name} — cik siltai jābūt augsnei?`, a: `Sējai augsnei vajadzētu būt vismaz ${soil}°C. Vēsākā augsnē sēklas dīgst lēni vai sapūst.` } : null,
     good.length ? { q: `Ar ko ${crop.name.toLowerCase()} sader dārzā?`, a: `Labi kaimiņi: ${good.map((id) => CROPS.find((c) => c.id === id)?.name).filter(Boolean).join(", ")}.` } : null,
   ].filter((x): x is { q: string; a: string } => x !== null);
 
