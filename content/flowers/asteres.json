@@ -1,0 +1,64 @@
+{
+  "slug": "asteres",
+  "name": "Asteres",
+  "emoji": "🌸",
+  "type": "viengadiga",
+  "latin": "Callistephus / Aster",
+  "tagline": "Rudens un 1. septembra puķe — viengadīgās asteres zied no augusta līdz salnām, daudzgadīgās ziemasteres tās pārņem un zied vēl tad, kad dārzs jau gandrīz tukšs.",
+  "bloom": "Augusts–oktobris (līdz pirmajām salnām)",
+  "height": "20–80 cm (atkarībā no šķirnes)",
+  "sun": "Saule",
+  "hardy": false,
+  "difficulty": "vidēji",
+  "plantWhen": "Viengadīgās sēj telpās martā–aprīlī vai tieši dobē maijā; stādus laukā pēc pēdējām salnām",
+  "moonPhase": "augošs",
+  "moonElement": "ziedi",
+  "moonText": "Asteres ir ziedu augi, tāpēc pēc biodinamiskās tradīcijas tās sēj un kopj ziedu (gaisa) dienās augošā Mēness laikā — kad svarīgākā auga daļa ir tieši ziedi. Daudzgadīgo ziemasteru sadalīšanu un pārstādīšanu, kas ir sakņu darbs, tradicionāli plāno dilstošā Mēness laikā. Tā ir sena dārza tradīcija, ne garantija — asterēm daudz svarīgāk ir silta sējas vieta, saule un, galvenais, katru gadu mainīta stādīšanas vieta, lai izvairītos no fuzariozes.",
+  "intro": [
+    "Astere ir klasiskā Latvijas rudens un skolas puķe — tieši viņas košie ziedi gadu desmitiem rotā 1. septembra pušķus un pavada vasaru projām, kad lielākā daļa dārza jau nogurusi. Svarīgi saprast, ka «asteres» ir divi pavisam dažādi augi. VIENGADĪGĀS asteres (Callistephus chinensis) ir tās lielziedu, kupli pildītās rudens puķes, ko audzē no sēklas katru gadu un kas rudens salnās aiziet bojā. DAUDZGADĪGĀS asteres jeb ziemasteres (Aster) ir ziemcietīgi daudzgadīgi augi ar daudziem maziem zvaigznīšu ziediem, kas vienā vietā aug gadiem un katru rudeni atplaukst no jauna.",
+    "Šajā ierakstā galvenokārt runa ir par viengadīgo asteri — to košo skolas puķi, ko sēj no sēklas. Tā mīl sauli, auglīgu augsni un zied no augusta līdz pat oktobrim, taču tai ir viena nopietna vājā vieta: fuzariozes vīte, sēņu slimība, kas augu dažu dienu laikā novīdina. Galvenais aizsardzības paņēmiens ir vienkāršs un sens — asteres katru gadu stāda jaunā vietā un neatgriežas pie tās pašas dobes vismaz trīs četrus gadus. Ja šo likumu ievēro, asteres ir pateicīga un krāšņa rudens puķe."
+  ],
+  "planting": [
+    "Viengadīgās asteres sēj telpās martā vai aprīlī siltā, gaišā palodzē; dīgst aptuveni nedēļas laikā ap 18–20 °C, un dēstus pēc otrās īstās lapiņas pārpiķē atsevišķos podiņos.",
+    "Vienkāršāks ceļš ir sēt tieši dobē maijā, kad augsne sasilusi — tieši sētas asteres zied nedaudz vēlāk, bet mēdz būt veselīgākas un izturīgākas.",
+    "Pirms stādīšanas laukā dēstus 7–10 dienas norūdi, un laukā nes tikai pēc pēdējām pavasara salnām — piekrastē ap maija sākumu, iekšzemē līdz pat maija beigām, jo jaunie dēsti aukstumu nepanes.",
+    "Izvēlies saulainu vietu ar irdenu, auglīgu, labi drenētu augsni; smagā, mitrā mālā un ēnā asteres slimo daudz biežāk.",
+    "GALVENAIS likums: katru gadu stādi asteres jaunā vietā un neatgriezies pie tās pašas dobes vismaz 3–4 gadus — tā izvairās no fuzariozes, kas augsnē uzkrājas.",
+    "Atstatums dobē 20–30 cm atkarībā no šķirnes; pēc stādīšanas aplej un viegli apmulčē."
+  ],
+  "care": [
+    "Laisti regulāri un mēreni, pie saknes, ne pa lapām un ziediem — slapjas lapas vakaros veicina sēņu slimības.",
+    "Mēslo mēreni: pārāk daudz svaiga kūtsmēslu vai slāpekļa dod kuplus lakstus, vājus stublājus un veicina puvi; labāk pavasarī iestrādā kompostu un ziedēšanas laikā dod kālijā bagātu mēslojumu.",
+    "Augsto, lielziedu šķirņu kuplos ziedus vējš un lietus viegli nolauž — vajadzības gadījumā ieliec atbalstu.",
+    "Regulāri nogriez novītušos ziedus, lai ziedēšana turpinās ilgāk; asteres ir lieliska griežamā puķe vāzei.",
+    "Daudzgadīgo ziemasteru cerus reizi 3–4 gados pavasarī sadali, lai vidus neizplok un ziedēšana nesarūk.",
+    "Augsni starp augiem turi irdenu un tīru no nezālēm — laba gaisa kustība ap stublājiem samazina slimību risku."
+  ],
+  "winter": "Viengadīgās asteres (Callistephus) Latvijā ATKLĀTĀ laukā nepārziemo — tās ir viengadīgas puķes, ko pirmā stiprākā rudens salna iznīcina; rudenī augus izrok un liek kompostā (ja tie nav bijuši slimi ar fuzariozi — tad labāk izmet, ne kompostā), bet nākampavasar sēj no jauna. Daudzgadīgās asteres jeb ziemasteres (Aster) turpretī ir ziemcietīgas un ziemo laukā bez īpaša seguma; rudenī novītušos stublājus var nogriezt vai atstāt līdz pavasarim, un jaunās, pavasarī stādītās vai sadalītās ziemasteres pirmajā ziemā labāk pamulčēt ar lapām vai kompostu.",
+  "problems": [
+    "Fuzariozes vīte — astere pēkšņi novīst un nokalst, bieži no vienas puses, stublāja pamatne tumst; tā ir astera galvenā kaite. Tā saglabājas augsnē, tāpēc svarīgākā aizsardzība ir vietas maiņa katru gadu, veselas sēklas, tikai veselu augu kompostēšana un mērena, ne pārmitra augsne.",
+    "Pārmitra, smaga augsne un slapjas lapas veicina arī melnkāju dēstiem un citu puvi — sēj pietiekami reti, laisti pie saknes un nodrošini drenāžu.",
+    "Laputis uz jaunajiem dzinumiem un pumpuriem — tās pārnēsā arī vīrusus, tāpēc apkaro savlaicīgi ar ziepjūdeni vai bioloģiskiem līdzekļiem."
+  ],
+  "folklore": "Astere Latvijā ir cieši saaugusi ar rudeni un skolas sākumu — košs asteru pušķis 1. septembrī skolotājam ir tradīcija, ko atceras teju katrs. Daudzās lauku sētās asteres un dālijas pie mājas bija pašsaprotama rudens dobe, un cilvēki mēdza teikt, ka, kamēr asteres zied, vasara vēl nav galā. Pati astera nosaukuma sakne nāk no grieķu vārda «zvaigzne» — pēc ziedu zvaigznītes formas.",
+  "faq": [
+    {
+      "q": "Ar ko atšķiras viengadīgās asteres no daudzgadīgajām ziemasterēm?",
+      "a": "Viengadīgās asteres (Callistephus chinensis) ir lielziedu, bieži pildītās rudens skolas puķes, ko audzē no sēklas katru gadu un kas rudens salnās aiziet bojā. Daudzgadīgās asteres jeb ziemasteres (Aster) ir ziemcietīgi daudzgadīgi augi ar daudziem maziem zvaigznīšu ziediem; tās aug vienā vietā gadiem un katru rudeni atplaukst no jauna."
+    },
+    {
+      "q": "Kāpēc manas asteres pēkšņi novīst un nokalst?",
+      "a": "Visbiežāk tā ir fuzariozes vīte — sēņu slimība, kas augu novīdina dažu dienu laikā un saglabājas augsnē. Galvenā aizsardzība ir asteres katru gadu stādīt jaunā vietā un neatgriezties pie tās pašas dobes 3–4 gadus, izmantot veselas sēklas, izvairīties no pārmitras augsnes un slimos augus nelikt kompostā."
+    },
+    {
+      "q": "Kad sēt un stādīt viengadīgās asteres?",
+      "a": "Sēklas sēj telpās martā–aprīlī siltā palodzē vai tieši dobē maijā, kad augsne sasilusi. Stādus laukā nes tikai pēc pēdējām pavasara salnām — piekrastē ap maija sākumu, iekšzemē līdz pat maija beigām. Tieši dobē maijā sētas asteres mēdz būt izturīgākas, bet uzzied nedaudz vēlāk."
+    }
+  ],
+  "related": [
+    "dalijas",
+    "gladiolas",
+    "rudbekijas",
+    "ehinacija"
+  ]
+}

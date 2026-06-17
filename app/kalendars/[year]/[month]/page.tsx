@@ -41,8 +41,9 @@ export async function generateMetadata({
   const p = parse(year, month);
   if (!p) return {};
   const name = MONTHS_LV_FULL[p.month - 1];
-  const title = `Mēness sējas kalendārs — ${year}. gada ${name}`;
-  const description = `${year}. gada ${name} Mēness kalendārs dārzkopjiem: Mēness fāzes, sēšanas un stādīšanas dienas pēc elementiem (saknes, lapas, ziedi, augļi) un nelabvēlīgās dienas.`;
+  // Title targets both "dārza darbu kalendārs [mēnesis]" (dominant LV phrase) and "mēness kalendārs".
+  const title = `Dārza darbu un Mēness kalendārs — ${year}. gada ${name}`;
+  const description = `Ko darīt dārzā ${year}. gada ${name}: dārza darbi, ko sēt un stādīt, Mēness fāzes, sēšanas dienas pēc elementiem (saknes, lapas, ziedi, augļi), vārda dienas un nelabvēlīgās dienas.`;
   return {
     title,
     description,
@@ -128,13 +129,13 @@ export default async function MonthCalendarPage({
       </nav>
 
       <header className="mb-lg">
-        <p className="text-label-sm uppercase tracking-[0.2em] text-tertiary">Senču gudrība · Maria Thun</p>
+        <p className="text-label-sm uppercase tracking-[0.2em] text-tertiary">Senču gudrība · Mēness kalendārs · Maria Thun</p>
         <h1 className="text-headline-lg-mobile capitalize text-primary md:text-display-lg">
-          Mēness kalendārs — {name} {year}
+          Dārza darbu kalendārs — {name} {year}
         </h1>
         <p className="mt-xs max-w-2xl text-body-lg text-on-surface-variant">
-          Kad sēt un stādīt {year}. gada {name} saskaņā ar Mēnesi: katras dienas fāze, elementu diena,
-          vārda dienas un nelabvēlīgās dienas Latvijas dārzkopjiem.
+          Ko darīt dārzā {year}. gada {name} saskaņā ar Mēnesi: dārza darbi, ko sēt un stādīt, katras dienas
+          Mēness fāze, elementu diena, vārda dienas un nelabvēlīgās dienas Latvijas dārzkopjiem.
         </p>
         <div className="mt-sm print:hidden">
           <PrintButton />

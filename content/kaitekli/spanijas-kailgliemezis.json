@@ -1,0 +1,67 @@
+{
+  "slug": "spanijas-kailgliemezis",
+  "name": "Spānijas kailgliemezis",
+  "emoji": "🐌",
+  "latin": "Arion vulgaris",
+  "type": "kaiteklis",
+  "tagline": "Invazīvs, oranžbrūns kailgliemezis bez čaulas, kas mitrās naktīs noēd teju visu — salātus, dārzeņus, puķes, pat kritušus augļus un savus radiniekus; galvenā aizsardzība ir neatlaidīga vākšana ar roku.",
+  "severity": "nopietns",
+  "affects": [
+    "Salāti un citi lapu dārzeņi",
+    "Kāposti un krustziežu dārzeņi",
+    "Jaunie stādi un dīgsti",
+    "Zemenes",
+    "Puķes (samtenes, dālijas, hostas un citas mīkstlapu puķes)",
+    "Kritušie augļi un saknes dārzeņi"
+  ],
+  "signs": [
+    "Lieli, oranžbrūni līdz brūngani kailgliemeži bez gliemežvāka, līdz 12–15 cm gari, parasti vienkrāsaini, bez izteiktām svītrām",
+    "Plaši, neregulāri izgrauzti caurumi lapās un veseli jauni stādi, kas pa nakti pazūd gandrīz pilnībā",
+    "Sudrabaina, spīdīga gļotu pēda uz lapām, augsnes, takām un dobju malām, labi redzama no rīta",
+    "Bojājumi parādās tieši pēc lietus un siltām, mitrām naktīm; dienā sausā laikā kaitēkli neredz",
+    "Caurspīdīgas, pērļveidīgas olu kopas augsnē, zem dēļiem, akmeņiem un mulčas — vienā perēklī līdz pat vairākiem simtiem olu",
+    "Apgrauzti pat kritušie augļi un beigti gliemeži — Spānijas kailgliemezis ēd arī sava sugas brāļus"
+  ],
+  "intro": [
+    "Spānijas kailgliemezis ir invazīva suga, kas pēdējos gados Latvijā kļuvusi par vienu no nopietnākajām dārza problēmām un ir iekļauta invazīvo sugu sarakstā. Atšķirībā no mūsu vietējiem kailgliemežiem tas ir lielāks, izturīgāks un rijīgāks: oranžbrūns, bez čaulas, līdz 12–15 cm garš, un mitrās, siltās vasarās tas spēj savairoties masveidā. Tas barojas naktī un lietainā laikā un noēd teju visu, kas ceļā — salātus, dārzeņus, puķes, jaunos stādus, pat kritušos augļus un beigtus gliemežus. Pa dienu tas slēpjas vēsās, mitrās paslēptuvēs zem dēļiem, akmeņiem, podiem un biezas mulčas.",
+    "Īpaši bīstamas ir tā olas: viens dzīvnieks augsnē vai zem paslēptuvēm var sadēt līdz pat vairākiem simtiem caurspīdīgu olu, no kurām izšķiļas nākamā rijīgā paaudze. Esi godīgs pret sevi jau no paša sākuma: reiz ielaidies dārzā, šo invazīvo sugu pilnībā izskaust praktiski nav iespējams — reālais mērķis ir tās skaitu noturēt zemu un nepalaist invāziju vaļā. Nav neviena brīnumlīdzekļa — visdrošākais un patiesi efektīvākais paņēmiens ir regulāra, neatlaidīga vākšana ar roku un mitru paslēptuvju novākšana. Barjeras un slazdi palīdz tikai kā papildinājums. Sāli un ķīmiju neiesakām: sāls kaitē augsnei un augiem, bet ķīmiskie līdzekļi apdraud arī derīgos dzīvniekus."
+  ],
+  "control": [
+    "Vāc gliemežus ar roku — tā ir pati efektīvākā metode, un pret šo invazīvo sugu tā ir obligāta. Ej pa dobēm vakaros krēslā, agri no rīta un īpaši lietainā laikā, kad tie ir visaktīvākie; ņem cimdus un lukturīti. Savāktos iemet ziepjūdens spainī un iznīcini. Dari to regulāri, vairākas reizes nedēļā visu sezonu — tieši neatlaidība, nevis viena akcija, izšķir, vai invāziju savaldīsi.",
+    "Iznīcini olu perēkļus. Pārmeklē augsni zem dēļiem, akmeņiem, podiem un mulčas — caurspīdīgās, pērļveidīgās olu kopas izrok virspusē un iznīcini. Viena savākta olu kopa ir simtiem nākamo gliemežu, kas neattīstīsies, tāpēc olu meklēšana ir tikpat svarīga kā pašu gliemežu vākšana.",
+    "Liec alus vai rauga slazdus: ierok trauciņu zemē tā, lai mala ir augsnes līmenī, un ielej alu vai rauga šķīdumu. Rauga smarža gliemežus pievilina, un tie iekrīt. Pārbaudi un atjauno ik pēc dažām dienām un pēc katra lietus. Atceries — slazdi noķer tikai daļu un var pievilināt gliemežus arī no kaimiņu dobēm, tāpēc tie der kā papildinājums vākšanai, ne tās vietā.",
+    "Novāc mitrās paslēptuves — dēļus, podus, akmeņus, atkritumu un lapu kaudzes augu tuvumā, kur gliemeži dienā slēpjas un dēj olas. Pļauj zāli īsu un tur dobju malas tīras un sausākas. Sausāks, atklātāks dārzs gliemežus pavisam neatbaida, bet būtiski samazina to skaitu un patvēruma vietas.",
+    "Veido sausas barjeras ap visjutīgākajiem stādiem — gredzenu no sausiem koku pelniem vai smalkām koka skaidām. Esi godīgs pret sevi: tās darbojas tikai sausas, un mitrumā, kad šis gliemezis ir visaktīvākais, tās ātri zaudē spēku. Pēc katra lietus barjera jāatjauno, un mitrā vasarā tā ir tikai neliels palīgs, ne galvenais risinājums.",
+    "Aicini dārzā dabiskos ienaidniekus: pīles un mājas vistas labprāt ēd gliemežus, palīdz arī eži, krupji, vārnas un strazdi. Atstāj klusu nostūri ar lapu kaudzi ezim un ūdens trauciņu putniem. Dabiskais līdzsvars viens pats invāziju neapturēs, bet ilgtermiņā palīdz turēt skaitu zemāku.",
+    "Rudenī pārrok un izlīdzini dobes. Aršana un rakšana atklāj un iznīcina ziemojošās olas augsnē, un daļa nonāk virspusē putniem vai aukstumam — tas būtiski samazina nākamā gada paaudzi.",
+    "Laisti dārzu no rīta, ne vakarā, lai augsnes virsa līdz naktij paspēj apžūt un gliemežiem nav tik patīkami pārvietoties pa mitru dobi."
+  ],
+  "recipeSlugs": [],
+  "prevention": [
+    "Pārmeklē dārzu agri pavasarī un visu sezonu, izrokot un iznīcinot olu perēkļus, pirms invāzija kļūst masveidīga — ar šo sugu profilakse ir daudz svarīgāka par cīņu, kad gliemežu jau ir simtiem.",
+    "Tur dobes kārtīgas un sausākas: nelej lieko mulču tieši pie augiem, atstāj starp augiem gaisīgu atstatumu, pļauj zāli īsu un novāc atkritumu kaudzes, kur gliemeži slēpjas un vairojas.",
+    "Audzē jaunos stādus podiņos vai kastēs, līdz tie kļūst lielāki un stiprāki, un izstādi dārzā tikai tad — maigos dīgstus šis gliemezis noēd ātrāk nekā pieaugušus augus.",
+    "Rudenī pārrok dobes, lai iznīcinātu ziemojošās olas, un seko līdzi, vai gliemeži neienāk ar jaunu augsni, kompostu vai stādiem no citurienes.",
+    "Runā ar kaimiņiem un kopj arī dārza malas — kā invazīva suga Spānijas kailgliemezis viegli pārvietojas pāri sētai, tāpēc kopēja, regulāra vākšana visā apkārtnē strādā labāk nekā vienam pašam."
+  ],
+  "moonNote": "Pēc tradīcijas kaitēkļus apkaro un dobes rok dilstošā Mēnesī, un daudzi dārznieki tieši tad cītīgāk vāc gliemežus un izrok olas. Tā ir jauka tradīcija, taču ar šo invazīvo sugu negaidi uz \"pareizo\" Mēness laiku — vāc un iznīcini to regulāri un katrā mitrā naktī, neatkarīgi no Mēness fāzes.",
+  "folklore": "Vecie ļaudis teica, ka gliemeži nāk lietus pavadā, un vakaros bērnus sūtīja ar trauciņu tos salasīt. Spānijas kailgliemezis mūsu senčiem vēl nebija pazīstams — tā ir iebraucēja suga —, taču vecā gudrība der vēl šodien: dobju malas turi tīras un sausas un gliemežus lasi ar roku, jo neviena brīnummantra te nepalīdz.",
+  "faq": [
+    {
+      "q": "Ar ko Spānijas kailgliemezis atšķiras no mūsu parastajiem kailgliemežiem?",
+      "a": "Tas ir invazīva suga — lielāks, izturīgāks un rijīgāks. Oranžbrūns, bez čaulas, līdz 12–15 cm garš, un mitrās vasarās savairojas masveidā. Tas noēd plašāku augu klāstu, ieskaitot kritušos augļus un pat beigtus gliemežus, un viens dzīvnieks var sadēt līdz pat vairākiem simtiem olu. Tāpēc pret to jācīnās daudz neatlaidīgāk nekā pret vietējiem gliemežiem."
+    },
+    {
+      "q": "Vai Spānijas kailgliemezi var pilnībā izskaust?",
+      "a": "Reāli — nē. Reiz ielaidies dārzā, šo invazīvo sugu praktiski nav iespējams izskaust pavisam, jo tā ātri vairojas un viegli ienāk arī no kaimiņu zemes. Reālais mērķis ir tās skaitu noturēt pēc iespējas zemu ar regulāru vākšanu, olu perēkļu iznīcināšanu un mitru paslēptuvju novākšanu. Neatlaidīga, sezonas garumā veikta cīņa der labāk par cerību uz vienu brīnumlīdzekli."
+    },
+    {
+      "q": "Kāpēc neieteicat sāli vai ķīmiskos līdzekļus?",
+      "a": "Sāls gan nogalina gliemezi, bet sabojā augsni un kaitē augu saknēm, tāpēc dārza dobēs to nelietojam. Ķīmiskie gliemežu līdzekļi savukārt apdraud arī derīgos dzīvniekus — ežus, putnus un mājdzīvniekus —, kas paši palīdz ierobežot gliemežus. Dabīgi un droši ir vākt ar roku, iznīcināt olas un novākt mitrās paslēptuves."
+    },
+    {
+      "q": "Vai ar slazdiem un barjerām vien pietiek?",
+      "a": "Nē. Alus slazdi un sausas pelnu vai skaidu barjeras noķer un attur tikai daļu gliemežu un mitrumā ātri zaudē spēku — tieši tad, kad šis gliemezis ir visaktīvākais. Pret invazīvo sugu tie ir tikai palīgs. Galvenais ir regulāra vākšana ar roku, olu perēkļu iznīcināšana un mitru paslēptuvju novākšana."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "slug": "magnolijas",
+  "name": "Magnolijas",
+  "emoji": "🌸",
+  "type": "krums",
+  "latin": "Magnolia",
+  "tagline": "Eksotiskā aristokrāte, kas maijā saplaukst pirms lapām — Latvijā iespējama, ja izvēlies izturīgāko sugu un pareizo vietu.",
+  "bloom": "Maijs (dažas šķirnes vēlreiz vasarā)",
+  "height": "2–4 m (zvaigžņu magnolija zemāka, 1,5–3 m)",
+  "sun": "Saule, vēlams pusēna pusdienlaikā",
+  "hardy": true,
+  "difficulty": "grūti",
+  "plantWhen": "Stādu stāda pavasarī pēc salnām (maijā), lai krūms paspēj iesakņoties pirms ziemas",
+  "moonPhase": "augošs",
+  "moonElement": "ziedi",
+  "moonText": "Magnoliju kā skaista zieda krūmu pēc biodinamiskās tradīcijas stāda un kopj ziedu (gaisa) dienās — kad Mēness ir Dvīņos, Svaros vai Ūdensvīrā. Virszemes stādīšanu tradicionāli izvēlas augošā Mēnesī, kad spēks virzās uz augšu, savukārt sakņu darbus un pārstādīšanu — dilstošā. Tā ir veca dārznieku tradīcija, ne garantija: magnolijas likteni Latvijā izšķir nevis Mēness, bet vieta — aizvējš, ziemas izturība un pareizs stādīšanas brīdis pēc salnām.",
+  "intro": [
+    "Magnolija ir viens no greznākajiem pavasara krūmiem, ko vispār var iedomāties — agrā maijā, bieži vēl pirms lapām, tā saplaukst lielos, vaska baltos, sārtos vai rozā ziedos, kas zariem piešķir gandrīz austrumniecisku, svinīgu skaistumu. Latvijas dārzā tā vienmēr ir mazliet eksotiska aristokrāte, ap kuru pulcējas kaimiņu skatieni. Magnolija aug lēni, tāpēc tā nav krūms nepacietīgajiem — bet katrs pavasaris, kad tā uzzied, atmaksā gaidīšanu.",
+    "Latvijā galvenais jautājums ar magnoliju nav skaistums, bet ziemcietība. Mūsu klimatā (lielākoties 5b–6a zona, aukstākajās iekšzemes vietās ap 5a) droši aug tikai izturīgākās sugas — zvaigžņu magnolija (M. stellata) un Loebnera magnolija (M. × loebneri); skaistās lielziedu sugas, piemēram, Sulanža magnolija, ir krietni riskantākas un to ziedi viegli cieš no salnām. Otra problēma ir ne tik daudz pati ziema, cik pavasara salnas: magnolija ziedpumpurus veido jau iepriekšējā vasarā, un viena auksta maija nakts var sasaldēt visus ziedus brūnus. Tieši tāpēc vietas izvēle ir vissvarīgākais lēmums."
+  ],
+  "planting": [
+    "Stādi pavasarī pēc pēdējām salnām (iekšzemē drošāk maijā), lai krūms līdz ziemai paspēj labi iesakņoties; jaunam, vēl vāji iesakņojušamies stādam mūsu pirmā ziema var būt par grūtu.",
+    "Izvēlies vietu pārdomāti: saulainu, bet obligāti no aukstajiem ziemeļvējiem aizvēja stūri — pie ēkas sienas, dzīvžoga vai citu krūmu aizsegā. Tas ir magnolijas pārziemošanas pamats.",
+    "Svarīgākais triks pret pavasara salnām: izvairies no vietas, kur ziedošo krūmu agrā rītā tieši apspīd austrumu saule. Pēc salnas nakts strauja atkušana saulē sasaldē ziedus brūnus; lēnāk atkūstot ēnainākā vietā, ziedi labāk pārdzīvo aukstumu.",
+    "Augsne — auglīga, irdena, mitrumietilpīga, bet labi drenēta un drīzāk skāba (magnolija nemīl kaļķainu, sārmainu zemi). Smagā mālā bedrē iemaisi kūdru, kompostu un rupjas smiltis.",
+    "Bedri rok aptuveni divreiz platāku par sakņu kamolu; sakņu kaklu novieto tādā pašā dziļumā, kā augs audzis konteinerā — magnoliju nedrīkst iestādīt par dziļu. Magnolijai ir mīkstas, gaļīgas, seklas saknes, tāpēc rīkojies saudzīgi un izvēlies pastāvīgu vietu uzreiz — pārstādīšanu tā cieš grūti.",
+    "Pēc stādīšanas krietni aplej un pirmajā sezonā uzturi augsni vienmērīgi mitru; pamatni nomulčē ar kūdru vai kompostu, kas tur mitrumu un sargā seklās saknes."
+  ],
+  "care": [
+    "Laisti regulāri, īpaši pirmajos gados un sausuma periodos — magnolijas saknes ir seklas un sausumu panes slikti; ilgstošā karstumā un sausā augsnē tā met pumpurus un lapas.",
+    "Mulčē pamatni ar kūdru, skujām vai kompostu (5–10 cm), atstājot brīvu sakņu kaklu — tas tur sakņu zonu vēsu, mitru un mēreni skābu, kā magnolijai patīk; nestrādā ar lāpstu pie pašām saknēm, lai tās nesabojātu.",
+    "Mēslo taupīgi pavasarī ar kompostu vai skābām augsnēm domātu mēslojumu; izvairies no svaigiem kaļķiem un sārmainiem mēslojumiem, no kuriem lapas dzeltē.",
+    "Apgriešana magnolijai gandrīz nav vajadzīga un to labāk neaiztikt — tā aug lēni un dabiski veido skaistu vainagu. Ja kas jānogriež, dari to tikai pēc ziedēšanas vasaras sākumā, izņemot sausos, bojātos vai berzošos zarus.",
+    "Necieš pārstādīšanu un sakņu traucēšanu, tāpēc neko nestādi cieši ap pamatni un nerok blakus — ļauj krūmam mierīgi nostiprināties vienā vietā gadiem.",
+    "Esi pacietīgs: jaunas magnolijas pirmos gadus var ziedēt skopi vai neziedēt vispār, kamēr iesakņojas un nobriest — tas ir normāli, ne kļūda."
+  ],
+  "winter": "Magnolija Latvijā paliek augt dārzā — to neizrok. Izturīgākās sugas (zvaigžņu un Loebnera magnolija) labā, aizvēja vietā ziemo, taču ziemcietība šeit ir galvenais jautājums, tāpēc jauniem stādiem un pirmajām ziemām palīdz: rudenī sakņu zonu biezi nomulčē ar kūdru, kompostu vai skujām (10–20 cm), bet stumbra pamatni un jaunos dzinumus vējainā vietā var aptīt ar agroplēvi vai segšķiedru. Bargā, bezsniega ziemā jauni dzinumu gali var apsalt — pavasarī sausos galus vienkārši nogriež. Atceries, ka lielākais drauds bieži ir nevis ziema, bet pavasara salnas, kas brūnus sasaldē jau atvērtos ziedus; pret to palīdz pareiza vieta bez rīta saules, ne piesegums. Riskantākās lielziedu sugas (piem., Sulanža) bargā ziemā un vēlās salnās cieš daudz vairāk — tās ieteicams audzēt tikai siltākajās, labi aizsargātās piekrastes dārzos.",
+  "problems": [
+    "Pavasara salna sabojā ziedus — viena auksta maija nakts atvērtos ziedus var sasaldēt brūnus; pret to nepalīdz piesegums, bet gan vieta bez agrās rīta saules, kur ziedi pēc sala atkūst lēni, un aizvēja stūris.",
+    "Ziedpumpuru apsalšana ziemā vai krūma neziedēšana — visbiežāk dēļ pārāk atklātas, vējainas vietas vai neizturīgas sugas izvēles; stādi izturīgāko (M. stellata, M. × loebneri) aizvējā un esi pacietīgs, jo jaunas magnolijas ziedēt sāk lēni.",
+    "Lapu dzeltēšana (hloroze) — biežs cēlonis ir pārāk kaļķaina, sārmaina augsne; magnolija mīl drīzāk skābu zemi, tāpēc mulčē ar kūdru/skujām un izvairies no kaļķošanas pie krūma."
+  ],
+  "folklore": "Magnolija Latvijas dārzos ir samērā jauns un eksotisks viesis, tāpēc īstu tautas ticējumu tai nav. Tomēr dārznieku vidū tā kļuvusi par sava veida lepnuma un pacietības simbolu: pirmā uzziedējusī magnolija dārzā ir notikums, ko izrāda kaimiņiem un fotografē — mazs apliecinājums, ka arī Latvijas pavasarī var izaudzēt ko tikpat greznu kā siltzemju dārzos.",
+  "faq": [
+    {
+      "q": "Kura magnolija Latvijā pārziemo vislabāk?",
+      "a": "Izturīgākās ir zvaigžņu magnolija (Magnolia stellata) un Loebnera magnolija (Magnolia × loebneri) — tās labā, aizvēja vietā ziemo arī mūsu klimatā. Skaistās lielziedu sugas, piemēram, Sulanža magnolija, ir krietni riskantākas un drošas tikai siltākajos, labi aizsargātos dārzos. Sāc ar izturīgāko sugu, īpaši pirmajā magnolijā."
+    },
+    {
+      "q": "Kāpēc magnolijas ziedi katru gadu kļūst brūni?",
+      "a": "Gandrīz vienmēr vainīgas pavasara salnas: magnolija zied agri maijā, un viena auksta nakts sasaldē jau atvērtos ziedus. Labākā aizsardzība nav piesegums, bet vieta — stādi to aizvēja stūrī, kur agrā rītā ziedus neapspīd tiešā austrumu saule, lai pēc sala tie atkūstu lēni."
+    },
+    {
+      "q": "Vai magnoliju var pārstādīt citā vietā?",
+      "a": "Labāk ne. Magnolijai ir mīkstas, gaļīgas, seklas saknes, un pārstādīšanu tā cieš ļoti grūti — pēc tās krūms gadiem var nīkuļot vai neziedēt. Tāpēc pastāvīgu, saulainu un aizvēja vietu izvēlies uzreiz, jau stādot, un pēc tam to vairs neaiztiec."
+    }
+  ],
+  "related": [
+    "budlejas",
+    "rozes",
+    "peonijas",
+    "lavanda"
+  ]
+}

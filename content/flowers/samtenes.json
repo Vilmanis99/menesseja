@@ -1,0 +1,62 @@
+{
+  "slug": "samtenes",
+  "name": "Samtenes",
+  "latin": "Tagetes",
+  "emoji": "🌼",
+  "type": "viengadiga",
+  "tagline": "Saulaina dārza klasika, kas zied bez apstājas un sargā dārzeņus no kaitēkļiem.",
+  "bloom": "Jūnijs–oktobris (līdz salnai)",
+  "height": "20–80 cm (atkarībā no šķirnes)",
+  "sun": "Saule",
+  "hardy": false,
+  "difficulty": "viegli",
+  "plantWhen": "Sēj telpās dēstiem martā–aprīlī vai tieši laukā maijā; stādus ārā tikai pēc salnām",
+  "moonPhase": "augošs",
+  "moonElement": "ziedi",
+  "moonText": "Samtene ir ziedu augs, tāpēc sēšanu un kopšanu tradicionāli saista ar ziedu jeb gaisa dienām (Mēness Dvīņos, Svaros, Ūdensvīrā). Sēklas, no kurām gaida kuplus ziedus, biodinamiskā tradīcija iesaka sēt augošā Mēness laikā. Tomēr daudz svarīgāks par konkrēto dienu ir tas, lai dēstus ārā nestādītu pirms salnām, jo samtene ir jutīga pret salu.",
+  "intro": [
+    "Samtenes (tautā arī \"saulactiņas\" vai \"buntiņas\") ir viena no tām puķēm, ko Latvijā audzē teju katrā dārzā — gar dobju malām, puķu kastēs uz palodzes vai tieši starp dārzeņiem. Tās ir izcili viegli audzējamas un zied nenogurstoši no jūnija līdz pat pirmajai rudens salnai, tāpēc tās ir lieliska izvēle gan iesācējam, gan bērnu dārziņam. Krāsas iet no spilgti dzeltenas un oranžas līdz tumši sarkanbrūnai, un ziedu netrūkst visu vasaru.",
+    "Bet samtene nav tikai skaista — tā ir arī viens no labākajiem dārza kompanjonaugiem. Tās raksturīgā smarža atbaida nematodes augsnē un daļēji arī laputis, tāpēc daudzi dārznieki sēj samtenes apzināti starp tomātiem, kāpostiem un citiem dārzeņiem, lai tās pasargātu. Tā ir viengadīga puķe — vienā sezonā uzaug no sēklas, izzied un rudenī aiziet bojā salnā, taču sēklas viegli savākt nākamgadam, tāpēc to var audzēt gadu no gada gandrīz bez maksas."
+  ],
+  "planting": [
+    "Sēj telpās dēstiem martā vai aprīlī siltā, gaišā vietā; sēklas uzdīgst ātri, jau pēc dažām dienām, un dēsti aug strauji.",
+    "Vari sēt arī tieši laukā maijā, kad augsne sasilusi un salnu draudi garām — tad tās ziedēs nedaudz vēlāk, bet izaugs tāpat labi.",
+    "Izvēlies saulainu vietu — samtene mīl sauli un tur zied viskuplāk; pusēnā tā aug, bet ziedu ir mazāk.",
+    "Augsne var būt teju jebkura, arī ne pārāk barīga; pārāk treknā, ar slāpekli bagātā zemē samtene dod daudz lapu, bet mazāk ziedu.",
+    "Dēstus ārā stādi tikai pēc salnām (parasti pēc maija vidus–beigām), jo samtene ir jutīga pret salu un pat viegls salnas pieskāriens to bojā.",
+    "Starp augiem atstāj 15–30 cm atkarībā no šķirnes augstuma; ja sēj starp dārzeņiem kā kompanjonaugu, izkliedē tās gar tomātu vai kāpostu rindām."
+  ],
+  "care": [
+    "Laisti mēreni — samtene panes īslaicīgu sausumu labāk nekā pastāvīgu mitrumu; pārāk slapjā zemē saknes var sākt pūt.",
+    "Regulāri noņem nokaltušos ziedus — tas ir vienkāršākais veids, kā pagarināt ziedēšanu, jo augs tad neveltī spēku sēklām un dzen jaunus ziedus.",
+    "Mēslojums parasti nav vajadzīgs; ja augsne pavisam nabadzīga, sezonas vidū var dot vieglu vispārēju mēslojumu, bet ar slāpekli neaizraujies.",
+    "Augstākajām šķirnēm vējainā vietā var noderēt neliels atbalsts, taču zemās, kompaktās samtenes parasti stāv pašas.",
+    "Sezonas beigās, kad ziedi atziedējuši, vari savākt nokaltušo ziedu galviņas un izlobīt sēklas nākamgadam — tās viegli uzglabāt sausā, vēsā vietā."
+  ],
+  "winter": "Samtene ir viengadīga puķe un Latvijā ziemu nepārdzīvo — pirmā salna to nokauj, tāpēc pārziemošana nav nepieciešama. Sezonas beigās augus vienkārši izrauj un kompostē. Ja gribi tās audzēt arī nākamgad, pirms tam savāc nokaltušo ziedu sēklas un uzglabā tās sausā, vēsā vietā līdz pavasarim, kad atkal sēsi.",
+  "problems": [
+    "Saknes puve mitrā, smagā augsnē — ja zeme pastāvīgi slapja, saknes sāk pūt un augs nokalst; palīdz saulaina vieta, mērena laistīšana un laba augsnes ūdens caurlaidība.",
+    "Laputis uz dzinumiem — lai gan pati samtene laputis daļēji atbaida, tā arī pati reizēm tiek apsēsta; sākumā pietiek noskalot ar ūdens strūklu vai ziepjūdeni.",
+    "Maz ziedu, daudz lapu — visbiežāk cēlonis ir pārāk barīga, ar slāpekli bagāta augsne vai par ēnaina vieta; pārvieto saulē un neaizraujies ar mēslošanu."
+  ],
+  "folklore": "Samtenes Latvijas dārzos pazīstamas ar vairākiem tautas nosaukumiem — \"saulactiņas\" un \"buntiņas\" —, un tās jau sen audzē ne tikai skaistuma, bet arī praktiska labuma dēļ. Vecie dārznieki tās stādīja starp dārzeņiem, ievērojot, ka pie samtenēm mazāk uzbrūk kaitēkļu, un šī gudrība šodien ir apstiprināta: samtenes smarža tiešām attur augsnes nematodes. Ziedu augus pēc biodinamiskās tradīcijas saista ar ziedu jeb gaisa dienām, taču to der uztvert kā jauku dārza ritmu, ne ražas garantiju.",
+  "faq": [
+    {
+      "q": "Vai samtenes tiešām aizsargā dārzeņus no kaitēkļiem?",
+      "a": "Daļēji jā. Samtenes saknes izdala vielas, kas attur augsnes nematodes, un to smarža mazina laputu un dažu citu kaitēkļu interesi. Tieši tāpēc tās bieži sēj starp tomātiem, kāpostiem un citiem dārzeņiem kā kompanjonaugus. Tā nav burvju aizsardzība, bet patiešām noderīgs dabisks paņēmiens, kas neko nemaksā un dārzu padara arī skaistāku."
+    },
+    {
+      "q": "Kad sēt samtenes?",
+      "a": "Dēstiem telpās sēj martā vai aprīlī, lai pavasarī jau būtu spēcīgi dēsti. Tieši laukā var sēt maijā, kad augsne sasilusi. Galvenais — dēstus ārā stādi vai laukā sētos augus neatstāj nepasargātus, kamēr nav garām salnu draudi, jo samtene ir jutīga pret salu."
+    },
+    {
+      "q": "Kā panākt, lai samtenes zied ilgāk?",
+      "a": "Regulāri noņem nokaltušos ziedus — tas ir vienkāršākais paņēmiens. Kad augs neveltī spēku sēklu nogatavināšanai, tas dzen arvien jaunus ziedus un var ziedēt no jūnija līdz pat pirmajai salnai. Turklāt audzē tās saulē un neaizraujies ar slāpekļa mēslojumu, kas dod lapas, bet ne ziedus."
+    }
+  ],
+  "related": [
+    "saulespukes",
+    "atraitnites",
+    "verbena"
+  ]
+}

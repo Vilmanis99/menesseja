@@ -113,6 +113,12 @@ export const CROPS: Crop[] = [
   { id: "lavanda", name: "Lavanda", category: "pukes", difficulty: 3, daysToHarvest: "Daudzgadīga", sun: "Saule", sowIndoors: [2, 3], transplant: [5, 6], harvest: [7, 8], note: "Tikai šaurlapu lavanda ziemo Latvijā — saulē, sausā augsnē, ar segumu." },
   { id: "astilbes", name: "Astilbes", category: "pukes", difficulty: 1, daysToHarvest: "Daudzgadīga", sun: "Pussēna", transplant: [4, 5], harvest: [6, 8], note: "Pussēnai un mitrākai vietai — nekad neļauj izžūt." },
   { id: "atraitnites", name: "Atraitnītes", category: "pukes", difficulty: 1, daysToHarvest: "Zied no agra pavasara", sun: "Saule / pussēna", sowIndoors: [2, 3], transplant: [4, 5], harvest: [4, 10], note: "Pacieš pavasara salnas — var stādīt agri. Balkona klasika." },
+  { id: "hortenzijas", name: "Hortenzijas", category: "pukes", difficulty: 2, daysToHarvest: "Daudzgadīga", sun: "Saule / pussēna", transplant: [5, 6], harvest: [7, 9], note: "Skarainā un koka hortenzija ziemcietīgas; liellapu var apsalt pumpurus. Mīl mitru, skābāku augsni." },
+  { id: "klematis", name: "Klematis", category: "pukes", difficulty: 2, daysToHarvest: "Daudzgadīga", sun: "Saule", transplant: [5, 6], harvest: [6, 9], note: "Vītenis ar atbalstu: «galva saulē, kājas ēnā». Potcelmu iedziļina ~8–10 cm." },
+  { id: "krizantemas", name: "Krizantēmas", category: "pukes", difficulty: 2, daysToHarvest: "Zied rudenī", sun: "Saule", transplant: [5, 6], harvest: [9, 10], note: "Rudens un kapu puķe. Dārza šķirnes ziemo ar segumu; podu krizantēmas parasti nē." },
+  { id: "asteres", name: "Asteres", category: "pukes", difficulty: 1, daysToHarvest: "Zied rudenī", sun: "Saule", sowIndoors: [3, 4], transplant: [5, 6], harvest: [8, 10], note: "Viengadīgās sēj no sēklām; maina vietu katru gadu (fuzarioze)." },
+  { id: "magnolijas", name: "Magnolijas", category: "pukes", difficulty: 3, daysToHarvest: "Daudzgadīga", sun: "Saule", transplant: [4, 5], harvest: [5, 5], note: "Izturīgākās — zvaigžņu un Loebnera magnolija. Aizsargātā vietā bez rīta saules pumpuriem." },
+  { id: "neaizmirstules", name: "Neaizmirstulītes", category: "pukes", difficulty: 1, daysToHarvest: "Zied pavasarī", sun: "Saule / pussēna", sowOutdoors: [6, 7], harvest: [5, 6], note: "Divgadīga — sēj vasarā, zied nākampavasar. Pašizsējas un atgriežas." },
 ];
 
 export const MONTHS_LV = [

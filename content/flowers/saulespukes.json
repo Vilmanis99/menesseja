@@ -1,0 +1,62 @@
+{
+  "slug": "saulespukes",
+  "name": "Saulespuķes",
+  "latin": "Helianthus annuus",
+  "emoji": "🌻",
+  "type": "viengadiga",
+  "tagline": "Bērnu mīlule, kas no sēkliņas dažos mēnešos izaug par tev pāri augošu saules torni.",
+  "bloom": "Augusts–septembris",
+  "height": "1–3 m (atkarībā no šķirnes)",
+  "sun": "Saule",
+  "hardy": false,
+  "difficulty": "viegli",
+  "plantWhen": "Sēj tieši laukā maijā–jūnijā pēc salnām (var arī telpās podiņos nedaudz agrāk)",
+  "moonPhase": "augošs",
+  "moonElement": "ziedi",
+  "moonText": "Saulespuķe ir ziedu augs, tāpēc tās kopšanu un ziedu vērošanu tradicionāli saista ar ziedu jeb gaisa dienām (Mēness Dvīņos, Svaros, Ūdensvīrā). Sēklas iesējai parasti liek augošā Mēness laikā, kad uzskata, ka dīgšanas spēks ceļas uz augšu. Tomēr saulespuķe ir tik pateicīga un ātraudzīga, ka dīgst un zied gandrīz jebkurā laikā — daudz svarīgāk ir nogaidīt, līdz pāriet salnas, un izvēlēties pašu saulaināko vietu.",
+  "intro": [
+    "Saulespuķe ir viens no tiem augiem, ar ko vislabāk sākt dārza prieku — īpaši bērniem. No vienas lielas sēkliņas, ko viegli noturēt rokā un iebāzt zemē, dažos mēnešos izaug augs, kas bieži pāraug pašu sējēju un pa vasaru aizpeld augstu pār dobi. Tā ir ātraudzīga, pateicīga un piedod kļūdas, tāpēc reti kuram saulespuķe neizdodas. Augusta beigās un septembrī tā atver lielo, spilgti dzelteno ziedu, kas dienas gaitā pagriežas pretī saulei, un dārzs uzreiz kļūst saulaināks.",
+    "Saulespuķe ir viengadīga — tā nepārziemo, bet vienā sezonā paspēj izaugt, uzziedēt un nogatavināt sēklas, pēc kā augs nokalst. Tas nozīmē, ka katru pavasari to sēj no jauna, taču sēklas savākt ir vienkārši, tāpēc no viena auga var iegūt sēju nākamajam gadam. Pašā vienkāršākajā variantā sēkliņu liek tieši laukā tur, kur tā augs visu vasaru, jo pārstādīšanu saulespuķe necieš labi — tās garā sakne nemīl, ka to traucē. Galvenais, kas tai vajadzīgs, ir daudz saules un, augstajām šķirnēm, atbalsts pret vēju."
+  ],
+  "planting": [
+    "Sēj tieši laukā maijā vai jūnijā, kad augsne sasilusi un salnu vairs nedraud — saulespuķe ir jutīga pret salu, tāpēc nesteidzies sēt pārāk agri.",
+    "Ja gribi agrāku ziedēšanu, sēklas var iesēt telpās podiņos pāris nedēļas pirms tam, bet stādi pārvieto saudzīgi ar visu zemes kamolu, jo garo sakni traucēt nedrīkst.",
+    "Izvēlies dārza saulaināko vietu — saulespuķei vajag pilnu sauli visas dienas garumā, citādi tā izstiepjas un zied vāji.",
+    "Sēklas liec 2–3 cm dziļumā, pa vienai vai pa vairākām ligzdā; starp augstajām šķirnēm atstāj 40–60 cm, lai katram pietiek vietas un gaismas.",
+    "Vējainā vietā jau sējot padomā par atbalstu — augstās šķirnes ar smago ziedu galvu vējā viegli nolūst vai noliecas, tāpēc tām blakus noder miets vai siena."
+  ],
+  "care": [
+    "Laisti regulāri, īpaši karstā un sausā laikā — saulespuķe ir liela un izaug ātri, tāpēc tai vajag daudz ūdens; vislabāk lej pie saknes, ne pa lapām.",
+    "Augstajām šķirnēm laikus piesien stublāju pie mieta, kad augs paaugstinās, lai vējš smago ziedu galvu nenolauž; vējainā vietā tas ir gandrīz obligāti.",
+    "Mēslo mēreni ar komposta kārtu vai universālu mēslojumu augšanas laikā; pārāk daudz slāpekļa dod kuplas lapas, bet vēlāku un mazāku ziedu.",
+    "Apkārt augam izrun nezāles un vari mulčēt ar zāles pļāvumu, lai augsne ilgāk paliek mitra un nezāles mazāk traucē.",
+    "Kad zieds atvēries, ļauj tam pagriezties pretī saulei un priecē — nogriezt ziedus vāzei var droši, jo augs vienalga zied no augšas uz leju pa vienam.",
+    "Ja audzē sēklām, atstāj lielāko ziedu galvu nogatavoties pie auga un seko, lai putni sēklas neizknābā pirms laika — vajadzības gadījumā pārklāj ar marli."
+  ],
+  "winter": "Saulespuķe ir viengadīga un Latvijā nepārziemo — pirmā rudens salna augu nogalina, un tas pats no sevis nokalst. Sezonas beigās nokaltušo augu izvāc no dobes un kompostē. Nogatavojušās ziedu galvas var atstāt dārzā putniem — sēklas labprāt knābj zīlītes un citi putni — vai arī sēklas novākt: daļu atstāt sējai nākampavasar, bet pārējās izžāvēt un grauzdēt. Pavasarī sēj no jauna.",
+  "problems": [
+    "Salna nogalina jaunos dīgstus — saulespuķe nepanes pat vieglu salu, tāpēc nesēj pārāk agri; ja sējai prognozē vēlu salnu, jaunos augus uz nakti apsedz.",
+    "Augs vējā nolūzt vai noliecas — augstajām šķirnēm smagā ziedu galva kļūst par bura; iestādi vējaizvēja vietā un laikus piesien pie stingra mieta.",
+    "Putni un gliemeži apēd sēklas un jaunos dīgstus — jaunos augus pasargā ar pārsegu vai apkakli, bet nogatavojušās ziedu galvas, ja gribi sēklas sev, pārsedz ar marli."
+  ],
+  "folklore": "Saulespuķe ar savu lielo, dzelteno, saulei pretī pagriezto ziedu jau pašā vārdā nes saules tēlu, un dārzā tā nereti ir tā puķe, ko bērnam ļauj iestādīt un izaudzēt pašam — no rokā noturamas sēkliņas līdz augam, kas pāraug pieaugušo. Ziedu augus pēc biodinamiskās tradīcijas saista ar ziedu jeb gaisa dienām, taču to labāk uztvert kā jauku dārza ritmu, ne ražas garantiju.",
+  "faq": [
+    {
+      "q": "Kad sēt saulespuķes?",
+      "a": "Tieši laukā sēj maijā vai jūnijā, kad augsne sasilusi un salnas vairs nedraud — saulespuķe ir jutīga pret salu. Ja gribi agrāku ziedēšanu, dažas nedēļas agrāk var iesēt podiņos telpās, bet stādu pārvietojot, garo sakni traucē pēc iespējas mazāk."
+    },
+    {
+      "q": "Vai saulespuķe pārziemo?",
+      "a": "Nē. Saulespuķe ir viengadīga — vienā sezonā tā izaug, uzzied, nogatavina sēklas un pēc tam nokalst, tāpēc katru pavasari to sēj no jauna. Sezonas beigās augu izvāc un kompostē, bet sēklas vari atstāt putniem vai novākt sējai un grauzdēšanai."
+    },
+    {
+      "q": "Kāpēc saulespuķe noliecas vai nolūzt?",
+      "a": "Augstajām šķirnēm ziedu galva ir smaga, un vējā stublājs viegli noliecas vai nolūzt. Iestādi saulespuķi vējaizvēja vietā un, kad augs paaugstinās, piesien to pie stingra mieta — vislabāk to izdarīt laikus, vēl pirms zieda atvēršanās."
+    }
+  ],
+  "related": [
+    "samtenes",
+    "rudbekijas",
+    "dalijas"
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "slug": "klematis",
+  "name": "Klematis (mežvītenis)",
+  "latin": "Clematis",
+  "emoji": "🌸",
+  "type": "krums",
+  "tagline": "Kāpjošs vītenis, kas vasarā pārklāj žogu un kārtis ar lieliem, košiem ziediem.",
+  "bloom": "Jūnijs–septembris",
+  "height": "2–4 m (kāpjošs vītenis, vajag atbalstu)",
+  "sun": "Saule",
+  "hardy": true,
+  "difficulty": "vidēji",
+  "plantWhen": "Pavasarī vai rudenī; potcelma vietu iedziļina ~8–10 cm zem augsnes",
+  "moonPhase": "augošs",
+  "moonElement": "ziedi",
+  "moonText": "Klematis ir ziedu augs, tāpēc kopšanu un ziedu vērošanu tradicionāli saista ar ziedu jeb gaisa dienām (Mēness Dvīņos, Svaros, Ūdensvīrā). Stādīšanu un dzinumu augšanu mēdz saistīt ar augošo Mēnesi, kad sula ceļas uz augšu — taču daudz svarīgāks par konkrēto dienu ir tas, lai potcelma vietu iedziļina pareizi, sakņu zonu nosedz ēnā un izvēlas pareizo apgriešanas grupu.",
+  "intro": [
+    "Klematis jeb mežvītenis ir viens no skaistākajiem dārza vīteņiem — kāpjošs augs, kas pareizā vietā vienā vasarā var pārklāt žogu, kārti vai režģi ar desmitiem lielu, košu ziedu. Tas neaug pats no sevis taisni augšup, tāpēc tam vienmēr vajag atbalstu: režģi, žogu, arku vai kārti, ap ko dzinumi var apvīties. Atkarībā no šķirnes klematis izaug 2–4 m augsts un, reiz labi iesakņojies, priecē ar ziediem ik vasaru no jūnija līdz pat septembrim.",
+    "Galvenais noslēpums, kā klematim labi klāties, ir vecs dārznieku princips: \"galva saulē, kājas ēnā\". Tas nozīmē, ka ziediem un dzinumiem vajag sauli, bet sakņu zonai — ēnu. Sakņu apkaimi vajag nomulčēt vai apstādīt ar zemiem augiem, lai zeme nepārkarst un saglabā mitrumu; ja saknes vasarā izkalst un sakarst, augs cieš. Otrs svarīgais solis ir stādot iedziļināt potcelma vietu — par to vairāk zemāk. Ja šīs divas lietas izdara pareizi, klematis Latvijā ir pateicīgs un izturīgs augs."
+  ],
+  "planting": [
+    "Stādīt var gan pavasarī, gan rudenī; konteinerā audzētu stādu ar veselu sakņu kamolu var pārstādīt teju visu sezonu, bet pavasaris un rudens ir drošākie.",
+    "Izvēlies vietu, kur ziediem pietiek saules, bet sakņu zona ir ēnaina vai to var nomulčēt — atceries principu \"galva saulē, kājas ēnā\".",
+    "Stādot iedziļini potcelma jeb stādīšanas vietu ~8–10 cm zem augsnes virsmas; tas pasargā augu no vītes slimības un veicina vairāk jaunu dzinumu no zemes.",
+    "Izrok plašu bedri, ielej tajā labi sadalījušos kompostu vai trūdu un samaisi ar zemi — klematis mīl barojošu, mitru, bet labi drenētu augsni.",
+    "Uzreiz pie auga novieto atbalstu — režģi, kārti vai piesien pie žoga, lai dzinumi būtu, ap ko apvīties, jo pats par sevi klematis taisni augšup neaug.",
+    "Pēc stādīšanas pamatīgi aplej un nomulčē sakņu zonu vai apstādi ar zemiem augiem, lai zeme vasarā nepārkarst un saglabā mitrumu."
+  ],
+  "care": [
+    "Laisti regulāri un dziļi, īpaši sausās vasarās un pirmajā gadā pēc stādīšanas — klematim patīk vienmērīgi mitra augsne, taču ne pārmitra, stāvoša ūdens nedrīkst būt.",
+    "Tur sakņu zonu vēsu un ēnainu: mulčē ar trūdu vai kompostu un apstādi pamatni ar zemiem augiem, lai saknes vasarā nepārkarst.",
+    "Mēslo pavasarī un ziedēšanas sākumā ar komposta kārtu vai puķēm domātu mēslojumu; par daudz slāpekļa dod kuplas lapas, bet maz ziedu.",
+    "Dzinumus virzi un piesien pie atbalsta, kamēr tie jauni un lokani, lai augs pārklāj režģi vienmērīgi un dzinumi nesalūst vējā.",
+    "Apgriešana atkarīga no šķirnes grupas — to skaidro nākamajā punktā un sadaļā par ziemošanu; pareiza apgriešana ir galvenais, lai klematis bagātīgi ziedētu.",
+    "Apgriešanas grupas vienkārši: 1. grupa zied agri uz pērnā gada dzinumiem — to neapgriež vispār vai tikai viegli pēc ziedēšanas; 2. grupa zied uz pērnā un tekošā gada dzinumiem — to apgriež viegli, izretinot un saīsinot; 3. grupa zied vasarā uz tekošā gada dzinumiem — to pavasarī apgriež zemu (līdz ~30 cm)."
+  ],
+  "winter": "Klematis Latvijā ir ziemcietīgs un pārziemo atklātā laukā. Jo svarīgi ir pareizi iedziļināta potcelma vieta (~8–10 cm), jo tā pasargā auga pamatni ziemā un ļauj dzinumiem ataugt no zemes, ja virszemes daļa apsalst. Jaunus, pirmajā ziemā stādītus augus un jutīgākās lielziedu šķirnes var papildus apmulčēt ar trūdu, lapām vai kūdru, ko pavasarī izlīdzina. Ziemā apgriešanu pielāgo grupai: 3. grupas šķirnes, kas zied uz tekošā gada dzinumiem, pavasarī apgriež zemu, bet 1. grupas šķirnes, kas zied uz pērnā gada dzinumiem, neapgriež, citādi var palikt bez ziediem.",
+  "problems": [
+    "Vītes slimība (klematis pēkšņi novīst) — viens vai vairāki dzinumi strauji nokalst, biežāk lielziedu šķirnēm; palīdz dziļa potcelma stādīšana (~8–10 cm), jo no zemes var ataugt jauni dzinumi, slimo dzinumu nogriešana līdz veselai vietai un laba gaisa kustība.",
+    "Maz ziedu vai zied vāji — visbiežāk vainīga nepareiza apgriešana (apgriezta nepareizajā laikā šķirnes grupai), pārāk ēnaina vieta ziediem, sakarsušas saknes vai par daudz slāpekļa mēslojuma; pārbaudi grupu un sakņu zonas ēnu.",
+    "Sausas, sakarsušas saknes — ja sakņu zona ir saulē un izkalst, augs vīst un slikti zied; mulčē pamatni un apstādi ar zemiem augiem, lai zeme paliek vēsa un mitra."
+  ],
+  "folklore": "",
+  "faq": [
+    {
+      "q": "Cik dziļi jāstāda klematis?",
+      "a": "Klematim potcelma jeb stādīšanas vieta jāiedziļina dziļāk nekā citiem augiem — apmēram 8–10 cm zem augsnes virsmas. Tas pasargā augu no vītes slimības un veicina vairāk jaunu dzinumu no zemes, tāpēc, ja virszemes daļa apsalst vai novīst, augs var ataugt no apaktinēm zem zemes."
+    },
+    {
+      "q": "Kā pareizi apgriezt klematis?",
+      "a": "Tas atkarīgs no šķirnes apgriešanas grupas. 1. grupa zied agri uz pērnā gada dzinumiem — to neapgriež vispār vai tikai viegli pēc ziedēšanas. 2. grupa zied uz pērnā un tekošā gada dzinumiem — to apgriež viegli, izretinot un saīsinot. 3. grupa zied vasarā uz tekošā gada dzinumiem — to pavasarī apgriež zemu, līdz aptuveni 30 cm. Ja nezini grupu, pirmajos gados vēro, kad augs zied, un tad izvēlies pieeju."
+    },
+    {
+      "q": "Kāpēc klematim vajag ēnu pie saknēm?",
+      "a": "Klematim patīk princips \"galva saulē, kājas ēnā\": ziediem un dzinumiem vajag sauli, bet sakņu zonai — vēsu, ēnainu un mitru augsni. Ja saknes vasarā sakarst un izkalst, augs vīst un slikti zied. Tāpēc sakņu pamatni mulčē vai apstādi ar zemiem augiem, lai zeme nepārkarst."
+    }
+  ],
+  "related": [
+    "rozes",
+    "hortenzijas",
+    "budlejas"
+  ]
+}
