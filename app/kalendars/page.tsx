@@ -9,7 +9,7 @@ import { Icon } from "@/components/ui/icon";
 import { MoonPhase } from "@/components/moon-phase";
 import { moonForDate } from "@/lib/moon";
 import { sowingDay, ELEMENT_META, moonAscending, isRestDay, type Element, type PlantPart } from "@/lib/biodynamic";
-import { CROPS, MONTHS_LV_FULL, ACTIVITY_META } from "@/lib/planting-crops";
+import { CROPS, MONTHS_LV_FULL, MONTHS_LV_GENITIVE, ACTIVITY_META } from "@/lib/planting-crops";
 import { cropPart } from "@/lib/crop-part";
 import { cropEmoji } from "@/lib/crop-visual";
 import { useMounted } from "@/lib/use-mounted";
@@ -102,7 +102,7 @@ export default function KalendarsPage() {
             className="inline-flex shrink-0 items-center gap-1.5 rounded-full border border-outline-variant/30 bg-surface-container px-4 py-1.5 text-label-md text-on-surface transition-colors hover:border-primary/40 hover:text-primary"
           >
             <Icon name="print" size="18px" />
-            Drukājams {MONTHS_LV_FULL[month]} kalendārs
+            Drukājams {MONTHS_LV_GENITIVE[month]} kalendārs
           </Link>
         )}
       </div>

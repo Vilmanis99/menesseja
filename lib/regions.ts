@@ -10,6 +10,8 @@ export type ClimateType = "jura" | "kontinentals" | "augstiene";
 export interface Region {
   id: RegionId;
   name: string;
+  /** Locative form ("Kurzemē") for "kalendārs {x}", "sēt {x}" phrasing */
+  nameLocative: string;
   climate: ClimateType;
   climateLabel: string;
   /** Average last spring frost — display string */
@@ -35,6 +37,7 @@ export const REGIONS: Region[] = [
   {
     id: "kurzeme",
     name: "Kurzeme",
+    nameLocative: "Kurzemē",
     climate: "jura",
     climateLabel: "Mērens jūras klimats",
     lastFrost: "5. maijs",
@@ -52,6 +55,7 @@ export const REGIONS: Region[] = [
   {
     id: "vidzeme",
     name: "Vidzeme",
+    nameLocative: "Vidzemē",
     climate: "augstiene",
     climateLabel: "Augstienes klimats",
     lastFrost: "28. maijs",
@@ -69,6 +73,7 @@ export const REGIONS: Region[] = [
   {
     id: "zemgale",
     name: "Zemgale",
+    nameLocative: "Zemgalē",
     climate: "kontinentals",
     climateLabel: "Kontinentāls klimats",
     lastFrost: "15. maijs",
@@ -86,6 +91,7 @@ export const REGIONS: Region[] = [
   {
     id: "latgale",
     name: "Latgale",
+    nameLocative: "Latgalē",
     climate: "kontinentals",
     climateLabel: "Kontinentāls klimats",
     lastFrost: "20. maijs",
@@ -103,6 +109,7 @@ export const REGIONS: Region[] = [
   {
     id: "pieriga",
     name: "Pierīga",
+    nameLocative: "Pierīgā",
     climate: "jura",
     climateLabel: "Jūras ietekmes klimats",
     lastFrost: "10. maijs",

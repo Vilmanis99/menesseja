@@ -6,7 +6,7 @@ import { Icon } from "@/components/ui/icon";
 import { InfoTip } from "@/components/ui/info-tip";
 import { Card } from "@/components/ui/card";
 import { moonForDate } from "@/lib/moon";
-import { sowingDay, ELEMENT_META, moonAscending, isRestDay } from "@/lib/biodynamic";
+import { sowingDay, ELEMENT_META, PART_GENITIVE, moonAscending, isRestDay } from "@/lib/biodynamic";
 import { useRegion } from "@/components/region-context";
 import { useWeather } from "@/lib/use-weather";
 import { weatherMeta } from "@/lib/weather";
@@ -82,7 +82,7 @@ export function TodayBanner() {
           <div>
             <p className="flex items-center gap-1 text-label-sm uppercase tracking-widest text-tertiary">
               {sow.sign.symbol} {sow.sign.name} · {elem.label} · {sow.partLabel}
-              <InfoTip text={`Mēness šodien ir ${sow.sign.name} zīmē (${elem.label} elements). Tā ir ${sow.partLabel.toLowerCase()} diena — labvēlīga šai auga daļai. Uzzini vairāk sadaļā “Kas ir Mēness sēja?”.`} />
+              <InfoTip text={`Mēness šodien ir ${sow.sign.name} zīmē (${elem.label} elements). Tā ir ${PART_GENITIVE[sow.part].toLowerCase()} diena — labvēlīga šai auga daļai. Uzzini vairāk sadaļā “Kas ir Mēness sēja?”.`} />
             </p>
             <p className="mt-1 text-body-lg font-semibold leading-snug text-on-surface">
               {rest ? "Biodinamikā uzskata par atpūtas dienu (Mēness mezgls) — laba diena vērot un kopt dārzu." : sow.advice}

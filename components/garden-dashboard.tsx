@@ -72,7 +72,7 @@ function AreaCard({ area, plants }: { area: string; plants: Plant[] }) {
         <div>
           <h3 className="text-headline-md text-on-surface">{area}</h3>
           <p className="text-on-surface-variant">
-            {plants.length} {plants.length === 1 ? "augs" : "augi"}
+            {plants.length} {plants.length % 10 === 1 && plants.length % 100 !== 11 ? "augs" : "augi"}
           </p>
         </div>
       </div>

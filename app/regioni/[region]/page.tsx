@@ -22,8 +22,8 @@ export async function generateMetadata({ params }: { params: Promise<{ region: s
   const { region } = await params;
   if (!valid(region)) return {};
   const r = getRegion(region);
-  const title = `Dārza kalendārs ${r.name} — salnas, sējas logi un Mēness ritms`;
-  const description = `Kad sēt un stādīt ${r.name} (${r.climateLabel}): vidējā pēdējā salna ${r.lastFrost}, ${r.growingDays} augšanas dienas. Reģionam pielāgots Mēness sējas kalendārs.`;
+  const title = `Dārza kalendārs ${r.nameLocative} — salnas, sējas logi un Mēness ritms`;
+  const description = `Kad sēt un stādīt ${r.nameLocative} (${r.climateLabel}): vidējā pēdējā salna ${r.lastFrost}, ${r.growingDays} augšanas dienas. Reģionam pielāgots Mēness sējas kalendārs.`;
   return { title, description, alternates: { canonical: canonical(`/regioni/${r.id}`) }, openGraph: { title, description, type: "article" } };
 }
 
@@ -35,7 +35,7 @@ export default async function RegionPage({ params }: { params: Promise<{ region:
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: `Dārza kalendārs ${r.name}`,
+    headline: `Dārza kalendārs ${r.nameLocative}`,
     inLanguage: "lv",
     isPartOf: { "@type": "WebSite", name: SITE_NAME, url: canonical("/") },
     publisher: { "@type": "Organization", name: SITE_NAME, url: canonical("/") },
@@ -52,7 +52,7 @@ export default async function RegionPage({ params }: { params: Promise<{ region:
 
       <header className="mb-lg">
         <p className="text-label-sm uppercase tracking-[0.2em] text-tertiary">{r.climateLabel}</p>
-        <h1 className="text-headline-lg-mobile text-primary md:text-display-lg">Dārza kalendārs {r.name}</h1>
+        <h1 className="text-headline-lg-mobile text-primary md:text-display-lg">Dārza kalendārs {r.nameLocative}</h1>
         <p className="mt-xs max-w-2xl text-body-lg text-on-surface-variant">{r.summary}</p>
       </header>
 
@@ -80,9 +80,9 @@ export default async function RegionPage({ params }: { params: Promise<{ region:
       </Card>
 
       <Card tone="highest" elevated accent="primary" className="mb-md p-md">
-        <h2 className="mb-1 text-headline-md text-on-surface">Sējas padoms {r.name}</h2>
+        <h2 className="mb-1 text-headline-md text-on-surface">Sējas padoms {r.nameLocative}</h2>
         <p className="text-body-md text-on-surface-variant">
-          Siltummīļus (tomāti, gurķi, paprika) {r.name} laukā stādi tikai pēc vidējās pēdējās
+          Siltummīļus (tomāti, gurķi, paprika) {r.nameLocative} laukā stādi tikai pēc vidējās pēdējās
           salnas ({r.lastFrost}) — līdz tam audzē tos siltumnīcā vai uz palodzes. Aukstumizturīgos
           (redīsi, salāti, zirņi, burkāni) vari sēt krietni agrāk.
         </p>

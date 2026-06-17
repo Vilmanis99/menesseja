@@ -1,5 +1,5 @@
 import { CROPS, MONTHS_LV_FULL, type Crop } from "@/lib/planting-crops";
-import { sowingDay } from "@/lib/biodynamic";
+import { sowingDay, PART_GENITIVE } from "@/lib/biodynamic";
 import { cropPart } from "@/lib/crop-part";
 import { soilReadiness } from "@/lib/sowing-thresholds";
 import { nextSowing } from "@/lib/succession";
@@ -126,7 +126,7 @@ export function buildReminders({ plants, region, weather, date = new Date() }: I
       id: "element-day",
       icon: sow.element === "udens" ? "water_drop" : sow.element === "zeme" ? "spa" : "eco",
       tone: "primary",
-      title: `${sow.partLabel} diena — ${canSow ? "sēj" : "stādi"} ${candidate.name.toLowerCase()}`,
+      title: `${PART_GENITIVE[sow.part]} diena — ${canSow ? "sēj" : "stādi"} ${candidate.name.toLowerCase()}`,
       meta: `${sow.sign.symbol} ${sow.sign.name} • ${soilNote}`,
     });
   }

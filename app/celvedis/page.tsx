@@ -16,7 +16,7 @@ import {
   type Category,
 } from "@/lib/planting-crops";
 import { cropPart, PART_ELEMENT } from "@/lib/crop-part";
-import { ELEMENT_META } from "@/lib/biodynamic";
+import { ELEMENT_META, PART_GENITIVE } from "@/lib/biodynamic";
 import { SOIL_TEMP_MIN } from "@/lib/sowing-thresholds";
 import { useMounted } from "@/lib/use-mounted";
 import { DataNote } from "@/components/data-note";
@@ -115,7 +115,7 @@ export default function CelvedisPage() {
               <div className="flex flex-wrap gap-2 pt-1">
                 <span className="inline-flex items-center gap-1 rounded-full bg-surface-variant/50 px-2.5 py-1 text-label-sm">
                   <Icon name={elem.icon} size="14px" className={elem.color} />
-                  {elem.partLabel} diena
+                  {PART_GENITIVE[elem.part]} diena
                 </span>
                 {soil !== undefined && (
                   <span className="inline-flex items-center gap-1 rounded-full bg-surface-variant/50 px-2.5 py-1 text-label-sm text-on-surface-variant">

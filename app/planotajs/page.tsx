@@ -12,7 +12,7 @@ import { cropEmoji } from "@/lib/crop-visual";
 import { companionStatus, companionReason, goodCompanions, badCompanions } from "@/lib/companions";
 import { useMounted } from "@/lib/use-mounted";
 import { moonForDate } from "@/lib/moon";
-import { sowingDay, ELEMENT_META } from "@/lib/biodynamic";
+import { sowingDay, ELEMENT_META, PART_GENITIVE } from "@/lib/biodynamic";
 
 const COLS = 12;
 const ROWS = 8;
@@ -467,7 +467,7 @@ export default function PlanotajsPage() {
                 {moon.sow.sign.symbol} {moon.sow.sign.name} · {elem.label}
               </span>
             </div>
-            <p className="text-headline-md text-on-surface">{moon.sow.partLabel} diena</p>
+            <p className="text-headline-md text-on-surface">{PART_GENITIVE[moon.sow.part]} diena</p>
             <p className="text-body-md italic text-on-surface-variant">{moon.sow.advice}</p>
           </Card>
         </div>

@@ -17,7 +17,7 @@ import {
 } from "@/lib/planting-crops";
 import { cropEmoji } from "@/lib/crop-visual";
 import { cropPart, PART_ELEMENT } from "@/lib/crop-part";
-import { ELEMENT_META } from "@/lib/biodynamic";
+import { ELEMENT_META, PART_GENITIVE } from "@/lib/biodynamic";
 import { SOIL_TEMP_MIN } from "@/lib/sowing-thresholds";
 import { goodCompanions, badCompanions } from "@/lib/companions";
 import { canonical, SITE_NAME, MONTH_SLUGS } from "@/lib/seo";
@@ -261,8 +261,8 @@ export default async function CropPage({ params }: { params: Promise<{ slug: str
           <Icon name={elem.icon} className={elem.color} /> Labākās Mēness dienas
         </h2>
         <p className="text-body-md text-on-surface-variant">
-          {crop.name} ir {elem.partLabel.toLowerCase()} kultūra — sēj un kop to{" "}
-          <strong className="text-on-surface">{elem.partLabel.toLowerCase()} dienās</strong> ({elem.label} elements),
+          {crop.name} ir {PART_GENITIVE[elem.part].toLowerCase()} kultūra — sēj un kop to{" "}
+          <strong className="text-on-surface">{PART_GENITIVE[elem.part].toLowerCase()} dienās</strong> ({elem.label} elements),
           kad Mēness atrodas atbilstošajā zvaigznājā.
         </p>
         <Link href="/kalendars" className="mt-sm inline-flex items-center gap-1 text-label-md text-primary hover:underline">

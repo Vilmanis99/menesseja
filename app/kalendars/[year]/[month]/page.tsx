@@ -7,15 +7,15 @@ import { MoonPhase } from "@/components/moon-phase";
 import { JsonLd } from "@/components/json-ld";
 import { DataNote } from "@/components/data-note";
 import { moonForDate } from "@/lib/moon";
-import { sowingDay, isRestDay, ELEMENT_META, type Element } from "@/lib/biodynamic";
+import { sowingDay, isRestDay, ELEMENT_META, PART_GENITIVE, type Element } from "@/lib/biodynamic";
 import { latviaNoon } from "@/lib/day-anchor";
 import { namedaysForDay } from "@/lib/vardadienas";
 import { PrintButton } from "@/components/print-button";
 import { cropPart } from "@/lib/crop-part";
 import { cropEmoji } from "@/lib/crop-visual";
-import { CROPS, MONTHS_LV_FULL, ACTIVITY_KEYS } from "@/lib/planting-crops";
+import { CROPS, MONTHS_LV_FULL, MONTHS_LV_GENITIVE, ACTIVITY_KEYS } from "@/lib/planting-crops";
 import { REGIONS } from "@/lib/regions";
-import { MONTH_SLUGS, monthFromSlug, CALENDAR_YEARS, MONTH_TIPS, canonical, SITE_NAME } from "@/lib/seo";
+import { MONTH_SLUGS, monthFromSlug, CALENDAR_YEARS, MONTH_TIPS, MONTHS_LV_LOCATIVE, canonical, SITE_NAME } from "@/lib/seo";
 
 export const dynamicParams = false;
 
@@ -40,10 +40,10 @@ export async function generateMetadata({
   const { year, month } = await params;
   const p = parse(year, month);
   if (!p) return {};
-  const name = MONTHS_LV_FULL[p.month - 1];
+  const nameGen = MONTHS_LV_GENITIVE[p.month - 1];
   // Title targets both "dārza darbu kalendārs [mēnesis]" (dominant LV phrase) and "mēness kalendārs".
-  const title = `Dārza darbu un Mēness kalendārs — ${year}. gada ${name}`;
-  const description = `Ko darīt dārzā ${year}. gada ${name}: dārza darbi, ko sēt un stādīt, Mēness fāzes, sēšanas dienas pēc elementiem (saknes, lapas, ziedi, augļi), vārda dienas un nelabvēlīgās dienas.`;
+  const title = `Dārza darbu un Mēness kalendārs — ${year}. gada ${nameGen}`;
+  const description = `Ko darīt dārzā ${year}. gada ${nameGen}: dārza darbi, ko sēt un stādīt, Mēness fāzes, sēšanas dienas pēc elementiem (saknes, lapas, ziedi, augļi), vārda dienas un nelabvēlīgās dienas.`;
   return {
     title,
     description,
@@ -74,7 +74,9 @@ export default async function MonthCalendarPage({
   const p = parse(yStr, mSlug);
   if (!p) notFound();
   const { year, month } = p;
-  const name = MONTHS_LV_FULL[month - 1];
+  const name = MONTHS_LV_FULL[month - 1]; // nominative — for standalone "Mēnesis Gads" stamps
+  const nameGen = MONTHS_LV_GENITIVE[month - 1]; // "...gada jūnija"
+  const nameLoc = MONTHS_LV_LOCATIVE[month - 1]; // "jūnijā" — "in June"
 
   const count = new Date(year, month, 0).getDate();
   const days = Array.from({ length: count }, (_, i) => {
@@ -99,7 +101,7 @@ export default async function MonthCalendarPage({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: `Mēness sējas kalendārs — ${year}. gada ${name}`,
+    headline: `Mēness sējas kalendārs — ${year}. gada ${nameGen}`,
     inLanguage: "lv",
     datePublished: `${year}-${String(month).padStart(2, "0")}-01`,
     isPartOf: { "@type": "WebSite", name: SITE_NAME, url: canonical("/") },
@@ -134,7 +136,7 @@ export default async function MonthCalendarPage({
           Dārza darbu kalendārs — {name} {year}
         </h1>
         <p className="mt-xs max-w-2xl text-body-lg text-on-surface-variant">
-          Ko darīt dārzā {year}. gada {name} saskaņā ar Mēnesi: dārza darbi, ko sēt un stādīt, katras dienas
+          Ko darīt dārzā {year}. gada {nameGen} saskaņā ar Mēnesi: dārza darbi, ko sēt un stādīt, katras dienas
           Mēness fāze, elementu diena, vārda dienas un nelabvēlīgās dienas Latvijas dārzkopjiem.
         </p>
         <div className="mt-sm print:hidden">
@@ -149,7 +151,7 @@ export default async function MonthCalendarPage({
       <Card tone="high" elevated linen className="mb-lg flex items-start gap-sm p-md">
         <Icon name="eco" className="text-primary" />
         <div>
-          <h2 className="mb-1 text-headline-md text-on-surface">Dārza darbi {name}</h2>
+          <h2 className="mb-1 text-headline-md text-on-surface">Dārza darbi {nameLoc}</h2>
           <p className="text-body-md text-on-surface-variant">{MONTH_TIPS[month - 1]}</p>
         </div>
       </Card>
@@ -161,14 +163,14 @@ export default async function MonthCalendarPage({
             <MoonPhase phase={d.moon.phase} size={52} />
             <div>
               <p className="text-label-sm uppercase tracking-wide text-on-surface-variant">{t}</p>
-              <p className="text-headline-md text-on-surface">{d.day}. {name}</p>
+              <p className="text-headline-md text-on-surface">{d.day}. {nameLoc}</p>
             </div>
           </Card>
         ))}
       </div>
 
       {/* What to sow this month, by element */}
-      <h2 className="mb-sm text-headline-md text-on-surface">Ko sēt {name}</h2>
+      <h2 className="mb-sm text-headline-md text-on-surface">Ko sēt {nameLoc}</h2>
       <div className="mb-lg grid grid-cols-1 gap-2 sm:grid-cols-2">
         {elements.map((e) => {
           const meta = ELEMENT_META[e];
@@ -177,7 +179,7 @@ export default async function MonthCalendarPage({
           return (
             <Card key={e} tone="container" className="p-sm">
               <p className="mb-1 flex items-center gap-1.5 text-label-md text-on-surface">
-                <Icon name={meta.icon} size="16px" className={meta.color} /> {meta.partLabel} dienās
+                <Icon name={meta.icon} size="16px" className={meta.color} /> {PART_GENITIVE[meta.part]} dienās
               </p>
               <div className="flex flex-wrap gap-1.5">
                 {crops.map((c) => (

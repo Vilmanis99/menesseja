@@ -5,7 +5,7 @@ import { Card } from "@/components/ui/card";
 import { Icon } from "@/components/ui/icon";
 import { MoonPhase } from "@/components/moon-phase";
 import { JsonLd } from "@/components/json-ld";
-import { ELEMENT_META, type Element } from "@/lib/biodynamic";
+import { ELEMENT_META, PART_GENITIVE, type Element } from "@/lib/biodynamic";
 import { canonical } from "@/lib/seo";
 
 export const metadata: Metadata = {
@@ -46,7 +46,7 @@ function ElementRow({ el, desc }: { el: Element; desc: string }) {
       </div>
       <div>
         <p className="font-semibold text-on-surface">
-          {m.label} → {m.partLabel} diena
+          {m.label} → {PART_GENITIVE[m.part]} diena
         </p>
         <p className="text-body-md text-on-surface-variant">{desc}</p>
       </div>

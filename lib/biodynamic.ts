@@ -165,8 +165,18 @@ export interface SowingDay {
   favours: Category[];
 }
 
+/** Genitive-plural plant-part forms for "{part} diena/dienās/kultūra" phrasing.
+ *  The nominative partLabel ("Ziedi", "Augļi") is ungrammatical before "diena"
+ *  — Latvian needs the genitive ("Ziedu diena", "Augļu diena"). */
+export const PART_GENITIVE: Record<PlantPart, string> = {
+  saknes: "Sakņu",
+  lapas: "Lapu",
+  ziedi: "Ziedu",
+  augli: "Augļu",
+};
+
 const ADVICE: Record<PlantPart, string> = {
-  saknes: "Saknes diena — labākais laiks sakņaugiem (burkāni, bietes, kartupeļi).",
+  saknes: "Sakņu diena — labākais laiks sakņaugiem (burkāni, bietes, kartupeļi).",
   lapas: "Lapu diena — sēj un kopj lapu dārzeņus un garšaugus.",
   ziedi: "Ziedu diena — piemērota ziedaugiem un ogu krūmu kopšanai.",
   augli: "Augļu diena — sēj augļus un sēklas (tomāti, pupas, ķirbji).",

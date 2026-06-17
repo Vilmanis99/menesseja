@@ -131,6 +131,13 @@ export const MONTHS_LV_FULL = [
   "jūlijs", "augusts", "septembris", "oktobris", "novembris", "decembris",
 ];
 
+/** Genitive month forms ("jūnija") for "{year}. gada {month}" and
+ *  "{month} kalendārs" — nominative ("jūnijs") is ungrammatical there. */
+export const MONTHS_LV_GENITIVE = [
+  "janvāra", "februāra", "marta", "aprīļa", "maija", "jūnija",
+  "jūlija", "augusta", "septembra", "oktobra", "novembra", "decembra",
+];
+
 export const DIFFICULTY_LABEL: Record<1 | 2 | 3, string> = {
   1: "Viegli",
   2: "Vidēji",
