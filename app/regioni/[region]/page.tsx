@@ -6,7 +6,7 @@ import { Icon } from "@/components/ui/icon";
 import { JsonLd } from "@/components/json-ld";
 import { DataNote } from "@/components/data-note";
 import { REGIONS, getRegion, type RegionId } from "@/lib/regions";
-import { canonical, SITE_NAME } from "@/lib/seo";
+import { canonical, SITE_NAME, og } from "@/lib/seo";
 
 export const dynamicParams = false;
 
@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: { params: Promise<{ region: s
   const r = getRegion(region);
   const title = `Dārza kalendārs ${r.nameLocative} — salnas, sējas logi un Mēness ritms`;
   const description = `Kad sēt un stādīt ${r.nameLocative} (${r.climateLabel}): vidējā pēdējā salna ${r.lastFrost}, ${r.growingDays} augšanas dienas. Reģionam pielāgots Mēness sējas kalendārs.`;
-  return { title, description, alternates: { canonical: canonical(`/regioni/${r.id}`) }, openGraph: { title, description, type: "article" } };
+  return { title, description, alternates: { canonical: canonical(`/regioni/${r.id}`) }, openGraph: og({ path: `/regioni/${r.id}`, title, description }) };
 }
 
 export default async function RegionPage({ params }: { params: Promise<{ region: string }> }) {
@@ -39,6 +39,7 @@ export default async function RegionPage({ params }: { params: Promise<{ region:
     inLanguage: "lv",
     isPartOf: { "@type": "WebSite", name: SITE_NAME, url: canonical("/") },
     publisher: { "@type": "Organization", name: SITE_NAME, url: canonical("/") },
+    author: { "@type": "Organization", name: SITE_NAME, url: canonical("/") },
   };
 
   return (

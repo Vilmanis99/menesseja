@@ -5,7 +5,7 @@ import { Icon } from "@/components/ui/icon";
 import { JsonLd } from "@/components/json-ld";
 import { DataNote } from "@/components/data-note";
 import { getArticle, getAllArticles, articleSlugs } from "@/lib/articles";
-import { canonical, SITE_NAME } from "@/lib/seo";
+import { canonical, SITE_NAME, og } from "@/lib/seo";
 import { DATA_REVIEWED } from "@/lib/sources";
 
 export const dynamicParams = false;
@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title: a.title,
     description: a.excerpt,
     alternates: { canonical: canonical(`/raksti/${a.slug}`) },
-    openGraph: { title: a.title, description: a.excerpt, type: "article" },
+    openGraph: og({ path: `/raksti/${a.slug}`, title: a.title, description: a.excerpt }),
   };
 }
 
@@ -42,6 +42,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
     dateModified: `${DATA_REVIEWED}-01`,
     isPartOf: { "@type": "WebSite", name: SITE_NAME, url: canonical("/") },
     publisher: { "@type": "Organization", name: SITE_NAME, url: canonical("/") },
+    author: { "@type": "Organization", name: SITE_NAME, url: canonical("/") },
   };
   const breadcrumb = {
     "@context": "https://schema.org",

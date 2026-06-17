@@ -8,7 +8,7 @@ import { DataNote } from "@/components/data-note";
 import { RecipeTodayBadge } from "@/components/recipe-today-badge";
 import { getFlower, getAllFlowers, flowerSlugs, FLOWER_TYPE_META } from "@/lib/flowers";
 import { CROPS } from "@/lib/planting-crops";
-import { canonical, SITE_NAME } from "@/lib/seo";
+import { canonical, SITE_NAME, og } from "@/lib/seo";
 import { DATA_REVIEWED } from "@/lib/sources";
 
 export const dynamicParams = false;
@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title,
     description,
     alternates: { canonical: canonical(`/pukes/${f.slug}`) },
-    openGraph: { title, description, type: "article" },
+    openGraph: og({ path: `/pukes/${f.slug}`, title, description }),
   };
 }
 
@@ -64,6 +64,7 @@ export default async function FlowerPage({ params }: { params: Promise<{ slug: s
     dateModified: `${DATA_REVIEWED}-01`,
     isPartOf: { "@type": "WebSite", name: SITE_NAME, url: canonical("/") },
     publisher: { "@type": "Organization", name: SITE_NAME, url: canonical("/") },
+    author: { "@type": "Organization", name: SITE_NAME, url: canonical("/") },
   };
   const breadcrumb = {
     "@context": "https://schema.org",

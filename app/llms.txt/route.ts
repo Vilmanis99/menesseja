@@ -2,6 +2,8 @@ import { SITE_URL } from "@/lib/seo";
 import { getAllFlowers } from "@/lib/flowers";
 import { getAllProblems } from "@/lib/kaitekli";
 import { getAllRecipes } from "@/lib/recipes";
+import { getAllArticles } from "@/lib/articles";
+import { CROPS } from "@/lib/planting-crops";
 
 /**
  * /llms.txt — the emerging convention for a concise, LLM-friendly map of the site
@@ -14,6 +16,8 @@ export function GET() {
   const u = (p: string) => `${SITE_URL}${p}`;
   const list = (items: { name: string; slug: string; tagline?: string }[], base: string) =>
     items.map((i) => `- [${i.name}](${u(`${base}/${i.slug}`)})${i.tagline ? `: ${i.tagline}` : ""}`).join("\n");
+  const cropList = CROPS.filter((c) => c.category !== "pukes").map((c) => ({ name: c.name, slug: c.id, tagline: c.note }));
+  const articleList = getAllArticles().map((a) => ({ name: a.title, slug: a.slug, tagline: a.excerpt }));
 
   const body = `# Mēness Sēja
 
@@ -30,6 +34,9 @@ export function GET() {
 - [Reģioni](${u("/regioni")}): Latvijas reģionu mikroklimats un salnu laiki
 - [Par mums](${u("/par")}): projekta stāsts un datu avoti
 
+## Augi (dārzeņi, garšaugi, ogas)
+${list(cropList, "/augi")}
+
 ## Puķes
 ${list(getAllFlowers(), "/pukes")}
 
@@ -38,6 +45,9 @@ ${list(getAllProblems(), "/kaitekli")}
 
 ## Dabīgā mēslojuma receptes
 ${list(getAllRecipes(), "/receptes")}
+
+## Raksti un pamācības
+${list(articleList, "/raksti")}
 
 ## Par projektu
 Mēness Sēja digitalizē latviešu senču dārza gudrību — receptes, ticējumus un paražas. Māsu projekts: https://www.globalverticalgardening.net

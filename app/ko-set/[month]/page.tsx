@@ -7,7 +7,7 @@ import { JsonLd } from "@/components/json-ld";
 import { DataNote } from "@/components/data-note";
 import { CROPS, MONTHS_LV_FULL, ACTIVITY_META, type ActivityKey } from "@/lib/planting-crops";
 import { cropEmoji } from "@/lib/crop-visual";
-import { MONTH_SLUGS, monthFromSlug, MONTH_TIPS, MONTHS_LV_LOCATIVE, canonical, SITE_NAME } from "@/lib/seo";
+import { MONTH_SLUGS, monthFromSlug, MONTH_TIPS, MONTHS_LV_LOCATIVE, canonical, SITE_NAME, og } from "@/lib/seo";
 
 export const dynamicParams = false;
 const CAL_YEAR = 2026;
@@ -37,7 +37,7 @@ export async function generateMetadata({ params }: { params: Promise<{ month: st
   const loc = MONTHS_LV_LOCATIVE[m - 1];
   const title = `Ko sēt ${loc} Latvijā — dārza darbi un sēja`;
   const description = `Ko sēt, stādīt un novākt ${loc} Latvijas dārzā: pilns saraksts pa darbiem, sezonas padomi un labākās Mēness dienas.`;
-  return { title, description, alternates: { canonical: canonical(`/ko-set/${month}`) }, openGraph: { title, description, type: "article" } };
+  return { title, description, alternates: { canonical: canonical(`/ko-set/${month}`) }, openGraph: og({ path: `/ko-set/${month}`, title, description }) };
 }
 
 export default async function KoSetPage({ params }: { params: Promise<{ month: string }> }) {
@@ -55,6 +55,7 @@ export default async function KoSetPage({ params }: { params: Promise<{ month: s
     inLanguage: "lv",
     isPartOf: { "@type": "WebSite", name: SITE_NAME, url: canonical("/") },
     publisher: { "@type": "Organization", name: SITE_NAME, url: canonical("/") },
+    author: { "@type": "Organization", name: SITE_NAME, url: canonical("/") },
   };
 
   return (

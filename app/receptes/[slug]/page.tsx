@@ -7,7 +7,7 @@ import { JsonLd } from "@/components/json-ld";
 import { DataNote } from "@/components/data-note";
 import { RecipeTodayBadge } from "@/components/recipe-today-badge";
 import { getRecipe, getAllRecipes, recipeSlugs, PURPOSE_META, type RecipeElement } from "@/lib/recipes";
-import { canonical, SITE_NAME } from "@/lib/seo";
+import { canonical, SITE_NAME, og } from "@/lib/seo";
 
 export const dynamicParams = false;
 
@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title: `${r.name} — kā pagatavot un kad lietot`,
     description: `${r.tagline} Sastāvs, pagatavošana un tradicionāli labākā Mēness fāze ${r.name.toLowerCase()} lietošanai.`,
     alternates: { canonical: canonical(`/receptes/${r.slug}`) },
-    openGraph: { title: r.name, description: r.tagline, type: "article" },
+    openGraph: og({ path: `/receptes/${r.slug}`, title: r.name, description: r.tagline }),
   };
 }
 

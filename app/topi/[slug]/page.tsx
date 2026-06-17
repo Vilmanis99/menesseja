@@ -8,7 +8,7 @@ import { DataNote } from "@/components/data-note";
 import { getTopList, getAllTopLists, topSlugs } from "@/lib/tops";
 import { cropEmoji } from "@/lib/crop-visual";
 import { cropById } from "@/lib/garden";
-import { canonical, SITE_NAME } from "@/lib/seo";
+import { canonical, SITE_NAME, og } from "@/lib/seo";
 
 export const dynamicParams = false;
 
@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title: t.title,
     description: t.subtitle,
     alternates: { canonical: canonical(`/topi/${t.slug}`) },
-    openGraph: { title: t.title, description: t.subtitle, type: "article" },
+    openGraph: og({ path: `/topi/${t.slug}`, title: t.title, description: t.subtitle }),
   };
 }
 

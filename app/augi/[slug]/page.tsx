@@ -20,7 +20,8 @@ import { cropPart, PART_ELEMENT } from "@/lib/crop-part";
 import { ELEMENT_META, PART_GENITIVE } from "@/lib/biodynamic";
 import { SOIL_TEMP_MIN } from "@/lib/sowing-thresholds";
 import { goodCompanions, badCompanions } from "@/lib/companions";
-import { canonical, SITE_NAME, MONTH_SLUGS } from "@/lib/seo";
+import { pestsForCrop } from "@/lib/crop-pests";
+import { canonical, SITE_NAME, MONTH_SLUGS, MONTHS_LV_LOCATIVE, og } from "@/lib/seo";
 import { DATA_REVIEWED } from "@/lib/sources";
 import { getCropContent } from "@/lib/crop-content";
 
@@ -50,7 +51,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title,
     description,
     alternates: { canonical: canonical(`/augi/${crop.id}`) },
-    openGraph: { title, description, type: "article" },
+    openGraph: og({ path: `/augi/${crop.id}`, title, description }),
   };
 }
 
@@ -67,6 +68,7 @@ export default async function CropPage({ params }: { params: Promise<{ slug: str
   const soil = SOIL_TEMP_MIN[crop.id];
   const good = goodCompanions(crop.id);
   const bad = badCompanions(crop.id);
+  const pests = pestsForCrop(crop);
 
   const content = getCropContent(crop.id);
 
@@ -98,12 +100,22 @@ export default async function CropPage({ params }: { params: Promise<{ slug: str
     dateModified: `${DATA_REVIEWED}-01`,
     isPartOf: { "@type": "WebSite", name: SITE_NAME, url: canonical("/") },
     publisher: { "@type": "Organization", name: SITE_NAME, url: canonical("/") },
+    author: { "@type": "Organization", name: SITE_NAME, url: canonical("/") },
   };
 
   // Data-driven FAQ (real answers from the crop data)
   const sowWhen = rangeText(crop.sowOutdoors ?? crop.sowIndoors);
+  const harvestLoc = crop.harvest
+    ? crop.harvest[0] === crop.harvest[1]
+      ? MONTHS_LV_LOCATIVE[crop.harvest[0] - 1]
+      : `${MONTHS_LV_LOCATIVE[crop.harvest[0] - 1]}–${MONTHS_LV_LOCATIVE[crop.harvest[1] - 1]}`
+    : null;
+  const daysClause = crop.daysToHarvest && /\d/.test(crop.daysToHarvest)
+    ? ` No sējas līdz ražai aptuveni ${crop.daysToHarvest.toLowerCase()}.`
+    : "";
   const faq: { q: string; a: string }[] = [
     sowWhen ? { q: `${crop.name} — kad sēt Latvijā?`, a: `Parasti sēj ${sowWhen}. Precīzs laiks atkarīgs no laikapstākļiem un tava reģiona — siltummīļus laukā tikai pēc pēdējās salnas.` } : null,
+    harvestLoc ? { q: `${crop.name} — kad novākt?`, a: `Parasti novāc ${harvestLoc}.${daysClause}` } : null,
     soil ? { q: `${crop.name} — cik siltai jābūt augsnei?`, a: `Sējai augsnei vajadzētu būt vismaz ${soil}°C. Vēsākā augsnē sēklas dīgst lēni vai sapūst.` } : null,
     good.length ? { q: `Ar ko ${crop.name.toLowerCase()} sader dārzā?`, a: `Labi kaimiņi: ${good.map((id) => CROPS.find((c) => c.id === id)?.name).filter(Boolean).join(", ")}.` } : null,
   ].filter((x): x is { q: string; a: string } => x !== null);
@@ -230,6 +242,29 @@ export default async function CropPage({ params }: { params: Promise<{ slug: str
                 )) : <span className="text-label-sm text-on-surface-variant">—</span>}
               </div>
             </div>
+          </Card>
+        </>
+      )}
+
+      {/* Pests & diseases that affect this crop (cross-links the kaitēkļi cluster) */}
+      {pests.length > 0 && (
+        <>
+          <h2 className="mb-sm text-headline-md text-on-surface">Kaitēkļi un slimības, kas skar {crop.name.toLowerCase()}</h2>
+          <Card tone="high" className="mb-md p-md">
+            <div className="flex flex-wrap gap-2">
+              {pests.map((p) => (
+                <Link
+                  key={p.slug}
+                  href={`/kaitekli/${p.slug}`}
+                  className="inline-flex items-center gap-1.5 rounded-full bg-surface-container px-3 py-1.5 text-label-md text-on-surface hover:text-primary"
+                >
+                  <span className="text-base leading-none">{p.emoji}</span> {p.name}
+                </Link>
+              ))}
+            </div>
+            <Link href="/kaitekli" className="mt-sm inline-flex items-center gap-1 text-label-md text-primary hover:underline">
+              Dabīgā apkarošana visiem kaitēkļiem <Icon name="arrow_forward" size="16px" />
+            </Link>
           </Card>
         </>
       )}

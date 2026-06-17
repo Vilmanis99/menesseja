@@ -6,14 +6,14 @@ import { Icon } from "@/components/ui/icon";
 import { JsonLd } from "@/components/json-ld";
 import { getAllTopLists } from "@/lib/tops";
 import { fetchNationalTops, totalPlantings } from "@/lib/supabase/tops";
-import { canonical, SITE_NAME } from "@/lib/seo";
+import { canonical, SITE_NAME, og } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Topi — ko Latvijā audzē visvairāk un labākie augu saraksti",
   description:
     "Ko Latvijas dārznieki šomēnes stāda visvairāk (dzīvi dati no kopienas) un rūpīgi atlasīti TOP saraksti: vieglākie augi iesācējam, ātrākie, balkonam, ēnai, ziemas glabāšanai.",
   alternates: { canonical: canonical("/topi") },
-  openGraph: { title: "Dārza Topi — Mēness Sēja", type: "website" },
+  openGraph: og({ path: "/topi", title: "Dārza Topi — Mēness Sēja", description: "Ko Latvijā audzē visvairāk (dzīvi dati) + rūpīgi atlasīti TOP augu saraksti.", type: "website" }),
 };
 
 export default async function TopiPage() {

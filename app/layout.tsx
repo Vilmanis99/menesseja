@@ -14,6 +14,27 @@ const ORG_JSONLD = {
   logo: `${SITE_URL}/icon.svg`,
   description:
     "Latviešu Mēness sējas un biodinamiskais dārza kalendārs — sēj saskaņā ar Mēnesi, laikapstākļiem un senču gudrību.",
+  // Entity/trust signals — marks this as the Latvia-specific authority for answer engines.
+  areaServed: { "@type": "Country", name: "Latvija" },
+  knowsLanguage: "lv",
+  knowsAbout: [
+    "Mēness sēja",
+    "biodinamiskā dārzkopība",
+    "dārzeņu audzēšana Latvijā",
+    "puķu kopšana",
+    "kaitēkļu un slimību dabīga apkarošana",
+    "Mēness kalendārs",
+  ],
+  sameAs: ["https://www.globalverticalgardening.net"],
+};
+
+const WEBSITE_JSONLD = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Mēness Sēja",
+  url: SITE_URL,
+  inLanguage: "lv",
+  publisher: { "@type": "Organization", name: "Mēness Sēja", url: SITE_URL },
 };
 
 const literata = Literata({
@@ -73,6 +94,7 @@ export default function RootLayout({
       </head>
       <body className="min-h-screen">
         <JsonLd data={ORG_JSONLD} />
+        <JsonLd data={WEBSITE_JSONLD} />
         <AppShell>{children}</AppShell>
         <PwaRegister />
       </body>

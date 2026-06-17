@@ -6,14 +6,14 @@ import { Icon } from "@/components/ui/icon";
 import { JsonLd } from "@/components/json-ld";
 import { DataNote } from "@/components/data-note";
 import { getAllRecipes, PURPOSE_META, PURPOSE_ORDER } from "@/lib/recipes";
-import { canonical, SITE_NAME } from "@/lib/seo";
+import { canonical, SITE_NAME, og } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Dabīgā mēslojuma receptes — nātru virca, pelnu šķīdums un citas",
   description:
     "Tautas receptes dabīgam mēslojumam un augu kopšanai: nātru virca, koku pelnu šķīdums, kosas novārījums un citas. Katrai receptei norādīta arī tradicionāli labākā Mēness fāze tās lietošanai.",
   alternates: { canonical: canonical("/receptes") },
-  openGraph: { title: "Dabīgā mēslojuma receptes — Mēness Sēja", type: "website" },
+  openGraph: og({ path: "/receptes", title: "Dabīgā mēslojuma receptes — Mēness Sēja", description: "Tautas receptes dabīgam mēslojumam un augu kopšanai, ar tradicionāli labāko Mēness fāzi.", type: "website" }),
 };
 
 export default function ReceptesPage() {

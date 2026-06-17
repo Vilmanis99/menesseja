@@ -6,14 +6,14 @@ import { Icon } from "@/components/ui/icon";
 import { JsonLd } from "@/components/json-ld";
 import { DataNote } from "@/components/data-note";
 import { getAllFlowers, FLOWER_TYPE_META, FLOWER_TYPE_ORDER } from "@/lib/flowers";
-import { canonical, SITE_NAME } from "@/lib/seo";
+import { canonical, SITE_NAME, og } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Puķes — kad stādīt un kopt pēc Mēness | peonijas, narcises, pelargonijas",
   description:
     "Latvijas dārza puķes: kad stādīt, kā kopt un labākā Mēness ziedu-diena katrai — peonijas, narcises, begonijas, pelargonijas, ehinācija un citas. Tautas gudrība un reāli dati.",
   alternates: { canonical: canonical("/pukes") },
-  openGraph: { title: "Puķu ceļvedis — Mēness Sēja", type: "website" },
+  openGraph: og({ path: "/pukes", title: "Puķu ceļvedis — Mēness Sēja", description: "Latvijas dārza puķes: kad stādīt, kā kopt un labākā Mēness ziedu diena katrai.", type: "website" }),
 };
 
 export default function PukesPage() {

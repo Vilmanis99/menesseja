@@ -5,14 +5,14 @@ import { Card } from "@/components/ui/card";
 import { Icon } from "@/components/ui/icon";
 import { JsonLd } from "@/components/json-ld";
 import { getAllProblems, PROBLEM_TYPE_META, PROBLEM_TYPE_ORDER, SEVERITY_META } from "@/lib/kaitekli";
-import { canonical, SITE_NAME } from "@/lib/seo";
+import { canonical, SITE_NAME, og } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Dārza kaitēkļi un slimības — dabīga apkarošana | zemesvēzis, laputis, gliemeži",
   description:
     "Kā atpazīt un dabīgi apkarot biežākos Latvijas dārza kaitēkļus un slimības: zemesvēzis, laputis, gliemeži, miltrasa, lakstu puve. Katrai problēmai tautas līdzeklis un mūsu receptes.",
   alternates: { canonical: canonical("/kaitekli") },
-  openGraph: { title: "Kaitēkļi un slimības — Mēness Sēja", type: "website" },
+  openGraph: og({ path: "/kaitekli", title: "Kaitēkļi un slimības — Mēness Sēja", description: "Kā atpazīt un dabīgi apkarot Latvijas dārza kaitēkļus un slimības — tautas līdzekļi un mūsu receptes.", type: "website" }),
 };
 
 export default function KaitekliPage() {

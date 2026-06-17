@@ -42,3 +42,23 @@ export const MONTH_TIPS = [
 export function canonical(path: string): string {
   return `${SITE_URL}${path.startsWith("/") ? path : `/${path}`}`;
 }
+
+/** Complete Open Graph block for a page — own title/description + absolute url +
+ *  the site OG image (otherwise pages that define their own `openGraph` ship a
+ *  null og:image and a generic/duplicate social card). Twitter inherits the image. */
+export function og(opts: {
+  path: string;
+  title: string;
+  description: string;
+  type?: "website" | "article";
+}) {
+  return {
+    title: opts.title,
+    description: opts.description,
+    url: canonical(opts.path),
+    siteName: SITE_NAME,
+    locale: "lv_LV",
+    type: opts.type ?? "article",
+    images: [`${SITE_URL}/opengraph-image`],
+  };
+}

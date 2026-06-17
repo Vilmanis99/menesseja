@@ -6,7 +6,9 @@ import { Icon } from "@/components/ui/icon";
 import { JsonLd } from "@/components/json-ld";
 import { getProblem, getAllProblems, problemSlugs, PROBLEM_TYPE_META, SEVERITY_META } from "@/lib/kaitekli";
 import { getRecipe } from "@/lib/recipes";
-import { canonical, SITE_NAME } from "@/lib/seo";
+import { cropForAffect } from "@/lib/crop-pests";
+import { flowerSlugs } from "@/lib/flowers";
+import { canonical, SITE_NAME, og } from "@/lib/seo";
 import { DATA_REVIEWED } from "@/lib/sources";
 
 export const dynamicParams = false;
@@ -25,7 +27,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title,
     description,
     alternates: { canonical: canonical(`/kaitekli/${p.slug}`) },
-    openGraph: { title, description, type: "article" },
+    openGraph: og({ path: `/kaitekli/${p.slug}`, title, description }),
   };
 }
 
@@ -40,6 +42,7 @@ export default async function ProblemPage({ params }: { params: Promise<{ slug: 
     .map((s) => getRecipe(s))
     .filter((r): r is NonNullable<typeof r> => Boolean(r));
   const siblings = getAllProblems().filter((x) => x.type === p.type && x.slug !== p.slug).slice(0, 5);
+  const flowerSet = new Set(flowerSlugs());
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -50,6 +53,7 @@ export default async function ProblemPage({ params }: { params: Promise<{ slug: 
     dateModified: `${DATA_REVIEWED}-01`,
     isPartOf: { "@type": "WebSite", name: SITE_NAME, url: canonical("/") },
     publisher: { "@type": "Organization", name: SITE_NAME, url: canonical("/") },
+    author: { "@type": "Organization", name: SITE_NAME, url: canonical("/") },
   };
   const breadcrumb = {
     "@context": "https://schema.org",
@@ -109,9 +113,18 @@ export default async function ProblemPage({ params }: { params: Promise<{ slug: 
           ))}
         </ul>
         {p.affects.length > 0 && (
-          <p className="mt-md flex flex-wrap items-center gap-x-2 gap-y-1 text-label-md">
+          <p className="mt-md flex flex-wrap items-center gap-x-1.5 gap-y-1 text-label-md">
             <span className="text-on-surface-variant">Visbiežāk skar:</span>
-            <span className="text-on-surface">{p.affects.join(", ")}</span>
+            {p.affects.map((a, i) => {
+              const crop = cropForAffect(a);
+              const href = crop ? (flowerSet.has(crop.id) ? `/pukes/${crop.id}` : `/augi/${crop.id}`) : null;
+              return (
+                <span key={i} className="text-on-surface">
+                  {href ? <Link href={href} className="text-primary hover:underline">{a}</Link> : a}
+                  {i < p.affects.length - 1 ? "," : ""}
+                </span>
+              );
+            })}
           </p>
         )}
       </Card>
