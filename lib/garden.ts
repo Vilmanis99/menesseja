@@ -70,14 +70,39 @@ export interface PlantStatus {
 }
 
 /**
- * Rough growth status from the crop calendar + how long it's been in the ground.
- * Good enough to drive the dashboard bars without per-crop day counts.
+ * How a crop enters the garden — drives which lifecycle wording fits:
+ *  - "flower"  : ornamental (pukes) → blooms, never "harvested"/"germinated"
+ *  - "planted" : perennials, bulbs, shrubs, overwintering (berries, roses,
+ *                garlic) → planted as an established plant, so it "iesakņojas",
+ *                it does NOT "dīgst" (germinate) in your garden
+ *  - "sown"    : annual veg/herbs raised from seed → "Dīgst" is accurate early on
  */
-function label(progress: number): PlantStatus {
+type CropKind = "flower" | "planted" | "sown";
+
+function cropKind(crop: Crop, hasNumericDays: boolean): CropKind {
+  if (crop.category === "pukes") return "flower";
+  // A numeric days-to-harvest marks a seed-raised annual; its absence
+  // ("Daudzgadīga", "Ziemo", "Zied…") marks something planted established.
+  return hasNumericDays ? "sown" : "planted";
+}
+
+/**
+ * Rough growth status from the crop calendar + how long it's been in the ground.
+ * Good enough to drive the dashboard bars without per-crop day counts. Wording
+ * matches the crop kind so a freshly-added rose reads "Ieaugas" (taking root),
+ * not "Dīgst" (germinating), and tops out at "Zied" rather than "Gatavs novākšanai".
+ */
+function label(progress: number, kind: CropKind): PlantStatus {
+  if (kind === "flower") {
+    if (progress >= 100) return { label: "Zied", progress: 100, tone: "secondary" };
+    if (progress >= 80) return { label: "Gatavojas ziedēšanai", progress, tone: "secondary" };
+    if (progress >= 40) return { label: "Aug", progress, tone: "primary" };
+    return { label: "Ieaugas", progress, tone: "outline" };
+  }
   if (progress >= 100) return { label: "Gatavs novākšanai", progress: 100, tone: "secondary" };
   if (progress >= 80) return { label: "Gatavojas ražai", progress, tone: "secondary" };
   if (progress >= 40) return { label: "Aug", progress, tone: "primary" };
-  return { label: "Dīgst", progress, tone: "outline" };
+  return { label: kind === "planted" ? "Ieaugas" : "Dīgst", progress, tone: "outline" };
 }
 
 export function plantStatus(plant: Plant, now: Date = new Date()): PlantStatus {
@@ -86,9 +111,10 @@ export function plantStatus(plant: Plant, now: Date = new Date()): PlantStatus {
 
   // Preferred: real elapsed days since the gardener planted it ÷ days-to-harvest.
   const days = daysToHarvest(crop);
+  const kind = cropKind(crop, days !== undefined);
   if (days) {
     const elapsed = (now.getTime() - new Date(plant.sownAt).getTime()) / 86400000;
-    return label(Math.max(5, Math.min(100, Math.round((elapsed / days) * 100))));
+    return label(Math.max(5, Math.min(100, Math.round((elapsed / days) * 100))), kind);
   }
 
   // Fallback for perennials / overwintering crops with no day count.
@@ -102,5 +128,5 @@ export function plantStatus(plant: Plant, now: Date = new Date()): PlantStatus {
   const sownMonth = isNaN(sownDate.getTime()) ? startMonth(crop) ?? month : sownDate.getMonth() + 1;
   const span = (Math.ceil(harvest) - sownMonth + 12) % 12 || 1;
   const elapsed = (month - sownMonth + 12) % 12;
-  return label(Math.max(5, Math.min(100, Math.round((elapsed / span) * 100))));
+  return label(Math.max(5, Math.min(100, Math.round((elapsed / span) * 100))), kind);
 }

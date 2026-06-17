@@ -74,12 +74,14 @@ export function buildReminders({ plants, region, weather, date = new Date() }: I
     const ageDays = (date.getTime() - new Date(plant.sownAt).getTime()) / 86400000;
     const grown = plantStatus(plant, date).progress >= 80;
     if (inMonth(crop.harvest, month) && grown) {
+      // Ornamental crops bloom; they aren't "harvested".
+      const isFlower = crop.category === "pukes";
       out.push({
         id: `harvest-${plant.id}`,
-        icon: "agriculture",
+        icon: isFlower ? "local_florist" : "agriculture",
         tone: "primary",
-        title: `Laiks novākt — ${crop.name}`,
-        meta: `${plant.area} • raža ${MONTHS_LV_FULL[month - 1]}`,
+        title: isFlower ? `Ziedēšanas laiks — ${crop.name}` : `Laiks novākt — ${crop.name}`,
+        meta: isFlower ? `${plant.area} • ${MONTHS_LV_FULL[month - 1]}` : `${plant.area} • raža ${MONTHS_LV_FULL[month - 1]}`,
       });
     } else if (inMonth(crop.transplant, month) && ageDays >= 21) {
       out.push({
