@@ -1,0 +1,53 @@
+{
+  "slug": "plumju-zaglapsene",
+  "name": "Plūmju zāģlapsene",
+  "latin": "Hoplocampa",
+  "emoji": "🪰",
+  "type": "kaiteklis",
+  "tagline": "Ja jaunās plūmītes vēl zaļas birst zemē ar caurumu sānā, pie vainas ir zāģlapsenes kāpurs — agrāks un slāpekļaināks par plūmju tinēju.",
+  "severity": "vidējs",
+  "affects": ["plūmes", "ķiršplūmes (alyča)", "retāk dzeloņplūmes"],
+  "signs": [
+    "Tikko aizmetušās, vēl zaļas plūmītes priekšlaicīgi birst zemē, sākot drīz pēc ziedēšanas.",
+    "Nokritušajā augļa sānā — apaļš ieejas caurums ar tumšiem, mitriem, smirdīgiem izkārnījumiem (atšķirībā no tinēja, kura skaidas ir sausas).",
+    "Pārgriežot jauno augli — izēsta serde un tajā bālgans, mazliet izliekts kāpuriņš ar tumšu galviņu.",
+    "Viens kāpurs bojā vairākus augļus pēc kārtas, pārejot no viena uz otru.",
+    "Bojājumi sākas agri — tūlīt pēc plūmju noziedēšanas, daudz pirms tinēja."
+  ],
+  "intro": [
+    "Plūmju zāģlapsene ir maza, brūngana lidoniņa, kas pieaugušā veidā dārzā paliek nepamanīta — toties tās darbu pamana katrs, kurš redzējis, kā jaunās plūmītes vēl zaļas masveidā birst zemē. Pieaugušie lido un dēj olas tieši plūmju ziedēšanas laikā: katrs izšķīlies kāpurs iegraužas aizmetušajā auglī, izēd serdi un, kad pirmais auglis kļūst par mazu, pārvietojas uz nākamo. Tā viens kāpurs var sabojāt vairākus augļus.",
+    "Šis cikls arī pasaka priekšā cīņu: kāpurs paveic visu kaitējumu agri — daudz pirms plūmju tinēja —, tāpēc rīcībai jābūt agrai. Galvenais ierocis ir savlaicīga skarto augļu savākšana, kamēr kāpurs vēl iekšā, un pārziemojošo kūniņu traucēšana augsnē zem koka. Pieredzē redzams, ka rūpīga kritušo plūmīšu vākšana vien jūtami samazina kaitēkli jau nākamajā gadā."
+  ],
+  "control": [
+    "No ziedēšanas beigām regulāri (vairākas reizes nedēļā) salasi un iznīcini gan nokritušās, gan vēl kokā karājošās bojātās plūmītes — kāpurs vēl iekšā, un katra savākta plūmīte ir nākamās paaudzes lapseņu mazāk. Šis ir pats svarīgākais darbs.",
+    "Savāktās un kritušās plūmītes neatstāj zem koka un nemet kompostā — izved no dārza, dziļi aproc vai izbaro mājlopiem, lai kāpurs nepaspēj iziet augsnē kūņoties.",
+    "Ziedēšanas laikā un tūlīt pēc tās viegli irdini augsni zem vainaga — tā traucē pieaugušajiem izlīst un atklāj kūniņas putniem un salam; rudens un agra pavasara rakšana zem koka dara to pašu pret ziemojošajām kūniņām.",
+    "Izkar zem koka baltus vai dzeltenus lipīgos slazdus ziedēšanas sākumā — tie ķer daļu pieaugušo un parāda lidojuma laiku, lai zinātu, kad sākt augļu vākšanu.",
+    "Piesaisti dārzā putnus un dabīgos palīgus (zīlīšu būrīši, daudzveidīgi ziedi parazītiskajām lapsenēm) — tie palīdz ierobežot kaitēkli dabīgā ceļā.",
+    "Spēcīgi nesošiem kokiem daļēja augļu nobiršana nav traģēdija — koks pats izretina ražu; svarīgi ir tieši savākt bojātos, lai pārtrauktu ciklu."
+  ],
+  "recipeSlugs": [],
+  "prevention": [
+    "Ik gadu pēc plūmju noziedēšanas savāc kritušos augļus, kamēr kāpuri vēl iekšā — pārziemošanas cikla pārtraukšana ir profilakses kodols.",
+    "Rudenī un agri pavasarī pārroc augsni zem vainaga — kūniņas ziemo augsnes virskārtā, un to atklāšana salam un putniem mazina nākamā gada kaitēkli.",
+    "Uzturi zemu zāli un tīrību zem koka — kritušās plūmītes tā ir redzamas un savācamas uzreiz.",
+    "Daudzveidīgs, ziedošs dārzs piesaista parazītiskās lapsenes un putnus — dabīgie ienaidnieki notur zāģlapseni savaldāmu bez papildu pūlēm.",
+    "Vēro lidojuma sākumu ar lipīgajiem slazdiem ziedēšanas laikā — agra pamanīšana ļauj savlaicīgi sākt augļu vākšanu."
+  ],
+  "moonNote": "Kaitēkļu apkarošanu pēc tradīcijas saista ar dilstošo Mēnesi, taču pret zāģlapseni izšķiroša ir savlaicība: bojāto augļu vākšana jāsāk uzreiz pēc plūmju noziedēšanas, negaidot konkrētu Mēness fāzi.",
+  "folklore": "Vecsaimnieki teica, ka «kritušais auglis jāsavāc tūlīt» — un kā ar tinēja kritalām, arī šeit tā ir tīra praktiska gudrība: katrs savlaicīgi savāktais auglis pārtrauc kaitēkļa nākamo paaudzi.",
+  "faq": [
+    {
+      "q": "Kā atšķirt zāģlapseni no plūmju tinēja?",
+      "a": "Galvenokārt pēc laika un izkārnījumiem. Zāģlapsene bojā augļus agri — tūlīt pēc ziedēšanas, kad plūmītes vēl zaļas un sīkas —, un caurumā ir tumši, mitri, smirdīgi izkārnījumi. Tinējs nāk vēlāk, jau lielākiem augļiem, un atstāj sausas, gaišas «zāģu skaidas». Pret abiem palīdz vākt kritušos augļus."
+    },
+    {
+      "q": "Kāpēc tik daudz jauno plūmīšu nobirst — vai tā vienmēr ir zāģlapsene?",
+      "a": "Ne vienmēr. Plūmes dabiski izmet daļu aizmetņu (tā saucamā «jūnija nobiršana»), un trūkstot mitrumam vai pēc vēsa ziedēšanas laika augļi var birt arī bez kaitēkļa. Zāģlapseni atpazīsti, ja nokritušajā plūmītē ir ieejas caurums un izēsta serde ar kāpuru iekšā."
+    },
+    {
+      "q": "Vai bez slazdiem un rakšanas var iztikt?",
+      "a": "Var. Visefektīvākā un vienkāršākā metode ir uzcītīga bojāto augļu savākšana pēc ziedēšanas — gan kritušo, gan vēl kokā karājošos. Tā vien jau pārtrauc lielāko daļu nākamās paaudzes. Slazdi un augsnes rakšana ir noderīgs papildinājums, ne obligāta prasība."
+    }
+  ]
+}

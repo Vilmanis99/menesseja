@@ -1,0 +1,54 @@
+{
+  "slug": "abelu-kraupis",
+  "name": "Ābeļu kraupis",
+  "latin": "Venturia inaequalis",
+  "emoji": "🍎",
+  "type": "slimiba",
+  "tagline": "Olīvbrūni, samtaini plankumi uz lapām un āboliem — visizplatītākā ābeļu slimība lietainos Latvijas pavasaros.",
+  "severity": "vidējs",
+  "affects": ["ābeles", "bumbieres (savs, atsevišķs kraupja paveids)", "retāk pīlādži un vilkābeles"],
+  "signs": [
+    "Uz lapu apakšpuses (vēlāk arī virspusē) parādās olīvzaļi vai brūni, samtaini, neasi norobežoti plankumi.",
+    "Uz augļiem — tumši, sākumā samtaini, vēlāk sacietējuši, korķaini plankumi; augot āboli ap tiem ieplaisā.",
+    "Smagi skartās lapas dzeltē un priekšlaicīgi nokrīt — koks vasaras vidū var stāvēt pakails.",
+    "Slimība uzliesmo tieši mitros, vēsos pavasaros — pēc garas lietus periodiem maijā un jūnijā plankumu ir visvairāk.",
+    "Jaunie dzinumi bumbierēm var saplaisāt un pārklāties ar kraupja kreveli."
+  ],
+  "intro": [
+    "Ābeļu kraupis ir sēņu slimība, ko Latvijā pazīst teju katrs ābeļu īpašnieks — mūsu mitrajā, vēsajā klimatā tā ir pati izplatītākā ābeļu kaite. Sēne pārziemo nokritušajās slimajās lapās, un pavasarī, ilgstoši slapjā un siltā laikā, no tām paceļas sporas, kas inficē jaunās lapas un ziedus. Tieši tāpēc kraupis ir tik cieši saistīts ar laikapstākļiem: sausā pavasarī tā gandrīz nav, bet pēc lietainām nedēļām koki var būt nopietni skarti.",
+    "Pati par sevi slimība retumis nogalina koku, taču tā vājina to un sabojā ražu: skartie āboli paliek mazāki, plaisā un slikti glabājas. Labā ziņa ir tā, ka kraupja spiedienu var ievērojami samazināt bez ķīmijas — galvenais ir pārtraukt sēnes pārziemošanu, uzlabot vainaga vēdināšanu un stiprināt paša koka izturību. Pilnībā izskaust kraupi dabīgi mitrā gadā ne vienmēr izdosies, taču noturēt to savaldāmu — pavisam reāli."
+  ],
+  "control": [
+    "Rudenī rūpīgi savāc un iznīcini visas nokritušās lapas zem koka — tieši tajās sēne pārziemo. Šis ir pats svarīgākais darbs: bez ziemojošā sporu krājuma pavasara infekcija ir daudz vājāka. Lapas izved no dārza, dziļi iestrādā vai sakompostē karstā komposta vidū.",
+    "Pavasarī, pirms pumpuru plaukšanas un atkārtoti pēc lietus, smidzini koku ar kosas novārījumu — silīcijs nostiprina jaunās lapas audus un palīdz tām pretoties sēnei. Tā ir profilaktiska, atbalstoša metode, ne ārstniecība.",
+    "Atkārto profilaktisko smidzināšanu ar kumelīšu uzlējumu siltā, mitrā laikā — maigs līdzeklis, kas atbalsta lapu veselību kraupja spiediena laikā; smidzini no rīta, lai lapas pa dienu nožūst.",
+    "Atretini vainagu: ziemā vai agri pavasarī izgriez sablīvētos, krustojošos un uz iekšu augošos zarus, lai gaiss vainagā cirkulē un lapas pēc lietus ātri nožūst. Sausa lapa inficējas grūtāk — laba vainaga vēdināšana ir viena no spēcīgākajām profilaksēm.",
+    "Stiprini koka vispārējo izturību ar komposta teju kā lapu mēslojumu — labi barots, vesels koks vieglāk iztur slimības spiedienu. Tas ir atbalsta, ne tiešas apkarošanas līdzeklis.",
+    "Smagi skartos jaunos dzinumus (īpaši bumbierēm) izgriez un iznīcini — tie ir nākamā gada infekcijas avots.",
+    "Vasarā savāc nokritušos skartos augļus, lai slimība un puve neizplatās tālāk."
+  ],
+  "recipeSlugs": ["kosas-novarijums", "kumelisu-uzlejums", "komposta-teja"],
+  "prevention": [
+    "Stādi pret kraupi izturīgas šķirnes — Latvijā tādu ir daudz, un izturīgs koks mitrā gadā cietīs daudzkārt mazāk nekā jutīga vecā šķirne. Tas ir labākais ilgtermiņa risinājums.",
+    "Stādi kokus saulainā, vējam atvērtā vietā ar pietiekamu atstatumu — sutīgā, ieslēgtā stūrī kraupis vienmēr būs stiprāks.",
+    "Ik rudeni savāc nokritušās lapas un mumificētos augļus — sēnes pārziemošanas pārtraukšana ir profilakses kodols.",
+    "Nepārmēslo ar slāpekli — pārāk daudz slāpekļa rada mīkstas, sulīgas lapas, kuras kraupis skar vieglāk; balansē mēslošanu un piedod kālijam.",
+    "Uzturi vainagu izretinātu un gaisīgu ar regulāru ziemas griešanu — tas atvieglo gan profilaksi, gan ražas kvalitāti."
+  ],
+  "moonNote": "Profilaktisko smidzināšanu pret sēņu slimībām tradicionāli saista ar dilstošo Mēnesi, taču pret kraupi izšķirošais ir laikapstākļi: smidzini pirms gaidāmā lietus perioda un atkārto pēc tā — sēne nesagaida Mēness fāzi.",
+  "folklore": "Vecie dārznieki sacīja, ka «slimība guļ lapās» — un tieši tā arī ir: rudens lapu grābšana zem ābelēm bija pašsaprotama sētas kārtība, kas reizē bija labākā nākamā gada raža.",
+  "faq": [
+    {
+      "q": "Vai ar kraupi skartos ābolus var ēst?",
+      "a": "Var — kraupis ir tikai uz mizas un mīkstuma virskārtā, augļa iekšiene paliek laba. Nogriez korķainos plankumus, un ābolu vari ēst vai pārstrādāt. Glabāšanai gan skartie āboli neder, jo pa plaisām ienāk puve, tāpēc tos izlieto pirmos."
+    },
+    {
+      "q": "Kāpēc dažos gados kraupja gandrīz nav, citos — daudz?",
+      "a": "Viss ir atkarīgs no laikapstākļiem pavasarī. Sēnei infekcijai vajadzīgs ilgstoši mitrs un silts laiks — pēc garām lietus nedēļām maijā un jūnijā kraupja ir daudz. Sausā, vējainā pavasarī sporas neaizķeras, un slimība praktiski neizplatās."
+    },
+    {
+      "q": "Vai pietiek tikai ar lapu grābšanu rudenī?",
+      "a": "Lapu savākšana ir pati svarīgākā un visefektīvākā atsevišķā darbība, jo tā pārtrauc sēnes pārziemošanu. Tomēr ļoti mitrā gadā ar to vien var nepietikt — tad palīdz arī vainaga izretināšana, profilaktiskā smidzināšana ar kosas novārījumu un, vislabāk, izturīgu šķirņu izvēle."
+    }
+  ]
+}

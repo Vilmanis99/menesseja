@@ -1,0 +1,54 @@
+{
+  "slug": "tripsi",
+  "name": "Tripši",
+  "latin": "Thysanoptera",
+  "emoji": "🐛",
+  "type": "kaiteklis",
+  "tagline": "Sudrabaini, spīdīgi svītrojumi un sīki tumši punktiņi uz lapām — gandrīz neredzamie tripši izsūc augu šūnas siltumnīcā un uz sīpoliem.",
+  "severity": "vidējs",
+  "affects": ["sīpoli un ķiploki", "siltumnīcas gurķi, paprika un tomāti", "telpaugi un puķes (rozes, krizantēmas)", "daudzi dārzeņi un dekoratīvie augi"],
+  "signs": [
+    "Uz lapām parādās sudrabaini vai bālgani, spīdīgi svītrojumi un plankumi — tur, kur tripši izsūkuši šūnu saturu.",
+    "Pie sudrabainajām vietām redzami sīki, tumši, melni punktiņi — tripšu izkārnījumi.",
+    "Sīpolu loki kļūst sudrabaini, izliecas un kūko, augi vājāk aug.",
+    "Ziedi (īpaši rozēm un krizantēmām) deformējas, plankumojas un priekšlaicīgi novīst.",
+    "Pie pamanīšanas — uz lapas apakšpuses sīki (1–2 mm), iegareni, gaiši vai tumši, ļoti kustīgi kukainīši; tos labi saskata pret balta papīra fonu."
+  ],
+  "intro": [
+    "Tripši ir niecīgi (1–2 mm), iegareni kukaiņi ar smalkām, bārkstainām spārnu maliņām, kurus ar neapbruņotu aci pamanīt grūti — biežāk pirmo ievēro to atstāto sudrabaino svītrojumu uz lapām. Tie ar īpašu mutes aparātu izplēš augu šūnas un izsūc to saturu; izsūktās, gaisu pildītās šūnas tad spīd sudrabaini. Tripši savairojas ļoti ātri, īpaši siltā, sausā gaisā, tāpēc visvairāk tie kaitē siltumnīcās, telpaugiem un sīpolu stādījumiem karstās vasarās.",
+    "Bez tiešā kaitējuma daži tripši pārnēsā arī augu vīrusus, tāpēc tos nav vērts atstāt bez ievērības. Reizē ar dabīgiem līdzekļiem tos pilnībā izskaust ne vienmēr izdodas, jo tie slēpjas dziļi ziedos un lapu pamatnēs, taču ar augstu gaisa mitrumu, lipīgajiem slazdiem, regulāru smidzināšanu un dabīgo ienaidnieku atbalstu tripšu populāciju var noturēt savaldāmu un pasargāt ražu."
+  ],
+  "control": [
+    "Izkar siltumnīcā vai pie skartajiem augiem zilos un dzeltenos lipīgos slazdus — tripši uz tiem labprāt nosēžas; tie reizē ķer kaitēkli un rāda, cik tā daudz. Tas ir viens no ērtākajiem līdzekļiem siltumnīcā.",
+    "Paaugstini gaisa mitrumu un regulāri smidzini augus ar ūdeni (īpaši lapu apakšpusi) — tripši nemīl mitru gaisu, un smidzināšana traucē to vairošanos; siltumnīcā vēdini, lai nekrātos sutīgs, karsts gaiss.",
+    "Smidzini skartos augus ar vērmeļu uzlējumu — rūgtais, asais izvilkums atbaida tripšus; apstrādā arī lapu apakšpusi un atkārto ik pēc dažām dienām, jo paaudzes nāk ātri.",
+    "Papildu apkarošanai smidzini ar atšķaidītu ziepjūdeni (mīkstās kālija ziepes) — tas nosmacē mīkstos kāpurus un pieaugušos; smidzini vēsā dienas daļā un noskalo jutīgākajiem augiem pēc dažām stundām.",
+    "Stiprini augu izturību ar kosas novārījumu — silīcijs nostiprina lapu audus un padara tos kaitēklim grūtāk caururbjamus; tā ir atbalsta, ne tiešas apkarošanas metode.",
+    "Smagi skartās lapas un ziedus nogriez un iznīcini — tieši ziedos un jaunajos dzinumos tripši slēpjas un vairojas visvairāk.",
+    "Siltumnīcā piesaisti vai ielaid dabīgos ienaidniekus (plēsīgās ērces, skropstaiņus, plēsīgās blaktis) — bioloģiskā kontrole pret tripšiem darbojas labi tieši slēgtā telpā."
+  ],
+  "recipeSlugs": ["vermelu-uzlejums", "kosas-novarijums"],
+  "prevention": [
+    "Regulāri (vismaz reizi nedēļā) pārbaudi lapu apakšpuses un izkar lipīgos slazdus profilaktiski — agri pamanītu tripšu populāciju apturēt ir daudz vieglāk nekā jau izplatījušos.",
+    "Uzturi siltumnīcā labu mitrumu un vēdināšanu — karsts, sauss, sutīgs gaiss ir tieši tas, kas tripšiem patīk vislabāk.",
+    "Jaunus, iepirktus stādus un telpaugus pirms pievienošanas pārējiem dažas dienas patur atsevišķi un pārbaudi — tripšus dārzā un siltumnīcā visbiežāk ienes ar pirktiem augiem.",
+    "Rudenī iztīri siltumnīcu no augu atliekām un nezālēm — tripši un to kūniņas pārziemo augsnes virskārtā un atliekās.",
+    "Ievēro augu maiņu un nestādi sīpolus gadiem ilgi vienā vietā — tas mazina kaitēkļa uzkrāšanos augsnē."
+  ],
+  "moonNote": "Kaitēkļu apkarošanu pēc tradīcijas saista ar dilstošo Mēnesi, taču tripši vairojas tik ātri, ka izšķiroša ir savlaicība — rīkojies uzreiz pie pirmajām sudrabainajām pēdām, negaidot konkrētu Mēness fāzi.",
+  "folklore": "Vecie dārznieki sīpolu loku sudrabaino spīdumu sauca par «sudrabu lokos» un zināja to par sliktu zīmi — sausā, karstā vasarā tādi loki signalizēja, ka stādījumam trūkst mitruma un tas jāatbalsta ar laistīšanu un apsmidzināšanu.",
+  "faq": [
+    {
+      "q": "Kā saprast, vai tie ir tripši, nevis ērces vai laputis?",
+      "a": "Tripšus izdod sudrabainais, spīdīgais svītrojums uz lapām kopā ar sīkiem melniem punktiņiem (izkārnījumiem). Tīklērces atstāj smalkus, gaišus punktiņus un zirnekļtīklu, bet laputis — lipīgu medusrasu un sarullētas lapas. Lai pārliecinātos, pakrati lapu pār baltu papīru: tripši ir sīki, iegareni un ļoti kustīgi."
+    },
+    {
+      "q": "Kāpēc tripši siltumnīcā tik grūti izskaužami?",
+      "a": "Tie slēpjas dziļi ziedos, lapu pamatnēs un augsnes virskārtā, kur smidzinājums viņus nesasniedz, un vairojas ļoti ātri. Tāpēc viena apstrāde nelīdz — vajag atkārtot smidzināšanu ik pēc dažām dienām, kombinēt ar lipīgajiem slazdiem, augstu mitrumu un, ja iespējams, dabīgajiem ienaidniekiem."
+    },
+    {
+      "q": "Vai tripši ir bīstami ražai vai tikai izskatam?",
+      "a": "Abējādi. Viegls bojājums galvenokārt pasliktina izskatu un nedaudz vājina augu, bet liela populācija būtiski mazina ražu, deformē ziedus un augļus, un daži tripši pārnēsā augu vīrusus. Tāpēc tos nav vērts atstāt bez ievērības — jo agrāk rīkojies, jo vieglāk noturēt savaldāmus."
+    }
+  ]
+}

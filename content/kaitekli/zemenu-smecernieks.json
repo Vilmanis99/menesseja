@@ -1,0 +1,54 @@
+{
+  "slug": "zemenu-smecernieks",
+  "name": "Zemeņu smecernieks",
+  "latin": "Anthonomus rubi",
+  "emoji": "🪲",
+  "type": "kaiteklis",
+  "tagline": "Ja zemeņu ziedpumpuri pārkrīt uz nokarena, pārkostiem kātiņa un nemaz neuzzied — pa dārzu ir gājis mazais, tumšais smecernieks.",
+  "severity": "vidējs",
+  "affects": ["zemenes", "avenes", "kazenes", "retāk citi rožu dzimtas augi"],
+  "signs": [
+    "Ziedpumpuri tieši pirms atvēršanās nokarājas uz pārkosta, pārlauzta kātiņa — it kā nokniebti — un nokalst, neuzziedot.",
+    "Pie kātiņa pārkostās vietas redzams smalks, gandrīz pārgriezts iegrauzums.",
+    "Daudzi pumpuri vienkārši nobirst zem auga vai paliek karājoties kā sausas, brūnas «pogas».",
+    "Uz lapām var redzēt sīkus, apaļus iekošanas caurumiņus, ko atstāj pieaugušie vaboļiņi.",
+    "Visvairāk cieš pirmie, lielākie ziedi — tieši tie, kas dotu lielākās ogas."
+  ],
+  "intro": [
+    "Zemeņu smecernieks ir pavisam neliels (3–4 mm), tumšs vabolītis ar smecernieku raksturīgo izstiepto «snuķi». Pavasarī mātīte iegrauž katrā ziedpumpurā olu un tad daļēji pārkož pumpura kātiņu — pumpurs nokarājas, nokalst, un kāpurs droši attīstās tā iekšienē. Tieši šis pārkostais, nokarenais pumpurs ir kaitēkļa raksturīgākā zīme, un tas reizē izskaidro, kāpēc smecernieks tik sāpīgi sit pa ražu: viens vabolītis var sabojāt daudzus pumpurus.",
+    "Visvairāk cieš agrīnās šķirnes un pirmie, lielākie ziedi — tieši tie, kas dotu vislabākās ogas. Cīņa pēc tam, kad pumpuri jau nokarājušies, ir vēla: kāpurs jau iekšā. Tāpēc galvenais ir traucēt pašus vaboļus pavasarī un savākt skartos pumpurus, kamēr kāpurs vēl tajos. Tīrība zemeņu dobē un savlaicīga bojāto pumpuru vākšana jūtami mazina kaitēkli jau nākamajā gadā."
+  ],
+  "control": [
+    "Tiklīdz pamani pirmos pārkostos, nokarenos pumpurus, regulāri tos salasi un iznīcini — kāpurs vēl iekšā, un katrs savāktais pumpurs ir nākamās paaudzes smecernieku mazāk. Tā ir vienkāršākā un viena no efektīvākajām metodēm.",
+    "Savāktos pumpurus neatstāj dobē un nemet kompostā — izved no dārza vai sadedzini, lai kāpurs nepaspēj attīstīties.",
+    "Vēsā rītā, kad vaboļi gausi, viegli sapurini augus virs izklāta gaiša auduma vai papīra — nobirušos vaboļus savāc un iznīcini. Atkārto dažas reizes ziedpumpuru veidošanās laikā.",
+    "Smidzini augus profilaktiski ar vērmeļu uzlējumu pirms ziedēšanas — rūgtā, asā smarža atbaida pieaugušos vaboļus no dēšanas; atkārto pēc lietus.",
+    "Papildu atbaidīšanai apsmidzini stādījumu ar kumelīšu uzlējumu — maigs augu izvilkums, kas palīdz noturēt kaitēkli savaldāmu kopā ar pārējiem soļiem.",
+    "Stādi zemenes saulainā, vēdināmā vietā un uzturi dobi tīru no nezālēm un veco lapu kušķiem — tur pieaugušie vaboļi labprāt slēpjas un ziemo.",
+    "Piesaisti dabīgos palīgus (skropstaiņus, putnus, plēsīgās vaboles), neuzturot dobē biezu, sutīgu pamežu — atvērta, gaisīga dobe smecerniekam patīk mazāk."
+  ],
+  "recipeSlugs": ["vermelu-uzlejums", "kumelisu-uzlejums"],
+  "prevention": [
+    "Ik gadu ziedpumpuru veidošanās laikā vāc pārkostos pumpurus — pārziemošanas cikla pārtraukšana ir profilakses kodols.",
+    "Rudenī iztīri zemeņu dobi no veco lapu un augu atliekām — tajās pieaugušie vaboļi pārziemo, un to aizvākšana mazina nākamā gada kaitēkli.",
+    "Neturi zemenes vienā vietā gadiem ilgi — ik pa 3–4 gadiem pārstādi tās jaunā vietā tālāk no vecās dobes, lai vaboļi nepārceļas.",
+    "Atdali jaunos zemeņu stādījumus pēc iespējas tālāk no vecajiem un no avenēm — smecernieks viegli pārceļas no skartās dobes uz svaigo.",
+    "Uzturi dobi tīru, vēdināmu un saulainu — sablīvētā, sutīgā stādījumā vaboļiem ir vairāk patvēruma."
+  ],
+  "moonNote": "Kaitēkļu apkarošanu un atbaidošo smidzināšanu pēc tradīcijas saista ar dilstošo Mēnesi, taču pret smecernieku izšķiroša ir savlaicība — rīkojies pirms ziedēšanas un tūlīt pie pirmajiem nokarenajiem pumpuriem, negaidot konkrētu fāzi.",
+  "folklore": "Vecie dārznieki zināja: zemeni nedrīkst turēt «mūžam» vienā stūrī — laba raža prasa jaunu zemi. Stādījuma maiņa, ko mūsdienās sauc par augu maiņu, reizē atstāja kaitēkļus pamestajā vecajā dobē.",
+  "faq": [
+    {
+      "q": "Kāpēc zemeņu pumpuri nokarājas un nokalst, neuzziedot?",
+      "a": "Visbiežāk tas ir zemeņu smecernieks: mātīte pārkož pumpura kātiņu, lai droši attīstītos olā ieliktais kāpurs. Atpazīsti to pēc smalkā iegrauzuma kātiņā un nokarenā, sausā pumpura. Ja kātiņš ir vesels, bet pumpurs nokalst, iemesls var būt sals vai sausums, ne kaitēklis."
+    },
+    {
+      "q": "Vai pēc smecernieka uzbrukuma raža vispār būs?",
+      "a": "Daļēja — jā. Smecernieks visvairāk skar pirmos, lielākos ziedus, bet vēlākie pumpuri bieži paspēj uzziedēt un dot ogas, īpaši ja savāc bojātos pumpurus un traucē vaboļus. Vēlākās šķirnes parasti cieš mazāk nekā pašas agrīnākās."
+    },
+    {
+      "q": "Vai pietiek tikai vākt nokarenos pumpurus?",
+      "a": "Pumpuru vākšana ir efektīvākais atsevišķais solis, jo tā pārtrauc kaitēkļa nākamo paaudzi. Vislabākais rezultāts tomēr ir, to apvienojot ar dobes tīrību rudenī, vaboļu nopurināšanu vēsos rītos un atbaidošu smidzināšanu ar vērmeļu uzlējumu pirms ziedēšanas."
+    }
+  ]
+}
