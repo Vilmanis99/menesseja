@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import Link from "next/link";
 import { PageHeader } from "@/components/ui/page-header";
 import { Card } from "@/components/ui/card";
 import { Chip } from "@/components/ui/chip";
@@ -13,6 +14,7 @@ import { cropPart } from "@/lib/crop-part";
 import { cropEmoji } from "@/lib/crop-visual";
 import { useMounted } from "@/lib/use-mounted";
 import { namedaysFor } from "@/lib/vardadienas";
+import { MONTH_SLUGS, CALENDAR_YEARS } from "@/lib/seo";
 import { DataNote } from "@/components/data-note";
 
 const WEEKDAYS = ["P", "O", "T", "C", "Pk", "S", "Sv"]; // Mon-first
@@ -92,7 +94,18 @@ export default function KalendarsPage() {
         subtitle="Katra diena nes sava elementa ritmu. Sēj saskaņā ar Mēness fāzi un zodiaka zīmi."
       />
 
-      <DataNote variant="moon" className="mb-md" />
+      <div className="mb-md flex flex-wrap items-center justify-between gap-2">
+        <DataNote variant="moon" />
+        {CALENDAR_YEARS.includes(year) && (
+          <Link
+            href={`/kalendars/${year}/${MONTH_SLUGS[month]}`}
+            className="inline-flex shrink-0 items-center gap-1.5 rounded-full border border-outline-variant/30 bg-surface-container px-4 py-1.5 text-label-md text-on-surface transition-colors hover:border-primary/40 hover:text-primary"
+          >
+            <Icon name="print" size="18px" />
+            Drukājams {MONTHS_LV_FULL[month]} kalendārs
+          </Link>
+        )}
+      </div>
 
       <div className="grid grid-cols-1 gap-gutter lg:grid-cols-12">
         {/* Calendar grid */}

@@ -147,8 +147,7 @@ export default function ParPage() {
           (pēc izvēles, ar e-pasta saiti), tavs dārzs un kopienas ieraksti{" "}
           <strong className="text-on-surface">sinhronizējas mūsu datubāzē</strong> (Supabase, ES serveri),
           lai sekotu tev starp ierīcēm — un tu tos jebkurā brīdī vari dzēst. Atrašanās vieta (ja to atļauj)
-          tiek izmantota tikai laikapstākļiem (koordinātes nosūta Open-Meteo). AI diagnostikas foto tiek
-          nosūtīts Anthropic (Claude AI, ASV) un netiek glabāts mūsu pusē.
+          tiek izmantota tikai laikapstākļiem (koordinātes nosūta Open-Meteo).
         </p>
       </Card>
 

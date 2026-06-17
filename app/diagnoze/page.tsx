@@ -114,8 +114,8 @@ export default function DiagnozePage() {
 
           <p className="flex items-start gap-1.5 text-label-sm text-on-surface-variant/80">
             <Icon name="info" size="14px" className="mt-0.5 shrink-0 text-tertiary" />
-            AI var kļūdīties — pārbaudi svarīgus padomus. Foto tiek nosūtīts apstrādei Anthropic
-            (Claude AI, ASV); mēs to neglabājam.
+            AI var kļūdīties — pārbaudi svarīgus padomus. Foto tiek nosūtīts apstrādei ārējam
+            AI mākoņpakalpojumam (ASV serveros); mēs to neglabājam.
           </p>
         </Card>
 
@@ -178,7 +178,7 @@ export default function DiagnozePage() {
       </div>
 
       <p className="mt-md text-label-sm text-on-surface-variant/70">
-        Privātums: foto tiek nosūtīts Anthropic (Claude AI, ASV) analīzei un netiek glabāts mūsu serverī.
+        Privātums: foto tiek nosūtīts ārējam AI mākoņpakalpojumam (ASV) analīzei un netiek glabāts mūsu serverī.
       </p>
     </>
   );

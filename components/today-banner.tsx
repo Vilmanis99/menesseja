@@ -125,6 +125,15 @@ export function TodayBanner() {
                 <p className="text-headline-md leading-tight text-on-surface">{Math.round(w.soilC)}°</p>
                 <p className="text-label-sm text-on-surface-variant">augsne</p>
               </div>
+              <button
+                onClick={weather.retry}
+                title="Atjaunot laikapstākļus"
+                aria-label="Atjaunot laikapstākļus"
+                className="flex flex-col items-center gap-0.5 self-center rounded-lg p-2 text-on-surface-variant/70 transition-colors hover:bg-surface-variant/50 hover:text-primary"
+              >
+                <Icon name="refresh" size="18px" />
+                <span className="text-label-sm">Atjaunot</span>
+              </button>
             </>
           )}
           {/* Use precise location */}
