@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Literata, Hanken_Grotesk } from "next/font/google";
 import { AppShell } from "@/components/app-shell";
 import { PwaRegister } from "@/components/pwa-register";
+import { Analytics } from "@/components/analytics";
 import { JsonLd } from "@/components/json-ld";
 import { SITE_URL } from "@/lib/seo";
 import "./globals.css";
@@ -97,6 +98,7 @@ export default function RootLayout({
         <JsonLd data={WEBSITE_JSONLD} />
         <AppShell>{children}</AppShell>
         <PwaRegister />
+        <Analytics />
       </body>
     </html>
   );
