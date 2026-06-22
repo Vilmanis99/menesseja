@@ -129,6 +129,34 @@ export default async function ProblemPage({ params }: { params: Promise<{ slug: 
         )}
       </Card>
 
+      {/* Related types / other host plants */}
+      {p.compare?.items?.length ? (
+        <>
+          <h2 className="mb-sm text-headline-md text-on-surface">{p.compare.heading}</h2>
+          <Card tone="high" className="mb-lg p-md">
+            {p.compare.intro && (
+              <p className="mb-sm text-body-md leading-relaxed text-on-surface-variant">{p.compare.intro}</p>
+            )}
+            <ul className="space-y-sm">
+              {p.compare.items.map((it, i) => (
+                <li key={i} className="flex items-start gap-2 text-body-md text-on-surface-variant">
+                  <Icon name="eco" size="16px" className="mt-1 shrink-0 text-tertiary" />
+                  <span>
+                    {it.href ? (
+                      <Link href={it.href} className="font-semibold text-primary hover:underline">{it.name}</Link>
+                    ) : (
+                      <span className="font-semibold text-on-surface">{it.name}</span>
+                    )}
+                    {" — "}
+                    {it.note}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </Card>
+        </>
+      ) : null}
+
       {/* Natural control */}
       <h2 className="mb-sm text-headline-md text-on-surface">Dabīga apkarošana</h2>
       <Card tone="high" elevated accent="primary" className="mb-md p-md">

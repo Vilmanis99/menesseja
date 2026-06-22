@@ -25,6 +25,8 @@ export interface GardenProblem {
   moonNote?: string;
   folklore?: string;
   faq?: { q: string; a: string }[];
+  /** Saistītie paveidi / radniecīgi kaitēkļi ar īsu atšķirību un saiti uz skarto augu. */
+  compare?: { heading: string; intro?: string; items: { name: string; note: string; href?: string }[] };
 }
 
 export const PROBLEM_TYPE_META: Record<ProblemType, { label: string; icon: string; blurb: string }> = {

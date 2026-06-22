@@ -161,7 +161,7 @@ export default async function FlowerPage({ params }: { params: Promise<{ slug: s
       </Card>
 
       {/* Care */}
-      <h2 className="mb-sm text-headline-md text-on-surface">Kopšana</h2>
+      <h2 className="mb-sm text-headline-md text-on-surface">Kā kopt {f.name.toLowerCase()}</h2>
       <Card tone="high" className="mb-lg p-md">
         <ul className="space-y-1.5">
           {f.care.map((s, i) => (

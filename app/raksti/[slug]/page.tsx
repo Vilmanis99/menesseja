@@ -31,7 +31,12 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
   const a = getArticle(slug);
   if (!a) notFound();
   const isMoonTopic = ["Pamati", "Biodinamika"].includes(a.category);
-  const related = getAllArticles().filter((x) => x.slug !== a.slug).slice(0, 4);
+  const others = getAllArticles().filter((x) => x.slug !== a.slug);
+  // Prefer same-category articles first so "Lasi arī" reinforces the topic cluster.
+  const related = [
+    ...others.filter((x) => x.category === a.category),
+    ...others.filter((x) => x.category !== a.category),
+  ].slice(0, 4);
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -87,6 +92,21 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
       </div>
 
       {isMoonTopic && <DataNote variant="moon" className="mt-lg" />}
+
+      {a.links && a.links.length > 0 && (
+        <div className="mt-lg border-t border-outline-variant/10 pt-md">
+          <h2 className="mb-sm text-headline-md text-on-surface">Noderīgi šai tēmai</h2>
+          <ul className="space-y-2">
+            {a.links.map((l) => (
+              <li key={l.href}>
+                <Link href={l.href} className="inline-flex items-center gap-1 text-body-md text-primary hover:underline">
+                  <Icon name="arrow_forward" size="16px" /> {l.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
 
       {related.length > 0 && (
         <div className="mt-lg border-t border-outline-variant/10 pt-md">

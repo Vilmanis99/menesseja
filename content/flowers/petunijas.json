@@ -4,7 +4,7 @@
   "latin": "Petunia",
   "emoji": "🌸",
   "type": "viengadiga",
-  "tagline": "Latvijas balkonu karaliene — kupls ziedu klājiens no jūnija līdz salnām.",
+  "tagline": "Kā kopt petūnijas, lai tās kupli zied visu vasaru — laistīšana, mēslošana un novītušo ziedu noņemšana Latvijas balkonu karalienei.",
   "bloom": "Jūnijs–septembris (līdz pirmajām salnām)",
   "height": "20–40 cm (kaskādes šķirnes nokarājas 50–80 cm)",
   "sun": "Saule",
@@ -27,6 +27,7 @@
     "Trauka apakšā nodrošini drenāžu un izmanto auglīgu, labi drenētu zemi — petūnija ir izsalkusi un slāpst pārmitrā augsnē."
   ],
   "care": [
+    "Īsumā: kā kopt petūnijas — laisti regulāri (podos karstā laikā līdz pat katru dienu), mēslo ik 7–14 dienas ar kālijā bagātu puķu mēslojumu, regulāri noņem novītušos ziedus un vasaras vidū apgriez izstiepušos dzinumus. Tieši šie četri soļi nodrošina kuplu, nepārtrauktu ziedēšanu līdz salnām.",
     "Laisti regulāri un bagātīgi, īpaši podos un karstā laikā — vasarā dažkārt katru dienu; lej pie saknes, ne pa ziediem, jo slapji ziedi viegli sapūst.",
     "Mēslo ik pa 7–14 dienām ar puķēm domātu, kālijā un fosforā bagātu mēslojumu — petūnija ir liela ēdāja, un tieši regulāra barošana nodrošina nepārtrauktu ziedēšanu.",
     "Regulāri noņem novītušos ziedus un sēklu pogaļas (deadheading) — tas pamudina augu dzīt arvien jaunus pumpurus un netērēt spēku sēklām.",
@@ -42,6 +43,14 @@
   ],
   "folklore": "Petūnija Latvijā ir samērā jauna ienācēja, tāpēc senu tautas ticējumu tai nav — toties tā kļuvusi par mūsdienu vasaras balkonu neatņemamu simbolu, un daudzās mājās košās petūniju kastes pie palodzes ir kā ģimenes lepnums un sava stūrīša rota, ko kaimiņi cits citam mēdz pat apskaust.",
   "faq": [
+    {
+      "q": "Kā kopt petūnijas, lai kupli zied?",
+      "a": "Kupla ziedēšana balstās uz četrām lietām: saulainu vietu, regulāru laistīšanu pie saknes, mēslošanu ik 7–14 dienas ar kālijā un fosforā bagātu puķu mēslojumu un novītušo ziedu (sēklu pogaļu) regulāru noņemšanu. Ja augs vasaras vidū izstiepjas un kļūst pliks, drosmīgi apgriez dzinumus par trešdaļu — pēc pāris nedēļām petūnija atjaunojas kuplāka un zied no jauna līdz pirmajām salnām."
+    },
+    {
+      "q": "Cik bieži laistīt un mēslot petūnijas?",
+      "a": "Laisti regulāri un bagātīgi, lejot pie saknes, ne pa ziediem: balkona podos un karstā, saulainā laikā tas nereti nozīmē katru dienu, bet dobē retāk — vadies pēc augsnes, kam jābūt mitrai, ne slapjai. Mēslo ik 7–14 dienas ar puķēm domātu, kālijā bagātu mēslojumu visu ziedēšanas sezonu; petūnija ir liela ēdāja, un tieši regulāra barošana uztur nepārtrauktu ziedēšanu."
+    },
     {
       "q": "Kāpēc manas petūnijas izstiepušās un zied tikai galotnēs?",
       "a": "Tas notiek, ja augam trūkst saules vai tas nav apgriezts. Pārvieto podu saulainākā vietā un vasaras vidū drosmīgi apgriez dzinumus par trešdaļu — pēc pāris nedēļām augs atjaunosies kuplāks un ziedēs no jauna. Palīdz arī regulāra mēslošana un novītušo ziedu noņemšana."

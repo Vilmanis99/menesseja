@@ -36,7 +36,21 @@
   ],
   "moonNote": "Kaitēkļu apkarošanu pēc tradīcijas saista ar dilstošo Mēnesi, taču pret zāģlapseni izšķiroša ir savlaicība: bojāto augļu vākšana jāsāk uzreiz pēc plūmju noziedēšanas, negaidot konkrētu Mēness fāzi.",
   "folklore": "Vecsaimnieki teica, ka «kritušais auglis jāsavāc tūlīt» — un kā ar tinēja kritalām, arī šeit tā ir tīra praktiska gudrība: katrs savlaicīgi savāktais auglis pārtrauc kaitēkļa nākamo paaudzi.",
+  "compare": {
+    "heading": "Citu augu zāģlapsenes",
+    "intro": "Zāģlapsenes (Symphyta) ir plaša lapsenveidīgo grupa, un katra suga parasti specializējas uz savu augu. Nosaukums cēlies no mātītes zāģveida dējekļa, ar ko tā iegriež audos olas. Dārzā biežāk sastopamas trīs:",
+    "items": [
+      { "name": "Plūmju zāģlapsene", "note": "bojā tieši plūmes — kāpurs iegraužas vēl zaļās plūmītēs uzreiz pēc ziedēšanas, un augļi priekšlaicīgi birst. Tieši par to ir šī lapa." },
+      { "name": "Ērkšķogu (jāņogu) zāģlapsene", "note": "uzbrūk lapām, nevis augļiem — zaļgani kāpuri ar tumšiem punktiņiem dažās dienās var noēst krūmu kailu līdz dzīslām, īpaši lapu apakšpusē.", "href": "/augi/erkskogas" },
+      { "name": "Jāņogu zāģlapsene", "note": "rīkojas tāpat kā ērkšķogu radiniece, noēdot sarkano un balto jāņogu lapas; kāpuri sākas no krūma vidus un izplatās uz āru.", "href": "/augi/janogas" },
+      { "name": "Rožu zāģlapsene", "note": "skar rozes — kāpuri grauž lapas vai (lejupejošā paveidā) ietin un noēd jaunās dzinumu galotnes, padarot lapas caurumainas un saritinātas.", "href": "/pukes/rozes" }
+    ]
+  },
   "faq": [
+    {
+      "q": "Kas ir zāģlapsene un kā to atpazīt?",
+      "a": "Zāģlapsene ir lapsenveidīgs kukainis no Symphyta grupas; nosaukumu devis mātītes zāģveida dējeklis, ar ko tā iegriež augā olas. Atšķirībā no īstajām lapsenēm tai nav saraustīta «viduklīša», un kaitē nevis pieaugušais, bet kāpuri. Atpazīst pēc kāpuriem: tie atgādina tauriņu kāpurus, bet tiem ir vairāk kāju pāru, un satraukti tie bieži pacel ķermeņa pakaļgalu S veidā. Atkarībā no sugas kāpuri vai nu noēd lapas (ērkšķogu, jāņogu, rožu zāģlapsene), vai iegraužas augļos (plūmju zāģlapsene). Tāpēc pirmā pazīme parasti ir vai nu strauji apgrauztas lapas, vai priekšlaicīgi birstoši augļi ar caurumu sānā."
+    },
     {
       "q": "Kā atšķirt zāģlapseni no plūmju tinēja?",
       "a": "Galvenokārt pēc laika un izkārnījumiem. Zāģlapsene bojā augļus agri — tūlīt pēc ziedēšanas, kad plūmītes vēl zaļas un sīkas —, un caurumā ir tumši, mitri, smirdīgi izkārnījumi. Tinējs nāk vēlāk, jau lielākiem augļiem, un atstāj sausas, gaišas «zāģu skaidas». Pret abiem palīdz vākt kritušos augļus."

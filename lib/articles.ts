@@ -6,6 +6,12 @@ export interface ArticleSection {
   paragraphs: string[];
 }
 
+/** A curated out-link to a crop / flower / pest / recipe / other article page. */
+export interface ArticleLink {
+  label: string;
+  href: string;
+}
+
 export interface Article {
   title: string;
   slug: string;
@@ -13,6 +19,8 @@ export interface Article {
   excerpt: string;
   readMinutes: number;
   body: ArticleSection[];
+  /** Optional related pages elsewhere on the site (cluster interlinking). */
+  links?: ArticleLink[];
 }
 
 const DIR = path.join(process.cwd(), "content", "articles");
