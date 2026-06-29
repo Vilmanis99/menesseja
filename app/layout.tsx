@@ -3,6 +3,7 @@ import { Literata, Hanken_Grotesk } from "next/font/google";
 import { AppShell } from "@/components/app-shell";
 import { PwaRegister } from "@/components/pwa-register";
 import { Analytics } from "@/components/analytics";
+import { AdSense } from "@/components/adsense";
 import { JsonLd } from "@/components/json-ld";
 import { SITE_URL } from "@/lib/seo";
 import "./globals.css";
@@ -92,6 +93,7 @@ export default function RootLayout({
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap"
         />
+        <AdSense />
       </head>
       <body className="min-h-screen">
         <JsonLd data={ORG_JSONLD} />
