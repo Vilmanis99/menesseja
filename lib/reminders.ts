@@ -1,4 +1,4 @@
-import { CROPS, MONTHS_LV_FULL, type Crop } from "@/lib/planting-crops";
+import { CROPS, MONTHS_LV_FULL, accusative, type Crop } from "@/lib/planting-crops";
 import { sowingDay, PART_GENITIVE } from "@/lib/biodynamic";
 import { cropPart } from "@/lib/crop-part";
 import { soilReadiness } from "@/lib/sowing-thresholds";
@@ -80,7 +80,7 @@ export function buildReminders({ plants, region, weather, date = new Date() }: I
         id: `harvest-${plant.id}`,
         icon: isFlower ? "local_florist" : "agriculture",
         tone: "primary",
-        title: isFlower ? `Ziedēšanas laiks — ${crop.name}` : `Laiks novākt — ${crop.name}`,
+        title: isFlower ? `Ziedēšanas laiks — ${crop.name}` : `Laiks novākt — ${accusative(crop.name)}`,
         meta: isFlower ? `${plant.area} • ${MONTHS_LV_FULL[month - 1]}` : `${plant.area} • raža ${MONTHS_LV_FULL[month - 1]}`,
       });
     } else if (inMonth(crop.transplant, month) && ageDays >= 21) {
@@ -88,7 +88,7 @@ export function buildReminders({ plants, region, weather, date = new Date() }: I
         id: `transplant-${plant.id}`,
         icon: "yard",
         tone: "primary",
-        title: `Laiks stādīt laukā — ${crop.name}`,
+        title: `Laiks stādīt laukā — ${accusative(crop.name)}`,
         meta: `${plant.area} • īstais laiks`,
       });
     }
@@ -99,7 +99,7 @@ export function buildReminders({ plants, region, weather, date = new Date() }: I
         id: `succ-${plant.id}`,
         icon: "restart_alt",
         tone: "primary",
-        title: `Laiks sēt nākamo partiju — ${crop.name}`,
+        title: `Laiks atkārtoti sēt — ${accusative(crop.name)}`,
         meta: `${plant.area} • atkārtotā sēja nepārtrauktai ražai`,
       });
     }
@@ -126,7 +126,7 @@ export function buildReminders({ plants, region, weather, date = new Date() }: I
       id: "element-day",
       icon: sow.element === "udens" ? "water_drop" : sow.element === "zeme" ? "spa" : "eco",
       tone: "primary",
-      title: `${PART_GENITIVE[sow.part]} diena — ${canSow ? "sēj" : "stādi"} ${candidate.name.toLowerCase()}`,
+      title: `${PART_GENITIVE[sow.part]} diena — ${canSow ? "sēj" : "stādi"} ${accusative(candidate.name).toLowerCase()}`,
       meta: `${sow.sign.symbol} ${sow.sign.name} • ${soilNote}`,
     });
   }

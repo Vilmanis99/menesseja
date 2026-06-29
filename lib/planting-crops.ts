@@ -162,3 +162,26 @@ export const ACTIVITY_META: Record<
   transplant: { label: "Stādīt laukā", short: "Stādīt", color: "#3E7CB1" },
   harvest: { label: "Novākt", short: "Raža", color: "#B85C38" },
 };
+
+/**
+ * Latvian accusative of a crop name — the case that verbs like "stādīt / sēt /
+ * novākt X" require ("stādīt gurķus", not the nominative "stādīt gurķi").
+ * The regular rules below are correct for every single-word name; the few
+ * compound / -is names are listed explicitly (e.g. in "Lauka pupas" the word
+ * "Lauka" is a genitive modifier and must stay unchanged).
+ */
+const ACCUSATIVE_OVERRIDE: Record<string, string> = {
+  "Kabači / cukīni": "Kabačus / cukīnus",
+  "Puravi (lauki)": "Puravus (lauki)",
+  "Lauka pupas": "Lauka pupas",
+  Klematis: "Klematis",
+};
+
+export function accusative(name: string): string {
+  if (name in ACCUSATIVE_OVERRIDE) return ACCUSATIVE_OVERRIDE[name];
+  if (name.endsWith("i")) return name.slice(0, -1) + "us"; // masc. dsk.: tomāti → tomātus
+  if (name.endsWith("es") || name.endsWith("as") || name.endsWith("us")) return name; // siev. dsk. nemainās
+  if (name.endsWith("s")) return name.slice(0, -1) + "u"; // vīr. vsk.: baziliks → baziliku
+  if (name.endsWith("a")) return name.slice(0, -1) + "u"; // siev. vsk.: paprika → papriku
+  return name; // nelokāmi (oregano)
+}
