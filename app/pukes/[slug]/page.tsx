@@ -221,6 +221,21 @@ export default async function FlowerPage({ params }: { params: Promise<{ slug: s
         </>
       ) : null}
 
+      {f.links?.length ? (
+        <div className="mb-lg border-t border-outline-variant/10 pt-md">
+          <h2 className="mb-sm text-headline-md text-on-surface">Lasi vairāk par {f.name.toLowerCase()}</h2>
+          <ul className="space-y-2">
+            {f.links.map((l) => (
+              <li key={l.href}>
+                <Link href={l.href} className="inline-flex items-center gap-1 text-body-md text-primary hover:underline">
+                  <Icon name="arrow_forward" size="16px" /> {l.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ) : null}
+
       <DataNote variant="moon" className="mb-lg" />
 
       {siblings.length > 0 && (

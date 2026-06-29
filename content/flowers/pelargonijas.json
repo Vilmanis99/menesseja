@@ -4,7 +4,7 @@
   "latin": "Pelargonium",
   "emoji": "🌸",
   "type": "viengadiga",
-  "tagline": "Klasiskā balkona puķe, kas zied visu vasaru un viegli pārziemo telpā uz palodzes.",
+  "tagline": "Pelargonijas jeb ģerānijas — klasiskā balkona puķe, kas zied visu vasaru un viegli pārziemo telpā uz palodzes.",
   "bloom": "Jūnijs–septembris",
   "height": "25–50 cm",
   "sun": "Saule",
@@ -15,8 +15,9 @@
   "moonElement": "ziedi",
   "moonText": "Pelargonijas kā ziedu augu tradicionāli stāda un pārstāda ziedu (gaisa) dienās — kad Mēness ir Dvīņos, Svaros vai Ūdensvīrā — un labāk augošā Mēnesī, kad spēks virzās uz augšu. Tā ir veca dārznieku tradīcija, nevis garantija: daudz svarīgāk ir nogaidīt, līdz salnu vairs nav, un iestādīt siltā, sausā augsnē.",
   "intro": [
-    "Pelargonijas, ko Latvijā ierasti sauc par ģerānijām, ir, iespējams, visizplatītākā balkona un palodzes puķe. Tās zied nenogurstoši no jūnija līdz pat pirmajām rudens salnām, prasa maz un piedod gandrīz visas iesācēja kļūdas — tāpēc tā ir lieliska pirmā puķe podos un balkona kastēs. Krāsu klāsts ir plašs: no ugunīgi sarkanas un rozā līdz baltai, lillā un dažādiem toņu pārejām.",
-    "Svarīgi atcerēties vienu lietu: pelargonija NAV ziemcietīga. Tā ir daudzgadīgs augs, bet mūsu ziemu atklātā laukā neiztur un sasalst. Toties tās lielā priekšrocība ir tā, ka rudenī augu var vienkārši ienest istabā un pārziemot uz gaišas palodzes — un nākampavasar tā jau ir liels, brangs stāds, kas zied agrāk nekā svaigi nopirkti dēsti."
+    "Ģerānijas, kā Latvijā ikdienā sauc pelargonijas, ir, iespējams, visizplatītākā balkona un palodzes puķe. Tas pats augs — vienalga, vai raksti “ģerānijas” vai “geranijas” — botāniski ir pelargonija (Pelargonium), un tieši par šo košo podu puķi ir runa šajā lapā. Ģerānijas zied nenogurstoši no jūnija līdz pat pirmajām rudens salnām, prasa maz un piedod gandrīz visas iesācēja kļūdas — tāpēc tā ir lieliska pirmā puķe podos un balkona kastēs. Krāsu klāsts ir plašs: no ugunīgi sarkanas un rozā līdz baltai, lillā un dažādiem toņu pārejām.",
+    "Svarīgi atcerēties vienu lietu: ģerānija (pelargonija) NAV ziemcietīga. Tā ir daudzgadīgs augs, bet mūsu ziemu atklātā laukā neiztur un sasalst. Toties tās lielā priekšrocība ir tā, ka rudenī augu var vienkārši ienest istabā un pārziemot uz gaišas palodzes — un nākampavasar tā jau ir liels, brangs stāds, kas zied agrāk nekā svaigi nopirkti dēsti.",
+    "Īsumā par to, kā kopt ģerānijas: stādi tās saulainā vietā, laisti mēreni (labāk par sausu nekā pārliet), mēslo ziedēšanas laikā ar kālija bagātu puķu mēslojumu un regulāri noņem nokaltušos ziedus — tad ģerānijas zied kupli līdz salnām. Rudenī, pirms pirmajām salnām, ienes augu telpā un pārziemo vēsā, gaišā vietā. Sīkāku ģerāniju kopšanas pamācību — laistīšanu, mēslošanu, apgriešanu, pārziemošanu un pavairošanu no spraudeņiem — atradīsi atsevišķā rakstā par ģerāniju kopšanu."
   ],
   "planting": [
     "Stādus laukā un balkonā stādi tikai pēc pēdējām salnām — iekšzemē (Vidzemē, Latgalē) drošāk maija beigās, piekrastē un Zemgalē var jau ap maija vidu. Pirms tam tos var turēt uz palodzes vai siltumnīcā.",
@@ -40,6 +41,14 @@
   ],
   "folklore": "Latviešu mājās logu palodze ar sarkanu ģerāniju bijusi tik pierasts skats, ka tā kļuvusi gandrīz par mājas sajūtas zīmi — vasarā tā krāsoja balkonu un palodzi, bet ziemā augs gaidīja siltajā istabā, līdz atkal pienāca pavasaris.",
   "faq": [
+    {
+      "q": "Kā kopt ģerānijas, lai tās kupli zied?",
+      "a": "Ģerānijām (pelargonijām) vajadzīga saulaina vieta, mērena laistīšana un kālija bagāts puķu mēslojums ziedēšanas laikā. Laisti tikai tad, kad augsnes virskārta apžuvusi — pārliešana ģerānijām ir bīstamāka par sausumu. Regulāri noņem nokaltušos ziedu kātus (aplauz visu kātu, ne tikai galviņu), un izstīdzējušu augu vasaras vidū apgriez, lai tas kļūst kuplāks. Tā ģerānijas zied nepārtraukti no jūnija līdz salnām."
+    },
+    {
+      "q": "Kā ģerānijas pārziemot?",
+      "a": "Ģerānijas (pelargonijas) Latvijā ārā nepārziemo — pirmā salna tās nogalina. Rudenī pirms salnām (iekšzemē septembra beigās, piekrastē oktobra vidū) ienes augu telpā, apgriez to par apmēram trešdaļu līdz pusei un noliec gaišā, vēsā vietā (+5…+12 °C). Ziemā laisti ļoti taupīgi un nemēslo. Pavasarī, ap martu, atsāc laistīšanu, apgriez un pārstādi svaigā augsnē; laukā iznes tikai pēc maija salnām. Ja telpu nav, var pārziemot tikai pāris spraudeņus uz palodzes."
+    },
     {
       "q": "Vai pelargonija pārziemos Latvijā uz balkona vai dārzā?",
       "a": "Nē. Pelargonija nav ziemcietīga un atklātā laukā vai aukstā balkonā mūsu ziemu nepārcieš. Lai to saglabātu, rudenī pirms salnām augs jāienes telpā un jāpārziemo uz gaišas, vēsas palodzes."

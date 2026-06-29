@@ -122,6 +122,23 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
           </ul>
         </div>
       )}
+
+      {/* Community CTA — convert search readers into contributors. */}
+      <div className="mt-lg rounded-xl border border-outline-variant/10 bg-surface-container p-md">
+        <h2 className="mb-sm text-headline-md text-on-surface">Tev ir sava pieredze ar šo?</h2>
+        <p className="mb-sm text-body-md text-on-surface-variant">
+          Padalies ar savu dārza pieredzi vai senču gudrību — tavs padoms, recepte vai ticējums
+          var palīdzēt citiem Latvijas dārzniekiem.
+        </p>
+        <div className="flex flex-wrap gap-4">
+          <Link href="/iesutit" className="inline-flex items-center gap-1 text-label-md font-semibold text-primary hover:underline">
+            <Icon name="auto_stories" size="16px" /> Iesūti senču gudrību
+          </Link>
+          <Link href="/kopiena" className="inline-flex items-center gap-1 text-label-md font-semibold text-primary hover:underline">
+            <Icon name="groups" size="16px" /> Apmeklē kopienu
+          </Link>
+        </div>
+      </div>
     </article>
   );
 }

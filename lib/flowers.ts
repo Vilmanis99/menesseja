@@ -32,6 +32,7 @@ export interface Flower {
   problems?: string[]; // biežākās problēmas
   folklore?: string;
   faq?: { q: string; a: string }[];
+  links?: { label: string; href: string }[]; // padziļinātie raksti par šo puķi (kopas savienošana)
   related?: string[]; // citas puķu slugs
 }
 
