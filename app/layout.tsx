@@ -89,6 +89,10 @@ export default function RootLayout({
   return (
     <html lang="lv" className={`${literata.variable} ${hanken.variable}`}>
       <head>
+        {/* Warm up the font origins so the (render-blocking) icon stylesheet
+            resolves faster on mobile — cuts LCP without an icon-text flash. */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         {/* Material Symbols — variable axes for fill/weight toggles */}
         <link
           rel="stylesheet"

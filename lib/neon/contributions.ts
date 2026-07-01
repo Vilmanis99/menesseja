@@ -138,3 +138,17 @@ export async function moderateContribution(id: string, status: "approved" | "rej
   if (!sql) throw new Error("db-not-configured");
   await sql`update community_contributions set status = ${status} where id = ${id}`;
 }
+
+/** Admin dashboard: how many submissions sit in each status. */
+export async function countContributions(): Promise<{ pending: number; approved: number; rejected: number }> {
+  const sql = getSql();
+  if (!sql) throw new Error("db-not-configured");
+  const rows = (await sql`
+    select status, count(*)::int as n from community_contributions group by status`) as {
+    status: string;
+    n: number;
+  }[];
+  const out = { pending: 0, approved: 0, rejected: 0 };
+  for (const r of rows) if (r.status in out) out[r.status as keyof typeof out] = r.n;
+  return out;
+}

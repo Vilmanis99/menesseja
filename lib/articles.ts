@@ -50,3 +50,35 @@ export function getAllArticles(): Article[] {
 export function getArticle(slug: string): Article | null {
   return read(`${slug}.json`);
 }
+
+const LV_DIACRITICS: Record<string, string> = {
+  ā: "a", č: "c", ē: "e", ģ: "g", ī: "i", ķ: "k", ļ: "l", ņ: "n", š: "s", ū: "u", ž: "z", ō: "o",
+};
+
+/** Slugify a heading into a stable anchor id (Latvian diacritics → ASCII). */
+export function headingSlug(s: string): string {
+  return s
+    .toLowerCase()
+    .replace(/[āčēģīķļņšūžō]/g, (c) => LV_DIACRITICS[c] ?? c)
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
+/**
+ * Extract Q&A pairs from an article's "biežākie jautājumi" section, if present.
+ * Each paragraph is written as "Jautājums? Atbilde." — split on the first "?".
+ * Used to emit FAQPage JSON-LD (Google rich results + AI-engine extraction).
+ */
+export function articleFaq(a: Article): { q: string; a: string }[] {
+  const section = a.body.find((s) => s.heading && /jautājumi/i.test(s.heading));
+  if (!section) return [];
+  const out: { q: string; a: string }[] = [];
+  for (const para of section.paragraphs) {
+    const i = para.indexOf("?");
+    if (i === -1) continue;
+    const q = para.slice(0, i + 1).trim();
+    const ans = para.slice(i + 1).trim();
+    if (q && ans) out.push({ q, a: ans });
+  }
+  return out;
+}

@@ -111,3 +111,18 @@ export async function setLike(postId: string, clientId: string, like: boolean): 
     await sql`delete from community_likes where post_id = ${postId} and client_id = ${clientId}`;
   }
 }
+
+/** Total number of community posts (admin dashboard). */
+export async function countPosts(): Promise<number> {
+  const sql = getSql();
+  if (!sql) throw new Error("db-not-configured");
+  const rows = (await sql`select count(*)::int as n from community_posts`) as { n: number }[];
+  return rows[0].n;
+}
+
+/** Admin-only: delete any post regardless of author (spam moderation). Guarded by ADMIN_KEY at the route. */
+export async function adminDeletePost(id: string): Promise<void> {
+  const sql = getSql();
+  if (!sql) throw new Error("db-not-configured");
+  await sql`delete from community_posts where id = ${id}`;
+}

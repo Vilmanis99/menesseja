@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { Icon } from "@/components/ui/icon";
 import { JsonLd } from "@/components/json-ld";
 import { DataNote } from "@/components/data-note";
-import { getArticle, getAllArticles, articleSlugs } from "@/lib/articles";
+import { getArticle, getAllArticles, articleSlugs, articleFaq, headingSlug } from "@/lib/articles";
 import { canonical, SITE_NAME, og } from "@/lib/seo";
 import { DATA_REVIEWED } from "@/lib/sources";
 
@@ -57,11 +57,34 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
       { "@type": "ListItem", position: 2, name: a.title, item: canonical(`/raksti/${a.slug}`) },
     ],
   };
+  // FAQPage from the article's own "biežākie jautājumi" section → rich results + AI extraction.
+  const faq = articleFaq(a);
+  const faqJsonLd = faq.length
+    ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: faq.map((q) => ({
+          "@type": "Question",
+          name: q.q,
+          acceptedAnswer: { "@type": "Answer", text: q.a },
+        })),
+      }
+    : null;
+
+  // Jump-to table of contents from the article's own H2 headings (shown when ≥3).
+  const toc = a.body
+    .filter((s) => s.heading)
+    .map((s) => ({ label: s.heading as string, id: headingSlug(s.heading as string) }));
+
+  const MONTHS_LOC = ["janvārī", "februārī", "martā", "aprīlī", "maijā", "jūnijā", "jūlijā", "augustā", "septembrī", "oktobrī", "novembrī", "decembrī"];
+  const [reviewedYear, reviewedMonth] = DATA_REVIEWED.split("-").map(Number);
+  const reviewedLabel = `${reviewedYear}. g. ${MONTHS_LOC[reviewedMonth - 1]}`;
 
   return (
     <article className="mx-auto max-w-2xl">
       <JsonLd data={jsonLd} />
       <JsonLd data={breadcrumb} />
+      {faqJsonLd && <JsonLd data={faqJsonLd} />}
 
       <nav className="mb-md flex items-center gap-1 text-label-sm text-on-surface-variant">
         <Link href="/raksti" className="hover:text-primary">Raksti</Link>
@@ -74,13 +97,34 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
           {a.category} · {a.readMinutes} min
         </p>
         <h1 className="text-headline-lg-mobile text-primary md:text-headline-lg">{a.title}</h1>
+        <p className="mt-2 flex items-center gap-1.5 text-label-sm text-on-surface-variant">
+          <Icon name="update" size="15px" />
+          Pārbaudīts <time dateTime={`${DATA_REVIEWED}-01`}>{reviewedLabel}</time>
+        </p>
       </header>
+
+      {toc.length >= 3 && (
+        <nav aria-label="Šajā rakstā" className="mb-lg rounded-xl border border-outline-variant/10 bg-surface-container p-md">
+          <p className="mb-sm text-label-sm uppercase tracking-wide text-on-surface-variant">Šajā rakstā</p>
+          <ul className="space-y-1">
+            {toc.map((t) => (
+              <li key={t.id}>
+                <a href={`#${t.id}`} className="inline-flex items-center gap-1 text-body-md text-primary hover:underline">
+                  <Icon name="arrow_forward" size="14px" /> {t.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      )}
 
       <div className="space-y-md">
         {a.body.map((section, i) => (
           <section key={i}>
             {section.heading && (
-              <h2 className="mb-sm text-headline-md text-on-surface">{section.heading}</h2>
+              <h2 id={headingSlug(section.heading)} className="mb-sm scroll-mt-24 text-headline-md text-on-surface">
+                {section.heading}
+              </h2>
             )}
             {section.paragraphs.map((para, j) => (
               <p key={j} className="mb-sm text-body-lg leading-relaxed text-on-surface-variant">
