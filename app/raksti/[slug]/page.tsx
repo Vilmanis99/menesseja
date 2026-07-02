@@ -5,6 +5,7 @@ import { Icon } from "@/components/ui/icon";
 import { JsonLd } from "@/components/json-ld";
 import { DataNote } from "@/components/data-note";
 import { getArticle, getAllArticles, articleSlugs, articleFaq, headingSlug } from "@/lib/articles";
+import { NewsletterSignup } from "@/components/newsletter-signup";
 import { canonical, SITE_NAME, og } from "@/lib/seo";
 import { DATA_REVIEWED } from "@/lib/sources";
 
@@ -166,6 +167,9 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
           </ul>
         </div>
       )}
+
+      {/* Contextual email capture — the reader just got their answer. */}
+      <NewsletterSignup source={`raksts:${a.slug}`} />
 
       {/* Community CTA — convert search readers into contributors. */}
       <div className="mt-lg rounded-xl border border-outline-variant/10 bg-surface-container p-md">
