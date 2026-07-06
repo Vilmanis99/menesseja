@@ -13,6 +13,10 @@ export interface Flower {
   slug: string;
   name: string; // Latvian
   latin?: string;
+  /** Optional head-term SEO overrides — for pillar pages chasing a big query
+   *  (e.g. "peonijas"); the generic title template covers the rest. */
+  seoTitle?: string;
+  seoDescription?: string;
   emoji: string;
   type: FlowerType;
   tagline: string;

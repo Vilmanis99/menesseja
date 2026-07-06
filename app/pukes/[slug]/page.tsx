@@ -21,8 +21,10 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const f = getFlower(slug);
   if (!f) return {};
-  const title = `${f.name} — kad stādīt, kā kopt un Mēness laiks Latvijā`;
-  const description = `${f.tagline} Stādīšana, kopšana, ziedēšana (${f.bloom}) un labākā Mēness diena ${f.name.toLowerCase()} Latvijas dārzā.`;
+  const title = f.seoTitle ?? `${f.name} — kad stādīt, kā kopt un Mēness laiks Latvijā`;
+  const description =
+    f.seoDescription ??
+    `${f.tagline} Stādīšana, kopšana, ziedēšana (${f.bloom}) un labākā Mēness diena ${f.name.toLowerCase()} Latvijas dārzā.`;
   return {
     title,
     description,

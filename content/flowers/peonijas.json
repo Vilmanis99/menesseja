@@ -2,6 +2,8 @@
   "slug": "peonijas",
   "name": "Peonijas",
   "latin": "Paeonia",
+  "seoTitle": "Peonijas (pujenes): stādīšana, kopšana un kāpēc tās nezied",
+  "seoDescription": "Pilnais peoniju ceļvedis Latvijai: kad un cik dziļi stādīt (2–5 cm — dziļāk nezied!), kā kopt un pārstādīt, kad zied, kā griezt vāzei un ko darīt, ja peonija jeb pujene nezied. Ar Mēness kalendāra tradīciju.",
   "emoji": "🌸",
   "type": "daudzgadiga",
   "tagline": "Peonijas ir vecmāmiņas dārza karaliene — iestādi reizi, un tās zied gadu desmitiem, ar katru vasaru kuplākas un skaistākas.",
@@ -15,7 +17,7 @@
   "moonElement": "ziedi",
   "moonText": "Peonija ir ziedu augs, tāpēc kopšanu un ziedu vērošanu tradicionāli saista ar ziedu jeb gaisa dienām (Mēness Dvīņos, Svaros, Ūdensvīrā). Tā kā peonijas stāda saknenī ar pumpuriem, sakņu darbus tradicionāli liek dilstošā Mēness laikā — taču daudz svarīgāks par konkrēto Mēness dienu ir tas, lai stādītu rudenī un pumpurus neaprok pārāk dziļi. Mēness kalendārs ir jauks ritma palīgs, bet vai peonija ziedēs, izšķir dziļums un saule, ne Mēness fāze.",
   "intro": [
-    "Peonijas ir vienas no tām puķēm, ko Latvijā atrast teju katrā vecā lauku dārzā — pie mājas stūra, gar dārza taku vai vecmāmiņas dobē, kur tās zied jau gadu desmitiem. Tieši ar to peonijas ir tik mīļas: iestādi reizi, un, ja vieta izvēlēta pareizi, krūms tevi pāraugs un priecēs visu mūžu, ar katru gadu kuplāks un ar vairāk ziediem. Tās ir pilnībā ziemcietīgas, izturīgas pret mūsu salnām un slimībām samērā nejutīgas — droša izvēle pat tam, kas dārzā tikai sāk.",
+    "Peonijas — tautā sauktas arī par pujenēm — ir vienas no tām puķēm, ko Latvijā atrast teju katrā vecā lauku dārzā: pie mājas stūra, gar dārza taku vai vecmāmiņas dobē, kur tās zied jau gadu desmitiem. Tieši ar to peonijas ir tik mīļas: iestādi reizi, un, ja vieta izvēlēta pareizi, krūms tevi pāraugs un priecēs visu mūžu, ar katru gadu kuplāks un ar vairāk ziediem. Tās ir pilnībā ziemcietīgas, izturīgas pret mūsu salnām un slimībām samērā nejutīgas — droša izvēle pat tam, kas dārzā tikai sāk.",
     "Vienīgais, kur iesācēji ar peonijām visbiežāk kļūdās, ir stādīšanas dziļums — un tieši tas izšķir, vai peonija vispār ziedēs. Sakneņa pumpuri (tos sauc par actiņām) jāstāda pavisam seklu, tikai 2–5 cm zem augsnes virsmas; ja tos aprok dziļāk, augs gan dzīs lapas, bet ziedu var nebūt gadiem ilgi. Atceries to vienu lietu, un pārējais peonijai izdosies gandrīz pats no sevis.",
     "Peonijas zied īsi, bet spoži — pašā jūnija pilnvasarā, kad dārzs vēl pilns spēka. Latvijā pumpuri parasti atveras jūnijā: agrīnās šķirnes (piemēram, sīkziedu jeb Paeonia tenuifolia) sāk jau maija beigās, klasiskās dārza peonijas plaukst jūnija pirmajā pusē, bet vēlīnās pildītās šķirnes velk ziedēšanu līdz jūlija sākumam. Stādot kopā agrīnās un vēlīnās šķirnes, peoniju ziedēšanu dārzā var izstiept nepilnu mēnesi."
   ],
@@ -71,6 +73,14 @@
     {
       "q": "Kā pavairot peonijas?",
       "a": "Vienkāršākais veids ir saknes cera dalīšana rudenī: izrok pieaugušu ceru, ļauj saknēm ēnā nedaudz apvīst, lai tās mazāk lūst, un sadali tā, lai katrā gabalā ir 3–5 veseli pumpuri un dažas resnas barības saknes. Katrs gabals kļūst par jaunu augu. Sīkāk par pavairošanas soļiem lasi atsevišķā rakstā."
+    },
+    {
+      "q": "Vai pujenes un peonijas ir viens un tas pats?",
+      "a": "Jā. Pujenes ir peoniju tautas nosaukums, kas daudzviet Latvijā dzīvo joprojām — vecmāmiņa dobē audzē pujenes, botāniķis tās sauc par Paeonia. Auga kopšanā nekādas atšķirības nav: viss, kas šajā lapā rakstīts par peonijām, tikpat labi attiecas uz pujenēm."
+    },
+    {
+      "q": "Kad griezt peonijas vāzei, lai tās ilgi stāv?",
+      "a": "Griez agri no rīta, kad pumpuri jau rāda krāsu un pēc taustes ir mīksti kā zefīrs — vēl neatvērušies, bet ne cieti. Tādi pumpuri vāzē atveras pilnos ziedos un stāv nedēļu vai ilgāk; pilnībā atvērušies ziedi tur tikai pāris dienas. Uz krūma vienmēr atstāj vismaz pusi lapu un ziedu, lai augs uzkrāj spēku nākamajam gadam."
     }
   ],
   "links": [
