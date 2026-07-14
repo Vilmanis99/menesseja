@@ -2,7 +2,37 @@
   "title": "Kāpēc kartupeļiem lakstu puve (fitoftora) un kā to apturēt",
   "slug": "kapec-kartupeliem-lakstu-puve",
   "category": "Problēmas",
+  "intent": "problem",
   "excerpt": "Kāpēc kartupeļiem lakstu puve (fitoftora) uzliesmo mitrā, siltā vasarā, kā to atpazīt uz lapām un kā paspēt izglābt bumbuļus, pirms sēne nonāk līdz ražai.",
+  "shortAnswer": "Vēl vakar kartupeļu lakstiem viss bija kārtībā, bet pēc dažām lietainām, siltām dienām uz lapām parādās brūni, slapji plankumi, un drīz vien viss lauks izskatās kā apsvilis.  Tā ir lakstu puve, ko sauc arī par fitoftoru vai fitoftorozi — agresīvākā kartupeļu slimība mūsu klimatā, kas mitrā jūlijā un augustā var izplatīties pa visu dārzu burtiski dažu dienu laikā.",
+  "primaryQuery": "kāpēc kartupeļiem lakstu puve (fitoftora) un kā to apturēt",
+  "publishedAt": "2026-06-22",
+  "updatedAt": "2026-06-22",
+  "entities": {
+    "crops": [
+      "kartupeli"
+    ],
+    "pests": [
+      "lakstu-puve"
+    ],
+    "recipes": [
+      "kosas-novarijums",
+      "koku-pelnu-skidums"
+    ]
+  },
+  "relatedSlugs": [
+    "augu-maina-darza"
+  ],
+  "sources": [
+    {
+      "label": "Latvijas Lauku konsultāciju un izglītības centrs",
+      "url": "https://llkc.lv/"
+    },
+    {
+      "label": "Royal Horticultural Society — Advice",
+      "url": "https://www.rhs.org.uk/advice"
+    }
+  ],
   "readMinutes": 6,
   "body": [
     {
@@ -51,10 +81,25 @@
     }
   ],
   "links": [
-    { "label": "Kartupeļu stādīšana un kopšana", "href": "/augi/kartupeli" },
-    { "label": "Lakstu puve: pazīmes un apkarošana", "href": "/kaitekli/lakstu-puve" },
-    { "label": "Kosas novārījums pret sēņu slimībām", "href": "/receptes/kosas-novarijums" },
-    { "label": "Koku pelnu šķīdums augu stiprināšanai", "href": "/receptes/koku-pelnu-skidums" },
-    { "label": "Augu maiņa dārzā", "href": "/raksti/augu-maina-darza" }
+    {
+      "label": "Kartupeļu stādīšana un kopšana",
+      "href": "/augi/kartupeli"
+    },
+    {
+      "label": "Lakstu puve: pazīmes un apkarošana",
+      "href": "/kaitekli/lakstu-puve"
+    },
+    {
+      "label": "Kosas novārījums pret sēņu slimībām",
+      "href": "/receptes/kosas-novarijums"
+    },
+    {
+      "label": "Koku pelnu šķīdums augu stiprināšanai",
+      "href": "/receptes/koku-pelnu-skidums"
+    },
+    {
+      "label": "Augu maiņa dārzā",
+      "href": "/raksti/augu-maina-darza"
+    }
   ]
 }

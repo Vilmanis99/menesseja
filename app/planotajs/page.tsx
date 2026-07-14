@@ -13,6 +13,7 @@ import { companionStatus, companionReason, goodCompanions, badCompanions } from 
 import { useMounted } from "@/lib/use-mounted";
 import { moonForDate } from "@/lib/moon";
 import { sowingDay, ELEMENT_META, PART_GENITIVE } from "@/lib/biodynamic";
+import { track } from "@/lib/analytics";
 
 const COLS = 12;
 const ROWS = 8;
@@ -65,6 +66,7 @@ const COMPANIONS = [
 type Placements = Record<number, string>; // cellIndex → cropId
 
 export default function PlanotajsPage() {
+  useEffect(() => track("planner_started", { source: "planner_page" }), []);
   const [plans, setPlans] = useState<Plan[]>([{ id: "p1", name: "Mans plāns", placements: {} }]);
   const [activeId, setActiveId] = useState("p1");
   const [selected, setSelected] = useState<string | null>(null);
@@ -207,6 +209,7 @@ export default function PlanotajsPage() {
 
   function save() {
     localStorage.setItem(PLANS_KEY, JSON.stringify({ plans, activeId }));
+    track("planner_saved", { plan_count: plans.length, placed_count: Object.keys(placements).length });
     setSavedFlash(true);
     setTimeout(() => setSavedFlash(false), 1800);
   }
@@ -241,15 +244,15 @@ export default function PlanotajsPage() {
         ))}
         <button
           onClick={addPlan}
-          className="inline-flex items-center gap-1 rounded-full border border-primary/40 px-3 py-1 text-label-sm text-primary transition-colors hover:bg-primary/10"
+          className="inline-flex min-h-11 items-center gap-1 rounded-full border border-primary/40 px-3 py-2 text-label-sm text-primary transition-colors hover:bg-primary/10 active:scale-[0.98]"
         >
           <Icon name="add" size="14px" /> Jauns plāns
         </button>
         <div className="ml-auto flex gap-1">
-          <button onClick={renamePlan} title="Pārdēvēt" className="rounded-lg p-1.5 text-on-surface-variant hover:bg-surface-variant hover:text-primary">
+          <button onClick={renamePlan} aria-label="Pārdēvēt plānu" title="Pārdēvēt" className="flex h-11 w-11 items-center justify-center rounded-lg text-on-surface-variant transition-colors hover:bg-surface-variant hover:text-primary">
             <Icon name="edit" size="18px" />
           </button>
-          <button onClick={deletePlan} title="Dzēst plānu" className="rounded-lg p-1.5 text-on-surface-variant hover:bg-surface-variant hover:text-error">
+          <button onClick={deletePlan} aria-label="Dzēst plānu" title="Dzēst plānu" className="flex h-11 w-11 items-center justify-center rounded-lg text-on-surface-variant transition-colors hover:bg-surface-variant hover:text-error">
             <Icon name="delete" size="18px" />
           </button>
         </div>

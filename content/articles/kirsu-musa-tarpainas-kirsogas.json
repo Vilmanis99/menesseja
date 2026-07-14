@@ -2,7 +2,32 @@
   "title": "Ķiršu muša: kā novērst tārpainas ķiršu ogas",
   "slug": "kirsu-musa-tarpainas-kirsogas",
   "category": "Problēmas",
+  "intent": "problem",
   "excerpt": "Tārpainas ķiršu ogas rada ķiršu muša. Uzzini, kad tā lido, kā ar dzeltenajiem un feromonu slazdiem to ierobežot un kā atbrīvoties no tārpiem.",
+  "shortAnswer": "Pārlauz nogatavojušos ķiršogu, un iekšā — balts, mazs tārpiņš.  Reizēm oga no ārpuses izskatās gandrīz vesela, tikai mīkstāka un ar nelielu iedobumu, bet pa vidu jau mīt nelūgts viesis.",
+  "primaryQuery": "ķiršu muša: kā novērst tārpainas ķiršu ogas",
+  "publishedAt": "2026-06-22",
+  "updatedAt": "2026-06-22",
+  "entities": {
+    "pests": [
+      "abolu-tinejs",
+      "burkanu-musa",
+      "plumju-zaglapsene"
+    ],
+    "recipes": [
+      "kumelisu-uzlejums"
+    ]
+  },
+  "sources": [
+    {
+      "label": "Latvijas Lauku konsultāciju un izglītības centrs",
+      "url": "https://llkc.lv/"
+    },
+    {
+      "label": "Royal Horticultural Society — Advice",
+      "url": "https://www.rhs.org.uk/advice"
+    }
+  ],
   "readMinutes": 6,
   "body": [
     {
@@ -52,9 +77,21 @@
     }
   ],
   "links": [
-    { "label": "Ābolu tinējs: tārpainie āboli un slazdi", "href": "/kaitekli/abolu-tinejs" },
-    { "label": "Burkānu muša un dzeltenie slazdi", "href": "/kaitekli/burkanu-musa" },
-    { "label": "Plūmju zāģlapsene: tārpainās plūmes", "href": "/kaitekli/plumju-zaglapsene" },
-    { "label": "Kumelīšu uzlējums dārza augiem", "href": "/receptes/kumelisu-uzlejums" }
+    {
+      "label": "Ābolu tinējs: tārpainie āboli un slazdi",
+      "href": "/kaitekli/abolu-tinejs"
+    },
+    {
+      "label": "Burkānu muša un dzeltenie slazdi",
+      "href": "/kaitekli/burkanu-musa"
+    },
+    {
+      "label": "Plūmju zāģlapsene: tārpainās plūmes",
+      "href": "/kaitekli/plumju-zaglapsene"
+    },
+    {
+      "label": "Kumelīšu uzlējums dārza augiem",
+      "href": "/receptes/kumelisu-uzlejums"
+    }
   ]
 }

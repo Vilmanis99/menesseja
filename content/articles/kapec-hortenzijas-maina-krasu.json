@@ -2,7 +2,31 @@
   "title": "Kā padarīt hortenzijas zilas vai rozā — augsnes pH un krāsa",
   "slug": "kapec-hortenzijas-maina-krasu",
   "category": "Praktiski",
+  "intent": "how-to",
   "excerpt": "Kā iegūt zilas hortenzijas un kāpēc tās maina krāsu: viss izšķiras pēc augsnes pH un alumīnija. Skābā zemē — zilas, sārmainā — rozā. Lūk, kā to vadīt.",
+  "shortAnswer": "Tu nopirki rozā hortenziju, iestādīji dārzā, un pēc gada tā uzziedēja gandrīz zila.  Vai otrādi — kaimiņienei tā paša krūma atvasi zied debeszilos toņos, bet tev tā pati šķirne dod blāvi rozā.",
+  "primaryQuery": "kā padarīt hortenzijas zilas vai rozā",
+  "publishedAt": "2026-06-22",
+  "updatedAt": "2026-06-22",
+  "entities": {
+    "recipes": [
+      "koku-pelnu-skidums"
+    ]
+  },
+  "relatedSlugs": [
+    "skaba-augsne-ka-noteikt-un-uzlabot",
+    "kapec-hortenzijas-nezied"
+  ],
+  "sources": [
+    {
+      "label": "Latvijas Lauku konsultāciju un izglītības centrs",
+      "url": "https://llkc.lv/"
+    },
+    {
+      "label": "Royal Horticultural Society — Advice",
+      "url": "https://www.rhs.org.uk/advice"
+    }
+  ],
   "readMinutes": 6,
   "body": [
     {
@@ -62,9 +86,21 @@
     }
   ],
   "links": [
-    { "label": "Hortenziju stādīšana un kopšana", "href": "/pukes/hortenzijas" },
-    { "label": "Skāba augsne: kā noteikt un uzlabot", "href": "/raksti/skaba-augsne-ka-noteikt-un-uzlabot" },
-    { "label": "Kāpēc hortenzijas nezied", "href": "/raksti/kapec-hortenzijas-nezied" },
-    { "label": "Koka pelnu šķīdums (ceļ augsnes pH)", "href": "/receptes/koku-pelnu-skidums" }
+    {
+      "label": "Hortenziju stādīšana un kopšana",
+      "href": "/pukes/hortenzijas"
+    },
+    {
+      "label": "Skāba augsne: kā noteikt un uzlabot",
+      "href": "/raksti/skaba-augsne-ka-noteikt-un-uzlabot"
+    },
+    {
+      "label": "Kāpēc hortenzijas nezied",
+      "href": "/raksti/kapec-hortenzijas-nezied"
+    },
+    {
+      "label": "Koka pelnu šķīdums (ceļ augsnes pH)",
+      "href": "/receptes/koku-pelnu-skidums"
+    }
   ]
 }

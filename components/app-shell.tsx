@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { clsx } from "@/lib/clsx";
@@ -12,6 +13,8 @@ import { AccountButton } from "@/components/account-button";
 import { Onboarding } from "@/components/onboarding";
 import { GardenToast } from "@/components/garden-toast";
 import { SiteFooter } from "@/components/site-footer";
+import { MobileMenu } from "@/components/mobile-menu";
+import { ConsentManager } from "@/components/consent-manager";
 
 function isActive(pathname: string, href: string): boolean {
   if (href === "/") return pathname === "/";
@@ -42,7 +45,7 @@ function Sidebar() {
       <div className="mb-lg px-xs">
         <span className="block text-headline-md text-primary">Mēness Sēja</span>
         <p className="mt-xs text-label-sm uppercase tracking-widest text-on-surface-variant/70">
-          Modern Folklore
+          Latvijas dārza almanahs
         </p>
       </div>
       <nav className="flex-1 space-y-1">
@@ -60,38 +63,31 @@ function Sidebar() {
   );
 }
 
-function TopBar() {
+function TopBar({ onMenu }: { onMenu: () => void }) {
   return (
-    <header className="sticky top-0 z-40 flex items-center justify-between bg-surface/80 px-gutter py-sm backdrop-blur-md md:hidden print:hidden">
-      <Link href="/" aria-label="Mēness Sēja — sākums">
-        <span className="text-headline-md text-primary">Mēness Sēja</span>
-      </Link>
+    <header className="mobile-top-bar sticky top-0 z-40 flex items-center justify-between bg-surface/80 px-gutter pb-sm backdrop-blur-md md:hidden print:hidden">
       <div className="flex items-center gap-1">
-        <Link
-          href="/macies"
-          aria-label="Kas ir Mēness sēja?"
+        <button
+          onClick={onMenu}
+          aria-label="Atvērt izvēlni"
           className="flex h-11 w-11 items-center justify-center rounded-full text-primary transition-colors hover:bg-surface-variant/50"
         >
-          <Icon name="school" />
+          <Icon name="menu" />
+        </button>
+        <Link href="/" aria-label="Mēness Sēja — sākums">
+          <span className="text-headline-md text-primary">Mēness Sēja</span>
         </Link>
-        <Link
-          href="/iestatijumi"
-          aria-label="Iestatījumi un reģions"
-          className="flex h-11 w-11 items-center justify-center rounded-full text-primary transition-colors hover:bg-surface-variant/50"
-        >
-          <Icon name="settings" />
-        </Link>
-        <AccountButton variant="bar" />
       </div>
+      <AccountButton variant="bar" />
     </header>
   );
 }
 
-function BottomNav() {
+function BottomNav({ onMenu }: { onMenu: () => void }) {
   const pathname = usePathname();
   const items = NAV_ITEMS.filter((i) => i.primary);
   return (
-    <nav className="fixed bottom-0 left-0 z-50 flex w-full items-center justify-around rounded-t-xl bg-surface-container-high px-4 pb-4 pt-2 shadow-[0_-4px_20px_rgba(27,48,34,0.3)] md:hidden print:hidden">
+    <nav className="mobile-bottom-nav fixed bottom-0 left-0 z-50 flex w-full items-center justify-around rounded-t-xl bg-surface-container-high px-2 pt-2 shadow-[0_-4px_20px_rgba(27,48,34,0.3)] md:hidden print:hidden">
       {items.map((item) => {
         const active = isActive(pathname, item.href);
         return (
@@ -101,7 +97,7 @@ function BottomNav() {
             aria-label={item.label}
             aria-current={active ? "page" : undefined}
             className={clsx(
-              "flex min-h-[52px] flex-1 flex-col items-center justify-center gap-0.5 rounded-xl py-1 transition-all active:scale-90",
+              "flex min-h-[52px] flex-1 flex-col items-center justify-center gap-0.5 rounded-xl py-1 transition-all duration-200 active:scale-[0.97]",
               active
                 ? "bg-primary-container text-on-primary-container"
                 : "text-on-surface-variant hover:text-primary",
@@ -112,24 +108,36 @@ function BottomNav() {
           </Link>
         );
       })}
+      <button
+        onClick={onMenu}
+        aria-label="Izvēlne — visas sadaļas"
+        className="flex min-h-[52px] flex-1 flex-col items-center justify-center gap-0.5 rounded-xl py-1 text-on-surface-variant transition-all duration-200 hover:text-primary active:scale-[0.97]"
+      >
+        <Icon name="menu" />
+        <span className="text-label-sm">Izvēlne</span>
+      </button>
     </nav>
   );
 }
 
 export function AppShell({ children }: { children: React.ReactNode }) {
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <AuthProvider>
       <RegionProvider>
         <GardenProvider>
+          <a href="#main-content" className="fixed left-3 top-3 z-[400] -translate-y-24 rounded-lg bg-primary px-4 py-3 text-label-md font-semibold text-on-primary transition-transform focus:translate-y-0">Pāriet uz galveno saturu</a>
           <Sidebar />
-          <TopBar />
-          <div className="mx-auto mb-24 max-w-container-max px-gutter py-md md:mb-0 md:ml-64 md:py-lg print:m-0 print:max-w-none print:p-0">
-            {children}
+          <TopBar onMenu={() => setMenuOpen(true)} />
+          <div className="app-mobile-content mx-auto max-w-container-max px-gutter py-md md:ml-64 md:py-lg print:m-0 print:max-w-none print:p-0">
+            <main id="main-content" tabIndex={-1}>{children}</main>
             <SiteFooter />
           </div>
-          <BottomNav />
+          <BottomNav onMenu={() => setMenuOpen(true)} />
+          <MobileMenu open={menuOpen} onClose={() => setMenuOpen(false)} />
           <Onboarding />
           <GardenToast />
+          <ConsentManager />
         </GardenProvider>
       </RegionProvider>
     </AuthProvider>

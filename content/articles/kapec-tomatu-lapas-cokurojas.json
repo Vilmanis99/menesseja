@@ -1,0 +1,100 @@
+{
+  "title": "Kāpēc tomātu lapas čokurojas un kad jāsatraucas",
+  "seoTitle": "Tomātu lapas čokurojas: cēloņi un ko darīt",
+  "slug": "kapec-tomatu-lapas-cokurojas",
+  "category": "Problēmas",
+  "intent": "problem",
+  "excerpt": "Tomātu lapas karstumā mēdz saritināties, nezaudējot ražu. Uzzini, kā nekaitīgu lapu rullēšanos atšķirt no kaitēkļiem, vīrusa vai herbicīdu bojājuma.",
+  "shortAnswer": "Ja vecākās tomātu lapas rullējas uz augšu, paliek zaļas un stingras, bet augs turpina augt un veidot augļus, parasti tā ir nekaitīga reakcija uz karstumu, sausumu vai pārāk stipru apgriešanu. Satraucies tad, ja jaunās lapas ir savērptas un šauras, parādās dzelteni plankumi, lipīgums, sīki kukaiņi vai apstājas visa auga augšana.",
+  "primaryQuery": "kāpēc tomātu lapas čokurojas",
+  "aliases": ["tomātu lapas saritinās", "tomātu lapas griežas", "tomātiem rullējas lapas"],
+  "publishedAt": "2026-07-14",
+  "updatedAt": "2026-07-14",
+  "seasonalMonths": [6, 7, 8],
+  "entities": {
+    "crops": ["tomati"],
+    "pests": ["laputis", "tiklerces"]
+  },
+  "relatedSlugs": ["ka-laistit-darzu-karstuma", "kapec-tomatiem-bruni-plankumi-uz-lapam", "tomatu-veidosana"],
+  "sources": [
+    { "label": "University of Minnesota Extension — Tomato disorders", "url": "https://extension.umn.edu/garden-problems/tomato-disorders" },
+    { "label": "University of Minnesota Extension — Curled tomato leaves diagnosis", "url": "https://apps.extension.umn.edu/garden/diagnose/plant/vegetable/tomato/leavescurled.html" }
+  ],
+  "readMinutes": 7,
+  "body": [
+    {
+      "paragraphs": [
+        "Saritinājušās tomātu lapas izskatās satraucoši, taču ļoti bieži augs nav slims. Karstā un sausā laikā tomāts samazina lapas virsmu, pa kuru iztvaiko ūdens: lapas malas rullējas uz augšu, reizēm līdz abas malas saskaras. Šāda fizioloģiska lapu rullēšanās īpaši bieži redzama siltumnīcās.",
+        "Svarīgākais ir noskaidrot, kuras lapas mainījušās un vai ir vēl citi simptomi. Zaļas, stingras apakšējās lapas, kas saritinās vienādi abās pusēs, parasti liecina par stresu. Savukārt deformētas jaunās lapas, plankumi, krāsas maiņa vai panīkusi galotne prasa rūpīgāku pārbaudi."
+      ]
+    },
+    {
+      "heading": "Kā atšķirt cēloņus pēc lapu izskata",
+      "paragraphs": [
+        "Fizioloģiskas rullēšanās gadījumā pirmās parasti saritinās vecākās lapas auga apakšdaļā. To malas paceļas uz augšu un ieritinās uz iekšpusi, bet lapas krāsa paliek vienmērīgi zaļa un audi — stingri, reizēm nedaudz ādaini. Auga galotne turpina augt, ziedi un augļi izskatās normāli.",
+        "Ja lapas ir lipīgas un to apakšpusē redzami sīki zaļi vai melni kukaiņi, vainīgas var būt laputis. Tīklērces atstāj smalku, gaišu punktiņu rakstu un vēlāk arī tīklojumu. Abos gadījumos saritināšanās nav vienīgā pazīme.",
+        "Ja jaunās lapas ir ļoti šauras, savērptas, kausveidīgas vai aug nevienmērīgi, bet stublāji kļūst līki, jādomā par herbicīdu bojājumu. Tas var rasties arī tad, ja dārzā izmantota ar nezāļu līdzekli apstrādāta zāliena mulča vai smidzinājums atnests ar vēju no kaimiņu teritorijas.",
+        "Vīrusu gadījumā lapu deformācijai bieži pievienojas nevienmērīgs gaiši un tumši zaļš raibums, dzelteni laukumi, kropli augļi un visa auga atpalikšana. Pēc izskata vien precīzu vīrusu noteikt nevar."
+      ],
+      "table": {
+        "headers": ["Pazīme", "Ticamākais skaidrojums", "Ko pārbaudīt"],
+        "rows": [
+          ["Vecākās lapas rullējas uz augšu, bet paliek vienmērīgi zaļas", "Karstums, sausums vai apgriešanas stress", "Augsnes mitrumu, siltumnīcas temperatūru un pēdējo apgriešanu"],
+          ["Lapas ir lipīgas, apakšpusē redzami sīki kukaiņi", "Laputis", "Jauno lapu apakšpuses un dzinumu galus"],
+          ["Uz lapām ir daudz gaišu punktu un smalks tīklojums", "Tīklērces", "Lapu apakšpuses ar palielinājumu"],
+          ["Jaunās lapas ir šauras un savērptas, stublāji aug līki", "Iespējams herbicīdu bojājums", "Smidzinājuma sanesi, mulčas un komposta izcelsmi"],
+          ["Deformācijai pievienojas mozaīkveida raibums un panīkums", "Iespējama vīrusslimība", "Vai simptomi izplatās arī jaunajā augumā un augļos"]
+        ]
+      }
+    },
+    {
+      "heading": "Biežākais iemesls: karstums un nevienmērīgs mitrums",
+      "paragraphs": [
+        "Siltumnīcā saulainā dienā temperatūra ātri pārsniedz tomātiem komfortablo robežu. Ja saknes nespēj piegādāt tik daudz ūdens, cik lapas iztvaiko, augs tās sarullē, lai samazinātu mitruma zudumu. Tā ir aizsargreakcija, nevis pazīme, ka vajadzīgs kāds ārstēšanas līdzeklis.",
+        "To pastiprina neregulāra laistīšana — vairākas sausas dienas, kam seko ļoti bagātīga liešana. Arī stipra pazaru un apakšējo lapu izgriešana vienā reizē rada stresu. Dažām šķirnēm lapas rullējas vieglāk nekā citām, un tas nenozīmē sliktāku ražu.",
+        "Ja lapas paliek zaļas un augs citādi ir vesels, nesāc to steidzīgi mēslot vai apsmidzināt. Fizioloģiska rullēšanās parasti būtiski nesamazina ne augšanu, ne ražu, un jau saritinājušās lapas var arī vairs pilnībā neiztaisnoties."
+      ]
+    },
+    {
+      "heading": "Ko darīt tagad",
+      "paragraphs": [
+        "Vispirms pārbaudi augsni 5–10 cm dziļumā. Ja tā ir sausa, aplaisti lēni un pamatīgi pie saknēm, nevis katru dienu samitrini tikai virskārtu. Pēc tam uzklāj mulču, lai augsne neuzkarst un mitrums nesvārstās tik strauji.",
+        "Siltumnīcu atver jau no rīta un karstās dienās nodrošini caurvēju. Ja temperatūra regulāri pārsniedz 30 grādus, palīdz arī viegls ēnojums. Turpmāk pazares un apakšējās lapas izgriez pakāpeniski, nevis lielu daudzumu vienā dienā.",
+        "Apskati lapu apakšpuses ar palielināmo stiklu. Laputis sākumā var noskalot ar ūdeni, bet tīklērču gadījumā vajadzīga atkārtota, rūpīga lapu apakšpušu apstrāde un piemērotāka siltumnīcas vide. Ja ir aizdomas par herbicīdu bojājumu, pārtrauc lietot iespējami piesārņotu mulču vai kompostu un pasargā augu no papildu stresa.",
+        "Augu ar izteiktu mozaīkveida raibumu, stipri deformētu jauno augumu un panīkumu atdali no pārējiem. Vīrusu izārstēt nevar; ja aizdomas ir pamatotas, slimo augu drošāk izņemt, lai mazinātu izplatīšanas risku."
+      ],
+      "items": [
+        "Pārbaudi augsnes mitrumu 5–10 cm dziļumā.",
+        "Novērtē, vai siltumnīcā dienā nav pārmērīgs karstums.",
+        "Apskati jauno un veco lapu apakšpuses ar palielinājumu.",
+        "Ja nav kaitēkļu vai plankumu, izlīdzini laistīšanu un dažas dienas vēro jauno augumu.",
+        "Ja jaunais augums ir deformēts vai raibs, atdali augu un noskaidro iespējamo bojājuma avotu."
+      ],
+      "listStyle": "check"
+    },
+    {
+      "heading": "Ko nevajag darīt",
+      "paragraphs": [
+        "Nelej tomātus vēl vairāk tikai tāpēc, ka lapas saritinājušās. Ja augsne jau ir slapja, papildu ūdens atņem saknēm gaisu un rada jaunas problēmas. Laistīšanas vajadzību nosaki pēc augsnes, nevis tikai pēc lapas formas.",
+        "Nedod lielu slāpekļa mēslojuma devu. Strauja, mīksta augšana var stresu pastiprināt, turklāt pārmēslots tomāts veido daudz lapu un mazāk uzmanības velta augļiem. Nelieto arī nejaušus augu aizsardzības līdzekļus, kamēr neesi atradis kaitēkli vai konkrētu slimības pazīmi.",
+        "Neizgriez visas saritinājušās lapas. Tās joprojām baro augu un pasargā augļus no saules apdegumiem. Izņem tikai stipri bojātas vai slimas lapas, saglabājot veselīgu lapotni."
+      ]
+    },
+    {
+      "heading": "Īsi un skaidri: biežākie jautājumi",
+      "paragraphs": [
+        "Vai saritinājušās tomātu lapas atkal iztaisnosies? Ne vienmēr. Pēc karstuma vai sausuma mazināšanās jaunās lapas parasti aug normāli, bet vecās var palikt sarullētas līdz sezonas beigām.",
+        "Vai lapu rullēšanās samazina ražu? Parasta fizioloģiska rullēšanās parasti ražu būtiski nesamazina. Ražu apdraud cēlonis, ja tas ir ilgstošs sausums, kaitēkļi, herbicīdu bojājums vai vīruss.",
+        "Kā saprast, vai tomātam ir vīruss? Vīrusam raksturīga ne tikai čokurošanās, bet arī mozaīkveida krāsojums, deformēts jaunais augums, panīkums un reizēm plankumaini vai kropli augļi. Precīzu diagnozi pēc skata vien ne vienmēr var noteikt.",
+        "Vai tomātu vajag vairāk mēslot? Nē, ne automātiski. Vispirms pārbaudi augsnes mitrumu, karstumu un kaitēkļus. Bez skaidrām barības trūkuma pazīmēm papildu mēslojums problēmu var pastiprināt."
+      ]
+    }
+  ],
+  "links": [
+    { "label": "Tomātu audzēšana un kopšana", "href": "/augi/tomati" },
+    { "label": "Kā laistīt dārzu karstumā", "href": "/raksti/ka-laistit-darzu-karstuma" },
+    { "label": "Tomātu veidošana un pazaru izņemšana", "href": "/raksti/tomatu-veidosana" },
+    { "label": "Tīklērces: pazīmes un apkarošana", "href": "/kaitekli/tiklerces" },
+    { "label": "Laputis: pazīmes un apkarošana", "href": "/kaitekli/laputis" }
+  ]
+}

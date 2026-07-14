@@ -2,6 +2,13 @@
   "slug": "kapostu-baltenis",
   "name": "Kāpostu baltenis",
   "emoji": "🦋",
+  "image": {
+    "src": "/kaitekli/kapostu-baltenis.jpg",
+    "alt": "Kāpostu balteņa kāpuri (Pieris brassicae) ēd kāpostu lapu, atstājot lielus caurumus",
+    "credit": "Schlaghecken Josef",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brokkoli_Gro%C3%9Fer_Kohlwei%C3%9Fling,_Larven,_Schlaghecken-3.jpg"
+  },
   "type": "kaiteklis",
   "latin": "Pieris brassicae",
   "tagline": "Skaistais baltais tauriņš dēj olas uz kāpostu lapām, bet tā kāpuri spēj nograuzt veselu dobi līdz dzīslām.",

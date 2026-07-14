@@ -1,8 +1,37 @@
 {
   "title": "Kad un kā pārstādīt un dalīt peonijas",
+  "seoTitle": "Kad pārstādīt peonijas: pareizais laiks un dziļums",
   "slug": "kad-parstadit-peonijas",
   "category": "Praktiski",
+  "intent": "how-to",
   "excerpt": "Kad pārstādīt un dalīt peonijas? Rudenī — augusta beigās un septembrī. Galvenais noslēpums ir pumpuru dziļums: ne dziļāk par 5 cm, citādi peonija neziedēs.",
+  "shortAnswer": "Latvijā peonijas visdrošāk pārstādīt no augusta otrās puses līdz septembra beigām, kad lielais karstums ir pāri, bet līdz zemes sasalšanai vēl palikušas vairākas nedēļas. Pumpurus stādi tikai 3–5 cm zem augsnes — pārāk dziļi iestādīta peonija aug lapās, bet nezied.",
+  "primaryQuery": "kad un kā pārstādīt un dalīt peonijas",
+  "publishedAt": "2026-06-22",
+  "updatedAt": "2026-07-14",
+  "seasonalMonths": [8, 9],
+  "entities": {
+    "crops": [
+      "peonijas"
+    ],
+    "recipes": [
+      "koku-pelnu-skidums"
+    ]
+  },
+  "relatedSlugs": [
+    "komposts-ka-sakt",
+    "augoss-un-dilstoss-meness"
+  ],
+  "sources": [
+    {
+      "label": "Latvijas Lauku konsultāciju un izglītības centrs",
+      "url": "https://llkc.lv/"
+    },
+    {
+      "label": "Royal Horticultural Society — Advice",
+      "url": "https://www.rhs.org.uk/advice"
+    }
+  ],
   "readMinutes": 6,
   "body": [
     {
@@ -44,7 +73,7 @@
       ]
     },
     {
-      "heading": "Biežākās kļūdas un Mēness fāzes: īsi un skaidri",
+      "heading": "Īsi un skaidri: biežākie jautājumi",
       "paragraphs": [
         "Kāpēc pārstādīta peonija nezied? Visbiežāk tā iestādīta pārāk dziļi — pumpuri dziļāk par 5 cm, jo īpaši, ja tie pārsniedz 5–7 cm robežu. Otrs iemesls ir pārāk maza, pārdalīta sakne ar vienu pumpuru, kurai vajag pāris gadu spēka uzkrāšanai. Trešais — par maz saules vai pārāk svaigs mēslojums pie saknēm.",
         "Cik bieži peonijas jādala? Pēc iespējas retāk. Vesels cers var augt vienā vietā gadu desmitiem un dalīšanu nemaz neprasa. Dali tikai tad, ja gribi pavairot vai cers kļuvis par lielu — biežas pārstādīšanas peoniju tikai vājina un atliek ziedēšanu.",
@@ -54,9 +83,21 @@
     }
   ],
   "links": [
-    { "label": "Peoniju audzēšana un kopšana", "href": "/pukes/peonijas" },
-    { "label": "Komposts: kā sākt no nulles", "href": "/raksti/komposts-ka-sakt" },
-    { "label": "Augošs un dilstošs Mēness dārzā", "href": "/raksti/augoss-un-dilstoss-meness" },
-    { "label": "Koku pelnu šķīdums dārzam", "href": "/receptes/koku-pelnu-skidums" }
+    {
+      "label": "Peoniju audzēšana un kopšana",
+      "href": "/pukes/peonijas"
+    },
+    {
+      "label": "Komposts: kā sākt no nulles",
+      "href": "/raksti/komposts-ka-sakt"
+    },
+    {
+      "label": "Augošs un dilstošs Mēness dārzā",
+      "href": "/raksti/augoss-un-dilstoss-meness"
+    },
+    {
+      "label": "Koku pelnu šķīdums dārzam",
+      "href": "/receptes/koku-pelnu-skidums"
+    }
   ]
 }

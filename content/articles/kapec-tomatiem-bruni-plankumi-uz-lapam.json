@@ -2,7 +2,38 @@
   "title": "Kāpēc tomātiem uz lapām brūni plankumi (fitoftora un citi cēloņi)",
   "slug": "kapec-tomatiem-bruni-plankumi-uz-lapam",
   "category": "Problēmas",
+  "intent": "problem",
   "excerpt": "Kāpēc tomātiem brūni plankumi uz lapām? Iemācies dažās minūtēs atšķirt fitoftoru, lapu sausplankumainību un kālija trūkumu — un steidzami glābt ražu.",
+  "shortAnswer": "Tu pieej pie tomātiem un redzi, ka uz lapām parādījušies brūni plankumi.  Pirmā doma ir baisa — fitoftora, raža pagalam.",
+  "primaryQuery": "kāpēc tomātiem uz lapām brūni plankumi",
+  "publishedAt": "2026-06-22",
+  "updatedAt": "2026-06-22",
+  "entities": {
+    "crops": [
+      "tomati"
+    ],
+    "pests": [
+      "lakstu-puve"
+    ],
+    "recipes": [
+      "kosas-novarijums",
+      "koku-pelnu-skidums"
+    ]
+  },
+  "relatedSlugs": [
+    "kapec-kartupeliem-lakstu-puve",
+    "siltumnica-vai-lauka"
+  ],
+  "sources": [
+    {
+      "label": "Latvijas Lauku konsultāciju un izglītības centrs",
+      "url": "https://llkc.lv/"
+    },
+    {
+      "label": "Royal Horticultural Society — Advice",
+      "url": "https://www.rhs.org.uk/advice"
+    }
+  ],
   "readMinutes": 6,
   "body": [
     {
@@ -55,11 +86,29 @@
     }
   ],
   "links": [
-    { "label": "Tomātu audzēšana un kopšana", "href": "/augi/tomati" },
-    { "label": "Lakstu puve (fitoftora): kā atpazīt un apkarot", "href": "/kaitekli/lakstu-puve" },
-    { "label": "Kāpēc kartupeļiem lakstu puve un kā to apturēt", "href": "/raksti/kapec-kartupeliem-lakstu-puve" },
-    { "label": "Kosas novārījums sēņu slimību profilaksei", "href": "/receptes/kosas-novarijums" },
-    { "label": "Koku pelnu šķīdums kālija papildināšanai", "href": "/receptes/koku-pelnu-skidums" },
-    { "label": "Siltumnīca vai lauks: kur audzēt tomātus", "href": "/raksti/siltumnica-vai-lauka" }
+    {
+      "label": "Tomātu audzēšana un kopšana",
+      "href": "/augi/tomati"
+    },
+    {
+      "label": "Lakstu puve (fitoftora): kā atpazīt un apkarot",
+      "href": "/kaitekli/lakstu-puve"
+    },
+    {
+      "label": "Kāpēc kartupeļiem lakstu puve un kā to apturēt",
+      "href": "/raksti/kapec-kartupeliem-lakstu-puve"
+    },
+    {
+      "label": "Kosas novārījums sēņu slimību profilaksei",
+      "href": "/receptes/kosas-novarijums"
+    },
+    {
+      "label": "Koku pelnu šķīdums kālija papildināšanai",
+      "href": "/receptes/koku-pelnu-skidums"
+    },
+    {
+      "label": "Siltumnīca vai lauks: kur audzēt tomātus",
+      "href": "/raksti/siltumnica-vai-lauka"
+    }
   ]
 }

@@ -123,7 +123,7 @@ export default function PukesPage() {
           <a
             key={g.letter}
             href={`#burts-${g.letter.toLowerCase()}`}
-            className="flex h-8 w-8 items-center justify-center rounded-full bg-surface-container text-label-md font-semibold text-on-surface transition-colors hover:bg-primary hover:text-on-primary"
+            className="flex h-11 w-11 items-center justify-center rounded-full bg-surface-container text-label-md font-semibold text-on-surface transition-colors hover:bg-primary hover:text-on-primary active:scale-[0.97]"
           >
             {g.letter}
           </a>

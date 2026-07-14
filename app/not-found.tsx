@@ -10,7 +10,7 @@ export default function NotFound() {
     { href: "/raksti", label: "Raksti", icon: "article" },
   ];
   return (
-    <div className="mx-auto flex max-w-xl flex-col items-center gap-md py-xl text-center">
+    <div className="mx-auto flex max-w-[36rem] flex-col items-center gap-md py-xl text-center">
       <MoonPhase phase={0.5} size={96} />
       <h1 className="text-headline-lg text-primary">Lapa nav atrasta</h1>
       <p className="text-body-lg text-on-surface-variant">

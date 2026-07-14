@@ -2,7 +2,35 @@
   "title": "Tomātu veidošana: pazares, galotne un apakšējās lapas",
   "slug": "tomatu-veidosana",
   "category": "Praktiski",
+  "intent": "how-to",
   "excerpt": "Ko tomātiem lauzt nost un ko atstāt? Pilns ceļvedis: kā izlauzt pazares, cik stumbru atstāt, kad noņemt galotni un apakšējās lapas — un kāpēc zemos tomātus neveido tikpat stingri kā augstos.",
+  "shortAnswer": "Jūnijā tomāti aug acīm redzot — vēl nesen dobē bija kārtīgi stādiņi, bet siltumnīca jau sāk pārvērsties biezoknī.  Tieši tad rodas viens no biežākajiem iesācēju jautājumiem: ko īsti drīkst lauzt nost un ko nē?",
+  "primaryQuery": "tomātu veidošana: pazares, galotne un apakšējās lapas",
+  "publishedAt": "2026-07-06",
+  "updatedAt": "2026-07-06",
+  "entities": {
+    "crops": [
+      "tomati"
+    ]
+  },
+  "relatedSlugs": [
+    "fitoftora-tomatiem",
+    "darza-darbi-julija",
+    "kapec-tomati-plaisa",
+    "kapec-tomati-zied-bet-neveidojas-augli",
+    "kapec-tomatiem-galotnu-puve",
+    "darza-darbi-augusta"
+  ],
+  "sources": [
+    {
+      "label": "Latvijas Lauku konsultāciju un izglītības centrs",
+      "url": "https://llkc.lv/"
+    },
+    {
+      "label": "Royal Horticultural Society — Advice",
+      "url": "https://www.rhs.org.uk/advice"
+    }
+  ],
   "readMinutes": 6,
   "body": [
     {

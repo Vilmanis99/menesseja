@@ -2,7 +2,41 @@
   "title": "Baltās sinepes un citi zaļmēslojumi: ko sēt tukšajās dobēs pēc ražas",
   "slug": "baltas-sinepes-pec-razas",
   "category": "Praktiski",
+  "intent": "seasonal",
   "excerpt": "Pēc ķiploku, sīpolu un agro kartupeļu novākšanas dobēm nav jāstāv tukšām: jūlijs un augusts ir zaļmēslojuma laiks. Kurš der kurai situācijai — baltās sinepes, facēlija, auzas, rudzi vai vīķi — un kā tos pareizi iesēt un iestrādāt.",
+  "shortAnswer": "Jūlija otrajā pusē dārzā pienāk brīdis, kad dobes sāk iztukšoties: ķiploki izrakti un žūst zem nojumes, sīpoli novākti, agrie kartupeļi jau uz galda.  Priekšā vēl vismaz divi silti mēneši, un zeme, kas visu pavasari un vasaras pirmo pusi bija aizņemta, pēkšņi stāv melna un tukša.",
+  "primaryQuery": "baltās sinepes un citi zaļmēslojumi: ko sēt tukšajās dobēs pēc ražas",
+  "publishedAt": "2026-07-06",
+  "updatedAt": "2026-07-06",
+  "entities": {
+    "crops": [
+      "kartupeli",
+      "kiploki",
+      "sipoli"
+    ],
+    "pests": [
+      "krustziezu-spradzis"
+    ],
+    "recipes": [
+      "zalmeslojums"
+    ]
+  },
+  "relatedSlugs": [
+    "ko-set-julija-augusta",
+    "kad-novakt-kiplokus",
+    "augu-maina-darza",
+    "komposts-ka-sakt"
+  ],
+  "sources": [
+    {
+      "label": "Latvijas Lauku konsultāciju un izglītības centrs",
+      "url": "https://llkc.lv/"
+    },
+    {
+      "label": "Royal Horticultural Society — Advice",
+      "url": "https://www.rhs.org.uk/advice"
+    }
+  ],
   "readMinutes": 6,
   "body": [
     {

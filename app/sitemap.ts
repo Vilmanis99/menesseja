@@ -26,6 +26,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: url("/kaitekli"), priority: 0.9, changeFrequency: "monthly" },
     { url: url("/ko-set"), priority: 0.7, changeFrequency: "monthly" },
     { url: url("/par"), priority: 0.6, changeFrequency: "monthly" },
+    { url: url("/privatums"), priority: 0.3, changeFrequency: "yearly" },
     { url: url("/iesutit"), priority: 0.6, changeFrequency: "monthly" },
     { url: url("/planotajs"), priority: 0.5, changeFrequency: "monthly" },
     { url: url("/kopiena"), priority: 0.5, changeFrequency: "weekly" },

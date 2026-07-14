@@ -15,7 +15,7 @@ const ADSENSE_CLIENT = "ca-pub-1169910140391869";
  * approved; this tag also serves as the site-verification snippet.
  */
 export function AdSense() {
-  if (process.env.NODE_ENV !== "production") return null;
+  if (process.env.NODE_ENV !== "production" || process.env.NEXT_PUBLIC_ADSENSE_ENABLED !== "true") return null;
   return (
     <script
       async

@@ -2,7 +2,30 @@
   "title": "Kā norūdīt dēstus: 7 dienu plāns pirms izstādīšanas",
   "slug": "ka-rudit-destus",
   "category": "Praktiski",
+  "intent": "how-to",
   "excerpt": "Kā rūdīt dēstus soli pa solim: gatavs 7 dienu plāns, lai stādi nepārcieš šoku, izejot no siltās palodzes laukā Latvijas saulē, vējā un nakts vēsumā.",
+  "shortAnswer": "Tu esi mēnešiem auklējis dēstus uz palodzes — laistījis, pikējis, gaidījis.  Un tad pienāk diena, kad tos vajag stādīt laukā, tu tos vienkārši ieliec dobē, un pēc divām dienām lapas ir baltas, sudrabotas, novītušas vai apsvilušas.",
+  "primaryQuery": "kā norūdīt dēstus: 7 dienu plāns pirms izstādīšanas",
+  "publishedAt": "2026-06-29",
+  "updatedAt": "2026-06-29",
+  "entities": {},
+  "relatedSlugs": [
+    "destu-audzesana-uz-palodzes",
+    "kad-stadit-destus-lauka",
+    "salnas-latvija",
+    "desti-izstidz",
+    "aukstumizturigie-vs-siltummilosie"
+  ],
+  "sources": [
+    {
+      "label": "Latvijas Lauku konsultāciju un izglītības centrs",
+      "url": "https://llkc.lv/"
+    },
+    {
+      "label": "Royal Horticultural Society — Advice",
+      "url": "https://www.rhs.org.uk/advice"
+    }
+  ],
   "readMinutes": 6,
   "body": [
     {
@@ -60,10 +83,25 @@
     }
   ],
   "links": [
-    { "label": "Dēstu audzēšana uz palodzes soli pa solim", "href": "/raksti/destu-audzesana-uz-palodzes" },
-    { "label": "Kad stādīt dēstus laukā", "href": "/raksti/kad-stadit-destus-lauka" },
-    { "label": "Salnas Latvijā: kad beidzas pavasara salnu risks", "href": "/raksti/salnas-latvija" },
-    { "label": "Kāpēc dēsti izstīdz un kā to novērst", "href": "/raksti/desti-izstidz" },
-    { "label": "Aukstumizturīgie un siltummīļie dārzeņi: ar ko atšķiras", "href": "/raksti/aukstumizturigie-vs-siltummilosie" }
+    {
+      "label": "Dēstu audzēšana uz palodzes soli pa solim",
+      "href": "/raksti/destu-audzesana-uz-palodzes"
+    },
+    {
+      "label": "Kad stādīt dēstus laukā",
+      "href": "/raksti/kad-stadit-destus-lauka"
+    },
+    {
+      "label": "Salnas Latvijā: kad beidzas pavasara salnu risks",
+      "href": "/raksti/salnas-latvija"
+    },
+    {
+      "label": "Kāpēc dēsti izstīdz un kā to novērst",
+      "href": "/raksti/desti-izstidz"
+    },
+    {
+      "label": "Aukstumizturīgie un siltummīļie dārzeņi: ar ko atšķiras",
+      "href": "/raksti/aukstumizturigie-vs-siltummilosie"
+    }
   ]
 }

@@ -25,6 +25,7 @@ export interface Crop {
   transplant?: MonthRange;
   harvest?: MonthRange;
   note?: string; // beginner tip (Latvian)
+  aliases?: string[]; // common Latvian variants used by search
 }
 
 export const CATEGORIES: { id: Category; label: string }[] = [
@@ -46,11 +47,14 @@ export const CROPS: Crop[] = [
   { id: "kiploki", name: "Ķiploki", category: "darzeni", difficulty: 1, daysToHarvest: "Ziemo", sun: "Saule", sowOutdoors: [9, 10], harvest: [7, 8], note: "Stāda RUDENĪ nākamai sezonai — tā galviņas ir lielākas." },
   { id: "tomati", name: "Tomāti", category: "darzeni", difficulty: 2, daysToHarvest: "60–85 dienas pēc stādīšanas", sun: "Saule", sowIndoors: [3, 4], transplant: [5, 6], harvest: [7, 9], note: "Laukā tikai pēc salnām (maija beigas). Viena salna nakts nogalina stādus." },
   { id: "gurki", name: "Gurķi", category: "darzeni", difficulty: 2, daysToHarvest: "50–70 dienas", sun: "Saule", sowIndoors: [4, 5], transplant: [6, 6], harvest: [7, 9], note: "Siltummīļi — laukā tikai pēc salnām vai siltumnīcā." },
-  { id: "kabaci", name: "Kabači / cukīni", category: "darzeni", difficulty: 1, daysToHarvest: "50–60 dienas", sun: "Saule", sowIndoors: [5, 5], transplant: [6, 6], harvest: [7, 9], note: "Viens augs dod daudz — iesācējam pietiek ar 2–3 stādiem." },
+  { id: "kabaci", name: "Kabači / cukīni", aliases: ["cukini"], category: "darzeni", difficulty: 1, daysToHarvest: "50–60 dienas", sun: "Saule", sowIndoors: [5, 5], transplant: [6, 6], harvest: [7, 9], note: "Viens augs dod daudz — iesācējam pietiek ar 2–3 stādiem." },
   { id: "kirbji", name: "Ķirbji", category: "darzeni", difficulty: 2, daysToHarvest: "95–120 dienas", sun: "Saule", sowIndoors: [5, 5], transplant: [6, 6], harvest: [9, 10], note: "Vajag daudz vietas — vīteņi izplešas plaši." },
   { id: "paprika", name: "Paprika", category: "darzeni", difficulty: 3, daysToHarvest: "80–100 dienas pēc stādīšanas", sun: "Saule", sowIndoors: [2, 3], transplant: [5, 6], harvest: [7, 9], note: "Vajag siltumu — labāk siltumnīcā. Sēj agri, aug lēni." },
   { id: "kaposti", name: "Kāposti", category: "darzeni", difficulty: 2, daysToHarvest: "80–120 dienas", sun: "Saule", sowIndoors: [3, 4], transplant: [5, 6], harvest: [8, 10], note: "Vajag barojošu augsni un vienmērīgu mitrumu. Sargā no kāpostu tauriņa kāpuriem." },
   { id: "brokoli", name: "Brokoļi", category: "darzeni", difficulty: 2, daysToHarvest: "70–100 dienas", sun: "Saule", sowIndoors: [3, 4], transplant: [5, 6], harvest: [7, 9], note: "Novāc galviņu, kamēr pumpuri cieši un zaļi. Pēc tam dod mazākus sānu dzinumus." },
+  { id: "ziedkaposti", name: "Ziedkāposti (puķkāposti)", category: "darzeni", difficulty: 2, daysToHarvest: "70–110 dienas", sun: "Saule", sowIndoors: [3, 4], transplant: [5, 6], harvest: [7, 10], note: "Prasīgāki par galviņkāpostiem — vajag vienmērīgu mitrumu un vēsumu. Kad galviņa sāk veidoties, aizloka pāri tai lapas, lai paliek balta." },
+  { id: "kolrabji", name: "Kolrābji", category: "darzeni", difficulty: 1, daysToHarvest: "60–70 dienas", sun: "Saule / pussēna", sowOutdoors: [4, 7], harvest: [6, 10], note: "Ātri un pateicīgi. Novāc, kamēr bumbulis 6–8 cm — pāraudzis kļūst koksnains. Der sēt arī jūlijā rudens ražai." },
+  { id: "kinas-kaposti", name: "Ķīnas kāposti", aliases: ["Pekinas kāposti"], category: "darzeni", difficulty: 2, daysToHarvest: "50–70 dienas", sun: "Saule / pussēna", sowOutdoors: [6, 7], harvest: [8, 10], note: "Sēj tikai pēc Jāņiem — agri sēti aiziet ziedā. Vajag mitru, barojošu augsni; ideāls otrās ražas dārzenis." },
   { id: "spinati", name: "Spināti", category: "darzeni", difficulty: 1, daysToHarvest: "40–50 dienas", sun: "Pussēna", sowOutdoors: [4, 8], harvest: [5, 10], note: "Karstumā ātri iziet ziedos — labāk pavasarī un rudenī." },
   { id: "pupas", name: "Pupas", category: "darzeni", difficulty: 1, daysToHarvest: "55–70 dienas", sun: "Saule", sowOutdoors: [5, 6], harvest: [7, 9], note: "Aukstumizturīgas, bagātina augsni ar slāpekli. Neliec blakus sīpoliem un ķiplokiem." },
 
@@ -58,7 +62,7 @@ export const CROPS: Crop[] = [
   { id: "dilles", name: "Dilles", category: "garsaugi", difficulty: 1, daysToHarvest: "40–60 dienas", sun: "Saule", sowOutdoors: [4, 7], harvest: [6, 9], note: "Sēj tieši — pārstādīšanu nemīl. Sēj atkārtoti." },
   { id: "petersili", name: "Pētersīļi", category: "garsaugi", difficulty: 2, daysToHarvest: "70–90 dienas", sun: "Saule / pussēna", sowOutdoors: [4, 6], harvest: [6, 10], note: "Dīgst lēni (līdz 3 ned.) — neuztraucies, ja ilgi nekā." },
   { id: "baziliks", name: "Baziliks", category: "garsaugi", difficulty: 2, daysToHarvest: "60–70 dienas", sun: "Saule", sowIndoors: [4, 5], transplant: [6, 6], harvest: [7, 9], note: "Siltummīlis — laukā tikai pēc salnām vai uz palodzes." },
-  { id: "metra", name: "Piparmētra", category: "garsaugi", difficulty: 1, daysToHarvest: "Daudzgadīga", sun: "Pussēna", transplant: [5, 6], harvest: [6, 9], note: "Aug ļoti strauji — labāk podā, citādi pārņem dobi." },
+  { id: "metra", name: "Piparmētra", aliases: ["mētra"], category: "garsaugi", difficulty: 1, daysToHarvest: "Daudzgadīga", sun: "Pussēna", transplant: [5, 6], harvest: [6, 9], note: "Aug ļoti strauji — labāk podā, citādi pārņem dobi." },
   { id: "timians", name: "Timiāns", category: "garsaugi", difficulty: 2, daysToHarvest: "Daudzgadīgs", sun: "Saule", sowIndoors: [3, 4], transplant: [5, 6], harvest: [6, 9], note: "Mūžzaļš zem sniega. Mīl sausu, saulainu vietu — nepārlej, citādi puvs saknes." },
 
   // ── Ogas un augļi ─────────────────────────────────────────
@@ -74,7 +78,7 @@ export const CROPS: Crop[] = [
   { id: "kalji", name: "Kāļi", category: "darzeni", difficulty: 1, daysToHarvest: "80–100 dienas", sun: "Saule", sowOutdoors: [5, 6], harvest: [9, 10], note: "Tradicionāls latviešu sakņaugs ziemas glabāšanai." },
   { id: "raceni", name: "Rāceņi", category: "darzeni", difficulty: 1, daysToHarvest: "50–70 dienas", sun: "Saule / pussēna", sowOutdoors: [5, 7], harvest: [7, 10], note: "Aug ātri — labi der starpkultūrai. Vēsā laikā saldāki un sulīgāki." },
   { id: "selerijas", name: "Selerijas", category: "darzeni", difficulty: 3, daysToHarvest: "120–150 dienas", sun: "Saule", sowIndoors: [2, 3], transplant: [5, 6], harvest: [9, 10], note: "Sēj agri telpās — aug ļoti lēni." },
-  { id: "puravi", name: "Puravi (lauki)", category: "darzeni", difficulty: 2, daysToHarvest: "120–150 dienas", sun: "Saule", sowIndoors: [3, 4], transplant: [5, 6], harvest: [9, 11], note: "Apber stublāju ar zemi, lai baltā daļa būtu garāka." },
+  { id: "puravi", name: "Puravi", category: "darzeni", difficulty: 2, daysToHarvest: "120–150 dienas", sun: "Saule", sowIndoors: [3, 4], transplant: [5, 6], harvest: [9, 11], note: "Apber stublāju ar zemi, lai baltā daļa būtu garāka." },
   { id: "marrutki", name: "Mārrutki", category: "darzeni", difficulty: 1, daysToHarvest: "Daudzgadīgi", sun: "Saule / pussēna", transplant: [4, 5], harvest: [9, 11], note: "Aug agresīvi — labāk atsevišķā vietā vai traukā." },
   { id: "topinamburs", name: "Topinambūrs", category: "darzeni", difficulty: 1, daysToHarvest: "Daudzgadīgs", sun: "Saule", sowOutdoors: [4, 5], harvest: [10, 11], note: "Ļoti izturīgs. Bumbuļus var atstāt zemē par ziemu." },
   { id: "laukapupas", name: "Lauka pupas", category: "darzeni", difficulty: 1, daysToHarvest: "90–110 dienas", sun: "Saule", sowOutdoors: [4, 5], harvest: [7, 8], note: "Aukstumizturīgas — sēj agri. Bagātina augsni ar slāpekli." },
@@ -83,7 +87,7 @@ export const CROPS: Crop[] = [
   { id: "koriandrs", name: "Koriandrs", category: "garsaugi", difficulty: 2, daysToHarvest: "40–60 dienas", sun: "Saule / pussēna", sowOutdoors: [4, 7], harvest: [6, 9], note: "Karstumā ātri zied — sēj atkārtoti pussēnā." },
   { id: "salvija", name: "Salvija", category: "garsaugi", difficulty: 2, daysToHarvest: "Daudzgadīga", sun: "Saule", sowIndoors: [3, 4], transplant: [5, 6], harvest: [6, 9], note: "Daudzgadīga un izturīga. Apgriez pavasarī, lai krūms nepaliek koksnains." },
   { id: "melisa", name: "Melisa", category: "garsaugi", difficulty: 1, daysToHarvest: "Daudzgadīga", sun: "Saule / pussēna", transplant: [5, 6], harvest: [6, 9], note: "Citronu aromāts. Aug strauji, ierobežo kā piparmētru." },
-  { id: "oregano", name: "Oregano", category: "garsaugi", difficulty: 2, daysToHarvest: "Daudzgadīgs", sun: "Saule", sowIndoors: [3, 4], transplant: [5, 6], harvest: [7, 9], note: "Visaromātiskākais saulē un nabadzīgā augsnē. Žāvēšanai griez tieši pirms ziedēšanas." },
+  { id: "oregano", name: "Oregano", aliases: ["raudene"], category: "garsaugi", difficulty: 2, daysToHarvest: "Daudzgadīgs", sun: "Saule", sowIndoors: [3, 4], transplant: [5, 6], harvest: [7, 9], note: "Visaromātiskākais saulē un nabadzīgā augsnē. Žāvēšanai griez tieši pirms ziedēšanas." },
 
   // ── Puķes ─────────────────────────────────────────────────
   { id: "kalendula", name: "Kliņģerītes", category: "pukes", difficulty: 1, daysToHarvest: "50–60 dienas", sun: "Saule", sowOutdoors: [4, 6], harvest: [6, 10], note: "Atvaira kaitēkļus — lieliska dārzeņu kaimiņe. Ziedi ēdami." },
@@ -95,7 +99,7 @@ export const CROPS: Crop[] = [
   { id: "tulpes", name: "Tulpes", category: "pukes", difficulty: 1, daysToHarvest: "Zied pavasarī", sun: "Saule", sowOutdoors: [9, 10], harvest: [4, 5], note: "Sīpolus stāda rudenī ~15 cm dziļi. Pavasara klasika." },
   { id: "narcises", name: "Narcises", category: "pukes", difficulty: 1, daysToHarvest: "Zied pavasarī", sun: "Saule / pussēna", sowOutdoors: [9, 10], harvest: [4, 5], note: "Stāda rudenī; grauzēji sīpolus neaiztiek. Vairojas pati." },
   { id: "begonijas", name: "Begonijas", category: "pukes", difficulty: 2, daysToHarvest: "Zied visu vasaru", sun: "Pussēna", sowIndoors: [3, 4], transplant: [6, 6], harvest: [6, 9], note: "Ēnas karaliene. Bumbuļus rudenī izrok un glabā vēsumā." },
-  { id: "pelargonijas", name: "Pelargonijas", category: "pukes", difficulty: 1, daysToHarvest: "Zied visu vasaru", sun: "Saule", sowIndoors: [2, 3], transplant: [5, 6], harvest: [6, 9], note: "Balkona klasika. Rudenī ienes telpās pārziemot uz palodzes." },
+  { id: "pelargonijas", name: "Pelargonijas", aliases: ["ģerānijas", "geranijas"], category: "pukes", difficulty: 1, daysToHarvest: "Zied visu vasaru", sun: "Saule", sowIndoors: [2, 3], transplant: [5, 6], harvest: [6, 9], note: "Balkona klasika. Rudenī ienes telpās pārziemot uz palodzes." },
   { id: "petunijas", name: "Petūnijas", category: "pukes", difficulty: 2, daysToHarvest: "Zied visu vasaru", sun: "Saule", sowIndoors: [2, 3], transplant: [5, 6], harvest: [6, 9], note: "Sēklas ļoti sīkas — sēj virspusē, neapber. Laukā pēc salnām." },
   { id: "ehinacija", name: "Ehinācija", category: "pukes", difficulty: 1, daysToHarvest: "Daudzgadīga", sun: "Saule", sowIndoors: [3, 4], sowOutdoors: [5, 6], harvest: [7, 9], note: "Ziemcietīga saulmīle, pievelk bites un tauriņus. Arī ārstniecības augs." },
   { id: "budlejas", name: "Budlejas", category: "pukes", difficulty: 2, daysToHarvest: "Zied no jūlija", sun: "Saule", transplant: [5, 6], harvest: [7, 9], note: "Tauriņu krūms. Pavasarī stipri apgriež — zied uz jaunajiem dzinumiem." },
@@ -172,7 +176,6 @@ export const ACTIVITY_META: Record<
  */
 const ACCUSATIVE_OVERRIDE: Record<string, string> = {
   "Kabači / cukīni": "Kabačus / cukīnus",
-  "Puravi (lauki)": "Puravus (lauki)",
   "Lauka pupas": "Lauka pupas",
   Klematis: "Klematis",
 };

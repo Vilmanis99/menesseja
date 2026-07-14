@@ -86,7 +86,7 @@ function AreaCard({ area, plants }: { area: string; plants: Plant[] }) {
               key={p.id}
               ref={isNew ? newRef : undefined}
               onClick={() => setDetail(p)}
-              className={`group/plant w-full rounded-lg text-left transition-all hover:opacity-90 ${
+              className={`group/plant min-h-11 w-full rounded-lg py-1 text-left transition-all hover:opacity-90 ${
                 isNew ? "bg-primary-container/15 p-2 ring-1 ring-primary/50" : ""
               }`}
             >
@@ -164,7 +164,7 @@ export function GardenAreas() {
         {hasExamples && (
           <button
             onClick={clearExamples}
-            className="flex items-center gap-1 text-label-sm text-on-surface-variant transition-colors hover:text-error"
+            className="flex min-h-11 items-center gap-1 rounded-lg px-2 text-label-sm text-on-surface-variant transition-colors hover:bg-error/10 hover:text-error"
           >
             <Icon name="delete_sweep" size="16px" /> Noņemt paraugus
           </button>

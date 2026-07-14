@@ -24,6 +24,8 @@ import { pestsForCrop } from "@/lib/crop-pests";
 import { canonical, SITE_NAME, MONTH_SLUGS, MONTHS_LV_LOCATIVE, og } from "@/lib/seo";
 import { DATA_REVIEWED } from "@/lib/sources";
 import { getCropContent } from "@/lib/crop-content";
+import { getAllArticles } from "@/lib/articles";
+import { TrackedLink } from "@/components/tracked-link";
 
 const CAL_YEAR = 2026;
 
@@ -38,15 +40,25 @@ function rangeText(r?: [number, number]): string | null {
   return r[0] === r[1] ? MONTHS_LV_FULL[r[0] - 1] : `${MONTHS_LV_FULL[r[0] - 1]}–${MONTHS_LV_FULL[r[1] - 1]}`;
 }
 
+function TextParagraphs({ text }: { text: string }) {
+  return text
+    .split(/\n{2,}/)
+    .filter(Boolean)
+    .map((paragraph) => <p key={paragraph.slice(0, 48)}>{paragraph}</p>);
+}
+
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const crop = CROPS.find((c) => c.id === slug);
   if (!crop) return {};
   const sow = rangeText(crop.sowOutdoors ?? crop.sowIndoors);
-  const title = `${crop.name} — kad sēt, stādīt un novākt Latvijā`;
-  const description =
-    `${crop.name}: kad sēt${sow ? ` (${sow})` : ""}, stādīt un novākt Latvijas klimatam, ` +
-    `labākās Mēness dienas un kaimiņaugi. ${crop.note ?? ""}`.trim();
+  const title = crop.id === "rediisi"
+    ? "Kad sēt redīsus un kā tos audzēt Latvijā"
+    : `${crop.name} — kad sēt, stādīt un novākt Latvijā`;
+  const description = crop.id === "rediisi"
+    ? "Kad sēt redīsus pavasarī un vasaras otrajā pusē, cik dziļi sēt, kā laistīt un ko darīt, ja neveidojas sakne. Praktiski padomi Latvijai."
+    : (`${crop.name}: kad sēt${sow ? ` (${sow})` : ""}, stādīt un novākt Latvijas klimatam, ` +
+      `labākās Mēness dienas un kaimiņaugi. ${crop.note ?? ""}`).trim();
   return {
     title,
     description,
@@ -71,6 +83,10 @@ export default async function CropPage({ params }: { params: Promise<{ slug: str
   const pests = pestsForCrop(crop);
 
   const content = getCropContent(crop.id);
+  const relatedArticles = getAllArticles()
+    .filter((article) => article.entities?.crops?.includes(crop.id))
+    .sort((a, b) => Number(b.intent === "problem") - Number(a.intent === "problem") || b.updatedAt.localeCompare(a.updatedAt))
+    .slice(0, 8);
 
   const activities = ACTIVITY_KEYS.filter((k) => crop[k]).map((k) => ({
     label: ACTIVITY_META[k].label,
@@ -97,7 +113,7 @@ export default async function CropPage({ params }: { params: Promise<{ slug: str
     headline: `${crop.name} — kad sēt un stādīt Latvijā`,
     about: crop.name,
     inLanguage: "lv",
-    dateModified: `${DATA_REVIEWED}-01`,
+    dateModified: content?.updatedAt ?? `${DATA_REVIEWED}-01`,
     isPartOf: { "@type": "WebSite", name: SITE_NAME, url: canonical("/") },
     publisher: { "@type": "Organization", name: SITE_NAME, url: canonical("/") },
     author: { "@type": "Organization", name: SITE_NAME, url: canonical("/") },
@@ -110,6 +126,18 @@ export default async function CropPage({ params }: { params: Promise<{ slug: str
       ? MONTHS_LV_LOCATIVE[crop.harvest[0] - 1]
       : `${MONTHS_LV_LOCATIVE[crop.harvest[0] - 1]}–${MONTHS_LV_LOCATIVE[crop.harvest[1] - 1]}`
     : null;
+  const currentMonth = new Date().getMonth() + 1;
+  const isSowingNow = Boolean(sowRange && currentMonth >= sowRange[0] && currentMonth <= sowRange[1]);
+  const isHarvestingNow = Boolean(crop.harvest && currentMonth >= crop.harvest[0] && currentMonth <= crop.harvest[1]);
+  const currentMonthName = MONTHS_LV_LOCATIVE[currentMonth - 1];
+  const capitalizedMonth = `${currentMonthName[0].toUpperCase()}${currentMonthName.slice(1)}`;
+  const seasonMessage = isSowingNow && isHarvestingNow
+    ? `${capitalizedMonth} vari gan sēt nākamo porciju, gan novākt gatavos augus.`
+    : isSowingNow
+      ? `${capitalizedMonth} šis augs ir sējams.`
+      : isHarvestingNow
+        ? `${capitalizedMonth} ir šī auga ražas laiks.`
+        : null;
   const daysClause = crop.daysToHarvest && /\d/.test(crop.daysToHarvest)
     ? ` No sējas līdz ražai aptuveni ${crop.daysToHarvest.toLowerCase()}.`
     : "";
@@ -118,7 +146,7 @@ export default async function CropPage({ params }: { params: Promise<{ slug: str
     harvestLoc ? { q: `${crop.name} — kad novākt?`, a: `Parasti novāc ${harvestLoc}.${daysClause}` } : null,
     soil ? { q: `${crop.name} — cik siltai jābūt augsnei?`, a: `Sējai augsnei vajadzētu būt vismaz ${soil}°C. Vēsākā augsnē sēklas dīgst lēni vai sapūst.` } : null,
     good.length ? { q: `Ar ko ${crop.name.toLowerCase()} sader dārzā?`, a: `Labi kaimiņi: ${good.map((id) => CROPS.find((c) => c.id === id)?.name).filter(Boolean).join(", ")}.` } : null,
-  ].filter((x): x is { q: string; a: string } => x !== null);
+  ].filter((x): x is { q: string; a: string } => x !== null).concat(content?.faq ?? []);
 
   const faqJsonLd = faq.length
     ? {
@@ -143,32 +171,63 @@ export default async function CropPage({ params }: { params: Promise<{ slug: str
       {faqJsonLd && <JsonLd data={faqJsonLd} />}
 
       {/* Breadcrumb */}
-      <nav className="mb-md flex items-center gap-1 text-label-sm text-on-surface-variant">
-        <Link href="/augi" className="hover:text-primary">Augi</Link>
+      <nav className="mb-sm flex items-center gap-1 text-label-sm text-on-surface-variant" aria-label="Atpakaļceļš">
+        <Link href="/augi" className="inline-flex min-h-11 items-center hover:text-primary">Augi</Link>
         <Icon name="chevron_right" size="14px" />
         <span className="text-on-surface">{crop.name}</span>
       </nav>
 
-      <header className="mb-lg flex items-center gap-md">
-        <span className="text-6xl leading-none">{cropEmoji(crop.id)}</span>
-        <div>
-          <p className="text-label-sm uppercase tracking-[0.2em] text-tertiary">{category?.label}</p>
-          <h1 className="text-headline-lg-mobile text-primary md:text-display-lg">{crop.name}</h1>
-          <p className="mt-1 text-body-lg text-on-surface-variant">
-            Kad sēt, stādīt un novākt Latvijā · Mēness sējas kalendārs
-          </p>
-        </div>
-      </header>
+      <Card tone="highest" elevated linen className="crop-hero mb-md p-md sm:p-lg">
+        <header className="flex items-start gap-md">
+          <span
+            className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-primary-container/25 text-5xl leading-none sm:h-20 sm:w-20 sm:text-6xl"
+            aria-hidden="true"
+          >
+            {cropEmoji(crop.id)}
+          </span>
+          <div className="min-w-0">
+            <p className="text-label-sm uppercase tracking-[0.2em] text-tertiary">{category?.label}</p>
+            <h1 className="text-headline-lg-mobile text-primary md:text-display-lg">{crop.name}</h1>
+            <p className="mt-1 max-w-[36rem] text-body-lg text-on-surface-variant">
+              Praktiska audzēšanas rokasgrāmata Latvijas apstākļiem
+            </p>
+          </div>
+        </header>
 
-      {/* Conversion CTA into the app */}
-      <Link
-        href={`/?pievienot=${crop.id}`}
-        className="mb-md flex items-center gap-2 rounded-xl bg-primary px-md py-sm font-bold text-on-primary shadow-md shadow-primary/20 transition-all hover:brightness-110"
-      >
-        <Icon name="add" size="20px" />
-        Pievienot {crop.name} savā dārzā
-        <Icon name="arrow_forward" size="18px" className="ml-auto" />
-      </Link>
+        <div className="mt-md flex flex-wrap gap-2 text-label-sm text-on-surface-variant">
+          {sowWhen && (
+            <span className="inline-flex min-h-8 items-center gap-1.5 rounded-full bg-surface-container px-3">
+              <Icon name="psychiatry" size="16px" className="text-primary" /> Sēj: {sowWhen}
+            </span>
+          )}
+          {harvestLoc && (
+            <span className="inline-flex min-h-8 items-center gap-1.5 rounded-full bg-surface-container px-3">
+              <Icon name="nutrition" size="16px" className="text-tertiary" /> Novāc: {harvestLoc}
+            </span>
+          )}
+        </div>
+
+        <TrackedLink
+          href={`/?pievienot=${crop.id}`}
+          source={`augs:${crop.id}`}
+          placement="hero"
+          className="mt-md flex min-h-12 items-center gap-2 rounded-xl bg-primary px-md py-sm font-bold text-on-primary shadow-md shadow-primary/20 transition-all hover:brightness-110 active:scale-[0.98]"
+        >
+          <Icon name="add" size="20px" />
+          Pievienot {crop.name} savā dārzā
+          <Icon name="arrow_forward" size="18px" className="ml-auto" />
+        </TrackedLink>
+        <p className="mt-2 text-label-sm text-on-surface-variant">
+          Bez reģistrācijas — saņemsi šim augam atbilstošos darbus.
+        </p>
+      </Card>
+
+      {seasonMessage && (
+        <div className="mb-md flex items-start gap-2 rounded-xl border border-primary/20 bg-primary-container/15 px-md py-sm text-body-md text-on-surface">
+          <Icon name="today" size="20px" className="mt-0.5 shrink-0 text-primary" />
+          <p><strong>Šobrīd aktuāli:</strong> {seasonMessage}</p>
+        </div>
+      )}
 
       {crop.note && (
         <Card tone="container" className="mb-md flex items-start gap-sm p-md">
@@ -193,7 +252,7 @@ export default async function CropPage({ params }: { params: Promise<{ slug: str
           <p className="mt-md flex flex-wrap items-center gap-x-2 gap-y-1 text-label-md">
             <span className="text-on-surface-variant">Mēness kalendārs:</span>
             {sowMonths.map((m) => (
-              <Link key={m} href={`/kalendars/${CAL_YEAR}/${MONTH_SLUGS[m - 1]}`} className="capitalize text-primary hover:underline">
+              <Link key={m} href={`/kalendars/${CAL_YEAR}/${MONTH_SLUGS[m - 1]}`} className="inline-flex min-h-11 items-center capitalize text-primary hover:underline">
                 {MONTHS_LV_FULL[m - 1]}
               </Link>
             ))}
@@ -224,7 +283,7 @@ export default async function CropPage({ params }: { params: Promise<{ slug: str
               </p>
               <div className="flex flex-wrap gap-2">
                 {good.length ? good.map((id) => (
-                  <Link key={id} href={`/augi/${id}`} className="rounded-full bg-primary-container/30 px-2.5 py-1 text-label-sm text-on-primary-container hover:brightness-110">
+                  <Link key={id} href={`/augi/${id}`} className="inline-flex min-h-11 items-center rounded-full bg-primary-container/30 px-3 py-1 text-label-sm text-on-primary-container hover:brightness-110">
                     {cropEmoji(id)} {CROPS.find((c) => c.id === id)?.name}
                   </Link>
                 )) : <span className="text-label-sm text-on-surface-variant">—</span>}
@@ -236,7 +295,7 @@ export default async function CropPage({ params }: { params: Promise<{ slug: str
               </p>
               <div className="flex flex-wrap gap-2">
                 {bad.length ? bad.map((id) => (
-                  <Link key={id} href={`/augi/${id}`} className="rounded-full bg-error-container/25 px-2.5 py-1 text-label-sm text-error hover:brightness-110">
+                  <Link key={id} href={`/augi/${id}`} className="inline-flex min-h-11 items-center rounded-full bg-error-container/25 px-3 py-1 text-label-sm text-error hover:brightness-110">
                     {cropEmoji(id)} {CROPS.find((c) => c.id === id)?.name}
                   </Link>
                 )) : <span className="text-label-sm text-on-surface-variant">—</span>}
@@ -256,29 +315,34 @@ export default async function CropPage({ params }: { params: Promise<{ slug: str
                 <Link
                   key={p.slug}
                   href={`/kaitekli/${p.slug}`}
-                  className="inline-flex items-center gap-1.5 rounded-full bg-surface-container px-3 py-1.5 text-label-md text-on-surface hover:text-primary"
+                  className="inline-flex min-h-11 items-center gap-1.5 rounded-full bg-surface-container px-3 py-1.5 text-label-md text-on-surface hover:text-primary"
                 >
                   <span className="text-base leading-none">{p.emoji}</span> {p.name}
                 </Link>
               ))}
             </div>
-            <Link href="/kaitekli" className="mt-sm inline-flex items-center gap-1 text-label-md text-primary hover:underline">
+            <Link href="/kaitekli" className="mt-sm inline-flex min-h-11 items-center gap-1 text-label-md text-primary hover:underline">
               Dabīgā apkarošana visiem kaitēkļiem <Icon name="arrow_forward" size="16px" />
             </Link>
           </Card>
         </>
       )}
 
-      {/* Full growing guide (generated prose) */}
       {content && (
-        <section className="mb-md">
+        <section className="article-reading-surface -mx-2 mb-lg p-4 sm:mx-0 sm:p-lg" aria-labelledby="growing-guide-heading">
+          <p className="text-label-sm uppercase tracking-[0.18em] text-tertiary">No sējas līdz ražai</p>
+          <h2 id="growing-guide-heading" className="mb-md text-headline-lg-mobile text-on-surface">{crop.name} audzēšana</h2>
           {content.intro && (
-            <p className="mb-md text-body-lg leading-relaxed text-on-surface-variant">{content.intro}</p>
+            <div className="mb-lg space-y-3 text-body-lg leading-relaxed text-on-surface-variant">
+              <TextParagraphs text={content.intro} />
+            </div>
           )}
           {content.sections.map((s) => (
-            <div key={s.heading} className="mb-md">
+            <div key={s.heading} className="border-t border-outline-variant/15 py-md first:border-t-0 first:pt-0">
               <h2 className="mb-sm text-headline-md text-on-surface">{s.heading}</h2>
-              <p className="text-body-lg leading-relaxed text-on-surface-variant">{s.body}</p>
+              <div className="space-y-3 text-body-lg leading-relaxed text-on-surface-variant">
+                <TextParagraphs text={s.body} />
+              </div>
             </div>
           ))}
           {content.folklore && (
@@ -287,6 +351,32 @@ export default async function CropPage({ params }: { params: Promise<{ slug: str
               <p className="text-body-md italic text-on-surface-variant">{content.folklore}</p>
             </Card>
           )}
+          {content.relatedLinks && content.relatedLinks.length > 0 && (
+            <div className="mt-md border-t border-outline-variant/15 pt-md">
+              <p className="mb-2 text-label-sm font-semibold uppercase tracking-wide text-on-surface-variant">Turpini ar saistītu padomu</p>
+              <div className="flex flex-wrap gap-2">
+                {content.relatedLinks.map((link) => (
+                  <Link key={link.href} href={link.href} className="inline-flex min-h-11 items-center gap-1.5 rounded-full bg-surface-container px-3 text-label-md text-primary hover:underline">
+                    {link.label} <Icon name="arrow_forward" size="16px" />
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
+        </section>
+      )}
+
+      {relatedArticles.length > 0 && (
+        <section className="mb-md">
+          <h2 className="mb-sm text-headline-md text-on-surface">Padomi un problēmu risinājumi</h2>
+          <div className="grid gap-2 sm:grid-cols-2">
+            {relatedArticles.map((article) => (
+              <Link key={article.slug} href={`/raksti/${article.slug}`} className="flex min-h-20 flex-col justify-center rounded-xl border border-outline-variant/10 bg-surface-container p-sm transition-colors hover:bg-surface-container-high">
+                <span className="text-label-sm text-tertiary">{article.intent === "problem" ? "Problēma" : "Pamācība"}</span>
+                <span className="mt-1 block text-body-md font-semibold text-on-surface">{article.title}</span>
+              </Link>
+            ))}
+          </div>
         </section>
       )}
 
@@ -300,7 +390,7 @@ export default async function CropPage({ params }: { params: Promise<{ slug: str
           <strong className="text-on-surface">{PART_GENITIVE[elem.part].toLowerCase()} dienās</strong> ({elem.label} elements),
           kad Mēness atrodas atbilstošajā zvaigznājā.
         </p>
-        <Link href="/kalendars" className="mt-sm inline-flex items-center gap-1 text-label-md text-primary hover:underline">
+        <Link href="/kalendars" className="mt-sm inline-flex min-h-11 items-center gap-1 text-label-md text-primary hover:underline">
           Skatīt interaktīvo Mēness kalendāru <Icon name="arrow_forward" size="16px" />
         </Link>
         <DataNote variant="moon" className="mt-sm" />
@@ -309,15 +399,36 @@ export default async function CropPage({ params }: { params: Promise<{ slug: str
       {faq.length > 0 && (
         <>
           <h2 className="mb-sm text-headline-md text-on-surface">Biežākie jautājumi</h2>
-          <div className="mb-md space-y-2">
+          <div className="mb-md divide-y divide-outline-variant/15 overflow-hidden rounded-xl border border-outline-variant/10 bg-surface-container">
             {faq.map((f) => (
-              <Card key={f.q} tone="container" className="p-md">
-                <p className="mb-1 font-semibold text-on-surface">{f.q}</p>
-                <p className="text-body-md text-on-surface-variant">{f.a}</p>
-              </Card>
+              <details key={f.q} className="group px-md open:bg-surface-container-high">
+                <summary className="flex min-h-14 cursor-pointer list-none items-center gap-2 py-sm font-semibold text-on-surface marker:content-none">
+                  <span className="flex-1">{f.q}</span>
+                  <Icon name="expand_more" size="20px" className="shrink-0 text-primary transition-transform group-open:rotate-180" />
+                </summary>
+                <p className="pb-md text-body-md leading-relaxed text-on-surface-variant">{f.a}</p>
+              </details>
             ))}
           </div>
         </>
+      )}
+
+      {content?.sources && content.sources.length > 0 && (
+        <section className="mb-md border-t border-outline-variant/10 pt-md" aria-labelledby="crop-sources-heading">
+          <h2 id="crop-sources-heading" className="text-headline-md text-on-surface">Avoti un pārbaude</h2>
+          <p className="mt-1 text-label-md text-on-surface-variant">
+            Saturs pārbaudīts {content.updatedAt ? new Intl.DateTimeFormat("lv-LV").format(new Date(`${content.updatedAt}T12:00:00Z`)) : "redakcijas pārbaudē"}.
+          </p>
+          <ul className="mt-2 space-y-1">
+            {content.sources.map((source) => (
+              <li key={source.url}>
+                <a href={source.url} target="_blank" rel="noreferrer" className="inline-flex min-h-11 items-center gap-1 text-label-md text-primary hover:underline">
+                  {source.label} <Icon name="open_in_new" size="15px" />
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
       )}
 
       {(() => {
@@ -327,7 +438,7 @@ export default async function CropPage({ params }: { params: Promise<{ slug: str
             <h2 className="mb-sm text-headline-md text-on-surface">Citi — {category?.label.toLowerCase()}</h2>
             <div className="flex flex-wrap gap-2">
               {siblings.map((c) => (
-                <Link key={c.id} href={`/augi/${c.id}`} className="inline-flex items-center gap-1 rounded-full bg-surface-container px-3 py-1.5 text-label-md text-on-surface hover:text-primary">
+                <Link key={c.id} href={`/augi/${c.id}`} className="inline-flex min-h-11 items-center gap-1 rounded-full bg-surface-container px-3 py-1.5 text-label-md text-on-surface hover:text-primary">
                   {cropEmoji(c.id)} {c.name}
                 </Link>
               ))}
@@ -336,11 +447,11 @@ export default async function CropPage({ params }: { params: Promise<{ slug: str
         ) : null;
       })()}
 
-      <div className="flex flex-wrap gap-3">
-        <Link href="/augi" className="text-label-md text-on-surface-variant hover:text-primary">← Visi augi</Link>
-        <Link href="/raksti" className="text-label-md text-on-surface-variant hover:text-primary">Raksti</Link>
-        <Link href="/par" className="text-label-md text-on-surface-variant hover:text-primary">Par datiem</Link>
-        <Link href="/macies" className="text-label-md text-on-surface-variant hover:text-primary">Kas ir Mēness sēja?</Link>
+      <div className="flex flex-wrap gap-x-4 gap-y-1 border-t border-outline-variant/10 pt-md">
+        <Link href="/augi" className="inline-flex min-h-11 items-center text-label-md text-on-surface-variant hover:text-primary">← Visi augi</Link>
+        <Link href="/raksti" className="inline-flex min-h-11 items-center text-label-md text-on-surface-variant hover:text-primary">Raksti</Link>
+        <Link href="/par" className="inline-flex min-h-11 items-center text-label-md text-on-surface-variant hover:text-primary">Par datiem</Link>
+        <Link href="/macies" className="inline-flex min-h-11 items-center text-label-md text-on-surface-variant hover:text-primary">Kas ir Mēness sēja?</Link>
       </div>
     </article>
   );

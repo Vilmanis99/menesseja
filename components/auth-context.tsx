@@ -3,7 +3,7 @@
 import { createContext, useContext, useEffect, useMemo, useState } from "react";
 import type { User } from "@supabase/supabase-js";
 import { createClient } from "@/lib/supabase/client";
-import { isSupabaseConfigured } from "@/lib/supabase/config";
+import { areAccountsEnabled, isSupabaseConfigured } from "@/lib/supabase/config";
 import type { Profile } from "@/lib/supabase/types";
 
 interface AuthState {
@@ -19,20 +19,21 @@ interface AuthState {
 const Ctx = createContext<AuthState | null>(null);
 
 export function AuthProvider({ children }: { children: React.ReactNode }) {
-  const [loading, setLoading] = useState(isSupabaseConfigured);
+  const authEnabled = isSupabaseConfigured && areAccountsEnabled;
+  const [loading, setLoading] = useState(authEnabled);
   const [user, setUser] = useState<User | null>(null);
   const [profile, setProfile] = useState<Profile | null>(null);
 
   // A stable client for the lifetime of the provider (only when configured).
   // Wrapped in try/catch so a malformed cookie can never crash the app.
   const supabase = useMemo(() => {
-    if (!isSupabaseConfigured) return null;
+    if (!authEnabled) return null;
     try {
       return createClient();
     } catch {
       return null;
     }
-  }, []);
+  }, [authEnabled]);
 
   async function loadProfile(uid: string) {
     if (!supabase) return;
@@ -77,7 +78,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   }, []);
 
   const value: AuthState = {
-    enabled: isSupabaseConfigured,
+    enabled: authEnabled,
     loading,
     user,
     profile,

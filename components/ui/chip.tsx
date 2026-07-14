@@ -25,18 +25,15 @@ export function Chip({
   children,
   onClick,
 }: ChipProps) {
-  const Tag = onClick ? "button" : "span";
-  return (
-    <Tag
-      onClick={onClick}
-      className={clsx(
-        "inline-flex items-center rounded-full px-3 py-1 text-label-sm font-medium transition-colors",
-        active ? "bg-primary text-on-primary" : TONE[tone],
-        onClick && "active:scale-95",
-        className,
-      )}
-    >
-      {children}
-    </Tag>
+  const classes = clsx(
+    "inline-flex items-center rounded-full text-label-sm font-medium transition-all duration-200",
+    onClick ? "min-h-11 px-4" : "px-3 py-1",
+    active ? "bg-primary text-on-primary" : TONE[tone],
+    className,
   );
+
+  if (onClick) {
+    return <button type="button" aria-pressed={active} onClick={onClick} className={clsx(classes, "active:scale-[0.98]")}>{children}</button>;
+  }
+  return <span className={classes}>{children}</span>;
 }

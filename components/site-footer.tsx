@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ConsentSettingsButton } from "@/components/consent-settings-button";
 
 const LINKS = [
   { href: "/macies", label: "Kas ir Mēness sēja?" },
@@ -12,6 +13,7 @@ const LINKS = [
   { href: "/regioni", label: "Reģioni" },
   { href: "/iesutit", label: "Iesūti gudrību" },
   { href: "/par", label: "Par mums" },
+  { href: "/privatums", label: "Privātums" },
 ];
 
 /** Slim trust footer shown under content on every page (good for SEO + honesty). */
@@ -25,6 +27,7 @@ export function SiteFooter() {
           </Link>
         ))}
       </div>
+      <div className="mt-2"><ConsentSettingsButton /></div>
       <p className="mt-sm max-w-2xl text-label-sm leading-relaxed text-on-surface-variant/70">
         Mēness Sēja apvieno Mēness ritmu, latviešu senču gudrību un reālus datus. Mēness sēja ir
         tradīcija, ne garantija — laikapstākļi un augsnes temperatūra ir svarīgāki. Laikapstākļi:{" "}

@@ -2,7 +2,32 @@
   "title": "Zemesvēzis siltumnīcā: kā atpazīt un kā no tā atbrīvoties",
   "slug": "zemesvezis-siltumnica-ka-atbrivoties",
   "category": "Problēmas",
+  "intent": "problem",
   "excerpt": "Ja siltumnīcā grauztas saknes un dēsti, tas ir zemesvēzis: siltumnīcā kā atbrīvoties bez ķīmijas — slazdi, eļļas un ziepju šķīdums alās, mehāniskā ķeršana.",
+  "shortAnswer": "Tu no rīta ieej siltumnīcā un redzi, ka vakar vēl spirgtais dēsts ir nogāzies — stublājs pārkniebts pie pašas zemes, it kā kāds to būtu nogriezis.  Pavelc augu, un tas iznāk gandrīz bez saknēm.",
+  "primaryQuery": "zemesvēzis siltumnīcā: kā atpazīt un kā no tā atbrīvoties",
+  "publishedAt": "2026-06-29",
+  "updatedAt": "2026-06-29",
+  "entities": {
+    "pests": [
+      "zemesvezis",
+      "kurmji"
+    ]
+  },
+  "relatedSlugs": [
+    "siltumnica-vai-lauka",
+    "kaiminaugi"
+  ],
+  "sources": [
+    {
+      "label": "Latvijas Lauku konsultāciju un izglītības centrs",
+      "url": "https://llkc.lv/"
+    },
+    {
+      "label": "Royal Horticultural Society — Advice",
+      "url": "https://www.rhs.org.uk/advice"
+    }
+  ],
   "readMinutes": 6,
   "body": [
     {
@@ -54,9 +79,21 @@
     }
   ],
   "links": [
-    { "label": "Zemesvēzis: kaitēkļa apraksts un bojājumi", "href": "/kaitekli/zemesvezis" },
-    { "label": "Kurmji dārzā — ar ko atšķiras no zemesvēža", "href": "/kaitekli/kurmji" },
-    { "label": "Siltumnīca vai lauks: kur audzēt dārzeņus", "href": "/raksti/siltumnica-vai-lauka" },
-    { "label": "Kaimiņaugi: kādus augus stādīt blakus", "href": "/raksti/kaiminaugi" }
+    {
+      "label": "Zemesvēzis: kaitēkļa apraksts un bojājumi",
+      "href": "/kaitekli/zemesvezis"
+    },
+    {
+      "label": "Kurmji dārzā — ar ko atšķiras no zemesvēža",
+      "href": "/kaitekli/kurmji"
+    },
+    {
+      "label": "Siltumnīca vai lauks: kur audzēt dārzeņus",
+      "href": "/raksti/siltumnica-vai-lauka"
+    },
+    {
+      "label": "Kaimiņaugi: kādus augus stādīt blakus",
+      "href": "/raksti/kaiminaugi"
+    }
   ]
 }

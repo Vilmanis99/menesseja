@@ -2,7 +2,33 @@
   "title": "Aukstumizturīgie vs siltummīlošie dārzeņi: vienkāršs dalījums",
   "slug": "aukstumizturigie-vs-siltummilosie",
   "category": "Praktiski",
+  "intent": "how-to",
   "excerpt": "Kurus dārzeņus var sēt agri, bet kuri jāgaida līdz pēc salnām? Viens pamatlikums sadala visu dārzu divās grupās un atrisina labu pusi no visiem pavasara taiminga jautājumiem.",
+  "shortAnswer": "Tu stāvi pie sēklu paciņu kaudzes, ārā vēl auksts, un galvā griežas viens un tas pats jautājums: kuras drīkst sēt jau tagad, bet kuras vēl par agru?  Šī ir tā vieta, kur iesācēji visbiežāk apjūk un nervozē — bail nokavēt, vēl vairāk bail visu nosaldēt.",
+  "primaryQuery": "aukstumizturīgie vs siltummīlošie dārzeņi: vienkāršs dalījums",
+  "publishedAt": "2026-06-29",
+  "updatedAt": "2026-06-29",
+  "entities": {
+    "crops": [
+      "rediisi",
+      "zirni"
+    ]
+  },
+  "relatedSlugs": [
+    "salnas-latvija",
+    "kad-stadit-destus-lauka",
+    "kad-set-destus-rekini-atpakal"
+  ],
+  "sources": [
+    {
+      "label": "Latvijas Lauku konsultāciju un izglītības centrs",
+      "url": "https://llkc.lv/"
+    },
+    {
+      "label": "Royal Horticultural Society — Advice",
+      "url": "https://www.rhs.org.uk/advice"
+    }
+  ],
   "readMinutes": 6,
   "body": [
     {
@@ -61,10 +87,25 @@
     }
   ],
   "links": [
-    { "label": "Salnas Latvijā: kad tās beidzas un kā sargāt augus", "href": "/raksti/salnas-latvija" },
-    { "label": "Kad stādīt dēstus laukā", "href": "/raksti/kad-stadit-destus-lauka" },
-    { "label": "Kad sēt dēstus: rēķini atpakaļ no izstādīšanas", "href": "/raksti/kad-set-destus-rekini-atpakal" },
-    { "label": "Redīsi: ātrākais aukstumizturīgais dārzenis", "href": "/augi/rediisi" },
-    { "label": "Zirņi: agra sēja tieši zemē", "href": "/augi/zirni" }
+    {
+      "label": "Salnas Latvijā: kad tās beidzas un kā sargāt augus",
+      "href": "/raksti/salnas-latvija"
+    },
+    {
+      "label": "Kad stādīt dēstus laukā",
+      "href": "/raksti/kad-stadit-destus-lauka"
+    },
+    {
+      "label": "Kad sēt dēstus: rēķini atpakaļ no izstādīšanas",
+      "href": "/raksti/kad-set-destus-rekini-atpakal"
+    },
+    {
+      "label": "Redīsi: ātrākais aukstumizturīgais dārzenis",
+      "href": "/augi/rediisi"
+    },
+    {
+      "label": "Zirņi: agra sēja tieši zemē",
+      "href": "/augi/zirni"
+    }
   ]
 }

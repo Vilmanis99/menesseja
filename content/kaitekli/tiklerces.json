@@ -4,48 +4,103 @@
   "latin": "Tetranychus urticae",
   "emoji": "🕷️",
   "type": "kaiteklis",
-  "tagline": "Mikroskopiskais siltumnīcas rēgs — kad uz gurķu lapām parādās smalki tīkliņi, kolonija jau ir milzīga.",
+  "tagline": "Sīkas ērces, kas karstā un sausā laikā rada gaišu punktējumu uz lapām; smalks tīklojums parasti parādās vēlāk.",
+  "shortAnswer": "Vispirms pārbaudi lapu apakšpusi ar lupu vai uzsit lapu virs baltas papīra lapas — kustīgi punktiņi kopā ar smalku lapu punktējumu liecina par tīklērcēm. Izolē skarto telpaugu vai atzīmē perēkli siltumnīcā, noņem stipri bojātās lapas un noskalo lapu apakšpuses ar ūdeni. Pēc dažām dienām pārbaudi vēlreiz; ja populācija nesamazinās, izvēlies konkrētajam augam un tīklērcēm paredzētu līdzekli vai bioloģisko kontroli.",
   "severity": "vidējs",
   "affects": ["gurķi siltumnīcā", "tomāti", "telpaugi", "zemenes", "pupiņas"],
   "signs": [
-    "Lapas kļūst raibas — sīki gaiši punktiņi (dūrieni), vēlāk lapa dzeltē un kalst.",
-    "Smalki zirnekļtīkliņi lapu apakšā un starp lapu un stublāju — vēlīna stadija.",
-    "Pati ērce ar neapbruņotu aci tikko saskatāma (~0,5 mm) — paskaties ar lupu lapas apakšpusē.",
-    "Problēma eksplodē karstā, sausā gaisā — siltumnīcā jūlijā, telpaugiem ziemā pie radiatora."
+    "Uz lapas parādās daudz sīku, gaišu punktu; vēlāk tā var kļūt bronzīga, dzeltena un sakalst.",
+    "Lapu apakšpusē ar lupu redzamas sīkas kustīgas ērces un apaļas oliņas.",
+    "Smalks tīklojums pie dzīslām, kātiņiem vai starp lapām liecina par lielāku populāciju.",
+    "Uzsitot bojātu lapu virs balta papīra, uz tā redzami lēni kustīgi punktiņi.",
+    "Bojājumi bieži pastiprinās karstā, sausā laikā un uz ūdens trūkuma novājinātiem augiem."
   ],
   "intro": [
-    "Tīklērce nav kukainis, bet sīciņa ērce, kas dzīvo lapu apakšpusē un sūc augu sulu šūnu pa šūnai. Tā vairojas neticami ātri — karstā siltumnīcā paaudze nomainās nedēļā —, tāpēc no pirmajiem raibumiņiem līdz tīkliņiem pārklātam, kalstošam gurķim paiet pavisam īss laiks.",
-    "Tīklērces lielā vājība ir mitrums: tā plaukst tikai sausā, karstā gaisā. Tāpēc visa dabīgā cīņa griežas ap vienu asi — celt gaisa mitrumu un regulāri skalot lapas. Siltumnīcā, kur gaiss tiek miglots un augi dušoti, tīklērce nekad nekļūst par katastrofu."
+    "Tīklērces nav kukaiņi — tās pieder zirnekļveidīgajiem un barojas galvenokārt lapu apakšpusē. Sūcot šūnu saturu, tās atstāj raksturīgu sīku punktējumu. Viena pazīme pati par sevi nav pietiekama: diagnozi apstiprina, atrodot pašas ērces, oliņas vai ļoti smalku tīklojumu.",
+    "Ātra rīcība ir svarīga, taču augam nav uzreiz vajadzīgs spēcīgākais līdzeklis. Integrētā pieeja sākas ar pārbaudi, ūdens stresa mazināšanu, mehānisku populācijas samazināšanu un atkārtotu novērošanu. Plaša iedarbības spektra insekticīdi var iznīcināt tīklērču dabiskos ienaidniekus un situāciju pasliktināt."
   ],
+  "compare": {
+    "heading": "Tīklērce vai cita problēma?",
+    "intro": "Skaties ne tikai uz lapas krāsu, bet arī uz bojājuma rakstu un lapas apakšpusi.",
+    "items": [
+      {
+        "name": "Tīklērces",
+        "note": "Daudz sīku gaišu punktu, kustīgi punktiņi lapas apakšā un vēlāk ļoti smalks tīklojums."
+      },
+      {
+        "name": "Tripsis",
+        "note": "Biežāk veido sudrabainus svītrojumus vai laukumus un atstāj sīkus tumšus izkārnījumu punktus; smalka tīklojuma nav."
+      },
+      {
+        "name": "Barības vielu trūkums",
+        "note": "Dzeltējums parasti saistīts ar dzīslām vai noteikta vecuma lapām, bet lapas apakšā nav kustīgu ērču un oliņu."
+      },
+      {
+        "name": "Parasts zirneklis",
+        "note": "Tīkls ir rupjāks un izvietots starp konstrukcijām; lapai nav raksturīgā blīvā punktējuma."
+      }
+    ]
+  },
   "control": [
-    "Cel gaisa mitrumu: miglo siltumnīcu karstās dienās, lej ūdeni uz celiņiem — mitrums virs 60 % ērces vairošanos strauji bremzē.",
-    "Noskalo augus ar spēcīgu ūdens strūklu, īpaši lapu APAKŠAS — mehāniski aizskalo lielāko koloniju daļu; atkārto ik pēc 3–4 dienām.",
-    "Stipri skartās lapas un dzinumus nogriez un iznes no siltumnīcas (ne kompostā pie siltumnīcas).",
-    "Apsmidzini lapu apakšas ar ziepjūdeni (zaļās ziepes) — tas nosmacē ērces; atkārto pēc nedēļas, jo olas izdzīvo.",
-    "Telpaugiem: nodušo augu, uzliec caurspīdīgu maisu uz pāris dienām — mitruma šoks ērces iznīcina.",
-    "Smagos gadījumos siltumnīcā var izmantot plēsējērces (Phytoseiulus persimilis) — bioloģiskā kontrole, ko pārdod arī Latvijā."
+    "Apstiprini diagnozi ar lupu vai baltā papīra testu un apskati vairākas lapas, ne tikai vienu.",
+    "Telpaugu atdala no pārējiem; siltumnīcā atzīmē skarto vietu un pārbaudi blakus augus.",
+    "Noņem stipri sakaltušās un blīvi tīklotās lapas, ieliec tās maisā un neatstāj pie augiem.",
+    "Ar ūdens strūklu rūpīgi noskalo lapu apakšpuses. Siltumnīcā dari to no rīta, lai lapas līdz vakaram paspēj apžūt, un neatstāj augus sausuma stresā.",
+    "Atkārtoti pārbaudi augus ik pēc dažām dienām. Ja ērču skaits nemazinās, bioloģiskajai kontrolei vari izmantot tīklērcēm piemērotas plēsējērces, stingri ievērojot piegādātāja norādes par sugu un apstākļiem.",
+    "Ja vajadzīgs augu aizsardzības līdzeklis, izvēlies tikai tādu, kura marķējumā norādīts konkrētais augs un tīklērces. Apstrādā arī lapu apakšpuses un ievēro marķējumā noteikto atkārtojumu, aizsardzības un nogaidīšanas laiku."
   ],
   "recipeSlugs": [],
   "prevention": [
-    "Regulāra vēdināšana + miglošana karstās dienās — neļauj siltumnīcai kļūt par sausu pirti.",
-    "Apskati lapu apakšas ar lupu jau jūnijā — agri pamanīta kolonija ir viegli apturama.",
-    "Rudenī siltumnīcu iztīri un nomazgā (arī rāmjus un spraugas) — tīklērces ziemo plaisās un augu atliekās.",
-    "Neturi siltumnīcā pārziemojošus telpaugus — tie bieži ienes ērces pavasarī."
+    "Reizi nedēļā apskati siltumnīcas gurķu un telpaugu lapu apakšpuses, īpaši karstā laikā.",
+    "Laisti augus atbilstoši to vajadzībām un nepieļauj ilgstošu sausuma stresu.",
+    "Samazini putekļus siltumnīcā un ap augiem; putekļaini, sausi apstākļi tīklērcēm ir labvēlīgi.",
+    "Jaunus telpaugus dažas nedēļas turi atsevišķi un pirms ienešanas pārbaudi ar lupu.",
+    "Nelieto plaša iedarbības spektra insekticīdus profilaktiski — tie var iznīcināt tīklērču dabiskos ienaidniekus."
   ],
   "moonNote": "",
   "folklore": "",
+  "safetyNote": "Nejauc stipru saimniecības ziepju vai eļļas šķīdumu pēc izjūtas: koncentrācija, kas kaitē tīklērcēm, var apdedzināt lapas. Pārtikā lietojamiem augiem izmanto tikai Latvijā atļautu līdzekli un precīzi ievēro tā marķējumu.",
   "faq": [
     {
-      "q": "Kā atšķirt tīklērci no slimības?",
-      "a": "Tīklērces raibums ir sīki, vienmērīgi gaiši punktiņi (dūrieni), kas sākas pie lapas dzīslām, un lapas apakšā ar lupu redzamas kustīgas ērcītes vai tīkliņi. Sēņu slimības veido plankumus, ne punktiņu rakstu."
+      "q": "Kā droši atšķirt tīklērci no lapu slimības?",
+      "a": "Uzsit bojāto lapu virs baltas papīra lapas un apskati lapas apakšpusi ar lupu. Kustīgi punktiņi, oliņas un ļoti smalks tīklojums apstiprina tīklērces; plankumi vien bez kaitēkļa pazīmēm var būt slimība vai auga kopšanas problēma."
     },
     {
-      "q": "Kāpēc tīklērce uzbrūk tieši siltumnīcai?",
-      "a": "Tur ir tās ideālie apstākļi: karsts un sauss gaiss. Mitrums ir tās vājība — miglošana un lapu skalošana siltumnīcā problēmu parasti notur zem kontroles."
+      "q": "Vai pietiek ar vienu lapu noskalošanu?",
+      "a": "Parasti nē. Skalošana samazina populāciju, bet neaizsniedz katru īpatni un oliņu. Pēc dažām dienām augus pārbaudi vēlreiz un turpini tikai tik ilgi, kamēr atrodi dzīvas ērces vai jaunus bojājumus."
     },
     {
-      "q": "Vai ar vienu apstrādi pietiek?",
-      "a": "Nē — ērces olas pārdzīvo gan skalošanu, gan ziepjūdeni, tāpēc apstrāde jāatkārto 2–3 reizes ar 4–7 dienu intervālu, lai noķertu arī tikko šķīlušās paaudzes."
+      "q": "Vai tīklērces var ierobežot ar plēsējērcēm?",
+      "a": "Jā, īpaši siltumnīcā un tad, ja tās izlaiž savlaicīgi. Dažādām plēsējērču sugām vajag atšķirīgu temperatūru un mitrumu, tāpēc sugu un devu izvēlies pēc piegādātāja norādēm, nevis tikai pēc nosaukuma."
     }
-  ]
+  ],
+  "relatedLinks": [
+    {
+      "label": "Gurķu audzēšana un kopšana",
+      "href": "/augi/gurki"
+    },
+    {
+      "label": "Kāpēc gurķiem dzeltē lapas",
+      "href": "/raksti/kapec-gurkiem-dzelte-lapas"
+    },
+    {
+      "label": "Tomātu audzēšana un kopšana",
+      "href": "/augi/tomati"
+    }
+  ],
+  "sources": [
+    {
+      "label": "UC Statewide IPM — Spider Mites",
+      "url": "https://ipm.ucanr.edu/home-and-landscape/spider-mites/"
+    },
+    {
+      "label": "Colorado State University Extension — Spider Mites",
+      "url": "https://extension.colostate.edu/resource/spider-mites/"
+    },
+    {
+      "label": "University of Maryland Extension — Mites in Home Gardens",
+      "url": "https://extension.umd.edu/resource/mites-home-gardens"
+    }
+  ],
+  "updatedAt": "2026-07-14"
 }

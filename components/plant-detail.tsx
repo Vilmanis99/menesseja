@@ -192,7 +192,7 @@ export function PlantDetail({
                     <button
                       onClick={() => removeLog(live.id, l.id)}
                       aria-label="Dzēst ierakstu"
-                      className="flex h-8 w-8 items-center justify-center rounded-full text-on-surface-variant/70 hover:bg-surface-variant/50 hover:text-error"
+                      className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-on-surface-variant/70 transition-colors hover:bg-surface-variant/50 hover:text-error"
                     >
                       <Icon name="close" size="14px" />
                     </button>

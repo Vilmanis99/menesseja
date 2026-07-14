@@ -2,7 +2,40 @@
   "title": "Zemeņu stādīšana augustā: kāpēc tas ir labākais laiks",
   "slug": "zemenu-stadisana-augusta",
   "category": "Praktiski",
+  "intent": "seasonal",
   "excerpt": "Augusts ir labākais zemeņu stādīšanas laiks Latvijā: stāds paspēj iesakņoties siltajā augsnē un izveidot ziedpumpurus, tāpēc pilnu ražu dod jau nākamajā vasarā. Kā izvēlēties stādus, pēc kā stādīt un kā nekļūdīties ar dziļumu.",
+  "shortAnswer": "Vairums iesācēju ir pārliecināti, ka zemenes stāda pavasarī — kopā ar visu pārējo.  Un tad brīnās, kāpēc pirmajā vasarā ogu tikpat kā nav.",
+  "primaryQuery": "zemeņu stādīšana augustā: kāpēc tas ir labākais laiks",
+  "publishedAt": "2026-07-06",
+  "updatedAt": "2026-07-06",
+  "seasonalMonths": [
+    8
+  ],
+  "entities": {
+    "crops": [
+      "zemenes"
+    ],
+    "pests": [
+      "zemenu-smecernieks"
+    ]
+  },
+  "relatedSlugs": [
+    "kapec-zemenes-puve",
+    "augu-maina-darza",
+    "kad-novakt-kiplokus",
+    "darza-darbi-augusta",
+    "augoss-un-dilstoss-meness"
+  ],
+  "sources": [
+    {
+      "label": "Latvijas Lauku konsultāciju un izglītības centrs",
+      "url": "https://llkc.lv/"
+    },
+    {
+      "label": "Royal Horticultural Society — Advice",
+      "url": "https://www.rhs.org.uk/advice"
+    }
+  ],
   "readMinutes": 6,
   "body": [
     {

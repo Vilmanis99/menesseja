@@ -51,6 +51,7 @@ export function og(opts: {
   title: string;
   description: string;
   type?: "website" | "article";
+  image?: string;
 }) {
   return {
     title: opts.title,
@@ -59,6 +60,6 @@ export function og(opts: {
     siteName: SITE_NAME,
     locale: "lv_LV",
     type: opts.type ?? "article",
-    images: [`${SITE_URL}/opengraph-image`],
+    images: [opts.image ? canonical(opts.image) : `${SITE_URL}/opengraph-image`],
   };
 }

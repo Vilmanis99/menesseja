@@ -10,6 +10,10 @@ export interface CropContent {
   intro: string;
   sections: CropSection[];
   folklore?: string;
+  faq?: { q: string; a: string }[];
+  relatedLinks?: { label: string; href: string }[];
+  sources?: { label: string; url: string }[];
+  updatedAt?: string;
 }
 
 /** Load the long-form prose for a crop (generated into content/crops/<id>.json).

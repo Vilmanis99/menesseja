@@ -132,6 +132,17 @@
     text-rendering: optimizeLegibility;
   }
 
+  :where(a, button, input, select, textarea, summary):focus-visible {
+    outline: 3px solid var(--color-primary);
+    outline-offset: 3px;
+  }
+
+  button,
+  summary,
+  [role="button"] {
+    cursor: pointer;
+  }
+
   ::selection {
     background-color: color-mix(in srgb, var(--color-primary) 30%, transparent);
     color: var(--color-on-primary-container);
@@ -162,12 +173,103 @@
 /* Subtle 5%-opacity linen weave laid over tactile cards */
 .linen-overlay {
   pointer-events: none;
-  background-image: url("https://www.transparenttextures.com/patterns/pinstripe-dark.png");
-  opacity: 0.05;
+  background-image:
+    repeating-linear-gradient(0deg, transparent 0 3px, rgb(218 226 253 / 0.025) 3px 4px),
+    repeating-linear-gradient(90deg, transparent 0 5px, rgb(172 207 182 / 0.018) 5px 6px);
+  opacity: 0.8;
   border-radius: inherit;
 }
 .linen-texture {
-  background-image: url("https://www.transparenttextures.com/patterns/pinstripe-dark.png");
+  background-image:
+    repeating-linear-gradient(0deg, transparent 0 3px, rgb(218 226 253 / 0.025) 3px 4px),
+    repeating-linear-gradient(90deg, transparent 0 5px, rgb(172 207 182 / 0.018) 5px 6px);
+}
+
+/* Readable editorial surface within the darker application shell. */
+.article-reading-surface {
+  background:
+    radial-gradient(circle at 12% 0%, rgb(172 207 182 / 0.07), transparent 32rem),
+    var(--color-surface-container-low);
+  border: 1px solid color-mix(in srgb, var(--color-outline-variant) 34%, transparent);
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgb(0 0 0 / 0.16);
+}
+
+.featured-article-card {
+  background-image: radial-gradient(circle at 15% 10%, color-mix(in srgb, var(--color-primary) 12%, transparent), transparent 65%);
+}
+
+.crop-hero {
+  background-image:
+    radial-gradient(circle at 8% 5%, color-mix(in srgb, var(--color-primary) 14%, transparent), transparent 18rem),
+    radial-gradient(circle at 92% 115%, color-mix(in srgb, var(--color-tertiary) 9%, transparent), transparent 22rem);
+}
+
+.pest-hero {
+  background-image:
+    radial-gradient(circle at 8% 4%, color-mix(in srgb, var(--color-tertiary) 12%, transparent), transparent 18rem),
+    radial-gradient(circle at 96% 110%, color-mix(in srgb, var(--color-error) 7%, transparent), transparent 22rem);
+}
+
+.garden-moon-glow {
+  box-shadow: 0 0 60px color-mix(in srgb, var(--color-primary) 12%, transparent);
+}
+
+.garden-landscape {
+  background: linear-gradient(
+    165deg,
+    transparent 0 32%,
+    color-mix(in srgb, var(--color-primary-container) 70%, transparent) 33% 48%,
+    var(--color-surface-container) 49%
+  );
+}
+
+.mobile-bottom-nav {
+  padding-bottom: max(12px, env(safe-area-inset-bottom));
+}
+
+.mobile-top-bar {
+  padding-top: max(12px, env(safe-area-inset-top));
+}
+
+.app-mobile-content {
+  margin-bottom: calc(5.5rem + env(safe-area-inset-bottom));
+}
+
+.modal-panel-safe {
+  max-height: 85dvh;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.mobile-toast-offset {
+  bottom: calc(5.75rem + env(safe-area-inset-bottom));
+}
+
+@media (min-width: 768px) {
+  .mobile-toast-offset {
+    bottom: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .app-mobile-content {
+    margin-bottom: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 
 /* Slim, moonlit scrollbars on horizontal rails */

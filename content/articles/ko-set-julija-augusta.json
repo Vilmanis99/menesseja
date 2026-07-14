@@ -2,7 +2,39 @@
   "title": "Ko sēt jūlijā un augustā — otrā raža līdz rudenim",
   "slug": "ko-set-julija-augusta",
   "category": "Praktiski",
+  "intent": "seasonal",
   "excerpt": "Domā, ka jūlijā sēšana ir beigusies? Vēl ne. Ātri augoši, vēsumizturīgi dārzeņi otrai ražai — redīsi, salāti, rukola, spināti, Ķīnas kāposti — ar Latvijas laikiem un vienkāršu aprēķinu atpakaļ no pirmās salnas.",
+  "shortAnswer": "Jūlija sākumā daudzi iesācēji nodomā, ka sēšanas laiks ir garām: pavasara steiga beigusies, dobes pilnas, un šķiet, ka tagad atliek tikai laistīt un gaidīt.  Patiesībā tieši tagad atbrīvojas vieta — novākti pirmie redīsi, izrauti agrie salāti, nogriezti pirmie lociņi — un šajās tukšajās joslās vēl var daudz ko paspēt.",
+  "primaryQuery": "ko sēt jūlijā un augustā",
+  "publishedAt": "2026-06-30",
+  "updatedAt": "2026-07-06",
+  "seasonalMonths": [
+    7,
+    8
+  ],
+  "entities": {
+    "crops": [
+      "kaposti",
+      "rediisi",
+      "salati"
+    ]
+  },
+  "relatedSlugs": [
+    "aukstumizturigie-vs-siltummilosie",
+    "salnas-latvija",
+    "kad-set-destus-rekini-atpakal",
+    "vieglakie-darzeni-iesacejiem"
+  ],
+  "sources": [
+    {
+      "label": "Latvijas Lauku konsultāciju un izglītības centrs",
+      "url": "https://llkc.lv/"
+    },
+    {
+      "label": "Royal Horticultural Society — Advice",
+      "url": "https://www.rhs.org.uk/advice"
+    }
+  ],
   "readMinutes": 6,
   "body": [
     {
@@ -55,6 +87,10 @@
     }
   ],
   "links": [
+    {
+      "label": "Īsais saraksts: ko vēl sēt jūlijā",
+      "href": "/ko-set/julijs"
+    },
     {
       "label": "Pilns dārznieka ceļvedis iesācējam",
       "href": "/celvedis"

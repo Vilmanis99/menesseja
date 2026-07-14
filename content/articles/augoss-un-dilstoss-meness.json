@@ -2,7 +2,23 @@
   "title": "Augošs un dilstošs Mēness: ko sēt katrā",
   "slug": "augoss-un-dilstoss-meness",
   "category": "Pamati",
+  "intent": "seasonal",
   "excerpt": "Vienkārša pamācība iesācējam: kas ir augošs un dilstošs Mēness un ko tradicionāli sēt katrā fāzē Latvijas dārzā.",
+  "shortAnswer": "Ja tev nav īsti skaidrs, kas ir tās slavenās “Mēness fāzes”, nebaidies — tas patiesībā ir vienkārši.  Mēness debesīs nestāv uz vietas: aptuveni divu nedēļu laikā tas no plānas sirpītes pieaug līdz apaļam pilnmēnesim un tad atkal sarūk līdz tumsai.",
+  "primaryQuery": "augošs un dilstošs Mēness: ko sēt katrā",
+  "publishedAt": "2026-06-04",
+  "updatedAt": "2026-06-10",
+  "entities": {},
+  "sources": [
+    {
+      "label": "NASA — Moon phases and lunar cycle",
+      "url": "https://science.nasa.gov/moon/moon-phases/"
+    },
+    {
+      "label": "Maria Thun biodinamiskā kalendāra tradīcija",
+      "url": "https://www.mariathun.com/"
+    }
+  ],
   "readMinutes": 5,
   "body": [
     {

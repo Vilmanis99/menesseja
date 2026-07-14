@@ -1,8 +1,37 @@
 {
   "title": "Kāpēc ķiplokiem dzeltē lapas (pavasarī un vasarā)",
+  "seoTitle": "Ķiplokiem dzeltē lapas: cēloņi un ko darīt",
   "slug": "kapec-kiplokiem-dzelte-lapas",
   "category": "Problēmas",
+  "intent": "problem",
   "excerpt": "Kāpēc ķiplokiem dzeltē lapas? Visbiežāk vainīgs slāpekļa trūkums, pavasara salnas, sekla stādīšana, skāba augsne vai sakņu puve. Uzzini, kā glābt ražu.",
+  "shortAnswer": "Pavasarī ķiploku lapas bieži dzeltē aukstuma, slāpekļa trūkuma vai pārāk slapjas augsnes dēļ. Vasaras otrajā pusē apakšējo lapu dzeltēšana var būt normāla nogatavošanās pazīme; satraukumam ir pamats, ja viss augs vīst, galviņa kļūst mīksta vai saknes sāk pūt.",
+  "primaryQuery": "kāpēc ķiplokiem dzeltē lapas",
+  "publishedAt": "2026-06-22",
+  "updatedAt": "2026-07-14",
+  "entities": {
+    "crops": [
+      "kiploki"
+    ],
+    "recipes": [
+      "natru-virca"
+    ]
+  },
+  "relatedSlugs": [
+    "skaba-augsne-ka-noteikt-un-uzlabot",
+    "kapec-lapas-dzelte",
+    "kapec-sipoli-iet-zieda"
+  ],
+  "sources": [
+    {
+      "label": "Latvijas Lauku konsultāciju un izglītības centrs",
+      "url": "https://llkc.lv/"
+    },
+    {
+      "label": "Royal Horticultural Society — Advice",
+      "url": "https://www.rhs.org.uk/advice"
+    }
+  ],
   "readMinutes": 6,
   "body": [
     {
@@ -57,10 +86,25 @@
     }
   ],
   "links": [
-    { "label": "Ķiploku stādīšana un kopšana", "href": "/augi/kiploki" },
-    { "label": "Skāba augsne: kā noteikt un uzlabot", "href": "/raksti/skaba-augsne-ka-noteikt-un-uzlabot" },
-    { "label": "Kāpēc lapas dzeltē — visi biežākie cēloņi", "href": "/raksti/kapec-lapas-dzelte" },
-    { "label": "Nātru virca — slāpekļa mēslojums", "href": "/receptes/natru-virca" },
-    { "label": "Kāpēc sīpoli iet ziedā", "href": "/raksti/kapec-sipoli-iet-zieda" }
+    {
+      "label": "Ķiploku stādīšana un kopšana",
+      "href": "/augi/kiploki"
+    },
+    {
+      "label": "Skāba augsne: kā noteikt un uzlabot",
+      "href": "/raksti/skaba-augsne-ka-noteikt-un-uzlabot"
+    },
+    {
+      "label": "Kāpēc lapas dzeltē — visi biežākie cēloņi",
+      "href": "/raksti/kapec-lapas-dzelte"
+    },
+    {
+      "label": "Nātru virca — slāpekļa mēslojums",
+      "href": "/receptes/natru-virca"
+    },
+    {
+      "label": "Kāpēc sīpoli iet ziedā",
+      "href": "/raksti/kapec-sipoli-iet-zieda"
+    }
   ]
 }

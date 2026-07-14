@@ -2,7 +2,31 @@
   "title": "Reālas pirmā gada dārza gaidas: kas ir normāli un kas nodos",
   "slug": "pirma-gada-gaidas",
   "category": "Praktiski",
+  "intent": "how-to",
   "excerpt": "Pirmā gada dārzs un kļūdas: godīgi par to, kas iesācējam parasti neizdodas un kāpēc tas ir normāli. Tev nav jābūt zaļam īkšķim, lai izaudzētu pirmo ražu.",
+  "shortAnswer": "Tu pirmo reizi iesēji savu dārzu, un tagad puse dīgst greizi, daži dēsti nokaltuši, kāposti apēsti, un galvā riņķo doma: man laikam nav tā zaļā īkšķa.  Pateiksim uzreiz un godīgi: pirmajā gadā tā ir gandrīz visiem.",
+  "primaryQuery": "reālas pirmā gada dārza gaidas: kas ir normāli un kas nodos",
+  "publishedAt": "2026-06-29",
+  "updatedAt": "2026-06-29",
+  "entities": {},
+  "relatedSlugs": [
+    "vieglakie-darzeni-iesacejiem",
+    "desti-izstidz",
+    "darza-planosana-iesacejam",
+    "pirmais-darzs-no-nulles",
+    "kad-stadit-destus-lauka",
+    "kas-ir-meness-seja"
+  ],
+  "sources": [
+    {
+      "label": "Latvijas Lauku konsultāciju un izglītības centrs",
+      "url": "https://llkc.lv/"
+    },
+    {
+      "label": "Royal Horticultural Society — Advice",
+      "url": "https://www.rhs.org.uk/advice"
+    }
+  ],
   "readMinutes": 6,
   "body": [
     {
@@ -54,11 +78,29 @@
     }
   ],
   "links": [
-    { "label": "Vieglākie dārzeņi iesācējiem — ar ko sākt pirmo dārzu", "href": "/raksti/vieglakie-darzeni-iesacejiem" },
-    { "label": "Kāpēc dēsti izstīdz un kā to novērst", "href": "/raksti/desti-izstidz" },
-    { "label": "Dārza plānošana iesācējam soli pa solim", "href": "/raksti/darza-planosana-iesacejam" },
-    { "label": "Pirmais dārzs no nulles: soli pa solim, arī laistīšana", "href": "/raksti/pirmais-darzs-no-nulles" },
-    { "label": "Kad stādīt dēstus laukā Latvijā", "href": "/raksti/kad-stadit-destus-lauka" },
-    { "label": "Kas ir Mēness sēja un kā to lietot", "href": "/raksti/kas-ir-meness-seja" }
+    {
+      "label": "Vieglākie dārzeņi iesācējiem — ar ko sākt pirmo dārzu",
+      "href": "/raksti/vieglakie-darzeni-iesacejiem"
+    },
+    {
+      "label": "Kāpēc dēsti izstīdz un kā to novērst",
+      "href": "/raksti/desti-izstidz"
+    },
+    {
+      "label": "Dārza plānošana iesācējam soli pa solim",
+      "href": "/raksti/darza-planosana-iesacejam"
+    },
+    {
+      "label": "Pirmais dārzs no nulles: soli pa solim, arī laistīšana",
+      "href": "/raksti/pirmais-darzs-no-nulles"
+    },
+    {
+      "label": "Kad stādīt dēstus laukā Latvijā",
+      "href": "/raksti/kad-stadit-destus-lauka"
+    },
+    {
+      "label": "Kas ir Mēness sēja un kā to lietot",
+      "href": "/raksti/kas-ir-meness-seja"
+    }
   ]
 }

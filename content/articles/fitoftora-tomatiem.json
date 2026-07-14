@@ -2,7 +2,37 @@
   "title": "Fitoftora tomātiem: kā atpazīt, apturēt un glābt ražu",
   "slug": "fitoftora-tomatiem",
   "category": "Problēmas",
+  "intent": "problem",
   "excerpt": "Fitoftora jeb lakstu puve augusta beigās dažās dienās var pārņemt tomātus. Kā to droši atpazīt, ko darīt tajā pašā dienā, vai augļus vēl var ēst un kā nākamgad izvairīties — mierīgi un godīgi par līdzekļiem.",
+  "shortAnswer": "Ir augusts, un pēc dažām mitrām, vēsām naktīm tu ieej siltumnīcā vai pieej pie lauka tomātiem — un uz lapām ir brūni plankumi, kādu tur vēl vakar nebija.  Uz dažiem augļiem parādījušies cieti, brūngani laukumi.",
+  "primaryQuery": "fitoftora tomātiem: kā atpazīt, apturēt un glābt ražu",
+  "publishedAt": "2026-07-06",
+  "updatedAt": "2026-07-06",
+  "entities": {
+    "crops": [
+      "tomati"
+    ],
+    "pests": [
+      "lakstu-puve"
+    ]
+  },
+  "relatedSlugs": [
+    "kapec-kartupeliem-lakstu-puve",
+    "kapec-tomatiem-bruni-plankumi-uz-lapam",
+    "augu-maina-darza",
+    "ka-laistit-darzu-karstuma",
+    "darza-darbi-augusta"
+  ],
+  "sources": [
+    {
+      "label": "Latvijas Lauku konsultāciju un izglītības centrs",
+      "url": "https://llkc.lv/"
+    },
+    {
+      "label": "Royal Horticultural Society — Advice",
+      "url": "https://www.rhs.org.uk/advice"
+    }
+  ],
   "readMinutes": 6,
   "body": [
     {

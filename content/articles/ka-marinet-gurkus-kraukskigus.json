@@ -2,7 +2,36 @@
   "title": "Kā marinēt gurķus, lai tie būtu kraukšķīgi: senču triki un Mēness laiks",
   "slug": "ka-marinet-gurkus-kraukskigus",
   "category": "Praktiski",
-  "excerpt": "Kāpēc marinētie gurķi ziemā izrādās mīksti un kā panākt īstu kraukšķi: svaigums, aukstā vanna, ziedgala nogriešana, upeņu un ozola lapas, pareizā sāls un senču tradīcija konservēt dilstošā Mēnesī. Ar bāzes recepti vienai litra burkai.",
+  "intent": "how-to",
+  "excerpt": "Kā panākt, lai marinētie gurķi paliek kraukšķīgi: svaigums, aukstā vanna, pareiza sāls un droša bāzes recepte vienai litra burkai.",
+  "shortAnswer": "Visu vasaru audzēji gurķus, augustā salasīji pilnu grozu un sagatavoji burkas — bet ziemā, atverot pirmo, tevi sagaidīja vilšanās: gurķi mīksti, ļengani, bez tā skanīgā kraukšķa, kāds bija vecmāmiņas burkās.  Par laimi, vaina gandrīz nekad nav pašā marinādē.",
+  "primaryQuery": "kā marinēt gurķus, lai tie būtu kraukšķīgi: senču triki un Mēness laiks",
+  "publishedAt": "2026-07-06",
+  "updatedAt": "2026-07-06",
+  "entities": {
+    "crops": [
+      "gurki",
+      "upenes"
+    ]
+  },
+  "relatedSlugs": [
+    "kapec-gurki-rugti",
+    "kapec-gurkiem-dzelte-lapas",
+    "augoss-un-dilstoss-meness",
+    "meness-fazes-izskaidrotas",
+    "darza-darbi-augusta",
+    "skabeti-kaposti"
+  ],
+  "sources": [
+    {
+      "label": "LLKC — dārzkopības un ražas saglabāšanas materiāli",
+      "url": "https://llkc.lv/"
+    },
+    {
+      "label": "National Center for Home Food Preservation",
+      "url": "https://nchfp.uga.edu/"
+    }
+  ],
   "readMinutes": 6,
   "body": [
     {

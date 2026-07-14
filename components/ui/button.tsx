@@ -38,7 +38,7 @@ export function Button({
     <button
       className={clsx(
         "inline-flex items-center justify-center gap-xs rounded-lg px-md py-sm",
-        "text-label-md font-bold transition-all active:scale-95",
+        "min-h-11 cursor-pointer text-label-md font-bold transition-all duration-200 active:scale-[0.98]",
         "disabled:pointer-events-none disabled:opacity-50",
         fullWidth && "w-full",
         VARIANT[variant],

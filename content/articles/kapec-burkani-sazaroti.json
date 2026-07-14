@@ -2,7 +2,27 @@
   "title": "Kāpēc burkāni izaug sazaroti un greizi",
   "slug": "kapec-burkani-sazaroti",
   "category": "Problēmas",
+  "intent": "problem",
   "excerpt": "Burkāni sazarojas no svaigiem kūtsmēsliem, akmeņainas vai sablīvētas augsnes un sakņu bojājuma. Irdena, dziļi uzrakta zeme bez svaigiem mēsliem dod taisnus burkānus.",
+  "shortAnswer": "Tu izvelc burkānu, gaidot skaistu, taisnu sakni — bet rokā ir divžuburu, sapinies vai matains radījums ar vairākām saknēm.  Garšā tas ir tikpat labs, bet izskatā un tīrīšanā kaitinošs.",
+  "primaryQuery": "kāpēc burkāni izaug sazaroti un greizi",
+  "publishedAt": "2026-06-17",
+  "updatedAt": "2026-06-17",
+  "entities": {
+    "crops": [
+      "burkani"
+    ]
+  },
+  "sources": [
+    {
+      "label": "Latvijas Lauku konsultāciju un izglītības centrs",
+      "url": "https://llkc.lv/"
+    },
+    {
+      "label": "Royal Horticultural Society — Advice",
+      "url": "https://www.rhs.org.uk/advice"
+    }
+  ],
   "readMinutes": 6,
   "body": [
     {

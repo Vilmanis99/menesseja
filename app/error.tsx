@@ -12,7 +12,7 @@ export default function Error({ error, reset }: { error: Error; reset: () => voi
   }, [error]);
 
   return (
-    <div className="mx-auto flex max-w-xl flex-col items-center gap-md py-xl text-center">
+    <div className="mx-auto flex max-w-[36rem] flex-col items-center gap-md py-xl text-center">
       <Icon name="cloud_off" size="56px" className="text-secondary" />
       <h1 className="text-headline-lg text-on-surface">Kaut kas nogāja greizi</h1>
       <p className="text-body-lg text-on-surface-variant">

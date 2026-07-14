@@ -2,7 +2,30 @@
   "title": "Kā kopt ģerānijas (pelargonijas), lai kupli zied",
   "slug": "ka-kopt-geranijas",
   "category": "Praktiski",
+  "intent": "how-to",
   "excerpt": "Kā kopt ģerānijas (pelargonijas), lai tās kupli zied: laistīšana, mēslošana, izziedējušo ziedu noņemšana un pārziemošana telpās līdz nākamai vasarai.",
+  "shortAnswer": "Vispirms sakārtosim vārdus, jo te valda juceklis.  To kuplo, sarkano vai sārto puķi uz logiem un balkona kastēs, ko visi sauc par ģerāniju, botāniski sauc par pelargoniju.",
+  "primaryQuery": "kā kopt ģerānijas (pelargonijas), lai kupli zied",
+  "publishedAt": "2026-06-29",
+  "updatedAt": "2026-06-29",
+  "entities": {
+    "recipes": [
+      "komposta-teja"
+    ]
+  },
+  "relatedSlugs": [
+    "kaiminaugi"
+  ],
+  "sources": [
+    {
+      "label": "Latvijas Lauku konsultāciju un izglītības centrs",
+      "url": "https://llkc.lv/"
+    },
+    {
+      "label": "Royal Horticultural Society — Advice",
+      "url": "https://www.rhs.org.uk/advice"
+    }
+  ],
   "readMinutes": 6,
   "body": [
     {
@@ -58,10 +81,25 @@
     }
   ],
   "links": [
-    { "label": "Pelargonijas: stādīšana un kopšana", "href": "/pukes/pelargonijas" },
-    { "label": "Petūnijas balkona kastēm", "href": "/pukes/petunijas" },
-    { "label": "Begonijas ēnainākai vietai", "href": "/pukes/begonijas" },
-    { "label": "Komposta tēja podaugu barošanai", "href": "/receptes/komposta-teja" },
-    { "label": "Kaimiņaugi: kas ar ko der kopā", "href": "/raksti/kaiminaugi" }
+    {
+      "label": "Pelargonijas: stādīšana un kopšana",
+      "href": "/pukes/pelargonijas"
+    },
+    {
+      "label": "Petūnijas balkona kastēm",
+      "href": "/pukes/petunijas"
+    },
+    {
+      "label": "Begonijas ēnainākai vietai",
+      "href": "/pukes/begonijas"
+    },
+    {
+      "label": "Komposta tēja podaugu barošanai",
+      "href": "/receptes/komposta-teja"
+    },
+    {
+      "label": "Kaimiņaugi: kas ar ko der kopā",
+      "href": "/raksti/kaiminaugi"
+    }
   ]
 }

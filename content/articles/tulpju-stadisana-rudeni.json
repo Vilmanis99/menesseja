@@ -2,7 +2,30 @@
   "title": "Tulpju stādīšana rudenī — kad un cik dziļi",
   "slug": "tulpju-stadisana-rudeni",
   "category": "Praktiski",
+  "intent": "how-to",
   "excerpt": "Tulpju stādīšana rudenī: kad stādīt Latvijā, cik dziļi (trīs sīpolu dziļuma noteikums) un kāpēc sīpoliem ziemā vajadzīgs aukstums, lai pavasarī tās zied.",
+  "shortAnswer": "Tu turi rokā maisiņu ar tulpju sīpoliem un domā: vai jau ir laiks tos likt zemē, un cik dziļi tos rakt?  Pateiksim uzreiz galveno: tulpes Latvijā stāda rudenī — septembra beigās un oktobrī — un stāda diezgan dziļi, aptuveni trīs paša sīpola augstumos.",
+  "primaryQuery": "tulpju stādīšana rudenī",
+  "publishedAt": "2026-06-22",
+  "updatedAt": "2026-06-22",
+  "entities": {
+    "crops": [
+      "sipoli"
+    ],
+    "recipes": [
+      "komposta-teja"
+    ]
+  },
+  "sources": [
+    {
+      "label": "Latvijas Lauku konsultāciju un izglītības centrs",
+      "url": "https://llkc.lv/"
+    },
+    {
+      "label": "Royal Horticultural Society — Advice",
+      "url": "https://www.rhs.org.uk/advice"
+    }
+  ],
   "readMinutes": 6,
   "body": [
     {
@@ -64,10 +87,25 @@
     }
   ],
   "links": [
-    { "label": "Tulpju audzēšana un kopšana", "href": "/pukes/tulpes" },
-    { "label": "Narcišu stādīšana un kopšana", "href": "/pukes/narcises" },
-    { "label": "Krokusu stādīšana rudenī", "href": "/pukes/krokusi" },
-    { "label": "Hiacinšu audzēšana", "href": "/pukes/hiacintes" },
-    { "label": "Komposta teja kā dabīgs mēslojuma palīgs", "href": "/receptes/komposta-teja" }
+    {
+      "label": "Tulpju audzēšana un kopšana",
+      "href": "/pukes/tulpes"
+    },
+    {
+      "label": "Narcišu stādīšana un kopšana",
+      "href": "/pukes/narcises"
+    },
+    {
+      "label": "Krokusu stādīšana rudenī",
+      "href": "/pukes/krokusi"
+    },
+    {
+      "label": "Hiacinšu audzēšana",
+      "href": "/pukes/hiacintes"
+    },
+    {
+      "label": "Komposta teja kā dabīgs mēslojuma palīgs",
+      "href": "/receptes/komposta-teja"
+    }
   ]
 }

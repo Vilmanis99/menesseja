@@ -55,7 +55,7 @@ export function Onboarding() {
               />
             ))}
           </div>
-          <button onClick={finish} className="text-label-sm text-on-surface-variant hover:text-primary">
+          <button onClick={finish} className="inline-flex min-h-11 items-center rounded-lg px-2 text-label-sm text-on-surface-variant transition-colors hover:bg-surface-variant/40 hover:text-primary">
             Izlaist
           </button>
         </div>

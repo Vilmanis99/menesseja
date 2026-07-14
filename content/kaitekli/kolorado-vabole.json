@@ -3,6 +3,13 @@
   "name": "Kolorādo vabole",
   "latin": "Leptinotarsa decemlineata",
   "emoji": "🪲",
+  "image": {
+    "src": "/kaitekli/kolorado-vabole.jpg",
+    "alt": "Kolorādo vabole (Leptinotarsa decemlineata) — pieaugusi vabole ar melni dzeltenām svītrām uz kartupeļu lapas",
+    "credit": "Scott Bauer, USDA ARS",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Colorado_potato_beetle.jpg"
+  },
   "type": "kaiteklis",
   "tagline": "Dzelteni svītrainās vaboles un sarkanīgie kāpuri spēj dažās dienās noēst kartupeļu lapas līdz kātiem — tāpēc tos vāc ar roku, tiklīdz parādās.",
   "severity": "nopietns",

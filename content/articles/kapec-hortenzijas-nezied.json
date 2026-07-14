@@ -2,7 +2,30 @@
   "title": "Kāpēc hortenzijas nezied un kā panākt bagātīgu ziedēšanu",
   "slug": "kapec-hortenzijas-nezied",
   "category": "Problēmas",
+  "intent": "problem",
   "excerpt": "Kāpēc hortenzijas nezied? Visbiežāk vainīga nepareiza apgriešana, apsaluši pumpuri, par daudz slāpekļa vai pārāk dziļa ēna. Uzzini, kā panākt bagātīgu ziedēšanu.",
+  "shortAnswer": "Krūms aug skaisti, lapas zaļo un veselas, bet ziedu nav un nav — vasara rit, kaimiņa hortenzijas jau pilnā plaukumā, bet tava dzen tikai biezu lapotni.  Tā ir viena no biežākajām hortenziju problēmām, un, ja godīgi, gandrīz vienmēr aiz tās slēpjas kāds no četriem vienkāršiem iemesliem, nevis tas, ka krūms būtu slims.",
+  "primaryQuery": "kāpēc hortenzijas nezied un kā panākt bagātīgu ziedēšanu",
+  "publishedAt": "2026-06-22",
+  "updatedAt": "2026-06-22",
+  "entities": {
+    "recipes": [
+      "komposta-teja"
+    ]
+  },
+  "relatedSlugs": [
+    "skaba-augsne-ka-noteikt-un-uzlabot"
+  ],
+  "sources": [
+    {
+      "label": "Latvijas Lauku konsultāciju un izglītības centrs",
+      "url": "https://llkc.lv/"
+    },
+    {
+      "label": "Royal Horticultural Society — Advice",
+      "url": "https://www.rhs.org.uk/advice"
+    }
+  ],
   "readMinutes": 6,
   "body": [
     {
@@ -53,9 +76,21 @@
     }
   ],
   "links": [
-    { "label": "Hortenziju stādīšana, tipi un kopšana", "href": "/pukes/hortenzijas" },
-    { "label": "Skāba augsne: kā noteikt un uzlabot", "href": "/raksti/skaba-augsne-ka-noteikt-un-uzlabot" },
-    { "label": "Komposta teja maigai mēslošanai", "href": "/receptes/komposta-teja" },
-    { "label": "Peonijas — vēl viena grezna dārza puķe", "href": "/pukes/peonijas" }
+    {
+      "label": "Hortenziju stādīšana, tipi un kopšana",
+      "href": "/pukes/hortenzijas"
+    },
+    {
+      "label": "Skāba augsne: kā noteikt un uzlabot",
+      "href": "/raksti/skaba-augsne-ka-noteikt-un-uzlabot"
+    },
+    {
+      "label": "Komposta teja maigai mēslošanai",
+      "href": "/receptes/komposta-teja"
+    },
+    {
+      "label": "Peonijas — vēl viena grezna dārza puķe",
+      "href": "/pukes/peonijas"
+    }
   ]
 }

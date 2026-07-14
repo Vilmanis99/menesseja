@@ -2,7 +2,36 @@
   "title": "Kāpēc gurķu aizmetņi dzeltē un nokrīt (tukšie ziedi)",
   "slug": "kapec-gurku-aizmetni-dzelte-un-nokrit",
   "category": "Problēmas",
+  "intent": "problem",
   "excerpt": "Krūms ir ziedu pilns, bet mazie aizmetņi dzeltē un nokrīt? Uzzini, kāpēc gurķu aizmetņi izžūst — apputeksnēšana, karstums, bors — un kā panākt ražu.",
+  "shortAnswer": "Krūms ir zaļš un kupls, ziedu ir pilns, bet, kad ej skatīties, kur paliek gurķi, redzi to pašu vilšanos: mazie aizmetņi pie zieda apakšas vispirms kļūst gaiši dzelteni, tad mīksti, sarūk un nokrīt zemē.  Daudzi ziedi vispār neveido nekādu aizmetni — tie ir tā sauktie tukšie ziedi.",
+  "primaryQuery": "kāpēc gurķu aizmetņi dzeltē un nokrīt",
+  "publishedAt": "2026-06-22",
+  "updatedAt": "2026-06-22",
+  "entities": {
+    "crops": [
+      "gurki"
+    ],
+    "recipes": [
+      "koku-pelnu-skidums"
+    ]
+  },
+  "relatedSlugs": [
+    "siltumnica-vai-lauka",
+    "kaiminaugi",
+    "elementu-dienas",
+    "kapec-cukini-pust-gala"
+  ],
+  "sources": [
+    {
+      "label": "Latvijas Lauku konsultāciju un izglītības centrs",
+      "url": "https://llkc.lv/"
+    },
+    {
+      "label": "Royal Horticultural Society — Advice",
+      "url": "https://www.rhs.org.uk/advice"
+    }
+  ],
   "readMinutes": 6,
   "body": [
     {
@@ -53,11 +82,29 @@
     }
   ],
   "links": [
-    { "label": "Gurķu sēšana, audzēšana un kopšana", "href": "/augi/gurki" },
-    { "label": "Siltumnīca vai lauka dobe: kur audzēt gurķus", "href": "/raksti/siltumnica-vai-lauka" },
-    { "label": "Labie un sliktie gurķu kaimiņi dobē", "href": "/raksti/kaiminaugi" },
-    { "label": "Koku pelnu šķīdums kālijam un mikroelementiem", "href": "/receptes/koku-pelnu-skidums" },
-    { "label": "Elementu dienas biodinamiskajā dārzā", "href": "/raksti/elementu-dienas" },
-    { "label": "Kāpēc cukini un kabači pūst galā", "href": "/raksti/kapec-cukini-pust-gala" }
+    {
+      "label": "Gurķu sēšana, audzēšana un kopšana",
+      "href": "/augi/gurki"
+    },
+    {
+      "label": "Siltumnīca vai lauka dobe: kur audzēt gurķus",
+      "href": "/raksti/siltumnica-vai-lauka"
+    },
+    {
+      "label": "Labie un sliktie gurķu kaimiņi dobē",
+      "href": "/raksti/kaiminaugi"
+    },
+    {
+      "label": "Koku pelnu šķīdums kālijam un mikroelementiem",
+      "href": "/receptes/koku-pelnu-skidums"
+    },
+    {
+      "label": "Elementu dienas biodinamiskajā dārzā",
+      "href": "/raksti/elementu-dienas"
+    },
+    {
+      "label": "Kāpēc cukini un kabači pūst galā",
+      "href": "/raksti/kapec-cukini-pust-gala"
+    }
   ]
 }

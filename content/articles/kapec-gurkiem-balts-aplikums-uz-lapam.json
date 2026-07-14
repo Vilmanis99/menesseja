@@ -2,7 +2,36 @@
   "title": "Kāpēc gurķiem un kabačiem uz lapām balts aplikums (miltrasa)",
   "slug": "kapec-gurkiem-balts-aplikums-uz-lapam",
   "category": "Problēmas",
+  "intent": "problem",
   "excerpt": "Balts aplikums uz gurķu un kabaču lapām ir miltrasa. Uzzini, kāpēc tas parādās vasaras otrā pusē un kā ar sodu un sūkalām to apturēt.",
+  "shortAnswer": "Tu pieej pie gurķiem vai kabačiem un redzi, ka lapas it kā kāds apkaisījis ar miltiem — uz tām gulst plāns, balts, putekļains aplikums.  Sākumā tikai daži plankumiņi, bet pēc dažām dienām vesela lapa kļūst balta, tad pelēka un sāk kalst.",
+  "primaryQuery": "kāpēc gurķiem un kabačiem uz lapām balts aplikums",
+  "publishedAt": "2026-06-22",
+  "updatedAt": "2026-06-22",
+  "entities": {
+    "crops": [
+      "gurki",
+      "kabaci",
+      "kirbji"
+    ],
+    "pests": [
+      "miltrasa"
+    ],
+    "recipes": [
+      "koku-pelnu-skidums",
+      "kumelisu-uzlejums"
+    ]
+  },
+  "sources": [
+    {
+      "label": "Latvijas Lauku konsultāciju un izglītības centrs",
+      "url": "https://llkc.lv/"
+    },
+    {
+      "label": "Royal Horticultural Society — Advice",
+      "url": "https://www.rhs.org.uk/advice"
+    }
+  ],
   "readMinutes": 6,
   "body": [
     {
@@ -52,11 +81,29 @@
     }
   ],
   "links": [
-    { "label": "Gurķu sēšana un kopšana", "href": "/augi/gurki" },
-    { "label": "Kabaču audzēšana un kopšana", "href": "/augi/kabaci" },
-    { "label": "Ķirbju audzēšana dārzā", "href": "/augi/kirbji" },
-    { "label": "Miltrasa: atpazīšana un apkarošana", "href": "/kaitekli/miltrasa" },
-    { "label": "Koku pelnu šķīdums kālija piebarošanai", "href": "/receptes/koku-pelnu-skidums" },
-    { "label": "Kumelīšu uzlejums augu stiprināšanai", "href": "/receptes/kumelisu-uzlejums" }
+    {
+      "label": "Gurķu sēšana un kopšana",
+      "href": "/augi/gurki"
+    },
+    {
+      "label": "Kabaču audzēšana un kopšana",
+      "href": "/augi/kabaci"
+    },
+    {
+      "label": "Ķirbju audzēšana dārzā",
+      "href": "/augi/kirbji"
+    },
+    {
+      "label": "Miltrasa: atpazīšana un apkarošana",
+      "href": "/kaitekli/miltrasa"
+    },
+    {
+      "label": "Koku pelnu šķīdums kālija piebarošanai",
+      "href": "/receptes/koku-pelnu-skidums"
+    },
+    {
+      "label": "Kumelīšu uzlejums augu stiprināšanai",
+      "href": "/receptes/kumelisu-uzlejums"
+    }
   ]
 }

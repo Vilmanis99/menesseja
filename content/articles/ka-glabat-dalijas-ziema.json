@@ -2,7 +2,30 @@
   "title": "Kad izrakt un kā glabāt dāliju bumbuļus ziemā",
   "slug": "ka-glabat-dalijas-ziema",
   "category": "Praktiski",
+  "intent": "how-to",
   "excerpt": "Kad izrakt dāliju bumbuļus un kā tos glabāt ziemā Latvijā: izrakšana pēc pirmajām salnām, kārtīga žāvēšana un glabāšana +3–10 °C smiltīs vai skaidās bez puves.",
+  "shortAnswer": "Dālijas ir tās puķes, kas zied līdz pašai rudens nogalei, bet tās neiztur sasalušu zemi — Latvijas ziemā bumbuļi dobē vienkārši nosalst.  Tāpēc rudenī tie jāizrok un jāglabā siltā vietā līdz pavasarim.",
+  "primaryQuery": "kad izrakt un kā glabāt dāliju bumbuļus ziemā",
+  "publishedAt": "2026-06-22",
+  "updatedAt": "2026-06-22",
+  "entities": {
+    "recipes": [
+      "koku-pelnu-skidums"
+    ]
+  },
+  "relatedSlugs": [
+    "salnas-latvija"
+  ],
+  "sources": [
+    {
+      "label": "LLKC — dārzkopības un ražas saglabāšanas materiāli",
+      "url": "https://llkc.lv/"
+    },
+    {
+      "label": "National Center for Home Food Preservation",
+      "url": "https://nchfp.uga.edu/"
+    }
+  ],
   "readMinutes": 6,
   "body": [
     {
@@ -53,9 +76,21 @@
     }
   ],
   "links": [
-    { "label": "Dāliju stādīšana un kopšana", "href": "/pukes/dalijas" },
-    { "label": "Gladiolu gumu izrakšana un glabāšana", "href": "/pukes/gladiolas" },
-    { "label": "Salnas Latvijā: kad gaidīt pirmo salu", "href": "/raksti/salnas-latvija" },
-    { "label": "Koku pelnu šķīdums augsnes uzlabošanai", "href": "/receptes/koku-pelnu-skidums" }
+    {
+      "label": "Dāliju stādīšana un kopšana",
+      "href": "/pukes/dalijas"
+    },
+    {
+      "label": "Gladiolu gumu izrakšana un glabāšana",
+      "href": "/pukes/gladiolas"
+    },
+    {
+      "label": "Salnas Latvijā: kad gaidīt pirmo salu",
+      "href": "/raksti/salnas-latvija"
+    },
+    {
+      "label": "Koku pelnu šķīdums augsnes uzlabošanai",
+      "href": "/receptes/koku-pelnu-skidums"
+    }
   ]
 }

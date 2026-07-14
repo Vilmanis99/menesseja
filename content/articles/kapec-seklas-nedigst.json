@@ -2,7 +2,30 @@
   "title": "Sēklas nedīgst: 3 slēptie cēloņi (nevis sliktas sēklas)",
   "slug": "kapec-seklas-nedigst",
   "category": "Problēmas",
+  "intent": "problem",
   "excerpt": "Kāpēc sēklas nedīgst? Visbiežāk vainīga par aukstu augsne, par dziļa sēja vai izžuvusi virskārta — nevis sliktas sēklas. Uzzini, ko darīt un kā novērst.",
+  "shortAnswer": "Tu iesēji sēklas, gaidi nedēļu, divas, lūr katru dienu podiņā — un zeme joprojām tukša.  Pirmā doma iesācējam gandrīz vienmēr ir viena: laikam nopirku sliktas sēklas.",
+  "primaryQuery": "sēklas nedīgst: 3 slēptie cēloņi",
+  "publishedAt": "2026-06-29",
+  "updatedAt": "2026-06-29",
+  "entities": {},
+  "relatedSlugs": [
+    "destu-audzesana-uz-palodzes",
+    "augsnes-temperatura",
+    "kad-set-destus-rekini-atpakal",
+    "melna-kaja-destiem",
+    "desti-izstidz"
+  ],
+  "sources": [
+    {
+      "label": "Latvijas Lauku konsultāciju un izglītības centrs",
+      "url": "https://llkc.lv/"
+    },
+    {
+      "label": "Royal Horticultural Society — Advice",
+      "url": "https://www.rhs.org.uk/advice"
+    }
+  ],
   "readMinutes": 6,
   "body": [
     {
@@ -60,10 +83,25 @@
     }
   ],
   "links": [
-    { "label": "Dēstu audzēšana uz palodzes soli pa solim", "href": "/raksti/destu-audzesana-uz-palodzes" },
-    { "label": "Augsnes temperatūra: kad zeme ir gatava sēšanai", "href": "/raksti/augsnes-temperatura" },
-    { "label": "Kad sēt dēstus: rēķini atpakaļ no izstādīšanas", "href": "/raksti/kad-set-destus-rekini-atpakal" },
-    { "label": "Melnā kāja dēstiem: kā pazīt un novērst", "href": "/raksti/melna-kaja-destiem" },
-    { "label": "Kāpēc dēsti izstīdz un kā to labot", "href": "/raksti/desti-izstidz" }
+    {
+      "label": "Dēstu audzēšana uz palodzes soli pa solim",
+      "href": "/raksti/destu-audzesana-uz-palodzes"
+    },
+    {
+      "label": "Augsnes temperatūra: kad zeme ir gatava sēšanai",
+      "href": "/raksti/augsnes-temperatura"
+    },
+    {
+      "label": "Kad sēt dēstus: rēķini atpakaļ no izstādīšanas",
+      "href": "/raksti/kad-set-destus-rekini-atpakal"
+    },
+    {
+      "label": "Melnā kāja dēstiem: kā pazīt un novērst",
+      "href": "/raksti/melna-kaja-destiem"
+    },
+    {
+      "label": "Kāpēc dēsti izstīdz un kā to labot",
+      "href": "/raksti/desti-izstidz"
+    }
   ]
 }

@@ -2,7 +2,34 @@
   "title": "Cik liels pods vajadzīgs? Izmēri litros pa kultūrām",
   "slug": "cik-liels-pods-darzeniem",
   "category": "Praktiski",
+  "intent": "how-to",
   "excerpt": "Cik liels pods tomātiem, gurķiem, garšaugiem un zemenēm? Konkrēti minimālie tilpumi litros katrai kultūrai, lai balkona dārzs izdotos jau pirmajā vasarā.",
+  "shortAnswer": "Tu stāvi veikalā ar podu rokā un nesaproti — vai šis ir pietiekami liels, vai tomāts tajā nosmaks?  Nomierinies: tas ir pareizais jautājums, un tu to uzdod laikā.",
+  "primaryQuery": "cik liels pods vajadzīgs? Izmēri litros pa kultūrām",
+  "publishedAt": "2026-06-29",
+  "updatedAt": "2026-06-29",
+  "entities": {
+    "crops": [
+      "tomati",
+      "gurki",
+      "baziliks",
+      "zemenes"
+    ]
+  },
+  "relatedSlugs": [
+    "balkona-darzs-iesacejam",
+    "kapec-podu-augiem-dzelte-lapas"
+  ],
+  "sources": [
+    {
+      "label": "Latvijas Lauku konsultāciju un izglītības centrs",
+      "url": "https://llkc.lv/"
+    },
+    {
+      "label": "Royal Horticultural Society — Advice",
+      "url": "https://www.rhs.org.uk/advice"
+    }
+  ],
   "readMinutes": 6,
   "body": [
     {
@@ -69,11 +96,29 @@
     }
   ],
   "links": [
-    { "label": "Balkona dārzs iesācējam: ar ko sākt", "href": "/raksti/balkona-darzs-iesacejam" },
-    { "label": "Tomātu audzēšana un kopšana", "href": "/augi/tomati" },
-    { "label": "Gurķu audzēšana podā un siltumnīcā", "href": "/augi/gurki" },
-    { "label": "Baziliks: sēšana un kopšana", "href": "/augi/baziliks" },
-    { "label": "Zemeņu audzēšana", "href": "/augi/zemenes" },
-    { "label": "Kāpēc podu augiem dzeltē lapas", "href": "/raksti/kapec-podu-augiem-dzelte-lapas" }
+    {
+      "label": "Balkona dārzs iesācējam: ar ko sākt",
+      "href": "/raksti/balkona-darzs-iesacejam"
+    },
+    {
+      "label": "Tomātu audzēšana un kopšana",
+      "href": "/augi/tomati"
+    },
+    {
+      "label": "Gurķu audzēšana podā un siltumnīcā",
+      "href": "/augi/gurki"
+    },
+    {
+      "label": "Baziliks: sēšana un kopšana",
+      "href": "/augi/baziliks"
+    },
+    {
+      "label": "Zemeņu audzēšana",
+      "href": "/augi/zemenes"
+    },
+    {
+      "label": "Kāpēc podu augiem dzeltē lapas",
+      "href": "/raksti/kapec-podu-augiem-dzelte-lapas"
+    }
   ]
 }

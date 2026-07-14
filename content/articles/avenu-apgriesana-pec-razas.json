@@ -2,7 +2,33 @@
   "title": "Aveņu apgriešana pēc ražas: kurus dzinumus griezt un kad",
   "slug": "avenu-apgriesana-pec-razas",
   "category": "Praktiski",
-  "excerpt": "Jūlija beigas un augusts Latvijā ir vasaras aveņu apgriešanas laiks: noražojušos dzinumus griež pie pašas zemes, atstājot 5–7 spēcīgākos jaunos. Kā atšķirt vasaras avenes no rudens avenēm — un kāpēc rudens avenes augustā griezt nedrīkst.",
+  "intent": "how-to",
+  "excerpt": "Jūlija beigas un augusts ir vasaras aveņu apgriešanas laiks: noražojušos dzinumus griež pie zemes. Uzzini, kā atšķirt vasaras avenes no rudens avenēm.",
+  "shortAnswer": "Aveņu raža novākta, un krūmi izskatās kā mazi džungļi: vecie zari līkst uz visām pusēm, jaunie spraucas pa vidu, un roka jau sniedzas pēc dārza šķērēm.  Bet tieši šajā brīdī daudzi apstājas — kurus dzinumus drīkst griezt un kurus nekādā gadījumā?",
+  "primaryQuery": "aveņu apgriešana pēc ražas: kurus dzinumus griezt un kad",
+  "publishedAt": "2026-07-06",
+  "updatedAt": "2026-07-06",
+  "entities": {
+    "crops": [
+      "avenes"
+    ]
+  },
+  "relatedSlugs": [
+    "augoss-un-dilstoss-meness",
+    "darza-darbi-augusta",
+    "zemenu-stadisana-augusta",
+    "kapec-zemenes-puve"
+  ],
+  "sources": [
+    {
+      "label": "Latvijas Lauku konsultāciju un izglītības centrs",
+      "url": "https://llkc.lv/"
+    },
+    {
+      "label": "Royal Horticultural Society — Advice",
+      "url": "https://www.rhs.org.uk/advice"
+    }
+  ],
   "readMinutes": 6,
   "body": [
     {

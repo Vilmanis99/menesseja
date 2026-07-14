@@ -1,75 +1,167 @@
 {
-  "title": "Magnija trūkums augiem: kā atpazīt dzelti starp dzīslām un kā novērst",
+  "title": "Magnija trūkums augiem: kā pazīt dzelti starp dzīslām un rīkoties",
+  "seoTitle": "Magnija trūkums augiem: pazīmes gurķiem un tomātiem",
   "slug": "magnija-trukums-augiem",
   "category": "Problēmas",
-  "excerpt": "Magnija trūkums augiem sākas ar dzelti starp lapu dzīslām vecākajām lapām. Uzzini, kā to atpazīt gurķiem, tomātiem un rozēm un kā palīdzēt ar Epsom sāli.",
+  "intent": "problem",
+  "excerpt": "Magnija trūkumam raksturīga dzelte starp zaļām dzīslām, kas sākas vecākajās lapās. Salīdzini pazīmes un uzzini, ko pārbaudīt pirms mēslošanas.",
+  "shortAnswer": "Magnija trūkumam raksturīga starpdzīslu hloroze, kas parasti sākas vecākajās lapās: audi starp dzīslām dzeltē, bet dzīslas paliek zaļas. Tomēr līdzīgu ainu var radīt sakņu, mitruma, augsnes reakcijas vai sāļu problēmas, tāpēc pirms magnija mēslojuma lietošanas pārbaudi audzēšanas apstākļus un, ja problēma atkārtojas, augsni.",
+  "primaryQuery": "magnija trūkums augiem",
+  "aliases": [
+    "magnija trūkums gurķiem",
+    "magnija trūkums tomātiem",
+    "starpdzīslu hloroze"
+  ],
+  "publishedAt": "2026-06-29",
+  "updatedAt": "2026-07-14",
+  "entities": {
+    "crops": [
+      "gurki",
+      "tomati",
+      "rozes"
+    ]
+  },
+  "relatedSlugs": [
+    "kapec-gurkiem-dzelte-lapas",
+    "kapec-lapas-dzelte",
+    "skaba-augsne-ka-noteikt-un-uzlabot"
+  ],
+  "sources": [
+    {
+      "label": "VAAD — Augšņu agroķīmiskā izpēte",
+      "url": "https://www.vaad.gov.lv/lv/augsnu-agrokimiska-izpete-1"
+    },
+    {
+      "label": "LLKC — Kā risināt gurķu minerālās barošanas problēmas",
+      "url": "https://arhivs.llkc.lv/lv/nozares/augkopiba/ka-risinat-gurku-mineralas-barosanas-problemas"
+    },
+    {
+      "label": "University of Minnesota Extension — Magnesium for crop production",
+      "url": "https://extension.umn.edu/micro-and-secondary-macronutrients/magnesium-crop-production"
+    },
+    {
+      "label": "Royal Horticultural Society — Nutrient deficiencies",
+      "url": "https://www.rhs.org.uk/advice/profile?cID=304&pID=456"
+    }
+  ],
   "readMinutes": 6,
   "body": [
     {
       "paragraphs": [
-        "Tu paskaties uz tomātu vai gurķu krūmu un redzi dīvainu lietu: lapas plātne starp dzīslām kļuvusi gaiši dzeltena, gandrīz dzeltenzaļa, bet pašas dzīslas un to tiešais apkārtnes audums palicis krāšņi zaļš. Lapa izskatās kā zaļš tīkliņš uz dzeltena fona. Un — tā ir svarīga zīme — tas sākas nevis no galotnes, bet no apakšējām, vecākajām lapām. Tas ir klasisks magnija trūkums, un to ir vērts iemācīties atpazīt, jo to viegli sajaukt ar citu dzelti.",
-        "Magnijs augam ir hlorofila — zaļās krāsvielas — pati sirds. Bez magnija augs nevar uzbūvēt hlorofilu, tāpēc lapa zaudē zaļumu un nespēj normāli savākt saules enerģiju. Labā ziņa: magnija trūkumu ir samērā viegli novērst, un dažās dienās pēc palīdzības augs jau atspirgst. Šajā rakstā skaidri izstāstīsim, kā šo trūkumu pazīt, kā to atšķirt no slāpekļa trūkuma, kāpēc tas vispār rodas tieši Latvijas dārzos, un kā palīdzēt ar Epsom sāli un dolomītu — pieskaņojot to mūsu zemei un laikapstākļiem."
+        "Magnija trūkumu visbiežāk pamana pēc raksturīga lapas zīmējuma: plātne starp dzīslām kļūst gaiši zaļa vai dzeltena, bet pašas dzīslas paliek zaļas. Tā kā magnijs augā ir kustīgs elements, izmaiņas parasti sākas vecākajās, apakšējās lapās un tikai vēlāk virzās augšup.",
+        "Ar šo pazīmi vien tomēr nepietiek drošai diagnozei. Līdzīgi var izskatīties pārāk slapjā augsnē bojātas saknes, neatbilstošs pH, pārmērīga mēslošana, citu elementu trūkums vai tīklērču bojājumi. Tāpēc pareizā secība ir: salīdzini simptomus, pārbaudi sakņu vidi un mēslošanas vēsturi, un tikai tad lem par papildu magniju."
       ]
     },
     {
-      "heading": "Kā atpazīt: dzelte starp dzīslām vecākajām lapām",
+      "heading": "Kā atšķirt magnija trūkumu no citām problēmām",
       "paragraphs": [
-        "Magnija trūkumam ir trīs ļoti raksturīgas pazīmes, un, ja sakrīt visas trīs, tev gandrīz droši ir tieši tas. Pirmā: dzelte ir starp dzīslām, nevis pa visu lapu. Lapas plātne starp dzīslām kļūst dzeltena vai gandrīz krēmkrāsas, bet pašas dzīslas un sīkais zaļais raksts ap tām paliek zaļš — sanāk skaidri saskatāms zaļo dzīslu tīkliņš uz dzeltena fona. Latviski to sauc par dzelti starp dzīslām jeb starpdzīslu hlorozi.",
-        "Otrā pazīme: tas sākas pie apakšējām, vecākajām lapām un tikai pēc tam virzās uz augšu. Tā ir izšķiroša detaļa. Magnijs augā ir kustīgs — kad tā pietrūkst, augs to izvelk no vecajām lapām un aizsūta jaunajām galotnēm. Tāpēc apakša cieš pirmā, bet galotne kādu laiku vēl izskatās zaļa. Trešā pazīme: ja trūkums ir smags, dzeltenās vietas kļūst brūnas, sausas un trauslas, un lapa nokalst no malām. Reizēm starp dzīslām parādās arī sārti vai purpursarkani plankumi."
+        "Svarīgākās norādes ir skartās lapas vecums un dzeltes raksts. Magnija trūkuma gadījumā zaļo dzīslu tīklojums parasti saglabājas vecākajās lapās. Ja dzeltē visa vecā lapa, ieskaitot dzīslas, biežāk jāvērtē slāpekļa nodrošinājums vai dabiska lapas novecošana. Ja starp dzīslām dzeltē tieši jaunās galotnes lapas, iespējama dzelzs vai cita mazkustīga elementa nepieejamība.",
+        "Gurķiem pirms mēslošanas īpaši svarīgi izslēgt pārlaistīšanu un tīklērces. Slapja, vēsa augsne kavē sakņu darbību, bet tīklērces veido daudz sīku gaišu punktu un smalku tīklojumu lapas apakšpusē."
+      ],
+      "table": {
+        "headers": [
+          "Ko redzi",
+          "Iespējamais skaidrojums",
+          "Ko pārbaudīt vispirms"
+        ],
+        "rows": [
+          [
+            "Vecākajās lapās dzeltē audi starp zaļām dzīslām",
+            "Iespējams magnija trūkums vai tā nepieejamība",
+            "Augsnes pH, Mg un K nodrošinājumu, līdzšinējo mēslošanu"
+          ],
+          [
+            "Vecākā lapa bālē vienmērīgi, arī dzīslas",
+            "Iespējams slāpekļa trūkums vai dabiska novecošana",
+            "Vai augs aug lēnāk un vai dzeltēšana izplatās uz vairākām lapām"
+          ],
+          [
+            "Starp dzīslām dzeltē jaunās galotnes lapas",
+            "Iespējama dzelzs vai cita elementa nepieejamība",
+            "Augsnes reakciju un sakņu veselību"
+          ],
+          [
+            "Lapas ir blāvas, augs vīst, zeme ilgstoši slapja",
+            "Sakņu skābekļa trūkums vai bojājums",
+            "Drenāžu un mitrumu 5–10 cm dziļumā"
+          ],
+          [
+            "Daudz sīku gaišu punktu un smalks tīklojums",
+            "Iespējamas tīklērces",
+            "Lapas apakšpusi ar palielinājumu"
+          ]
+        ]
+      }
+    },
+    {
+      "heading": "Ko darīt tagad",
+      "paragraphs": [
+        "Nemainī vairākus audzēšanas apstākļus vienlaikus. Ja vienā dienā augu aplaista vairāk, dod slāpekli, magniju un vēl pārkaļķo augsni, pēc tam vairs nevar saprast, kas palīdzēja vai kaitēja. Vispirms novērs acīmredzamu pārlaistīšanu, aukstu sakņu vidi un kaitēkļus, tad izvērtē mēslojumu.",
+        "Ja raksturīgais simptoms atkārtojas vairākos augos vai katru sezonu, drošākais nākamais solis ir augsnes analīze. VAAD agroķīmiskajā izpētē iespējams noteikt augsnes reakciju, magniju, kalciju un kāliju — tieši šie rādītāji palīdz saprast, vai magnija tiešām trūkst un vai tas augam ir pieejams."
+      ],
+      "items": [
+        "Nofotografē vecākās un jaunākās lapas pirms jebkādām izmaiņām.",
+        "Pārbaudi mitrumu dziļāk augsnē un drenāžu, ne tikai sauso virskārtu.",
+        "Apskati lapu apakšpuses un izslēdz tīklērces vai citus sūcējkaitēkļus.",
+        "Pārskati pēdējās mēslošanas reizes, īpaši kālija mēslojumu un koka pelnu lietošanu.",
+        "Ja problēma ir plaša vai atkārtojas, nosaki pH un barības elementus augsnes analīzē."
+      ],
+      "listStyle": "check"
+    },
+    {
+      "heading": "Kāpēc magnijs var kļūt nepieejams",
+      "paragraphs": [
+        "Magnijs ir nepieciešams hlorofila veidošanai, tāpēc tā nepietiekamība samazina lapu zaļumu un fotosintēzes spēju. Latvijas VAAD norāda, ka magnija trūkums biežāk sastopams skābās smilts un kūdras augsnēs. Vieglās augsnēs barības elementu krājums parasti ir mazāks, savukārt neatbilstoša augsnes reakcija vājina sakņu darbību un elementu pieejamību.",
+        "Gurķiem svarīgs ir arī mēslojuma līdzsvars. LLKC skaidro, ka augsts kālija saturs substrātā vai bagātīga kālija mēslošana var kavēt magnija uzņemšanu. Tas nozīmē, ka augs var rādīt trūkuma pazīmes arī tad, ja magnijs augsnē ir, taču barības elementu attiecība vai sakņu apstākļi neļauj to pietiekami uzņemt.",
+        "Arī pārāk sausa vai pārāk slapja augsne var radīt šķietamu trūkumu. Sausumā barības vielas līdz saknēm nepārvietojas pietiekami, bet pārmitrumā saknēm trūkst skābekļa. Abos gadījumos papildu mēslojums neatrisina pamatproblēmu."
       ]
     },
     {
-      "heading": "Neapjuc: magnijs vai slāpeklis?",
+      "heading": "Epsom sāls un dolomīts: kad tie nav universāls risinājums",
       "paragraphs": [
-        "Šeit pieļauj kļūdu visbiežāk, tāpēc apskatīsim atsevišķi. Arī slāpekļa trūkumā vecākās lapas dzeltē no apakšas — tik tālu abi izskatās līdzīgi. Atšķirību nosaka raksts. Slāpekļa trūkumā lapa dzeltē vienmērīgi, viscaur, ieskaitot dzīslas — visa lapa kļūst bāli zaļa un tad dzeltena, kā novecojusi. Magnija trūkumā dzeltē tikai plātne starp dzīslām, bet dzīslas paliek zaļas. Tas zaļo dzīslu tīkliņš ir galvenā atšķirības zīme.",
-        "Vēl viens palīgs ir vieta uz auga. Ja dzelte ir tieši galotnē, pie pašām jaunajām lapām, tad runa drīzāk nav par magniju — tā ir par dzelzs vai citu mazkustīgu elementu trūkumu, jo tie no vecajām lapām nepārvietojas. Magnijs un slāpeklis sit pa veco apakšu; dzelzs sit pa jauno galotni. Ja neesi drošs, sāc ar magniju, jo Epsom sāls neko nesabojās arī tad, ja izrādīsies, ka vainīgs kaut kas cits — magnijs nav agresīvs."
+        "Epsom jeb rūgtā sāls ir magnija sulfāts, tāpēc tā var papildināt magniju, ja trūkums ir pamatots. Taču tā neuzlabo drenāžu, neizlabo nepareizu augsnes reakciju un nepalīdz pret kaitēkļiem vai sakņu bojājumu. Lieki pievienojot šķīstošus sāļus, sevišķi podos vai siltumnīcā, var palielināt sāļu slodzi sakņu zonā.",
+        "Ja izvēlies magniju saturošu mēslojumu, izmanto konkrētajai kultūrai un lietošanas veidam paredzētu produktu un ievēro tā marķējumu. Dažādiem produktiem magnija saturs un lietošanas koncentrācija atšķiras, tāpēc viena universāla recepte visiem augiem un augsnēm nav droša.",
+        "Dolomītmilti vienlaikus piegādā kalciju un magniju un maina augsnes reakciju. Tos nevajadzētu lietot kā ātru līdzekli pēc vienas dzeltenas lapas. Par kaļķošanu lemj pēc pH, augsnes sastāva un analīzē noteikta Ca un Mg nodrošinājuma; neitrālā vai bāziskā augsnē nevajadzīga kaļķošana var pasliktināt citu elementu pieejamību."
       ]
     },
     {
-      "heading": "Kā tas izskatās tomātiem, gurķiem un rozēm",
+      "heading": "Kā novērst problēmas atkārtošanos",
       "paragraphs": [
-        "Tomātiem magnija trūkums siltumnīcā ir gandrīz ikgadējs viesis, īpaši vasaras otrajā pusē, kad krūms ir pilns ar augļiem. Apakšējās lapas kļūst dzeltenas starp dzīslām, dzīslas paliek zaļas, un dzelte lēnām kāpj augšup. Tieši smaga raža to provocē: augļi paņem magniju sev, un lapām paliek par maz. Tas nav bīstami augļiem, bet noplicinātas lapas mazāk baro krūmu, tāpēc reaģēt ir vērts.",
-        "Gurķiem aina ir tā pati — vecākās lapas izraibojas dzeltenās un zaļās laukumiņos starp dzīslām, it kā kāds būtu uzkrāsojis mozaīku. Gurķiem dzelti gan biežāk izraisa aukstas saknes un pārlaistīšana, tāpēc magnija trūkumu vienmēr skati kopā ar pārējiem iemesliem. Rozēm magnija trūkums parādās kā dzeltenas joslas starp dzīslām uz vecākajām lapām, bieži ar sārtu nokrāsu malās; ar laiku tās nobirst, un krūms apakšā kļūst kails. Smilšainās, skābās augsnēs rozes to izjūt ātrāk."
-      ]
-    },
-    {
-      "heading": "Kāpēc magnija pietrūkst tieši Latvijas dārzos",
-      "paragraphs": [
-        "Visbiežākais iemesls ir skāba, smilšaina augsne. Vieglā smilts zemē magnijs ar lietus un laistīšanas ūdeni viegli izskalojas dziļāk par saknēm, un mūsu mitrajā klimatā lietus ir daudz. Tieši tāpēc smilšainos dārzos magnija trūkums atkārtojas gadu pēc gada, kamēr augsni nesakārto. Mālainā, smagā zemē turpretī magnijs turas labāk.",
-        "Otrs slazds ir pārāk daudz kālija. Ja dārzā dāsni ber kālija mēslojumu vai daudz koka pelnu, kālijs sāk bremzēt magnija uzņemšanu saknēs — sanāk, ka magnijs zemē ir, bet augs to nedabū. To pašu dara liels amonija slāpekļa daudzums un sausums: sausā zemē saknes magniju vienkārši neizvelk. Un trešais: liela raža. Augļiem briestot, augs magniju masveidā sūta uz augļiem, un lapām paliek deficīts. Tāpēc magnija trūkums tik bieži parādās tieši jūlijā un augustā, kad krūmi pilni augļu."
-      ]
-    },
-    {
-      "heading": "Kā novērst: Epsom sāls ātri, dolomīts ilgtermiņā",
-      "paragraphs": [
-        "Ātrākā palīdzība ir Epsom sāls — tas ir magnija sulfāts, balti kristāliņi, ko pārdod gan dārzkopības veikalos, gan aptiekā kā rūgto jeb angļu sāli. Izšķīdini 20–30 g (apmēram divas ēdamkarotes) 10 litros ūdens un apsmidzini lapas no abām pusēm vēsā, mākoņainā laikā vai vakarā, nevis spožā saulē. Pa lapām magnijs uzsūcas ātri, un dzelte parasti pārstāj izplatīties dažu dienu laikā, lai gan jau dzeltenās vietas vairs neatzaļos. Vajadzības gadījumā atkārto ik pēc 10–14 dienām. To pašu šķīdumu var arī liet pie saknēm.",
-        "Bet smidzināšana ir tikai plāksteris — tā nelabo cēloni. Ja zeme ir skāba un nabadzīga, magnijs izskalosies atkal. Ilgtermiņa risinājums skābā augsnē ir dolomītmilti (dolomīts): tie satur gan kalciju, gan magniju, paceļ skābās augsnes pH un papildina magnija krājumu uz gadiem. Tos kaisa rudenī, parasti ap 300–500 g uz kvadrātmetru atkarībā no skābuma, un iestrādā augsnē. Svarīgs godīgs brīdinājums: dolomīts der tikai skābā zemē. Daudzās Latvijas augsnēs, īpaši Zemgalē un Latgalē, magnija jau tāpat ir gana vai pat par daudz — tur dolomītu nevajag, jo pārmērīgs magnijs savukārt bremzē kalcija uzņemšanu. Pirms beri dolomītu katru gadu, ir vērts pārbaudīt augsnes pH."
-      ]
-    },
-    {
-      "heading": "Biežākās kļūdas",
-      "paragraphs": [
-        "Pirmā kļūda — dzelti starp dzīslām ārstē ar slāpekli. Augs no tā nekļūst zaļāks, jo problēma nav slāpeklis; tu tikai dzen krūmu lapās un atliec īsto risinājumu. Vispirms saproti, kura dzelte tev ir, un tikai tad ber mēslojumu.",
-        "Otrā kļūda — Epsom sāli kaisa sausu tieši uz lapām vai liek pārāk koncentrētu. Smidzini tikai izšķīdinātu un ievēro devu; pārāk stiprs šķīdums apdedzina lapas, un sanāk vēl ļaunāk nekā bija. Trešā kļūda — katru pavasari mehāniski beriet dolomītu, nepārbaudot augsni. Ja zeme nav skāba, tu tikai sakrāj lieku magniju un izjauc līdzsvaru ar kalciju. Ceturtā — magnija sūdzību risina, bet aizmirst par kālija pārmēru: ja turpini dāsni mēslot ar kāliju vai bērt kaudzēm pelnu, magnijs joprojām netiks līdz lapām."
+        "Uzturi gurķiem vienmērīgi mitru, bet gaisu caurlaidīgu augsni, un aukstā laikā nelaisti pārmērīgi. Komposts palīdz uzlabot vieglas augsnes struktūru un spēju saistīt barības vielas, taču arī organiskie un minerālie mēslošanas līdzekļi jālieto samērīgi.",
+        "Neizmanto koka pelnus vai kālija mēslojumu automātiski pie katras lapu problēmas. Pieraksti, ko un kad esi devis, lai atkārtota simptoma gadījumā varētu salīdzināt mēslošanas vēsturi ar augsnes analīzi. Pēc korekcijas vēro jaunās lapas: vecie dzeltenie audi parasti neatgūst zaļo krāsu, tāpēc uzlabojumu vērtē pēc tā, vai dzeltēšana vairs nevirzās uz jaunāku augumu."
       ]
     },
     {
       "heading": "Īsi un skaidri: biežākie jautājumi",
       "paragraphs": [
-        "Kā atšķirt magnija trūkumu no slāpekļa trūkuma? Magnijam dzeltē tikai plātne starp dzīslām, bet pašas dzīslas paliek zaļas — sanāk zaļo dzīslu tīkliņš. Slāpeklim lapa dzeltē viscaur vienmērīgi, arī dzīslas. Abos gadījumos cieš vecākās, apakšējās lapas.",
-        "Cik ātri palīdz Epsom sāls? Apsmidzinot lapas, magnijs uzsūcas dažās dienās un dzelte pārstāj izplatīties. Jau dzeltenās vietas neatzaļos, bet jaunās lapas augs veselas. Vajadzības gadījumā atkārto pēc 10–14 dienām.",
-        "Vai dolomīts der vienmēr? Nē. Dolomīts ir lielisks skābā zemē, jo paceļ pH un dod magniju. Bet neitrālā vai magnija bagātā augsnē tas tikai krāj lieko magniju un nomāc kalciju. Vispirms pārbaudi augsnes skābumu, un tikai tad beri.",
-        "Vai vainīgs var būt par daudz pelnu vai kālija? Jā. Liels kālija daudzums saknēs bremzē magnija uzņemšanu, tāpēc augs var ciest no magnija trūkuma pat tad, ja zemē tā pietiek. Pelnus ber ar mēru un nepārcenties ar kālija mēslojumu.",
-        "Kā ar Mēness fāzēm? Mēness kalendārs ir jauks tradīcijas palīgs, kas palīdz sakārtot darbus, bet uz magnija trūkumu tas neietekmē. Lapu dzelti starp dzīslām izšķir augsnes skābums, magnija krājums un kālija līdzsvars — nevis tas, vai Mēness ir augošs vai dilstošs. Vispirms skaties zemes skābumu un lapu rakstu, un tikai pēc tam — kalendāru."
+        "Kā izskatās magnija trūkums gurķiem? Parasti vecākajās lapās dzeltē audi starp dzīslām, bet dzīslas paliek zaļas. Pirms mēslošanas pārbaudi arī augsnes mitrumu un lapu apakšpuses, jo gurķiem līdzīgu dzelti var radīt sakņu stress un tīklērces.",
+        "Kā atšķirt magnija un slāpekļa trūkumu? Magnija trūkuma gadījumā izceļas zaļas dzīslas uz dzeltena fona. Slāpekļa trūkumā vecākā lapa parasti bālē vienmērīgi, arī dzīslas, un auga augšana kļūst vājāka.",
+        "Vai Epsom sāli drīkst lietot profilaktiski? Bez pamatotas vajadzības tas nav nepieciešams. Epsom sāls dod magniju un sēru, bet neatrisina citas dzeltes problēmas un palielina šķīstošo sāļu daudzumu. Vispirms nosaki cēloni un ievēro izvēlētā produkta marķējumu.",
+        "Vai dolomītmilti der jebkurai dzeltenai lapai? Nē. Dolomītmilti maina augsnes reakciju un dod kalciju ar magniju, tāpēc tos lieto pēc augsnes analīzes un kaļķošanas nepieciešamības novērtējuma, nevis kā ātru lapu ārstēšanas līdzekli.",
+        "Vai dzeltenās lapas atkal kļūs zaļas? Pilnībā dzelteni vai bojāti audi parasti neatjaunojas. Rīcības rezultātu vērtē pēc jaunajām lapām un pēc tā, vai simptoms vairs neizplatās augšup."
       ]
     }
   ],
   "links": [
-    { "label": "Kāpēc gurķiem dzeltē lapas: visi iemesli", "href": "/raksti/kapec-gurkiem-dzelte-lapas" },
-    { "label": "Kāpēc lapas dzeltē: dzeltes veidi un cēloņi", "href": "/raksti/kapec-lapas-dzelte" },
-    { "label": "Tomātu audzēšana un kopšana", "href": "/augi/tomati" },
-    { "label": "Rožu stādīšana un kopšana", "href": "/pukes/rozes" },
-    { "label": "Koku pelnu šķīdums: kā gatavot un lietot", "href": "/receptes/koku-pelnu-skidums" },
-    { "label": "Skāba augsne: kā noteikt un uzlabot", "href": "/raksti/skaba-augsne-ka-noteikt-un-uzlabot" }
+    {
+      "label": "Kāpēc gurķiem dzeltē lapas: visi biežākie cēloņi",
+      "href": "/raksti/kapec-gurkiem-dzelte-lapas"
+    },
+    {
+      "label": "Gurķu sēšana, kopšana un biežākās problēmas",
+      "href": "/augi/gurki"
+    },
+    {
+      "label": "Kāpēc lapas dzeltē: diagnostika pēc lapas vecuma un raksta",
+      "href": "/raksti/kapec-lapas-dzelte"
+    },
+    {
+      "label": "Skāba augsne: kā noteikt un uzlabot",
+      "href": "/raksti/skaba-augsne-ka-noteikt-un-uzlabot"
+    },
+    {
+      "label": "Tīklērces: pazīmes un apkarošanas secība",
+      "href": "/kaitekli/tiklerces"
+    }
   ]
 }

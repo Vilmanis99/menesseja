@@ -2,7 +2,33 @@
   "title": "Kā pavasarī pareizi apgriezt rozes (pa veidiem)",
   "slug": "ka-apgriezt-rozes-pavasari",
   "category": "Praktiski",
+  "intent": "how-to",
   "excerpt": "Rozes kā apgriezt pavasarī? Skaidri soļi krūmrozēm, floribundām un kāpelētājrozēm ar konkrētiem pumpuru skaitiem un griezuma augstumiem Latvijas apstākļiem.",
+  "shortAnswer": "Tu stāvi pavasarī pie rožu krūma ar šķērēm rokā un nesaproti, no kuras vietas un cik daudz griezt.  Tās ir pašas biežākās rožu kopšanas bailes — bail nogriezt par daudz un palikt bez ziediem.",
+  "primaryQuery": "kā pavasarī pareizi apgriezt rozes",
+  "publishedAt": "2026-06-22",
+  "updatedAt": "2026-06-22",
+  "entities": {
+    "pests": [
+      "laputis"
+    ],
+    "recipes": [
+      "komposta-teja"
+    ]
+  },
+  "relatedSlugs": [
+    "rozu-melnplankumainiba-ka-arstet"
+  ],
+  "sources": [
+    {
+      "label": "Latvijas Lauku konsultāciju un izglītības centrs",
+      "url": "https://llkc.lv/"
+    },
+    {
+      "label": "Royal Horticultural Society — Advice",
+      "url": "https://www.rhs.org.uk/advice"
+    }
+  ],
   "readMinutes": 6,
   "body": [
     {
@@ -57,9 +83,21 @@
     }
   ],
   "links": [
-    { "label": "Rožu stādīšana un kopšana", "href": "/pukes/rozes" },
-    { "label": "Rožu melnplankumainība: kā atpazīt un ārstēt", "href": "/raksti/rozu-melnplankumainiba-ka-arstet" },
-    { "label": "Laputis uz rožu dzinumiem: kā apkarot", "href": "/kaitekli/laputis" },
-    { "label": "Komposta tēja jaunajiem dzinumiem", "href": "/receptes/komposta-teja" }
+    {
+      "label": "Rožu stādīšana un kopšana",
+      "href": "/pukes/rozes"
+    },
+    {
+      "label": "Rožu melnplankumainība: kā atpazīt un ārstēt",
+      "href": "/raksti/rozu-melnplankumainiba-ka-arstet"
+    },
+    {
+      "label": "Laputis uz rožu dzinumiem: kā apkarot",
+      "href": "/kaitekli/laputis"
+    },
+    {
+      "label": "Komposta tēja jaunajiem dzinumiem",
+      "href": "/receptes/komposta-teja"
+    }
   ]
 }

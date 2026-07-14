@@ -18,6 +18,9 @@ export const SOIL_TEMP_MIN: Record<string, number> = {
   kiploki: 7,
   kaposti: 8,
   brokoli: 8,
+  ziedkaposti: 8,
+  kolrabji: 8,
+  "kinas-kaposti": 8,
   kartupeli: 8,
   // Warm-season — wait for properly warm soil
   pupas: 10,

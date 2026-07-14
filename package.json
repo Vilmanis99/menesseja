@@ -4,9 +4,13 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "npm run ui:validate",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "content:migrate": "node scripts/migrate-article-metadata.mjs",
+    "content:validate": "node scripts/validate-content.mjs",
+    "ui:validate": "node scripts/validate-ui-classes.mjs"
   },
   "dependencies": {
     "@neondatabase/serverless": "^1.1.0",

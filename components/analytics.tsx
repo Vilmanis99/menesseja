@@ -1,4 +1,8 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import Script from "next/script";
+import { analyticsAllowed, CONSENT_CHANGED_EVENT, track } from "@/lib/analytics";
 
 // Public GA4 measurement ID — not a secret (it ships to the browser regardless).
 const GA_ID = "G-HTRBSQVSGX";
@@ -11,7 +15,28 @@ const GA_ID = "G-HTRBSQVSGX";
  * it straight through — no caching, no interference.
  */
 export function Analytics() {
-  if (process.env.NODE_ENV !== "production") return null;
+  const [allowed, setAllowed] = useState(false);
+
+  useEffect(() => {
+    setAllowed(analyticsAllowed());
+    const changed = () => setAllowed(analyticsAllowed());
+    window.addEventListener(CONSENT_CHANGED_EVENT, changed);
+    return () => window.removeEventListener(CONSENT_CHANGED_EVENT, changed);
+  }, []);
+
+  useEffect(() => {
+    if (!allowed) return;
+    const p = new URLSearchParams(window.location.search);
+    if (p.get("utm_medium") === "organic_social") {
+      track("social_visit", {
+        source: p.get("utm_source") ?? "social",
+        campaign: p.get("utm_campaign") ?? "unknown",
+        content: p.get("utm_content") ?? "unknown",
+      });
+    }
+  }, [allowed]);
+
+  if (process.env.NODE_ENV !== "production" || !allowed) return null;
   return (
     <>
       <Script
@@ -24,6 +49,12 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', '${GA_ID}');`}
       </Script>
+      <Script
+        id="ahrefs-analytics"
+        src="https://analytics.ahrefs.com/analytics.js"
+        data-key="VSYtbD2knOe7j3rYzA+qZA"
+        strategy="afterInteractive"
+      />
     </>
   );
 }

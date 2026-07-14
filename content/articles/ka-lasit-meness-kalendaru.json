@@ -2,7 +2,23 @@
   "title": "Kā lasīt Mēness sējas kalendāru",
   "slug": "ka-lasit-meness-kalendaru",
   "category": "Pamati",
+  "intent": "reference",
   "excerpt": "Vienkāršs ceļvedis pirmā gada dārzniekam: ko nozīmē Mēness fāzes un dienas, un kā tās izmantot kā patīkamu ritmu, ne ražas garantiju.",
+  "shortAnswer": "Ja esi pirmo gadu dārzā un atver Mēness sējas kalendāru, tas var likties kā svešvaloda — fāzes, zīmes, lapu un sakņu dienas.  Neuztraucies: pamatdoma ir vienkārša.",
+  "primaryQuery": "kā lasīt Mēness sējas kalendāru",
+  "publishedAt": "2026-06-04",
+  "updatedAt": "2026-06-04",
+  "entities": {},
+  "sources": [
+    {
+      "label": "NASA — Moon phases and lunar cycle",
+      "url": "https://science.nasa.gov/moon/moon-phases/"
+    },
+    {
+      "label": "Maria Thun biodinamiskā kalendāra tradīcija",
+      "url": "https://www.mariathun.com/"
+    }
+  ],
   "readMinutes": 6,
   "body": [
     {

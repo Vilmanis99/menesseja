@@ -2,6 +2,13 @@
   "slug": "spanijas-kailgliemezis",
   "name": "Spānijas kailgliemezis",
   "emoji": "🐌",
+  "image": {
+    "src": "/kaitekli/spanijas-kailgliemezis.jpg",
+    "alt": "Spānijas kailgliemezis (Arion vulgaris) — liels brūns kailgliemezis zālē",
+    "credit": "TGCGG",
+    "license": "CC0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Slug-grass.jpg"
+  },
   "latin": "Arion vulgaris",
   "type": "kaiteklis",
   "tagline": "Invazīvs, oranžbrūns kailgliemezis bez čaulas, kas mitrās naktīs noēd teju visu — salātus, dārzeņus, puķes, pat kritušus augļus un savus radiniekus; galvenā aizsardzība ir neatlaidīga vākšana ar roku.",

@@ -4,6 +4,12 @@ import path from "node:path";
 export interface ArticleSection {
   heading?: string;
   paragraphs: string[];
+  items?: string[];
+  listStyle?: "bulleted" | "numbered" | "check";
+  table?: {
+    headers: string[];
+    rows: string[][];
+  };
 }
 
 /** A curated out-link to a crop / flower / pest / recipe / other article page. */
@@ -12,11 +18,35 @@ export interface ArticleLink {
   href: string;
 }
 
+export interface ArticleSource {
+  label: string;
+  url: string;
+}
+
+export type ArticleIntent = "problem" | "how-to" | "seasonal" | "reference";
+
+export interface ArticleEntities {
+  crops?: string[];
+  pests?: string[];
+  recipes?: string[];
+}
+
 export interface Article {
   title: string;
+  seoTitle?: string;
   slug: string;
   category: string;
+  intent: ArticleIntent;
   excerpt: string;
+  shortAnswer: string;
+  primaryQuery: string;
+  aliases?: string[];
+  publishedAt: string;
+  updatedAt: string;
+  seasonalMonths?: number[];
+  entities?: ArticleEntities;
+  relatedSlugs?: string[];
+  sources: ArticleSource[];
   readMinutes: number;
   body: ArticleSection[];
   /** Optional related pages elsewhere on the site (cluster interlinking). */
@@ -49,6 +79,41 @@ export function getAllArticles(): Article[] {
 
 export function getArticle(slug: string): Article | null {
   return read(`${slug}.json`);
+}
+
+function overlap(a: string[] | undefined, b: string[] | undefined): number {
+  if (!a?.length || !b?.length) return 0;
+  const right = new Set(b);
+  return a.reduce((n, value) => n + Number(right.has(value)), 0);
+}
+
+/** Deterministic related-content ranking: editorial choices first, then shared
+ * entities/intent/season. Generic same-category content is only a fallback. */
+export function getRelatedArticles(article: Article, limit = 4): Article[] {
+  const all = getAllArticles().filter((candidate) => candidate.slug !== article.slug);
+  const explicit = new Map((article.relatedSlugs ?? []).map((slug, index) => [slug, index]));
+  return all
+    .map((candidate) => {
+      const explicitIndex = explicit.get(candidate.slug);
+      const entityScore =
+        overlap(article.entities?.crops, candidate.entities?.crops) * 12 +
+        overlap(article.entities?.pests, candidate.entities?.pests) * 10 +
+        overlap(article.entities?.recipes, candidate.entities?.recipes) * 8;
+      const seasonScore = overlap(
+        article.seasonalMonths?.map(String),
+        candidate.seasonalMonths?.map(String),
+      );
+      const score =
+        (explicitIndex === undefined ? 0 : 100 - explicitIndex) +
+        entityScore +
+        Number(article.intent === candidate.intent) * 3 +
+        seasonScore * 2 +
+        Number(article.category === candidate.category);
+      return { candidate, score };
+    })
+    .sort((a, b) => b.score - a.score || a.candidate.title.localeCompare(b.candidate.title, "lv"))
+    .slice(0, limit)
+    .map(({ candidate }) => candidate);
 }
 
 const LV_DIACRITICS: Record<string, string> = {

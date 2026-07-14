@@ -23,6 +23,9 @@ export const CROP_PART: Record<string, PlantPart> = {
   timians: "lapas",
   // Flowers → Ziedi (air days)
   brokoli: "ziedi",
+  ziedkaposti: "ziedi", // galviņa = ziedkopa
+  kolrabji: "lapas",
+  "kinas-kaposti": "lapas",
   // Fruit & seed → Augļi (fire days)
   zirni: "augli",
   pupas: "augli",

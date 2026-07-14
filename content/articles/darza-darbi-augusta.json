@@ -2,7 +2,39 @@
   "title": "Dārza darbi augustā: raža, konservēšana un jaunās zemenes",
   "slug": "darza-darbi-augusta",
   "category": "Praktiski",
+  "intent": "seasonal",
   "excerpt": "Augusts ir ražas, konservēšanas un jauno zemeņu mēnesis. Pārskats par svarīgākajiem augusta darbiem Latvijas dārzā: ko novākt, ko vēl paspēt iesēt, kā pasargāt tomātus no lakstu puves un ko darīt ar tukšajām dobēm.",
+  "shortAnswer": "Augustā dārzs atdod to, ko pavasarī un vasarā tajā esi ieguldījis.  Gurķi jālasa teju katru dienu, tomāti sārtojas ķekaros, sīpolu loki gulstas zemē, un virtuvē smaržo pirmās marinādes burkas.",
+  "primaryQuery": "dārza darbi augustā: raža, konservēšana un jaunās zemenes",
+  "publishedAt": "2026-07-06",
+  "updatedAt": "2026-07-06",
+  "seasonalMonths": [
+    8
+  ],
+  "entities": {
+    "crops": [
+      "tomati",
+      "zemenes"
+    ]
+  },
+  "relatedSlugs": [
+    "zemenu-stadisana-augusta",
+    "avenu-apgriesana-pec-razas",
+    "fitoftora-tomatiem",
+    "ka-marinet-gurkus-kraukskigus",
+    "ko-set-julija-augusta",
+    "baltas-sinepes-pec-razas"
+  ],
+  "sources": [
+    {
+      "label": "Latvijas Lauku konsultāciju un izglītības centrs",
+      "url": "https://llkc.lv/"
+    },
+    {
+      "label": "Royal Horticultural Society — Advice",
+      "url": "https://www.rhs.org.uk/advice"
+    }
+  ],
   "readMinutes": 6,
   "body": [
     {

@@ -2,7 +2,31 @@
   "title": "Kā pavairot peonijas (un cik jaunu augu iegūsi no viena cera)",
   "slug": "ka-pavairot-peonijas",
   "category": "Praktiski",
+  "intent": "how-to",
   "excerpt": "Kā pavairot peonijas: cik jaunu augu iegūsi no viena cera, dalīšana rudenī un audzēšana no sēklām — un kāpēc jaunā peonija zied tikai pēc pāris gadiem.",
+  "shortAnswer": "Tev dārzā aug skaista peonija, un tu gribi tādu pašu vēl — pie mājas stūra, dāvanai kaimiņienei vai bērniem viņu dārzā.  Labā ziņa: peoniju nevajag pirkt no jauna.",
+  "primaryQuery": "kā pavairot peonijas",
+  "publishedAt": "2026-06-29",
+  "updatedAt": "2026-06-29",
+  "entities": {
+    "recipes": [
+      "komposta-teja"
+    ]
+  },
+  "relatedSlugs": [
+    "kad-parstadit-peonijas",
+    "augoss-un-dilstoss-meness"
+  ],
+  "sources": [
+    {
+      "label": "Latvijas Lauku konsultāciju un izglītības centrs",
+      "url": "https://llkc.lv/"
+    },
+    {
+      "label": "Royal Horticultural Society — Advice",
+      "url": "https://www.rhs.org.uk/advice"
+    }
+  ],
   "readMinutes": 6,
   "body": [
     {
@@ -61,9 +85,21 @@
     }
   ],
   "links": [
-    { "label": "Kad un kā pārstādīt un dalīt peonijas (soli pa solim)", "href": "/raksti/kad-parstadit-peonijas" },
-    { "label": "Peoniju stādīšana un kopšana", "href": "/pukes/peonijas" },
-    { "label": "Komposta tēja jaunajiem stādījumiem", "href": "/receptes/komposta-teja" },
-    { "label": "Augošs un dilstošs Mēness dārza darbos", "href": "/raksti/augoss-un-dilstoss-meness" }
+    {
+      "label": "Kad un kā pārstādīt un dalīt peonijas (soli pa solim)",
+      "href": "/raksti/kad-parstadit-peonijas"
+    },
+    {
+      "label": "Peoniju stādīšana un kopšana",
+      "href": "/pukes/peonijas"
+    },
+    {
+      "label": "Komposta tēja jaunajiem stādījumiem",
+      "href": "/receptes/komposta-teja"
+    },
+    {
+      "label": "Augošs un dilstošs Mēness dārza darbos",
+      "href": "/raksti/augoss-un-dilstoss-meness"
+    }
   ]
 }

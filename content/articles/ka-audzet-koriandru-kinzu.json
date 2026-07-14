@@ -2,7 +2,32 @@
   "title": "Kā audzēt koriandru (kinzu) un kāpēc tā tik ātri iet ziedā",
   "slug": "ka-audzet-koriandru-kinzu",
   "category": "Praktiski",
+  "intent": "how-to",
   "excerpt": "Kā audzēt kinzu — viens augs, divi nosaukumi (koriandrs = kinza). Sēšana, laistīšana, ēna karstumā un galvenā problēma: ātrā ziedēšana un kā to bremzēt Latvijā.",
+  "shortAnswer": "Pirms sākam, novērsīsim vienu apjukumu, kas mulsina teju ikvienu iesācēju: koriandrs un kinza ir viens un tas pats augs.  Latviski to sauc par koriandru, krieviski un sarunvalodā — par kinzu.",
+  "primaryQuery": "kā audzēt koriandru (kinzu) un kāpēc tā tik ātri iet ziedā",
+  "publishedAt": "2026-06-29",
+  "updatedAt": "2026-06-29",
+  "entities": {
+    "crops": [
+      "koriandrs",
+      "dilles",
+      "baziliks"
+    ]
+  },
+  "relatedSlugs": [
+    "kaiminaugi"
+  ],
+  "sources": [
+    {
+      "label": "Latvijas Lauku konsultāciju un izglītības centrs",
+      "url": "https://llkc.lv/"
+    },
+    {
+      "label": "Royal Horticultural Society — Advice",
+      "url": "https://www.rhs.org.uk/advice"
+    }
+  ],
   "readMinutes": 6,
   "body": [
     {
@@ -67,9 +92,21 @@
     }
   ],
   "links": [
-    { "label": "Koriandrs (kinza): auga lapa ar sēšanas un kopšanas pamatiem", "href": "/augi/koriandrs" },
-    { "label": "Dilles — tuvs vēsuma garšaugs, ko sēj līdzīgi", "href": "/augi/dilles" },
-    { "label": "Baziliks — siltummīlošs garšaugs salīdzinājumam", "href": "/augi/baziliks" },
-    { "label": "Kaimiņaugi: ar ko kinzu stādīt blakus dārzā", "href": "/raksti/kaiminaugi" }
+    {
+      "label": "Koriandrs (kinza): auga lapa ar sēšanas un kopšanas pamatiem",
+      "href": "/augi/koriandrs"
+    },
+    {
+      "label": "Dilles — tuvs vēsuma garšaugs, ko sēj līdzīgi",
+      "href": "/augi/dilles"
+    },
+    {
+      "label": "Baziliks — siltummīlošs garšaugs salīdzinājumam",
+      "href": "/augi/baziliks"
+    },
+    {
+      "label": "Kaimiņaugi: ar ko kinzu stādīt blakus dārzā",
+      "href": "/raksti/kaiminaugi"
+    }
   ]
 }

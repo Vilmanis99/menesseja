@@ -3,49 +3,120 @@
   "name": "Sīpolu muša",
   "latin": "Delia antiqua",
   "emoji": "🪰",
+  "image": {
+    "src": "/kaitekli/sipolu-musa.jpg",
+    "alt": "Sīpolu mušas balti kāpuri (Delia antiqua) bojātā sīpolā",
+    "credit": "Rasbak",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Uienvlieg_maden.jpg"
+  },
   "type": "kaiteklis",
-  "tagline": "Ja sīpolu loki maijā pēkšņi dzeltē un vīst — pamatnē, visticamāk, jau strādā sīpolu mušas kāpuri.",
+  "tagline": "Sīpolu mušas kāpuri bojā sīpola pamatni; loki vīst un dzeltē, bet pats sīpols kļūst mīksts un var sākt pūt.",
+  "shortAnswer": "Dzelteni loki vien vēl nenozīmē sīpolu mušu. Izcel vienu aizdomīgo augu un pārbaudi pamatni: mīksti audi, nepatīkama smaka un balti bezkāju kāpuri apstiprina kaitēkli. Bojāto augu izņem kopā ar sīpolu, bet pārējo dobi pasargā ar smalku tīklu tikai tad, ja sīpoli nav iestādīti pagājušā gada sīpolaugu vietā.",
   "severity": "vidējs",
   "affects": ["sīpoli", "ķiploki", "puravi", "maurloki"],
   "signs": [
-    "Loki dzeltē un vīst no galiem, sākot ar jaunākajiem — augs izskatās kā izkaltis, lai gan augsne mitra.",
-    "Skartais sīpols viegli izvelkams — pamatne mīksta, ar bālganiem kāpuriem iekšā.",
-    "Sīpola pamatne pūst un nepatīkami smaržo.",
-    "Bojājumi parādās viļņos: pirmais maijā–jūnija sākumā, otrs jūlijā."
+    "Atsevišķiem augiem loki vispirms vīst, pēc tam dzeltē un nokalst, lai gan augsne nav sausa.",
+    "Jauns, stipri bojāts augs viegli izvelkams no zemes, jo pamatne un saknes ir bojātas.",
+    "Sīpola pamatne kļūst mīksta; starp zvīņām vai pie saknēm redzami bāli, bezkāju kāpuri.",
+    "Bojātā vieta var sākt pūt un nepatīkami smaržot.",
+    "Latvijā attīstās divas paaudzes: pirmās mušas parādās pavasara beigās, bet otrā paaudze — vasaras otrajā pusē."
   ],
   "intro": [
-    "Sīpolu muša ir burkānu mušas māsa ar tādu pašu darba stilu: pati nevainīga izskata, bet tās kāpuri iegraužas sīpola pamatnē un izēd to no iekšpuses. Pirmā paaudze lido maijā — tautas kalendārā precīzs orientieris ir ceriņu un pieneņu ziedēšana —, otrā nāk jūlijā.",
-    "Tāpat kā ar burkānu mušu, cīņa pēc fakta ir vēla: kāpuru no sīpola vairs neizdabūsi. Toties profilakse ir vienkārša un efektīva — smaržas maskēšana ar burkāniem blakus, tīkls lidošanas laikā un stingra augu maiņa. Sējas sīpoliņi no pavasara stādījuma cieš mazāk nekā sēklas sīpoli."
+    "Pieaugusi sīpolu muša ir neliela un dārzā viegli nepamanāma. Kaitējumu rada kāpuri: tie pēc izšķilšanās iegraužas sīpola pamatnē, barojas audos un var pārvietoties arī uz blakus augiem. Kad loki jau masveidā vīst, bojāto sīpolu izārstēt vairs nevar, tāpēc galvenā nozīme ir diagnozei, bojāto augu izvākšanai un profilaksei.",
+    "Latvijas VAAD novērojumi rāda, ka kaitēklis biežāk sastopams mazdārziņos un atkārtoti audzētās sīpolu platībās. Tas ir svarīgs praktisks signāls: augu maiņa un tīrs stādāmais materiāls dod drošāku aizsardzību nekā nepārbaudīti atbaidīšanas maisījumi."
   ],
+  "compare": {
+    "heading": "Kāpēc dzeltē loki: ātra pārbaude",
+    "intro": "Pirms rīkojies, izcel vienu tipisku augu un apskati gan lokus, gan sīpola pamatni.",
+    "items": [
+      {
+        "name": "Sīpolu muša",
+        "note": "Atsevišķi augi vīst priekšlaicīgi; pamatne ir mīksta, ar kāpuriem vai ejām, un var pūt.",
+        "href": "/raksti/kapec-sipoliem-dzelte-loki"
+      },
+      {
+        "name": "Dabiska nobriešana",
+        "note": "Sezonas beigās loki pakāpeniski dzeltē un noliecas visā dobē, bet nobriedušais sīpols paliek stingrs."
+      },
+      {
+        "name": "Sausums vai barības vielu trūkums",
+        "note": "Dzeltējums parasti ir vienmērīgāks vairākos augos; sīpola pamatnē nav kāpuru un puves."
+      },
+      {
+        "name": "Neīstā miltrasa",
+        "note": "Uz lokiem veidojas bāli laukumi un mitrā laikā pelēcīgi violets apsarmes slānis; sīpola pamatnē kāpuru nav."
+      }
+    ]
+  },
   "control": [
-    "Pārklāj sīpolu dobi ar smalku pretkukaiņu tīklu maijā un jūlijā — muša netiek pie augsnes izdēt olas; tas ir drošākais līdzeklis.",
-    "Stādi burkānus blakus sīpoliem mijus rindās — burkānu smarža maskē sīpolus (un otrādi); vecā pāru sēja strādā abos virzienos.",
-    "Skartos augus izrok un iznīcini līdz ar kāpuriem (NE kompostā) — katrs izrauts slimais sīpols ir desmitiem mušu mazāk nākamajā paaudzē.",
-    "Pēc katra lietus vai laistīšanas viegli irdini rindas un apkaisi tās ar koku pelniem — sausa, pelnaina virskārta mušai dēšanai nepatīk.",
-    "Stādi agri: spēcīgs, ieaudzis sīpols pirmajā lidojumā cieš mazāk nekā tikko dīgstošs.",
-    "Vēlams stādīt sējas sīpoliņus, ne sēt sēklas — jaunie sēklu dīgsti ir visneaizsargātākie."
+    "Izcel vienu aizdomīgo augu un pārgriez vai atver sīpola pamatni. Ja kāpuru nav, turpini meklēt citu dzeltēšanas cēloni.",
+    "Apstiprināti bojātos augus izroc kopā ar sīpolu un saknēm, ieliec maisā un izvāc no dobes. Mīkstus, pūstošus vai kāpuru bojātus sīpolus neliec glabāšanā un neizmanto pārtikā.",
+    "Pārbaudi blakus augus, jo kāpuri var pārvietoties uz tuvākajiem sīpoliem. Neizrauj visu dobi, ja tiem nav bojājuma pazīmju.",
+    "Veselo dobi vari pārsegt ar smalku pretkukaiņu tīklu, malas cieši nostiprinot. To dari tikai jaunā, no iepriekšējā gada sīpolaugiem brīvā vietā — citādi tīkls var iesprostot no augsnes iznākušās mušas zem pārsega.",
+    "Ar dzeltenajiem līmes vairogiem vari sekot pieaugušo mušu parādīšanās laikam, taču slazds viens pats neaizstāj tīklu, augu maiņu un bojāto augu izvākšanu.",
+    "Nākamajā sezonā sīpolus, ķiplokus un puravus pārvieto uz citu dobi un izmanto tikai stingru, nebojātu stādāmo materiālu."
   ],
-  "recipeSlugs": ["koku-pelnu-skidums"],
+  "recipeSlugs": [],
   "prevention": [
-    "Augu maiņa: sīpolus tajā pašā vietā ne ātrāk kā pēc 3–4 gadiem — mušas kūniņas ziemo turpat augsnē.",
-    "Rudenī sīpolu dobi dziļi pārroc, atklājot kūniņas salam un putniem.",
-    "Nestādi sīpolus svaigi mēslotā augsnē — organikas smarža mušu pievelk.",
-    "Pārbaudi stādāmos sīpoliņus: mīkstos un bojātos izbrāķē."
+    "Ievēro augu maiņu: vairākus gadus pēc kārtas neaudzē sīpolus, ķiplokus vai puravus vienā vietā.",
+    "Ja kaitēklis dārzā bijis iepriekš, uzliec tīklu pirms mušu olu dēšanas un neatstāj atvērtas malas.",
+    "Pēc ražas novākšanas izvāc bojātus sīpolus un sīpolaugu atliekas; neatstāj tos uz dobes virsmas.",
+    "Pirms stādīšanas izbrāķē mīkstus, ievainotus vai puves skartus sīpoliņus.",
+    "Sīpolus stādi iespējami agri piemērotos augsnes apstākļos, lai tie līdz kaitēkļa aktivitātei būtu labāk ieauguši."
   ],
-  "moonNote": "Sīpolus pēc biodinamiskās tradīcijas stāda sakņu (zemes) dienās dilstošā Mēnesī — agrīna stādīšana piemērotā dienā dod augam pārsvaru pār mušas pirmo lidojumu.",
-  "folklore": "«Sīpols burkānu sargā, burkāns — sīpolu» — vecā pāru sēja der abām pusēm. Vēl sentēvi sīpolu rindas pēc lietus apbēra ar pelniem no krāsns — paradums, kam ir pavisam praktisks pamats arī šodien.",
+  "moonNote": "Biodinamiskajā tradīcijā sīpolus stāda sakņu dienās. Kaitēkļa ierobežošanā izšķirošāka par Mēness fāzi ir augu maiņa, vesels stādmateriāls, tīkla savlaicīga uzlikšana un bojāto augu izvākšana.",
+  "folklore": "Sīpolu un burkānu jauktā sēja ir sena dārza tradīcija, taču to nevajag uzskatīt par drošu aizsardzību pret sīpolu mušu. Ja kaitēklis jau bijis dārzā, drošāki paņēmieni ir augu maiņa un fizisks pretkukaiņu tīkls.",
+  "safetyNote": "Pelni, sāls, tabakas putekļi un stipri paštaisīti šķīdumi nav droša “deva pēc izjūtas” — tie var bojāt augsni vai augus un neaizsniedz kāpuru sīpola iekšpusē. Ja apsver augu aizsardzības līdzekli, vispirms pārbaudi VAAD aktuālo reģistru un ievēro marķējumu.",
   "faq": [
     {
-      "q": "Kāpēc sīpolu loki dzeltē jau maijā?",
-      "a": "Ja dzeltēšana sākas ar jaunākajiem lokiem un augi viegli izvelkami ar mīkstu, pūstošu pamatni — tā ir sīpolu muša. Ja dzeltē tikai galu galiņi sausā laikā, visticamāk vienkārši trūkst mitruma."
+      "q": "Kāpēc sīpoliem dzeltē loki jau vasaras sākumā?",
+      "a": "Iespējama sīpolu muša, taču cēlonis var būt arī sausums, sakņu bojājums vai slimība. Kaitēkli apstiprina mīksta sīpola pamatne un bāli bezkāju kāpuri; bez šīm pazīmēm diagnozi nevajag pieņemt."
     },
     {
-      "q": "Vai skartos sīpolus var ēst?",
-      "a": "Pamatīgi bojātus — nē, tie pūst. Viegli skartiem nogriez bojāto daļu un izlieto uzreiz; glabāšanai tie neder."
+      "q": "Vai sīpolu dobei vienmēr drīkst likt kukaiņu tīklu?",
+      "a": "Tīkls labi pasargā no ielidojošām mušām, ja sīpoli aug jaunā vietā. Ja tajā pašā dobē pērn auguši sīpolaugi, augsnē var būt pārziemojušas kūniņas, un pārsegs pieaugušās mušas iesprostos pie augiem."
     },
     {
-      "q": "Kad sīpolu dobei vajag tīklu?",
-      "a": "Divos lidošanas viļņos: maijā–jūnija sākumā (ceriņu ziedēšanas laiks) un jūlijā. Ja negribi turēt tīklu visu sezonu, šie divi mēneši ir kritiskie."
+      "q": "Vai bojātu sīpolu var saglabāt vai ēst?",
+      "a": "Mīkstu, pūstošu, nepatīkami smakojošu vai kāpuru bojātu sīpolu neglabā un neizmanto pārtikā. Izvāc to no dobes tā, lai kāpuri nepaliktu augsnē vai pie veselajiem sīpoliem."
+    },
+    {
+      "q": "Vai burkāni blakus pilnībā pasargā sīpolus?",
+      "a": "Nē. Jaukta sēja var būt ērta dobes izmantošanai, bet uz to nevar paļauties kā uz vienīgo aizsardzību. Augu maiņa, tīrs stādmateriāls, savlaicīgs tīkls un bojāto augu izvākšana ir drošāka sistēma."
     }
-  ]
+  ],
+  "relatedLinks": [
+    {
+      "label": "Kāpēc sīpoliem dzeltē loki",
+      "href": "/raksti/kapec-sipoliem-dzelte-loki"
+    },
+    {
+      "label": "Sīpolu audzēšana un kopšana",
+      "href": "/augi/sipoli"
+    },
+    {
+      "label": "Kad novākt sīpolus un kā tos žāvēt",
+      "href": "/raksti/kad-novakt-sipolus"
+    }
+  ],
+  "sources": [
+    {
+      "label": "VAAD — Integrētā augu aizsardzība sīpolaugiem",
+      "url": "https://noverojumi.vaad.gov.lv/images/Sipolaugi_buklets_WEB.pdf"
+    },
+    {
+      "label": "VAAD — sīpolu mušas prognoze Kurzemes reģionam 2026. gadā",
+      "url": "https://noverojumi.vaad.gov.lv/prognozes/437-darzenu-slimibu-un-kaiteklu-attistibas-un-izplatibas-prognoze-2026-gadam-kurzemes-regionam"
+    },
+    {
+      "label": "VAAD kaitīgo organismu reģistrs — Sīpolu muša",
+      "url": "https://registri.vaad.gov.lv/reg/kaitigie_organismi.aspx?id=158"
+    },
+    {
+      "label": "University of Minnesota Extension — Cabbage and onion maggots",
+      "url": "https://extension.umn.edu/yard-and-garden-insects/root-maggots"
+    }
+  ],
+  "updatedAt": "2026-07-14"
 }

@@ -2,7 +2,37 @@
   "title": "Kāpēc sīpoliem dzeltē loki (un kā glābt ražu)",
   "slug": "kapec-sipoliem-dzelte-loki",
   "category": "Problēmas",
+  "intent": "problem",
   "excerpt": "Kāpēc sīpoliem dzeltē loki? Visbiežāk vainīga sīpolu muša, slāpekļa trūkums vai pārmitrums un puve. Uzzini, kā atšķirt cēloņus, glābt ražu un novērst nākamgad.",
+  "shortAnswer": "Tu izej dārzā, un sīpolu dobe, kas pirms nedēļas bija zaļa un priecīga, pēkšņi sākusi dzeltēt — loku gali kļūst gaiši, tad dzelteni, locās un kalst.  Pirmā doma parasti ir: kas par slimību tos piemeklējis?",
+  "primaryQuery": "kāpēc sīpoliem dzeltē loki",
+  "publishedAt": "2026-06-22",
+  "updatedAt": "2026-06-22",
+  "entities": {
+    "crops": [
+      "sipoli"
+    ],
+    "pests": [
+      "sipolu-musa"
+    ],
+    "recipes": [
+      "koku-pelnu-skidums"
+    ]
+  },
+  "relatedSlugs": [
+    "kapec-sipoli-iet-zieda",
+    "kapec-lapas-dzelte"
+  ],
+  "sources": [
+    {
+      "label": "Latvijas Lauku konsultāciju un izglītības centrs",
+      "url": "https://llkc.lv/"
+    },
+    {
+      "label": "Royal Horticultural Society — Advice",
+      "url": "https://www.rhs.org.uk/advice"
+    }
+  ],
   "readMinutes": 6,
   "body": [
     {
@@ -50,10 +80,25 @@
     }
   ],
   "links": [
-    { "label": "Sīpolu audzēšana un kopšana", "href": "/augi/sipoli" },
-    { "label": "Sīpolu muša: dzīves cikls un apkarošana", "href": "/kaitekli/sipolu-musa" },
-    { "label": "Koku pelnu šķīdums sīpolu piebarošanai", "href": "/receptes/koku-pelnu-skidums" },
-    { "label": "Kāpēc sīpoli iet ziedā un kā to novērst", "href": "/raksti/kapec-sipoli-iet-zieda" },
-    { "label": "Kāpēc augiem dzeltē lapas: cēloņi", "href": "/raksti/kapec-lapas-dzelte" }
+    {
+      "label": "Sīpolu audzēšana un kopšana",
+      "href": "/augi/sipoli"
+    },
+    {
+      "label": "Sīpolu muša: dzīves cikls un apkarošana",
+      "href": "/kaitekli/sipolu-musa"
+    },
+    {
+      "label": "Koku pelnu šķīdums sīpolu piebarošanai",
+      "href": "/receptes/koku-pelnu-skidums"
+    },
+    {
+      "label": "Kāpēc sīpoli iet ziedā un kā to novērst",
+      "href": "/raksti/kapec-sipoli-iet-zieda"
+    },
+    {
+      "label": "Kāpēc augiem dzeltē lapas: cēloņi",
+      "href": "/raksti/kapec-lapas-dzelte"
+    }
   ]
 }

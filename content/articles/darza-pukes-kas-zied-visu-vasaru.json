@@ -1,8 +1,28 @@
 {
   "title": "Dārza puķes, kas zied visu vasaru (un kā tās izvēlēties)",
+  "seoTitle": "Dārza puķes, kas zied visu vasaru: 15 izvēles",
   "slug": "darza-pukes-kas-zied-visu-vasaru",
   "category": "Praktiski",
+  "intent": "how-to",
   "excerpt": "Dārza puķes, kas zied visu vasaru: saraksts ar ziedēšanas laikiem no viengadīgajām līdz daudzgadīgajām un padoms, kā pagarināt ziedēšanu līdz salnām.",
+  "shortAnswer": "Visilgāk zied samtenes, petūnijas, verbēnas, begonijas, rudbekijas un ehinācijas, taču neviena ziemciete viena pati nenodrošina nepārtrauktu ziedēšanu no maija līdz salnām. Drošākais risinājums ir apvienot ziemcietes ar dažām viengadīgajām puķēm un regulāri izgriezt noziedējušos ziedus.",
+  "primaryQuery": "dārza puķes, kas zied visu vasaru",
+  "publishedAt": "2026-06-29",
+  "updatedAt": "2026-07-14",
+  "entities": {},
+  "relatedSlugs": [
+    "kapu-pukes"
+  ],
+  "sources": [
+    {
+      "label": "Latvijas Lauku konsultāciju un izglītības centrs",
+      "url": "https://llkc.lv/"
+    },
+    {
+      "label": "Royal Horticultural Society — Advice",
+      "url": "https://www.rhs.org.uk/advice"
+    }
+  ],
   "readMinutes": 6,
   "body": [
     {
@@ -64,12 +84,33 @@
     }
   ],
   "links": [
-    { "label": "Petūnijas: sēšana, kopšana un ziedēšana", "href": "/pukes/petunijas" },
-    { "label": "Rudbekijas: izturīga ziemcietes klasika", "href": "/pukes/rudbekijas" },
-    { "label": "Ehinācija dārzā: stādīšana un kopšana", "href": "/pukes/ehinacija" },
-    { "label": "Floksi: smaržīgie vasaras ziedi", "href": "/pukes/floksi" },
-    { "label": "Verbēna kastēm un dobēm", "href": "/pukes/verbena" },
-    { "label": "Budleja — tauriņu krūms", "href": "/pukes/budlejas" },
-    { "label": "Kapu puķes: ko stādīt, kas zied visu sezonu", "href": "/raksti/kapu-pukes" }
+    {
+      "label": "Petūnijas: sēšana, kopšana un ziedēšana",
+      "href": "/pukes/petunijas"
+    },
+    {
+      "label": "Rudbekijas: izturīga ziemcietes klasika",
+      "href": "/pukes/rudbekijas"
+    },
+    {
+      "label": "Ehinācija dārzā: stādīšana un kopšana",
+      "href": "/pukes/ehinacija"
+    },
+    {
+      "label": "Floksi: smaržīgie vasaras ziedi",
+      "href": "/pukes/floksi"
+    },
+    {
+      "label": "Verbēna kastēm un dobēm",
+      "href": "/pukes/verbena"
+    },
+    {
+      "label": "Budleja — tauriņu krūms",
+      "href": "/pukes/budlejas"
+    },
+    {
+      "label": "Kapu puķes: ko stādīt, kas zied visu sezonu",
+      "href": "/raksti/kapu-pukes"
+    }
   ]
 }

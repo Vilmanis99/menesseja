@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { PageHeader } from "@/components/ui/page-header";
 import { Card } from "@/components/ui/card";
@@ -16,6 +16,7 @@ import { useMounted } from "@/lib/use-mounted";
 import { namedaysFor } from "@/lib/vardadienas";
 import { MONTH_SLUGS, CALENDAR_YEARS } from "@/lib/seo";
 import { DataNote } from "@/components/data-note";
+import { track } from "@/lib/analytics";
 
 const WEEKDAYS = ["P", "O", "T", "C", "Pk", "S", "Sv"]; // Mon-first
 const ELEMENT_DOT: Record<Element, string> = {
@@ -58,6 +59,7 @@ function cropsForDay(month: number, part: PlantPart): DayCrop[] {
 }
 
 export default function KalendarsPage() {
+  useEffect(() => track("calendar_opened", { source: "calendar_page" }), []);
   const mounted = useMounted();
   const today = useMemo(() => new Date(), []);
   const [cursor, setCursor] = useState(() => new Date(today.getFullYear(), today.getMonth(), 1));

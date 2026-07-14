@@ -19,6 +19,9 @@ export const CROP_EMOJI: Record<string, string> = {
   paprika: "🫑",
   kaposti: "🥬",
   brokoli: "🥦",
+  ziedkaposti: "🥬",
+  kolrabji: "🥬",
+  "kinas-kaposti": "🥬",
   spinati: "🌿",
   pupas: "🫘",
   // Garšaugi

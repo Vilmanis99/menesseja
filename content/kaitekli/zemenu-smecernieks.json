@@ -3,10 +3,22 @@
   "name": "Zemeņu smecernieks",
   "latin": "Anthonomus rubi",
   "emoji": "🪲",
+  "image": {
+    "src": "/kaitekli/zemenu-smecernieks.jpg",
+    "alt": "Zemeņu smecernieks (Anthonomus rubi) — maza melna vabolīte ar garu snuķi",
+    "credit": "Francisco Welter-Schultes",
+    "license": "CC0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Anthonomus-rubi-08-fws.jpg"
+  },
   "type": "kaiteklis",
   "tagline": "Ja zemeņu ziedpumpuri pārkrīt uz nokarena, pārkostiem kātiņa un nemaz neuzzied — pa dārzu ir gājis mazais, tumšais smecernieks.",
   "severity": "vidējs",
-  "affects": ["zemenes", "avenes", "kazenes", "retāk citi rožu dzimtas augi"],
+  "affects": [
+    "zemenes",
+    "avenes",
+    "kazenes",
+    "retāk citi rožu dzimtas augi"
+  ],
   "signs": [
     "Ziedpumpuri tieši pirms atvēršanās nokarājas uz pārkosta, pārlauzta kātiņa — it kā nokniebti — un nokalst, neuzziedot.",
     "Pie kātiņa pārkostās vietas redzams smalks, gandrīz pārgriezts iegrauzums.",
@@ -27,7 +39,10 @@
     "Stādi zemenes saulainā, vēdināmā vietā un uzturi dobi tīru no nezālēm un veco lapu kušķiem — tur pieaugušie vaboļi labprāt slēpjas un ziemo.",
     "Piesaisti dabīgos palīgus (skropstaiņus, putnus, plēsīgās vaboles), neuzturot dobē biezu, sutīgu pamežu — atvērta, gaisīga dobe smecerniekam patīk mazāk."
   ],
-  "recipeSlugs": ["vermelu-uzlejums", "kumelisu-uzlejums"],
+  "recipeSlugs": [
+    "vermelu-uzlejums",
+    "kumelisu-uzlejums"
+  ],
   "prevention": [
     "Ik gadu ziedpumpuru veidošanās laikā vāc pārkostos pumpurus — pārziemošanas cikla pārtraukšana ir profilakses kodols.",
     "Rudenī iztīri zemeņu dobi no veco lapu un augu atliekām — tajās pieaugušie vaboļi pārziemo, un to aizvākšana mazina nākamā gada kaitēkli.",

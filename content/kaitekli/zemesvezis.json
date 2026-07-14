@@ -2,6 +2,13 @@
   "slug": "zemesvezis",
   "name": "Zemesvēzis",
   "emoji": "🦗",
+  "image": {
+    "src": "/kaitekli/zemesvezis.jpg",
+    "alt": "Zemesvēzis (Gryllotalpa gryllotalpa) uz smilšainas augsnes — brūns, ar spēcīgām racējkājām",
+    "credit": "Bouke ten Cate",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Veenmol_-_European_mole_cricket_-_Gryllotalpa_gryllotalpa.jpg"
+  },
   "type": "kaiteklis",
   "tagline": "Liels, pazemē dzīvojošs kukainis, kas rok ejas un grauž saknes, sīpolus un bumbuļus, visvairāk postot mitrās, kūdrainās un stipri mēslotās augsnēs.",
   "severity": "nopietns",

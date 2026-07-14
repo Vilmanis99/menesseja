@@ -27,6 +27,15 @@ const DIFFICULTY_TONE: Record<1 | 2 | 3, string> = {
   3: "text-secondary",
 };
 
+/** Correct Latvian numeric agreement for "kultūra". */
+function kulturas(n: number): string {
+  const d = n % 10;
+  const dd = n % 100;
+  if (d === 1 && dd !== 11) return `${n} kultūra`;
+  if (d >= 2 && d <= 9 && !(dd >= 12 && dd <= 19)) return `${n} kultūras`;
+  return `${n} kultūru`;
+}
+
 export default function CelvedisPage() {
   const mounted = useMounted();
   const currentMonth = useMemo(() => new Date().getMonth() + 1, []);
@@ -47,6 +56,13 @@ export default function CelvedisPage() {
     });
   }, [cat, query, thisMonth, currentMonth]);
 
+  const filtered = cat !== "all" || query.trim() !== "" || thisMonth;
+  function reset() {
+    setCat("all");
+    setQuery("");
+    setThisMonth(false);
+  }
+
   // Server-rendered scaffold (date-independent) so crawlers/AI see the H1 + intro
   // + key links even before the interactive filter UI mounts.
   const staticHeader = (
@@ -57,9 +73,9 @@ export default function CelvedisPage() {
         display
         subtitle="Katras kultūras sējas, stādīšanas un ražas logi Latvijas klimatam — kopā ar labākajām Mēness dienām un augsnes siltumu."
       />
-      <p className="mb-md max-w-2xl text-body-lg text-on-surface-variant">
-        Sējas ceļvedis apkopo katras dārza kultūras sējas, stādīšanas un ražas logus Latvijas
-        klimatam, kopā ar tās labāko Mēness elementu dienu un augsnes siltuma slieksni. Pārlūko visu{" "}
+      <p className="mb-md max-w-2xl text-body-md text-on-surface-variant">
+        Ieraksti dārzeņa vai puķes nosaukumu vai izvēlies kategoriju, lai atrastu, kad to sēt,
+        stādīt un novākt Latvijā. Pārlūko visu{" "}
         <Link href="/augi" className="text-primary hover:underline">augu enciklopēdiju</Link> vai atver{" "}
         <Link href="/kalendars" className="text-primary hover:underline">Mēness kalendāru</Link>.
       </p>
@@ -72,18 +88,32 @@ export default function CelvedisPage() {
     <>
       {staticHeader}
 
-      <DataNote variant="planting" withSources className="mb-md" />
-
-      {/* Filters */}
+      {/* Filters — the always-visible result count below keeps the search from
+          feeling "dead" on mobile even when results sit under the keyboard. */}
       <Card tone="container" className="mb-lg p-md">
         <div className="mb-sm flex items-center gap-2 rounded-full border border-outline-variant/30 bg-surface-container-low px-3 py-2">
           <Icon name="search" size="20px" className="text-on-surface-variant" />
           <input
+            type="search"
+            inputMode="search"
+            enterKeyHint="search"
+            autoCapitalize="off"
+            autoCorrect="off"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Meklēt kultūru…"
+            placeholder="Meklē, piem., kāposti…"
             className="flex-1 bg-transparent text-body-md text-on-surface outline-none placeholder:text-on-surface-variant/60"
           />
+          {query && (
+            <button
+              type="button"
+              onClick={() => setQuery("")}
+              aria-label="Notīrīt meklēšanu"
+              className="shrink-0 text-on-surface-variant hover:text-on-surface"
+            >
+              <Icon name="close" size="20px" />
+            </button>
+          )}
         </div>
         <div className="flex flex-wrap gap-2">
           <Chip tone="neutral" active={cat === "all"} onClick={() => setCat("all")}>
@@ -98,6 +128,22 @@ export default function CelvedisPage() {
           <Chip tone="secondary" active={thisMonth} onClick={() => setThisMonth((v) => !v)}>
             Šomēnes ({MONTHS_LV_FULL[currentMonth - 1]})
           </Chip>
+        </div>
+        {/* Always-visible result feedback — the key fix so the search never feels
+            "dead" even when the results are below the mobile keyboard. */}
+        <div className="mt-sm flex items-center justify-between gap-2 text-label-sm">
+          <span className={crops.length === 0 ? "text-secondary" : "text-on-surface-variant"}>
+            {crops.length === 0 ? "Nav atrasts neviens" : `Atrasts: ${kulturas(crops.length)}`}
+          </span>
+          {filtered && (
+            <button
+              type="button"
+              onClick={reset}
+              className="inline-flex items-center gap-1 font-semibold text-primary hover:underline"
+            >
+              <Icon name="close" size="14px" /> Notīrīt
+            </button>
+          )}
         </div>
       </Card>
 
@@ -161,10 +207,30 @@ export default function CelvedisPage() {
       </div>
 
       {crops.length === 0 && (
-        <Card tone="container" className="p-lg text-center">
-          <p className="text-body-md text-on-surface-variant">Nav atrasta neviena kultūra.</p>
+        <Card tone="container" className="flex flex-col items-center gap-sm p-lg text-center">
+          <Icon name="search_off" size="32px" className="text-on-surface-variant/50" />
+          <p className="text-body-md text-on-surface">
+            {query.trim()
+              ? `Nav atrasta neviena kultūra pēc “${query.trim()}”.`
+              : "Nav atrasta neviena kultūra ar šiem filtriem."}
+          </p>
+          <p className="text-body-sm text-on-surface-variant">
+            Pārbaudi rakstību vai notīri filtrus. Meklē arī{" "}
+            <Link href="/pukes" className="text-primary hover:underline">puķu sarakstā</Link> un{" "}
+            <Link href="/augi" className="text-primary hover:underline">augu enciklopēdijā</Link>.
+          </p>
+          <button
+            type="button"
+            onClick={reset}
+            className="mt-1 inline-flex items-center gap-1 rounded-full bg-primary px-4 py-2 text-label-md font-semibold text-on-primary"
+          >
+            <Icon name="refresh" size="16px" /> Rādīt visas kultūras
+          </button>
         </Card>
       )}
+
+      {/* Provenance moved below the list so it doesn't push the tool off-screen on mobile. */}
+      <DataNote variant="planting" withSources className="mt-lg" />
     </>
   );
 }

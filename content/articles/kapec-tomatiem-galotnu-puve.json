@@ -2,7 +2,27 @@
   "title": "Kāpēc tomātiem galotņu puve un kā to apturēt",
   "slug": "kapec-tomatiem-galotnu-puve",
   "category": "Problēmas",
+  "intent": "problem",
   "excerpt": "Galotņu puve nav slimība un reti ir īsts kalcija trūkums — tā ir nevienmērīga mitruma sekas, kas neļauj augam kalciju nogādāt auglī. Stabils laistīšanas ritms to aptur.",
+  "shortAnswer": "Tomāti aug skaisti, bet tad uz augļa apakšas — tieši pretī kātiņam — parādās tumšs, iegrimis, ādains plankums.  Sākumā ūdeņains un brūngans, vēlāk gandrīz melns un kā ieskrūvēts.",
+  "primaryQuery": "kāpēc tomātiem galotņu puve un kā to apturēt",
+  "publishedAt": "2026-06-17",
+  "updatedAt": "2026-06-30",
+  "entities": {
+    "crops": [
+      "tomati"
+    ]
+  },
+  "sources": [
+    {
+      "label": "Latvijas Lauku konsultāciju un izglītības centrs",
+      "url": "https://llkc.lv/"
+    },
+    {
+      "label": "Royal Horticultural Society — Advice",
+      "url": "https://www.rhs.org.uk/advice"
+    }
+  ],
   "readMinutes": 6,
   "body": [
     {

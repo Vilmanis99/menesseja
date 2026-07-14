@@ -1,0 +1,95 @@
+{
+  "title": "Kad novākt sīpolus un kā tos pareizi izžāvēt",
+  "seoTitle": "Kad novākt sīpolus un kā tos žāvēt glabāšanai",
+  "slug": "kad-novakt-sipolus",
+  "category": "Praktiski",
+  "intent": "seasonal",
+  "excerpt": "Sīpolus novāc, kad lielākā daļa loku nodzeltējusi un pati noliekusies. Uzzini, kā ražu izcelt, izžāvēt un sašķirot ziemas glabāšanai.",
+  "shortAnswer": "Sīpolus ilgākai glabāšanai novāc, kad aptuveni divas trešdaļas loku ir nodzeltējušas un pašas noliekušās pie zemes, bet kakliņš kļuvis mīksts. Izvēlies sausu dienu, sīpolus uzmanīgi izcel ar dakšām un divas līdz trīs nedēļas žāvē zem jumta ar labu gaisa plūsmu; lokus ar varu nelauz un tikko novākto ražu nemazgā.",
+  "primaryQuery": "kad novākt sīpolus",
+  "aliases": ["kad rakt sīpolus", "kā žāvēt sīpolus", "sīpolu novākšana"],
+  "publishedAt": "2026-07-14",
+  "updatedAt": "2026-07-14",
+  "seasonalMonths": [7, 8, 9],
+  "entities": {
+    "crops": ["sipoli"],
+    "pests": ["sipolu-musa"]
+  },
+  "relatedSlugs": ["kapec-sipoliem-dzelte-loki", "kapec-sipoli-iet-zieda", "kapec-kiplokiem-dzelte-lapas"],
+  "sources": [
+    { "label": "Royal Horticultural Society — How to grow onions", "url": "https://www.rhs.org.uk/vegetables/onions/grow-your-own" },
+    { "label": "University of Minnesota Extension — Postharvest handling", "url": "https://extension.umn.edu/commercial-fruit-production/postharvest-handling-fruit-and-vegetable-crops-minnesota" },
+    { "label": "Valsts augu aizsardzības dienests — Sīpolu ražas novākšana un glabāšana", "url": "https://integretaaudzesana.vaad.gov.lv/lv/media/23/download?attachment=" }
+  ],
+  "readMinutes": 6,
+  "body": [
+    {
+      "paragraphs": [
+        "Jūlija beigās vai augustā sīpolu dobe pati sāk rādīt, ka augšana tuvojas beigām: loki zaudē koši zaļo krāsu, kakliņš virs sīpola kļūst mīksts un lapas pakāpeniski nolīkst. Tā nav slimība, ja pārmaiņas notiek vienmērīgi visā dobē. Augs vienkārši pārstāj audzēt lapas un nosūta tajās uzkrātās barības vielas uz sīpolu.",
+        "Ar kalendāra datumu vien nepietiek, jo novākšanas brīdi maina šķirne, stādīšanas laiks un vasaras laikapstākļi. Rudens stādījumi var būt gatavi jau jūnijā vai jūlijā, bet pavasarī stādītie sīksīpoliņi Latvijā biežāk ienākas no jūlija beigām līdz septembra sākumam. Drošāk ir skatīties uz pašu augu, nevis gaidīt vienu noteiktu dienu."
+      ]
+    },
+    {
+      "heading": "Pazīmes, ka sīpoli ir gatavi",
+      "paragraphs": [
+        "Raža ir gatava, kad aptuveni divas trešdaļas loku pašas noliekušās un sāk dzeltēt. Kakliņš tieši virs sīpola vairs nav stingrs un sulīgs, bet kļūst plānāks un mīkstāks. Paša sīpola ārējās zvīņas sāk iegūt šķirnei raksturīgo krāsu — dzeltenu, brūnu, sarkanu vai baltu — un virspusē jūtama sausa miziņa.",
+        "Nav jāgaida, līdz visi loki pilnībā nokalst. Ja augs paliek zemē pēc pilnīgas nogatavošanās un sākas ilgstošs lietus, sīpoli var atkārtoti dzīt saknes vai uzņemt pārāk daudz mitruma. Tad kakliņš žūst lēni un glabāšanas laikā vieglāk iemetas puve.",
+        "Ja loki vienam vai diviem augiem dzeltē daudz agrāk nekā pārējiem, sīpols ir mīksts vai nepatīkami smaržo, tā nav parasta nogatavošanās. Šādu augu izcel atsevišķi un pārbaudi, vai nav puves vai sīpolu mušas kāpuru. Slimus sīpolus neliec kopā ar glabājamo ražu."
+      ]
+    },
+    {
+      "heading": "Kā sīpolus novākt, tos nesabojājot",
+      "paragraphs": [
+        "Izvēlies sausu dienu, vēlams pēc dažām dienām bez stipra lietus. Irdenā zemē sīpolus var uzmanīgi izvilkt aiz lokiem, bet smagā augsnē labāk pabāzt dakšas nedaudz sāņus no rindas un pacelt visu zemes slāni. Nevelc ar spēku: norauts kakliņš un dakšu iedurts sīpols glabāšanā ātri bojājas.",
+        "Agrāk mēdza lokus apzināti lauzt vai pievelt pie zemes, lai paātrinātu gatavošanos. To darīt nevajag. Salauztajos audos rodas brūce, pa kuru sīpolā var iekļūt puves izraisītāji. Ļauj lokiem noliekties pašiem un novāc ražu, kad augs tam ir gatavs.",
+        "No tikko izceltiem sīpoliem tikai viegli nopurini irdeno zemi. Nemazgā tos un negriez nost vēl sulīgos lokus. Bojātos, iegrieztos un ļoti resna kakliņa sīpolus noliec atsevišķi un izlieto pirmos; ilgai glabāšanai atstāj tikai stingrus, veselus sīpolus."
+      ],
+      "items": [
+        "Izvēlies sausu dienu un pārbaudi, vai vairākums loku noliecies pats.",
+        "Smagā augsnē sīpolus pacel ar dakšām, tās iedurot sāņus no rindas.",
+        "Nopurini tikai irdeno zemi; sīpolus nemazgā un lokus vēl nenogriez.",
+        "Atdali iegrieztos, mīkstos un resna kakliņa sīpolus tūlītējai izmantošanai.",
+        "Veselo ražu vienā kārtā pārvieto uz sausu, labi vēdināmu vietu."
+      ],
+      "listStyle": "numbered"
+    },
+    {
+      "heading": "Kā pareizi izžāvēt",
+      "paragraphs": [
+        "Sausā un siltā laikā sīpolus sākumā var izklāt uz režģa vai sausas virsmas ārā, taču Latvijas mainīgajos laikapstākļos drošāk tos turēt zem jumta — nojumē, šķūnī vai labi vēdināmā siltumnīcā. Galvenais nav karstums, bet nepārtraukta gaisa kustība ap katru sīpolu.",
+        "Izklāj ražu vienā kārtā uz režģa, koka latām vai apgāztām kastēm. Ja sīpoli stāv uz blīvas virsmas, ik pēc dažām dienām tos apgrozi. Žāvēšana parasti ilgst divas līdz trīs nedēļas; vēsā un mitrā laikā tā var prasīt ilgāk.",
+        "Sīpols ir izžuvis, kad kakliņš ir pilnīgi sauss, ārējās zvīņas čaukst un saknītes kļuvušas trauslas. Tikai tad nogriez lokus, atstājot dažus centimetrus gara kakliņa, vai sapin tos pīnēs. Sausās saknes drīkst saīsināt, nebojājot paša sīpola pamatni."
+      ]
+    },
+    {
+      "heading": "Glabāšana un biežākās kļūdas",
+      "paragraphs": [
+        "Sīpolus glabā vēsā, sausā un labi vēdināmā vietā. Der tīkla maisi, seklas redeļu kastes vai pīnes; neder cieši plastmasas maisi un dziļi, sablīvēti spaiņi, kuros uzkrājas mitrums. Ražu regulāri pārskati un mīkstos vai pelēt sākušos sīpolus nekavējoties izņem.",
+        "Visbiežāk sīpoli bojājas tāpēc, ka glabāšanā ielikti vēl mitri, tiem atstāts resns un sulīgs kakliņš vai kopā ar veselajiem palicis kāds iegriezts sīpols. Arī silta telpa veicina dīgšanu. Ja nav ideālu apstākļu, labāk glabā mazāku daudzumu un pārējos savlaicīgi pārstrādā.",
+        "Mēness fāze nenosaka, vai sīpols glabāsies. Daudz svarīgāk ir sagaidīt dabisku gatavību, novākt sausā laikā, nesavainot sīpolus un pilnīgi izžāvēt kakliņus."
+      ],
+      "items": [
+        "Kakliņš ir pilnīgi sauss, bet ārējās zvīņas čaukst.",
+        "Glabāšanai atlasīti tikai stingri, nebojāti sīpoli.",
+        "Izmantota vēsa, sausa un vēdināma vieta, nevis noslēgts plastmasas maiss.",
+        "Ražu var regulāri pārskatīt un bojātos sīpolus laikus izņemt."
+      ],
+      "listStyle": "check"
+    },
+    {
+      "heading": "Īsi un skaidri: biežākie jautājumi",
+      "paragraphs": [
+        "Vai drīkst novākt sīpolus, kam loki vēl zaļi? Lietošanai tuvākajās dienās — jā. Ilgai glabāšanai labāk nogaidi, līdz lielākā daļa loku pati noliekusies un kakliņi sākuši žūt.",
+        "Cik ilgi sīpoli jāžāvē? Parasti divas līdz trīs nedēļas. Skaties nevis tikai kalendārā, bet pārbaudi, vai kakliņš ir sauss un ārējās zvīņas čaukst.",
+        "Vai sīpolus pēc novākšanas jāmazgā? Nē. Glabāšanai paredzētus sīpolus nemazgā; tikai saudzīgi nopurini sauso zemi un pēc izžāvēšanas notīri vaļīgās zvīņas.",
+        "Ko darīt, ja pēc novākšanas sola lietu? Pārvieto sīpolus zem jumta un izklāj vienā kārtā vietā ar labu caurvēju. Neatstāj tos kaudzē vai slēgtā, mitrā telpā."
+      ]
+    }
+  ],
+  "links": [
+    { "label": "Sīpolu audzēšana un kopšana", "href": "/augi/sipoli" },
+    { "label": "Kāpēc sīpoliem dzeltē loki", "href": "/raksti/kapec-sipoliem-dzelte-loki" },
+    { "label": "Kāpēc sīpoli iet ziedā", "href": "/raksti/kapec-sipoli-iet-zieda" },
+    { "label": "Sīpolu muša: pazīmes un apkarošana", "href": "/kaitekli/sipolu-musa" }
+  ]
+}

@@ -2,7 +2,36 @@
   "title": "Skābēti kāposti pēc senču gudrības: Mēness, šķirnes un kraukšķa noslēpums",
   "slug": "skabeti-kaposti",
   "category": "Praktiski",
-  "excerpt": "Senču ticējumi par kāpostu skābēšanu Mēnesī paši strīdas: Ikšķilē teica vienu, Tirzā pretējo. Kraukšķi izšķir šķirne, sāls un temperatūra. Praktisks ceļvedis: kuras šķirnes der skābēšanai, kad novākt galviņas un kā izvairīties no glumiem kāpostiem.",
+  "intent": "how-to",
+  "excerpt": "Kā skābēt kāpostus, lai tie paliek kraukšķīgi: piemērota šķirne, pareizs sāls daudzums, temperatūra un biežākās kļūdas.",
+  "shortAnswer": "Kāpostu skābēšana ir viens no tiem darbiem, ko latviešu saimniecībās dara jau gadsimtiem, un tieši tāpēc ap to sakrājies tik daudz gudrību: par Mēnesi, par īsto nedēļu, par to, kas galviņām piešķir kraukšķi.  Ja šogad gatavojies skābēt pirmo reizi vai pagājušajā rudenī burka izdevās gluma un mīksta, šis raksts ir tev.",
+  "primaryQuery": "skābēti kāposti pēc senču gudrības: Mēness, šķirnes un kraukšķa noslēpums",
+  "publishedAt": "2026-07-06",
+  "updatedAt": "2026-07-06",
+  "entities": {
+    "crops": [
+      "kaposti"
+    ],
+    "pests": [
+      "kapostu-baltenis"
+    ]
+  },
+  "relatedSlugs": [
+    "kapec-kaposti-neveido-galvas",
+    "augoss-un-dilstoss-meness",
+    "ka-marinet-gurkus-kraukskigus",
+    "darza-darbi-augusta"
+  ],
+  "sources": [
+    {
+      "label": "LLKC — dārzkopības un ražas saglabāšanas materiāli",
+      "url": "https://llkc.lv/"
+    },
+    {
+      "label": "National Center for Home Food Preservation",
+      "url": "https://nchfp.uga.edu/"
+    }
+  ],
   "readMinutes": 6,
   "body": [
     {

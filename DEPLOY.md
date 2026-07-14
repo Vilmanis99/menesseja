@@ -27,6 +27,11 @@ Repo ir publicēts: **github.com/Vilmanis99/menesseja**. Vercel auto-izvieto kat
 |---|---|---|
 | `DATABASE_URL` | tava Neon connection string (pooled) | Production + Preview |
 | `NEXT_PUBLIC_SITE_URL` | `https://menesseja.lv` | visas |
+| `BREVO_API_KEY` | Brevo servera API atslēga | Production |
+| `BREVO_DOI_TEMPLATE_ID` | aktīvās Double Opt-in veidnes skaitliskais ID | Production |
+| `NEXT_PUBLIC_ADSENSE_ENABLED` | `false` līdz 10 000 mēneša seansiem | Production |
+| `NEXT_PUBLIC_ACCOUNTS_ENABLED` | `false` līdz lēmumam par kontu sinhronizācijas palaišanu | Production |
+| `NEXT_PUBLIC_CONTACT_EMAIL` | publiska adrese privātuma un datu dzēšanas pieprasījumiem | visas |
 
 ⚠️ **`DATABASE_URL`:**
 - Key tieši tā — **lielie burti, apakšsvītra, BEZ atstarpes** (kods lasa `process.env.DATABASE_URL`).

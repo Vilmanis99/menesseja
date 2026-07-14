@@ -2,7 +2,29 @@
   "title": "Kā pareizi laistīt dārzu karstumā un sausumā",
   "slug": "ka-laistit-darzu-karstuma",
   "category": "Praktiski",
+  "intent": "how-to",
   "excerpt": "Karstuma vilnī iesācēji bieži laista nepareizi — daudz, sekli un pa lapām. Skaidrojam, kad laistīt, cik daudz, pie saknes, kā mulčēt un kā ar pirkstu pārbaudīt, vai augam tiešām trūkst ūdens.",
+  "shortAnswer": "Kad termometrs Latvijā uzkāpj pāri 28 grādiem un nedēļu nelīst, daudzi iesācēji satraucas un sāk laistīt biežāk, vairāk un jebkurā brīdī, kad atliek laiks.  Tas ir saprotami — augi karstumā nokaras, lapas kļūst ļenganas, un gribas tās glābt.",
+  "primaryQuery": "kā pareizi laistīt dārzu karstumā un sausumā",
+  "publishedAt": "2026-06-30",
+  "updatedAt": "2026-07-06",
+  "entities": {},
+  "relatedSlugs": [
+    "kapec-podu-augiem-dzelte-lapas",
+    "cik-liels-pods-darzeniem",
+    "augsnes-temperatura",
+    "darza-darbi-julija"
+  ],
+  "sources": [
+    {
+      "label": "Latvijas Lauku konsultāciju un izglītības centrs",
+      "url": "https://llkc.lv/"
+    },
+    {
+      "label": "Royal Horticultural Society — Advice",
+      "url": "https://www.rhs.org.uk/advice"
+    }
+  ],
   "readMinutes": 6,
   "body": [
     {

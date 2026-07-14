@@ -2,7 +2,27 @@
   "title": "Kāpēc gurķi ir rūgti un kā no tā izvairīties",
   "slug": "kapec-gurki-rugti",
   "category": "Problēmas",
+  "intent": "problem",
   "excerpt": "Gurķi kļūst rūgti no stresa — karstuma, nevienmērīgas laistīšanas un sausuma. Stabils mitrums, ēna karstumā un piemērota šķirne novērš rūgtumu.",
+  "shortAnswer": "Pārgriez skaistu, zaļu gurķi, iekod — un mute saraujas no rūgtuma, īpaši pie kātiņa gala.  Tas ir kaitinoši, bet ne bīstami un gandrīz vienmēr novēršami.",
+  "primaryQuery": "kāpēc gurķi ir rūgti un kā no tā izvairīties",
+  "publishedAt": "2026-06-17",
+  "updatedAt": "2026-06-17",
+  "entities": {
+    "crops": [
+      "gurki"
+    ]
+  },
+  "sources": [
+    {
+      "label": "Latvijas Lauku konsultāciju un izglītības centrs",
+      "url": "https://llkc.lv/"
+    },
+    {
+      "label": "Royal Horticultural Society — Advice",
+      "url": "https://www.rhs.org.uk/advice"
+    }
+  ],
   "readMinutes": 6,
   "body": [
     {

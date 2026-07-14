@@ -13,8 +13,11 @@ export interface GardenProblem {
   name: string; // Latvian
   latin?: string;
   emoji: string;
+  /** Optional real, correctly-licensed identification photo (self-hosted in /public). */
+  image?: { src: string; alt?: string; credit: string; license: string; sourceUrl: string };
   type: ProblemType;
   tagline: string;
+  shortAnswer?: string;
   severity: "viegls" | "vidējs" | "nopietns";
   affects: string[]; // skartie augi (brīvs teksts, lv)
   signs: string[]; // kā atpazīt
@@ -25,6 +28,10 @@ export interface GardenProblem {
   moonNote?: string;
   folklore?: string;
   faq?: { q: string; a: string }[];
+  relatedLinks?: { label: string; href: string }[];
+  sources?: { label: string; url: string }[];
+  updatedAt?: string;
+  safetyNote?: string;
   /** Saistītie paveidi / radniecīgi kaitēkļi ar īsu atšķirību un saiti uz skarto augu. */
   compare?: { heading: string; intro?: string; items: { name: string; note: string; href?: string }[] };
 }

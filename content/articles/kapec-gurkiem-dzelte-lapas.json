@@ -1,8 +1,45 @@
 {
   "title": "Kāpēc gurķiem dzeltē lapas (un kā to apturēt)",
+  "seoTitle": "Gurķiem dzeltē lapas: 5 cēloņi un ko darīt",
   "slug": "kapec-gurkiem-dzelte-lapas",
   "category": "Problēmas",
+  "intent": "problem",
   "excerpt": "Kāpēc gurķiem dzeltē lapas? Visbiežāk vainīgs aukstums, slāpekļa vai magnija trūkums, pārlaistīšana vai miltrasa. Uzzini, kā tos ātri atšķirt un apturēt.",
+  "shortAnswer": "Gurķu lapas visbiežāk dzeltē vēsu nakšu, pārāk slapjas augsnes vai barības vielu trūkuma dēļ. Vispirms apskati, vai dzeltē jaunās vai vecās lapas, pārbaudi zemes mitrumu un meklē baltu aplikumu vai sīkus kaitēkļus lapu apakšpusē — tikai tad izvēlies mēslošanu vai apstrādi.",
+  "primaryQuery": "kāpēc gurķiem dzeltē lapas",
+  "publishedAt": "2026-06-22",
+  "updatedAt": "2026-07-14",
+  "entities": {
+    "crops": [
+      "gurki"
+    ],
+    "pests": [
+      "miltrasa",
+      "laputis"
+    ],
+    "recipes": [
+      "natru-virca"
+    ]
+  },
+  "relatedSlugs": [
+    "magnija-trukums-augiem",
+    "kapec-lapas-dzelte",
+    "augsnes-temperatura"
+  ],
+  "sources": [
+    {
+      "label": "University of Minnesota Extension — Discolored cucumber leaves",
+      "url": "https://apps.extension.umn.edu/garden/diagnose/plant/vegetable/cucumber/leavesdiscolored.html"
+    },
+    {
+      "label": "University of Minnesota Extension — Quick guide to fertilizing plants",
+      "url": "https://extension.umn.edu/manage-soil-nutrients/quick-guide-fertilizing-plants"
+    },
+    {
+      "label": "Latvijas Vides, ģeoloģijas un meteoroloģijas centrs — Jūnija klimats Latvijā",
+      "url": "https://klimats.meteo.lv/klimats_latvija/menesu_klimatiskais_raksturojums/junijs/"
+    }
+  ],
   "readMinutes": 6,
   "body": [
     {
@@ -14,16 +51,27 @@
     {
       "heading": "Kā pazīt: simptomi un kā cēloņus atšķirt",
       "paragraphs": [
-        "Pirmais, ko skaties — kuras lapas dzeltē. Ja dzeltē jaunās, augšējās lapas auga galotnē, tas parasti norāda uz slāpekļa trūkumu: lapas vispirms kļūst gaišzaļas, tad bāli dzeltenas, un augs aug lēni. Ja turpretī dzeltē vecākās, apakšējās lapas, bet jaunās augšā vēl ir zaļas, tas biežāk ir vai nu dabīga apakšas novecošana, vai magnija trūkums.",
-        "Magniju atpazīt ir viegli pēc viena ļoti raksturīga raksta: lapas plātne starp dzīslām kļūst dzeltena, bet pašas dzīslas paliek izteikti zaļas — lapa izskatās kā zaļš tīkliņš uz dzeltena fona. Tas vispirms parādās uz vecākajām lapām apakšā un pamazām virzās uz augšu.",
+        "Pirmais, ko skaties — kuras lapas dzeltē. Slāpekļa trūkums parasti sākas ar vecākajām, apakšējām lapām: tās vienmērīgi izbāl un augs aug lēnāk. Ja dzeltē tieši jaunās lapas, biežāk jāvērtē mikroelementu pieejamība, sakņu darbība un augsnes reakcija, nevis uzreiz jādod slāpeklis.",
+        "Par iespējamu magnija trūkumu liecina raksturīgs lapas zīmējums: plātne starp dzīslām kļūst dzeltena, bet pašas dzīslas paliek izteikti zaļas — lapa izskatās kā zaļš tīklojums uz dzeltena fona. Tas parasti vispirms parādās vecākajās lapās un pamazām virzās uz augšu, taču drošai diagnozei jāvērtē arī augsne, saknes un mēslošanas vēsture.",
         "Ja dzeltē visa lapa vienlaikus, bāli un nevienmērīgi, un augs kopumā izskatās nokritis, padomā par aukstumu vai pārlaistīšanu. Aukstuma gadījumā dzeltē gan apakšējās, gan augšējās lapas pēc vēsas nakts, augs it kā sastingst. Pārlaistīšanas gadījumā zeme ir pastāvīgi slapja un saspiesta, lapas kļūst dzeltenīgi blāvas, un saknes sāk smakt. Bet, ja uz lapas augšpuses parādās balts, miltains aplikums un tikai pēc tam lapa dzeltē un sakalst, tā ir miltrasa — sēņu slimība, ko risina pavisam citādi."
-      ]
+      ],
+      "table": {
+        "headers": ["Ko redzi", "Iespējamais cēlonis", "Pirmais solis"],
+        "rows": [
+          ["Vecākās lapas vienmērīgi bālē, augšana palēninās", "Iespējams slāpekļa trūkums", "Pārbaudi mēslošanas vēsturi un augsnes stāvokli; mēslo tikai pamatotas vajadzības gadījumā"],
+          ["Vecākajās lapās dzeltē laukumi starp zaļām dzīslām", "Iespējams magnija trūkums", "Pārbaudi pH un mēslošanas līdzsvaru; ja iespējams, veic augsnes vai lapu analīzi"],
+          ["Pēc vēsas, mitras nakts lapas kļūst blāvas un augs apstājas", "Aukstuma stress", "Pasargā augu naktī un ļauj augsnei sasilt"],
+          ["Augsne ilgstoši slapja, augs vīst vai dzeltē", "Pārlaistīšana vai sakņu bojājums", "Pārtrauc laistīšanu, uzlabo gaisa piekļuvi saknēm un pārbaudi drenāžu"],
+          ["Balts, miltains pārklājums, vēlāk lapa dzeltē", "Miltrasa", "Izņem stipri bojātās lapas un rīkojies pēc miltrasas apkarošanas norādēm"],
+          ["Sīki punkti, lipīgums, kukaiņi vai tīklojums lapas apakšā", "Laputis vai tīklērces", "Apskati ar palielinājumu un apkaro tikai noteikto kaitēkli"]
+        ]
+      }
     },
     {
       "heading": "Kāpēc gurķiem dzeltē lapas",
       "paragraphs": [
         "Visbiežākais cēlonis Latvijā ir aukstums. Gurķi ir siltummīļi: tiem vajadzīga gaisa temperatūra virs +16 grādiem un augsnes temperatūra ap +17–18 grādiem. Ja nakts temperatūra nokrīt zem +12–13 grādiem vai dienas un nakts starpība pārsniedz 6 grādus, augs piedzīvo stresu un atbild ar lapu dzeltēšanu. Tipiska Latvijas vasaras vēsā nakts maija beigās vai jūnijā ir tieši tas brīdis, kad gurķi sabālē. Aukstā zemē saknes turklāt vairs nespēj normāli uzņemt barību, tāpēc pat tad, ja mēslojuma pietiek, augs izskatās izsalcis.",
-        "Otrs cēlonis ir patiess barības trūkums. Slāpekļa trūkums dzeltē jaunās lapas un bremzē augšanu — tas mēdz gadīties uz nabadzīgas, smilšainas zemes vai kad augs strauji aug un visu ātri patērē. Magnija trūkums (tas raksturīgais zaļais dzīslu tīkliņš) bieži parādās tieši siltumnīcā, kur zeme gadu no gada tiek izmantota tai pašai kultūrai un magnijs lēnām izsīkst.",
+        "Otrs cēlonis ir patiess barības trūkums. Slāpekļa trūkuma gadījumā vispirms vienmērīgi bālē vecākās lapas un palēninās augšana. Magnija trūkumam raksturīgais dzīslojuma raksts arī sākas vecākajās lapās, taču dzelteni kļūst audi starp dzīslām, kamēr pašas dzīslas paliek zaļas. Pēc lapu krāsas vien nevar droši noteikt, ka augsnē trūkst konkrētā elementa: tā uzņemšanu var kavēt aukstums, neatbilstošs pH vai citu elementu pārbagātība.",
         "Trešais cēlonis ir ūdens — un visbiežāk tā ir pārlaistīšana, ne sausums. Ja gurķus lej par daudz un zeme nekad nepaspēj nedaudz pažūt, augsne sablīvējas, saknēm pietrūkst gaisa, un tās sāk smakt — lapas atbild ar dzeltēšanu. Auksts laistāmais ūdens tieši no akas vai urbuma šo problēmu pastiprina. Ceturtais cēlonis ir slimības un kaitēkļi: miltrasa ar balto aplikumu, kā arī laputis un tīklērces, kas sūc no lapas sulu un atstāj dzeltenus, punktotus laukumus."
       ]
     },
@@ -31,14 +79,22 @@
       "heading": "Ko darīt, kad tas jau noticis",
       "paragraphs": [
         "Vispirms noskaidro cēloni pēc iepriekšējās nodaļas pazīmēm — bez tā jebkura rīcība ir minējums. Ja vainīgs aukstums, neko traku nedari: nesteidzies mēslot un nelaisti vairāk. Aizsedz gurķus uz naktīm ar agroplēvi vai segmateriālu, siltumnīcā aizver durvis vēsajās naktīs, un, tiklīdz siltums atgriežas, augs pats atgūstas. Aukstuma dzeltēšana parasti ir pārejoša.",
-        "Ja redzi slāpekļa badu (bālas jaunās lapas, lēna augšana), pabaro augu ar vieglu, ātru slāpekļa avotu — vislabāk derēs atšķaidīta nātru virca vai cita zaļmēslojuma uzlejums, ko gurķi uzņem teju uzreiz. Magnija trūkumu (zaļais dzīslu tīkliņš) novērš ar magnija sulfātu jeb rūgto sāli: vienu ēdamkaroti uz desmit litriem ūdens, un ar to var gan aplaistīt, gan apsmidzināt lapas.",
+        "Ja vecākās lapas vienmērīgi bālē un augšana palēninās, pārskati, kad un ar ko gurķi mēsloti. Izvēlies gurķiem paredzētu mēslojumu un ievēro tā marķējuma devu; nemēslo tikai pēc vienas dzeltenas lapas. Ja redzams zaļo dzīslu tīklojums, vispirms pārbaudi augsnes reakciju un līdzšinējo mēslojumu. Magnija sulfātu lieto tikai pamatotas vajadzības gadījumā un pēc konkrētā produkta norādēm, jo līdzīgs izskats var rasties arī sakņu problēmu dēļ.",
         "Ja zeme ir pārlaistīta un slapja, pārtrauc liešanu un ļauj augsnei pažūt — irdini virskārtu, lai saknes atkal tiek pie gaisa. Ja parādījies baltais aplikums, rīkojies kā pret miltrasu (skaties mūsu atsevišķo rakstu), bet, ja redzi sīkus kustīgus kustoņus lapas apakšā vai smalku tīmeklīti, tad ar tiem cīnies kā ar laputīm vai tīklērcēm. Jau dzeltējušās lapas zaļas vairs nekļūs — tās vari nogriezt, lai augs spēku liek jaunajā piezelšanā, bet svarīgākais ir novērst cēloni, lai nākamās lapas izaug veselas."
-      ]
+      ],
+      "items": [
+        "Apskati, vai izmaiņas sākas vecākajās vai jaunākajās lapās.",
+        "Pārbaudi augsnes mitrumu 5–10 cm dziļumā, nevis tikai virskārtu.",
+        "Apskati lapu abas puses un meklē aplikumu, sīkus kukaiņus vai tīklojumu.",
+        "Atceries pēdējo nakšu temperatūru un līdzšinējo mēslošanu.",
+        "Izvēlies vienu cēlonim atbilstošu darbību un dažas dienas vēro jauno augumu."
+      ],
+      "listStyle": "check"
     },
     {
       "heading": "Kā novērst",
       "paragraphs": [
-        "Galvenais ir siltums. Nesteidzies stādīt gurķus laukā, kamēr zeme nav pa īstam sasilusi — Latvijā droši ir parasti tikai pēc 1. jūnija, kad salnu risks pagājis un augsne ir vismaz +15 grādu. Siltumnīcā vēsajās naktīs aizver durvis un logus, bet dienā vēdini, lai nav tvaika pirts. Laistāmo ūdeni glabā mucā saulē, lai tas sasiltu — ar aukstu ūdeni lietais gurķis vienmēr sāks dzeltēt.",
+        "Galvenais ir siltums. Gurķus laukā stādi tikai tad, kad augsne ir iesilusi un konkrētajai vietai vairs netiek prognozēta salna. Latvijas reģionos šis brīdis atšķiras, un salna atsevišķos gados iespējama arī jūnija sākumā, tāpēc svarīgāka par fiksētu datumu ir vietējā prognoze. Siltumnīcā vēsās naktīs aizver durvis, bet dienā vēdini. Laistīšanai izmanto nostādinātu, ne ledaini aukstu ūdeni.",
         "Otrs — pareiza barošana un laistīšana. Iestādot iedod gurķiem barīgu, ar kompostu uzlabotu zemi, un sezonas laikā ik pa divām nedēļām pabaro ar atšķaidītu zaļmēslojumu vai komposta teju. Laisti regulāri un dziļi, bet ļauj virskārtai starp reizēm nedaudz apžūt — gurķiem patīk vienmērīgs mitrums, ne pastāvīgs purvs. Karstā laikā laisti rītā vai vakarā, ne pusdienlaikā saulē.",
         "Trešais — mulča un profilakse. Bieza siena, salmu vai pļautas zāles kārta ap stublājiem saglabā vienmērīgu mitrumu un siltumu zemē un mazina temperatūras svārstības, kas izraisa dzeltēšanu. Neaudzē gurķus pārāk blīvi — sabiezinātos stādījumos apakšējās lapas paliek tumsā un dzeltē pašas no sevis. Pret miltrasu palīdz vēdināšana un savlaicīga profilakse, un noderēs arī mūsu dabīgo līdzekļu receptes."
       ]
@@ -46,20 +102,42 @@
     {
       "heading": "Īsi un skaidri: biežākie jautājumi",
       "paragraphs": [
-        "Kā ātri saprast, kura ir mana problēma? Skaties, kuras lapas dzeltē. Augšējās, jaunās — slāpekļa trūkums. Apakšējās ar zaļu dzīslu tīkliņu — magnija trūkums. Visas lapas pēc vēsas nakts — aukstums. Slapja, saspiesta zeme un blāvas lapas — pārlaistīšana. Balts aplikums uz lapas augšas — miltrasa.",
+        "Kā ātri saprast, kura ir mana problēma? Skaties, kuras lapas dzeltē un kāds ir raksts. Vecākās lapas vienmērīgi bālē — iespējams slāpekļa trūkums. Vecākās lapas dzeltē starp zaļām dzīslām — iespējams magnija trūkums. Lapas mainās pēc vēsas nakts — aukstuma stress. Slapja, blīva zeme un blāvas lapas — pārlaistīšana. Balts aplikums — miltrasa.",
         "Vai dzeltējušas lapas atkal kļūs zaļas? Nē, jau pilnībā dzeltējusi lapa zaļa neatgriezīsies. Bet, tiklīdz novērsīsi cēloni, jaunās lapas izaugs veselas un zaļas. Vecās dzeltenās vari mierīgi nogriezt.",
-        "Kāpēc lapas dzeltē tikai apakšā, bet augš ir veseli? Ja apakšas dzeltēšana ir lēna un vienmuļa, tā bieži ir vienkārši dabīga vecāko lapu novecošana — gurķis tās pamet, lai spēku liktu jaunajā augšanā. Ja klāt nāk zaļais dzīslu raksts, tad tas jau ir magnija trūkums.",
+        "Kāpēc lapas dzeltē tikai apakšā, bet augšā ir veselas? Ja apakšējo lapu dzeltēšana ir lēna un vienmērīga, tā var būt vecāko lapu dabiska novecošana. Ja audi starp dzīslām dzeltē, bet dzīslas paliek zaļas, iespējams magnija trūkums vai tā nepieejamība; pirms mēslošanas pārbaudi arī sakņu vidi un līdzšinējo mēslošanu.",
         "Vai dzeltēšana var nākt no kaitēkļiem? Jā. Laputis un tīklērces sūc no lapas sulu un atstāj dzeltenus plankumiņus vai punktiņus, bieži ar lipīgu pārklājumu vai smalku tīmeklīti lapas apakšā. Tad jācīnās ar pašu kaitēkli, ne ar barošanu.",
         "Kā ar Mēness fāzēm? Mēness kalendārs ir jauks senču tradīcijas palīgs, kas sakārto dārza darbus, bet gurķu lapu dzeltēšanu tas neietekmē. Izšķir zemes un gaisa siltums, barības līdzsvars, laistīšana un slimības — nevis tas, vai Mēness ir augošs vai dilstošs. Vispirms pārbaudi nakts temperatūru, zemes mitrumu un lapu rakstu, un tikai pēc tam skaties kalendārā."
       ]
     }
   ],
   "links": [
-    { "label": "Gurķu sēšana un kopšana", "href": "/augi/gurki" },
-    { "label": "Miltrasa: baltais aplikums uz lapām", "href": "/kaitekli/miltrasa" },
-    { "label": "Laputis un kā ar tām cīnīties", "href": "/kaitekli/laputis" },
-    { "label": "Kāpēc lapas dzeltē — visi cēloņi", "href": "/raksti/kapec-lapas-dzelte" },
-    { "label": "Nātru virca slāpekļa mēslošanai", "href": "/receptes/natru-virca" },
-    { "label": "Augsnes temperatūra un kad stādīt", "href": "/raksti/augsnes-temperatura" }
+    {
+      "label": "Gurķu sēšana un kopšana",
+      "href": "/augi/gurki"
+    },
+    {
+      "label": "Miltrasa: baltais aplikums uz lapām",
+      "href": "/kaitekli/miltrasa"
+    },
+    {
+      "label": "Laputis un kā ar tām cīnīties",
+      "href": "/kaitekli/laputis"
+    },
+    {
+      "label": "Magnija trūkums: kā pazīt dzelti starp zaļām dzīslām",
+      "href": "/raksti/magnija-trukums-augiem"
+    },
+    {
+      "label": "Kāpēc lapas dzeltē — visi cēloņi",
+      "href": "/raksti/kapec-lapas-dzelte"
+    },
+    {
+      "label": "Nātru virca slāpekļa mēslošanai",
+      "href": "/receptes/natru-virca"
+    },
+    {
+      "label": "Augsnes temperatūra un kad stādīt",
+      "href": "/raksti/augsnes-temperatura"
+    }
   ]
 }

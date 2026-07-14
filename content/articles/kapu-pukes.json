@@ -2,7 +2,27 @@
   "title": "Kapu puķes: ko stādīt, kas zied visu sezonu un maz jākopj",
   "slug": "kapu-pukes",
   "category": "Praktiski",
+  "intent": "how-to",
   "excerpt": "Kapu puķes: ko stādīt, lai dobe zied visu vasaru un rudeni, bet maz jākopj? Izturīgas, sausumu paciešošas puķes saulei un ēnai un kā saplānot kapu kopiņu.",
+  "shortAnswer": "Reti kurš mums brauc uz kapiem katru nedēļu.  Tieši tāpēc galvenais jautājums nav “kas ir skaistākais”, bet gan “kas izdzīvos, ja es atbraukšu reizi divās trīs nedēļās un nelaistīšu”.",
+  "primaryQuery": "kapu puķes: ko stādīt, kas zied visu sezonu un maz jākopj",
+  "publishedAt": "2026-06-29",
+  "updatedAt": "2026-06-29",
+  "entities": {},
+  "relatedSlugs": [
+    "kaiminaugi",
+    "darza-pukes-kas-zied-visu-vasaru"
+  ],
+  "sources": [
+    {
+      "label": "Latvijas Lauku konsultāciju un izglītības centrs",
+      "url": "https://llkc.lv/"
+    },
+    {
+      "label": "Royal Horticultural Society — Advice",
+      "url": "https://www.rhs.org.uk/advice"
+    }
+  ],
   "readMinutes": 6,
   "body": [
     {
@@ -57,12 +77,33 @@
     }
   ],
   "links": [
-    { "label": "Begonijas: stādīšana un kopšana", "href": "/pukes/begonijas" },
-    { "label": "Krizantēmas — rudens ziedu karaliene", "href": "/pukes/krizantemas" },
-    { "label": "Samtenes: izturīgas vasaras puķes", "href": "/pukes/samtenes" },
-    { "label": "Hostas ēnainai vietai", "href": "/pukes/hostas" },
-    { "label": "Atraitnītes pavasara un rudens krāsai", "href": "/pukes/atraitnites" },
-    { "label": "Kaimiņaugi: kuri augi viens otram palīdz", "href": "/raksti/kaiminaugi" },
-    { "label": "Dārza puķes, kas zied visu vasaru", "href": "/raksti/darza-pukes-kas-zied-visu-vasaru" }
+    {
+      "label": "Begonijas: stādīšana un kopšana",
+      "href": "/pukes/begonijas"
+    },
+    {
+      "label": "Krizantēmas — rudens ziedu karaliene",
+      "href": "/pukes/krizantemas"
+    },
+    {
+      "label": "Samtenes: izturīgas vasaras puķes",
+      "href": "/pukes/samtenes"
+    },
+    {
+      "label": "Hostas ēnainai vietai",
+      "href": "/pukes/hostas"
+    },
+    {
+      "label": "Atraitnītes pavasara un rudens krāsai",
+      "href": "/pukes/atraitnites"
+    },
+    {
+      "label": "Kaimiņaugi: kuri augi viens otram palīdz",
+      "href": "/raksti/kaiminaugi"
+    },
+    {
+      "label": "Dārza puķes, kas zied visu vasaru",
+      "href": "/raksti/darza-pukes-kas-zied-visu-vasaru"
+    }
   ]
 }

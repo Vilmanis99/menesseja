@@ -2,7 +2,36 @@
   "title": "Kāpēc cukini un kabači pūst galā (un kā ražu glābt)",
   "slug": "kapec-cukini-pust-gala",
   "category": "Problēmas",
+  "intent": "problem",
   "excerpt": "Kāpēc cukini pūst galā? Visbiežāk vainīga slikta apputeksnēšana vai mitruma svārstības, nevis slimība. Uzzini, kā atšķirt cēloni un ražu glābt vēl šosezon.",
+  "shortAnswer": "Krūms aug kupls, ziedi atveras, bet jaunie cukini vai kabači, tikko sasnieguši pāris centimetru garumu, no zieda gala kļūst dzelteni, mīksti un sapūst.  Reizēm pūšana sākas vēl uz krūma, reizēm — pirmajā vai otrajā dienā pēc noplūkšanas.",
+  "primaryQuery": "kāpēc cukini un kabači pūst galā",
+  "publishedAt": "2026-06-22",
+  "updatedAt": "2026-06-22",
+  "entities": {
+    "crops": [
+      "kabaci",
+      "kirbji"
+    ],
+    "recipes": [
+      "olu-caumalu-meslojums"
+    ]
+  },
+  "relatedSlugs": [
+    "kapec-tomatiem-galotnu-puve",
+    "kaiminaugi",
+    "kapec-gurku-aizmetni-dzelte-un-nokrit"
+  ],
+  "sources": [
+    {
+      "label": "Latvijas Lauku konsultāciju un izglītības centrs",
+      "url": "https://llkc.lv/"
+    },
+    {
+      "label": "Royal Horticultural Society — Advice",
+      "url": "https://www.rhs.org.uk/advice"
+    }
+  ],
   "readMinutes": 6,
   "body": [
     {
@@ -56,11 +85,29 @@
     }
   ],
   "links": [
-    { "label": "Kabaču sēšana, stādīšana un kopšana", "href": "/augi/kabaci" },
-    { "label": "Ķirbju audzēšana un kopšana", "href": "/augi/kirbji" },
-    { "label": "Kāpēc tomātiem galotņu puve un kā to apturēt", "href": "/raksti/kapec-tomatiem-galotnu-puve" },
-    { "label": "Olu čaumalu mēslojums kalcijam augsnē", "href": "/receptes/olu-caumalu-meslojums" },
-    { "label": "Kaimiņaugi: kas palīdz piesaistīt apputeksnētājus", "href": "/raksti/kaiminaugi" },
-    { "label": "Kāpēc gurķu aizmetņi dzeltē un nokrīt", "href": "/raksti/kapec-gurku-aizmetni-dzelte-un-nokrit" }
+    {
+      "label": "Kabaču sēšana, stādīšana un kopšana",
+      "href": "/augi/kabaci"
+    },
+    {
+      "label": "Ķirbju audzēšana un kopšana",
+      "href": "/augi/kirbji"
+    },
+    {
+      "label": "Kāpēc tomātiem galotņu puve un kā to apturēt",
+      "href": "/raksti/kapec-tomatiem-galotnu-puve"
+    },
+    {
+      "label": "Olu čaumalu mēslojums kalcijam augsnē",
+      "href": "/receptes/olu-caumalu-meslojums"
+    },
+    {
+      "label": "Kaimiņaugi: kas palīdz piesaistīt apputeksnētājus",
+      "href": "/raksti/kaiminaugi"
+    },
+    {
+      "label": "Kāpēc gurķu aizmetņi dzeltē un nokrīt",
+      "href": "/raksti/kapec-gurku-aizmetni-dzelte-un-nokrit"
+    }
   ]
 }

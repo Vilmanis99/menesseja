@@ -2,7 +2,34 @@
   "title": "Kad un kā novākt ķiplokus un pareizi tos izžāvēt",
   "slug": "kad-novakt-kiplokus",
   "category": "Praktiski",
+  "intent": "how-to",
   "excerpt": "Jūlijs ir ķiploku laiks. Uzzini, pēc kādām pazīmēm saproti, ka galviņas gatavas, kā tās pareizi izrakt (nevis izraut) un kā 2–3 nedēļas izžāvēt, lai ķiploki labi glabājas līdz pavasarim.",
+  "shortAnswer": "Tu izej dārzā jūlijā, paskaties uz ķiploku dobi un redzi, ka apakšējie laksti sākuši dzeltēt.  Rodas tā nemiera sajūta: vai jau laiks rakt, vai vēl jāgaida?",
+  "primaryQuery": "kad un kā novākt ķiplokus un pareizi tos izžāvēt",
+  "publishedAt": "2026-06-30",
+  "updatedAt": "2026-07-06",
+  "entities": {
+    "crops": [
+      "kiploki"
+    ],
+    "pests": [
+      "sipolu-musa"
+    ]
+  },
+  "relatedSlugs": [
+    "kapec-kiplokiem-dzelte-lapas",
+    "kapec-sipoliem-dzelte-loki"
+  ],
+  "sources": [
+    {
+      "label": "Latvijas Lauku konsultāciju un izglītības centrs",
+      "url": "https://llkc.lv/"
+    },
+    {
+      "label": "Royal Horticultural Society — Advice",
+      "url": "https://www.rhs.org.uk/advice"
+    }
+  ],
   "readMinutes": 6,
   "body": [
     {

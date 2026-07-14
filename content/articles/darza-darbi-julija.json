@@ -2,7 +2,41 @@
   "title": "Dārza darbi jūlijā: ko sēt, ko novākt un kam pievērst uzmanību",
   "slug": "darza-darbi-julija",
   "category": "Praktiski",
+  "intent": "seasonal",
   "excerpt": "Jūlijs Latvijas dārzā ir gan ražas, gan rūpju mēnesis: vāc pirmos ķiplokus un ogas, sēj otro ražu, laisti gudri karstumā un seko līdzi kaitēkļiem. Šis pārskats visu jūlijā darāmo saliek vienkopus.",
+  "shortAnswer": "Jūlijs ir dīvains mēnesis dārzā.  No vienas puses, viss zaļo un zied, pirmā raža jau uz galda, un beidzot jūti, ka pavasara darbs nav bijis veltīgs.",
+  "primaryQuery": "dārza darbi jūlijā: ko sēt, ko novākt un kam pievērst uzmanību",
+  "publishedAt": "2026-06-30",
+  "updatedAt": "2026-07-06",
+  "seasonalMonths": [
+    7
+  ],
+  "entities": {
+    "crops": [
+      "kiploki"
+    ],
+    "pests": [
+      "lakstu-puve"
+    ]
+  },
+  "relatedSlugs": [
+    "darza-darbi-augusta",
+    "ko-set-julija-augusta",
+    "kad-novakt-kiplokus",
+    "ka-laistit-darzu-karstuma",
+    "kapec-tomati-zied-bet-neveidojas-augli",
+    "kapec-tomatiem-galotnu-puve"
+  ],
+  "sources": [
+    {
+      "label": "Latvijas Lauku konsultāciju un izglītības centrs",
+      "url": "https://llkc.lv/"
+    },
+    {
+      "label": "Royal Horticultural Society — Advice",
+      "url": "https://www.rhs.org.uk/advice"
+    }
+  ],
   "readMinutes": 6,
   "body": [
     {
@@ -70,6 +104,10 @@
     }
   ],
   "links": [
+    {
+      "label": "Ko vēl sēt jūlijā otrajai ražai",
+      "href": "/ko-set/julijs"
+    },
     {
       "label": "Dārza darbi augustā — nākamā mēneša pārskats",
       "href": "/raksti/darza-darbi-augusta"

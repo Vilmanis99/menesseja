@@ -12,11 +12,12 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "bad-request" }, { status: 400 });
   }
   // Honeypot: real users never see/fill "website"; bots do. Pretend success.
-  if (body.website) return NextResponse.json({ ok: true });
+  if (body.website) return NextResponse.json({ status: "pending-confirmation" }, { status: 202 });
 
   const result = await subscribeToNewsletter(body.email ?? "", body.source);
-  if (result === "ok") return NextResponse.json({ ok: true });
-  if (result === "invalid") return NextResponse.json({ error: "invalid" }, { status: 400 });
-  if (result === "not-configured") return NextResponse.json({ error: "not-configured" }, { status: 503 });
-  return NextResponse.json({ error: "server" }, { status: 500 });
+  if (result === "pending-confirmation") return NextResponse.json({ status: result }, { status: 202 });
+  if (result === "already-subscribed") return NextResponse.json({ status: result });
+  if (result === "invalid") return NextResponse.json({ status: result }, { status: 400 });
+  if (result === "not-configured") return NextResponse.json({ status: result }, { status: 503 });
+  return NextResponse.json({ status: "error" }, { status: 500 });
 }

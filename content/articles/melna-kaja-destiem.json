@@ -2,7 +2,35 @@
   "title": "Melnā kāja: kāpēc dēsti nogāžas pie zemes un kā to atpazīt",
   "slug": "melna-kaja-destiem",
   "category": "Problēmas",
+  "intent": "problem",
   "excerpt": "Melnā kāja dēstiem padara kātiņu pie zemes tievu un melnu, un sējenis nogāžas. Uzzini, kā to atšķirt no izstīdzēšanas un pārlaistīšanas un kā glābt pārējos.",
+  "shortAnswer": "Tu paskaties uz savu dēstu kasti, un kāds sējenis ir vienkārši nogāzies — guļ gar zemi, it kā kāds to būtu nokniebis pie pamatnes.  Lapas augšā vēl izskatās zaļas, bet pati kātiņa apakša ir tieva, ūdeņaina un tumša.",
+  "primaryQuery": "melnā kāja: kāpēc dēsti nogāžas pie zemes un kā to atpazīt",
+  "publishedAt": "2026-06-29",
+  "updatedAt": "2026-06-29",
+  "entities": {
+    "pests": [
+      "melnkaja"
+    ],
+    "recipes": [
+      "kumelisu-uzlejums"
+    ]
+  },
+  "relatedSlugs": [
+    "desti-izstidz",
+    "parlaisti-desti",
+    "destu-audzesana-uz-palodzes"
+  ],
+  "sources": [
+    {
+      "label": "Latvijas Lauku konsultāciju un izglītības centrs",
+      "url": "https://llkc.lv/"
+    },
+    {
+      "label": "Royal Horticultural Society — Advice",
+      "url": "https://www.rhs.org.uk/advice"
+    }
+  ],
   "readMinutes": 5,
   "body": [
     {
@@ -51,10 +79,25 @@
     }
   ],
   "links": [
-    { "label": "Melnkāja sējeņiem: cēloņi, kontrole un dabīgie līdzekļi", "href": "/kaitekli/melnkaja" },
-    { "label": "Kāpēc dēsti izstīdz un kā to novērst", "href": "/raksti/desti-izstidz" },
-    { "label": "Pārlaistīti dēsti: kā pazīt un glābt", "href": "/raksti/parlaisti-desti" },
-    { "label": "Dēstu audzēšana uz palodzes soli pa solim", "href": "/raksti/destu-audzesana-uz-palodzes" },
-    { "label": "Kumelīšu uzlējums dīgstu stiprināšanai", "href": "/receptes/kumelisu-uzlejums" }
+    {
+      "label": "Melnkāja sējeņiem: cēloņi, kontrole un dabīgie līdzekļi",
+      "href": "/kaitekli/melnkaja"
+    },
+    {
+      "label": "Kāpēc dēsti izstīdz un kā to novērst",
+      "href": "/raksti/desti-izstidz"
+    },
+    {
+      "label": "Pārlaistīti dēsti: kā pazīt un glābt",
+      "href": "/raksti/parlaisti-desti"
+    },
+    {
+      "label": "Dēstu audzēšana uz palodzes soli pa solim",
+      "href": "/raksti/destu-audzesana-uz-palodzes"
+    },
+    {
+      "label": "Kumelīšu uzlējums dīgstu stiprināšanai",
+      "href": "/receptes/kumelisu-uzlejums"
+    }
   ]
 }

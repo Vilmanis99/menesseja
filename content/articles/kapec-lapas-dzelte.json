@@ -2,7 +2,23 @@
   "title": "Kāpēc lapas dzeltē — visi biežākie cēloņi un kā tos atšķirt",
   "slug": "kapec-lapas-dzelte",
   "category": "Problēmas",
+  "intent": "problem",
   "excerpt": "Lapas dzeltē no pārlaistīšanas, slāpekļa vai dzelzs trūkuma vai vienkārši no dabīgas novecošanas. Atšķirt tos palīdz tas, kuras lapas dzeltē pirmās.",
+  "shortAnswer": "Dzeltējošas lapas ir viens no biežākajiem dārznieka satraukumiem — un arī viens no maldinošākajiem, jo viens un tas pats simptoms var nozīmēt pavisam dažādas lietas.  Labā ziņa: pēc tā, kuras lapas dzeltē un kā tieši, var diezgan droši noteikt cēloni un to novērst.",
+  "primaryQuery": "kāpēc lapas dzeltē",
+  "publishedAt": "2026-06-17",
+  "updatedAt": "2026-06-17",
+  "entities": {},
+  "sources": [
+    {
+      "label": "Latvijas Lauku konsultāciju un izglītības centrs",
+      "url": "https://llkc.lv/"
+    },
+    {
+      "label": "Royal Horticultural Society — Advice",
+      "url": "https://www.rhs.org.uk/advice"
+    }
+  ],
   "readMinutes": 7,
   "body": [
     {

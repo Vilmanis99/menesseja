@@ -2,7 +2,34 @@
   "title": "Rožu melnplankumainība: kāpēc rožu lapas klājas melniem plankumiem un kā ārstēt",
   "slug": "rozu-melnplankumainiba-ka-arstet",
   "category": "Problēmas",
+  "intent": "problem",
   "excerpt": "Melni plankumi uz rožu lapām — kā ārstēt? Tā ir sēņu slimība melnplankumainība, kas uzliesmo mitrā vasarā. Uzzini, kā to atpazīt, dabīgi apkarot un novērst.",
+  "shortAnswer": "Roze zied skaisti, bet tad uz lapām parādās tumši, gandrīz melni plankumi ar izplūdušām, neregulārām malām.  Drīz lapa ap tiem kļūst dzeltena, un pēc dažām dienām tā nokrīt zemē.",
+  "primaryQuery": "rožu melnplankumainība: kāpēc rožu lapas klājas melniem plankumiem un kā ārstēt",
+  "publishedAt": "2026-06-22",
+  "updatedAt": "2026-06-22",
+  "entities": {
+    "pests": [
+      "miltrasa"
+    ],
+    "recipes": [
+      "kosas-novarijums",
+      "koku-pelnu-skidums"
+    ]
+  },
+  "relatedSlugs": [
+    "ka-apgriezt-rozes-pavasari"
+  ],
+  "sources": [
+    {
+      "label": "Latvijas Lauku konsultāciju un izglītības centrs",
+      "url": "https://llkc.lv/"
+    },
+    {
+      "label": "Royal Horticultural Society — Advice",
+      "url": "https://www.rhs.org.uk/advice"
+    }
+  ],
   "readMinutes": 6,
   "body": [
     {
@@ -54,10 +81,25 @@
     }
   ],
   "links": [
-    { "label": "Rožu stādīšana, kopšana un slimības", "href": "/pukes/rozes" },
-    { "label": "Kosas novārījums pret sēņu slimībām", "href": "/receptes/kosas-novarijums" },
-    { "label": "Koku pelnu šķīdums lapu apsmidzināšanai", "href": "/receptes/koku-pelnu-skidums" },
-    { "label": "Kā apgriezt rozes pavasarī", "href": "/raksti/ka-apgriezt-rozes-pavasari" },
-    { "label": "Miltrasa: baltais aplikums uz lapām", "href": "/kaitekli/miltrasa" }
+    {
+      "label": "Rožu stādīšana, kopšana un slimības",
+      "href": "/pukes/rozes"
+    },
+    {
+      "label": "Kosas novārījums pret sēņu slimībām",
+      "href": "/receptes/kosas-novarijums"
+    },
+    {
+      "label": "Koku pelnu šķīdums lapu apsmidzināšanai",
+      "href": "/receptes/koku-pelnu-skidums"
+    },
+    {
+      "label": "Kā apgriezt rozes pavasarī",
+      "href": "/raksti/ka-apgriezt-rozes-pavasari"
+    },
+    {
+      "label": "Miltrasa: baltais aplikums uz lapām",
+      "href": "/kaitekli/miltrasa"
+    }
   ]
 }

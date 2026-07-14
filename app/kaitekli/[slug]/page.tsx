@@ -21,8 +21,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const p = getProblem(slug);
   if (!p) return {};
-  const title = `${p.name} — pazīmes un dabīga apkarošana dārzā`;
-  const description = `${p.tagline} Kā atpazīt, dabīgi apkarot un novērst ${p.name.toLowerCase()} Latvijas dārzā — tautas līdzekļi un receptes.`;
+  const title = `${p.name} — pazīmes un ierobežošana dārzā`;
+  const description = `${p.tagline} Kā pārbaudīt pazīmes, rīkoties pareizā secībā un novērst ${p.name.toLowerCase()} Latvijas dārzā.`;
   return {
     title,
     description,
@@ -47,10 +47,11 @@ export default async function ProblemPage({ params }: { params: Promise<{ slug: 
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: `${p.name} — pazīmes un dabīga apkarošana`,
+    headline: `${p.name} — pazīmes un ierobežošana`,
     about: p.name,
+    ...(p.image ? { image: canonical(p.image.src) } : {}),
     inLanguage: "lv",
-    dateModified: `${DATA_REVIEWED}-01`,
+    dateModified: p.updatedAt ?? `${DATA_REVIEWED}-01`,
     isPartOf: { "@type": "WebSite", name: SITE_NAME, url: canonical("/") },
     publisher: { "@type": "Organization", name: SITE_NAME, url: canonical("/") },
     author: { "@type": "Organization", name: SITE_NAME, url: canonical("/") },
@@ -77,26 +78,59 @@ export default async function ProblemPage({ params }: { params: Promise<{ slug: 
       <JsonLd data={breadcrumb} />
       {faqJsonLd && <JsonLd data={faqJsonLd} />}
 
-      <nav className="mb-md flex items-center gap-1 text-label-sm text-on-surface-variant">
-        <Link href="/kaitekli" className="hover:text-primary">Kaitēkļi un slimības</Link>
+      <nav className="mb-sm flex items-center gap-1 text-label-sm text-on-surface-variant" aria-label="Atpakaļceļš">
+        <Link href="/kaitekli" className="inline-flex min-h-11 items-center hover:text-primary">Kaitēkļi un slimības</Link>
         <Icon name="chevron_right" size="14px" />
         <span className="text-on-surface">{p.name}</span>
       </nav>
 
-      <header className="mb-lg flex items-center gap-md">
-        <span className="text-6xl leading-none">{p.emoji}</span>
-        <div>
-          <p className="flex items-center gap-1.5 text-label-sm uppercase tracking-[0.2em] text-tertiary">
-            <Icon name={tm.icon} size="16px" /> {tm.label}
-            <span className={`ml-1 ${sev.tone}`}>● {sev.label}</span>
-          </p>
-          <h1 className="text-headline-lg-mobile text-primary md:text-display-lg">{p.name}</h1>
-          {p.latin && <p className="text-body-md italic text-on-surface-variant">{p.latin}</p>}
-          <p className="mt-1 text-body-lg text-on-surface-variant">{p.tagline}</p>
-        </div>
-      </header>
+      <Card tone="highest" elevated linen className="pest-hero mb-md p-md sm:p-lg">
+        <header className="flex items-start gap-md">
+          <span className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-tertiary-container/25 text-5xl leading-none sm:h-20 sm:w-20 sm:text-6xl" aria-hidden="true">
+            {p.emoji}
+          </span>
+          <div className="min-w-0">
+            <p className="flex flex-wrap items-center gap-1.5 text-label-sm uppercase tracking-[0.16em] text-tertiary">
+              <Icon name={tm.icon} size="16px" /> {tm.label}
+              <span className={`ml-1 ${sev.tone}`}>● {sev.label}</span>
+            </p>
+            <h1 className="text-headline-lg-mobile text-primary md:text-display-lg">{p.name}</h1>
+            {p.latin && <p className="text-body-md italic text-on-surface-variant">{p.latin}</p>}
+            <p className="mt-2 max-w-[36rem] text-body-lg text-on-surface-variant">{p.tagline}</p>
+          </div>
+        </header>
+      </Card>
 
-      <div className="mb-lg space-y-sm">
+      {p.shortAnswer && (
+        <aside className="mb-md rounded-xl border-l-4 border-primary bg-primary-container/15 p-md" aria-labelledby="short-answer-heading">
+          <p id="short-answer-heading" className="mb-1 flex items-center gap-1.5 text-label-md font-semibold uppercase tracking-wide text-primary">
+            <Icon name="lightbulb" size="18px" /> Īsā atbilde
+          </p>
+          <p className="text-body-lg leading-relaxed text-on-surface">{p.shortAnswer}</p>
+        </aside>
+      )}
+
+      {p.image && (
+        <figure className="mb-md overflow-hidden rounded-xl border border-outline-variant/10">
+          {/* Real, correctly-licensed identification photo — far better than an emoji
+              for actually recognising the pest on your own plant. */}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={p.image.src}
+            alt={p.image.alt ?? `${p.name} — reāls foto atpazīšanai`}
+            loading="eager"
+            className="max-h-[360px] w-full object-cover"
+          />
+          <figcaption className="bg-surface-container px-3 py-1.5 text-label-sm text-on-surface-variant">
+            Foto: {p.image.credit} · {p.image.license} ·{" "}
+            <a href={p.image.sourceUrl} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+              Wikimedia Commons
+            </a>
+          </figcaption>
+        </figure>
+      )}
+
+      <div className="article-reading-surface mb-lg space-y-sm p-md sm:p-lg">
         {p.intro.map((t, i) => (
           <p key={i} className="text-body-lg leading-relaxed text-on-surface-variant">{t}</p>
         ))}
@@ -120,7 +154,7 @@ export default async function ProblemPage({ params }: { params: Promise<{ slug: 
               const href = crop ? (flowerSet.has(crop.id) ? `/pukes/${crop.id}` : `/augi/${crop.id}`) : null;
               return (
                 <span key={i} className="text-on-surface">
-                  {href ? <Link href={href} className="text-primary hover:underline">{a}</Link> : a}
+                  {href ? <Link href={href} className="inline-flex min-h-11 items-center text-primary hover:underline">{a}</Link> : a}
                   {i < p.affects.length - 1 ? "," : ""}
                 </span>
               );
@@ -137,9 +171,9 @@ export default async function ProblemPage({ params }: { params: Promise<{ slug: 
             {p.compare.intro && (
               <p className="mb-sm text-body-md leading-relaxed text-on-surface-variant">{p.compare.intro}</p>
             )}
-            <ul className="space-y-sm">
+            <ul className="grid gap-2 sm:grid-cols-2">
               {p.compare.items.map((it, i) => (
-                <li key={i} className="flex items-start gap-2 text-body-md text-on-surface-variant">
+                <li key={i} className="flex items-start gap-2 rounded-xl bg-surface-container p-sm text-body-md text-on-surface-variant">
                   <Icon name="eco" size="16px" className="mt-1 shrink-0 text-tertiary" />
                   <span>
                     {it.href ? (
@@ -157,8 +191,7 @@ export default async function ProblemPage({ params }: { params: Promise<{ slug: 
         </>
       ) : null}
 
-      {/* Natural control */}
-      <h2 className="mb-sm text-headline-md text-on-surface">Dabīga apkarošana</h2>
+      <h2 className="mb-sm text-headline-md text-on-surface">Ko darīt tagad</h2>
       <Card tone="high" elevated accent="primary" className="mb-md p-md">
         <ol className="space-y-sm">
           {p.control.map((s, i) => (
@@ -170,6 +203,12 @@ export default async function ProblemPage({ params }: { params: Promise<{ slug: 
             </li>
           ))}
         </ol>
+        {p.safetyNote && (
+          <div className="mt-md flex items-start gap-2 border-t border-outline-variant/15 pt-md text-label-md leading-relaxed text-on-surface-variant">
+            <Icon name="verified_user" size="18px" className="mt-0.5 shrink-0 text-tertiary" />
+            <p>{p.safetyNote}</p>
+          </div>
+        )}
       </Card>
 
       {/* Linked recipes from our vault */}
@@ -180,7 +219,7 @@ export default async function ProblemPage({ params }: { params: Promise<{ slug: 
           </p>
           <div className="flex flex-wrap gap-2">
             {recipes.map((r) => (
-              <Link key={r.slug} href={`/receptes/${r.slug}`} className="inline-flex items-center gap-1 rounded-full bg-secondary-container/25 px-3 py-1.5 text-label-md text-secondary-fixed hover:brightness-110">
+              <Link key={r.slug} href={`/receptes/${r.slug}`} className="inline-flex min-h-11 items-center gap-1 rounded-full bg-secondary-container/25 px-3 py-1.5 text-label-md text-secondary-fixed hover:brightness-110">
                 <Icon name="compost" size="16px" /> {r.name}
               </Link>
             ))}
@@ -220,24 +259,49 @@ export default async function ProblemPage({ params }: { params: Promise<{ slug: 
       {p.faq?.length ? (
         <>
           <h2 className="mb-sm text-headline-md text-on-surface">Biežākie jautājumi</h2>
-          <div className="mb-lg space-y-2">
+          <div className="mb-lg divide-y divide-outline-variant/15 overflow-hidden rounded-xl border border-outline-variant/10 bg-surface-container">
             {p.faq.map((q) => (
-              <Card key={q.q} tone="container" className="p-md">
-                <p className="mb-1 font-semibold text-on-surface">{q.q}</p>
-                <p className="text-body-md text-on-surface-variant">{q.a}</p>
-              </Card>
+              <details key={q.q} className="group px-md open:bg-surface-container-high">
+                <summary className="flex min-h-14 cursor-pointer list-none items-center gap-2 py-sm font-semibold text-on-surface marker:content-none">
+                  <span className="flex-1">{q.q}</span>
+                  <Icon name="expand_more" size="20px" className="shrink-0 text-primary transition-transform group-open:rotate-180" />
+                </summary>
+                <p className="pb-md text-body-md leading-relaxed text-on-surface-variant">{q.a}</p>
+              </details>
             ))}
           </div>
         </>
       ) : null}
 
-      {recipes.length === 0 && (
-        <Card tone="container" className="mb-lg flex items-center gap-md p-md">
-          <Icon name="menu_book" className="text-primary" size="26px" />
-          <p className="flex-1 text-body-md text-on-surface">
-            Meklē dabīgus līdzekļus? <Link href="/receptes" className="text-primary hover:underline">Apskati mēslojuma un aizsardzības receptes →</Link>
+      {p.relatedLinks && p.relatedLinks.length > 0 && (
+        <section className="mb-lg" aria-labelledby="problem-related-heading">
+          <h2 id="problem-related-heading" className="mb-sm text-headline-md text-on-surface">Saistītie padomi</h2>
+          <div className="grid gap-2 sm:grid-cols-2">
+            {p.relatedLinks.map((link) => (
+              <Link key={link.href} href={link.href} className="flex min-h-14 items-center gap-2 rounded-xl border border-outline-variant/10 bg-surface-container px-md py-sm text-body-md font-semibold text-on-surface hover:bg-surface-container-high hover:text-primary">
+                <Icon name="arrow_outward" size="18px" className="shrink-0 text-primary" /> {link.label}
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {p.sources && p.sources.length > 0 && (
+        <section className="mb-lg border-t border-outline-variant/10 pt-md" aria-labelledby="problem-sources-heading">
+          <h2 id="problem-sources-heading" className="text-headline-md text-on-surface">Avoti un pārbaude</h2>
+          <p className="mt-1 text-label-md text-on-surface-variant">
+            Saturs pārbaudīts {p.updatedAt ? new Intl.DateTimeFormat("lv-LV").format(new Date(`${p.updatedAt}T12:00:00Z`)) : "redakcijas pārbaudē"}.
           </p>
-        </Card>
+          <ul className="mt-2 space-y-1">
+            {p.sources.map((source) => (
+              <li key={source.url}>
+                <a href={source.url} target="_blank" rel="noreferrer" className="inline-flex min-h-11 items-center gap-1 text-label-md text-primary hover:underline">
+                  {source.label} <Icon name="open_in_new" size="15px" />
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
       )}
 
       {siblings.length > 0 && (
@@ -245,7 +309,7 @@ export default async function ProblemPage({ params }: { params: Promise<{ slug: 
           <h2 className="mb-sm text-headline-md text-on-surface">Citas dārza problēmas</h2>
           <div className="flex flex-wrap gap-2">
             {siblings.map((x) => (
-              <Link key={x.slug} href={`/kaitekli/${x.slug}`} className="inline-flex items-center gap-1 rounded-full bg-surface-container px-3 py-1.5 text-label-md text-on-surface hover:text-primary">
+              <Link key={x.slug} href={`/kaitekli/${x.slug}`} className="inline-flex min-h-11 items-center gap-1 rounded-full bg-surface-container px-3 py-1.5 text-label-md text-on-surface hover:text-primary">
                 {x.emoji} {x.name}
               </Link>
             ))}

@@ -9,10 +9,11 @@ import { CROPS, CATEGORIES, type Category } from "@/lib/planting-crops";
 import { cropById, GARDEN_AREAS } from "@/lib/garden";
 import { cropEmoji } from "@/lib/crop-visual";
 import { useGarden } from "@/components/garden-context";
+import { track } from "@/lib/analytics";
 
 /** "Pievienot augu" — opens an accessible sheet/modal. Also auto-opens when a
  *  crop page deep-links via ?pievienot=<cropId>. */
-export function AddPlantButton() {
+export function AddPlantButton({ label = "Pievienot augu", onAdded }: { label?: string; onAdded?: () => void } = {}) {
   const [open, setOpen] = useState(false);
   const [initialCrop, setInitialCrop] = useState<string | null>(null);
 
@@ -21,6 +22,7 @@ export function AddPlantButton() {
     if (id && cropById(id)) {
       setInitialCrop(id);
       setOpen(true);
+      track("garden_add_started", { crop_id: id, source: "deep_link" });
       // clean the URL so refresh doesn't re-open
       window.history.replaceState({}, "", window.location.pathname);
     }
@@ -28,12 +30,13 @@ export function AddPlantButton() {
 
   return (
     <>
-      <Button icon="add" onClick={() => setOpen(true)}>
-        Pievienot augu
+      <Button icon="add" onClick={() => { track("garden_add_started", { source: "dashboard" }); setOpen(true); }}>
+        {label}
       </Button>
       {open && (
         <AddPlantSheet
           initialCrop={initialCrop}
+          onAdded={onAdded}
           onClose={() => {
             setOpen(false);
             setInitialCrop(null);
@@ -44,7 +47,7 @@ export function AddPlantButton() {
   );
 }
 
-function AddPlantSheet({ onClose, initialCrop }: { onClose: () => void; initialCrop?: string | null }) {
+function AddPlantSheet({ onClose, initialCrop, onAdded }: { onClose: () => void; initialCrop?: string | null; onAdded?: () => void }) {
   const { addPlant } = useGarden();
   const initialCat = (initialCrop && cropById(initialCrop)?.category) || "all";
   const [cat, setCat] = useState<Category | "all">(initialCat);
@@ -54,6 +57,8 @@ function AddPlantSheet({ onClose, initialCrop }: { onClose: () => void; initialC
 
   const pick = (cropId: string) => {
     addPlant(cropId, area);
+    track("garden_add_completed", { crop_id: cropId, area });
+    onAdded?.();
     onClose();
   };
 
@@ -62,7 +67,7 @@ function AddPlantSheet({ onClose, initialCrop }: { onClose: () => void; initialC
       onClose={onClose}
       zClass="z-[100]"
       labelledBy="add-plant-title"
-      panelClassName="flex max-h-[85vh] w-full flex-col rounded-t-2xl border border-outline-variant/20 bg-surface-container-high shadow-2xl sm:max-w-[32rem] sm:rounded-2xl"
+      panelClassName="modal-panel-safe flex w-full flex-col rounded-t-2xl border border-outline-variant/20 bg-surface-container-high shadow-2xl sm:max-w-[32rem] sm:rounded-2xl"
     >
       {/* Header */}
       <div className="border-b border-outline-variant/10 p-md">
@@ -113,7 +118,7 @@ function AddPlantSheet({ onClose, initialCrop }: { onClose: () => void; initialC
           <button
             key={c.id}
             onClick={() => pick(c.id)}
-            className={`flex items-center gap-2 rounded-xl border bg-surface-container p-sm text-left transition-all hover:border-primary/50 active:scale-95 ${
+            className={`flex min-h-14 items-center gap-2 rounded-xl border bg-surface-container p-sm text-left transition-all duration-200 hover:border-primary/50 active:scale-[0.98] ${
               c.id === initialCrop ? "border-primary ring-1 ring-primary" : "border-outline-variant/20"
             }`}
           >

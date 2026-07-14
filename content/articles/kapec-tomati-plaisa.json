@@ -2,7 +2,27 @@
   "title": "Kāpēc tomāti plaisā un kā to novērst",
   "slug": "kapec-tomati-plaisa",
   "category": "Problēmas",
+  "intent": "problem",
   "excerpt": "Tomāti plaisā galvenokārt no nevienmērīgas laistīšanas — kad pēc sausuma pēkšņi uznāk lietus vai bagātīga laistīšana. Risinājums ir stabils mitrums un mulča.",
+  "shortAnswer": "Tu ej uz siltumnīcu priecāties par skaistajiem, gandrīz gataviem tomātiem — un ieraugi, ka tiem pāri augļa virsmai vijas plaisas.  Dažas ir sīkas un gredzenveidā ap kātiņu, citas dziļas un staro no augšas uz leju.",
+  "primaryQuery": "kāpēc tomāti plaisā un kā to novērst",
+  "publishedAt": "2026-06-17",
+  "updatedAt": "2026-06-17",
+  "entities": {
+    "crops": [
+      "tomati"
+    ]
+  },
+  "sources": [
+    {
+      "label": "Latvijas Lauku konsultāciju un izglītības centrs",
+      "url": "https://llkc.lv/"
+    },
+    {
+      "label": "Royal Horticultural Society — Advice",
+      "url": "https://www.rhs.org.uk/advice"
+    }
+  ],
   "readMinutes": 6,
   "body": [
     {

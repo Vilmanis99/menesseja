@@ -2,7 +2,32 @@
   "title": "Gladiolas: kad stādīt, kā kopt un griezt pušķim",
   "slug": "gladiolu-stadisana-un-kopsana",
   "category": "Praktiski",
+  "intent": "how-to",
   "excerpt": "Gladiolas stādīšana un kopšana solis pa solim: kad likt gumus zemē pavasarī, cik dziļi, kā piesiet pie balsta, laistīt, kad griezt pušķim un kā izrakt ziemai.",
+  "shortAnswer": "Gladiola ir tā puķe, kas augusta vidū dārzā paceļas kā svece — gara, taisna, ar ziedu virkni, kas atveras no apakšas uz augšu.  Tieši tāpēc to tik ļoti mīl pušķim: viens kāts vāzē izskatās kā vesels pušķis.",
+  "primaryQuery": "gladiolas: kad stādīt, kā kopt un griezt pušķim",
+  "publishedAt": "2026-06-29",
+  "updatedAt": "2026-06-29",
+  "entities": {
+    "recipes": [
+      "koku-pelnu-skidums"
+    ]
+  },
+  "relatedSlugs": [
+    "ka-glabat-dalijas-ziema",
+    "salnas-latvija",
+    "augoss-un-dilstoss-meness"
+  ],
+  "sources": [
+    {
+      "label": "Latvijas Lauku konsultāciju un izglītības centrs",
+      "url": "https://llkc.lv/"
+    },
+    {
+      "label": "Royal Horticultural Society — Advice",
+      "url": "https://www.rhs.org.uk/advice"
+    }
+  ],
   "readMinutes": 6,
   "body": [
     {
@@ -62,11 +87,29 @@
     }
   ],
   "links": [
-    { "label": "Gladiolas — auga apraksts un Mēness laiks", "href": "/pukes/gladiolas" },
-    { "label": "Dāliju stādīšana un kopšana", "href": "/pukes/dalijas" },
-    { "label": "Kā glabāt dāliju bumbuļus ziemā", "href": "/raksti/ka-glabat-dalijas-ziema" },
-    { "label": "Salnas Latvijā: kad gaidīt pirmo salu", "href": "/raksti/salnas-latvija" },
-    { "label": "Koku pelnu šķīdums stipriem kātiem un ziediem", "href": "/receptes/koku-pelnu-skidums" },
-    { "label": "Augošs un dilstošs Mēness dārza darbos", "href": "/raksti/augoss-un-dilstoss-meness" }
+    {
+      "label": "Gladiolas — auga apraksts un Mēness laiks",
+      "href": "/pukes/gladiolas"
+    },
+    {
+      "label": "Dāliju stādīšana un kopšana",
+      "href": "/pukes/dalijas"
+    },
+    {
+      "label": "Kā glabāt dāliju bumbuļus ziemā",
+      "href": "/raksti/ka-glabat-dalijas-ziema"
+    },
+    {
+      "label": "Salnas Latvijā: kad gaidīt pirmo salu",
+      "href": "/raksti/salnas-latvija"
+    },
+    {
+      "label": "Koku pelnu šķīdums stipriem kātiem un ziediem",
+      "href": "/receptes/koku-pelnu-skidums"
+    },
+    {
+      "label": "Augošs un dilstošs Mēness dārza darbos",
+      "href": "/raksti/augoss-un-dilstoss-meness"
+    }
   ]
 }

@@ -2,7 +2,35 @@
   "title": "Kāpēc tomāti zied, bet neveidojas augļi (aizmetņi nokrīt)",
   "slug": "kapec-tomati-zied-bet-neveidojas-augli",
   "category": "Problēmas",
+  "intent": "problem",
   "excerpt": "Tomāti zied, bet augļi neveidojas un ziedi nokrīt? Visbiežāk vainīgs karstums, slikta apputeksnēšana vai slāpekļa pārpalikums. Uzzini, kā to atpazīt un labot.",
+  "shortAnswer": "Tomāts ir saziedējis kā par godalgu — dzeltenu ziedu pilns, — bet pēc pāris dienām ziedi nodzeltē, sažūst un nobirst, neatstājot nekādu aizmetni.  Augļu kā nav, tā nav.",
+  "primaryQuery": "kāpēc tomāti zied, bet neveidojas augļi",
+  "publishedAt": "2026-06-22",
+  "updatedAt": "2026-06-22",
+  "entities": {
+    "crops": [
+      "tomati"
+    ],
+    "recipes": [
+      "koku-pelnu-skidums"
+    ]
+  },
+  "relatedSlugs": [
+    "siltumnica-vai-lauka",
+    "kapec-tomatiem-galotnu-puve",
+    "kapec-tomati-plaisa"
+  ],
+  "sources": [
+    {
+      "label": "Latvijas Lauku konsultāciju un izglītības centrs",
+      "url": "https://llkc.lv/"
+    },
+    {
+      "label": "Royal Horticultural Society — Advice",
+      "url": "https://www.rhs.org.uk/advice"
+    }
+  ],
   "readMinutes": 6,
   "body": [
     {
@@ -52,10 +80,25 @@
     }
   ],
   "links": [
-    { "label": "Tomātu audzēšana un kopšana", "href": "/augi/tomati" },
-    { "label": "Siltumnīca vai lauks: kur audzēt", "href": "/raksti/siltumnica-vai-lauka" },
-    { "label": "Kāpēc tomātiem galotņu puve", "href": "/raksti/kapec-tomatiem-galotnu-puve" },
-    { "label": "Kāpēc tomāti plaisā", "href": "/raksti/kapec-tomati-plaisa" },
-    { "label": "Koku pelnu šķīdums kālija mēslojumam", "href": "/receptes/koku-pelnu-skidums" }
+    {
+      "label": "Tomātu audzēšana un kopšana",
+      "href": "/augi/tomati"
+    },
+    {
+      "label": "Siltumnīca vai lauks: kur audzēt",
+      "href": "/raksti/siltumnica-vai-lauka"
+    },
+    {
+      "label": "Kāpēc tomātiem galotņu puve",
+      "href": "/raksti/kapec-tomatiem-galotnu-puve"
+    },
+    {
+      "label": "Kāpēc tomāti plaisā",
+      "href": "/raksti/kapec-tomati-plaisa"
+    },
+    {
+      "label": "Koku pelnu šķīdums kālija mēslojumam",
+      "href": "/receptes/koku-pelnu-skidums"
+    }
   ]
 }
