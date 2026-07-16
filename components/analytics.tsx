@@ -49,12 +49,6 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', '${GA_ID}');`}
       </Script>
-      <Script
-        id="ahrefs-analytics"
-        src="https://analytics.ahrefs.com/analytics.js"
-        data-key="VSYtbD2knOe7j3rYzA+qZA"
-        strategy="afterInteractive"
-      />
     </>
   );
 }

@@ -4,6 +4,7 @@ import { AppShell } from "@/components/app-shell";
 import { PwaRegister } from "@/components/pwa-register";
 import { Analytics } from "@/components/analytics";
 import { AdSense } from "@/components/adsense";
+import { AhrefsAnalytics } from "@/components/ahrefs-analytics";
 import { JsonLd } from "@/components/json-ld";
 import { SITE_URL } from "@/lib/seo";
 import "./globals.css";
@@ -98,6 +99,9 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap"
         />
         <AdSense />
+        {/* Ahrefs Web Analytics is cookieless (no consent required under GDPR),
+            so it loads for EVERY visitor — unlike GA4, which is consent-gated. */}
+        <AhrefsAnalytics />
       </head>
       <body className="min-h-screen">
         <JsonLd data={ORG_JSONLD} />
