@@ -1,6 +1,3 @@
-"use client";
-
-import { useMemo } from "react";
 import Link from "next/link";
 import { PageHeader } from "@/components/ui/page-header";
 import { Card } from "@/components/ui/card";
@@ -8,7 +5,8 @@ import { Icon } from "@/components/ui/icon";
 import { MoonPhase } from "@/components/moon-phase";
 import { moonForDate, phaseNameGenitive } from "@/lib/moon";
 import { sowingDays, ELEMENT_META } from "@/lib/biodynamic";
-import { useMounted } from "@/lib/use-mounted";
+import { JsonLd } from "@/components/json-ld";
+import { canonical, SITE_NAME } from "@/lib/seo";
 
 const SHORT_FMT = new Intl.DateTimeFormat("lv-LV", { day: "numeric", month: "short", weekday: "short" });
 const SYNODIC = 29.530588853;
@@ -30,16 +28,29 @@ function nextPrincipalPhases(from: Date) {
   }).sort((a, b) => a.date.getTime() - b.date.getTime());
 }
 
-export default function MenessPage() {
-  const mounted = useMounted();
-  const today = useMemo(() => new Date(), []);
-  const moon = moonForDate(today);
-  const upcoming = useMemo(() => nextPrincipalPhases(today), [today]);
-  const week = useMemo(() => sowingDays(today, 7), [today]);
+// Nothing here is interactive — no state, no handlers. Rendering on the server
+// puts the actual phase data in the HTML instead of an empty shell; the hourly
+// revalidate keeps "today" honest.
+export const revalidate = 3600;
 
-  // Server-rendered scaffold (date-independent) so crawlers/AI see the H1 + intro.
-  const staticHeader = (
+export default function MenessPage() {
+  const today = new Date();
+  const moon = moonForDate(today);
+  const upcoming = nextPrincipalPhases(today);
+  const week = sowingDays(today, 7);
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: `Mēness fāze šodien — ${moon.name}`,
+    inLanguage: "lv",
+    description: `Šodien ir ${moon.name.toLowerCase()}, ${Math.round(moon.illumination * 100)}% apgaismojums. Tuvākās Mēness fāzes un elementu dienas Latvijai.`,
+    isPartOf: { "@type": "WebSite", name: SITE_NAME, url: canonical("/") },
+  };
+
+  return (
     <>
+      <JsonLd data={jsonLd} />
       <PageHeader
         eyebrow="Debesu ritms"
         title="Mēness"
@@ -52,14 +63,6 @@ export default function MenessPage() {
         <Link href="/kalendars" className="text-primary hover:underline">Mēness kalendāru</Link> vai uzzini,{" "}
         <Link href="/macies" className="text-primary hover:underline">kas ir Mēness sēja</Link>.
       </p>
-    </>
-  );
-
-  if (!mounted) return staticHeader;
-
-  return (
-    <>
-      {staticHeader}
 
       <div className="grid grid-cols-1 gap-gutter lg:grid-cols-12">
         {/* Hero moon */}
@@ -135,6 +138,7 @@ export default function MenessPage() {
           </Card>
         </div>
       </div>
+
     </>
   );
 }

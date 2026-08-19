@@ -2,7 +2,6 @@
 
 import { useMemo, useState } from "react";
 import Link from "next/link";
-import { PageHeader } from "@/components/ui/page-header";
 import { Card } from "@/components/ui/card";
 import { Chip } from "@/components/ui/chip";
 import { Icon } from "@/components/ui/icon";
@@ -36,7 +35,7 @@ function kulturas(n: number): string {
   return `${n} kultūru`;
 }
 
-export default function CelvedisPage() {
+export function SowingGuide() {
   const mounted = useMounted();
   const currentMonth = useMemo(() => new Date().getMonth() + 1, []);
   const [cat, setCat] = useState<Category | "all">("all");
@@ -63,31 +62,12 @@ export default function CelvedisPage() {
     setThisMonth(false);
   }
 
-  // Server-rendered scaffold (date-independent) so crawlers/AI see the H1 + intro
-  // + key links even before the interactive filter UI mounts.
-  const staticHeader = (
-    <>
-      <PageHeader
-        eyebrow="Interaktīvais rīks"
-        title="Sējas ceļvedis"
-        display
-        subtitle="Katras kultūras sējas, stādīšanas un ražas logi Latvijas klimatam — kopā ar labākajām Mēness dienām un augsnes siltumu."
-      />
-      <p className="mb-md max-w-2xl text-body-md text-on-surface-variant">
-        Ieraksti dārzeņa vai puķes nosaukumu vai izvēlies kategoriju, lai atrastu, kad to sēt,
-        stādīt un novākt Latvijā. Pārlūko visu{" "}
-        <Link href="/augi" className="text-primary hover:underline">augu enciklopēdiju</Link> vai atver{" "}
-        <Link href="/kalendars" className="text-primary hover:underline">Mēness kalendāru</Link>.
-      </p>
-    </>
-  );
-
-  if (!mounted) return staticHeader;
+  // The page shell (H1, intro, full sowing table) is server rendered by
+  // app/celvedis/page.tsx — this component is only the interactive filter + list.
+  if (!mounted) return null;
 
   return (
     <>
-      {staticHeader}
-
       {/* Filters — the always-visible result count below keeps the search from
           feeling "dead" on mobile even when results sit under the keyboard. */}
       <Card tone="container" className="mb-lg p-md">

@@ -2,7 +2,6 @@
 
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
-import { PageHeader } from "@/components/ui/page-header";
 import { Card } from "@/components/ui/card";
 import { Chip } from "@/components/ui/chip";
 import { Icon } from "@/components/ui/icon";
@@ -58,7 +57,7 @@ function cropsForDay(month: number, part: PlantPart): DayCrop[] {
   return out;
 }
 
-export default function KalendarsPage() {
+export function CalendarExplorer() {
   useEffect(() => track("calendar_opened", { source: "calendar_page" }), []);
   const mounted = useMounted();
   const today = useMemo(() => new Date(), []);
@@ -85,49 +84,12 @@ export default function KalendarsPage() {
   const sameDay = (a: Date, b: Date) =>
     a.getDate() === b.getDate() && a.getMonth() === b.getMonth() && a.getFullYear() === b.getFullYear();
 
-  // Server-rendered scaffold (date-independent → no hydration mismatch): H1,
-  // intro prose, and links to every static month calendar. Crawlers/AI engines
-  // see this even before the interactive grid mounts client-side.
-  const staticHeader = (
-    <>
-      <PageHeader
-        eyebrow="Senču gudrība · Maria Thun"
-        title="Mēness kalendārs"
-        display
-        subtitle="Katra diena nes sava elementa ritmu. Sēj saskaņā ar Mēness fāzi un zodiaka zīmi."
-      />
-      <div className="mb-lg">
-        <p className="mb-sm max-w-2xl text-body-lg text-on-surface-variant">
-          Mēness sējas kalendārs apvieno Mēness fāzes, zodiaka zīmi un biodinamiskās elementu dienas
-          (sakņu, lapu, ziedu un augļu dienas) ar Latvijas klimatu. Izvēlies mēnesi un skaties katras
-          dienas ieteikumus vai atver drukājamu mēneša kalendāru.
-        </p>
-        <div className="space-y-1.5">
-          {CALENDAR_YEARS.map((y) => (
-            <div key={y} className="flex flex-wrap items-center gap-1.5">
-              <span className="w-10 shrink-0 text-label-md text-on-surface-variant">{y}.</span>
-              {MONTH_SLUGS.map((slug, i) => (
-                <Link
-                  key={slug}
-                  href={`/kalendars/${y}/${slug}`}
-                  className="rounded-full bg-surface-container px-2.5 py-1 text-label-sm capitalize text-on-surface hover:text-primary"
-                >
-                  {MONTHS_LV_FULL[i]}
-                </Link>
-              ))}
-            </div>
-          ))}
-        </div>
-      </div>
-    </>
-  );
-
-  if (!mounted) return staticHeader;
+  // The page shell (H1, intro, month links, this month's key dates) is server
+  // rendered by app/kalendars/page.tsx — this component is only the interactive grid.
+  if (!mounted) return null;
 
   return (
     <>
-      {staticHeader}
-
       <div className="mb-md flex flex-wrap items-center justify-between gap-2">
         <DataNote variant="moon" />
         {CALENDAR_YEARS.includes(year) && (
