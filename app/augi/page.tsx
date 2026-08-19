@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { JsonLd } from "@/components/json-ld";
 import { CropLibrary, type CropTeaser } from "@/components/crop-library";
 import { CROPS, CATEGORIES, MONTHS_LV_FULL, type Crop, type MonthRange } from "@/lib/planting-crops";
-import { flowerSlugs } from "@/lib/flowers";
+import { cropHref } from "@/lib/flowers";
 import { canonical, SITE_NAME } from "@/lib/seo";
 
 export const revalidate = 86_400;
@@ -50,8 +50,6 @@ export default function AugiIndex() {
   const currentMonth = Number(
     new Intl.DateTimeFormat("en-US", { timeZone: "Europe/Riga", month: "numeric" }).format(new Date()),
   );
-  const flowerSet = new Set(flowerSlugs());
-  const cropHref = (cropId: string) => flowerSet.has(cropId) ? `/pukes/${cropId}` : `/augi/${cropId}`;
   const teasers: CropTeaser[] = CROPS.map((crop) => {
     const category = CATEGORIES.find((item) => item.id === crop.category);
     const timing = plantingTiming(crop, currentMonth);

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { cropHref } from "@/lib/flowers";
 import { notFound } from "next/navigation";
 import { Card } from "@/components/ui/card";
 import { Icon } from "@/components/ui/icon";
@@ -130,7 +131,7 @@ export default async function KoSetPage({ params }: { params: Promise<{ month: s
                       <div className="flex items-start gap-2">
                         <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-primary-container/25 text-2xl" aria-hidden="true">{cropEmoji(c.id)}</span>
                         <div className="min-w-0 flex-1">
-                          <Link href={`/augi/${c.id}`} className="inline-flex min-h-11 items-center font-semibold text-on-surface hover:text-primary hover:underline">{c.name}</Link>
+                          <Link href={cropHref(c.id)} className="inline-flex min-h-11 items-center font-semibold text-on-surface hover:text-primary hover:underline">{c.name}</Link>
                           <p className="text-label-sm text-on-surface-variant">{c.daysToHarvest ?? "Skaties auga ceļvedī"}</p>
                         </div>
                       </div>
@@ -150,7 +151,7 @@ export default async function KoSetPage({ params }: { params: Promise<{ month: s
             ) : (
               <div className="flex flex-wrap gap-2">
                 {g.crops.map((c) => (
-                  <Link key={c.id} href={`/augi/${c.id}`} className="inline-flex min-h-11 items-center gap-1 rounded-full bg-surface-container px-3 py-1.5 text-label-md text-on-surface hover:text-primary">
+                  <Link key={c.id} href={cropHref(c.id)} className="inline-flex min-h-11 items-center gap-1 rounded-full bg-surface-container px-3 py-1.5 text-label-md text-on-surface hover:text-primary">
                     {cropEmoji(c.id)} {c.name}
                   </Link>
                 ))}

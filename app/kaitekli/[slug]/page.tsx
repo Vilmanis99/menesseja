@@ -7,7 +7,7 @@ import { JsonLd } from "@/components/json-ld";
 import { getProblem, getAllProblems, problemSlugs, PROBLEM_TYPE_META, SEVERITY_META } from "@/lib/kaitekli";
 import { getRecipe } from "@/lib/recipes";
 import { cropForAffect } from "@/lib/crop-pests";
-import { flowerSlugs } from "@/lib/flowers";
+import { cropHref } from "@/lib/flowers";
 import { canonical, SITE_NAME, og } from "@/lib/seo";
 import { DATA_REVIEWED } from "@/lib/sources";
 
@@ -42,7 +42,6 @@ export default async function ProblemPage({ params }: { params: Promise<{ slug: 
     .map((s) => getRecipe(s))
     .filter((r): r is NonNullable<typeof r> => Boolean(r));
   const siblings = getAllProblems().filter((x) => x.type === p.type && x.slug !== p.slug).slice(0, 5);
-  const flowerSet = new Set(flowerSlugs());
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -151,7 +150,7 @@ export default async function ProblemPage({ params }: { params: Promise<{ slug: 
             <span className="text-on-surface-variant">Visbiežāk skar:</span>
             {p.affects.map((a, i) => {
               const crop = cropForAffect(a);
-              const href = crop ? (flowerSet.has(crop.id) ? `/pukes/${crop.id}` : `/augi/${crop.id}`) : null;
+              const href = crop ? cropHref(crop.id) : null;
               return (
                 <span key={i} className="text-on-surface">
                   {href ? <Link href={href} className="inline-flex min-h-11 items-center text-primary hover:underline">{a}</Link> : a}

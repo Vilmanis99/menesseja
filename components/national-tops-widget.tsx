@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { cropHref } from "@/lib/flowers";
 import { Card } from "@/components/ui/card";
 import { Icon } from "@/components/ui/icon";
 import { SectionLabel } from "@/components/ui/section-label";
@@ -22,7 +23,7 @@ export async function NationalTopsTeaser() {
       </div>
       <Card tone="container" className="flex items-center gap-md p-md">
         {tops.map((t, i) => (
-          <Link key={t.cropId} href={`/augi/${t.cropId}`} className="group flex flex-1 flex-col items-center gap-1 text-center">
+          <Link key={t.cropId} href={cropHref(t.cropId)} className="group flex flex-1 flex-col items-center gap-1 text-center">
             <span className="text-2xl leading-none">{t.emoji}</span>
             <span className="text-body-md text-on-surface group-hover:text-primary">{t.name}</span>
             <span className="text-label-sm text-on-surface-variant">

@@ -12,6 +12,7 @@ import { latviaNoon } from "@/lib/day-anchor";
 import { namedaysForDay } from "@/lib/vardadienas";
 import { PrintButton } from "@/components/print-button";
 import { cropPart } from "@/lib/crop-part";
+import { cropHref } from "@/lib/flowers";
 import { cropEmoji } from "@/lib/crop-visual";
 import { CROPS, MONTHS_LV_FULL, MONTHS_LV_GENITIVE, ACTIVITY_KEYS } from "@/lib/planting-crops";
 import { REGIONS } from "@/lib/regions";
@@ -183,7 +184,7 @@ export default async function MonthCalendarPage({
               </p>
               <div className="flex flex-wrap gap-1.5">
                 {crops.map((c) => (
-                  <Link key={c.id} href={`/augi/${c.id}`} className="rounded-full bg-background/50 px-2 py-0.5 text-label-sm text-on-surface hover:text-primary">
+                  <Link key={c.id} href={cropHref(c.id)} className="rounded-full bg-background/50 px-2 py-0.5 text-label-sm text-on-surface hover:text-primary">
                     {cropEmoji(c.id)} {c.name}
                   </Link>
                 ))}

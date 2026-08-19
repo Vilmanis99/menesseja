@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { cropHref } from "@/lib/flowers";
 import { notFound } from "next/navigation";
 import { Card } from "@/components/ui/card";
 import { Icon } from "@/components/ui/icon";
@@ -45,7 +46,7 @@ export default async function TopListPage({ params }: { params: Promise<{ slug: 
       "@type": "ListItem",
       position: it.rank,
       name: it.name,
-      url: canonical(`/augi/${it.cropId}`),
+      url: canonical(cropHref(it.cropId)),
     })),
   };
   const breadcrumb = {
@@ -101,7 +102,7 @@ export default async function TopListPage({ params }: { params: Promise<{ slug: 
           return (
             <li key={it.rank}>
               {exists ? (
-                <Link href={`/augi/${it.cropId}`} className="block transition-opacity hover:opacity-90">
+                <Link href={cropHref(it.cropId)} className="block transition-opacity hover:opacity-90">
                   {inner}
                 </Link>
               ) : (

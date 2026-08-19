@@ -67,6 +67,19 @@ export function flowerSlugs(): string[] {
   }
 }
 
+/** Ornamentals live under /pukes and /augi/<slug> only 308s there, so every
+ *  internal link should point at the canonical URL rather than at a redirect.
+ *  Server-side only — this module reads from disk. */
+export function cropHref(cropId: string): string {
+  return flowerSlugSet().has(cropId) ? `/pukes/${cropId}` : `/augi/${cropId}`;
+}
+
+let slugSetCache: Set<string> | null = null;
+function flowerSlugSet(): Set<string> {
+  if (!slugSetCache) slugSetCache = new Set(flowerSlugs());
+  return slugSetCache;
+}
+
 export function getAllFlowers(): Flower[] {
   return flowerSlugs()
     .map((s) => read(`${s}.json`))

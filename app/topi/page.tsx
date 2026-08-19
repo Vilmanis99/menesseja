@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { cropHref } from "@/lib/flowers";
 import { PageHeader } from "@/components/ui/page-header";
 import { Card } from "@/components/ui/card";
 import { Icon } from "@/components/ui/icon";
@@ -51,7 +52,7 @@ export default async function TopiPage() {
             <ol className="space-y-3">
               {national.map((t, i) => (
                 <li key={t.cropId}>
-                  <Link href={`/augi/${t.cropId}`} className="group flex items-center gap-3">
+                  <Link href={cropHref(t.cropId)} className="group flex items-center gap-3">
                     <span className="w-5 shrink-0 text-center text-label-md font-bold text-on-surface-variant">
                       {i + 1}
                     </span>
