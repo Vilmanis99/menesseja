@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { notFound, redirect } from "next/navigation";
-import { flowerSlugs } from "@/lib/flowers";
+import { notFound, permanentRedirect } from "next/navigation";
+import { flowerSlugs, cropHref } from "@/lib/flowers";
 import { Card } from "@/components/ui/card";
 import { Icon } from "@/components/ui/icon";
 import { ActivityBar } from "@/components/activity-bar";
@@ -71,7 +71,9 @@ export default async function CropPage({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   // Ornamental flowers have a much richer page under /pukes — one canonical
   // home per plant, no thin duplicate competing in search.
-  if (flowerSlugs().includes(slug)) redirect(`/pukes/${slug}`);
+  // 308, not 307: a permanent redirect lets Google fold the old URL's ranking
+  // signals into /pukes/* instead of keeping /augi/* indexed alongside it.
+  if (flowerSlugs().includes(slug)) permanentRedirect(`/pukes/${slug}`);
   const crop = CROPS.find((c) => c.id === slug);
   if (!crop) notFound();
 
@@ -283,7 +285,7 @@ export default async function CropPage({ params }: { params: Promise<{ slug: str
               </p>
               <div className="flex flex-wrap gap-2">
                 {good.length ? good.map((id) => (
-                  <Link key={id} href={`/augi/${id}`} className="inline-flex min-h-11 items-center rounded-full bg-primary-container/30 px-3 py-1 text-label-sm text-on-primary-container hover:brightness-110">
+                  <Link key={id} href={cropHref(id)} className="inline-flex min-h-11 items-center rounded-full bg-primary-container/30 px-3 py-1 text-label-sm text-on-primary-container hover:brightness-110">
                     {cropEmoji(id)} {CROPS.find((c) => c.id === id)?.name}
                   </Link>
                 )) : <span className="text-label-sm text-on-surface-variant">—</span>}
@@ -295,7 +297,7 @@ export default async function CropPage({ params }: { params: Promise<{ slug: str
               </p>
               <div className="flex flex-wrap gap-2">
                 {bad.length ? bad.map((id) => (
-                  <Link key={id} href={`/augi/${id}`} className="inline-flex min-h-11 items-center rounded-full bg-error-container/25 px-3 py-1 text-label-sm text-error hover:brightness-110">
+                  <Link key={id} href={cropHref(id)} className="inline-flex min-h-11 items-center rounded-full bg-error-container/25 px-3 py-1 text-label-sm text-error hover:brightness-110">
                     {cropEmoji(id)} {CROPS.find((c) => c.id === id)?.name}
                   </Link>
                 )) : <span className="text-label-sm text-on-surface-variant">—</span>}
@@ -438,7 +440,7 @@ export default async function CropPage({ params }: { params: Promise<{ slug: str
             <h2 className="mb-sm text-headline-md text-on-surface">Citi — {category?.label.toLowerCase()}</h2>
             <div className="flex flex-wrap gap-2">
               {siblings.map((c) => (
-                <Link key={c.id} href={`/augi/${c.id}`} className="inline-flex min-h-11 items-center gap-1 rounded-full bg-surface-container px-3 py-1.5 text-label-md text-on-surface hover:text-primary">
+                <Link key={c.id} href={cropHref(c.id)} className="inline-flex min-h-11 items-center gap-1 rounded-full bg-surface-container px-3 py-1.5 text-label-md text-on-surface hover:text-primary">
                   {cropEmoji(c.id)} {c.name}
                 </Link>
               ))}

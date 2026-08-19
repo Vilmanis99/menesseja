@@ -1,17 +1,25 @@
 import type { MetadataRoute } from "next";
 import { CROPS } from "@/lib/planting-crops";
 import { REGIONS } from "@/lib/regions";
-import { articleSlugs } from "@/lib/articles";
+import { getAllArticles } from "@/lib/articles";
 import { topSlugs } from "@/lib/tops";
 import { recipeSlugs } from "@/lib/recipes";
 import { flowerSlugs } from "@/lib/flowers";
-import { problemSlugs } from "@/lib/kaitekli";
+import { getAllProblems } from "@/lib/kaitekli";
 import { MONTH_SLUGS, CALENDAR_YEARS, SITE_URL } from "@/lib/seo";
 import { DATA_REVIEWED } from "@/lib/sources";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const url = (p: string) => `${SITE_URL}${p}`;
   const reviewed = new Date(`${DATA_REVIEWED}-01`);
+  const articles = getAllArticles();
+  // Per-item dates wherever the content carries one. Data-driven pages (crops,
+  // flowers, months) fall back to DATA_REVIEWED, which is a real review date —
+  // but a stamp that is merely invented would get lastModified ignored outright.
+  const newestArticle = articles.reduce(
+    (latest, a) => (a.updatedAt > latest ? a.updatedAt : latest),
+    articles[0]?.updatedAt ?? DATA_REVIEWED,
+  );
 
   const staticPages: MetadataRoute.Sitemap = [
     { url: url("/"), priority: 1, changeFrequency: "daily" },
@@ -19,7 +27,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: url("/macies"), priority: 0.8, changeFrequency: "monthly" },
     { url: url("/kalendars"), priority: 0.7, changeFrequency: "daily" },
     { url: url("/celvedis"), priority: 0.6, changeFrequency: "monthly" },
-    { url: url("/raksti"), priority: 0.8, changeFrequency: "weekly" },
+    { url: url("/raksti"), lastModified: new Date(newestArticle), priority: 0.8, changeFrequency: "weekly" },
     { url: url("/topi"), priority: 0.8, changeFrequency: "weekly" },
     { url: url("/receptes"), priority: 0.8, changeFrequency: "monthly" },
     { url: url("/pukes"), priority: 0.9, changeFrequency: "monthly" },
@@ -41,9 +49,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: "monthly",
   }));
 
-  const articlePages: MetadataRoute.Sitemap = articleSlugs().map((slug) => ({
-    url: url(`/raksti/${slug}`),
-    lastModified: reviewed,
+  const articlePages: MetadataRoute.Sitemap = articles.map((article) => ({
+    url: url(`/raksti/${article.slug}`),
+    lastModified: new Date(article.updatedAt),
     priority: 0.8,
     changeFrequency: "monthly",
   }));
@@ -76,9 +84,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: "monthly",
   }));
 
-  const problemPages: MetadataRoute.Sitemap = problemSlugs().map((slug) => ({
-    url: url(`/kaitekli/${slug}`),
-    lastModified: reviewed,
+  const problemPages: MetadataRoute.Sitemap = getAllProblems().map((problem) => ({
+    url: url(`/kaitekli/${problem.slug}`),
+    lastModified: problem.updatedAt ? new Date(problem.updatedAt) : reviewed,
     priority: 0.8,
     changeFrequency: "monthly",
   }));
@@ -95,6 +103,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const monthPages: MetadataRoute.Sitemap = CALENDAR_YEARS.flatMap((year) =>
     MONTH_SLUGS.map((m) => ({
       url: url(`/kalendars/${year}/${m}`),
+      lastModified: reviewed,
       priority: 0.7,
       changeFrequency: "yearly" as const,
     })),
