@@ -6,6 +6,7 @@
   "type": "krums",
   "tagline": "Lieli, mākoņiem līdzīgi ziedu pušķi, kas vasaras otrā pusē pārvērš dārza pussēnu par krāsu jūru.",
   "bloom": "Jūlijs–septembris",
+  "bloomMonths": [7, 8, 9],
   "height": "100–200 cm (atkarībā no sugas un šķirnes)",
   "sun": "Saule / pussēna",
   "hardy": true,
@@ -54,10 +55,5 @@
       "a": "Zilā krāsa darbojas tikai liellapu hortenzijai (H. macrophylla) un ir atkarīga no augsnes pH: skābā augsnē tā zied zila, sārmainā — rozā. Zilo krāsu uztur, augsni paskābinot ar skābo kūdru, skujām vai īpašu paskābinātāju. Baltajai, skarainajai un koka hortenzijai šis nedarbojas — to krāsu augsne neietekmē."
     }
   ],
-  "related": [
-    "peonijas",
-    "rozes",
-    "hostas",
-    "klematis"
-  ]
+  "related": ["peonijas", "rozes", "hostas", "klematis"]
 }

@@ -6,6 +6,7 @@
   "type": "sipolpuke",
   "tagline": "Daudzkārtu ziedi kā no rozes un peonijas vienlaikus — tikai gumi rudenī jāizrok un jāglabā.",
   "bloom": "Jūnijs–jūlijs",
+  "bloomMonths": [6, 7],
   "height": "25–45 cm",
   "sun": "Saule / pussēna",
   "hardy": false,
@@ -54,9 +55,5 @@
       "a": "Gumus laukā stāda tikai pēc pēdējām pavasara salnām — iekšzemē (Vidzemē, Latgalē) drošāk maija beigās, Zemgalē ap 15. maiju, piekrastē var jau maija vidū. Lai ziedi būtu agrāk, gumus var priekšaudzēt podos vēsā telpā no aprīļa un izstādīt ar zemes kamolu pēc salnām."
     }
   ],
-  "related": [
-    "begonijas",
-    "narcises",
-    "tulpes"
-  ]
+  "related": ["begonijas", "narcises", "tulpes"]
 }

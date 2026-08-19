@@ -6,6 +6,7 @@
   "type": "viengadiga",
   "tagline": "Saulaina dārza klasika, kas zied bez apstājas un sargā dārzeņus no kaitēkļiem.",
   "bloom": "Jūnijs–oktobris (līdz salnai)",
+  "bloomMonths": [6, 7, 8, 9, 10],
   "height": "20–80 cm (atkarībā no šķirnes)",
   "sun": "Saule",
   "hardy": false,
@@ -54,9 +55,5 @@
       "a": "Regulāri noņem nokaltušos ziedus — tas ir vienkāršākais paņēmiens. Kad augs neveltī spēku sēklu nogatavināšanai, tas dzen arvien jaunus ziedus un var ziedēt no jūnija līdz pat pirmajai salnai. Turklāt audzē tās saulē un neaizraujies ar slāpekļa mēslojumu, kas dod lapas, bet ne ziedus."
     }
   ],
-  "related": [
-    "saulespukes",
-    "atraitnites",
-    "verbena"
-  ]
+  "related": ["saulespukes", "atraitnites", "verbena"]
 }

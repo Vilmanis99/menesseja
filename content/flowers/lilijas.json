@@ -6,6 +6,7 @@
   "type": "sipolpuke",
   "tagline": "Karaliskā vasaras puķe, kas Latvijā ziemo bez raizēm — iestādi reizi un priecājies gadiem.",
   "bloom": "Jūnijs–augusts (atkarībā no grupas)",
+  "bloomMonths": [6, 7, 8],
   "height": "60–150 cm",
   "sun": "Saule / pussēna",
   "hardy": true,

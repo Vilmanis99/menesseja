@@ -6,6 +6,7 @@
   "type": "sipolpuke",
   "tagline": "Pirmais īstais pavasara prieks — iestādi rudenī un aizmirsti uz gadiem.",
   "bloom": "Aprīlis–maijs",
+  "bloomMonths": [4, 5],
   "height": "15–45 cm",
   "sun": "Saule / pussēna",
   "hardy": true,
@@ -55,8 +56,5 @@
       "a": "Īsti nē — narcišu sīpoliem vajag aukstuma periodu ziemā, lai pavasarī ziedētu, tāpēc tos stāda rudenī (sept.–okt.). Ja sīpoli palikuši pāri, pavasarī iestādīti tie parasti gadu izlaiž un labi ziedēt sāk tikai nākamajā sezonā."
     }
   ],
-  "related": [
-    "tulpes",
-    "peonijas"
-  ]
+  "related": ["tulpes", "peonijas"]
 }

@@ -6,6 +6,7 @@ import { Icon } from "@/components/ui/icon";
 import { JsonLd } from "@/components/json-ld";
 import { DataNote } from "@/components/data-note";
 import { getAllFlowers, FLOWER_TYPE_META, FLOWER_TYPE_ORDER } from "@/lib/flowers";
+import { BLOOM_PERIODS, ALL_SUMMER_ARTICLE, flowersForPeriod } from "@/lib/bloom-periods";
 import { EXTRA_FLOWER_NAMES, FOLK_NAMES } from "@/lib/flower-names";
 import { canonical, SITE_NAME, og } from "@/lib/seo";
 
@@ -129,6 +130,36 @@ export default function PukesPage() {
           </a>
         ))}
       </nav>
+
+      {/* Bloom-period cuts. The A–Z index alone was absorbing every list-intent
+          query and converting almost none of them; these give each cut a page. */}
+      <section className="mb-lg">
+        <h2 className="mb-sm text-headline-md text-on-surface">Puķes pēc ziedēšanas laika</h2>
+        <div className="grid grid-cols-1 gap-md sm:grid-cols-2">
+          {BLOOM_PERIODS.map((period) => (
+            <Link key={period.slug} href={`/pukes/kas-zied/${period.slug}`}>
+              <Card tone="high" elevated className="flex h-full items-start gap-md p-md transition-colors hover:bg-surface-container-highest">
+                <Icon name="filter_vintage" className="mt-0.5 shrink-0 text-primary" />
+                <div className="min-w-0 flex-1">
+                  <h3 className="text-title-md text-on-surface">{period.h1}</h3>
+                  <p className="mt-0.5 text-body-md text-on-surface-variant">
+                    {flowersForPeriod(period).length} puķes sarakstā
+                  </p>
+                </div>
+              </Card>
+            </Link>
+          ))}
+          <Link href={ALL_SUMMER_ARTICLE}>
+            <Card tone="high" elevated className="flex h-full items-start gap-md p-md transition-colors hover:bg-surface-container-highest">
+              <Icon name="filter_vintage" className="mt-0.5 shrink-0 text-primary" />
+              <div className="min-w-0 flex-1">
+                <h3 className="text-title-md text-on-surface">Puķes, kas zied visu vasaru</h3>
+                <p className="mt-0.5 text-body-md text-on-surface-variant">15 izvēles un kā tās apvienot</p>
+              </div>
+            </Card>
+          </Link>
+        </div>
+      </section>
 
       <section className="mb-lg">
         <h2 className="mb-sm text-headline-md text-on-surface">Visi puķu nosaukumi alfabēta secībā (A–Z)</h2>

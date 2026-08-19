@@ -6,6 +6,7 @@
   "type": "sipolpuke",
   "tagline": "Pirmie pavasara vēstneši — zied, kad dārzā vēl pa vietai sniegs, un gadu gaitā paši izplešas krāsainos paklājos.",
   "bloom": "Marts–aprīlis",
+  "bloomMonths": [3, 4],
   "height": "8–15 cm",
   "sun": "Saule",
   "hardy": true,

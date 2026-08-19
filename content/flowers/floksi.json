@@ -6,6 +6,7 @@
   "type": "daudzgadiga",
   "tagline": "Vecmāmiņas dārza vasaras pamats — smaržīgas ziedu cepures jūlijā un augustā, gadu no gada bez liekām rūpēm.",
   "bloom": "Jūlijs–septembris",
+  "bloomMonths": [7, 8, 9],
   "height": "60–120 cm",
   "sun": "Saule / pussēna",
   "hardy": true,

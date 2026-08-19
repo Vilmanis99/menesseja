@@ -5,6 +5,7 @@ import { getAllArticles } from "@/lib/articles";
 import { topSlugs } from "@/lib/tops";
 import { recipeSlugs } from "@/lib/recipes";
 import { flowerSlugs } from "@/lib/flowers";
+import { BLOOM_PERIODS } from "@/lib/bloom-periods";
 import { getAllProblems } from "@/lib/kaitekli";
 import { MONTH_SLUGS, CALENDAR_YEARS, SITE_URL } from "@/lib/seo";
 import { DATA_REVIEWED } from "@/lib/sources";
@@ -84,6 +85,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: "monthly",
   }));
 
+  const bloomPeriodPages: MetadataRoute.Sitemap = BLOOM_PERIODS.map((period) => ({
+    url: url(`/pukes/kas-zied/${period.slug}`),
+    lastModified: reviewed,
+    priority: 0.8,
+    changeFrequency: "monthly",
+  }));
+
   const problemPages: MetadataRoute.Sitemap = getAllProblems().map((problem) => ({
     url: url(`/kaitekli/${problem.slug}`),
     lastModified: problem.updatedAt ? new Date(problem.updatedAt) : reviewed,
@@ -109,5 +117,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
   );
 
-  return [...staticPages, ...regionPages, ...articlePages, ...koSetPages, ...topPages, ...recipePages, ...flowerPages, ...problemPages, ...cropPages, ...monthPages];
+  return [...staticPages, ...regionPages, ...articlePages, ...koSetPages, ...topPages, ...recipePages, ...flowerPages, ...bloomPeriodPages, ...problemPages, ...cropPages, ...monthPages];
 }

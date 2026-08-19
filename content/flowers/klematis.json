@@ -6,6 +6,7 @@
   "type": "krums",
   "tagline": "Kāpjošs vītenis, kas vasarā pārklāj žogu un kārtis ar lieliem, košiem ziediem.",
   "bloom": "Jūnijs–septembris",
+  "bloomMonths": [6, 7, 8, 9],
   "height": "2–4 m (kāpjošs vītenis, vajag atbalstu)",
   "sun": "Saule",
   "hardy": true,
@@ -55,9 +56,5 @@
       "a": "Klematim patīk princips \"galva saulē, kājas ēnā\": ziediem un dzinumiem vajag sauli, bet sakņu zonai — vēsu, ēnainu un mitru augsni. Ja saknes vasarā sakarst un izkalst, augs vīst un slikti zied. Tāpēc sakņu pamatni mulčē vai apstādi ar zemiem augiem, lai zeme nepārkarst."
     }
   ],
-  "related": [
-    "rozes",
-    "hortenzijas",
-    "budlejas"
-  ]
+  "related": ["rozes", "hortenzijas", "budlejas"]
 }

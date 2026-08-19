@@ -6,6 +6,7 @@
   "latin": "Chrysanthemum",
   "tagline": "Vēlā rudens dārza karaliene un Latvijas galvenā Svecīšu vakaru puķe — zied, kad gandrīz viss cits jau atziedējis, līdz pat pirmajām salnām.",
   "bloom": "Septembris–oktobris (līdz salnām)",
+  "bloomMonths": [9, 10],
   "height": "30–90 cm (atkarībā no šķirnes)",
   "sun": "Saule",
   "hardy": false,
@@ -55,10 +56,5 @@
       "a": "Var, bet ar nosacījumu. Veikala podu krizantēmas, ko rudenī nes uz kapiem, ir skaista vienas sezonas piemiņas puķe, taču nākamgad parasti neatdzīvojas. Ja vēlies daudzgadīgu krizantēmu kapu kopiņā, stādi pavasarī izturīgu dārza šķirni saulainā, sausā vietā un rudenī piesedz — tad ir laba iespēja, ka tā ziedēs arī nākamajā rudenī."
     }
   ],
-  "related": [
-    "dalijas",
-    "asteres",
-    "rudbekijas",
-    "atraitnites"
-  ]
+  "related": ["dalijas", "asteres", "rudbekijas", "atraitnites"]
 }

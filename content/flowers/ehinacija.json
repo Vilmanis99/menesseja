@@ -6,6 +6,7 @@
   "type": "daudzgadiga",
   "tagline": "Saulmīļa daudzgadīgā, kas zied vasaras otrā pusē un pievelk bites un taureņus.",
   "bloom": "Jūlijs–septembris",
+  "bloomMonths": [7, 8, 9],
   "height": "60–120 cm",
   "sun": "Saule",
   "hardy": true,
@@ -55,8 +56,5 @@
       "a": "Ehinācija ir tradicionāli pazīstams ārstniecības augs, no kura gatavo tējas un tinktūras imunitātes atbalstam. Tomēr pirms jebkādas lietošanas uzturā vai veselības nolūkos ieteicams konsultēties ar ārstu vai fitoterapeitu, īpaši ja lieto medikamentus."
     }
   ],
-  "related": [
-    "peonijas",
-    "narcises"
-  ]
+  "related": ["peonijas", "narcises"]
 }

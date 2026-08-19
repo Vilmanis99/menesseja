@@ -6,6 +6,7 @@
   "type": "daudzgadiga",
   "tagline": "Provansas smarža Latvijas dārzā — iespējama, ja zini trīs noteikumus: saule, sausa augsne un tikai šaurlapu lavanda.",
   "bloom": "Jūlijs–augusts",
+  "bloomMonths": [7, 8],
   "height": "30–60 cm",
   "sun": "Saule",
   "hardy": true,

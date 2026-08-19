@@ -6,6 +6,7 @@
   "type": "viengadiga",
   "tagline": "Krāšņs balkons visu vasaru — ja izvēlies pareizās puķes un iznes tās laukā tikai pēc salnām.",
   "bloom": "Jūnijs–septembris",
+  "bloomMonths": [6, 7, 8, 9],
   "height": "15–50 cm",
   "sun": "Saule / pussēna",
   "hardy": false,
@@ -53,9 +54,5 @@
       "a": "Visbiežāk pietrūkst barības un netiek noņemti nokaltušie ziedi. Podu zeme ir maza un ātri izsīkst, tāpēc mēslo ik pa 1–2 nedēļām ar mēslojumu ziedošajiem augiem un regulāri izknibini nokaltušos ziedus; ja augs izstiepies, apgriez to par trešdaļu."
     }
   ],
-  "related": [
-    "pelargonijas",
-    "petunijas",
-    "begonijas"
-  ]
+  "related": ["pelargonijas", "petunijas", "begonijas"]
 }

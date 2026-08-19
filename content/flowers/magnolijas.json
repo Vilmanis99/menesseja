@@ -6,6 +6,7 @@
   "latin": "Magnolia",
   "tagline": "Eksotiskā aristokrāte, kas maijā saplaukst pirms lapām — Latvijā iespējama, ja izvēlies izturīgāko sugu un pareizo vietu.",
   "bloom": "Maijs (dažas šķirnes vēlreiz vasarā)",
+  "bloomMonths": [5],
   "height": "2–4 m (zvaigžņu magnolija zemāka, 1,5–3 m)",
   "sun": "Saule, vēlams pusēna pusdienlaikā",
   "hardy": true,
@@ -55,10 +56,5 @@
       "a": "Labāk ne. Magnolijai ir mīkstas, gaļīgas, seklas saknes, un pārstādīšanu tā cieš ļoti grūti — pēc tās krūms gadiem var nīkuļot vai neziedēt. Tāpēc pastāvīgu, saulainu un aizvēja vietu izvēlies uzreiz, jau stādot, un pēc tam to vairs neaiztiec."
     }
   ],
-  "related": [
-    "budlejas",
-    "rozes",
-    "peonijas",
-    "lavanda"
-  ]
+  "related": ["budlejas", "rozes", "peonijas", "lavanda"]
 }

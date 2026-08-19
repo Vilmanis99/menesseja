@@ -6,6 +6,7 @@
   "type": "krums",
   "tagline": "Garie, smaržīgie ziedu vālīši vasaras otrā pusē pievelk tauriņus kā magnēts.",
   "bloom": "Jūlijs–septembris",
+  "bloomMonths": [7, 8, 9],
   "height": "1,5–2,5 m (Latvijā parasti zemāks)",
   "sun": "Saule",
   "hardy": true,
@@ -54,9 +55,5 @@
       "a": "Biežākie iemesli ir par maz saules, pārāk daudz slāpekļa mēslojuma (daudz lapu, maz ziedu) vai tas, ka krūms pavasarī nav apgriezts. Pārliecinies, ka tā aug saulainā vietā, mēslo taupīgi un katru pavasari apgriez stipri — tad ziedēšana būs daudz kuplāka."
     }
   ],
-  "related": [
-    "pelargonijas",
-    "narcises",
-    "peonijas"
-  ]
+  "related": ["pelargonijas", "narcises", "peonijas"]
 }

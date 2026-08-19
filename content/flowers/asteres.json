@@ -6,6 +6,7 @@
   "latin": "Callistephus / Aster",
   "tagline": "Rudens un 1. septembra puķe — viengadīgās asteres zied no augusta līdz salnām, daudzgadīgās ziemasteres tās pārņem un zied vēl tad, kad dārzs jau gandrīz tukšs.",
   "bloom": "Augusts–oktobris (līdz pirmajām salnām)",
+  "bloomMonths": [8, 9, 10],
   "height": "20–80 cm (atkarībā no šķirnes)",
   "sun": "Saule",
   "hardy": false,
@@ -55,10 +56,5 @@
       "a": "Sēklas sēj telpās martā–aprīlī siltā palodzē vai tieši dobē maijā, kad augsne sasilusi. Stādus laukā nes tikai pēc pēdējām pavasara salnām — piekrastē ap maija sākumu, iekšzemē līdz pat maija beigām. Tieši dobē maijā sētas asteres mēdz būt izturīgākas, bet uzzied nedaudz vēlāk."
     }
   ],
-  "related": [
-    "dalijas",
-    "gladiolas",
-    "rudbekijas",
-    "ehinacija"
-  ]
+  "related": ["dalijas", "gladiolas", "rudbekijas", "ehinacija"]
 }

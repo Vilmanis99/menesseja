@@ -6,6 +6,7 @@
   "type": "sipolpuke",
   "tagline": "Pavasara klasika, ko iestādi rudenī un gaidi krāsu sprādzienu pēc ziemas.",
   "bloom": "Aprīlis–maijs",
+  "bloomMonths": [4, 5],
   "height": "15–70 cm (atkarībā no šķirnes)",
   "sun": "Saule / pussēna",
   "hardy": true,
@@ -55,7 +56,5 @@
       "a": "Tieši caur zaļajām lapām sīpols uzkrāj barību nākamā gada ziedam. Ja nogriez lapas, kamēr tās vēl zaļas, sīpols paliek vājš un nākamgad var nesaziedēt. Noņem tikai noziedējušo ziedu, bet lapas ļauj dabiski nokalst."
     }
   ],
-  "related": [
-    "narcises"
-  ]
+  "related": ["narcises"]
 }

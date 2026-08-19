@@ -6,6 +6,7 @@
   "type": "viengadiga",
   "tagline": "Pelargonijas jeb ģerānijas — klasiskā balkona puķe, kas zied visu vasaru un viegli pārziemo telpā uz palodzes.",
   "bloom": "Jūnijs–septembris",
+  "bloomMonths": [6, 7, 8, 9],
   "height": "25–50 cm",
   "sun": "Saule",
   "hardy": false,
@@ -62,8 +63,5 @@
       "a": "Visbiežāk trūkst saules vai ir par daudz slāpekļa mēslojuma. Pārvieto augu saulainākā vietā un baro ar mēslojumu ziedošajiem augiem (ar vairāk kālija un fosfora), kā arī regulāri noņem nokaltušos ziedus."
     }
   ],
-  "related": [
-    "petunijas",
-    "begonijas"
-  ]
+  "related": ["petunijas", "begonijas"]
 }

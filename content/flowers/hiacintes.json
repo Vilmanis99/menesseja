@@ -6,6 +6,7 @@
   "type": "sipolpuke",
   "tagline": "Smaržīgākā pavasara puķe — viens pats hiacinšu pudurītis piesmaržo visu dārza stūri.",
   "bloom": "Aprīlis–maijs",
+  "bloomMonths": [4, 5],
   "height": "20–30 cm",
   "sun": "Saule",
   "hardy": true,

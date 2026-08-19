@@ -29,6 +29,9 @@ export interface Flower {
   moonPhase: RecipePhase;
   moonElement: RecipeElement; // ziedi (lielākā daļa) vai saknes (sīpoli/sakneņi)
   moonText: string;
+  /** Bloom months as numbers, derived from `bloom` prose. Structured so list
+   *  pages ("kas zied rudenī") can be generated instead of hand-maintained. */
+  bloomMonths: number[];
   intro: string[];
   planting: string[]; // kā stādīt — dziļums, atstatums
   care: string[]; // laistīšana, mēslošana, atbalsts

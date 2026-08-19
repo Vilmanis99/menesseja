@@ -6,6 +6,7 @@
   "type": "viengadiga",
   "tagline": "Ēnaino dobju un balkonu krāšņākā puķe, kas zied no vasaras sākuma līdz pat salnām.",
   "bloom": "Jūnijs–septembris",
+  "bloomMonths": [6, 7, 8, 9],
   "height": "20–40 cm",
   "sun": "Pussēna",
   "hardy": false,
@@ -54,8 +55,5 @@
       "a": "Visbiežāk tāpēc, ka aug pārāk saulainā vai sausā vietā. Begonija ir ēnu un pussēnu puķe — pārvieto to vēsākā, izkliedētas gaismas vietā un laisti regulāri, lej pie saknes, ne uz lapām."
     }
   ],
-  "related": [
-    "pelargonijas",
-    "petunijas"
-  ]
+  "related": ["pelargonijas", "petunijas"]
 }

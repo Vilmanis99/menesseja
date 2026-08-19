@@ -8,6 +8,7 @@
   "type": "daudzgadiga",
   "tagline": "Peonija ir vecmāmiņas dārza karaliene — iestādi vienreiz, un tā zied gadu desmitiem, ar katru vasaru kuplāka un skaistāka.",
   "bloom": "Jūnijs (agrīnās šķirnes no maija beigām, vēlīnās līdz jūlija sākumam)",
+  "bloomMonths": [6],
   "height": "60–100 cm",
   "sun": "Saule / pusēna",
   "hardy": true,
@@ -84,12 +85,14 @@
     }
   ],
   "links": [
-    { "label": "Kad un kā pārstādīt un dalīt peonijas", "href": "/raksti/kad-parstadit-peonijas" },
-    { "label": "Kā pavairot peonijas, daloties saknes ceru", "href": "/raksti/ka-pavairot-peonijas" }
+    {
+      "label": "Kad un kā pārstādīt un dalīt peonijas",
+      "href": "/raksti/kad-parstadit-peonijas"
+    },
+    {
+      "label": "Kā pavairot peonijas, daloties saknes ceru",
+      "href": "/raksti/ka-pavairot-peonijas"
+    }
   ],
-  "related": [
-    "narcises",
-    "tulpes",
-    "pelargonijas"
-  ]
+  "related": ["narcises", "tulpes", "pelargonijas"]
 }

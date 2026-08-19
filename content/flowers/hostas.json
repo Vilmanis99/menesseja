@@ -6,6 +6,7 @@
   "type": "daudzgadiga",
   "tagline": "Ēnas karaliene — augs, kas krāšņs ne ar ziediem, bet ar lapām, un padara skaistu pat tumšāko dārza stūri.",
   "bloom": "Jūlijs–augusts (audzē galvenokārt lapu dēļ)",
+  "bloomMonths": [7, 8],
   "height": "20–80 cm",
   "sun": "Pussēna",
   "hardy": true,

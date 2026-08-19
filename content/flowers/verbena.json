@@ -6,6 +6,7 @@
   "type": "viengadiga",
   "tagline": "Nenogurstoša saulmīle, kas balkona kastes un dobes klāj ar krāsu līdz pat rudens salnām.",
   "bloom": "Jūnijs–septembris",
+  "bloomMonths": [6, 7, 8, 9],
   "height": "20–40 cm",
   "sun": "Saule",
   "hardy": false,
@@ -54,9 +55,5 @@
       "a": "Visbiežāk trūkst saules vai ir par daudz slāpekļa mēslojuma. Verbēnai vajag pašu saulaināko vietu dārzā. Pārvieto to saulītē, baro ar mēslojumu ziedošajiem augiem un regulāri noņem nokaltušos ziedus; ja augs izstiepies, apgriez to par trešdaļu."
     }
   ],
-  "related": [
-    "petunijas",
-    "pelargonijas",
-    "begonijas"
-  ]
+  "related": ["petunijas", "pelargonijas", "begonijas"]
 }

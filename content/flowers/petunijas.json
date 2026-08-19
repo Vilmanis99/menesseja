@@ -6,6 +6,7 @@
   "type": "viengadiga",
   "tagline": "Kā kopt petūnijas, lai tās kupli zied visu vasaru — laistīšana, mēslošana un novītušo ziedu noņemšana Latvijas balkonu karalienei.",
   "bloom": "Jūnijs–septembris (līdz pirmajām salnām)",
+  "bloomMonths": [6, 7, 8, 9],
   "height": "20–40 cm (kaskādes šķirnes nokarājas 50–80 cm)",
   "sun": "Saule",
   "hardy": false,
@@ -64,8 +65,5 @@
       "a": "Nē. Petūnija ir viengadīga, siltummīloša puķe, ko jau pirmā rudens salna nogalina — atklātā laukā tā nepārziemo. Rudenī augus izrok un izmet, bet nākampavasar sēj no jauna vai pērc jaunus stādus."
     }
   ],
-  "related": [
-    "pelargonijas",
-    "begonijas"
-  ]
+  "related": ["pelargonijas", "begonijas"]
 }

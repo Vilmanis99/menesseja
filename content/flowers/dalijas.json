@@ -6,6 +6,7 @@
   "type": "sipolpuke",
   "tagline": "Latvijas dārzu rudens karaliene, kas zied bagātīgi no jūlija līdz pat pirmajām salnām.",
   "bloom": "Jūlijs–oktobris (līdz pirmajām salnām)",
+  "bloomMonths": [7, 8, 9, 10],
   "height": "30–150 cm (atkarībā no šķirnes)",
   "sun": "Saule",
   "hardy": false,
@@ -13,8 +14,7 @@
   "plantWhen": "Laukā stāda pēc pēdējām salnām — maija beigās; siltumnīcā vai podos var uzdiedzēt jau aprīlī",
   "moonPhase": "dilstošs",
   "moonElement": "ziedi",
-  "moonText": "Dālijas gumu stādīšana ir sakņu darbs, tāpēc to tradicionāli plāno dilstošā Mēness laikā, bet kā ziedu augam tai labi der ziedu jeb gaisa dienas (Mēness Dvīņos, Svaros, Ūdensvīrā). Tā ir sena dārza tradīcija, ne garantija — daudz svarīgāk ir sagaidīt, kad pāri pēdējās salnas, un izvēlēties saulainu vietu."
-  ,
+  "moonText": "Dālijas gumu stādīšana ir sakņu darbs, tāpēc to tradicionāli plāno dilstošā Mēness laikā, bet kā ziedu augam tai labi der ziedu jeb gaisa dienas (Mēness Dvīņos, Svaros, Ūdensvīrā). Tā ir sena dārza tradīcija, ne garantija — daudz svarīgāk ir sagaidīt, kad pāri pēdējās salnas, un izvēlēties saulainu vietu.",
   "intro": [
     "Dālija ir īsta Latvijas dārzu klasika — puķe, kas vasaras otrajā pusē, kad daudzas citas jau nogurušas, tikai uzņem apgriezienus un zied arvien kuplāk līdz pat pirmajām salnām. Šķirņu dažādība ir milzīga: no maziem, apaļiem pomponiem līdz milzu ziediem šķīvja lielumā, visās krāsās, izņemot zilu. Tieši tāpēc dālijas tik bieži redzamas gan lauku sētu dobēs, gan svētku pušķos — viena dobe spēj dot ziedus vāzei visu rudeni.",
     "Vienīgā dālijas īpatnība, kas jāzina jau pirms stādīšanas: tās gumi Latvijas ziemu atklātā laukā nepārcieš. Katru rudeni pēc pirmajām salnām tos izrok un glabā vēsā, bezsala telpā, bet pavasarī stāda no jauna. Tas izklausās pēc liela darba, taču patiesībā ir vienkārša rutīna, kas turklāt ļauj gumus sadalīt un dāliju kolekciju ar katru gadu paplašināt. Ja šo ritmu pieņem, dālija atalgo dāsnāk par gandrīz jebkuru citu vasaras puķi."
@@ -55,9 +55,5 @@
       "a": "Visbiežāk vainīgs pārāk daudz slāpekļa mēslojuma vai par ēnainu vieta — dālijai vajag pilnu sauli un kālijā bagātu barību. Palīdz arī regulāra noziedējušo ziedu izgriešana, kas mudina augu veidot jaunus pumpurus."
     }
   ],
-  "related": [
-    "gladiolas",
-    "begonijas",
-    "lilijas"
-  ]
+  "related": ["gladiolas", "begonijas", "lilijas"]
 }
