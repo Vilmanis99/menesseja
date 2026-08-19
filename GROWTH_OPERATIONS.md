@@ -82,3 +82,64 @@ Augstākās jaunā perioda lapu iespējas pēc noteikuma `iespaidi ≥ 20, pozī
 | `/kaitekli/tiklerces` | 3 | 96 | 3,13% | 8,52 | Jau atsvaidzināts; uzlabot ienākošās saites no gurķu klastera. |
 
 Vaicājums `magnija trūkums gurķiem` deva 93 jaunus iespaidus, 0 klikšķu un aptuveno pozīciju 8,93. Lēmums: nemainīt tikko atsvaidzināto galvenā gurķu raksta SEO virsrakstu; pārbūvēt `/raksti/magnija-trukums-augiem` kā drošu diagnostikas apakšlapu ar primāro vaicājumu `magnija trūkums augiem`, precīziem Latvijas un universitāšu avotiem, bez universālām Epsom sāls vai dolomīta devām, un abpusējām iekšējām saitēm.
+
+### 2026-08-19 — Search Console eksports (pēdējie 3 mēneši)
+
+Salīdzinātas `2026-07-13` un `2026-08-19` kumulatīvās izklājlapas.
+
+| Eksports | Klikšķi | Iespaidi | CTR | Lapas ar iespaidiem |
+|---|---:|---:|---:|---:|
+| 13.07. | 286 | 5 447 | 5,25% | 174 |
+| 19.08. | 501 | 9 216 | 5,44% | 220 |
+| Starpība | +215 | +3 769 | — | +46 |
+
+Latvija dod 496 no 501 klikšķa. Mobilajā pozīcija 6,93 un CTR 6,78%; datorā pozīcija 26,24 un CTR 3,92% — datora iespaidi nāk galvenokārt no puķu galvas vaicājumiem, kuros vietne ierindojas dziļi.
+
+**Sezonalitāte pret redzamības svārstībām — divi atsevišķi efekti.** Klasteru delta starp visiem četriem eksportiem:
+
+| Klasteris | 22.→29. jūn | 29. jūn→13. jūl | 13. jūl→19. aug |
+|---|---:|---:|---:|
+| Puķes | +281 | +1 624 | +1 902 |
+| Tomāti | +98 | +562 | +212 |
+| Gurķi | +66 | +464 | +109 |
+| Sīpoli | +88 | +262 | +63 |
+| Cukīni | 0 | +200 | +45 |
+| Kaitēkļi | +28 | +178 | +201 |
+| Kalendārs | +34 | +298 | +292 |
+
+Mēneša mērogā tēmu rotācija ir reāla un nosaka plānošanu: dārzeņu problēmu klasteri atdziest (tomāti −62%, gurķi −76%, cukīni −78%, sīpoli −76%), kamēr puķes, kaitēkļi un kalendārs aug.
+
+Dienas mērogā darbojas atsevišķs efekts, ko sezonalitāte neizskaidro. Grafiks sadalās divos režīmos: 33 “labās” dienas ar vidēji 219 iespaidiem pie pozīcijas 10,6 un 27 “klusās” ar vidēji 49 iespaidiem pie pozīcijas 36,3. Trīs pārbaudes to nošķir no pieprasījuma: pozīcija pasliktinās 3,4 reizes vienlaikus ar kritumu, lai gan sezonāls pieprasījums maina tikai iespaidu skaitu pie nemainīgas pozīcijas; klusākais posms (12.–29. jūlijs) sakrīt ar puķu sezonas maksimumu, kad puķes dod 55% iespaidu; un atgriešanās ir pēkšņa — 29. jūlijā 18 iespaidi pozīcijā 39,4, bet 31. jūlijā 292 iespaidi pozīcijā 7,6. Nedēļas dienu sadalījums neuzrāda modeli. Klusajās dienās vidējais iespaidu skaits ir zemāks nekā viss ne-puķu saturs kopā (~90 dienā), tāpēc efekts ir vietnes līmeņa, ne viena klastera.
+
+**Indeksācijas caurums.** 65 no 263 sitemap URL trīs mēnešos nav devuši nevienu iespaidu, tostarp visi 22 raksti, kas publicēti 6. jūlijā (`fitoftora-tomatiem`, `darza-darbi-augusta`, `ka-marinet-gurkus-kraukskigus`, `avenu-apgriesana-pec-razas` u.c.). Visi 77 raksti ir SSR HTML `/raksti` sarakstā, tātad tie nav bāreņi — problēma ir indeksācijā, ne atklāšanā. Sitemap gan visiem rakstiem lika vienu un to pašu `lastmod`, tāpēc Google nesaņēma signālu, ka 6. jūlijā parādījās kaut kas jauns.
+
+**Kanibalizācija — cēlonis nav tas, kas izskatījās.** `/augi/samtenes` un `/augi/saulespukes` jau pāradresēja uz `/pukes/*`, bet ar Next.js `redirect()`, kas dod **307 (pagaidu)**. Google pagaidu pāradresācijā nesaliek kopā ranga signālus un patur veco URL indeksā. Neļķes ir atsevišķs gadījums: tās dzīvo tikai `/augi/nelkes` (186 iespaidi, pozīcija 19,83, 1 klikšķis), lai gan vaicājums `neļķes` ir puķu nolūka (135 iespaidi, pozīcija 23,46, 0 klikšķu) un `/pukes` sadaļā satura lapas nav.
+
+**Kodola lapas nesasniedz meklētāju.** `/kalendars`, `/celvedis`, `/meness` un `/planotajs` ir `"use client"` komponentes ar `if (!mounted) return staticHeader`, tāpēc pirmsatveidotajā HTML nonāk tikai navigācija un viena rindkopa — `/kalendars` gadījumā 267 prozas vārdi. Tas izskaidro, kāpēc vietnes nosaukuma vaicājums `mēness kalendārs` ir pozīcijā 22,69 un `/kalendars` — pozīcijā 33,76 ar 1,1% CTR, kamēr servera pusē atveidotā `/kalendars/2026/augusts` ir pozīcijā 6,48 ar 21,1% CTR.
+
+**Puķu klasteris — galvenā iespēja.** `/pukes` A–Z lapa dod 1 658 iespaidus un 124 klikšķus; vaicājums `puķu nosaukumi alfabēta secībā` ir pozīcijā 2,42 ar 29,5% CTR. Atsevišķās puķu lapas turpretī nekonkurē: `/pukes/tulpes` 84 iespaidi pozīcijā 47,7; `/pukes/peonijas` 74 pozīcijā 41,5; `/pukes/rozes` 38 pozīcijā 46,5; `/pukes/narcises` 28 pozīcijā 32,0; `/pukes/hortenzijas` 28 pozīcijā 33,7. Rudens ir sīpolpuķu stādīšanas sezona, tāpēc tulpes un narcises jāstiprina tagad.
+
+**Iespaidi bez klikšķiem pie labas pozīcijas.** `magnija trūkums gurķiem` 107 iespaidi, pozīcija 8,87, 0 klikšķu (tas pats lēmums pierakstīts 14.07. un nav izpildīts). `ziemas redīsi` 63 pozīcijā 10,08. `fitoftora tomātiem` 51 pozīcijā 10,02, kamēr veltītais raksts nav indeksēts. `tīklērces apkarošana` 43 pozīcijā 9,37. `daudzgadīgās puķes kas zied visu vasaru` 44 pozīcijā 9,89. `kad pārstādīt peonijas` 32 pozīcijā 9,88.
+
+**Izpildīts 19.08.**
+
+1. `/augi/[slug]` puķu pāradresācija pārslēgta no `redirect()` uz `permanentRedirect()` — pārbaudīts, atbild 308.
+2. Sitemap saņem īstus datumus: raksti no `updatedAt`, kaitēkļu lapas no to `updatedAt`, `/raksti` no jaunākā raksta. Deviņi atšķirīgi `lastmod` viena vietā. Datu lapas (augi, puķes, mēneši) patur `DATA_REVIEWED`, kas ir reāls pārskatīšanas datums.
+3. `/kalendars` pārbūvēta par servera komponenti: interaktīvais režģis pārcelts uz `components/calendar-explorer.tsx`, bet lapa servera pusē atveido šodienas Mēness fāzi un elementu dienu, mēneša jauno un pilno Mēnesi, nelabvēlīgās dienas, mēneša padomu un visas četras elementu dienu grupas ar saitēm uz sējamajiem augiem. `revalidate = 3600`, lai datētais bloks nenoveco.
+
+4. `/meness` pārtaisīta par tīru servera lapu. Tajā nebija ne stāvokļa, ne notikumu apstrādes — `useMounted` bija tikai hidratācijas dēļ, tāpēc klienta puse nebija vajadzīga vispār. Mēness fāze, tuvākās fāzes un nedēļas elementu dienas tagad ir HTML.
+5. `/celvedis` sadalīta tāpat kā kalendārs: filtrs pārcelts uz `components/sowing-guide.tsx`, bet lapa servera pusē atveido pilnu 75 kultūru sējas un ražas tabulu pa kategorijām, ar saitēm uz katra auga lapu.
+6. `cropHref()` izcelts `lib/flowers.ts`. Šis modelis jau bija `app/augi/page.tsx` un `app/kaitekli/[slug]/page.tsx`, bet septiņas citas lapas to nelietoja un saitēja uz `/augi/<puķe>`, kas tagad pāradresē. Pirmsatveidotajā HTML bija 17 tādas saites; tagad nav nevienas.
+
+Prozas vārdi pirmsatveidotajā HTML: `/celvedis` 670, `/kalendars` 442, `/meness` 329.
+
+**Nezināmais, kas jāizlemj atsevišķi.** `lib/moon.ts` lieto vidējo sinodisko modeli — lineāru skaitīšanu no zināma jauna Mēness ar fiksētu 29,530588853 dienu periodu, bez Mēness anomālijas korekcijas. Tas ir pietiekami, lai pateiktu, vai Mēness aug vai dilst, bet precīzie pilnmēness datumi atšķiras no īstajiem līdz vienai dienai. Tāpēc `/meness` lapā iesāktā gada pilnmēness tabula tika noņemta — 26 datumu saraksts ir pārbaudāms sekundēs, un kļūda tieši tajā apdraud to, ko vietne pārdod. Tā pati nobīde jau ir mēneša lapu blokos «Jauns Mēness» un «Pilns Mēness». Modeļa uzlabošana skartu katru kalendāra lapu un elementu dienu klasifikāciju, tāpēc tas ir atsevišķs lēmums.
+
+**Nākamie soļi.**
+
+1. `/planotajs` atstāta kā ir. Tas ir īsts interaktīvs rīks ar `localStorage` plāniem, tam meklēšanas pieprasījuma praktiski nav, un servera pusē tur nav ko godīgi atveidot.
+2. 22 neindeksētie 6. jūlija raksti jāpārbauda GSC lapu indeksācijas atskaitē; sitemap datumi tagad dod Google iemeslu tos pārrāpot.
+3. `/pukes/nelkes` jāizveido un `/augi/nelkes` jāpāradresē uz to.
+4. Rudens saturs jāraksta pirms pieprasījuma, ne pēc: sīpolpuķu stādīšana (`tulpes` pozīcijā 47,7 un `narcises` pozīcijā 32,0 tieši pirms savas sezonas), ziemas ķiploki, ražas glabāšana un skābēšana. Septembrī raksta oktobri.
+5. Dārzeņu problēmu raksti netiek dzēsti — tie atkal iedegsies maijā un jūnijā. Tagad tur laiku neiegulda.
+6. `magnija-trukums-augiem` darbs no 14.07. joprojām nav izpildīts; 107 iespaidi pozīcijā 8,87 bez neviena klikšķa ir lielākā atsevišķā nepaņemtā iespēja.
