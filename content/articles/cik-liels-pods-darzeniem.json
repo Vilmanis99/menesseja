@@ -120,5 +120,11 @@
       "label": "Kāpēc podu augiem dzeltē lapas",
       "href": "/raksti/kapec-podu-augiem-dzelte-lapas"
     }
+  ],
+  "seasonalMonths": [
+    3,
+    4,
+    5,
+    6
   ]
 }

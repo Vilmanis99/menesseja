@@ -106,5 +106,11 @@
       "label": "Kāpēc sīpoli iet ziedā",
       "href": "/raksti/kapec-sipoli-iet-zieda"
     }
+  ],
+  "seasonalMonths": [
+    5,
+    6,
+    7,
+    8
   ]
 }

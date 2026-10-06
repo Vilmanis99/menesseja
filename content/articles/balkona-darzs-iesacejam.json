@@ -107,5 +107,11 @@
       "label": "Balkona puķes saulainam un ēnainam balkonam",
       "href": "/pukes/balkona-pukes"
     }
+  ],
+  "seasonalMonths": [
+    3,
+    4,
+    5,
+    6
   ]
 }

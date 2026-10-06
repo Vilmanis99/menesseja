@@ -111,5 +111,10 @@
       "label": "Augošs un dilstošs Mēness dārza darbos",
       "href": "/raksti/augoss-un-dilstoss-meness"
     }
+  ],
+  "seasonalMonths": [
+    4,
+    5,
+    6
   ]
 }

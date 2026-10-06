@@ -69,5 +69,11 @@
         "Kā ar Mēness fāzēm? Mēness kalendārs ir jauks tradīcijas palīgs, kas sakārto darbus, bet ziedēšanu tas neietekmē. Sīpolu ziedēšanu izšķir aukstums, arpaciņu izmērs un mitrums — nevis tas, vai Mēness ir augošs vai dilstošs. Vispirms skaties zemes siltumu un laika prognozi, un tikai pēc tam — kalendāru."
       ]
     }
+  ],
+  "seasonalMonths": [
+    5,
+    6,
+    7,
+    8
   ]
 }

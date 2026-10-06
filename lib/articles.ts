@@ -3,7 +3,11 @@ import path from "node:path";
 
 export interface ArticleSection {
   heading?: string;
+  /** Preserve links to headings used before an editorial rewrite. */
+  anchorAliases?: string[];
   paragraphs: string[];
+  /** Topic sources supporting this section, drawn from the article's sources. */
+  sourceUrls?: string[];
   items?: string[];
   listStyle?: "bulleted" | "numbered" | "check";
   table?: {
@@ -48,6 +52,8 @@ export interface Article {
   relatedSlugs?: string[];
   sources: ArticleSource[];
   readMinutes: number;
+  /** Hide gardening-tool actions when they do not fit the article's task. */
+  showGardenAction?: boolean;
   body: ArticleSection[];
   /** Optional related pages elsewhere on the site (cluster interlinking). */
   links?: ArticleLink[];
@@ -132,7 +138,7 @@ export function headingSlug(s: string): string {
 /**
  * Extract Q&A pairs from an article's "biežākie jautājumi" section, if present.
  * Each paragraph is written as "Jautājums? Atbilde." — split on the first "?".
- * Used to emit FAQPage JSON-LD (Google rich results + AI-engine extraction).
+ * Used to describe the visible Q&A in FAQPage JSON-LD.
  */
 export function articleFaq(a: Article): { q: string; a: string }[] {
   const section = a.body.find((s) => s.heading && /jautājumi/i.test(s.heading));

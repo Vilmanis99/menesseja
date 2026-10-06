@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { Card } from "@/components/ui/card";
 import { Icon } from "@/components/ui/icon";
 import { Button } from "@/components/ui/button";
-import { track } from "@/lib/analytics";
+import { track, analyticsAllowed, CONSENT_CHANGED_EVENT } from "@/lib/analytics";
 import Link from "next/link";
 
 /**
@@ -21,14 +21,20 @@ export function NewsletterSignup({ source }: { source: string }) {
   useEffect(() => {
     const node = rootRef.current;
     if (!node) return;
+    let visible = false;
+    let recorded = false;
+    const recordView = () => {
+      if (!visible || recorded || !analyticsAllowed()) return;
+      track("newsletter_view", { source });
+      recorded = true;
+    };
     const seen = new IntersectionObserver(([entry]) => {
-      if (entry.isIntersecting) {
-        track("newsletter_view", { source });
-        seen.disconnect();
-      }
+      visible = entry.isIntersecting;
+      recordView();
     }, { threshold: 0.4 });
     seen.observe(node);
-    return () => seen.disconnect();
+    window.addEventListener(CONSENT_CHANGED_EVENT, recordView);
+    return () => { seen.disconnect(); window.removeEventListener(CONSENT_CHANGED_EVENT, recordView); };
   }, [source]);
 
   async function submit(e: React.FormEvent) {
@@ -45,6 +51,7 @@ export function NewsletterSignup({ source }: { source: string }) {
       if (res.ok) {
         const data = await res.json().catch(() => ({}));
         setState(data.status === "already-subscribed" ? "already" : "pending");
+        if (!website) track(data.status === "already-subscribed" ? "newsletter_already_subscribed" : "newsletter_pending", { source });
       } else {
         const err = await res.json().catch(() => ({}));
         setState(err.status === "invalid" ? "invalid" : err.status === "not-configured" ? "not-configured" : "error");

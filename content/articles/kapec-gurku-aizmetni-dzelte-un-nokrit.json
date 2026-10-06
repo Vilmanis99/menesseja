@@ -106,5 +106,11 @@
       "label": "Kāpēc cukini un kabači pūst galā",
       "href": "/raksti/kapec-cukini-pust-gala"
     }
+  ],
+  "seasonalMonths": [
+    6,
+    7,
+    8,
+    9
   ]
 }

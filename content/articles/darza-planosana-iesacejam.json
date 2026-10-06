@@ -65,5 +65,14 @@
         "Mēness kalendāru izmanto kā jauku tradīciju, kas dod ritmu, nevis kā stingru likumu. Galvenais — sper pirmo soli un mācies darot. Katrs dārznieks reiz bija iesācējs, un tava pirmā pašaudzētā tomāta garša būs vērta visu pūļu."
       ]
     }
+  ],
+  "seasonalMonths": [
+    1,
+    2,
+    3,
+    4,
+    10,
+    11,
+    12
   ]
 }

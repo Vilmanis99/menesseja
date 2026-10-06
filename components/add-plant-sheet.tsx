@@ -19,12 +19,14 @@ export function AddPlantButton({ label = "Pievienot augu", onAdded }: { label?: 
 
   useEffect(() => {
     const id = new URLSearchParams(window.location.search).get("pievienot");
-    if (id && cropById(id)) {
-      setInitialCrop(id);
+    if (id && (id === "izveleties" || cropById(id))) {
+      setInitialCrop(id === "izveleties" ? null : id);
       setOpen(true);
-      track("garden_add_started", { crop_id: id, source: "deep_link" });
+      track("garden_add_started", { crop_id: id === "izveleties" ? undefined : id, source: "deep_link" });
       // clean the URL so refresh doesn't re-open
-      window.history.replaceState({}, "", window.location.pathname);
+      const url = new URL(window.location.href);
+      url.searchParams.delete("pievienot");
+      window.history.replaceState({}, "", `${url.pathname}${url.search}${url.hash}`);
     }
   }, []);
 
@@ -57,7 +59,6 @@ function AddPlantSheet({ onClose, initialCrop, onAdded }: { onClose: () => void;
 
   const pick = (cropId: string) => {
     addPlant(cropId, area);
-    track("garden_add_completed", { crop_id: cropId, area });
     onAdded?.();
     onClose();
   };

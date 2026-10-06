@@ -80,6 +80,17 @@ export default async function BloomPeriodPage({
     <div className="mx-auto max-w-5xl">
       <JsonLd data={jsonLd} />
       <JsonLd data={faqJsonLd} />
+      <JsonLd data={{
+        "@context": "https://schema.org", "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Puķes", item: canonical("/pukes") },
+          { "@type": "ListItem", position: 2, name: p.h1, item: canonical(`/pukes/kas-zied/${p.slug}`) },
+        ],
+      }} />
+      <nav aria-label="Atrašanās vieta" className="mb-md flex flex-wrap items-center gap-1 text-label-sm text-on-surface-variant">
+        <Link href="/pukes" className="inline-flex min-h-11 items-center hover:text-primary">Puķu nosaukumi</Link>
+        <Icon name="chevron_right" size="14px" /><span>{p.h1}</span>
+      </nav>
 
       <PageHeader
         eyebrow="Puķu saraksts"
@@ -93,8 +104,13 @@ export default async function BloomPeriodPage({
       <Card tone="container" className="mb-lg flex items-start gap-sm p-md">
         <Icon name="event_available" className="mt-0.5 shrink-0 text-primary" />
         <div>
-          <h2 className="text-title-md text-on-surface">Ko darīt tagad</h2>
-          <p className="mt-1 text-body-md text-on-surface-variant">{p.now}</p>
+          <h2 className="text-title-md text-on-surface">Stādīšana un kopšana</h2>
+          <p className="mt-1 text-body-md text-on-surface-variant">{p.care}</p>
+          <div className="mt-sm flex flex-wrap gap-x-md gap-y-1">
+            {p.relatedLinks.map((link) => (
+              <Link key={link.href} href={link.href} className="inline-flex min-h-11 items-center text-body-md text-primary hover:underline">{link.label} →</Link>
+            ))}
+          </div>
         </div>
       </Card>
 

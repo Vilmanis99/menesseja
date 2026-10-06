@@ -102,5 +102,12 @@
       "label": "Koka pelnu šķīdums (ceļ augsnes pH)",
       "href": "/receptes/koku-pelnu-skidums"
     }
+  ],
+  "seasonalMonths": [
+    5,
+    6,
+    7,
+    8,
+    9
   ]
 }

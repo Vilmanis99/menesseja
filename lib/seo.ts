@@ -26,16 +26,16 @@ export const CALENDAR_YEARS = [2025, 2026, 2027];
  *  copy so month pages aren't pure templates. */
 export const MONTH_TIPS = [
   "Atpūtas un plānošanas laiks — pārskati sēklas un plāno dobes. Senči vēroja: kāds laiks Zvaigznes dienā, tāds pavasaris.",
-  "Sēj telpās tomātus, papriku un selerijas — tām vajag garu augšanas laiku. Sveču dienā lāse no jumta vēstī agru pavasari.",
-  "Pirmā nopietnā sēja uz palodzes — kāposti, baziliks, puķes. Gaisma strauji pieaug, augi mostas.",
+  "Sagatavo vietu dēstiem un rēķini sējas laiku no izstādīšanas. Papriku un selerijas sēj pēc šķirnes prasībām; tumšā palodzē nesteidzies ar agru tomātu sēju.",
+  "Sēja uz palodzes un siltumnīcas sagatavošana. Izvēlies sējas laiku pēc šķirnes un izstādīšanas plāna; ārā strādā tikai atkususi, ne pārmitra augsne.",
   "Augsne sāk sasilt — sēj aukstumizturīgos tieši laukā (redīsi, salāti, zirņi, burkāni). Uzmanies no nakts salnām.",
   "Galvenais sējas mēnesis. Siltummīļus laukā tikai pēc pēdējās salnas (mēneša beigas) — “ledus vīri” ap 12.–15. maiju.",
   "Stādi gurķus, ķirbjus un tomātus laukā. Jāņos — gada īsākā nakts; pēc Jāņiem zāle aug lēnāk.",
   "Ravēšana, laistīšana un pirmā raža. Sēj atkārtoti salātus un dilles vasaras un rudens ražai.",
   "Lielā novākšana un konservēšana. Sēj ziemas salātus un spinātus; stādi zemenes nākamgadam.",
-  "Novāc saknes glabāšanai un stādi ķiplokus ziemai. Tukšajās dobēs sēj zaļmēslojumu.",
-  "Sakop dobes, mulčē un stādi augļu kokus un krūmus. Pēc salnām pastinaks un kāļi kļūst saldāki.",
-  "Apsedz jutīgos augus un savāc lapas kompostam. Sākas dārza miera laiks.",
+  "Novāc un atlasi ražu glabāšanai. Sīpolpuķēm un zaļmēslojumam izvēlies sugai piemērotu laiku; ziemas ķiploku stādīšanu pielāgo rudens gaitai.",
+  "Atdzisušā, nesasalušā augsnē stādi ziemas ķiplokus un tulpes. Sagatavo dālijas glabāšanai un sakop siltumnīcu pēc ražas.",
+  "Pārbaudi glabāto ražu un sagatavo augus ziemai atbilstoši to prasībām. Iztīri un nožāvē instrumentus, savāc lapas kompostam.",
   "Atpūta un nākamā gada plānošana. Ziemas saulgrieži — gaisma sāk atgriezties.",
 ];
 

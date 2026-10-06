@@ -1,3 +1,6 @@
+import { latviaDateParts } from "./day-anchor";
+import { seasonForMonth } from "./seasonal";
+
 export const ANALYTICS_CONSENT_KEY = "meness-seja:analytics-consent";
 export const CONSENT_CHANGED_EVENT = "meness-seja:consent-changed";
 export const CONSENT_OPEN_EVENT = "meness-seja:consent-open";
@@ -8,10 +11,15 @@ export type AnalyticsEvent =
   | "internal_cta_click"
   | "newsletter_view"
   | "newsletter_submit"
-  | "newsletter_confirmed"
+  | "newsletter_pending"
+  | "newsletter_already_subscribed"
+  | "newsletter_confirmation_view"
   | "newsletter_error"
   | "garden_add_started"
   | "garden_add_completed"
+  | "garden_add_error"
+  | "garden_activated"
+  | "garden_return"
   | "calendar_opened"
   | "planner_started"
   | "planner_saved"
@@ -31,18 +39,18 @@ export function analyticsAllowed(): boolean {
 export function track(event: AnalyticsEvent, params: AnalyticsParams = {}): void {
   if (!analyticsAllowed() || typeof window === "undefined") return;
   const analyticsWindow = window as typeof window & {
-    dataLayer?: unknown[][];
+    dataLayer?: unknown[];
     gtag?: (...args: unknown[]) => void;
   };
-  if (analyticsWindow.gtag) {
-    analyticsWindow.gtag("event", event, params);
-    return;
-  }
-
-  // React effects can fire just before gtag.js is ready. Keep the consented
-  // event in Google's normal dataLayer queue instead of silently losing it.
+  const { year, month } = latviaDateParts();
+  const context = { garden_year: year, garden_month: month, garden_season: seasonForMonth(month), page_path: window.location.pathname, ...params };
+  // Use Google's arguments-object queue, including when an effect runs before
+  // the tag has initialized. Never collect email, account IDs or garden names.
   analyticsWindow.dataLayer = analyticsWindow.dataLayer ?? [];
-  analyticsWindow.dataLayer.push(["event", event, params]);
+  if (!analyticsWindow.gtag) {
+    analyticsWindow.gtag = function () { analyticsWindow.dataLayer!.push(arguments); };
+  }
+  analyticsWindow.gtag("event", event, context);
 }
 
 export function openConsentSettings(): void {

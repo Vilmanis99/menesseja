@@ -4,7 +4,8 @@
  *   0 / 1 = jauns mēness (new), 0.5 = pilns mēness (full).
  */
 
-import { dayAnchor } from "@/lib/day-anchor";
+import { Body, Illumination, MoonPhase, SearchMoonQuarter, NextMoonQuarter } from "astronomy-engine";
+import { dayAnchor, latviaDateParts } from "./day-anchor";
 
 export interface MoonInfo {
   /** 0..1 synodic fraction */
@@ -17,9 +18,37 @@ export interface MoonInfo {
   waxing: boolean;
 }
 
-const SYNODIC = 29.530588853; // days
-/** A known new moon: 2000-01-06 18:14 UTC */
-const KNOWN_NEW = Date.UTC(2000, 0, 6, 18, 14) / 86400000; // in days
+export interface PrincipalMoonPhase {
+  date: Date;
+  frac: number;
+  name: string;
+}
+
+const PRINCIPAL_NAMES = ["Jauns mēness", "Pirmais ceturksnis", "Pilns mēness", "Pēdējais ceturksnis"];
+
+/** Actual phase instants, not dates inferred from a fixed average lunar cycle. */
+export function nextPrincipalPhases(from: Date, count = 4): PrincipalMoonPhase[] {
+  if (!Number.isInteger(count) || count < 1 || count > 16) throw new RangeError("Invalid phase count");
+  let quarter = SearchMoonQuarter(from);
+  return Array.from({ length: count }, () => {
+    const phase = { date: quarter.time.date, frac: quarter.quarter / 4, name: PRINCIPAL_NAMES[quarter.quarter] };
+    quarter = NextMoonQuarter(quarter);
+    return phase;
+  });
+}
+
+/** Include every principal phase falling in this Latvian month, including
+ * two full moons. UTC instants near midnight can belong to the next Riga day. */
+export function moonPhasesForMonth(year: number, month: number): PrincipalMoonPhase[] {
+  if (!Number.isInteger(year) || !Number.isInteger(month) || month < 1 || month > 12) {
+    throw new RangeError("Invalid calendar month");
+  }
+  const start = new Date(Date.UTC(year, month - 1, 0));
+  return nextPrincipalPhases(start, 6).filter(({ date }) => {
+    const local = latviaDateParts(date);
+    return local.year === year && local.month === month;
+  });
+}
 
 const PHASE_NAMES: { max: number; name: string }[] = [
   { max: 0.03, name: "Jauns mēness" },
@@ -59,9 +88,9 @@ export function phaseNameGenitive(phase: number): string {
 /** Moon phase for a given date (defaults to now). Anchored to the date's
  *  Latvian calendar day so every surface (and the UTC build server) agrees. */
 export function moonForDate(date: Date = new Date()): MoonInfo {
-  const days = dayAnchor(date).getTime() / 86400000 - KNOWN_NEW;
-  const phase = ((days / SYNODIC) % 1 + 1) % 1;
-  const illumination = (1 - Math.cos(2 * Math.PI * phase)) / 2;
+  const anchor = dayAnchor(date);
+  const phase = MoonPhase(anchor) / 360;
+  const illumination = Illumination(Body.Moon, anchor).phase_fraction;
   return {
     phase,
     name: phaseName(phase),

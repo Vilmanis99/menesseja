@@ -62,5 +62,13 @@
         "Tāpēc kārtība ir vienkārša: vispirms sakārto zemi — pH, struktūru, barību — un tikai pēc tam domā par sēšanas dienām. Mūsu lietotnes kalendārs noderēs vēlāk, kad būsi gatavs sēt: tas parādīs, kura diena pēc tradīcijas labāk der lapu, augļu vai sakņu darbiem. Bet veselīga, pareiza skābuma augsne ir pamats, uz kura balstās viss pārējais."
       ]
     }
+  ],
+  "seasonalMonths": [
+    3,
+    4,
+    5,
+    9,
+    10,
+    11
   ]
 }

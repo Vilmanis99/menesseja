@@ -62,5 +62,11 @@
         "Tieši šādai lietošanai ir domāts mūsu Mēness kalendārs un ceļvedis: kalendārs ieteiks, kura diena pēc tradīcijas labāk der lapu, augļu vai sakņu darbiem, bet pēdējais vārds vienmēr pieder zemes siltumam un debesīm. Iesācējam labākais padoms paliek vienkāršs: mēri augsni, vēro laiku, pieraksti, ko un kad iesēji. Pēc pāris sezonām tev būs sava, Latvijas apstākļiem pielāgota pieredze, kas ir vērtīgāka par jebkuru kalendāru."
       ]
     }
+  ],
+  "seasonalMonths": [
+    3,
+    4,
+    5,
+    6
   ]
 }

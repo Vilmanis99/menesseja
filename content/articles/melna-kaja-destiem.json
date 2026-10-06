@@ -99,5 +99,10 @@
       "label": "Kumelīšu uzlējums dīgstu stiprināšanai",
       "href": "/receptes/kumelisu-uzlejums"
     }
+  ],
+  "seasonalMonths": [
+    2,
+    3,
+    4
   ]
 }

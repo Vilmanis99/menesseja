@@ -1,0 +1,69 @@
+{
+  "title": "Kā izvēlēties sēklas savam dārzam",
+  "slug": "ka-izveleties-seklas-darzam",
+  "category": "Praktiski",
+  "intent": "how-to",
+  "excerpt": "Kā izvēlēties dārzeņu un puķu sēklas Latvijas dārzam: audzēšanas vieta, šķirnes augšanas ilgums, F1 apzīmējums un vajadzīgais daudzums pirms pirkuma.",
+  "shortAnswer": "Sēklas izvēlies pēc audzēšanas vietas, pieejamā laika un tā, kam izmantosi ražu. Salīdzini šķirnes prasības, augšanas ilgumu un sēklu skaitu, pārskati mājās palikušās paciņas un tikai tad veido pirkumu sarakstu. F1 norāda pirmās paaudzes hibrīdu; tas pats par sevi nepasaka, vai šķirne derēs tavām dobēm.",
+  "primaryQuery": "kā izvēlēties sēklas dārzam",
+  "publishedAt": "2026-10-06",
+  "updatedAt": "2026-10-06",
+  "seasonalMonths": [1, 2, 3, 4, 11, 12],
+  "entities": {},
+  "relatedSlugs": ["ka-glabat-seklas-un-parbaudit-digtspeju", "kad-set-destus-rekini-atpakal", "darza-planosana-iesacejam"],
+  "sources": [
+    { "label": "University of Minnesota Extension — sezonas un šķirņu plānošana", "url": "https://extension.umn.edu/about/our-stories/news/garden-planning-in-the-new-year" },
+    { "label": "RHS — F1 hibrīdi", "url": "https://www.rhs.org.uk/vegetables/f1-hybrids" },
+    { "label": "University of Minnesota Extension — tomātu šķirņu izvēle", "url": "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/growing-tomatoes" }
+  ],
+  "readMinutes": 4,
+  "body": [
+    {
+      "heading": "Sāc ar audzēšanas vietu",
+      "paragraphs": [
+        "Pirms pārlūko sēklu piedāvājumus, pieraksti, vai audzēsi laukā, siltumnīcā vai podos. Atzīmē vietas lielumu, sauli, laistīšanas iespējas un to, cik augus varēsi aprūpēt. Šis saraksts palīdz salīdzināt šķirnes pēc tavām vajadzībām.",
+        "Tomātiem pievērs uzmanību augšanas tipam. Kompakts krūmveida tomāts un augsts, piesienams tomāts prasa atšķirīgu vietu un kopšanu. Uz paciņas pārbaudi, vai šķirne paredzēta laukam, siltumnīcai vai audzēšanai traukā; attēls vien to neizskaidro."
+      ]
+    },
+    {
+      "heading": "Salīdzini laiku līdz ražai un ražas izmantošanu",
+      "paragraphs": [
+        "Latvijas īsākajā audzēšanas sezonā īpaši svarīgs ir šķirnes augšanas ilgums. Noskaidro, vai norādītās dienas skaita no sējas vai izstādīšanas. Laikapstākļi šo termiņu var mainīt, tāpēc vēls pavasaris nav automātisks iemesls izvēlēties vēlāku šķirni.",
+        "Izvēlies arī pēc ražas izmantošanas: svaigai ēšanai, glabāšanai vai pārstrādei. Ja iepriekš bijušas konkrētas slimības, meklē šķirnes aprakstā norādīto izturību pret tām. Izturība pret vienu slimību nepasargā no visām audzēšanas problēmām."
+      ]
+    },
+    {
+      "heading": "Ko nozīmē F1",
+      "paragraphs": [
+        "F1 ir pirmās paaudzes hibrīds, kas iegūts, krustojot izvēlētas vecāku līnijas. Šādām šķirnēm var būt vienmērīgāka augšana, noteiktas ražas īpašības vai slimībizturība. Vērtē konkrēto aprakstu, nevis pieņem, ka visas F1 sēklas vienmēr būs labākā izvēle.",
+        "Ja gribi saglabāt paša izaudzētas sēklas, F1 pēcnācēji var neatkārtot sākotnējās šķirnes īpašības. Arī nehibrīdai šķirnei jāsaprot apputeksnēšanās un sēklu ievākšanas prasības. Izvēli izdari pēc tā, vai svarīgāka ir konkrēta raža vai sēklu saglabāšana nākamajam gadam."
+      ]
+    },
+    {
+      "heading": "Pirms pirkuma pārbaudi piecas lietas",
+      "paragraphs": ["Izveido īsu sarakstu katrai kultūrai. Tajā jābūt skaidram, kāpēc izvēlies tieši šo šķirni un cik augu vajag."],
+      "listStyle": "check",
+      "items": [
+        "Audzēšanas vieta un šķirnes prasības atbilst tavām iespējām.",
+        "Sējas un izstādīšanas plāns atstāj pietiekami daudz laika līdz ražai.",
+        "Norādīts sēklu skaits vai daudzums; ar vienas paciņas cenu salīdzināšanai nepietiek.",
+        "Mājās esošās sēklas ir pārskatītas, un šaubīgajām pārbaudīta dīgtspēja.",
+        "Kopējā cena un vajadzīgais daudzums ir saprotams arī tad, ja pasūti no vairākiem tirgotājiem."
+      ]
+    },
+    {
+      "heading": "Biežākie jautājumi",
+      "paragraphs": [
+        "Vai dārgākas sēklas vienmēr ir labākas? Cena viena pati nepasaka piemērotību. Salīdzini šķirnes īpašības, daudzumu un audzēšanas prasības.",
+        "Vai sēklas jāpērk tikai pavasarī? Sezonu vari plānot ziemā. Vispirms pārskati atlikumus un izvēlies audzēšanas vietai piemērotas šķirnes; pirkums nav obligāti jāveic uzreiz.",
+        "Cik šķirņu izvēlēties pirmajam gadam? Sāc ar tik lielu apjomu, ko vari aprūpēt un izmantot. Pieraksti izvēles un rezultātus, lai nākamajā sezonā salīdzinājums balstītos tavā pieredzē."
+      ]
+    }
+  ],
+  "links": [
+    { "label": "Sēklu glabāšana un dīgtspējas pārbaude", "href": "/raksti/ka-glabat-seklas-un-parbaudit-digtspeju" },
+    { "label": "Kad sēt dēstus", "href": "/raksti/kad-set-destus-rekini-atpakal" },
+    { "label": "Sēja un darbi pa mēnešiem", "href": "/ko-set" },
+    { "label": "Tomātu audzēšanas ceļvedis", "href": "/augi/tomati" }
+  ]
+}

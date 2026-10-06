@@ -6,6 +6,8 @@ import { useAuth } from "@/components/auth-context";
 import { storageGet, storageSet, storageRemove } from "@/lib/safe-storage";
 import { isSupabaseConfigured } from "@/lib/supabase/config";
 import { createClient } from "@/lib/supabase/client";
+import { track, analyticsAllowed, CONSENT_CHANGED_EVENT } from "@/lib/analytics";
+import { latviaDateKey } from "@/lib/day-anchor";
 import {
   fetchGarden,
   insertPlant,
@@ -77,7 +79,12 @@ export function GardenProvider({ children }: { children: React.ReactNode }) {
   /** Plants added while the login sync was still in flight — must not be lost
    *  when the fetched DB garden replaces local state. */
   const syncingRef = useRef(false);
-  const pendingAddsRef = useRef<Plant[]>([]);
+  const pendingAddsRef = useRef<{ plant: Plant; firstPlant: boolean }[]>([]);
+
+  const recordSavedPlant = (plant: Plant, storage: "local" | "cloud", firstPlant: boolean) => {
+    track("garden_add_completed", { crop_id: plant.cropId, storage });
+    if (firstPlant) track("garden_activated", { crop_id: plant.cropId, storage });
+  };
 
   const supabase = useMemo(() => {
     if (!isSupabaseConfigured) return null;
@@ -162,11 +169,13 @@ export function GardenProvider({ children }: { children: React.ReactNode }) {
         // Plants the user added while this sync was in flight: push them to the
         // DB and keep them visible instead of overwriting them with the fetch.
         const pending = pendingAddsRef.current.splice(0);
-        for (const p of pending) {
+        for (const { plant: p, firstPlant } of pending) {
           try {
             await insertPlant(supabase, userId, p);
             db = [...db, p];
+            recordSavedPlant(p, "cloud", firstPlant && db.filter((x) => !x.seed).length === 1);
           } catch {
+            track("garden_add_error", { crop_id: p.cropId, reason: "cloud" });
             if (active) setSyncError("Daļu augu neizdevās saglabāt mākonī.");
           }
         }
@@ -199,19 +208,48 @@ export function GardenProvider({ children }: { children: React.ReactNode }) {
     }
   }, [plants, hydrated]);
 
+  // One return event per Riga day for a garden containing real plants. Listen
+  // for consent granted after hydration; never measure visits to demo gardens.
+  const realGarden = hydrated && plants.some((p) => !p.seed);
+  useEffect(() => {
+    if (!realGarden) return;
+    const recordVisit = () => {
+      if (!analyticsAllowed()) return;
+      const key = "meness-seja:analytics-garden-last-visit";
+      const today = latviaDateKey();
+      const previous = storageGet(key);
+      if (previous === today) return;
+      if (previous && /^\d{4}-\d{2}-\d{2}$/.test(previous) && previous < today) {
+        track("garden_return", { days_since_visit: Math.round((Date.parse(today) - Date.parse(previous)) / 86400000) });
+      }
+      storageSet(key, today);
+    };
+    recordVisit();
+    window.addEventListener(CONSENT_CHANGED_EVENT, recordVisit);
+    return () => window.removeEventListener(CONSENT_CHANGED_EVENT, recordVisit);
+  }, [realGarden]);
+
   const addPlant = (cropId: string, area: string) => {
     const id = newId();
-    const plant: Plant = { id, cropId, area, sownAt: new Date().toISOString().slice(0, 10) };
-    setPlants((p) => [...p, plant]);
+    const plant: Plant = { id, cropId, area, sownAt: latviaDateKey() };
+    const firstPlant = !plants.some((p) => !p.seed);
+    setPlants((p) => [...p.filter((x) => !x.seed), plant]);
     setLastAddedId(id);
     if (modeRef.current === "db" && supabase && userId) {
-      insertPlant(supabase, userId, plant).catch(() => {
+      insertPlant(supabase, userId, plant).then(() => {
+        recordSavedPlant(plant, "cloud", firstPlant);
+      }).catch(() => {
         setPlants((p) => p.filter((x) => x.id !== id));
         setSyncError("Neizdevās saglabāt augu mākonī. Pamēģini vēlreiz.");
+        track("garden_add_error", { crop_id: cropId, reason: "cloud" });
       });
     } else if (syncingRef.current && userId) {
       // Login sync still in flight — queue so the DB fetch doesn't erase it.
-      pendingAddsRef.current.push(plant);
+      pendingAddsRef.current.push({ plant, firstPlant });
+    } else if (storageSet(STORAGE_KEY, JSON.stringify([...plants.filter((p) => !p.seed), plant]))) {
+      recordSavedPlant(plant, "local", firstPlant);
+    } else {
+      track("garden_add_error", { crop_id: cropId, reason: "local_storage" });
     }
   };
 

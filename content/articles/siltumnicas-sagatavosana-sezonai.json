@@ -1,0 +1,70 @@
+{
+  "title": "Siltumnīcas sagatavošana sezonai: tīrīšana un pārbaude",
+  "slug": "siltumnicas-sagatavosana-sezonai",
+  "category": "Praktiski",
+  "intent": "how-to",
+  "excerpt": "Kā sagatavot siltumnīcu pavasarim vai sakopt pēc ražas: augu atliekas, seguma tīrīšana, podi, vēdināšana un aprīkojuma pārbaude pirms stādīšanas.",
+  "shortAnswer": "Siltumnīcu sagatavo laikā, kad tā ir brīva no audzējamām kultūrām: iznes atliekas, notīri segumu un darba virsmas, izmazgā atkārtoti lietojamos traukus un pārbaudi vēdināšanu un laistīšanu. Pamatīgai sakopšanai bieži pietiek ar ūdeni un piemērotu suku; tīrīšana nav solījums iznīcināt visus slimību ierosinātājus.",
+  "primaryQuery": "siltumnīcas sagatavošana sezonai",
+  "publishedAt": "2026-10-06",
+  "updatedAt": "2026-10-06",
+  "seasonalMonths": [2, 3, 4, 9, 10, 11],
+  "entities": {},
+  "relatedSlugs": ["siltumnica-vai-lauka", "augu-maina-darza", "kad-stadit-destus-lauka"],
+  "sources": [
+    { "label": "RHS — siltumnīcas tīrīšana", "url": "https://www.rhs.org.uk/garden-features/cleaning-greenhouses" },
+    { "label": "RHS — instrumentu tīrīšana un kopšana", "url": "https://www.rhs.org.uk/garden-jobs/cleaning-tools" },
+    { "label": "Penn State Extension — sakopšana starp kultūru audzēšanas cikliem", "url": "https://extension.psu.edu/sanitation-when-transitioning-high-tunnels" }
+  ],
+  "readMinutes": 4,
+  "body": [
+    {
+      "heading": "Kad sākt un ko sagatavot",
+      "paragraphs": [
+        "Darbu ērtāk veikt pēc pēdējās ražas rudenī vai pirms jauno augu ievietošanas pavasarī. Izvēlies dienu, kad varēsi strādāt un pēc tam izvēdināt telpu. Ja siltumnīcā vēl ir augi, vispirms izlem, kur tos pārvietosi, lai nepakļautu aukstumam.",
+        "Sagatavo cimdus, spaini, mīkstu drānu un segumam piemērotu suku. Pārbaudi siltumnīcas ražotāja norādes, īpaši polikarbonātam un plēvei. Atsevišķu detaļu nomaiņu plāno pēc faktiskā stāvokļa, nevis tāpēc, ka sākas jauns gads."
+      ]
+    },
+    {
+      "heading": "Darbu secība",
+      "paragraphs": ["Vispirms sakop telpu un aprīkojumu, pēc tam plāno jaunos stādījumus. Tā uz tīrām virsmām neatgriezīsi vecās atliekas."],
+      "listStyle": "numbered",
+      "items": [
+        "Iznes veco augu atliekas, izlietotos piesienamos materiālus un nezāles. Slimību skartās atliekas apstrādā atbilstoši konkrētās problēmas norādēm.",
+        "Izņem podus un aprīkojumu. Notīri stūrus, plauktus un citas vietas, kur palikušas augu atliekas vai augsne.",
+        "Nomazgā segumu ar tā materiālam piemērotu paņēmienu. Stiklam der ūdens un mīksta drāna; neskrāpē virsmu ar metāla suku.",
+        "Izmazgā atkārtoti lietojamos podus un sēšanas traukus. Notīri un nožāvē instrumentus; bojātos rokturus vai detaļas salabo.",
+        "Pārbaudi durvis, vēdināšanas logus un seguma bojājumus. Laistīšanas sistēmu izmēģini pirms tajā nonāk jaunie stādi.",
+        "Ļauj virsmām nožūt, saliec tīro aprīkojumu atpakaļ un sagatavo plānu nākamajām kultūrām."
+      ]
+    },
+    {
+      "heading": "Ja iepriekšējā sezonā bija slimības",
+      "paragraphs": [
+        "Pieraksti, kuri augi cieta un kādi bija simptomi. Notīrītas sienas neatrisina katru augsnes vai sakņu problēmu. Vispirms noskaidro iespējamo cēloni; tad izvēlies konkrētajai problēmai piemērotu profilaksi.",
+        "Augu atlieku izņemšana, nezāļu ierobežošana un tīri darba piederumi palīdz uzturēt kārtību starp audzēšanas cikliem. Dezinfekcija ir atsevišķa darbība, kurai vajag piemērotu līdzekli un tā lietošanas norādes. Neaizstāj diagnozi ar patvaļīgu ķīmisku apstrādi."
+      ]
+    },
+    {
+      "heading": "Pirms ienes pirmos stādus",
+      "paragraphs": [
+        "Pārbaudi augsnes stāvokli, paredzēto stādījumu atstarpes un iespēju piekļūt katram augam. Ieplāno, kur atradīsies balsti un kā laistīsi, kad augi būs paaugušies. Atsevišķs termometrs palīdz vērot faktiskos apstākļus.",
+        "Tīra siltumnīca vēl nav gatava siltummīļiem, ja naktī tajā ir par aukstu. Stādīšanas laiku nosaki pēc auga prasībām, vietējās prognozes un reāli mērītas temperatūras. Bez apkures siltumnīcā joprojām iespējams aukstuma bojājums."
+      ]
+    },
+    {
+      "heading": "Biežākie jautājumi",
+      "paragraphs": [
+        "Vai tīrīt rudenī vai pavasarī? Abos laikos var veikt sakopšanu, ja siltumnīca ir brīva no kultūrām. Rudenī izņem atliekas, bet pavasarī vēlreiz pārbaudi stāvokli pirms stādīšanas.",
+        "Vai vajag speciālu tīrīšanas komplektu? Ikdienas sakopšanai bieži pietiek ar esošiem piederumiem. Vispirms pārbaudi, kas piemērots konkrētajam segumam un darbam.",
+        "Vai ar tīrīšanu pietiek pret visām slimībām? Nē. Ja problēma atkārtojas, nepieciešama tās atpazīšana un atbilstoša rīcība arī ar augiem, substrātu vai augsni."
+      ]
+    }
+  ],
+  "links": [
+    { "label": "Kad stādīt dēstus laukā un siltumnīcā", "href": "/raksti/kad-stadit-destus-lauka" },
+    { "label": "Augu maiņa dārzā", "href": "/raksti/augu-maina-darza" },
+    { "label": "Marta darbu ceļvedis", "href": "/ko-set/marts" },
+    { "label": "Oktobra darbu ceļvedis", "href": "/ko-set/oktobris" }
+  ]
+}

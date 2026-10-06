@@ -100,5 +100,11 @@
       "label": "Koku pelnu šķīdums kālija mēslojumam",
       "href": "/receptes/koku-pelnu-skidums"
     }
+  ],
+  "seasonalMonths": [
+    6,
+    7,
+    8,
+    9
   ]
 }

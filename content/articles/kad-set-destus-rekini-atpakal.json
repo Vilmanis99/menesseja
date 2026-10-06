@@ -3,96 +3,119 @@
   "slug": "kad-set-destus-rekini-atpakal",
   "category": "Praktiski",
   "intent": "how-to",
-  "excerpt": "Kad sēt tomātu dēstus? Neskaiti no kalendāra sākuma — skaiti atpakaļ no izstādīšanas datuma. Vienkārša Latvijas atskaite tomātiem, paprikai un gurķiem.",
-  "shortAnswer": "Februāra sākumā uznāk tā sauktais stādu drudzis: ārā vēl sniegs, bet rokas niez sēt.  Tu iztukšo sēklu paciņas, palodze pielīst pilna ar podiņiem, un tad maijā ir bēda — dēsti gari, bāli, izstīdzējuši un nokarājas pāri podiņa malai, vēl labu mēnesi pirms tos drīkst likt ārā.",
+  "excerpt": "Kad sēt dēstus: kā skaitīt atpakaļ no izstādīšanas, nepieskaitīt dīgšanu un norūdīšanu divreiz un koriģēt plānu aukstā pavasarī.",
+  "shortAnswer": "Sējas datumu rēķini no plānotās izstādīšanas: atņem laiku dīgšanai un dēstu izaudzēšanai, ja tas nav jau ietverts šķirnes norādēs. Norūdīšanu ieplāno audzēšanas beigās un neatskaiti divreiz. Izstādīšanas datumu vēlāk precizē pēc prognozes un augsnes, ne tikai kalendāra.",
   "primaryQuery": "kad sēt dēstus: rēķini atpakaļ no izstādīšanas datuma",
   "publishedAt": "2026-06-29",
-  "updatedAt": "2026-06-29",
-  "entities": {
-    "crops": [
-      "gurki",
-      "paprika",
-      "tomati"
-    ]
-  },
+  "updatedAt": "2026-10-06",
+  "entities": {},
   "relatedSlugs": [
     "destu-audzesana-uz-palodzes",
     "kad-stadit-destus-lauka",
-    "salnas-latvija",
-    "aukstumizturigie-vs-siltummilosie",
-    "ka-rudit-destus",
-    "siltumnica-vai-lauka"
+    "ka-izveleties-seklas-darzam"
   ],
   "sources": [
     {
-      "label": "Latvijas Lauku konsultāciju un izglītības centrs",
-      "url": "https://llkc.lv/"
+      "label": "University of Minnesota — dēstu audzēšanas ilgums",
+      "url": "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/starting-seeds-indoors"
     },
     {
-      "label": "Royal Horticultural Society — Advice",
-      "url": "https://www.rhs.org.uk/advice"
+      "label": "University of Minnesota — gurķu dēstu laiks un saknes",
+      "url": "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/growing-cucumbers"
+    },
+    {
+      "label": "RHS — izstādīšana un vēlo salnu risks",
+      "url": "https://www.rhs.org.uk/garden-jobs/when-to-plant-out-tender-plants-avoiding-late-frosts"
+    },
+    {
+      "label": "LLKC, Māris Narvils — 2026. gada pavasara riski",
+      "url": "https://llkc.lv/aktualitates/sausuma-riski-pavasari/"
     }
   ],
-  "readMinutes": 6,
+  "readMinutes": 3,
   "body": [
     {
+      "heading": "1. Izvēlies izstādīšanas vietu un plāna datumu",
       "paragraphs": [
-        "Februāra sākumā uznāk tā sauktais stādu drudzis: ārā vēl sniegs, bet rokas niez sēt. Tu iztukšo sēklu paciņas, palodze pielīst pilna ar podiņiem, un tad maijā ir bēda — dēsti gari, bāli, izstīdzējuši un nokarājas pāri podiņa malai, vēl labu mēnesi pirms tos drīkst likt ārā. Pateiksim uzreiz un mierīgi: vainīga nav tava roka, bet datums. Tu iesēji par agru.",
-        "Risinājums ir vienkāršs, un to izmanto katrs pieredzējis dārznieks: nesāc skaitīt no kalendāra sākuma, bet skaiti atpakaļ. Vispirms izvēlies, kad katru kultūru gribi likt ārā, un tad no šī datuma atņem tik nedēļas, cik dēstam vajag, lai izaugtu līdz pareizajam izmēram. Šajā rakstā tieši to arī izdarīsim — soli pa solim, ar Latvijas datumiem un nedēļām katrai galvenajai kultūrai. Pēc tā tu vairs nesēsi pārāk agri."
+        "Pieraksti, vai stādīsi laukā vai siltumnīcā un kādu aizsardzību vari nodrošināt. Neapkurināta siltumnīca naktī var atdzist līdz augiem bīstamai temperatūrai. Viena silta diena vēl nenozīmē, ka tajā droši stādīt siltummīļus.",
+        "Datums ir plānošanas pieņēmums. Pirms izstādīšanas to pārbaudi vēlreiz: nakšu prognoze, temperatūra pie augiem, augsnes siltums un mitrums. Latvijas piekrastē un aukstā, zemā vietā apstākļi vienā datumā var būt ļoti atšķirīgi.",
+        "LLKC 2026. gada pavasara izvērtējumā uzsver, ka dēstu izaudzēšanas un stādīšanas laiks jāpieskaņo apstākļiem uz vietas. Konkrēta gada aukstuma vai sausuma novērojumu nepārnes kā nemainīgu termiņu nākamajai sezonai."
+      ],
+      "sourceUrls": [
+        "https://www.rhs.org.uk/garden-jobs/when-to-plant-out-tender-plants-avoiding-late-frosts",
+        "https://llkc.lv/aktualitates/sausuma-riski-pavasari/"
+      ],
+      "anchorAliases": [
+        "1-solis-atrodi-savu-izstadisanas-datumu"
       ]
     },
     {
-      "heading": "1. solis: atrodi savu izstādīšanas datumu",
+      "heading": "2. Noskaidro, no kura brīža skaitītas nedēļas",
       "paragraphs": [
-        "Viss sākas ar vienu jautājumu — kad augs nonāks pastāvīgā vietā. Tas atkarīgs no divām lietām: vai aug siltumnīcā vai laukā, un kad tavā vietā beidzas salnas. Latvijā nokavētās pavasara salnas mēdz uznākt vēl maija beigās, vietām pat jūnija sākumā, tāpēc siltummīļus laukā droši stāda ne agrāk par maija beigām — bieži vien tikai pēc 1. jūnija.",
-        "Pieraksti sev divus datumus. Pirmais — kad siltumnīcā: neapkurinātā siltumnīcā tomātus parasti stāda maija vidū, jo tur zeme un gaiss sasilst dažas nedēļas ātrāk nekā laukā. Otrais — kad laukā: maija beigas vai jūnija sākums, kad nakts salnu vairs nav. Aukstumizturīgos augus (kāpostus, salātus, sīpolus) var likt ārā jau krietni agrāk, jo viegla salna tiem nekaiš. Šie divi datumi ir tavas atskaites punkti — no tiem visu skaitīsim atpakaļ."
+        "Uz paciņas var būt norādīts laiks no sējas, no sadīgšanas vai līdz ražai pēc izstādīšanas. Tie nav savstarpēji aizvietojami skaitļi. Piemēram, “70 dienas līdz ražai pēc izstādīšanas” nepasaka, cik ilgi jāaudzē dēsts.",
+        "Ja audzēšanas ilgums dots no sadīgšanas, dīgšanas laiks jāatņem atsevišķi. Ja dots no sējas, tas jau ietver dīgšanu. Raksti to vienā rindā, lai nejauši nepieskaitītu vēl vienu nedēļu."
+      ],
+      "items": [
+        "Ja ilgums dots no sējas: sējas datums = izstādīšanas datums − kopējais dēstu audzēšanas laiks.",
+        "Ja ilgums dots no sadīgšanas: sējas datums = izstādīšanas datums − dīgšanas laiks − audzēšanas laiks pēc sadīgšanas."
+      ],
+      "sourceUrls": [
+        "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/starting-seeds-indoors"
+      ],
+      "anchorAliases": [
+        "2-solis-atnem-desta-nedelas"
       ]
     },
     {
-      "heading": "2. solis: atņem dēsta nedēļas",
+      "heading": "3. Salīdzini kultūras, nevis sēj visu reizē",
       "paragraphs": [
-        "Tagad no izstādīšanas datuma atskaiti, cik nedēļas katram augam vajag uzaugt no sēklas līdz stādīšanai gatavam dēstam. Tās ir kultūras īpašās nedēļas, un tieši tās izšķir, vai dēsts būs krietns vai izstīdzējis. Sēj par dažām nedēļām vēlāk, nevis agrāk — vēlāk iesēts, bet stiprs dēsts vienmēr apdzīs agro gareli.",
-        "Galvenais princips ir vienkāršs: jo lēnāk augs aug, jo agrāk to sēj. Lēnaudži, piemēram, paprika un baklažāni, vajag 8–10 nedēļas, tāpēc to atskaite aizved līdz pat februārim. Tomātam pietiek ar 6–7 nedēļām — tas ir vidējais ātrums un tieši tāpēc visbiežākais jautājums; pie tā mazliet zemāk parēķināsim soli pa solim. Bet gurķi, kabači un cukini aug zibenīgi, tāpēc tiem vajag tikai 3–4 nedēļas, un sēt tos agrāk nav jēgas — tie pāraug, pirms zeme vispār ir gatava. Pilnu nedēļu sarakstu katrai kultūrai esmu salicis tabulā rakstā par dēstu audzēšanu uz palodzes; šeit svarīgākais ir saprast pašu atskaiti, nevis iemācīties skaitļus no galvas.",
-        "Maza piezīme par sēklas dīgšanas laiku: dažas sēklas dīgst lēni un to vēl jāpieskaita klāt. Paprikai un baklažāniem var paiet 10–14 dienas, līdz parādās asni, tāpēc tiem mierīgi pieliec klāt vēl pāris dienu. Tomāti, kāposti un gurķi dīgst ātri, 5–7 dienās, tāpēc tos atsevišķi rēķināt nevajag."
+        "Tomātu un paprikas dēsti aizņem palodzi ilgāk nekā gurķi. Audzēšanas ilgumu koriģē šķirne, apgaismojums, temperatūra un pieejamais poda tilpums. Universāla precīza nedēļu tabula visām mājām radītu maldīgu drošību.",
+        "Gurķus nesēj pārāk agri: universitātes audzēšanas ceļvedis iesaka sākt ne agrāk kā četras nedēļas pirms plānotās izstādīšanas pēc salnām. Pārstādi, saudzējot saknes, un seko, lai dēsts nepāraug savu trauku."
+      ],
+      "sourceUrls": [
+        "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/starting-seeds-indoors",
+        "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/growing-cucumbers"
       ]
     },
     {
-      "heading": "3. solis: pieskaiti rūdīšanas nedēļu",
+      "heading": "Piemērs: sešas nedēļas līdz 1. jūnijam",
       "paragraphs": [
-        "Iesācēji visbiežāk aizmirst vienu lietu — pirms izstādīšanas dēsti jārūda. Rūdīšana ir pakāpeniska pieradināšana pie āra saules, vēja un vēsuma, un tā ilgst apmēram 7–10 dienas. Izlutināts palodzes stāds, izlikts uzreiz spožā saulē, dabū īstu saules apdegumu un var aiziet bojā pāris dienās.",
-        "Tāpēc rūdīšanas nedēļa nav papildu laiks, ko sēt agrāk — tā ietilpst tajās dēsta nedēļās, kas jau saskaitītas. Vienkārši atceries: pēdējā nedēļā pirms stādīšanas dēstam vairs nav jāaug, tas tikai jāpieradina pie āra. Saskaiti tā: izstādīšanas datums mīnus dēsta nedēļas — un pēdējā no tām paliek rūdīšanai."
+        "Pieņemsim, ka tomātus plāno izstādīt 2027. gada 1. jūnijā un izvēlētajā audzēšanas plānā paredzētas sešas nedēļas no sējas līdz izstādīšanai, ieskaitot norūdīšanu. Sešas nedēļas ir 42 dienas; 1. jūnijs mīnus 42 dienas ir 20. aprīlis.",
+        "Tas ir aprēķina piemērs, ne visai Latvijai ieteikts tomātu sējas datums. Ja tavs plāns paredz astoņas nedēļas, atskaiti 56 dienas un iegūsi 6. aprīli. Ja sējas laikā vēl nav skaidrs, kad varēsi izstādīt, izvēlies pārskatāmu intervālu un nepārslogo palodzi ar vairākām lielām partijām."
+      ],
+      "anchorAliases": [
+        "parekinasim-kopa-tomatu-piemers"
       ]
     },
     {
-      "heading": "Parēķināsim kopā: tomātu piemērs",
+      "heading": "Norūdīšanu ieplāno, nevis dubulto",
       "paragraphs": [
-        "Ņemsim visbiežāko jautājumu — kad sēt tomātu dēstus. Pieņemsim, ka tev ir neapkurināta siltumnīca un tomātus gribi stādīt tajā ap 15. maiju. Tomātam vajag 6–7 nedēļas. Skaiti atpakaļ: no 15. maija atņem 6 nedēļas — tas ir aptuveni 1. aprīlis. Tātad sēj tomātus marta beigās vai aprīļa pirmajās dienās, nevis februārī.",
-        "Bet ja siltumnīcas nav un tomātus liksi laukā tikai pēc salnām, ap 1. jūniju? Tad atskaite ir cita: no 1. jūnija atņem 6 nedēļas — sanāk ap 20. aprīli. Redzi, kā viens un tas pats augs jāsēj atšķirīgā laikā atkarībā no tā, kur to liksi? Tāpēc nav vienas pareizās dienas visiem — ir tava plānotā vieta un tavs izstādīšanas datums. Uzraksti to uz sēklu paciņas ar zīmuli, lai neaizmirsti."
+        "Audzēšanas plānā skaidri atzīmē norūdīšanas posmu. Ja izvēlētais kopējais ilgums to jau ietver, papildu dienas neatskaiti. Ja neietver, šim posmam vajadzīgais laiks jāparedz atsevišķi.",
+        "Norūdīšanas laikā stāds turpina augt. Auksts, vējains laiks var prasīt lēnāku pāreju; neiznes jutīgus dēstus salā tikai tāpēc, ka aprēķinā pienākusi pēdējā nedēļa."
+      ],
+      "sourceUrls": [
+        "https://www.rhs.org.uk/garden-jobs/when-to-plant-out-tender-plants-avoiding-late-frosts"
+      ],
+      "anchorAliases": [
+        "3-solis-pieskaiti-rudisanas-nedelu",
+        "biezakas-kludas"
       ]
     },
     {
-      "heading": "Biežākās kļūdas",
+      "heading": "Biežākie jautājumi",
       "paragraphs": [
-        "Sēt februārī, jo bija stādu drudzis. Tā ir pati biežākā kļūda. Tomātam, iesētam februārī, līdz maijam fiziski nav kur augt — tas izstīdz un novājē. Pacieties: par dēstiem pareizajā laikā tu būsi pateicīgs jūlijā.",
-        "Sēt visu vienā dienā. Paprika, tomāti un gurķi sēšanas laikā atšķiras par diviem mēnešiem. Ja sēsi tos kopā, vai nu paprika būs par mazu, vai gurķi pāraugs. Sēj katru savā nedēļā pēc atskaites.",
-        "Skaitīt no kalendāra, nevis no salnām. Internetā ir daudz krievu valodas “sējas kalendāru” ar Maskavas vai Ukrainas datumiem, kur pavasaris ir par mēnesi agrāks. Latvijai tie neder. Vienmēr balsties uz savu pēdējo salnu datumu, ne uz svešu kalendāru.",
-        "Aizmirst par gaismu. Pat ja datums pareizs, agrās sējas februārī un marta sākumā cieš no gaismas trūkuma. Ja sēsi agri, sagatavo augu lampu — citādi labāk sēt nedēļu vēlāk, kad dienas jau garākas."
-      ]
-    },
-    {
-      "heading": "Īsi un skaidri: biežākie jautājumi",
-      "paragraphs": [
-        "Kad sēt tomātu dēstus Latvijā? Skaiti atpakaļ 6–7 nedēļas no izstādīšanas. Siltumnīcai (stādīšana maija vidū) tas nozīmē sēt marta beigās; laukā (stādīšana jūnija sākumā) — aprīļa otrajā pusē. Februāris tomātiem ir par agru.",
-        "Cik nedēļas pirms stādīšanas sēt papriku? Papriku sēj agri, 8–10 nedēļas iepriekš, jo tā aug lēni un sēklas dīgst ilgi. Praksē tas ir februāris. Paprika ir pirmā, ko sēj sezonā.",
-        "Vai labāk sēt par nedēļu agrāk vai vēlāk? Vienmēr vēlāk. Pārāk agrs dēsts izstīdz un novājē, un to grūti glābt. Mazliet vēlāk iesēts, bet īss un krietns dēsts laukā ātri panāk un apdzen garo.",
-        "Nezinu, kad pie manis beidzas salnas. Vai ir kāds drošs datums? Lielākajai daļai Latvijas siltummīļiem droši ir pēc 25. maija, augstienēs un ieplakās — pēc 1. jūnija. Ja neesi drošs, gaidi nedēļu ilgāk: viena nokavēta salna var iznīcināt visu dēstu partiju vienā naktī.",
-        "Kā ar Mēness fāzēm — vai tās nosaka sēšanas laiku? Mēness kalendārs ir jauks senču tradīcijas palīgs, kas sakārto darbus, bet datumu tas neizšķir. Pareizo sēšanas laiku nosaka izstādīšanas datums un katras kultūras nedēļas, nevis tas, vai Mēness ir augošs vai dilstošs. Vispirms parēķini atpakaļ no salnām, un, ja sanāk arī iekrist sev tīkamā Mēness dienā — jo labāk."
+        "Vai dīgšanas laiks vienmēr jāpieskaita? Tikai tad, ja izmantotais dēstu vecums skaitīts no sadīgšanas. Skaitot no sējas, tas jau ir ietverts.",
+        "Ko darīt, ja plānotajā dienā ir auksts? Atliec izstādīšanu un pārbaudi dēstu vietu, gaismu un poda tilpumu. Pārāk auksta pastāvīgā vieta nav labs risinājums pāraugušiem stādiem.",
+        "Vai pēc Mēness kalendāra jāmaina aprēķins? Vispirms izvēlies augam piemērotu audzēšanas intervālu un apstākļus. Tradicionālā dienas izvēle tos nevar aizstāt."
+      ],
+      "anchorAliases": [
+        "isi-un-skaidri-biezakie-jautajumi"
       ]
     }
   ],
   "links": [
     {
-      "label": "Dēstu audzēšana uz palodzes soli pa solim",
+      "label": "Dēstu audzēšana uz palodzes",
       "href": "/raksti/destu-audzesana-uz-palodzes"
     },
     {
@@ -100,20 +123,13 @@
       "href": "/raksti/kad-stadit-destus-lauka"
     },
     {
-      "label": "Salnas Latvijā: kad tās beidzas",
-      "href": "/raksti/salnas-latvija"
-    },
-    {
-      "label": "Aukstumizturīgie un siltummīļie dārzeņi",
-      "href": "/raksti/aukstumizturigie-vs-siltummilosie"
-    },
-    {
-      "label": "Kā rūdīt dēstus pirms izstādīšanas",
-      "href": "/raksti/ka-rudit-destus"
-    },
-    {
-      "label": "Siltumnīcā vai laukā: kur stādīt",
-      "href": "/raksti/siltumnica-vai-lauka"
+      "label": "Sēklu izvēle dārzam",
+      "href": "/raksti/ka-izveleties-seklas-darzam"
     }
+  ],
+  "seasonalMonths": [
+    2,
+    3,
+    4
   ]
 }

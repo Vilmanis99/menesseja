@@ -38,9 +38,8 @@ export async function subscribeToNewsletter(email: string, source?: string): Pro
       }),
     });
     if (res.ok) return "pending-confirmation";
-    // Brevo reports an already-confirmed/existing contact as a 400 from the DOI
-    // endpoint. The address was validated locally, so this state is safe to show.
-    if (res.status === 400) return "already-subscribed";
+    // HTTP 400 can also mean an invalid template or attribute. It does not
+    // prove that this address has confirmed its subscription.
     return "error";
   } catch {
     return "error";

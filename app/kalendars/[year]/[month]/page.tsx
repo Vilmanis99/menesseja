@@ -6,7 +6,8 @@ import { Icon } from "@/components/ui/icon";
 import { MoonPhase } from "@/components/moon-phase";
 import { JsonLd } from "@/components/json-ld";
 import { DataNote } from "@/components/data-note";
-import { moonForDate } from "@/lib/moon";
+import { moonForDate, moonPhasesForMonth } from "@/lib/moon";
+import { SeasonalLinks } from "@/components/seasonal-links";
 import { sowingDay, isRestDay, ELEMENT_META, PART_GENITIVE, type Element } from "@/lib/biodynamic";
 import { latviaNoon } from "@/lib/day-anchor";
 import { namedaysForDay } from "@/lib/vardadienas";
@@ -44,7 +45,7 @@ export async function generateMetadata({
   const nameGen = MONTHS_LV_GENITIVE[p.month - 1];
   // Title targets both "dārza darbu kalendārs [mēnesis]" (dominant LV phrase) and "mēness kalendārs".
   const title = `Dārza darbu un Mēness kalendārs — ${year}. gada ${nameGen}`;
-  const description = `Ko darīt dārzā ${year}. gada ${nameGen}: dārza darbi, ko sēt un stādīt, Mēness fāzes, sēšanas dienas pēc elementiem (saknes, lapas, ziedi, augļi), vārda dienas un nelabvēlīgās dienas.`;
+  const description = `Ko darīt dārzā ${year}. gada ${MONTHS_LV_LOCATIVE[p.month - 1]}: dārza darbi, ko sēt un stādīt, Mēness fāzes, sēšanas dienas pēc elementiem (saknes, lapas, ziedi, augļi), vārda dienas un nelabvēlīgās dienas.`;
   return {
     title,
     description,
@@ -54,6 +55,8 @@ export async function generateMetadata({
 }
 
 const SOW_KEYS = ["sowIndoors", "sowOutdoors", "transplant"] as const;
+const PHASE_DATE_FMT = new Intl.DateTimeFormat("lv-LV", { day: "numeric", month: "long", timeZone: "Europe/Riga" });
+const PHASE_TIME_FMT = new Intl.DateTimeFormat("lv-LV", { hour: "2-digit", minute: "2-digit", timeZone: "Europe/Riga" });
 function sowableThisMonth(element: Element, month: number) {
   const part = ELEMENT_META[element].part;
   return CROPS.filter(
@@ -93,18 +96,15 @@ export default async function MonthCalendarPage({
     };
   });
 
-  // New & full moon dates this month (extremes of illumination)
-  const newMoon = days.reduce((a, b) => (b.moon.illumination < a.moon.illumination ? b : a));
-  const fullMoon = days.reduce((a, b) => (b.moon.illumination > a.moon.illumination ? b : a));
+  const keyPhases = moonPhasesForMonth(year, month).filter((p) => p.frac === 0 || p.frac === 0.5);
 
   const elements: Element[] = ["zeme", "udens", "gaiss", "uguns"];
 
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "Article",
-    headline: `Mēness sējas kalendārs — ${year}. gada ${nameGen}`,
+    "@type": "WebPage",
+    name: `Mēness sējas kalendārs — ${year}. gada ${nameGen}`,
     inLanguage: "lv",
-    datePublished: `${year}-${String(month).padStart(2, "0")}-01`,
     isPartOf: { "@type": "WebSite", name: SITE_NAME, url: canonical("/") },
     publisher: { "@type": "Organization", name: SITE_NAME, url: canonical("/") },
   };
@@ -133,11 +133,11 @@ export default async function MonthCalendarPage({
 
       <header className="mb-lg">
         <p className="text-label-sm uppercase tracking-[0.2em] text-tertiary">Senču gudrība · Mēness kalendārs · Maria Thun</p>
-        <h1 className="text-headline-lg-mobile capitalize text-primary md:text-display-lg">
+        <h1 className="text-headline-lg-mobile text-primary md:text-display-lg">
           Dārza darbu kalendārs — {name} {year}
         </h1>
         <p className="mt-xs max-w-2xl text-body-lg text-on-surface-variant">
-          Ko darīt dārzā {year}. gada {nameGen} saskaņā ar Mēnesi: dārza darbi, ko sēt un stādīt, katras dienas
+          Ko darīt dārzā {year}. gada {nameLoc} saskaņā ar Mēnesi: dārza darbi, ko sēt un stādīt, katras dienas
           Mēness fāze, elementu diena, vārda dienas un nelabvēlīgās dienas Latvijas dārzkopjiem.
         </p>
         <div className="mt-sm print:hidden">
@@ -158,17 +158,21 @@ export default async function MonthCalendarPage({
       </Card>
 
       {/* Key phases */}
-      <div className="mb-lg grid grid-cols-2 gap-md">
-        {[{ d: newMoon, t: "Jauns mēness" }, { d: fullMoon, t: "Pilns mēness" }].map(({ d, t }) => (
-          <Card key={t} tone="high" elevated className="flex items-center gap-md p-md">
-            <MoonPhase phase={d.moon.phase} size={52} />
+      <div className="mb-sm grid grid-cols-1 gap-md sm:grid-cols-2">
+        {keyPhases.map((p) => (
+          <Card key={p.date.toISOString()} tone="high" elevated className="flex items-center gap-md p-md">
+            <MoonPhase phase={p.frac} size={52} />
             <div>
-              <p className="text-label-sm uppercase tracking-wide text-on-surface-variant">{t}</p>
-              <p className="text-headline-md text-on-surface">{d.day}. {nameLoc}</p>
+              <p className="text-label-sm uppercase tracking-wide text-on-surface-variant">{p.name}</p>
+              <p className="text-headline-md text-on-surface">{PHASE_DATE_FMT.format(p.date)}</p>
+              <p className="text-body-md text-on-surface-variant">plkst. {PHASE_TIME_FMT.format(p.date)}</p>
             </div>
           </Card>
         ))}
       </div>
+      <p className="mb-lg text-label-sm text-on-surface-variant">Fāžu maiņas norādītas pēc Latvijas laika; dienu tabulā fāze aprēķināta plkst. 10.00 UTC.</p>
+
+      <SeasonalLinks month={month} />
 
       {/* What to sow this month, by element */}
       <h2 className="mb-sm text-headline-md text-on-surface">Ko sēt {nameLoc}</h2>

@@ -102,5 +102,14 @@
       "label": "Kas ir Mēness sēja un kā to lietot",
       "href": "/raksti/kas-ir-meness-seja"
     }
+  ],
+  "seasonalMonths": [
+    1,
+    2,
+    3,
+    4,
+    10,
+    11,
+    12
   ]
 }

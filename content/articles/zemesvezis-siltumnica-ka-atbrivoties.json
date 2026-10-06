@@ -3,97 +3,114 @@
   "slug": "zemesvezis-siltumnica-ka-atbrivoties",
   "category": "Problēmas",
   "intent": "problem",
-  "excerpt": "Ja siltumnīcā grauztas saknes un dēsti, tas ir zemesvēzis: siltumnīcā kā atbrīvoties bez ķīmijas — slazdi, eļļas un ziepju šķīdums alās, mehāniskā ķeršana.",
-  "shortAnswer": "Tu no rīta ieej siltumnīcā un redzi, ka vakar vēl spirgtais dēsts ir nogāzies — stublājs pārkniebts pie pašas zemes, it kā kāds to būtu nogriezis.  Pavelc augu, un tas iznāk gandrīz bez saknēm.",
+  "excerpt": "Zemesvēzis siltumnīcā: kā pārbaudīt aizdomas, atšķirt bojājumus un izvēlēties rīcību, nelejot augsnē nepārbaudītus eļļas un ziepju maisījumus.",
+  "shortAnswer": "Nogāzts dēsts viens pats nepierāda zemesvēža klātbūtni. Pārbaudi stublāja pamatni, saknes un augsni; zemesvēzis ir racējcircenis ar rakšanai pielāgotām priekškājām. Ja atrodi kukaini, dokumentē to un saudzīgi savāc. Atkārtotu bojājumu gadījumā noskaidro cēloni un piemērotu ierobežošanu.",
   "primaryQuery": "zemesvēzis siltumnīcā: kā atpazīt un kā no tā atbrīvoties",
   "publishedAt": "2026-06-29",
-  "updatedAt": "2026-06-29",
-  "entities": {
-    "pests": [
-      "zemesvezis",
-      "kurmji"
-    ]
-  },
+  "updatedAt": "2026-10-06",
+  "entities": {},
   "relatedSlugs": [
-    "siltumnica-vai-lauka",
-    "kaiminaugi"
+    "melna-kaja-destiem",
+    "parlaisti-desti",
+    "siltumnicas-sagatavosana-sezonai"
   ],
   "sources": [
     {
-      "label": "Latvijas Lauku konsultāciju un izglītības centrs",
-      "url": "https://llkc.lv/"
+      "label": "Latvijas valsts meži — racējcirceņa pazīmes Latvijā",
+      "url": "https://atputa.lvm.lv/aktuali/231-eksperti/3718-vai-siseni-ir-mazi-sienazisi"
     },
     {
-      "label": "Royal Horticultural Society — Advice",
-      "url": "https://www.rhs.org.uk/advice"
+      "label": "VAAD — reģistrētie augu aizsardzības līdzekļi un lietojumi",
+      "url": "https://registri.vaad.gov.lv/reg/aal_saraksts.aspx"
+    },
+    {
+      "label": "University of Minnesota — kā nesabojāt gurķu seklās saknes",
+      "url": "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/growing-cucumbers"
     }
   ],
-  "readMinutes": 6,
+  "readMinutes": 2,
   "body": [
     {
+      "heading": "Pārbaudi, pirms izvēlies līdzekli",
       "paragraphs": [
-        "Tu no rīta ieej siltumnīcā un redzi, ka vakar vēl spirgtais dēsts ir nogāzies — stublājs pārkniebts pie pašas zemes, it kā kāds to būtu nogriezis. Pavelc augu, un tas iznāk gandrīz bez saknēm. Augsnē redzamas mīkstas, irdenas vaļņveida ejas, un kaut kur dziļāk jūtams, ka zeme ir izrakāta. Visticamāk, tavā siltumnīcā ir ielīdis zemesvēzis (latīniski Gryllotalpa), arī saukts par racējcirceni.",
-        "Nekrīti panikā — tā nav lipīga slimība, kas pārņems visu siltumnīcu vienā naktī. Zemesvēzis ir liels, taustāms kukainis, un tieši tāpēc to var noķert un padzīt ar pavisam vienkāršiem, dabīgiem paņēmieniem, bez indes blakus pārtikai. Šajā rakstā mierīgi izstāstīsim, kā zemesvēzi pazīt pēc ejām un bojājumiem, kāpēc tas tik labprāt apmetas tieši siltumnīcā, ko darīt tagad un kā nākamsezon to nepieļaut."
+        "Latvijā zemesvēzi sauc arī par racējcirceni. Tam ir rakšanai pielāgotas priekškājas, un tas pārvietojas pa pazemes ejām. LVM dabas pētnieka apraksts palīdz atpazīt pašu kukaini; ar augsnes eju vien ne vienmēr pietiek.",
+        "Ja dēsts nokritis, apskati, vai stublājs ir pārgrauzts, vai tā pamatne ir tumša un sašaurināta. Pārbaudi arī mitrumu un saknes. Pēc nogāzušās galotnes vien bojājuma cēloni noteikt nevar."
+      ],
+      "sourceUrls": [
+        "https://atputa.lvm.lv/aktuali/231-eksperti/3718-vai-siseni-ir-mazi-sienazisi"
+      ],
+      "anchorAliases": [
+        "ka-pazit-ejas-un-bojajumi",
+        "kapec-tiesi-siltumnica"
       ]
     },
     {
-      "heading": "Kā pazīt: ejas un bojājumi",
+      "heading": "Ko darīt šodien",
       "paragraphs": [
-        "Pats zemesvēzis ir negaidīti liels — pieaudzis kukainis ir 4–5 cm garš, brūns, ar īsām, platām priekškājām, kas atgādina kurmja ķepas. Tieši ar tām tas rok ejas. Dzīvē tu pašu kukaini redzēsi reti, jo tas gandrīz visu mūžu pavada zem zemes; biežāk pamanīsi tā darbu.",
-        "Galvenā pazīme ir ejas. Tās ir mīkstas, irdenas, nedaudz paceltas grēdiņas tieši zem augsnes virskārtas — ja pavelc ar pirkstu, virspuse iebrūk un atklājas tunelītis. Tās atgādina kurmja ejas, tikai daudz sīkākas un seklākas. Otra pazīme ir paši bojājumi: nogāzti dēsti ar pārgrauztu stublāju pie zemes, izgrauztas saknes, apēsti dīgsti un jaunas lapiņas. Bieži no rīta atrod veselu rindu dēstu, kas nakti pārkrituši, it kā tos būtu nopļāvuši.",
-        "Pārliecinies, ka tas tiešām ir zemesvēzis, nevis kurmis. Kurmis pārtiek no sliekām un kukaiņiem, neaiztiek saknes un atstāj augstus zemes kalniņus. Zemesvēzis grauž tieši augu saknes un stublājus, un tā ejas ir seklas un plānas, bez lieliem kalniņiem. Ja saknes ir izēstas un dēsti pārgriezti — tas ir zemesvēzis."
+        "Sāc ar konkrētās vietas apskati. Augsni atsedz uzmanīgi, lai meklēšana nesabojātu blakus augošos stādus. Uzvelc cimdus un atrasto kukaini savāc piemērotā traukā. Turpini pārbaudīt, vai parādās jauni bojājumi."
+      ],
+      "listStyle": "numbered",
+      "items": [
+        "Nofotografē bojāto dēstu, saknes un atrasto kukaini, pievienojot izmēra mērogu.",
+        "Atzīmē, kur un kad rodas jauni bojājumi. Salīdzini ar vietām, kur augi paliek veseli.",
+        "Pārbaudi atlikušos stādus nākamajās dienās, pirms atkārtoti stādi tajā pašā vietā.",
+        "Ja zaudējumi turpinās, parādi attēlus augu aizsardzības speciālistam un izvēlies risinājumu pēc apstiprināta cēloņa."
+      ],
+      "anchorAliases": [
+        "ko-darit-tagad-slazdi-un-kersana",
+        "ka-noverst-nakamsezon"
       ]
     },
     {
-      "heading": "Kāpēc tieši siltumnīcā",
+      "heading": "Paņēmieni, kuriem šeit nav dots efektivitātes solījums",
       "paragraphs": [
-        "Siltumnīca zemesvēzim ir kā paradīze, un tam ir vienkāršs iemesls. Šis kukainis mīl siltu, mitru un irdenu zemi ar daudz organikas — tieši tādu, kādu mēs siltumnīcā apzināti veidojam dēstu labā. Pavasarī, kad lauks vēl auksts, siltumnīcas augsne sasilst pirmā, tāpēc zemesvēzis tur kļūst aktīvs jau agri un visu sezonu jūtas ērti.",
-        "Vēl viens biežs ceļš, pa kuru zemesvēzis nokļūst siltumnīcā, ir nenobriedis komposts un atvests zemes vai mēslojuma maisījums. Olas un kāpuri viegli atceļo līdz ar svaigu kūtsmēslu vai pirktu augsni. Tāpēc, ja siltumnīcā pēkšņi parādās zemesvēzis, kaut gan agrāk tā nebija, padomā, vai pavasarī neesi ievedis svaigu organiku no nezināmas vietas.",
-        "Zemesvēzis ir aktīvs siltajā sezonā — Latvijā no maija līdz septembrim, ar lielāko postu vasaras sākumā, kad siltumnīcā tikko izstādīti gurķu, tomātu un papriku dēsti ar vēl trauslām saknēm. Tieši šajā brīdī viens zemesvēzis var izpostīt veselu rindu jaunu augu."
+        "Eļļas un trauku mazgāšanas līdzekļa ieliešanu alās, olu čaumalas un smaržīgu augu stādīšanu nevar pasniegt kā pierādītu, nekaitīgu veidu, kā iznīcināt zemesvēzi. Šim ceļvedim atlasītie avoti šādus solījumus nepamato.",
+        "Neroc rindstarpas dziļi starp augošiem gurķiem: daļa sakņu atrodas sekli, un intensīva rakšana var pati radīt bojājumus. Risinājuma izvēlē ņem vērā arī audzēto augu, ne tikai kaitēkļa eju."
+      ],
+      "sourceUrls": [
+        "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/growing-cucumbers"
       ]
     },
     {
-      "heading": "Ko darīt tagad: slazdi un ķeršana",
+      "heading": "Pirms pērc augu aizsardzības līdzekli",
       "paragraphs": [
-        "Sāc ar slazdiem — tas ir vienkāršākais un drošākais paņēmiens. Ņem plastmasas trauku, stikla burku vai skārda kārbu un ierok to zemē tur, kur pamanītas ejas, tā lai trauka mala ir 3–4 cm zem augsnes virsmas. Iekšā ielej rūgstošu šķidrumu — alu, vai ūdeni ar nedaudz medus un raugu. Smarža zemesvēzi pievilina, tas iekrīt traukā un ārā netiek. Pārbaudi slazdus reizi pāris dienās, savāktos kukaiņus iznīcini un šķidrumu atjauno.",
-        "Otrs iedarbīgs paņēmiens ir eļļas un ziepju šķīdums alās. Sajauc litru ūdens ar pāris ēdamkarotēm augu eļļas un nedaudz šķidro ziepju vai trauku mazgāšanas līdzekļa, un lej šo maisījumu tieši atrastajā ejā vai alā. Šķīdums aizklāj kukaiņa elpošanas atveres, un zemesvēzis pēc pāris minūtēm izlien virspusē — tur to vari savākt un iznīcināt. Tas ir mērķtiecīgs, vietējs paņēmiens, kas neaiztiek pārējo augsni.",
-        "Trešais ir mehāniskā ķeršana ar mulču. Pārklāj augsni starp augiem ar salmu kārtu un regulāri to laisti. Zemesvēži labprāt sapulcējas siltajā, mitrajā vietā zem salmiem; ik pa dažām dienām pacel mulču un savāc kukaiņus. Tāpat var palīdzēt sasmalcinātas olu čaumalas: tās sadrupina rupjos gabaliņos (nevis pulverī) un sabērt 10–15 cm dziļās vagās gar dobēm. Zemesvēzis tās ēd un no asajiem gabaliņiem iet bojā."
+        "Ja apsver augu aizsardzības līdzekli, pārbaudi aktuālo VAAD reģistru un marķējumu. Vajadzīgs konkrētajam kaitēklim un kultūrai atbilstošs lietojums; veikala apraksts vai citas valsts rekomendācija nav pietiekams pamats.",
+        "Ja bojājumi turpinās vai nevari atpazīt kaitēkli, nofotografē atradumu un bojātos augus, lai tos varētu apskatīt augkopības konsultants. Neskaidra diagnoze nav labs pamats atkārtotai apstrādei."
+      ],
+      "sourceUrls": [
+        "https://registri.vaad.gov.lv/reg/aal_saraksts.aspx"
       ]
     },
     {
-      "heading": "Kā novērst nākamsezon",
+      "heading": "Biežākie jautājumi",
       "paragraphs": [
-        "Vissvarīgākais novēršanas solis ir augsnes irdināšana. Zemesvēža ejas un alas iznīcina, ja rindstarpas regulāri irdina 25–30 cm dziļumā — tas izjauc tā tuneļus un kāpuru ligzdas. Rudenī siltumnīcas zemi pārrok pamatīgi, tādā pašā 25–30 cm dziļumā: tā tu izposti pārziemošanas alas un izceļ daļu kukaiņu uz virsmas, kur tie aukstumā iet bojā.",
-        "Otrs solis ir nelaist zemesvēzi iekšā. Neizmanto siltumnīcā svaigus, nenobriedušus kūtsmēslus un nepārbaudītu atvestu zemi — ļauj kompostam vispirms pa īstam sadalīties. Tieši nenobriedusi organika ir biežākais ceļš, pa kuru zemesvēža olas nokļūst tavā siltumnīcā.",
-        "Trešais solis ir atbaidoši augi. Zemesvēzim netīk spēcīgi smaržojoši augi: starp dobēm vai gar siltumnīcas malām stādi ķiplokus, samtenes vai krizantēmas. Tie zemesvēzi nenogalina, bet padara vietu nepievilcīgu, un kopā ar slazdiem un irdināšanu šis ir tā iekārtošanās bremzēšanas paņēmiens. Pat ja kādu zemesvēzi atrodi vasarā, mierīga, regulāra ķeršana un irdināšana neļauj tam savairoties līdz postam."
-      ]
-    },
-    {
-      "heading": "Īsi un skaidri: biežākie jautājumi",
-      "paragraphs": [
-        "Vai zemesvēzis kož cilvēkam? Nē, cilvēkam tas nav bīstams un nekož sāpīgi. Tas izskatās draudīgi savu izmēru un plato priekškāju dēļ, bet kaitē tikai augu saknēm un dīgstiem, ne tev.",
-        "Vai pietiek noķert vienu zemesvēzi? Diemžēl ne vienmēr. Ja redzi vienu, augsnē, visticamāk, ir vēl. Tāpēc liec vairākus slazdus, regulāri irdini zemi un rudenī pārrok siltumnīcu — tikai tā tu izķer arī pārējos un kāpurus.",
-        "Vai zemesvēzis ir tas pats, kas kurmis? Nē. Kurmis ir zīdītājs, kas ēd sliekas un kukaiņus un neaiztiek saknes; zemesvēzis ir kukainis, kas tieši grauž augu saknes un stublājus. Ja dēsti pārgriezti pie zemes, vainīgs ir zemesvēzis, nevis kurmis.",
-        "Vai Mēness kalendārs palīdz pret zemesvēzi? Mēness kalendārs ir jauks tradīcijas palīgs, kas sakārto darbus, bet zemesvēzi tas neizdzen. Vai siltumnīcā ir kaitēklis vai nav, izšķir augsnes siltums, organikas daudzums un tas, vai tu liec slazdus un irdini zemi — nevis Mēness fāze. Vispirms ķeries pie slazdiem un irdināšanas, un tikai pēc tam skaties kalendārā."
+        "Vai pārgrauzts dēsts noteikti nozīmē zemesvēzi? Nē. Vispirms apskati stublāju, saknes un augsni un meklē pašu bojājuma izraisītāju.",
+        "Vai viena noķerta kukaiņa dēļ var uzskatīt darbu par pabeigtu? Pārbaudi, vai rodas jauni bojājumi. No viena atraduma nevar spriest par visu siltumnīcu."
+      ],
+      "anchorAliases": [
+        "isi-un-skaidri-biezakie-jautajumi"
       ]
     }
   ],
   "links": [
     {
-      "label": "Zemesvēzis: kaitēkļa apraksts un bojājumi",
-      "href": "/kaitekli/zemesvezis"
+      "label": "Melnā kāja dēstiem",
+      "href": "/raksti/melna-kaja-destiem"
     },
     {
-      "label": "Kurmji dārzā — ar ko atšķiras no zemesvēža",
-      "href": "/kaitekli/kurmji"
+      "label": "Pārlaistīti dēsti",
+      "href": "/raksti/parlaisti-desti"
     },
     {
-      "label": "Siltumnīca vai lauks: kur audzēt dārzeņus",
-      "href": "/raksti/siltumnica-vai-lauka"
-    },
-    {
-      "label": "Kaimiņaugi: kādus augus stādīt blakus",
-      "href": "/raksti/kaiminaugi"
+      "label": "Siltumnīcas sagatavošana sezonai",
+      "href": "/raksti/siltumnicas-sagatavosana-sezonai"
     }
+  ],
+  "seasonalMonths": [
+    5,
+    6,
+    7,
+    8,
+    9
   ]
 }

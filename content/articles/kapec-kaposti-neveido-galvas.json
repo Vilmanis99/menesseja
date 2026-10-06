@@ -87,5 +87,10 @@
         "Profilakse ir vienkārša un atmaksājas: dod katram augam daudz vietas, mulčē un laisti vienmērīgi, baro ar kompostu un mēreni, izvēlies Latvijas sezonai piemērotu šķirni un sēj to īstajā laikā. Pieraksti, ko un kad iesēji un kāds bija rezultāts — pēc pāris sezonām tev būs sava pieredze, kas der tieši tavam dārzam, un galvas veidosies pašas no sevis."
       ]
     }
+  ],
+  "seasonalMonths": [
+    7,
+    8,
+    9
   ]
 }

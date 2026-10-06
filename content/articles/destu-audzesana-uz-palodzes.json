@@ -3,71 +3,150 @@
   "slug": "destu-audzesana-uz-palodzes",
   "category": "Praktiski",
   "intent": "how-to",
-  "excerpt": "Kā uz palodzes izaudzēt veselīgus dēstus: kad sēt katru dārzeni, gaisma, siltums, pikēšana un rūdīšana pirms izstādīšanas laukā.",
-  "shortAnswer": "Daudzi siltumu mīlošie dārzeņi Latvijā vienkārši nepaspēj nogatavoties, ja tos sēj tieši laukā — mūsu vasara tam ir par īsu.  Tāpēc tos sākam audzēt iekštelpās uz palodzes jau ziemas beigās un pavasarī, lai izstādīšanas brīdī mums būtu spēcīgi, jau paauguši stādi.",
+  "excerpt": "Dēstu audzēšana uz palodzes: kā izvēlēties sējas laiku, traukus un gaismu, nepārlaistīt un sagatavot stādus izstādīšanai.",
+  "shortAnswer": "Dēstiem vajag piemērotu sējas laiku, daudz gaismas un traukus ar noteci. Sēj samitrinātā sēšanai paredzētā substrātā, pēc sadīgšanas pārbaudi gaismu un laisti pēc mitruma, ne katru dienu. Palodzes temperatūru mēri pie podiem; pirms izstādīšanas dēstus pakāpeniski norūdi.",
   "primaryQuery": "dēstu audzēšana uz palodzes: soli pa solim",
   "publishedAt": "2026-06-17",
-  "updatedAt": "2026-06-17",
+  "updatedAt": "2026-10-06",
   "entities": {},
   "sources": [
     {
-      "label": "Latvijas Lauku konsultāciju un izglītības centrs",
-      "url": "https://llkc.lv/"
+      "label": "RHS — sēšana telpās",
+      "url": "https://www.rhs.org.uk/propagation/how-to-sow-seeds-indoors"
     },
     {
-      "label": "Royal Horticultural Society — Advice",
-      "url": "https://www.rhs.org.uk/advice"
+      "label": "University of Minnesota — dēstu vieta, trauki un gaisma",
+      "url": "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/starting-seeds-indoors"
+    },
+    {
+      "label": "RHS — dēstu norūdīšana",
+      "url": "https://www.rhs.org.uk/prevention-protection/hardening-off-tender-plants"
+    },
+    {
+      "label": "LLKC, Māris Narvils — 2026. gada pavasara riski",
+      "url": "https://llkc.lv/aktualitates/sausuma-riski-pavasari/"
     }
   ],
-  "readMinutes": 7,
+  "readMinutes": 3,
   "body": [
     {
+      "heading": "Pirms sējas pārbaudi vietu",
       "paragraphs": [
-        "Daudzi siltumu mīlošie dārzeņi Latvijā vienkārši nepaspēj nogatavoties, ja tos sēj tieši laukā — mūsu vasara tam ir par īsu. Tāpēc tos sākam audzēt iekštelpās uz palodzes jau ziemas beigās un pavasarī, lai izstādīšanas brīdī mums būtu spēcīgi, jau paauguši stādi. Šajā rakstā soli pa solim izstāstīsim, kā to izdarīt: kad sēt, cik daudz gaismas un siltuma vajag, kas ir pikēšana un kāpēc dēsti pirms laukā stādīšanas obligāti jārūda.",
-        "Galveno pateiksim uzreiz: veselīgu dēstu noslēpums nav Mēness fāze, bet gan trīs lietas — pareizs sēšanas laiks, pietiekami daudz gaismas un mērena temperatūra. Ja šīs trīs lietas ir kārtībā, dēsti būs stipri neatkarīgi no tā, kurā Mēness dienā tos iesēji. Par Mēnesi parunāsim raksta beigās — uztver to kā patīkamu palīgu, nevis likumu."
+        "Izvēlies, kur stādi vēlāk augs: laukā, podos vai siltumnīcā. Tad aprēķini sējas laiku un novērtē vietu pie loga. Podiem pietiks vietas tikai tad, ja rēķināsi arī ar pārstādītajiem, lielākiem dēstiem.",
+        "Palodze var būt auksta naktī un pārkarst saulē. Novieto termometru blakus podiem un salīdzini rīta un pēcpusdienas temperatūru. Dažiem stādiem gaišs logs var pietikt; agrā sējā vai tumšā istabā izvērtē papildu apgaismojumu. Lampa nav obligāts pirkums katrai palodzei."
+      ],
+      "sourceUrls": [
+        "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/starting-seeds-indoors"
+      ],
+      "anchorAliases": [
+        "kad-set-katru-darzeni-februaris-aprilis"
       ]
     },
     {
-      "heading": "Kad sēt katru dārzeni (februāris–aprīlis)",
+      "heading": "Kas vajadzīgs un ko var izmantot atkārtoti",
       "paragraphs": [
-        "Lielākā iesācēja kļūda ir sēt pārāk agri. Ja iesēsi tomātus janvārī, līdz maija beigām, kad tos drīkst stādīt laukā, tie būs gari, novājuši un izstīdzējuši. Tāpēc skaiti atpakaļ no izstādīšanas brīža — Latvijā tas siltumu mīlošajiem augiem ir maija beigas vai jūnija sākums, kad salnas garām.",
-        "Lūk, vienkārša Latvijas atskaite. Selerijas un papriku (čilli un saldo) sēj agri, februārī, jo tām aug lēni. Tomātus sēj marta vidū līdz aprīļa sākumam — apmēram 6–8 nedēļas pirms izstādīšanas. Baklažānus tāpat marta sākumā. Gurķus, kabačus un ķirbjus sēj vēlu — tikai aprīļa beigās vai pat maija sākumā, jo tie aug ļoti ātri un pārstāvēti dēsti slikti panes pārstādīšanu. Kāpostus un puķkāpostus sēj martā–aprīlī. Salātus un lapu zaļumus var sēt jebkurā brīdī mazās partijās."
+        "Sāc ar nelielu skaitu augu. Tīri, atkārtoti lietojami podi un pārtikas trauki ar izveidotām noteces atverēm var aizstāt jaunu sēšanas komplektu. Izmanto paliktni, lai ūdens nebojā palodzi."
+      ],
+      "items": [
+        "Sēklas ar salasāmu šķirnes nosaukumu un audzēšanas norādēm.",
+        "Sēšanai piemērots, viegls substrāts; smaga dārza zeme mazā traukā nav laba pirmā izvēle.",
+        "Trauki ar noteci, paliktnis, marķieri un līdzeklis saudzīgai laistīšanai.",
+        "Gaiša vieta un termometrs; lampu izvēlies pēc esošās gaismas un stādu daudzuma."
+      ],
+      "sourceUrls": [
+        "https://www.rhs.org.uk/propagation/how-to-sow-seeds-indoors",
+        "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/starting-seeds-indoors"
       ]
     },
     {
-      "heading": "Gaisma: galvenais slazds uz palodzes",
+      "heading": "Sēšanas secība",
       "paragraphs": [
-        "Februārī un marta sākumā Latvijā diena vēl ir īsa un saule zema, tāpēc gaismas dēstiem gandrīz vienmēr ir par maz. Tas ir biežākais iemesls, kāpēc dēsti izstīdzē — kāts kļūst garš, plāns un bāls, jo augs stiepjas pretī gaismai. Spēcīgs dēsts ir īss, krietns un sulīgi zaļš.",
-        "Novieto dēstus pašā gaišākajā palodzē — vislabāk dienvidu pusē. Ja tādas nav vai laiks ir apmācies vairākas dienas, ļoti palīdz augu lampa (fitolampa). To tur ieslēgtu apmēram 12–14 stundas dienā, dažu desmitu centimetru augstumā virs stādiem. Bez papildu gaismas agrās sējas (februāris) gandrīz vienmēr cieš. Ja gaismas tomēr trūkst, labāk sēt nedēļu vēlāk, kad dienas garākas — vēlāk iesēts, bet stiprs dēsts apdzīs agro izstīdzējušo."
+        "Sēšanas dziļumu un dīgšanas temperatūru pārbaudi uz paciņas. Ne visas sēklas jāpārklāj ar vienādu zemes kārtu; dažām dīgšanai vajag gaismu."
+      ],
+      "listStyle": "numbered",
+      "items": [
+        "Samitrini substrātu un piepildi traukus, atstājot vietu laistīšanai.",
+        "Sēj pietiekami reti vai atsevišķās šūnās, lai vēlāk varētu atdalīt stādus.",
+        "Pārklāj sēklas atbilstoši norādēm un saudzīgi samitrini virsmu.",
+        "Pieraksti šķirni un sējas datumu. Tas palīdzēs atšķirt lēnu dīgšanu no problēmas.",
+        "Ja izmanto vāciņu mitruma saglabāšanai, pēc sadīgšanas vēdini un laikus to noņem."
+      ],
+      "sourceUrls": [
+        "https://www.rhs.org.uk/propagation/how-to-sow-seeds-indoors"
+      ],
+      "anchorAliases": [
+        "temperatura-silti-lai-digtu-vesak-lai-augtu"
       ]
     },
     {
-      "heading": "Temperatūra: silti, lai dīgtu; vēsāk, lai augtu",
+      "heading": "Pēc sadīgšanas: gaisma un laistīšana",
       "paragraphs": [
-        "Sēklai dīgšanai vajag siltumu. Tomātiem, paprikai un gurķiem patīk ap 22–25 grādi — silta vieta virs radiatora (bet ne tieši uz tā) vai uz skapja der lieliski. Tiklīdz parādās pirmie asni, situācija mainās: tagad stādiem vajag gaismu un mazliet vēsāku gaisu, ap 16–20 grādi. Karstā un tumšā vietā dīgsti uzreiz sāk stiepties un kļūst vāji.",
-        "Uzmanies no aukstā gaisa, kas naktī plūst no loga stikla — palodzē augšpusē var būt silti, bet pie pašas rūts auksti. Ja nakts ir bargi salta, pavirzi podiņus mazliet tālāk no stikla vai paliec zem tiem kartona gabalu, kas atdala no aukstās palodzes. Centies sēt mitrā, nevis slapjā augsnē, un nepārlej — pastāvīgi slapjā un vēsā zemē mazie stādi mēdz nogāzties no melnkājas sēnītes."
+        "Dīgsti vairs nedrīkst palikt tumšā vietā, kur bija silti dīgšanai. Ja tie strauji stiepjas pret logu, kļūst tievi vai sasveras, pārbaudi gaismu un retini sabiezinājumu. Podiņu grozīšana nekompensē nepietiekamu gaismas daudzumu.",
+        "Lampas attālumu izvēlies pēc ražotāja norādēm: dažādiem gaismekļiem neder viena universāla distance. Pārbaudi, vai viss stādu laukums ir apgaismots un lapas nepārkarst.",
+        "Pirms laistīšanas apskati substrātu un pacel podu. Pastāvīgi slapjš paliktnis nav ūdens rezerve saknēm. Ja laisti no apakšas, pēc substrāta samitrināšanas izlej lieko ūdeni."
+      ],
+      "sourceUrls": [
+        "https://www.rhs.org.uk/propagation/how-to-sow-seeds-indoors",
+        "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/starting-seeds-indoors"
+      ],
+      "anchorAliases": [
+        "gaisma-galvenais-slazds-uz-palodzes"
       ]
     },
     {
-      "heading": "Pikēšana: kā un kad pārstādīt",
+      "heading": "Kad pārstādīt un norūdīt",
       "paragraphs": [
-        "Pikēšana ir mazo stādiņu pārstādīšana no kopējā sējkastes biezuma uz atsevišķiem, lielākiem podiņiem, lai katram pietiek vietas, gaismas un barības. Pikē tad, kad stādam līdzās dīgļlapām (pirmajām divām lapiņām) ir izveidojušās 1–2 īstās lapas. Tomātiem tas parasti ir 2–3 nedēļas pēc sadīgšanas.",
-        "Dari to maigi. Vispirms labi aplej augsni, lai saknes vieglāk iznāk. Stādu ņem aiz dīgļlapas (lapas), nekad aiz kātiņa — kāts ir trausls un, ja to saspiedīsi, augs aizies bojā. Ar kociņu izceļ stādu ar visu zemes piku pie saknēm un iestāda jaunajā podiņā. Tomātus var pikēt dziļāk nekā tie auga iepriekš — pa to garumu, kas ieraks zemē, izaugs papildu saknes, un augs kļūs stiprāks. Gurķus, kabačus un ķirbjus parasti nepikē vispār — tos uzreiz sēj atsevišķos podiņos pa vienai sēklai, jo to saknes pārstādīšanu nemīl."
+        "Kad kopējā traukā augošiem dēstiem ir īstās lapas un tiem sāk trūkt vietas, pārstādi tos saudzīgi. Ar kociņu atbrīvo saknes un turi stādu aiz lapas, nesaspiežot kātu. Atsevišķā podā sētus augus var pārstādīt ar neskartu sakņu kamolu.",
+        "Pirms pastāvīgas izstādīšanas pakāpeniski pieradini pie āra gaismas, vēja un temperatūras. Sāc aizvējā, pasargājot no asas saules, un palielini ārā pavadīto laiku pēc laikapstākļiem. Norūdīšana nepadara tomātus vai gurķus salcietīgus."
+      ],
+      "sourceUrls": [
+        "https://www.rhs.org.uk/propagation/how-to-sow-seeds-indoors",
+        "https://www.rhs.org.uk/prevention-protection/hardening-off-tender-plants"
+      ],
+      "anchorAliases": [
+        "pikesana-ka-un-kad-parstadit",
+        "rudisana-obligatais-solis-pirms-lauka"
       ]
     },
     {
-      "heading": "Rūdīšana: obligātais solis pirms laukā",
+      "heading": "Biežākie jautājumi",
       "paragraphs": [
-        "Šo soli iesācēji visbiežāk izlaiž — un velti, jo bez tā pat skaisti dēsti var iet bojā pāris dienās. Rūdīšana ir pakāpeniska dēstu pieradināšana pie āra apstākļiem: saules, vēja un vēsuma. Uz palodzes izlutināts stāds, izlikts uzreiz spožā saulē un vējā, gūst īstu saules apdegumu un šoku — lapas kļūst baltas vai sudrabotas un nokalst.",
-        "Sāc rūdīt apmēram 7–10 dienas pirms izstādīšanas. Pirmajā dienā iznes dēstus ārā uz pāris stundām ēnainā, aizvējainā vietā, tad ienes atpakaļ. Katru dienu pamazām palielini laiku ārā un saules daudzumu. Pēdējās dienās stādi jau var palikt ārā visu dienu un, ja naktis siltas, pat pa nakti. Pēc šādas nedēļas dēsts ir cietāks, kāts pieņēmies un augs gatavs dzīvei laukā. Rūdīšana ir tā lieta, kas atšķir stādu, kurš laukā uzplaukst, no stāda, kurš laukā saslimst."
-      ]
-    },
-    {
-      "heading": "Kur šeit iederas Mēness",
-      "paragraphs": [
-        "Tagad par tām Mēness fāzēm. Mēness sēja ir sena tradīcija un senču ritms: pieņemts lapu un augļu dārzeņus sēt augošā Mēness laikā, bet pikēšanu un sakņu darbus daudzi labprāt dara dilstošā. Tā ir kultūras mantojums un patīkams ritms, nevis pierādīts zinātnisks fakts — pētījumi par to ir ierobežoti un pretrunīgi, tāpēc neuztraucies, ja sēšana “nesanāk pareizajā dienā”.",
-        "Tāpēc kārtība ir vienkārša: vispirms pareizais sēšanas laiks, gaisma un siltums, un tikai pēc tam Mēness diena. Mūsu lietotnes kalendārs parādīs, kura diena pēc tradīcijas labāk der augļu, lapu vai sakņu darbiem — ja tas sakrīt ar tavu plānoto sēju, lieliski. Ja ne, sēj mierīgi tāpat: spēcīga dēsta noslēpums ir kopšanā, ne kalendārā."
+        "Vai visiem dēstiem vajag vienādu sējas datumu? Nē. Sējas laiks atkarīgs no auga, šķirnes un izstādīšanas vietas. Izmanto atpakaļrēķinu katrai kultūrai.",
+        "Vai dēsti jālaista katru dienu? Nē. Mitruma patēriņu maina pods, substrāts, temperatūra un auga lielums. Vispirms pārbaudi mitrumu.",
+        "Vai skaists, liels stāds jau ir gatavs laukam? Ar lielumu vien nepietiek. Pārbaudi norūdīšanu, augsnes stāvokli un tuvāko nakšu prognozi."
+      ],
+      "anchorAliases": [
+        "kur-seit-iederas-meness"
       ]
     }
+  ],
+  "seasonalMonths": [
+    2,
+    3,
+    4
+  ],
+  "links": [
+    {
+      "label": "Kad sēt dēstus: aprēķins ar piemēru",
+      "href": "/raksti/kad-set-destus-rekini-atpakal"
+    },
+    {
+      "label": "Ko darīt, ja dēsti izstīdz",
+      "href": "/raksti/desti-izstidz"
+    },
+    {
+      "label": "Pārlaistīti dēsti",
+      "href": "/raksti/parlaisti-desti"
+    },
+    {
+      "label": "Kā norūdīt dēstus",
+      "href": "/raksti/ka-rudit-destus"
+    }
+  ],
+  "relatedSlugs": [
+    "kad-set-destus-rekini-atpakal",
+    "desti-izstidz",
+    "parlaisti-desti",
+    "melna-kaja-destiem"
   ]
 }

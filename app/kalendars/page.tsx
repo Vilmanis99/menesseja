@@ -5,9 +5,10 @@ import { Icon } from "@/components/ui/icon";
 import { MoonPhase } from "@/components/moon-phase";
 import { JsonLd } from "@/components/json-ld";
 import { CalendarExplorer } from "@/components/calendar-explorer";
-import { moonForDate } from "@/lib/moon";
+import { moonForDate, moonPhasesForMonth } from "@/lib/moon";
+import { SeasonalLinks } from "@/components/seasonal-links";
 import { sowingDay, isRestDay, ELEMENT_META, PART_GENITIVE, type Element } from "@/lib/biodynamic";
-import { latviaNoon } from "@/lib/day-anchor";
+import { latviaNoon, latviaDateParts } from "@/lib/day-anchor";
 import { cropPart } from "@/lib/crop-part";
 import { cropHref } from "@/lib/flowers";
 import { cropEmoji } from "@/lib/crop-visual";
@@ -19,6 +20,7 @@ export const revalidate = 3600;
 
 const SOW_KEYS = ["sowIndoors", "sowOutdoors", "transplant"] as const;
 const ELEMENTS: Element[] = ["zeme", "udens", "gaiss", "uguns"];
+const PHASE_DATE_FMT = new Intl.DateTimeFormat("lv-LV", { day: "numeric", month: "long", hour: "2-digit", minute: "2-digit", timeZone: "Europe/Riga" });
 
 function sowableThisMonth(element: Element, month: number) {
   const part = ELEMENT_META[element].part;
@@ -34,8 +36,7 @@ function sowableThisMonth(element: Element, month: number) {
 
 export default function KalendarsPage() {
   const now = new Date();
-  const year = now.getFullYear();
-  const month = now.getMonth() + 1;
+  const { year, month, day } = latviaDateParts(now);
   const nameFull = MONTHS_LV_FULL[month - 1];
   const nameGen = MONTHS_LV_GENITIVE[month - 1];
   const nameLoc = MONTHS_LV_LOCATIVE[month - 1];
@@ -47,9 +48,8 @@ export default function KalendarsPage() {
     return { day: i + 1, date, moon: moonForDate(date), sow: sowingDay(date), rest: isRestDay(date) };
   });
 
-  const today = days.find((d) => d.day === now.getDate()) ?? days[0];
-  const newMoon = days.reduce((a, b) => (b.moon.illumination < a.moon.illumination ? b : a));
-  const fullMoon = days.reduce((a, b) => (b.moon.illumination > a.moon.illumination ? b : a));
+  const today = days.find((d) => d.day === day) ?? days[0];
+  const keyPhases = moonPhasesForMonth(year, month).filter((p) => p.frac === 0 || p.frac === 0.5);
   const restDays = days.filter((d) => d.rest).map((d) => d.day);
 
   const byElement = ELEMENTS.map((element) => {
@@ -77,15 +77,16 @@ export default function KalendarsPage() {
 
       <PageHeader
         eyebrow="Senču gudrība · Maria Thun"
-        title="Mēness kalendārs"
+        title="Mēness sējas kalendārs"
         display
-        subtitle="Katra diena nes sava elementa ritmu. Sēj saskaņā ar Mēness fāzi un zodiaka zīmi."
+        subtitle={`${nameFull} ${year} · Mēness fāzes un sezonas darbi Latvijā`}
       />
 
       <p className="mb-lg max-w-2xl text-body-lg text-on-surface-variant">
-        Mēness sējas kalendārs apvieno Mēness fāzes, zodiaka zīmi un biodinamiskās elementu dienas
-        (sakņu, lapu, ziedu un augļu dienas) ar Latvijas klimatu. Zemāk redzi {nameGen} galvenos
-        datumus, bet interaktīvajā kalendārā vari atvērt jebkuru dienu vai izdrukāt visu mēnesi.
+        Šodien, {today.day}. {nameLoc}, ir {today.moon.name.toLowerCase()}.
+        Zemāk redzi {nameGen} jauno un pilno Mēnesi, biodinamiskās sakņu, lapu, ziedu un augļu dienas
+        un sezonai piemērotus augus. Interaktīvajā kalendārā vari atvērt jebkuru dienu vai izdrukāt mēnesi.
+        Darbu laiku pielāgo augsnes temperatūrai un salnām.
       </p>
 
       {/* Server-rendered substance: without this the page reached search engines
@@ -114,14 +115,12 @@ export default function KalendarsPage() {
           <Card tone="low" elevated className="p-md">
             <h3 className="mb-sm text-title-md text-on-surface">Mēneša atskaites punkti</h3>
             <ul className="space-y-1.5 text-body-md text-on-surface-variant">
-              <li className="flex items-center gap-2">
-                <Icon name="dark_mode" size="18px" />
-                Jauns Mēness — {newMoon.day}. {nameGen}
-              </li>
-              <li className="flex items-center gap-2">
-                <Icon name="brightness_1" size="18px" />
-                Pilns Mēness — {fullMoon.day}. {nameGen}
-              </li>
+              {keyPhases.map((p) => (
+                <li key={p.date.toISOString()} className="flex items-start gap-2">
+                  <Icon name={p.frac === 0 ? "dark_mode" : "brightness_1"} size="18px" />
+                  <span>{p.name} — {PHASE_DATE_FMT.format(p.date)}</span>
+                </li>
+              ))}
               {restDays.length > 0 && (
                 <li className="flex items-start gap-2">
                   <Icon name="do_not_disturb_on" size="18px" />
@@ -129,6 +128,7 @@ export default function KalendarsPage() {
                 </li>
               )}
             </ul>
+            <p className="mt-xs text-label-sm text-on-surface-variant">Fāžu maiņas norādītas pēc Latvijas laika.</p>
             <p className="mt-sm text-body-md text-on-surface-variant">{MONTH_TIPS[month - 1]}</p>
           </Card>
         </div>
@@ -139,8 +139,8 @@ export default function KalendarsPage() {
           Labākās sēšanas dienas {nameLoc} pēc elementiem
         </h2>
         <p className="mb-md max-w-2xl text-body-md text-on-surface-variant">
-          Katra diena pieder vienam elementam, un tas nosaka, kura auga daļa tajā dienā aug
-          vislabāk. Nelabvēlīgās dienas sarakstos nav iekļautas.
+          Biodinamiskajā tradīcijā dienas grupē pēc auga daļas — saknes, lapas, zieda vai augļa.
+          Tradīcijā par nelabvēlīgām uzskatītās dienas sarakstos nav iekļautas.
         </p>
         <div className="grid grid-cols-1 gap-gutter sm:grid-cols-2">
           {byElement.map(({ element, meta, days: elementDays, crops }) => (
@@ -178,6 +178,8 @@ export default function KalendarsPage() {
           .
         </p>
       </section>
+
+      <SeasonalLinks month={month} />
 
       <section className="mb-lg">
         <h2 className="mb-sm text-headline-md text-on-surface">Visi mēneši</h2>

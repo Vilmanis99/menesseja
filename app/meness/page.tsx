@@ -3,30 +3,16 @@ import { PageHeader } from "@/components/ui/page-header";
 import { Card } from "@/components/ui/card";
 import { Icon } from "@/components/ui/icon";
 import { MoonPhase } from "@/components/moon-phase";
-import { moonForDate, phaseNameGenitive } from "@/lib/moon";
+import { moonForDate, nextPrincipalPhases } from "@/lib/moon";
+import { latviaDateParts } from "@/lib/day-anchor";
+import { SeasonalLinks } from "@/components/seasonal-links";
 import { sowingDays, ELEMENT_META } from "@/lib/biodynamic";
 import { JsonLd } from "@/components/json-ld";
 import { canonical, SITE_NAME } from "@/lib/seo";
 
-const SHORT_FMT = new Intl.DateTimeFormat("lv-LV", { day: "numeric", month: "short", weekday: "short" });
-const SYNODIC = 29.530588853;
-
-/** Next dates the moon crosses the four principal phases. */
-function nextPrincipalPhases(from: Date) {
-  const targets = [
-    { frac: 0.0, name: "Jauns mēness", icon: "dark_mode" },
-    { frac: 0.25, name: "Pirmais ceturksnis", icon: "brightness_2" },
-    { frac: 0.5, name: "Pilns mēness", icon: "brightness_1" },
-    { frac: 0.75, name: "Pēdējais ceturksnis", icon: "brightness_3" },
-  ];
-  const cur = moonForDate(from).phase;
-  return targets.map((t) => {
-    let delta = (t.frac - cur + 1) % 1;
-    if (delta < 0.001) delta = 1; // already there → next cycle
-    const date = new Date(from.getTime() + delta * SYNODIC * 86400000);
-    return { ...t, date };
-  }).sort((a, b) => a.date.getTime() - b.date.getTime());
-}
+const SHORT_FMT = new Intl.DateTimeFormat("lv-LV", { day: "numeric", month: "short", weekday: "short", timeZone: "Europe/Riga" });
+const TIME_FMT = new Intl.DateTimeFormat("lv-LV", { hour: "2-digit", minute: "2-digit", timeZone: "Europe/Riga" });
+const DATE_FMT = new Intl.DateTimeFormat("lv-LV", { day: "numeric", month: "long", year: "numeric", timeZone: "Europe/Riga" });
 
 // Nothing here is interactive — no state, no handlers. Rendering on the server
 // puts the actual phase data in the HTML instead of an empty shell; the hourly
@@ -53,13 +39,13 @@ export default function MenessPage() {
       <JsonLd data={jsonLd} />
       <PageHeader
         eyebrow="Debesu ritms"
-        title="Mēness"
+        title="Mēness fāze šodien"
         display
-        subtitle="Seko Mēness ceļam pa zodiaku un sēklas dzīšanas ritmam."
+        subtitle={`${DATE_FMT.format(today)} · ${moon.waxing ? "augošs" : "dilstošs"} Mēness`}
       />
       <p className="mb-md max-w-2xl text-body-lg text-on-surface-variant">
-        Mēness fāzes (jauns, augošs, pilns un dilstošs Mēness) un zodiaka zīme nosaka biodinamiskās
-        elementu dienas — sakņu, lapu, ziedu un augļu dienas. Atver{" "}
+        Šodien ir {moon.name.toLowerCase()} ar {Math.round(moon.illumination * 100)}% apgaismojumu.
+        Tuvākās fāžu maiņas zemāk norādītas pēc Latvijas laika. Dārza darbiem atver{" "}
         <Link href="/kalendars" className="text-primary hover:underline">Mēness kalendāru</Link> vai uzzini,{" "}
         <Link href="/macies" className="text-primary hover:underline">kas ir Mēness sēja</Link>.
       </p>
@@ -94,6 +80,7 @@ export default function MenessPage() {
                     <p className="text-label-sm capitalize text-on-surface-variant">
                       {SHORT_FMT.format(p.date)}
                     </p>
+                    <p className="text-label-sm text-on-surface-variant">plkst. {TIME_FMT.format(p.date)}</p>
                   </div>
                 </div>
               ))}
@@ -131,14 +118,20 @@ export default function MenessPage() {
           </Card>
 
           <Card tone="container" className="flex items-start gap-sm p-md">
-            <Icon name="format_quote" className="text-primary-fixed" />
-            <p className="text-body-md italic text-on-surface-variant">
-              «{phaseNameGenitive(moon.phase)} laikā senči teica: sēj to, kas tev dārgs — Mēness vairo, ko zeme saņem.»
+            <Icon name="info" className="text-primary-fixed" />
+            <p className="text-body-md text-on-surface-variant">
+              Dienas fāze un apgaismojums aprēķināti plkst. 10.00 UTC (Latvijā ziemā 12.00, vasarā 13.00).
+              Fāžu maiņas ir atsevišķi astronomiski notikumi. Elementu dienas ir biodinamiska tradīcija;
+              sējot vispirms ņem vērā augsnes temperatūru un salnas.
             </p>
           </Card>
         </div>
       </div>
-
+      <div className="mt-lg"><SeasonalLinks month={latviaDateParts(today).month} /></div>
+      <p className="text-label-sm text-on-surface-variant">
+        Fāžu aprēķins: <a href="https://github.com/cosinekitty/astronomy" className="text-primary hover:underline">Astronomy Engine</a>.
+        Datumi pārbaudīti pret <a href="https://aa.usno.navy.mil/data/MoonPhases" className="text-primary hover:underline">USNO Mēness fāžu tabulām</a>.
+      </p>
     </>
   );
 }

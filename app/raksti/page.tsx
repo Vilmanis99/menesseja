@@ -3,24 +3,33 @@ import { JsonLd } from "@/components/json-ld";
 import { ArticleLibrary, type ArticleTeaser } from "@/components/article-library";
 import { getAllArticles } from "@/lib/articles";
 import { canonical, SITE_NAME } from "@/lib/seo";
+import { latviaDateParts } from "@/lib/day-anchor";
+import { seasonalLinks } from "@/lib/seasonal";
+
+export const revalidate = 3600;
 
 export const metadata: Metadata = {
   title: "Raksti — Mēness sēja un dārzkopība iesācējiem",
   description:
-    "Vienkārši raksti par Mēness fāzēm, biodinamiku, salnām, augsnes temperatūru un dārza plānošanu — kā sākt dārzot saskaņā ar dabu Latvijā.",
+    "Dārza padomi visam gadam Latvijā: sēklu izvēle, dēsti, stādīšana, puķu kopšana, raža un pārziemošana. Izvēlies rakstus pēc mēneša un tēmas.",
   alternates: { canonical: canonical("/raksti") },
 };
 
 export default function RakstiIndex() {
   const articles = getAllArticles();
-  const currentMonth = new Date().getMonth() + 1;
+  const currentMonth = latviaDateParts().month;
+  const seasonalSlugs = seasonalLinks(currentMonth).filter((l) => l.href.startsWith("/raksti/")).map((l) => l.href.slice("/raksti/".length));
   const monthLabels = ["Janvārī", "Februārī", "Martā", "Aprīlī", "Maijā", "Jūnijā", "Jūlijā", "Augustā", "Septembrī", "Oktobrī", "Novembrī", "Decembrī"];
   const sorted = [...articles].sort((a, b) => {
-    const seasonDifference = Number(b.seasonalMonths?.includes(currentMonth)) - Number(a.seasonalMonths?.includes(currentMonth));
+    const relevant = (article: typeof a) => seasonalSlugs.includes(article.slug) || !!article.seasonalMonths?.includes(currentMonth);
+    const seasonDifference = Number(relevant(b)) - Number(relevant(a));
     return seasonDifference || b.updatedAt.localeCompare(a.updatedAt) || a.title.localeCompare(b.title, "lv");
   });
-  const teasers: ArticleTeaser[] = sorted.map(({ slug, title, excerpt, category, intent, readMinutes, updatedAt }) => ({ slug, title, excerpt, category, intent, readMinutes, updatedAt }));
-  const featuredSlugs = sorted.filter((article) => article.seasonalMonths?.includes(currentMonth)).slice(0, 3).map((article) => article.slug);
+  const teasers: ArticleTeaser[] = sorted.map(({ slug, title, excerpt, category, intent, readMinutes, updatedAt, seasonalMonths }) => ({ slug, title, excerpt, category, intent, readMinutes, updatedAt, seasonalMonths }));
+  const featuredSlugs = [...new Set([
+    ...seasonalSlugs.filter((slug) => articles.some((article) => article.slug === slug)),
+    ...sorted.filter((article) => article.seasonalMonths?.includes(currentMonth)).map((article) => article.slug),
+  ])].slice(0, 3);
 
   const jsonLd = {
     "@context": "https://schema.org",

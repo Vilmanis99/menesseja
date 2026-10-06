@@ -108,5 +108,14 @@
       "label": "Augu maiņa dārzā: kāpēc tā svarīga",
       "href": "/raksti/augu-maina-darza"
     }
+  ],
+  "seasonalMonths": [
+    1,
+    2,
+    3,
+    4,
+    10,
+    11,
+    12
   ]
 }

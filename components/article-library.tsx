@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Card } from "@/components/ui/card";
 import { Icon } from "@/components/ui/icon";
 import { clsx } from "@/lib/clsx";
+import { MONTH_SLUGS, MONTHS_LV_LOCATIVE } from "@/lib/seo";
 
 export interface ArticleTeaser {
   slug: string;
@@ -14,6 +15,7 @@ export interface ArticleTeaser {
   intent: "problem" | "how-to" | "seasonal" | "reference";
   readMinutes: number;
   updatedAt: string;
+  seasonalMonths?: number[];
 }
 
 const INTENT_LABEL: Record<ArticleTeaser["intent"], string> = {
@@ -69,15 +71,17 @@ function ArticleCard({ article }: { article: ArticleTeaser }) {
 export function ArticleLibrary({ articles, featuredSlugs, monthLabel }: { articles: ArticleTeaser[]; featuredSlugs: string[]; monthLabel: string }) {
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState("Visi");
+  const [month, setMonth] = useState(0);
   const categories = useMemo(() => ["Visi", ...Array.from(new Set(articles.map((article) => article.category))).sort((a, b) => a.localeCompare(b, "lv"))], [articles]);
   const featured = featuredSlugs.map((slug) => articles.find((article) => article.slug === slug)).filter((article): article is ArticleTeaser => Boolean(article));
   const normalizedQuery = query.trim().toLocaleLowerCase("lv");
-  const isFiltering = Boolean(normalizedQuery) || category !== "Visi";
+  const isFiltering = Boolean(normalizedQuery) || category !== "Visi" || month !== 0;
   const visible = articles.filter((article) => {
     if (!isFiltering && featuredSlugs.includes(article.slug)) return false;
     const matchesCategory = category === "Visi" || article.category === category;
+    const matchesMonth = month === 0 || Boolean(article.seasonalMonths?.includes(month));
     const haystack = `${article.title} ${article.excerpt} ${article.category}`.toLocaleLowerCase("lv");
-    return matchesCategory && (!normalizedQuery || haystack.includes(normalizedQuery));
+    return matchesCategory && matchesMonth && (!normalizedQuery || haystack.includes(normalizedQuery));
   });
 
   return (
@@ -111,6 +115,27 @@ export function ArticleLibrary({ articles, featuredSlugs, monthLabel }: { articl
               className="min-h-11 w-full rounded-lg border border-outline-variant/30 bg-surface-container pl-10 pr-3 text-body-md text-on-surface outline-none placeholder:text-on-surface-variant/60 focus:border-primary"
             />
           </div>
+          <div className="mt-sm grid items-end gap-2 sm:grid-cols-2">
+            <div>
+              <label htmlFor="article-month" className="mb-2 block text-label-sm font-semibold text-on-surface">Raksti pēc mēneša</label>
+              <select
+                id="article-month"
+                value={month}
+                onChange={(event) => setMonth(Number(event.target.value))}
+                className="min-h-11 w-full rounded-lg border border-outline-variant/30 bg-surface-container px-3 text-body-md text-on-surface focus:border-primary"
+              >
+                <option value={0}>Visam gadam</option>
+                {MONTHS_LV_LOCATIVE.map((label, index) => (
+                  <option key={label} value={index + 1}>{label[0].toLocaleUpperCase("lv") + label.slice(1)}</option>
+                ))}
+              </select>
+            </div>
+            {month > 0 && (
+              <Link href={`/ko-set/${MONTH_SLUGS[month - 1]}`} className="inline-flex min-h-11 items-center gap-1 text-label-md text-primary hover:underline">
+                Darbu ceļvedis {MONTHS_LV_LOCATIVE[month - 1]} <Icon name="arrow_forward" size="16px" />
+              </Link>
+            )}
+          </div>
           <div className="mt-sm flex gap-2 overflow-x-auto pb-1" aria-label="Rakstu kategorijas">
             {categories.map((item) => (
               <button
@@ -142,7 +167,7 @@ export function ArticleLibrary({ articles, featuredSlugs, monthLabel }: { articl
           <Card tone="container" className="p-lg text-center">
             <Icon name="search_off" size="30px" className="mx-auto text-tertiary" />
             <p className="mt-2 text-body-lg text-on-surface">Nekas netika atrasts.</p>
-            <p className="mt-1 text-body-md text-on-surface-variant">Pamēģini īsāku vārdu vai izvēlies citu kategoriju.</p>
+            <p className="mt-1 text-body-md text-on-surface-variant">Pamēģini īsāku vārdu, citu kategoriju vai izvēlies “Visam gadam”.</p>
           </Card>
         )}
       </section>

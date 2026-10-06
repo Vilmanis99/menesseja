@@ -8,6 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "test": "node --test tests/*.test.cjs",
     "content:migrate": "node scripts/migrate-article-metadata.mjs",
     "content:validate": "node scripts/validate-content.mjs",
     "ui:validate": "node scripts/validate-ui-classes.mjs"
@@ -16,6 +17,7 @@
     "@neondatabase/serverless": "^1.1.0",
     "@supabase/ssr": "^0.10.3",
     "@supabase/supabase-js": "^2.107.0",
+    "astronomy-engine": "2.1.19",
     "next": "^15.0.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"

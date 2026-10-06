@@ -93,5 +93,11 @@
       "label": "Kumelīšu uzlējums dārza augiem",
       "href": "/receptes/kumelisu-uzlejums"
     }
+  ],
+  "seasonalMonths": [
+    5,
+    6,
+    7,
+    8
   ]
 }

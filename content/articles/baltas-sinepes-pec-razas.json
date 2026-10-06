@@ -121,5 +121,11 @@
       "label": "Komposts: kā sākt",
       "href": "/raksti/komposts-ka-sakt"
     }
+  ],
+  "seasonalMonths": [
+    7,
+    8,
+    9,
+    10
   ]
 }

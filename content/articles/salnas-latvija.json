@@ -62,5 +62,11 @@
         "Tāpēc kārtība ir šāda: vispirms salnas, augsnes siltums un laika prognoze, un tikai pēc tam Mēness diena. Mūsu lietotnes kalendārs parādīs, kura diena pēc tradīcijas labāk der lapu, augļu vai sakņu darbiem, bet ceļvedī atradīsi padomus par konkrētiem dārzeņiem. Uztver to kā ērtu palīgu: ja silts laiks un piemērota Mēness diena sakrīt — stādi ar prieku. Ja ne — izvēlies siltu, drošu dienu bez salnas draudiem, un tavs dārzs tev pateiksies."
       ]
     }
+  ],
+  "seasonalMonths": [
+    4,
+    5,
+    9,
+    10
   ]
 }

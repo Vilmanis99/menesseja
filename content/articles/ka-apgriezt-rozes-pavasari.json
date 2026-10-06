@@ -99,5 +99,10 @@
       "label": "Komposta tēja jaunajiem dzinumiem",
       "href": "/receptes/komposta-teja"
     }
+  ],
+  "seasonalMonths": [
+    3,
+    4,
+    5
   ]
 }

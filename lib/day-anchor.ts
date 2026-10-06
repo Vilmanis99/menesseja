@@ -8,9 +8,9 @@
  * Vercel build (UTC) could disagree with a Latvian browser, and surfaces could
  * contradict each other near sign boundaries.
  *
- * Convention: a calendar day is classified at the NOON of that day in
- * Europe/Riga (printed Latvian biodynamic calendars do the same — the day's
- * dominant quality). All classification functions anchor their input here.
+ * Convention: a calendar day is classified at 10:00 UTC (12:00 EET / 13:00
+ * EEST), always inside that Latvian day. All classification functions anchor
+ * their input here. Exact astronomical event times are not day-anchored.
  */
 
 // en-CA → YYYY-MM-DD; the formatter resolves the date IN Riga time.
@@ -28,7 +28,18 @@ export function latviaNoon(year: number, month1: number, day: number): Date {
 }
 
 /** Anchor an arbitrary instant to the noon of ITS calendar day in Latvia. */
+export function latviaDateParts(date: Date = new Date()): { year: number; month: number; day: number } {
+  const parts = RIGA_DAY.formatToParts(date);
+  const value = (type: Intl.DateTimeFormatPartTypes) => Number(parts.find((p) => p.type === type)?.value);
+  return { year: value("year"), month: value("month"), day: value("day") };
+}
+
+export function latviaDateKey(date: Date = new Date()): string {
+  const { year, month, day } = latviaDateParts(date);
+  return `${year}-${String(month).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
+}
+
 export function dayAnchor(date: Date): Date {
-  const [y, m, d] = RIGA_DAY.format(date).split("-").map(Number);
-  return latviaNoon(y, m, d);
+  const { year, month, day } = latviaDateParts(date);
+  return latviaNoon(year, month, day);
 }

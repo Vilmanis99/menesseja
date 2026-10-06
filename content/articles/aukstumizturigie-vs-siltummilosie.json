@@ -107,5 +107,11 @@
       "label": "Zirņi: agra sēja tieši zemē",
       "href": "/augi/zirni"
     }
+  ],
+  "seasonalMonths": [
+    3,
+    4,
+    5,
+    6
   ]
 }

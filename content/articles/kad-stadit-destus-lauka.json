@@ -76,5 +76,10 @@
         "Treškārt: vai dēsti izrūdīti? Tiem jābūt pakāpeniski pieradinātiem pie saules un vēja vismaz nedēļu. Ceturtkārt: kāda nakts prognoze tuvākajām dienām? Ja sola tuvu nullei, sagatavo agrotīklu vai pārklājus. Un piektkārt — izvēlies izstādīšanai mierīgu, apmākušos vai vēlu pēcpusdienas brīdi, nevis dedzinošu pusdienlaiku; tad dēsti zemē iejūtas vieglāk. Mēness kalendārs te var ieteikt patīkamu dienu darbam, taču pēdējais vārds vienmēr pieder zemes siltumam un debesīm."
       ]
     }
+  ],
+  "seasonalMonths": [
+    4,
+    5,
+    6
   ]
 }

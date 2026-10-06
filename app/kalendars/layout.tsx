@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
 import { canonical } from "@/lib/seo";
 
-// The hub page is a client component, so its metadata lives here.
-// Child month pages (/kalendars/[year]/[month]) define their own and override this.
+// Child month pages (/kalendars/[year]/[month]) override these hub defaults.
 export const metadata: Metadata = {
   title: "Mēness sējas kalendārs — labākās dienas sēšanai un stādīšanai",
   description:
-    "Interaktīvs Mēness sējas kalendārs Latvijai: Mēness fāzes, elementu dienas (sakņu, lapu, ziedu, augļu) un ieteikumi, ko sēt katrā dienā.",
+    "Mēness sējas kalendārs Latvijai: jauna un pilna Mēness datumi Latvijas laikā, sakņu, lapu, ziedu un augļu dienas, ko sēt un stādīt katrā mēnesī.",
   alternates: { canonical: canonical("/kalendars") },
 };
 

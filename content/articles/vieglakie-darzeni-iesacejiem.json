@@ -55,5 +55,14 @@
         "Praktiskā kārtība iesācējam ir vienkārša. Vispirms paskaties laika prognozi un sajūti, vai augsne jau sasilusi. Tikai pēc tam, ja vēlies sekot tradīcijai, atver mūsu kalendāru vai ceļvedi un izvēlies piemērotu dienu. Tā Mēness ritms paliek kā jauks papildinājums, nevis kā spaidi, un tava pirmā raža būs atkarīga no tā, kas tiešām svarīgi."
       ]
     }
+  ],
+  "seasonalMonths": [
+    1,
+    2,
+    3,
+    4,
+    10,
+    11,
+    12
   ]
 }

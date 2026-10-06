@@ -73,5 +73,11 @@
         "Mēness fāze burkānu formu neietekmē — to nosaka augsne un saknes ceļš, ne debesis. Mēness kalendārs ir senču tradīcija un patīkams dārza ritms, ne ražas garantija; sakņu dienas pēc tradīcijas ieteic sakņu darbiem, taču taisnus burkānus dod irdena zeme, ne pareizā Mēness diena."
       ]
     }
+  ],
+  "seasonalMonths": [
+    7,
+    8,
+    9,
+    10
   ]
 }

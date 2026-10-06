@@ -1,118 +1,156 @@
 {
-  "title": "Skābēti kāposti pēc senču gudrības: Mēness, šķirnes un kraukšķa noslēpums",
+  "title": "Skābēti kāposti: sāls daudzums, temperatūra un glabāšana",
   "slug": "skabeti-kaposti",
   "category": "Praktiski",
   "intent": "how-to",
-  "excerpt": "Kā skābēt kāpostus, lai tie paliek kraukšķīgi: piemērota šķirne, pareizs sāls daudzums, temperatūra un biežākās kļūdas.",
-  "shortAnswer": "Kāpostu skābēšana ir viens no tiem darbiem, ko latviešu saimniecībās dara jau gadsimtiem, un tieši tāpēc ap to sakrājies tik daudz gudrību: par Mēnesi, par īsto nedēļu, par to, kas galviņām piešķir kraukšķi.  Ja šogad gatavojies skābēt pirmo reizi vai pagājušajā rudenī burka izdevās gluma un mīksta, šis raksts ir tev.",
+  "excerpt": "Kā skābēt kāpostus: sāls aprēķins, piemērots trauks, temperatūra, vairāku nedēļu rūgšana un glabāšana. Bez nepārbaudītiem solījumiem par kraukšķi.",
+  "shortAnswer": "Kāpostus skābē pēc pārbaudītas receptes, ar precīzu sāls daudzumu un pilnībā zem šķidruma. Izvēlētajā metodē paredzi vairākas nedēļas: NCHFP norāda ap 3–4 nedēļām pie +21 līdz +24 °C un ilgāk vēsumā. Pabeigtu skābējumu glabā ledusskapī; garša viena pati nepierāda procesa pabeigšanu.",
   "primaryQuery": "skābēti kāposti pēc senču gudrības: Mēness, šķirnes un kraukšķa noslēpums",
   "publishedAt": "2026-07-06",
-  "updatedAt": "2026-07-06",
-  "entities": {
-    "crops": [
-      "kaposti"
-    ],
-    "pests": [
-      "kapostu-baltenis"
-    ]
-  },
+  "updatedAt": "2026-10-06",
+  "entities": {},
   "relatedSlugs": [
-    "kapec-kaposti-neveido-galvas",
-    "augoss-un-dilstoss-meness",
     "ka-marinet-gurkus-kraukskigus",
-    "darza-darbi-augusta"
+    "kapec-kaposti-neveido-galvas"
   ],
   "sources": [
     {
-      "label": "LLKC — dārzkopības un ražas saglabāšanas materiāli",
-      "url": "https://llkc.lv/"
+      "label": "NCHFP — kāpostu skābēšanas metode un ilgums",
+      "url": "https://nchfp.uga.edu/how/ferment/recipes/sauerkraut/"
     },
     {
-      "label": "National Center for Home Food Preservation",
-      "url": "https://nchfp.uga.edu/"
+      "label": "Virginia Tech — sāls koncentrācija dārzeņu skābēšanā",
+      "url": "https://www.pubs.ext.vt.edu/content/pubs_ext_vt_edu/en/FST/FST-328/FST-328.html"
+    },
+    {
+      "label": "NCHFP — skābēšanas trauki, vāki un slogi",
+      "url": "https://nchfp.uga.edu/how/ferment/general-information-on-fermenting/suitable-containers-covers-and-weights-for-fermenting-food"
+    },
+    {
+      "label": "University of Minnesota — fermentācijas kontrole",
+      "url": "https://extension.umn.edu/som/node/172346"
     }
   ],
-  "readMinutes": 6,
+  "readMinutes": 3,
   "body": [
     {
+      "heading": "Sagatavo kāpostus un piemērotu trauku",
       "paragraphs": [
-        "Kāpostu skābēšana ir viens no tiem darbiem, ko latviešu saimniecībās dara jau gadsimtiem, un tieši tāpēc ap to sakrājies tik daudz gudrību: par Mēnesi, par īsto nedēļu, par to, kas galviņām piešķir kraukšķi. Ja šogad gatavojies skābēt pirmo reizi vai pagājušajā rudenī burka izdevās gluma un mīksta, šis raksts ir tev.",
-        "Vispirms godīgi par galveno: kraukšķīgus kāpostus izšķir šķirne, sāls daudzums un temperatūra. Senču Mēness gudrība ir skaista tradīcija, kas darbam piešķir ritmu, taču tā neizglābs skābējumu, kuram pietrūkst sāls vai kurš stāv par siltu. Šeit atradīsi visu ceļu no galviņas izvēles līdz brīdim, kad trauks ceļo uz pagrabu, un arī to, ko vecie latviešu ticējumi par skābēšanas laiku patiešām saka. Tie ir pretrunīgāki un sirsnīgāki, nekā parasti stāsta."
+        "Izvēlies svaigas, stingras galviņas bez puves. Noņem bojātās ārējās lapas un kacenu. Pirmajai partijai sāc ar kāpostiem un sāli; piedevām izvēlies atsevišķu pārbaudītu recepti, nevis maini pamata proporcijas pēc izjūtas.",
+        "Izmanto tīru, pārtikai paredzētu stikla, piemērotas keramikas vai pārtikas plastmasas trauku. Pārbaudi, vai tas nav saplaisājis. Vajadzīgs arī tīrs, pārtikai piemērots slogs, kas notur kāpostus zem šķidruma; nejaušs dārza akmens nav pirmā izvēle."
+      ],
+      "sourceUrls": [
+        "https://nchfp.uga.edu/how/ferment/recipes/sauerkraut/",
+        "https://nchfp.uga.edu/how/ferment/general-information-on-fermenting/suitable-containers-covers-and-weights-for-fermenting-food"
+      ],
+      "anchorAliases": [
+        "skabesanai-der-velas-skirnes-agras-neder",
+        "kad-novakt-lauj-pirmajam-salnam-padarit-savu-darbu"
       ]
     },
     {
-      "heading": "Skābēšanai der vēlās šķirnes, agrās neder",
+      "heading": "Sāli aprēķini pēc sagatavoto kāpostu svara",
       "paragraphs": [
-        "Pirmā un visbiežāk aizmirstā izvēle notiek nevis virtuvē, bet dārzā vai tirgū. Agro vasaras kāpostu galviņas ir irdenas un ūdeņainas, tajās ir maz cukuru, ko pienskābes baktērijas rūgšanā pārvērš skābē, tāpēc skābējumā tās kļūst mīkstas un ātri bojājas. Skābēšanai vajadzīgas vēlās rudens un ziemas šķirnes ar blīvām, smagām galviņām, kas parasti sver trīs līdz sešus kilogramus.",
-        "Latvijas dārzos gadu desmitiem pārbaudīta šķirne ir Krautkaiser F1, vidēji vēlīna, ar blīvām četru līdz sešu kilogramu galviņām, ko pieredzējuši dārzkopji audzē tieši skābēšanai un ziemas glabāšanai. Labi der arī ražīgā Megaton F1 un vecā Brunswick, kuras galviņas ir mazākas, toties saldas un cukuriem bagātas. Pērkot tirgū, izvēlies galviņu, kas savam izmēram šķiet negaidīti smaga, ar gaišu, blīvu vidu. Savukārt, ja tavā dārzā galviņas vispār neveidojas, tā ir audzēšanas problēma ar pavisam citiem cēloņiem, un par to mums ir atsevišķs raksts."
+        "Virginia Tech ceļvedī kāpostu skābēšanai dots 2,25–2,5% sāls diapazons. Zemāk izvēlēts 2,5% aprēķins jeb 25 g sāls uz 1 kg jau sagatavotu kāpostu. Ja seko citai pārbaudītai receptei, ievēro tās proporcijas, neapvieno vairākas metodes.",
+        "Nosver gan kāpostus, gan sāli. Karotes tilpums, graudu lielums un kaudze nav vienāds svars. Izvēlies skābēšanai piemērotu sāli bez joda un pretsalipšanas piedevām; samazinātu nātrija sāli nelieto kā patvaļīgu aizstājēju."
+      ],
+      "table": {
+        "headers": [
+          "Sagatavoti kāposti",
+          "Sāls pie 2,5%"
+        ],
+        "rows": [
+          [
+            "1 kg",
+            "25 g"
+          ],
+          [
+            "2 kg",
+            "50 g"
+          ],
+          [
+            "5 kg",
+            "125 g"
+          ]
+        ]
+      },
+      "sourceUrls": [
+        "https://www.pubs.ext.vt.edu/content/pubs_ext_vt_edu/en/FST/FST-328/FST-328.html"
+      ],
+      "anchorAliases": [
+        "pamatrecepte-sals-stampa-un-pacietiba"
       ]
     },
     {
-      "heading": "Kad novākt: ļauj pirmajām salnām padarīt savu darbu",
+      "heading": "Iepildi un turi zem šķidruma",
       "paragraphs": [
-        "Vēlos kāpostus skābēšanai Latvijā parasti novāc oktobrī, un šeit senču pieredze un augu fizioloģija sakrīt: pēc pirmajām vieglajām salnām kāposti kļūst saldāki. Viegls sals līdz mīnus diviem trim grādiem blīvām galviņām nekaitē, cieš tikai virsējās lapas, toties galviņā uzkrājas vairāk cukuru, un tieši tie rūgšanā dod skābi un pilnu garšu.",
-        "Divi praktiski noteikumi. Pirmkārt, ilgstošā salā kāpostus uz lauka atstāt nedrīkst, jo atkārtota sasalšana un atkušana galviņas bojā. Otrkārt, pēc salnas nakts galviņas labāk griezt pēcpusdienā, kad tās atkusušas un apžuvušas: sasalušas galviņas griežot ievainojas un skābējumā kļūst mīkstas. Pirms skābēšanas noņem virsējās zaļās un bojātās lapas, darbam der tikai baltā, blīvā daļa."
+        "Sasmalcinātos kāpostus vienmērīgi sajauc ar sāli un iespied traukā kopā ar izdalījušos sulu. Ar piemērotu slogu noturi visu masu zem šķidruma, atstājot traukā vietu procesam.",
+        "Ja sulas nepietiek, izmanto izvēlētajā pārbaudītajā receptē norādīto papildsālījumu. Nepielej vienkārši ūdeni, kas maina sāls koncentrāciju. Trauka pārsegumu un gāzu izvadīšanu izvēlies pēc fermentācijas trauka norādēm; aktīvi rūgstošu parastu burku cieši neaizskrūvē bez gāzu izplūdes risinājuma."
+      ],
+      "sourceUrls": [
+        "https://nchfp.uga.edu/how/ferment/recipes/sauerkraut/",
+        "https://nchfp.uga.edu/how/ferment/general-information-on-fermenting/suitable-containers-covers-and-weights-for-fermenting-food",
+        "https://extension.umn.edu/som/node/172346"
       ]
     },
     {
-      "heading": "Senču gudrība: ko ticējumi par Mēnesi patiešām saka",
+      "heading": "Rēķinies ar nedēļām un mēri temperatūru",
       "paragraphs": [
-        "Latviešu folkloras ticējumu krājumos par kāpostu skābēšanu ir vesela sauja ierakstu, un tie godīgi strīdas savā starpā. Ikšķilē pierakstīts, ka vecā Mēnesī skābēti kāposti ilgi stāv un vasarā tajos nemetas tārpi. Rīgā un Balvos savukārt teikts, ka vecā Mēnesī skābētie vārās mīksti, un vecajās saimniecībās, kur kāpostus galvenokārt vārīja, to uzskatīja par labu īpašību. Bet Tirzā, Smiltenē un Raunā saimnieces apgalvoja pretējo: jaunā Mēnesī liktie kāposti esot cieti un ilgāk uzglabājoties.",
-        "Populārais padoms skābēt vīru dienās, tas ir, pirmdienā, otrdienā vai ceturtdienā, vecajos latviešu ticējumos gandrīz neparādās: tas Latvijā ienācis no kaimiņu slāvu tradīcijas, kur šo dienu nosaukumi ir vīriešu dzimtē. Toties mūsu pašu folklorā ir sirsnīgākas norādes. Lubānā, kāpostus mucā berot, vajadzēja stipri smieties, lai tie labi rūgtu, pierobežā saimnieki pār mucu sabučojās, lai kāposti būtu saldi, bet apses pagale traukā sargāja skābējumu no pelēšanas.",
-        "Tas skaisti parāda, kas šī gudrība īsti bija: saimnieces rituāls, kārtība un drošības sajūta lielam rudens darbam, nevis ķīmijas likums. Kraukšķi nosaka sāls, temperatūra un tas, vai kāposti visu laiku ir zem sulas. Ja tradīcija tev ir mīļa, izvēlies dilstoša Mēness dienu un skābē ar mierīgu prātu: tas neko nesabojās, bet darbam piešķirs senču ritmu."
+        "NCHFP norāda aptuveni 3–4 nedēļas pie +21 līdz +24 °C, bet pie apmēram +16 līdz +18 °C process var ilgt 5–6 nedēļas. Siltāka telpa nav drošs paātrinājums: tā var veicināt mīkstumu. Tātad pēc 3–7 dienām nevar universāli pasludināt skābēšanu par pabeigtu.",
+        "Pieraksti sākuma datumu un temperatūru. Uzraugi, vai masa paliek zem šķidruma. Skāba garša viena pati nav procesa drošības pārbaude; ja mēri pH, dari to ar piemērotu, pārbaudītu instrumentu un pēc izvēlētās metodes norādēm.",
+        "Izteikts pelējums, nepatīkama smaka vai gluma masa nav iemesls pagaršot, lai izlemtu. Ja nevari droši atšķirt virsmas pārmaiņas vai process nav izdevies, skābējumu nelieto."
+      ],
+      "sourceUrls": [
+        "https://nchfp.uga.edu/how/ferment/recipes/sauerkraut/",
+        "https://extension.umn.edu/som/node/172346"
+      ],
+      "anchorAliases": [
+        "kludas-kuru-del-kaposti-glume-un-pele"
       ]
     },
     {
-      "heading": "Pamatrecepte: sāls, stampa un pacietība",
+      "heading": "Glabāšana pēc skābēšanas",
       "paragraphs": [
-        "Vienīgais, ko nedrīkst ņemt no acumēra, ir proporcija: 20 grami rupjās, nejodētās sāls uz vienu kilogramu sasmalcinātu kāpostu jeb divi procenti no svara. Sver gan kāpostus, gan sāli — tieši kļūdas sālī ir biežākais glumo kāpostu cēlonis. Uz katriem diviem trim kilogramiem pievieno rupji sarīvētu burkānu, tējkaroti ķimeņu un, ja garšo, sauju dzērveņu, kas dod vieglu skābenumu un krāsu.",
-        "Kāpostus griež apmēram puscentimetru platās strēmelēs, jo pārāk smalki sarīvēti tie kraukšķēs mazāk. Der stikla, māla, emaljēts vai koka trauks, tikai ne alumīnija. Kāpostus liek traukā kārtām, katru kārtu pārkaisot ar sāli un stampājot, līdz parādās sula. Virsū liek apgrieztu šķīvi un svaru, piemēram, tīru akmeni vai ūdens burku, lai kāposti pilnībā paliek zem šķidruma. Traukam jāstāv 18 līdz 20 grādos aptuveni trīs līdz septiņas dienas; jo vēsāka telpa, jo lēnāka rūgšana. Katru dienu caurdur kāpostus līdz pašam trauka dibenam ar koka irbuli, lai izlaistu rūgšanas gāzes, citādi tie kļūst rūgti, un nosmel putas.",
-        "Kad burbuļošana norimusi un garša ir patīkami skāba, trauku pārceļ vēsumā: pagrabā vai ledusskapī, vislabāk temperatūrā no nulles līdz plus četriem grādiem. Tur kāposti vēl dažas nedēļas nogatavojas un kļūst tikai labāki, tāpēc oktobrī ieskābētais lieliski sagaida Ziemassvētkus."
+        "Pabeigtu skābējumu glabā pārsegtu ledusskapī. Pagrabs bez temperatūras kontroles nav automātiski līdzvērtīgs ledusskapim. Ja vēlies aizvākotas burkas glabāt istabas temperatūrā, jāievēro atsevišķā konservēšanas metode un apstrādes laiks.",
+        "Mēness dienu vari izvēlēties kā ģimenes tradīciju, taču tā neaizstāj nosvērtu sāli, temperatūru un pareizu glabāšanu. Šeit nav piedēvēta zinātniski pārbaudīta ietekme uz rūgšanu."
+      ],
+      "sourceUrls": [
+        "https://nchfp.uga.edu/how/ferment/recipes/sauerkraut/"
+      ],
+      "anchorAliases": [
+        "sencu-gudriba-ko-ticejumi-par-menesi-patiesam-saka"
       ]
     },
     {
-      "heading": "Kļūdas, kuru dēļ kāposti glumē un pelē",
+      "heading": "Biežākie jautājumi",
       "paragraphs": [
-        "Par maz sāls ir kļūda numur viens: sāls nosaka, kuras baktērijas strādā, un bez tās virsroku ņem tās, kas rada gļotas un mīkstumu. Otrā kļūda ir pārāk silta telpa: virs 24 grādiem rūgšana notiek pārāk strauji, un kāposti kļūst mīksti un glumi. Trešā ir gaiss pie virsmas: ja kāposti paceļas virs sulas, tur ieviešas pelējums un raugi, kas veido balto plēvi.",
-        "Retāk pieminētie iemesli: agro šķirņu vai vaļīgu galviņu izmantošana, smalkā jodētā galda sāls, ko skābēšanai tradicionāli neiesaka, un nepietiekami tīri trauki. Ja virs sulas parādījusies plāna balta plēvīte, to var noņemt, un kāposti parasti ir glābjami; ja skābējums smaržo nepatīkami un ir viscaur glums, drošāk no tā šķirties un nākamreiz sākt ar precīzi nosvērtu sāli."
-      ]
-    },
-    {
-      "heading": "Īsi un skaidri: biežākie jautājumi",
-      "paragraphs": [
-        "Cik daudz sāls jāliek uz kilogramu kāpostu? Aptuveni 20 grami jeb divi procenti no sasmalcināto kāpostu svara. Latvijas receptēs sastopamas arī mazākas normas, taču iesācējam drošāk turēties pie diviem procentiem un visu nosvērt, jo tieši sāls daudzums visvairāk ietekmē kraukšķi un glabāšanos.",
-        "Kad novākt kāpostus skābēšanai? Vēlās šķirnes Latvijā novāc oktobrī, pēc pirmajām vieglajām salnām, kad galviņas kļuvušas saldākas. Ilgstošā salā kāpostus uz lauka atstāt nedrīkst, un pēc salnas nakts galviņas griež pēcpusdienā, kad tās atkusušas.",
-        "Vai tiešām jāskābē tikai vecā Mēnesī? Tā ir tradīcija, nevis garantija, un vecie ticējumi šajā jautājumā paši dalās: Ikšķilē teica, ka jāskābē vecā Mēnesī, Tirzā un Smiltenē, ka jaunā. Rezultātu izšķir sāls, temperatūra un sula virs kāpostiem; Mēness diena ir skaists senču ritms tiem, kam tas ir tuvs.",
-        "Cik ilgi kāposti skābst? Siltumā, 18 līdz 20 grādos, parasti trīs līdz septiņas dienas, tad tos pārceļ vēsumā. Garša turpina nogatavoties vēl dažas nedēļas, tāpēc labākie kāposti ir tie, kas pagaidījuši.",
-        "Kāpēc kāposti izdevās glumi? Visbiežāk vainīgs par mazs sāls daudzums, pārāk silta telpa vai gaiss pie virsmas, ja kāposti nav bijuši pilnībā zem sulas. Palīdz arī blīva vēlās šķirnes galviņa, jo agrie kāposti skābējumā vienmēr būs mīksti.",
-        "Vai var skābēt bez ķimenēm un dzērvenēm? Var — pašam skābējumam pietiek ar kāpostiem un sāli. Ķimenes un dzērvenes ir latviskā klasika, burkāni piešķir vieglu saldumu un krāsu, bet neviena no šīm piedevām nav obligāta."
+        "Cik sāls paredzēts šajā aprēķinā? 25 g uz 1 kg sagatavotu kāpostu jeb 2,5%. Tas ir izvēlētais aprēķins no avotā dotā diapazona, ne visu recepšu pārrēķins.",
+        "Vai pēc nedēļas jānes uz aukstu pagrabu? Ne automātiski. Ievēro izvēlētās metodes ilgumu un kontroles norādes; aukstums procesu bremzē.",
+        "Vai aizvērta burka drīkst stāvēt virtuvē visu ziemu? Ledusskapī glabājams skābējums un konservs istabas temperatūrai ir atšķirīgi produkti ar atšķirīgu apstrādi."
+      ],
+      "anchorAliases": [
+        "isi-un-skaidri-biezakie-jautajumi"
       ]
     }
   ],
   "links": [
     {
+      "label": "Kāpostu audzēšana",
+      "href": "/augi/kaposti"
+    },
+    {
       "label": "Kāpēc kāposti neveido galvas",
       "href": "/raksti/kapec-kaposti-neveido-galvas"
     },
     {
-      "label": "Augošs un dilstošs Mēness: ar ko tie atšķiras",
-      "href": "/raksti/augoss-un-dilstoss-meness"
-    },
-    {
-      "label": "Mēness kalendārs dārza darbiem",
-      "href": "/kalendars"
-    },
-    {
-      "label": "Kā marinēt gurķus, lai tie kraukšķ",
+      "label": "Marinētu gurķu kraukšķīgums un drošība",
       "href": "/raksti/ka-marinet-gurkus-kraukskigus"
-    },
-    {
-      "label": "Kāpostu baltenis: kā pasargāt galviņas",
-      "href": "/kaitekli/kapostu-baltenis"
-    },
-    {
-      "label": "Dārza darbi augustā",
-      "href": "/raksti/darza-darbi-augusta"
     }
-  ]
+  ],
+  "seasonalMonths": [
+    9,
+    10,
+    11
+  ],
+  "showGardenAction": false
 }

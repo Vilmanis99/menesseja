@@ -109,5 +109,10 @@
       "label": "Dārza ceļvedis iesācējiem",
       "href": "/celvedis"
     }
+  ],
+  "seasonalMonths": [
+    7,
+    8,
+    9
   ]
 }

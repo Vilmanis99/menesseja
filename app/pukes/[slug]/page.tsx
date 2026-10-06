@@ -9,7 +9,8 @@ import { RecipeTodayBadge } from "@/components/recipe-today-badge";
 import { getFlower, getAllFlowers, flowerSlugs, FLOWER_TYPE_META } from "@/lib/flowers";
 import { CROPS } from "@/lib/planting-crops";
 import { canonical, SITE_NAME, og } from "@/lib/seo";
-import { DATA_REVIEWED } from "@/lib/sources";
+import { BLOOM_PERIODS } from "@/lib/bloom-periods";
+import { SEASONAL_LINKS_UPDATED_AT } from "@/lib/seasonal";
 
 export const dynamicParams = false;
 
@@ -63,7 +64,7 @@ export default async function FlowerPage({ params }: { params: Promise<{ slug: s
     headline: `${f.name} — kad stādīt un kā kopt Latvijā`,
     about: f.name,
     inLanguage: "lv",
-    dateModified: `${DATA_REVIEWED}-01`,
+    dateModified: SEASONAL_LINKS_UPDATED_AT,
     isPartOf: { "@type": "WebSite", name: SITE_NAME, url: canonical("/") },
     publisher: { "@type": "Organization", name: SITE_NAME, url: canonical("/") },
     author: { "@type": "Organization", name: SITE_NAME, url: canonical("/") },
@@ -237,6 +238,17 @@ export default async function FlowerPage({ params }: { params: Promise<{ slug: s
           </ul>
         </div>
       ) : null}
+
+      {f.slug !== "balkona-pukes" && (
+        <section className="mb-lg">
+          <h2 className="mb-sm text-headline-md text-on-surface">Puķes ar līdzīgu ziedēšanas laiku</h2>
+          <div className="flex flex-wrap gap-2">
+            {BLOOM_PERIODS.filter((p) => p.months.some((m) => f.bloomMonths.includes(m))).map((p) => (
+              <Link key={p.slug} href={`/pukes/kas-zied/${p.slug}`} className="inline-flex min-h-11 items-center rounded-full bg-surface-container px-4 py-2 text-label-md text-primary hover:underline">{p.h1}</Link>
+            ))}
+          </div>
+        </section>
+      )}
 
       <DataNote variant="moon" className="mb-lg" />
 

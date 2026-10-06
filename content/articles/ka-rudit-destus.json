@@ -103,5 +103,10 @@
       "label": "Aukstumizturīgie un siltummīļie dārzeņi: ar ko atšķiras",
       "href": "/raksti/aukstumizturigie-vs-siltummilosie"
     }
+  ],
+  "seasonalMonths": [
+    4,
+    5,
+    6
   ]
 }

@@ -4,7 +4,7 @@ import { canonical } from "@/lib/seo";
 export const metadata: Metadata = {
   title: "Mēness fāze šodien — augošs vai dilstošs Mēness",
   description:
-    "Kāda Mēness fāze ir šodien un tuvākajās dienās: jauns Mēness, pilnmēness, augošs un dilstošs — un ko tas nozīmē dārza darbiem.",
+    "Kāds Mēness ir šodien — augošs vai dilstošs? Šodienas fāze, apgaismojums un tuvākā jaunā Mēness un pilnmēness datumi un laiki Latvijā.",
   alternates: { canonical: canonical("/meness") },
 };
 

@@ -1,15 +1,8 @@
 import { getAllFlowers, type Flower } from "@/lib/flowers";
 
-/**
- * Bloom-period list pages. GSC shows 24 list-intent flower queries carrying
- * 1 004 impressions, but only /pukes ranks (position 2.4, 85 clicks) — the
- * other 715 impressions return 13 clicks because every cut of the list lands
- * on the same generic A–Z index. Each period below is a measured query.
- */
-/** `kas zied visu vasaru` deliberately has no period page: the article
- *  /raksti/darza-pukes-kas-zied-visu-vasaru already owns that intent (207
- *  impressions). Two pages for one query is the cannibalisation this site is
- *  already paying for elsewhere — link to the article instead. */
+/** Preserve each season's search intent year-round. The all-summer article
+ * already covers continuous flowering, so it gets links rather than a second
+ * page targeting the same question. */
 export const ALL_SUMMER_ARTICLE = "/raksti/darza-pukes-kas-zied-visu-vasaru";
 
 export interface BloomPeriod {
@@ -21,23 +14,31 @@ export interface BloomPeriod {
   title: string;
   description: string;
   lead: string;
-  /** Seasonal note — what the reader should actually do about it now. */
-  now: string;
+  /** Named-season advice: useful even when opened during another season. */
+  care: string;
+  updatedAt: string;
+  relatedLinks: { href: string; label: string }[];
   faq: { q: string; a: string }[];
 }
 
 export const BLOOM_PERIODS: BloomPeriod[] = [
   {
     slug: "rudeni",
+    updatedAt: "2026-10-06",
     months: [9, 10],
     h1: "Puķes, kas zied rudenī",
     title: "Rudens puķes — kas zied septembrī un oktobrī Latvijā",
     description:
       "Kuras dārza puķes zied septembrī un oktobrī Latvijā: asteres, krizantēmas, dālijas, rudbekijas un citas, ar ziedēšanas laiku, augstumu un kopšanu.",
     lead:
-      "Rudens dārzā krāsu tur tie augi, kas iztur vēsās naktis un ziedē līdz pirmajām salnām. Šeit ir puķes, kas Latvijā zied septembrī un oktobrī — ar to ziedēšanas laiku, augstumu un vietu, kur tās jūtas labi.",
-    now:
+      "Rudens dārzā krāsu tur tie augi, kas iztur vēsās naktis un zied līdz pirmajām salnām. Šeit ir puķes, kas Latvijā zied septembrī un oktobrī — ar to ziedēšanas laiku, augstumu un vietu, kur tās jūtas labi.",
+    care:
       "Septembrī un oktobrī vēl var stādīt daudzgadīgo puķu ceru dalījumus un sīpolpuķes nākamajam pavasarim, kamēr augsne nav sasalusi. Neizturīgo augu — dāliju un gladiolu — gumus un sīpolus izroc pēc pirmajām salnām un glabā vēsā, sausā telpā.",
+    relatedLinks: [
+      { href: "/raksti/ka-glabat-dalijas-ziema", label: "Kad izrakt un kā glabāt dālijas" },
+      { href: "/raksti/tulpju-stadisana-rudeni", label: "Tulpju stādīšana nākamajam pavasarim" },
+      { href: "/ko-set/oktobris", label: "Dārza darbi oktobrī" },
+    ],
     faq: [
       {
         q: "Kuras puķes Latvijā zied visilgāk rudenī?",
@@ -55,6 +56,7 @@ export const BLOOM_PERIODS: BloomPeriod[] = [
   },
   {
     slug: "vasara",
+    updatedAt: "2026-10-06",
     months: [6, 7, 8],
     h1: "Vasaras puķes",
     title: "Vasaras puķu nosaukumi — kas zied jūnijā, jūlijā un augustā",
@@ -62,8 +64,13 @@ export const BLOOM_PERIODS: BloomPeriod[] = [
       "Vasaras puķes Latvijas dārzam: kas zied jūnijā, jūlijā un augustā, ar ziedēšanas laiku, augstumu, saules prasībām un kopšanu.",
     lead:
       "Puķes, kas Latvijā zied vasarā — jūnijā, jūlijā vai augustā. Dažas tur visu sezonu, citas uzzied īsu, spilgtu vilni; sarakstā redzi katras ziedēšanas laiku.",
-    now:
+    care:
       "Vasaras vidū galvenais darbs ir noziedējušo ziedu noņemšana un laistīšana sausumā. Augusta beigās sāc plānot rudens stādīšanu — ceru dalīšanu un sīpolpuķes nākamajam pavasarim.",
+    relatedLinks: [
+      { href: ALL_SUMMER_ARTICLE, label: "Kā izvēlēties puķes, kas zied visu vasaru" },
+      { href: "/raksti/ka-laistit-darzu-karstuma", label: "Laistīšana karstumā un sausumā" },
+      { href: "/raksti/kapec-hortenzijas-nezied", label: "Kāpēc hortenzijas nezied" },
+    ],
     faq: [
       {
         q: "Kad Latvijā sāk ziedēt vasaras puķes?",
@@ -77,15 +84,21 @@ export const BLOOM_PERIODS: BloomPeriod[] = [
   },
   {
     slug: "pavasari",
+    updatedAt: "2026-10-06",
     months: [3, 4, 5],
     h1: "Pavasara puķes",
     title: "Pavasara puķes — kas zied martā, aprīlī un maijā Latvijā",
     description:
       "Pavasara puķes Latvijā: krokusi, narcises, tulpes, hiacintes un citas, kas zied martā, aprīlī un maijā — ar stādīšanas laiku un kopšanu.",
     lead:
-      "Pirmās krāsas pēc ziemas. Gandrīz visas šīs puķes ir sīpolpuķes, un tas nozīmē vienu: lai tās pavasarī ziedētu, sīpoli zemē jāieliek iepriekšējā rudenī.",
-    now:
-      "Ja gribi šīs puķes nākampavasar, sīpoli jāstāda tagad — no septembra līdz oktobra beigām, kamēr augsne nav sasalusi. Pavasarī stādīt vairs nav jēgas.",
+      "Pirmās krāsas pēc ziemas — no krokusiem un narcisēm līdz atraitnītēm un vēlāk ziedošām daudzgadīgajām puķēm. Sarakstā ir augi, kuru ziedēšanas laiks Latvijā iekrīt martā, aprīlī vai maijā.",
+    care:
+      "Tulpju, narcišu un krokusu sīpolus nākamā pavasara ziedēšanai parasti stāda iepriekšējā rudenī. Pavasarī kop jau augošās puķes un pēc sīpolpuķu noziedēšanas ļauj lapām dabiski nodzeltēt. Citu puķu stādīšanas laiku pārbaudi katra auga ceļvedī — visam sarakstam viens termiņš neder.",
+    relatedLinks: [
+      { href: "/raksti/tulpju-stadisana-rudeni", label: "Kad stādīt tulpju sīpolus" },
+      { href: "/pukes/narcises", label: "Narcišu stādīšana un kopšana" },
+      { href: "/ko-set/aprilis", label: "Ko sēt un stādīt aprīlī" },
+    ],
     faq: [
       {
         q: "Kad stādīt pavasara puķu sīpolus Latvijā?",

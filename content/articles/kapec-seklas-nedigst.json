@@ -103,5 +103,10 @@
       "label": "Kāpēc dēsti izstīdz un kā to labot",
       "href": "/raksti/desti-izstidz"
     }
+  ],
+  "seasonalMonths": [
+    2,
+    3,
+    4
   ]
 }

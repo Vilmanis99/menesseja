@@ -11,16 +11,18 @@ import { cropEmoji } from "@/lib/crop-visual";
 import { MONTH_SLUGS, monthFromSlug, MONTH_TIPS, MONTHS_LV_LOCATIVE, canonical, SITE_NAME, og } from "@/lib/seo";
 import { MONTH_GUIDES } from "@/lib/month-guides";
 import { TrackedLink } from "@/components/tracked-link";
+import { SeasonalLinks } from "@/components/seasonal-links";
+import { monthCalendarHref, SEASONAL_LINKS_UPDATED_AT } from "@/lib/seasonal";
 
 export const dynamicParams = false;
-const CAL_YEAR = 2026;
+export const revalidate = 3600;
 
 export function generateStaticParams() {
   return MONTH_SLUGS.map((month) => ({ month }));
 }
 
 const GROUPS: { key: ActivityKey; title: string; icon: string }[] = [
-  { key: "sowIndoors", title: "Sēt telpās (rasādēm)", icon: "yard" },
+  { key: "sowIndoors", title: "Sēt telpās dēstiem", icon: "yard" },
   { key: "sowOutdoors", title: "Sēt tieši laukā", icon: "grass" },
   { key: "transplant", title: "Stādīt laukā", icon: "potted_plant" },
   { key: "harvest", title: "Novākt", icon: "agriculture" },
@@ -67,7 +69,7 @@ export default async function KoSetPage({ params }: { params: Promise<{ month: s
     "@type": "Article",
     headline: `Ko sēt ${name} Latvijā`,
     inLanguage: "lv",
-    ...(guide?.updatedAt ? { dateModified: guide.updatedAt } : {}),
+    dateModified: guide?.updatedAt && guide.updatedAt > SEASONAL_LINKS_UPDATED_AT ? guide.updatedAt : SEASONAL_LINKS_UPDATED_AT,
     isPartOf: { "@type": "WebSite", name: SITE_NAME, url: canonical("/") },
     publisher: { "@type": "Organization", name: SITE_NAME, url: canonical("/") },
     author: { "@type": "Organization", name: SITE_NAME, url: canonical("/") },
@@ -101,8 +103,8 @@ export default async function KoSetPage({ params }: { params: Promise<{ month: s
             <p className="text-body-lg leading-relaxed text-on-surface">{guide.shortAnswer}</p>
           </aside>
 
-          <section className="mb-lg" aria-labelledby="second-harvest-heading">
-            <h2 id="second-harvest-heading" className="mb-sm text-headline-md text-on-surface">Trīs noteikumi otrajai ražai</h2>
+          <section className="mb-lg" aria-labelledby="month-checklist-heading">
+            <h2 id="month-checklist-heading" className="mb-sm text-headline-md text-on-surface">{guide.checklistTitle}</h2>
             <div className="grid gap-2 sm:grid-cols-3">
               {guide.checklist.map((item) => (
                 <Card key={item.title} tone="container" className="p-sm">
@@ -169,14 +171,16 @@ export default async function KoSetPage({ params }: { params: Promise<{ month: s
           <p className="font-semibold text-on-surface">Sēt saskaņā ar Mēnesi?</p>
           <p className="text-body-md text-on-surface-variant">Skaties šī mēneša Mēness sējas kalendāru ar elementu dienām.</p>
         </div>
-        <Link href={`/kalendars/${CAL_YEAR}/${slug}`} className="inline-flex min-h-11 shrink-0 items-center gap-1 text-label-md text-primary hover:underline">
+        <Link href={monthCalendarHref(month)} className="inline-flex min-h-11 shrink-0 items-center gap-1 text-label-md text-primary hover:underline">
           Kalendārs <Icon name="arrow_forward" size="16px" />
         </Link>
       </Card>
 
+      <SeasonalLinks month={month} includeSowing={false} />
+
       {guide && (
         <section className="mb-md" aria-labelledby="month-related-heading">
-          <h2 id="month-related-heading" className="mb-sm text-headline-md text-on-surface">Plašāki jūlija padomi</h2>
+          <h2 id="month-related-heading" className="mb-sm text-headline-md text-on-surface">Plašāk par darbiem {MONTHS_LV_LOCATIVE[month - 1]}</h2>
           <div className="grid gap-2 sm:grid-cols-2">
             {guide.relatedLinks.map((link) => (
               <Link key={link.href} href={link.href} className="flex min-h-14 items-center gap-2 rounded-xl border border-outline-variant/10 bg-surface-container px-md py-sm text-body-md font-semibold text-on-surface hover:bg-surface-container-high hover:text-primary">
@@ -192,6 +196,10 @@ export default async function KoSetPage({ params }: { params: Promise<{ month: s
           <h2 id="month-sources-heading" className="text-headline-md text-on-surface">Avoti un pārbaude</h2>
           <p className="mt-1 text-label-md text-on-surface-variant">
             Saturs pārbaudīts {new Intl.DateTimeFormat("lv-LV").format(new Date(`${guide.updatedAt}T12:00:00Z`))}.
+          </p>
+          <p className="mt-2 text-label-md leading-relaxed text-on-surface-variant">
+            Avoti skaidro audzēšanas paņēmienus. Darbu laiku Latvijā pielāgo vietējiem laikapstākļiem,
+            augsnes stāvoklim un šķirnei; ārvalstu sējas datumi nav pārņemti kā Latvijas termiņi.
           </p>
           <ul className="mt-2 space-y-1">
             {guide.sources.map((source) => (

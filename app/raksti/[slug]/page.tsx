@@ -55,7 +55,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
       { "@type": "ListItem", position: 2, name: a.title, item: canonical(`/raksti/${a.slug}`) },
     ],
   };
-  // FAQPage from the article's own "biežākie jautājumi" section → rich results + AI extraction.
+  // Describe the questions and answers visible in the article.
   const faq = articleFaq(a);
   const faqJsonLd = faq.length
     ? {
@@ -75,8 +75,8 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
     .map((s) => ({ label: s.heading as string, id: headingSlug(s.heading as string) }));
 
   const MONTHS_LOC = ["janvārī", "februārī", "martā", "aprīlī", "maijā", "jūnijā", "jūlijā", "augustā", "septembrī", "oktobrī", "novembrī", "decembrī"];
-  const [reviewedYear, reviewedMonth] = a.updatedAt.split("-").map(Number);
-  const reviewedLabel = `${reviewedYear}. g. ${MONTHS_LOC[reviewedMonth - 1]}`;
+  const [updatedYear, updatedMonth] = a.updatedAt.split("-").map(Number);
+  const updatedLabel = `${updatedYear}. g. ${MONTHS_LOC[updatedMonth - 1]}`;
 
   return (
     <article className="mx-auto max-w-3xl">
@@ -100,7 +100,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
         <h1 className="text-headline-lg-mobile text-primary md:text-headline-lg">{a.title}</h1>
         <p className="mt-2 flex items-center gap-1.5 text-label-sm text-on-surface-variant">
           <Icon name="update" size="15px" />
-          Pārbaudīts <time dateTime={a.updatedAt}>{reviewedLabel}</time>
+          Atjaunots <time dateTime={a.updatedAt}>{updatedLabel}</time>
         </p>
       </header>
 
@@ -127,6 +127,9 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
       <div className="space-y-lg">
         {a.body.map((section, i) => (
           <section key={i}>
+            {section.anchorAliases?.map((id) => (
+              <span key={id} id={id} aria-hidden="true" className="block scroll-mt-24" />
+            ))}
             {section.heading && (
               <h2 id={headingSlug(section.heading)} className="mb-sm scroll-mt-24 text-headline-md text-on-surface">
                 {section.heading}
@@ -187,13 +190,28 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
                 </ul>
               )
             )}
+            {section.sourceUrls?.length ? (
+              <div className="mt-sm text-body-sm text-on-surface-variant">
+                <p className="mb-1">Avoti šai sadaļai:</p>
+                <ul className="space-y-1">
+                  {section.sourceUrls.map((url) => {
+                    const source = a.sources.find((item) => item.url === url);
+                    return source ? (
+                      <li key={url}>
+                        <a href={url} target="_blank" rel="noopener noreferrer" className="text-primary underline decoration-primary/30 underline-offset-2 hover:decoration-primary">{source.label}</a>
+                      </li>
+                    ) : null;
+                  })}
+                </ul>
+              </div>
+            ) : null}
           </section>
         ))}
       </div>
 
       {isMoonTopic && <DataNote variant="moon" className="mt-lg" />}
 
-      {a.entities?.crops?.[0] ? (
+      {a.showGardenAction !== false && (a.entities?.crops?.[0] ? (
         <div className="mt-lg rounded-xl border border-primary/35 bg-primary-container/25 p-md shadow-lg shadow-primary/5">
           <h2 className="text-headline-md text-on-surface">Seko šim augam savā dārzā</h2>
           <p className="mt-1 text-body-md text-on-surface-variant">Pievieno to bez konta — redzēsi aktuālos darbus un varēsi pierakstīt kopšanu.</p>
@@ -210,7 +228,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
             {a.intent === "seasonal" ? "Atvērt kalendāru" : "Atvērt dārza plānotāju"}
           </TrackedLink>
         </div>
-      )}
+      ))}
 
       <NewsletterSignup source={`raksts:${a.slug}`} />
 
@@ -231,7 +249,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
 
       {a.sources.length > 0 && (
         <div className="mt-lg border-t border-outline-variant/10 pt-md">
-          <h2 className="mb-sm text-headline-md text-on-surface">Avoti un pārbaude</h2>
+          <h2 className="mb-sm text-headline-md text-on-surface">Raksta avoti</h2>
           <ul className="space-y-1 text-body-sm text-on-surface-variant">
             {a.sources.map((source) => <li key={source.url}><a href={source.url} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">{source.label}</a></li>)}
           </ul>

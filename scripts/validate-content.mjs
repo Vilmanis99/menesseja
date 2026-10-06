@@ -24,11 +24,12 @@ function validDate(value) {
 function resolves(href) {
   if (/^(https?:|mailto:|#)/.test(href)) return true;
   const clean = href.split(/[?#]/)[0].replace(/^\//, "");
-  const [rootName, slug] = clean.split("/");
+  const [rootName, slug, detail] = clean.split("/");
   if (!routeRoots.has(rootName)) return false;
   if (!slug) return true;
   if (rootName === "raksti") return articles.has(slug);
   if (rootName === "augi") return crops.has(slug) || flowers.has(slug);
+  if (rootName === "pukes" && slug === "kas-zied") return ["pavasari", "vasara", "rudeni"].includes(detail);
   if (rootName === "pukes") return flowers.has(slug);
   if (rootName === "kaitekli") return pests.has(slug);
   if (rootName === "receptes") return recipes.has(slug);
@@ -42,11 +43,27 @@ for (const file of [...articles].sort()) {
   if (a.slug !== file) errors.push(`${file}: slug nesakrīt ar faila nosaukumu`);
   if (!intents.has(a.intent)) errors.push(`${file}: nederīgs intent`);
   if (!validDate(a.publishedAt) || !validDate(a.updatedAt)) errors.push(`${file}: nederīgs datums`);
+  if (a.showGardenAction !== undefined && typeof a.showGardenAction !== "boolean") errors.push(`${file}: showGardenAction jābūt boolean`);
+  if (a.seasonalMonths !== undefined && (
+    !Array.isArray(a.seasonalMonths) || !a.seasonalMonths.length ||
+    a.seasonalMonths.some((month) => !Number.isInteger(month) || month < 1 || month > 12) ||
+    new Set(a.seasonalMonths).size !== a.seasonalMonths.length
+  )) errors.push(`${file}: seasonalMonths jābūt unikāliem mēnešiem no 1 līdz 12`);
   if (a.excerpt?.length < 80 || a.excerpt?.length > 230) errors.push(`${file}: excerpt jābūt 80–230 zīmēm`);
   if (a.shortAnswer?.length < 90 || a.shortAnswer?.length > 520) errors.push(`${file}: īsā atbilde jābūt 90–520 zīmēm`);
   if (!Array.isArray(a.sources) || a.sources.length < 2 || a.sources.some((s) => !s.label || !/^https:\/\//.test(s.url))) errors.push(`${file}: vajag vismaz 2 pilnus HTTPS avotus`);
   if (!Array.isArray(a.body) || !a.body.length || a.body.some((s) => !Array.isArray(s.paragraphs) || !s.paragraphs.length)) errors.push(`${file}: nederīga body struktūra`);
   for (const [index, section] of (a.body ?? []).entries()) {
+    if (section.anchorAliases && (
+      !Array.isArray(section.anchorAliases) || !section.anchorAliases.length ||
+      new Set(section.anchorAliases).size !== section.anchorAliases.length ||
+      section.anchorAliases.some((id) => typeof id !== "string" || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(id))
+    )) errors.push(`${file}: nederīgi iepriekšējo sadaļu enkuri (${index + 1}. sadaļa)`);
+    if (section.sourceUrls && (
+      !Array.isArray(section.sourceUrls) || !section.sourceUrls.length ||
+      new Set(section.sourceUrls).size !== section.sourceUrls.length ||
+      section.sourceUrls.some((url) => !a.sources?.some((source) => source.url === url))
+    )) errors.push(`${file}: sadaļas avotiem jābūt unikālām saitēm no raksta avotu saraksta (${index + 1}. sadaļa)`);
     if (section.items && (!Array.isArray(section.items) || !section.items.length || section.items.some((item) => typeof item !== "string" || item.length < 12))) errors.push(`${file}: nederīgs saraksts ${index + 1}. sadaļā`);
     if (section.listStyle && !["bulleted", "numbered", "check"].includes(section.listStyle)) errors.push(`${file}: nederīgs listStyle ${index + 1}. sadaļā`);
     if (section.table) {

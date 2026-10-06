@@ -1,0 +1,69 @@
+{
+  "title": "Kā glabāt sēklas un pārbaudīt dīgtspēju",
+  "slug": "ka-glabat-seklas-un-parbaudit-digtspeju",
+  "category": "Praktiski",
+  "intent": "how-to",
+  "excerpt": "Ko darīt ar pāri palikušām sēklām: sausa un vēsa glabāšana, paciņu marķēšana un vienkārša dīgtspējas pārbaude pirms nākamās sezonas sējas.",
+  "shortAnswer": "Pāri palikušas sausas sēklas glabā marķētās paciņās, vēsā vietā un pasargātas no mitruma. Pirms sējas šaubīgo partiju pārbaudi: uz mitra papīra novieto zināmu sēklu skaitu, nodrošini sugai piemērotus dīgšanas apstākļus un saskaiti sadīgušās. Neliels mājas tests ir orientieris, ne garantija, ka tāds pats rezultāts būs dobē.",
+  "primaryQuery": "kā glabāt sēklas un pārbaudīt dīgtspēju",
+  "publishedAt": "2026-10-06",
+  "updatedAt": "2026-10-06",
+  "seasonalMonths": [1, 2, 3, 9, 10, 11, 12],
+  "entities": {},
+  "relatedSlugs": ["ka-izveleties-seklas-darzam", "kapec-seklas-nedigst", "kad-set-destus-rekini-atpakal"],
+  "sources": [
+    { "label": "RHS — sēklu ievākšana un glabāšana", "url": "https://www.rhs.org.uk/propagation/seed-collecting-storing" },
+    { "label": "University of Minnesota Extension — dārzeņu sēklu glabāšana", "url": "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/saving-vegetable-seeds" },
+    { "label": "Illinois Extension — sēklu dīgtspējas pārbaude", "url": "https://extension.illinois.edu/blogs/ilriverhort/2017-02-03-test-seed-viability" }
+  ],
+  "readMinutes": 4,
+  "body": [
+    {
+      "heading": "Sakārto paciņas pirms glabāšanas",
+      "paragraphs": [
+        "Atvērtai paciņai pieraksti atvēršanas gadu, bet pašievāktām sēklām — augu, šķirni un ievākšanas datumu. Glabā kopā tikai tādas partijas, kuru izcelsmi vari atšķirt. Apskati, vai paciņās nav mitruma, pelējuma vai augu atlieku.",
+        "Pašievāktām sēklām pirms noslēgšanas jābūt izžāvētām. Šis ceļvedis attiecas uz sēklām, ko drīkst glabāt sausas; dažām augu sugām vajadzīga tūlītēja sēja vai īpaša mitra glabāšana. Tām pārbaudi atsevišķas audzēšanas norādes."
+      ]
+    },
+    {
+      "heading": "Izvēlies sausu un vēsu glabāšanas vietu",
+      "paragraphs": [
+        "Sausās sēklas turi marķētās papīra paciņās noslēdzamā traukā, kas pasargā no apkārtējā mitruma. Silta virtuves palodze un mitrs šķūnis būs grūtāk kontrolējami nekā vēsa, stabila vieta. Ja izmanto ledusskapi, sēklas pasargā no mitruma ar cieši noslēgtu trauku.",
+        "Glabāšanas ilgums atšķiras pa sugām un atkarīgs no sākotnējās sēklu kvalitātes. Paciņas datums palīdz novērtēt vecumu, bet viens kopīgs derīguma termiņš visām sēklām neder. Šaubīgo partiju pirms sezonas pārbaudi, lai neiztērētu tai visu sējas vietu."
+      ]
+    },
+    {
+      "heading": "Dīgtspējas pārbaude mājās",
+      "paragraphs": ["Pārbaudei izvēlies sēklas no vienas partijas. Vajadzīgs mitrs papīra dvielis, trauks vai maisiņš un marķējums."],
+      "listStyle": "numbered",
+      "items": [
+        "Saskaiti, piemēram, 10 sēklas. Ja sēklas ir dārgas vai to ir maz, lieto mazāku paraugu un pieraksti skaitu.",
+        "Novieto tās uz vienmērīgi mitra, nevis piloša papīra. Aizloki vai pārklāj, lai sēklas saskartos ar mitrumu.",
+        "Ievieto noslēdzamā traukā vai maisiņā un atzīmē augu, partiju un pārbaudes sākuma datumu.",
+        "Nodrošini sugai piemērotu temperatūru un gaismu pēc audzēšanas norādēm. Dažām sugām pirms dīgšanas vajag īpašu apstrādi.",
+        "Regulāri pārbaudi mitrumu un rezultātu vērtē pēc sugai paredzētā dīgšanas laika, ne pēc vienāda dienu skaita visiem augiem.",
+        "Saskaiti sadīgušās sēklas un saglabā rezultātu pie paciņas. Pirms visu sēklu izlietošanas izlem, vai partija atbilst tava plāna vajadzībām."
+      ]
+    },
+    {
+      "heading": "Kā izmantot rezultātu",
+      "paragraphs": [
+        "Ja no 10 sēklām sadīgušas 8, šajā paraugā rezultāts ir 80%. Tik mazs paraugs dod tikai aptuvenu novērtējumu. Dobē dīgšanu ietekmēs arī augsnes mitrums, temperatūra, sējas dziļums un citi apstākļi.",
+        "Ja rezultāts ir vājš, vispirms pārliecinies, ka izvēlējies piemērotus pārbaudes apstākļus. Svarīgam, ierobežota laika sējumam apsver citu sēklu partiju. Ja dīgtspēja ir pieņemama, glabā sēklas tālāk un sēj atbilstoši kultūras prasībām."
+      ]
+    },
+    {
+      "heading": "Biežākie jautājumi",
+      "paragraphs": [
+        "Vai pāri palikušās sēklas nākamgad jāizmet? Ne automātiski. To kvalitāte atkarīga no sugas un glabāšanas; pirms sējas pārbaudi šaubīgo partiju.",
+        "Vai visas sēklas glabā vienādi? Nē. Šeit aprakstīta sausa glabāšana; sugām ar īpašām prasībām izmanto konkrētās sugas norādes.",
+        "Vai mājas pārbaude garantē sadīgšanu dobē? Nē. Tā palīdz novērtēt partiju piemērotos apstākļos, bet dobē rezultātu ietekmē arī vide."
+      ]
+    }
+  ],
+  "links": [
+    { "label": "Kā izvēlēties sēklas dārzam", "href": "/raksti/ka-izveleties-seklas-darzam" },
+    { "label": "Kāpēc iesētās sēklas nedīgst", "href": "/raksti/kapec-seklas-nedigst" },
+    { "label": "Janvāra darbu ceļvedis", "href": "/ko-set/janvaris" }
+  ]
+}

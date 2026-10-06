@@ -101,5 +101,12 @@
       "label": "Miltrasa: baltais aplikums uz lapām",
       "href": "/kaitekli/miltrasa"
     }
+  ],
+  "seasonalMonths": [
+    5,
+    6,
+    7,
+    8,
+    9
   ]
 }

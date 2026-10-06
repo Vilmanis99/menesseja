@@ -95,5 +95,10 @@
       "label": "Melnkāja: slimības apraksts un kontrole",
       "href": "/kaitekli/melnkaja"
     }
+  ],
+  "seasonalMonths": [
+    2,
+    3,
+    4
   ]
 }

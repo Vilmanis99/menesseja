@@ -62,5 +62,14 @@
         "Tāpēc dari tā: ziemā vai agri pavasarī uz papīra saplāno augu maiņu visam dārzam, bet, kad pienāk sēšanas un stādīšanas laiks, ieskaties mūsu lietotnes kalendārā, kas parādīs, kura diena pēc tradīcijas labāk der lapu, augļu vai sakņu darbiem. Tā tu apvieno gudru plānošanu ar mums mīļo Mēness ritmu."
       ]
     }
+  ],
+  "seasonalMonths": [
+    1,
+    2,
+    3,
+    4,
+    10,
+    11,
+    12
   ]
 }

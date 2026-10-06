@@ -9,14 +9,15 @@ import { BLOOM_PERIODS } from "@/lib/bloom-periods";
 import { getAllProblems } from "@/lib/kaitekli";
 import { MONTH_SLUGS, CALENDAR_YEARS, SITE_URL } from "@/lib/seo";
 import { DATA_REVIEWED } from "@/lib/sources";
+import { SEASONAL_LINKS_UPDATED_AT } from "@/lib/seasonal";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const url = (p: string) => `${SITE_URL}${p}`;
   const reviewed = new Date(`${DATA_REVIEWED}-01`);
+  const seasonalUpdate = new Date(SEASONAL_LINKS_UPDATED_AT);
   const articles = getAllArticles();
-  // Per-item dates wherever the content carries one. Data-driven pages (crops,
-  // flowers, months) fall back to DATA_REVIEWED, which is a real review date —
-  // but a stamp that is merely invented would get lastModified ignored outright.
+  // Per-item review dates or the actual date of the seasonal-link/calendar
+  // changes. Do not stamp unchanged pages with today's build date.
   const newestArticle = articles.reduce(
     (latest, a) => (a.updatedAt > latest ? a.updatedAt : latest),
     articles[0]?.updatedAt ?? DATA_REVIEWED,
@@ -26,9 +27,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: url("/"), priority: 1, changeFrequency: "daily" },
     { url: url("/augi"), priority: 0.9, changeFrequency: "monthly" },
     { url: url("/macies"), priority: 0.8, changeFrequency: "monthly" },
-    { url: url("/kalendars"), priority: 0.7, changeFrequency: "daily" },
+    { url: url("/kalendars"), lastModified: seasonalUpdate, priority: 0.7, changeFrequency: "daily" },
     { url: url("/celvedis"), priority: 0.6, changeFrequency: "monthly" },
-    { url: url("/raksti"), lastModified: new Date(newestArticle), priority: 0.8, changeFrequency: "weekly" },
+    { url: url("/raksti"), lastModified: new Date(newestArticle > SEASONAL_LINKS_UPDATED_AT ? newestArticle : SEASONAL_LINKS_UPDATED_AT), priority: 0.8, changeFrequency: "weekly" },
     { url: url("/topi"), priority: 0.8, changeFrequency: "weekly" },
     { url: url("/receptes"), priority: 0.8, changeFrequency: "monthly" },
     { url: url("/pukes"), priority: 0.9, changeFrequency: "monthly" },
@@ -39,7 +40,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: url("/iesutit"), priority: 0.6, changeFrequency: "monthly" },
     { url: url("/planotajs"), priority: 0.5, changeFrequency: "monthly" },
     { url: url("/kopiena"), priority: 0.5, changeFrequency: "weekly" },
-    { url: url("/meness"), priority: 0.5, changeFrequency: "daily" },
+    { url: url("/meness"), lastModified: seasonalUpdate, priority: 0.5, changeFrequency: "daily" },
     { url: url("/regioni"), priority: 0.6, changeFrequency: "monthly" },
   ];
 
@@ -59,7 +60,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const koSetPages: MetadataRoute.Sitemap = MONTH_SLUGS.map((m) => ({
     url: url(`/ko-set/${m}`),
-    lastModified: reviewed,
+    lastModified: seasonalUpdate,
     priority: 0.7,
     changeFrequency: "monthly",
   }));
@@ -80,14 +81,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const flowerPages: MetadataRoute.Sitemap = flowerSlugs().map((slug) => ({
     url: url(`/pukes/${slug}`),
-    lastModified: reviewed,
+    lastModified: seasonalUpdate,
     priority: 0.8,
     changeFrequency: "monthly",
   }));
 
   const bloomPeriodPages: MetadataRoute.Sitemap = BLOOM_PERIODS.map((period) => ({
     url: url(`/pukes/kas-zied/${period.slug}`),
-    lastModified: reviewed,
+    lastModified: new Date(period.updatedAt),
     priority: 0.8,
     changeFrequency: "monthly",
   }));
@@ -111,7 +112,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const monthPages: MetadataRoute.Sitemap = CALENDAR_YEARS.flatMap((year) =>
     MONTH_SLUGS.map((m) => ({
       url: url(`/kalendars/${year}/${m}`),
-      lastModified: reviewed,
+      lastModified: seasonalUpdate,
       priority: 0.7,
       changeFrequency: "yearly" as const,
     })),

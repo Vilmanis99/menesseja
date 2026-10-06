@@ -93,5 +93,10 @@
       "label": "Kad sēt dēstus — rēķini atpakaļ no izstādīšanas",
       "href": "/raksti/kad-set-destus-rekini-atpakal"
     }
+  ],
+  "seasonalMonths": [
+    2,
+    3,
+    4
   ]
 }

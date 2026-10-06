@@ -15,11 +15,13 @@ export function storageGet(key: string): string | null {
   }
 }
 
-export function storageSet(key: string, value: string): void {
+export function storageSet(key: string, value: string): boolean {
   try {
     window.localStorage.setItem(key, value);
+    return true;
   } catch {
     /* quota / private mode — the app keeps working in-memory */
+    return false;
   }
 }
 

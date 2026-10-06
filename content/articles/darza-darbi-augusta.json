@@ -4,10 +4,10 @@
   "category": "Praktiski",
   "intent": "seasonal",
   "excerpt": "Augusts ir ražas, konservēšanas un jauno zemeņu mēnesis. Pārskats par svarīgākajiem augusta darbiem Latvijas dārzā: ko novākt, ko vēl paspēt iesēt, kā pasargāt tomātus no lakstu puves un ko darīt ar tukšajām dobēm.",
-  "shortAnswer": "Augustā dārzs atdod to, ko pavasarī un vasarā tajā esi ieguldījis.  Gurķi jālasa teju katru dienu, tomāti sārtojas ķekaros, sīpolu loki gulstas zemē, un virtuvē smaržo pirmās marinādes burkas.",
+  "shortAnswer": "Augustā regulāri vāc ražu, pārbaudi tomātu un gurķu veselību, stādi zemenes un izvēlies nākamo kultūru vai augsnes segumu tukšajām dobēm. Ražas atlasi un konservēšanas metodi vērtē atsevišķi: bojātas ražas glābšana nav pamats to aizvākot burkās.",
   "primaryQuery": "dārza darbi augustā: raža, konservēšana un jaunās zemenes",
   "publishedAt": "2026-07-06",
-  "updatedAt": "2026-07-06",
+  "updatedAt": "2026-10-06",
   "seasonalMonths": [
     8
   ],
@@ -33,6 +33,14 @@
     {
       "label": "Royal Horticultural Society — Advice",
       "url": "https://www.rhs.org.uk/advice"
+    },
+    {
+      "label": "NCHFP — tomātu atlase un konservēšanas nosacījumi",
+      "url": "https://nchfp.uga.edu/how/can/how-do-i-can-tomatoes/canning-tomatoes-introduction/"
+    },
+    {
+      "label": "NCHFP — pārbaudītas marinēšanas metodes",
+      "url": "https://nchfp.uga.edu/how/pickle/general-information-pickling/general-information-on-pickling/"
     }
   ],
   "readMinutes": 6,
@@ -63,15 +71,19 @@
       "heading": "Tomāti, lakstu puve un citi augusta riski",
       "paragraphs": [
         "Tomātiem augustā izšķiras ražas liktenis. Lauka tomātiem galotnes noņem jau jūlija beigās vai augusta pašā sākumā, siltumnīcā — augusta pirmajās dienās, vēlākais līdz desmitajam datumam: noknieb augšanas virsotni virs pēdējā ķekara, kuram vēl ir reālas izredzes nobriest, un atstāj virs tā vienu vai divas lapas. Latvijas vasara ir par īsu, lai augusta beigās aizmetušies ķekari paspētu ienākties, tāpēc labāk ļaut augam visu spēku veltīt jau esošajiem augļiem. Ar atlapošanu nepārcenties — lapas baro augļus, un bez tām briešana apstājas.",
-        "Vienlaikus augusts ir lielākais lakstu puves jeb fitoftoras riska laiks, jo vēsās, rasainās naktis sēnei ir ideālas. Profilakse nav sarežģīta, taču tā jāievēro ik dienu: vēdini siltumnīcu, lai lapas ilgi nestāv slapjas, laisti no rīta un tikai pie saknēm, noņem apakšējās lapas līdz pirmajam ķekaram. Ja parādās pirmie brūnie plankumi, nevilcinies: noplūc slimās lapas un novāc ražu agrāk, negaidot pilnu gatavību.",
-        "Acis vaļā jātur arī citur dārzā. Uz gurķu, kabaču un rožu lapām augusta rasas modina miltrasu — baltu, miltainu aplikumu; stipri skartās lapas noņem un neliec kompostā, kas nesakarst. Kāpostiem lapu apakšpusēs meklē kāpostu balteņa dzeltenās oliņas un kāpurus, kamēr tie nav ielīduši galviņā, bet mitrākās nedēļās vakaros ar lukturīti apstaigā dobes un savāc gliemežus."
+        "Ilgstošs lapu slapjums palielina lakstu puves risku. Vēdini siltumnīcu un laisti pie saknēm. Ja pamani brūnus plankumus, apskati lapas abas puses, stublāju un augļus; viens plankums vēl nav diagnoze. Stipri slima auga augļi var sākt bojāties arī pēc novākšanas.",
+        "Pārbaudi arī citus augus. Uz gurķu un kabaču lapām var parādīties miltrasa; rasas neesamība slimību neizslēdz. Kāpostiem meklē balteņu oliņas un kāpurus, bet mitrākā laikā apskati dobes arī vakarā, kad vieglāk atrast gliemežus."
       ]
     },
     {
       "heading": "Konservēšanas sezona",
       "paragraphs": [
-        "Augustā dārzs un virtuve strādā roku rokā. Marinētiem gurķiem galvenais ir svaigums: kraukšķīgas burkas sanāk no gurķiem, kas lasīti tajā pašā dienā, vislabāk no rīta. Ja gurķi jau kādu dienu pastāvējuši, pirms marinēšanas pamērcē tos dažas stundas aukstā ūdenī — tā tie atgūst stingrumu.",
-        "Saplaisājuši vai neglīti, bet veseli tomāti vislabāk noder mērcei vai sulai — skaistākos atstāj salātiem. Ogas, ko nepaspēj apēst, visvienkāršāk ir saldēt: izklāj vienā kārtā uz paplātes, sasaldē un tikai tad ber maisiņā, lai nesalīp vienā pikā."
+        "Marinēšanai izvēlies svaigus, stingrus gurķus un pārbaudītu recepti ar precīzu etiķa koncentrāciju, proporcijām un burku apstrādi. Aukstā ūdenī mērcē pēc konkrētās receptes; kraukšķīgums pats par sevi nepasaka, vai konservs ir drošs glabāšanai istabas temperatūrā.",
+        "Tomātu konservēšanai atlasi veselus, stingrus augļus. NCHFP neiesaka konservēt tomātus no atmirušiem vai sala nogalinātiem augiem; jāievēro arī receptes paskābināšana un apstrādes laiks. Ogas, ko nepaspēj apēst, vari saldēt nelielās porcijās."
+      ],
+      "sourceUrls": [
+        "https://nchfp.uga.edu/how/can/how-do-i-can-tomatoes/canning-tomatoes-introduction/",
+        "https://nchfp.uga.edu/how/pickle/general-information-pickling/general-information-on-pickling/"
       ]
     },
     {
@@ -88,7 +100,7 @@
         "Vai augustā vēl nav par vēlu stādīt zemenes? Nē, augusts ir pats piemērotākais laiks. Stādi līdz ziemai paspēj iesakņoties un nākamajā vasarā dod pirmo ražu. Jo tuvāk septembrim, jo mazāk laika paliek iesakņoties, tāpēc nevelc līdz mēneša pēdējām dienām.",
         "Kad tomātiem jānoņem galotnes? Lauka tomātiem jūlija beigās vai augusta pašā sākumā, siltumnīcā — augusta pirmajās dienās, vēlākais līdz desmitajam datumam. Noknieb virsotni virs pēdējā ķekara, kuram vēl ir izredzes nobriest, un atstāj virs tā vienu vai divas lapas fotosintēzei.",
         "Ko iesēt tukšā dobē pēc sīpoliem? Ja gribi vēl vienu ražu, augusta pirmajā pusē sēj redīsus, salātus vai spinātus. Ja jauna raža nav vajadzīga, sēj zaļmēslojumu, piemēram, baltās sinepes — tās paspēj izaugt līdz salnām un uzlabo augsni nākamajam gadam.",
-        "Vai lakstu puves skarta auga tomātus drīkst ēst? Augļus bez plankumiem drīkst ēst un pārstrādāt, tikai dari to ātri, jo slimība uz noplūktiem augļiem var parādīties pēc dažām dienām. Augļus ar brūniem, cietiem plankumiem izmet — tos glābt vairs nevar."
+        "Vai lakstu puves skarta auga tomātus drīkst ēst? Augļus ar slimības bojājumiem nelieto. Arī ārēji veseli augļi vēlāk var sabojāties. Konservēšanai ir atsevišķi atlases un apstrādes nosacījumi; tos neapiet, novācot ražu agrāk."
       ]
     }
   ],

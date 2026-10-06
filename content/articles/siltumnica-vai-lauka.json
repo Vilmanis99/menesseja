@@ -63,5 +63,11 @@
         "Ja gribi to izmēģināt, mūsu lietotnes kalendārs parāda, kura diena tradicionāli tiek uzskatīta par piemērotu lapu, sakņu vai augļu augiem, bet ceļvedī vari lasīt vairāk par fāzēm un elementiem. Izmanto to kā vieglu palīgu virs pamatiem — vispirms laiks un augsnes temperatūra, un tikai pēc tam Mēness kā glīts noskaņas papildinājums."
       ]
     }
+  ],
+  "seasonalMonths": [
+    3,
+    4,
+    5,
+    6
   ]
 }
