@@ -1,0 +1,2346 @@
+{
+  "updatedAt": "2026-10-26",
+  "sources": {
+    "seeds": {
+      "label": "RHS — sēklu ievākšana un glabāšana",
+      "url": "https://www.rhs.org.uk/propagation/seed-collecting-storing"
+    },
+    "seedlings": {
+      "label": "University of Minnesota Extension — dēstu audzēšana telpās",
+      "url": "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/starting-seeds-indoors"
+    },
+    "hardening": {
+      "label": "RHS — dēstu pakāpeniska norūdīšana",
+      "url": "https://www.rhs.org.uk/prevention-protection/hardening-off-tender-plants"
+    },
+    "greenhouse": {
+      "label": "RHS — siltumnīcas tīrīšana",
+      "url": "https://www.rhs.org.uk/garden-features/cleaning-greenhouses"
+    },
+    "tools": {
+      "label": "RHS — instrumentu kopšana un glabāšana",
+      "url": "https://www.rhs.org.uk/garden-jobs/cleaning-tools"
+    },
+    "fall-sowing": {
+      "label": "University of Minnesota Extension — atkārtotā sēja rudens ražai",
+      "url": "https://extension.umn.edu/planting-and-growing-guides/planting-vegetables-midsummer-fall-harvest"
+    },
+    "dahlias": {
+      "label": "RHS — dāliju audzēšana un pārziemināšana",
+      "url": "https://www.rhs.org.uk/plants/dahlia/growing-guide/"
+    },
+    "peonies": {
+      "label": "RHS — lakstaino un starpgrupu peoniju audzēšana",
+      "url": "https://www.rhs.org.uk/plants/peony/herbaceous/growing-guide"
+    },
+    "tulips": {
+      "label": "RHS — tulpju stādīšana un audzēšana",
+      "url": "https://www.rhs.org.uk/plants/tulip/growing-guide"
+    },
+    "garlic": {
+      "label": "RHS — ķiploku stādīšana un kopšana",
+      "url": "https://www.rhs.org.uk/vegetables/garlic/grow-your-own"
+    },
+    "strawberries": {
+      "label": "RHS — zemeņu stādīšana un kopšana",
+      "url": "https://www.rhs.org.uk/fruit/strawberries/grow-your-own"
+    },
+    "compost": {
+      "label": "RHS — kompostēšana mājas dārzā",
+      "url": "https://www.rhs.org.uk/soil-composts-mulches/composting"
+    },
+    "watering": {
+      "label": "RHS — augu laistīšana",
+      "url": "https://www.rhs.org.uk/garden-jobs/watering"
+    },
+    "local-spring": {
+      "label": "LLKC, Māris Narvils — sausuma riski 2026. gada pavasarī",
+      "url": "https://llkc.lv/aktualitates/sausuma-riski-pavasari/"
+    },
+    "january": {
+      "label": "RHS — ziemas plānošanas darbi",
+      "url": "https://www.rhs.org.uk/advice/grow-your-own/in-month/january-jobs"
+    },
+    "april": {
+      "label": "RHS — pavasara sēja un dēstu pārstādīšana",
+      "url": "https://www.rhs.org.uk/advice/grow-your-own/in-month/april-jobs"
+    },
+    "july": {
+      "label": "RHS — vasaras kopšana un atkārtotā sēja",
+      "url": "https://www.rhs.org.uk/advice/grow-your-own/in-month/july-jobs"
+    },
+    "october": {
+      "label": "RHS — rudens raža un augsnes aizsardzība",
+      "url": "https://www.rhs.org.uk/advice/grow-your-own/in-month/october-jobs"
+    },
+    "november": {
+      "label": "RHS — glabātās ražas pārbaude un rudens beigu darbi",
+      "url": "https://www.rhs.org.uk/advice/grow-your-own/in-month/november-jobs"
+    },
+    "storage": {
+      "label": "University of Minnesota Extension — dārzeņu novākšana un glabāšana",
+      "url": "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/harvesting-and-storing-home-garden-vegetables"
+    },
+    "winter-trees": {
+      "label": "University of Minnesota Extension — koku un krūmu aizsardzība ziemā",
+      "url": "https://extension.umn.edu/garden-and-home/yard-and-garden/lawns-and-landscapes-in-minnesota/protecting-trees-and-shrubs-in-winter"
+    },
+    "local-winter": {
+      "label": "LLKC — augļu koku aizsardzība ziemā (Saimnieks.lv publikācija)",
+      "url": "https://www.saimnieks.lv/raksts/ka-pasargat-auglu-kokus-ziemas-perioda"
+    },
+    "seed-test": {
+      "label": "Illinois Extension — sēklu dīgtspējas pārbaude",
+      "url": "https://extension.illinois.edu/blogs/ilriverhort/2017-02-03-test-seed-viability"
+    },
+    "seed-timing": {
+      "label": "South Dakota State University Extension — dēstu audzēšanas ilgums",
+      "url": "https://extension.sdstate.edu/basics-seed-starting-flowers-and-vegetables"
+    },
+    "seed-care": {
+      "label": "University of Maryland Extension — dēstu gaisma, piķēšana un audzēšanas laiks",
+      "url": "https://extension.umd.edu/resource/starting-vegetable-seeds-indoors"
+    },
+    "mulch": {
+      "label": "RHS — mulčas lietošana un augsnes sagatavošana",
+      "url": "https://www.rhs.org.uk/soil-composts-mulches/mulch"
+    },
+    "tomatoes": {
+      "label": "RHS — tomātu kopšana, pazares un balsti",
+      "url": "https://www.rhs.org.uk/vegetables/tomatoes/grow-your-own"
+    },
+    "raspberries": {
+      "label": "RHS — vasaras un rudens aveņu apgriešana",
+      "url": "https://www.rhs.org.uk/fruit/raspberries/grow-your-own"
+    },
+    "potatoes": {
+      "label": "RHS — kartupeļu stādīšana, apraušana un novākšana",
+      "url": "https://www.rhs.org.uk/vegetables/potatoes/grow-your-own"
+    },
+    "onions": {
+      "label": "RHS — sīpolu audzēšana un ražas sagatavošana",
+      "url": "https://www.rhs.org.uk/vegetables/onions/grow-your-own"
+    },
+    "pumpkins": {
+      "label": "RHS — ķirbju novākšana un glabāšana",
+      "url": "https://www.rhs.org.uk/vegetables/pumpkins/grow-your-own"
+    },
+    "peony-division": {
+      "label": "Iowa State University Extension — lakstaino peoniju dalīšana un dziļums",
+      "url": "https://yardandgarden.extension.iastate.edu/faq/when-best-time-transplant-peonies"
+    }
+  },
+  "months": {
+    "1": {
+      "title": "Janvāris dārzā: pārbaudi krājumus un sagatavo izpildāmu plānu",
+      "description": "Janvāra dārza kalendārs: sēklu pārbaude, dobju un dēstu plānošana, glabātavas uzraudzība. Mēness fāzes Latvijas laikā un mēneša dienu tabula.",
+      "image": {
+        "id": "seklu-pacinas",
+        "caption": "Pirms sēklu pirkuma pieraksti, ko audzēsi un cik vietas tam ir. Sugas un šķirnes prasības ir svarīgākas par košo paciņas priekšpusi."
+      },
+      "sections": [
+        {
+          "id": "seklu-parbaude",
+          "area": "Sēklas",
+          "heading": "Sāc ar pārbaudāmajām sēklu partijām",
+          "when": "Mēneša sākumā, pirms jauna pasūtījuma un pirms lēni dīgstošu kultūru sējas.",
+          "paragraphs": [
+            "Vispirms pārbaudi tās paciņas, uz kuru rezultātu balstīsies viss pavasara plāns. Dažas retas sēklas un puspilna parasta salātu paciņa nav vienādi paraugi."
+          ],
+          "steps": [
+            "Atdali vecās, bez datuma vai mitrumā glabātās paciņas. Katrai piešķir savu marķējumu.",
+            "Izvēlies saskaitītu paraugu uz mitra papīra un pieraksti sākuma datumu. Dīgšanas ilgumu un apstākļus izvēlies pēc sugas.",
+            "Rezultātu ieraksti blakus atlikumam. Vajadzīgo pirkumu sarakstā liec konkrēto trūkstošo kultūru, ne visu veco paciņu aizvietotājus."
+          ],
+          "avoid": "Dažas nesadīgušas sēklas pēc trim dienām vēl nepierāda, ka visa partija neder.",
+          "sourceIds": [
+            "seed-test",
+            "seeds"
+          ],
+          "link": {
+            "href": "/raksti/ka-glabat-seklas-un-parbaudit-digtspeju",
+            "label": "Sēklu pārbaude mājās"
+          }
+        },
+        {
+          "id": "sejas-rinda",
+          "area": "Dēsti",
+          "heading": "Sakārto kultūras pēc dēstu audzēšanas ilguma",
+          "when": "Mēneša vidū; faktiskā sēja sākas tikai tad, kad pienācis aprēķinātais intervāls.",
+          "paragraphs": [
+            "Plānošanas sākuma orientieri atšķiras: paprikai ap 8–10 nedēļām, tomātiem bieži ap 6–8, gurķiem ap 3–4 nedēļām pirms izstādīšanas. Šķirne un audzēšanas apstākļi šo ilgumu maina."
+          ],
+          "steps": [
+            "Izveido atsevišķu rindu siltumnīcai un laukam. Pie abām ieraksti provizorisko izstādīšanas laiku.",
+            "Atņem izvēlētās kultūras kopējo audzēšanas ilgumu; noskaidro, vai dīgšana jau tajā ietverta.",
+            "Visagrākajām puķēm pārbaudi šķirnes norādes atsevišķi. Garš attīstības cikls ir iemesls laikus plānot gaismu, ne sēt visu janvārī."
+          ],
+          "avoid": "Ārvalstu tabulas kalendāros datumus nepārkopē Latvijai; izmanto audzēšanas ilgumu un savu gala vietu.",
+          "sourceIds": [
+            "seed-care",
+            "seed-timing"
+          ],
+          "link": {
+            "href": "/raksti/kad-set-destus-rekini-atpakal",
+            "label": "Kā rēķināt sējas intervālu"
+          }
+        },
+        {
+          "id": "dobju-apjoms",
+          "area": "Plānošana",
+          "heading": "Ierobežo sējumu skaitu pēc vietas dobēs un uz palodzes",
+          "when": "Pirms šķirņu gala izvēles, kad vari salīdzināt dārza zīmējumu ar telpu dēstiem.",
+          "paragraphs": [
+            "Augu skaitu iegūst no paredzētās dobes un šķirnes attālumiem. Aprēķina piemērs: vienā trīs metrus garā rindā, atstājot 50 cm starp augiem, ir vieta aptuveni sešiem stādiem; konkrētai kultūrai attālums var būt cits."
+          ],
+          "steps": [
+            "Pie katras dobes norādi izmēru un celiņu. Iezīmē lielos augus un balstus pirms sīkākajiem sējumiem.",
+            "Saskaiti vajadzīgos dēstus, pievienojot nelielu, iepriekš izdomātu rezervi. Pārbaudi lielo podu vietu telpā.",
+            "Atsevišķi rezervē vietu puķēm un atkārtotajai vasaras sējai. Pasūtījumu sarakstu salīdzini ar šo plānu."
+          ],
+          "avoid": "Pilna sēklu paciņa nav sējas deva vienai dobei.",
+          "sourceIds": [
+            "january",
+            "seedlings"
+          ],
+          "link": {
+            "href": "/raksti/cik-liela-pirma-dobe",
+            "label": "Cik lielu dobi varēsi aprūpēt"
+          }
+        },
+        {
+          "id": "ziemas-stadijumi",
+          "area": "Augļu dārzs",
+          "heading": "Pārbaudi aizsargus un atkušņa ūdens ceļu",
+          "when": "Pēc snigšanas, vēja un atkušņa. Zemi neroc, kamēr tā sasalusi vai pārmitra.",
+          "paragraphs": [
+            "Ziemā ieplāno apskati, ne lielu pārveidošanu. Vienu un to pašu koku fotografējot pēc laikapstākļu izmaiņām, vēlāk vari atšķirt jaunu bojājumu no senākas pazīmes."
+          ],
+          "steps": [
+            "Apskati jauno koku stumbru aizsargus un to stiprinājumus. Pārbaudi dzīvnieku pēdas pie žoga.",
+            "Pie podiem un mulčētām dobēm meklē stāvošu ūdeni. Atbrīvo pieejamu noteci, nebojājot auga saknes.",
+            "Pieraksti vietas, kur vējš regulāri norauj segumu vai aizputina pieeju. Nostiprinājumu labo, kad to var izdarīt saudzīgi."
+          ],
+          "avoid": "Redzot brūnu skuju zaru, visu augu ziemas vidū nepārgriez — bojājuma apjomu vērtē augšanas sākumā.",
+          "sourceIds": [
+            "winter-trees",
+            "local-winter"
+          ],
+          "link": {
+            "href": "/raksti/salnas-latvija",
+            "label": "Aukstuma riski un augu aizsardzība"
+          }
+        },
+        {
+          "id": "ziemas-krajumi",
+          "area": "Glabātava",
+          "heading": "Salīdzini ražas un bumbuļu zudumus",
+          "when": "Regulārajā nedēļas apskatē; mēneša beigās apkopo, kas glabājies sliktāk.",
+          "paragraphs": [
+            "Atšķirīgi bojājumi prasa atšķirīgu reakciju. Vīšana vairāk norāda uz izžūšanu, bet slapja puve prasa bojātā materiāla atdalīšanu un vides pārbaudi."
+          ],
+          "steps": [
+            "Apskati atsevišķi sakņaugus, sīpolus un dālijas. Neiztiec tikai ar virsējā slāņa pārbaudi.",
+            "Pieraksti temperatūras izmaiņas un bojājumu vietu. Aukstuma laikā pārbaudi kastes pie ārsienas.",
+            "Nākamā gada plānā samazini kultūru apjomu, ja tās ražu regulāri neizdodas izmantot vai saglabāt."
+          ],
+          "avoid": "Glabāšanas neveiksmi nepieraksti šķirnei, pirms pārbaudīti telpas apstākļi.",
+          "sourceIds": [
+            "storage",
+            "dahlias"
+          ],
+          "link": {
+            "href": "/raksti/ka-glabat-dalijas-ziema",
+            "label": "Bumbuļu apskate ziemā"
+          }
+        }
+      ],
+      "faq": [
+        {
+          "q": "Vai janvārī jau var sēt tomātus?",
+          "a": "Parastam neapkurinātas siltumnīcas vai lauka plānam tas bieži būtu pārāk agri. Termiņu rēķini no paredzētās izstādīšanas un šķirnes prasībām, ņemot vērā vietu, gaismu un temperatūru dēstu audzēšanai."
+        },
+        {
+          "q": "Ar ko sākt, ja dārzs būs pirmo gadu?",
+          "a": "Izvēlies nelielu, saulainu un ērti aplaistāmu vietu. Nosaki, cik laika vari veltīt kopšanai, un izvēlies dažus augus, ko pats izmantosi. Sēklu pasūtījums ir nākamais solis pēc šī plāna."
+        }
+      ],
+      "sourceIds": [
+        "seed-test",
+        "seeds",
+        "seed-care",
+        "seed-timing",
+        "january",
+        "seedlings",
+        "winter-trees",
+        "local-winter",
+        "storage",
+        "dahlias"
+      ],
+      "timeline": [
+        {
+          "period": "Mēneša sākums · 1.–10.",
+          "focus": "Pārbaudi sēklas un ziemas krājumus.",
+          "sectionIds": [
+            "seklu-parbaude",
+            "ziemas-krajumi"
+          ]
+        },
+        {
+          "period": "Mēneša vidus · 11.–20.",
+          "focus": "Aprēķini sējas intervālus un reālo augu daudzumu.",
+          "sectionIds": [
+            "sejas-rinda",
+            "dobju-apjoms"
+          ]
+        },
+        {
+          "period": "Mēneša beigas · no 21.",
+          "focus": "Pabeidz pasūtījumu sarakstu; pēc atkušņa apskati dārzu.",
+          "sectionIds": [
+            "seklu-parbaude",
+            "ziemas-stadijumi"
+          ]
+        }
+      ]
+    },
+    "2": {
+      "title": "Februāris dārzā: pirmie dēsti sākas ar gaismu un pareizu termiņu",
+      "description": "Februāra dārza darbi: dēstu sējas laiks, gaismas un trauku sagatavošana, paprikas un seleriju plāns. Mēness fāzes un dienu kalendārs Latvijai.",
+      "image": {
+        "id": "destu-kasete",
+        "caption": "Dīgsti kasetē — attēlā tomāti un baziliks. Piemērs rāda jauno augu attīstību; sējas mēnesi katrai kultūrai izvēlies atsevišķi."
+      },
+      "sections": [
+        {
+          "id": "agrinie-desti",
+          "area": "Dēsti",
+          "heading": "Izvēlies, kuriem augiem februārī tiešām jāsāk augt",
+          "when": "Pēc aprēķina no paredzētās izstādīšanas; vispirms ilgāk audzējamajām kultūrām un puķēm.",
+          "paragraphs": [
+            "Februāra kandidāti var būt paprika, selerijas, puravi un atsevišķas lēni augošas vasaras puķes. Tas nav uzdevums iesēt visus šos augus neatkarīgi no vietas un šķirnes."
+          ],
+          "steps": [
+            "Pie katras paciņas ieraksti gala vietu un izvēlēto intervālu. Paprikai kā sākuma orientieri vari izvērtēt 8–10 nedēļu dēstu laiku.",
+            "Seleriju un puķu sīkajām sēklām pārbaudi gaismas un apbēršanas prasības; tās nedrīkst visas apbērt tāpat kā lielas sēklas.",
+            "Atzīmē, kuras kultūras atliksi uz martu vai aprīli. Gurķiem februāris parastam neapkurināta dārza plānam būtu ievērojami par agru."
+          ],
+          "avoid": "Siltā palodze nenozīmē, ka pēc diviem mēnešiem būs gatava arī izstādīšanas vieta.",
+          "sourceIds": [
+            "seed-care",
+            "seedlings"
+          ],
+          "link": {
+            "href": "/augi/paprika",
+            "label": "Paprikas sēja un dēsti"
+          }
+        },
+        {
+          "id": "gaisma-un-trauki",
+          "area": "Dēsti",
+          "heading": "Sagatavo apgaismojumu un drenāžu pirms sēšanas",
+          "when": "Pirms pirmās partijas; pēc sadīgšanas gaismai jābūt pieejamai uzreiz.",
+          "paragraphs": [
+            "Dēstu vietā vajag gaismu, piemērotu temperatūru un liekā ūdens noteci. Viena no šīm lietām nevar aizvietot pārējās."
+          ],
+          "steps": [
+            "Iztīri traukus, pārbaudi atveres un paliktņus. Samitrini sējai paredzēto substrātu pirms pildīšanas.",
+            "Papildapgaismojumam sākuma orientieris ir 14–16 gaismas stundas diennaktī ar nakts pārtraukumu. Lampas jaudu un attālumu izvēlies pēc ierīces un augu vajadzībām.",
+            "Novieto termometru pie traukiem, ne telpas otrā malā. Pārliecinies, ka vēsais stikls vai radiators nerada krasu atšķirību."
+          ],
+          "avoid": "Nedarbini lampu nepārtraukti visu diennakti un neņem vienu universālu attālumu visām ierīcēm.",
+          "sourceIds": [
+            "seed-care"
+          ],
+          "link": {
+            "href": "/raksti/destu-audzesana-uz-palodzes",
+            "label": "Kā iekārtot dēstu vietu"
+          }
+        },
+        {
+          "id": "sejas-partija",
+          "area": "Sēšana",
+          "heading": "Vienā traukā sēj vienu pārskatāmu partiju",
+          "when": "Izvēlētajā sējas dienā, kad sagatavota gaisma un ir laiks pārbaudēm nākamajās dienās.",
+          "paragraphs": [
+            "Atsevišķs marķējums ļauj saprast, kura šķirne dīgst un kurai vēl jāgaida. Pārāk daudz dažādu kultūru vienā kastē apgrūtina seguma noņemšanu un laistīšanu."
+          ],
+          "steps": [
+            "Uz etiķetes ieraksti sugu, šķirni, datumu un sēklu skaitu. Marķējumu ieliec pirms sēšanas.",
+            "Sēj paciņā norādītajā dziļumā un viegli aplaisti. Pārsegu lieto dīgšanas mitruma saglabāšanai, ne ilgstošai sadīgušu augu turēšanai slēgtā mitrumā.",
+            "Katru dienu apskati sadīgšanu. Sadīgušo partiju novieto labā gaismā un pielāgo segumu, lai būtu gaisa apmaiņa."
+          ],
+          "avoid": "Bez etiķetes vēlāk nevar droši salīdzināt ne dīgšanas laiku, ne šķirnes kvalitāti.",
+          "sourceIds": [
+            "seedlings"
+          ],
+          "link": {
+            "href": "/raksti/kapec-seklas-nedigst",
+            "label": "Ja sēklas nesadīgst"
+          }
+        },
+        {
+          "id": "destu-pirmas-lapas",
+          "area": "Dēstu kopšana",
+          "heading": "Atšķir dīgļlapas no īstajām lapām un seko mitrumam",
+          "when": "Pēc sadīgšanas; pārstādīšanas vajadzību izvērtē, kad attīstās īstās lapas un trauks kļūst pārblīvēts.",
+          "paragraphs": [
+            "Pirmās dīgļlapas var neizskatīties kā pieauguša auga lapas. Kopšanas lēmumu nosaka arī saknes un blīvums, ne tikai dienas kopš sēšanas."
+          ],
+          "steps": [
+            "Apskati substrātu un pacel trauku, lai sajustu mitruma izmaiņas. Laisti saudzīgi un izlej paliktnī ilgstoši stāvošo ūdeni.",
+            "Ja dīgsti stiepjas un liecas uz logu, samazini sablīvējumu un pārbaudi gaismu un temperatūru.",
+            "Piķējot saknes atbrīvo ar irbulīti un dēstu saudzīgi turi aiz lapas. Smalko stublāju nesaspied."
+          ],
+          "avoid": "Izstīdzēšanu neatrisina lielāka mēslojuma deva.",
+          "sourceIds": [
+            "seed-care"
+          ],
+          "link": {
+            "href": "/raksti/desti-izstidz",
+            "label": "Kā atpazīt un mazināt izstīdzēšanu"
+          }
+        },
+        {
+          "id": "marta-sagatavosana",
+          "area": "Siltumnīca un puķes",
+          "heading": "Sagatavo vietu marta sējai un pārbaudi ziemas bojājumus",
+          "when": "Mēneša otrajā pusē; āra darbus dari atkusnī, ja pieeja ir droša un zeme nav pārmitra.",
+          "paragraphs": [
+            "Martā darbu kļūs vairāk, tāpēc jau tagad vari atdalīt remontējamo no ikdienā lietojamā. Ziemas segumus vēro arī saulainās dienās."
+          ],
+          "steps": [
+            "Pārbaudi siltumnīcas logu atvēršanu un seguma bojājumus. Pieraksti vajadzīgās detaļas.",
+            "Saskaiti lielākos podus tomātu pārstādīšanai un sagatavo jaunas etiķetes.",
+            "Apskati ziemā glabātos dāliju cerus un puķu podus; nenes visu siltumā tikai tāpēc, ka dienas kļuvušas garākas."
+          ],
+          "avoid": "Pārāk agri sadzīti dzinumi var prasīt vairāk gaišas vietas, nekā pavasarī vari nodrošināt.",
+          "sourceIds": [
+            "greenhouse",
+            "dahlias"
+          ],
+          "link": {
+            "href": "/raksti/siltumnicas-sagatavosana-sezonai",
+            "label": "Siltumnīcas sagatavošana"
+          }
+        }
+      ],
+      "faq": [
+        {
+          "q": "Vai februāra sējai obligāti vajag lampu?",
+          "a": "Tas atkarīgs no dabiskās gaismas, audzējamā auga un sējas laika. Vispirms novērtē konkrēto vietu. Ja vajadzīgo gaismu nevari nodrošināt, apsver vēlāku sēju vai mazāku dēstu apjomu."
+        },
+        {
+          "q": "Vai vecos plastmasas podus var lietot atkārtoti?",
+          "a": "Jā, ja tie ir iztīrīti, veseli un ar brīvām drenāžas atverēm. Pārbaudi arī paliktņus un iespēju aizvadīt lieko ūdeni. Jauni podi nav automātiski vajadzīgi katru sezonu."
+        }
+      ],
+      "sourceIds": [
+        "seed-care",
+        "seedlings",
+        "greenhouse",
+        "dahlias"
+      ],
+      "timeline": [
+        {
+          "period": "Mēneša sākums · 1.–10.",
+          "focus": "Sagatavo gaismu un atlasi tikai laikus sējamās kultūras.",
+          "sectionIds": [
+            "gaisma-un-trauki",
+            "agrinie-desti"
+          ]
+        },
+        {
+          "period": "Mēneša vidus · 11.–20.",
+          "focus": "Sēj marķētas partijas un seko sadīgšanai.",
+          "sectionIds": [
+            "sejas-partija",
+            "destu-pirmas-lapas"
+          ]
+        },
+        {
+          "period": "Mēneša beigas · no 21.",
+          "focus": "Pārskati dēstu vietu un pabeidz marta sagatavošanu.",
+          "sectionIds": [
+            "destu-pirmas-lapas",
+            "marta-sagatavosana"
+          ]
+        }
+      ]
+    },
+    "3": {
+      "title": "Marts dārzā: dēstu sēja un siltumnīcas sagatavošana",
+      "description": "Marta dārza kalendārs: tomātu un puķu dēsti, piķēšana, siltumnīcas tīrīšana un augsnes pārbaude. Mēness fāzes un visas mēneša dienas.",
+      "image": {
+        "id": "destu-kasete",
+        "caption": "Tomātu un bazilika dīgsti kasetē. Seko īsto lapu attīstībai un vietai saknēm; pārstādīšanas vajadzību vērtē pēc auga attīstības."
+      },
+      "sections": [
+        {
+          "id": "tomatu-sejas-laiks",
+          "area": "Dēsti",
+          "heading": "Tomātu sēju piesaisti izstādīšanas vietai",
+          "when": "Parasti marta gaitā vai vēlāk; konkrēto nedēļu rēķini atpakaļ no savas siltumnīcas vai lauka plāna.",
+          "paragraphs": [
+            "Apsildāmai siltumnīcai, neapkurinātai siltumnīcai un laukam nevar būt viens obligāts datums. Bieži izmantots tomātu dēstu sākuma orientieris ir 6–8 nedēļas no sējas līdz izstādīšanai."
+          ],
+          "steps": [
+            "Aprēķina piemērs: izstādīšanai 20. maijā 6–8 nedēļu intervāls dod sēju ap 25. martu–8. aprīli. Šis ir plāna piemērs, ne prognoze.",
+            "Nošķir šķirnes pēc auguma un audzēšanas vietas. Pie katras etiķetes ieraksti sējas datumu.",
+            "Ja vietas vai gaismas maz, samazini partiju. Rezervi izvēlies iepriekš, ne sēj visu paciņu."
+          ],
+          "avoid": "Agrāka sēja bez iespējas agrāk izstādīt var dot pāraugušus, grūtāk kopjamus dēstus.",
+          "sourceIds": [
+            "seed-timing"
+          ],
+          "link": {
+            "href": "/augi/tomati",
+            "label": "Tomātu audzēšanas ceļvedis"
+          }
+        },
+        {
+          "id": "pikesana",
+          "area": "Dēsti",
+          "heading": "Pārstādi sablīvētos dēstus, pirms tie sāk konkurēt",
+          "when": "Kad parādījušās īstās lapas un augiem kopējā traukā kļūst par šauru; vērtē konkrēto sugu.",
+          "paragraphs": [
+            "Piķēšana nav visu sējumu obligāts iknedēļas darbs. Atsevišķā podā iesētam augam vajadzība būs cita nekā blīvi sasētai kastītei."
+          ],
+          "steps": [
+            "Pirms darba sagatavo podus ar samitrinātu substrātu un atverēm. Katram atstāj etiķeti.",
+            "Atbrīvo saknes ar irbulīti, mazu dēstu turi aiz lapas un ievieto sagatavotā bedrītē. Saknes neieloki ciešā kamolā.",
+            "Saudzīgi aplaisti un novieto gaišumā. Pirmajās dienās seko vīšanai un mitrumam, nepalielini mēslojumu automātiski."
+          ],
+          "avoid": "Smalku stublāju nesatver kā rokturi — saspiedumu augs var nepārciest.",
+          "sourceIds": [
+            "seed-care"
+          ],
+          "link": {
+            "href": "/raksti/parlaisti-desti",
+            "label": "Dēstu mitruma problēmas"
+          }
+        },
+        {
+          "id": "siltumnicas-tirisana",
+          "area": "Siltumnīca",
+          "heading": "Pabeidz siltumnīcas tīrīšanu pirms pilniem stādu galdiem",
+          "when": "Pirms jauno sējumu un stādu ienešanas; izvēlies dienu, kad tīrīšanas ūdens nesasals.",
+          "paragraphs": [
+            "Darbus ir vieglāk izdarīt, kamēr pieejamas visas virsmas. Tīrs segums arī labāk laiž cauri gaismu."
+          ],
+          "steps": [
+            "Iznes vecās atliekas un nevajadzīgos traukus. Sāc ar sauso netīrumu savākšanu.",
+            "Notīri segumu un virsmas ar materiālam piemērotu paņēmienu. Pārbaudi logu un durvju kustību.",
+            "Novieto termometru un vairākas dienas vēro nakts minimumu. Pēc dienas siltuma vien nespried, vai var ienest siltummīļus."
+          ],
+          "avoid": "Saulainā marta dienā silta siltumnīca naktī var kļūt gandrīz tikpat auksta kā āra gaiss.",
+          "sourceIds": [
+            "greenhouse",
+            "local-spring"
+          ],
+          "link": {
+            "href": "/raksti/siltumnicas-sagatavosana-sezonai",
+            "label": "Siltumnīcas pārbaudes saraksts"
+          }
+        },
+        {
+          "id": "augsnes-gataviba",
+          "area": "Dobes",
+          "heading": "Pārbaudi, vai augsne atkususi arī zem virskārtas",
+          "when": "Pēc sniega nokušanas, pirms rakšanas, ecēšanas vai pirmās sējas.",
+          "paragraphs": [
+            "Sauss virspuses centimetrs vēl nenozīmē apstrādājamu dobi. Ieplaka un pacelta dobe vienā dārzā var būt gatavas atšķirīgā laikā."
+          ],
+          "steps": [
+            "No celiņa izroc nelielu paraugu paredzētās apstrādes dziļumā un pārbaudi, vai nav sasaluma.",
+            "Saspied augsni rokā: ja tā smērējas un veido lipīgu masu, darbu atliek. Sagatavo etiķetes un sēklu rindas plānu telpās.",
+            "Kad augsne ir apstrādājama, izvēlies nelielu aukstumizturīgās kultūras sējumu un pārbaudi tai vajadzīgo temperatūru."
+          ],
+          "avoid": "Nepārnes vienādu sējas datumu no siltas piekrastes vietas uz aukstu, mitru ieplaku.",
+          "sourceIds": [
+            "april",
+            "local-spring"
+          ],
+          "link": {
+            "href": "/raksti/augsnes-temperatura",
+            "label": "Augsnes siltums pirms sējas"
+          }
+        },
+        {
+          "id": "vasaras-puku-seja",
+          "area": "Puķes",
+          "heading": "Puķu sēju sadali pēc attīstības ilguma",
+          "when": "Pēc izvēlētās šķirnes norādēm martā; vēlāk sējamajām puķēm atstāj vietu aprīlī.",
+          "paragraphs": [
+            "Petūnijas, samtenes un cinnijas neaug vienādā tempā. Visu puķu paciņu iesēšana vienā dienā rada nevajadzīgi garu kopšanu telpās."
+          ],
+          "steps": [
+            "Pie šķirnes atzīmē plānoto dobju vai podu vietu, augumu un sējas intervālu.",
+            "Sīkajām sēklām pārbaudi prasību pēc gaismas un seguma. Šķirnes sēj atsevišķi, lai katru varētu pārvietot pēc sadīgšanas.",
+            "Saskaiti vietu pārstādītajiem puķu dēstiem kopā ar dārzeņiem. Ātrāk augošajām atstāj vēlāku sējas kārtu."
+          ],
+          "avoid": "Košs paciņas attēls nepasaka ne dēsta audzēšanas ilgumu, ne vajadzīgo poda tilpumu.",
+          "sourceIds": [
+            "seedlings"
+          ],
+          "link": {
+            "href": "/pukes/petunijas",
+            "label": "Petūniju audzēšana"
+          }
+        }
+      ],
+      "faq": [
+        {
+          "q": "Vai visi tomāti jāsēj marta sākumā?",
+          "a": "Nē. Termiņš atšķiras pēc izstādīšanas vietas, šķirnes un audzēšanas apstākļiem. Laukam plānotos dēstus nevajag automātiski sēt tikpat agri kā apkurināmai siltumnīcai paredzētos."
+        },
+        {
+          "q": "Kad sākt darbus atklātā dobē?",
+          "a": "Kad augsne ir atkususi, apstrādājama un piemērota konkrētajai kultūrai. Slapji pikuči un sasalusi zeme ir iemesls nogaidīt. Pārbaudi arī augsnes temperatūru un tuvāko laikapstākļu prognozi."
+        }
+      ],
+      "sourceIds": [
+        "seed-timing",
+        "seed-care",
+        "greenhouse",
+        "local-spring",
+        "april",
+        "seedlings"
+      ],
+      "timeline": [
+        {
+          "period": "Mēneša sākums · 1.–10.",
+          "focus": "Iztīri siltumnīcu un aprēķini tomātu sējas intervālu.",
+          "sectionIds": [
+            "siltumnicas-tirisana",
+            "tomatu-sejas-laiks"
+          ]
+        },
+        {
+          "period": "Mēneša vidus · 11.–20.",
+          "focus": "Pārstādi dēstus pēc vajadzības un sēj izvēlētās puķes.",
+          "sectionIds": [
+            "pikesana",
+            "vasaras-puku-seja"
+          ]
+        },
+        {
+          "period": "Mēneša beigas · no 21.",
+          "focus": "Novērtē pirmās dobes; vēlās sējas nepārceļ agrāk tikai datuma dēļ.",
+          "sectionIds": [
+            "augsnes-gataviba",
+            "tomatu-sejas-laiks"
+          ]
+        }
+      ]
+    },
+    "4": {
+      "title": "Aprīlis dārzā: pirmās sējas dobēs un dēstu kopšana",
+      "description": "Aprīļa dārza darbi Latvijā: zirņi, redīsi, burkāni un salāti, augsnes pārbaude un salnu plāns. Mēness fāzes un dienu kalendārs.",
+      "image": {
+        "id": "jaunie-salati",
+        "caption": "Salātu rindas ilustrē pakāpeniskas sējas un atsevišķu dobju plānu. Tas nav Latvijas aprīļa attīstības stadijas vai sējas datuma paraugs."
+      },
+      "sections": [
+        {
+          "id": "pirmas-rindas",
+          "area": "Dārzeņi",
+          "heading": "Sāc ar nelielām zirņu, redīsu, burkānu un salātu rindām",
+          "when": "Kad zeme atkususi, apžuvusi un konkrētajai kultūrai pietiekami silta; aukstā pavasarī tas var būt vēlāk.",
+          "paragraphs": [
+            "Mērķis ir vienmērīga sadīgšana un izmantojama raža. Vairāki mazi sējumi ir vieglāk aprūpējami nekā visa paciņa vienā reizē."
+          ],
+          "steps": [
+            "Sagatavo smalku virskārtu, izņem nezāles un samitrini sausu sējas vadziņu.",
+            "Dziļumu un attālumus ņem no konkrētās paciņas. Marķē rindas sākumu un sējas datumu.",
+            "Redīsiem un salātiem ieplāno nākamo nelielo partiju, piemēram, pēc 10–14 dienām, ja pirmā aug un apstākļi joprojām piemēroti."
+          ],
+          "avoid": "Ieteiktais atkārtojuma intervāls nav pienākums sēt izkaltušā, sasalušā vai pārmitrā augsnē.",
+          "sourceIds": [
+            "april"
+          ],
+          "link": {
+            "href": "/ko-set/aprilis",
+            "label": "Aprīļa kultūru izvēle"
+          }
+        },
+        {
+          "id": "segums-un-mitrums",
+          "area": "Sējumi",
+          "heading": "Pēc sējas sargā mitrumu un kontrolē segumu",
+          "when": "No sēšanas līdz sadīgšanai; zem seguma pārbaudi arī saulainā dienā.",
+          "paragraphs": [
+            "Dīgšanai vajadzīgais mitrums vispirms ir sēklas dziļumā. Īsa aplaistīšana, kas samitrina tikai pašu virspusi, var būt nepietiekama."
+          ],
+          "steps": [
+            "Pārbaudi mitrumu blakus rindai, neizrokot visas sēklas. Laisti ar smalku strūklu, lai neveidotos izskalojumi.",
+            "Segmateriālu nostiprini pret vēju; ar lokiem atstāj vietu stādiem, ja tie jau izauguši.",
+            "Saulē pārbaudi karstumu un vēdināšanas vajadzību. Pēc sadīgšanas vēro blīvumu un savlaicīgi retina."
+          ],
+          "avoid": "Segums nav garantija pret jebkuru salnu un nedrīkst kļūt par nepārbaudītu, pārkarsušu pārsegu.",
+          "sourceIds": [
+            "watering",
+            "hardening"
+          ],
+          "link": {
+            "href": "/raksti/salnas-latvija",
+            "label": "Segums un salnu risks"
+          }
+        },
+        {
+          "id": "destu-vieta",
+          "area": "Dēsti",
+          "heading": "Sagatavo lielākus podus un pirmo norūdīšanas vietu",
+          "when": "Kad saknes aizpildījušas trauku; norūdīšanu sāc tikai pietiekami maigās dienās.",
+          "paragraphs": [
+            "Dēstiem augot, nepieciešama lielāka gaismas un sakņu telpa. Pārvietošana ārā uz pāris stundām vēl nav pastāvīga izstādīšana."
+          ],
+          "steps": [
+            "Atbīdi podus tā, lai lapas savstarpēji nepaliktu dziļā ēnā. Vajadzīgos augus pārstādi lielākā traukā.",
+            "Pirmajai iznešanai izvēlies no vēja un spilgtas saules pasargātu vietu. Sāc ar īsu periodu un pārbaudi reakciju.",
+            "Aukstās naktīs ienes siltummīļus atpakaļ. Pārbaudi, vai pēc laistīšanas trauki nepaliek stāvam ūdenī."
+          ],
+          "avoid": "Norūdīšana nepadara tomātu salizturīgu.",
+          "sourceIds": [
+            "hardening",
+            "seed-care"
+          ],
+          "link": {
+            "href": "/raksti/ka-rudit-destus",
+            "label": "Norūdīšanas secība"
+          }
+        },
+        {
+          "id": "puku-dobes",
+          "area": "Puķes",
+          "heading": "Atbrīvo jaunajiem dzinumiem vietu un sargā sīpolpuķu lapas",
+          "when": "Kad augsne apžuvusi un redzami jaunie dzinumi; segumus noņem pakāpeniski, sekojot aukstuma atgriešanās riskam.",
+          "paragraphs": [
+            "Rudenī atstātie stublāji pavasarī jāizvērtē pēc auga. Ziedošām tulpēm un narcisēm zaļās lapas vēl nepieciešamas sīpola atjaunošanai."
+          ],
+          "steps": [
+            "Pirms veco stublāju griešanas atrodi jaunās atvases, lai tās nenogrieztu kopā ar sauso daļu.",
+            "Izravē pieejamās nezāles un pārbaudi, vai ziemas segums nav sablīvējies ap dzinumiem.",
+            "Pēc ziedēšanas tulpēm vari noņemt noziedējušo ziedu, bet lapām ļauj dabiski nodzeltēt."
+          ],
+          "avoid": "Sīpolpuķu zaļās lapas nepļauj un nesien ciešā mezglā, lai dobe izskatītos kārtīgāka.",
+          "sourceIds": [
+            "tulips",
+            "mulch"
+          ],
+          "link": {
+            "href": "/pukes/tulpes",
+            "label": "Tulpju kopšana pēc ziedēšanas"
+          }
+        },
+        {
+          "id": "silto-kulturu-plans",
+          "area": "Siltumnīca",
+          "heading": "Pirms siltummīļu ienešanas sagatavo aukstas nakts plānu",
+          "when": "Aprīļa otrajā pusē vai pirms plānotās ienešanas siltumnīcā; neapkurinātā siltumnīcā vēro nakts minimumu.",
+          "paragraphs": [
+            "Gurķu un ķirbjaugu dēsti aug ātri. To sējas laiks ir daudz tuvāk izstādīšanai nekā paprikai."
+          ],
+          "steps": [
+            "Izvērtē gurķu sēšanu ap 3–4 nedēļām pirms reālās izstādīšanas. Sēj atsevišķos traukos, lai saudzētu saknes.",
+            "Saglabā iespēju dēstus ienest atpakaļ vai citādi nodrošināt tiem piemērotu temperatūru.",
+            "Siltumnīcā pirms stādiem sakārto balstus, ūdens pieejamību un vēdināšanu."
+          ],
+          "avoid": "Aprīļa dienas siltums nav pamats atstāt jutīgus dēstus nepārbaudītā siltumnīcā uz nakti.",
+          "sourceIds": [
+            "seed-timing",
+            "greenhouse",
+            "local-spring"
+          ],
+          "link": {
+            "href": "/raksti/kad-stadit-destus-lauka",
+            "label": "Izstādīšanas apstākļu pārbaude"
+          }
+        }
+      ],
+      "faq": [
+        {
+          "q": "Vai aprīlī var sēt tieši laukā?",
+          "a": "Aukstumizturīgās kultūras var sēt, kad augsne tām piemērota. Vispirms pārbaudi temperatūru, mitrumu un zemes apstrādājamību. Aprīļa datums viens pats nenozīmē, ka visi dārzeņi jau sējami."
+        },
+        {
+          "q": "Vai segmateriālu var atstāt visu laiku?",
+          "a": "Seko temperatūrai un konkrētā seguma lietošanas norādēm. Aukstuma aizsardzība nedrīkst radīt pārkaršanu saulē. Plēvei, agrotīklam un siltumnīcai ir atšķirīga vēdināšana un aizsardzības spēja."
+        }
+      ],
+      "sourceIds": [
+        "april",
+        "watering",
+        "hardening",
+        "seed-care",
+        "tulips",
+        "mulch",
+        "seed-timing",
+        "greenhouse",
+        "local-spring"
+      ],
+      "timeline": [
+        {
+          "period": "Mēneša sākums · 1.–10.",
+          "focus": "Novērtē augsni un sāc pirmās nelielās sējas.",
+          "sectionIds": [
+            "pirmas-rindas",
+            "segums-un-mitrums"
+          ]
+        },
+        {
+          "period": "Mēneša vidus · 11.–20.",
+          "focus": "Pārskati dēstu podus un puķu dobes.",
+          "sectionIds": [
+            "destu-vieta",
+            "puku-dobes"
+          ]
+        },
+        {
+          "period": "Mēneša beigas · no 21.",
+          "focus": "Plāno siltummīļus pēc nakts temperatūras un faktiskās gala vietas.",
+          "sectionIds": [
+            "silto-kulturu-plans",
+            "destu-vieta"
+          ]
+        }
+      ]
+    },
+    "5": {
+      "title": "Maijs dārzā: norūdīšana, stādīšana un salnu pārbaude",
+      "description": "Maija dārza kalendārs: dēstu norūdīšana, droša izstādīšana, puķes un balkona podi. Vietējie apstākļi, Mēness fāzes un mēneša dienas.",
+      "image": {
+        "id": "tulpes-ziedi",
+        "caption": "Ziedošas tulpes pavasara dobē. Pieraksti ziedēšanas vietu un laiku, lai rudenī varētu papildināt stādījumu; precīzais laiks atšķiras pēc šķirnes un sezonas."
+      },
+      "sections": [
+        {
+          "id": "norudisana",
+          "area": "Dēsti",
+          "heading": "Norūdi dēstus pirms pastāvīgas izstādīšanas",
+          "when": "Sāc aptuveni divas nedēļas pirms iecerētās izstādīšanas, ja dienas ir pietiekami maigas. Aukstumā pāreju pagarini.",
+          "paragraphs": [
+            "Norūdīšana ir pakāpeniska pieradināšana pie vēja, tiešas saules un temperatūras maiņām. Tā nepadara siltummīļus salizturīgus."
+          ],
+          "steps": [
+            "Pirmajās reizēs izvēlies dažas stundas aizvējā un gaišā ēnā. Pieskati, vai lapas nevīst un neapdeg.",
+            "Āra laiku un sauli palielini pakāpeniski. Aukstās naktīs ienes atpakaļ.",
+            "Pirms galīgās izstādīšanas pārbaudi prognozi, augsnes siltumu un stāda sakņu kamolu. Aplaisti dēstu pirms izņemšanas no poda."
+          ],
+          "avoid": "Nenoliec telpās augušu dēstu uzreiz uz visu dienu atklātā saulē.",
+          "sourceIds": [
+            "hardening"
+          ],
+          "link": {
+            "href": "/raksti/ka-rudit-destus",
+            "label": "Norūdīšana pa posmiem"
+          }
+        },
+        {
+          "id": "siltummilu-izstadisana",
+          "area": "Dārzeņi",
+          "heading": "Tomātus, gurķus un ķirbjaugus izstādi pēc apstākļu pārbaudes",
+          "when": "Maija beigās vai vēlāk, kad konkrētajā vietā beigušies salnu draudi un augsne piemērota augam. Aukstā vietā jāgaida jūnijs.",
+          "paragraphs": [
+            "Izstādīšanas diena ir piemērota, ja vari nodrošināt arī turpmākās naktis un ieaugšanas laistīšanu. Balstus ērtāk ierīkot pirms stāds aizņēmis dobi."
+          ],
+          "steps": [
+            "Salīdzini temperatūru siltumnīcā un laukā; nepaļaujies uz siltumnīcas nosaukumu vien.",
+            "Sagatavo bedrītes, attālumus un balstus pēc šķirnes auguma. Gurķu un ķirbjaugu sakņu kamolu saudzē.",
+            "Stādi apmākušā laikā vai vakarā, aplaisti sakņu zonu un nākamajā dienā pārbaudi ieaugšanu."
+          ],
+          "avoid": "Pāraudzis dēsts nav iemesls stādīt aukstā, augam nepiemērotā vietā.",
+          "sourceIds": [
+            "hardening",
+            "local-spring",
+            "tomatoes"
+          ],
+          "link": {
+            "href": "/raksti/kad-stadit-destus-lauka",
+            "label": "Pārbaude pirms izstādīšanas"
+          }
+        },
+        {
+          "id": "saknaugi-un-zalumi",
+          "area": "Dobes",
+          "heading": "Turpini biešu, burkānu un diļļu sēju; retini agrās rindas",
+          "when": "Mēneša gaitā, kad augsne ir apstrādājama un piemērota konkrētajai kultūrai.",
+          "paragraphs": [
+            "Ja vienlaikus sēj jaunas rindas un kop agrās, raža sadalās ilgākā laikā. Pirms jaunas sējas pārbaudi, vai spēsi uzturēt mitrumu sadīgšanai."
+          ],
+          "steps": [
+            "Izvēlies nelielu rindu, sagatavo virskārtu un atzīmē šķirni un sējas datumu.",
+            "Agrāk sētajās rindās atšķir kultūraugus no nezālēm; retini līdz konkrētās šķirnes vajadzīgajiem attālumiem.",
+            "Pēc retināšanas saudzīgi aplaisti. Pārbaudi, vai izravētās nezāles nav palikušas iesakņoties mitrajā rindā."
+          ],
+          "avoid": "Neatstāj visu blīvo sējumu ar cerību, ka sakņaugi vēlāk paši atradīs vietu.",
+          "sourceIds": [
+            "april",
+            "watering"
+          ],
+          "link": {
+            "href": "/ko-set/maijs",
+            "label": "Maija sējas un stādāmie augi"
+          }
+        },
+        {
+          "id": "kartupelu-stadisana",
+          "area": "Kartupeļi",
+          "heading": "Stādi veselus sēklas kartupeļus un atstāj vietu apraušanai",
+          "when": "Kad augsne iesilusi un nav slapja; salnu risku ņem vērā arī pēc lakstu parādīšanās.",
+          "paragraphs": [
+            "Izvēlies pārbaudītu sēklas materiālu un šķirni pēc paredzētās izmantošanas. Agrie kartupeļi un glabāšanas šķirnes nav viens ražas plāns."
+          ],
+          "steps": [
+            "Iezīmē rindas, lai starp tām paliktu vieta kopšanai. Orientieri: agrām šķirnēm ap 30 cm rindā un 60 cm starp rindām; vēlākām vajag vairāk vietas.",
+            "Stādi ap 10–15 cm dziļi atbilstoši augsnei un izvēlētajam paņēmienam. Dīgstus nenolauz.",
+            "Kad laksti aug, pakāpeniski apraušot nosedz veidojošos bumbuļus. Seko salnu prognozei jaunajiem lakstiem."
+          ],
+          "avoid": "Atsegti bumbuļi gaismā zaļo; tos neatstāj uz dobes virsmas.",
+          "sourceIds": [
+            "potatoes"
+          ],
+          "link": {
+            "href": "/augi/kartupeli",
+            "label": "Kartupeļu audzēšana"
+          }
+        },
+        {
+          "id": "puku-podi",
+          "area": "Puķes un balkons",
+          "heading": "Vasaras puķes stādi podos ar vietu saknēm un ūdens notecei",
+          "when": "Pēc piemērotas norūdīšanas un salnu draudu izvērtēšanas; jutīgās puķes aukstā naktī paturi aizsargātā vietā.",
+          "paragraphs": [
+            "Poda izvēle nosaka, cik ātri izsīks mitrums. Augu daudzumu saskaņo ar trauka tilpumu un vietas sauli, ne tikai ar vēlamo pirmās dienas kuplumu."
+          ],
+          "steps": [
+            "Pārbaudi drenāžas atveres un trauka stabilitāti. Izmanto audzēšanai piemērotu substrātu.",
+            "Saliec stādus podā vēl pirms izņemšanas no to traukiem, lai pārbaudītu kompozīciju un atstarpes.",
+            "Pēc stādīšanas aplaisti un pieraksti mēslošanas plānu pēc substrāta un līdzekļa norādēm. Mazus podus mitruma ziņā pārbaudi biežāk."
+          ],
+          "avoid": "Stāvēt ūdenī pilnā dekoratīvā kašpo nav tas pats, kas vienmērīgi mitrs substrāts.",
+          "sourceIds": [
+            "hardening",
+            "watering"
+          ],
+          "link": {
+            "href": "/raksti/balkona-darzs-iesacejam",
+            "label": "Balkona un podu dārza sākums"
+          }
+        }
+      ],
+      "faq": [
+        {
+          "q": "Vai pēc vienas siltas nedēļas salnas vairs nav jāņem vērā?",
+          "a": "Siltas dienas negarantē siltas naktis. Seko prognozei savā vietā un augsnes apstākļiem, īpaši ieplakās un atklātās vietās. Sagatavo plānu jutīgo augu aizsardzībai."
+        },
+        {
+          "q": "Vai norūdīšana vajadzīga arī pirktiem stādiem?",
+          "a": "Noskaidro, kādos apstākļos stādi audzēti. No siltas siltumnīcas nākušus augus āra apstākļiem parasti vajag pieradināt pakāpeniski. Jau laukā audzētam stādam situācija var būt atšķirīga."
+        }
+      ],
+      "sourceIds": [
+        "hardening",
+        "local-spring",
+        "tomatoes",
+        "april",
+        "watering",
+        "potatoes"
+      ],
+      "timeline": [
+        {
+          "period": "Mēneša sākums · 1.–10.",
+          "focus": "Norūdi dēstus un kop agrās sējas.",
+          "sectionIds": [
+            "norudisana",
+            "saknaugi-un-zalumi"
+          ]
+        },
+        {
+          "period": "Mēneša vidus · 11.–20.",
+          "focus": "Piemērotā augsnē stādi kartupeļus un sagatavo puķu podus.",
+          "sectionIds": [
+            "kartupelu-stadisana",
+            "puku-podi"
+          ]
+        },
+        {
+          "period": "Mēneša beigas · no 21.",
+          "focus": "Siltummīļus izstādi tikai pēc apstākļu pārbaudes; vajadzības gadījumā pārcel uz jūniju.",
+          "sectionIds": [
+            "siltummilu-izstadisana",
+            "norudisana"
+          ]
+        }
+      ]
+    },
+    "6": {
+      "title": "Jūnijs dārzā: ieaugšana, laistīšana un pirmā raža",
+      "description": "Jūnija dārza darbi: laistīšana, balsti, siltumnīcas vēdināšana un atkārtotā sēja. Praktisks Latvijas dārza plāns ar Mēness fāzēm un dienām.",
+      "image": {
+        "id": "laistisana",
+        "caption": "Lejkannas siets veido saudzīgu ūdens plūsmu. Laistīšanas daudzumu pielāgo augsnei, sakņu zonai un konkrētajam augam."
+      },
+      "sections": [
+        {
+          "id": "laistisanas-rutina",
+          "area": "Laistīšana",
+          "heading": "Laisti sakņu zonu un pārbaudi, cik dziļi ūdens nonācis",
+          "when": "Visu mēnesi pēc augsnes mitruma; karstumā un podos apskati biežāk, īpaši tikko stādītos augus.",
+          "paragraphs": [
+            "Viena ūdens deva neder visam dārzam. Ieaugušam krūmam, gurķa dēstam un piekaramam puķu podam atšķiras gan sakņu telpa, gan ūdens zudums."
+          ],
+          "steps": [
+            "Pārbaudi augsni zem sausās virskārtas. Mitru dobi nelaisti tikai tāpēc, ka pienākusi ierastā stunda.",
+            "Ūdeni pievada lēni sakņu zonai. Pēc laistīšanas pārbaudi nelielā vietā, vai samitrināts arī dziļākais slānis.",
+            "Podiem pārbaudi noteci un paliktni; pilienlaistīšanai apskati, vai visi pilinātāji darbojas."
+          ],
+          "avoid": "Bieža pavirša apsmidzināšana var atstāt sakņu zonu sausu.",
+          "sourceIds": [
+            "watering"
+          ],
+          "link": {
+            "href": "/raksti/ka-laistit-darzu-karstuma",
+            "label": "Laistīšanas paņēmieni karstumā"
+          }
+        },
+        {
+          "id": "tomatu-balsti",
+          "area": "Siltumnīca",
+          "heading": "Tomātus veido pēc augšanas tipa un pārbaudi saites",
+          "when": "Kad augi sāk strauji augt; nelielas pazares apskati regulāri, negaidot biezu dzinumu mudžekli.",
+          "paragraphs": [
+            "Augstie indeterminantie un krūmveida determinantie tomāti nav veidojami vienādi. Pirms griešanas pārbaudi šķirnes augšanas tipu."
+          ],
+          "steps": [
+            "Augstajam tomātam nostiprini balstu un saiti atstāj pietiekami vaļīgu stublāja resnuma pieaugumam.",
+            "Pazares meklē lapas žāklē. Izņem tās atbilstoši izvēlētajam veidošanas paņēmienam; krūmveida šķirnei automātiski neizlauz visus sāndzinumus.",
+            "Saulainā dienā vēdini siltumnīcu un apskati lapu apakšpuses. Lapas, kas skar augsni vai ir bojātas, izvērtē atsevišķi."
+          ],
+          "avoid": "Pazari nesajauc ar ziedķekaru un nenogriez lielu daļu veselās lapotnes vienā reizē.",
+          "sourceIds": [
+            "tomatoes"
+          ],
+          "link": {
+            "href": "/raksti/tomatu-veidosana",
+            "label": "Tomātu pazares un augšanas tipi"
+          }
+        },
+        {
+          "id": "ravet-un-mulcet",
+          "area": "Augsne",
+          "heading": "Izravē, samitrini un tikai tad klāj mulču",
+          "when": "Kad augsne iesilusi un ir pietiekami mitra; īpaši pēc ieaugšanas jaunajos stādījumos.",
+          "paragraphs": [
+            "Mulča palīdz saglabāt jau esošo mitrumu. Tā neatceļ vajadzību vispirms izņemt konkurējošās nezāles."
+          ],
+          "steps": [
+            "Izravē dobi un izņem daudzgadīgo nezāļu saknes, pēc iespējas netraucējot kultūraugu saknēm.",
+            "Ja augsne sausa, pirms seguma uzklāšanas to aplaisti.",
+            "Izklāj izvēlēto materiālu vienmērīgi, atstājot brīvu vietu tieši ap stublājiem. Turpmāk mitrumu pārbaudi zem seguma."
+          ],
+          "avoid": "Bieza mulča uz pilnīgi sausas augsnes pati par sevi to nesamitrinās.",
+          "sourceIds": [
+            "mulch"
+          ],
+          "link": {
+            "href": "/raksti/komposts-ka-sakt",
+            "label": "Nobriedis komposts un tā izmantošana"
+          }
+        },
+        {
+          "id": "zemenu-raza",
+          "area": "Ogas",
+          "heading": "Zemeņu ražu vāc regulāri un atdali bojātās ogas",
+          "when": "Kad konkrētā šķirne sāk gatavoties; biežāk siltā laikā un pēc lietus.",
+          "paragraphs": [
+            "Ražas apskate vienlaikus ir slimību un kaitēkļu novērojums. Nogatavojies auglis un pūstoša oga vienā traukā glabāsies slikti."
+          ],
+          "steps": [
+            "Vāc gatavās ogas saudzīgi seklā traukā. Ražai, ko tūlīt neizmantosi, sagatavo vēsu vietu.",
+            "Atsevišķi savāc puves skartās ogas un meklē, vai tās atkārtojas blīvākajā vai mitrākajā dobes daļā.",
+            "Ja ražu sargā ar tīklu, nostiprini to uz balstiem un regulāri apskati, lai tajā neiepītos dzīvnieki."
+          ],
+          "avoid": "Neliec bojātās ogas zem krūma un nepārlaisti lapotni vakarā tikai ieraduma dēļ.",
+          "sourceIds": [
+            "strawberries"
+          ],
+          "link": {
+            "href": "/raksti/kapec-zemenes-puve",
+            "label": "Kāpēc zemenes pūst"
+          }
+        },
+        {
+          "id": "puku-balsti",
+          "area": "Puķes",
+          "heading": "Balsti garās puķes, pirms tās nogāž lietus",
+          "when": "Kad dzinumi aug garumā, vēl pirms smagie ziedi noliecas. Atkārto pārbaudi pēc stipra lietus.",
+          "paragraphs": [
+            "Peonijām un augstām dālijām balstu ērtāk uzlikt laikus. Piesiešanas vietā jāpaliek vietai kustībai un augšanai."
+          ],
+          "steps": [
+            "Ievieto balstu saudzīgi, cenšoties netraumēt sakņu zonu. Dzinumus izkārto brīvi, ne vienā ciešā kūlī.",
+            "Pārbaudi, vai saites neberž stublājus. Smagus ziedus atbalsti, nevelkot tos ar spēku vertikāli.",
+            "Noziedējušās dāliju ziedgalvas noņem; peoniju veselās lapas pēc ziedēšanas saglabā."
+          ],
+          "avoid": "Noziedējis peonijas zieds nav iemesls nogriezt visu zaļo ceru.",
+          "sourceIds": [
+            "peonies",
+            "dahlias"
+          ],
+          "link": {
+            "href": "/pukes/peonijas",
+            "label": "Peoniju kopšana"
+          }
+        },
+        {
+          "id": "vasaras-nakama-seja",
+          "area": "Atkārtotā sēja",
+          "heading": "Ieplāno nākamo sējumu pirms pirmās ražas vieta atbrīvojas",
+          "when": "Mēneša gaitā pēc redīsiem, salātiem un citām agrām kultūrām.",
+          "paragraphs": [
+            "Atbrīvoto vietu vari izmantot vēlreiz, taču arī jaunajam sējumam jāparedz laistīšana un sezonai piemērota šķirne."
+          ],
+          "steps": [
+            "Pieraksti, kad dobe atbrīvosies un ko vēlies iegūt — jaunas lapas vai pilna izmēra ražu.",
+            "Salātiem izvēlies vasarai piemērotu šķirni; dilles sēj nelielā partijā, ko varēsi izmantot.",
+            "Pēc veco atlieku un nezāļu izņemšanas sagatavo sējas virsmu un marķē jauno sējumu."
+          ],
+          "avoid": "Vasarā nesēj lielāku platību, nekā spēsi uzturēt mitru sadīgšanas laikā.",
+          "sourceIds": [
+            "fall-sowing",
+            "july"
+          ],
+          "link": {
+            "href": "/raksti/ko-set-julija-augusta",
+            "label": "Nākamās ražas sējas izvēle"
+          }
+        }
+      ],
+      "faq": [
+        {
+          "q": "Cik bieži jūnijā jālaista dārzs?",
+          "a": "Vienota biežuma nav. To ietekmē nokrišņi, augsne, auga lielums un audzēšana podā vai dobē. Pārbaudi mitrumu sakņu zonā un pielāgo laistīšanu, īpaši jaunajiem stādījumiem."
+        },
+        {
+          "q": "Vai jūnijā vēl drīkst sēt?",
+          "a": "Jā, piemērotas kultūras un šķirnes vēl var sēt. Izvēli pielāgo augsnes siltumam, atlikušajai sezonai un vietai. Vasaras salātu sējumam pārbaudi šķirnes piemērotību karstumam."
+        }
+      ],
+      "sourceIds": [
+        "watering",
+        "tomatoes",
+        "mulch",
+        "strawberries",
+        "peonies",
+        "dahlias",
+        "fall-sowing",
+        "july"
+      ],
+      "timeline": [
+        {
+          "period": "Mēneša sākums · 1.–10.",
+          "focus": "Nodrošini ieaugšanas laistīšanu un balstus.",
+          "sectionIds": [
+            "laistisanas-rutina",
+            "tomatu-balsti",
+            "puku-balsti"
+          ]
+        },
+        {
+          "period": "Mēneša vidus · 11.–20.",
+          "focus": "Kop augsni un regulāri vāc zemenes.",
+          "sectionIds": [
+            "ravet-un-mulcet",
+            "zemenu-raza"
+          ]
+        },
+        {
+          "period": "Mēneša beigas · no 21.",
+          "focus": "Sagatavo nākamo sējumu un pārbaudi, vai ūdens sistēma strādā vienmērīgi.",
+          "sectionIds": [
+            "vasaras-nakama-seja",
+            "laistisanas-rutina"
+          ]
+        }
+      ]
+    },
+    "7": {
+      "title": "Jūlijs dārzā: izmanto ražu un ieplāno nākamo sējumu",
+      "description": "Jūlija dārza kalendārs: otrā raža, vasaras sēja, laistīšana un augu problēmu vērošana. Mēness fāzes Latvijas laikā un dienu tabula.",
+      "image": {
+        "id": "jaunie-salati",
+        "caption": "Salātu dobes atgādina par ražas apjoma plānošanu. Atkārtotai sējai izvēlies sezonai piemērotu šķirni un tik daudz vietas, cik varēsi aprūpēt."
+      },
+      "sections": [
+        {
+          "id": "kiploku-un-sipolu-raza",
+          "area": "Raža",
+          "heading": "Ķiplokus un sīpolus novāc pēc gatavības pazīmēm",
+          "when": "Kad konkrētajai kultūrai un šķirnei sākas nobriešana; pārbaudi paraugu, negaidi vienu universālu jūlija datumu.",
+          "paragraphs": [
+            "Visas šķirnes nenogatavojas vienlaikus. Pārāk agra raža vēl var nebūt piemērota glabāšanai, bet novēloti ķiploki var zaudēt veselus apvalkus."
+          ],
+          "steps": [
+            "Ķiplokiem izroc dažas parauggalviņas un apskati daivu attīstību un apvalkus. Nerausti augu aiz lakstiem.",
+            "Sīpoliem vēro dabisku loku noliekšanos un kakliņa nobriešanu; zaļos lokus nepielauz ar mērķi piespiest gatavību.",
+            "Ražu žāvē gaisīgā vietā, pasargājot no lietus. Glabāšanai atlasi nebojāto tikai pēc pienācīgas apžāvēšanas."
+          ],
+          "avoid": "Tikko izraktu, mitru ražu nesaliec biezā slānī slēgtā kastē.",
+          "sourceIds": [
+            "garlic",
+            "onions"
+          ],
+          "link": {
+            "href": "/raksti/kad-novakt-kiplokus",
+            "label": "Ķiploku gatavības pārbaude"
+          }
+        },
+        {
+          "id": "otra-raza",
+          "area": "Sēja",
+          "heading": "Izvēlies otro ražu pēc atlikušajām nedēļām",
+          "when": "Pēc agrās ražas novākšanas; jūlija sākumā izvēles parasti ir vairāk nekā mēneša beigās.",
+          "paragraphs": [
+            "Pirms sēšanas salīdzini šķirnes dienas līdz ražai ar savu rudens salnu risku. Sezonas beigās augšana var palēnināties."
+          ],
+          "steps": [
+            "Izvēlies mērķi: piemēram, kolrābjus, rāceņus, lapu kultūras vai dilles. Pārbaudi, no kura brīža šķirnes aprakstā skaitītas dienas.",
+            "Ja norādītas 50 dienas, skaiti tās uz priekšu un atstāj rezervi nelabvēlīgam laikam. Tieši 50 atlikušās dienas nav droša garantija.",
+            "Sagatavo mitru sējas virsmu un sēj nelielu partiju. Salātus karstumā audzē no sezonai piemērotas šķirnes."
+          ],
+          "avoid": "Tukša dobe pati par sevi nav pamats sākt ilgi augošu kultūru.",
+          "sourceIds": [
+            "fall-sowing"
+          ],
+          "link": {
+            "href": "/raksti/ko-set-julija-augusta",
+            "label": "Ko sēt otrajai ražai"
+          }
+        },
+        {
+          "id": "avenu-dzinumi",
+          "area": "Ogas",
+          "heading": "Pēc vasaras aveņu ražas atšķir vecos un jaunos dzinumus",
+          "when": "Kad konkrētā vasaras aveņu šķirne beigusi ražot; rudens avenēm ir cita griešanas shēma.",
+          "paragraphs": [
+            "Vasaras avenes ražo uz iepriekšējā gada dzinumiem. Pēc ražas tos izņem, saglabājot veselīgos jaunos, kas vajadzīgi nākamajai sezonai."
+          ],
+          "steps": [
+            "Atrodi noražojušos dzinumus pēc ražas zariņiem un stāvokļa. Pirms griešanas pārliecinies, ka tā ir vasaras avene.",
+            "Noražojušos izgriez zemu pie zemes un iznes no rindas. Jaunos nesagriez kopā ar vecajiem.",
+            "Izvēlētos jaunos dzinumus izvieto un piesien balstiem, atstājot gaisa apmaiņu un pieeju kopšanai."
+          ],
+          "avoid": "Vasaras aveņu rindas pilnīga nogriešana likvidē arī nākamās sezonas ražas dzinumus.",
+          "sourceIds": [
+            "raspberries"
+          ],
+          "link": {
+            "href": "/raksti/avenu-apgriesana-pec-razas",
+            "label": "Aveņu griešana pēc tipa"
+          }
+        },
+        {
+          "id": "siltumnicas-apskate",
+          "area": "Siltumnīca",
+          "heading": "Ražas laikā regulāri apskati tomātu un gurķu lapas",
+          "when": "Visu mēnesi, īpaši karstuma, mitruma un laistīšanas pārmaiņu laikā.",
+          "paragraphs": [
+            "Apskatei izvēlies īsu, atkārtojamu secību: sakņu zonas mitrums, lapu apakšpuse, jaunie dzinumi, augļi. Tas palīdz pamanīt izmaiņas pirms liela bojājuma."
+          ],
+          "steps": [
+            "Apskati vairākus augus, ne vienu lapu. Fotografē tuvplānu un visu augu, pieraksti datumu.",
+            "Vēdini, seko vienmērīgam mitrumam un pārbaudi balstu saites. Gatavo ražu novāc regulāri.",
+            "Pie plankumiem, puves vai vīšanas vispirms salīdzini pazīmes ar konkrēto ceļvedi. Mēslojumu vai smidzinājumu izvēlies pēc cēloņa."
+          ],
+          "avoid": "Viena dzeltena lapa nepierāda ne konkrētu slimību, ne barības elementa trūkumu.",
+          "sourceIds": [
+            "tomatoes",
+            "watering"
+          ],
+          "link": {
+            "href": "/raksti/kapec-tomatiem-bruni-plankumi-uz-lapam",
+            "label": "Tomātu plankumu izvērtēšana"
+          }
+        },
+        {
+          "id": "ziedesanas-kopsana",
+          "area": "Puķes",
+          "heading": "Pārbaudi puķu podus un noņem piemēroto augu noziedējušos ziedus",
+          "when": "Regulāri ziedēšanas laikā; karstās dienās podu mitrumu apskati biežāk.",
+          "paragraphs": [
+            "Dāliju noziedējušo galvu noņemšana un poda laistīšana ir dažādi darbi, lai gan abus vari apvienot vienā apskatē. Ja vēlies sēklas, daļu veselīgo ziedgalvu atstāj."
+          ],
+          "steps": [
+            "Noņem noziedējušās dāliju galvas un pārbaudi balstus. Nejauc jau noziedējušu galvu ar jaunu pumpuru.",
+            "Podos pārbaudi mitrumu zem virskārtas un brīvu noteci. Nelej mēslojumu sausā substrātā, neievērojot līdzekļa norādes.",
+            "Pieraksti, kuras puķes zied un kur dobē ir tukšums. Tas ir pamats nākamā gada izvēlei, ne iemesls uzreiz pārstādīt visu dobi."
+          ],
+          "avoid": "Visām puķēm nav vienādas apgriešanas prasības; ziemcietes neapgriez pēc vienas shēmas.",
+          "sourceIds": [
+            "dahlias",
+            "watering"
+          ],
+          "link": {
+            "href": "/raksti/darza-pukes-kas-zied-visu-vasaru",
+            "label": "Kā pagarināt ziedēšanu"
+          }
+        }
+      ],
+      "faq": [
+        {
+          "q": "Vai otrā raža vienmēr paspēs izaugt?",
+          "a": "Nē. Tas atkarīgs no kultūras, šķirnes, sējas laika un atlikušās sezonas apstākļiem. Salīdzini norādīto augšanas ilgumu ar vietējo rudens salnu risku un rēķinies ar lēnāku augšanu vēsumā."
+        },
+        {
+          "q": "Kāpēc salāti vasarā ātri izzied?",
+          "a": "Ietekme var būt temperatūrai, dienas garumam, šķirnei un mitrumam. Izvēlies vasarai piemērotu šķirni un sēj pakāpeniski. Lielāks sējuma apjoms pats par sevi šo problēmu neatrisina."
+        }
+      ],
+      "sourceIds": [
+        "garlic",
+        "onions",
+        "fall-sowing",
+        "raspberries",
+        "tomatoes",
+        "watering",
+        "dahlias"
+      ],
+      "timeline": [
+        {
+          "period": "Mēneša sākums · 1.–10.",
+          "focus": "Vēro ķiploku un sīpolu gatavību, izvēlies otro sējumu.",
+          "sectionIds": [
+            "kiploku-un-sipolu-raza",
+            "otra-raza"
+          ]
+        },
+        {
+          "period": "Mēneša vidus · 11.–20.",
+          "focus": "Kop vasaras ražu un puķu podus.",
+          "sectionIds": [
+            "siltumnicas-apskate",
+            "ziedesanas-kopsana"
+          ]
+        },
+        {
+          "period": "Mēneša beigas · no 21.",
+          "focus": "Pēc vasaras aveņu ražas sakārto dzinumus; pārskati vēlās sējas iespējas.",
+          "sectionIds": [
+            "avenu-dzinumi",
+            "otra-raza"
+          ]
+        }
+      ]
+    },
+    "8": {
+      "title": "Augusts dārzā: ražas atlase, pēdējās sējas un jaunie stādījumi",
+      "description": "Augusta dārza darbi: ražas novākšana, vēlās sējas, zemeņu stādījumi un peoniju pārstādīšana. Mēness fāzes un visas mēneša dienas.",
+      "image": {
+        "id": "tomatu-raza",
+        "caption": "Novākta tomātu raža. Atlasi augļus pēc gatavības un bojājumiem; dažādu šķirņu krāsa un izmērs atšķiras."
+      },
+      "sections": [
+        {
+          "id": "razas-skirosana",
+          "area": "Raža",
+          "heading": "Novāc pa daļām un jau dobē sadali ražu izmantošanai",
+          "when": "Visu mēnesi pēc konkrētās kultūras gatavības; glabāšanai paredzēto vāc saudzīgi un sausākā laikā.",
+          "paragraphs": [
+            "Ražu iedali tūlīt izmantojamajā un glabājamajā. Saplaisājis tomāts un vesels, nobriedis sīpols nevar nonākt vienā ilgtermiņa glabāšanas plānā."
+          ],
+          "steps": [
+            "Sagatavo atsevišķus, tīrus traukus un marķē šķirnes, kurām gribi salīdzināt glabāšanos.",
+            "Augļus nemet un neber dziļā kaudzē. Puvējušo atdali uzreiz, nebojāto sagatavo kultūrai piemērotā veidā.",
+            "Pieraksti, kuras ražas ir par daudz. Iegūto informāciju izmanto nākamā gada augu skaitam un atkārtotajām sējām."
+          ],
+          "avoid": "Bojātu ražu neliec glabāšanai ar domu, ka problēmu atrisinās vēsāka telpa.",
+          "sourceIds": [
+            "storage",
+            "onions"
+          ],
+          "link": {
+            "href": "/raksti/darza-darbi-augusta",
+            "label": "Augusta ražas un kopšanas darbi"
+          }
+        },
+        {
+          "id": "zemenu-stadisana",
+          "area": "Ogas",
+          "heading": "Jaunajām zemenēm sagatavo vietu pirms stādu atvešanas",
+          "when": "Vasaras beigās, kad vari nodrošināt iesakņošanās laiku un laistīšanu; karstā, sausā periodā kopšana būs īpaši svarīga.",
+          "paragraphs": [
+            "Stāda vidus jeb augšanas punkts nedrīkst pazust zem augsnes. Nepareizs dziļums var traucēt ieaugšanu pat tad, ja stāds sākumā izskatās kupls."
+          ],
+          "steps": [
+            "Attīri dobi no daudzgadīgajām nezālēm un izvēlies veselus stādus. Iezīmē rindas pirms stādīšanas.",
+            "Parasts orientieris ir ap 35–40 cm starp augiem un ap 75 cm starp rindām; koriģē pēc šķirnes un audzēšanas paņēmiena.",
+            "Stādi tā, lai cera vidus būtu augsnes līmenī, saknes nesalocītu uz augšu. Aplaisti un pirmajās dienās pārbaudi, vai augsne nav nosēdusies virs augšanas punkta."
+          ],
+          "avoid": "Sirdi neapber ar zemi vai biezu mulču.",
+          "sourceIds": [
+            "strawberries"
+          ],
+          "link": {
+            "href": "/raksti/zemenu-stadisana-augusta",
+            "label": "Zemeņu stādīšana soli pa solim"
+          }
+        },
+        {
+          "id": "peoniju-parstadisana",
+          "area": "Puķes",
+          "heading": "Peonijas pārstādi tikai ar skaidru iemeslu un sagatavotu vietu",
+          "when": "Vasaras beigās vai agrā rudenī; pirms rakšanas noskaidro, vai tā ir lakstainā, kokveida vai starpgrupu peonija.",
+          "paragraphs": [
+            "Veselam, labi ziedošam ceram dalīšana nav ikgadējs pienākums. Ja jāmaina vieta vai jāpavairo, vispirms sagatavo jauno stādījumu."
+          ],
+          "steps": [
+            "Izvēlies piemērotu saulainu vietu ar ūdens noteci un vietu pieaugušam ceram.",
+            "Lakstaino peoniju izcel, saglabājot saknes. Dalījumam atstāj 3–5 veselus pumpurus un labu sakņu sistēmu, ne tikai atsevišķu saknes gabalu bez pumpuriem.",
+            "Lakstainās peonijas pumpuriem praktisks orientieris ir ap 2,5–5 cm zem augsnes virsmas. Kokveida un starpgrupu peonijām pārbaudi savas grupas norādes. Aplaisti un pārbaudi nosēšanās līmeni."
+          ],
+          "avoid": "Kokveida un lakstaino peoniju nestādi pēc viena universāla dziļuma norādījuma.",
+          "sourceIds": [
+            "peonies",
+            "peony-division"
+          ],
+          "link": {
+            "href": "/raksti/kad-parstadit-peonijas",
+            "label": "Peoniju grupas, termiņš un dziļums"
+          }
+        },
+        {
+          "id": "velas-lapu-kulturas",
+          "area": "Vēlā sēja",
+          "heading": "Spinātus, redīsus un lapu salātus sēj pēc karstuma mazināšanās",
+          "when": "Pēc šķirnes termiņa un atlikušās sezonas izvērtēšanas; aukstā vietā sējas iespēju logs beidzas agrāk.",
+          "paragraphs": [
+            "Rudens ražas mērķis var būt jaunas lapas, ne pilna izmēra galviņas. Īsāka diena un vēsums maina augšanas ātrumu."
+          ],
+          "steps": [
+            "Izvēlies rudenim paredzētu šķirni un pārbaudi tās augšanas ilgumu. Skaidri nosaki, ko gribi novākt.",
+            "Sagatavo nelielu dobi ar vienmērīgu mitrumu un noņem iepriekšējās kultūras traucējošās atliekas.",
+            "Sēj mazu partiju un pieraksti datumu. Seguma vajadzību izvērtē pēc prognozes, bet neuzskati to par neierobežotu sezonas pagarinājumu."
+          ],
+          "avoid": "Nenovērtē ražas termiņu tikai pēc vasaras dienu skaita uz paciņas.",
+          "sourceIds": [
+            "fall-sowing"
+          ],
+          "link": {
+            "href": "/raksti/ko-set-julija-augusta",
+            "label": "Vēlās sējas ierobežojumi"
+          }
+        },
+        {
+          "id": "seklu-ievaksana",
+          "area": "Puķes un sēklas",
+          "heading": "Sēklas ievāc no veseliem, atzīmētiem augiem",
+          "when": "Kad konkrētā auga sēklas nobriedušas; sausā laikā, pirms tās izbirst.",
+          "paragraphs": [
+            "Atzīmē augu jau ziedēšanas laikā. No hibrīda ievāktās sēklas ne vienmēr saglabās mātesauga īpašības."
+          ],
+          "steps": [
+            "Izvēlies dažus veselus augus un atstāj paredzētās sēklgalvas nenogrieztas.",
+            "Nobriedušo materiālu savāc atsevišķos papīra maisiņos ar sugu, šķirni un datumu.",
+            "Pirms glabāšanas apžāvē piemērotā vēdināmā vietā un attīri no liekajām atliekām. Mitru materiālu neaizver hermētiski."
+          ],
+          "avoid": "Skaists zieds vēl nenozīmē nobriedušas sēklas, un F1 pēcnācēji nav garantēti šķirnei identiski.",
+          "sourceIds": [
+            "seeds"
+          ],
+          "link": {
+            "href": "/raksti/ka-glabat-seklas-un-parbaudit-digtspeju",
+            "label": "Sēklu žāvēšana un glabāšana"
+          }
+        }
+      ],
+      "faq": [
+        {
+          "q": "Vai augustā vēl var sēt spinātus?",
+          "a": "Vēsākos apstākļos un piemērotai šķirnei tā var būt iespēja rudens ražai. Pārbaudi sējas termiņus, atlikušo sezonu un mitrumu. Karstuma mazināšanās ir svarīgāka par vienu noteiktu dienu."
+        },
+        {
+          "q": "Vai visus peoniju cerus vajag dalīt?",
+          "a": "Nē. Vesels, labi augošs cers nav obligāti jādala. Pārstādīšanu izvērtē, ja jāmaina vieta, jāpavairo augs vai jārisina konkrēta problēma. Paņēmiens un dziļums atkarīgs arī no peonijas grupas."
+        }
+      ],
+      "sourceIds": [
+        "storage",
+        "onions",
+        "strawberries",
+        "peonies",
+        "fall-sowing",
+        "seeds",
+        "peony-division"
+      ],
+      "timeline": [
+        {
+          "period": "Mēneša sākums · 1.–10.",
+          "focus": "Sakārto ražas izmantošanu un izvērtē pēdējās sējas.",
+          "sectionIds": [
+            "razas-skirosana",
+            "velas-lapu-kulturas"
+          ]
+        },
+        {
+          "period": "Mēneša vidus · 11.–20.",
+          "focus": "Sagatavo un stādi zemeņu dobi, ja vari nodrošināt kopšanu.",
+          "sectionIds": [
+            "zemenu-stadisana"
+          ]
+        },
+        {
+          "period": "Mēneša beigas · no 21.",
+          "focus": "Ieplāno peoniju pārstādīšanu un ievāc nobriedušās sēklas.",
+          "sectionIds": [
+            "peoniju-parstadisana",
+            "seklu-ievaksana"
+          ]
+        }
+      ]
+    },
+    "9": {
+      "title": "Septembris dārzā: saglabā ražu un sagatavo brīvās dobes",
+      "description": "Septembra dārza kalendārs: ražas glabāšana, sīpolpuķu plāns, augsnes segums un rudens salnas. Mēness fāzes un mēneša dienu tabula.",
+      "image": {
+        "id": "komposta-tvertnes",
+        "caption": "Komposta tvertnes kopienas dārzā. Ieplāno, kur nonāks rudens augu atliekas un no kurienes ņemsi nobriedušu kompostu dobēm."
+      },
+      "sections": [
+        {
+          "id": "saknaugu-novaksana",
+          "area": "Raža",
+          "heading": "Glabāšanas sakņaugus novāc saudzīgi un marķē kastes",
+          "when": "Kad sasniegta šķirnes gatavība; darba kārtību pielāgo lietum un gaidāmajam salam.",
+          "paragraphs": [
+            "Novākšana ietver arī šķirošanu un vietas sagatavošanu. Dakšas dūriens vai atlauzta sakne var kļūt par bojājuma sākumu glabātavā."
+          ],
+          "steps": [
+            "Pirms darba sagatavo kastes un glabāšanas vietu. Katram slānim jābūt sasniedzamam apskatei.",
+            "Uzirdini zemi un izcel ražu, nevelkot to ar spēku. Bojāto atdali no veselās.",
+            "Lapas saīsini kultūrai piemērotā veidā un marķē šķirni. Sakņaugus sargā no izžūšanas, sīpolus pirms glabāšanas pienācīgi izžāvē."
+          ],
+          "avoid": "Visiem dārzeņiem vienāda kaste un vienāds mitrums neder.",
+          "sourceIds": [
+            "storage",
+            "onions"
+          ],
+          "link": {
+            "href": "/raksti/kad-novakt-sipolus",
+            "label": "Sīpolu nobriešana un žāvēšana"
+          }
+        },
+        {
+          "id": "kirbji-pirms-salnas",
+          "area": "Ķirbji un siltummīļi",
+          "heading": "Ķirbju ražu sagatavo pirms salnas",
+          "when": "Kad augļi nobriest vai prognoze rāda salnu risku; nenogatavojušos vērtē atsevišķi.",
+          "paragraphs": [
+            "Glabāšanai izvēlies nobriedušus, nebojātus ķirbjus ar veselu mizu. Nenogatavojies auglis parasti neglabāsies tikpat labi kā gatavs."
+          ],
+          "steps": [
+            "Apskati šķirnei raksturīgo krāsu, mizas stingrību un kātiņa stāvokli; pa vienu pazīmi vien nespried par visām šķirnēm.",
+            "Nogriez ar saglabātu kātiņa posmu un pārnes, atbalstot pašu augli. Kātiņu nelieto kā rokturi.",
+            "Veselo ražu sagatavo šķirnei piemērotai apžāvēšanai un vēsai, sausai glabāšanai; bojāto nekrāj ilgtermiņam."
+          ],
+          "avoid": "Ķirbjus neatstāj salnai un pēc tam negaidi tādu pašu glabāšanos kā nebojātai ražai.",
+          "sourceIds": [
+            "pumpkins",
+            "storage"
+          ],
+          "link": {
+            "href": "/augi/kirbji",
+            "label": "Ķirbju audzēšana un raža"
+          }
+        },
+        {
+          "id": "sipolpuku-seciba",
+          "area": "Puķes",
+          "heading": "Sīpolpuķes stādi pēc sugas, tulpes plāno atsevišķi",
+          "when": "Rudens stādīšanas laikā atbilstoši sugai; tulpēm parasti izvēlas vēlāk atdzisušu augsni.",
+          "paragraphs": [
+            "Narcisēm, krokusiem un tulpēm nav viens obligāts kopīgs datums. Vispirms pārbaudi sugu, stādmateriāla stāvokli un drenāžu."
+          ],
+          "steps": [
+            "Atlasi stingrus, veselus sīpolus un sagatavo vietas, kur pavasarī tos varēs redzēt, nebojājot ar citiem darbiem.",
+            "Dziļumu un atstarpes pārbaudi konkrētajai sugai un sīpola izmēram. Atzīmē stādījuma robežas.",
+            "Vēlāk stādāmās tulpes glabā sausā, gaisīgā vietā līdz piemērotam laikam; regulāri apskati bojājumus."
+          ],
+          "avoid": "Visus sīpolus neiestādi vienādā dziļumā pēc paciņas krāsas vai vienas kopīgas rudens dienas.",
+          "sourceIds": [
+            "tulips",
+            "october"
+          ],
+          "link": {
+            "href": "/raksti/tulpju-stadisana-rudeni",
+            "label": "Tulpju vieta rudens darbu secībā"
+          }
+        },
+        {
+          "id": "briva-augsne",
+          "area": "Augsne",
+          "heading": "Brīvajai dobei izvēlies segumu vai laikus paspējamu zaļmēslojumu",
+          "when": "Tūlīt pēc ražas novākšanas, kamēr augsne apstrādājama un izvēlētajam sējumam vēl pietiek sezonas.",
+          "paragraphs": [
+            "Ja nav laika zaļmēslojumam ieaugt, organiskas virskārtas veidošana var būt lietderīgāks darbs. Izvēle ir atkarīga arī no nākamās kultūras."
+          ],
+          "steps": [
+            "Izņem nezāles un pārskati slimību skartās atliekas. Saglabā pieeju no celiņa.",
+            "Zaļmēslojumam pārbaudi sējas termiņu un augu grupu; nesēj krustziežu kultūru, neizvērtējot kāpostu vietu augu maiņā.",
+            "Ja izvēlies nobriedušu kompostu, izklāj to vienmērīgi uz sagatavotas virsmas. Komposta kaudzi neuzskati par gatavu tikai tādēļ, ka tā stāvējusi vasaru."
+          ],
+          "avoid": "Sinepes vai citus augus nesēj tikai tukšuma aizpildīšanai, ja tie vairs nepaspēs attīstīties.",
+          "sourceIds": [
+            "compost",
+            "mulch"
+          ],
+          "link": {
+            "href": "/raksti/baltas-sinepes-pec-razas",
+            "label": "Zaļmēslojuma izvēle pēc ražas"
+          }
+        },
+        {
+          "id": "salnu-plans",
+          "area": "Puķes un podi",
+          "heading": "Pirms pirmās salnas sagatavo vietu jutīgajiem augiem",
+          "when": "Pirms prognozētas aukstas nakts, ne nākamajā rītā pēc apsalušiem augiem.",
+          "paragraphs": [
+            "Dālijām sagatavo kastes un vietu bez sala, podu augiem — pārnešanas plānu. Pelargoniju pārziemināšana un ziemcietīga krūma pods prasa atšķirīgus apstākļus."
+          ],
+          "steps": [
+            "Nosauc augus, kas jāienes, un atbrīvo tiem vietu. Pārbaudi apgaismojumu un temperatūru izvēlētajā telpā.",
+            "Pirms ienešanas apskati lapu apakšpuses, poda virsmu un kaitēkļu pazīmes. Neliec problemātisku augu uzreiz blakus pārējiem.",
+            "Dālijām sagatavo etiķetes un instrumentus; izrakšanas brīdi saisti ar lakstu bojājumu un augsnes sasalšanas risku."
+          ],
+          "avoid": "Visiem podu augiem viena tumša, silta telpa nav universāla ziemas glabātava.",
+          "sourceIds": [
+            "dahlias",
+            "winter-trees"
+          ],
+          "link": {
+            "href": "/raksti/ka-glabat-dalijas-ziema",
+            "label": "Dāliju rudens darbu secība"
+          }
+        }
+      ],
+      "faq": [
+        {
+          "q": "Vai visas pavasara sīpolpuķes jāstāda vienā reizē?",
+          "a": "Nē. Pārbaudi sugas un šķirnes prasības, sīpolu stāvokli un augsnes apstākļus. Tulpju stādīšanu siltā rudenī var atlikt, savukārt citām sīpolpuķēm būs savi termiņi."
+        },
+        {
+          "q": "Vai zaļmēslojumu vēl ir vērts sēt?",
+          "a": "Tas atkarīgs no kultūras un laika, kas tai palicis ieaugšanai. Pirms sējas izvērtē savu vietu un nākamās dobes izmantošanas plānu. Ja termiņš neatbilst, apsver citu augsnes aizsardzības paņēmienu."
+        }
+      ],
+      "sourceIds": [
+        "storage",
+        "onions",
+        "pumpkins",
+        "tulips",
+        "october",
+        "compost",
+        "mulch",
+        "dahlias",
+        "winter-trees"
+      ],
+      "timeline": [
+        {
+          "period": "Mēneša sākums · 1.–10.",
+          "focus": "Sāc nobriedušās ražas šķirošanu un izvēlies brīvo dobju turpinājumu.",
+          "sectionIds": [
+            "saknaugu-novaksana",
+            "briva-augsne"
+          ]
+        },
+        {
+          "period": "Mēneša vidus · 11.–20.",
+          "focus": "Sakārto sīpolpuķu secību un sagatavo jutīgo augu vietas.",
+          "sectionIds": [
+            "sipolpuku-seciba",
+            "salnu-plans"
+          ]
+        },
+        {
+          "period": "Mēneša beigas · no 21.",
+          "focus": "Seko salnām un novāc apdraudēto ražu.",
+          "sectionIds": [
+            "kirbji-pirms-salnas",
+            "salnu-plans"
+          ]
+        }
+      ]
+    },
+    "10": {
+      "title": "Oktobris dārzā: ķiploki, tulpes un gatavošanās ziemai",
+      "description": "Oktobra dārza darbi Latvijā: ziemas ķiploki, tulpes, dāliju izrakšana un siltumnīcas sakopšana. Mēness fāzes, sējas dienas un pilns kalendārs.",
+      "image": {
+        "id": "kiploku-galvinas-daivas",
+        "caption": "Ķiploka galviņa un daivas. Stādīšanai izvēlies veselīgu, audzēšanai piemērotu materiālu ar saglabātu daivas apvalku; foto redzamā nomizotā daiva ilustrē uzbūvi."
+      },
+      "sections": [
+        {
+          "id": "ziemas-kiploki",
+          "area": "Dārzeņi",
+          "heading": "Ziemas ķiplokus stādi ar laiku iesakņoties",
+          "when": "Kad augsne atdzisusi, bet vēl nav sasalusi vai pārmitra; negaidi obligāti oktobra pēdējo nedēļu.",
+          "paragraphs": [
+            "Izvēlies ziemas stādīšanai paredzētu, veselīgu materiālu. Dārza vieta un konkrētā rudens gaita ir svarīgākas par vienu visai Latvijai noteiktu datumu."
+          ],
+          "steps": [
+            "Sagatavo vietu ar labu ūdens noteci un pārbaudi iepriekšējo kultūru augu maiņā.",
+            "Galviņas sadali pirms stādīšanas; nebojā daivas pamatni un nenovelc apvalku. Mīkstās vai bojātās daivas nestādi.",
+            "Daivas liec ar pamatni uz leju, izvēloties dziļumu un attālumus pēc vietējā audzēšanas paņēmiena un šķirnes. Marķē rindu un datumu."
+          ],
+          "avoid": "Veikala pārtikas ķiploks bez zināmas izcelsmes nav tas pats, kas izvēlēts stādāmais materiāls.",
+          "sourceIds": [
+            "garlic"
+          ],
+          "link": {
+            "href": "/augi/kiploki",
+            "label": "Ķiploku stādīšanas dziļums un attālumi"
+          }
+        },
+        {
+          "id": "tulpju-stadisana",
+          "area": "Puķes",
+          "heading": "Tulpes stādi atdzisušā augsnē un izmēri dziļumu",
+          "when": "Rudenī, kad augsne atdzisusi, bet ir irdena un nesasalusi. Pārmitrai vietai vispirms atrisini noteci.",
+          "paragraphs": [
+            "Sīpola augstums palīdz izvēlēties dziļumu. Piemēram, 5 cm augstam sīpolam trīs augstumi ir ap 15 cm līdz sīpola pamatnei."
+          ],
+          "steps": [
+            "Izvēlies veselus sīpolus un sagatavo visu stādījuma vietu, ne tikai šauru caurumu slapjā zemē.",
+            "Ievieto sīpolus ar smaili uz augšu, aptuveni trīs to augstumu dziļumā. Atstarpes pielāgo paredzētajam stādījumam.",
+            "Pievieno marķējumu un nofotografē atrašanās vietu. Pavasarī tur neplāno agru dziļu rakšanu."
+          ],
+          "avoid": "Nesajauc dziļumu līdz sīpola pamatnei ar tikpat biezu augsnes slāni virs sīpola.",
+          "sourceIds": [
+            "tulips"
+          ],
+          "link": {
+            "href": "/raksti/tulpju-stadisana-rudeni",
+            "label": "Tulpju stādīšanas paņēmiens"
+          }
+        },
+        {
+          "id": "daliju-izraksana",
+          "area": "Puķes",
+          "heading": "Dālijas izroc pēc lakstu apsalšanas, pirms sasalst bumbuļi",
+          "when": "Pēc pirmās lakstus bojājošās salnas vai agrākas nepieciešamības pārmitrumā; saglabā rezervi līdz noturīgam salam.",
+          "paragraphs": [
+            "Vispirms vajag piemērotu vietu apžāvēšanai un glabāšanai. Izrakšana vien neatrisina pārziemināšanu."
+          ],
+          "steps": [
+            "Ap ceru uzirdini augsni un izcel to no apakšas. Nevelc aiz stublājiem un nenolauz bumbuļu kakliņus.",
+            "Marķē šķirni, noņem lieko zemi un ļauj ceram apžūt bez sala. Nodrošini, lai dobajos stublājos nepaliktu ūdens.",
+            "Veselos cerus izvieto pārbaudāmās kastēs vēsā vietā bez sala. Pēc pārvietošanas apskati tos atkārtoti."
+          ],
+          "avoid": "Mitrus cerus neaizsien noslēgtā maisā un neatstāj uz šķūņa grīdas bez temperatūras pārbaudes.",
+          "sourceIds": [
+            "dahlias"
+          ],
+          "link": {
+            "href": "/raksti/ka-glabat-dalijas-ziema",
+            "label": "Dāliju izrakšana un glabātava"
+          }
+        },
+        {
+          "id": "rudens-raza",
+          "area": "Raža",
+          "heading": "Pabeidz glabāšanas ražu un pārbaudi telpas apstākļus",
+          "when": "Pēc kultūras gatavības, pirms tai kaitīga sala un tad, kad ražu iespējams novākt bez liekiem bojājumiem.",
+          "paragraphs": [
+            "Rudens darbus kārto pēc jutīguma: siltummīļu ražu apdraud salnas, bet dažām aukstumizturīgām kultūrām logs var būt ilgāks. Katru kultūru izvērtē atsevišķi."
+          ],
+          "steps": [
+            "Atbrīvo un iztīri kastes; izvēlies vietu termometram pie ražas.",
+            "Veselo ražu atdali no ievainotās un slimās. Pieraksti šķirni un novākšanas datumu.",
+            "Glabā atbilstoši temperatūras un mitruma prasībām. Jau pirmajā nedēļā pārbaudi, vai nerodas kondensāts vai puve."
+          ],
+          "avoid": "Telpas nosaukums “pagrabs” pats par sevi nepasaka, kurām kultūrām tā piemērota.",
+          "sourceIds": [
+            "storage",
+            "pumpkins"
+          ],
+          "link": {
+            "href": "/raksti/kad-novakt-sipolus",
+            "label": "Ražas sagatavošana glabāšanai"
+          }
+        },
+        {
+          "id": "augsnes-rudens-segums",
+          "area": "Augsne",
+          "heading": "Novāktās dobes sakārto bez obligātas dziļas rakšanas",
+          "when": "Pēc ražas novākšanas, kamēr augsne ir apstrādājama; slapjā laikā vispirms sakārto celiņus un materiālus.",
+          "paragraphs": [
+            "Darba mērķis ir mazināt nezāles un pasargāt augsni. Viena paņēmiena piemērotība atkarīga no augsnes un tā, kā dārzu kop."
+          ],
+          "steps": [
+            "Izņem daudzgadīgo nezāļu saknes vietās, kur to var izdarīt bez augsnes smērēšanas.",
+            "Nobriedušu kompostu vai citu piemērotu materiālu izklāj virspusē. Neber svaigu atlieku kaudzi tieši uz jauno augu centriem.",
+            "Atzīmē nākamā gada dobju plānā, kur jau stādīti ķiploki un sīpolpuķes."
+          ],
+          "avoid": "Vēlu iesēts zaļmēslojums ne vienmēr paspēs dot iecerēto segumu.",
+          "sourceIds": [
+            "mulch",
+            "compost"
+          ],
+          "link": {
+            "href": "/raksti/komposts-ka-sakt",
+            "label": "Komposts rudens darbiem"
+          }
+        },
+        {
+          "id": "siltumnicas-noslegums",
+          "area": "Siltumnīca",
+          "heading": "Pēc pēdējās ražas iznes atliekas un pārbaudi konstrukciju",
+          "when": "Kad vasaras kultūras novāktas; ūdens sistēmu sagatavo pirms sala.",
+          "paragraphs": [
+            "Tīrīšanu vari sadalīt divās reizēs: vispirms iztukšošana un sausie netīrumi, pēc tam virsmas un remonts."
+          ],
+          "steps": [
+            "Iznes noražojušos augus, vecās auklas un nevajadzīgos traukus. Slimību skartās atliekas šķiro atsevišķi.",
+            "Notīri segumu un pārbaudi atveramos logus, durvis un stiprinājumus.",
+            "Iztukšo salam jutīgās ūdens detaļas atbilstoši ražotāja norādēm. Sagatavo konstrukcijai paredzēto sniega slodzes risinājumu."
+          ],
+          "avoid": "Tukšas dobes vien nenozīmē, ka siltumnīca sagatavota ziemai.",
+          "sourceIds": [
+            "greenhouse",
+            "tools"
+          ],
+          "link": {
+            "href": "/raksti/siltumnicas-sagatavosana-sezonai",
+            "label": "Siltumnīcas sakopšana"
+          }
+        }
+      ],
+      "faq": [
+        {
+          "q": "Vai ķiplokus stāda tikai sakņu dienās?",
+          "a": "Mēness dienu vari izmantot kā tradīcijas izvēli piemērotā darbu logā. Izšķiroša ir augsne, stādmateriāls un laiks iesakņošanai. Ja zeme sasalusi vai piemirkusi, kalendāra diena to nepadara piemērotu."
+        },
+        {
+          "q": "Vai dālijas var ziemā atstāt neapkurinātā šķūnī?",
+          "a": "Tikai tad, ja tajā ir piemēroti apstākļi bez sala. Pats ēkas nosaukums to negarantē. Pārbaudi temperatūru un mitrumu, izvēlies atbilstošu glabāšanas paņēmienu un ziemā bumbuļus apskati."
+        }
+      ],
+      "sourceIds": [
+        "garlic",
+        "tulips",
+        "dahlias",
+        "storage",
+        "pumpkins",
+        "mulch",
+        "compost",
+        "greenhouse",
+        "tools"
+      ],
+      "timeline": [
+        {
+          "period": "Mēneša sākums · 1.–10.",
+          "focus": "Sakārto glabājamo ražu un izvērtē ķiploku stādīšanas apstākļus.",
+          "sectionIds": [
+            "rudens-raza",
+            "ziemas-kiploki"
+          ]
+        },
+        {
+          "period": "Mēneša vidus · 11.–20.",
+          "focus": "Atdzisušā augsnē stādi tulpes; pēc lakstu salnas izroc dālijas.",
+          "sectionIds": [
+            "tulpju-stadisana",
+            "daliju-izraksana"
+          ]
+        },
+        {
+          "period": "Mēneša beigas · no 21.",
+          "focus": "Sagatavo siltumnīcu un brīvās dobes ziemai.",
+          "sectionIds": [
+            "siltumnicas-noslegums",
+            "augsnes-rudens-segums"
+          ]
+        }
+      ]
+    },
+    "11": {
+      "title": "Novembris dārzā: sagatavo augus, glabātavu un instrumentus ziemai",
+      "description": "Novembra dārza darbi Latvijā: augu pārziemošana, ražas un dāliju glabāšana, instrumentu kopšana. Mēness fāzes Latvijas laikā un pilna dienu tabula.",
+      "image": {
+        "id": "darza-instrumenti",
+        "caption": "Instrumentu glabāšanas piemērs zem jumta. Pirms ziemas noņem pielipušo augsni, nožāvē instrumentus un pārbaudi rokturu stiprinājumus."
+      },
+      "sections": [
+        {
+          "id": "vela-stadisana",
+          "area": "Dobes un sīpolpuķes",
+          "heading": "Neiestādītās tulpes un ķiploki: vispirms pārbaudi zemi",
+          "when": "Mēneša sākumā, ja stādmateriāls jau nopirkts un augsne vēl ir irdena, nesasalusi un nav piesātināta ar ūdeni.",
+          "paragraphs": [
+            "Novembris ir atlikto rudens darbu pabeigšanas laiks. Tulpju sīpolus un ziemas ķiplokus izvērtē atsevišķi: ķiplokiem pirms ziemas jāpagūst iesakņoties, tāpēc vēlāks datums palielina nenoteiktību."
+          ],
+          "steps": [
+            "Izroc nelielu pārbaudes bedrīti. Ja lāpsta atduras salā vai bedre pieplūst ar ūdeni, šo vietu stādīšanai neizmanto.",
+            "Atlasi stingrus, nebojātus tulpju sīpolus. Dziļumu mēri līdz sīpola pamatnei: orientieris ir aptuveni trīs sīpola augstumi. Atzīmē stādījumu, lai pavasarī to neuzraktu.",
+            "Ķiplokiem izmanto veselīgas stādīšanai paredzētas daivas ar saglabātu apvalku. Pirms vēlas stādīšanas pārbaudi vietējo prognozi un konkrētās šķirnes ieteikumus."
+          ],
+          "avoid": "Nestādi sasalušā zemē un neliec bojātu sīpolu līdzās veselajiem tikai tāpēc, ka tas jau nopirkts.",
+          "sourceIds": [
+            "tulips",
+            "garlic"
+          ],
+          "link": {
+            "href": "/raksti/tulpju-stadisana-rudeni",
+            "label": "Tulpju stādīšanas dziļums un vietas izvēle"
+          }
+        },
+        {
+          "id": "razas-glabasana",
+          "area": "Raža",
+          "heading": "Sadali glabājamo ražu pēc temperatūras un mitruma",
+          "when": "Pirmajā novembra nedēļā sakārto kastes; turpmāk izvēlies vienu regulāru apskates dienu nedēļā un pārbaudi arī pēc strauja aukstuma.",
+          "paragraphs": [
+            "Vienā telpā dārzeņi var glabāties atšķirīgi. Burkāni un bietes viegli vīst sausumā, bet sīpoliem nepieciešama sausa vide. Ķirbjiem auksts pagrabs var būt par vēsu."
+          ],
+          "steps": [
+            "Pie kastēm novieto termometru. Orientieri: burkāniem un bietēm ap 0–4 °C un mitra vide; izžāvētiem sīpoliem ap 0–4 °C un sausa vide; ķirbjiem ap 10–15 °C un sausa vide. Ražu nesasaldē.",
+            "Atver katru kasti un apskati arī apakšējo slāni. Mīkstus, tekošus vai pelējošus eksemplārus atdali; pieraksti, kurā vietā bojājums radies.",
+            "Ja redzi kondensātu, pārbaudi gaisa apmaiņu. Ja sakņaugi vīst, pārskati aizsardzību pret izžūšanu; tos nesamērcē un neaizver hermētiskā maisā."
+          ],
+          "avoid": "Vienāda temperatūra vēl nenozīmē, ka sīpoliem un burkāniem der viena kaste un vienāds iesaiņojums.",
+          "sourceIds": [
+            "storage"
+          ],
+          "link": {
+            "href": "/raksti/kad-novakt-sipolus",
+            "label": "Sīpolu sagatavošana glabāšanai"
+          }
+        },
+        {
+          "id": "daliju-kastes",
+          "area": "Puķes",
+          "heading": "Dāliju bumbuļus pārbaudi pie kastēm, ne tikai telpas durvīm",
+          "when": "Ja bumbuļi vēl dobē — pēc salnas bojātiem lakstiem, pirms augsnes sasalšanas. Glabātavā — regulārajā ražas apskatē.",
+          "paragraphs": [
+            "Bumbuļiem jāpaliek vēsiem un nesasalušiem. Praktisks temperatūras orientieris ir ap +4 °C. Šķūnī gaiss aukstākajā stūrī var būt daudz vēsāks nekā pie durvīm."
+          ],
+          "steps": [
+            "Izrakšanai uzirdini augsni ap ceru un pacel to no apakšas; nevelc aiz stublāja. Pievieno šķirnes etiķeti, kamēr vēl vari to atpazīt.",
+            "Pirms likšanas kastē ļauj ceram apžūt vietā bez sala. Izkārto tā, lai katru ceru varētu apskatīt, neizjaucot visu kaudzi.",
+            "Meklē mīkstas vietas, pelējumu, kondensātu un izteiktu sažūšanu. Bojāto atdali un koriģē glabāšanas vidi; pie sala riska pārvieto kastes laikus."
+          ],
+          "avoid": "Sega neapkurinātā šķūnī tikai palēnina atdzišanu — ilgstošā salā tā nenodrošina vietu bez sala.",
+          "sourceIds": [
+            "dahlias"
+          ],
+          "link": {
+            "href": "/raksti/ka-glabat-dalijas-ziema",
+            "label": "Dāliju izrakšana un glabāšana soli pa solim"
+          }
+        },
+        {
+          "id": "koku-aizsardziba",
+          "area": "Augļu dārzs",
+          "heading": "Pasargā jauno koku stumbrus un pārbaudi žogu",
+          "when": "Pirms noturīga sniega un sala, kamēr vari piekļūt stumbra pamatnei. Apskati vēlreiz pēc vēja vai snigšanas.",
+          "paragraphs": [
+            "Jaunai ābelei vai bumbierei viens apgrauzts stumbrs var nodarīt lielāku kaitējumu nekā daži apsaluši zari. Aizsardzība vajadzīga gan pie paša koka, gan dārza robežas."
+          ],
+          "steps": [
+            "Apskati žoga apakšu, vārtus un vietas, kur dzīvnieki var iekļūt. Salabo spraugas pirms sniegs tās aizsedz.",
+            "Uzliec augļu kokiem paredzētu stumbra aizsargu vai piemērotu sietu, atstājot vietu stumbra resnuma pieaugumam. Pārbaudi, vai stiprinājums neberž mizu.",
+            "Atbrīvo stumbra pamatni no cieši piebērtas mulčas un garas zāles. Pēc snigšanas pārliecinies, ka sniegs nav izveidojis piekļuvi virs aizsarga."
+          ],
+          "avoid": "Plastmasas auklu vai sietu nepievelc tieši pie mizas. Aizsardzību nedrīkst aizmirst pavasarī.",
+          "sourceIds": [
+            "local-winter",
+            "winter-trees"
+          ],
+          "link": {
+            "href": "/raksti/salnas-latvija",
+            "label": "Aukstuma riski un augu aizsardzība"
+          }
+        },
+        {
+          "id": "ziemas-piesegs",
+          "area": "Puķes un podi",
+          "heading": "Atšķir sakņu aizsardzību no dzinumu piesegšanas",
+          "when": "Sagatavo materiālus mēneša sākumā; segšanu pielāgo auga ziemcietībai un noturīga aukstuma iestāšanās brīdim.",
+          "paragraphs": [
+            "Dobē augošai ziemcietei un tā paša auga podam nav vienādu apstākļu. Arī hortenzijas nav viena grupa: lielziedu hortenzijai var būt jāsaglabā dzinumu ziedpumpuri."
+          ],
+          "steps": [
+            "Uzraksti trīs sarakstus: augi, kas paliek dobē; augi podos ārā; augi, kuriem vajadzīga telpa bez sala. Pie neskaidra nosaukuma vispirms noskaidro sugu.",
+            "Podus novieto aizsargātā vietā, kur notek ūdens, un izolē trauka sānus. Neatstāj podu pilnā ūdens paliktnī.",
+            "Mulču klāj uz sagatavotas, nezāļu attīrītas augsnes; neatstāj to cieši pret koku stumbriem. Pēc atkušņa apskati, vai zem seguma nekrājas ūdens."
+          ],
+          "avoid": "Visu krūmu cieša ietīšana siltā, slapjā laikā var radīt nevajadzīgu mitrumu. Segu izvēlies konkrētajam augam.",
+          "sourceIds": [
+            "mulch",
+            "winter-trees"
+          ],
+          "link": {
+            "href": "/pukes/hortenzijas",
+            "label": "Hortenziju veidi un pārziemošana"
+          }
+        },
+        {
+          "id": "lapas-un-dobes",
+          "area": "Augsne",
+          "heading": "Lapas izmanto segumam un kompostam, celiņus atbrīvo",
+          "when": "Pēc lielākās lapu nobiršanas, sausākā dienā. Strādā no celiņa, ja dobe ir pārmitra.",
+          "paragraphs": [
+            "Rudens sakopšana nenozīmē atstāt visu augsni kailu. Lapas var izmantot, taču slapjš, sablīvējies slānis uz sīkiem augiem un zāliena nav tas pats, kas pārdomāts augsnes segums."
+          ],
+          "steps": [
+            "Savāc slidenās lapas no celiņiem un biezo lapu segu no zāliena. Veselas lapas atliec atsevišķi kompostēšanai vai lapu trūdzemei.",
+            "Brīvajā dobē izņem daudzgadīgo nezāļu saknes tikai tad, ja augsne ir apstrādājama. Nobriedušu kompostu vari klāt virspusē, nevis obligāti ierakt.",
+            "Slimību stipri skartās augu atliekas izvērtē atsevišķi. Parastā aukstā mājas komposta kaudzē nevar paļauties uz visu ierosinātāju iznīcināšanu."
+          ],
+          "avoid": "Neroc slapju augsni, kas līp pie lāpstas un smērējas; vispirms ļauj tai apžūt.",
+          "sourceIds": [
+            "compost",
+            "mulch"
+          ],
+          "link": {
+            "href": "/raksti/komposts-ka-sakt",
+            "label": "Ko likt mājas kompostā"
+          }
+        },
+        {
+          "id": "siltumnica-un-udens",
+          "area": "Siltumnīca",
+          "heading": "Iztīri siltumnīcu un sagatavo ūdens sistēmu salam",
+          "when": "Pēc vasaras kultūru novākšanas un pirms sala. Ja daļa kultūru vēl aug, sadali siltumnīcu tīrāmajā un izmantotajā zonā.",
+          "paragraphs": [
+            "Galvenā secība ir atbrīvot, notīrīt un salabot. Tukšu podu kaudze vai augu atliekas zem galda netop tīras tikai tāpēc, ka nomazgātas siltumnīcas sienas."
+          ],
+          "steps": [
+            "Iznes vecos stublājus, nezāles, auklas un neizmantotos traukus. No podiem vispirms izņem augsnes atliekas, tad tos mazgā.",
+            "Ar segumam piemērotu līdzekli notīri virsmas un pārbaudi logus, durvis un stiprinājumus. Polikarbonātu neskrāpē ar abrazīvu instrumentu.",
+            "Iztukšo šļūtenes, noņem jutīgos savienojumus un taimeri glabā atbilstoši ražotāja norādēm. Siltumnīcas sniega slodzes risinājumu sagatavo pirms snigšanas."
+          ],
+          "avoid": "Nesajauc mazgāšanas līdzekļus un neatstāj ūdeni detaļās, kurām paredzēta glabāšana bez sala.",
+          "sourceIds": [
+            "greenhouse",
+            "tools"
+          ],
+          "link": {
+            "href": "/raksti/siltumnicas-sagatavosana-sezonai",
+            "label": "Siltumnīcas tīrīšanas secība"
+          }
+        },
+        {
+          "id": "instrumentu-kopsana",
+          "area": "Piederumi",
+          "heading": "Instrumentus noliec glabāšanā tīrus, sausus un salabotus",
+          "when": "Pēc pēdējiem zemes darbiem; izvēlies vienu sausu dienu vai vietu zem jumta.",
+          "paragraphs": [
+            "Pavasarī jābūt gataviem tieši lietojamajiem instrumentiem. Atsevišķa remontējamo lietu kaste ir noderīgāka par salauzta roktura paslēpšanu plaukta aizmugurē."
+          ],
+          "steps": [
+            "Ar stingru suku notīri zemi no lāpstām, dakšām un kapļiem. Ja mazgā, pēc tam noslauki un pilnīgi nožāvē.",
+            "Pārbaudi rokturu kustēšanos, plaisas un skrūves. Sekatoriem notīri sulu un netīrumus; kustīgās daļas kop atbilstoši ražotāja norādēm.",
+            "Uzkar vai novieto instrumentus sausā vietā. Blakus atstāj suku un lupatu, bet bojātajām detaļām izveido īsu remonta sarakstu."
+          ],
+          "avoid": "Netīru, mitru asmeni nepārklāj ar eļļu — vispirms tas jānotīra un jānožāvē.",
+          "sourceIds": [
+            "tools"
+          ],
+          "link": {
+            "href": "/raksti/darza-planosana-iesacejam",
+            "label": "Ieplāno nākamās sezonas vajadzības"
+          }
+        }
+      ],
+      "faq": [
+        {
+          "q": "Vai novembrī vēl var stādīt ķiplokus vai tulpes?",
+          "a": "Vēlā stādīšana nav automātiski piemērota visā Latvijā. Pārbaudi augsnes stāvokli, izvēlētā auga prasības un atlikušo laiku līdz noturīgam salam. Sasalušā vai pārmitrā zemē nestādi; ķiplokiem pirms ziemas vajadzīgs laiks iesakņoties."
+        },
+        {
+          "q": "Vai tukšās dobes novembrī obligāti jārok?",
+          "a": "Nē. Izvērtē augsnes stāvokli un savu audzēšanas paņēmienu. Slapju vai sasalušu zemi intensīvi neapstrādā. Brīvajai dobei var plānot piemērotu organisko segumu, bet nevajag sēt zaļmēslojumu tikai tāpēc, ka dobe ir tukša."
+        },
+        {
+          "q": "Vai novembrī viss dārzs jānogriež līdz zemei?",
+          "a": "Nē. Atšķiras gan sugas, gan tas, uz kuriem dzinumiem tās zied. Veselus dekoratīvus stublājus var atstāt, ja tie netraucē un nav iemesla sanitārai izņemšanai. Īpaši neapgriez visas hortenzijas pēc vienas shēmas."
+        },
+        {
+          "q": "Ko izdarīt vispirms, ja brīva ir tikai viena diena?",
+          "a": "Vispirms nodrošini vietu bez sala neziemcietīgajiem augiem un bumbuļiem, iztukšo salam jutīgās ūdens detaļas un pasargā jauno koku stumbrus. Sēklu sarakstu un dobju zīmējumu vari turpināt telpās vēlāk."
+        }
+      ],
+      "sourceIds": [
+        "tulips",
+        "garlic",
+        "storage",
+        "dahlias",
+        "local-winter",
+        "winter-trees",
+        "mulch",
+        "compost",
+        "greenhouse",
+        "tools"
+      ],
+      "timeline": [
+        {
+          "period": "Mēneša sākums · 1.–10.",
+          "focus": "Pabeidz darbus, ko drīz var pārtraukt sals; jau aukstā rudenī šo posmu neatliec uz norādītajiem datumiem.",
+          "sectionIds": [
+            "vela-stadisana",
+            "koku-aizsardziba",
+            "siltumnica-un-udens"
+          ]
+        },
+        {
+          "period": "Mēneša vidus · 11.–20.",
+          "focus": "Sakārto glabāšanu, lapas un augiem piemērotu ziemas aizsardzību.",
+          "sectionIds": [
+            "razas-glabasana",
+            "daliju-kastes",
+            "ziemas-piesegs",
+            "lapas-un-dobes"
+          ]
+        },
+        {
+          "period": "Mēneša beigas · no 21.",
+          "focus": "Noslēdz instrumentu kopšanu un atkārto glabātavas apskati pēc aukstuma.",
+          "sectionIds": [
+            "instrumentu-kopsana",
+            "razas-glabasana"
+          ]
+        }
+      ]
+    },
+    "12": {
+      "title": "Decembris dārzā: no sezonas pierakstiem līdz nākamā gada plānam",
+      "description": "Decembra dārza darbi Latvijā: sēklu krājumi, dobju plāns, glabātavas pārbaude un gatavošanās pavasarim. Mēness fāzes un katras dienas kalendārs.",
+      "image": {
+        "id": "seklu-pacinas",
+        "caption": "Sēklu paciņu izvēle var būt plaša. Vispirms nosaki audzēšanas vietu, auga prasības un vajadzīgo daudzumu; paciņas attēls viens pats nav izvēles pamats."
+      },
+      "sections": [
+        {
+          "id": "ziemas-apskate",
+          "area": "Dārzs ziemā",
+          "heading": "Pēc sniega un vēja izstaigā vienu pārbaudes maršrutu",
+          "when": "Pēc stipras snigšanas, vēja un atkušņa; mierīgā laikā iekļauj apskati savā nedēļas rutīnā.",
+          "paragraphs": [
+            "Ziemas darbi ir īsi, bet tie palīdz laikus pamanīt bojājumus. Ej pa vienu maršrutu: siltumnīca, jaunie koki, podi, glabātava."
+          ],
+          "steps": [
+            "No zemes apskati siltumnīcas segumu un stiprinājumus. Sniegu noņem ar konstrukcijai paredzētu paņēmienu; uz seguma nekāp.",
+            "Pārbaudi, vai podu segumi nav aizpūsti un stumbra aizsargi nav noslīdējuši. Lielu aplūzušu zaru nostiprināšanu uztici speciālistam.",
+            "Sniegu no sālītiem celiņiem nemet uz dobēm vai pie koku saknēm. Atkušņa laikā apskati, kur ūdens aiztek un kur paliek peļķes."
+          ],
+          "avoid": "Neplēs pie zariem piesalušu ledu un nekrati trauslus zarus ar spēku.",
+          "sourceIds": [
+            "winter-trees",
+            "greenhouse"
+          ],
+          "link": {
+            "href": "/raksti/salnas-latvija",
+            "label": "Aukstuma riski dārzā"
+          }
+        },
+        {
+          "id": "glabatavas-rutina",
+          "area": "Raža un puķes",
+          "heading": "Glabātavu pārbaudi arī tad, ja nekas nav jānovāc",
+          "when": "Izvēlies vienu apskates dienu nedēļā; papildus pārbaudi pēc sala, telpas applūšanas vai apkures izmaiņām.",
+          "paragraphs": [
+            "Apskates biežums šeit ir praktisks darba organizēšanas ieteikums. Ja bojājumi jau parādījušies, pārbaudi biežāk un meklē cēloni, nevis gaidi nākamo ierakstu kalendārā."
+          ],
+          "steps": [
+            "Pieraksti temperatūru pie ražas un dāliju kastēm. Salīdzini ar iepriekšējo apskati, īpaši pie ārsienas un grīdas.",
+            "Izņem mīksto vai pūstošo ražu, apskati blakus esošo un sakārto kastes tā, lai gaiss varētu cirkulēt.",
+            "Dālijas pasargā no sasalšanas; sēklu paciņas turi prom no kondensāta. Pie kastēm atstāj etiķetes arī tad, ja tās pārvieto."
+          ],
+          "avoid": "Glabātavas apskate nav tikai durvju atvēršana — pārbaudi arī kastes apakšu un telpas aukstāko vietu.",
+          "sourceIds": [
+            "storage",
+            "dahlias"
+          ],
+          "link": {
+            "href": "/raksti/ka-glabat-dalijas-ziema",
+            "label": "Dāliju glabāšanas problēmas"
+          }
+        },
+        {
+          "id": "seklu-inventarizacija",
+          "area": "Sēklas",
+          "heading": "Izveido sēklu sarakstu ar daudzumu un gala vietu",
+          "when": "Mēneša sākumā vai pirms pirmā pasūtījuma. Darbu var sadalīt pa kultūru grupām divos vakaros.",
+          "paragraphs": [
+            "Sarakstā vajag vairāk nekā šķirņu nosaukumus. Pie katras šķirnes ieraksti, kur tā augs un cik augu vēlies iegūt; tā redzēsi arī liekos pirkumus."
+          ],
+          "steps": [
+            "Izveido ailes: augs, šķirne, iegādes gads, atlikums, plānotais augu skaits, vieta. Nesalasāmas un samirkušas paciņas atliec pārbaudei.",
+            "Atšķir siltumnīcai, dobei un podam paredzētās šķirnes. Pirms pasūtījuma pārbaudi augumu un balstu vajadzību.",
+            "Vispirms pasūti trūkstošo jau ieplānotajām vietām. Vienai jaunai šķirnei rezervē nelielu izmēģinājuma vietu, nevis aizvieto visu pārbaudīto sortimentu."
+          ],
+          "avoid": "Sēklu atlikumu neaprēķini tikai pēc paciņu skaita — vienā var būt simtiem sēklu, citā tikai dažas.",
+          "sourceIds": [
+            "seeds",
+            "january"
+          ],
+          "link": {
+            "href": "/raksti/ka-izveleties-seklas-darzam",
+            "label": "Sēklu izvēles kontroljautājumi"
+          }
+        },
+        {
+          "id": "digtspejas-parbaude",
+          "area": "Sēklas",
+          "heading": "Veic nelielu dīgtspējas pārbaudi ar saskaitītu paraugu",
+          "when": "Pirms pasūtījuma, atstājot laiku konkrētās sugas dīgšanai. Lēni dīgstošām sugām rezultātu nenoslēdz pēc pāris dienām.",
+          "paragraphs": [
+            "Pārbaude palīdz salīdzināt konkrētas partijas. Neliels mājas paraugs ir orientieris, ne sertificēta visas paciņas kvalitātes analīze."
+          ],
+          "steps": [
+            "No vienas partijas izvēlies, piemēram, 20 sēklas. Izkārto uz mitra papīra, marķē šķirni, skaitu un sākuma datumu.",
+            "Uzturi papīru mitru, bet ne peldošu ūdenī; ievēro sugai vajadzīgo gaismu un temperatūru. Apskati regulāri, neļauj paraugam izkalst.",
+            "Kad pagājis šai sugai raksturīgais dīgšanas laiks, saskaiti normāli sadīgušās. Ja sadīgušas 14 no 20, rezultāts ir 70 %. Pieraksti apstākļus līdzās skaitlim."
+          ],
+          "avoid": "Divdesmit sēklu pārbaudei neiztērē visu retās šķirnes atlikumu; mazam paraugam ir lielāka nenoteiktība.",
+          "sourceIds": [
+            "seed-test"
+          ],
+          "link": {
+            "href": "/raksti/ka-glabat-seklas-un-parbaudit-digtspeju",
+            "label": "Dīgtspējas pārbaudes skaidrojums"
+          }
+        },
+        {
+          "id": "dobju-plans",
+          "area": "Plānošana",
+          "heading": "Uzzīmē dobes mērogā un ieraksti iepriekšējās kultūras",
+          "when": "Mēneša vidū, kad sēklu un ražas pieraksti ir apkopoti. Pirms pirkumiem pārbaudi izmērus dabā.",
+          "paragraphs": [
+            "Plāns kļūst izmantojams, kad tajā ir celiņi un reāli augu attālumi. Piemēram, 10 cm rūtiņa plānā var nozīmēt vienu metru dārzā; izvēlies vienu mērogu un pieturies pie tā."
+          ],
+          "steps": [
+            "Atzīmē dobes platumu un garumu, ēnojumu, ūdens punktu un celiņus. Vispirms rezervē vietu pārvietošanai.",
+            "Ieraksti iepriekšējo gadu kultūras. Radniecīgus augus apvieno grupās, lai augu maiņa nebūtu tikai tomātu pārvietošana pēc kartupeļiem.",
+            "Pie katras dobes ieraksti pavasara kultūru un iespējamo turpinājumu pēc ražas. Ziemcietes, ogulājus un siltumnīcu atzīmē atsevišķi."
+          ],
+          "avoid": "Nemēģini katru brīvo centimetru aizpildīt ar augiem — vēlāk vajadzēs piekļūt ravēšanai un novākšanai.",
+          "sourceIds": [
+            "january"
+          ],
+          "link": {
+            "href": "/raksti/augu-maina-darza",
+            "label": "Augu maiņa mazā dārzā"
+          }
+        },
+        {
+          "id": "sejas-datumu-plans",
+          "area": "Dēsti",
+          "heading": "Sastādi sējas plānu no izstādīšanas atpakaļ",
+          "when": "Mēneša beigās, kad zināms, ko audzēsi. Decembrī sagatavo plānu; pavasarī to koriģē pēc vietējiem apstākļiem.",
+          "paragraphs": [
+            "Dažādām kultūrām vajag atšķirīgu laiku: paprikas dēstus parasti audzē ilgāk nekā gurķus. Praktisks plāns satur intervālu, audzēšanas vietu un vietu norūdīšanai."
+          ],
+          "steps": [
+            "Pie katras kultūras izvēlies provizorisku izstādīšanas datumu un noskaidro šķirnes dēstu audzēšanas ilgumu. Dīgšanu neatskaiti vēlreiz, ja ilgums jau dots no sējas.",
+            "Aprēķina piemērs: 1. jūnijs mīnus 8 nedēļas ir 6. aprīlis. Tas ir rēķināšanas piemērs, ne visiem tomātiem vai visai Latvijai ieteikts termiņš.",
+            "Norūdīšanu iekļauj plānā vienreiz. Pārbaudi, cik podu būs jātur telpās, ja pavasaris kavēsies par nedēļu vai divām."
+          ],
+          "avoid": "Uz paciņas norādītās dienas līdz ražai nepārvērt automātiski par dēsta vecumu.",
+          "sourceIds": [
+            "seed-timing",
+            "seed-care",
+            "hardening"
+          ],
+          "link": {
+            "href": "/raksti/kad-set-destus-rekini-atpakal",
+            "label": "Sējas datuma aprēķins ar piemēriem"
+          }
+        },
+        {
+          "id": "piederumu-parbaude",
+          "area": "Piederumi",
+          "heading": "Pārbaudi traukus, gaismu un vietu jau izaugušiem dēstiem",
+          "when": "Pirms lampas, kasetes vai jaunu podu pirkšanas. Šo darbu var pabeigt vienā vakarā.",
+          "paragraphs": [
+            "Sējas kasete ietilpst mazā vietā, bet vēlāk augi būs jāpārstāda un jāizretina. Plāno telpu pēc lielāko podu daudzuma, ne tikai sēšanas dienas."
+          ],
+          "steps": [
+            "Saskaiti veselus podus un paliktņus, pārbaudi drenāžas caurumus un izmazgā lietotos traukus.",
+            "Izvieto tukšos lielākos podus plānotajā audzēšanas vietā. Ja tajā ietilpst 12 podi, 30 siltummīļu stādi prasīs vēl vienu gaišu vietu.",
+            "Pārbaudi lampas un taimera darbību. Pieraksti tikai trūkstošo: traukus, marķierus, substrātu vai apgaismojumu."
+          ],
+          "avoid": "Nepērc vairāk sēklu, lai aizpildītu vēl nesagatavotu palodzi.",
+          "sourceIds": [
+            "seedlings",
+            "tools"
+          ],
+          "link": {
+            "href": "/raksti/destu-audzesana-uz-palodzes",
+            "label": "Gaisma un vieta dēstiem"
+          }
+        }
+      ],
+      "faq": [
+        {
+          "q": "Vai decembrī jau jāpērk visas nākamā gada sēklas?",
+          "a": "Vispirms pārskati atlikumus un audzējamo apjomu. Pērc sarakstam vajadzīgās sēklas, ņemot vērā glabāšanas iespējas. Liels krājums pats par sevi nepadara nākamo sezonu veiksmīgāku."
+        },
+        {
+          "q": "Vai vecās sēklas uzreiz jāizmet?",
+          "a": "Ne tikai vecuma dēļ. Dīgtspēju ietekmē suga un glabāšanas apstākļi. Šaubīgai partijai pārbaudi nelielu paraugu un pieraksti rezultātu; vienas paciņas rezultāts neattiecas uz visām pārējām."
+        },
+        {
+          "q": "Ko darīt atkušņa laikā?",
+          "a": "Pārbaudi ūdens noteci pie podiem un jaunajiem stādījumiem, nostiprini vēja izkustinātos segumus un apskati glabātavu. Ar tehniku un rakšanu neiebrauc slapjās dobēs."
+        },
+        {
+          "q": "Vai visas vecās sēklas jāsēj biezāk?",
+          "a": "Nē. Vispirms noskaidro konkrētās partijas dīgtspēju. Bieza sēja var radīt papildu retināšanu un mitrumu starp dīgstiem. Vājai partijai reizēm izdevīgāk izvēlēties jaunas sēklas."
+        }
+      ],
+      "sourceIds": [
+        "winter-trees",
+        "greenhouse",
+        "storage",
+        "dahlias",
+        "seeds",
+        "january",
+        "seed-test",
+        "seed-timing",
+        "seed-care",
+        "hardening",
+        "seedlings",
+        "tools"
+      ],
+      "timeline": [
+        {
+          "period": "Mēneša sākums · 1.–10.",
+          "focus": "Pārbaudi ziemas stāvokli un apkopo krājumus pirms pasūtījumiem.",
+          "sectionIds": [
+            "ziemas-apskate",
+            "glabatavas-rutina",
+            "seklu-inventarizacija"
+          ]
+        },
+        {
+          "period": "Mēneša vidus · 11.–20.",
+          "focus": "Pārbaudi šaubīgās sēklas un izmēri dobēm un celiņiem pieejamo vietu.",
+          "sectionIds": [
+            "digtspejas-parbaude",
+            "dobju-plans"
+          ]
+        },
+        {
+          "period": "Mēneša beigas · no 21.",
+          "focus": "Aprēķini sējas intervālus un pārliecinies, ka dēstiem pietiks vietas.",
+          "sectionIds": [
+            "sejas-datumu-plans",
+            "piederumu-parbaude"
+          ]
+        }
+      ]
+    }
+  }
+}

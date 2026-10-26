@@ -6,9 +6,12 @@
   "type": "sipolpuke",
   "tagline": "Pirmais īstais pavasara prieks — iestādi rudenī un aizmirsti uz gadiem.",
   "bloom": "Aprīlis–maijs",
-  "bloomMonths": [4, 5],
+  "bloomMonths": [
+    4,
+    5
+  ],
   "height": "15–45 cm",
-  "sun": "Saule / pussēna",
+  "sun": "Saule / pusēna",
   "hardy": true,
   "difficulty": "viegli",
   "plantWhen": "Sīpolus stāda rudenī, sept.–okt.",
@@ -23,7 +26,7 @@
     "Stādi sīpolus rudenī, septembrī–oktobrī, kamēr augsne vēl silta — sīpolam vajag 4–6 nedēļas, lai apsakņotos pirms īstā sala.",
     "Stādīšanas dziļums: aptuveni 2–3 sīpola augstumi, parasti 12–15 cm līdz sīpola pamatnei; mazākiem savvaļas tipiem pietiek ar 8–10 cm.",
     "Atstatums starp sīpoliem 8–12 cm; lai dobe izskatās dabiskāka, stādi grupās pa 5–9 sīpoliem, nevis rindā pa vienam.",
-    "Izvēlies saulainu vai puspēnainu vietu ar labi caurlaidīgu augsni — narcises necieš mitru, applūstošu vietu, kur sīpoli var sapūt.",
+    "Izvēlies saulainu vai pusēnainu vietu ar labi caurlaidīgu augsni — narcises necieš mitru, applūstošu vietu, kur sīpoli var sapūt.",
     "Liec sīpolu ar smailo galu uz augšu un saknīšu plāksnīti uz leju; ja šaubies, kā sīpols turējies, var stādīt sāniski, tas pats izlīdzinās.",
     "Pēc stādīšanas viegli aplaisti, lai augsne piegulst sīpolam, un atzīmē vietu — pavasarī viegli aizmirst, kur tieši kas iestādīts."
   ],
@@ -56,5 +59,8 @@
       "a": "Īsti nē — narcišu sīpoliem vajag aukstuma periodu ziemā, lai pavasarī ziedētu, tāpēc tos stāda rudenī (sept.–okt.). Ja sīpoli palikuši pāri, pavasarī iestādīti tie parasti gadu izlaiž un labi ziedēt sāk tikai nākamajā sezonā."
     }
   ],
-  "related": ["tulpes", "peonijas"]
+  "related": [
+    "tulpes",
+    "peonijas"
+  ]
 }

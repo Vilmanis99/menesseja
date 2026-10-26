@@ -6,7 +6,11 @@
   "type": "kaiteklis",
   "tagline": "Ja jaunās plūmītes vēl zaļas birst zemē ar caurumu sānā, pie vainas ir zāģlapsenes kāpurs — agrāks un slāpekļaināks par plūmju tinēju.",
   "severity": "vidējs",
-  "affects": ["plūmes", "ķiršplūmes (alyča)", "retāk dzeloņplūmes"],
+  "affects": [
+    "plūmes",
+    "ķiršplūmes (aliča)",
+    "retāk dzeloņplūmes"
+  ],
   "signs": [
     "Tikko aizmetušās, vēl zaļas plūmītes priekšlaicīgi birst zemē, sākot drīz pēc ziedēšanas.",
     "Nokritušajā augļa sānā — apaļš ieejas caurums ar tumšiem, mitriem, smirdīgiem izkārnījumiem (atšķirībā no tinēja, kura skaidas ir sausas).",
@@ -40,10 +44,25 @@
     "heading": "Citu augu zāģlapsenes",
     "intro": "Zāģlapsenes (Symphyta) ir plaša lapsenveidīgo grupa, un katra suga parasti specializējas uz savu augu. Nosaukums cēlies no mātītes zāģveida dējekļa, ar ko tā iegriež audos olas. Dārzā biežāk sastopamas trīs:",
     "items": [
-      { "name": "Plūmju zāģlapsene", "note": "bojā tieši plūmes — kāpurs iegraužas vēl zaļās plūmītēs uzreiz pēc ziedēšanas, un augļi priekšlaicīgi birst. Tieši par to ir šī lapa." },
-      { "name": "Ērkšķogu (jāņogu) zāģlapsene", "note": "uzbrūk lapām, nevis augļiem — zaļgani kāpuri ar tumšiem punktiņiem dažās dienās var noēst krūmu kailu līdz dzīslām, īpaši lapu apakšpusē.", "href": "/augi/erkskogas" },
-      { "name": "Jāņogu zāģlapsene", "note": "rīkojas tāpat kā ērkšķogu radiniece, noēdot sarkano un balto jāņogu lapas; kāpuri sākas no krūma vidus un izplatās uz āru.", "href": "/augi/janogas" },
-      { "name": "Rožu zāģlapsene", "note": "skar rozes — kāpuri grauž lapas vai (lejupejošā paveidā) ietin un noēd jaunās dzinumu galotnes, padarot lapas caurumainas un saritinātas.", "href": "/pukes/rozes" }
+      {
+        "name": "Plūmju zāģlapsene",
+        "note": "bojā tieši plūmes — kāpurs iegraužas vēl zaļās plūmītēs uzreiz pēc ziedēšanas, un augļi priekšlaicīgi birst. Tieši par to ir šī lapa."
+      },
+      {
+        "name": "Ērkšķogu (jāņogu) zāģlapsene",
+        "note": "uzbrūk lapām, nevis augļiem — zaļgani kāpuri ar tumšiem punktiņiem dažās dienās var noēst krūmu kailu līdz dzīslām, īpaši lapu apakšpusē.",
+        "href": "/augi/erkskogas"
+      },
+      {
+        "name": "Jāņogu zāģlapsene",
+        "note": "rīkojas tāpat kā ērkšķogu radiniece, noēdot sarkano un balto jāņogu lapas; kāpuri sākas no krūma vidus un izplatās uz āru.",
+        "href": "/augi/janogas"
+      },
+      {
+        "name": "Rožu zāģlapsene",
+        "note": "skar rozes — kāpuri grauž lapas vai (lejupejošā paveidā) ietin un noēd jaunās dzinumu galotnes, padarot lapas caurumainas un saritinātas.",
+        "href": "/pukes/rozes"
+      }
     ]
   },
   "faq": [

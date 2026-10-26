@@ -7,7 +7,7 @@
   "shortAnswer": "Pirmais dārza gads var likties biedējošs.  Ir tik daudz padomu, kalendāru un noteikumu, ka galva sāk reibt.",
   "primaryQuery": "dārza plānošana iesācējam: pirmie soļi",
   "publishedAt": "2026-06-04",
-  "updatedAt": "2026-06-04",
+  "updatedAt": "2026-10-26",
   "entities": {},
   "sources": [
     {
@@ -32,7 +32,7 @@
       "paragraphs": [
         "Pirms domā par sēklām, paskaties uz savu dārzu. Lielākajai daļai dārzeņu vajag vismaz 6 stundas saules dienā. Tomātiem, gurķiem un paprikai saule ir īpaši svarīga — bez tās tie aug gari un vārgi. Salāti un dažas zaļumlapas labāk panes daļēju ēnu, tāpēc tos vari iestādīt vietā, kur saule nav visu dienu.",
         "Saliec uz papīra vai telefonā vienkāršu dobju plānu. Nav jābūt skaistam — pietiek ar taisnstūriem un augu nosaukumiem. Atceries, ka augstajiem augiem (tomātiem, pupām) jābūt ziemeļu pusē, lai tie neaizēno zemākos kaimiņus.",
-        "Padomā arī par seku rotāciju: nestādī vienā un tajā pašā vietā to pašu ģimeni gadu pēc gada. Piemēram, kur šogad auga kartupeļi vai tomāti, nākamgad labāk liec ķiplokus vai burkānus. Tas palīdz augsnei un samazina slimības."
+        "Padomā arī par augu maiņu: nestādi vienā un tajā pašā vietā to pašu ģimeni gadu pēc gada. Piemēram, kur šogad auga kartupeļi vai tomāti, nākamgad labāk liec ķiplokus vai burkānus. Tas palīdz augsnei un samazina slimības."
       ]
     },
     {
@@ -61,7 +61,7 @@
     {
       "heading": "Pirmie soļi kopsavilkumā",
       "paragraphs": [
-        "Sāc maz: izvēlies 3–4 augus, piemēram, salātus, burkānus, ķiplokus un dažus tomātu stādus. Uzzīmē vienkāršu dobju plānu, ievērojot sauli un seku rotāciju. Gaidi, līdz salnas garām un augsne sasilusi, un tikai tad stādi jutīgos augus.",
+        "Sāc maz: izvēlies 3–4 augus, piemēram, salātus, burkānus, ķiplokus un dažus tomātu stādus. Uzzīmē vienkāršu dobju plānu, ievērojot sauli un augu maiņu. Gaidi, līdz salnas garām un augsne sasilusi, un tikai tad stādi jutīgos augus.",
         "Mēness kalendāru izmanto kā jauku tradīciju, kas dod ritmu, nevis kā stingru likumu. Galvenais — sper pirmo soli un mācies darot. Katrs dārznieks reiz bija iesācējs, un tava pirmā pašaudzētā tomāta garša būs vērta visu pūļu."
       ]
     }

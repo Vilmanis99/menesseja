@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import type { ContentImageUse } from "./content-images";
 import type { RecipePhase, RecipeElement } from "./recipes";
 
 /** Ornamental-flower content type. The single biggest traffic category in the
@@ -11,6 +12,7 @@ export type FlowerType = "daudzgadiga" | "sipolpuke" | "viengadiga" | "krums";
 
 export interface Flower {
   slug: string;
+  image?: ContentImageUse;
   name: string; // Latvian
   latin?: string;
   /** Optional head-term SEO overrides — for pillar pages chasing a big query

@@ -1,4 +1,7 @@
 import Link from "next/link";
+import type { Metadata } from "next";
+import { CalendarNavigation } from "@/components/calendar-navigation";
+import { MonthChecklist, MonthPreparation } from "@/components/month-preparation";
 import { PageHeader } from "@/components/ui/page-header";
 import { Card } from "@/components/ui/card";
 import { Icon } from "@/components/ui/icon";
@@ -17,6 +20,11 @@ import { MONTH_SLUGS, CALENDAR_YEARS, MONTH_TIPS, MONTHS_LV_LOCATIVE, canonical,
 
 // The month block below is dated, so the prerendered HTML must not go stale.
 export const revalidate = 3600;
+
+export function generateMetadata(): Metadata {
+  const { year } = latviaDateParts();
+  return { title: `Mēness kalendārs ${year} — fāzes un sējas dienas Latvijā` };
+}
 
 const SOW_KEYS = ["sowIndoors", "sowOutdoors", "transplant"] as const;
 const ELEMENTS: Element[] = ["zeme", "udens", "gaiss", "uguns"];
@@ -65,7 +73,7 @@ export default function KalendarsPage() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    name: `Mēness kalendārs — ${year}. gada ${nameGen}`,
+    name: `${year}. gada ${nameGen} Mēness kalendārs`,
     inLanguage: "lv",
     description: `Mēness fāzes, elementu dienas un labākās sēšanas dienas ${nameLoc} Latvijā.`,
     isPartOf: { "@type": "WebSite", name: SITE_NAME, url: canonical("/") },
@@ -77,10 +85,12 @@ export default function KalendarsPage() {
 
       <PageHeader
         eyebrow="Senču gudrība · Maria Thun"
-        title="Mēness sējas kalendārs"
+        title={`Mēness kalendārs ${year}`}
         display
         subtitle={`${nameFull} ${year} · Mēness fāzes un sezonas darbi Latvijā`}
       />
+
+      <CalendarNavigation year={year} month={month} overview />
 
       <p className="mb-lg max-w-2xl text-body-lg text-on-surface-variant">
         Šodien, {today.day}. {nameLoc}, ir {today.moon.name.toLowerCase()}.
@@ -179,7 +189,9 @@ export default function KalendarsPage() {
         </p>
       </section>
 
+      <MonthChecklist month={month} />
       <SeasonalLinks month={month} />
+      <MonthPreparation month={month} />
 
       <section className="mb-lg">
         <h2 className="mb-sm text-headline-md text-on-surface">Visi mēneši</h2>

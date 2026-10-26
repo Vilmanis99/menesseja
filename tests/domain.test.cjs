@@ -12,10 +12,29 @@ require.extensions[".ts"] = (module, filename) => {
   module._compile(result.outputText, filename);
 };
 const { latviaDateParts, latviaDateKey } = require("../lib/day-anchor.ts");
-const { moonForDate, moonPhasesForMonth, nextPrincipalPhases } = require("../lib/moon.ts");
+const { moonForDate, moonPhasesForMonth, nextPrincipalPhases, principalPhasesOnDate } = require("../lib/moon.ts");
 const { seasonalLinks, seasonForMonth, monthCalendarHref } = require("../lib/seasonal.ts");
 const { track, ANALYTICS_CONSENT_KEY } = require("../lib/analytics.ts");
 const { subscribeToNewsletter } = require("../lib/brevo.ts");
+const { sowingDay } = require("../lib/biodynamic.ts");
+const { adjacentMonth } = require("../lib/seasonal.ts");
+const { monthPlan } = require("../lib/month-plan.ts");
+
+test("daily advice respects the season even on a fruit day and across Riga New Year", () => {
+  const october = sowingDay(new Date("2026-10-26T10:00:00Z"));
+  assert.equal(october.part, "augli");
+  assert.match(october.advice, /ķiplokus un tulpes/);
+  assert.doesNotMatch(october.advice, /tomāti|pupas|ķirbji/);
+  assert.match(sowingDay(new Date("2026-11-10T10:00:00Z")).advice, /glabāto ražu/);
+  assert.match(sowingDay(new Date("2026-12-31T22:30:00Z")).advice, /dīgtspēju/);
+  assert.equal(adjacentMonth(2026, 12, 1).href, "/kalendars/2027/janvaris");
+  assert.equal(adjacentMonth(2027, 1, -1).href, "/kalendars/2026/decembris");
+  assert.equal(adjacentMonth(2027, 12, 1).href, "/ko-set/janvaris");
+  for (let month = 1; month <= 12; month++) {
+    assert.ok(monthPlan(month).prepare && monthPlan(month).supplies);
+  }
+  assert.throws(() => monthPlan(13), RangeError);
+});
 
 // Independent USNO UTC fixtures, including DST and near-midnight events.
 // https://aa.usno.navy.mil/calculated/moon/phases?year=2026
@@ -71,6 +90,16 @@ test("daily phase is consistent within a Riga day and next events start after th
   const from = new Date("2026-10-10T16:00:00Z");
   assert.equal(nextPrincipalPhases(from)[0].name, "Pirmais ceturksnis");
   assert.ok(nextPrincipalPhases(from).every((p) => p.date > from));
+});
+
+test("today's full moon remains visible before and after its instant, but not on adjacent Riga days", () => {
+  for (const iso of ["2026-10-25T22:30:00Z", "2026-10-26T20:00:00Z"]) {
+    const full = principalPhasesOnDate(new Date(iso)).find((p) => p.frac === 0.5);
+    assert.ok(full, iso);
+    assert.ok(Math.abs(full.date - new Date("2026-10-26T04:12:00Z")) < 120_000);
+  }
+  assert.equal(principalPhasesOnDate(new Date("2026-10-26T22:30:00Z")).length, 0);
+  assert.ok(principalPhasesOnDate(new Date("2027-02-20T23:30:00Z")).some((p) => p.frac === 0.5));
 });
 
 test("Riga month/year and calendar links roll over independently of server timezone", () => {

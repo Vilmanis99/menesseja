@@ -7,7 +7,7 @@
   "shortAnswer": "Ja tev uz palodzes jau stiepjas dēsti un tu domā, kad tos beidzot drīkst izstādīt dārzā, iesāksim ar pašu galveno.  Zelta likums ir vienkāršs: jutīgos, siltumu mīlošos augus — tomātus, gurķus, ķirbjus, papriku — laukā stādi tikai pēc tam, kad pēdējā pavasara salna ir garām.",
   "primaryQuery": "kad stādīt dēstus laukā Latvijā",
   "publishedAt": "2026-06-17",
-  "updatedAt": "2026-06-17",
+  "updatedAt": "2026-10-26",
   "entities": {
     "crops": [
       "gurki",
@@ -65,7 +65,7 @@
     {
       "heading": "Ja draud vēla salna: agrotīkls un pārklāji",
       "paragraphs": [
-        "Dažkārt sanāk tā, ka dēsti jau zemē, bet prognoze pēkšņi sola aukstu nakti ar nulli vai mīnusu. Nekrīti panikā — augus var pasargāt. Vienkāršākais palīgs ir agrotīkls jeb agroplēve: viegls baltsdrāniņas pārsegs, ko uzklāj pār dēstiem vakarā un noņem no rīta, kad sasilis. Tas notur pie zemes dienā uzkrāto siltumu un pasargā lapas no apsalšanas par dažiem grādiem — bieži ar to pietiek, lai pārlaistu vienu aukstu nakti.",
+        "Dažkārt sanāk tā, ka dēsti jau zemē, bet prognoze pēkšņi sola aukstu nakti ar nulli vai mīnusu. Nekrīti panikā — augus var pasargāt. Vienkāršākais palīgs ir agrotīkls jeb agroplēve: viegls balts neaustā materiāla pārsegs, ko uzklāj pār dēstiem vakarā un noņem no rīta, kad sasilis. Tas notur pie zemes dienā uzkrāto siltumu un pasargā lapas no apsalšanas par dažiem grādiem — bieži ar to pietiek, lai pārlaistu vienu aukstu nakti.",
         "Ja agrotīkla nav, der arī citi paņēmieni. Atsevišķus dēstus var pārsegt ar apgrieztu spaini, kartona kasti vai stikla burku, vai apkārt sastādīt nelielus stiebriņus un uzmest virsū vecu palagu. Galvenais — pārsegs nedrīkst saskarties ar lapām, tāpēc lielākiem augiem uzliec stiprinājumus. Labi palīdz arī augsne, kas izmirkusi: mitra zeme naktī izstaro vairāk siltuma nekā sausa, tāpēc vakarā pirms salnas dārzu vari viegli aplaistīt. No rīta pārsegus noņem, lai augi neuzkarst un dabū gaismu."
       ]
     },

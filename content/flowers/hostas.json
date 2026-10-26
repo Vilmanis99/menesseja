@@ -6,9 +6,12 @@
   "type": "daudzgadiga",
   "tagline": "Ēnas karaliene — augs, kas krāšņs ne ar ziediem, bet ar lapām, un padara skaistu pat tumšāko dārza stūri.",
   "bloom": "Jūlijs–augusts (audzē galvenokārt lapu dēļ)",
-  "bloomMonths": [7, 8],
+  "bloomMonths": [
+    7,
+    8
+  ],
   "height": "20–80 cm",
-  "sun": "Pussēna",
+  "sun": "Pusēna",
   "hardy": true,
   "difficulty": "viegli",
   "plantWhen": "Stāda vai dala pavasarī (apr.–maijs) vai augustā",
@@ -55,5 +58,10 @@
       "a": "Nemaz nav obligāti — hosta vienā vietā labi dzīvo 10–20 gadus. Dala tikai tad, ja gribi jaunus stādus, pavasarī vai augustā, izrokot un sagriežot ar lāpstu."
     }
   ],
-  "related": ["astilbes", "begonijas", "floksi", "peonijas"]
+  "related": [
+    "astilbes",
+    "begonijas",
+    "floksi",
+    "peonijas"
+  ]
 }

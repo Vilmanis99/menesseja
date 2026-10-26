@@ -12,7 +12,8 @@
  */
 
 import type { Category } from "@/lib/planting-crops";
-import { dayAnchor } from "@/lib/day-anchor";
+import { dayAnchor, latviaDateParts } from "./day-anchor";
+import { monthPlan } from "./month-plan";
 
 export type Element = "zeme" | "udens" | "gaiss" | "uguns";
 export type PlantPart = "saknes" | "lapas" | "ziedi" | "augli";
@@ -175,13 +176,6 @@ export const PART_GENITIVE: Record<PlantPart, string> = {
   augli: "Augļu",
 };
 
-const ADVICE: Record<PlantPart, string> = {
-  saknes: "Sakņu diena — labākais laiks sakņaugiem (burkāni, bietes, kartupeļi).",
-  lapas: "Lapu diena — sēj un kopj lapu dārzeņus un garšaugus.",
-  ziedi: "Ziedu diena — piemērota ziedaugiem un ogu krūmu kopšanai.",
-  augli: "Augļu diena — sēj augļus un sēklas (tomāti, pupas, ķirbji).",
-};
-
 export function sowingDay(date: Date = new Date()): SowingDay {
   const sign = moonSign(date);
   const meta = ELEMENT_META[sign.element];
@@ -191,7 +185,7 @@ export function sowingDay(date: Date = new Date()): SowingDay {
     element: sign.element,
     part: meta.part,
     partLabel: meta.partLabel,
-    advice: ADVICE[meta.part],
+    advice: `${PART_GENITIVE[meta.part]} diena biodinamiskajā tradīcijā. ${monthPlan(latviaDateParts(date).month).action}`,
     favours: PART_FAVOURS[meta.part],
   };
 }

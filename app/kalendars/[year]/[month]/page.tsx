@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { CalendarNavigation } from "@/components/calendar-navigation";
+import { MonthChecklist, MonthPreparation } from "@/components/month-preparation";
+import { CalendarMonthGuide, CalendarWorkPlan } from "@/components/calendar-month-guide";
 import { notFound } from "next/navigation";
 import { Card } from "@/components/ui/card";
 import { Icon } from "@/components/ui/icon";
@@ -10,14 +13,17 @@ import { moonForDate, moonPhasesForMonth } from "@/lib/moon";
 import { SeasonalLinks } from "@/components/seasonal-links";
 import { sowingDay, isRestDay, ELEMENT_META, PART_GENITIVE, type Element } from "@/lib/biodynamic";
 import { latviaNoon } from "@/lib/day-anchor";
+import { calendarGuide, CALENDAR_GUIDES_UPDATED_AT } from "@/lib/calendar-guides";
+import { contentImage } from "@/lib/content-images";
+import { MONTH_GUIDES } from "@/lib/month-guides";
 import { namedaysForDay } from "@/lib/vardadienas";
 import { PrintButton } from "@/components/print-button";
 import { cropPart } from "@/lib/crop-part";
 import { cropHref } from "@/lib/flowers";
 import { cropEmoji } from "@/lib/crop-visual";
-import { CROPS, MONTHS_LV_FULL, MONTHS_LV_GENITIVE, ACTIVITY_KEYS } from "@/lib/planting-crops";
+import { CROPS, MONTHS_LV_FULL, MONTHS_LV_GENITIVE } from "@/lib/planting-crops";
 import { REGIONS } from "@/lib/regions";
-import { MONTH_SLUGS, monthFromSlug, CALENDAR_YEARS, MONTH_TIPS, MONTHS_LV_LOCATIVE, canonical, SITE_NAME } from "@/lib/seo";
+import { MONTH_SLUGS, monthFromSlug, CALENDAR_YEARS, MONTHS_LV_LOCATIVE, canonical, SITE_NAME, og } from "@/lib/seo";
 
 export const dynamicParams = false;
 
@@ -44,13 +50,14 @@ export async function generateMetadata({
   if (!p) return {};
   const nameGen = MONTHS_LV_GENITIVE[p.month - 1];
   // Title targets both "dārza darbu kalendārs [mēnesis]" (dominant LV phrase) and "mēness kalendārs".
-  const title = `Dārza darbu un Mēness kalendārs — ${year}. gada ${nameGen}`;
-  const description = `Ko darīt dārzā ${year}. gada ${MONTHS_LV_LOCATIVE[p.month - 1]}: dārza darbi, ko sēt un stādīt, Mēness fāzes, sēšanas dienas pēc elementiem (saknes, lapas, ziedi, augļi), vārda dienas un nelabvēlīgās dienas.`;
+  const title = `${year}. gada ${nameGen} dārza darbu un Mēness kalendārs`;
+  const guide = calendarGuide(p.month);
+  const description = `${year}. gads. ${guide.description}`;
   return {
     title,
     description,
     alternates: { canonical: canonical(`/kalendars/${year}/${month}`) },
-    openGraph: { title, description, type: "article" },
+    openGraph: og({ path: `/kalendars/${year}/${month}`, title, description, image: contentImage(guide.image.id).src }),
   };
 }
 
@@ -81,8 +88,9 @@ export default async function MonthCalendarPage({
   const name = MONTHS_LV_FULL[month - 1]; // nominative — for standalone "Mēnesis Gads" stamps
   const nameGen = MONTHS_LV_GENITIVE[month - 1]; // "...gada jūnija"
   const nameLoc = MONTHS_LV_LOCATIVE[month - 1]; // "jūnijā" — "in June"
+  const guide = calendarGuide(month);
 
-  const count = new Date(year, month, 0).getDate();
+  const count = new Date(Date.UTC(year, month, 0)).getUTCDate();
   const days = Array.from({ length: count }, (_, i) => {
     // latviaNoon → classification is identical no matter the build server's TZ
     const date = latviaNoon(year, month, i + 1);
@@ -96,14 +104,17 @@ export default async function MonthCalendarPage({
     };
   });
 
-  const keyPhases = moonPhasesForMonth(year, month).filter((p) => p.frac === 0 || p.frac === 0.5);
+  const keyPhases = moonPhasesForMonth(year, month);
 
   const elements: Element[] = ["zeme", "udens", "gaiss", "uguns"];
 
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    name: `Mēness sējas kalendārs — ${year}. gada ${nameGen}`,
+    name: `${year}. gada ${nameGen} Mēness sējas kalendārs`,
+    description: guide.description,
+    dateModified: CALENDAR_GUIDES_UPDATED_AT,
+    image: canonical(contentImage(guide.image.id).src),
     inLanguage: "lv",
     isPartOf: { "@type": "WebSite", name: SITE_NAME, url: canonical("/") },
     publisher: { "@type": "Organization", name: SITE_NAME, url: canonical("/") },
@@ -122,7 +133,7 @@ export default async function MonthCalendarPage({
   const next = adj(1);
 
   return (
-    <article className="mx-auto max-w-3xl">
+    <article className="month-calendar mx-auto max-w-3xl">
       <JsonLd data={jsonLd} />
 
       <nav className="mb-md flex items-center gap-1 text-label-sm text-on-surface-variant print:hidden">
@@ -137,8 +148,7 @@ export default async function MonthCalendarPage({
           Dārza darbu kalendārs — {name} {year}
         </h1>
         <p className="mt-xs max-w-2xl text-body-lg text-on-surface-variant">
-          Ko darīt dārzā {year}. gada {nameLoc} saskaņā ar Mēnesi: dārza darbi, ko sēt un stādīt, katras dienas
-          Mēness fāze, elementu diena, vārda dienas un nelabvēlīgās dienas Latvijas dārzkopjiem.
+          {guide.description}
         </p>
         <div className="mt-sm print:hidden">
           <PrintButton />
@@ -148,20 +158,34 @@ export default async function MonthCalendarPage({
         </div>
       </header>
 
+      <CalendarNavigation year={year} month={month} />
+
+      <nav aria-label="Mēneša kalendāra sadaļas" className="mb-md flex flex-wrap gap-2 print:hidden">
+        {[
+          { href: "#menesa-darbi", label: "Praktiskais ceļvedis" },
+          { href: "#meness-fazes", label: "Mēness fāzes" },
+          { href: "#seja-stadisana", label: "Sēja un stādīšana" },
+          { href: "#visas-dienas", label: "Dienu tabula" },
+        ].map((link) => <a key={link.href} href={link.href} className="inline-flex min-h-11 items-center rounded-full border border-outline-variant/30 px-4 text-label-md text-primary hover:bg-surface-container">{link.label}</a>)}
+      </nav>
+
       {/* Seasonal tasks + folklore — unique per month */}
-      <Card tone="high" elevated linen className="mb-lg flex items-start gap-sm p-md">
+      <Card tone="high" elevated linen className="month-summary mb-lg flex items-start gap-sm p-md">
         <Icon name="eco" className="text-primary" />
         <div>
           <h2 className="mb-1 text-headline-md text-on-surface">Dārza darbi {nameLoc}</h2>
-          <p className="text-body-md text-on-surface-variant">{MONTH_TIPS[month - 1]}</p>
+          <p className="text-body-md leading-relaxed text-on-surface-variant">{MONTH_GUIDES[month]?.shortAnswer}</p>
         </div>
       </Card>
 
+      <CalendarWorkPlan month={month} />
+
       {/* Key phases */}
-      <div className="mb-sm grid grid-cols-1 gap-md sm:grid-cols-2">
+      <h2 id="meness-fazes" className="mb-sm scroll-mt-24 text-headline-md text-on-surface">Mēness fāzes {nameLoc}</h2>
+      <div className="month-phases mb-sm grid grid-cols-1 gap-md sm:grid-cols-2">
         {keyPhases.map((p) => (
           <Card key={p.date.toISOString()} tone="high" elevated className="flex items-center gap-md p-md">
-            <MoonPhase phase={p.frac} size={52} />
+            <MoonPhase phase={p.frac} size={52} idPrefix={`calendar-phase-${p.date.getTime()}`} />
             <div>
               <p className="text-label-sm uppercase tracking-wide text-on-surface-variant">{p.name}</p>
               <p className="text-headline-md text-on-surface">{PHASE_DATE_FMT.format(p.date)}</p>
@@ -170,44 +194,54 @@ export default async function MonthCalendarPage({
           </Card>
         ))}
       </div>
-      <p className="mb-lg text-label-sm text-on-surface-variant">Fāžu maiņas norādītas pēc Latvijas laika; dienu tabulā fāze aprēķināta plkst. 10.00 UTC.</p>
+      <p className="month-phase-note mb-lg text-label-sm text-on-surface-variant">Fāžu maiņas norādītas pēc Latvijas laika; dienu tabulā fāze aprēķināta plkst. 10.00 UTC.</p>
 
-      <SeasonalLinks month={month} />
+      <CalendarMonthGuide month={month} />
 
       {/* What to sow this month, by element */}
-      <h2 className="mb-sm text-headline-md text-on-surface">Ko sēt {nameLoc}</h2>
-      <div className="mb-lg grid grid-cols-1 gap-2 sm:grid-cols-2">
-        {elements.map((e) => {
-          const meta = ELEMENT_META[e];
-          const crops = sowableThisMonth(e, month).slice(0, 8);
-          if (!crops.length) return null;
-          return (
-            <Card key={e} tone="container" className="p-sm">
-              <p className="mb-1 flex items-center gap-1.5 text-label-md text-on-surface">
-                <Icon name={meta.icon} size="16px" className={meta.color} /> {PART_GENITIVE[meta.part]} dienās
-              </p>
-              <div className="flex flex-wrap gap-1.5">
-                {crops.map((c) => (
-                  <Link key={c.id} href={cropHref(c.id)} className="rounded-full bg-background/50 px-2 py-0.5 text-label-sm text-on-surface hover:text-primary">
-                    {cropEmoji(c.id)} {c.name}
-                  </Link>
-                ))}
-              </div>
-            </Card>
-          );
-        })}
+      <div className="print:hidden">
+        <h2 id="seja-stadisana" className="mb-sm scroll-mt-24 text-headline-md text-on-surface">Ko sēt un stādīt {nameLoc}</h2>
+        <p className="mb-sm text-body-md text-on-surface-variant">Sarakstā apvienota sēja telpās, sēja dobēs un izstādīšana. Atver auga ceļvedi, lai pārbaudītu konkrēto darbu un apstākļus; elementu diena neatceļ temperatūras vai salnu ierobežojumus.</p>
+        {!elements.some((element) => sowableThisMonth(element, month).length > 0) && (
+          <p className="mb-md text-body-md text-on-surface-variant">
+            Šī mēneša sarakstā nav sējamu vai izstādāmu kultūru. Izmanto laiku sagatavošanās darbiem;
+            sēju telpās plāno pēc konkrētās šķirnes, gaismas un temperatūras prasībām.
+            {" "}<Link href={`/ko-set/${mSlug}`} className="text-primary hover:underline">Skaties mēneša darbu ceļvedi.</Link>
+          </p>
+        )}
+        <div className="mb-lg grid grid-cols-1 gap-2 sm:grid-cols-2">
+          {elements.map((e) => {
+            const meta = ELEMENT_META[e];
+            const crops = sowableThisMonth(e, month).slice(0, 8);
+            if (!crops.length) return null;
+            return (
+              <Card key={e} tone="container" className="p-sm">
+                <p className="mb-1 flex items-center gap-1.5 text-label-md text-on-surface">
+                  <Icon name={meta.icon} size="16px" className={meta.color} /> {PART_GENITIVE[meta.part]} dienās
+                </p>
+                <div className="flex flex-wrap gap-1.5">
+                  {crops.map((c) => (
+                    <Link key={c.id} href={cropHref(c.id)} className="inline-flex min-h-11 items-center rounded-full bg-background/50 px-3 text-label-sm text-on-surface hover:text-primary">
+                      {cropEmoji(c.id)} {c.name}
+                    </Link>
+                  ))}
+                </div>
+              </Card>
+            );
+          })}
+        </div>
       </div>
 
       {/* Day-by-day table */}
-      <h2 className="mb-sm text-headline-md text-on-surface">Visas dienas</h2>
-      <Card tone="low" elevated className="mb-lg divide-y divide-outline-variant/10 p-0">
+      <h2 id="visas-dienas" className="mb-sm scroll-mt-24 text-headline-md text-on-surface">Visas dienas — {name} {year}</h2>
+      <Card tone="low" elevated className="month-day-table mb-lg divide-y divide-outline-variant/10 p-0">
         {days.map((d) => {
           const meta = ELEMENT_META[d.sow.element];
           return (
-            <div key={d.day} className="flex items-center gap-3 px-md py-2">
-              <span className="w-8 text-body-md font-semibold text-on-surface">{d.day}.</span>
-              <MoonPhase phase={d.moon.phase} size={26} glow={false} />
-              <span className="w-28 text-label-sm text-on-surface-variant">{d.moon.name}</span>
+            <div key={d.day} className="flex items-center gap-2 px-sm py-2 sm:gap-3 sm:px-md print:break-inside-avoid">
+              <span className="w-7 shrink-0 text-body-md font-semibold text-on-surface">{d.day}.</span>
+              <MoonPhase phase={d.moon.phase} size={26} glow={false} idPrefix={`calendar-day-${d.day}`} />
+              <span className="w-24 shrink-0 text-label-sm text-on-surface-variant sm:w-28">{d.moon.name}</span>
               {d.rest ? (
                 <span className="flex items-center gap-1 text-label-sm text-on-surface-variant">
                   <Icon name="block" size="14px" /> Atpūtas diena
@@ -227,6 +261,13 @@ export default async function MonthCalendarPage({
           );
         })}
       </Card>
+      <p className="hidden print:block print:text-[10px]">Mēness sēja ir tradīcija; darbus pielāgo laikapstākļiem un augsnei. menesseja.lv/kalendars/{year}/{mSlug}</p>
+
+      <div className="print:hidden">
+        <MonthChecklist month={month} />
+        <SeasonalLinks month={month} />
+        <MonthPreparation month={month} />
+      </div>
 
       {/* Prev / next month navigation */}
       <nav className="mb-md flex items-center justify-between gap-2 border-y border-outline-variant/10 py-sm print:hidden">

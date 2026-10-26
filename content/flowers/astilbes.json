@@ -6,9 +6,13 @@
   "type": "daudzgadiga",
   "tagline": "Pūkainās ziedu skaras ēnainajam un mitrajam dārza stūrim — tur, kur citas puķes padodas, astilbe plaukst.",
   "bloom": "Jūnijs–augusts",
-  "bloomMonths": [6, 7, 8],
+  "bloomMonths": [
+    6,
+    7,
+    8
+  ],
   "height": "40–100 cm",
-  "sun": "Pussēna",
+  "sun": "Pusēna",
   "hardy": true,
   "difficulty": "viegli",
   "plantWhen": "Stāda vai dala pavasarī (apr.–maijs) vai augusta beigās",
@@ -54,5 +58,10 @@
       "a": "Reizi 4–6 gados, pavasarī (aprīlī) vai augusta beigās. Izrok puduri, sagriez ar lāpstu vai nazi daļās ar 2–3 pumpuriem un izstādi mitrā, barojošā vietā."
     }
   ],
-  "related": ["hostas", "floksi", "begonijas", "rudbekijas"]
+  "related": [
+    "hostas",
+    "floksi",
+    "begonijas",
+    "rudbekijas"
+  ]
 }

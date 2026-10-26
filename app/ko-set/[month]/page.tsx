@@ -11,6 +11,7 @@ import { cropEmoji } from "@/lib/crop-visual";
 import { MONTH_SLUGS, monthFromSlug, MONTH_TIPS, MONTHS_LV_LOCATIVE, canonical, SITE_NAME, og } from "@/lib/seo";
 import { MONTH_GUIDES } from "@/lib/month-guides";
 import { TrackedLink } from "@/components/tracked-link";
+import { MonthPreparation } from "@/components/month-preparation";
 import { SeasonalLinks } from "@/components/seasonal-links";
 import { monthCalendarHref, SEASONAL_LINKS_UPDATED_AT } from "@/lib/seasonal";
 
@@ -25,13 +26,13 @@ const GROUPS: { key: ActivityKey; title: string; icon: string }[] = [
   { key: "sowIndoors", title: "Sēt telpās dēstiem", icon: "yard" },
   { key: "sowOutdoors", title: "Sēt tieši laukā", icon: "grass" },
   { key: "transplant", title: "Stādīt laukā", icon: "potted_plant" },
-  { key: "harvest", title: "Novākt", icon: "agriculture" },
+  { key: "harvest", title: "Novākt ražu", icon: "agriculture" },
 ];
 
 function cropsFor(key: ActivityKey, month: number) {
   return CROPS.filter((c) => {
     const r = c[key];
-    return r && month >= r[0] && month <= r[1];
+    return r && month >= r[0] && month <= r[1] && (key !== "harvest" || c.category !== "pukes");
   });
 }
 
@@ -67,7 +68,7 @@ export default async function KoSetPage({ params }: { params: Promise<{ month: s
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: `Ko sēt ${name} Latvijā`,
+    headline: `Ko sēt ${MONTHS_LV_LOCATIVE[month - 1]} Latvijā`,
     inLanguage: "lv",
     dateModified: guide?.updatedAt && guide.updatedAt > SEASONAL_LINKS_UPDATED_AT ? guide.updatedAt : SEASONAL_LINKS_UPDATED_AT,
     isPartOf: { "@type": "WebSite", name: SITE_NAME, url: canonical("/") },
@@ -163,6 +164,7 @@ export default async function KoSetPage({ params }: { params: Promise<{ month: s
         ))}
       </div>
 
+      <MonthPreparation month={month} />
       <DataNote variant="planting" withSources className="mb-md" />
 
       <Card tone="container" className="mb-md flex items-center gap-md p-md">

@@ -126,7 +126,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
     <AuthProvider>
       <RegionProvider>
         <GardenProvider>
-          <a href="#main-content" className="fixed left-3 top-3 z-[400] -translate-y-24 rounded-lg bg-primary px-4 py-3 text-label-md font-semibold text-on-primary transition-transform focus:translate-y-0">Pāriet uz galveno saturu</a>
+          <a href="#main-content" className="fixed left-3 top-3 z-[400] -translate-y-24 rounded-lg bg-primary px-4 py-3 text-label-md font-semibold text-on-primary transition-transform focus:translate-y-0 print:hidden">Pāriet uz galveno saturu</a>
           <Sidebar />
           <TopBar onMenu={() => setMenuOpen(true)} />
           <div className="app-mobile-content mx-auto max-w-container-max px-gutter py-md md:ml-64 md:py-lg print:m-0 print:max-w-none print:p-0">

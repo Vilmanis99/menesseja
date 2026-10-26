@@ -8,6 +8,8 @@ interface MoonPhaseProps {
   size?: number;
   /** Soft moonlit glow ring behind the disk */
   glow?: boolean;
+  /** Stable per-instance prefix when a page repeats the same phase. */
+  idPrefix?: string;
   className?: string;
 }
 
@@ -15,8 +17,8 @@ interface MoonPhaseProps {
  * High-contrast silver-on-navy moon with a soft-gradient terminator.
  * Pure SVG, no client JS — safe in Server Components.
  */
-export function MoonPhase({ phase, size = 96, glow = true, className }: MoonPhaseProps) {
-  const id = `moon-${phase.toFixed(4).replace(".", "")}`;
+export function MoonPhase({ phase, size = 96, glow = true, idPrefix, className }: MoonPhaseProps) {
+  const id = idPrefix ?? `moon-${phase.toFixed(4).replace(".", "")}`;
   return (
     <svg
       viewBox="0 0 100 100"

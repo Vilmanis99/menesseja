@@ -10,6 +10,7 @@ import { getAllProblems } from "@/lib/kaitekli";
 import { MONTH_SLUGS, CALENDAR_YEARS, SITE_URL } from "@/lib/seo";
 import { DATA_REVIEWED } from "@/lib/sources";
 import { SEASONAL_LINKS_UPDATED_AT } from "@/lib/seasonal";
+import { CALENDAR_GUIDES_UPDATED_AT } from "@/lib/calendar-guides";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const url = (p: string) => `${SITE_URL}${p}`;
@@ -112,7 +113,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const monthPages: MetadataRoute.Sitemap = CALENDAR_YEARS.flatMap((year) =>
     MONTH_SLUGS.map((m) => ({
       url: url(`/kalendars/${year}/${m}`),
-      lastModified: seasonalUpdate,
+      lastModified: new Date(CALENDAR_GUIDES_UPDATED_AT),
       priority: 0.7,
       changeFrequency: "yearly" as const,
     })),

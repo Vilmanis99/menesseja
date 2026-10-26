@@ -7,6 +7,7 @@
 
 export interface FlowerNameEntry {
   name: string;
+  href?: string;
   latin?: string;
   /** Īss, noderīgs raksturojums sarakstam (≤ ~8 vārdi). */
   note?: string;
@@ -29,17 +30,17 @@ export const EXTRA_FLOWER_NAMES: FlowerNameEntry[] = [
   { name: "Levkojas", latin: "Matthiola incana", note: "vakaros smaržojošas dobju puķes" },
   { name: "Lobēlijas", latin: "Lobelia erinus", note: "zilu ziedu mākoņi podiem un kastēm" },
   { name: "Magones", latin: "Papaver", note: "vasaras klasika, sēj tieši dobē" },
-  { name: "Naktsvijoles", latin: "Hesperis matronalis", note: "divgadīga, smaržo vakaros" },
+  { name: "Smaržīgās vakarenes", latin: "Hesperis matronalis", note: "divgadīga, smaržo vakaros" },
   { name: "Portulakas", latin: "Portulaca grandiflora", note: "sukulentas puķītes karstumam" },
   { name: "Rudzupuķes", latin: "Centaurea cyanus", note: "zilā lauka klasika, viegli sējama" },
   { name: "Salvijas (krāšņās)", latin: "Salvia splendens", note: "sarkanās dobju “sveces”" },
   { name: "Sausziedi", latin: "Xerochrysum bracteatum", note: "žāvēšanai un ziemas pušķiem" },
   { name: "Smaržīgie zirnīši", latin: "Lathyrus odoratus", note: "smaržīgi vīteņi pie atbalsta" },
-  { name: "Turku neļķes", latin: "Dianthus barbatus", note: "divgadīgās sētu neļķes" },
+  { name: "Turku neļķes", href: "/augi/nelkes", latin: "Dianthus barbatus", note: "divgadīgās sētu neļķes" },
   { name: "Uzpirkstītes", latin: "Digitalis purpurea", note: "augsti ziedu torņi; augs indīgs" },
 
   // — daudzgadīgās (ziemcietes) —
-  { name: "Akvilēģijas", latin: "Aquilegia", note: "vieglas ziemcietes ar piešainiem ziediem" },
+  { name: "Akvilejas", latin: "Aquilegia", note: "vieglas ziemcietes ar piešainiem ziediem" },
   { name: "Anemones (rudens)", latin: "Anemone hupehensis", note: "zied augustā–oktobrī, mīl pusēnu" },
   { name: "Bergēnijas", latin: "Bergenia", note: "biezlapu ziemciete apmalēm un ēnai" },
   { name: "Delfīnijas", latin: "Delphinium", note: "zilie ziedu torņi dobes fonam" },
@@ -50,8 +51,8 @@ export const EXTRA_FLOWER_NAMES: FlowerNameEntry[] = [
   { name: "Liatres", latin: "Liatris spicata", note: "violetas ziedu sveces tauriņiem" },
   { name: "Lupīnas", latin: "Lupinus polyphyllus", note: "krāšņas ziedu vārpas jūnijā" },
   { name: "Maijpuķītes (kreimenes)", latin: "Convallaria majalis", note: "smaržīgā maija klasika ēnā" },
-  { name: "Margrietiņas (mārpuķītes)", latin: "Bellis perennis", note: "mazās pavasara zālāja puķītes" },
-  { name: "Neļķes", latin: "Dianthus", note: "smaržīgas apmaļu un dobju puķes" },
+  { name: "Mārpuķītes", latin: "Bellis perennis", note: "mazās pavasara zālāja puķītes" },
+  { name: "Neļķes", href: "/augi/nelkes", latin: "Dianthus", note: "smaržīgas apmaļu un dobju puķes" },
   { name: "Pīpenes", latin: "Leucanthemum", note: "lielās baltās “margrietiņas” dobēm" },
   { name: "Prīmulas (gaiļbiksītes)", latin: "Primula", note: "pirmās pavasara krāsas" },
   { name: "Pulkstenītes", latin: "Campanula", note: "zilie zvaniņi jūnijā–jūlijā" },
@@ -64,7 +65,7 @@ export const EXTRA_FLOWER_NAMES: FlowerNameEntry[] = [
   { name: "Dekoratīvie sīpoli (alliji)", latin: "Allium", note: "violetas ziedu lodes virs dobes" },
   { name: "Kallas", latin: "Zantedeschia", note: "elegantas piltuves podiem un dobēm" },
   { name: "Kannas", latin: "Canna", note: "eksotiski gumi vasaras dobēm" },
-  { name: "Ķeizarkroņi", latin: "Fritillaria imperialis", note: "majestātiski pavasara kroņi; atbaida peles" },
+  { name: "Ķeizarkroņi", latin: "Fritillaria imperialis", note: "augstas pavasara puķes ar nokareniem ziediem" },
   { name: "Muskari (peļu hiacintes)", latin: "Muscari", note: "zilās pavasara pērlītes" },
   { name: "Puškīnijas", latin: "Puschkinia scilloides", note: "maigi zilas agrā pavasara puķītes" },
   { name: "Sniegpulkstenītes", latin: "Galanthus nivalis", note: "pirmās puķes cauri sniegam" },
@@ -97,6 +98,6 @@ export const FOLK_NAMES: FolkName[] = [
   { folk: "Skalbes", standard: "Īrisi" },
   { folk: "Nasturcijas", standard: "Kreses" },
   { folk: "Surfīnijas", standard: "Petūnijas (nokarenās)", slug: "petunijas" },
-  { folk: "Mārpuķītes", standard: "Margrietiņas" },
+  { folk: "Margrietiņas", standard: "Pīpenes (Leucanthemum)" },
   { folk: "Peļu hiacintes", standard: "Muskari" },
 ];

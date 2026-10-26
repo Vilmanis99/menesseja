@@ -7,7 +7,7 @@
   "shortAnswer": "Krūms aug kupls, ziedi atveras, bet jaunie cukini vai kabači, tikko sasnieguši pāris centimetru garumu, no zieda gala kļūst dzelteni, mīksti un sapūst.  Reizēm pūšana sākas vēl uz krūma, reizēm — pirmajā vai otrajā dienā pēc noplūkšanas.",
   "primaryQuery": "kāpēc cukini un kabači pūst galā",
   "publishedAt": "2026-06-22",
-  "updatedAt": "2026-06-22",
+  "updatedAt": "2026-10-26",
   "entities": {
     "crops": [
       "kabaci",
@@ -61,7 +61,7 @@
       "paragraphs": [
         "Sapuvušos augļus noplūc un izmet kompostā vai aizvāc no dobes — uz krūma atstāti, tie velti patērē augam spēku un mitrumā var pievilkt pelēko puvi. Krūms no tā necietīs: tiklīdz apputeksnēšana vai laistīšana nostabilizēsies, nākamie augļi izaugs veseli. Šī problēma ir pārejoša, ne lipīga slimība.",
         "Ja problēma ir galotņu puve (tumšs, sauss plankums uz lielāka augļa), to augli vēl var glābt: nogriez bojāto zieda galu, un pārējais cukini ir pilnīgi ēdams — tas nav indīgs un nav inficējis pārējo augli. Tikai apēd to drīz, jo skartais auglis ilgi neuzglabāsies.",
-        "Ja vaina ir sliktā apputeksnēšanā, vislabākais, ko darīt tūlīt, ir paķerties pie apputeksnēšanas pašam. No rīta, kad ziedi tikko atvērušies, noplūc vīrišķo ziedu (tas sēž uz tieva kātiņa, bez auglīša pie pamatnes), noņem tā vainaglapas un ar putekšņiem viegli pieskaries sievišķā zieda vidum (sievišķajam ziedam pie pamatnes ir mazs auglītis). Viena vīrišķā zieda pietiek divu trīs sievišķo ziedu apputeksnēšanai. To dari agri no rīta — ziedi ir atvērti tikai dažas stundas."
+        "Ja vaina ir sliktā apputeksnēšanā, vislabākais, ko darīt tūlīt, ir veikt apputeksnēšanu pašam. No rīta, kad ziedi tikko atvērušies, noplūc vīrišķo ziedu (tas sēž uz tieva kātiņa, bez auglīša pie pamatnes), noņem tā vainaglapas un ar putekšņiem viegli pieskaries sievišķā zieda vidum (sievišķajam ziedam pie pamatnes ir mazs auglītis). Viena vīrišķā zieda pietiek divu trīs sievišķo ziedu apputeksnēšanai. To dari agri no rīta — ziedi ir atvērti tikai dažas stundas."
       ]
     },
     {
@@ -79,7 +79,7 @@
         "Kā atšķirt slikto apputeksnēšanu no galotņu puves? Skaties uz izmēru un tekstūru. Slikta apputeksnēšana sapūdē pavisam jaunu, dažu centimetru auglīti — tas kļūst dzeltens, mīksts un ūdeņains, bieži vēl ar ziedu galā. Galotņu puve skar lielākus augļus un atstāj tumšu, sausu, iegrimušu plankumu zieda galā.",
         "Vai sapuvušu cukini var ēst? Ja sapuvis viss jaunais auglītis (slikta apputeksnēšana), tas glābšanai neder — izmet to. Ja tikai zieda gals tumšs un sauss (galotņu puve) uz citādi vesela augļa, nogriez bojāto galu un pārējo droši lieto uzturā, tikai drīz.",
         "Kāpēc pirmie cukini sezonas sākumā pūst īpaši bieži? Jo sākumā krūms bieži met tikai vīrišķos ziedus vai apputeksnētāji vēsumā nelido. Tas izlīdzinās, tiklīdz iestāsies siltāks laiks un krūms metīs abu dzimumu ziedus — pacieties dažas nedēļas.",
-        "Vai jāpiebēž kalcijs zemē? Parasti nē. Latvijas augsnēs kalcija pietiek; problēma ir tā nogādāšanā līdz augļa galam, ko izšķir mitrums, ne kalcija daudzums. Vispirms sakārto laistīšanu un mulču; olu čaumalas vai pelni ir tikai neliels papildinājums.",
+        "Vai augsnei jāpievieno kalcijs? Parasti nē. Latvijas augsnēs kalcija pietiek; problēma ir tā nogādāšanā līdz augļa galam, ko izšķir mitrums, ne kalcija daudzums. Vispirms sakārto laistīšanu un mulču; olu čaumalas vai pelni ir tikai neliels papildinājums.",
         "Kā ar Mēness fāzēm? Mēness kalendārs ir jauks senču tradīcijas palīgs, kas sakārto dārza darbus, bet cukini pūšanu galā tas neietekmē. Izšķir apputeksnēšana, mitrums un karstums — nevis tas, vai Mēness ir augošs vai dilstošs. Vispirms skaties apputeksnētājus un laistīšanas ritmu, un tikai pēc tam — kalendāru."
       ]
     }

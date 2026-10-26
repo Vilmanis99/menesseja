@@ -6,9 +6,12 @@
   "type": "sipolpuke",
   "tagline": "Pavasara klasika, ko iestādi rudenī un gaidi krāsu sprādzienu pēc ziemas.",
   "bloom": "Aprīlis–maijs",
-  "bloomMonths": [4, 5],
+  "bloomMonths": [
+    4,
+    5
+  ],
   "height": "15–70 cm (atkarībā no šķirnes)",
-  "sun": "Saule / pussēna",
+  "sun": "Saule / pusēna",
   "hardy": true,
   "difficulty": "viegli",
   "plantWhen": "Sīpolus stāda rudenī, sept.–okt., pirms zeme sasalst",
@@ -32,7 +35,7 @@
     "Laisti tikai sausā pavasarī; pārmērīgs mitrums tulpēm ir bīstamāks nekā sausums. Ziedēšanas laikā augsnei jābūt mēreni mitrai.",
     "Pēc noziedēšanas noņem tikai pašu ziedu (sēklu pogaļu), bet lapas atstāj — caur tām sīpols uzkrāj spēku nākamā gada ziedam.",
     "Lapas nogriez vai novāc tikai tad, kad tās pašas nodzeltējušas un nokaltušas, parasti jūnijā–jūlijā. Negriez zaļas lapas!",
-    "Garstublu, lielziedu šķirnes vējainā vietā var palīdzēt ar nelielu atbalstu, taču lielākā daļa tulpju iztiek bez tā.",
+    "Augstajām lielziedu šķirnēm vējainā vietā var noderēt neliels balsts, taču lielākā daļa tulpju iztiek bez tā.",
     "Lielziedu hibrīdtulpes ik pēc 2–4 gadiem izroc pēc lapu nokalšanas, izšķiro, izžāvē vēsā vietā un rudenī iestādi atpakaļ vai aizstāj ar jauniem sīpoliem."
   ],
   "winter": "Tulpes Latvijā pārziemo atklātā laukā bez izrakšanas — sīpolus stāda rudenī, un tie paliek zemē visu ziemu. Sniega sega un mulča (lapu vai kūdras kārtiņa) palīdz pasargāt bezsniega salos. Sīpolus izrok tikai tad, ja gribi tos pārstādīt vai atjaunot krāšņās šķirnes: to dara pēc lapu nokalšanas vasarā, izžāvē un glabā sausā, vēdināmā, vēsā telpā līdz rudens stādīšanai.",
@@ -56,5 +59,11 @@
       "a": "Tieši caur zaļajām lapām sīpols uzkrāj barību nākamā gada ziedam. Ja nogriez lapas, kamēr tās vēl zaļas, sīpols paliek vājš un nākamgad var nesaziedēt. Noņem tikai noziedējušo ziedu, bet lapas ļauj dabiski nokalst."
     }
   ],
-  "related": ["narcises"]
+  "related": [
+    "narcises"
+  ],
+  "image": {
+    "id": "tulpes-ziedi",
+    "caption": "Rozā tulpju piemērs ziedēšanas laikā. Ziedu forma, krāsa un ziedēšanas laiks atšķiras pēc šķirnes."
+  }
 }

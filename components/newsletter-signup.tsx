@@ -71,7 +71,7 @@ export function NewsletterSignup({ source }: { source: string }) {
           <p className="font-semibold text-on-surface">{state === "pending" ? "Pārbaudi savu e-pastu" : "Šī adrese jau ir sarakstā"}</p>
           <p className="mt-1 text-body-md text-on-surface-variant">
             {state === "pending"
-              ? "Atver nosūtīto apstiprinājuma saiti. Tikai pēc tam adrese tiks pievienota un saņemsi sezonas ceļvedi."
+              ? "Atver nosūtīto apstiprinājuma saiti. Tikai pēc tam adrese tiks pievienota sezonas jaunumu saņēmēju sarakstam."
               : "Nav nekas jādara — jaunumus sūtīsim tikai saskaņā ar izvēlēto pierakstu."}
           </p>
         </div>
@@ -84,10 +84,10 @@ export function NewsletterSignup({ source }: { source: string }) {
       <div className="mb-sm flex items-start gap-sm">
         <Icon name="local_post_office" size="22px" className="mt-0.5 shrink-0 text-primary" />
         <div>
-          <h2 className="text-xl font-semibold text-on-surface">Sezonas ceļvedis tavam dārzam</h2>
+          <h2 className="text-xl font-semibold text-on-surface">Sezonas jaunumi tavam dārzam</h2>
           <p className="mt-1 text-body-md text-on-surface-variant">
-            Pēc adreses apstiprināšanas saņemsi vienu īsu ceļvedi: ko tagad darīt Latvijas dārzā,
-            kam pievērst uzmanību un kur kalendārā atrast nākamo piemēroto darbu.
+            Piesakies jaunumiem par dārza darbiem un jauniem ceļvežiem.
+            Pierakstu apstiprināsi ar saiti savā e-pastā.
           </p>
         </div>
       </div>
@@ -125,7 +125,7 @@ export function NewsletterSignup({ source }: { source: string }) {
         <p role="alert" className="mt-2 text-body-sm text-error">Pierakstīšanās pašlaik nav pieejama. Lūdzu, pamēģini vēlāk.</p>
       )}
       <p id={`newsletter-help-${source}`} className="mt-2 text-label-sm text-on-surface-variant/70">
-        Piesakoties piekrīti saņemt Mēness Sējas sezonas ceļvedi. Adrese sarakstam tiks pievienota
+        Piesakoties piekrīti saņemt Mēness Sējas sezonas jaunumus. Adrese sarakstam tiks pievienota
         tikai pēc apstiprināšanas; atrakstīties varēsi jebkurā brīdī. <Link href="/privatums" className="text-primary hover:underline">Privātuma apraksts</Link>.
       </p>
     </Card></div>

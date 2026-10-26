@@ -292,8 +292,8 @@ export default function KopienaPage() {
               <p className="text-label-md text-primary">Eksperta padoms</p>
               <h4 className="text-headline-md text-on-surface">Kā pasargāt jaunos stādus no salnām</h4>
               <p className="mt-1 text-body-md text-on-surface-variant">
-                Senču dūmu aizsegs darbojas, bet mūsdienu dārzā vislabāk strādā dubultais agroūdens segums
-                kombinācijā ar mulčējumu. Svarīgi to uzklāt pirms saulrieta.
+                Salnu laikā augus var aizsargāt ar piemērotu agrotīkla segumu.
+                Seko vietējai prognozei un segumu uzklāj pirms temperatūras pazemināšanās.
               </p>
             </div>
           </Card>

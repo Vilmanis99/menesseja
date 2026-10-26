@@ -14,7 +14,7 @@ export const NAV_ITEMS: NavItem[] = [
   { href: "/kalendars", label: "Kalendārs", icon: "calendar_month", primary: true },
   { href: "/pukes", label: "Puķes", icon: "local_florist", primary: true },
   { href: "/kaitekli", label: "Kaitēkļi", icon: "pest_control", primary: true },
-  { href: "/raksti", label: "Raksti", icon: "article" },
+  { href: "/raksti", label: "Zināšanu krātuve", icon: "local_library" },
   { href: "/augi", label: "Augu enciklopēdija", icon: "eco" },
   { href: "/celvedis", label: "Sējas ceļvedis", icon: "local_library" },
   { href: "/receptes", label: "Receptes", icon: "compost" },

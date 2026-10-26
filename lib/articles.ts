@@ -1,8 +1,10 @@
 import fs from "node:fs";
 import path from "node:path";
+import type { ContentImageUse } from "./content-images";
 
 export interface ArticleSection {
   heading?: string;
+  image?: ContentImageUse;
   /** Preserve links to headings used before an editorial rewrite. */
   anchorAliases?: string[];
   paragraphs: string[];

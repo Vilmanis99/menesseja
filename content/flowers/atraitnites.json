@@ -6,9 +6,17 @@
   "type": "viengadiga",
   "tagline": "Pirmā un pēdējā krāsa sezonā — atraitnītes pacieš salnas, tāpēc zied, kad balkonā un dobē vēl (vai jau) nekā cita nav.",
   "bloom": "Aprīlis–oktobris",
-  "bloomMonths": [4, 5, 6, 7, 8, 9, 10],
+  "bloomMonths": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
   "height": "15–25 cm",
-  "sun": "Saule / pussēna",
+  "sun": "Saule / pusēna",
   "hardy": false,
   "difficulty": "viegli",
   "plantWhen": "Stādus laukā no aprīļa (pacieš salnas!); sēj telpās febr.–martā vai jūlijā nākamajam pavasarim",
@@ -54,5 +62,10 @@
       "a": "Sēj jūlijā lecektī, rudenī izstādi vietā — jaunie augi pārziemo zem sniega un uzzied aprīlī, agrāk par jebkuru pavasarī pirktu stādu. Tas ir vecais divgadīgais audzēšanas veids."
     }
   ],
-  "related": ["balkona-pukes", "petunijas", "pelargonijas", "begonijas"]
+  "related": [
+    "balkona-pukes",
+    "petunijas",
+    "pelargonijas",
+    "begonijas"
+  ]
 }

@@ -1,3 +1,4 @@
+import { FlowerGallery } from "@/components/flower-gallery";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { PageHeader } from "@/components/ui/page-header";
@@ -53,8 +54,8 @@ export default function PukesPage() {
 
   // Merge full guides + name-only entries into one Latvian-alphabetical list.
   const allNames = [
-    ...flowers.map((f) => ({ name: f.name, latin: f.latin, note: undefined as string | undefined, slug: f.slug })),
-    ...EXTRA_FLOWER_NAMES.map((e) => ({ name: e.name, latin: e.latin, note: e.note, slug: undefined as string | undefined })),
+    ...flowers.map((f) => ({ name: f.name, latin: f.latin, note: undefined as string | undefined, href: `/pukes/${f.slug}` })),
+    ...EXTRA_FLOWER_NAMES.map((e) => ({ name: e.name, latin: e.latin, note: e.note, href: e.href })),
   ].sort((x, y) => x.name.localeCompare(y.name, "lv"));
 
   // Group by first letter (Latvian letters — Č, Ī, Ķ… stay distinct).
@@ -86,7 +87,7 @@ export default function PukesPage() {
         "@type": "ListItem",
         position: i + 1,
         name: f.name,
-        ...(f.slug ? { url: canonical(`/pukes/${f.slug}`) } : {}),
+        ...(f.href ? { url: canonical(f.href) } : {}),
       })),
     },
     hasPart: flowers.map((f) => ({ "@type": "Article", name: f.name, url: canonical(`/pukes/${f.slug}`) })),
@@ -108,7 +109,7 @@ export default function PukesPage() {
       <PageHeader
         eyebrow="Puķu ceļvedis"
         title={`Puķu nosaukumi: ${TOTAL_NAMES} Latvijas dārza puķes no A līdz Z`}
-        subtitle="Pilns saraksts alfabēta secībā ar latīniskajiem nosaukumiem — un tautas nosaukumi, ko citur neatradīsi: pujenes, jurģīnes, kreimenes, mārtiņrozes."
+        subtitle="Pilns saraksts alfabēta secībā ar latīniskajiem nosaukumiem — un tautas nosaukumi: pujenes, jurģīnes, kreimenes, mārtiņrozes."
       />
 
       <p className="mb-lg max-w-3xl text-body-md text-on-surface-variant">
@@ -117,6 +118,8 @@ export default function PukesPage() {
         pilnu ceļvedi: kad stādīt, kā kopt un kura ir labākā Mēness diena. Sarakstu papildinām, tāpēc
         pievieno lapu grāmatzīmēm.
       </p>
+
+      <a href="#puku-atteli" className="mb-sm inline-flex min-h-11 items-center text-body-md text-primary hover:underline">Skatīt puķu attēlus →</a>
 
       {/* Letter jump bar */}
       <nav aria-label="Alfabēts" className="mb-lg flex flex-wrap gap-1.5">
@@ -175,9 +178,9 @@ export default function PukesPage() {
               <ul className="grid grid-cols-1 gap-x-md gap-y-1 sm:grid-cols-2">
                 {g.items.map((f) => (
                   <li key={f.name} className="text-body-md">
-                    {f.slug ? (
+                    {f.href ? (
                       <Link
-                        href={`/pukes/${f.slug}`}
+                        href={f.href}
                         className="inline-flex flex-wrap items-baseline gap-x-1.5 font-semibold text-primary transition-colors hover:underline"
                       >
                         <span>{f.name}</span>
@@ -197,6 +200,8 @@ export default function PukesPage() {
           ))}
         </div>
       </section>
+
+      <FlowerGallery />
 
       {/* Folk names — unique Latvian content no competitor has gathered */}
       <section className="mb-lg">

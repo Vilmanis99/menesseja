@@ -7,7 +7,7 @@
   "shortAnswer": "Tomāti aug skaisti, bet tad uz augļa apakšas — tieši pretī kātiņam — parādās tumšs, iegrimis, ādains plankums.  Sākumā ūdeņains un brūngans, vēlāk gandrīz melns un kā ieskrūvēts.",
   "primaryQuery": "kāpēc tomātiem galotņu puve un kā to apturēt",
   "publishedAt": "2026-06-17",
-  "updatedAt": "2026-06-30",
+  "updatedAt": "2026-10-26",
   "entities": {
     "crops": [
       "tomati"
@@ -35,13 +35,17 @@
       "heading": "Kā atpazīt galotņu puvi",
       "paragraphs": [
         "Pazīme ir ļoti raksturīga: plankums vienmēr ir augļa apakšā, tālākajā galā no kātiņa (zieda vietā, no kurienes arī nosaukums). Sākumā tas ir mazs, gaiši brūns un ūdeņains, pēc tam paplašinās, kļūst tumši brūns vai melns, iegrimst un izskatās kā sauss, ādains ielāps. Auglis citur var izskatīties pilnīgi vesels.",
-        "Svarīgi neapjaukt to ar plaisāšanu (par to mums ir atsevišķs raksts) — plaisas iet pa augšu un sāniem un ir sausi pārspraukumi, bet galotņu puve vienmēr ir tieši augļa galā un ir tumša, mīksta iegrimuma plankums. Visbiežāk galotņu puve skar pirmos sezonas augļus un garenās šķirnes, piemēram, pavāru tomātus."
-      ]
+        "Svarīgi nesajaukt to ar plaisāšanu (par to mums ir atsevišķs raksts) — plaisas iet pa augšu un sāniem un ir sausi plīsumi, bet galotņu puve vienmēr ir tieši augļa galā un ir tumša, mīksta iegrimuma plankums. Visbiežāk galotņu puve skar pirmos sezonas augļus un garenās šķirnes, piemēram, pavāru tomātus."
+      ],
+      "image": {
+        "id": "tomatu-galotnu-puve",
+        "caption": "Galotņu puves piemērs: bojājums ir augļa zieda galā, pretēji kātiņam. Griezumā redzams, ka tumšie audi sniedzas arī augļa iekšpusē."
+      }
     },
     {
       "heading": "Kāpēc tā notiek: kalcijs nenonāk līdz augļa galam",
       "paragraphs": [
-        "Lūk, kā tas strādā. Kalcijs augam ir vajadzīgs, lai veidotu stipras šūnu sienas. Bet kalcijs pa augu pārvietojas kopā ar ūdeni — tas ceļo augšup ar ūdens plūsmu uz lapām un augļiem. Augļa pašais tālākais gals (apakša) ir kalcija ceļa pēdējā pietura, un tieši turp tas nonāk visgrūtāk un vispēdējais.",
+        "Lūk, kā tas strādā. Kalcijs augam ir vajadzīgs, lai veidotu stipras šūnu sienas. Bet kalcijs pa augu pārvietojas kopā ar ūdeni — tas ceļo augšup ar ūdens plūsmu uz lapām un augļiem. Augļa pats tālākais gals (apakša) ir kalcija ceļa pēdējā pietura, un tieši turp tas nonāk visgrūtāk un vispēdējais.",
         "Kad ūdens plūsma augā ir nestabila — zeme te izkalst, te pārplūst, vai karstumā augs ūdeni izgaro ātrāk, nekā saknes paspēj uzņemt — kalcijs vienkārši nepaspēj aizceļot līdz augļa galam. Šūnu sienas tur neveidojas, audi sabrūk, un rodas tumšais plankums. Tāpēc cēlonis gandrīz vienmēr ir mitruma svārstības, ne kalcija trūkums zemē. Tieši tāpēc kalcija pievienošana zemei parasti nepalīdz — kalcijs jau ir, tas tikai nenonāk, kur vajag."
       ]
     },

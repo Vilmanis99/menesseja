@@ -5,6 +5,7 @@ import { Card } from "@/components/ui/card";
 import { Icon } from "@/components/ui/icon";
 import { JsonLd } from "@/components/json-ld";
 import { DataNote } from "@/components/data-note";
+import { ContentFigure } from "@/components/content-figure";
 import { RecipeTodayBadge } from "@/components/recipe-today-badge";
 import { getFlower, getAllFlowers, flowerSlugs, FLOWER_TYPE_META } from "@/lib/flowers";
 import { CROPS } from "@/lib/planting-crops";
@@ -108,6 +109,8 @@ export default async function FlowerPage({ params }: { params: Promise<{ slug: s
           <p className="mt-1 text-body-lg text-on-surface-variant">{f.tagline}</p>
         </div>
       </header>
+
+      {f.image && <ContentFigure image={f.image} priority />}
 
       {/* Conversion into the app — only for flowers tracked in the crop data */}
       {CROPS.some((c) => c.id === f.slug) && (

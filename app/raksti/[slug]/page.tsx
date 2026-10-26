@@ -4,8 +4,10 @@ import { notFound } from "next/navigation";
 import { Icon } from "@/components/ui/icon";
 import { JsonLd } from "@/components/json-ld";
 import { DataNote } from "@/components/data-note";
+import { ContentFigure } from "@/components/content-figure";
 import { getArticle, getRelatedArticles, articleSlugs, articleFaq, headingSlug } from "@/lib/articles";
 import { NewsletterSignup } from "@/components/newsletter-signup";
+import { newsletterConfigured } from "@/lib/brevo";
 import { ArticleEngagement } from "@/components/article-engagement";
 import { TrackedLink } from "@/components/tracked-link";
 import { canonical, SITE_NAME, og } from "@/lib/seo";
@@ -140,6 +142,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
                 {para}
               </p>
             ))}
+            {section.image && <ContentFigure image={section.image} />}
             {section.table && (
               <div className="mb-md">
                 <div className="space-y-sm sm:hidden">
@@ -230,7 +233,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
         </div>
       ))}
 
-      <NewsletterSignup source={`raksts:${a.slug}`} />
+      {newsletterConfigured() && <NewsletterSignup source={`raksts:${a.slug}`} />}
 
       {a.links && a.links.length > 0 && (
         <div className="mt-lg border-t border-outline-variant/10 pt-md">

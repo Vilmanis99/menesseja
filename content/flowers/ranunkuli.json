@@ -6,9 +6,12 @@
   "type": "sipolpuke",
   "tagline": "Daudzkārtu ziedi kā no rozes un peonijas vienlaikus — tikai gumi rudenī jāizrok un jāglabā.",
   "bloom": "Jūnijs–jūlijs",
-  "bloomMonths": [6, 7],
+  "bloomMonths": [
+    6,
+    7
+  ],
   "height": "25–45 cm",
-  "sun": "Saule / pussēna",
+  "sun": "Saule / pusēna",
   "hardy": false,
   "difficulty": "vidēji",
   "plantWhen": "Gumus stāda pavasarī pēc salnām, maija beigās (vai priekšaudzē podos no aprīļa)",
@@ -23,7 +26,7 @@
     "Pirms stādīšanas izžuvušos gumus mērcē remdenā ūdenī aptuveni 3–4 stundas (ne ilgāk par dažām stundām, lai tie nesapūtu) — tie uzbriest un kļūst apaļāki; ilgāku mērcēšanu var aizstāt ar mitrā substrātā ietīšanu.",
     "Gumus stāda ar 'kājiņām' (sazarotajiem izaugumiem) uz LEJU un apaļo daļu uz augšu, 4–5 cm dziļumā, 10–15 cm atstatumā cits no cita.",
     "Laukā stādi tikai pēc pēdējām salnām, maija beigās; lai ziedi būtu agrāk, gumus var priekšaudzēt podos vēsā, gaišā telpā jau no aprīļa un izstādīt ar visu zemes kamolu pēc salnām.",
-    "Izvēlies saulainu vai vieglu pussēnas vietu ar irdenu, labi caurlaidīgu augsni — ranunkuli mīl mitrumu, bet sapūst stāvošā ūdenī, tāpēc smagā augsnē vērts pievienot smiltis un kompostu.",
+    "Izvēlies saulainu vai vieglu pusēnas vietu ar irdenu, labi caurlaidīgu augsni — ranunkuli mīl mitrumu, bet sapūst stāvošā ūdenī, tāpēc smagā augsnē vērts pievienot smiltis un kompostu.",
     "Pēc stādīšanas viegli aplaisti; ja gaidāma vēla nakts salna, jaunos asnus piesedz ar agroplēvi vai lupatu, jo tie ir jutīgi."
   ],
   "care": [
@@ -55,5 +58,9 @@
       "a": "Gumus laukā stāda tikai pēc pēdējām pavasara salnām — iekšzemē (Vidzemē, Latgalē) drošāk maija beigās, Zemgalē ap 15. maiju, piekrastē var jau maija vidū. Lai ziedi būtu agrāk, gumus var priekšaudzēt podos vēsā telpā no aprīļa un izstādīt ar zemes kamolu pēc salnām."
     }
   ],
-  "related": ["begonijas", "narcises", "tulpes"]
+  "related": [
+    "begonijas",
+    "narcises",
+    "tulpes"
+  ]
 }

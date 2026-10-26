@@ -5,11 +5,12 @@ import { getAllArticles } from "@/lib/articles";
 import { canonical, SITE_NAME } from "@/lib/seo";
 import { latviaDateParts } from "@/lib/day-anchor";
 import { seasonalLinks } from "@/lib/seasonal";
+import { KnowledgeHub } from "@/components/knowledge-hub";
 
 export const revalidate = 3600;
 
 export const metadata: Metadata = {
-  title: "Raksti — Mēness sēja un dārzkopība iesācējiem",
+  title: "Dārza zināšanu krātuve — padomi, gada plāns un pavasara darbi",
   description:
     "Dārza padomi visam gadam Latvijā: sēklu izvēle, dēsti, stādīšana, puķu kopšana, raža un pārziemošana. Izvēlies rakstus pēc mēneša un tēmas.",
   alternates: { canonical: canonical("/raksti") },
@@ -34,7 +35,7 @@ export default function RakstiIndex() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    name: "Raksti",
+    name: "Dārza zināšanu krātuve",
     inLanguage: "lv",
     isPartOf: { "@type": "WebSite", name: SITE_NAME, url: canonical("/") },
   };
@@ -44,14 +45,17 @@ export default function RakstiIndex() {
       <JsonLd data={jsonLd} />
       <header className="mb-lg">
         <p className="text-label-sm uppercase tracking-[0.2em] text-tertiary">Mācies dārzot</p>
-        <h1 className="text-headline-lg-mobile text-primary md:text-display-lg">Dārza padomi Latvijas apstākļiem</h1>
+        <h1 className="text-headline-lg-mobile text-primary md:text-display-lg">Dārza zināšanu krātuve</h1>
         <p className="mt-xs max-w-2xl text-body-lg text-on-surface-variant">
-          Īsas atbildes uz dārza problēmām, sezonas darbi un soli pa solim pamācības. Pārbaudīti avoti,
-          skaidra latviešu valoda un ieteikumi Latvijas klimatam.
+          Plāno dobes, izvēlies augus un sagatavojies katram mēnesim Latvijas dārzā.
+          Te atradīsi darbu ceļvežus, pavasara plānu, piederumu sarakstu un atbildes uz augu kopšanas jautājumiem.
         </p>
       </header>
 
-      <ArticleLibrary articles={teasers} featuredSlugs={featuredSlugs} monthLabel={monthLabels[currentMonth - 1]} />
+      <KnowledgeHub currentMonth={currentMonth} />
+      <div id="rakstu-biblioteka" className="scroll-mt-24">
+        <ArticleLibrary articles={teasers} featuredSlugs={featuredSlugs} monthLabel={monthLabels[currentMonth - 1]} />
+      </div>
     </div>
   );
 }

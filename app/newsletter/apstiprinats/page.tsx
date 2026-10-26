@@ -5,7 +5,7 @@ import { latviaDateParts } from "@/lib/day-anchor";
 export const revalidate = 3600;
 
 export const metadata: Metadata = {
-  title: "E-pasts apstiprināts",
+  title: "Pieraksta apstiprinājums",
   robots: { index: false, follow: false },
 };
 

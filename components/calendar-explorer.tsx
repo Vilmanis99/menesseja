@@ -16,6 +16,8 @@ import { namedaysFor } from "@/lib/vardadienas";
 import { MONTH_SLUGS, CALENDAR_YEARS } from "@/lib/seo";
 import { DataNote } from "@/components/data-note";
 import { track } from "@/lib/analytics";
+import { monthPlan } from "@/lib/month-plan";
+import { latviaDateParts, latviaNoon, latviaDateKey } from "@/lib/day-anchor";
 
 const WEEKDAYS = ["P", "O", "T", "C", "Pk", "S", "Sv"]; // Mon-first
 const ELEMENT_DOT: Record<Element, string> = {
@@ -27,7 +29,7 @@ const ELEMENT_DOT: Record<Element, string> = {
 
 /** Monday-first weekday index (0=Mon..6=Sun) */
 function mondayIndex(d: Date) {
-  return (d.getDay() + 6) % 7;
+  return (d.getUTCDay() + 6) % 7;
 }
 
 // Only sowing/planting actions belong on a "what to sow today" list — NOT harvest.
@@ -60,29 +62,35 @@ function cropsForDay(month: number, part: PlantPart): DayCrop[] {
 export function CalendarExplorer() {
   useEffect(() => track("calendar_opened", { source: "calendar_page" }), []);
   const mounted = useMounted();
-  const today = useMemo(() => new Date(), []);
-  const [cursor, setCursor] = useState(() => new Date(today.getFullYear(), today.getMonth(), 1));
+  const today = useMemo(() => { const { year, month, day } = latviaDateParts(); return latviaNoon(year, month, day); }, []);
+  const [cursor, setCursor] = useState(() => latviaNoon(today.getUTCFullYear(), today.getUTCMonth() + 1, 1));
   const [selected, setSelected] = useState<Date>(today);
 
-  const year = cursor.getFullYear();
-  const month = cursor.getMonth();
+  const year = cursor.getUTCFullYear();
+  const month = cursor.getUTCMonth();
+  function changeMonth(offset: number) {
+    const next = latviaNoon(year, month + 1 + offset, 1);
+    setCursor(next);
+    setSelected(next);
+    track("calendar_month_select", { selected_year: next.getUTCFullYear(), selected_month: next.getUTCMonth() + 1 });
+  }
 
   const days = useMemo(() => {
-    const first = new Date(year, month, 1);
+    const first = latviaNoon(year, month + 1, 1);
     const lead = mondayIndex(first);
-    const count = new Date(year, month + 1, 0).getDate();
+    const count = new Date(Date.UTC(year, month + 1, 0)).getUTCDate();
     const cells: (Date | null)[] = Array(lead).fill(null);
-    for (let d = 1; d <= count; d++) cells.push(new Date(year, month, d));
+    for (let d = 1; d <= count; d++) cells.push(latviaNoon(year, month + 1, d));
     return cells;
   }, [year, month]);
 
   const sel = sowingDay(selected);
   const selMoon = moonForDate(selected);
   const selElem = ELEMENT_META[sel.element];
-  const suggestions = cropsForDay(selected.getMonth() + 1, sel.part);
+  const suggestions = cropsForDay(latviaDateParts(selected).month, sel.part);
 
   const sameDay = (a: Date, b: Date) =>
-    a.getDate() === b.getDate() && a.getMonth() === b.getMonth() && a.getFullYear() === b.getFullYear();
+    latviaDateKey(a) === latviaDateKey(b);
 
   // The page shell (H1, intro, month links, this month's key dates) is server
   // rendered by app/kalendars/page.tsx — this component is only the interactive grid.
@@ -108,9 +116,9 @@ export function CalendarExplorer() {
         <Card tone="low" elevated linen className="p-md lg:col-span-8">
           <div className="mb-md flex items-center justify-between">
             <button
-              onClick={() => setCursor(new Date(year, month - 1, 1))}
+              onClick={() => changeMonth(-1)}
               aria-label="Iepriekšējais mēnesis"
-              className="rounded-lg p-2 text-on-surface-variant transition-colors hover:bg-surface-variant hover:text-primary"
+              className="flex h-11 w-11 items-center justify-center rounded-lg text-on-surface-variant transition-colors hover:bg-surface-variant hover:text-primary"
             >
               <Icon name="chevron_left" />
             </button>
@@ -118,9 +126,9 @@ export function CalendarExplorer() {
               {MONTHS_LV_FULL[month]} {year}
             </h2>
             <button
-              onClick={() => setCursor(new Date(year, month + 1, 1))}
+              onClick={() => changeMonth(1)}
               aria-label="Nākamais mēnesis"
-              className="rounded-lg p-2 text-on-surface-variant transition-colors hover:bg-surface-variant hover:text-primary"
+              className="flex h-11 w-11 items-center justify-center rounded-lg text-on-surface-variant transition-colors hover:bg-surface-variant hover:text-primary"
             >
               <Icon name="chevron_right" />
             </button>
@@ -153,7 +161,7 @@ export function CalendarExplorer() {
                   }`}
                 >
                   <span className={`text-label-sm ${isToday ? "font-bold text-secondary" : "text-on-surface"}`}>
-                    {d.getDate()}
+                    {d.getUTCDate()}
                   </span>
                   <MoonPhase phase={m.phase} size={18} glow={false} />
                   {rest ? (
@@ -243,9 +251,7 @@ export function CalendarExplorer() {
               </div>
             ) : (
               <p className="text-body-md text-on-surface-variant">
-                {selected.getMonth() + 1 >= 11 || selected.getMonth() + 1 <= 2
-                  ? "Sējas sezona vēl nav sākusies — laiks plānot un atpūsties."
-                  : "Šajā mēnesī nav ko sēt šī elementa kultūrām — labs laiks kopšanai vai ražas novākšanai."}
+                Šīs grupas kultūrām sarakstā nav sējas vai stādīšanas darbu. {monthPlan(latviaDateParts(selected).month).action}
               </p>
             )}
           </Card>

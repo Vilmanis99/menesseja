@@ -1,7 +1,17 @@
 import { latviaDateParts } from "./day-anchor";
 import { CALENDAR_YEARS, MONTH_SLUGS } from "./seo";
 
-export const SEASONAL_LINKS_UPDATED_AT = "2026-10-06";
+export const SEASONAL_LINKS_UPDATED_AT = "2026-10-26";
+
+/** Adjacent calendar months, including December → January. */
+export function adjacentMonth(year: number, month: number, offset: number) {
+  seasonForMonth(month);
+  const date = new Date(Date.UTC(year, month - 1 + offset, 1, 10));
+  const target = { year: date.getUTCFullYear(), month: date.getUTCMonth() + 1 };
+  return { ...target, href: CALENDAR_YEARS.includes(target.year)
+    ? `/kalendars/${target.year}/${MONTH_SLUGS[target.month - 1]}`
+    : `/ko-set/${MONTH_SLUGS[target.month - 1]}` };
+}
 
 export function seasonForMonth(month: number): "ziema" | "pavasaris" | "vasara" | "rudens" {
   if (!Number.isInteger(month) || month < 1 || month > 12) throw new RangeError("Invalid month");

@@ -5,7 +5,7 @@
  */
 
 import { Body, Illumination, MoonPhase, SearchMoonQuarter, NextMoonQuarter } from "astronomy-engine";
-import { dayAnchor, latviaDateParts } from "./day-anchor";
+import { dayAnchor, latviaDateParts, latviaDateKey } from "./day-anchor";
 
 export interface MoonInfo {
   /** 0..1 synodic fraction */
@@ -48,6 +48,12 @@ export function moonPhasesForMonth(year: number, month: number): PrincipalMoonPh
     const local = latviaDateParts(date);
     return local.year === year && local.month === month;
   });
+}
+
+/** A same-day event remains visible after its exact instant has passed. */
+export function principalPhasesOnDate(date: Date): PrincipalMoonPhase[] {
+  const { year, month } = latviaDateParts(date);
+  return moonPhasesForMonth(year, month).filter((phase) => latviaDateKey(phase.date) === latviaDateKey(date));
 }
 
 const PHASE_NAMES: { max: number; name: string }[] = [

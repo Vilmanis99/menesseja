@@ -4,23 +4,27 @@
   "latin": "Hydrangea",
   "emoji": "🌸",
   "type": "krums",
-  "tagline": "Lieli, mākoņiem līdzīgi ziedu pušķi, kas vasaras otrā pusē pārvērš dārza pussēnu par krāsu jūru.",
+  "tagline": "Lieli, mākoņiem līdzīgi ziedu pušķi, kas vasaras otrā pusē pārvērš dārza pusēnu par krāsu jūru.",
   "bloom": "Jūlijs–septembris",
-  "bloomMonths": [7, 8, 9],
+  "bloomMonths": [
+    7,
+    8,
+    9
+  ],
   "height": "100–200 cm (atkarībā no sugas un šķirnes)",
-  "sun": "Saule / pussēna",
+  "sun": "Saule / pusēna",
   "hardy": true,
   "difficulty": "vidēji",
   "plantWhen": "Stāda pavasarī (maijā) vai vasaras beigās; konteinerstādus arī visu sezonu mitrā, ēnainākā vietā",
   "moonPhase": "augošs",
   "moonElement": "ziedi",
-  "moonText": "Hortenzija ir ziedu krūms, tāpēc stādīšanu un kopšanu tradicionāli saista ar ziedu jeb gaisa dienām un augošu Mēnesi, kad uzskata, ka sula ceļas uz augšu un augs labāk iesakņojas. Tā ir sena dārza tradīcija, ne ražas garantija — daudz svarīgāks par konkrēto dienu ir mitra, skābāka augsne un pareizi izvēlēta vieta pussēnā.",
+  "moonText": "Hortenzija ir ziedu krūms, tāpēc stādīšanu un kopšanu tradicionāli saista ar ziedu jeb gaisa dienām un augošu Mēnesi, kad uzskata, ka sula ceļas uz augšu un augs labāk iesakņojas. Tā ir sena dārza tradīcija, ne ražas garantija — daudz svarīgāks par konkrēto dienu ir mitra, skābāka augsne un pareizi izvēlēta vieta pusēnā.",
   "intro": [
-    "Hortenzija ir viena no meklētākajām dārza puķēm Latvijā — un nav brīnums, jo tās lielie, apaļie vai konusveida ziedu pušķi vasaras otrā pusē izskatās gandrīz pārāk grezni, lai būtu īsti. Tā zied tieši tad, kad daudzas citas puķes jau noziedējušas — no jūlija līdz septembrim — un priecē ar krāsām no baltas un zaļganas līdz rozā, sārtas un pat zilas. Hortenzija mīl mitru, auglīgu un drīzāk skābāku augsni un jūtas vislabāk pussēnā, kur to nepārpludina pusdienas saule un kur zeme neizžūst — sausumu tā necieš un tūlīt nokar lapas.",
+    "Hortenzija ir viena no meklētākajām dārza puķēm Latvijā — un nav brīnums, jo tās lielie, apaļie vai konusveida ziedu pušķi vasaras otrā pusē izskatās gandrīz pārāk grezni, lai būtu īsti. Tā zied tieši tad, kad daudzas citas puķes jau noziedējušas — no jūlija līdz septembrim — un priecē ar krāsām no baltas un zaļganas līdz rozā, sārtas un pat zilas. Hortenzija mīl mitru, auglīgu un drīzāk skābāku augsni un jūtas vislabāk pusēnā, kur to nepārpludina pusdienas saule un kur zeme neizžūst — sausumu tā necieš un tūlīt nokar lapas.",
     "Tomēr pirms pirkšanas ir vērts zināt vienu lietu, kas Latvijā izšķir visu: hortenzijas nav vienādas. Ir trīs galvenie tipi, un tieši no tā, kuru izvēlies, atkarīgs, vai krūms pie mums droši ziedēs katru gadu vai arī bargā ziemā paliks bez ziediem. Liellapu hortenzija ar tās lielajām, bumbveidīgajām ziedu galvām ir skaistākā, bet arī riskantākā; skarainā un koka hortenzija ir mazāk slavenas, taču pie mums daudz drošākas. Izvēlies pareizo tipu, un hortenzija būs dārza dārgakmens uz daudziem gadiem."
   ],
   "planting": [
-    "Izvēlies pussēnainu vietu, kur augs saņem rīta sauli un pusdienlaikā ir aizvēja un ēnā — pilnā dienvidu saulē lapas izdeg un krūms pastāvīgi cieš no sausuma.",
+    "Izvēlies pusēnainu vietu, kur augs saņem rīta sauli un pusdienlaikā ir aizvēja un ēnā — pilnā dienvidu saulē lapas izdeg un krūms pastāvīgi cieš no sausuma.",
     "Sagatavo mitru, auglīgu un drīzāk skābu augsni: iestrādā bedrē daudz komposta, trūdu vai skābās kūdras; smagu mālu vai sausu smilti hortenzija nemīl.",
     "Stādi pavasarī (maijā) vai vasaras beigās, lai krūms paspēj iesakņoties; konteinerstādu var stādīt visu sezonu, ja vien rūpīgi laisti un izvēlies ēnaināku brīdi.",
     "Iestādi tā, lai sakņu kakls paliek augsnes līmenī, labi aplej un biezi mulčē ar mizu, skujām vai kūdru — mulča notur mitrumu un uztur augsni skābāku.",
@@ -31,7 +35,7 @@
     "Mulčē biezu kārtu un atjauno to katru sezonu, lai augsne paliek mitra un vēsa; tas ir vieglākais veids, kā hortenziju pasargāt no izžūšanas.",
     "Mēslo pavasarī ar komposta kārtu vai mēslojumu skābes mīļotājiem (kā rododendriem); par daudz slāpekļa dod kuplas lapas, bet maz ziedu.",
     "Liellapu hortenzijai ziedu krāsu nosaka augsnes pH: skābā augsnē tā zied zila, sārmainā — rozā; zilo krāsu var uzturēt, augsni paskābinot, bet skarainajai un baltajai šķirnei tas nedarbojas.",
-    "Novācušos ziedus vari atstāt uz krūma — tie skaisti izskatās arī sausi un ziemā, un liellapu hortenzijai tie pat nedaudz pasargā pumpurus zem sevis.",
+    "Noziedējušos ziedus vari atstāt uz krūma — tie skaisti izskatās arī sausi un ziemā, un liellapu hortenzijai tie pat nedaudz pasargā pumpurus zem sevis.",
     "Apgriešana atšķiras pēc tipa: skaraino un koka hortenziju agri pavasarī apgriež īsi, jo tā zied uz tekošā gada dzinumiem; liellapu hortenziju neapgriež — tikai izņem sausos zarus, jo ziedpumpuri sēž uz pērnā gada dzinumiem."
   ],
   "winter": "Skarainā (Hydrangea paniculata) un koka jeb 'Annabelle' (H. arborescens) hortenzija ir pilnībā ziemcietīga un Latvijā pārziemo atklātā laukā bez segšanas — tās zied uz tekošā gada dzinumiem, tāpēc pavasarī tās drīkst apgriezt īsi, un pat ja virszeme apsalst, krūms atjaunojas un tajā pašā vasarā uzzied. Liellapu hortenzija (H. macrophylla) ir izņēmums: tā zied uz pērnā gada dzinumiem, tāpēc bargā vai bezsniega ziemā tās ziedpumpuri viegli apsalst un krūms attīsta tikai lapas, bet nezied. Tieši tāpēc liellapu hortenzija Latvijā ir riskanta un to vēlams segt — rudenī apber sakņu zonu ar kūdru vai lapām un dzinumus aptin ar agrotīklu vai egļu zariem, un izvēlies tās siltāko, aizvēja vietu dārzā.",
@@ -55,5 +59,14 @@
       "a": "Zilā krāsa darbojas tikai liellapu hortenzijai (H. macrophylla) un ir atkarīga no augsnes pH: skābā augsnē tā zied zila, sārmainā — rozā. Zilo krāsu uztur, augsni paskābinot ar skābo kūdru, skujām vai īpašu paskābinātāju. Baltajai, skarainajai un koka hortenzijai šis nedarbojas — to krāsu augsne neietekmē."
     }
   ],
-  "related": ["peonijas", "rozes", "hostas", "klematis"]
+  "related": [
+    "peonijas",
+    "rozes",
+    "hostas",
+    "klematis"
+  ],
+  "image": {
+    "id": "hortenzija-skaraina",
+    "caption": "Skarainā hortenzija (Hydrangea paniculata) ar konusveida ziedkopām. Sugas nosaukums ir svarīgs, izvēloties apgriešanas paņēmienu."
+  }
 }

@@ -45,7 +45,7 @@ export function ActivityBar({ crop, currentMonth }: { crop: Crop; currentMonth: 
               style={{ left: `${left}%`, width: `${width}%`, backgroundColor: meta.color }}
             >
               <span className="truncate text-[10px] font-semibold" style={{ color: labelColor(meta.color) }}>
-                {meta.short}
+                {crop.category === "pukes" && k === "harvest" ? "Zied" : meta.short}
               </span>
             </div>
           </div>

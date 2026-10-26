@@ -3,7 +3,7 @@ import { PageHeader } from "@/components/ui/page-header";
 import { Card } from "@/components/ui/card";
 import { Icon } from "@/components/ui/icon";
 import { MoonPhase } from "@/components/moon-phase";
-import { moonForDate, nextPrincipalPhases } from "@/lib/moon";
+import { moonForDate, nextPrincipalPhases, principalPhasesOnDate } from "@/lib/moon";
 import { latviaDateParts } from "@/lib/day-anchor";
 import { SeasonalLinks } from "@/components/seasonal-links";
 import { sowingDays, ELEMENT_META } from "@/lib/biodynamic";
@@ -23,6 +23,8 @@ export default function MenessPage() {
   const today = new Date();
   const moon = moonForDate(today);
   const upcoming = nextPrincipalPhases(today);
+  const fullMoonToday = principalPhasesOnDate(today).find((phase) => phase.frac === 0.5);
+  const nextFullMoon = upcoming.find((phase) => phase.frac === 0.5)!;
   const week = sowingDays(today, 7);
 
   const jsonLd = {
@@ -49,6 +51,16 @@ export default function MenessPage() {
         <Link href="/kalendars" className="text-primary hover:underline">Mēness kalendāru</Link> vai uzzini,{" "}
         <Link href="/macies" className="text-primary hover:underline">kas ir Mēness sēja</Link>.
       </p>
+
+      <section className="mb-lg rounded-xl border border-primary/20 bg-surface-container p-md" aria-labelledby="full-moon-today">
+        <h2 id="full-moon-today" className="text-title-md text-on-surface">Vai šodien ir pilnmēness?</h2>
+        <p className="mt-xs text-body-lg text-on-surface">
+          {fullMoonToday
+            ? `Jā. Pilnmēness iestāšanās brīdis šodien ir plkst. ${TIME_FMT.format(fullMoonToday.date)} pēc Latvijas laika.`
+            : `Nē. Nākamā pilnmēness datums: ${DATE_FMT.format(nextFullMoon.date)}, plkst. ${TIME_FMT.format(nextFullMoon.date)} pēc Latvijas laika.`}
+        </p>
+        <p className="mt-sm text-body-md text-on-surface-variant">Pilnmēness ir konkrēts astronomisks brīdis. Attēlā gandrīz pilns Mēness var būt redzams arī blakus dienās; augošs vai dilstošs raksturo dienas aprēķina brīdi.</p>
+      </section>
 
       <div className="grid grid-cols-1 gap-gutter lg:grid-cols-12">
         {/* Hero moon */}

@@ -6,7 +6,12 @@
   "type": "sipolpuke",
   "tagline": "Latvijas dārzu rudens karaliene, kas zied bagātīgi no jūlija līdz pat pirmajām salnām.",
   "bloom": "Jūlijs–oktobris (līdz pirmajām salnām)",
-  "bloomMonths": [7, 8, 9, 10],
+  "bloomMonths": [
+    7,
+    8,
+    9,
+    10
+  ],
   "height": "30–150 cm (atkarībā no šķirnes)",
   "sun": "Saule",
   "hardy": false,
@@ -55,5 +60,13 @@
       "a": "Visbiežāk vainīgs pārāk daudz slāpekļa mēslojuma vai par ēnainu vieta — dālijai vajag pilnu sauli un kālijā bagātu barību. Palīdz arī regulāra noziedējušo ziedu izgriešana, kas mudina augu veidot jaunus pumpurus."
     }
   ],
-  "related": ["gladiolas", "begonijas", "lilijas"]
+  "related": [
+    "gladiolas",
+    "begonijas",
+    "lilijas"
+  ],
+  "image": {
+    "id": "dalija-zieds",
+    "caption": "Pildītas dālijas zieds tuvplānā. Šķirnes atšķiras pēc ziedu formas, izmēra un auga augstuma."
+  }
 }

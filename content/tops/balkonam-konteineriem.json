@@ -4,7 +4,7 @@
   "category": "Balkonam",
   "intro": [
     "Tev nav vajadzīgs dārzs, lai audzētu pašu pārtiku. Lieliska raža izaug arī podā uz balkona, puķu kastē pie palodzes vai pāris spaiņos uz terases — galvenais ir pietiekami liels trauks, laba zeme un saule.",
-    "Esi godīgs pats pret sevi par apstākļiem: lielākā daļa garšaugu un salātu grib vismaz 4–6 saules stundas dienā. Ja balkons ir ziemeļu pusē un ēnains, izvēlies salātus, mētru un pētersīļus — tie panes pussēnu. Saulei mīlošos baziliku un tomātus turpretī taupi saulainākajai vietai.",
+    "Esi godīgs pats pret sevi par apstākļiem: lielākā daļa garšaugu un salātu grib vismaz 4–6 saules stundas dienā. Ja balkons ir ziemeļu pusē un ēnains, izvēlies salātus, mētru un pētersīļus — tie panes pusēnu. Saulei mīlošos baziliku un tomātus turpretī taupi saulainākajai vietai.",
     "Atceries divas lietas: podi izžūst daudz ātrāk nekā dobe (vasarā dažkārt jālej katru dienu), un siltummīlošos augus laukā nes tikai pēc salnām — mūsu pusē tas ir maija beigas. Sāc ar pāris vienkāršiem augiem, nevis visu uzreiz."
   ],
   "items": [
@@ -18,7 +18,7 @@
       "rank": 2,
       "cropId": "salati",
       "name": "Salāti",
-      "blurb": "Aug praktiski jebkurā traukā un panes pussēnu, tāpēc der arī ēnainākam balkonam. Sēj ik pa 2 nedēļām no aprīļa, plūc ārējās lapas un augs ražo visu vasaru."
+      "blurb": "Aug praktiski jebkurā traukā un panes pusēnu, tāpēc der arī ēnainākam balkonam. Sēj ik pa 2 nedēļām no aprīļa, plūc ārējās lapas un augs ražo visu vasaru."
     },
     {
       "rank": 3,
@@ -30,7 +30,7 @@
       "rank": 4,
       "cropId": "metra",
       "name": "Piparmētra",
-      "blurb": "Daudzgadīga, nenogalināma un balkonam ideāla tieši tāpēc, ka podā tā nevar pārņemt dobi. Panes pussēnu un dod svaigas lapas tējai no jūnija līdz septembrim."
+      "blurb": "Daudzgadīga, nenogalināma un balkonam ideāla tieši tāpēc, ka podā tā nevar pārņemt dobi. Panes pusēnu un dod svaigas lapas tējai no jūnija līdz septembrim."
     },
     {
       "rank": 5,
@@ -54,7 +54,7 @@
       "rank": 8,
       "cropId": "petersili",
       "name": "Pētersīļi",
-      "blurb": "Panes pussēnu un mierīgi aug arī dziļākā podā uz ēnaināka balkona. Dīgst lēni (līdz 3 nedēļām), tāpēc nepacietīgajiem labāk pirkt jau stādu."
+      "blurb": "Panes pusēnu un mierīgi aug arī dziļākā podā uz ēnaināka balkona. Dīgst lēni (līdz 3 nedēļām), tāpēc nepacietīgajiem labāk pirkt jau stādu."
     },
     {
       "rank": 9,

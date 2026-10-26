@@ -12,6 +12,11 @@ export const NEWSLETTER_LIST_ID = 5;
 
 export type SubscribeResult = "pending-confirmation" | "already-subscribed" | "invalid" | "not-configured" | "error";
 
+export function newsletterConfigured(): boolean {
+  const templateId = Number(process.env.BREVO_DOI_TEMPLATE_ID);
+  return Boolean(process.env.BREVO_API_KEY && Number.isInteger(templateId) && templateId > 0);
+}
+
 /** Loose-but-practical email shape check; Brevo re-validates on its side. */
 export function isValidEmail(email: string): boolean {
   return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email) && email.length <= 254;

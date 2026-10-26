@@ -21,6 +21,8 @@ export type AnalyticsEvent =
   | "garden_activated"
   | "garden_return"
   | "calendar_opened"
+  | "calendar_print"
+  | "calendar_month_select"
   | "planner_started"
   | "planner_saved"
   | "social_visit";

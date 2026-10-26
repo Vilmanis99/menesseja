@@ -7,7 +7,7 @@
   "shortAnswer": "Tu ej uz siltumnīcu priecāties par skaistajiem, gandrīz gataviem tomātiem — un ieraugi, ka tiem pāri augļa virsmai vijas plaisas.  Dažas ir sīkas un gredzenveidā ap kātiņu, citas dziļas un staro no augšas uz leju.",
   "primaryQuery": "kāpēc tomāti plaisā un kā to novērst",
   "publishedAt": "2026-06-17",
-  "updatedAt": "2026-06-17",
+  "updatedAt": "2026-10-26",
   "entities": {
     "crops": [
       "tomati"
@@ -35,7 +35,7 @@
       "heading": "Kā atpazīt plaisāšanu",
       "paragraphs": [
         "Ir divi plaisu veidi, un abiem ir viens un tas pats cēlonis. Riņķveida plaisas ir koncentriski gredzeni ap augļa kātiņu — tādas redz biežāk un tās ir seklākas. Radiālās plaisas iet kā stari no kātiņa uz leju pa augļa sāniem, un tās mēdz būt dziļākas un nepatīkamākas, jo pa tām augļa iekšienē var iekļūt mitrums un sēnes.",
-        "Svarīgi neapjaukt plaisāšanu ar galotņu puvi — tumšu, iegrimušu, ādainu plankumu augļa galā (pretī kātiņam). Tas ir pavisam cits stāsts, kas saistīts ar kalcija uzņemšanu, un par to mums ir atsevišķs raksts. Plaisas turpretī ir tīri mehāniskas: miza vienkārši pārsprāgst no straujas uzbriešanas."
+        "Svarīgi nesajaukt plaisāšanu ar galotņu puvi — tumšu, iegrimušu, ādainu plankumu augļa galā (pretī kātiņam). Tas ir pavisam cits stāsts, kas saistīts ar kalcija uzņemšanu, un par to mums ir atsevišķs raksts. Plaisas turpretī ir tīri mehāniskas: miza vienkārši pārsprāgst no straujas uzbriešanas."
       ]
     },
     {
@@ -56,7 +56,7 @@
     {
       "heading": "Ko darīt ar jau ieplaisājušiem tomātiem",
       "paragraphs": [
-        "Ieplaisājušu tomātu nav jāizmet. Ja plaisa ir sveža, sausa un tīra, novāc augli un apēd to tuvākajās dienās — tas ir pilnīgi labs, tikai ilgi neuzglabāsies. Plaisa ir kā atvērta brūce, pa kuru var sākt iekļūt mitrums un pelējums, tāpēc šādus tomātus lieto pirmos.",
+        "Ieplaisājušu tomātu nav jāizmet. Ja plaisa ir svaiga, sausa un tīra, novāc augli un apēd to tuvākajās dienās — tas ir pilnīgi labs, tikai ilgi neuzglabāsies. Plaisa ir kā atvērta brūce, pa kuru var sākt iekļūt mitrums un pelējums, tāpēc šādus tomātus lieto pirmos.",
         "Ja plaisā jau redzama mitra, pelēka vai melna apmale vai pelējums, šo daļu nogriez vai augli izmet kompostā — tas jau sācis pūt. Nekādā gadījumā neuzglabā ieplaisājušus tomātus kopā ar veseliem: viens bojāts auglis var savilkt pelējumu visam grozam."
       ]
     },
@@ -64,7 +64,7 @@
       "heading": "Īsa kopsavilkuma atbilde",
       "paragraphs": [
         "Tomāti plaisā no nevienmērīga mitruma — kad pēc sausuma augs strauji uzsūc daudz ūdens un augļa miza neiztur straujo uzbriešanu. Tā nav slimība un ne barības trūkums. Lai to novērstu, laisti regulāri un dziļi, mulčē zemi, un pasargā lauka tomātus no stipra lietus pēc sausuma. Plaisas mazāk skar biezmizainas un ķiršu šķirnes.",
-        "Un Mēness? Mēness fāze plaisāšanu neietekmē — to nosaka ūdens un laikapstākļi, ne debesis. Mēness kalendārs ir jauka tradīcija un dārza ritms, ne ražas garantija. Tomātu plaisas atrisinās lietuvāka un mulča, ne pareizā Mēness diena."
+        "Un Mēness? Mēness fāze plaisāšanu neietekmē — to nosaka ūdens un laikapstākļi, ne debesis. Mēness kalendārs ir jauka tradīcija un dārza ritms, ne ražas garantija. Tomātu plaisas atrisinās vienmērīga laistīšana un mulča, ne pareizā Mēness diena."
       ]
     }
   ],

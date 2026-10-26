@@ -3,7 +3,7 @@ import { ConsentSettingsButton } from "@/components/consent-settings-button";
 
 const LINKS = [
   { href: "/macies", label: "Kas ir Mēness sēja?" },
-  { href: "/raksti", label: "Raksti" },
+  { href: "/raksti", label: "Zināšanu krātuve" },
   { href: "/augi", label: "Augu enciklopēdija" },
   { href: "/pukes", label: "Puķes" },
   { href: "/kaitekli", label: "Kaitēkļi un slimības" },

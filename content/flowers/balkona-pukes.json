@@ -6,9 +6,14 @@
   "type": "viengadiga",
   "tagline": "Krāšņs balkons visu vasaru — ja izvēlies pareizās puķes un iznes tās laukā tikai pēc salnām.",
   "bloom": "Jūnijs–septembris",
-  "bloomMonths": [6, 7, 8, 9],
+  "bloomMonths": [
+    6,
+    7,
+    8,
+    9
+  ],
   "height": "15–50 cm",
-  "sun": "Saule / pussēna",
+  "sun": "Saule / pusēna",
   "hardy": false,
   "difficulty": "viegli",
   "plantWhen": "Stādus laukā un balkonā izliek tikai pēc pēdējām salnām, maija beigās",
@@ -20,7 +25,7 @@
     "Šis ir ceļvedis, nevis stāsts par vienu augu: te ir kopīgie principi, kā balkona puķes izvēlēties, salikt podos un kopt visu vasaru. Galvenais, kas jāatceras: gandrīz visas šīs puķes ir siltummīlītes un Latvijā NAV ziemcietīgas. Tās nedrīkst izlikt laukā par agru — siltummīļus stāda tikai pēc pēdējās pavasara salnas, iekšzemē drošāk maija beigās. Pārsteidzīga izlikšana aukstā maija naktī var visu sezonu sabojāt."
   ],
   "planting": [
-    "Izvēlies puķes pēc balkona pulksteņa: saulainā, dienvidu pusē labi jūtas pelargonijas, petūnijas un surfīnijas; ēnainā, ziemeļu pusē — begonijas un lobēlijas, kas panes pussēnu. Saplāno, ko stādīt augšā (vertikāli) un ko nokarenās malās (surfīnijas, lobēlijas).",
+    "Izvēlies puķes pēc balkona pulksteņa: saulainā, dienvidu pusē labi jūtas pelargonijas, petūnijas un surfīnijas; ēnainā, ziemeļu pusē — begonijas un lobēlijas, kas panes pusēnu. Saplāno, ko stādīt augšā (vertikāli) un ko nokarenās malās (surfīnijas, lobēlijas).",
     "Stādus laukā un balkona kastēs izliec tikai pēc pēdējām salnām — iekšzemē (Vidzemē, Latgalē) drošāk maija beigās, Zemgalē ap 15. maiju, piekrastē var jau ap maija vidu. Līdz tam tur tos uz palodzes vai siltumnīcā.",
     "Lieto labu podu zemi (universālu puķu substrātu) ar drenāžu — poda dibenā ieber keramzītu vai akmentiņus un pārliecinies, ka podam ir caurums ūdens notecei; stāvošs ūdens ir balkona puķu galvenais slepkava.",
     "Atstatumu stādi blīvāk nekā dobē: 15–25 cm starp augiem atkarībā no šķirnes; balkona kastē izskatās bagātīgāk, ja augi aizpilda telpu. Pēc stādīšanas augus labi aplej; pelargonijas nestādi par dziļu, jo mitrā zemē iemiedzies stublājs viegli sapūst.",
@@ -54,5 +59,9 @@
       "a": "Visbiežāk pietrūkst barības un netiek noņemti nokaltušie ziedi. Podu zeme ir maza un ātri izsīkst, tāpēc mēslo ik pa 1–2 nedēļām ar mēslojumu ziedošajiem augiem un regulāri izknibini nokaltušos ziedus; ja augs izstiepies, apgriez to par trešdaļu."
     }
   ],
-  "related": ["pelargonijas", "petunijas", "begonijas"]
+  "related": [
+    "pelargonijas",
+    "petunijas",
+    "begonijas"
+  ]
 }

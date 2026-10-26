@@ -7,7 +7,7 @@
   "shortAnswer": "Tu paskaties uz savu palodzi un sirds saraujas — dēsti, kuriem vajadzēja būt īsiem un krietniem, ir izstiepušies gari, tievi un bāli, kāti plāni kā diegs un gandrīz nespēj noturēt paši savas lapas.  Pateiksim uzreiz un godīgi: tā nav reta nelaime un tā nav tava vaina kā dārzniekam.",
   "primaryQuery": "kāpēc dēsti izstīdz",
   "publishedAt": "2026-06-29",
-  "updatedAt": "2026-06-29",
+  "updatedAt": "2026-10-26",
   "entities": {},
   "relatedSlugs": [
     "destu-audzesana-uz-palodzes",
@@ -36,10 +36,14 @@
     {
       "heading": "Kā pazīt izstīdzējušu dēstu",
       "paragraphs": [
-        "Izstīdzējušu dēstu pazīst pēc trim pazīmēm uzreiz. Pirmkārt, kāts ir nedabiski garš un tievs — posms starp augsni un pirmajām lapām (dīgļlapām) ir izstiepies pat 5–8 cm garumā, kaut spēcīgam dēstam tas ir tikai 1–2 cm. Otrkārt, kāts ir plāns un trausls, gaiši zaļš vai pat balgani dzeltens, nevis krietns un sulīgi tumši zaļš. Treškārt, augs liecas un ļumst — viņš nespēj stāvēt taisni un sliecas pret logu vai gaismas avotu.",
+        "Izstīdzējušu dēstu pazīst pēc trim pazīmēm uzreiz. Pirmkārt, kāts ir nedabiski garš un tievs — posms starp augsni un pirmajām lapām (dīgļlapām) ir izstiepies pat 5–8 cm garumā, kaut spēcīgam dēstam tas ir tikai 1–2 cm. Otrkārt, kāts ir plāns un trausls, gaiši zaļš vai pat bālgani dzeltens, nevis krietns un sulīgi tumši zaļš. Treškārt, augs liecas un ļumst — viņš nespēj stāvēt taisni un sliecas pret logu vai gaismas avotu.",
         "Veselīgs dēsts izskatās pretēji: tas ir īss, drukns un tumši zaļš, ar maziem attālumiem starp lapām un stingru kātu, kas droši notur lapas. Ja tavs dēsts ir garš un bāls, tas vienkārši ir izstiepies, lai sasniegtu vairāk gaismas — un tas ir signāls, ka kaut kas vidē ir jālabo. Tas vēl nenozīmē, ka dēsts ir pagalam.",
         "Uzmanies nesajaukt izstīdzēšanu ar melno kāju. Izstīdzējis dēsts ir garš, bet vesels, un kāts visā garumā ir vienmērīgs. Melnās kājas gadījumā kāts pie pašas zemes kļūst tumšs, plāns un mīksts, un dēsts pēkšņi nogāžas un aiziet bojā — tā jau ir sēnīšu slimība, nevis gaismas trūkums."
-      ]
+      ],
+      "image": {
+        "id": "tomatu-digsti",
+        "caption": "Tomātu dīgsti ar gariem, tieviem stublājiem. Šāds izskats ir iemesls pārbaudīt gaismu, temperatūru un sējuma blīvumu; foto viens pats nenosaka cēloni."
+      }
     },
     {
       "heading": "Kāpēc dēsti izstīdz",
@@ -62,7 +66,7 @@
       "heading": "Kā novērst nākamreiz",
       "paragraphs": [
         "Vissvarīgākais — nesēj pārāk agri. Skaiti atpakaļ no izstādīšanas brīža: siltumu mīlošos dārzeņus Latvijā laukā stāda maija beigās vai jūnija sākumā, kad salnas garām. Tomātus sēj marta vidū līdz aprīļa sākumam (aptuveni 6–8 nedēļas pirms izstādīšanas), papriku un selerijas agrāk — februārī, jo tās aug lēni, bet gurķus, kabačus un ķirbjus pavisam vēlu, aprīļa beigās. Jo īsāku laiku dēsts pavada uz tumšās palodzes, jo mazāk tas paspēj izstīdzēt.",
-        "Otrais — nodrošini gaismu no paša sākuma. Liec dēstus gaišākajā palodzē un, ja sēj februārī vai marta sākumā, rēķinies ar augu lampu jau uzreiz. Bez papildu gaismas agrās sējas Latvijā gandrīz vienmēr izstīdzē. Ja lampas nav, labāk pagaidi un sēj nedēļu vai divas vēlāk, kad dienas garākas — vēlāk iesēts, bet stiprs dēsts viegli apdzīs agro izstīdzējušo.",
+        "Otrais — nodrošini gaismu no paša sākuma. Liec dēstus gaišākajā palodzē un, ja sēj februārī vai marta sākumā, rēķinies ar augu lampu jau uzreiz. Bez papildu gaismas agrās sējas Latvijā gandrīz vienmēr izstīdz. Ja lampas nav, labāk pagaidi un sēj nedēļu vai divas vēlāk, kad dienas garākas — vēlāk iesēts, bet stiprs dēsts viegli apdzīs agro izstīdzējušo.",
         "Trešais — turi gaisu vēsāku, tiklīdz parādās asni. Sēklai dīgšanai gan vajag siltumu (ap 22–25 grādi), bet, līdzko parādās pirmie dīgsti, pārcel dēstus vēsākā un gaišākā vietā ap 16–18 grādiem. Karstā un tumšā stūrī dīgsti stiepjas jau pirmajās dienās. Ceturtais — sēj retāk un nebiezi, dod katram dēstam vietu. Un piektais — laisti mēreni: pastāvīgi slapja, silta zeme veicina gan izstīdzēšanu, gan melno kāju."
       ]
     },

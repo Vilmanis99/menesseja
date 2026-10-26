@@ -1,13 +1,16 @@
 import fs from "node:fs";
 import path from "node:path";
+import type { ContentImageUse } from "./content-images";
 
 export interface CropSection {
   heading: string;
   body: string;
+  image?: ContentImageUse;
 }
 
 export interface CropContent {
   intro: string;
+  image?: ContentImageUse;
   sections: CropSection[];
   folklore?: string;
   faq?: { q: string; a: string }[];

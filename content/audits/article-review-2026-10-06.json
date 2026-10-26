@@ -1,0 +1,2470 @@
+{
+  "date": "2026-10-06",
+  "scope": "Visu 80 rakstu satura struktūras, īso atbilžu, tēmu un avotu saišu sākotnēja izvērtēšana. Šajā kārtā 11 raksti pārrakstīti pēc tematiskiem avotiem; augusta ceļvedī labotas atlasītas vietas. Pārējo rakstu pilns apgalvojumu audits nav veikts.",
+  "flagsAreEditorialPromptsNotVerifiedErrors": true,
+  "competitorSampleIsNotTrafficRanking": true,
+  "gscPeriod": {
+    "from": "2026-07-04",
+    "to": "2026-10-03",
+    "doesNotMeasureSpringDemand": true
+  },
+  "metrics": {
+    "before": {
+      "articles": 80,
+      "sourceEntries": 168,
+      "articlesWithGenericLLKCOrRHS": 66,
+      "genericSourceEntries": 130,
+      "articlesWithTables": 3,
+      "medianBodyWords": 949.0
+    },
+    "after": {
+      "articles": 80,
+      "sourceEntries": 187,
+      "articlesWithGenericLLKCOrRHS": 55,
+      "genericSourceEntries": 110,
+      "articlesWithTables": 8,
+      "medianBodyWords": 895.0
+    }
+  },
+  "statusCounts": {
+    "screened_not_fully_fact_checked": 68,
+    "targeted_corrections": 1,
+    "rewritten_with_topic_sources": 11
+  },
+  "priorityCounts": {
+    "P2_topic_review": 43,
+    "P1_before_spring": 16,
+    "completed_this_round": 11,
+    "P1_seasonal": 5,
+    "P0_claims": 5
+  },
+  "articles": [
+    {
+      "slug": "augoss-un-dilstoss-meness",
+      "title": "Augošs un dilstošs Mēness: ko sēt katrā",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P2_topic_review",
+      "seasonalMonths": [],
+      "flags": [
+        "review_narrative_short_answer",
+        "consider_real_reader_questions"
+      ],
+      "nextAction": "Pārbaudīt galvenos apgalvojumus pret konkrētiem avotiem; saīsināt ievadu un precizēt pirmo darbību. Ja raksts jau uzlabots, turpināt no esošās versijas.",
+      "gscJuly4ToOctober3": {
+        "url": "https://www.menesseja.lv/raksti/augoss-un-dilstoss-meness",
+        "clicks": 0,
+        "impressions": 14,
+        "ctr": 0.0,
+        "position": 3.86
+      },
+      "sourcesBefore": [
+        "https://science.nasa.gov/moon/moon-phases/",
+        "https://www.mariathun.com/"
+      ],
+      "sourcesAfter": [
+        "https://science.nasa.gov/moon/moon-phases/",
+        "https://www.mariathun.com/"
+      ]
+    },
+    {
+      "slug": "augsnes-temperatura",
+      "title": "Augsnes temperatūra: kāpēc tā svarīgāka par Mēnesi",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P1_before_spring",
+      "seasonalMonths": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "flags": [
+        "replace_general_source_links",
+        "review_narrative_short_answer",
+        "consider_real_reader_questions"
+      ],
+      "nextAction": "Pārbaudīt laika, gaismas, temperatūras un laistīšanas norādes pēc sugas; sākt ar īso atbildi un apstākļu pārbaudes soļiem.",
+      "gscJuly4ToOctober3": {
+        "url": "https://www.menesseja.lv/raksti/augsnes-temperatura",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 5.0
+      },
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ],
+      "sourcesAfter": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ]
+    },
+    {
+      "slug": "augu-maina-darza",
+      "title": "Augu maiņa dārzā: vienkārša 4 gadu shēma",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P2_topic_review",
+      "seasonalMonths": [
+        1,
+        2,
+        3,
+        4,
+        10,
+        11,
+        12
+      ],
+      "flags": [
+        "replace_general_source_links",
+        "consider_real_reader_questions"
+      ],
+      "nextAction": "Pārbaudīt galvenos apgalvojumus pret konkrētiem avotiem; saīsināt ievadu un precizēt pirmo darbību. Ja raksts jau uzlabots, turpināt no esošās versijas.",
+      "gscJuly4ToOctober3": {
+        "url": "https://www.menesseja.lv/raksti/augu-maina-darza",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 6.5
+      },
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ],
+      "sourcesAfter": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ]
+    },
+    {
+      "slug": "aukstumizturigie-vs-siltummilosie",
+      "title": "Aukstumizturīgie vs siltummīlošie dārzeņi: vienkāršs dalījums",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P1_before_spring",
+      "seasonalMonths": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "flags": [
+        "replace_general_source_links",
+        "review_narrative_short_answer"
+      ],
+      "nextAction": "Pārbaudīt laika, gaismas, temperatūras un laistīšanas norādes pēc sugas; sākt ar īso atbildi un apstākļu pārbaudes soļiem.",
+      "gscJuly4ToOctober3": {
+        "url": "https://www.menesseja.lv/raksti/aukstumizturigie-vs-siltummilosie",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 6.0
+      },
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ],
+      "sourcesAfter": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ]
+    },
+    {
+      "slug": "avenu-apgriesana-pec-razas",
+      "title": "Aveņu apgriešana pēc ražas: kurus dzinumus griezt un kad",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P2_topic_review",
+      "seasonalMonths": [
+        7,
+        8,
+        9
+      ],
+      "flags": [
+        "replace_general_source_links"
+      ],
+      "nextAction": "Pārbaudīt galvenos apgalvojumus pret konkrētiem avotiem; saīsināt ievadu un precizēt pirmo darbību. Ja raksts jau uzlabots, turpināt no esošās versijas.",
+      "gscJuly4ToOctober3": null,
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ],
+      "sourcesAfter": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ]
+    },
+    {
+      "slug": "balkona-darzs-iesacejam",
+      "title": "Balkona dārzs iesācējam: ar ko sākt un ko audzēt vispirms",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P1_before_spring",
+      "seasonalMonths": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "flags": [
+        "replace_general_source_links",
+        "review_narrative_short_answer"
+      ],
+      "nextAction": "Pārbaudīt laika, gaismas, temperatūras un laistīšanas norādes pēc sugas; sākt ar īso atbildi un apstākļu pārbaudes soļiem.",
+      "gscJuly4ToOctober3": null,
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ],
+      "sourcesAfter": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ]
+    },
+    {
+      "slug": "baltas-sinepes-pec-razas",
+      "title": "Baltās sinepes un citi zaļmēslojumi: ko sēt tukšajās dobēs pēc ražas",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P2_topic_review",
+      "seasonalMonths": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "flags": [
+        "replace_general_source_links"
+      ],
+      "nextAction": "Pārbaudīt galvenos apgalvojumus pret konkrētiem avotiem; saīsināt ievadu un precizēt pirmo darbību. Ja raksts jau uzlabots, turpināt no esošās versijas.",
+      "gscJuly4ToOctober3": null,
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ],
+      "sourcesAfter": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ]
+    },
+    {
+      "slug": "biodinamika-iesacejiem",
+      "title": "Biodinamika iesācējiem: kas tā ir un kā sākt",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P2_topic_review",
+      "seasonalMonths": [],
+      "flags": [
+        "review_narrative_short_answer",
+        "consider_real_reader_questions"
+      ],
+      "nextAction": "Pārbaudīt galvenos apgalvojumus pret konkrētiem avotiem; saīsināt ievadu un precizēt pirmo darbību. Ja raksts jau uzlabots, turpināt no esošās versijas.",
+      "gscJuly4ToOctober3": null,
+      "sourcesBefore": [
+        "https://science.nasa.gov/moon/moon-phases/",
+        "https://www.mariathun.com/"
+      ],
+      "sourcesAfter": [
+        "https://science.nasa.gov/moon/moon-phases/",
+        "https://www.mariathun.com/"
+      ]
+    },
+    {
+      "slug": "cik-liela-pirma-dobe",
+      "title": "Cik liela būt pirmajai dobei (un cik daudz ko stādīt)",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P1_before_spring",
+      "seasonalMonths": [
+        1,
+        2,
+        3,
+        4,
+        10,
+        11,
+        12
+      ],
+      "flags": [
+        "replace_general_source_links",
+        "review_narrative_short_answer"
+      ],
+      "nextAction": "Dot izmēra izvēles kritērijus un izmērāmu piemēru; neizplest par visu pirmo dārza gadu.",
+      "gscJuly4ToOctober3": {
+        "url": "https://www.menesseja.lv/raksti/cik-liela-pirma-dobe",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 5.0
+      },
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ],
+      "sourcesAfter": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ]
+    },
+    {
+      "slug": "cik-liels-pods-darzeniem",
+      "title": "Cik liels pods vajadzīgs? Izmēri litros pa kultūrām",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P1_before_spring",
+      "seasonalMonths": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "flags": [
+        "replace_general_source_links",
+        "review_narrative_short_answer"
+      ],
+      "nextAction": "Pārbaudīt laika, gaismas, temperatūras un laistīšanas norādes pēc sugas; sākt ar īso atbildi un apstākļu pārbaudes soļiem.",
+      "gscJuly4ToOctober3": {
+        "url": "https://www.menesseja.lv/raksti/cik-liels-pods-darzeniem",
+        "clicks": 0,
+        "impressions": 13,
+        "ctr": 0.0,
+        "position": 6.69
+      },
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ],
+      "sourcesAfter": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ]
+    },
+    {
+      "slug": "darza-darbi-augusta",
+      "title": "Dārza darbi augustā: raža, konservēšana un jaunās zemenes",
+      "status": "targeted_corrections",
+      "priority": "P2_topic_review",
+      "seasonalMonths": [
+        8
+      ],
+      "flags": [
+        "replace_general_source_links"
+      ],
+      "nextAction": "Pārskatīt atlikušās ražas, zemeņu stādīšanas un augusta darbu norādes; šajā kārtā laboti tikai atlases un konservēšanas fragmenti un īsā atbilde.",
+      "gscJuly4ToOctober3": null,
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ],
+      "sourcesAfter": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice",
+        "https://nchfp.uga.edu/how/can/how-do-i-can-tomatoes/canning-tomatoes-introduction/",
+        "https://nchfp.uga.edu/how/pickle/general-information-pickling/general-information-on-pickling/"
+      ]
+    },
+    {
+      "slug": "darza-darbi-julija",
+      "title": "Dārza darbi jūlijā: ko sēt, ko novākt un kam pievērst uzmanību",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P2_topic_review",
+      "seasonalMonths": [
+        7
+      ],
+      "flags": [
+        "replace_general_source_links"
+      ],
+      "nextAction": "Pārbaudīt galvenos apgalvojumus pret konkrētiem avotiem; saīsināt ievadu un precizēt pirmo darbību. Ja raksts jau uzlabots, turpināt no esošās versijas.",
+      "gscJuly4ToOctober3": {
+        "url": "https://www.menesseja.lv/raksti/darza-darbi-julija",
+        "clicks": 1,
+        "impressions": 34,
+        "ctr": 0.0294,
+        "position": 5.32
+      },
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ],
+      "sourcesAfter": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ]
+    },
+    {
+      "slug": "darza-planosana-iesacejam",
+      "title": "Dārza plānošana iesācējam: pirmie soļi",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P1_before_spring",
+      "seasonalMonths": [
+        1,
+        2,
+        3,
+        4,
+        10,
+        11,
+        12
+      ],
+      "flags": [
+        "replace_general_source_links",
+        "review_narrative_short_answer",
+        "consider_real_reader_questions"
+      ],
+      "nextAction": "Koncentrēties uz vietas, gaismas un laistīšanas plānu; pievienot vienas dobes shēmu.",
+      "gscJuly4ToOctober3": null,
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ],
+      "sourcesAfter": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ]
+    },
+    {
+      "slug": "darza-pukes-kas-zied-visu-vasaru",
+      "title": "Dārza puķes, kas zied visu vasaru (un kā tās izvēlēties)",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P2_topic_review",
+      "seasonalMonths": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "flags": [
+        "replace_general_source_links"
+      ],
+      "nextAction": "Pārbaudīt galvenos apgalvojumus pret konkrētiem avotiem; saīsināt ievadu un precizēt pirmo darbību. Ja raksts jau uzlabots, turpināt no esošās versijas.",
+      "gscJuly4ToOctober3": {
+        "url": "https://www.menesseja.lv/raksti/darza-pukes-kas-zied-visu-vasaru",
+        "clicks": 1,
+        "impressions": 159,
+        "ctr": 0.0063,
+        "position": 22.14
+      },
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ],
+      "sourcesAfter": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ]
+    },
+    {
+      "slug": "desti-izstidz",
+      "title": "Kāpēc dēsti izstīdz (gari, tievi un bāli) — un kā glābt",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P1_before_spring",
+      "seasonalMonths": [
+        2,
+        3,
+        4
+      ],
+      "flags": [
+        "replace_general_source_links",
+        "review_narrative_short_answer",
+        "consider_symptom_comparison"
+      ],
+      "nextAction": "Pārbaudīt laika, gaismas, temperatūras un laistīšanas norādes pēc sugas; sākt ar īso atbildi un apstākļu pārbaudes soļiem.",
+      "gscJuly4ToOctober3": {
+        "url": "https://www.menesseja.lv/raksti/desti-izstidz",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 8.0
+      },
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ],
+      "sourcesAfter": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ]
+    },
+    {
+      "slug": "destu-audzesana-uz-palodzes",
+      "title": "Dēstu audzēšana uz palodzes: soli pa solim",
+      "status": "rewritten_with_topic_sources",
+      "priority": "completed_this_round",
+      "seasonalMonths": [
+        2,
+        3,
+        4
+      ],
+      "flags": [],
+      "nextAction": "Pievienot oriģinālas fotogrāfijas, ja tās palīdz atpazīšanai; nākamajā sezonā vērtēt jautājumu aptvērumu un lasītāju atsauksmes.",
+      "gscJuly4ToOctober3": {
+        "url": "https://www.menesseja.lv/raksti/destu-audzesana-uz-palodzes",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 3.0
+      },
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ],
+      "sourcesAfter": [
+        "https://www.rhs.org.uk/propagation/how-to-sow-seeds-indoors",
+        "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/starting-seeds-indoors",
+        "https://www.rhs.org.uk/prevention-protection/hardening-off-tender-plants",
+        "https://llkc.lv/aktualitates/sausuma-riski-pavasari/"
+      ],
+      "previousHeadingAnchorsPreserved": true
+    },
+    {
+      "slug": "elementu-dienas",
+      "title": "Elementu dienas: saknes, lapas, ziedi, augļi (Marijas Tūnas sistēma)",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P2_topic_review",
+      "seasonalMonths": [],
+      "flags": [
+        "review_narrative_short_answer",
+        "consider_real_reader_questions"
+      ],
+      "nextAction": "Pārbaudīt galvenos apgalvojumus pret konkrētiem avotiem; saīsināt ievadu un precizēt pirmo darbību. Ja raksts jau uzlabots, turpināt no esošās versijas.",
+      "gscJuly4ToOctober3": null,
+      "sourcesBefore": [
+        "https://science.nasa.gov/moon/moon-phases/",
+        "https://www.mariathun.com/"
+      ],
+      "sourcesAfter": [
+        "https://science.nasa.gov/moon/moon-phases/",
+        "https://www.mariathun.com/"
+      ]
+    },
+    {
+      "slug": "fitoftora-tomatiem",
+      "title": "Fitoftora tomātiem: kā atpazīt, apturēt un glābt ražu",
+      "status": "rewritten_with_topic_sources",
+      "priority": "completed_this_round",
+      "seasonalMonths": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "flags": [
+        "consider_symptom_comparison"
+      ],
+      "nextAction": "Pievienot oriģinālas fotogrāfijas, ja tās palīdz atpazīšanai; nākamajā sezonā vērtēt jautājumu aptvērumu un lasītāju atsauksmes.",
+      "gscJuly4ToOctober3": null,
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ],
+      "sourcesAfter": [
+        "https://www.rhs.org.uk/disease/tomato-blight",
+        "https://extension.umn.edu/agriculture/specialty-crops/vegetable-farming/disease-management/late-blight",
+        "https://registri.vaad.gov.lv/reg/aal_saraksts.aspx",
+        "https://nchfp.uga.edu/how/can/how-do-i-can-tomatoes/canning-tomatoes-introduction/"
+      ],
+      "previousHeadingAnchorsPreserved": true
+    },
+    {
+      "slug": "gladiolu-stadisana-un-kopsana",
+      "title": "Gladiolas: kad stādīt, kā kopt un griezt pušķim",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P2_topic_review",
+      "seasonalMonths": [
+        4,
+        5,
+        6
+      ],
+      "flags": [
+        "replace_general_source_links"
+      ],
+      "nextAction": "Pārbaudīt galvenos apgalvojumus pret konkrētiem avotiem; saīsināt ievadu un precizēt pirmo darbību. Ja raksts jau uzlabots, turpināt no esošās versijas.",
+      "gscJuly4ToOctober3": {
+        "url": "https://www.menesseja.lv/raksti/gladiolu-stadisana-un-kopsana",
+        "clicks": 1,
+        "impressions": 38,
+        "ctr": 0.0263,
+        "position": 22.5
+      },
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ],
+      "sourcesAfter": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ]
+    },
+    {
+      "slug": "ka-apgriezt-rozes-pavasari",
+      "title": "Kā pavasarī pareizi apgriezt rozes (pa veidiem)",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P2_topic_review",
+      "seasonalMonths": [
+        3,
+        4,
+        5
+      ],
+      "flags": [
+        "replace_general_source_links",
+        "review_narrative_short_answer"
+      ],
+      "nextAction": "Pārbaudīt galvenos apgalvojumus pret konkrētiem avotiem; saīsināt ievadu un precizēt pirmo darbību. Ja raksts jau uzlabots, turpināt no esošās versijas.",
+      "gscJuly4ToOctober3": {
+        "url": "https://www.menesseja.lv/raksti/ka-apgriezt-rozes-pavasari",
+        "clicks": 0,
+        "impressions": 25,
+        "ctr": 0.0,
+        "position": 11.76
+      },
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ],
+      "sourcesAfter": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ]
+    },
+    {
+      "slug": "ka-audzet-koriandru-kinzu",
+      "title": "Kā audzēt koriandru (kinzu) un kāpēc tā tik ātri iet ziedā",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P2_topic_review",
+      "seasonalMonths": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "flags": [
+        "replace_general_source_links",
+        "review_narrative_short_answer"
+      ],
+      "nextAction": "Pārbaudīt galvenos apgalvojumus pret konkrētiem avotiem; saīsināt ievadu un precizēt pirmo darbību. Ja raksts jau uzlabots, turpināt no esošās versijas.",
+      "gscJuly4ToOctober3": {
+        "url": "https://www.menesseja.lv/raksti/ka-audzet-koriandru-kinzu",
+        "clicks": 1,
+        "impressions": 30,
+        "ctr": 0.0333,
+        "position": 6.27
+      },
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ],
+      "sourcesAfter": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ]
+    },
+    {
+      "slug": "ka-glabat-dalijas-ziema",
+      "title": "Kad izrakt un kā glabāt dāliju bumbuļus ziemā",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P2_topic_review",
+      "seasonalMonths": [
+        1,
+        2,
+        3,
+        9,
+        10,
+        11,
+        12
+      ],
+      "flags": [],
+      "nextAction": "Pārbaudīt galvenos apgalvojumus pret konkrētiem avotiem; saīsināt ievadu un precizēt pirmo darbību. Ja raksts jau uzlabots, turpināt no esošās versijas.",
+      "gscJuly4ToOctober3": {
+        "url": "https://www.menesseja.lv/raksti/ka-glabat-dalijas-ziema",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 5.0
+      },
+      "sourcesBefore": [
+        "https://www.rhs.org.uk/plants/dahlia/growing-guide/",
+        "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/planting-bulbs-tubers-and-rhizomes",
+        "https://www.rhs.org.uk/prevention-protection/overwintering-tender-plants-lifting-or-mulching"
+      ],
+      "sourcesAfter": [
+        "https://www.rhs.org.uk/plants/dahlia/growing-guide/",
+        "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/planting-bulbs-tubers-and-rhizomes",
+        "https://www.rhs.org.uk/prevention-protection/overwintering-tender-plants-lifting-or-mulching"
+      ]
+    },
+    {
+      "slug": "ka-glabat-seklas-un-parbaudit-digtspeju",
+      "title": "Kā glabāt sēklas un pārbaudīt dīgtspēju",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P2_topic_review",
+      "seasonalMonths": [
+        1,
+        2,
+        3,
+        9,
+        10,
+        11,
+        12
+      ],
+      "flags": [],
+      "nextAction": "Pārbaudīt galvenos apgalvojumus pret konkrētiem avotiem; saīsināt ievadu un precizēt pirmo darbību. Ja raksts jau uzlabots, turpināt no esošās versijas.",
+      "gscJuly4ToOctober3": null,
+      "sourcesBefore": [
+        "https://www.rhs.org.uk/propagation/seed-collecting-storing",
+        "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/saving-vegetable-seeds",
+        "https://extension.illinois.edu/blogs/ilriverhort/2017-02-03-test-seed-viability"
+      ],
+      "sourcesAfter": [
+        "https://www.rhs.org.uk/propagation/seed-collecting-storing",
+        "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/saving-vegetable-seeds",
+        "https://extension.illinois.edu/blogs/ilriverhort/2017-02-03-test-seed-viability"
+      ]
+    },
+    {
+      "slug": "ka-izveleties-seklas-darzam",
+      "title": "Kā izvēlēties sēklas savam dārzam",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P2_topic_review",
+      "seasonalMonths": [
+        1,
+        2,
+        3,
+        4,
+        11,
+        12
+      ],
+      "flags": [],
+      "nextAction": "Pārbaudīt galvenos apgalvojumus pret konkrētiem avotiem; saīsināt ievadu un precizēt pirmo darbību. Ja raksts jau uzlabots, turpināt no esošās versijas.",
+      "gscJuly4ToOctober3": null,
+      "sourcesBefore": [
+        "https://extension.umn.edu/about/our-stories/news/garden-planning-in-the-new-year",
+        "https://www.rhs.org.uk/vegetables/f1-hybrids",
+        "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/growing-tomatoes"
+      ],
+      "sourcesAfter": [
+        "https://extension.umn.edu/about/our-stories/news/garden-planning-in-the-new-year",
+        "https://www.rhs.org.uk/vegetables/f1-hybrids",
+        "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/growing-tomatoes"
+      ]
+    },
+    {
+      "slug": "ka-kopt-geranijas",
+      "title": "Kā kopt ģerānijas (pelargonijas), lai kupli zied",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P2_topic_review",
+      "seasonalMonths": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "flags": [
+        "replace_general_source_links",
+        "review_narrative_short_answer"
+      ],
+      "nextAction": "Pārbaudīt galvenos apgalvojumus pret konkrētiem avotiem; saīsināt ievadu un precizēt pirmo darbību. Ja raksts jau uzlabots, turpināt no esošās versijas.",
+      "gscJuly4ToOctober3": null,
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ],
+      "sourcesAfter": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ]
+    },
+    {
+      "slug": "ka-laistit-darzu-karstuma",
+      "title": "Kā pareizi laistīt dārzu karstumā un sausumā",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P2_topic_review",
+      "seasonalMonths": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "flags": [
+        "replace_general_source_links"
+      ],
+      "nextAction": "Pārbaudīt galvenos apgalvojumus pret konkrētiem avotiem; saīsināt ievadu un precizēt pirmo darbību. Ja raksts jau uzlabots, turpināt no esošās versijas.",
+      "gscJuly4ToOctober3": null,
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ],
+      "sourcesAfter": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ]
+    },
+    {
+      "slug": "ka-lasit-meness-kalendaru",
+      "title": "Kā lasīt Mēness sējas kalendāru",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P2_topic_review",
+      "seasonalMonths": [],
+      "flags": [
+        "consider_real_reader_questions"
+      ],
+      "nextAction": "Pārbaudīt galvenos apgalvojumus pret konkrētiem avotiem; saīsināt ievadu un precizēt pirmo darbību. Ja raksts jau uzlabots, turpināt no esošās versijas.",
+      "gscJuly4ToOctober3": {
+        "url": "https://www.menesseja.lv/raksti/ka-lasit-meness-kalendaru",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 9.0
+      },
+      "sourcesBefore": [
+        "https://science.nasa.gov/moon/moon-phases/",
+        "https://www.mariathun.com/"
+      ],
+      "sourcesAfter": [
+        "https://science.nasa.gov/moon/moon-phases/",
+        "https://www.mariathun.com/"
+      ]
+    },
+    {
+      "slug": "ka-marinet-gurkus-kraukskigus",
+      "title": "Kā marinēt gurķus, lai tie būtu kraukšķīgi: senču triki un Mēness laiks",
+      "status": "rewritten_with_topic_sources",
+      "priority": "completed_this_round",
+      "seasonalMonths": [
+        7,
+        8,
+        9
+      ],
+      "flags": [],
+      "nextAction": "Pievienot oriģinālas fotogrāfijas, ja tās palīdz atpazīšanai; nākamajā sezonā vērtēt jautājumu aptvērumu un lasītāju atsauksmes.",
+      "gscJuly4ToOctober3": null,
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://nchfp.uga.edu/"
+      ],
+      "sourcesAfter": [
+        "https://nchfp.uga.edu/how/pickle/general-information-pickling/general-information-on-pickling/",
+        "https://nchfp.uga.edu/how/pickle/cucumber-pickles/quick-fresh-pack-dill-pickles/",
+        "https://nchfp.uga.edu/how/pickle/general-information-pickling/causes-and-possible-solutions-for-problems-with-pickled-foods/",
+        "https://extension.umn.edu/food/preparing/cooking-at-home/food-preservation/pickling"
+      ],
+      "previousHeadingAnchorsPreserved": true
+    },
+    {
+      "slug": "ka-pavairot-peonijas",
+      "title": "Kā pavairot peonijas (un cik jaunu augu iegūsi no viena cera)",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P2_topic_review",
+      "seasonalMonths": [
+        8,
+        9
+      ],
+      "flags": [
+        "replace_general_source_links",
+        "review_narrative_short_answer"
+      ],
+      "nextAction": "Pārbaudīt galvenos apgalvojumus pret konkrētiem avotiem; saīsināt ievadu un precizēt pirmo darbību. Ja raksts jau uzlabots, turpināt no esošās versijas.",
+      "gscJuly4ToOctober3": null,
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ],
+      "sourcesAfter": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ]
+    },
+    {
+      "slug": "ka-rudit-destus",
+      "title": "Kā norūdīt dēstus: 7 dienu plāns pirms izstādīšanas",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P1_before_spring",
+      "seasonalMonths": [
+        4,
+        5,
+        6
+      ],
+      "flags": [
+        "replace_general_source_links",
+        "review_narrative_short_answer"
+      ],
+      "nextAction": "Pārbaudīt laika, gaismas, temperatūras un laistīšanas norādes pēc sugas; sākt ar īso atbildi un apstākļu pārbaudes soļiem.",
+      "gscJuly4ToOctober3": null,
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ],
+      "sourcesAfter": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ]
+    },
+    {
+      "slug": "kad-novakt-kiplokus",
+      "title": "Kad un kā novākt ķiplokus un pareizi tos izžāvēt",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P1_seasonal",
+      "seasonalMonths": [
+        7,
+        8,
+        9
+      ],
+      "flags": [
+        "replace_general_source_links",
+        "review_narrative_short_answer"
+      ],
+      "nextAction": "Pārbaudīt sugu/šķirņu atšķirības un termiņu nosacījumus; saglabāt esošo URL un meklēšanas nolūku.",
+      "gscJuly4ToOctober3": {
+        "url": "https://www.menesseja.lv/raksti/kad-novakt-kiplokus",
+        "clicks": 3,
+        "impressions": 108,
+        "ctr": 0.0278,
+        "position": 6.69
+      },
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ],
+      "sourcesAfter": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ]
+    },
+    {
+      "slug": "kad-novakt-sipolus",
+      "title": "Kad novākt sīpolus un kā tos pareizi izžāvēt",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P1_seasonal",
+      "seasonalMonths": [
+        7,
+        8,
+        9
+      ],
+      "flags": [],
+      "nextAction": "Pārbaudīt sugu/šķirņu atšķirības un termiņu nosacījumus; saglabāt esošo URL un meklēšanas nolūku.",
+      "gscJuly4ToOctober3": null,
+      "sourcesBefore": [
+        "https://www.rhs.org.uk/vegetables/onions/grow-your-own",
+        "https://extension.umn.edu/commercial-fruit-production/postharvest-handling-fruit-and-vegetable-crops-minnesota",
+        "https://integretaaudzesana.vaad.gov.lv/lv/media/23/download?attachment="
+      ],
+      "sourcesAfter": [
+        "https://www.rhs.org.uk/vegetables/onions/grow-your-own",
+        "https://extension.umn.edu/commercial-fruit-production/postharvest-handling-fruit-and-vegetable-crops-minnesota",
+        "https://integretaaudzesana.vaad.gov.lv/lv/media/23/download?attachment="
+      ]
+    },
+    {
+      "slug": "kad-parstadit-peonijas",
+      "title": "Kad un kā pārstādīt un dalīt peonijas",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P1_seasonal",
+      "seasonalMonths": [
+        8,
+        9
+      ],
+      "flags": [
+        "replace_general_source_links"
+      ],
+      "nextAction": "Pārbaudīt sugu/šķirņu atšķirības un termiņu nosacījumus; saglabāt esošo URL un meklēšanas nolūku.",
+      "gscJuly4ToOctober3": {
+        "url": "https://www.menesseja.lv/raksti/kad-parstadit-peonijas",
+        "clicks": 6,
+        "impressions": 274,
+        "ctr": 0.0219,
+        "position": 8.92
+      },
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ],
+      "sourcesAfter": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ]
+    },
+    {
+      "slug": "kad-set-destus-rekini-atpakal",
+      "title": "Kad sēt dēstus: rēķini atpakaļ no izstādīšanas datuma",
+      "status": "rewritten_with_topic_sources",
+      "priority": "completed_this_round",
+      "seasonalMonths": [
+        2,
+        3,
+        4
+      ],
+      "flags": [],
+      "nextAction": "Pievienot oriģinālas fotogrāfijas, ja tās palīdz atpazīšanai; nākamajā sezonā vērtēt jautājumu aptvērumu un lasītāju atsauksmes.",
+      "gscJuly4ToOctober3": {
+        "url": "https://www.menesseja.lv/raksti/kad-set-destus-rekini-atpakal",
+        "clicks": 0,
+        "impressions": 7,
+        "ctr": 0.0,
+        "position": 7.14
+      },
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ],
+      "sourcesAfter": [
+        "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/starting-seeds-indoors",
+        "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/growing-cucumbers",
+        "https://www.rhs.org.uk/garden-jobs/when-to-plant-out-tender-plants-avoiding-late-frosts",
+        "https://llkc.lv/aktualitates/sausuma-riski-pavasari/"
+      ],
+      "previousHeadingAnchorsPreserved": true
+    },
+    {
+      "slug": "kad-stadit-destus-lauka",
+      "title": "Kad stādīt dēstus laukā Latvijā",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P1_before_spring",
+      "seasonalMonths": [
+        4,
+        5,
+        6
+      ],
+      "flags": [
+        "replace_general_source_links",
+        "review_narrative_short_answer",
+        "consider_real_reader_questions"
+      ],
+      "nextAction": "Pārbaudīt laika, gaismas, temperatūras un laistīšanas norādes pēc sugas; sākt ar īso atbildi un apstākļu pārbaudes soļiem.",
+      "gscJuly4ToOctober3": null,
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ],
+      "sourcesAfter": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ]
+    },
+    {
+      "slug": "kaiminaugi",
+      "title": "Kaimiņaugi: kas sader dārzā un kas ne",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P2_topic_review",
+      "seasonalMonths": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "flags": [
+        "replace_general_source_links",
+        "review_narrative_short_answer",
+        "consider_real_reader_questions"
+      ],
+      "nextAction": "Pārbaudīt galvenos apgalvojumus pret konkrētiem avotiem; saīsināt ievadu un precizēt pirmo darbību. Ja raksts jau uzlabots, turpināt no esošās versijas.",
+      "gscJuly4ToOctober3": null,
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ],
+      "sourcesAfter": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ]
+    },
+    {
+      "slug": "kapec-burkani-sazaroti",
+      "title": "Kāpēc burkāni izaug sazaroti un greizi",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P2_topic_review",
+      "seasonalMonths": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "flags": [
+        "replace_general_source_links",
+        "review_narrative_short_answer",
+        "consider_symptom_comparison",
+        "consider_real_reader_questions"
+      ],
+      "nextAction": "Pārbaudīt galvenos apgalvojumus pret konkrētiem avotiem; saīsināt ievadu un precizēt pirmo darbību. Ja raksts jau uzlabots, turpināt no esošās versijas.",
+      "gscJuly4ToOctober3": {
+        "url": "https://www.menesseja.lv/raksti/kapec-burkani-sazaroti",
+        "clicks": 2,
+        "impressions": 12,
+        "ctr": 0.16670000000000001,
+        "position": 4.58
+      },
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ],
+      "sourcesAfter": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ]
+    },
+    {
+      "slug": "kapec-cukini-pust-gala",
+      "title": "Kāpēc cukini un kabači pūst galā (un kā ražu glābt)",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P2_topic_review",
+      "seasonalMonths": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "flags": [
+        "replace_general_source_links",
+        "consider_symptom_comparison"
+      ],
+      "nextAction": "Pārbaudīt galvenos apgalvojumus pret konkrētiem avotiem; saīsināt ievadu un precizēt pirmo darbību. Ja raksts jau uzlabots, turpināt no esošās versijas.",
+      "gscJuly4ToOctober3": {
+        "url": "https://www.menesseja.lv/raksti/kapec-cukini-pust-gala",
+        "clicks": 10,
+        "impressions": 152,
+        "ctr": 0.0658,
+        "position": 7.12
+      },
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ],
+      "sourcesAfter": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ]
+    },
+    {
+      "slug": "kapec-gurki-rugti",
+      "title": "Kāpēc gurķi ir rūgti un kā no tā izvairīties",
+      "status": "rewritten_with_topic_sources",
+      "priority": "completed_this_round",
+      "seasonalMonths": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "flags": [
+        "consider_symptom_comparison"
+      ],
+      "nextAction": "Pievienot oriģinālas fotogrāfijas, ja tās palīdz atpazīšanai; nākamajā sezonā vērtēt jautājumu aptvērumu un lasītāju atsauksmes.",
+      "gscJuly4ToOctober3": {
+        "url": "https://www.menesseja.lv/raksti/kapec-gurki-rugti",
+        "clicks": 0,
+        "impressions": 13,
+        "ctr": 0.0,
+        "position": 6.54
+      },
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ],
+      "sourcesAfter": [
+        "https://foedevarestyrelsen.dk/kost-og-foedevarer/foedevaresikkerhed/kemiske-stoffer-og-toksiner/naturlige-giftstoffer/cucurbitaciner",
+        "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/growing-cucumbers"
+      ],
+      "previousHeadingAnchorsPreserved": true
+    },
+    {
+      "slug": "kapec-gurkiem-balts-aplikums-uz-lapam",
+      "title": "Kāpēc gurķiem un kabačiem uz lapām balts aplikums (miltrasa)",
+      "status": "rewritten_with_topic_sources",
+      "priority": "completed_this_round",
+      "seasonalMonths": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "flags": [],
+      "nextAction": "Pievienot oriģinālas fotogrāfijas, ja tās palīdz atpazīšanai; nākamajā sezonā vērtēt jautājumu aptvērumu un lasītāju atsauksmes.",
+      "gscJuly4ToOctober3": {
+        "url": "https://www.menesseja.lv/raksti/kapec-gurkiem-balts-aplikums-uz-lapam",
+        "clicks": 17,
+        "impressions": 131,
+        "ctr": 0.1298,
+        "position": 6.16
+      },
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ],
+      "sourcesAfter": [
+        "https://extension.umn.edu/agriculture/specialty-crops/vegetable-farming/disease-management/powdery-mildew-of-cucurbits",
+        "https://www.rhs.org.uk/disease/powdery-mildews",
+        "https://registri.vaad.gov.lv/reg/aal_saraksts.aspx"
+      ],
+      "previousHeadingAnchorsPreserved": true
+    },
+    {
+      "slug": "kapec-gurkiem-dzelte-lapas",
+      "title": "Kāpēc gurķiem dzeltē lapas (un kā to apturēt)",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P2_topic_review",
+      "seasonalMonths": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "flags": [],
+      "nextAction": "Pārbaudīt galvenos apgalvojumus pret konkrētiem avotiem; saīsināt ievadu un precizēt pirmo darbību. Ja raksts jau uzlabots, turpināt no esošās versijas.",
+      "gscJuly4ToOctober3": {
+        "url": "https://www.menesseja.lv/raksti/kapec-gurkiem-dzelte-lapas",
+        "clicks": 1,
+        "impressions": 129,
+        "ctr": 0.0078000000000000005,
+        "position": 9.6
+      },
+      "sourcesBefore": [
+        "https://apps.extension.umn.edu/garden/diagnose/plant/vegetable/cucumber/leavesdiscolored.html",
+        "https://extension.umn.edu/manage-soil-nutrients/quick-guide-fertilizing-plants",
+        "https://klimats.meteo.lv/klimats_latvija/menesu_klimatiskais_raksturojums/junijs/"
+      ],
+      "sourcesAfter": [
+        "https://apps.extension.umn.edu/garden/diagnose/plant/vegetable/cucumber/leavesdiscolored.html",
+        "https://extension.umn.edu/manage-soil-nutrients/quick-guide-fertilizing-plants",
+        "https://klimats.meteo.lv/klimats_latvija/menesu_klimatiskais_raksturojums/junijs/"
+      ]
+    },
+    {
+      "slug": "kapec-gurku-aizmetni-dzelte-un-nokrit",
+      "title": "Kāpēc gurķu aizmetņi dzeltē un nokrīt (tukšie ziedi)",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P0_claims",
+      "seasonalMonths": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "flags": [
+        "replace_general_source_links",
+        "consider_symptom_comparison"
+      ],
+      "nextAction": "Pārbaudīt bora trūkuma diagnosticēšanu un borskābes devu; atšķirt partenokarpās un apputeksnējamās šķirnes.",
+      "gscJuly4ToOctober3": {
+        "url": "https://www.menesseja.lv/raksti/kapec-gurku-aizmetni-dzelte-un-nokrit",
+        "clicks": 6,
+        "impressions": 90,
+        "ctr": 0.0667,
+        "position": 8.33
+      },
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ],
+      "sourcesAfter": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ]
+    },
+    {
+      "slug": "kapec-hortenzijas-maina-krasu",
+      "title": "Kā padarīt hortenzijas zilas vai rozā — augsnes pH un krāsa",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P1_seasonal",
+      "seasonalMonths": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "flags": [
+        "replace_general_source_links",
+        "review_narrative_short_answer"
+      ],
+      "nextAction": "Pārbaudīt sugu/šķirņu atšķirības un termiņu nosacījumus; saglabāt esošo URL un meklēšanas nolūku.",
+      "gscJuly4ToOctober3": {
+        "url": "https://www.menesseja.lv/raksti/kapec-hortenzijas-maina-krasu",
+        "clicks": 2,
+        "impressions": 38,
+        "ctr": 0.0526,
+        "position": 7.47
+      },
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ],
+      "sourcesAfter": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ]
+    },
+    {
+      "slug": "kapec-hortenzijas-nezied",
+      "title": "Kāpēc hortenzijas nezied un kā panākt bagātīgu ziedēšanu",
+      "status": "rewritten_with_topic_sources",
+      "priority": "completed_this_round",
+      "seasonalMonths": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "flags": [],
+      "nextAction": "Pievienot oriģinālas fotogrāfijas, ja tās palīdz atpazīšanai; nākamajā sezonā vērtēt jautājumu aptvērumu un lasītāju atsauksmes.",
+      "gscJuly4ToOctober3": {
+        "url": "https://www.menesseja.lv/raksti/kapec-hortenzijas-nezied",
+        "clicks": 97,
+        "impressions": 319,
+        "ctr": 0.3041,
+        "position": 2.37
+      },
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ],
+      "sourcesAfter": [
+        "https://www.rhs.org.uk/plants/hydrangea/pruning-guide",
+        "https://extension.umd.edu/resource/pruning-hydrangeas",
+        "https://www.rhs.org.uk/plants/hydrangea/shrubby/growing-guide",
+        "https://www.rhs.org.uk/problems/non-flowering-woody-plants"
+      ],
+      "previousHeadingAnchorsPreserved": true
+    },
+    {
+      "slug": "kapec-kaposti-neveido-galvas",
+      "title": "Kāpēc kāposti neveido galvas (un kā to labot)",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P2_topic_review",
+      "seasonalMonths": [
+        7,
+        8,
+        9
+      ],
+      "flags": [
+        "replace_general_source_links",
+        "consider_symptom_comparison",
+        "consider_real_reader_questions"
+      ],
+      "nextAction": "Pārbaudīt galvenos apgalvojumus pret konkrētiem avotiem; saīsināt ievadu un precizēt pirmo darbību. Ja raksts jau uzlabots, turpināt no esošās versijas.",
+      "gscJuly4ToOctober3": {
+        "url": "https://www.menesseja.lv/raksti/kapec-kaposti-neveido-galvas",
+        "clicks": 1,
+        "impressions": 6,
+        "ctr": 0.16670000000000001,
+        "position": 2.83
+      },
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ],
+      "sourcesAfter": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ]
+    },
+    {
+      "slug": "kapec-kartupeliem-lakstu-puve",
+      "title": "Kāpēc kartupeļiem lakstu puve (fitoftora) un kā to apturēt",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P0_claims",
+      "seasonalMonths": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "flags": [
+        "replace_general_source_links",
+        "consider_symptom_comparison"
+      ],
+      "nextAction": "Saskaņot ar pārskatīto tomātu lakstu puves rakstu; pārbaudīt mājas uzlējumu profilakses apgalvojumus.",
+      "gscJuly4ToOctober3": {
+        "url": "https://www.menesseja.lv/raksti/kapec-kartupeliem-lakstu-puve",
+        "clicks": 2,
+        "impressions": 41,
+        "ctr": 0.048799999999999996,
+        "position": 5.41
+      },
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ],
+      "sourcesAfter": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ]
+    },
+    {
+      "slug": "kapec-kiplokiem-dzelte-lapas",
+      "title": "Kāpēc ķiplokiem dzeltē lapas (pavasarī un vasarā)",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P2_topic_review",
+      "seasonalMonths": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "flags": [
+        "replace_general_source_links",
+        "consider_symptom_comparison"
+      ],
+      "nextAction": "Pārbaudīt galvenos apgalvojumus pret konkrētiem avotiem; saīsināt ievadu un precizēt pirmo darbību. Ja raksts jau uzlabots, turpināt no esošās versijas.",
+      "gscJuly4ToOctober3": {
+        "url": "https://www.menesseja.lv/raksti/kapec-kiplokiem-dzelte-lapas",
+        "clicks": 0,
+        "impressions": 18,
+        "ctr": 0.0,
+        "position": 7.22
+      },
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ],
+      "sourcesAfter": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ]
+    },
+    {
+      "slug": "kapec-lapas-dzelte",
+      "title": "Kāpēc lapas dzeltē — visi biežākie cēloņi un kā tos atšķirt",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P2_topic_review",
+      "seasonalMonths": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "flags": [
+        "replace_general_source_links",
+        "consider_symptom_comparison"
+      ],
+      "nextAction": "Pārbaudīt galvenos apgalvojumus pret konkrētiem avotiem; saīsināt ievadu un precizēt pirmo darbību. Ja raksts jau uzlabots, turpināt no esošās versijas.",
+      "gscJuly4ToOctober3": {
+        "url": "https://www.menesseja.lv/raksti/kapec-lapas-dzelte",
+        "clicks": 0,
+        "impressions": 10,
+        "ctr": 0.0,
+        "position": 5.6
+      },
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ],
+      "sourcesAfter": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ]
+    },
+    {
+      "slug": "kapec-podu-augiem-dzelte-lapas",
+      "title": "Kāpēc podu augiem dzeltē lapas un nav ražas (balkona diagnostika)",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P2_topic_review",
+      "seasonalMonths": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "flags": [
+        "replace_general_source_links",
+        "review_narrative_short_answer",
+        "consider_symptom_comparison"
+      ],
+      "nextAction": "Pārbaudīt galvenos apgalvojumus pret konkrētiem avotiem; saīsināt ievadu un precizēt pirmo darbību. Ja raksts jau uzlabots, turpināt no esošās versijas.",
+      "gscJuly4ToOctober3": {
+        "url": "https://www.menesseja.lv/raksti/kapec-podu-augiem-dzelte-lapas",
+        "clicks": 0,
+        "impressions": 11,
+        "ctr": 0.0,
+        "position": 7.55
+      },
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ],
+      "sourcesAfter": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ]
+    },
+    {
+      "slug": "kapec-seklas-nedigst",
+      "title": "Sēklas nedīgst: 3 slēptie cēloņi (nevis sliktas sēklas)",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P1_before_spring",
+      "seasonalMonths": [
+        2,
+        3,
+        4
+      ],
+      "flags": [
+        "replace_general_source_links",
+        "review_narrative_short_answer",
+        "consider_symptom_comparison"
+      ],
+      "nextAction": "Pārbaudīt laika, gaismas, temperatūras un laistīšanas norādes pēc sugas; sākt ar īso atbildi un apstākļu pārbaudes soļiem.",
+      "gscJuly4ToOctober3": {
+        "url": "https://www.menesseja.lv/raksti/kapec-seklas-nedigst",
+        "clicks": 0,
+        "impressions": 9,
+        "ctr": 0.0,
+        "position": 3.11
+      },
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ],
+      "sourcesAfter": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ]
+    },
+    {
+      "slug": "kapec-sipoli-iet-zieda",
+      "title": "Kāpēc sīpoli iet ziedā (un kā to novērst)",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P2_topic_review",
+      "seasonalMonths": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "flags": [
+        "replace_general_source_links",
+        "review_narrative_short_answer",
+        "consider_symptom_comparison"
+      ],
+      "nextAction": "Pārbaudīt galvenos apgalvojumus pret konkrētiem avotiem; saīsināt ievadu un precizēt pirmo darbību. Ja raksts jau uzlabots, turpināt no esošās versijas.",
+      "gscJuly4ToOctober3": {
+        "url": "https://www.menesseja.lv/raksti/kapec-sipoli-iet-zieda",
+        "clicks": 21,
+        "impressions": 65,
+        "ctr": 0.3231,
+        "position": 2.72
+      },
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ],
+      "sourcesAfter": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ]
+    },
+    {
+      "slug": "kapec-sipoliem-dzelte-loki",
+      "title": "Kāpēc sīpoliem dzeltē loki (un kā glābt ražu)",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P0_claims",
+      "seasonalMonths": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "flags": [
+        "replace_general_source_links",
+        "review_narrative_short_answer",
+        "consider_symptom_comparison"
+      ],
+      "nextAction": "Pārbaudīt sālsūdens un karstā ūdens mērcēšanas iedarbības apgalvojumus pret sīpolu mušu; nelikt mēslojumu diagnozes vietā.",
+      "gscJuly4ToOctober3": {
+        "url": "https://www.menesseja.lv/raksti/kapec-sipoliem-dzelte-loki",
+        "clicks": 10,
+        "impressions": 70,
+        "ctr": 0.1429,
+        "position": 5.8
+      },
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ],
+      "sourcesAfter": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ]
+    },
+    {
+      "slug": "kapec-tomati-plaisa",
+      "title": "Kāpēc tomāti plaisā un kā to novērst",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P2_topic_review",
+      "seasonalMonths": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "flags": [
+        "replace_general_source_links",
+        "review_narrative_short_answer",
+        "consider_symptom_comparison",
+        "consider_real_reader_questions"
+      ],
+      "nextAction": "Pārbaudīt galvenos apgalvojumus pret konkrētiem avotiem; saīsināt ievadu un precizēt pirmo darbību. Ja raksts jau uzlabots, turpināt no esošās versijas.",
+      "gscJuly4ToOctober3": {
+        "url": "https://www.menesseja.lv/raksti/kapec-tomati-plaisa",
+        "clicks": 0,
+        "impressions": 17,
+        "ctr": 0.0,
+        "position": 5.82
+      },
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ],
+      "sourcesAfter": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ]
+    },
+    {
+      "slug": "kapec-tomati-zied-bet-neveidojas-augli",
+      "title": "Kāpēc tomāti zied, bet neveidojas augļi (aizmetņi nokrīt)",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P2_topic_review",
+      "seasonalMonths": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "flags": [
+        "replace_general_source_links",
+        "consider_symptom_comparison"
+      ],
+      "nextAction": "Pārbaudīt galvenos apgalvojumus pret konkrētiem avotiem; saīsināt ievadu un precizēt pirmo darbību. Ja raksts jau uzlabots, turpināt no esošās versijas.",
+      "gscJuly4ToOctober3": {
+        "url": "https://www.menesseja.lv/raksti/kapec-tomati-zied-bet-neveidojas-augli",
+        "clicks": 18,
+        "impressions": 243,
+        "ctr": 0.0741,
+        "position": 6.33
+      },
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ],
+      "sourcesAfter": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ]
+    },
+    {
+      "slug": "kapec-tomatiem-bruni-plankumi-uz-lapam",
+      "title": "Kāpēc tomātiem uz lapām brūni plankumi (fitoftora un citi cēloņi)",
+      "status": "rewritten_with_topic_sources",
+      "priority": "completed_this_round",
+      "seasonalMonths": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "flags": [],
+      "nextAction": "Pievienot oriģinālas fotogrāfijas, ja tās palīdz atpazīšanai; nākamajā sezonā vērtēt jautājumu aptvērumu un lasītāju atsauksmes.",
+      "gscJuly4ToOctober3": {
+        "url": "https://www.menesseja.lv/raksti/kapec-tomatiem-bruni-plankumi-uz-lapam",
+        "clicks": 13,
+        "impressions": 264,
+        "ctr": 0.0492,
+        "position": 8.39
+      },
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ],
+      "sourcesAfter": [
+        "https://www.extension.umd.edu/resource/key-common-problems-tomatoes",
+        "https://www.rhs.org.uk/disease/tomato-blight",
+        "https://extension.umn.edu/agriculture/specialty-crops/vegetable-farming/disease-management/late-blight",
+        "https://registri.vaad.gov.lv/reg/aal_saraksts.aspx",
+        "https://nchfp.uga.edu/how/can/how-do-i-can-tomatoes/canning-tomatoes-introduction/"
+      ],
+      "previousHeadingAnchorsPreserved": true
+    },
+    {
+      "slug": "kapec-tomatiem-galotnu-puve",
+      "title": "Kāpēc tomātiem galotņu puve un kā to apturēt",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P2_topic_review",
+      "seasonalMonths": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "flags": [
+        "replace_general_source_links",
+        "consider_symptom_comparison",
+        "consider_real_reader_questions"
+      ],
+      "nextAction": "Pārbaudīt galvenos apgalvojumus pret konkrētiem avotiem; saīsināt ievadu un precizēt pirmo darbību. Ja raksts jau uzlabots, turpināt no esošās versijas.",
+      "gscJuly4ToOctober3": {
+        "url": "https://www.menesseja.lv/raksti/kapec-tomatiem-galotnu-puve",
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0.0,
+        "position": 4.0
+      },
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ],
+      "sourcesAfter": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ]
+    },
+    {
+      "slug": "kapec-tomatu-lapas-cokurojas",
+      "title": "Kāpēc tomātu lapas čokurojas un kad jāsatraucas",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P2_topic_review",
+      "seasonalMonths": [
+        6,
+        7,
+        8
+      ],
+      "flags": [],
+      "nextAction": "Pārbaudīt galvenos apgalvojumus pret konkrētiem avotiem; saīsināt ievadu un precizēt pirmo darbību. Ja raksts jau uzlabots, turpināt no esošās versijas.",
+      "gscJuly4ToOctober3": {
+        "url": "https://www.menesseja.lv/raksti/kapec-tomatu-lapas-cokurojas",
+        "clicks": 0,
+        "impressions": 8,
+        "ctr": 0.0,
+        "position": 9.62
+      },
+      "sourcesBefore": [
+        "https://extension.umn.edu/garden-problems/tomato-disorders",
+        "https://apps.extension.umn.edu/garden/diagnose/plant/vegetable/tomato/leavescurled.html"
+      ],
+      "sourcesAfter": [
+        "https://extension.umn.edu/garden-problems/tomato-disorders",
+        "https://apps.extension.umn.edu/garden/diagnose/plant/vegetable/tomato/leavescurled.html"
+      ]
+    },
+    {
+      "slug": "kapec-zemenes-puve",
+      "title": "Kāpēc zemenes pūst (un kā ražu glābt)",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P0_claims",
+      "seasonalMonths": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "flags": [
+        "replace_general_source_links",
+        "consider_symptom_comparison",
+        "consider_real_reader_questions"
+      ],
+      "nextAction": "Pārbaudīt mājas uzlējumu iedarbības apgalvojumus un bojātas ražas atlasi.",
+      "gscJuly4ToOctober3": {
+        "url": "https://www.menesseja.lv/raksti/kapec-zemenes-puve",
+        "clicks": 0,
+        "impressions": 5,
+        "ctr": 0.0,
+        "position": 4.0
+      },
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ],
+      "sourcesAfter": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ]
+    },
+    {
+      "slug": "kapu-pukes",
+      "title": "Kapu puķes: ko stādīt, kas zied visu sezonu un maz jākopj",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P1_seasonal",
+      "seasonalMonths": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "flags": [
+        "replace_general_source_links"
+      ],
+      "nextAction": "Pārbaudīt sugu/šķirņu atšķirības un termiņu nosacījumus; saglabāt esošo URL un meklēšanas nolūku.",
+      "gscJuly4ToOctober3": {
+        "url": "https://www.menesseja.lv/raksti/kapu-pukes",
+        "clicks": 5,
+        "impressions": 41,
+        "ctr": 0.122,
+        "position": 7.95
+      },
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ],
+      "sourcesAfter": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ]
+    },
+    {
+      "slug": "kas-ir-meness-seja",
+      "title": "Kas ir Mēness sēja? Ceļvedis iesācējam",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P2_topic_review",
+      "seasonalMonths": [],
+      "flags": [
+        "review_narrative_short_answer",
+        "consider_real_reader_questions"
+      ],
+      "nextAction": "Pārbaudīt galvenos apgalvojumus pret konkrētiem avotiem; saīsināt ievadu un precizēt pirmo darbību. Ja raksts jau uzlabots, turpināt no esošās versijas.",
+      "gscJuly4ToOctober3": {
+        "url": "https://www.menesseja.lv/raksti/kas-ir-meness-seja",
+        "clicks": 0,
+        "impressions": 10,
+        "ctr": 0.0,
+        "position": 6.2
+      },
+      "sourcesBefore": [
+        "https://science.nasa.gov/moon/moon-phases/",
+        "https://www.mariathun.com/"
+      ],
+      "sourcesAfter": [
+        "https://science.nasa.gov/moon/moon-phases/",
+        "https://www.mariathun.com/"
+      ]
+    },
+    {
+      "slug": "kirsu-musa-tarpainas-kirsogas",
+      "title": "Ķiršu muša: kā novērst tārpainas ķiršu ogas",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P2_topic_review",
+      "seasonalMonths": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "flags": [
+        "replace_general_source_links",
+        "consider_symptom_comparison"
+      ],
+      "nextAction": "Pārbaudīt galvenos apgalvojumus pret konkrētiem avotiem; saīsināt ievadu un precizēt pirmo darbību. Ja raksts jau uzlabots, turpināt no esošās versijas.",
+      "gscJuly4ToOctober3": {
+        "url": "https://www.menesseja.lv/raksti/kirsu-musa-tarpainas-kirsogas",
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0.0,
+        "position": 7.17
+      },
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ],
+      "sourcesAfter": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ]
+    },
+    {
+      "slug": "ko-set-julija-augusta",
+      "title": "Ko sēt jūlijā un augustā — otrā raža līdz rudenim",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P2_topic_review",
+      "seasonalMonths": [
+        7,
+        8
+      ],
+      "flags": [
+        "replace_general_source_links"
+      ],
+      "nextAction": "Pārbaudīt galvenos apgalvojumus pret konkrētiem avotiem; saīsināt ievadu un precizēt pirmo darbību. Ja raksts jau uzlabots, turpināt no esošās versijas.",
+      "gscJuly4ToOctober3": {
+        "url": "https://www.menesseja.lv/raksti/ko-set-julija-augusta",
+        "clicks": 2,
+        "impressions": 31,
+        "ctr": 0.0645,
+        "position": 4.29
+      },
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ],
+      "sourcesAfter": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ]
+    },
+    {
+      "slug": "komposts-ka-sakt",
+      "title": "Komposts iesācējiem: kā sākt no nulles",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P2_topic_review",
+      "seasonalMonths": [
+        3,
+        4,
+        5,
+        9,
+        10,
+        11
+      ],
+      "flags": [
+        "replace_general_source_links",
+        "consider_real_reader_questions"
+      ],
+      "nextAction": "Pārbaudīt galvenos apgalvojumus pret konkrētiem avotiem; saīsināt ievadu un precizēt pirmo darbību. Ja raksts jau uzlabots, turpināt no esošās versijas.",
+      "gscJuly4ToOctober3": {
+        "url": "https://www.menesseja.lv/raksti/komposts-ka-sakt",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 9.0
+      },
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ],
+      "sourcesAfter": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ]
+    },
+    {
+      "slug": "magnija-trukums-augiem",
+      "title": "Magnija trūkums augiem: kā pazīt dzelti starp dzīslām un rīkoties",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P2_topic_review",
+      "seasonalMonths": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "flags": [],
+      "nextAction": "Pārbaudīt galvenos apgalvojumus pret konkrētiem avotiem; saīsināt ievadu un precizēt pirmo darbību. Ja raksts jau uzlabots, turpināt no esošās versijas.",
+      "gscJuly4ToOctober3": {
+        "url": "https://www.menesseja.lv/raksti/magnija-trukums-augiem",
+        "clicks": 1,
+        "impressions": 9,
+        "ctr": 0.11109999999999999,
+        "position": 9.33
+      },
+      "sourcesBefore": [
+        "https://www.vaad.gov.lv/lv/augsnu-agrokimiska-izpete-1",
+        "https://arhivs.llkc.lv/lv/nozares/augkopiba/ka-risinat-gurku-mineralas-barosanas-problemas",
+        "https://extension.umn.edu/micro-and-secondary-macronutrients/magnesium-crop-production",
+        "https://www.rhs.org.uk/advice/profile?cID=304&pID=456"
+      ],
+      "sourcesAfter": [
+        "https://www.vaad.gov.lv/lv/augsnu-agrokimiska-izpete-1",
+        "https://arhivs.llkc.lv/lv/nozares/augkopiba/ka-risinat-gurku-mineralas-barosanas-problemas",
+        "https://extension.umn.edu/micro-and-secondary-macronutrients/magnesium-crop-production",
+        "https://www.rhs.org.uk/advice/profile?cID=304&pID=456"
+      ]
+    },
+    {
+      "slug": "melna-kaja-destiem",
+      "title": "Melnā kāja: kāpēc dēsti nogāžas pie zemes un kā to atpazīt",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P1_before_spring",
+      "seasonalMonths": [
+        2,
+        3,
+        4
+      ],
+      "flags": [
+        "replace_general_source_links",
+        "review_narrative_short_answer",
+        "consider_symptom_comparison"
+      ],
+      "nextAction": "Pārbaudīt laika, gaismas, temperatūras un laistīšanas norādes pēc sugas; sākt ar īso atbildi un apstākļu pārbaudes soļiem.",
+      "gscJuly4ToOctober3": null,
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ],
+      "sourcesAfter": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ]
+    },
+    {
+      "slug": "meness-fazes-izskaidrotas",
+      "title": "Mēness fāzes izskaidrotas: jauns, augošs, pilns, dilstošs",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P2_topic_review",
+      "seasonalMonths": [],
+      "flags": [
+        "consider_real_reader_questions"
+      ],
+      "nextAction": "Pārbaudīt galvenos apgalvojumus pret konkrētiem avotiem; saīsināt ievadu un precizēt pirmo darbību. Ja raksts jau uzlabots, turpināt no esošās versijas.",
+      "gscJuly4ToOctober3": {
+        "url": "https://www.menesseja.lv/raksti/meness-fazes-izskaidrotas",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0.0,
+        "position": 31.0
+      },
+      "sourcesBefore": [
+        "https://science.nasa.gov/moon/moon-phases/",
+        "https://www.mariathun.com/"
+      ],
+      "sourcesAfter": [
+        "https://science.nasa.gov/moon/moon-phases/",
+        "https://www.mariathun.com/"
+      ]
+    },
+    {
+      "slug": "parlaisti-desti",
+      "title": "Vai esmu pārlaistījis dēstus? Sakņu puve un kā to atpazīt",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P1_before_spring",
+      "seasonalMonths": [
+        2,
+        3,
+        4
+      ],
+      "flags": [
+        "replace_general_source_links",
+        "review_narrative_short_answer",
+        "consider_symptom_comparison"
+      ],
+      "nextAction": "Pārbaudīt laika, gaismas, temperatūras un laistīšanas norādes pēc sugas; sākt ar īso atbildi un apstākļu pārbaudes soļiem.",
+      "gscJuly4ToOctober3": {
+        "url": "https://www.menesseja.lv/raksti/parlaisti-desti",
+        "clicks": 0,
+        "impressions": 5,
+        "ctr": 0.0,
+        "position": 5.8
+      },
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ],
+      "sourcesAfter": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ]
+    },
+    {
+      "slug": "pirma-gada-gaidas",
+      "title": "Reālas pirmā gada dārza gaidas: kas ir normāli un kas nodos",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P1_before_spring",
+      "seasonalMonths": [
+        1,
+        2,
+        3,
+        4,
+        10,
+        11,
+        12
+      ],
+      "flags": [
+        "replace_general_source_links",
+        "review_narrative_short_answer"
+      ],
+      "nextAction": "Koncentrēties uz reālām laika un ražas gaidām, kā arī sezonas izvērtējumu.",
+      "gscJuly4ToOctober3": null,
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ],
+      "sourcesAfter": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ]
+    },
+    {
+      "slug": "pirmais-darzs-no-nulles",
+      "title": "Pirmais dārzs no nulles: 7 soļi pareizajā secībā",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P1_before_spring",
+      "seasonalMonths": [
+        1,
+        2,
+        3,
+        4,
+        10,
+        11,
+        12
+      ],
+      "flags": [
+        "replace_general_source_links",
+        "review_narrative_short_answer"
+      ],
+      "nextAction": "Veidot galveno iesācēja ceļvedi ar pirmo darbu secību; sasaistīt ar šaurākiem rakstiem.",
+      "gscJuly4ToOctober3": null,
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ],
+      "sourcesAfter": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ]
+    },
+    {
+      "slug": "rozu-melnplankumainiba-ka-arstet",
+      "title": "Rožu melnplankumainība: kāpēc rožu lapas klājas melniem plankumiem un kā ārstēt",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P0_claims",
+      "seasonalMonths": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "flags": [
+        "replace_general_source_links",
+        "consider_symptom_comparison"
+      ],
+      "nextAction": "Pārbaudīt kosas un pelnu lietošanas iedarbības apgalvojumus; nošķirt kopšanas pasākumus un reģistrētus līdzekļus.",
+      "gscJuly4ToOctober3": {
+        "url": "https://www.menesseja.lv/raksti/rozu-melnplankumainiba-ka-arstet",
+        "clicks": 7,
+        "impressions": 92,
+        "ctr": 0.0761,
+        "position": 7.86
+      },
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ],
+      "sourcesAfter": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ]
+    },
+    {
+      "slug": "salnas-latvija",
+      "title": "Salnas Latvijā: kad droši stādīt laukā",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P1_before_spring",
+      "seasonalMonths": [
+        4,
+        5,
+        9,
+        10
+      ],
+      "flags": [
+        "replace_general_source_links",
+        "consider_real_reader_questions"
+      ],
+      "nextAction": "Pārbaudīt laika, gaismas, temperatūras un laistīšanas norādes pēc sugas; sākt ar īso atbildi un apstākļu pārbaudes soļiem.",
+      "gscJuly4ToOctober3": {
+        "url": "https://www.menesseja.lv/raksti/salnas-latvija",
+        "clicks": 0,
+        "impressions": 7,
+        "ctr": 0.0,
+        "position": 5.71
+      },
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ],
+      "sourcesAfter": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ]
+    },
+    {
+      "slug": "siltumnica-vai-lauka",
+      "title": "Sēšana siltumnīcā vai laukā: kā izvēlēties",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P2_topic_review",
+      "seasonalMonths": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "flags": [
+        "replace_general_source_links",
+        "consider_real_reader_questions"
+      ],
+      "nextAction": "Pārbaudīt galvenos apgalvojumus pret konkrētiem avotiem; saīsināt ievadu un precizēt pirmo darbību. Ja raksts jau uzlabots, turpināt no esošās versijas.",
+      "gscJuly4ToOctober3": {
+        "url": "https://www.menesseja.lv/raksti/siltumnica-vai-lauka",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0.0,
+        "position": 6.0
+      },
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ],
+      "sourcesAfter": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ]
+    },
+    {
+      "slug": "siltumnicas-sagatavosana-sezonai",
+      "title": "Siltumnīcas sagatavošana sezonai: tīrīšana un pārbaude",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P2_topic_review",
+      "seasonalMonths": [
+        2,
+        3,
+        4,
+        9,
+        10,
+        11
+      ],
+      "flags": [],
+      "nextAction": "Pārbaudīt galvenos apgalvojumus pret konkrētiem avotiem; saīsināt ievadu un precizēt pirmo darbību. Ja raksts jau uzlabots, turpināt no esošās versijas.",
+      "gscJuly4ToOctober3": null,
+      "sourcesBefore": [
+        "https://www.rhs.org.uk/garden-features/cleaning-greenhouses",
+        "https://www.rhs.org.uk/garden-jobs/cleaning-tools",
+        "https://extension.psu.edu/sanitation-when-transitioning-high-tunnels"
+      ],
+      "sourcesAfter": [
+        "https://www.rhs.org.uk/garden-features/cleaning-greenhouses",
+        "https://www.rhs.org.uk/garden-jobs/cleaning-tools",
+        "https://extension.psu.edu/sanitation-when-transitioning-high-tunnels"
+      ]
+    },
+    {
+      "slug": "skaba-augsne-ka-noteikt-un-uzlabot",
+      "title": "Skāba augsne: kā to noteikt un uzlabot",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P2_topic_review",
+      "seasonalMonths": [
+        3,
+        4,
+        5,
+        9,
+        10,
+        11
+      ],
+      "flags": [
+        "replace_general_source_links",
+        "consider_real_reader_questions"
+      ],
+      "nextAction": "Pārbaudīt galvenos apgalvojumus pret konkrētiem avotiem; saīsināt ievadu un precizēt pirmo darbību. Ja raksts jau uzlabots, turpināt no esošās versijas.",
+      "gscJuly4ToOctober3": {
+        "url": "https://www.menesseja.lv/raksti/skaba-augsne-ka-noteikt-un-uzlabot",
+        "clicks": 2,
+        "impressions": 66,
+        "ctr": 0.030299999999999997,
+        "position": 6.45
+      },
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ],
+      "sourcesAfter": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ]
+    },
+    {
+      "slug": "skabeti-kaposti",
+      "title": "Skābēti kāposti: sāls daudzums, temperatūra un glabāšana",
+      "status": "rewritten_with_topic_sources",
+      "priority": "completed_this_round",
+      "seasonalMonths": [
+        9,
+        10,
+        11
+      ],
+      "flags": [],
+      "nextAction": "Pievienot oriģinālas fotogrāfijas, ja tās palīdz atpazīšanai; nākamajā sezonā vērtēt jautājumu aptvērumu un lasītāju atsauksmes.",
+      "gscJuly4ToOctober3": null,
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://nchfp.uga.edu/"
+      ],
+      "sourcesAfter": [
+        "https://nchfp.uga.edu/how/ferment/recipes/sauerkraut/",
+        "https://www.pubs.ext.vt.edu/content/pubs_ext_vt_edu/en/FST/FST-328/FST-328.html",
+        "https://nchfp.uga.edu/how/ferment/general-information-on-fermenting/suitable-containers-covers-and-weights-for-fermenting-food",
+        "https://extension.umn.edu/som/node/172346"
+      ],
+      "previousHeadingAnchorsPreserved": true
+    },
+    {
+      "slug": "tomatu-veidosana",
+      "title": "Tomātu veidošana: pazares, galotne un apakšējās lapas",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P2_topic_review",
+      "seasonalMonths": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "flags": [
+        "replace_general_source_links"
+      ],
+      "nextAction": "Pārbaudīt galvenos apgalvojumus pret konkrētiem avotiem; saīsināt ievadu un precizēt pirmo darbību. Ja raksts jau uzlabots, turpināt no esošās versijas.",
+      "gscJuly4ToOctober3": {
+        "url": "https://www.menesseja.lv/raksti/tomatu-veidosana",
+        "clicks": 1,
+        "impressions": 25,
+        "ctr": 0.04,
+        "position": 5.6
+      },
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ],
+      "sourcesAfter": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ]
+    },
+    {
+      "slug": "tulpju-stadisana-rudeni",
+      "title": "Tulpju stādīšana rudenī — kad un cik dziļi",
+      "status": "rewritten_with_topic_sources",
+      "priority": "completed_this_round",
+      "seasonalMonths": [
+        9,
+        10,
+        11
+      ],
+      "flags": [],
+      "nextAction": "Pievienot oriģinālas fotogrāfijas, ja tās palīdz atpazīšanai; nākamajā sezonā vērtēt jautājumu aptvērumu un lasītāju atsauksmes.",
+      "gscJuly4ToOctober3": {
+        "url": "https://www.menesseja.lv/raksti/tulpju-stadisana-rudeni",
+        "clicks": 6,
+        "impressions": 59,
+        "ctr": 0.1017,
+        "position": 5.31
+      },
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ],
+      "sourcesAfter": [
+        "https://www.rhs.org.uk/plants/tulip/growing-guide",
+        "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/planting-bulbs-tubers-and-rhizomes"
+      ],
+      "previousHeadingAnchorsPreserved": true
+    },
+    {
+      "slug": "vieglakie-darzeni-iesacejiem",
+      "title": "Vieglākie dārzeņi iesācējiem",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P1_before_spring",
+      "seasonalMonths": [
+        1,
+        2,
+        3,
+        4,
+        10,
+        11,
+        12
+      ],
+      "flags": [
+        "replace_general_source_links",
+        "review_narrative_short_answer",
+        "consider_real_reader_questions"
+      ],
+      "nextAction": "Salīdzināt kultūras pēc audzēšanas vietas, laika un kopšanas; noderīga izvēles tabula.",
+      "gscJuly4ToOctober3": {
+        "url": "https://www.menesseja.lv/raksti/vieglakie-darzeni-iesacejiem",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 6.0
+      },
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ],
+      "sourcesAfter": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ]
+    },
+    {
+      "slug": "zemenu-stadisana-augusta",
+      "title": "Zemeņu stādīšana augustā: kāpēc tas ir labākais laiks",
+      "status": "screened_not_fully_fact_checked",
+      "priority": "P2_topic_review",
+      "seasonalMonths": [
+        8
+      ],
+      "flags": [
+        "replace_general_source_links"
+      ],
+      "nextAction": "Pārbaudīt galvenos apgalvojumus pret konkrētiem avotiem; saīsināt ievadu un precizēt pirmo darbību. Ja raksts jau uzlabots, turpināt no esošās versijas.",
+      "gscJuly4ToOctober3": {
+        "url": "https://www.menesseja.lv/raksti/zemenu-stadisana-augusta",
+        "clicks": 1,
+        "impressions": 20,
+        "ctr": 0.05,
+        "position": 6.35
+      },
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ],
+      "sourcesAfter": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ]
+    },
+    {
+      "slug": "zemesvezis-siltumnica-ka-atbrivoties",
+      "title": "Zemesvēzis siltumnīcā: kā atpazīt un kā no tā atbrīvoties",
+      "status": "rewritten_with_topic_sources",
+      "priority": "completed_this_round",
+      "seasonalMonths": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "flags": [
+        "consider_symptom_comparison"
+      ],
+      "nextAction": "Pievienot oriģinālas fotogrāfijas, ja tās palīdz atpazīšanai; nākamajā sezonā vērtēt jautājumu aptvērumu un lasītāju atsauksmes.",
+      "gscJuly4ToOctober3": {
+        "url": "https://www.menesseja.lv/raksti/zemesvezis-siltumnica-ka-atbrivoties",
+        "clicks": 0,
+        "impressions": 8,
+        "ctr": 0.0,
+        "position": 11.0
+      },
+      "sourcesBefore": [
+        "https://llkc.lv/",
+        "https://www.rhs.org.uk/advice"
+      ],
+      "sourcesAfter": [
+        "https://atputa.lvm.lv/aktuali/231-eksperti/3718-vai-siseni-ir-mazi-sienazisi",
+        "https://registri.vaad.gov.lv/reg/aal_saraksts.aspx",
+        "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/growing-cucumbers"
+      ],
+      "previousHeadingAnchorsPreserved": true
+    }
+  ],
+  "gscMetricDefinition": "Precīzā HTTPS www.menesseja.lv raksta URL rinda bez vaicājuma un fragmenta; sadaļu enkurus neapkopo un nepārraksta lapas rādītājus ar tiem.",
+  "bodyWordCountDefinition": "Whitespace-separated words in paragraphs, list items and table headers/cells; headings and metadata excluded.",
+  "preservedAnchorAliases": 61,
+  "verification": {
+    "contentValidation": "passed",
+    "existingFaqWarnings": 21,
+    "productionBuild": "passed",
+    "generatedPages": 318,
+    "regressionTestsPassed": 8,
+    "articleOutput": {
+      "builtArticles": 80,
+      "articleLinksChecked": 5941,
+      "previousHeadingAnchorsChecked": 61,
+      "errors": []
+    },
+    "mobileViewport": {
+      "width": 360,
+      "documentWidth": 360,
+      "tableHidden": true,
+      "comparisonCards": 3,
+      "screenshot": "/private/tmp/menesseja-article-review-mobile.png"
+    },
+    "changesPublished": false
+  }
+}
