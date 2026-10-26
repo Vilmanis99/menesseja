@@ -1,7 +1,9 @@
 {
   "slug": "krokusi",
   "name": "Krokusi",
+  "nameAcc": "krokusus",
   "latin": "Crocus",
+  "image": { "id": "krokusi", "caption": "Pavasara krokusi zied martā un aprīlī, tiklīdz nokusis sniegs." },
   "emoji": "🌷",
   "type": "sipolpuke",
   "tagline": "Pirmie pavasara vēstneši — zied, kad dārzā vēl pa vietai sniegs, un gadu gaitā paši izplešas krāsainos paklājos.",

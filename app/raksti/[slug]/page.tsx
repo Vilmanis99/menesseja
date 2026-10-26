@@ -148,11 +148,11 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
                 <div className="space-y-sm sm:hidden">
                   {section.table.rows.map((row, rowIndex) => (
                     <dl key={rowIndex} className="rounded-xl border border-outline-variant/25 bg-surface-container p-sm shadow-md shadow-black/5">
-                      {row.map((cell, cellIndex) => (
-                        <div key={cellIndex} className="border-b border-outline-variant/10 py-2 first:pt-0 last:border-0 last:pb-0">
-                          <dt className="text-label-sm uppercase tracking-wide text-primary">{section.table?.headers[cellIndex]}</dt>
-                          <dd className="mt-1 text-body-md leading-relaxed text-on-surface-variant">{cell}</dd>
-                        </div>
+                      <dt className="text-body-lg font-semibold leading-snug text-on-surface">{row[0]}</dt>
+                      {row.slice(1).map((cell, cellIndex) => (
+                        <dd key={cellIndex} className="mt-1 text-body-md leading-relaxed text-on-surface-variant">
+                          <span className="text-label-sm uppercase tracking-wide text-primary">{section.table?.headers[cellIndex + 1]}:</span> {cell}
+                        </dd>
                       ))}
                     </dl>
                   ))}

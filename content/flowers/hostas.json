@@ -2,6 +2,7 @@
   "slug": "hostas",
   "name": "Hostas",
   "latin": "Hosta",
+  "image": { "id": "hostas", "caption": "Hostas vērtē lapu dēļ — dzeltenmalainās šķirnes izgaismo ēnainas dobes." },
   "emoji": "🌿",
   "type": "daudzgadiga",
   "tagline": "Ēnas karaliene — augs, kas krāšņs ne ar ziediem, bet ar lapām, un padara skaistu pat tumšāko dārza stūri.",

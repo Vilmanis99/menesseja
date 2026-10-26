@@ -8,6 +8,8 @@ import { Icon } from "@/components/ui/icon";
 import { MoonPhase } from "@/components/moon-phase";
 import { JsonLd } from "@/components/json-ld";
 import { CalendarExplorer } from "@/components/calendar-explorer";
+import { NewsletterSignup } from "@/components/newsletter-signup";
+import { newsletterConfigured } from "@/lib/brevo";
 import { moonForDate, moonPhasesForMonth } from "@/lib/moon";
 import { SeasonalLinks } from "@/components/seasonal-links";
 import { sowingDay, isRestDay, ELEMENT_META, PART_GENITIVE, type Element } from "@/lib/biodynamic";
@@ -91,6 +93,17 @@ export default function KalendarsPage() {
       />
 
       <CalendarNavigation year={year} month={month} overview />
+
+      <nav aria-label="Gada kalendāri" className="mb-lg flex flex-wrap gap-2">
+        {[year, ...(month >= 10 ? [year + 1] : [])].filter((y) => CALENDAR_YEARS.includes(y)).map((y) => (
+          <Link key={y} href={`/kalendars/${y}`} className="inline-flex min-h-11 items-center gap-1.5 rounded-full border border-primary/40 bg-primary-container/20 px-4 text-label-md font-semibold text-primary hover:bg-primary-container/40">
+            <Icon name="calendar_month" size="18px" /> Mēness kalendārs {y} — viss gads
+          </Link>
+        ))}
+        <Link href="/kalendars/istabas-augu-parstadisana" className="inline-flex min-h-11 items-center gap-1.5 rounded-full border border-outline-variant/30 px-4 text-label-md text-primary hover:bg-surface-container">
+          <Icon name="potted_plant" size="18px" /> Istabas augu pārstādīšanas dienas
+        </Link>
+      </nav>
 
       <p className="mb-lg max-w-2xl text-body-lg text-on-surface-variant">
         Šodien, {today.day}. {nameLoc}, ir {today.moon.name.toLowerCase()}.
@@ -193,12 +206,14 @@ export default function KalendarsPage() {
       <SeasonalLinks month={month} />
       <MonthPreparation month={month} />
 
+      {newsletterConfigured() && <div className="mb-lg"><NewsletterSignup source="kalendars" /></div>}
+
       <section className="mb-lg">
         <h2 className="mb-sm text-headline-md text-on-surface">Visi mēneši</h2>
         <div className="space-y-1.5">
           {CALENDAR_YEARS.map((y) => (
             <div key={y} className="flex flex-wrap items-center gap-1.5">
-              <span className="w-10 shrink-0 text-label-md text-on-surface-variant">{y}.</span>
+              <Link href={`/kalendars/${y}`} className="inline-flex min-h-8 w-14 shrink-0 items-center text-label-md font-semibold text-primary hover:underline">{y}.</Link>
               {MONTH_SLUGS.map((slug, i) => (
                 <Link
                   key={slug}

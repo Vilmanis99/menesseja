@@ -1,0 +1,172 @@
+{
+  "title": "Hiacintes podiņā un glāzē: kā uzziedināt un ko darīt pēc ziedēšanas",
+  "slug": "hiacintes-podina-un-glaze",
+  "category": "Praktiski",
+  "intent": "how-to",
+  "excerpt": "Kā uzziedināt hiacintes telpās podiņā vai hiacinšu glāzē, cik nedēļas tām vajag aukstumu un ko ar sīpolu darīt pēc ziedēšanas — vai to var iestādīt dārzā.",
+  "shortAnswer": "Hiacintei pirms ziedēšanas vajag 12–15 nedēļas aukstuma, ideāli 4–7 °C, lai izaugtu saknes. Pēc tam podiņu vai glāzi novieto gaišā logā, un ziedi parasti atveras pēc dažām nedēļām. Glāzē ūdenim jāsniedzas tikai līdz sīpola pamatnei — ja sīpols stāv ūdenī, tas sapūst. Pēc ziedēšanas podiņā augušu sīpolu var rudenī iestādīt dārzā.",
+  "primaryQuery": "hiacintes podiņos",
+  "aliases": [
+    "kā kopt hiacintes podiņā",
+    "hiacintes pēc noziedēšanas",
+    "hiacintes glāzē",
+    "hiacintes uzziedināšana"
+  ],
+  "publishedAt": "2026-10-26",
+  "updatedAt": "2026-10-26",
+  "seasonalMonths": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3
+  ],
+  "entities": {
+    "crops": [
+      "hiacintes"
+    ]
+  },
+  "showGardenAction": false,
+  "sources": [
+    {
+      "label": "Penn State Extension — Forcing flowering bulbs for indoor beauty",
+      "url": "https://extension.psu.edu/forcing-flowering-bulbs-for-indoor-beauty"
+    },
+    {
+      "label": "University of Wisconsin–Madison — Forcing bulbs",
+      "url": "https://hort.extension.wisc.edu/articles/forcing-bulbs/"
+    },
+    {
+      "label": "ASPCA — Hyacinth (toksiskums dzīvniekiem)",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/hyacinth"
+    }
+  ],
+  "readMinutes": 4,
+  "body": [
+    {
+      "heading": "Kāpēc hiacintei vajag aukstumu",
+      "paragraphs": [
+        "Dārzā hiacinte ziemā saņem aukstumu, kurā izaug saknes un sagatavojas ziedkāts. Telpās šī ziema jāaizstāj: 12–15 nedēļas 4–7 °C temperatūrā — ledusskapī, vēsā pagrabā vai neapkurinātā telpā, kur nesalst.",
+        "Ledusskapī sīpolus netur blakus āboliem un citiem augļiem, kas nogatavojas. Ja iepakojumā norādīts, ka sīpoli jau atdzesēti, seko iepakojuma norādēm — tad aukstuma posms jau daļēji ir paveikts."
+      ],
+      "sourceUrls": [
+        "https://extension.psu.edu/forcing-flowering-bulbs-for-indoor-beauty",
+        "https://hort.extension.wisc.edu/articles/forcing-bulbs/"
+      ]
+    },
+    {
+      "heading": "Hiacinte podiņā",
+      "paragraphs": [
+        "Hiacintes un narcises ir vienas no vieglāk uzziedināmajām sīpolpuķēm. Podiņā tās var stādīt cieši kopā."
+      ],
+      "items": [
+        "Izvēlies podu ar drenāžas caurumiem; zem sīpoliem atstāj vismaz 5 cm substrāta.",
+        "Sīpolus liec cieši kopā — apmēram pussīpola platuma attālumā.",
+        "Apber ar substrātu tā, lai virspusē redzami tikai sīpolu galiņi.",
+        "Aplej un neļauj podam stāvēt ūdenī.",
+        "Novieto aukstumā uz 12–15 nedēļām.",
+        "Pēc aukstuma posma novieto vidēji gaišā vietā; kad dzinumi kļūst zaļi, pārliec saulainā logā."
+      ],
+      "listStyle": "numbered",
+      "image": {
+        "id": "hiacinte-podina",
+        "caption": "Ziedoša hiacinte podiņā. Veikalā pērkamās podiņu hiacintes aukstuma posmu jau ir izgājušas."
+      },
+      "sourceUrls": [
+        "https://extension.psu.edu/forcing-flowering-bulbs-for-indoor-beauty"
+      ]
+    },
+    {
+      "heading": "Hiacinte glāzē",
+      "paragraphs": [
+        "Hiacinti var uzziedināt arī bez zemes. Hiacinšu glāzei ir šaurs kakls, kas notur sīpolu virs ūdens; der arī cits trauks ar tādu kaklu.",
+        "Ūdeni lej tikai līdz sīpola pamatnei vai nedaudz zemāk — ja sīpols stāv ūdenī, tas sapūst. Glāzi ar sīpolu tāpat novieto aukstumā, līdz izaug saknes, un tad gaišā logā. Ziedi parasti atveras apmēram pēc četrām nedēļām. Iztvaikojušo ūdeni papildini."
+      ],
+      "image": {
+        "id": "hiacintes-saknes-udeni",
+        "caption": "Hiacintes saknes ūdens glāzē. Ūdenim jāsniedzas tikai līdz sīpola pamatnei, lai sīpols nesapūtu."
+      },
+      "sourceUrls": [
+        "https://hort.extension.wisc.edu/articles/forcing-bulbs/"
+      ]
+    },
+    {
+      "heading": "Ko darīt ar hiacinti pēc ziedēšanas",
+      "paragraphs": [
+        "Novītušo ziedkātu nogriez, bet lapas atstāj, līdz tās nodzeltē. To pašu sīpolu nākamajā ziemā vēlreiz uzziedināt nevar."
+      ],
+      "table": {
+        "headers": [
+          "Kā hiacinte augusi",
+          "Ko darīt pēc ziedēšanas",
+          "Vai ziedēs atkal"
+        ],
+        "rows": [
+          [
+            "Podiņā ar substrātu",
+            "Rudenī iestādi dārzā",
+            "Dārzā parasti pēc gada, kad sīpols atguvies"
+          ],
+          [
+            "Glāzē ūdenī",
+            "Parasti izmet",
+            "Reti — šādi sīpoli dārzā bieži vairs nezied"
+          ],
+          [
+            "Dārzā",
+            "Lapas atstāj, sīpolus neizrok",
+            "Jā, dārzā hiacintes ziemo"
+          ]
+        ]
+      },
+      "sourceUrls": [
+        "https://hort.extension.wisc.edu/articles/forcing-bulbs/"
+      ]
+    },
+    {
+      "heading": "Vai hiacintes ir indīgas kaķiem un suņiem?",
+      "paragraphs": [
+        "Jā. ASPCA hiacinti iekļauj suņiem, kaķiem un zirgiem toksisko augu sarakstā: tā var izraisīt stipru vemšanu, caureju, nomāktību un trīci. Sīpolus glabā dzīvniekiem nepieejamā vietā."
+      ],
+      "sourceUrls": [
+        "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/hyacinth"
+      ]
+    },
+    {
+      "heading": "Biežākie jautājumi",
+      "paragraphs": [
+        "Vai hiacinti var uzziedināt līdz Ziemassvētkiem? Tikai tad, ja aukstuma posmu sāc jau septembra sākumā: 12–15 nedēļas aukstumā un vēl dažas nedēļas siltumā. Vienkāršāk nopirkt jau atdzesētus sīpolus vai sadīgušas hiacintes podiņos.",
+        "Kāpēc hiacinte glāzē sapuva? Visbiežāk ūdens sniedzās līdz sīpolam. Ūdenim jābūt tikai līdz sīpola pamatnei.",
+        "Vai nopirkto ziedošo hiacinti var iestādīt dārzā? Jā. Pēc ziedēšanas lapas atstāj, un rudenī sīpolu iestādi dārzā; ziedēt tas, visticamāk, sāks tikai pēc gada."
+      ],
+      "sourceUrls": [
+        "https://extension.psu.edu/forcing-flowering-bulbs-for-indoor-beauty",
+        "https://hort.extension.wisc.edu/articles/forcing-bulbs/"
+      ]
+    }
+  ],
+  "links": [
+    {
+      "label": "Hiacintes dārzā: stādīšana un kopšana",
+      "href": "/pukes/hiacintes"
+    },
+    {
+      "label": "Istabas augu pārstādīšanas kalendārs",
+      "href": "/kalendars/istabas-augu-parstadisana"
+    },
+    {
+      "label": "Ziemassvētku zvaigznes kopšana",
+      "href": "/raksti/ziemassvetku-zvaigzne-puansetija"
+    },
+    {
+      "label": "Amarillis pēc ziedēšanas",
+      "href": "/raksti/amarillis-pec-ziedesanas"
+    }
+  ],
+  "relatedSlugs": [
+    "tulpju-stadisana-rudeni",
+    "amarillis-pec-ziedesanas",
+    "ziemassvetku-zvaigzne-puansetija"
+  ]
+}

@@ -2,6 +2,7 @@
   "slug": "rozes",
   "name": "Rozes",
   "latin": "Rosa",
+  "image": { "id": "rozes", "caption": "Krūmroze pilnā ziedā. Latvijā rozes ziemai piesedz pēc pirmajām salnām." },
   "emoji": "🌹",
   "type": "krums",
   "tagline": "Puķu karaliene, kas Latvijā zied no jūnija līdz pat oktobrim — ja vien zini divus galvenos noslēpumus: stādīšanas dziļumu un ziemas segumu.",

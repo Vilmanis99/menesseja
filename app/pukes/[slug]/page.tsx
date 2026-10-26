@@ -6,6 +6,7 @@ import { Icon } from "@/components/ui/icon";
 import { JsonLd } from "@/components/json-ld";
 import { DataNote } from "@/components/data-note";
 import { ContentFigure } from "@/components/content-figure";
+import { contentImage } from "@/lib/content-images";
 import { RecipeTodayBadge } from "@/components/recipe-today-badge";
 import { getFlower, getAllFlowers, flowerSlugs, FLOWER_TYPE_META } from "@/lib/flowers";
 import { CROPS } from "@/lib/planting-crops";
@@ -26,12 +27,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const title = f.seoTitle ?? `${f.name} — kad stādīt, kā kopt un Mēness laiks Latvijā`;
   const description =
     f.seoDescription ??
-    `${f.tagline} Stādīšana, kopšana, ziedēšana (${f.bloom}) un labākā Mēness diena ${f.name.toLowerCase()} Latvijas dārzā.`;
+    `${f.tagline} Stādīšana, kopšana, ziedēšana (${f.bloom}), pārziemošana un tradīcijas Mēness dienas Latvijas dārzā.`;
   return {
     title,
     description,
     alternates: { canonical: canonical(`/pukes/${f.slug}`) },
-    openGraph: og({ path: `/pukes/${f.slug}`, title, description }),
+    openGraph: og({ path: `/pukes/${f.slug}`, title, description, ...(f.image ? { image: contentImage(f.image.id).src } : {}) }),
   };
 }
 
@@ -41,6 +42,7 @@ export default async function FlowerPage({ params }: { params: Promise<{ slug: s
   if (!f) notFound();
 
   const tm = FLOWER_TYPE_META[f.type];
+  const nameAcc = f.nameAcc ?? f.name.toLowerCase();
   const all = getAllFlowers();
   const related = (f.related ?? [])
     .map((s) => all.find((x) => x.slug === s))
@@ -119,7 +121,7 @@ export default async function FlowerPage({ params }: { params: Promise<{ slug: s
           className="mb-lg flex items-center gap-2 rounded-xl bg-primary px-md py-sm font-bold text-on-primary shadow-md shadow-primary/20 transition-all hover:brightness-110"
         >
           <Icon name="add" size="20px" />
-          Pievienot {f.name.toLowerCase()} savā dārzā
+          Pievienot {nameAcc} savā dārzā
           <Icon name="arrow_forward" size="18px" className="ml-auto" />
         </Link>
       )}
@@ -167,7 +169,7 @@ export default async function FlowerPage({ params }: { params: Promise<{ slug: s
       </Card>
 
       {/* Care */}
-      <h2 className="mb-sm text-headline-md text-on-surface">Kā kopt {f.name.toLowerCase()}</h2>
+      <h2 className="mb-sm text-headline-md text-on-surface">Kā kopt {nameAcc}</h2>
       <Card tone="high" className="mb-lg p-md">
         <ul className="space-y-1.5">
           {f.care.map((s, i) => (
@@ -179,13 +181,14 @@ export default async function FlowerPage({ params }: { params: Promise<{ slug: s
       </Card>
 
       {f.winter?.trim() && (
-        <Card tone="container" accent="secondary" className="mb-lg flex items-start gap-sm p-md">
-          <Icon name="ac_unit" className="text-secondary" size="20px" />
-          <div>
-            <p className="text-label-md uppercase tracking-wide text-secondary">Pārziemošana</p>
-            <p className="mt-1 text-body-md text-on-surface-variant">{f.winter}</p>
-          </div>
-        </Card>
+        <section className="mb-lg">
+          <h2 id="parziemosana" className="mb-sm scroll-mt-24 text-headline-md text-on-surface">Kā pārziemot {nameAcc}</h2>
+          <Card tone="container" accent="secondary" className="flex items-start gap-sm p-md">
+            <Icon name="ac_unit" className="text-secondary" size="20px" />
+            <p className="text-body-md leading-relaxed text-on-surface-variant">{f.winter}</p>
+          </Card>
+          {f.winterImage && <ContentFigure image={f.winterImage} />}
+        </section>
       )}
 
       {f.problems?.length ? (
@@ -229,7 +232,7 @@ export default async function FlowerPage({ params }: { params: Promise<{ slug: s
 
       {f.links?.length ? (
         <div className="mb-lg border-t border-outline-variant/10 pt-md">
-          <h2 className="mb-sm text-headline-md text-on-surface">Lasi vairāk par {f.name.toLowerCase()}</h2>
+          <h2 className="mb-sm text-headline-md text-on-surface">Lasi vairāk par {nameAcc}</h2>
           <ul className="space-y-2">
             {f.links.map((l) => (
               <li key={l.href}>

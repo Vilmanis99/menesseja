@@ -2,6 +2,7 @@
   "slug": "pelargonijas",
   "name": "Pelargonijas (ģerānijas)",
   "latin": "Pelargonium",
+  "image": { "id": "pelargonijas", "caption": "Zonālā pelargonija — klasiskā balkona puķe. Rudenī to pirms salnām ienes telpās." },
   "emoji": "🌸",
   "type": "viengadiga",
   "tagline": "Pelargonijas jeb ģerānijas — klasiskā balkona puķe, kas zied visu vasaru un viegli pārziemo telpā uz palodzes.",
@@ -40,6 +41,7 @@
     "Tur saulainā, vējainā vietā; pārāk blīvi un mitri novietoti augi vieglāk slimo. Augstajām šķirnēm vējainā balkonā noder neliels atbalsts."
   ],
   "winter": "Pelargonija Latvijā atklātā laukā nepārziemo — to izglābj, ienesot telpā. Pirms pirmajām rudens salnām (iekšzemē jau septembra beigās, piekrastē oktobra vidū) augu ievāc podā un noliec uz gaišas, vēsas palodzes (ideāli +5…+12 °C). Pirms ienešanas apgriez to par apmēram trešdaļu līdz pusei un noņem dzeltējušās lapas. Ziemā laisti ļoti taupīgi — tikai tik, lai zeme pilnībā neizžūst, un nemēslo. Pavasarī, ap martu, atjauno laistīšanu, vēlāk apgriez un pārstādi svaigā augsnē; laukā atkal iznes tikai pēc maija salnām.",
+  "winterImage": { "id": "pelargoniju-spraudeni", "caption": "Rudenī apsakņoti spraudeņi aizņem maz vietas uz palodzes — tā var saglabāt iecienīto šķirni līdz pavasarim." },
   "problems": [
     "Pārliešana un slikta drenāža izraisa sakņu un stublāju puvi (lapas kļūst dzeltenas un ļenganas) — laisti retāk un nodrošini ūdens noteci no poda.",
     "Daudz lapu, bet maz ziedu parasti nozīmē pārāk maz saules vai pārāk daudz slāpekļa mēslojuma — pārvieto saulītē un izvēlies mēslojumu ziedošajiem augiem.",

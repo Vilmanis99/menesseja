@@ -2,6 +2,7 @@
   "slug": "hiacintes",
   "name": "Hiacintes",
   "latin": "Hyacinthus orientalis",
+  "image": { "id": "hiacintes", "caption": "Hiacintes ziedkopa dārza dobē pavasarī." },
   "emoji": "🌸",
   "type": "sipolpuke",
   "tagline": "Smaržīgākā pavasara puķe — viens pats hiacinšu pudurītis piesmaržo visu dārza stūri.",
@@ -54,5 +55,6 @@
       "a": "Var! Pēc noziedēšanas telpās ļauj lapām nodzeltēt, tad sīpolu pavasarī vai rudenī iestādi dārzā ~15 cm dziļi. Nākamajā vai aiznākamajā pavasarī tā uzziedēs dobē."
     }
   ],
+  "links": [{ "label": "Hiacintes podiņā un glāzē: uzziedināšana telpās", "href": "/raksti/hiacintes-podina-un-glaze" }],
   "related": ["krokusi", "narcises", "tulpes", "lilijas"]
 }

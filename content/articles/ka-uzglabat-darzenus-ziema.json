@@ -1,0 +1,233 @@
+{
+  "title": "Kā uzglabāt dārzeņus ziemā: pagrabā, dzīvoklī un uz balkona",
+  "slug": "ka-uzglabat-darzenus-ziema",
+  "category": "Praktiski",
+  "intent": "how-to",
+  "excerpt": "Kādā temperatūrā un mitrumā glabāt burkānus, bietes, kartupeļus, kāpostus, sīpolus, ķiplokus un ķirbjus, kā tos sagatavot glabāšanai un ko darīt, ja pagraba nav.",
+  "shortAnswer": "Burkāni, bietes un kāposti vislabāk glabājas tuvu 0 °C un ļoti mitrā gaisā (90–95%). Kartupeļiem vajag nedaudz siltāk — 3–4 °C — un tumsu. Sīpoli un ķiploki prasa aukstu, bet sausu gaisu, bet ķirbji — 10–13 °C. Ja dārzeņi sāk dīgt, glabātuvē ir par siltu; ja tie saraujas, gaiss ir par sausu.",
+  "primaryQuery": "kā uzglabāt dārzeņus ziemā",
+  "aliases": [
+    "kā uzglabāt bietes ziemai",
+    "kā uzglabāt kartupeļus dzīvoklī",
+    "kā uzglabāt burkānus",
+    "kā uzglabāt sīpolus"
+  ],
+  "publishedAt": "2026-10-26",
+  "updatedAt": "2026-10-26",
+  "seasonalMonths": [
+    9,
+    10,
+    11,
+    12,
+    1,
+    2
+  ],
+  "entities": {
+    "crops": [
+      "burkani",
+      "bietes",
+      "kartupeli",
+      "kaposti",
+      "sipoli",
+      "kiploki",
+      "kirbji"
+    ]
+  },
+  "showGardenAction": false,
+  "sources": [
+    {
+      "label": "University of Wisconsin — Storing vegetables at home (A1135)",
+      "url": "https://barron.extension.wisc.edu/files/2023/02/Storing-Vegetables-at-HOme.pdf"
+    },
+    {
+      "label": "Penn State Extension — Preserving late season fall vegetables",
+      "url": "https://extension.psu.edu/preserving-late-season-fall-vegetables"
+    }
+  ],
+  "readMinutes": 4,
+  "body": [
+    {
+      "heading": "Kurš dārzenis kādos apstākļos glabājas",
+      "paragraphs": [
+        "Dārzeņiem ir trīs dažādas prasības: aukstums un mitrums sakņaugiem un kāpostiem, aukstums un sausums sīpoliem un ķiplokiem, mērens siltums ķirbjiem. Tāpēc tos visus vienā vietā glabāt grūti.",
+        "Tabulas skaitļi ir no Viskonsinas universitātes glabāšanas ceļveža. Mājas pagrabā, kur temperatūra svārstās, termiņi parasti ir īsāki; tie atkarīgi arī no šķirnes un ražas kvalitātes."
+      ],
+      "table": {
+        "headers": [
+          "Dārzenis",
+          "Temperatūra",
+          "Gaisa mitrums",
+          "Cik ilgi glabājas"
+        ],
+        "rows": [
+          [
+            "Burkāni",
+            "0 °C",
+            "90–95%",
+            "4–6 mēneši"
+          ],
+          [
+            "Bietes",
+            "0 °C",
+            "95%",
+            "1–3 mēneši"
+          ],
+          [
+            "Kāposti",
+            "0 °C",
+            "90–95%",
+            "3–4 mēneši"
+          ],
+          [
+            "Sakņu selerijas",
+            "0 °C",
+            "90–95%",
+            "3–4 mēneši"
+          ],
+          [
+            "Pastinaks",
+            "0 °C",
+            "90–95%",
+            "2–6 mēneši"
+          ],
+          [
+            "Kartupeļi",
+            "3–4 °C",
+            "90%",
+            "5–8 mēneši"
+          ],
+          [
+            "Sīpoli",
+            "0 °C",
+            "65–70%",
+            "5–8 mēneši"
+          ],
+          [
+            "Ķiploki",
+            "0 °C",
+            "65–70%",
+            "6–7 mēneši"
+          ],
+          [
+            "Ķirbji",
+            "10–13 °C",
+            "70–75%",
+            "2–6 mēneši atkarībā no šķirnes"
+          ]
+        ]
+      },
+      "sourceUrls": [
+        "https://barron.extension.wisc.edu/files/2023/02/Storing-Vegetables-at-HOme.pdf"
+      ]
+    },
+    {
+      "heading": "Kā sagatavot dārzeņus glabāšanai",
+      "paragraphs": [
+        "Glabāšanai atlasi tikai veselus, nobriedušus dārzeņus. Sīkus, sagrieztus un sasistus izlieto vispirms vai sasaldē."
+      ],
+      "items": [
+        "Sakņaugiem lakstus nogriez apmēram 1 cm virs galviņas.",
+        "Zemi notīri. Ja dārzeņus mazgā, pirms glabāšanas ļauj virsmai nožūt — slapjā virsmā vieglāk sākas puve.",
+        "Sīpolus novāc, kad laksti nokrituši. Kad laksti pilnīgi sakaltuši, nogriez tos 2–3 cm virs sīpola un vēl 1–2 nedēļas žāvē sausā, vēdināmā vietā.",
+        "Ķirbjus novāc pirms salnām ar daļu kāta un 10 dienas žāvē siltā, vēdināmā vietā.",
+        "Kāpostiem noņem vaļīgās ārējās lapas un glabā tikai cietas, veselas galviņas."
+      ],
+      "listStyle": "numbered",
+      "image": {
+        "id": "sipolu-zavesana",
+        "caption": "Novākti sīpoli žūst vēdināmā vietā. Glabāšanā tos liek tikai tad, kad laksti un ārējās mizas ir pilnīgi sausas."
+      },
+      "sourceUrls": [
+        "https://barron.extension.wisc.edu/files/2023/02/Storing-Vegetables-at-HOme.pdf"
+      ]
+    },
+    {
+      "heading": "Glabāšana pagrabā",
+      "paragraphs": [
+        "Lielākajai daļai dārzeņu piemērotākā temperatūra ir 0–3 °C. Pagrabu vēdini tad, kad ārā ir vēsāks nekā iekšā, un aizver ventilāciju, kad pagrabā temperatūra noslīdējusi līdz 1–2 °C."
+      ],
+      "items": [
+        "Burkānus, bietes un pastinaku ieraok mitrās smiltīs vai glabā maisiņos ar dažiem caurumiem, lai tie nesaraujas.",
+        "Kartupeļus glabā tumsā — apcirkņos vai kastēs ar dažām ventilācijas atverēm.",
+        "Sīpolus glabā tīkla maisos vai režģa kastēs, sausākajā pagraba vietā.",
+        "Kāpostus, kāļus un rāceņus glabā atsevišķi, jo to smarža pāriet uz citiem dārzeņiem.",
+        "Ķirbjus glabā plauktos siltākā vietā — ap 13 °C."
+      ],
+      "listStyle": "check",
+      "image": {
+        "id": "pagrabs-ziema",
+        "caption": "Zemes pagrabs ziemā. Zemes un sniega kārta palīdz noturēt vēsu, vienmērīgu temperatūru."
+      },
+      "sourceUrls": [
+        "https://barron.extension.wisc.edu/files/2023/02/Storing-Vegetables-at-HOme.pdf",
+        "https://extension.psu.edu/preserving-late-season-fall-vegetables"
+      ]
+    },
+    {
+      "heading": "Ja pagraba nav: dzīvoklī un uz balkona",
+      "paragraphs": [
+        "Dzīvoklī meklē vēsāko vietu — neapkurinātu pieliekamo, krātuvi kāpņu telpā vai aizstiklotu balkonu. Ja dārzeņi istabā sāk dīgt, tur ir par siltu.",
+        "Uz balkona izmanto siltinātu kasti un ieliec tajā termometru. Sakņaugi nedrīkst sasalt, tāpēc stiprā salā kasti papildus piesedz vai dārzeņus uz laiku ienes iekšā.",
+        "Nelielu daudzumu burkānu un biešu var glabāt ledusskapja dārzeņu atvilktnē maisiņos ar dažiem caurumiem — tā tie nesaraujas, bet lieks mitrums nekrājas. Kartupeļus glabā tumsā."
+      ],
+      "sourceUrls": [
+        "https://barron.extension.wisc.edu/files/2023/02/Storing-Vegetables-at-HOme.pdf"
+      ]
+    },
+    {
+      "heading": "Glabāšanas laikā",
+      "paragraphs": [
+        "Glabātos dārzeņus apskati reizi vienā vai divās nedēļās. Viens pūstošs dārzenis var sabojāt arī blakus esošos."
+      ],
+      "items": [
+        "Pūstošos dārzeņus izņem uzreiz.",
+        "Ja dārzeņi sāk dīgt, glabātuvē ir par siltu.",
+        "Ja dārzeņi saraujas, gaiss ir par sausu — sakņaugus ieraok mitrās smiltīs vai liec maisiņos ar caurumiem."
+      ],
+      "listStyle": "check",
+      "sourceUrls": [
+        "https://barron.extension.wisc.edu/files/2023/02/Storing-Vegetables-at-HOme.pdf"
+      ]
+    },
+    {
+      "heading": "Biežākie jautājumi",
+      "paragraphs": [
+        "Vai burkānus pirms glabāšanas mazgāt? Var, bet pēc tam ļauj tiem nožūt. Slapjā virsmā vieglāk sākas puve.",
+        "Kāpēc kartupeļi pagrabā dīgst? Glabātuvē ir par siltu. Kartupeļiem piemērotākie ir 3–4 °C un tumsa.",
+        "Vai ābolus var glabāt kopā ar dārzeņiem? Labāk atsevišķi, jo kāpostu un sīpolu smarža var pāriet uz citiem produktiem.",
+        "Cik ilgi glabājas ķiploki? Sausā, vēsā vietā ap 0 °C — līdz sešiem vai septiņiem mēnešiem."
+      ],
+      "sourceUrls": [
+        "https://barron.extension.wisc.edu/files/2023/02/Storing-Vegetables-at-HOme.pdf"
+      ]
+    }
+  ],
+  "links": [
+    {
+      "label": "Kad novākt sīpolus",
+      "href": "/raksti/kad-novakt-sipolus"
+    },
+    {
+      "label": "Kad novākt ķiplokus",
+      "href": "/raksti/kad-novakt-kiplokus"
+    },
+    {
+      "label": "Kā glabāt dālijas ziemā",
+      "href": "/raksti/ka-glabat-dalijas-ziema"
+    },
+    {
+      "label": "Skābēti kāposti",
+      "href": "/raksti/skabeti-kaposti"
+    },
+    {
+      "label": "Novembra dārza darbu kalendārs",
+      "href": "/kalendars/2026/novembris"
+    }
+  ],
+  "relatedSlugs": [
+    "kad-novakt-sipolus",
+    "kad-novakt-kiplokus",
+    "skabeti-kaposti",
+    "ka-glabat-dalijas-ziema"
+  ]
+}

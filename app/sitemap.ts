@@ -119,5 +119,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
   );
 
-  return [...staticPages, ...regionPages, ...articlePages, ...koSetPages, ...topPages, ...recipePages, ...flowerPages, ...bloomPeriodPages, ...problemPages, ...cropPages, ...monthPages];
+  const yearPages: MetadataRoute.Sitemap = CALENDAR_YEARS.map((year) => ({
+    url: url(`/kalendars/${year}`),
+    lastModified: new Date(CALENDAR_GUIDES_UPDATED_AT),
+    priority: 0.8,
+    changeFrequency: "monthly" as const,
+  }));
+
+  return [...staticPages, ...yearPages, { url: url("/kalendars/istabas-augu-parstadisana"), lastModified: new Date(CALENDAR_GUIDES_UPDATED_AT), priority: 0.7, changeFrequency: "monthly" }, ...regionPages, ...articlePages, ...koSetPages, ...topPages, ...recipePages, ...flowerPages, ...bloomPeriodPages, ...problemPages, ...cropPages, ...monthPages];
 }

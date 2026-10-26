@@ -1,7 +1,9 @@
 {
   "slug": "budlejas",
   "name": "Budlejas (tauriņu krūms)",
+  "nameAcc": "budlejas",
   "latin": "Buddleja davidii",
+  "image": { "id": "budlejas", "caption": "Budleja jeb tauriņu krūms vasaras otrajā pusē pievelk tauriņus — attēlā dadžu raibenis." },
   "emoji": "🦋",
   "type": "krums",
   "tagline": "Garie, smaržīgie ziedu vālīši vasaras otrā pusē pievelk tauriņus kā magnēts.",

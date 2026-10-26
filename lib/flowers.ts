@@ -14,6 +14,8 @@ export interface Flower {
   slug: string;
   image?: ContentImageUse;
   name: string; // Latvian
+  /** Accusative for "Kā kopt …" headings when it differs from the lowercased name (lavanda → lavandu). */
+  nameAcc?: string;
   latin?: string;
   /** Optional head-term SEO overrides — for pillar pages chasing a big query
    *  (e.g. "peonijas"); the generic title template covers the rest. */
@@ -38,6 +40,7 @@ export interface Flower {
   planting: string[]; // kā stādīt — dziļums, atstatums
   care: string[]; // laistīšana, mēslošana, atbalsts
   winter?: string; // pārziemošana
+  winterImage?: ContentImageUse;
   problems?: string[]; // biežākās problēmas
   folklore?: string;
   faq?: { q: string; a: string }[];

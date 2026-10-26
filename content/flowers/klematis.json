@@ -1,7 +1,9 @@
 {
   "slug": "klematis",
   "name": "Klematis (mežvītenis)",
+  "nameAcc": "klematisu",
   "latin": "Clematis",
+  "image": { "id": "klematis", "caption": "Klematis 'Jackmanii' zied uz šī gada dzinumiem, tāpēc to agrā pavasarī var stipri apgriezt." },
   "emoji": "🌸",
   "type": "krums",
   "tagline": "Kāpjošs vītenis, kas vasarā pārklāj žogu un kārtis ar lieliem, košiem ziediem.",

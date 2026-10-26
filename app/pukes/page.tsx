@@ -201,7 +201,12 @@ export default function PukesPage() {
         </div>
       </section>
 
-      <FlowerGallery />
+      <FlowerGallery
+        items={[
+          ...flowers.filter((f) => f.image).map((f) => ({ name: f.name, latin: f.latin, href: `/pukes/${f.slug}`, imageId: f.image!.id })),
+          { name: "Turku neļķes", latin: "Dianthus barbatus", href: "/augi/nelkes", imageId: "turku-nelkes" },
+        ].sort((x, y) => x.name.localeCompare(y.name, "lv"))}
+      />
 
       {/* Folk names — unique Latvian content no competitor has gathered */}
       <section className="mb-lg">

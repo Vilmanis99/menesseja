@@ -1,7 +1,9 @@
 {
   "slug": "floksi",
   "name": "Flokši",
+  "nameAcc": "flokšus",
   "latin": "Phlox paniculata",
+  "image": { "id": "floksi", "caption": "Skarainā floksa ziedu cepure — vecmāmiņu dārza vasaras puķe, kas zied jūlijā un augustā." },
   "emoji": "🌸",
   "type": "daudzgadiga",
   "tagline": "Vecmāmiņas dārza vasaras pamats — smaržīgas ziedu cepures jūlijā un augustā, gadu no gada bez liekām rūpēm.",

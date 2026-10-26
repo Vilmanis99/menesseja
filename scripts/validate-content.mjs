@@ -39,6 +39,7 @@ for (const group of ["crops", "flowers"]) {
   for (const slug of loadDir(group)) {
     const entry = JSON.parse(fs.readFileSync(path.join(root, "content", group, `${slug}.json`), "utf8"));
     validateImageUse(entry.image, `${group}/${slug}`);
+    validateImageUse(entry.winterImage, `${group}/${slug}: pārziemošana`);
     for (const section of entry.sections ?? []) validateImageUse(section.image, `${group}/${slug}: ${section.heading}`);
   }
 }

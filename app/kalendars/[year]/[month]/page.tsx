@@ -18,6 +18,10 @@ import { contentImage } from "@/lib/content-images";
 import { MONTH_GUIDES } from "@/lib/month-guides";
 import { namedaysForDay } from "@/lib/vardadienas";
 import { PrintButton } from "@/components/print-button";
+import { NewsletterSignup } from "@/components/newsletter-signup";
+import { newsletterConfigured } from "@/lib/brevo";
+import { repottingDays, dayRanges, REPOT_SEASON_NOTE } from "@/lib/repotting";
+import { seasonForMonth } from "@/lib/seasonal";
 import { cropPart } from "@/lib/crop-part";
 import { cropHref } from "@/lib/flowers";
 import { cropEmoji } from "@/lib/crop-visual";
@@ -105,6 +109,7 @@ export default async function MonthCalendarPage({
   });
 
   const keyPhases = moonPhasesForMonth(year, month);
+  const repotRanges = dayRanges(repottingDays(year, month).map((d) => d.day));
 
   const elements: Element[] = ["zeme", "udens", "gaiss", "uguns"];
 
@@ -139,7 +144,9 @@ export default async function MonthCalendarPage({
       <nav className="mb-md flex items-center gap-1 text-label-sm text-on-surface-variant print:hidden">
         <Link href="/kalendars" className="hover:text-primary">Kalendārs</Link>
         <Icon name="chevron_right" size="14px" />
-        <span className="text-on-surface capitalize">{name} {year}</span>
+        <Link href={`/kalendars/${year}`} className="hover:text-primary">{year}</Link>
+        <Icon name="chevron_right" size="14px" />
+        <span className="text-on-surface capitalize">{name}</span>
       </nav>
 
       <header className="mb-lg">
@@ -232,6 +239,18 @@ export default async function MonthCalendarPage({
         </div>
       </div>
 
+      <section className="mb-lg print:hidden" aria-labelledby="istabas-augi">
+        <h2 id="istabas-augi" className="mb-sm scroll-mt-24 text-headline-md text-on-surface">Istabas augu pārstādīšana {nameLoc}</h2>
+        <Card tone="container" className="flex items-start gap-sm p-md">
+          <Icon name="potted_plant" className="text-primary" />
+          <p className="text-body-md leading-relaxed text-on-surface-variant">
+            Tradīcijā piemērotās krītošā Mēness dienas: <span className="font-semibold text-on-surface">{repotRanges || "šomēnes nav."}</span>{" "}
+            {REPOT_SEASON_NOTE[seasonForMonth(month)]}{" "}
+            <Link href="/kalendars/istabas-augu-parstadisana" className="text-primary hover:underline">Pārstādīšanas kalendārs un padomi →</Link>
+          </p>
+        </Card>
+      </section>
+
       {/* Day-by-day table */}
       <h2 id="visas-dienas" className="mb-sm scroll-mt-24 text-headline-md text-on-surface">Visas dienas — {name} {year}</h2>
       <Card tone="low" elevated className="month-day-table mb-lg divide-y divide-outline-variant/10 p-0">
@@ -269,6 +288,8 @@ export default async function MonthCalendarPage({
         <MonthPreparation month={month} />
       </div>
 
+      {newsletterConfigured() && <div className="mb-lg print:hidden"><NewsletterSignup source={`kalendars:${year}-${mSlug}`} /></div>}
+
       {/* Prev / next month navigation */}
       <nav className="mb-md flex items-center justify-between gap-2 border-y border-outline-variant/10 py-sm print:hidden">
         {prev ? (
@@ -296,6 +317,9 @@ export default async function MonthCalendarPage({
       </div>
 
       <div className="flex flex-wrap gap-3 print:hidden">
+        <Link href={`/kalendars/${year}`} className="inline-flex items-center gap-1 text-label-md text-primary hover:underline">
+          Mēness kalendārs {year} <Icon name="arrow_forward" size="16px" />
+        </Link>
         <Link href="/kalendars" className="inline-flex items-center gap-1 text-label-md text-primary hover:underline">
           Interaktīvais kalendārs <Icon name="arrow_forward" size="16px" />
         </Link>

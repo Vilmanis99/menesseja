@@ -1,0 +1,210 @@
+{
+  "title": "Amarillis pēc ziedēšanas: kā kopt, lai uzzied atkal",
+  "slug": "amarillis-pec-ziedesanas",
+  "category": "Praktiski",
+  "intent": "how-to",
+  "excerpt": "Ko darīt ar amarilli (hipeastru) pēc ziedēšanas: kad nogriezt ziedkātu, kā kopt lapas vasarā, kā sarīkot miera periodu un panākt, lai sīpols uzzied atkal.",
+  "shortAnswer": "Pēc ziedēšanas nogriez novītušos ziedus, bet lapas atstāj: laisti un mēslo augu gaišā vietā, jo lapas uzkrāj sīpolā spēku nākamajiem ziediem. Rudenī sarīko miera periodu — 8–12 nedēļas vēsumā (7–13 °C) bez laistīšanas. Pēc tam sīpolu novieto siltā, gaišā vietā; ziedi parasti parādās pēc 4–6 nedēļām.",
+  "primaryQuery": "amarillis pēc ziedēšanas",
+  "aliases": [
+    "amarillis pēc noziedēšanas",
+    "amarillis kopšana",
+    "hipeastrs"
+  ],
+  "publishedAt": "2026-10-26",
+  "updatedAt": "2026-10-26",
+  "seasonalMonths": [
+    12,
+    1,
+    2,
+    3,
+    9
+  ],
+  "showGardenAction": false,
+  "sources": [
+    {
+      "label": "University of Illinois Extension — How to take care of amaryllis and get them to rebloom",
+      "url": "https://extension.illinois.edu/blogs/good-growing/2021-12-03-how-take-care-amaryllis-and-get-them-rebloom"
+    },
+    {
+      "label": "RHS — Hippeastrum growing guide",
+      "url": "https://www.rhs.org.uk/plants/hippeastrum/growing-guide"
+    },
+    {
+      "label": "University of Illinois Extension — Forcing amaryllis for the holidays",
+      "url": "https://extension.illinois.edu/blogs/hort-home-landscape/2014-12-02-forcing-amaryllis-holidays"
+    },
+    {
+      "label": "ASPCA — Amaryllis (toksiskums dzīvniekiem)",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/amaryllis"
+    }
+  ],
+  "readMinutes": 4,
+  "body": [
+    {
+      "heading": "Uzreiz pēc ziedēšanas",
+      "paragraphs": [
+        "Amarilla sīpols nākamajiem ziediem krāj spēku no lapām. Tāpēc pēc ziedēšanas augu neizmet un lapas negriez."
+      ],
+      "items": [
+        "Novītušos ziedus nogriez, lai augs netērē spēku sēklām.",
+        "Ziedkātu nogriez pie sīpola, kad tas sāk dzeltēt.",
+        "Lapas atstāj un novieto augu gaišākajā logā — dienvidu puse ir vislabākā."
+      ],
+      "listStyle": "numbered",
+      "image": {
+        "id": "amarillis-palodze",
+        "caption": "Amarillis uz palodzes. Pēc ziedēšanas lapas atstāj, jo tās baro sīpolu nākamajai ziedēšanai."
+      },
+      "sourceUrls": [
+        "https://extension.illinois.edu/blogs/good-growing/2021-12-03-how-take-care-amaryllis-and-get-them-rebloom",
+        "https://www.rhs.org.uk/plants/hippeastrum/growing-guide"
+      ]
+    },
+    {
+      "heading": "Pavasaris un vasara: lapu laiks",
+      "paragraphs": [
+        "Kamēr lapas aug, laisti regulāri un mēslo ar istabas augu mēslojumu pēc iepakojuma norādēm. Šajā laikā veidojas nākamā gada ziedi.",
+        "Kad salnu risks beidzies, podu var iznest ārā. Sākumā novieto to izkliedētā gaismā, vēlāk vietā, kur ir vismaz sešas stundas saules dienā. Rudenī ienes atpakaļ pirms pirmās salnas."
+      ],
+      "sourceUrls": [
+        "https://extension.illinois.edu/blogs/good-growing/2021-12-03-how-take-care-amaryllis-and-get-them-rebloom",
+        "https://www.rhs.org.uk/plants/hippeastrum/growing-guide"
+      ]
+    },
+    {
+      "heading": "Rudens: miera periods",
+      "paragraphs": [
+        "Miera periods ļauj noteikt, kad amarillis atkal ziedēs. Ja to sāc oktobra sākumā, ziedi parasti atveras janvārī vai februārī. Ziemassvētku ziediem miera periodu sāc jau augusta beigās."
+      ],
+      "items": [
+        "Septembra beigās pārtrauc mēslot un laistīt; ļauj lapām pakāpeniski nodzeltēt.",
+        "Nokaltušās lapas nogriez.",
+        "Podu ar sīpolu novieto vēsā, tumšā vietā (7–13 °C) uz 8–12 nedēļām un nelaisti. Der vēsa kāpņu telpa vai pagrabs, kur nesalst.",
+        "Reizēm pārbaudi, vai sīpols ir ciets un bez pelējuma."
+      ],
+      "listStyle": "numbered",
+      "table": {
+        "headers": [
+          "Laiks",
+          "Darbs"
+        ],
+        "rows": [
+          [
+            "Septembra beigas",
+            "Pārtrauc laistīt un mēslot"
+          ],
+          [
+            "Oktobris–novembris",
+            "Sīpols atpūšas vēsumā bez ūdens"
+          ],
+          [
+            "Decembris",
+            "Siltā, gaišā vietā; pirmā laistīšana"
+          ],
+          [
+            "Janvāris–februāris",
+            "Ziedi 4–6 nedēļas pēc atpūtas"
+          ]
+        ]
+      },
+      "sourceUrls": [
+        "https://extension.illinois.edu/blogs/good-growing/2021-12-03-how-take-care-amaryllis-and-get-them-rebloom",
+        "https://www.rhs.org.uk/plants/hippeastrum/growing-guide"
+      ]
+    },
+    {
+      "heading": "Kā atsākt augšanu",
+      "paragraphs": [
+        "Pēc miera perioda novieto podu siltā (ap 21 °C), gaišā vietā. Vienreiz kārtīgi aplej, bet nākamo reizi laisti tikai tad, kad zeme kļuvusi gandrīz sausa — līdz parādās jaunas lapas vai ziedkāts.",
+        "Amarilli pārstāda reizi divos vai trijos gados, janvārī–martā pēc ziedēšanas. Starplaikā pietiek nomainīt augšējos 2,5–5 cm substrāta. Podam jābūt tikai nedaudz platākam par sīpolu, un vismaz pusei sīpola jāpaliek virs zemes."
+      ],
+      "image": {
+        "id": "amarillis-sipols",
+        "caption": "Amarilla sīpols ar jaunām lapām un ziedkātu. Kad parādās šādi dzinumi, atsāc regulāru laistīšanu."
+      },
+      "sourceUrls": [
+        "https://www.rhs.org.uk/plants/hippeastrum/growing-guide",
+        "https://extension.illinois.edu/blogs/hort-home-landscape/2014-12-02-forcing-amaryllis-holidays"
+      ]
+    },
+    {
+      "heading": "Kāpēc amarillis nezied",
+      "paragraphs": [
+        "Ja sīpols otrajā gadā audzē tikai lapas, meklē cēloni pagājušās sezonas kopšanā."
+      ],
+      "table": {
+        "headers": [
+          "Iemesls",
+          "Pazīme",
+          "Ko darīt"
+        ],
+        "rows": [
+          [
+            "Lapas pēc ziedēšanas nogrieztas vai augs stāvēja tumsā",
+            "Sīpols vasarā audzēja maz lapu",
+            "Nākamajā sezonā ļauj lapām augt gaišā vietā un mēslo"
+          ],
+          [
+            "Nav bijis vēsas atpūtas",
+            "Augs visu gadu tikai audzē lapas",
+            "Sarīko 8–12 nedēļu atpūtu vēsumā bez laistīšanas"
+          ],
+          [
+            "Laistīšana atpūtas laikā",
+            "Sīpols mīksts vai ar pelējumu",
+            "Nelaisti, kamēr nav jaunu dzinumu; mīkstu, pūstošu sīpolu izmet"
+          ],
+          [
+            "Vaskā iepakots sīpols",
+            "Sīpols bez saknēm, pārklāts ar vasku",
+            "Tas paredzēts vienai ziedēšanai; ja sīpols vēl ciets, vasku noņem un iestādi podā"
+          ]
+        ]
+      },
+      "sourceUrls": [
+        "https://extension.illinois.edu/blogs/good-growing/2021-12-03-how-take-care-amaryllis-and-get-them-rebloom",
+        "https://www.rhs.org.uk/plants/hippeastrum/growing-guide"
+      ]
+    },
+    {
+      "heading": "Vai amarillis ir indīgs?",
+      "paragraphs": [
+        "Jā, mājdzīvniekiem. ASPCA amarilli iekļauj suņiem, kaķiem un zirgiem toksisko augu sarakstā: tas var izraisīt vemšanu, caureju, sāpes vēderā, siekalošanos un trīci. Sīpolu un lapas turi dzīvniekiem nepieejamā vietā; ja kaķis vai suns augu sagrauzis, sazinies ar veterinārārstu."
+      ],
+      "sourceUrls": [
+        "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/amaryllis"
+      ]
+    },
+    {
+      "heading": "Biežākie jautājumi",
+      "paragraphs": [
+        "Vai amarilli var iestādīt dārzā? Latvijā tas ziemu ārā nepārdzīvo. Vasarā podu var iznest ārā, bet rudenī pirms salnām to ienes.",
+        "Kad amarilli pārstādīt? Reizi divos vai trijos gados, janvārī–martā pēc ziedēšanas. Pārējos gados nomaini augšējo substrāta kārtu.",
+        "Vai miera periods ir obligāts? Ne vienmēr. Daži sīpoli uzzied arī bez tā, bet vēsa atpūta palīdz noteikt ziedēšanas laiku."
+      ],
+      "sourceUrls": [
+        "https://www.rhs.org.uk/plants/hippeastrum/growing-guide",
+        "https://extension.illinois.edu/blogs/good-growing/2021-12-03-how-take-care-amaryllis-and-get-them-rebloom"
+      ]
+    }
+  ],
+  "links": [
+    {
+      "label": "Istabas augu pārstādīšanas kalendārs",
+      "href": "/kalendars/istabas-augu-parstadisana"
+    },
+    {
+      "label": "Ziemassvētku zvaigznes kopšana",
+      "href": "/raksti/ziemassvetku-zvaigzne-puansetija"
+    },
+    {
+      "label": "Hiacintes podiņā un glāzē",
+      "href": "/raksti/hiacintes-podina-un-glaze"
+    }
+  ],
+  "relatedSlugs": [
+    "ziemassvetku-zvaigzne-puansetija",
+    "hiacintes-podina-un-glaze"
+  ]
+}

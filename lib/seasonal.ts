@@ -35,7 +35,7 @@ const bloom = (period: string, label: string): SeasonalLink => ({ href: `/pukes/
 /** Editorial links rotate by Riga's calendar month. Autumn traffic does not
  * decide which spring or summer pages remain available. */
 const MONTH_LINKS: SeasonalLink[][] = [
-  [article("ka-izveleties-seklas-darzam", "Sēklu izvēle savam dārzam"), article("ka-glabat-seklas-un-parbaudit-digtspeju", "Sēklu dīgtspējas pārbaude"), article("darza-planosana-iesacejam", "Dārza plānošana iesācējam")],
+  [article("ka-izveleties-seklas-darzam", "Sēklu izvēle savam dārzam"), article("ka-glabat-seklas-un-parbaudit-digtspeju", "Sēklu dīgtspējas pārbaude"), article("darza-planosana-iesacejam", "Dārza plānošana iesācējam"), article("amarillis-pec-ziedesanas", "Amarillis pēc ziedēšanas"), article("hiacintes-podina-un-glaze", "Hiacintes podiņā un glāzē")],
   [article("kad-set-destus-rekini-atpakal", "Kad sākt dēstu sēju"), article("destu-audzesana-uz-palodzes", "Dēsti uz palodzes"), bloom("pavasari", "Pavasara puķes")],
   [article("destu-audzesana-uz-palodzes", "Dēstu audzēšana uz palodzes"), article("desti-izstidz", "Kāpēc dēsti izstīdz"), bloom("pavasari", "Puķes, kas zied pavasarī")],
   [article("augsnes-temperatura", "Kad augsne gatava sējai"), article("ka-apgriezt-rozes-pavasari", "Rožu apgriešana pavasarī"), bloom("pavasari", "Pavasara puķes")],
@@ -44,9 +44,9 @@ const MONTH_LINKS: SeasonalLink[][] = [
   [article("darza-darbi-julija", "Dārza darbi jūlijā"), article("ko-set-julija-augusta", "Sēja otrajai ražai"), bloom("vasara", "Vasaras puķes")],
   [article("zemenu-stadisana-augusta", "Zemeņu stādīšana augustā"), article("kad-parstadit-peonijas", "Peoniju pārstādīšana"), bloom("vasara", "Kas zied augustā")],
   [article("tulpju-stadisana-rudeni", "Tulpju stādīšana rudenī"), article("baltas-sinepes-pec-razas", "Zaļmēslojums pēc ražas"), bloom("rudeni", "Puķes, kas zied rudenī")],
-  [article("ka-glabat-dalijas-ziema", "Dāliju izrakšana un glabāšana"), article("tulpju-stadisana-rudeni", "Tulpju stādīšana rudenī"), bloom("rudeni", "Rudens puķes")],
-  [article("ka-glabat-dalijas-ziema", "Dāliju glabāšana ziemā"), article("siltumnicas-sagatavosana-sezonai", "Siltumnīcas sakopšana"), article("ka-glabat-seklas-un-parbaudit-digtspeju", "Sēklu glabāšana")],
-  [article("ka-izveleties-seklas-darzam", "Sēklu izvēle nākamajai sezonai"), article("ka-glabat-seklas-un-parbaudit-digtspeju", "Pārskati sēklu krājumus"), article("augu-maina-darza", "Augu maiņas plāns")],
+  [article("ka-glabat-dalijas-ziema", "Dāliju izrakšana un glabāšana"), article("tulpju-stadisana-rudeni", "Tulpju stādīšana rudenī"), bloom("rudeni", "Rudens puķes"), article("ka-uzglabat-darzenus-ziema", "Dārzeņu glabāšana ziemā"), article("hiacintes-podina-un-glaze", "Hiacintes podiņā un glāzē")],
+  [article("ka-uzglabat-darzenus-ziema", "Dārzeņu glabāšana ziemā"), article("ka-glabat-dalijas-ziema", "Dāliju glabāšana ziemā"), article("hiacintes-podina-un-glaze", "Hiacintes podiņā un glāzē"), article("siltumnicas-sagatavosana-sezonai", "Siltumnīcas sakopšana"), article("ka-glabat-seklas-un-parbaudit-digtspeju", "Sēklu glabāšana")],
+  [article("ziemassvetku-zvaigzne-puansetija", "Ziemassvētku zvaigznes kopšana"), article("amarillis-pec-ziedesanas", "Amarillis: kopšana un atkārtota ziedēšana"), article("ka-izveleties-seklas-darzam", "Sēklu izvēle nākamajai sezonai"), article("ka-glabat-seklas-un-parbaudit-digtspeju", "Pārskati sēklu krājumus"), article("augu-maina-darza", "Augu maiņas plāns")],
 ];
 
 export function seasonalLinks(month: number): SeasonalLink[] {

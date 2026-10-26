@@ -1,0 +1,189 @@
+{
+  "title": "Ziemassvētku zvaigzne (puansetija): kā kopt, lai nenomet lapas",
+  "slug": "ziemassvetku-zvaigzne-puansetija",
+  "category": "Praktiski",
+  "intent": "how-to",
+  "excerpt": "Kā kopt Ziemassvētku zvaigzni (puansetiju) telpās: gaiša vieta bez caurvēja, 16–21 °C, laistīšana tikai pēc zemes apžūšanas un ko darīt, lai nākamajā ziemā tā atkal kļūtu sarkana.",
+  "shortAnswer": "Puansetija visilgāk saglabājas gaišā vietā bez tiešas pusdienas saules, 16–21 °C temperatūrā dienā un ap 13 °C naktī, prom no radiatora un caurvēja. Laisti tikai tad, kad zemes virskārta apžuvusi, un neļauj podam stāvēt ūdenī. Aukstums un pastāvīgi slapja zeme ir galvenie iemesli, kāpēc tā bojā lapas un seglapas.",
+  "primaryQuery": "ziemassvētku zvaigzne kopšana",
+  "aliases": [
+    "puansetija kopšana",
+    "puansetija"
+  ],
+  "publishedAt": "2026-10-26",
+  "updatedAt": "2026-10-26",
+  "seasonalMonths": [
+    11,
+    12,
+    1
+  ],
+  "showGardenAction": false,
+  "sources": [
+    {
+      "label": "University of Illinois Extension — Caring for poinsettias",
+      "url": "https://extension.illinois.edu/houseplants/caring-poinsettias"
+    },
+    {
+      "label": "University of Wisconsin–Madison — Poinsettia trivia & care",
+      "url": "https://hort.extension.wisc.edu/poinsettia-trivia-care/"
+    },
+    {
+      "label": "ASPCA — Poinsettia (toksiskums dzīvniekiem)",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/poinsettia"
+    }
+  ],
+  "readMinutes": 3,
+  "body": [
+    {
+      "heading": "Sarkanie «ziedi» ir seglapas",
+      "paragraphs": [
+        "Krāsainās daļas, kuru dēļ puansetiju pērk, nav ziedi, bet pārveidotas lapas — seglapas. Īstie ziedi ir sīkās dzeltenzaļās pumpiņas seglapu vidū.",
+        "Seglapas un lapas bojā jau dažas minūtes aukstumā. Tāpēc ceļā no veikala augu ietin un neatstāj to aukstā automašīnā."
+      ],
+      "image": {
+        "id": "puansetija-ziedi",
+        "caption": "Puansetijas īstie ziedi ir sīkās dzeltenzaļās pumpiņas. Sarkanās daļas ap tiem ir seglapas."
+      },
+      "sourceUrls": [
+        "https://hort.extension.wisc.edu/poinsettia-trivia-care/",
+        "https://extension.illinois.edu/houseplants/caring-poinsettias"
+      ]
+    },
+    {
+      "heading": "Kur novietot puansetiju",
+      "paragraphs": [
+        "Puansetijai patīk gaiša, vēsa istaba. Svarīgāk par konkrēto logu ir trīs lietas: gaisma, mērena temperatūra un vieta bez caurvēja."
+      ],
+      "items": [
+        "Gaisma: apmēram sešas stundas izkliedētas gaismas dienā; tieša pusdienas saule nav vajadzīga.",
+        "Temperatūra: 16–21 °C dienā un ap 13 °C naktī. Karstā istabā seglapas ātrāk noveco.",
+        "Prom no radiatora, siltā gaisa plūsmas un durvīm vai logiem, ko bieži ver vaļā.",
+        "Lapas nedrīkst pieskarties aukstam loga stiklam."
+      ],
+      "listStyle": "check",
+      "image": {
+        "id": "puansetija",
+        "caption": "Puansetija telpās. Gaišā vietā bez caurvēja tā saglabā seglapas visilgāk."
+      },
+      "sourceUrls": [
+        "https://extension.illinois.edu/houseplants/caring-poinsettias",
+        "https://hort.extension.wisc.edu/poinsettia-trivia-care/"
+      ]
+    },
+    {
+      "heading": "Kā laistīt",
+      "paragraphs": [
+        "Laisti pēc zemes, nevis pēc kalendāra. Pārlaistīšana puansetijai ir bīstamāka nekā nedaudz sausa zeme."
+      ],
+      "items": [
+        "Pārbaudi zemi ar pirkstu katru dienu vai otro dienu; laisti tad, kad virskārta ir sausa.",
+        "Dekoratīvajā folijā izdur caurumus vai noņem to, lai lieko ūdeni var izliet.",
+        "Aplej, līdz ūdens iztek apakštasītē, un pēc 15–20 minūtēm to izlej."
+      ],
+      "listStyle": "numbered",
+      "sourceUrls": [
+        "https://extension.illinois.edu/houseplants/caring-poinsettias",
+        "https://hort.extension.wisc.edu/poinsettia-trivia-care/"
+      ]
+    },
+    {
+      "heading": "Kāpēc puansetija met lapas",
+      "paragraphs": [
+        "Lapu nobiršanai parasti ir viens no četriem iemesliem. Salīdzini pazīmes un maini apstākļus; jau bojātās lapas vairs neatjaunosies."
+      ],
+      "table": {
+        "headers": [
+          "Pazīme",
+          "Biežākais iemesls",
+          "Ko darīt"
+        ],
+        "rows": [
+          [
+            "Lapas nokalst un nobirst dažu dienu laikā pēc pirkuma",
+            "Aukstums ceļā vai pie bieži vērtām durvīm",
+            "Novieto augu siltā vietā bez caurvēja"
+          ],
+          [
+            "Lapas dzeltē un krīt, zeme ilgi ir slapja",
+            "Pārlaistīšana vai ūdens folijā",
+            "Izlej ūdeni un nākamreiz laisti tikai pēc virskārtas apžūšanas"
+          ],
+          [
+            "Lapas nokarājas, pods ir viegls un zeme sausa",
+            "Augs izkaltis",
+            "Aplej kārtīgi un turpmāk pārbaudi zemi biežāk"
+          ],
+          [
+            "Lapas krīt pakāpeniski pēc vairākām nedēļām pie radiatora",
+            "Pārāk silta vieta",
+            "Pārvieto vēsākā vietā, kur ir 16–21 °C"
+          ]
+        ]
+      },
+      "sourceUrls": [
+        "https://extension.illinois.edu/houseplants/caring-poinsettias",
+        "https://hort.extension.wisc.edu/poinsettia-trivia-care/"
+      ]
+    },
+    {
+      "heading": "Vai puansetija ir indīga?",
+      "paragraphs": [
+        "Puansetija nav tik bīstama, kā bieži dzird. Viskonsinas universitāte norāda, ka plaši pētījumi nav apstiprinājuši, ka tā būtu indīga.",
+        "Dzīvniekiem tā tomēr var kaitēt: ASPCA puansetiju iekļauj suņiem, kaķiem un zirgiem toksisko augu sarakstā, jo sula kairina muti un kuņģi un var izraisīt vemšanu. Novieto augu tā, lai kaķis to negrauž."
+      ],
+      "sourceUrls": [
+        "https://hort.extension.wisc.edu/poinsettia-trivia-care/",
+        "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/poinsettia"
+      ]
+    },
+    {
+      "heading": "Kā panākt, lai nākamajā ziemā tā atkal kļūst sarkana",
+      "paragraphs": [
+        "Seglapas iekrāsojas tikai tad, ja augs vairākas nedēļas pēc kārtas saņem garas, nepārtrauktas naktis. Mājās vakara apgaismojums šo procesu izjauc, tāpēc pēc gada puansetija bieži paliek zaļa."
+      ],
+      "items": [
+        "No septembra beigām katru dienu no 17.00 līdz 8.00 turi augu pilnīgā tumsā — skapī vai zem necaurspīdīga kartona.",
+        "Dienā novieto to gaišā vietā un laisti kā parasti.",
+        "Turpini, līdz seglapas iekrāsojas — parasti decembra sākumā vai vidū."
+      ],
+      "listStyle": "numbered",
+      "sourceUrls": [
+        "https://extension.illinois.edu/houseplants/caring-poinsettias",
+        "https://hort.extension.wisc.edu/poinsettia-trivia-care/"
+      ]
+    },
+    {
+      "heading": "Biežākie jautājumi",
+      "paragraphs": [
+        "Vai puansetiju var pārstādīt ziemā? Kamēr tā ir krāsaina, labāk nepārstādi. Ja vēlies to audzēt tālāk, pārstādi pavasarī, kad augs sāk augt.",
+        "Vai puansetiju var nolikt uz balkona vai aukstā verandā? Nē. Tās seglapas un lapas bojā jau īss aukstums.",
+        "Kāpēc mana puansetija pēc gada ir zaļa? Mājās tai pietrūkst garu, nepārtrauktu nakšu. Seglapas iekrāsojas tikai pēc vairākām nedēļām ar tumsu no vakara līdz rītam."
+      ],
+      "sourceUrls": [
+        "https://extension.illinois.edu/houseplants/caring-poinsettias"
+      ]
+    }
+  ],
+  "links": [
+    {
+      "label": "Istabas augu pārstādīšanas kalendārs",
+      "href": "/kalendars/istabas-augu-parstadisana"
+    },
+    {
+      "label": "Amarillis pēc ziedēšanas",
+      "href": "/raksti/amarillis-pec-ziedesanas"
+    },
+    {
+      "label": "Hiacintes podiņā un glāzē",
+      "href": "/raksti/hiacintes-podina-un-glaze"
+    },
+    {
+      "label": "Decembra dārza darbu kalendārs",
+      "href": "/kalendars/2026/decembris"
+    }
+  ],
+  "relatedSlugs": [
+    "amarillis-pec-ziedesanas",
+    "hiacintes-podina-un-glaze"
+  ]
+}

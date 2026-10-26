@@ -2,6 +2,7 @@
   "slug": "gladiolas",
   "name": "Gladiolas",
   "latin": "Gladiolus",
+  "image": { "id": "gladiolas", "caption": "Gladiolas ziedu vārpa atveras no apakšas uz augšu. Griešanai to nogriež, kad atvērušies pirmie apakšējie ziedi." },
   "emoji": "🌷",
   "type": "sipolpuke",
   "tagline": "Staltie ziedu zobeni vasaras otrai pusei — griezto ziedu klasika, bez kuras neiztiek neviens jubilejas pušķis.",
@@ -34,6 +35,7 @@
     "Ravē un mulčē — gladiolas nemīl nezāļu konkurenci."
   ],
   "winter": "Gladiolas Latvijā nepārziemo. Septembra beigās–oktobrī, ~6 nedēļas pēc noziedēšanas, bumbuļsīpolus izrok, nogriež lakstus ~2 cm virs bumbuļsīpola, ļauj pāris nedēļas apžūt siltā, vēdināmā vietā, tad notīra veco bumbuļsīpolu un glabā tīklā vai papīra maisā vēsā (+3…+8 °C), sausā, bezsala telpā.",
+  "winterImage": { "id": "gladiolu-bumbulsipoli", "caption": "Gladiolu bumbuļsīpoli. Ziemā tos glabā sausus un vēsus; pavasarī, kā attēlā, tie sāk dzīt asnus." },
   "problems": [
     "Tripši — sīki kukaiņi, kas bojā lapas un ziedpumpurus (sudrabaini švīkājumi, neatveras ziedi); palīdz savlaicīga izrakšana un bumbuļsīpolu glabāšana vēsumā.",
     "Bumbuļsīpolu puve — visbiežāk no stādīšanas aukstā vai slapjā augsnē; glābj laba drenāža un bojāto eksemplāru izbrāķēšana pirms stādīšanas.",

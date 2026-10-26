@@ -40,6 +40,7 @@
     "Augusta beigās mēslošanu pārtrauc, lai gumi paspēj nobriest un labāk glabājas ziemā."
   ],
   "winter": "Dālijas gumi Latvijā ziemā laukā iet bojā, tāpēc tos izrok katru rudeni. Pēc pirmajām salnām, kad lakstus nokodusi salna un tie nomelnējuši, nogriez stublājus 10–15 cm augstumā un uzmanīgi izrok cerus ar dakšām. Notīri lieko zemi, ļauj gumiem nedēļu apžūt vēsā, vēdināmā vietā, tad sagulda kastēs kūdrā, smiltīs vai zāģu skaidās un glabā tumšā, vēsā bezsala telpā ap 5 °C (pagrabā). Ziemā pāris reižu pārbaudi — sačervelējušos gumus viegli apsmidzini, puvušos izmet.",
+  "winterImage": { "id": "daliju-gumi", "caption": "Izrakti un nožāvēti dāliju gumi ar šķirņu etiķetēm. Pirms glabāšanas tos notīra un pārbauda, vai nav puves." },
   "problems": [
     "Gumi sapūst glabāšanā — visbiežāk vainīga pārāk silta vai mitra telpa, vai arī gumi nebija apžuvuši pirms noglabāšanas; glabā ap 5 °C, sausā substrātā un regulāri pārbaudi.",
     "Gliemeži apēd jaunos dzinumus pavasarī — tikko sadīgušas dālijas gliemežiem ir gardums; palīdz savākšana vakaros, gliemežu barjeras vai uzdiedzēšana podos, lai laukā nonāk jau paaugušies augi.",

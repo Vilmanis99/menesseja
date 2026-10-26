@@ -1,7 +1,9 @@
 {
   "slug": "ranunkuli",
   "name": "Ranunkuli (Āzijas gundegas)",
+  "nameAcc": "ranunkulus",
   "latin": "Ranunculus asiaticus",
+  "image": { "id": "ranunkuli", "caption": "Ranunkula pildītais zieds atgādina rozi. Gumus Latvijā rudenī izrok, jo dārzā tie neziemo." },
   "emoji": "🌼",
   "type": "sipolpuke",
   "tagline": "Daudzkārtu ziedi kā no rozes un peonijas vienlaikus — tikai gumi rudenī jāizrok un jāglabā.",

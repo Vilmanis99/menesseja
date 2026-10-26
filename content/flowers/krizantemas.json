@@ -4,6 +4,7 @@
   "emoji": "🌼",
   "type": "daudzgadiga",
   "latin": "Chrysanthemum",
+  "image": { "id": "krizantemas", "caption": "Podos audzētas krizantēmas — tādas Latvijā rudenī pērk Svecīšu vakariem. Lielākā daļa šo šķirņu dārzā neziemo." },
   "tagline": "Vēlā rudens dārza karaliene un Latvijas galvenā Svecīšu vakaru puķe — zied, kad gandrīz viss cits jau atziedējis, līdz pat pirmajām salnām.",
   "bloom": "Septembris–oktobris (līdz salnām)",
   "bloomMonths": [9, 10],

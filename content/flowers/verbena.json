@@ -1,7 +1,9 @@
 {
   "slug": "verbena",
   "name": "Verbēna",
+  "nameAcc": "verbēnu",
   "latin": "Verbena",
+  "image": { "id": "verbena", "caption": "Dārza verbēna podā zied līdz rudens salnām; Latvijā to audzē kā viengadīgu puķi." },
   "emoji": "💜",
   "type": "viengadiga",
   "tagline": "Nenogurstoša saulmīle, kas balkona kastes un dobes klāj ar krāsu līdz pat rudens salnām.",

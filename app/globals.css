@@ -317,6 +317,11 @@
   article {
     max-width: 100% !important;
   }
+  /* Icons are a font ligature: if the font is not ready for print, the icon
+     name ("arrow_forward") would print as text. They are decorative on paper. */
+  .material-symbols-outlined {
+    display: none !important;
+  }
   /* Keep the monthly calendar on a useful A4 sheet, including 31-day months. */
   .month-calendar > header { margin-bottom: 12px; }
   .month-calendar > header > p { display: none; }
