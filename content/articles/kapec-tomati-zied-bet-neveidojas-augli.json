@@ -3,11 +3,11 @@
   "slug": "kapec-tomati-zied-bet-neveidojas-augli",
   "category": "Problēmas",
   "intent": "problem",
-  "excerpt": "Tomāti zied, bet augļi neveidojas un ziedi nokrīt? Visbiežāk vainīgs karstums, slikta apputeksnēšana vai slāpekļa pārpalikums. Uzzini, kā to atpazīt un labot.",
-  "shortAnswer": "Tomāts ir saziedējis kā par godalgu — dzeltenu ziedu pilns, — bet pēc pāris dienām ziedi nodzeltē, sažūst un nobirst, neatstājot nekādu aizmetni.  Augļu kā nav, tā nav.",
+  "excerpt": "Kāpēc tomāti zied, bet neveidojas augļi: kādā nakts un dienas temperatūrā ziedi nobirst, kā palīdzēt apputeksnēšanai siltumnīcā un kāpēc slāpekļa pārbagātība traucē aizmešanos.",
+  "shortAnswer": "Tomāta ziedi nokrīt bez aizmetņa, ja tie nav apputeksnēti vai putekšņus sabojājusi temperatūra: naktis vēsākas par 13 °C vai siltākas par 24 °C, kā arī dienas karstums virs aptuveni 32 °C. Siltumnīcā vēdini un paēno, ziedēšanas laikā dienas vidū viegli papurini augus un nepārmēslo ar slāpekli — tad nākamie ziedi aizmetas labāk.",
   "primaryQuery": "kāpēc tomāti zied, bet neveidojas augļi",
   "publishedAt": "2026-06-22",
-  "updatedAt": "2026-06-22",
+  "updatedAt": "2026-10-26",
   "entities": {
     "crops": [
       "tomati"
@@ -23,21 +23,24 @@
   ],
   "sources": [
     {
-      "label": "Latvijas Lauku konsultāciju un izglītības centrs",
-      "url": "https://llkc.lv/"
+      "label": "Penn State Extension — Tomatoes: from seedlings to fruit",
+      "url": "https://extension.psu.edu/tomatoes-from-seedlings-to-fruit"
     },
     {
-      "label": "Royal Horticultural Society — Advice",
-      "url": "https://www.rhs.org.uk/advice"
+      "label": "University of Illinois Extension — Solving tomato problems",
+      "url": "https://extension.illinois.edu/blogs/ilriverhort/2016-08-21-solving-tomato-problems"
     }
   ],
-  "readMinutes": 6,
+  "readMinutes": 4,
   "body": [
     {
       "paragraphs": [
-        "Tomāts ir saziedējis kā par godalgu — dzeltenu ziedu pilns, — bet pēc pāris dienām ziedi nodzeltē, sažūst un nobirst, neatstājot nekādu aizmetni. Augļu kā nav, tā nav. Ja tev tā gadās, vispirms — neuztraucies un nemeklē vainu sevī. Tā nav slikta dārza kopšana un parasti nav ne slimība, ne kaitēklis.",
-        "Patiesība ir vienkārša: tomāta zieds ir jāapputeksnē dažu dienu laikā, citādi tas nokrīt. Visbiežāk tieši to traucē karstums, aukstums, mierīgs gaiss siltumnīcā vai pārāk treknots augs, kas spēku ielicis lapās, ne augļos. Šajā rakstā mierīgi izstāstīsim, kā problēmu pazīt, kāpēc ziedi nokrīt bez augļiem, ko darīt tagad un kā to novērst — viss pieskaņots Latvijas vasarai un siltumnīcai."
-      ]
+        "Ziedu nobiršana bez augļiem parasti nav ne slimība, ne kaitēklis. Tomāta zieds ir jāapputeksnē dažu dienu laikā; ja to traucē karstums, aukstums vai nekustīgs gaiss siltumnīcā, zieds nodzeltē un nokrīt kopā ar kātiņu."
+      ],
+      "image": {
+        "id": "tomatu-ziedi",
+        "caption": "Tomāta ziedi ziedkopā. Katrā ziedā ir gan putekšņi, gan auglenīca, tāpēc ziedam pietiek ar nelielu kustību, lai apputeksnētos."
+      }
     },
     {
       "heading": "Kā pazīt: simptomi",
@@ -49,33 +52,79 @@
     {
       "heading": "Kāpēc tomāti zied, bet neveidojas augļi",
       "paragraphs": [
-        "Galvenais cēlonis Latvijā ir temperatūra. Tomāta zieds vislabāk apputeksnējas, kad dienā ir aptuveni 21–29 grādi, bet naktī 13–21 grāds. Tiklīdz dienas karstums siltumnīcā pārsniedz aptuveni 30–32 grādus, putekšņi kļūst sterili — tie zaudē spēju apaugļot ziedu, un tas nokrīt. Tieši tāpēc problēma ir tik bieža siltumnīcās jūlijā, kur saulainā dienā temperatūra viegli uzlec līdz 35–40 grādiem. Tāpat sit arī aukstums: ja nakts temperatūra pavasarī vai vasaras sākumā vairākas naktis pēc kārtas noslīd zem 12–13 grādiem, putekšņi nedīgst un aizmetnis neveidojas.",
-        "Otrs biežs iemesls ir slikta apputeksnēšana. Tomāts ir pašapputes augs — katrā ziedā ir gan putekšņi, gan auglenīca, un tiem vajag tikai nelielu kratīšanu, lai putekšņi nobirtu uz auglenīcas. Brīvā dabā to izdara vējš un kameņu vibrēšana. Slēgtā siltumnīcā gaiss stāv mierīgs, kamenes iekšā netiek, un putekšņi vienkārši paliek savā vietā — zieds ziedēja, bet neviens to neapputeksnēja. To pasliktina arī ļoti augsts gaisa mitrums (virs 70 procentiem): tad putekšņi kļūst smagi un lipīgi un nenobirst; savukārt pārāk sausā, karstā gaisā tie izžūst.",
-        "Trešais cēlonis ir slāpekļa pārpalikums. Ja augu pārmēslo ar slāpekli — pārāk daudz svaiga kūtsmēslu vai zaļmēslojuma —, tas dzen lapas un stublājus, bet ziedos un augļos spēku neliek. Tu redzi sulīgu, tumši zaļu krūmu ar resnu galotni, taču ziedi krīt. Pie tā paša pieder arī stress: krasas mitruma svārstības, kad zeme te izkalst, te tiek pārplūdināta, augam liek mest ziedus, lai pārdzīvotu. Reti, bet gadās arī mikroelementu — bora — trūkums, kas traucē ziedam izveidot aizmetni."
+        "Galvenais cēlonis ir temperatūra. Ziedi nobirst, ja naktīs ir vēsāks par 13 °C vai siltāks par 24 °C, kā arī karstās dienās, kad gaiss sasilst virs aptuveni 32 °C. Latvijā vēsas naktis ir biežas maijā un jūnija sākumā, bet karstums — slēgtā siltumnīcā jūlijā.",
+        "Otrs cēlonis ir apputeksnēšana. Tomāts ir pašapputes augs: katrā ziedā ir gan putekšņi, gan auglenīca, un putekšņiem vajag nelielu kustību, lai tie nonāktu vietā. Laukā to izdara vējš un kamenes, bet slēgtā siltumnīcā gaiss bieži stāv.",
+        "Trešais cēlonis ir pārāk daudz slāpekļa: augs veido sulīgas lapas, bet ziedēšana un augļu aizmešanās aizkavējas. Ziedus mēdz nomest arī augs, kas cieš no sausuma un pārmitruma maiņām."
+      ],
+      "table": {
+        "headers": [
+          "Pazīme",
+          "Visticamākais cēlonis",
+          "Ko darīt"
+        ],
+        "rows": [
+          [
+            "Ziedi krīt pēc vēsām naktīm maijā–jūnijā",
+            "Naktis vēsākas par 13 °C",
+            "Vakaros aizver siltumnīcu, laukā pārklāj ar agrotīklu"
+          ],
+          [
+            "Ziedi krīt karstā laikā siltumnīcā",
+            "Dienā virs ~32 °C, naktīs virs 24 °C",
+            "Vēdini jau no rīta un paēno jumtu"
+          ],
+          [
+            "Krūms sulīgi zaļš, ziedu maz vai tie krīt",
+            "Pārāk daudz slāpekļa",
+            "Pārtrauc slāpekļa mēslošanu"
+          ],
+          [
+            "Ziedi nobirst slēgtā siltumnīcā arī mērenā laikā",
+            "Nekustīgs gaiss",
+            "Dienas vidū viegli papurini augus"
+          ]
+        ]
+      },
+      "sourceUrls": [
+        "https://extension.psu.edu/tomatoes-from-seedlings-to-fruit",
+        "https://extension.illinois.edu/blogs/ilriverhort/2016-08-21-solving-tomato-problems"
       ]
     },
     {
       "heading": "Ko darīt, kad tas jau noticis",
       "paragraphs": [
-        "Pirmais un visiedarbīgākais solis — apputeksnē ziedus pats. Reizi divās dienās, vislabāk saulainas dienas vidū, viegli papurini ziedošos zarus vai paklauvē pa balstiem un auklām, pie kurām tomāti piesieti. Tas atdarina vēja un kameņu darbu: putekšņi nobirst un apputeksnē ziedu. Var arī ar mīkstu otiņu vai pirkstu uzmanīgi pieskarties katram ziedam. Sausā, saulainā dienā tas izdodas vislabāk, jo tad putekšņi ir vissausākie un viegli nobirst.",
-        "Otrais solis — atdzesē siltumnīcu. Ja iekšā ir karstāks par 30 grādiem, plaši atver durvis un logus jau no rīta, lai izveidotu caurvēju. Karstākajās dienās siltumnīcu var paēnot ar gaišu audumu vai krīta šķīdumu uz stikla. Caurvējs dod dubultu labumu: tas pazemina temperatūru un kustina gaisu, kas palīdz apputeksnēšanai. Pārtrauc arī slāpekļa mēslošanu — ja krūms ir trekns un lapains, dod tam mieru no slāpekļa un labāk papildini ar kāliju un fosforu, kas atbalsta ziedēšanu un augļu aizmešanos."
+        "Jau nobirušie ziedi aizmetni vairs neveidos, bet tomāts zied visu vasaru. Kad temperatūra normalizējas, nākamie ziedi parasti aizmetas."
+      ],
+      "items": [
+        "Karstās dienās atver siltumnīcas durvis un logus jau no rīta un paēno jumtu.",
+        "Vēsās naktīs vakarā siltumnīcu aizver; laukā augus pārklāj ar agrotīklu.",
+        "Ziedēšanas laikā reizi divās dienās dienas vidū viegli papurini ziedošos zarus vai paklauvē pa balstiem.",
+        "Ja krūms ir sulīgs un lapains, pārtrauc slāpekļa mēslošanu.",
+        "Laisti regulāri un dziļi, lai augsne neizkalst un nepārplūst."
+      ],
+      "listStyle": "numbered",
+      "sourceUrls": [
+        "https://extension.psu.edu/tomatoes-from-seedlings-to-fruit",
+        "https://extension.illinois.edu/blogs/ilriverhort/2016-08-21-solving-tomato-problems"
       ]
     },
     {
       "heading": "Kā novērst",
       "paragraphs": [
-        "Pārvaldi temperatūru. Karstā laikā siltumnīcu vēdina katru dienu un nepieļauj, ka iekšā uzkrājas tveice; vēsās naktīs vasaras sākumā, kad prognozē zem 12 grādiem, durvis vakaros aizver, lai augi nesalst. Ja audzē tomātus lauka, vēsiem laikiem noder agrotīkls vai plēves tunelis. Tieši temperatūras izlīdzināšana novērš lielāko daļu ziedu nobiršanas.",
-        "Palīdzi apputeksnēties. Slēgtā siltumnīcā ieturi paradumu reizi dažās dienās viegli papurināt augus ziedēšanas laikā un turi durvis vaļā siltajās dienās, lai iekšā tiek vējš un apputeksnētāji. Mitrumu turi mēreni — ne pārāk smacīgu, ne pārāk sausu; pārāk biežu smidzināšanu pa lapām ziedēšanas laikā labāk atmet, lai putekšņi nesalīp.",
-        "Mēslo līdzsvaroti un laisti vienmērīgi. Neuzber pārāk daudz slāpekļa — svaigus kūtsmēslus tomātu dobē neliec, bet ziedēšanas un aizmešanās laikā dod kālijā bagātu barību. Šim labi noder pašu gatavots koku pelnu šķīdums, kas dod kāliju bez slāpekļa pārpalikuma. Laisti dziļi un regulāri, lai zeme nekad pilnībā neizkalst un nepārplūst; biezs siena vai pļautas zāles mulčas slānis tur mitrumu stabilu un palīdz augam ziedus paturēt."
+        "Izlīdzini temperatūru. Karstā laikā siltumnīcu vēdini katru dienu, bet vēsās naktīs vasaras sākumā, kad prognozē zem 13 °C, durvis vakarā aizver. Laukā vēsām naktīm noder agrotīkls vai plēves tunelis.",
+        "Palīdzi apputeksnēties. Ziedēšanas laikā siltās dienās turi siltumnīcu atvērtu, lai iekšā kustas gaiss un tiek kamenes, un reizi dažās dienās viegli papurini augus.",
+        "Mēslo līdzsvaroti un laisti vienmērīgi. Svaigus kūtsmēslus tomātu dobē neliec. Laisti dziļi un regulāri; mulča palīdz uzturēt vienmērīgu augsnes mitrumu."
+      ],
+      "sourceUrls": [
+        "https://extension.psu.edu/tomatoes-from-seedlings-to-fruit"
       ]
     },
     {
       "heading": "Īsi un skaidri: biežākie jautājumi",
       "paragraphs": [
-        "Vai jāpērk īpaši apputeksnētāji vai preparāti? Nē. Pietiek ar paša roku — viegli papurini augus saulainas dienas vidū reizi divās dienās, un lielākā daļa ziedu apputeksnēsies. Aizmešanos veicina arī kālijs un labs caurvējs, ne dārgi līdzekļi.",
+        "Vai jāpērk īpaši apputeksnētāji vai preparāti? Nē. Pietiek ar paša roku — viegli papurini augus saulainas dienas vidū reizi divās dienās, un lielākā daļa ziedu apputeksnēsies. Aizmešanos veicina arī labs caurvējs un mērena slāpekļa mēslošana, ne dārgi līdzekļi.",
         "Kāpēc lauka tomātiem aizmetas labāk nekā siltumnīcā? Tāpēc, ka laukā vienmēr ir vējš un kamenes, kas ziedus apputeksnē, un nakts vēsums izlīdzina dienas karstumu. Slēgtā siltumnīcā gaiss stāv un dienas tveice uzkrājas, tāpēc tieši tur jāpalīdz pašam ar vēdināšanu un purināšanu.",
-        "Cik karsts ir par karstu? Ja siltumnīcā dienas vidū pārsniedz aptuveni 30–32 grādus, putekšņi kļūst sterili un ziedi sāk krist. Tāpēc karstā laikā svarīgākais ir vēdināt un paēnot, lai temperatūra nepārkāptu šo robežu.",
-        "Kā ar Mēness fāzēm? Mēness kalendārs ir jauks senču tradīcijas palīgs, kas sakārto dārza darbus, bet ziedu apputeksnēšanos tas neizšķir. To nosaka temperatūra, gaisa kustība un auga barošanās — nevis tas, vai Mēness ir augošs vai dilstošs. Vispirms skaties siltumnīcas temperatūru un palīdzi ziediem apputeksnēties, un tikai pēc tam — kalendāru."
+        "Cik karsts ir par karstu? Ja siltumnīcā dienā ir virs aptuveni 32 °C vai naktī virs 24 °C, ziedi sāk krist. Tāpēc karstā laikā svarīgākais ir vēdināt un paēnot, lai temperatūra nepārsniegtu šīs robežas."
       ]
     }
   ],

@@ -3,17 +3,14 @@
   "slug": "kapec-gurku-aizmetni-dzelte-un-nokrit",
   "category": "Problēmas",
   "intent": "problem",
-  "excerpt": "Krūms ir ziedu pilns, bet mazie aizmetņi dzeltē un nokrīt? Uzzini, kāpēc gurķu aizmetņi izžūst — apputeksnēšana, karstums, bors — un kā panākt ražu.",
-  "shortAnswer": "Krūms ir zaļš un kupls, ziedu ir pilns, bet, kad ej skatīties, kur paliek gurķi, redzi to pašu vilšanos: mazie aizmetņi pie zieda apakšas vispirms kļūst gaiši dzelteni, tad mīksti, sarūk un nokrīt zemē.  Daudzi ziedi vispār neveido nekādu aizmetni — tie ir tā sauktie tukšie ziedi.",
+  "excerpt": "Kāpēc gurķu aizmetņi dzeltē un nokrīt: kā atšķirt vīrišķos un sievišķos ziedus, kad vainīga apputeksnēšana, karstums vai laistīšana un kā ziediem palīdzēt ar roku.",
+  "shortAnswer": "Gurķa aizmetnis dzeltē, saraujas un nokrīt, ja sievišķais zieds nav apputeksnēts — visbiežāk vēsā, lietainā laikā vai slēgtā siltumnīcā, kur nelido bites. Sezonas sākumā krūms bieži met tikai vīrišķos ziedus, kas aizmetni neveido nekad; tas ir normāli. Palīdz siltumnīcas vēdināšana, apputeksnēšana ar roku un vienmērīga laistīšana.",
   "primaryQuery": "kāpēc gurķu aizmetņi dzeltē un nokrīt",
   "publishedAt": "2026-06-22",
-  "updatedAt": "2026-06-22",
+  "updatedAt": "2026-10-26",
   "entities": {
     "crops": [
       "gurki"
-    ],
-    "recipes": [
-      "koku-pelnu-skidums"
     ]
   },
   "relatedSlugs": [
@@ -24,60 +21,130 @@
   ],
   "sources": [
     {
-      "label": "Latvijas Lauku konsultāciju un izglītības centrs",
-      "url": "https://llkc.lv/"
+      "label": "University of Illinois Extension — Trouble(s) with cucurbits",
+      "url": "https://extension.illinois.edu/blogs/good-growing/2020-05-08-troubles-cucurbits"
     },
     {
-      "label": "Royal Horticultural Society — Advice",
-      "url": "https://www.rhs.org.uk/advice"
+      "label": "UC IPM — Poor pollination in cucurbits",
+      "url": "https://ipm.ucanr.edu/home-and-landscape/poor-pollination-in-cucurbits/"
+    },
+    {
+      "label": "RHS — How to grow cucumbers",
+      "url": "https://www.rhs.org.uk/vegetables/cucumbers/grow-your-own"
     }
   ],
-  "readMinutes": 6,
+  "readMinutes": 4,
   "body": [
     {
+      "heading": "Vispirms atšķir: vīrišķais vai sievišķais zieds",
+      "anchorAliases": [
+        "ka-pazit-simptomi"
+      ],
       "paragraphs": [
-        "Krūms ir zaļš un kupls, ziedu ir pilns, bet, kad ej skatīties, kur paliek gurķi, redzi to pašu vilšanos: mazie aizmetņi pie zieda apakšas vispirms kļūst gaiši dzelteni, tad mīksti, sarūk un nokrīt zemē. Daudzi ziedi vispār neveido nekādu aizmetni — tie ir tā sauktie tukšie ziedi.",
-        "Pateiksim uzreiz un godīgi: tā nav slimība un nav tava kļūda kopšanā. Visbiežāk vainīgs ir kaut kas pilnīgi novēršams — neapaugļots zieds, karstuma vilnis, kas padara putekšņus nedzīvotspējīgus, vai bora trūkums, kas neļauj aizmetnim attīstīties. Labā ziņa: kad sapratīsi īsto cēloni, lielāko daļu ražas vēl var izglābt jau šajā pašā sezonā. Šajā rakstā mierīgi izstāstīsim, kā problēmu pazīt, kāpēc tā notiek un ko darīt, lai gurķi sāktu pa īstam saistīt augļus."
-      ]
-    },
-    {
-      "heading": "Kā pazīt: simptomi",
-      "paragraphs": [
-        "Tipiska aina ir tāda: aiz nobiruša zieda paliek mazs, 1–3 cm garš aizmetnis, kas neaug lielāks. Tā galiņš (tālāk no krūma) vispirms kļūst gaiši dzeltens, pēc tam viss aizmetnis kļūst mīksts, ūdeņains, sarūk un viegli atdalās. Citreiz tas vienkārši apstājas augšanā, sažūst, sačokurojas un nokrīt.",
-        "Svarīgi atšķirt divas lietas. Pirmkārt — tukšie ziedi: tie ir vīrišķie ziedi, kuriem aiz zieda nemaz nav neliela gurķīša, tikai plāns kātiņš. Tie ir pilnīgi normāli un nekad neveido augli — to uzdevums ir tikai dot putekšņus. Otrkārt — patiešām nokritušie aizmetņi: tie ir sievišķie ziedi ar mazu gurķīti aiz zieda, kas tomēr nesāk augt. Ja tev nobirst tieši šie mazie gurķīši, tad problēma ir apputeksnēšanā vai augu stresā, nevis tajā, ka krūms ir “tikai tukšos ziedos”."
+        "Gurķim ir divu veidu ziedi. Sievišķajam aiz zieda ir mazs gurķītis jeb aizmetnis, vīrišķajam — tikai tievs kātiņš. Vīrišķie ziedi augli neveido nekad: tie dod putekšņus un pēc ziedēšanas nokrīt.",
+        "Pirmie ziedi sezonas sākumā parasti ir vīrišķie. Ja krūms met tikai tos, nekas nav jādara — sievišķie ziedi parādīsies vēlāk. Problēma ir tad, ja dzeltē un nokrīt tieši sievišķo ziedu aizmetņi."
+      ],
+      "image": {
+        "id": "gurka-sieviskais-zieds",
+        "caption": "Sievišķais zieds ar aizmetni. Ja zieds netiek apputeksnēts, šis gurķītis dzeltē, saraujas un nokrīt."
+      },
+      "sourceUrls": [
+        "https://extension.illinois.edu/blogs/good-growing/2020-05-08-troubles-cucurbits"
       ]
     },
     {
       "heading": "Kāpēc gurķu aizmetņi dzeltē un nokrīt",
       "paragraphs": [
-        "Visbiežākais cēlonis ir nenotikusi apputeksnēšana. Bišu apputeksnējamām šķirnēm sievišķais zieds jāapputeksnē ar putekšņiem no vīrišķā zieda, un to parasti dara bites un kamenes. Vēsā, lietainā vai vējainā laikā kukaiņi nelido, zieds paliek neapaugļots, un neapaugļots aizmetnis vienmēr dzeltē un nokrīt — augs to vienkārši atmet. Slēgtā siltumnīcā problēma ir vēl asāka: ja durvis un lodziņi ir ciet, bites netiek klāt vispār.",
-        "Otrs liels cēlonis ir karstums. Gurķis ir siltumu mīlošs augs, bet, kad gaiss ilgāku laiku ir virs 27–30 grādiem (Latvijā tas viegli gadās jūlijā slēgtā siltumnīcā, kur dienā var būt 35–40 grādi), putekšņi kļūst sterili — tie zaudē dzīvotspēju, un apputeksnēšana neizdodas pat tad, ja bites strādā. Tāpat krasas svārstības — auksta nakts pēc karstas dienas vai laistīšana ar ledainu aku ūdeni — rada saknēm šoku, un augs uz brīdi pārstāj uzņemt barību, tāpēc aizmetņus nomet.",
-        "Trešais cēlonis ir barošanās kļūdas. Bora trūkums ir ļoti tipisks: bors palīdz veidot sievišķos ziedus un noturēt aizmetni, un, ja tā pietrūkst, aizmetņi dzeltē un birst pat veselam krūmam. Pretējs slazds ir slāpekļa pārbagātība — pārmērīga mēslošana ar svaigiem mēsliem vai pārāk daudz slāpekļa dzen augu “taukos”: krūms aug lapās un stublājos, bet aizmetņu attīstību nomāc. Visbeidzot lomu spēlē biezā sēja: ja gurķi sastādīti par tuvu (mazāk nekā 30–40 cm starp augiem), tie cīnās par gaismu un mitrumu, un noēnotie, vājie aizmetņi nobirst pirmie."
+        "Bišu apputeksnējamām šķirnēm aizmetnis izaug tikai tad, ja sievišķajā ziedā nonāk putekšņi no vīrišķā zieda. Neapputeksnēts aizmetnis paliek mazs, kļūst brūngans vai sarūk un nokrīt."
+      ],
+      "table": {
+        "headers": [
+          "Cēlonis",
+          "Pazīmes",
+          "Ko darīt"
+        ],
+        "rows": [
+          [
+            "Nav apputeksnēšanas",
+            "Vēss, lietains laiks vai slēgta siltumnīca; bišu nav redzamas",
+            "Siltās dienās atver siltumnīcu, apputeksnē ar roku"
+          ],
+          [
+            "Karstums siltumnīcā",
+            "Dienā krietni virs 25 °C, augi pusdienlaikā vīst",
+            "Vēdini un paēno; gurķiem piemērotākie ir 18–25 °C"
+          ],
+          [
+            "Nevienmērīga laistīšana",
+            "Zeme te izkalst, te ir slapja, īpaši karstā laikā",
+            "Laisti regulāri pie saknes, augsni mulčē"
+          ],
+          [
+            "Bitēm kaitīgi līdzekļi",
+            "Ziedu daudz, bet apputeksnētāju nav",
+            "Ziedēšanas laikā tos nelieto"
+          ],
+          [
+            "Uz krūma paliek lieli gurķi",
+            "Augļi netiek novākti vairākas dienas",
+            "Novāc gatavos gurķus ik pēc pāris dienām"
+          ]
+        ]
+      },
+      "image": {
+        "id": "gurka-viriskais-zieds",
+        "caption": "Vīrišķais zieds: aiz tā nav aizmetņa, tikai tievs kātiņš. Šie ziedi pēc ziedēšanas nokrīt — tas ir normāli."
+      },
+      "sourceUrls": [
+        "https://extension.illinois.edu/blogs/good-growing/2020-05-08-troubles-cucurbits",
+        "https://ipm.ucanr.edu/home-and-landscape/poor-pollination-in-cucurbits/",
+        "https://www.rhs.org.uk/vegetables/cucumbers/grow-your-own"
       ]
     },
     {
       "heading": "Ko darīt, kad tas jau noticis",
       "paragraphs": [
-        "Pirmais solis — palīdzi ar apputeksnēšanu pats. Saulainā rītā noplūc vīrišķo ziedu (to bez aizmetņa), noņem ziedlapiņas un ar tā vidu pieskaries pāris sievišķo ziedu vidum, it kā ar otu. Vai vienkārši ar mīkstu otiņu pārnes putekšņus no zieda uz ziedu. Tas ir tas pats, ko dara bites, un siltumnīcā tas bieži vien izšķir visu ražu. Atver siltumnīcas durvis un lodziņus pa dienu, lai bites tomēr var ielidot.",
-        "Otrais solis — noņem karstuma stresu. Karstā laikā siltumnīcu obligāti vēdini un nokrāso vai aizēno jumtu, lai dienas temperatūra nepārsniegtu 30 grādus. Laisti tikai ar siltu, saulē pastāvējušu ūdeni (vēlams 18–22 grādi), nekad tieši no akas. Laisti vienmērīgi un dziļi, lai zeme nebūtu te izkaltusi, te pārplūdusi.",
-        "Trešais solis — pabaro pareizi. Ja ir aizdomas par bora trūkumu, pa lapām vakarā vai apmākušā rītā (ne saulē) izsmidzini vāju bora šķīdumu — apmēram 1–2 grami borskābes uz 10 litriem ūdens. Tas palīdz ziediem labāk apputeksnēties un noturēt aizmetni. Ja krūms “taukojas” no slāpekļa pārbagātības, uz laiku pārtrauc slāpekļa mēslošanu un dod kālija un fosfora mēslojumu, kas pamudina augu uz ražu, nevis lapām. Te lieliski der mūsu koku pelnu šķīdums."
+        "Jau nokritušos aizmetņus atjaunot nevar, bet krūms turpina ziedēt. Kad cēlonis novērsts, nākamie aizmetņi parasti aug normāli."
+      ],
+      "items": [
+        "Pārbaudi, vai krīt vīrišķie ziedi (tad viss kārtībā) vai sievišķie ar aizmetni.",
+        "Siltumnīcā siltās dienās atver durvis un lodziņus, lai iekšā tiek bites un kamenes.",
+        "Apputeksnē ar roku dienas vidū: noplūc vīrišķo ziedu, noņem ziedlapas un pieskaries ar to vairāku sievišķo ziedu vidum. Var arī ar mīkstu otiņu.",
+        "Karstās dienās vēdini un paēno siltumnīcu, lai temperatūra neceļas krietni virs 25 °C.",
+        "Laisti regulāri pie saknes, nevis pa lapām; augsni pārklāj ar mulču.",
+        "Novāc gatavos gurķus ik pēc pāris dienām — regulāra novākšana veicina jaunu augļu veidošanos."
+      ],
+      "listStyle": "numbered",
+      "sourceUrls": [
+        "https://ipm.ucanr.edu/home-and-landscape/poor-pollination-in-cucurbits/",
+        "https://www.rhs.org.uk/vegetables/cucumbers/grow-your-own",
+        "https://extension.illinois.edu/blogs/good-growing/2020-05-08-troubles-cucurbits"
       ]
     },
     {
-      "heading": "Kā novērst nākamreiz",
+      "heading": "Šķirnes izvēle: ar apputeksnēšanu vai bez tās",
+      "anchorAliases": [
+        "ka-noverst-nakamreiz"
+      ],
       "paragraphs": [
-        "Vissvarīgākais ir izvēlēties pareizo šķirni. Slēgtai siltumnīcai bez bitēm stādi partenokarpiskās (pašauglīgās) šķirnes — tām aizmetnis aug bez apputeksnēšanas, un tukšo ziedu praktiski nav. Bišu apputeksnējamās šķirnes atstāj lauka dobēm vai siltumnīcai, ko var atvērt. Vēl viens senču triks: bišu šķirnēm ņem nevis pagājušā gada, bet 2–3 gadus vecas sēklas — no svaigām sēklām krūmi mēdz dot pārsvarā vīrišķos, tukšos ziedus, bet vecākas sēklas dod vairāk sievišķo ziedu un aizmetņu.",
-        "Otrkārt — dod augiem vietu. Latvijā gurķus lauka dobē stādi ne tuvāk par 30–40 cm citu no cita, siltumnīcā vajag vēl vairāk gaisa. Vēdināma siltumnīca, mērena slāpekļa mēslošana un stabils, silts laistīšanas ritms ir trīs lietas, kas novērš lielāko daļu aizmetņu nobiršanas. Gurķiem ļoti palīdz arī labi kaimiņi dobē — par to mums ir atsevišķs raksts.",
-        "Treškārt — domā par augsni jau pavasarī. Iestrādā kompostu un nelielu kālija avotu (piemēram, koku pelnus), lai augam pietiktu mikroelementu, tostarp bora, visas sezonas garumā. Tad karstuma viļņa vai pāris vēsu dienu pienākšana vairs nebūs tik liels trieciens — labi barots, ar vietu un siltu ūdeni audzēts krūms aizmetņus notur daudz drošāk."
+        "Daudzas siltumnīcas šķirnes veido gandrīz tikai sievišķos ziedus, un to augļi aug bez apputeksnēšanas. Tām vīrišķos ziedus, ja tādi parādās, noņem: apputeksnēti augļi var būt rūgti. Uz sēklu paciņas pārbaudi, kāda šķirne tev ir.",
+        "Lauka šķirnēm vajag gan vīrišķos, gan sievišķos ziedus un apputeksnētājus, tāpēc vīrišķos ziedus tām nenoņem. Ja siltumnīcu dienā nevari regulāri atvērt, izvēlies šķirni, kurai apputeksnēšana nav vajadzīga, un stādi gurķus saulainā vietā."
+      ],
+      "sourceUrls": [
+        "https://www.rhs.org.uk/vegetables/cucumbers/grow-your-own",
+        "https://ipm.ucanr.edu/home-and-landscape/poor-pollination-in-cucurbits/"
       ]
     },
     {
-      "heading": "Īsi un skaidri: biežākie jautājumi",
+      "heading": "Biežākie jautājumi",
+      "anchorAliases": [
+        "isi-un-skaidri-biezakie-jautajumi"
+      ],
       "paragraphs": [
-        "Kāpēc krūms ir ziedu pilns, bet gurķu nav? Visbiežāk tie ir vīrišķie (tukšie) ziedi, kas augli neveido nekad, vai arī sievišķo ziedu aizmetņi paliek neapputeksnēti un nobirst. Atver siltumnīcu bitēm, apputeksnē pats ar otiņu un izvēlies partenokarpiskas šķirnes — situācija strauji mainās.",
-        "Vai nobirušos aizmetņus var glābt? Konkrētos jau nobirušos aizmetņus ne, bet krūms turpinās dot jaunus ziedus visu sezonu. Tiklīdz novērsīsi cēloni — apputeksnēsi, vēdināsi siltumnīcu, laistīsi ar siltu ūdeni — nākamie aizmetņi sāks normāli augt par gurķiem.",
-        "Vai vainīgs ir bora trūkums vai apputeksnēšana? Ja krūms zied bagātīgi un laiks ir vēss vai siltumnīca slēgta, visdrīzāk vaina ir apputeksnēšanā. Ja apstākļi ir labi, bites strādā, bet aizmetņi tāpat birst, tad parasti pietrūkst bora vai ir slāpekļa pārbagātība. Sāc ar apputeksnēšanu, pēc tam izmēģini vāju bora smidzinājumu pa lapām.",
-        "Kā ar Mēness fāzēm? Mēness kalendārs ir jauks tradīcijas palīgs, kas sakārto dārza darbus, bet aizmetņu nobiršanu tas neietekmē. To izšķir apputeksnēšana, gaisa temperatūra, mitrums un bors — nevis tas, vai Mēness ir augošs vai dilstošs. Vispirms skaties laika prognozi, siltumnīcas vēdinājumu un augsni, un tikai pēc tam — kalendāru."
+        "Kāpēc krūms zied, bet gurķu nav? Visbiežāk tie ir vīrišķie ziedi vai neapputeksnēti sievišķie. Apskati, vai aiz zieda ir mazs gurķītis.",
+        "Vai jāsmidzina bors vai cits mikroelements? Ne kā pirmais solis. Mājas dārzā biežākie cēloņi ir apputeksnēšana, temperatūra un laistīšana; mikroelementus lieto tikai tad, ja to trūkumu apstiprina augsnes analīze.",
+        "Vai vecākas sēklas dod vairāk sievišķo ziedu? Tas ir izplatīts dārznieku ticējums, bet pārbaudītos dārzkopības avotos tam apstiprinājumu neatradām. Drošāk izvēlēties šķirni pēc ziedēšanas tipa.",
+        "Kāpēc siltumnīcas gurķi ir rūgti? Ja tā ir tikai sievišķo ziedu šķirne, augļi var būt apputeksnēti. Noņem vīrišķos ziedus, tiklīdz tos pamani."
       ]
     }
   ],
@@ -93,10 +160,6 @@
     {
       "label": "Labie un sliktie gurķu kaimiņi dobē",
       "href": "/raksti/kaiminaugi"
-    },
-    {
-      "label": "Koku pelnu šķīdums kālijam un mikroelementiem",
-      "href": "/receptes/koku-pelnu-skidums"
     },
     {
       "label": "Elementu dienas biodinamiskajā dārzā",
