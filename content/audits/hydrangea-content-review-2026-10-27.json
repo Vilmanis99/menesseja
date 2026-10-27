@@ -1,0 +1,167 @@
+{
+  "date": "2026-10-27",
+  "status": "implemented-and-verified-locally",
+  "published": false,
+  "growthPlanStep": 1,
+  "pages": [
+    "/raksti/hortenziju-apgriesana",
+    "/pukes/hortenzijas"
+  ],
+  "sourceCounts": {
+    "article": 6,
+    "flower": 9
+  },
+  "sources": [
+    {
+      "label": "RHS — hortenziju apgriešana pēc sugas",
+      "url": "https://www.rhs.org.uk/plants/hydrangea/pruning-guide"
+    },
+    {
+      "label": "University of Maryland Extension — dzinumu vecums, atkārtota ziedēšana un griešanas piemēri",
+      "url": "https://extension.umd.edu/resource/pruning-hydrangeas"
+    },
+    {
+      "label": "RHS — krūmveida hortenziju stādīšana un kopšana",
+      "url": "https://www.rhs.org.uk/plants/hydrangea/shrubby/growing-guide"
+    },
+    {
+      "label": "Gunta Šenberga, konsultē Varis Kazaks — Hortenziju ballīte, Ievas Dārzs, 2012. gada augusts (PDF, 32.–34. lpp.)",
+      "url": "https://admin.baltezers.lv/filer/canonical/1624345779/4352/"
+    },
+    {
+      "label": "NC State Extension — Hydrangea paniculata",
+      "url": "https://plants.ces.ncsu.edu/plants/hydrangea-paniculata/"
+    },
+    {
+      "label": "NC State Extension — Hydrangea arborescens",
+      "url": "https://plants.ces.ncsu.edu/plants/hydrangea-arborescens/"
+    },
+    {
+      "label": "NC State Extension — Hydrangea macrophylla",
+      "url": "https://plants.ces.ncsu.edu/plants/hydrangea-macrophylla/"
+    },
+    {
+      "label": "RHS — lapu dzeltēšanas iespējamie cēloņi",
+      "url": "https://www.rhs.org.uk/problems/chlorosis"
+    },
+    {
+      "label": "University of Minnesota Extension — kokaugu aizsardzība ziemā",
+      "url": "https://extension.umn.edu/garden-and-home/yard-and-garden/lawns-and-landscapes-in-minnesota/protecting-trees-and-shrubs-in-winter"
+    }
+  ],
+  "sourceReview": {
+    "localPdf": "All three scanned pages read visually; 2012 date retained; old fertilizer doses not reused.",
+    "foreignDates": "Season and plant growth used as conditions, not a direct UK/US date transfer.",
+    "limits": "No claim of a Latvian cultivar trial, guaranteed overwintering or species identification from flower shape alone."
+  },
+  "photos": [
+    {
+      "id": "hortenzija-skaraina",
+      "src": "/images/flowers/hortenzijas.webp",
+      "width": 800,
+      "height": 532,
+      "alt": "Skarainās hortenzijas baltas, konusveida ziedkopas starp zaļām lapām",
+      "author": "Dotty Leatherwood",
+      "sourceName": "NC State Extension",
+      "sourceUrl": "https://plants.ces.ncsu.edu/plants/hydrangea-paniculata/",
+      "originalUrl": "https://eit-planttoolbox-prod.s3.amazonaws.com/media/images/Panicle_Hydrangea_-__xUkVDjfY41PS.jpg",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "changes": "Attēls samazināts un pārveidots WebP formātā.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "id": "hortenzija-kokveida-annabelle",
+      "src": "/images/flowers/hortenzija-kokveida-annabelle.webp",
+      "width": 500,
+      "height": 375,
+      "alt": "Kokveida hortenzijas Annabelle apaļa, balta ziedkopa uz zaļu lapu fona",
+      "author": "Elsa Spezio",
+      "sourceName": "NC State Extension",
+      "sourceUrl": "https://plants.ces.ncsu.edu/plants/hydrangea-arborescens/",
+      "originalUrl": "https://eit-planttoolbox-prod.s3.amazonaws.com/media/images/Hydrangea-arborescens-Annabelle--Elsa-Spezio--cc-by-sa-2-0.jpg",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "changes": "Pārveidots WebP formātā; saglabāts pilnais kadrs. Atvasinātais attēls pieejams ar to pašu licenci.",
+      "reviewedAt": "2026-10-27"
+    },
+    {
+      "id": "hortenzija-liellapu",
+      "src": "/images/flowers/hortenzija-liellapu.webp",
+      "width": 600,
+      "height": 398,
+      "alt": "Liellapu hortenzijas krūms ar apaļām zilām un violetām ziedkopām pie ēkas",
+      "author": "Ilouque",
+      "sourceName": "NC State Extension",
+      "sourceUrl": "https://plants.ces.ncsu.edu/plants/hydrangea-macrophylla/",
+      "originalUrl": "https://eit-planttoolbox-prod.s3.amazonaws.com/media/images/Hydrangea_macrophylla--ilouque--CC-BY.jpg",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "changes": "Pārveidots WebP formātā; saglabāts pilnais kadrs.",
+      "reviewedAt": "2026-10-27"
+    }
+  ],
+  "diagrams": {
+    "file": "components/hydrangea-pruning-diagram.tsx",
+    "count": 2,
+    "purpose": "Spring cut position; retained healthy bud pairs and branch portions; not a fixed height, scale or cultivar-specific plant portrait.",
+    "accessibility": "SVG title/description and adjacent HTML captions; responsive stacked figures."
+  },
+  "integration": [
+    "Article photo comparison and validator support",
+    "Article library photo uses first comparison asset",
+    "Links from hydrangea flower guide and both existing hydrangea articles",
+    "Seasonal discovery in March, April, October and November"
+  ],
+  "validation": {
+    "domainTests": 19,
+    "ui": "passed",
+    "content": {
+      "articles": 85,
+      "flowers": 31,
+      "flowersWithSectionSources": 5,
+      "images": 69,
+      "remainingWarnings": 65
+    },
+    "build": {
+      "pages": 327,
+      "includesTypeCheck": true
+    },
+    "ssrReport": "/tmp/menesseja-hydrangea-ssr-check.json",
+    "browser": {
+      "widths": [
+        320,
+        375,
+        640,
+        1440
+      ],
+      "horizontalOverflow": false,
+      "consoleErrors": 0,
+      "verified": [
+        "TOC links",
+        "photo loading",
+        "mobile table cards",
+        "stacked diagrams",
+        "guide winter anchor",
+        "article-to-guide and guide-to-article links",
+        "Article library comparison photo",
+        "Alias search without diacritics: annabelle apgriesana",
+        "Final copy after rebuilt preview"
+      ]
+    }
+  },
+  "scopeLimits": [
+    "Existing hydrangea non-flowering and colour articles received related links; their full text was not re-audited in this stage.",
+    "The other agreed content topics remain queued.",
+    "No deployment or indexing request performed in this stage."
+  ],
+  "proofs": [
+    "/tmp/menesseja-hortenzijas-mobile-2026-10-27.png",
+    "/tmp/menesseja-hortenzijas-photos-2026-10-27.png",
+    "/tmp/menesseja-hortenzijas-shemas-2026-10-27.png"
+  ],
+  "next": [
+    "Pelargonium overwintering guide review and visuals",
+    "Christmas cactus problem article"
+  ]
+}

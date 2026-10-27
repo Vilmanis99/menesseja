@@ -7,13 +7,14 @@
   "shortAnswer": "Tu nopirki rozā hortenziju, iestādīji dārzā, un pēc gada tā uzziedēja gandrīz zila.  Vai otrādi — kaimiņienei tā paša krūma atvasi zied debeszilos toņos, bet tev tā pati šķirne dod blāvi rozā.",
   "primaryQuery": "kā padarīt hortenzijas zilas vai rozā",
   "publishedAt": "2026-06-22",
-  "updatedAt": "2026-10-26",
+  "updatedAt": "2026-10-27",
   "entities": {
     "recipes": [
       "koku-pelnu-skidums"
     ]
   },
   "relatedSlugs": [
+    "hortenziju-apgriesana",
     "skaba-augsne-ka-noteikt-un-uzlabot",
     "kapec-hortenzijas-nezied"
   ],
@@ -86,6 +87,10 @@
     }
   ],
   "links": [
+    {
+      "label": "Kad un kā apgriezt hortenzijas",
+      "href": "/raksti/hortenziju-apgriesana"
+    },
     {
       "label": "Hortenziju stādīšana un kopšana",
       "href": "/pukes/hortenzijas"

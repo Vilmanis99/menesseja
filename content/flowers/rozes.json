@@ -2,59 +2,272 @@
   "slug": "rozes",
   "name": "Rozes",
   "latin": "Rosa",
-  "image": { "id": "rozes", "caption": "Krūmroze pilnā ziedā. Latvijā rozes ziemai piesedz pēc pirmajām salnām." },
+  "image": {
+    "id": "rozes",
+    "caption": "Ziedoša roze dārzā. Ziedu izskats vien nepasaka šķirnes ziemcietību vai vajadzīgo ziemas segumu."
+  },
   "emoji": "🌹",
   "type": "krums",
-  "tagline": "Puķu karaliene, kas Latvijā zied no jūnija līdz pat oktobrim — ja vien zini divus galvenos noslēpumus: stādīšanas dziļumu un ziemas segumu.",
-  "bloom": "Jūnijs–oktobris (atkārtoti ziedošās šķirnes)",
-  "bloomMonths": [6, 7, 8, 9, 10],
-  "height": "40–200 cm (atkarībā no grupas)",
-  "sun": "Saule",
+  "tagline": "Ziedoša roze sākas ar piemērotu šķirni; tās ziemas aizsardzību nosaka arī potējums, augšanas forma un vieta.",
+  "bloom": "Vasarā; atkārtoti ziedošās šķirnes piemērotos apstākļos līdz rudenim",
+  "bloomMonths": [
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "height": "No kompaktām podu rozēm līdz vairāku metru vīteņrozēm; pārbaudi šķirni",
+  "sun": "Saulaina vieta ar gaisa apmaiņu; šķirņu prasības atšķiras",
   "hardy": true,
-  "difficulty": "grūti",
-  "plantWhen": "Stāda pavasarī (aprīlis–maijs) vai septembrī",
+  "difficulty": "vidēji",
+  "plantWhen": "Pavasarī vai rudenī piemērotā augsnē; konteinerstādus arī vasarā, nodrošinot mitrumu",
   "moonPhase": "augošs",
   "moonElement": "ziedi",
-  "moonText": "Rozes ir ziedu augs — biodinamikā to stādīšanu un kopšanu saista ar ziedu (gaisa) dienām, bet stādīšanu un apgriešanu tradicionāli veic dilstošā Mēnesī, kad spēks saknēs. Tradīcija dod ritmu, taču izšķirošais rozēm ir vieta, dziļums un ziemas segums.",
+  "moonText": "Mēness dārzkopības tradīcijā rozes saista ar ziedu dienām. Stādīšanu, griešanu un ieziemošanu plāno pēc auga stāvokļa, augsnes un laika prognozes; Mēness fāze šos nosacījumus neaizstāj.",
   "intro": [
-    "Roze ir vienīgā puķe, kurai dārzā piedod visu — gan ērkšķus, gan kaprīzes — jo neviens cits augs nedod tādu ziedēšanu no jūnija līdz pat vēlam rudenim. Latvijā rozes aug lieliski, ja izvēlas izturīgas šķirnes (krūmrozes un parka rozes iesācējam ir visdrošākās) un ievēro divus zelta likumus.",
-    "Pirmais: stādot acotā roze jāiegremdē tā, lai potējuma vieta ir 5–10 cm zem augsnes virsmas — tas pasargā šķirni no izsalšanas. Otrais: ziemai rozes apkrauj. Šie divi paradumi izšķir, vai roze pie tevis dzīvos gadu vai gadu desmitus."
+    "Pirms pirkšanas pieraksti šķirnes nosaukumu, pieauguša auga izmēru un ziedēšanas veidu. Apzīmējums “krūmroze” vai “parka roze” viens pats nepasaka ne sala izturību, ne pareizo griešanas paņēmienu. Iesācējam noder konkrēta šķirne, kuras pārziemošana pārbaudīta līdzīgos vietējos apstākļos.",
+    "Noskaidro arī, vai stāds ir potēts vai audzēts uz savām saknēm. Potētai rozei šķirnes dzinumi savienoti ar citu potcelmu; ja šķirnes daļa iet bojā, no apakšas var ataugt potcelms. Patsakņu roze var atjaunot to pašu šķirni no dzīvajām saknēm, taču tas nepadara jebkuru šķirni ziemcietīgu."
   ],
   "planting": [
-    "Izvēlies saulainu (vismaz 6 h tiešas saules), vēdinātu, bet no asiem vējiem pasargātu vietu — stāvošs gaiss veicina sēņu slimības.",
-    "Stādi pavasarī (aprīlī–maijā) vai septembrī; konteinerstādus var visu sezonu.",
-    "Izrok plašu bedri (~50 cm), iemaisi kompostu; acotām rozēm potējuma vietai jāpaliek 5–10 cm ZEM augsnes virsmas — tas ir pats svarīgākais solis.",
-    "Pirms stādīšanas kailsakņu stādu saknes pamērcē ūdenī pāris stundas un bojātās piegriež.",
-    "Pēc stādīšanas bagātīgi aplej un apkrauj pamatni ar zemi vai mulču, kamēr stāds ieaug."
+    "Izvēlies gaišu vietu, kur pēc lietus lapas var nožūt un saknes nestāv ūdenī. Atstarpes plāno pēc šķirnes pieauguša krūma platuma; visas rozes nav stādāmas vienā attālumā.",
+    "Kailsakņu rozi stādi miera periodā, kad zeme apstrādājama. Podā labi iesakņotu stādu var stādīt plašākā sezonas daļā. Nestādi sasalušā, pārmitrā vai izkaltušā augsnē; vēlu rudenī izvērtē stāda stāvokli un gaidāmo salu.",
+    "Izroc sakņu kamolam vai izplestām saknēm pietiekami platu bedri. Augsni ielabo ar sadalījušos organisko materiālu; saknes neliec svaigos kūtsmēslos. Podu pirms izņemšanas samitrini.",
+    "Dobē stādāmai acotai rozei Latvijas audzētājs 7rozes norāda potējuma vietu ap 5 cm zem augsnes. Pārbaudi konkrētā stāda audzētāja norādi un gala līmeni pēc augsnes nosēšanās. Šo dziļumu nepārnes uz augststumbra rozi, kur potējums ir pie vainaga.",
+    "Patsakņu stādam potējuma mezgla nav; stādīšanas dziļumu nosaka sakņu kakliņš un audzētāja norāde. Augststumbra rozi stādi, neaprokot stumbru, un uzreiz nostiprini ar piemērotu balstu.",
+    "Aizpildi spraugas, viegli piespied augsni un aplaisti. Pirmajās sezonās sausumā pārbaudi mitrumu sakņu zonā. Vasaras mulču atvirzi no dzinumu pamatnes; ziemas apraušana ir atsevišķs sezonas darbs."
   ],
   "care": [
-    "Laisti reti, bet pamatīgi, pie saknes — nekad pa lapām (slapjas lapas = melnplankumainība).",
-    "Mēslo pavasarī (komposts vai rožu mēslojums) un pēc pirmā ziedēšanas viļņa; no augusta slāpekli vairs nedod, lai dzinumi pagūst nobriest ziemai.",
-    "Novītušos ziedus regulāri izgriez līdz pirmajai pilnajai lapai — tas dzen jaunu ziedēšanas vilni.",
-    "Galvenā apgriešana — pavasarī, kad pumpuri briest: izgriez nosalušo, veco un uz iekšu augošo; vājus dzinumus īsina stiprāk.",
-    "Seko lapām: laputis noskalo vai apstrādā ar ziepjūdeni, pret miltrasu un melnplankumainību palīdz retināts stādījums un slimo lapu savākšana.",
-    "Savāc un iznīcini (ne kompostā!) rudens lapas zem krūma — tajās ziemo slimību sporas."
+    "Laisti augsni sakņu zonā, kad tā sāk izžūt; podus pārbaudi biežāk. Ilgstoši slapjas lapas veicina dažu slimību izplatīšanos, bet viena ūdens šļakata pati par sevi nenozīmē melnplankumainību.",
+    "Mēslojumu pielāgo augsnei, augšanai un produkta norādēm. Atkārtoti ziedošām dobju rozēm papildu barošana var būt vajadzīga pēc pirmās ziedēšanas; podos barības vielu krājums ir ierobežotāks. Rudens augšanu nestimulē ar papildu slāpekli.",
+    "Atkārtoti ziedošām rozēm noziedējušo ziedu izņemšana var veicināt nākamos ziedus. Vienreiz ziedošu šķirni tas nepārvērš atkārtoti ziedošā; ja vēlies dekoratīvus augļus, attiecīgos ziedus atstāj.",
+    "Pavasarī vispirms novērtē pārziemojušos dzinumus. Apgriešanu pielāgo rožu grupai: vienreiz ziedošas parka rozes un stīgotājrozes neveido pēc floribundu shēmas.",
+    "Vīteņrožu dzinumus pie balsta piesien tā, lai saites neiegriežas mizā. Pārbaudi arī augststumbra rožu balstus un stiprinājumus pēc stipra vēja.",
+    "Slimās nobirušās lapas savāc. Veselīgu krūmu neapsmidzini pēc ieraduma; vispirms nosaki problēmu un novērtē bojājuma apjomu."
   ],
-  "winter": "Latvijā rozes ziemo ar segumu. Pēc pirmajām salnām (parasti novembrī, kad zeme sāk salt) krūma pamatni apkrauj ar 15–20 cm sausas zemes, kūdras vai komposta; jutīgākas šķirnes papildus piesedz ar egļu zariem. Vijīgās rozes noliec pie zemes un piesedz. Pavasarī, aprīlī, segumu pakāpeniski noņem — pārāk ilgi sasegta roze izsust.",
+  "winter": "Sāc ar šķirni un stāda formu. Ziemcietīgai parka rozei dobē var nevajadzēt tādu pašu segumu kā jutīgai tējhibrīdrozei. Jauns, nesen pārstādīts vai novājināts augs ir jāvērtē īpaši rūpīgi. Grupas nosaukums un ārvalstu ziemcietības zona nav pārziemošanas garantija tavā dārzā.\n\nKamēr augsne nav sasalusi, sausā rudenī uzturi mērenu mitrumu. Savāc slimās lapas, izgriez bojāto un nostiprini dzinumus pret vēju. Rudenī neapgriez visu krūmu zemu tikai tāpēc, lai būtu vieglāk uzlikt segumu. Materiālus sagādā laikus.\n\nAr pilno siltinošo segumu nesteidzies pēc pirmās vieglās salnas. Sagaidi auga norūdīšanos, noturīgāku aukstumu un augsnes virskārtas piesalšanu, vienlaikus sekojot strauja kailsala prognozei. Latvijā tas dažādos gados un vietās notiek atšķirīgi; viens novembra datums neder visiem.\n\nJutīgai dobē augošai rozei pamatni apber ar irdenu, labi drenējošu augsni. Materiālu atnes no citas vietas, nevis nogrāb no pašas rozes saknēm. Mērķis ir nosegt potējumu un apakšējos pumpurus. Papildu izolāciju nostiprini pret vēju; egļu zari vien neaizstāj pamatnes aizsardzību.\n\nVīteņrozei saudzē garos dzīvos dzinumus. Ja šķirnei nepieciešama noliekšana, dari to pakāpeniski pirms koksne aukstumā kļūst trausla, neforsējot resnus zarus. Nostiprinātus dzinumus piesedz atbilstoši šķirnes jutīgumam. Ļoti izturīgu šķirņu dzinumus reizēm var atstāt pie balsta — to nosaka konkrētās rozes pieredze.\n\nAugststumbra rozei ziemas plānu izvēlies jau pirms stādīšanas. Vainaga potējums atrodas virs zemes, tāpēc ar uzbērumu pie saknēm nepietiek. Podā augošu eksemplāru var pārvietot vēsā aizsargātā telpā; dobē augošas rozes noliekšana kopā ar daļēji atbrīvotu sakņu kamolu ir atsevišķa metode, nevis stumbra piespiedu saliekšana.\n\nPodam vajadzīga visas sakņu zonas aizsardzība. Viena iespēja ir podu pirms augsnes sasalšanas ierakt drenētā, aizsargātā vietā un virszemes daļu piesegt pēc šķirnes. Otra — miera stāvoklī pārnest vēsā telpā, kur var kontrolēt temperatūru. Iowa State min aptuveni −1 līdz +7 °C; praktiski izvēlies stabili vēsu vietu bez ilgstošas sakņu kamola caursalšanas vai siltuma, kas sāk dzinumu augšanu. Pārbaudi, lai substrāts pilnīgi neizkalst un nestāv slapjš.\n\nSegumam vajadzīga gaisa apmaiņa. Saulē un atkusnī pārbaudi, vai zem tā neuzkrājas siltums un mitrums. Pavasarī, kad augsne atkūst un atkāpjas stiprais aukstums, segumu atver un pakāpeniski noņem pirms zem tā sāk stiepties dzinumi. Seko prognozei; nav jāgaida noteikts aprīļa datums.",
   "problems": [
-    "Melnplankumainība — melni plankumi uz lapām, lapas dzeltē un birst; palīdz laistīšana pie saknes, retināts stādījums un kritušo lapu iznīcināšana.",
-    "Miltrasa — balts apsarme uz jaunajām lapām sutīgā laikā; profilaksei gaisa kustība un kosas novārījums.",
-    "Laputis uz jaunajiem dzinumiem un pumpuriem — noskalo ar ūdeni vai ziepjūdeni, piesaisti mārītes."
+    "Melnplankumainība: tumši plankumi, bieži ar dzeltēšanu un priekšlaicīgu lapu biršanu. Savāc slimās lapas, nodrošini gaisa apmaiņu un laisti augsni. Tas mazina infekcijas avotus, bet negarantē, ka slimība neatgriezīsies.",
+    "Miltrasa: balts, miltains aplikums uz lapām, dzinumiem vai pumpuriem. Tā var attīstīties arī sausā vasarā. Mazini augsnes izžūšanu un pārāk blīvu augumu, nepārmēslo ar slāpekli; stipri bojātus dzinumus izņem.",
+    "Laputis: kolonijas uz mīkstajiem dzinumiem un lipīgi izdalījumi. Dažas laputis pieaugušam krūmam var pieļaut; novēro arī mārītes un citus dabiskos ienaidniekus. Vajadzības gadījumā kolonijas noņem mehāniski. Sadzīves mazgāšanas līdzekļu šķīdumus uz lapām nelieto.",
+    "Dzeltēšana bez raksturīgiem plankumiem nav automātiski sēņu slimība. Pārbaudi laistīšanu, drenāžu un saknes; mēslojuma trūkumu izvērtē kopā ar augsnes apstākļiem, nevis uzreiz palielini devu."
   ],
-  "folklore": "Roze latviešu dainās un sētās vienmēr bijusi goda puķe — to stādīja pie mājas durvīm un istabas loga, lai «skaistums sargā māju». Vecticībā rozes ērkšķi pasargājot no ļauna, tāpēc rožu krūmu nereti stādīja arī sētas malā.",
   "faq": [
     {
-      "q": "Cik dziļi stādīt rozi?",
-      "a": "Acotām rozēm potējuma vietai (resnumam pie saknēm) jābūt 5–10 cm zem augsnes virsmas. Pārāk sekli stādīta roze Latvijas ziemā var zaudēt šķirnes daļu — paliek tikai mežrozes potcelms."
+      "q": "Kad rozes jāpiesedz ziemai?",
+      "a": "Pirmos sagatavošanas darbus veic rudenī, bet pilno segumu pielāgo norūdīšanās gaitai, noturīgākam aukstumam un augsnes piesalšanai. Pirmā vieglā salna nav vienīgais kritērijs; strauja kailsala prognoze prasa savlaicīgu rīcību."
     },
     {
-      "q": "Kā sagatavot rozes ziemai Latvijā?",
-      "a": "No augusta nemēslo ar slāpekli, rudenī savāc lapas zem krūma, un pēc pirmajām salnām apkrauj pamatni ar 15–20 cm sausas zemes vai kūdras. Jutīgākām šķirnēm virsū vēl egļu zarus. Pavasarī segumu noņem pakāpeniski."
+      "q": "Vai visas parka rozes var ziemot bez seguma?",
+      "a": "Nē. Parka rozes ir daudzveidīgas. Noskaidro konkrētās šķirnes ziemcietību un pieredzi līdzīgos Latvijas apstākļos; jauns stāds un atklāta, vējaina vieta jāvērtē atsevišķi."
     },
     {
-      "q": "Kuras rozes ir visizturīgākās iesācējam?",
-      "a": "Parka un krūmrozes (piemēram, kanādiešu selekcijas šķirnes) — tās Latvijā ziemo ar minimālu segumu un mazāk slimo. Smalkās tējhibrīdrozes prasa vairāk rūpju un rūpīgāku ziemas aizsardzību."
+      "q": "Cik dziļi stādīt potētu rozi?",
+      "a": "Parastai dobē stādāmai rozei vietējais audzētājs 7rozes iesaka potējumu ap 5 cm zem augsnes. Pārbaudi sava stāda norādi. Augststumbra rozei vainaga potējumu neaprok, bet patsakņu stādam šāda mezgla nav."
+    },
+    {
+      "q": "Vai rudenī rozes nogriezt līdz zemei?",
+      "a": "Nē. Izņem bojāto un vajadzības gadījumā saīsini vēja apdraudētus zarus. Saglabā šķirnei vajadzīgos dzīvos dzinumus; veidošanu plāno atbilstoši grupai un ziedēšanas veidam."
+    },
+    {
+      "q": "Vai roze podā pārziemos uz balkona?",
+      "a": "To nevar apsolīt pēc šķirnes ziemcietības vien. Podā saknes ir vairāk pakļautas aukstumam un izžūšanai. Izvēlies plānu visam sakņu kamolam; tikai dzinumu aptīšana podu nepasargā."
+    },
+    {
+      "q": "Kad pavasarī noņemt ziemas segumu?",
+      "a": "Kad augsne atkūst un stiprākais aukstums atkāpjas, sāc atvēršanu un noņemšanu pa daļām. Neatstāj rozi noslēgtā, sasilstošā segumā līdz garu dzinumu izaugšanai; turpmāko aizsardzību pielāgo prognozei."
     }
   ],
-  "related": ["peonijas", "budlejas", "lavanda", "floksi"]
+  "related": [
+    "peonijas",
+    "budlejas",
+    "lavanda",
+    "floksi"
+  ],
+  "seoTitle": "Rozes: stādīšana, kopšana un ieziemošana Latvijā",
+  "seoDescription": "Kā stādīt un ziemai sagatavot rozes: atšķirības starp parka, tējhibrīdu, vīteņrozēm un augststumbra rozēm, podu pārziemināšana un biežākās slimības.",
+  "updatedAt": "2026-10-27",
+  "shortAnswer": "Rožu kopšanu un ziemas aizsardzību izvēlas pēc šķirnes, stāda formas un augšanas vietas. Pirmā salna vēl nav signāls blīvai segšanai. Jutīgām dobju rozēm aizsargā pamatni, vīteņrozēm arī vajadzīgos garos dzinumus, augststumbra rozēm vainaga potējumu, bet podos — visu sakņu kamolu.",
+  "lifeCycle": "Daudzgadīgi lapu krūmi. Vienas šķirnes zied vienreiz vasarā, citas atkārtoti; dzinumu un ziedpumpuru ziemcietība atšķiras.",
+  "comparison": {
+    "heading": "Kāda roze aug tavā dārzā?",
+    "items": [
+      {
+        "name": "Parka un citas krūmrozes",
+        "description": "Plaša grupa ar atšķirīgu ziemcietību. Vienreiz ziedošām šķirnēm saudzē iepriekšējos dzinumus; daļa atkārtoti ziedošo šķirņu veido jaunus ziedus visu vasaru."
+      },
+      {
+        "name": "Tējhibrīdrozes un floribundrozes",
+        "description": "Parasti atkārtoti ziedošas dobju rozes. Aukstumā jutīgām šķirnēm svarīga pamatnes aizsardzība. Pavasara griešanā floribundām parasti saglabā garākus dzinumus nekā tējhibrīdiem."
+      },
+      {
+        "name": "Vīteņrozes un stīgotājrozes",
+        "description": "Garos dzinumus stiprina pie balsta. Noskaidro, vai šķirne zied vienreiz vai atkārtoti: dzīvo dzinumu zema nogriešana var atņemt nākamo ziedēšanu."
+      },
+      {
+        "name": "Augststumbra rozes",
+        "description": "Uz augsta stumbra potēta forma, nevis atsevišķa ziemcietīga rožu grupa. Jāsargā arī potējuma vieta pie vainaga; augsnes uzbērums tikai pie saknēm to nepasargā."
+      }
+    ]
+  },
+  "winterTable": {
+    "headers": [
+      "Roze vai situācija",
+      "Kas jāsaglabā",
+      "Ziemas plāna galvenais punkts"
+    ],
+    "rows": [
+      [
+        "Vietēji pārbaudīta ziemcietīga krūmroze",
+        "Vesela sakņu zona un dzinumu pamatne",
+        "Pārbaudi šķirnes vajadzības; biezs pilns segums nav automātisks."
+      ],
+      [
+        "Jutīga dobes roze",
+        "Potējuma vieta un apakšējie pumpuri",
+        "Apraušana un piemērots papildu segums pēc norūdīšanās."
+      ],
+      [
+        "Jutīga vīteņroze",
+        "Arī garie dzinumi nākamajai ziedēšanai",
+        "Saudzīga noliekšana, nostiprināšana un dzinumu aizsardzība."
+      ],
+      [
+        "Augststumbra roze",
+        "Potējums pie vainaga, stumbrs un saknes",
+        "Vainaga pārziemināšanas metode jāplāno atsevišķi."
+      ],
+      [
+        "Roze podā",
+        "Viss sakņu kamols un šķirnes dzinumi",
+        "Ierakšana piemērotā vietā vai kontrolēta vēsa glabāšana."
+      ]
+    ]
+  },
+  "links": [
+    {
+      "label": "Rožu apgriešana pavasarī pēc grupas",
+      "href": "/raksti/ka-apgriezt-rozes-pavasari"
+    },
+    {
+      "label": "Melnplankumainība: pazīmes un rīcības secība",
+      "href": "/raksti/rozu-melnplankumainiba-ka-arstet"
+    },
+    {
+      "label": "Laputu atpazīšana un ierobežošana",
+      "href": "/kaitekli/laputis"
+    },
+    {
+      "label": "Dārza darbi novembrī",
+      "href": "/ko-set/novembris"
+    }
+  ],
+  "sources": [
+    {
+      "label": "7rozes — Latvijā audzētu rožu grupas, stādīšana un ieziemošana",
+      "url": "https://7rozes.lv/par-rozem"
+    },
+    {
+      "label": "RHS — rožu audzēšanas ceļvedis",
+      "url": "https://www.rhs.org.uk/plants/roses/growing-guide/"
+    },
+    {
+      "label": "RHS — rožu stādīšana un ieaugšanās",
+      "url": "https://www.rhs.org.uk/plants/roses/planting"
+    },
+    {
+      "label": "RHS — rožu apgriešanas pamatprincipi",
+      "url": "https://www.rhs.org.uk/plants/roses/pruning-guide"
+    },
+    {
+      "label": "RHS — vienreiz un atkārtoti ziedošu krūmrožu griešana",
+      "url": "https://www.rhs.org.uk/plants/roses/shrub/pruning-guide"
+    },
+    {
+      "label": "University of Minnesota Extension — rudens darbi dažādām rožu grupām",
+      "url": "https://extension.umn.edu/about/our-stories/news/yard-and-garden-news/autumn-rose-care-in-minnesota"
+    },
+    {
+      "label": "Iowa State University Extension — rožu grupu un podu pārziemināšana",
+      "url": "https://yardandgarden.extension.iastate.edu/how-to/how-overwinter-roses"
+    },
+    {
+      "label": "University of Illinois Extension — kopšana, apraušana un ziemas seguma vēdināšana",
+      "url": "https://extension.illinois.edu/roses/care"
+    },
+    {
+      "label": "Iowa State University Extension — augststumbra rozes ziemā",
+      "url": "https://yardandgarden.extension.iastate.edu/faq/how-do-i-over-winter-tree-rose"
+    },
+    {
+      "label": "Iowa State University Extension — rožu darbi pa sezonām",
+      "url": "https://yardandgarden.extension.iastate.edu/how-to/rose-care-season"
+    },
+    {
+      "label": "American Rose Society — podu rozes un patsakņu stādu atjaunošanās",
+      "url": "https://rose.org/growing-roses-in-pots-winterizing-your-roses/"
+    },
+    {
+      "label": "New York Botanical Garden — kopšanas kļūdas un podu rožu ziemas aizsardzība",
+      "url": "https://libguides.nybg.org/roseproblems"
+    },
+    {
+      "label": "RHS — rožu melnplankumainības pazīmes un ierobežošana",
+      "url": "https://www.rhs.org.uk/disease/rose-black-spot"
+    },
+    {
+      "label": "RHS — rožu miltrasa",
+      "url": "https://www.rhs.org.uk/disease/rose-powdery-mildew"
+    },
+    {
+      "label": "RHS — laputis uz rozēm",
+      "url": "https://www.rhs.org.uk/biodiversity/rose-aphids"
+    },
+    {
+      "label": "RHS — tējhibrīdrožu un floribundrožu griešana",
+      "url": "https://www.rhs.org.uk/plants/roses/modern-bush/pruning-guide"
+    }
+  ],
+  "sectionSources": {
+    "intro": [
+      "https://www.rhs.org.uk/plants/roses/growing-guide/",
+      "https://rose.org/growing-roses-in-pots-winterizing-your-roses/",
+      "https://extension.umn.edu/about/our-stories/news/yard-and-garden-news/autumn-rose-care-in-minnesota"
+    ],
+    "comparison": [
+      "https://7rozes.lv/par-rozem",
+      "https://www.rhs.org.uk/plants/roses/shrub/pruning-guide",
+      "https://yardandgarden.extension.iastate.edu/faq/how-do-i-over-winter-tree-rose",
+      "https://extension.umn.edu/about/our-stories/news/yard-and-garden-news/autumn-rose-care-in-minnesota",
+      "https://www.rhs.org.uk/plants/roses/modern-bush/pruning-guide"
+    ],
+    "planting": [
+      "https://7rozes.lv/par-rozem",
+      "https://www.rhs.org.uk/plants/roses/planting",
+      "https://www.rhs.org.uk/plants/roses/growing-guide/"
+    ],
+    "care": [
+      "https://www.rhs.org.uk/plants/roses/growing-guide/",
+      "https://www.rhs.org.uk/plants/roses/pruning-guide",
+      "https://www.rhs.org.uk/plants/roses/shrub/pruning-guide",
+      "https://extension.umn.edu/about/our-stories/news/yard-and-garden-news/autumn-rose-care-in-minnesota",
+      "https://www.rhs.org.uk/disease/rose-black-spot"
+    ],
+    "winter": [
+      "https://7rozes.lv/par-rozem",
+      "https://extension.umn.edu/about/our-stories/news/yard-and-garden-news/autumn-rose-care-in-minnesota",
+      "https://yardandgarden.extension.iastate.edu/how-to/how-overwinter-roses",
+      "https://extension.illinois.edu/roses/care",
+      "https://yardandgarden.extension.iastate.edu/faq/how-do-i-over-winter-tree-rose",
+      "https://yardandgarden.extension.iastate.edu/how-to/rose-care-season",
+      "https://rose.org/growing-roses-in-pots-winterizing-your-roses/",
+      "https://libguides.nybg.org/roseproblems"
+    ],
+    "problems": [
+      "https://www.rhs.org.uk/disease/rose-black-spot",
+      "https://www.rhs.org.uk/disease/rose-powdery-mildew",
+      "https://www.rhs.org.uk/biodiversity/rose-aphids",
+      "https://libguides.nybg.org/roseproblems"
+    ]
+  }
 }

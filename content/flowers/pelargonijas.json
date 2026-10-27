@@ -2,76 +2,210 @@
   "slug": "pelargonijas",
   "name": "Pelargonijas (ģerānijas)",
   "latin": "Pelargonium",
-  "image": { "id": "pelargonijas", "caption": "Zonālā pelargonija — klasiskā balkona puķe. Rudenī to pirms salnām ienes telpās." },
+  "image": {
+    "id": "pelargonijas",
+    "caption": "Zonālās pelargonijas ziedkopa. Šīs podu puķes pirms rudens salnām pārvieto telpās."
+  },
   "emoji": "🌸",
   "type": "viengadiga",
-  "tagline": "Pelargonijas jeb ģerānijas — klasiskā balkona puķe, kas zied visu vasaru un viegli pārziemo telpā uz palodzes.",
-  "bloom": "Jūnijs–septembris",
+  "tagline": "Balkona un palodzes puķes, kurām vasarā vajag sauli, bet ziemā — telpas un apstākļiem pielāgotu kopšanu.",
+  "updatedAt": "2026-10-27",
+  "shortAnswer": "Pelargonijas stādi saulainā vietā podā ar noteces caurumiem, iepriekšējā dziļumā. Laisti pēc substrāta apžūšanas un mēslo atbilstoši augšanai un mēslojuma norādēm. Pirms salnām ienes telpās: vēsa, gaiša vieta un silta palodze prasa atšķirīgu ziemas kopšanu.",
+  "lifeCycle": "Pelargonijas ir saljutīgi daudzgadīgi augi. Latvijā tās izmanto kā vasaras puķes, bet veselus augus vai apsakņotus spraudeņus var saglabāt telpās. Tās nav ziemcietīgās gandrenes (Geranium).",
+  "bloom": "Vasarā; ilgums atkarīgs no grupas, šķirnes un apstākļiem",
   "bloomMonths": [
     6,
     7,
     8,
     9
   ],
-  "height": "25–50 cm",
-  "sun": "Saule",
+  "height": "Daudzām zonālajām šķirnēm 25–50 cm; nokarenajām dzinumi garāki",
+  "sun": "Saule; nokarenajām karstumā var noderēt pēcpusdienas pusēna",
   "hardy": false,
   "difficulty": "viegli",
-  "plantWhen": "Stādus laukā un balkonā pēc pēdējām salnām, maija beigās",
+  "plantWhen": "Laukā pēc norūdīšanas, kad salnu risks pārgājis un naktis kļuvušas pietiekami siltas",
   "moonPhase": "augošs",
   "moonElement": "ziedi",
-  "moonText": "Pelargonijas kā ziedu augu tradicionāli stāda un pārstāda ziedu (gaisa) dienās — kad Mēness ir Dvīņos, Svaros vai Ūdensvīrā — un labāk augošā Mēnesī, kad spēks virzās uz augšu. Tā ir veca dārznieku tradīcija, nevis garantija: daudz svarīgāk ir nogaidīt, līdz salnu vairs nav, un iestādīt siltā, sausā augsnē.",
+  "moonText": "Ziedu dienas un augošs Mēness ir tradicionāls darbu plānošanas palīgs. Praktisko stādīšanas laiku nosaka salnu risks, auga norūdīšana un augšanas apstākļi; kalendāra diena neaizstāj šo pārbaudi.",
   "intro": [
-    "Ģerānijas, kā Latvijā ikdienā sauc pelargonijas, ir, iespējams, visizplatītākā balkona un palodzes puķe. Tas pats augs — vienalga, vai raksti “ģerānijas” vai “geranijas” — botāniski ir pelargonija (Pelargonium), un tieši par šo košo podu puķi ir runa šajā lapā. Ģerānijas zied nenogurstoši no jūnija līdz pat pirmajām rudens salnām, prasa maz un piedod gandrīz visas iesācēja kļūdas — tāpēc tā ir lieliska pirmā puķe podos un balkona kastēs. Krāsu klāsts ir plašs: no ugunīgi sarkanas un rozā līdz baltai, lilā un dažādiem toņu pārejām.",
-    "Svarīgi atcerēties vienu lietu: ģerānija (pelargonija) NAV ziemcietīga. Tā ir daudzgadīgs augs, bet mūsu ziemu atklātā laukā neiztur un sasalst. Toties tās lielā priekšrocība ir tā, ka rudenī augu var vienkārši ienest istabā un pārziemot uz gaišas palodzes — un nākampavasar tā jau ir liels, brangs stāds, kas zied agrāk nekā svaigi nopirkti dēsti.",
-    "Īsumā par to, kā kopt ģerānijas: stādi tās saulainā vietā, laisti mēreni (labāk par sausu nekā pārliet), mēslo ziedēšanas laikā ar kālija bagātu puķu mēslojumu un regulāri noņem nokaltušos ziedus — tad ģerānijas zied kupli līdz salnām. Rudenī, pirms pirmajām salnām, ienes augu telpā un pārziemo vēsā, gaišā vietā. Sīkāku ģerāniju kopšanas pamācību — laistīšanu, mēslošanu, apgriešanu, pārziemošanu un pavairošanu no spraudeņiem — atradīsi atsevišķā rakstā par ģerāniju kopšanu."
+    "Ar vārdu “ģerānijas” ikdienā bieži domā pelargonijas — podu puķes ar košām ziedkopām. Botāniski Pelargonium un Geranium ir atšķirīgas ģintis. Šis ceļvedis ir par saljutīgajām pelargonijām, kuras ziemai neatstāj Latvijas dārzā.",
+    "Kopšana sākas ar grupas atpazīšanu. Zonālās, nokarenās efejlapu un lielziedu pelargonijas neatšķiras tikai pēc izskata: atšķiras arī augšanas veids un reakcija uz karstumu. Vienas šķirnes ziedēšanas ritmu nevar apsolīt visām."
   ],
+  "comparison": {
+    "heading": "Kura pelargonija aug tavā podā?",
+    "items": [
+      {
+        "name": "Zonālās pelargonijas",
+        "description": "Stāvs, krūmveidīgs augums; daudzām lapās redzama tumšāka josla. Piemērotas podiem, kastēm un vasaras dobēm."
+      },
+      {
+        "name": "Nokarenās jeb efejlapu pelargonijas",
+        "description": "Dzinumi nokarājas pāri kastes malai, lapas atgādina efejas lapas. Karstā vietā tām var noderēt pēcpusdienas noēnojums."
+      },
+      {
+        "name": "Lielziedu jeb karaliskās pelargonijas",
+        "description": "Lieli, bieži divkrāsaini ziedi. Vēsāks laiks tām ir piemērotāks; nevajag gaidīt vienādu ziedēšanu visu vasaru."
+      },
+      {
+        "name": "Smaržlapu pelargonijas",
+        "description": "Audzē galvenokārt aromātisko lapu dēļ. Mazāki ziedi paši par sevi nenozīmē nepareizu kopšanu."
+      }
+    ]
+  },
   "planting": [
-    "Stādus laukā un balkonā stādi tikai pēc pēdējām salnām — iekšzemē (Vidzemē, Latgalē) drošāk maija beigās, piekrastē un Zemgalē var jau ap maija vidu. Pirms tam tos var turēt uz palodzes vai siltumnīcā.",
-    "Balkona kastēs un podos atstāj 20–25 cm atstatumu starp augiem; vienā 25–30 cm podā pietiek ar vienu stādu, kas ātri aizpilda telpu.",
-    "Stādi nedaudz dziļāk, nekā augs auga podiņā, līdz pirmajām lapām, labi vieglā, ūdenscaurlaidīgā augsnē ar drenāžu (akmentiņi vai keramzīts poda dibenā).",
-    "Vislabāk aug saulainā vietā — jo vairāk saules, jo kuplāka ziedēšana. Stādīšanas dienu izvēlies bez lietus un karstuma, vēlams vakarpusē, un pēc stādīšanas labi aplej.",
-    "Ja audzē no sēklām, sēj jau februārī–martā uz palodzes, jo no sēklas līdz ziedam paiet 4–5 mēneši; vieglāk un ātrāk ir pavairot no spraudeņiem vai nopirkt gatavus stādus."
+    "Pirms iznešanas laukā pakāpeniski pieradini pie saules un vēja aptuveni 1–2 nedēļās. Nevadies pēc vienas maija datuma robežas: pārbaudi vietējo prognozi. RHS saljutīgiem augiem iesaka sagaidīt stabili siltākas naktis virs aptuveni +7 °C.",
+    "Izvēlies veselīgu, kompaktu stādu. Stādi tādā pašā dziļumā, kā tas audzis podiņā; neapber stublāju līdz pirmajām lapām. Atstatumu un poda lielumu izvēlies pēc konkrētās šķirnes auguma.",
+    "Pildījumam izmanto podaugiem piemērotu, ūdeni caurlaidīgu substrātu. Podam vajag brīvus noteces caurumus. Akmentiņu vai keramzīta slānis apakšā neaizstāj noteci un var saglabāt slapju substrātu tuvāk saknēm.",
+    "Pēc stādīšanas aplaisti un ļauj liekajam ūdenim aiztecēt. Izvēlies gaišu vietu ar gaisa kustību; stipri vēja brāzieni nav kopšanas priekšrocība. Sēšanai izmanto tieši no sēklām audzējamas šķirnes norādes, jo ne visas pelargonijas pavairo vienādi."
   ],
   "care": [
-    "Laisti mēreni — pelargonija labāk panes nelielu sausumu nekā pārliešanu. Ļauj augsnes virskārtai apžūt starp laistīšanas reizēm; karstā vasarā balkona kastes var prasīt ūdeni katru dienu, vēsā laikā retāk.",
-    "Mēslo ziedēšanas laikā ik pa 1–2 nedēļām ar mēslojumu ziedošajiem augiem (vairāk kālija un fosfora, mazāk slāpekļa) — citādi būs daudz lapu, bet maz ziedu.",
-    "Regulāri noņem nokaltušos ziedu kātus un dzeltējušās lapas — tas pamudina augu ziedēt no jauna un neļauj iemesties puvei.",
-    "Vasaras vidū, ja augs izstiepies, vari to apgriezt — tas kļūs kuplāks un atkal saražos jaunus ziedus.",
-    "Tur saulainā, vējainā vietā; pārāk blīvi un mitri novietoti augi vieglāk slimo. Augstajām šķirnēm vējainā balkonā noder neliels atbalsts."
+    "Pirms laistīšanas aptausti substrātu. Ja virskārta joprojām mitra, nogaidi; ja apžuvusi, aplaisti un izlej paliktnī sakrājušos ūdeni. Vasaras kastēm pārbaudi mitrumu biežāk, bet dienu skaitu neizmanto kā nemainīgu laistīšanas grafiku.",
+    "Aktīvās augšanas laikā izmanto podaugiem paredzētu mēslojumu atbilstoši etiķetei. Ņem vērā substrātā jau iestrādāto mēslojumu. Retāka mēslošana nenozīmē stiprāku devu; pārmēslošana var kaitēt un nepalielina ziedu skaitu.",
+    "Izziedējušu ziedkopu noņem kopā ar ziedkātu līdz tā piestiprinājuma vietai. Savāc nokaltušās lapas un neļauj tām krāties uz mitra substrāta.",
+    "Dzinumu galotņošana palīdz sazaroties. Stiprāku apgriešanu saskaņo ar ziemošanas veidu un augšanas atsākšanos; visus augus rudenī nav obligāti jānogriež vienādā augstumā."
   ],
-  "winter": "Pelargonija Latvijā atklātā laukā nepārziemo — to izglābj, ienesot telpā. Pirms pirmajām rudens salnām (iekšzemē jau septembra beigās, piekrastē oktobra vidū) augu ievāc podā un noliec uz gaišas, vēsas palodzes (ideāli +5…+12 °C). Pirms ienešanas apgriez to par apmēram trešdaļu līdz pusei un noņem dzeltējušās lapas. Ziemā laisti ļoti taupīgi — tikai tik, lai zeme pilnībā neizžūst, un nemēslo. Pavasarī, ap martu, atjauno laistīšanu, vēlāk apgriez un pārstādi svaigā augsnē; laukā atkal iznes tikai pēc maija salnām.",
-  "winterImage": { "id": "pelargoniju-spraudeni", "caption": "Rudenī apsakņoti spraudeņi aizņem maz vietas uz palodzes — tā var saglabāt iecienīto šķirni līdz pavasarim." },
+  "winter": "Pirms salnu iestāšanās izvēlies ziemošanas vietu un apskati lapu apakšpusi, stublājus un poda virsmu. Ienes veselus augus; aizdomīgus turi atsevišķi. Latvijas neapsildīta siltumnīca vai balkons nav droša ziemas vieta, ja temperatūra tajā var noslīdēt zem nulles.\n\nVēsā, gaišā telpā orientieris ir ap +7…+10 °C. Laisti taupīgāk, vērojot substrāta apžūšanu; augam ar maz lapām ūdens vajag mazāk. Ja augšana apstājusies, nemēslo. Siltā istabā pelargonija var turpināt augt, tāpēc tai vajag ļoti gaišu logu vai augu lampu un biežāku mitruma pārbaudi.\n\nPavasarī izgriez atmirušos dzinumus un, ja vajadzīgs, saīsini izstīdzējušos. Ja vajadzīgs, pārstādi piemērotā substrātā un līdz ar jauno augšanu pakāpeniski palielini ūdens un barības vielu pieejamību. Atgriešanās uz balkona atkal sākas ar norūdīšanu un vietējās nakts temperatūras pārbaudi.",
+  "winterTable": {
+    "headers": [
+      "Tavi apstākļi",
+      "Ko izvēlēties",
+      "Svarīgākais ziemā"
+    ],
+    "rows": [
+      [
+        "Vēsa, gaiša telpa ap +7…+10 °C",
+        "Saglabā augu podā; saīsini tikai atbilstoši pieejamajai vietai.",
+        "Mazāk ūdens; augšanai apstājoties, mēslojumu nelieto. Sargā no sala."
+      ],
+      [
+        "Gaiša dzīvojamā istaba",
+        "Audzē kā telpaugu; vēsāka vieta ap +16…+21 °C ir piemērotāka par karstu palodzi.",
+        "Daudz gaismas, mitruma pārbaude un distance no radiatora. Mēslo tikai augošu augu."
+      ],
+      [
+        "Maz vietas",
+        "Savlaicīgi apsakņo veselus spraudeņus un saglabā mazos stādus.",
+        "Neapsakņotu zariņu neglabā kā sausu miera stāvokļa augu; sakņošanai vajag mitru substrātu un gaismu."
+      ],
+      [
+        "Vēsa, nesalstoša glabātava bez gaismas",
+        "Glabāšana bez augsnes ir izmēģinājums tikai stingriem, pārkoksnētiem augiem.",
+        "Vismazāk uzticamā metode. Pārbaudi izžūšanu un puvi; vienīgo vērtīgo augu šādi neriskē zaudēt."
+      ]
+    ]
+  },
+  "winterImage": {
+    "id": "pelargoniju-spraudeni",
+    "caption": "Apsakņots pelargonijas spraudenis aizņem mazāk vietas nekā liels mātesaugs. Ziemā arī tam vajag gaismu un mitruma pārbaudi."
+  },
   "problems": [
-    "Pārliešana un slikta drenāža izraisa sakņu un stublāju puvi (lapas kļūst dzeltenas un ļenganas) — laisti retāk un nodrošini ūdens noteci no poda.",
-    "Daudz lapu, bet maz ziedu parasti nozīmē pārāk maz saules vai pārāk daudz slāpekļa mēslojuma — pārvieto saulītē un izvēlies mēslojumu ziedošajiem augiem.",
-    "Telpā ziemā un siltumnīcā uzbrūk balti spārnotie kukaiņi (baltblusiņas) un laputis — regulāri apskati lapu apakšpusi un laikus apkaro."
+    "Dzeltenas lapas nav viena diagnoze. Pēc ienešanas telpās daļa lapu var nobirt apstākļu maiņas dēļ. Pārbaudi arī ilgstoši slapju substrātu, sakņu stāvokli un gaismu, pirms pievieno mēslojumu.",
+    "Korķaini pauguri lapu apakšpusē, īpaši efejlapu pelargonijām, var būt tūska — ūdens uzņemšanas un iztvaikošanas nesabalansētība. Samazini pārliešanu un uzlabo gaisa apmaiņu; tas pats par sevi nav kaitēklis.",
+    "Dzelteni plankumi virspusē un brūnas, putekļainas pustulas apakšpusē zonālajām pelargonijām var liecināt par rūsu. Nošķir augu, izvairies no ilgstoši slapjām lapām un neņem spraudeņus no aizdomīga auga.",
+    "Ja zied maz, vispirms izvērtē grupu, gaismu un augšanas stāvokli. Papildu mēslojums neizlabo ēnainu vietu. Regulāri apskati arī kaitēkļus; baltblusiņas telpās var pāriet uz citiem augiem."
   ],
-  "folklore": "Latviešu mājās logu palodze ar sarkanu ģerāniju bijusi tik pierasts skats, ka tā kļuvusi gandrīz par mājas sajūtas zīmi — vasarā tā krāsoja balkonu un palodzi, bet ziemā augs gaidīja siltajā istabā, līdz atkal pienāca pavasaris.",
   "faq": [
     {
-      "q": "Kā kopt ģerānijas, lai tās kupli zied?",
-      "a": "Ģerānijām (pelargonijām) vajadzīga saulaina vieta, mērena laistīšana un kālija bagāts puķu mēslojums ziedēšanas laikā. Laisti tikai tad, kad augsnes virskārta apžuvusi — pārliešana ģerānijām ir bīstamāka par sausumu. Regulāri noņem nokaltušos ziedu kātus (aplauz visu kātu, ne tikai galviņu), un izstīdzējušu augu vasaras vidū apgriez, lai tas kļūst kuplāks. Tā ģerānijas zied nepārtraukti no jūnija līdz salnām."
+      "q": "Vai pelargonija Latvijā pārziemo ārā?",
+      "a": "Nē, uz ziemošanu ārā paļauties nevar. Pirms salnām ienes telpās augu vai sagatavo apsakņotus spraudeņus. Arī stiklots balkons der tikai tad, ja tajā visu ziemu nesalst."
     },
     {
-      "q": "Kā ģerānijas pārziemot?",
-      "a": "Ģerānijas (pelargonijas) Latvijā ārā nepārziemo — pirmā salna tās nogalina. Rudenī pirms salnām (iekšzemē septembra beigās, piekrastē oktobra vidū) ienes augu telpā, apgriez to par apmēram trešdaļu līdz pusei un noliec gaišā, vēsā vietā (+5…+12 °C). Ziemā laisti ļoti taupīgi un nemēslo. Pavasarī, ap martu, atsāc laistīšanu, apgriez un pārstādi svaigā augsnē; laukā iznes tikai pēc maija salnām. Ja telpu nav, var pārziemot tikai pāris spraudeņus uz palodzes."
+      "q": "Vai pelargoniju var pārziemot siltā istabā?",
+      "a": "Var, ja pietiek gaismas. Izvēlies gaišu logu, vajadzības gadījumā augu lampu un vietu prom no radiatora. Laisti pēc substrāta stāvokļa; siltas istabas augam neder automātiski pārņemt vēsas glabātavas kopšanu."
     },
     {
-      "q": "Vai pelargonija pārziemos Latvijā uz balkona vai dārzā?",
-      "a": "Nē. Pelargonija nav ziemcietīga un atklātā laukā vai aukstā balkonā mūsu ziemu nepārcieš. Lai to saglabātu, rudenī pirms salnām augs jāienes telpā un jāpārziemo uz gaišas, vēsas palodzes."
+      "q": "Vai rudenī viss jānogriež līdz 10 cm?",
+      "a": "Nē. Stiprāka apgriešana ir viena iespēja, ja trūkst vietas. Ja augu saglabā lapotu un augošu, galveno formas atjaunošanu var atlikt līdz pavasarim."
     },
     {
-      "q": "Kad pelargoniju drīkst iznest laukā vai izstādīt balkonā?",
-      "a": "Tikai pēc pēdējām pavasara salnām. Iekšzemē (Vidzemē, Latgalē) drošāk gaidīt līdz maija beigām, Zemgalē ap 15. maiju, piekrastē var jau maija vidū. Pārāk agri iznests augs no nakts salnas var aiziet bojā."
+      "q": "Kad pelargoniju iznest uz balkona?",
+      "a": "Pēc pakāpeniskas norūdīšanas, kad vairs nedraud salnas un naktis ir pietiekami siltas. Latvijas novadiem nevar noteikt vienu garantēti drošu maija datumu."
     },
     {
-      "q": "Kāpēc mana pelargonija aug lapās, bet maz zied?",
-      "a": "Visbiežāk trūkst saules vai ir par daudz slāpekļa mēslojuma. Pārvieto augu saulainākā vietā un baro ar mēslojumu ziedošajiem augiem (ar vairāk kālija un fosfora), kā arī regulāri noņem nokaltušos ziedus."
+      "q": "Vai ziemā drīkst mēslot?",
+      "a": "Vēsā vietā augšanai apstājoties — ne. Ja pelargonija labā apgaismojumā turpina aktīvi augt, mēslošanu pielāgo augšanai un produkta norādēm. Vārgus, gaismas trūkuma izstieptus dzinumus ar lielāku devu neizlabosi."
+    }
+  ],
+  "links": [
+    {
+      "label": "Ģerāniju kopšana: laistīšana, ziemošana un spraudeņi",
+      "href": "/raksti/ka-kopt-geranijas"
     }
   ],
   "related": [
     "petunijas",
     "begonijas"
-  ]
+  ],
+  "sources": [
+    {
+      "label": "RHS — pelargoniju audzēšana un ziemošanas metožu ierobežojumi",
+      "url": "https://www.rhs.org.uk/plants/pelargonium/growing-guide"
+    },
+    {
+      "label": "Iowa State University — pelargoniju grupas un audzēšana",
+      "url": "https://yardandgarden.extension.iastate.edu/how-to/growing-annual-geraniums"
+    },
+    {
+      "label": "University of Minnesota Extension — pelargoniju kopšana telpās",
+      "url": "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/growing-geraniums-in-minnesota"
+    },
+    {
+      "label": "RHS — saljutīgu augu iznešana pēc norūdīšanas",
+      "url": "https://www.rhs.org.uk/garden-jobs/when-to-plant-out-tender-plants-avoiding-late-frosts"
+    },
+    {
+      "label": "Nebraska Extension — pelargoniju stādīšana un kopšana",
+      "url": "https://lancaster.unl.edu/2012-year-geranium/"
+    },
+    {
+      "label": "University of California — drenāža podos un grants slāņa problēma",
+      "url": "https://ucanr.edu/site/uc-master-gardeners-santa-clara-county/drainage-containers"
+    },
+    {
+      "label": "Iowa State University — dārza pelargoniju laistīšana un kopšana",
+      "url": "https://yardandgarden.extension.iastate.edu/faq/how-do-i-care-garden-geraniums"
+    },
+    {
+      "label": "University of Wisconsin Extension — pelargoniju pārziemošana",
+      "url": "https://hort.extension.wisc.edu/overwintering-tender-geraniums/"
+    },
+    {
+      "label": "University of Maryland Extension — lapu tūska telpaugiem",
+      "url": "https://extension.umd.edu/resource/edema-indoor-plants"
+    },
+    {
+      "label": "RHS — pelargoniju rūsa",
+      "url": "https://www.rhs.org.uk/disease/pelargonium-rust"
+    }
+  ],
+  "sectionSources": {
+    "intro": [
+      "https://yardandgarden.extension.iastate.edu/how-to/growing-annual-geraniums"
+    ],
+    "comparison": [
+      "https://yardandgarden.extension.iastate.edu/how-to/growing-annual-geraniums"
+    ],
+    "planting": [
+      "https://www.rhs.org.uk/garden-jobs/when-to-plant-out-tender-plants-avoiding-late-frosts",
+      "https://lancaster.unl.edu/2012-year-geranium/",
+      "https://ucanr.edu/site/uc-master-gardeners-santa-clara-county/drainage-containers"
+    ],
+    "care": [
+      "https://yardandgarden.extension.iastate.edu/faq/how-do-i-care-garden-geraniums",
+      "https://www.rhs.org.uk/plants/pelargonium/growing-guide",
+      "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/growing-geraniums-in-minnesota"
+    ],
+    "winter": [
+      "https://www.rhs.org.uk/plants/pelargonium/growing-guide",
+      "https://hort.extension.wisc.edu/overwintering-tender-geraniums/",
+      "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/growing-geraniums-in-minnesota",
+      "https://yardandgarden.extension.iastate.edu/how-to/growing-annual-geraniums"
+    ],
+    "problems": [
+      "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/growing-geraniums-in-minnesota",
+      "https://extension.umd.edu/resource/edema-indoor-plants",
+      "https://www.rhs.org.uk/disease/pelargonium-rust",
+      "https://www.rhs.org.uk/plants/pelargonium/growing-guide"
+    ]
+  }
 }

@@ -43,6 +43,7 @@ export interface Flower {
   planting: string[]; // kā stādīt — dziļums, atstatums
   care: string[]; // laistīšana, mēslošana, atbalsts
   winter?: string; // pārziemošana
+  winterTable?: { headers: string[]; rows: string[][] };
   winterImage?: ContentImageUse;
   problems?: string[]; // biežākās problēmas
   folklore?: string;

@@ -1,70 +1,257 @@
 {
-  "title": "Siltumnīcas sagatavošana sezonai: tīrīšana un pārbaude",
+  "title": "Siltumnīcas sagatavošana ziemai un pavasarim",
   "slug": "siltumnicas-sagatavosana-sezonai",
   "category": "Praktiski",
   "intent": "how-to",
-  "excerpt": "Kā sagatavot siltumnīcu pavasarim vai sakopt pēc ražas: augu atliekas, seguma tīrīšana, podi, vēdināšana un aprīkojuma pārbaude pirms stādīšanas.",
-  "shortAnswer": "Siltumnīcu sagatavo laikā, kad tā ir brīva no audzējamām kultūrām: iznes atliekas, notīri segumu un darba virsmas, izmazgā atkārtoti lietojamos traukus un pārbaudi vēdināšanu un laistīšanu. Pamatīgai sakopšanai bieži pietiek ar ūdeni un piemērotu suku; tīrīšana nav solījums iznīcināt visus slimību ierosinātājus.",
+  "excerpt": "Siltumnīcas tīrīšana pēc ražas, ūdens sistēmas iztukšošana, jumta un logu pārbaude. Darbu secība pirms sala, ziemā un pirms pavasara stādīšanas.",
+  "shortAnswer": "Pēc ražas iznes augu atliekas un notīri siltumnīcu. Pirms sala iztukšo laistīšanas sistēmu, pasargā sala jutīgās detaļas un pārbaudi segumu, stiprinājumus un logus. Jumta sagatavošanu sniegam nosaka konkrētā modeļa instrukcija. Pavasarī vēlreiz pārbaudi bojājumus un temperatūru pirms stādīšanas.",
   "primaryQuery": "siltumnīcas sagatavošana sezonai",
   "publishedAt": "2026-10-06",
-  "updatedAt": "2026-10-06",
-  "seasonalMonths": [2, 3, 4, 9, 10, 11],
-  "entities": {},
-  "relatedSlugs": ["siltumnica-vai-lauka", "augu-maina-darza", "kad-stadit-destus-lauka"],
-  "sources": [
-    { "label": "RHS — siltumnīcas tīrīšana", "url": "https://www.rhs.org.uk/garden-features/cleaning-greenhouses" },
-    { "label": "RHS — instrumentu tīrīšana un kopšana", "url": "https://www.rhs.org.uk/garden-jobs/cleaning-tools" },
-    { "label": "Penn State Extension — sakopšana starp kultūru audzēšanas cikliem", "url": "https://extension.psu.edu/sanitation-when-transitioning-high-tunnels" }
+  "updatedAt": "2026-10-27",
+  "seasonalMonths": [
+    1,
+    2,
+    3,
+    4,
+    9,
+    10,
+    11,
+    12
   ],
-  "readMinutes": 4,
+  "entities": {},
+  "relatedSlugs": [
+    "siltumnica-vai-lauka",
+    "augu-maina-darza",
+    "kad-stadit-destus-lauka"
+  ],
+  "sources": [
+    {
+      "label": "RHS — siltumnīcas tīrīšana",
+      "url": "https://www.rhs.org.uk/garden-features/cleaning-greenhouses"
+    },
+    {
+      "label": "RHS — instrumentu tīrīšana un kopšana",
+      "url": "https://www.rhs.org.uk/garden-jobs/cleaning-tools"
+    },
+    {
+      "label": "UMass Extension — siltumnīcas higiēna un tīrīšana pirms dezinfekcijas",
+      "url": "https://www.umass.edu/agriculture-food-environment/greenhouse-floriculture/fact-sheets/cleaning-disinfecting-greenhouse"
+    },
+    {
+      "label": "Halls Popular — modeļu 46, 66, 86 un 106 instrukcija, ziemas aizsardzība (PDF, 3. lpp.)",
+      "url": "https://www.hallsgreenhouses.co.uk/pdfs/halls-greenhouse-6x6-popular-instruction-manual-288664396a9c42339c99f29db5fd598e.pdf"
+    },
+    {
+      "label": "University of Connecticut Extension — vēja un sniega slodze siltumnīcām",
+      "url": "https://extension.uconn.edu/2015/01/31/reducing-storm-damage-to-your-greenhouses/"
+    },
+    {
+      "label": "GARDENA — laistīšanas sistēmas sagatavošana ziemai",
+      "url": "https://www.gardena.com/de/c/entdecke/garteninspiration/gartenmagazin/winterquartier-fuer-das-bewaesserungssystem"
+    },
+    {
+      "label": "Halls — vēja risks un automātisko logu atvērēju ziemošana",
+      "url": "https://hallsgreenhouses.com/help-support/frequently-asked-questions"
+    },
+    {
+      "label": "RHS — pelargoniju ziemošana telpās bez sala",
+      "url": "https://www.rhs.org.uk/plants/pelargonium/growing-guide"
+    },
+    {
+      "label": "RHS — dārzeņi siltumnīcā, augsne un temperatūras kontrole",
+      "url": "https://www.rhs.org.uk/vegetables/growing-in-greenhouse"
+    }
+  ],
+  "readMinutes": 8,
   "body": [
     {
       "heading": "Kad sākt un ko sagatavot",
       "paragraphs": [
-        "Darbu ērtāk veikt pēc pēdējās ražas rudenī vai pirms jauno augu ievietošanas pavasarī. Izvēlies dienu, kad varēsi strādāt un pēc tam izvēdināt telpu. Ja siltumnīcā vēl ir augi, vispirms izlem, kur tos pārvietosi, lai nepakļautu aukstumam.",
-        "Sagatavo cimdus, spaini, mīkstu drānu un segumam piemērotu suku. Pārbaudi siltumnīcas ražotāja norādes, īpaši polikarbonātam un plēvei. Atsevišķu detaļu nomaiņu plāno pēc faktiskā stāvokļa, nevis tāpēc, ka sākas jauns gads."
+        "Sakop pēc pēdējās ražas, kad siltumnīca ir brīva, vai sadali darbus pa atbrīvotajām zonām. Mazgāšanai izvēlies sausu, mierīgu dienu bez sala. Ja telpā vēl ir augi, sagatavo tiem vietu ar piemērotu temperatūru; rudenī tos nevar vienkārši atstāt ārā uz visu dienu.",
+        "Vajadzēs cimdus, spaini, mīkstu drānu un segumam piemērotu suku. Atrodi siltumnīcas un laistīšanas aprīkojuma instrukcijas. Stiklam, plēvei un polikarbonātam var atšķirties pieļaujamie tīrīšanas paņēmieni."
+      ],
+      "sourceUrls": [
+        "https://www.rhs.org.uk/garden-features/cleaning-greenhouses",
+        "https://www.hallsgreenhouses.co.uk/pdfs/halls-greenhouse-6x6-popular-instruction-manual-288664396a9c42339c99f29db5fd598e.pdf"
       ]
     },
     {
       "heading": "Darbu secība",
-      "paragraphs": ["Vispirms sakop telpu un aprīkojumu, pēc tam plāno jaunos stādījumus. Tā uz tīrām virsmām neatgriezīsi vecās atliekas."],
+      "paragraphs": [
+        "Pabeidz netīros darbus, pirms atgriez telpā tīrus podus un instrumentus."
+      ],
       "listStyle": "numbered",
       "items": [
-        "Iznes veco augu atliekas, izlietotos piesienamos materiālus un nezāles. Slimību skartās atliekas apstrādā atbilstoši konkrētās problēmas norādēm.",
-        "Izņem podus un aprīkojumu. Notīri stūrus, plauktus un citas vietas, kur palikušas augu atliekas vai augsne.",
-        "Nomazgā segumu ar tā materiālam piemērotu paņēmienu. Stiklam der ūdens un mīksta drāna; neskrāpē virsmu ar metāla suku.",
-        "Izmazgā atkārtoti lietojamos podus un sēšanas traukus. Notīri un nožāvē instrumentus; bojātos rokturus vai detaļas salabo.",
-        "Pārbaudi durvis, vēdināšanas logus un seguma bojājumus. Laistīšanas sistēmu izmēģini pirms tajā nonāk jaunie stādi.",
-        "Ļauj virsmām nožūt, saliec tīro aprīkojumu atpakaļ un sagatavo plānu nākamajām kultūrām."
+        "Iznes vecos augus, saknes no audzēšanas traukiem, nezāles un nolietotos piesiešanas materiālus. Atsevišķi izvērtē slimību skartās atliekas.",
+        "Izņem podus un notīri plauktus, stūrus un darba virsmas. Noņem pielipušo augsni un organiskās atliekas.",
+        "Nomazgā segumu no abām pusēm ar materiālam piemērotu paņēmienu. Stiklam parasti pietiek ar siltu ūdeni un mīkstu drānu. Netīri segumu ar abrazīvu metāla suku.",
+        "Iztīri notekas un pieejamos savienojumus. Nesniedzies pāri jumtam, balstoties uz stikla vai paneļiem.",
+        "Izmazgā podus; instrumentiem noņem augsni, nožāvē un pārbaudi kustīgās daļas. Tīro aprīkojumu glabā sausumā.",
+        "Ļauj virsmām nožūt. Salabo bojājumus un turpini ar zemāk aprakstīto sagatavošanu salam."
+      ],
+      "sourceUrls": [
+        "https://www.rhs.org.uk/garden-features/cleaning-greenhouses",
+        "https://www.rhs.org.uk/garden-jobs/cleaning-tools",
+        "https://www.umass.edu/agriculture-food-environment/greenhouse-floriculture/fact-sheets/cleaning-disinfecting-greenhouse"
+      ]
+    },
+    {
+      "heading": "Siltumnīcas sagatavošana ziemai: ko pārbaudīt",
+      "paragraphs": [
+        "Šī apskate paredzēta parastai sezonas siltumnīcai. Ja tajā ziemā paliek augi, tiem vajadzīgs atsevišķs temperatūras, vēdināšanas un laistīšanas plāns. Neapkurinātu telpu nevar uzskatīt par drošu vietu sala jutīgām pelargonijām vai telpaugiem."
+      ],
+      "diagram": "greenhouse-winter",
+      "sourceUrls": [
+        "https://www.hallsgreenhouses.co.uk/pdfs/halls-greenhouse-6x6-popular-instruction-manual-288664396a9c42339c99f29db5fd598e.pdf",
+        "https://extension.uconn.edu/2015/01/31/reducing-storm-damage-to-your-greenhouses/",
+        "https://www.gardena.com/de/c/entdecke/garteninspiration/gartenmagazin/winterquartier-fuer-das-bewaesserungssystem",
+        "https://www.rhs.org.uk/plants/pelargonium/growing-guide"
+      ],
+      "table": {
+        "headers": [
+          "Kad",
+          "Ko izdari",
+          "Pārbaudes rezultāts"
+        ],
+        "rows": [
+          [
+            "Pēc ražas",
+            "Iznes atliekas, notīri segumu un aprīkojumu.",
+            "Netīrumi noņemti; virsmas un trauki sausi."
+          ],
+          [
+            "Pirms sala",
+            "Atslēdz ūdeni un sagatavo sistēmu ziemai pēc tās instrukcijas.",
+            "Ūdens izlaists; sala jutīgās detaļas glabājas bez sala."
+          ],
+          [
+            "Pirms stipra vēja vai snigšanas",
+            "Pārbaudi segumu, aizdares un ražotāja prasības jumtam.",
+            "Nav vaļīgu paneļu vai durvju; zināms rīcības plāns sniegam."
+          ],
+          [
+            "Pēc snigšanas, vēja un atkušņa",
+            "No drošas vietas apskati jumtu, stiprinājumus un notekas.",
+            "Bojājumi un uzkrājumi pamanīti, pirms siltumnīcu atkal izmanto."
+          ],
+          [
+            "Pirms stādīšanas",
+            "Pārbaudi laistīšanu, vēdināšanu un nakts temperatūru.",
+            "Aprīkojums darbojas; apstākļi atbilst konkrētajai kultūrai."
+          ]
+        ]
+      },
+      "anchorAliases": [
+        "siltumnica-ziemai"
+      ]
+    },
+    {
+      "heading": "Jumts, sniegs un vēdināšanas logi",
+      "paragraphs": [
+        "Pārbaudi, vai rāmis, pamatnes savienojumi un seguma stiprinājumi nav bojāti vai vaļīgi. Aizvieto saplaisājušu stiklu un bojātos paneļus. Durvīm un logiem jābūt droši aizveramiem; pirms stipra vēja nostiprini aizdares un aizvāc apkārtējos vaļīgos priekšmetus.",
+        "Nav viena droša sniega biezuma visām siltumnīcām. Slapjš sniegs un ledus sver vairāk nekā tāds pats irdena sniega slānis; nozīme ir arī konstrukcijai un uzkrājuma nevienmērībai. Savā instrukcijā atrodi pieļaujamo slodzi, balstu nepieciešamību un sniega noņemšanas paņēmienu. Piemēram, Halls Popular instrukcija paredz jumta kores papildu balstīšanu sniegainās vietās; tas nav universāls balstu izvietojums citiem modeļiem.",
+        "Pēc snigšanas apskati no drošas vietas. Nekāp uz seguma un neej zem redzami ieliekušās konstrukcijas. Sniegu noņem tikai veidā, ko pieļauj ražotājs, nebojājot pārklājumu; ja to nevar droši izdarīt, piesaisti speciālistu.",
+        "Pēc mazgāšanas telpu izvēdina, bet durvis un jumta logus neatstāj nenostiprinātus visu ziemu. Automātiskā atvērēja cilindru noņem tikai tad, ja to paredz tā instrukcija — Halls aprakstītajiem atvērējiem tas ir paredzēts. Pārējiem modeļiem pārbaudi atsevišķi."
+      ],
+      "sourceUrls": [
+        "https://www.hallsgreenhouses.co.uk/pdfs/halls-greenhouse-6x6-popular-instruction-manual-288664396a9c42339c99f29db5fd598e.pdf",
+        "https://extension.uconn.edu/2015/01/31/reducing-storm-damage-to-your-greenhouses/",
+        "https://hallsgreenhouses.com/help-support/frequently-asked-questions",
+        "https://www.rhs.org.uk/garden-features/cleaning-greenhouses"
+      ]
+    },
+    {
+      "heading": "Kā iztukšot laistīšanu pirms sala",
+      "paragraphs": [
+        "Sāc pirms prognozēta sala. Noslēdz ūdens padevi un pēc sistēmas instrukcijas izlaid ūdeni no sala apdraudētajiem posmiem. Atvieno pievadšļūteni un iztukšo šļūtenes un tvertnes, kas nav paredzētas ziemai ar ūdeni.",
+        "Taimeris, sūknis, filtrs, spiediena regulators un vārsti var prasīt atšķirīgu glabāšanu. Nepietiek tikai atskrūvēt vienu šļūtenes galu: pārbaudi katra mezgla norādes. Sala jutīgās detaļas iztukšo un novieto vietā, kur temperatūra nenoslīd zem nulles.",
+        "Sistēmās ar zemē ieraktām caurulēm ūdens var palikt zemākajos posmos. Drenāžas vārstu darbību un iztukšošanas veidu nosaka izbūve. Neizmanto patvaļīgi izvēlētu saspiestā gaisa spiedienu. Ja nepieciešama izpūšana, ievēro sistēmas instrukciju vai uztici to uzstādītājam."
+      ],
+      "sourceUrls": [
+        "https://www.gardena.com/de/c/entdecke/garteninspiration/gartenmagazin/winterquartier-fuer-das-bewaesserungssystem"
       ]
     },
     {
       "heading": "Ja iepriekšējā sezonā bija slimības",
       "paragraphs": [
-        "Pieraksti, kuri augi cieta un kādi bija simptomi. Notīrītas sienas neatrisina katru augsnes vai sakņu problēmu. Vispirms noskaidro iespējamo cēloni; tad izvēlies konkrētajai problēmai piemērotu profilaksi.",
-        "Augu atlieku izņemšana, nezāļu ierobežošana un tīri darba piederumi palīdz uzturēt kārtību starp audzēšanas cikliem. Dezinfekcija ir atsevišķa darbība, kurai vajag piemērotu līdzekli un tā lietošanas norādes. Neaizstāj diagnozi ar patvaļīgu ķīmisku apstrādi."
+        "Pieraksti skarto kultūru un simptomus; noder arī sezonā uzņemtās fotogrāfijas. Tīras sienas neizārstē sakņu vai augsnes slimību. Ja problēma atkārtojas, vispirms noskaidro cēloni un tad izvēlies rīcību ar augiem, traukiem un augsni.",
+        "Tīrīšana noņem atliekas; dezinfekcija ir atsevišķa darbība. Organiskie netīrumi var mazināt dezinfekcijas iedarbību, tāpēc vispirms mehāniski notīri virsmu. Līdzekli izvēlas konkrētajam lietojumam un ievēro etiķetes norādes. Ārvalstu komerciālo siltumnīcu receptes nav automātiski piemērotas Latvijas mazdārziņam.",
+        "Augsnes pilnīga nomaiņa katru rudeni nav obligāts sakopšanas solis. Atkārtotu sakņu slimību, sāļu uzkrāšanās vai slikta ūdens režīma gadījumā risinājumi atšķiras. Neizvēlies augsnes nomaiņu vai apstrādi, pirms nav saprotama problēma."
+      ],
+      "sourceUrls": [
+        "https://www.umass.edu/agriculture-food-environment/greenhouse-floriculture/fact-sheets/cleaning-disinfecting-greenhouse",
+        "https://www.rhs.org.uk/vegetables/growing-in-greenhouse"
       ]
     },
     {
       "heading": "Pirms ienes pirmos stādus",
       "paragraphs": [
-        "Pārbaudi augsnes stāvokli, paredzēto stādījumu atstarpes un iespēju piekļūt katram augam. Ieplāno, kur atradīsies balsti un kā laistīsi, kad augi būs paaugušies. Atsevišķs termometrs palīdz vērot faktiskos apstākļus.",
-        "Tīra siltumnīca vēl nav gatava siltummīļiem, ja naktī tajā ir par aukstu. Stādīšanas laiku nosaki pēc auga prasībām, vietējās prognozes un reāli mērītas temperatūras. Bez apkures siltumnīcā joprojām iespējams aukstuma bojājums."
+        "Pavasarī vēlreiz apskati ziemas bojājumus un pārbaudi logu atvēršanos. Atjauno laistīšanas savienojumus un izmēģini sistēmu, kamēr augi vēl nav iestādīti. Pārliecinies, ka nav sūču un ūdens nonāk paredzētajās vietās.",
+        "Sagatavo dobes, balstus un ejas tā, lai varētu piekļūt katram augam. Ar termometru vēro arī nakts minimumu. Viena saulaina pēcpusdiena vēl nepierāda, ka telpa gatava tomātiem vai gurķiem: lēmumu pieņem pēc auga prasībām, augsnes stāvokļa un vietējās prognozes."
+      ],
+      "sourceUrls": [
+        "https://www.rhs.org.uk/garden-features/cleaning-greenhouses",
+        "https://www.gardena.com/de/c/entdecke/garteninspiration/gartenmagazin/winterquartier-fuer-das-bewaesserungssystem",
+        "https://www.rhs.org.uk/vegetables/growing-in-greenhouse"
       ]
     },
     {
       "heading": "Biežākie jautājumi",
       "paragraphs": [
-        "Vai tīrīt rudenī vai pavasarī? Abos laikos var veikt sakopšanu, ja siltumnīca ir brīva no kultūrām. Rudenī izņem atliekas, bet pavasarī vēlreiz pārbaudi stāvokli pirms stādīšanas.",
-        "Vai vajag speciālu tīrīšanas komplektu? Ikdienas sakopšanai bieži pietiek ar esošiem piederumiem. Vispirms pārbaudi, kas piemērots konkrētajam segumam un darbam.",
-        "Vai ar tīrīšanu pietiek pret visām slimībām? Nē. Ja problēma atkārtojas, nepieciešama tās atpazīšana un atbilstoša rīcība arī ar augiem, substrātu vai augsni."
+        "Vai siltumnīcu labāk tīrīt rudenī vai pavasarī? Pēc ražas rudenī iznes atliekas un sakop atbrīvoto telpu. Pavasarī pārbaudi ziemas bojājumus un aprīkojumu; ja tīrīšanu atliki, izdari to pirms jauno stādu ienešanas.",
+        "Vai ziemā atstāt durvis vaļā? Pirms stipra vēja durvīm un logiem jābūt droši aizvērtiem. Vēdināšanu pēc mazgāšanas vai augu turēšanai plāno atsevišķi; vaļīgas durvis nav ziemas vēdināšanas risinājums.",
+        "Cik daudz sniega drīkst palikt uz jumta? Viena centimetru robeža neder visiem modeļiem un sniega veidiem. Vadies pēc savas siltumnīcas slodzes un apkopes norādēm, nevis kaimiņa pieredzes.",
+        "Vai loga automātika jānes telpās? Tas atkarīgs no modeļa. Pārbaudi atvērēja instrukciju; dažiem ziemā jānoņem cilindrs. Detaļu noņemšanas kārtību neattiecini uz visiem mehānismiem.",
+        "Vai katru rudeni jādezinficē un jāmaina visa augsne? Sakopšana ir vajadzīga, bet konkrētu slimību risinājumu izvēlas pēc cēloņa. Dezinfekcija neaizstāj tīrīšanu un nav solījums novērst visas augsnes problēmas.",
+        "Vai siltumnīca pasargās pelargonijas no sala? Uz neapkurinātu siltumnīcu nevar paļauties kā uz telpu bez sala. Ziemošanas vietu izvēlies pēc tur izmērāmā temperatūras minimuma un auga prasībām."
+      ],
+      "sourceUrls": [
+        "https://www.rhs.org.uk/garden-features/cleaning-greenhouses",
+        "https://www.umass.edu/agriculture-food-environment/greenhouse-floriculture/fact-sheets/cleaning-disinfecting-greenhouse",
+        "https://www.hallsgreenhouses.co.uk/pdfs/halls-greenhouse-6x6-popular-instruction-manual-288664396a9c42339c99f29db5fd598e.pdf",
+        "https://extension.uconn.edu/2015/01/31/reducing-storm-damage-to-your-greenhouses/",
+        "https://www.gardena.com/de/c/entdecke/garteninspiration/gartenmagazin/winterquartier-fuer-das-bewaesserungssystem",
+        "https://hallsgreenhouses.com/help-support/frequently-asked-questions",
+        "https://www.rhs.org.uk/plants/pelargonium/growing-guide",
+        "https://www.rhs.org.uk/vegetables/growing-in-greenhouse"
       ]
     }
   ],
   "links": [
-    { "label": "Kad stādīt dēstus laukā un siltumnīcā", "href": "/raksti/kad-stadit-destus-lauka" },
-    { "label": "Augu maiņa dārzā", "href": "/raksti/augu-maina-darza" },
-    { "label": "Marta darbu ceļvedis", "href": "/ko-set/marts" },
-    { "label": "Oktobra darbu ceļvedis", "href": "/ko-set/oktobris" }
-  ]
+    {
+      "label": "Kad stādīt dēstus laukā un siltumnīcā",
+      "href": "/raksti/kad-stadit-destus-lauka"
+    },
+    {
+      "label": "Augu maiņa dārzā",
+      "href": "/raksti/augu-maina-darza"
+    },
+    {
+      "label": "Marta darbu ceļvedis",
+      "href": "/ko-set/marts"
+    },
+    {
+      "label": "Oktobra darbu ceļvedis",
+      "href": "/ko-set/oktobris"
+    },
+    {
+      "label": "Novembra darbu ceļvedis",
+      "href": "/ko-set/novembris"
+    },
+    {
+      "label": "Decembra darbu ceļvedis",
+      "href": "/ko-set/decembris"
+    },
+    {
+      "label": "Pelargoniju ziemošanas iespējas",
+      "href": "/pukes/pelargonijas#parziemosana"
+    }
+  ],
+  "aliases": [
+    "siltumnīcas sagatavošana ziemai",
+    "siltumnīcas tīrīšana rudenī",
+    "siltumnīca ziemā",
+    "siltumnicas sagatavosana ziemai"
+  ],
+  "showGardenAction": false
 }

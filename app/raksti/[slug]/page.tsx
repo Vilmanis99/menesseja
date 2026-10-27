@@ -5,6 +5,9 @@ import { Icon } from "@/components/ui/icon";
 import { JsonLd } from "@/components/json-ld";
 import { DataNote } from "@/components/data-note";
 import { ContentFigure } from "@/components/content-figure";
+import { ContentTable } from "@/components/content-table";
+import { HydrangeaPruningDiagram } from "@/components/hydrangea-pruning-diagram";
+import { GreenhouseWinterDiagram } from "@/components/greenhouse-winter-diagram";
 import { getArticle, getRelatedArticles, articleSlugs, articleFaq, headingSlug } from "@/lib/articles";
 import { NewsletterSignup } from "@/components/newsletter-signup";
 import { newsletterConfigured } from "@/lib/brevo";
@@ -99,7 +102,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
         <p className="text-label-sm uppercase tracking-[0.2em] text-tertiary">
           {a.category} · {a.readMinutes} min
         </p>
-        <h1 className="text-headline-lg-mobile text-primary md:text-headline-lg">{a.title}</h1>
+        <h1 className="text-headline-lg-mobile text-primary [overflow-wrap:anywhere] md:text-headline-lg">{a.title}</h1>
         <p className="mt-2 flex items-center gap-1.5 text-label-sm text-on-surface-variant">
           <Icon name="update" size="15px" />
           Atjaunots <time dateTime={a.updatedAt}>{updatedLabel}</time>
@@ -143,40 +146,14 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
               </p>
             ))}
             {section.image && <ContentFigure image={section.image} />}
-            {section.table && (
-              <div className="mb-md">
-                <div className="space-y-sm sm:hidden">
-                  {section.table.rows.map((row, rowIndex) => (
-                    <dl key={rowIndex} className="rounded-xl border border-outline-variant/25 bg-surface-container p-sm shadow-md shadow-black/5">
-                      <dt className="text-body-lg font-semibold leading-snug text-on-surface">{row[0]}</dt>
-                      {row.slice(1).map((cell, cellIndex) => (
-                        <dd key={cellIndex} className="mt-1 text-body-md leading-relaxed text-on-surface-variant">
-                          <span className="text-label-sm uppercase tracking-wide text-primary">{section.table?.headers[cellIndex + 1]}:</span> {cell}
-                        </dd>
-                      ))}
-                    </dl>
-                  ))}
-                </div>
-                <table className="hidden w-full border-collapse overflow-hidden rounded-xl border border-outline-variant/25 text-left text-body-md sm:table">
-                  <thead className="bg-surface-container-high">
-                    <tr>
-                      {section.table.headers.map((header) => (
-                        <th key={header} scope="col" className="border-b border-outline-variant/20 px-sm py-2 font-semibold text-on-surface">{header}</th>
-                      ))}
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {section.table.rows.map((row, rowIndex) => (
-                      <tr key={rowIndex} className="border-b border-outline-variant/10 last:border-0">
-                        {row.map((cell, cellIndex) => (
-                          <td key={cellIndex} className="px-sm py-2 align-top text-on-surface-variant">{cell}</td>
-                        ))}
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
+            {section.images && (
+              <div className="grid items-start gap-sm sm:grid-cols-3">
+                {section.images.map((image) => <ContentFigure key={image.id} image={image} compact />)}
               </div>
             )}
+            {section.diagram === "hydrangea-pruning" && <HydrangeaPruningDiagram />}
+            {section.diagram === "greenhouse-winter" && <GreenhouseWinterDiagram />}
+            {section.table && <ContentTable table={section.table} />}
             {section.items && (
               section.listStyle === "numbered" ? (
                 <ol className="mb-md list-decimal space-y-2 pl-6 text-body-lg leading-relaxed text-on-surface-variant">

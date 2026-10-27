@@ -102,6 +102,10 @@ for (const slug of flowers) {
   }
   if (flower.comparison && (!flower.comparison.heading || !Array.isArray(flower.comparison.items) || flower.comparison.items.length < 2 || flower.comparison.items.some((item) => !item.name || !item.description))) errors.push(`${location}: nepilnīgs augu salīdzinājums`);
   if (flower.faq?.some((item) => !item.q || !item.a)) errors.push(`${location}: nepilnīgs jautājums vai atbilde`);
+  if (flower.winterTable) {
+    const { headers, rows } = flower.winterTable;
+    if (!flower.winter?.trim() || !Array.isArray(headers) || headers.length < 2 || headers.some((cell) => typeof cell !== "string" || !cell.trim()) || !Array.isArray(rows) || !rows.length || rows.some((row) => !Array.isArray(row) || row.length !== headers.length || row.some((cell) => typeof cell !== "string" || !cell.trim()))) errors.push(`${location}: nederīga pārziemošanas tabula`);
+  }
   for (const link of flower.links ?? []) if (!link.label || !resolves(link.href)) errors.push(`${location}: neatrisināta saite ${link.href}`);
   for (const related of flower.related ?? []) if (!flowers.has(related) || related === slug) errors.push(`${location}: nederīgs saistītais ceļvedis ${related}`);
 }
@@ -176,6 +180,11 @@ for (const file of [...articles].sort()) {
   if (!Array.isArray(a.body) || !a.body.length || a.body.some((s) => !Array.isArray(s.paragraphs) || !s.paragraphs.length)) errors.push(`${file}: nederīga body struktūra`);
   for (const [index, section] of (a.body ?? []).entries()) {
     validateImageUse(section.image, `${file}: ${index + 1}. sadaļa`);
+    if (section.images !== undefined) {
+      if (!Array.isArray(section.images) || section.images.length < 2 || section.images.length > 3) errors.push(`${file}: foto salīdzinājumam vajag 2–3 attēlus`);
+      else for (const image of section.images) validateImageUse(image, `${file}: ${index + 1}. sadaļas foto salīdzinājums`);
+    }
+    if (section.diagram !== undefined && !["hydrangea-pruning", "greenhouse-winter"].includes(section.diagram)) errors.push(`${file}: nezināma shēma`);
     if (section.anchorAliases && (
       !Array.isArray(section.anchorAliases) || !section.anchorAliases.length ||
       new Set(section.anchorAliases).size !== section.anchorAliases.length ||

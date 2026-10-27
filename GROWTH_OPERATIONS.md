@@ -1,5 +1,38 @@
 # Mēness Sēja — gada saturs un izaugsmes darba kārtība
 
+## Satura izaugsmes 2. partija: ziemošana un telpaugi — 2026-10-27
+
+Pēc lietotāja norādes strādāt lielākās partijās pabeigtas septiņas tematiskās lapas. Trīs aģenti sagatavoja pelargoniju, rožu un kaktusa saturu; galvenais aģents pārskatīja gala tekstus, avotu būtiskos punktus un attēlus, paplašināja siltumnīcas rakstu un pabeidza kopīgo ieviešanu. **Visa partija lokāli ieviesta un pārbaudīta; nav publicēta.** Kopā ar iepriekšējo hortenziju darbu tā gaida atsevišķu laidienu; dzīvais laidiens joprojām ir `eda47d5`.
+
+- Pelargoniju ceļvedis un kopšanas raksts: grupu atšķirības, četri ziemošanas varianti, spraudeņi, simptomi, konkrēti avoti un divi esošie īstie foto. Izlabotas dubultotas mēslojuma devas, stādīšanas dziļums, grants slāņa padoms, obligāta stipra apgriešana un fiksēti laistīšanas/salnu datumi.
+- Rožu ceļvedis, pavasara griešanas un melnplankumainības raksti: atšķirīgas rožu grupas un stādu formas, ziemošana podā un dobē, simptomi un VAAD norādēm atbilstoša līdzekļu izvēles loģika. Saglabāti divi esošie īstie foto. Izņemts universāls fungicīdu grafiks un kļūdaina floribundu/pārējo krūmrožu griešanas vienādošana.
+- Siltumnīcas esošais URL paplašināts ziemai un pavasarim: sešu pārbaudāmo vietu oriģināla SVG shēma, darbu tabula, ūdens iztukšošana, jumts, vējš un logu automātika. Slodzes, balsti un demontāža paliek konkrētā modeļa instrukcijas jautājums. Deviņi avoti; neatkarīga aģenta pārbaude un avotu papildinājumi iestrādāti.
+- Jauns `/raksti/ziemassvetku-kaktuss-nezied`: trīs kaktusu tipu salīdzinājums, pumpuru veidošana/nobiršana, laistīšana un divas diagnostikas/atšķirību tabulas. Astoņi avoti, pieci FAQ, trīs licencēti īsti NC State foto; divi avota galerijā nepiemēroti klasificēti foto pirms izvēles noraidīti. Neapsola ziedēšanu svētku datumā.
+- Vienots tabulu komponents rakstiem un puķu ziemošanas izvēlei: datorā tabulas ar rindu virsrakstiem, telefonā kartītes. Sakārtotas sezonas saites un oktobra–decembra detalizēto kalendāru pārejas. Puansetijai un amarillim pievienota saite uz kaktusu rakstu; pilns atkārtots šo divu rakstu audits nav veikts.
+
+Pārbaudes: 19 testi, UI un satura validācija, TypeScript un produkcijas būve iziet (328 lapas). Sākotnējais HTML pārbaudīts deviņām galvenajām lapām, ieskaitot iepriekšējo hortenziju darbu: kanoniskās adreses, FAQ, datumi, vecie enkuri, attēli, shēmas un iekšējās saites. Pārlūkā visas septiņas jaunās partijas lapas pārbaudītas 320 px platumā; kopīgie tabulu un shēmu skati arī 375, 640 un 1440 px. Atrasta un salabota garā rožu slimības virsraksta pārplūde. Meklējums `zigokaktuss` atrod jauno rakstu, foto ielādējas; kļūdas netika novērotas. Pagaidu izmēru pārbaudes atiestatītas.
+
+Pilnais pieraksts: `content/audits/winter-content-batch-2026-10-27.json`; tematiskie avotu auditi atrodas blakus. Vietējais priekšskatījums: `http://127.0.0.1:3106/raksti`. Satura validatorā paliek 63 iepriekš uzskaitīti uzlabojumi; pilni sadaļu avoti tagad ir 7 no 31 puķu ceļvežiem.
+
+Nākamās partijas tēmas: ilgstoši ziedošas dobes kombinācijas, tomātu šķirņu izvēle pēc audzēšanas vietas un balkona ražas ceļveža pārstrāde. Google Trends līknes iepriekšējā izpētē neielādējās; šie darbi nav pasniegti kā pierādījums izmērītam Latvijas pieprasījuma pieaugumam.
+
+
+## Satura izaugsmes plāna 1. solis: hortenzijas — 2026-10-27
+
+Pēc lietotāja apstiprinājuma ieviest izpētītās idejas soli pa solim sagatavots pirmais pilnais tematiskais darbs. **Lokāli ieviests un pārbaudīts; šis jaunais saturs vēl nav publicēts.** Iepriekšējais vietnes laidiens `eda47d5` ir publicēts; zemāk esošie vecākie ieraksti par tā sagatavošanu saglabā vēsturisko statusu.
+
+- Jauns `/raksti/hortenziju-apgriesana`: sugu un sezonu salīdzinājums, rudens ziedkopu noņemšanas un pavasara krūma veidošanas atšķirība, darba secība, pieci jautājumi, seši konkrēti avoti. Saglabātas saites uz veiksmīgo neziedēšanas rakstu.
+- Pārskatīts `/pukes/hortenzijas`: deviņi avoti ar sadaļu atsaucēm, trīs galveno sugu salīdzinājums, augsnes un gaismas nosacījumi, piesardzīga problēmu izvērtēšana un atsevišķa ziemošana dobē, liellapu šķirnēm un podā. Izņemti universāli solījumi par ziemcietību, obligātu skābo kūdru un vienādu griešanu. `Annabelle` skaidrota kā šķirne, ne sugas sinonīms.
+- Rakstā ir trīs īsti identificēti foto: saglabāts skarainās hortenzijas attēls, pievienoti NC State Extension publicētie Elsa Spezio kokveida hortenzijas `Annabelle` foto (CC BY-SA 2.0) un Ilouque liellapu hortenzijas foto (CC BY 4.0). Saglabāti pilnie kadri, WebP formāts, atbilstošie autori un licences. Liellapu foto šķirne nav zināma un nav piedēvēta.
+- Divas oriģinālas SVG shēmas ar tekstuāliem skaidrojumiem un pieejamības nosaukumiem rāda pavasara griezuma vietu. Tās nenosaka universālu augstumu vai konkrēta krūma formu. Rakstu veidnei pievienots neliela foto salīdzinājuma atbalsts; bibliotēkas kartīte izmanto arī šā salīdzinājuma pirmo foto.
+- Jaunais raksts sasniedzams no hortenziju profila, diviem saistītajiem rakstiem un marta, aprīļa, oktobra un novembra sezonas saitēm. Neziedēšanas un krāsas rakstos šajā kārtā pievienotas saites, ne veikts atkārtots pilns faktu audits.
+
+Avoti ietver RHS, Maryland un NC State universitāšu materiālus un Guntas Šenbergas rakstu ar stādaudzētāja Vara Kazaka konsultāciju (Ievas Dārzs, 2012. gada augusts, 32.–34. lpp.; publiska Baltezera PDF kopija). PDF teksts bija skenēts: pārbaudītas visas trīs lappuses vizuāli. Ārvalstu datumi un ziemcietības zonas nav pasniegtas kā Latvijas garantijas; vecā vietējā avota mēslojuma devas nav pārņemtas.
+
+Pārbaudes: 19 esošie testi sekmīgi; TypeScript un produkcijas būve sekmīga (327 lapas); UI un satura validācija sekmīga (85 raksti, pieci padziļināti pārskatīti puķu ceļveži; paliek 65 iepriekš uzskaitīti satura papildinājumi). Sākotnējā HTML pārbaudīti H1, kanoniskās adreses, unikāli enkuri, attēlu marķējums, abas shēmas, FAQ, sezonas saites un sitemap. Telefonā pārbaudīti 320 un 375 px, datorā 1440 px; tabula telefonā pārvēršas kartītēs, shēmas sakārtojas viena zem otras, nav horizontālas pārplūdes vai pārlūka kļūdu.
+
+Pelargoniju un Ziemassvētku kaktusa turpinājums pabeigts 2. partijā (skat. jaunāko ierakstu augstāk). Pārējās tēmas un robežas: `content/audits/content-growth-research-2026-10-27.json`. Šīs kārtas pieraksts: `content/audits/hydrangea-content-review-2026-10-27.json`.
+
 ## Sējas ceļveža sezonas filtri — 2026-10-27
 
 Lietotājs pamanīja, ka oktobra sējas ceļvedī redzami burkāni un bietes. Cēlonis bija divējāds: sākumā rādījās visa gada katalogs, bet filtrs “Šomēnes” ieskaitīja arī ražas novākšanu un ziedēšanu. **Labojums sagatavots un pārbaudīts lokāli; nav publicēts.**

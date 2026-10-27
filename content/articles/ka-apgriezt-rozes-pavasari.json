@@ -1,19 +1,29 @@
 {
-  "title": "Kā pavasarī pareizi apgriezt rozes (pa veidiem)",
+  "title": "Kā pavasarī pareizi apgriezt rozes pēc to grupas",
+  "seoTitle": "Rožu apgriešana pavasarī: krūmrozes, floribundas, vīteņrozes",
   "slug": "ka-apgriezt-rozes-pavasari",
   "category": "Praktiski",
   "intent": "how-to",
-  "excerpt": "Rozes kā apgriezt pavasarī? Skaidri soļi krūmrozēm, floribundām un kāpelētājrozēm ar konkrētiem pumpuru skaitiem un griezuma augstumiem Latvijas apstākļiem.",
-  "shortAnswer": "Tu stāvi pavasarī pie rožu krūma ar šķērēm rokā un nesaproti, no kuras vietas un cik daudz griezt.  Tās ir pašas biežākās rožu kopšanas bailes — bail nogriezt par daudz un palikt bez ziediem.",
+  "excerpt": "Kad pavasarī griezt rozes, kā atpazīt ziemas bojājumus un ko saglabāt krūmrozēm, tējhibrīdiem, floribundām un vīteņrozēm. Rožu grupu salīdzinājums un darba secība.",
+  "shortAnswer": "Pavasarī vispirms izgriez mirušos un slimos dzinumus, tad veido rozi pēc tās grupas. Floribundām parasti atstāj garākus dzinumus nekā tējhibrīdiem. Vienreiz ziedošas krūmrozes un stīgotājrozes galvenokārt veido pēc ziedēšanas; visām rozēm viens griezuma augstums neder.",
   "primaryQuery": "kā pavasarī pareizi apgriezt rozes",
+  "aliases": [
+    "rožu apgriešana pavasarī",
+    "kad griezt rozes",
+    "floribundu apgriešana",
+    "vīteņrožu apgriešana",
+    "parka rožu apgriešana"
+  ],
   "publishedAt": "2026-06-22",
-  "updatedAt": "2026-06-22",
+  "updatedAt": "2026-10-27",
+  "seasonalMonths": [
+    3,
+    4,
+    5
+  ],
   "entities": {
-    "pests": [
-      "laputis"
-    ],
-    "recipes": [
-      "komposta-teja"
+    "crops": [
+      "rozes"
     ]
   },
   "relatedSlugs": [
@@ -21,88 +31,213 @@
   ],
   "sources": [
     {
-      "label": "Latvijas Lauku konsultāciju un izglītības centrs",
-      "url": "https://llkc.lv/"
+      "label": "RHS — rožu apgriešanas pamatprincipi",
+      "url": "https://www.rhs.org.uk/plants/roses/pruning-guide"
     },
     {
-      "label": "Royal Horticultural Society — Advice",
-      "url": "https://www.rhs.org.uk/advice"
+      "label": "RHS — tējhibrīdrožu un floribundrožu griešana",
+      "url": "https://www.rhs.org.uk/plants/roses/modern-bush/pruning-guide"
+    },
+    {
+      "label": "RHS — vienreiz un atkārtoti ziedošas krūmrozes",
+      "url": "https://www.rhs.org.uk/plants/roses/shrub/pruning-guide"
+    },
+    {
+      "label": "RHS — atkārtoti ziedošu vīteņrožu veidošana",
+      "url": "https://www.rhs.org.uk/plants/roses/climbing/pruning-guide"
+    },
+    {
+      "label": "RHS — stīgotājrožu griešana pēc ziedēšanas",
+      "url": "https://www.rhs.org.uk/plants/roses/rambler/pruning-guide"
+    },
+    {
+      "label": "Iowa State University Extension — rožu griešana pēc ziemas bojājumiem",
+      "url": "https://yardandgarden.extension.iastate.edu/how-to/how-prune-roses"
+    },
+    {
+      "label": "Iowa State University Extension — pavasara darbi rožu dobē",
+      "url": "https://yardandgarden.extension.iastate.edu/how-to/rose-care-season"
+    },
+    {
+      "label": "RHS — rožu audzēšana un augststumbra formas",
+      "url": "https://www.rhs.org.uk/plants/roses/growing-guide/"
+    },
+    {
+      "label": "New York Botanical Garden — rožu grupas un apgriešanas izvēle",
+      "url": "https://libguides.nybg.org/pruningroses"
     }
   ],
   "readMinutes": 6,
   "body": [
     {
       "paragraphs": [
-        "Tu stāvi pavasarī pie rožu krūma ar šķērēm rokā un nesaproti, no kuras vietas un cik daudz griezt. Tās ir pašas biežākās rožu kopšanas bailes — bail nogriezt par daudz un palikt bez ziediem. Pateiksim uzreiz un mierīgi: rozes ir grūti sabojāt ar apgriešanu. Tieši otrādi — bez pavasara apgriešanas roze ar laiku saplok par retu, kailu, slimīgu krūmu ar maziem ziediem. Drosmīgs, pareizs griezums dod kuplāku augu un krāšņākus ziedus.",
-        "Galvenais, kas jāzina: dažādas rozes griež dažādi. Krūmrozi, floribundu un kāpelētājrozi nedrīkst griezt vienādi — ja kāpelētājrozi nogriezīsi tikpat zemu kā krūmrozi, tā šovasar nemaz neziedēs. Šajā rakstā ejam cauri katram veidam atsevišķi, ar konkrētiem pumpuru skaitiem un augstumiem centimetros, lai tu zinātu tieši to, kas vajadzīgs tava krūma tipam."
+        "Pirms šķērēm meklē šķirnes nosaukumu vai pierakstu par ziedēšanu. Galvenā atšķirība ir starp rozēm, kas zied vienreiz uz saglabātajiem vecākajiem dzinumiem, un tām, kas sezonā zied atkārtoti. Vārds “krūmroze” vien vēl nenozīmē, ka tā griežama zemu kā tējhibrīdroze."
+      ],
+      "image": {
+        "id": "rozes",
+        "caption": "Rožu ziedēšanu ietekmē arī saglabātie dzinumi. Griešanas paņēmienu izvēlas pēc šķirnes un grupas, nevis tikai zieda formas."
+      },
+      "sourceUrls": [
+        "https://www.rhs.org.uk/plants/roses/shrub/pruning-guide",
+        "https://www.rhs.org.uk/plants/roses/modern-bush/pruning-guide",
+        "https://libguides.nybg.org/pruningroses"
       ]
     },
     {
       "heading": "Kad pavasarī apgriezt rozes",
       "paragraphs": [
-        "Vislabākais dabas signāls Latvijā ir forsītijas ziedēšana. Kad dzeltenā forsītija sāk plaukt un rožu pumpuri uz dzinumiem sāk uzbriest un kļūt sārti, ir pienācis laiks. Parasti tas iekrīt aprīlī, dažviet marta beigās — atkarībā no gada un reģiona. Galvenais, lai stiprās nakts salnas (zem mīnus 5 grādiem) būtu pāri, jo svaigs griezums aukstumā var apsalt.",
-        "Nesteidzies griezt pārāk agri, kamēr roze vēl mierā un zeme sasalusi. Bet arī nenokavē — ja krūms jau izdzinis garas, bālas atvases, esi par vēlu un roze velti iztērējusi spēku. Vispirms noņem ziemas segumu un apkalumu mierīgā, sausā dienā, ļauj krūmam pāris dienas pierast pie gaisa, un tikai tad ņem šķēres. Strādā ar asām, tīrām šķērēm — neass instruments saspiež dzinumu un atstāj brūci, pa kuru viegli iekļūst slimības."
+        "Sāc pēc ziemas seguma atvēršanas, kad augsne atkūst, stiprākais ziemas aukstums atkāpjas un var novērtēt dzīvos pumpurus. Pavasara attīstība katrā dārzā atšķiras; forsītiju ziedēšana var būt atgādinājums apskatīt rozes, taču nenosaka obligātu darba dienu.",
+        "Svarīga ir arī prognoze un konkrētās rozes stāvoklis. Ja bojājuma robeža nav skaidra, nesteidzies nogriezt visu dzinumu. Savukārt noņemtu segumu neaizstāj ar ilgstošu gaidīšanu, kamēr zem atlikušā pārklājuma izaug bāli dzinumi."
+      ],
+      "sourceUrls": [
+        "https://yardandgarden.extension.iastate.edu/how-to/rose-care-season",
+        "https://yardandgarden.extension.iastate.edu/how-to/how-prune-roses",
+        "https://libguides.nybg.org/pruningroses"
       ]
     },
     {
       "heading": "Vispirms: ko griež visām rozēm vienādi",
       "paragraphs": [
-        "Pirms ķeries pie sava veida pareizajiem pumpuriem, izgriez to, kas jāizgriež jebkurai rozei. Pirmkārt — visus mirušos dzinumus. Atpazīt tos ir viegli: mirušais dzinums ir sauss, brūns vai melns un viscaur vienādā krāsā. Dzīvs dzinums ir zaļgans, un, to pārgriežot, serdes vidus ir balti zaļgans un mitrs, nevis brūns. Griez mirušo dzinumu zemāk un zemāk, līdz parādās veselā, zaļā serde — tikai tur apstājies.",
-        "Otrkārt — izgriez tievos, vārgos dzinumus (plānākus par zīmuli), kā arī tos, kas krustojas, berzējas viens gar otru vai aug krūma iekšpusē. Mērķis ir atvērts, gaišs krūma vidus, pa kuru brīvi plūst gaiss — tas ir labākais veids, kā mazināt rožu slimības, piemēram, melnplankumainību. Treškārt — ja zem potējuma vietas no pamata aug spēcīgs, savvaļīgs dzinums ar citādām, sīkākām lapām, izlauz to pavisam: tā ir mežrozes atvase, kas nomāc pašu šķirni."
+        "Sagatavo asas, tīras šķēres, resnākiem dzinumiem atbilstošu griezēju un cimdus. Tīrs griezums ļauj labāk novērtēt audus; ar lapu skaitu vien nepietiek, lai atšķirtu potcelma atvasi no šķirnes dzinuma."
+      ],
+      "items": [
+        "Izņem nolūzušus, pilnīgi nokaltušus un slimus dzinumus. Apsalušu galotni saīsini līdz veselam posmam: dzīvi pumpuri un gaiša, vesela serde ir noderīgas pazīmes.",
+        "No berzējošiem vai krustojošiem zariem izvēlies saglabājamo. Neizgriez visus tievos dzinumus tikai pēc viena diametra noteikuma — stīgotājrozes un miniatūrrozes atšķiras no lielām dobju rozēm.",
+        "Ja dzinumu saīsini virs pumpura, griez ap 5 mm virs tā ar nelielu slīpumu prom no pumpura. Izvēlies augšanas virzienu, kas nesabiezina augu.",
+        "Aizdomīgu atvasi izseko līdz izaugšanas vietai. Potcelma atvase sākas zem potējuma vai no potcelma saknēm; patsakņu rozei atvase nav automātiski sveša “mežroze”."
+      ],
+      "listStyle": "numbered",
+      "sourceUrls": [
+        "https://www.rhs.org.uk/plants/roses/pruning-guide",
+        "https://yardandgarden.extension.iastate.edu/how-to/how-prune-roses"
       ]
     },
     {
-      "heading": "Krūmrozes un floribundas: soli pa solim",
+      "heading": "Izvēlies rožu grupai piemērotu griezumu",
+      "anchorAliases": [
+        "krumrozes-un-floribundas-soli-pa-solim"
+      ],
       "paragraphs": [
-        "Krūmrozes (parastās dārza un parka rozes) un floribundas jeb ķekarrozes ir izturīgākās un Latvijā visizplatītākās. Tās zied uz kārtējā gada jaunajiem dzinumiem, tāpēc tās drīkst griezt drosmīgi — jo spēcīgāks griezums, jo kuplāks krūms. Veseliem, neapsalušiem dzinumiem atstāj 4–8 pumpurus, kas ir aptuveni 40–50 cm augstumā no zemes. Jo vairāk pumpuru atstāsi, jo kuplāks, bet ar mazliet mazākiem ziediem; jo zemāk nogriezīsi, jo mazāk, toties lielāku ziedu.",
-        "Katru griezumu izdari aptuveni 5 mm virs uz āru vērsta pumpura — tā, lai jaunais dzinums augtu prom no krūma vidus, nevis iekšā. Griez slīpi, ar nelielu leņķi prom no pumpura, lai lietus ūdens notek nost un neuzkrājas uz griezuma. Floribundas drīkst griezt vēl zemāk un drosmīgāk nekā lielziedu rozes — virs 2.–4. pumpura no pamata — jo tās sazarojas spēcīgi un ziedēs bagātīgi. Atstāj 5–10 spēcīgākos dzinumus uz krūma, pārējos izgriez līdz pamatam, lai krūms nesabiezē."
+        "Tabula palīdz izvēlēties darbības veidu. Griešanas stiprumu pēc tam pielāgo šķirnei, auga vecumam un dzīvo dzinumu daudzumam."
+      ],
+      "table": {
+        "headers": [
+          "Rožu grupa",
+          "Ko dara pavasarī",
+          "Ko saglabā"
+        ],
+        "rows": [
+          [
+            "Tējhibrīdrozes",
+            "Veido salīdzinoši zemāk, atstājot veselus spēcīgus dzinumus.",
+            "Dzīvu pamatni un attīstīties spējīgus pumpurus."
+          ],
+          [
+            "Floribundrozes",
+            "Veido mērenāk nekā tējhibrīdus.",
+            "Garākus veselus dzinumus ar vairāk pumpuriem."
+          ],
+          [
+            "Atkārtoti ziedošas krūmrozes",
+            "Retina un mēreni saīsina pēc šķirnes.",
+            "Līdzsvaru starp jaunajiem un vecākajiem dzinumiem."
+          ],
+          [
+            "Vienreiz ziedošas krūmrozes",
+            "Izņem bojāto; galveno veidošanu atliek līdz noziedēšanai.",
+            "Pārziemojušo koksni vasaras ziediem."
+          ],
+          [
+            "Vīteņrozes un stīgotājrozes",
+            "Vispirms nosaka ziedēšanas veidu.",
+            "Garos balsta dzinumus, kas vēl dzīvi un vajadzīgi."
+          ]
+        ]
+      },
+      "sourceUrls": [
+        "https://www.rhs.org.uk/plants/roses/modern-bush/pruning-guide",
+        "https://www.rhs.org.uk/plants/roses/shrub/pruning-guide",
+        "https://www.rhs.org.uk/plants/roses/climbing/pruning-guide",
+        "https://www.rhs.org.uk/plants/roses/rambler/pruning-guide"
+      ]
+    },
+    {
+      "heading": "Tējhibrīdrozes un floribundrozes",
+      "paragraphs": [
+        "Abas grupas parasti zied atkārtoti, taču griešanas stiprums nav vienāds. RHS piemēros ieaugušiem tējhibrīdiem stipros iepriekšējās sezonas dzinumus īsina līdz 4–6 pumpuriem no to sākuma, bet floribundām saglabā garākus dzinumus. Floribundas nav jāgriež vēl zemāk tikai tādēļ, ka tās zied ķekaros.",
+        "Ja ziema nodarījusi lielus bojājumus, vispirms atrod dzīvos audus. Stingrs centimetru mērķis nedrīkst piespiest atstāt nokaltušu posmu vai bez vajadzības nogriezt visu veselīgo daļu. Jaunu vai novājinātu stādu vērtē atsevišķi."
+      ],
+      "sourceUrls": [
+        "https://www.rhs.org.uk/plants/roses/modern-bush/pruning-guide",
+        "https://yardandgarden.extension.iastate.edu/how-to/how-prune-roses"
+      ]
+    },
+    {
+      "heading": "Parka un citas krūmrozes",
+      "paragraphs": [
+        "Vienreiz ziedošu krūmrozi pavasarī tikai sakopj. Pēc ziedēšanas, ja vajadzīgs, izņem daļu vecākās mazražīgās koksnes un traucējošos zarus. Visu krūmu nolīdzinot zemu pavasarī, var zaudēt šīs vasaras ziedus.",
+        "Atkārtoti ziedošām krūmrozēm saglabā pamata formu un izretina sabiezējumu. Daudzām pietiek ar mērenu iepriekšējā pieauguma saīsināšanu; atsevišķām šķirņu grupām audzētājs iesaka stiprāku griezumu. Liels lokveida krūms nav jāpadara mazs, ja tā dabiskajai formai vienkārši izvēlēta pārāk šaura vieta."
+      ],
+      "sourceUrls": [
+        "https://www.rhs.org.uk/plants/roses/shrub/pruning-guide",
+        "https://libguides.nybg.org/pruningroses"
       ]
     },
     {
       "heading": "Kāpelētājrozes: griež pavisam citādi",
       "paragraphs": [
-        "Šeit ir galvenā kļūda, ko pieļauj iesācēji: kāpelētājrozi jeb vīteņrozi NEDRĪKST griezt zemu kā krūmrozi. Kāpelētājrozes zied gandrīz visā pārziemojušā gara dzinuma garumā, tāpēc, nogriežot dzinumus īsus, tu vienkārši nogriez nost visus topošos ziedus. Tāpēc galvenos, garos pamatdzinumus atstāj pēc iespējas garākus un veselus — tos pavasarī nesaīsina, tikai izgriez pavisam mirušos vai apsalušos.",
-        "Ko tad pavasarī griež kāpelētājrozei? Saīsini tikai sānu atzarus, kas aug no garajiem pamatdzinumiem — tos nogriez īsus, atstājot uz katra 2–4 pumpurus. Tieši no šiem īsajiem sānu atzariem izaugs šīsvasaras ziedoši dzinumi. Vēl viens noslēpums: pamatdzinumus piesien pie balsta pēc iespējas horizontālāk, nevis stāvus. Kad dzinums izliekts uz sāniem, gar visu tā garumu pamostas ziedpumpuri, un roze zied no apakšas līdz augšai, nevis tikai galotnē."
+        "Saglabā dzīvos galvenos dzinumus un piesien tos pie balsta; noliektāks virziens palīdz veidot vairāk ziedošu sāndzinumu. Atkārtoti ziedošām vīteņrozēm pēc bojātā izņemšanas saīsina noziedējušos sāndzinumus un pakāpeniski nomaina novecojušus pamatzarus.",
+        "Vienreiz ziedošām stīgotājrozēm galveno retināšanu veic pēc ziedēšanas, atstājot jaunus aizvietojošos dzinumus. Ja pārziemojis tikai viens vecs pamatzars, pirms tā izņemšanas novērtē, vai ir ko atstāt vietā. Nosaukumi tirdzniecībā mēdz pārklāties, tāpēc pārbaudi konkrēto šķirni."
+      ],
+      "sourceUrls": [
+        "https://www.rhs.org.uk/plants/roses/climbing/pruning-guide",
+        "https://www.rhs.org.uk/plants/roses/rambler/pruning-guide"
       ]
     },
     {
       "heading": "Biežākās kļūdas un kā tās novērst",
       "paragraphs": [
-        "Pirmā kļūda — bailes griezt. Atstāts neapgriezts krūms ar gadiem kļūst rets, kails apakšā un slimīgs. Drosmīgs pavasara griezums ir rozei tas pats, kas mati pēc apgriešanas — ataug kuplāki. Otrā kļūda — visu rožu griešana vienādi, īpaši kāpelētājrožu griešana zemu; tā paliksi bez ziediem. Trešā — griešana ar neasu vai netīru instrumentu, kas saspiež dzinumu un ienes slimības; pirms darba noslauki šķēres ar spirtu, īpaši ja krūms bijis slims.",
-        "Pēc apgriešanas neaizmirsti par barošanu un aizsardzību. Tikko apgrieztai rozei labi der barojošs uzlējums — aplej krūmu ar atšķaidītu komposta tēju, kas dod augam mēreni daudz spēka jaunajiem dzinumiem. Un seko līdzi laputīm: pavasara siltumā tās gandrīz vienmēr uzbrūk tieši jaunajiem, mīkstajiem rožu dzinumu galiem un pumpuriem. Jo agrāk tās pamanīsi, jo vieglāk apturēsi."
+        "Biežākā kļūda ir vienāds zems griezums visām rozēm. Otra — griezt veselus dzinumus tikai tādēļ, lai ietilptu ziemas pārsegā. Trešā — atstāt bojāto, jo vēl nav pienācis kalendārā izvēlētais datums.",
+        "Pēc darba savāc slimo materiālu un pārbaudi mitrumu augsnē. Barošanu izvēlies pēc auga vajadzības un mēslojuma marķējuma. Komposta tēja vai profilaktiska apsmidzināšana nav obligāts solis pēc katras apgriešanas."
+      ],
+      "sourceUrls": [
+        "https://yardandgarden.extension.iastate.edu/how-to/how-prune-roses",
+        "https://yardandgarden.extension.iastate.edu/how-to/rose-care-season"
       ]
     },
     {
-      "heading": "Īsi un skaidri: biežākie jautājumi",
+      "heading": "Biežākie jautājumi",
+      "anchorAliases": [
+        "isi-un-skaidri-biezakie-jautajumi"
+      ],
       "paragraphs": [
-        "Cik zemu drīkst griezt rozes? Krūmrozēm un floribundām atstāj 4–8 pumpurus, aptuveni 40–50 cm; floribundas drīkst pat zemāk, virs 2.–4. pumpura. Kāpelētājrozes garos pamatdzinumus neīsina vispār — saīsina tikai sānu atzarus, atstājot 2–4 pumpurus. Galvenais ir griezt virs uz āru vērsta pumpura.",
-        "Kā saprast, vai dzinums dzīvs vai miris? Pārgriez to. Ja serdes vidus ir balti zaļgans un mitrs, dzinums dzīvs — atstāj. Ja vidus brūns un sauss, griez vēl zemāk, līdz parādās zaļā serde vai dzinums izgriežams pavisam.",
-        "Vai griezumi jāaiztaisa ar dārza varu vai krāsu? Plāniem, tīriem slīpiem griezumiem tas nav obligāti — tie sadzīst paši. Resnu dzinumu lielākus griezumus var aizsmērēt ar dārza varu, lai tajos neiekļūst mitrums un slimības. Svarīgāks par smērēšanu ir tīrs, ass griezums.",
-        "Kā ar Mēness fāzēm? Tradicionāli rozes apgriež dilstošā Mēnesī, kad spēks vairāk saknēs, un tas ir jauks, sakārtojošs darba ritms. Bet rozes ziedēšanu izšķir nevis Mēness diena, bet gan pareizs laiks (forsītiju ziedēšana), pareizais griezums tava veida rozei un veseli dzinumi. Vispirms skaties laika prognozi un pumpuru uzbriešanu, un tikai pēc tam — kalendāru."
+        "Vai visas rozes jāgriež līdz 40 cm? Nē. Ziedēšanas veids un grupa nosaka, ko drīkst saīsināt; īpaši svarīgi saglabāt vienreiz ziedošo rožu vajadzīgos dzinumus.",
+        "Vai floribundas griež zemāk par tējhibrīdiem? Parasti otrādi: floribundām atstāj garākus dzinumus un vairāk pumpuru. Vispirms gan izņem ziemā bojāto.",
+        "Ko darīt, ja rozes šķirne nav zināma? Sāc ar mirušā un bojātā izņemšanu, saglabā pamata formu un pieraksti, vai vasarā roze zied vienreiz vai atkārtoti. Tā nākamajai veidošanai būs vairāk informācijas.",
+        "Kā apgriezt augststumbra rozi? Vainagu veido atbilstoši tajā potētajai šķirnei. Stumbru nenogriež līdz dobes rožu griezuma augstumam; pārbaudi arī balstu un potējuma vietas stāvokli.",
+        "Vai pēc sala melnais dzinums vienmēr jāizgriež līdz zemei? Izgriez bojāto līdz veselam posmam. Ja visā dzinumā nav dzīvu audu, izņem visu; ja zem bojājuma ir vesels posms, saglabā to."
+      ],
+      "sourceUrls": [
+        "https://www.rhs.org.uk/plants/roses/modern-bush/pruning-guide",
+        "https://www.rhs.org.uk/plants/roses/shrub/pruning-guide",
+        "https://yardandgarden.extension.iastate.edu/how-to/how-prune-roses",
+        "https://www.rhs.org.uk/plants/roses/growing-guide/",
+        "https://libguides.nybg.org/pruningroses"
       ]
     }
   ],
   "links": [
     {
-      "label": "Rožu stādīšana un kopšana",
+      "label": "Rozes: stādīšana, kopšana un ziemas aizsardzība",
       "href": "/pukes/rozes"
     },
     {
-      "label": "Rožu melnplankumainība: kā atpazīt un ārstēt",
+      "label": "Rožu melnplankumainība: pazīmes un rīcība",
       "href": "/raksti/rozu-melnplankumainiba-ka-arstet"
     },
     {
-      "label": "Laputis uz rožu dzinumiem: kā apkarot",
+      "label": "Laputis uz rožu dzinumiem",
       "href": "/kaitekli/laputis"
-    },
-    {
-      "label": "Komposta tēja jaunajiem dzinumiem",
-      "href": "/receptes/komposta-teja"
     }
-  ],
-  "seasonalMonths": [
-    3,
-    4,
-    5
   ]
 }

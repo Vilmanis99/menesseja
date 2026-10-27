@@ -1,0 +1,141 @@
+{
+  "reviewedAt": "2026-10-27",
+  "status": "implemented-and-verified-locally",
+  "articlePath": "content/articles/ziemassvetku-kaktuss-nezied.json",
+  "route": "/raksti/ziemassvetku-kaktuss-nezied",
+  "scope": "New Latvian source-checked problem-solving article for Christmas/Thanksgiving cactus flowering, bud drop and autumn/winter care; identification comparison includes Easter cactus.",
+  "contentChecks": {
+    "sections": 9,
+    "faqAnswers": 5,
+    "sources": 8,
+    "sectionSourceUrls": true,
+    "comparisonTables": 2,
+    "realPhotographs": 3,
+    "showGardenAction": false,
+    "plantEntityAdded": false,
+    "seasonalMonths": [
+      10,
+      11,
+      12,
+      1
+    ]
+  },
+  "reviewedSources": [
+    {
+      "url": "https://www.rhs.org.uk/plants/christmas-cactus/how-to-grow",
+      "usedFor": "Rest periods, watering without full desiccation, summer location, minimum temperature and conditional repotting."
+    },
+    {
+      "url": "https://yardandgarden.extension.iastate.edu/how-to/all-about-holiday-cacti",
+      "usedFor": "Hybrid identification limitations, uninterrupted long nights and interaction with temperature; distinct Easter cactus flowering sequence."
+    },
+    {
+      "url": "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/holiday-cacti",
+      "usedFor": "Several weeks of short days, cool night temperatures, bud drop, overwatering/root-rot signs and occasional natural bud shedding."
+    },
+    {
+      "url": "https://extension.sdstate.edu/cactus-every-holiday-caring-popular-indoor-plant",
+      "usedFor": "Daylength/temperature interaction, checking pot moisture and drainage, avoiding standing water."
+    },
+    {
+      "url": "https://homegarden.cahnr.uconn.edu/factsheets/holiday-cacti/",
+      "usedFor": "Commercial flowering schedules may not repeat at home; repot only when needed, after-flowering care and desiccated root caution."
+    },
+    {
+      "url": "https://plants.ces.ncsu.edu/plants/schlumbergera-truncata/",
+      "usedFor": "Pointed stem segments, autumn/winter flowering, light/temperature stress, photo attribution."
+    },
+    {
+      "url": "https://plants.ces.ncsu.edu/plants/schlumbergera-x-buckleyi/",
+      "usedFor": "Hybrid identity, rounded segment margins, pendulous flowers, bud-drop causes, photo attribution."
+    },
+    {
+      "url": "https://plants.ces.ncsu.edu/plants/rhipsalidopsis-gaertneri/",
+      "usedFor": "Easter cactus names, star-shaped flowers, spring season, photo attribution."
+    }
+  ],
+  "editorialDecisions": [
+    "No guarantee of flowering on Christmas Day. Distinguishes bud formation from maintaining already formed buds.",
+    "Photoperiod response varies with cultivar and temperature. About six weeks and 14–16 hours darkness are a practical starting point, not an exact universal timer.",
+    "Avoided 4 °C flowering-induction advice appearing on the NC State truncata page; RHS recommends keeping these tender plants above 10 °C.",
+    "No fixed weekly watering interval, complete drought prescription, fertilizer cure, calendar-only repotting or generic all-cactus treatment.",
+    "Does not equate every wilted plant with underwatering or diagnose a pathogen solely from appearance.",
+    "Both NC State and extension sources have different Easter cactus nomenclature; article supplies commonly encountered synonyms without claiming a separate plant family.",
+    "No recipes involving pesticides or household chemicals. No pet toxicity digression.",
+    "No claim that the topic has measured Latvian Google Trends growth. This is a seasonal editorial addition."
+  ],
+  "imageReview": {
+    "method": "Per-image author/license checked on source plant pages; downloaded source files inspected visually; selected full frames converted to WebP with sharp quality 86, no crop or enlargement.",
+    "rejectedCandidates": [
+      {
+        "url": "https://eit-planttoolbox-prod.s3.amazonaws.com/media/images/Christmas_Catus_2_O27AYahgKQOj.jfif",
+        "reason": "NC State buckleyi gallery image by Hans J E displays pointed segment margins, so rejected for a rounded-margin comparison."
+      },
+      {
+        "url": "https://eit-planttoolbox-prod.s3.amazonaws.com/media/images/Christmas_Cactus__fi_fSlQXXaQJQG3.jpeg",
+        "reason": "NC State buckleyi gallery image by fishhawk displays pointed segment margins, so rejected for this identification comparison."
+      }
+    ],
+    "manifestIntegrationRequired": false,
+    "manifestEditedByThisAgent": false,
+    "manifestIntegratedByRoot": true
+  },
+  "proposedImageManifestEntries": {
+    "kaktuss-schlumbergera-truncata": {
+      "src": "/images/articles/kaktuss-schlumbergera-truncata.webp",
+      "width": 886,
+      "height": 1024,
+      "alt": "Schlumbergera truncata ar smailiem zobiņiem segmentu malās, rozā ziediem un pumpuriem",
+      "author": "Cindy Christian",
+      "sourceName": "NC State Extension",
+      "sourceUrl": "https://plants.ces.ncsu.edu/plants/schlumbergera-truncata/",
+      "originalUrl": "https://eit-planttoolbox-prod.s3.amazonaws.com/media/images/20191227_122459_Schl_tPkYR7Ay2iWc.jpeg",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "changes": "Pārveidots WebP formātā; saglabāts pilnais kadrs.",
+      "reviewedAt": "2026-10-27"
+    },
+    "kaktuss-schlumbergera-buckleyi": {
+      "src": "/images/articles/kaktuss-schlumbergera-buckleyi.webp",
+      "width": 701,
+      "height": 784,
+      "alt": "Schlumbergera × buckleyi ar noapaļotām segmentu malām un nokarenu sārtu ziedu",
+      "author": "Sadambio",
+      "sourceName": "NC State Extension",
+      "sourceUrl": "https://plants.ces.ncsu.edu/plants/schlumbergera-x-buckleyi/",
+      "originalUrl": "https://eit-planttoolbox-prod.s3.amazonaws.com/media/images/Schlumbergera_X_buck_yZzaAD7nvj9v.jfif",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "changes": "Pārveidots WebP formātā; saglabāts pilnais kadrs. Atvasinātais attēls pieejams ar to pašu licenci.",
+      "reviewedAt": "2026-10-27"
+    },
+    "kaktuss-lieldienu-gaertneri": {
+      "src": "/images/articles/kaktuss-lieldienu-gaertneri.webp",
+      "width": 1024,
+      "height": 815,
+      "alt": "Lieldienu kaktuss Rhipsalidopsis gaertneri ar sarkaniem zvaigžņveida ziediem un noapaļotiem segmentiem",
+      "author": "Kor!An (Корзун Андрей)",
+      "sourceName": "NC State Extension",
+      "sourceUrl": "https://plants.ces.ncsu.edu/plants/rhipsalidopsis-gaertneri/",
+      "originalUrl": "https://eit-planttoolbox-prod.s3.amazonaws.com/media/images/Hatiora_gaertneri_2__ORJYOYK0xyzG.jpeg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "changes": "Pārveidots WebP formātā; saglabāts pilnais kadrs. Atvasinātais attēls pieejams ar to pašu licenci.",
+      "reviewedAt": "2026-10-27"
+    }
+  },
+  "validation": {
+    "jsonParsed": true,
+    "excerptCharacters": 161,
+    "shortAnswerCharacters": 369,
+    "bodyWordsIncludingTablesCaptionsAndHeadings": 950,
+    "allSectionSourcesRegistered": true,
+    "relatedSlugsExist": true,
+    "sourcePhotoVisualInspection": true,
+    "buildOrDeploymentRun": false,
+    "rootFollowUp": "Merge proposedImageManifestEntries into content/images.json; run shared content validation and batch browser/build verification.",
+    "rootIntegrationCompleted": true
+  },
+  "published": false,
+  "batchValidation": "content/audits/winter-content-batch-2026-10-27.json"
+}

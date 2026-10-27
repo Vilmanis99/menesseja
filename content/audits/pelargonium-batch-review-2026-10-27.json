@@ -1,0 +1,225 @@
+{
+  "date": "2026-10-27",
+  "status": "implemented-and-verified-locally",
+  "published": false,
+  "scope": [
+    "content/flowers/pelargonijas.json",
+    "content/articles/ka-kopt-geranijas.json"
+  ],
+  "pages": [
+    "/pukes/pelargonijas",
+    "/raksti/ka-kopt-geranijas"
+  ],
+  "sourceCounts": {
+    "flower": 10,
+    "article": 14
+  },
+  "sources": [
+    {
+      "label": "RHS — pelargoniju audzēšana un ziemošanas metožu ierobežojumi",
+      "url": "https://www.rhs.org.uk/plants/pelargonium/growing-guide"
+    },
+    {
+      "label": "Iowa State University — pelargoniju grupas un audzēšana",
+      "url": "https://yardandgarden.extension.iastate.edu/how-to/growing-annual-geraniums"
+    },
+    {
+      "label": "University of Minnesota Extension — pelargoniju kopšana telpās",
+      "url": "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/growing-geraniums-in-minnesota"
+    },
+    {
+      "label": "RHS — saljutīgu augu iznešana pēc norūdīšanas",
+      "url": "https://www.rhs.org.uk/garden-jobs/when-to-plant-out-tender-plants-avoiding-late-frosts"
+    },
+    {
+      "label": "Nebraska Extension — pelargoniju stādīšana un kopšana",
+      "url": "https://lancaster.unl.edu/2012-year-geranium/"
+    },
+    {
+      "label": "University of California — drenāža podos un grants slāņa problēma",
+      "url": "https://ucanr.edu/site/uc-master-gardeners-santa-clara-county/drainage-containers"
+    },
+    {
+      "label": "Iowa State University — dārza pelargoniju laistīšana un kopšana",
+      "url": "https://yardandgarden.extension.iastate.edu/faq/how-do-i-care-garden-geraniums"
+    },
+    {
+      "label": "University of Wisconsin Extension — pelargoniju pārziemošana",
+      "url": "https://hort.extension.wisc.edu/overwintering-tender-geraniums/"
+    },
+    {
+      "label": "University of Maryland Extension — lapu tūska telpaugiem",
+      "url": "https://extension.umd.edu/resource/edema-indoor-plants"
+    },
+    {
+      "label": "RHS — pelargoniju rūsa",
+      "url": "https://www.rhs.org.uk/disease/pelargonium-rust"
+    },
+    {
+      "label": "University of Georgia Extension — pelargoniju barošana",
+      "url": "https://fieldreport.caes.uga.edu/publications/B790/geraniums/"
+    },
+    {
+      "label": "Iowa State University — ziemošana podos un bez augsnes",
+      "url": "https://yardandgarden.extension.iastate.edu/faq/how-can-i-over-winter-my-geraniums-indoors"
+    },
+    {
+      "label": "RHS — mīksto dzinumu spraudeņu sagatavošana",
+      "url": "https://www.rhs.org.uk/propagation/softwood-cuttings"
+    },
+    {
+      "label": "RHS — saljutīgu ziemciešu spraudeņu ziemošana",
+      "url": "https://www.rhs.org.uk/propagation/tender-cuttings"
+    }
+  ],
+  "reviewedClaims": [
+    {
+      "topic": "Botanical identity and groups",
+      "correction": "Distinguishes Pelargonium from Geranium and zonal, ivy-leaved, regal and scented groups; removes universal uninterrupted flowering promise.",
+      "sources": [
+        "https://yardandgarden.extension.iastate.edu/how-to/growing-annual-geraniums"
+      ]
+    },
+    {
+      "topic": "Planting depth and drainage",
+      "correction": "Same growing depth; free drainage holes and suitable substrate. Removed planting to first leaves and gravel drainage layer.",
+      "sources": [
+        "https://lancaster.unl.edu/2012-year-geranium/",
+        "https://ucanr.edu/site/uc-master-gardeners-santa-clara-county/drainage-containers"
+      ]
+    },
+    {
+      "topic": "Outdoor dates",
+      "correction": "Removed guaranteed May and autumn dates by Latvian region. Uses local forecasts, frost risk, acclimatisation and a clearly attributed approximate +7 C night-temperature guide.",
+      "sources": [
+        "https://www.rhs.org.uk/garden-jobs/when-to-plant-out-tender-plants-avoiding-late-frosts"
+      ]
+    },
+    {
+      "topic": "Water and fertiliser",
+      "correction": "Moisture checks replace a universal interval. No stronger fertiliser dose to compensate for fewer applications. No ash solution or compost-tea replacement recipe. Winter feeding depends on actual growth.",
+      "sources": [
+        "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/growing-geraniums-in-minnesota",
+        "https://yardandgarden.extension.iastate.edu/faq/how-do-i-care-garden-geraniums",
+        "https://fieldreport.caes.uga.edu/publications/B790/geraniums/"
+      ]
+    },
+    {
+      "topic": "Winter modes",
+      "correction": "Separates cool bright potted plants, bright living-room plants, rooted cuttings and limited bare-root experiments. No claim that all overwintering needs darkness, no water or a fixed autumn cut to 10–15 cm.",
+      "sources": [
+        "https://www.rhs.org.uk/plants/pelargonium/growing-guide",
+        "https://hort.extension.wisc.edu/overwintering-tender-geraniums/",
+        "https://yardandgarden.extension.iastate.edu/faq/how-can-i-over-winter-my-geraniums-indoors"
+      ]
+    },
+    {
+      "topic": "Bare-root limits",
+      "correction": "Least reliable method, restricted to suitably mature woody-stemmed plants. Notes different source advice about root soaking; gives no mandatory soaking interval. Does not promise success in Latvian unheated greenhouses or garages.",
+      "sources": [
+        "https://www.rhs.org.uk/plants/pelargonium/growing-guide",
+        "https://hort.extension.wisc.edu/overwintering-tender-geraniums/",
+        "https://yardandgarden.extension.iastate.edu/faq/how-can-i-over-winter-my-geraniums-indoors"
+      ]
+    },
+    {
+      "topic": "Cuttings",
+      "correction": "Healthy nonflowering shoots, clean tools, suitable substrate and moisture while rooting; after rooting, shift to winter care. Removed guaranteed 2–3-week rooting and 'free' promise.",
+      "sources": [
+        "https://www.rhs.org.uk/propagation/softwood-cuttings",
+        "https://www.rhs.org.uk/propagation/tender-cuttings",
+        "https://hort.extension.wisc.edu/overwintering-tender-geraniums/"
+      ]
+    },
+    {
+      "topic": "Symptoms",
+      "correction": "Separates environmental leaf shedding, possible waterlogging, oedema and rust signs. No automatic yellow-leaf diagnosis or blanket pesticide recipe.",
+      "sources": [
+        "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/growing-geraniums-in-minnesota",
+        "https://extension.umd.edu/resource/edema-indoor-plants",
+        "https://www.rhs.org.uk/disease/pelargonium-rust"
+      ]
+    }
+  ],
+  "sourceLimitations": [
+    "No Latvian cultivar trial or Latvian-specific overwintering success rate is claimed.",
+    "UK and US planting dates, trade compost brands and region-specific chemical products were not transferred.",
+    "Cool bright temperatures around 7–10 C are a practical orientation; actual light, growth and moisture govern care.",
+    "Sources differ on dormant-root moisture and soaking. The experimental nature is explicit instead of harmonising incompatible instructions into a rigid schedule.",
+    "Seed sowing dates and a universal time to first flower were removed rather than extrapolated across all cultivar groups."
+  ],
+  "photos": [
+    {
+      "id": "pelargonijas",
+      "src": "/images/flowers/pelargonijas.webp",
+      "width": 1200,
+      "height": 800,
+      "alt": "Rozā zonālās pelargonijas ziedkopa starp apaļām lapām",
+      "author": "Petro Stelte",
+      "sourceName": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pelargonium-Sitia-Crete-7.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Pelargonium-Sitia-Crete-7.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "changes": "Attēls samazināts un pārveidots WebP formātā.",
+      "reviewedAt": "2026-10-26",
+      "action": "Existing registered file retained; reused in article. No new photo or image edit."
+    },
+    {
+      "id": "pelargoniju-spraudeni",
+      "src": "/images/ziema/pelargoniju-spraudeni.webp",
+      "width": 1200,
+      "height": 900,
+      "alt": "Apsakņots pelargonijas spraudenis mazā sarkanā podiņā",
+      "author": "Kolforn",
+      "sourceName": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:-2019-11-12_Geranium_cuttings,_Trimingham_(2).JPG",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4e/-2019-11-12_Geranium_cuttings%2C_Trimingham_%282%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "changes": "Attēls samazināts un pārveidots WebP formātā.",
+      "reviewedAt": "2026-10-26",
+      "action": "Existing registered file retained; reused in article. No new photo or image edit."
+    }
+  ],
+  "integration": {
+    "newFlowerField": "winterTable: { headers: string[], rows: string[][] }",
+    "winterTableRows": 4,
+    "winterParagraphs": 3,
+    "articleTables": 2,
+    "articlePhotoCount": 2,
+    "oldArticleHeadingsPreservedAsCurrentHeadingOrAlias": [
+      "Laistīšana: nepārliet, bet arī neaizmirst",
+      "Mēslošana: tieši tā dod kuplos ziedus",
+      "Izziedējušo ziedu noņemšana: vienkāršākais triks kuplam ziedam",
+      "Pārziemošana telpās: kā saglabāt augu nākamvasarai",
+      "Bezmaksas jaunie stādi: spraudeņi",
+      "Īsi un skaidri: biežākie jautājumi"
+    ],
+    "removedUnrelatedLinks": [
+      "/receptes/komposta-teja",
+      "/raksti/kaiminaugi"
+    ],
+    "removedRecipeEntity": "komposta-teja",
+    "addedCropEntity": "pelargonijas"
+  },
+  "validation": {
+    "jsonParsing": "passed",
+    "sourceReferences": "passed: all section URLs declared, HTTPS and no duplicate source URLs",
+    "requiredArticleCopyLengths": "passed",
+    "tableDimensions": "passed",
+    "registeredImagesAndLocalFiles": "passed",
+    "internalLinkedContentFiles": "passed",
+    "oldArticleAnchors": {
+      "expected": 6,
+      "preserved": 6
+    },
+    "faq": {
+      "flower": 5,
+      "article": 5
+    },
+    "build": "Not run by content agent; parent owns batch build, shared templates and browser QA.",
+    "publishing": "Not performed."
+  },
+  "batchValidation": "content/audits/winter-content-batch-2026-10-27.json"
+}

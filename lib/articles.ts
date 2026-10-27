@@ -5,6 +5,9 @@ import type { ContentImageUse } from "./content-images";
 export interface ArticleSection {
   heading?: string;
   image?: ContentImageUse;
+  /** A small, credited photo comparison within the article. */
+  images?: ContentImageUse[];
+  diagram?: "hydrangea-pruning" | "greenhouse-winter";
   /** Preserve links to headings used before an editorial rewrite. */
   anchorAliases?: string[];
   paragraphs: string[];

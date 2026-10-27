@@ -1,0 +1,222 @@
+{
+  "date": "2026-10-27",
+  "status": "implemented-and-verified-locally",
+  "published": false,
+  "pages": [
+    "/pukes/rozes",
+    "/raksti/ka-apgriezt-rozes-pavasari",
+    "/raksti/rozu-melnplankumainiba-ka-arstet"
+  ],
+  "files": [
+    "content/flowers/rozes.json",
+    "content/articles/ka-apgriezt-rozes-pavasari.json",
+    "content/articles/rozu-melnplankumainiba-ka-arstet.json"
+  ],
+  "sourceCounts": {
+    "flower": 16,
+    "pruningArticle": 9,
+    "blackSpotArticle": 8,
+    "unique": 25
+  },
+  "sources": [
+    {
+      "label": "7rozes — Latvijā audzētu rožu grupas, stādīšana un ieziemošana",
+      "url": "https://7rozes.lv/par-rozem"
+    },
+    {
+      "label": "RHS — rožu audzēšana un augststumbra formas",
+      "url": "https://www.rhs.org.uk/plants/roses/growing-guide/"
+    },
+    {
+      "label": "RHS — rožu stādīšana un ieaugšanās",
+      "url": "https://www.rhs.org.uk/plants/roses/planting"
+    },
+    {
+      "label": "RHS — rožu apgriešanas pamatprincipi",
+      "url": "https://www.rhs.org.uk/plants/roses/pruning-guide"
+    },
+    {
+      "label": "RHS — vienreiz un atkārtoti ziedošas krūmrozes",
+      "url": "https://www.rhs.org.uk/plants/roses/shrub/pruning-guide"
+    },
+    {
+      "label": "University of Minnesota Extension — rudens darbi dažādām rožu grupām",
+      "url": "https://extension.umn.edu/about/our-stories/news/yard-and-garden-news/autumn-rose-care-in-minnesota"
+    },
+    {
+      "label": "Iowa State University Extension — rožu grupu un podu pārziemināšana",
+      "url": "https://yardandgarden.extension.iastate.edu/how-to/how-overwinter-roses"
+    },
+    {
+      "label": "University of Illinois Extension — kopšana, apraušana un ziemas seguma vēdināšana",
+      "url": "https://extension.illinois.edu/roses/care"
+    },
+    {
+      "label": "Iowa State University Extension — augststumbra rozes ziemā",
+      "url": "https://yardandgarden.extension.iastate.edu/faq/how-do-i-over-winter-tree-rose"
+    },
+    {
+      "label": "Iowa State University Extension — pavasara darbi rožu dobē",
+      "url": "https://yardandgarden.extension.iastate.edu/how-to/rose-care-season"
+    },
+    {
+      "label": "American Rose Society — podu rozes un patsakņu stādu atjaunošanās",
+      "url": "https://rose.org/growing-roses-in-pots-winterizing-your-roses/"
+    },
+    {
+      "label": "New York Botanical Garden — lapu dzeltēšanas cēloņi un mājas maisījumu risks",
+      "url": "https://libguides.nybg.org/roseproblems"
+    },
+    {
+      "label": "RHS — melnplankumainība un kopšanas metožu ierobežojumi",
+      "url": "https://www.rhs.org.uk/disease/rose-black-spot"
+    },
+    {
+      "label": "RHS — rožu miltrasa atšķiras no melnplankumainības",
+      "url": "https://www.rhs.org.uk/disease/rose-powdery-mildew"
+    },
+    {
+      "label": "RHS — laputis uz rozēm",
+      "url": "https://www.rhs.org.uk/biodiversity/rose-aphids"
+    },
+    {
+      "label": "RHS — tējhibrīdrožu un floribundrožu griešana",
+      "url": "https://www.rhs.org.uk/plants/roses/modern-bush/pruning-guide"
+    },
+    {
+      "label": "RHS — atkārtoti ziedošu vīteņrožu veidošana",
+      "url": "https://www.rhs.org.uk/plants/roses/climbing/pruning-guide"
+    },
+    {
+      "label": "RHS — stīgotājrožu griešana pēc ziedēšanas",
+      "url": "https://www.rhs.org.uk/plants/roses/rambler/pruning-guide"
+    },
+    {
+      "label": "Iowa State University Extension — rožu griešana pēc ziemas bojājumiem",
+      "url": "https://yardandgarden.extension.iastate.edu/how-to/how-prune-roses"
+    },
+    {
+      "label": "New York Botanical Garden — rožu grupas un apgriešanas izvēle",
+      "url": "https://libguides.nybg.org/pruningroses"
+    },
+    {
+      "label": "UC IPM — rožu melnplankumainības dzīves cikls un ierobežošana",
+      "url": "https://ipm.ucanr.edu/home-and-landscape/black-spot/"
+    },
+    {
+      "label": "University of Wisconsin–Madison — melnplankumainības pazīmes un rīcība",
+      "url": "https://hort.extension.wisc.edu/articles/black-spot/"
+    },
+    {
+      "label": "VAAD — augu aizsardzības līdzekļu lietošanas nosacījumi",
+      "url": "https://www.vaad.gov.lv/lv/lietosanas-nosacijumi-0"
+    },
+    {
+      "label": "VAAD — aktuālais augu aizsardzības līdzekļu reģistrs",
+      "url": "https://registri.vaad.gov.lv/reg/aal_saraksts.aspx"
+    },
+    {
+      "label": "RHS — slimo augu atlieku apsaimniekošana",
+      "url": "https://www.rhs.org.uk/prevention-protection/disposing-of-diseased-material"
+    }
+  ],
+  "reviewScope": [
+    "Complete rose flower guide rewritten.",
+    "Both related articles rewritten after parent expanded the assignment.",
+    "Existing URLs and all previous article heading anchors retained."
+  ],
+  "keyCorrections": [
+    "Winter protection distinguished by cultivar, root/graft status, climbing framework, high graft and container root exposure.",
+    "First light frost and fixed November/April dates replaced with acclimation, soil state, forecast, ventilation and spring growth conditions.",
+    "Universal 5–10 cm graft burial replaced with an attributed local approximate 5 cm instruction for ordinary bed roses, grower-specific follow-up, and explicit standard/own-root exceptions.",
+    "No promise that all park roses or all Canadian cultivars overwinter without protection.",
+    "No universal short autumn pruning. Once-flowering shrub and rambler wood retained; repeat-flowering groups treated separately.",
+    "Corrected the former reversed recommendation to prune floribundas harder than hybrid teas.",
+    "Removed unsupported folklore, horsetail cure, household soap treatment, obligatory compost tea and wound sealant advice.",
+    "Black spot management no longer prescribes automatic fungicide applications every 7–14 days. Current VAAD permitted use and product-specific label control the decision.",
+    "Removed absolute wet-leaf-equals-disease statement; distinguished black spot from mildew and non-specific yellowing."
+  ],
+  "sourceInterpretation": {
+    "localPlantingDepth": "7rozes gives 5 cm below soil for ordinary grafted roses. RHS UK planting page instead gives soil level. The guide attributes the local recommendation and does not present one depth as valid for all stock, forms or climates.",
+    "foreignClimate": "UK and US calendar dates, USDA zone examples and cultivar hardiness guarantees were not transferred to Latvia.",
+    "containerTemperature": "Iowa State 30–45 F translated approximately to −1 to +7 C; used as a monitored dormant-storage reference, not an outdoor hardiness threshold.",
+    "standardRoses": "Soil hilling at ground level does not protect a high graft. Tipping is described as a separate root-ball-aware method, not instructions to force a rigid trunk.",
+    "diseaseRecipes": "Primary sources used for identification, sanitation and care. Foreign pesticide names and timing excluded; no product availability claims made.",
+    "compost": "Diseased leaf handling avoids a blanket prohibition on all composting; uncontrolled cold home compost is distinguished from reliable pathogen treatment."
+  },
+  "visuals": [
+    {
+      "id": "rozes",
+      "use": [
+        "flower guide",
+        "pruning article"
+      ],
+      "existingAsset": true,
+      "visuallyInspected": true,
+      "note": "Single pale pink rose. Caption does not infer cultivar hardiness or pruning group from the photograph."
+    },
+    {
+      "id": "rozu-melnplankumainiba",
+      "use": [
+        "black spot article"
+      ],
+      "existingAsset": true,
+      "visuallyInspected": true,
+      "note": "Leaf spotting and yellowing visible; existing image metadata and licensing retained."
+    },
+    {
+      "type": "winterTable",
+      "rows": 5,
+      "purpose": "Compare which plant parts need protection in five situations; parent implements rendering."
+    },
+    {
+      "type": "article table",
+      "rows": 5,
+      "purpose": "Compare rose pruning groups."
+    },
+    {
+      "type": "article table",
+      "rows": 3,
+      "purpose": "Compare black spot, powdery mildew and non-specific yellowing."
+    }
+  ],
+  "validation": {
+    "contentChecks": [
+      {
+        "file": "content/flowers/rozes.json",
+        "sourceCount": 16,
+        "faqCount": 6,
+        "winterRows": 5,
+        "sourceCoverage": "all six substantive sections"
+      },
+      {
+        "file": "content/articles/ka-apgriezt-rozes-pavasari.json",
+        "sourceCount": 9,
+        "oldAnchorsPreserved": 6,
+        "faqCount": 5,
+        "sourceCoverage": "all sections"
+      },
+      {
+        "file": "content/articles/rozu-melnplankumainiba-ka-arstet.json",
+        "sourceCount": 8,
+        "oldAnchorsPreserved": 8,
+        "faqCount": 4,
+        "sourceCoverage": "all sections"
+      }
+    ],
+    "report": "/tmp/menesseja-rose-batch-content-check.json",
+    "json": "passed",
+    "internalLinks": "passed",
+    "imageReferences": "passed",
+    "articleAnchorPreservation": "passed",
+    "fullBuild": "delegated to parent batch integration",
+    "browserReview": "delegated to parent batch integration"
+  },
+  "remainingLimits": [
+    "No Latvian cultivar trial dataset was available for universal rose hardiness claims; none made.",
+    "External plant care guidance differs in pruning height, planting depth and winter methods; the guide retains the relevant differences.",
+    "No source image or new winter demonstration photo added; existing licensed photographs and comparison tables used.",
+    "No deployment or Search Console submission performed by this agent."
+  ],
+  "batchValidation": "content/audits/winter-content-batch-2026-10-27.json"
+}

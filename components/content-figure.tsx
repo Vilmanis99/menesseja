@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { contentImage, type ContentImageUse } from "@/lib/content-images";
 
-export function ContentFigure({ image, priority = false }: { image: ContentImageUse; priority?: boolean }) {
+export function ContentFigure({ image, priority = false, compact = false }: { image: ContentImageUse; priority?: boolean; compact?: boolean }) {
   const asset = contentImage(image.id);
   return (
     <figure className="my-md overflow-hidden rounded-xl border border-outline-variant/20 bg-surface-container print:break-inside-avoid">
@@ -11,9 +11,9 @@ export function ContentFigure({ image, priority = false }: { image: ContentImage
           alt={asset.alt}
           width={asset.width}
           height={asset.height}
-          sizes="(max-width: 767px) calc(100vw - 48px), 688px"
+          sizes={compact ? "(max-width: 639px) calc(100vw - 64px), 220px" : "(max-width: 767px) calc(100vw - 48px), 688px"}
           priority={priority}
-          className="block h-auto max-h-[28rem] w-full object-contain"
+          className={compact ? "block aspect-[4/3] h-auto w-full object-contain" : "block h-auto max-h-[28rem] w-full object-contain"}
         />
       </a>
       <figcaption className="space-y-2 p-sm sm:p-md">

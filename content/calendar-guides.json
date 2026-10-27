@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-26",
+  "updatedAt": "2026-10-27",
   "sources": {
     "seeds": {
       "label": "RHS — sēklu ievākšana un glabāšana",
@@ -128,6 +128,18 @@
     "peony-division": {
       "label": "Iowa State University Extension — lakstaino peoniju dalīšana un dziļums",
       "url": "https://yardandgarden.extension.iastate.edu/faq/when-best-time-transplant-peonies"
+    },
+    "greenhouse-winter": {
+      "label": "Halls Popular — siltumnīcas ziemas aizsardzība (PDF, 3. lpp.)",
+      "url": "https://www.hallsgreenhouses.co.uk/pdfs/halls-greenhouse-6x6-popular-instruction-manual-288664396a9c42339c99f29db5fd598e.pdf"
+    },
+    "irrigation-winter": {
+      "label": "GARDENA — laistīšanas sistēmas sagatavošana ziemai",
+      "url": "https://www.gardena.com/de/c/entdecke/garteninspiration/gartenmagazin/winterquartier-fuer-das-bewaesserungssystem"
+    },
+    "hydrangeas": {
+      "label": "RHS — hortenziju audzēšana un aizsardzība ziemā",
+      "url": "https://www.rhs.org.uk/plants/hydrangea/shrubby/growing-guide"
     }
   },
   "months": {
@@ -1807,11 +1819,12 @@
           "avoid": "Tukšas dobes vien nenozīmē, ka siltumnīca sagatavota ziemai.",
           "sourceIds": [
             "greenhouse",
-            "tools"
+            "tools",
+            "greenhouse-winter"
           ],
           "link": {
-            "href": "/raksti/siltumnicas-sagatavosana-sezonai",
-            "label": "Siltumnīcas sakopšana"
+            "href": "/raksti/siltumnicas-sagatavosana-sezonai#siltumnica-ziemai",
+            "label": "Siltumnīcas ziemas pārbaudes shēma un darbu secība"
           }
         }
       ],
@@ -1834,7 +1847,8 @@
         "mulch",
         "compost",
         "greenhouse",
-        "tools"
+        "tools",
+        "greenhouse-winter"
       ],
       "timeline": [
         {
@@ -1967,7 +1981,7 @@
           "heading": "Atšķir sakņu aizsardzību no dzinumu piesegšanas",
           "when": "Sagatavo materiālus mēneša sākumā; segšanu pielāgo auga ziemcietībai un noturīga aukstuma iestāšanās brīdim.",
           "paragraphs": [
-            "Dobē augošai ziemcietei un tā paša auga podam nav vienādu apstākļu. Arī hortenzijas nav viena grupa: lielziedu hortenzijai var būt jāsaglabā dzinumu ziedpumpuri."
+            "Dobē augošai ziemcietei un tā paša auga podam nav vienādu apstākļu. Arī hortenzijas nav viena grupa: liellapu hortenzijai var būt jāsaglabā dzinumu ziedpumpuri."
           ],
           "steps": [
             "Uzraksti trīs sarakstus: augi, kas paliek dobē; augi podos ārā; augi, kuriem vajadzīga telpa bez sala. Pie neskaidra nosaukuma vispirms noskaidro sugu.",
@@ -1977,10 +1991,11 @@
           "avoid": "Visu krūmu cieša ietīšana siltā, slapjā laikā var radīt nevajadzīgu mitrumu. Segu izvēlies konkrētajam augam.",
           "sourceIds": [
             "mulch",
-            "winter-trees"
+            "winter-trees",
+            "hydrangeas"
           ],
           "link": {
-            "href": "/pukes/hortenzijas",
+            "href": "/pukes/hortenzijas#parziemosana",
             "label": "Hortenziju veidi un pārziemošana"
           }
         },
@@ -2023,11 +2038,13 @@
           "avoid": "Nesajauc mazgāšanas līdzekļus un neatstāj ūdeni detaļās, kurām paredzēta glabāšana bez sala.",
           "sourceIds": [
             "greenhouse",
-            "tools"
+            "tools",
+            "greenhouse-winter",
+            "irrigation-winter"
           ],
           "link": {
-            "href": "/raksti/siltumnicas-sagatavosana-sezonai",
-            "label": "Siltumnīcas tīrīšanas secība"
+            "href": "/raksti/siltumnicas-sagatavosana-sezonai#siltumnica-ziemai",
+            "label": "Siltumnīcas ziemas pārbaudes shēma un darbu secība"
           }
         },
         {
@@ -2081,7 +2098,10 @@
         "mulch",
         "compost",
         "greenhouse",
-        "tools"
+        "tools",
+        "greenhouse-winter",
+        "irrigation-winter",
+        "hydrangeas"
       ],
       "timeline": [
         {
@@ -2137,11 +2157,12 @@
           "avoid": "Neplēs pie zariem piesalušu ledu un nekrati trauslus zarus ar spēku.",
           "sourceIds": [
             "winter-trees",
-            "greenhouse"
+            "greenhouse",
+            "greenhouse-winter"
           ],
           "link": {
-            "href": "/raksti/salnas-latvija",
-            "label": "Aukstuma riski dārzā"
+            "href": "/raksti/siltumnicas-sagatavosana-sezonai#siltumnica-ziemai",
+            "label": "Siltumnīcas ziemas pārbaudes shēma un darbu secība"
           }
         },
         {
@@ -2312,7 +2333,8 @@
         "seed-care",
         "hardening",
         "seedlings",
-        "tools"
+        "tools",
+        "greenhouse-winter"
       ],
       "timeline": [
         {

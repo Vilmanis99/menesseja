@@ -4,59 +4,67 @@
   "latin": "Hydrangea",
   "emoji": "🌸",
   "type": "krums",
-  "tagline": "Lieli, mākoņiem līdzīgi ziedu pušķi, kas vasaras otrā pusē pārvērš dārza pusēnu par krāsu jūru.",
-  "bloom": "Jūlijs–septembris",
+  "tagline": "Vispirms izvēlies sugu un šķirni — no tās atkarīga vieta, griešana un ziedpumpuru pārziemošana.",
+  "bloom": "Vasarā un rudens sākumā; konkrētais laiks atkarīgs no sugas un šķirnes",
   "bloomMonths": [
+    6,
     7,
     8,
     9
   ],
-  "height": "100–200 cm (atkarībā no sugas un šķirnes)",
-  "sun": "Saule / pusēna",
+  "height": "No kompaktām šķirnēm ap 0,5 m līdz krūmiem virs 3 m; pārbaudi etiķeti",
+  "sun": "Gaiša pusēna; skarainās piemērotā augsnē arī saulē",
   "hardy": true,
   "difficulty": "vidēji",
-  "plantWhen": "Stāda pavasarī (maijā) vai vasaras beigās; konteinerstādus arī visu sezonu mitrā, ēnainākā vietā",
+  "plantWhen": "Pavasarī vai agrā rudenī, kad augsne ir atkususi, nav pārmitra vai izkaltusi",
   "moonPhase": "augošs",
   "moonElement": "ziedi",
-  "moonText": "Hortenzija ir ziedu krūms, tāpēc stādīšanu un kopšanu tradicionāli saista ar ziedu jeb gaisa dienām un augošu Mēnesi, kad uzskata, ka sula ceļas uz augšu un augs labāk iesakņojas. Tā ir sena dārza tradīcija, ne ražas garantija — daudz svarīgāks par konkrēto dienu ir mitra, skābāka augsne un pareizi izvēlēta vieta pusēnā.",
+  "moonText": "Mēness dārzkopības tradīcijā hortenzijas saista ar ziedu dienām. Praktisko stādīšanas laiku izvēlies pēc augsnes, laika apstākļiem un stāda stāvokļa; Mēness fāze neaizstāj šos nosacījumus.",
   "intro": [
-    "Hortenzija ir viena no meklētākajām dārza puķēm Latvijā — un nav brīnums, jo tās lielie, apaļie vai konusveida ziedu pušķi vasaras otrā pusē izskatās gandrīz pārāk grezni, lai būtu īsti. Tā zied tieši tad, kad daudzas citas puķes jau noziedējušas — no jūlija līdz septembrim — un priecē ar krāsām no baltas un zaļganas līdz rozā, sārtas un pat zilas. Hortenzija mīl mitru, auglīgu un drīzāk skābāku augsni un jūtas vislabāk pusēnā, kur to nepārpludina pusdienas saule un kur zeme neizžūst — sausumu tā necieš un tūlīt nokar lapas.",
-    "Tomēr pirms pirkšanas ir vērts zināt vienu lietu, kas Latvijā izšķir visu: hortenzijas nav vienādas. Ir trīs galvenie tipi, un tieši no tā, kuru izvēlies, atkarīgs, vai krūms pie mums droši ziedēs katru gadu vai arī bargā ziemā paliks bez ziediem. Liellapu hortenzija ar tās lielajām, bumbveidīgajām ziedu galvām ir skaistākā, bet arī riskantākā; skarainā un koka hortenzija ir mazāk slavenas, taču pie mums daudz drošākas. Izvēlies pareizo tipu, un hortenzija būs dārza dārgakmens uz daudziem gadiem."
+    "Vārds “hortenzija” aptver dažādus krūmus. Ziedkopas var būt gan apaļas, gan plakanas, gan konusveida, un vienādas formas ziedi iespējami vairākām sugām. Pirkuma etiķete ar sugu un šķirni palīdz izvēlēties kopšanu precīzāk nekā fotogrāfija vien.",
+    "Latvijas dārzam īpaši svarīgi, uz kuriem dzinumiem veidojas ziedi. Skarainajām un kokveida hortenzijām tie attīstās uz jaunā pieauguma; daudzām liellapu hortenzijām ziedpumpuriem jāpārziemo uz iepriekšējās sezonas dzinumiem. Krūma izdzīvošana vēl negarantē ziedēšanu."
   ],
   "planting": [
-    "Izvēlies pusēnainu vietu, kur augs saņem rīta sauli un pusdienlaikā ir aizvēja un ēnā — pilnā dienvidu saulē lapas izdeg un krūms pastāvīgi cieš no sausuma.",
-    "Sagatavo mitru, auglīgu un drīzāk skābu augsni: iestrādā bedrē daudz komposta, trūdu vai skābās kūdras; smagu mālu vai sausu smilti hortenzija nemīl.",
-    "Stādi pavasarī (maijā) vai vasaras beigās, lai krūms paspēj iesakņoties; konteinerstādu var stādīt visu sezonu, ja vien rūpīgi laisti un izvēlies ēnaināku brīdi.",
-    "Iestādi tā, lai sakņu kakls paliek augsnes līmenī, labi aplej un biezi mulčē ar mizu, skujām vai kūdru — mulča notur mitrumu un uztur augsni skābāku.",
-    "Liellapu hortenzijai izvēlies pēc iespējas siltāku, aizvēja vietu pie mājas sienas vai dzīvžoga aizsegā, jo tieši aukstajos vējos visvairāk cieš tās ziedpumpuri."
+    "Pārbaudi šķirnes pieauguša krūma platumu un augstumu. Atvēli vietu arī lapotnei, ne tikai pašreizējam podam. Izvairies no vietas, kur krājas aukstais gaiss vai ilgstoši stāv ūdens.",
+    "Izvēlies gaišu pusēnu. Skarainā hortenzija var augt arī saulainākā vietā, ja augsne uztur mitrumu; liellapu hortenzijai piemērota aizsardzība no karstas pēcpusdienas saules.",
+    "Augsnei jāuztur mitrums un jānovada liekais ūdens. Mālaina augsne pati par sevi nav šķērslis. Pirms paskābināšanas nosaki pH; visām hortenzijām automātiski nevajag skābo kūdru.",
+    "Samitrini sakņu kamolu, izroc par to platāku bedri un stādi tādā pašā dziļumā kā podā. Aizpildi spraugas, saudzīgi piespied augsni un aplaisti.",
+    "Pārklāj sakņu zonu ar organisku mulču, atstājot brīvu vietu ap dzinumu pamatni. Pirmajā sezonā regulāri pārbaudi mitrumu arī pašā sakņu kamolā."
   ],
   "care": [
-    "Laisti regulāri un pamatīgi, īpaši karstā un sausā laikā — hortenzija (latīniski Hydrangea, no vārda 'ūdens') ir slāpīga un sausumā tūlīt nokar lapas; labāk reti, bet dziļi, nekā bieži un virspusēji.",
-    "Mulčē biezu kārtu un atjauno to katru sezonu, lai augsne paliek mitra un vēsa; tas ir vieglākais veids, kā hortenziju pasargāt no izžūšanas.",
-    "Mēslo pavasarī ar komposta kārtu vai mēslojumu skābes mīļotājiem (kā rododendriem); par daudz slāpekļa dod kuplas lapas, bet maz ziedu.",
-    "Liellapu hortenzijai ziedu krāsu nosaka augsnes pH: skābā augsnē tā zied zila, sārmainā — rozā; zilo krāsu var uzturēt, augsni paskābinot, bet skarainajai un baltajai šķirnei tas nedarbojas.",
-    "Noziedējušos ziedus vari atstāt uz krūma — tie skaisti izskatās arī sausi un ziemā, un liellapu hortenzijai tie pat nedaudz pasargā pumpurus zem sevis.",
-    "Apgriešana atšķiras pēc tipa: skaraino un koka hortenziju agri pavasarī apgriež īsi, jo tā zied uz tekošā gada dzinumiem; liellapu hortenziju neapgriež — tikai izņem sausos zarus, jo ziedpumpuri sēž uz pērnā gada dzinumiem."
+    "Laisti pēc augsnes mitruma, ne nemainīga dienu grafika. Nokarušas lapas vispirms salīdzini ar augsnes stāvokli: arī ilgstoši slapjas saknes var radīt vīšanu.",
+    "Saglabā mulču un pārbaudi, vai ūdens sasniedz sakņu zonu. Podā augošs krūms izžūst citādi nekā dobē stādīts; lietus zem blīvas lapotnes var nebūt pietiekams.",
+    "Labi augošam krūmam nav automātiski vajadzīga regulāra papildu mēslošana. Vāju augšanu vispirms izvērtē kopā ar mitrumu, augsni un sakņu stāvokli; mēslojumu lieto pēc vajadzības un marķējuma.",
+    "Griez pēc sugas un formas. Skarainās un kokveida veido agrā pavasarī; liellapu hortenzijai saudzē dzīvos dzinumus un noņem bojāto daļu, kad redzami veselie pumpuri. Kociņa formā saglabā stumbru.",
+    "Dažu liellapu un robaino hortenziju zilā vai rozā krāsa saistīta ar šķirni, pH un alumīnija pieejamību. Skarainās un kokveida hortenzijas ar paskābināšanu nepārvērš zilas."
   ],
-  "winter": "Skarainā (Hydrangea paniculata) un koka jeb 'Annabelle' (H. arborescens) hortenzija ir pilnībā ziemcietīga un Latvijā pārziemo atklātā laukā bez segšanas — tās zied uz tekošā gada dzinumiem, tāpēc pavasarī tās drīkst apgriezt īsi, un pat ja virszeme apsalst, krūms atjaunojas un tajā pašā vasarā uzzied. Liellapu hortenzija (H. macrophylla) ir izņēmums: tā zied uz pērnā gada dzinumiem, tāpēc bargā vai bezsniega ziemā tās ziedpumpuri viegli apsalst un krūms attīsta tikai lapas, bet nezied. Tieši tāpēc liellapu hortenzija Latvijā ir riskanta un to vēlams segt — rudenī apber sakņu zonu ar kūdru vai lapām un dzinumus aptin ar agrotīklu vai egļu zariem, un izvēlies tās siltāko, aizvēja vietu dārzā.",
+  "winter": "Dobē augošs, iesakņojies krūms. Skarainā un kokveida hortenzija ir aukstumizturīgākas izvēles, tomēr vērtē šķirni, jauna stādījuma stāvokli un vietas mitrumu. Mulča palīdz aizsargāt sakņu zonu; to nesaber pie pašiem dzinumiem. Nevienai sugai nevar apsolīt pārziemošanu visos Latvijas dārzos.\n\nLiellapu hortenzija. Daudzām šķirnēm īpaši jāsargā pārziemojošie dzinumi ar ziedpumpuriem. Izvēlies aizvēju; ziemas piesegumu pielāgo šķirnei un vietai, izmantojot gaisu caurlaidīgu materiālu. Sakņu mulča viena pati nepasargā augstāk esošos pumpurus. Pavasarī vēro salnu prognozi arī pēc atsegšanas.\n\nHortenzija podā. Sakņu kamols ir vairāk pakļauts salam nekā zemē. Pārziemošanas vietu izvēlies pēc šķirnes izturības un faktiskās temperatūras; neapsildīta siltumnīca pati par sevi nenodrošina aizsardzību pret stipru salu. Nodrošini noteci un pārbaudi, vai substrāts nav pilnīgi izžuvis vai pārmitrs.",
   "problems": [
-    "Nokarušas lapas un brūni ziedu mali — gandrīz vienmēr sausuma un karstuma pazīme; pārvieto laistīšanu uz vēsākiem brīžiem, biezi mulčē un, ja vari, dod augam vairāk pusēnas.",
-    "Liellapu hortenzija nezied, lai gan krūms vesels — visbiežāk cēlonis ir apsaluši pērnā gada ziedpumpuri pēc bargas ziemas vai par dziļu apgriešana; nākamziem to labāk sedz un neapgriež.",
-    "Gaiši dzeltenas lapas ar zaļām dzīslām (hloroze) — pazīme, ka augsne ir pārāk sārmaina; palīdz mēslojums skābes mīļotājiem un mulčēšana ar skābo kūdru vai skujām."
+    "Krūms nezied: pārbaudi sugu, šķirni, iepriekšējo griešanu un pumpuru bojājumus. Liellapu hortenzijai lapaini jaunie dzinumi nenozīmē, ka vecie ziedpumpuri pārziemojuši.",
+    "Vīšana vai brūnas lapu malas: pārbaudi sakņu kamola mitrumu, noteci un karstumu. Šīs pazīmes vien nepasaka, vai ūdens trūkst vai tā ir par daudz.",
+    "Dzeltenas lapas ar zaļām dzīslām: iespējami barības vielu pieejamības traucējumi, bet tā nav pH analīze. Novērtē, kuras lapas dzeltē, pārbaudi augsni un saknes pirms paskābinātāja vai mēslojuma lietošanas.",
+    "Ziedkopas noliec dzinumus: lielziedu kokveida šķirnēm to var pastiprināt lietus un ļoti spēcīga atgriešana. Izvērtē balstu un nākamās sezonas griešanas stiprumu."
   ],
-  "folklore": "Hortenzija nav sena latviešu lauku dārza puķe kā peonija vai jasmīns, bet 20. gadsimtā tā kļuva par mīļu pilsētas un piemājas dārza krūmu, ko bieži stāda pie ieejas vai dzīvojamās istabas loga, lai lielie ziedu pušķi priecē tieši vasaras nogalē. Skaista tradīcija ir lielos ziedu pušķus rudenī nogriezt un izžāvēt vāzē — tie saglabā formu un krāsu vēl ilgi pēc tam, kad dārzs jau aizsnidzis.",
   "faq": [
     {
-      "q": "Kura hortenzija Latvijā ziedēs droši katru gadu?",
-      "a": "Drošākā izvēle ir skarainā hortenzija (Hydrangea paniculata) un koka jeb 'Annabelle' hortenzija (H. arborescens) — tās ir pilnībā ziemcietīgas un zied uz tekošā gada dzinumiem, tāpēc pat ja ziema bargā, krūms tajā pašā vasarā uzzied no jauna. Skaistā liellapu hortenzija ar bumbveidīgajām ziedu galvām ir riskantāka, jo tā zied uz pērnā gada dzinumiem un bargā ziemā bieži paliek bez ziediem."
+      "q": "Vai Annabelle un kokveida hortenzija ir viens un tas pats?",
+      "a": "Annabelle ir kokveida hortenzijas Hydrangea arborescens šķirne. Sugai ir arī citas šķirnes ar atšķirīgām ziedkopām un dzinumu īpašībām."
     },
     {
-      "q": "Kāpēc mana liellapu hortenzija nezied?",
-      "a": "Visbiežākais iemesls ir tas, ka pērnā gada dzinumu ziedpumpuri ziemā apsala — liellapu hortenzija (H. macrophylla) zied tieši uz iepriekšējā gada dzinumiem, un bargā vai bezsniega ziemā Latvijā tie viegli iet bojā. Cits biežs iemesls ir par dziļu apgriešana rudenī vai pavasarī, ar ko nogriež nākamos ziedpumpurus. Risinājums: izvēlies siltu, aizvēja vietu, sedz krūmu ziemai un liellapu hortenziju neapgriez — tikai izņem sausos zarus."
+      "q": "Vai visas hortenzijas jāstāda skābā kūdrā?",
+      "a": "Nē. Skarainās un kokveida hortenzijas aug arī neitrālā līdz skābā augsnē. Svarīgs ir mitrums un drenāža; augsnes paskābināšanu pamato ar mērījumu un konkrētās šķirnes vajadzību."
     },
     {
-      "q": "Kā padarīt hortenziju zilu?",
-      "a": "Zilā krāsa darbojas tikai liellapu hortenzijai (H. macrophylla) un ir atkarīga no augsnes pH: skābā augsnē tā zied zila, sārmainā — rozā. Zilo krāsu uztur, augsni paskābinot ar skābo kūdru, skujām vai īpašu paskābinātāju. Baltajai, skarainajai un koka hortenzijai šis nedarbojas — to krāsu augsne neietekmē."
+      "q": "Vai hortenzijas drīkst apgriezt rudenī?",
+      "a": "Noziedējušas galvas noņemšana un visa dzinuma saīsināšana ir atšķirīgi darbi. Skaraino un kokveida krūmu veidošanu plāno pavasarī; liellapu hortenzijai rudenī saglabā dzīvos dzinumus un pumpurus."
+    },
+    {
+      "q": "Vai skarainā hortenzija ziedēs bez apgriešanas?",
+      "a": "Tā var ziedēt arī bez ikgadējas stipras griešanas. Griešana palīdz veidot krūmu un maina ziedkopu izmēru un skaitu; izvēlies to pēc šķirnes un vēlamās formas."
+    },
+    {
+      "q": "Vai hortenzijas ziedu krāsa droši parāda sugu?",
+      "a": "Nē. Balti un rozā ziedi ir vairākām sugām, turklāt krāsa mainās arī ziedkopai novecojot. Meklē etiķeti un vērtē lapas, ziedkopas un krūma augumu kopā."
     }
   ],
   "related": [
@@ -68,5 +76,115 @@
   "image": {
     "id": "hortenzija-skaraina",
     "caption": "Skarainā hortenzija (Hydrangea paniculata) ar konusveida ziedkopām. Sugas nosaukums ir svarīgs, izvēloties apgriešanas paņēmienu."
+  },
+  "seoTitle": "Hortenzijas — sugas, stādīšana, kopšana un ziemošana",
+  "seoDescription": "Skarainās, kokveida un liellapu hortenzijas: kā izvēlēties vietu, stādīt, laistīt, apgriezt un sagatavot ziemai Latvijas dārzā.",
+  "updatedAt": "2026-10-27",
+  "shortAnswer": "Skarainā un kokveida hortenzija zied uz šāgada dzinumiem; daudzām liellapu šķirnēm jāsaglabā pērnā gada dzinumi ar ziedpumpuriem. Visām vajadzīga mitrumu uzturoša, drenēta augsne. Griešanu un ziemas aizsardzību izvēlies pēc sugas, šķirnes un vietas, ne tikai ziedu krāsas.",
+  "lifeCycle": "Daudzgadīgi lapu krūmi. Šis ceļvedis galvenokārt aptver H. paniculata, H. arborescens un H. macrophylla; vīteņhortenzijām un citām sugām kopšanas detaļas atšķiras.",
+  "comparison": {
+    "heading": "Trīs hortenziju grupas un to atšķirības",
+    "items": [
+      {
+        "name": "Skarainā — Hydrangea paniculata",
+        "description": "Raksturīgas konusveida ziedkopas. Zied uz šāgada pieauguma; veidošanu plāno agrā pavasarī. Ir gan zemas šķirnes, gan lieli krūmi un kociņa formas. Salīdzinājumā ar liellapu hortenziju labāk panes sauli un aukstumu."
+      },
+      {
+        "name": "Kokveida — Hydrangea arborescens",
+        "description": "Zied uz šāgada dzinumiem. Annabelle ir viena šķirne, ne visas sugas nosaukums. Ir baltas un rozā šķirnes; lielas ziedkopas pēc lietus var noliekt dzinumus. Izteikti īsa griešana nav obligāta katram krūmam."
+      },
+      {
+        "name": "Liellapu — Hydrangea macrophylla",
+        "description": "Ir apaļas un plakanas ziedkopas. Daudzām šķirnēm ziedi veidojas uz pārziemojušiem dzinumiem; atkārtoti ziedošās šķirnes spēj ziedēt arī uz jaunajiem. Šķirnes nosaukums vajadzīgs, lai izvērtētu šo atšķirību."
+      }
+    ]
+  },
+  "links": [
+    {
+      "label": "Hortenziju apgriešana: rudens darbi un pavasara griezumi",
+      "href": "/raksti/hortenziju-apgriesana"
+    },
+    {
+      "label": "Kāpēc hortenzijas nezied",
+      "href": "/raksti/kapec-hortenzijas-nezied"
+    },
+    {
+      "label": "Kāpēc hortenzijas maina krāsu",
+      "href": "/raksti/kapec-hortenzijas-maina-krasu"
+    },
+    {
+      "label": "Augsnes skābuma pārbaude",
+      "href": "/raksti/skaba-augsne-ka-noteikt-un-uzlabot"
+    }
+  ],
+  "sources": [
+    {
+      "label": "RHS — hortenziju apgriešana pēc sugas",
+      "url": "https://www.rhs.org.uk/plants/hydrangea/pruning-guide"
+    },
+    {
+      "label": "University of Maryland Extension — dzinumu vecums, atkārtota ziedēšana un griešanas piemēri",
+      "url": "https://extension.umd.edu/resource/pruning-hydrangeas"
+    },
+    {
+      "label": "RHS — krūmveida hortenziju stādīšana un kopšana",
+      "url": "https://www.rhs.org.uk/plants/hydrangea/shrubby/growing-guide"
+    },
+    {
+      "label": "Gunta Šenberga, konsultē Varis Kazaks — Hortenziju ballīte, Ievas Dārzs, 2012. gada augusts (PDF, 32.–34. lpp.)",
+      "url": "https://admin.baltezers.lv/filer/canonical/1624345779/4352/"
+    },
+    {
+      "label": "NC State Extension — Hydrangea paniculata",
+      "url": "https://plants.ces.ncsu.edu/plants/hydrangea-paniculata/"
+    },
+    {
+      "label": "NC State Extension — Hydrangea arborescens",
+      "url": "https://plants.ces.ncsu.edu/plants/hydrangea-arborescens/"
+    },
+    {
+      "label": "NC State Extension — Hydrangea macrophylla",
+      "url": "https://plants.ces.ncsu.edu/plants/hydrangea-macrophylla/"
+    },
+    {
+      "label": "RHS — lapu dzeltēšanas iespējamie cēloņi",
+      "url": "https://www.rhs.org.uk/problems/chlorosis"
+    },
+    {
+      "label": "University of Minnesota Extension — kokaugu aizsardzība ziemā",
+      "url": "https://extension.umn.edu/garden-and-home/yard-and-garden/lawns-and-landscapes-in-minnesota/protecting-trees-and-shrubs-in-winter"
+    }
+  ],
+  "sectionSources": {
+    "intro": [
+      "https://extension.umd.edu/resource/pruning-hydrangeas",
+      "https://admin.baltezers.lv/filer/canonical/1624345779/4352/"
+    ],
+    "comparison": [
+      "https://plants.ces.ncsu.edu/plants/hydrangea-paniculata/",
+      "https://plants.ces.ncsu.edu/plants/hydrangea-arborescens/",
+      "https://plants.ces.ncsu.edu/plants/hydrangea-macrophylla/"
+    ],
+    "planting": [
+      "https://www.rhs.org.uk/plants/hydrangea/shrubby/growing-guide",
+      "https://plants.ces.ncsu.edu/plants/hydrangea-paniculata/",
+      "https://plants.ces.ncsu.edu/plants/hydrangea-macrophylla/"
+    ],
+    "care": [
+      "https://www.rhs.org.uk/plants/hydrangea/shrubby/growing-guide",
+      "https://www.rhs.org.uk/plants/hydrangea/pruning-guide",
+      "https://www.rhs.org.uk/problems/chlorosis"
+    ],
+    "winter": [
+      "https://extension.umn.edu/garden-and-home/yard-and-garden/lawns-and-landscapes-in-minnesota/protecting-trees-and-shrubs-in-winter",
+      "https://extension.umd.edu/resource/pruning-hydrangeas",
+      "https://admin.baltezers.lv/filer/canonical/1624345779/4352/",
+      "https://www.rhs.org.uk/plants/hydrangea/shrubby/growing-guide"
+    ],
+    "problems": [
+      "https://www.rhs.org.uk/problems/chlorosis",
+      "https://plants.ces.ncsu.edu/plants/hydrangea-arborescens/",
+      "https://extension.umd.edu/resource/pruning-hydrangeas"
+    ]
   }
 }

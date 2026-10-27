@@ -7,13 +7,14 @@
   "shortAnswer": "Vispirms noskaidro hortenzijas sugu un šķirni. Liellapu hortenzijai ziedpumpuri var būt nosaluši vai nogriezti; skarainā un kokveida hortenzija zied uz šāgada dzinumiem. Ja pumpuri saglabājušies, pārbaudi gaismu, mitrumu un mēslošanu. Papildu mēslojums neatrisina katru neziedēšanas cēloni.",
   "primaryQuery": "kāpēc hortenzijas nezied un kā panākt bagātīgu ziedēšanu",
   "publishedAt": "2026-06-22",
-  "updatedAt": "2026-10-06",
+  "updatedAt": "2026-10-27",
   "entities": {
     "crops": [
       "hortenzijas"
     ]
   },
   "relatedSlugs": [
+    "hortenziju-apgriesana",
     "kapec-hortenzijas-maina-krasu",
     "skaba-augsne-ka-noteikt-un-uzlabot"
   ],
@@ -140,6 +141,10 @@
     }
   ],
   "links": [
+    {
+      "label": "Kad un kā apgriezt hortenzijas",
+      "href": "/raksti/hortenziju-apgriesana"
+    },
     {
       "label": "Hortenziju sugas un kopšana",
       "href": "/pukes/hortenzijas"

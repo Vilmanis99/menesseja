@@ -1,0 +1,72 @@
+{
+  "reviewedAt": "2026-10-27",
+  "status": "implemented-and-verified-locally",
+  "published": false,
+  "route": "/raksti/siltumnicas-sagatavosana-sezonai",
+  "scope": "Expanded existing evergreen guide with autumn shutdown, six-location original schematic, winter checks and spring restart; preserved URL and previous headings.",
+  "sources": [
+    {
+      "label": "RHS — siltumnīcas tīrīšana",
+      "url": "https://www.rhs.org.uk/garden-features/cleaning-greenhouses"
+    },
+    {
+      "label": "RHS — instrumentu tīrīšana un kopšana",
+      "url": "https://www.rhs.org.uk/garden-jobs/cleaning-tools"
+    },
+    {
+      "label": "UMass Extension — siltumnīcas higiēna un tīrīšana pirms dezinfekcijas",
+      "url": "https://www.umass.edu/agriculture-food-environment/greenhouse-floriculture/fact-sheets/cleaning-disinfecting-greenhouse"
+    },
+    {
+      "label": "Halls Popular — modeļu 46, 66, 86 un 106 instrukcija, ziemas aizsardzība (PDF, 3. lpp.)",
+      "url": "https://www.hallsgreenhouses.co.uk/pdfs/halls-greenhouse-6x6-popular-instruction-manual-288664396a9c42339c99f29db5fd598e.pdf"
+    },
+    {
+      "label": "University of Connecticut Extension — vēja un sniega slodze siltumnīcām",
+      "url": "https://extension.uconn.edu/2015/01/31/reducing-storm-damage-to-your-greenhouses/"
+    },
+    {
+      "label": "GARDENA — laistīšanas sistēmas sagatavošana ziemai",
+      "url": "https://www.gardena.com/de/c/entdecke/garteninspiration/gartenmagazin/winterquartier-fuer-das-bewaesserungssystem"
+    },
+    {
+      "label": "Halls — vēja risks un automātisko logu atvērēju ziemošana",
+      "url": "https://hallsgreenhouses.com/help-support/frequently-asked-questions"
+    },
+    {
+      "label": "RHS — pelargoniju ziemošana telpās bez sala",
+      "url": "https://www.rhs.org.uk/plants/pelargonium/growing-guide"
+    },
+    {
+      "label": "RHS — dārzeņi siltumnīcā, augsne un temperatūras kontrole",
+      "url": "https://www.rhs.org.uk/vegetables/growing-in-greenhouse"
+    }
+  ],
+  "editorialDecisions": [
+    "Manufacturer-specific snow limits, roof supports and automatic opener storage remain model-specific. No universal snow depth or dismantling rule.",
+    "Water draining follows system design; no compressed-air pressure recipe. Frost-sensitive parts stored without frost.",
+    "No calendar-only transplant date, annual wholesale soil replacement prescription, unverified fumigation or pesticide recipe.",
+    "Accessible original SVG supports a checklist; it is not a construction or roof-support drawing. No generated photography.",
+    "Existing Penn State sanitation URL returned 403; replaced with accessible UMass Extension sanitation material.",
+    "An independent agent checked source fit and seasonal logic. Added direct RHS plant-wintering and greenhouse-growing sources and FAQ source URLs based on that review."
+  ],
+  "discovery": [
+    "October, November and December calendar sections link directly to #siltumnica-ziemai.",
+    "Seasonal article links October–December; current article library includes the winter keywords."
+  ],
+  "contentChecks": {
+    "sections": 8,
+    "faqAnswers": 6,
+    "sources": 9,
+    "comparisonTables": 1,
+    "originalSchematics": 1,
+    "preservedHeadings": [
+      "Kad sākt un ko sagatavot",
+      "Darbu secība",
+      "Ja iepriekšējā sezonā bija slimības",
+      "Pirms ienes pirmos stādus",
+      "Biežākie jautājumi"
+    ]
+  },
+  "batchValidation": "content/audits/winter-content-batch-2026-10-27.json"
+}

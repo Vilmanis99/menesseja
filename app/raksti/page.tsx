@@ -34,7 +34,7 @@ export default function RakstiIndex() {
     return seasonDifference || b.updatedAt.localeCompare(a.updatedAt) || a.title.localeCompare(b.title, "lv");
   });
   const teasers: ArticleTeaser[] = sorted.map(({ slug, title, excerpt, category, intent, readMinutes, updatedAt, seasonalMonths, primaryQuery, aliases, body }) => {
-    const imageUse = body.find((section) => section.image)?.image;
+    const imageUse = body.map((section) => section.image ?? section.images?.[0]).find(Boolean);
     const asset = imageUse ? contentImage(imageUse.id) : undefined;
     return {
       slug, title, excerpt, category, intent, readMinutes, updatedAt, seasonalMonths,

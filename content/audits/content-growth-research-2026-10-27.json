@@ -1,0 +1,229 @@
+{
+  "date": "2026-10-27",
+  "status": "implementation-in-progress",
+  "siteChanged": true,
+  "published": false,
+  "objective": "Palielināt Latvijas meklēšanas apmeklējumu ar pārbaudītu sezonālo saturu, konkrētu problēmu risinājumiem un noderīgiem vizuāliem materiāliem.",
+  "evidenceLimits": [
+    "Google Trends Latvijas piecu gadu salīdzinājums hortenzijas/tomāti/siltumnīca tika atvērts tīmekļa rīkā un Chrome, taču dati neielādējās. Nav iegūtas interešu līknes, Rising vaicājumi vai pieauguma procenti.",
+    "GSC skaitļi nāk no GROWTH_OPERATIONS.md dokumentētās 2026-10-26 pārbaudes; šajā izpētē nav atkārtoti iegūts eksports vai pārbaudīts darbgrāmatas saturs.",
+    "GSC lapu skaitļu periods ir 2026-07-25 līdz 2026-10-24; 28 dienu kopsavilkums aptver 2026-09-27 līdz 2026-10-24.",
+    "Ārvalstu nozares prognozes, mazumtirgotāju pārdošana un rakstu esamība nav Latvijas meklējumu apjoma vai pieauguma pierādījums.",
+    "Latvijas meklēšanas rezultātu izlase par hortenzijām un Ziemassvētku kaktusu apliecina esošu konkurējošu saturu, nevis tā pilnīgu kvalitātes auditu vai konkrētu Google pozīciju mērījumu.",
+    "Tēmu avoti ir sākuma materiāls. Katram publicējamam padomam vēl vajadzīga konkrēta faktu pārbaude un piemērošana Latvijas klimatam, sugai un šķirnei."
+  ],
+  "existingContent": {
+    "articleCount": 84,
+    "alreadyPresent": [
+      "Visu 12 mēnešu darbu ceļveži un 2027. gada kalendāri",
+      "Puķu A–Z direktorijs ar fotogrāfijām",
+      "Siltumnīcas sagatavošana sezonai",
+      "Dāliju glabāšana ziemā",
+      "Puansetijas kopšana",
+      "Balkona dārzs un podu izmēri",
+      "Puķes, kas zied visu vasaru",
+      "Sēklu izvēle, glabāšana un dīgtspējas pārbaude"
+    ],
+    "observedQualityGaps": [
+      "Hortenziju, rožu un pelargoniju pamata ceļvežiem vēl nepieciešama tāda pati avotu un sugu atšķirību pārbaude kā četriem nesen pārskatītajiem puķu ceļvežiem.",
+      "Balkona un ilgstoši ziedošo puķu rakstos avoti vēl ved uz vispārīgām LLKC un RHS lapām.",
+      "Ilgstoši ziedošo puķu rakstā jāpārbauda pārāk vispārīgais solījums par ziedēšanas pagarināšanu par veselu mēnesi gandrīz jebkurai puķei.",
+      "Balkona raksta shortAnswer pašlaik ir motivējošs ievads, ne tieša atbilde par augu izvēli un apstākļiem."
+    ]
+  },
+  "documentedGscSignals": {
+    "source": "GROWTH_OPERATIONS.md:110",
+    "last28DaysClicks": 636,
+    "pages92Days": [
+      {
+        "path": "/kalendars/2026/oktobris",
+        "clicks": 233,
+        "impressions": 1042
+      },
+      {
+        "path": "/pukes",
+        "clicks": 207,
+        "impressions": 4559
+      },
+      {
+        "path": "/raksti/kapec-hortenzijas-nezied",
+        "clicks": 95,
+        "impressions": 304
+      },
+      {
+        "path": "/meness",
+        "clicks": 74,
+        "impressions": 4506
+      },
+      {
+        "path": "/kalendars",
+        "clicks": 33,
+        "impressions": 2908
+      }
+    ]
+  },
+  "sources": {
+    "rhs2026": {
+      "url": "https://www.rhs.org.uk/garden-inspiration/seasonal/2026-gardening-predictions",
+      "published": "2025-12-19",
+      "type": "UK industry forecast",
+      "use": "Kompakti ēdamie augi, tomāti, upenes, apputeksnētāji un apstākļiem piemēroti stādījumi."
+    },
+    "elmia2027": {
+      "url": "https://www.elmia.se/garden/for-besokare/nyheter/har-ar-tradgardstrenderna-for-kommande-sasong/",
+      "published": "2026-05-04",
+      "type": "Swedish industry forecast announcement",
+      "use": "Krāsu un stādījumu idejas; aplūkots paziņojums, ne viss lejupielādējamais ziņojums."
+    },
+    "gmg2027": {
+      "url": "https://gardenmediagroup.com/2027-garden-trends-report/",
+      "type": "US marketing agency forecast introduction",
+      "use": "Dārzkopība kā atelpa no ekrāniem; nav pārbaudīti pilnā ziņojuma dati vai veselības apgalvojumi."
+    },
+    "hydrangea": {
+      "url": "https://www.rhs.org.uk/plants/hydrangea/pruning-guide",
+      "type": "horticultural guidance"
+    },
+    "christmasCactus": {
+      "url": "https://www.rhs.org.uk/plants/christmas-cactus/how-to-grow",
+      "type": "horticultural guidance"
+    },
+    "winterSowing": {
+      "url": "https://extension.umn.edu/about/our-stories/news/yard-and-garden-news/jug-it-and-grow-winter-sowing-for-pollinator-gardens",
+      "published": "2025-12-22",
+      "type": "University of Minnesota Extension guidance"
+    },
+    "noDig": {
+      "url": "https://www.rhs.org.uk/soil-composts-mulches/no-dig-gardening",
+      "type": "horticultural guidance"
+    },
+    "trendsMethod": {
+      "url": "https://support.google.com/trends/answer/4365533?hl=en-GB",
+      "type": "Google documentation"
+    }
+  },
+  "editorialQueue": [
+    {
+      "priority": 1,
+      "window": "2026-10-28/2026-11-08",
+      "title": "Hortenziju apgriešana: ko darīt rudenī un ko atstāt pavasarim",
+      "action": "Jauns fokusēts raksts un saistītā /pukes/hortenzijas pamata ceļveža avotu pārbaude.",
+      "evidence": "Esošais neziedēšanas raksts jau saņem apmeklējumus; atsevišķa apgriešanas raksta bibliotēkā nav.",
+      "visual": "Trīs grupu īsti identificēti foto, veco/jauno dzinumu skaidrojums un pārbaudīta griezuma shēma.",
+      "guardrail": "Saglabāt veiksmīgā neziedēšanas raksta URL un nolūku. Atšķirt ziedkopu nogriešanu no krūma veidošanas.",
+      "implementation": {
+        "status": "implemented-and-verified-locally",
+        "published": false,
+        "audit": "content/audits/hydrangea-content-review-2026-10-27.json"
+      }
+    },
+    {
+      "priority": 2,
+      "window": "2026-10-28/2026-11-08",
+      "title": "Pelargoniju pārziemināšana atkarībā no pieejamās telpas",
+      "action": "Paplašināt un auditēt /pukes/pelargonijas; atsevišķu rakstu veidot tikai patstāvīgam detalizētam nolūkam.",
+      "evidence": "Sezonāla redakcionāla hipotēze un esošā ceļveža kvalitātes darbs; pieprasījuma apjoms nav izmērīts.",
+      "visual": "Apstākļu izvēles tabula un īsti sagatavošanas foto.",
+      "implementation": {
+        "status": "implemented-and-verified-locally",
+        "published": false,
+        "audit": "content/audits/pelargonium-batch-review-2026-10-27.json"
+      }
+    },
+    {
+      "priority": 3,
+      "window": "2026-10-28/2026-11-08",
+      "title": "Siltumnīca ziemai: pārbaudes pēc pēdējās ražas",
+      "action": "Papildināt /raksti/siltumnicas-sagatavosana-sezonai ar atsevišķu ziemas sadaļu; saglabāt URL.",
+      "evidence": "Esošais raksts jau aptver rudens tīrīšanu; papildinājumu nosaka ziemas konstrukcijas un aprīkojuma jautājumi.",
+      "visual": "Numurēts īstas siltumnīcas pārbaudes foto un īss saglabājams saraksts.",
+      "guardrail": "Seguma kopšana un konstrukcijas sniega slodze jāpārbauda konkrētā ražotāja norādēs.",
+      "implementation": {
+        "status": "implemented-and-verified-locally",
+        "published": false,
+        "audit": "content/audits/greenhouse-batch-review-2026-10-27.json"
+      }
+    },
+    {
+      "priority": 4,
+      "window": "2026-11-02/2026-11-15",
+      "title": "Ziemassvētku kaktuss nezied vai nomet pumpurus: ko pārbaudīt",
+      "action": "Jauns raksts, saites no novembra/decembra ceļvežiem un saistītā telpaugu satura.",
+      "evidence": "Bibliotēkā nav šīs tēmas; sezonāls piedāvājums, ne apstiprināts Latvijas Google Trends pieaugums.",
+      "visual": "Identificētu augu posmu un ziedu foto, simptomu izvēles tabula.",
+      "guardrail": "Nošķirt Schlumbergera grupas un Lieldienu kaktusu; neapsolīt ziedēšanu vienā svētku datumā.",
+      "implementation": {
+        "status": "implemented-and-verified-locally",
+        "published": false,
+        "audit": "content/audits/christmas-cactus-batch-review-2026-10-27.json"
+      }
+    },
+    {
+      "priority": 5,
+      "window": "2026-11",
+      "title": "Rožu sagatavošana ziemai",
+      "action": "Vispirms padziļināti pārskatīt /pukes/rozes ziemošanu un avotus.",
+      "evidence": "Sezonāla kvalitātes prioritāte, pieprasījums nav izmērīts.",
+      "visual": "Dažādu rožu grupu un aizsardzības piemēri ar skaidriem apstākļiem.",
+      "implementation": {
+        "status": "implemented-and-verified-locally",
+        "published": false,
+        "audit": "content/audits/rose-batch-review-2026-10-27.json"
+      }
+    },
+    {
+      "priority": 6,
+      "window": "2026-11/2026-12",
+      "title": "Puķu dobe, kas zied vairākus mēnešus: gatavas kombinācijas",
+      "action": "Padziļināt /raksti/darza-pukes-kas-zied-visu-vasaru ar sugām atbilstošiem avotiem un konkrētu dobes piemēru.",
+      "evidence": "Saistība ar apmeklēto puķu direktoriju un ārvalstu stādījumu idejām; jauns pieprasījuma pieaugums nav pierādīts.",
+      "visual": "Ziedēšanas joslas, mērogota dobes shēma, īstas sugu fotogrāfijas.",
+      "guardrail": "Ziedēšanas laiki ir orientējoši un atkarīgi no šķirnes, reģiona un sezonas."
+    },
+    {
+      "priority": 7,
+      "window": "2026-12/2027-01",
+      "title": "Tomātu šķirnes pēc audzēšanas vietas: siltumnīcai, laukam un podam",
+      "action": "Sagatavot jaunu izvēles ceļvedi; sasaistīt ar /augi/tomati un veidošanas rakstu.",
+      "evidence": "RHS 2026 prognozēs ir tomāti un kompakti ēdamie augi; Latvijas šķirņu vaicājumi vēl jāpārbauda.",
+      "visual": "Salīdzinājuma tabula un konkrēto šķirņu licencēti foto.",
+      "guardrail": "Pārbaudīt šķirņu īpašības un pieejamību. Ražotāja apgalvojumi nav mūsu audzēšanas izmēģinājums."
+    },
+    {
+      "priority": 8,
+      "window": "2026-12/2027-02",
+      "title": "Raža uz maza balkona: podi, saule un piemērotas kultūras",
+      "action": "Pārstrādāt esošo balkona rakstu un izmantot jau esošo podu izmēru rakstu.",
+      "evidence": "RHS kompakto ēdamo augu prognoze; esošam rakstam ir nepietiekami konkrēti avoti un īsā atbilde.",
+      "visual": "Divi balkona izkārtojumi atšķirīgiem gaismas apstākļiem un podu salīdzinājums."
+    },
+    {
+      "priority": 9,
+      "window": "2026-12/2027-01",
+      "title": "Ziemas sēja traukos ārā: kādiem augiem to apsvērt",
+      "action": "Izpētes un dokumentēta Latvijas izmēģinājuma kandidāts.",
+      "evidence": "UMN Extension konkrēts ceļvedis un 2026. gada publiskas nodarbības; tas nepierāda pieaugumu Latvijā.",
+      "visual": "Darbu secības foto un viena izmēģinājuma dienasgrāmata.",
+      "guardrail": "Pārbaudīt sugas un aukstuma prasības; atšķirt šo metodi no pirmsziemas sējas dobē. Neattiecināt uz visām kultūrām."
+    },
+    {
+      "priority": 10,
+      "window": "2026-12/2027-02",
+      "title": "Dobe bez rakšanas: ierīkošana, komposts un ierobežojumi",
+      "action": "Jauns detalizēts ceļvedis pēc vietējo apstākļu un izmaksu pārbaudes; sasaiste ar pirmā dārza un komposta saturu.",
+      "evidence": "RHS praktisks avots; metode ir satura iespēja, ne šajā pārbaudē izmērīts augošs Latvijas meklējums.",
+      "visual": "Dobes griezums un materiālu apjoma piemērs; vēlāk neliels tilpuma kalkulators."
+    }
+  ],
+  "growthRecommendations": [
+    "Darba jaudu sākotnēji sadalīt aptuveni 60% esošo pieprasīto lapu uzlabošanai, 30% jauniem sezonāliem jautājumiem, 10% eksperimentālām tēmām; tas ir redakcionāls priekšlikums.",
+    "Katram būtiskam rakstam pievienot vizuālu materiālu, kas palīdz pieņemt lēmumu: sugu atšķirības, griešanas vieta, darba secība, stādījuma shēma vai salīdzinājums.",
+    "Ārvalstu idejas izmantot oriģinālam Latvijas ceļvedim; pārbaudīt salnas, ziemcietību, sugu un šķirņu atšķirības, mērvienības un pieejamību. Attēlus izmantot tikai ar atbilstošām tiesībām.",
+    "Saglabāt veiksmīgo kalendāru un puķu nosaukumu URL. Pirms jauna URL pārbaudīt, vai jautājums jau atbildēts citā rakstā vai auga profilā.",
+    "No katra jaunā sezonas raksta izveidot vienu saglabājamu attēlu un īsu izplatīšanas tekstu; sociālo publicēšanu šis plāns neveic.",
+    "Mērīt atsevišķu lapu un vaicājumu iespaidus un klikšķus pēc 28 un 56 dienām ar sezonas kontekstu; nesolīt konkrētu SEO rezultātu noteiktā laikā.",
+    "Kad Trends pieejams, Latvijai salīdzināt piecu gadu sezonalitāti un pēdējo 12 mēnešu dinamiku, atsevišķi pārbaudīt variantus bez diakritikas un Rising vaicājumus. Indekss 0–100 nav meklējumu skaits; mazs apjoms var rādīties kā nulle."
+  ],
+  "implementationStartedAt": "2026-10-27",
+  "latestBatchAudit": "content/audits/winter-content-batch-2026-10-27.json"
+}

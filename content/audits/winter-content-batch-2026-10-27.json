@@ -1,0 +1,49 @@
+{
+  "reviewedAt": "2026-10-27",
+  "status": "implemented-and-verified-locally",
+  "published": false,
+  "primaryPages": [
+    "/pukes/pelargonijas",
+    "/raksti/ka-kopt-geranijas",
+    "/pukes/rozes",
+    "/raksti/ka-apgriezt-rozes-pavasari",
+    "/raksti/rozu-melnplankumainiba-ka-arstet",
+    "/raksti/siltumnicas-sagatavosana-sezonai",
+    "/raksti/ziemassvetku-kaktuss-nezied"
+  ],
+  "integration": [
+    "Shared responsive ContentTable used by article tables and new flower winterTable. Row headers on desktop, labelled definition lists on mobile.",
+    "Three source-checked real cactus photographs, original greenhouse checklist schematic and preserved existing pelargonium/rose photography.",
+    "Seasonal links and October–December detailed calendar links updated. Calendar hydrangea name corrected to liellapu.",
+    "Puansetia and amaryllis pages receive a link only, not a full repeat audit.",
+    "Root reviewed all final content, checked key primary sources, inspected new images and integrated agent work. Independent greenhouse review findings incorporated.",
+    "Long word in rose black-spot article H1 overflowed at 320 px; CSS wrapping fixed and browser verified.",
+    "Seasonal discovery test extended to validate flower destinations and winter anchors; no broad allow-list bypass."
+  ],
+  "validation": {
+    "existingTests": "19 passed",
+    "contentValidation": "86 articles, 31 flower guides (7 with section sources), 23 pest guides, 12 month guides, 72 credited images; 63 remaining editorial warnings",
+    "uiValidation": "passed",
+    "productionBuild": "passed; 328 generated pages",
+    "ssrReport": "/tmp/menesseja-winter-ssr-results.json",
+    "ssrChecks": "Nine page routes; H1, canonical, FAQ counts, modified dates, unique IDs, image attributes, old heading links, fragment destinations; calendar discovery, library and sitemap.",
+    "browserReport": "/tmp/menesseja-winter-browser-results.json",
+    "browserChecks": "All seven batch pages at 320 px. Shared flower/article table and diagram cases at 375, 640 and 1440 px. No horizontal overflow after fixing long article H1 wrapping; no observed console errors. Table cards and real cactus photos inspected. Search alias zigokaktuss returns one relevant article. Viewport reset.",
+    "screenshots": [
+      "/tmp/menesseja-winter-cactus-desktop.png",
+      "/tmp/menesseja-winter-greenhouse-mobile.png",
+      "/tmp/menesseja-winter-pelargonium-mobile.png"
+    ]
+  },
+  "limits": [
+    "No deployment or Search Console submission for this batch. Local preview on port 3106.",
+    "No measured Latvian Trends increase or promised rankings.",
+    "Twenty-four flower guides still lack the full section-source audit.",
+    "Unrelated tomato illustration prototype remains unshipped."
+  ],
+  "nextBatch": [
+    "Long-blooming flower-bed combinations and existing flower article source audit",
+    "Tomato variety-selection guide by greenhouse/outdoor/container conditions",
+    "Balcony harvest and container article source audit with practical comparisons"
+  ]
+}

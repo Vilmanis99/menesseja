@@ -1,0 +1,240 @@
+{
+  "title": "Hortenziju apgriešana: ko darīt rudenī un ko atstāt pavasarim",
+  "seoTitle": "Hortenziju apgriešana rudenī un pavasarī — pēc sugas",
+  "slug": "hortenziju-apgriesana",
+  "category": "Praktiski",
+  "intent": "how-to",
+  "excerpt": "Kad un kā apgriezt skarainās, kokveida un liellapu hortenzijas? Sugu salīdzinājums, pavasara griezumu shēmas un skaidrojums, ko darīt ar ziedkopām rudenī.",
+  "shortAnswer": "Skaraino un kokveida hortenziju veidošanu plāno agrā pavasarī, jo tās zied uz šāgada dzinumiem. Liellapu hortenzijai saglabā dzīvos pērnā gada dzinumus; pavasarī noņem veco ziedkopu un apsalušo daļu virs veselajiem pumpuriem. Rudenī visa krūma saīsināšana nav vajadzīga. Ja sugu nezini, vispirms to noskaidro.",
+  "primaryQuery": "hortenziju apgriešana",
+  "aliases": [
+    "hortenziju griešana",
+    "kad apgriezt hortenzijas",
+    "skaraino hortenziju apgriešana",
+    "Annabelle apgriešana"
+  ],
+  "publishedAt": "2026-10-27",
+  "updatedAt": "2026-10-27",
+  "seasonalMonths": [
+    3,
+    4,
+    9,
+    10,
+    11
+  ],
+  "entities": {
+    "crops": [
+      "hortenzijas"
+    ]
+  },
+  "showGardenAction": false,
+  "relatedSlugs": [
+    "kapec-hortenzijas-nezied",
+    "kapec-hortenzijas-maina-krasu"
+  ],
+  "sources": [
+    {
+      "label": "RHS — hortenziju apgriešana pēc sugas",
+      "url": "https://www.rhs.org.uk/plants/hydrangea/pruning-guide"
+    },
+    {
+      "label": "University of Maryland Extension — dzinumu vecums, atkārtota ziedēšana un griešanas piemēri",
+      "url": "https://extension.umd.edu/resource/pruning-hydrangeas"
+    },
+    {
+      "label": "Gunta Šenberga, konsultē Varis Kazaks — Hortenziju ballīte, Ievas Dārzs, 2012. gada augusts (PDF, 32.–34. lpp.)",
+      "url": "https://admin.baltezers.lv/filer/canonical/1624345779/4352/"
+    },
+    {
+      "label": "NC State Extension — Hydrangea paniculata",
+      "url": "https://plants.ces.ncsu.edu/plants/hydrangea-paniculata/"
+    },
+    {
+      "label": "NC State Extension — Hydrangea arborescens",
+      "url": "https://plants.ces.ncsu.edu/plants/hydrangea-arborescens/"
+    },
+    {
+      "label": "NC State Extension — Hydrangea macrophylla",
+      "url": "https://plants.ces.ncsu.edu/plants/hydrangea-macrophylla/"
+    }
+  ],
+  "readMinutes": 7,
+  "body": [
+    {
+      "heading": "Vispirms nosaki hortenziju, kuru griezīsi",
+      "paragraphs": [
+        "Atrodi sugas un šķirnes nosaukumu uz etiķetes vai pirkuma ierakstā. Apaļa balta ziedkopa viena pati neatšķir kokveida hortenziju no liellapu šķirnes. Zemāk redzami trīs piemēri, ne visu iespējamo ziedu formu atslēga."
+      ],
+      "images": [
+        {
+          "id": "hortenzija-skaraina",
+          "caption": "Skarainā hortenzija (H. paniculata): konusveida ziedkopu piemērs. Zied uz šāgada pieauguma."
+        },
+        {
+          "id": "hortenzija-kokveida-annabelle",
+          "caption": "Kokveida hortenzijas Annabelle (H. arborescens) apaļā ziedkopa. Šķirne zied uz šāgada dzinumiem."
+        },
+        {
+          "id": "hortenzija-liellapu",
+          "caption": "Liellapu hortenzija (H. macrophylla). Daudzām šķirnēm ziedēšanai vajadzīgi pārziemojuši dzinumi; foto šķirne nav norādīta."
+        }
+      ],
+      "sourceUrls": [
+        "https://plants.ces.ncsu.edu/plants/hydrangea-paniculata/",
+        "https://plants.ces.ncsu.edu/plants/hydrangea-arborescens/",
+        "https://plants.ces.ncsu.edu/plants/hydrangea-macrophylla/"
+      ]
+    },
+    {
+      "heading": "Kad apgriezt: salīdzini sugu un sezonu",
+      "paragraphs": [
+        "“Pērnā gada dzinums” ir zars, kas izaudzis iepriekšējā augšanas sezonā un pārziemojis. “Šāgada dzinums” ir jaunais pieaugums, kas rodas šajā sezonā. Šī atšķirība palīdz saprast, vai ar griezumu vari noņemt jau izveidotus ziedpumpurus."
+      ],
+      "table": {
+        "headers": [
+          "Augs",
+          "Rudenī",
+          "Pavasarī"
+        ],
+        "rows": [
+          [
+            "Skarainā — H. paniculata",
+            "Ja vajag, noņem tikai traucējošās, smagās noziedējušās galvas.",
+            "Pirms aktīvas augšanas izretini un veido pēc šķirnes un vēlamās formas."
+          ],
+          [
+            "Kokveida — H. arborescens, arī Annabelle",
+            "Ziedkopas vari atstāt vai noņemt, saglabājot krūma pamatu.",
+            "Izņem vājos un bojātos dzinumus; īsināšanas stiprumu izvēlies pēc krūma."
+          ],
+          [
+            "Liellapu — H. macrophylla",
+            "Saglabā dzīvos zarus un to pumpurus; apaļās vecās ziedkopas vari atstāt.",
+            "Kad redzami dzīvie pumpuri, noņem vecās galvas un bojātos galus saudzīgi."
+          ],
+          [
+            "Atkārtoti ziedoša liellapu šķirne",
+            "Pārbaudi šķirnes aprakstu; saglabā arī pērnā gada dzinumus.",
+            "Griez iespējami maz: veco dzinumu noņemšana var aizkavēt pirmos ziedus."
+          ],
+          [
+            "Suga vai šķirne nav zināma",
+            "Atliec krūma saīsināšanu un saglabā etiķeti vai foto noteikšanai.",
+            "Vispirms noskaidro ziedēšanas grupu; neizvēlies īsu griezumu pēc minējuma."
+          ]
+        ]
+      },
+      "sourceUrls": [
+        "https://extension.umd.edu/resource/pruning-hydrangeas",
+        "https://admin.baltezers.lv/filer/canonical/1624345779/4352/",
+        "https://www.rhs.org.uk/plants/hydrangea/pruning-guide"
+      ]
+    },
+    {
+      "heading": "Ko darīt ar ziedkopām rudenī",
+      "paragraphs": [
+        "Skarainās un kokveida hortenzijas lielas, smagas ziedkopas var noņemt, ja tās liec vai apdraud zarus. Vieglās ziedkopas var palikt ziemas skatam. Griežot noņem galvu ar īso kātiņa posmu, nevis vienlaikus saīsini visus krūma dzinumus.",
+        "Liellapu hortenzijas apaļās, noziedējušās galvas parasti atstāj līdz pavasarim; tās var nedaudz pasargāt zemākos pumpurus. Tomēr pašas ziedkopas neaizstāj šķirnei un vietai atbilstošu ziemas aizsardzību. Bojātu, aizlauztu zaru izvērtē atsevišķi.",
+        "Ja vēlies ziedus vāzei, arī tas ir griezums. Liellapu hortenzijai nenogriez garu dzīva zara gabalu tikai tāpēc, lai iegūtu garāku kātu."
+      ],
+      "sourceUrls": [
+        "https://admin.baltezers.lv/filer/canonical/1624345779/4352/",
+        "https://www.rhs.org.uk/plants/hydrangea/pruning-guide",
+        "https://extension.umd.edu/resource/pruning-hydrangeas"
+      ]
+    },
+    {
+      "heading": "Pavasara griezuma vieta: divas shēmas",
+      "paragraphs": [
+        "Abās shēmās svarīga ir vieta virs veselā pumpuru pāra. Atšķiras tas, cik lielu dzīva dzinuma daļu saglabā. Tās ir redakcijas zīmētas skaidrojošas shēmas, ne konkrēta krūma fotogrāfijas."
+      ],
+      "diagram": "hydrangea-pruning",
+      "sourceUrls": [
+        "https://www.rhs.org.uk/plants/hydrangea/pruning-guide",
+        "https://extension.umd.edu/resource/pruning-hydrangeas"
+      ]
+    },
+    {
+      "heading": "Skarainā un kokveida hortenzija: veidošana soli pa solim",
+      "paragraphs": [
+        "Izvēlies agru pavasari pirms aktīvas augšanas. Latvijas stādaudzētavas konsultācijā minēts aprīlis pirms lapu plaukšanas; konkrētajā gadā vēro krūmu un vietas apstākļus. Ārvalstu norāde “ziemas beigas” nav viens nemainīgs datums Latvijas reģioniem."
+      ],
+      "listStyle": "numbered",
+      "items": [
+        "Apskati krūma formu un sagatavo tīras, asas grieznes. Kociņam jau sākumā atšķir saglabājamo stumbru no vainaga zariem.",
+        "Izņem nolūzušos un droši atpazīstamos atmirušos zarus. Izretini krustojošos un vājos dzinumus, saglabājot labi izvietotu zaru pamatu.",
+        "Ja nepieciešama saīsināšana, izvēlies veselus pumpurus vēlamajā augstumā un griez tieši virs to pāra, nebojājot pumpurus. Vienāds centimetru skaits neder visām šķirnēm un formām.",
+        "Apskati rezultātu no malas. Pēc stiprākas griešanas ziedkopu var būt mazāk, bet tās var būt lielākas; kokveida lielziedu šķirnēm pēc lietus tās var vairāk noliekt dzinumus."
+      ],
+      "sourceUrls": [
+        "https://admin.baltezers.lv/filer/canonical/1624345779/4352/",
+        "https://plants.ces.ncsu.edu/plants/hydrangea-paniculata/",
+        "https://plants.ces.ncsu.edu/plants/hydrangea-arborescens/",
+        "https://extension.umd.edu/resource/pruning-hydrangeas"
+      ]
+    },
+    {
+      "heading": "Liellapu hortenzija: saglabā dzīvos dzinumus",
+      "paragraphs": [
+        "Pavasarī veco ziedkopu nogriez virs pirmā spēcīgā, veselā pumpuru pāra zem tās. Ja dzinuma gals apsalis, noņem bojāto posmu līdz pirmajiem veselajiem pumpuriem. Nesteidzies visu šķietami sauso zaru izgriezt, kamēr nav skaidrs, kur tas vēl ir dzīvs.",
+        "Blīvam, novecojušam krūmam var pakāpeniski izņemt atsevišķus vecākos zarus. Visa krūma nogriešana līdz zemei ir atjaunošana ar iespējamu ziedēšanas pārtraukumu, ne ikgadēja kopšana.",
+        "Atkārtoti ziedoša šķirne var veidot ziedus arī uz jaunajiem dzinumiem. Tas neatceļ agrāko ziedu vērtību uz pārziemojušajiem zariem. Ja šķirne nav zināma, nevar apsolīt, ka pēc īsas griešanas krūms tajā pašā vasarā noteikti uzziedēs."
+      ],
+      "sourceUrls": [
+        "https://www.rhs.org.uk/plants/hydrangea/pruning-guide",
+        "https://plants.ces.ncsu.edu/plants/hydrangea-macrophylla/",
+        "https://extension.umd.edu/resource/pruning-hydrangeas"
+      ]
+    },
+    {
+      "heading": "Pirms griešanas pārbaudi šīs kļūdas",
+      "paragraphs": [
+        "Apstājies un pārbaudi auga nosaukumu, ja kāds no šiem gadījumiem attiecas uz tavu krūmu."
+      ],
+      "listStyle": "check",
+      "items": [
+        "Apaļas ziedkopas nenozīmē, ka tā ir Annabelle: pārbaudi arī lapas un etiķeti.",
+        "Skarainajai hortenzijai kociņa formā nenogriez stumbru, sekojot krūmam domātam piemēram.",
+        "Negriez visu krūmu īsi tikai tāpēc, ka tas pērn neziedēja. Vispirms pārbaudi pumpurus un agrākās kopšanas pierakstus.",
+        "Nepārnes liellapu hortenzijas pamācību uz vīteņhortenziju, ozollapu vai citu sugu: tām pārbaudi savu kopšanas ceļvedi."
+      ],
+      "sourceUrls": [
+        "https://extension.umd.edu/resource/pruning-hydrangeas",
+        "https://www.rhs.org.uk/plants/hydrangea/pruning-guide"
+      ]
+    },
+    {
+      "heading": "Biežākie jautājumi",
+      "paragraphs": [
+        "Vai oktobrī jānogriež visas hortenzijas? Nē. Vispirms nosaki sugu un darba mērķi. Noziedējušas ziedkopas noņemšana ir atšķirīga no dzīvu dzinumu saīsināšanas.",
+        "Vai skarainā hortenzija ziedēs, ja to neapgriezīšu? Tā var ziedēt arī bez ikgadējas stipras griešanas. Veidošana galvenokārt palīdz regulēt krūma izmēru, zarojumu un ziedkopas.",
+        "Cik zemu griezt Annabelle? Viena obligāta augstuma nav. Vērtē dzinumu spēku un iepriekšējās sezonas rezultātu; ļoti īsa griešana var dot lielas ziedkopas uz dzinumiem, kas pēc lietus liecas.",
+        "Ko darīt, ja liellapu hortenzija jau nogriezta īsi? Saglabā atlikušos dzīvos dzinumus un nodrošini parasto kopšanu. Atkārtota griešana vai papildu mēslojums neatjauno nogrieztos ziedpumpurus; turpmākā ziedēšana atkarīga arī no šķirnes.",
+        "Vai rudenī atstātie sausie ziedi kaitē augam? Paši par sevi tie nav obligāti jānoņem. Vērtē ziedkopas smagumu, zara stāvokli un to, vai vēlies tās saglabāt ziemas skatam."
+      ],
+      "sourceUrls": [
+        "https://admin.baltezers.lv/filer/canonical/1624345779/4352/",
+        "https://plants.ces.ncsu.edu/plants/hydrangea-arborescens/",
+        "https://extension.umd.edu/resource/pruning-hydrangeas"
+      ]
+    }
+  ],
+  "links": [
+    {
+      "label": "Hortenziju sugas, stādīšana un pārziemošana",
+      "href": "/pukes/hortenzijas"
+    },
+    {
+      "label": "Kāpēc hortenzijas nezied",
+      "href": "/raksti/kapec-hortenzijas-nezied"
+    },
+    {
+      "label": "Kāpēc hortenzijas maina krāsu",
+      "href": "/raksti/kapec-hortenzijas-maina-krasu"
+    },
+    {
+      "label": "Novembra dārza darbi un augu aizsardzība",
+      "href": "/ko-set/novembris"
+    }
+  ]
+}

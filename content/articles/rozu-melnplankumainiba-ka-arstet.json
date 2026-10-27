@@ -1,14 +1,31 @@
 {
-  "title": "Rožu melnplankumainība: kāpēc rožu lapas klājas melniem plankumiem un kā ārstēt",
+  "title": "Rožu melnplankumainība: kā atpazīt un mazināt lapu slimību",
+  "seoTitle": "Rožu melnplankumainība: melni plankumi uz lapām un ko darīt",
   "slug": "rozu-melnplankumainiba-ka-arstet",
   "category": "Problēmas",
   "intent": "problem",
-  "excerpt": "Rožu melnplankumainība: kā to atpazīt, kāpēc tā uzliesmo mitrā vasarā, ko darīt ar slimajām lapām un stublājiem un kā slimību mazināt nākamajā sezonā.",
-  "shortAnswer": "Melnplankumainību izraisa sēne, kas inficē rožu lapas, ja tās ilgāk par aptuveni 7 stundām paliek slapjas. Noplūc un aizvāc slimās lapas, savāc nobirušās, sausā laikā izgriez stublājus ar plankumiem un laisti rozes no rīta pie saknes. Nākamajā sezonā vissvarīgākais ir rudens lapu savākšana, saulaina un vēdināma vieta un izturīgas šķirnes.",
-  "primaryQuery": "rožu melnplankumainība: kāpēc rožu lapas klājas melniem plankumiem un kā ārstēt",
+  "excerpt": "Tumši plankumi, dzeltēšana un rožu lapu biršana: kā pazīt melnplankumainību, savākt infekcijas avotus un izlemt par tālāko rīcību bez universāla smidzināšanas grafika.",
+  "shortAnswer": "Rožu melnplankumainībai raksturīgi tumši plankumi, bieži ar izplūdušu malu, lapu dzeltēšanu un priekšlaicīgu biršanu. Savāc slimās nobirušās lapas, laisti augsni un uzlabo gaisa apmaiņu. Daži plankumi nenozīmē, ka obligāti jāsmidzina; atkārtoti stipras slimības gadījumā izvērtē šķirni, vietu un konkrētam lietojumam atļautu līdzekli.",
+  "primaryQuery": "rožu melnplankumainība",
+  "aliases": [
+    "melni plankumi uz rožu lapām",
+    "rožu lapas dzeltē un birst",
+    "kā ārstēt rožu melnplankumainību"
+  ],
   "publishedAt": "2026-06-22",
-  "updatedAt": "2026-10-26",
+  "updatedAt": "2026-10-27",
+  "seasonalMonths": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
   "entities": {
+    "crops": [
+      "rozes"
+    ],
     "pests": [
       "miltrasa"
     ]
@@ -18,12 +35,36 @@
   ],
   "sources": [
     {
-      "label": "UC IPM — Black spot (Home and Landscape)",
-      "url": "https://ipm.ucanr.edu/PMG/GARDEN/PLANTS/DISEASES/blackspot.html"
+      "label": "UC IPM — rožu melnplankumainības dzīves cikls un ierobežošana",
+      "url": "https://ipm.ucanr.edu/home-and-landscape/black-spot/"
     },
     {
-      "label": "University of Wisconsin–Madison — Black spot",
+      "label": "University of Wisconsin–Madison — melnplankumainības pazīmes un rīcība",
       "url": "https://hort.extension.wisc.edu/articles/black-spot/"
+    },
+    {
+      "label": "RHS — melnplankumainība un kopšanas metožu ierobežojumi",
+      "url": "https://www.rhs.org.uk/disease/rose-black-spot"
+    },
+    {
+      "label": "RHS — rožu miltrasa atšķiras no melnplankumainības",
+      "url": "https://www.rhs.org.uk/disease/rose-powdery-mildew"
+    },
+    {
+      "label": "VAAD — augu aizsardzības līdzekļu lietošanas nosacījumi",
+      "url": "https://www.vaad.gov.lv/lv/lietosanas-nosacijumi-0"
+    },
+    {
+      "label": "VAAD — aktuālais augu aizsardzības līdzekļu reģistrs",
+      "url": "https://registri.vaad.gov.lv/reg/aal_saraksts.aspx"
+    },
+    {
+      "label": "New York Botanical Garden — lapu dzeltēšanas cēloņi un mājas maisījumu risks",
+      "url": "https://libguides.nybg.org/roseproblems"
+    },
+    {
+      "label": "RHS — slimo augu atlieku apsaimniekošana",
+      "url": "https://www.rhs.org.uk/prevention-protection/disposing-of-diseased-material"
     }
   ],
   "readMinutes": 4,
@@ -34,73 +75,95 @@
         "ka-pazit-simptomi"
       ],
       "paragraphs": [
-        "Uz lapu virspuses parādās tumši, apaļīgi plankumi līdz apmēram 1 cm diametrā ar izplūdušām, it kā spalvainām malām. Ap tiem lapa dzeltē, un smagos gadījumos lapas priekšlaicīgi nobirst. Uz viengadīgiem stublājiem var veidoties paceltas, violetas līdz tumšas vietas.",
-        "Nesajauc to ar miltrasu: miltrasa ir balts, miltains aplikums uz lapām un pumpuriem, nevis tumši plankumi."
+        "Uz lapām veidojas tumši brūni līdz melni plankumi, nereti ar izplūdušu vai it kā spalvainu malu. Ap plankumiem lapas var dzeltēt un vēlāk nobirt. Uz jauniem dzinumiem iespējami tumši bojājumi. Pazīmes atšķiras starp šķirnēm; katrs melns punkts pats par sevi nav droša diagnoze."
       ],
       "image": {
         "id": "rozu-melnplankumainiba",
-        "caption": "Melnplankumainība: tumši plankumi ar izplūdušām malām un dzeltējoša lapa."
+        "caption": "Melnplankumainības bojātas rožu lapas: tumši plankumi ar izplūdušām malām un dzeltējoši laukumi."
+      },
+      "table": {
+        "headers": [
+          "Ko redzi",
+          "Ko pārbaudīt"
+        ],
+        "rows": [
+          [
+            "Tumši plankumi un priekšlaicīga lapu biršana",
+            "Iespējama melnplankumainība; apskati arī pārējās lapas un dzinumus."
+          ],
+          [
+            "Balts miltains aplikums un deformētas jaunās lapas",
+            "Raksturīgāk miltrasai; tā var izplatīties arī sausā vasarā."
+          ],
+          [
+            "Vienmērīga dzeltēšana bez plankumiem",
+            "Pārbaudi sakņu mitrumu un citus kopšanas apstākļus; nepieciešama plašāka izvērtēšana."
+          ]
+        ]
       },
       "sourceUrls": [
         "https://hort.extension.wisc.edu/articles/black-spot/",
-        "https://ipm.ucanr.edu/PMG/GARDEN/PLANTS/DISEASES/blackspot.html"
+        "https://www.rhs.org.uk/disease/rose-black-spot",
+        "https://www.rhs.org.uk/disease/rose-powdery-mildew",
+        "https://libguides.nybg.org/roseproblems"
       ]
     },
     {
       "heading": "Kāpēc melnplankumainība uzliesmo mitrā vasarā",
       "paragraphs": [
-        "Sēnei vajag slapju lapu: sporas veidojas un inficē lapu, ja tā paliek mitra ilgāk par aptuveni 7 stundām. Tāpēc slimība uzliesmo lietainās vasarās, blīvos krūmos un tur, kur rozes laista vakarā pa lapām.",
-        "Sporas izplata lietus šļakatas un vējš. Sēne pārziemo nokritušajās lapās un inficētajos stublājos, tāpēc nesavāktās lapas nākamajā pavasarī kļūst par jaunas infekcijas avotu."
+        "Slimību izraisa sēne Diplocarpon rosae. Tā saglabājas inficētās lapās un dzinumos, bet sporas tālāk izplata ūdens šļakatas. Ilgstoši slapjas lapas rada piemērotus apstākļus infekcijai.",
+        "UC IPM min aptuveni septiņas lapu slapjuma stundas kā labvēlīgu nosacījumu. Dārzā tas nav precīzs drošības taimeris: lietus, rasa un blīva lapotne var pagarināt mitrumu arī tad, ja pats rozes nelaisti pa lapām."
       ],
       "sourceUrls": [
-        "https://ipm.ucanr.edu/PMG/GARDEN/PLANTS/DISEASES/blackspot.html",
+        "https://ipm.ucanr.edu/home-and-landscape/black-spot/",
         "https://hort.extension.wisc.edu/articles/black-spot/"
       ]
     },
     {
       "heading": "Ko darīt, kad tas jau noticis",
       "paragraphs": [
-        "Mērķis ir apturēt sporu izplatību, nevis izglābt jau bojātās lapas — tās zaļas vairs nekļūs."
+        "Jau bojāta lapa neatgūs iepriekšējo izskatu. Mērķis ir mazināt atkārtotu inficēšanos un saudzēt auga spēju turpināt augt."
       ],
       "items": [
-        "Noplūc slimās lapas un savāc nobirušās. Aizvāc tās prom no rozēm; mājas kompostā sporas var saglabāties.",
-        "Sausā laikā izgriez slimos stublājus 15–20 cm zem redzamā bojājuma un starp griezieniem notīri šķēres.",
-        "Laisti pie saknes un no rīta, lai lapas līdz vakaram nožūst.",
-        "Ja krūms zaudē tikai dažas lapas un laiks ir sauss, ar to parasti pietiek."
+        "Savāc slimās nobirušās lapas un aizvāc tās no rožu dobes. Neatstāj savākto kaudzi pie krūma.",
+        "Apskati dzinumus. Sausā laikā izņem skaidri bojātos posmus līdz veseliem audiem; darbā ar slimu materiālu tīri instrumentus.",
+        "Laisti sakņu zonu. Ja lapas tomēr samirkst, rīta laistīšana dod tām vairāk laika nožūt.",
+        "Izvērtē sabiezējumu un gaismu, bet slimu krūmu vasarā neapgriez zemu tikai gaisa apmaiņas dēļ.",
+        "Novēro jaunās lapas un biršanas apjomu. Ja plankumu maz, lapas turas un laiks kļūst sausāks, tūlītēja ķīmiska apstrāde var nebūt vajadzīga."
       ],
       "listStyle": "numbered",
       "sourceUrls": [
         "https://hort.extension.wisc.edu/articles/black-spot/",
-        "https://ipm.ucanr.edu/PMG/GARDEN/PLANTS/DISEASES/blackspot.html"
+        "https://ipm.ucanr.edu/home-and-landscape/black-spot/"
       ]
     },
     {
       "heading": "Kad vajadzīgs fungicīds",
       "paragraphs": [
-        "Ja konkrētā roze melnplankumainībai pakļauta gadu no gada un prognozē mitru laiku, fungicīdu lieto profilaktiski — no pumpuru plaukšanas ik pēc 7–14 dienām, kamēr turas mitrs laiks. Maini darbīgās vielas, lai sēne nekļūtu izturīga.",
-        "Izvēlies Latvijā rozēm reģistrētu augu aizsardzības līdzekli un ievēro etiķeti. Fungicīds neaizstāj lapu savākšanu un vēdināmu stādījumu."
+        "Par papildu aizsardzību vērts konsultēties, ja roze atkārtoti stipri zaudē lapas un kopšanas uzlabojumi nav pietiekami. Fungicīds nepadara bojātās lapas veselas, un izsmidzināšana pēc viena nemainīga intervāla nav piemērota visiem produktiem.",
+        "Pirms līdzekļa izvēles pārbaudi aktuālo VAAD reģistru un apstiprināto marķējumu: vai lietojums aptver rozes vai attiecīgos dekoratīvos augus un konkrēto slimību, kāda ir deva, apstrāžu skaits, intervāls un lietošanas ierobežojumi. Ārvalstu preparātu nosaukumi un grafiki nav automātiski piemērojami Latvijā."
       ],
       "sourceUrls": [
         "https://hort.extension.wisc.edu/articles/black-spot/",
-        "https://ipm.ucanr.edu/PMG/GARDEN/PLANTS/DISEASES/blackspot.html"
+        "https://www.vaad.gov.lv/lv/lietosanas-nosacijumi-0",
+        "https://registri.vaad.gov.lv/reg/aal_saraksts.aspx"
       ]
     },
     {
       "heading": "Kā novērst nākamsezon",
       "paragraphs": [
-        "Profilakse sākas jau rudenī."
+        "Pilnīgi izslēgt jaunas sporas dārzā nevar, taču var samazināt apstākļus, kas slimību veicina."
       ],
       "items": [
-        "Rudenī savāc un aizvāc visas nobirušās rožu lapas.",
-        "Pavasarī pirms pumpuru plaukšanas izgriez stublājus ar bojājumiem.",
-        "Stādi rozes vietā, kur ir vismaz 6–8 stundas tiešas saules dienā.",
-        "Nestādi krūmus pārāk cieši un izretini tos, lai lapas pēc lietus ātri nožūst.",
-        "Izvēlies melnplankumainībai izturīgas šķirnes — izturība starp šķirnēm ļoti atšķiras."
+        "Līdz ziemai savāc slimās lapas; pavasarī apskati dzinumus un izņem bojātos posmus.",
+        "Izvēlies saulainu, vēdināmu vietu un šķirnei pietiekamu attālumu.",
+        "Nākamajā stādīšanā meklē šķirni ar labu vietējo pieredzi pret melnplankumainību. Izturība nav absolūta un dažādās vietās var atšķirties.",
+        "Pieraksti, kurš krūms slimo atkārtoti. Vienas pastāvīgi uzņēmīgas šķirnes nomaiņa var būt lietderīgāka nekā ikgadējs vienāds smidzināšanas plāns."
       ],
       "listStyle": "check",
       "sourceUrls": [
-        "https://ipm.ucanr.edu/PMG/GARDEN/PLANTS/DISEASES/blackspot.html",
-        "https://hort.extension.wisc.edu/articles/black-spot/"
+        "https://www.rhs.org.uk/disease/rose-black-spot",
+        "https://ipm.ucanr.edu/home-and-landscape/black-spot/"
       ]
     },
     {
@@ -109,31 +172,32 @@
         "isi-un-skaidri-biezakie-jautajumi"
       ],
       "paragraphs": [
-        "Vai roze no melnplankumainības nomirs? Parasti nē. Ja lapas nobirst maz un laiks ir sauss, ārstēšana bieži nav vajadzīga. Smaga lapu zaudēšana gadu no gada gan krūmu novājina.",
-        "Vai kosas novārījums vai pelni palīdz? Tie ir tradicionāli dārznieku līdzekļi, bet universitāšu ieteikumos tie kā pārbaudīta melnplankumainības apkarošana nav minēti. Ja tos lieto, tie neaizstāj lapu savākšanu un vēdināmu stādījumu.",
-        "Vai melnplankumainība pāriet uz citiem augiem? Šī sēne bojā rozes. Uz citām rozēm tā izplatās viegli, tāpēc lapas savāc zem visiem rožu krūmiem."
+        "Vai roze no melnplankumainības nomirs? Daži plankumi parasti nav nāvējoši, taču atkārtota stipra lapu zaudēšana novājina krūmu. Vērtē visu augu un slimības atkārtošanos.",
+        "Vai slimās lapas likt mājas kompostā? Ja nevar nodrošināt slimības ierosinātāja iznīcināšanu kompostēšanas laikā, tās atdali no parastā aukstā komposta un aizvāc no rožu dobes.",
+        "Vai palīdz kosas novārījums, soda vai ziepjūdens? Maisījuma efektivitāti un drošu devu nevar pieņemt pēc mājas receptes; nepiemērots sastāvs vai koncentrācija var bojāt lapas. Vispirms nosaki problēmu, savāc slimās lapas un uzlabo augšanas apstākļus.",
+        "Vai jāsmidzina visas rozes profilaktiski? Nē. Novēro katru šķirni un iepriekšējo bojājumu apjomu; apstrāde nav automātiska prasība katrai rožu dobei."
+      ],
+      "sourceUrls": [
+        "https://hort.extension.wisc.edu/articles/black-spot/",
+        "https://www.rhs.org.uk/disease/rose-black-spot",
+        "https://ipm.ucanr.edu/home-and-landscape/black-spot/",
+        "https://libguides.nybg.org/roseproblems",
+        "https://www.rhs.org.uk/prevention-protection/disposing-of-diseased-material"
       ]
     }
   ],
   "links": [
     {
-      "label": "Rožu stādīšana, kopšana un slimības",
+      "label": "Rozes: stādīšana, kopšana un ieziemošana",
       "href": "/pukes/rozes"
     },
     {
-      "label": "Kā apgriezt rozes pavasarī",
+      "label": "Rožu apgriešana pavasarī pēc grupas",
       "href": "/raksti/ka-apgriezt-rozes-pavasari"
     },
     {
       "label": "Miltrasa: baltais aplikums uz lapām",
       "href": "/kaitekli/miltrasa"
     }
-  ],
-  "seasonalMonths": [
-    5,
-    6,
-    7,
-    8,
-    9
   ]
 }

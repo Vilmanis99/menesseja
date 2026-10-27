@@ -6,6 +6,7 @@ import { Icon } from "@/components/ui/icon";
 import { JsonLd } from "@/components/json-ld";
 import { DataNote } from "@/components/data-note";
 import { ContentFigure } from "@/components/content-figure";
+import { ContentTable } from "@/components/content-table";
 import { contentImage } from "@/lib/content-images";
 import { getFlower, getAllFlowers, flowerSlugs, FLOWER_TYPE_META, type Flower, type FlowerSourceSection } from "@/lib/flowers";
 import { CROPS } from "@/lib/planting-crops";
@@ -229,6 +230,7 @@ export default async function FlowerPage({ params }: { params: Promise<{ slug: s
             <Icon name="ac_unit" className="shrink-0 text-secondary" size="20px" />
             <div className="space-y-sm">{f.winter.split(/\n\s*\n/).map((paragraph, index) => <p key={index} className="text-body-md leading-relaxed text-on-surface-variant">{paragraph}</p>)}</div>
           </Card>
+          {f.winterTable && <ContentTable table={f.winterTable} />}
           <SectionSources flower={f} section="winter" />
           {f.winterImage && <ContentFigure image={f.winterImage} />}
         </section>

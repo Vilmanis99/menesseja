@@ -250,6 +250,11 @@ test("spring and summer remain discoverable and every curated destination exists
   for (let month = 1; month <= 12; month++) for (const link of seasonalLinks(month)) {
     if (link.href.startsWith("/raksti/")) {
       assert.ok(fs.existsSync(path.join(__dirname, "..", "content", "articles", `${link.href.slice(8)}.json`)), link.href);
+    } else if (/^\/pukes\/[^/#]+(?:#parziemosana)?$/.test(link.href)) {
+      const [slug, anchor] = link.href.slice(7).split("#");
+      const flowerFile = path.join(__dirname, "..", "content", "flowers", `${slug}.json`);
+      assert.ok(fs.existsSync(flowerFile), link.href);
+      if (anchor) assert.ok(JSON.parse(fs.readFileSync(flowerFile, "utf8")).winter?.trim(), link.href);
     } else {
       assert.ok(["/pukes/kas-zied/pavasari", "/pukes/kas-zied/vasara", "/pukes/kas-zied/rudeni"].includes(link.href), link.href);
     }
