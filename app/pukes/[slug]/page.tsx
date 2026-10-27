@@ -7,14 +7,29 @@ import { JsonLd } from "@/components/json-ld";
 import { DataNote } from "@/components/data-note";
 import { ContentFigure } from "@/components/content-figure";
 import { contentImage } from "@/lib/content-images";
-import { RecipeTodayBadge } from "@/components/recipe-today-badge";
-import { getFlower, getAllFlowers, flowerSlugs, FLOWER_TYPE_META } from "@/lib/flowers";
+import { getFlower, getAllFlowers, flowerSlugs, FLOWER_TYPE_META, type Flower, type FlowerSourceSection } from "@/lib/flowers";
 import { CROPS } from "@/lib/planting-crops";
 import { canonical, SITE_NAME, og } from "@/lib/seo";
 import { BLOOM_PERIODS } from "@/lib/bloom-periods";
 import { SEASONAL_LINKS_UPDATED_AT } from "@/lib/seasonal";
 
 export const dynamicParams = false;
+
+function SectionSources({ flower, section }: { flower: Flower; section: FlowerSourceSection }) {
+  const references = flower.sectionSources?.[section];
+  if (!references?.length) return null;
+  return (
+    <p className="mt-sm flex flex-wrap items-center gap-1 text-label-sm text-on-surface-variant">
+      Sadaļas avoti:
+      {references.map((url) => {
+        const index = flower.sources?.findIndex((source) => source.url === url) ?? -1;
+        const source = flower.sources?.[index];
+        if (!source) return null;
+        return <a key={url} href={`#avots-${index + 1}`} aria-label={`Avots ${index + 1}: ${source.label}`} className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-lg text-primary underline underline-offset-2">[{index + 1}]</a>;
+      })}
+    </p>
+  );
+}
 
 export function generateStaticParams() {
   return flowerSlugs().map((slug) => ({ slug }));
@@ -52,13 +67,13 @@ export default async function FlowerPage({ params }: { params: Promise<{ slug: s
     ? related
     : all.filter((x) => x.type === f.type && x.slug !== f.slug).slice(0, 4);
 
-  const facts: { label: string; value: string }[] = [
+  const facts: { label: string; value: string; href?: string }[] = [
     { label: "Ziedēšana", value: f.bloom },
     { label: "Augstums", value: f.height },
     { label: "Gaisma", value: f.sun },
     { label: "Stādīšana", value: f.plantWhen },
     { label: "Grūtība", value: f.difficulty },
-    { label: "Pārziemo Latvijā", value: f.hardy ? "Jā" : "Nē — jāizrok / jāsedz" },
+    { label: "Pārziemošana", value: "Skatīt šī auga nosacījumus →", href: "#parziemosana" },
   ];
 
   const jsonLd = {
@@ -67,7 +82,10 @@ export default async function FlowerPage({ params }: { params: Promise<{ slug: s
     headline: `${f.name} — kad stādīt un kā kopt Latvijā`,
     about: f.name,
     inLanguage: "lv",
-    dateModified: SEASONAL_LINKS_UPDATED_AT,
+    dateModified: f.updatedAt && f.updatedAt > SEASONAL_LINKS_UPDATED_AT ? f.updatedAt : SEASONAL_LINKS_UPDATED_AT,
+    mainEntityOfPage: canonical(`/pukes/${f.slug}`),
+    ...(f.sources?.length ? { citation: f.sources.map((source) => source.url) } : {}),
+    ...(f.image ? { image: canonical(contentImage(f.image.id).src) } : {}),
     isPartOf: { "@type": "WebSite", name: SITE_NAME, url: canonical("/") },
     publisher: { "@type": "Organization", name: SITE_NAME, url: canonical("/") },
     author: { "@type": "Organization", name: SITE_NAME, url: canonical("/") },
@@ -94,23 +112,38 @@ export default async function FlowerPage({ params }: { params: Promise<{ slug: s
       <JsonLd data={breadcrumb} />
       {faqJsonLd && <JsonLd data={faqJsonLd} />}
 
-      <nav className="mb-md flex items-center gap-1 text-label-sm text-on-surface-variant">
+      <nav aria-label="Atrašanās vieta" className="mb-md flex items-center gap-1 text-label-sm text-on-surface-variant">
         <Link href="/pukes" className="hover:text-primary">Puķes</Link>
         <Icon name="chevron_right" size="14px" />
         <span className="text-on-surface">{f.name}</span>
       </nav>
 
-      <header className="mb-lg flex items-center gap-md">
-        <span className="text-6xl leading-none">{f.emoji}</span>
-        <div>
+      <header className="mb-md flex items-center gap-md sm:mb-lg">
+        <span aria-hidden="true" className="hidden shrink-0 text-6xl leading-none sm:block">{f.emoji}</span>
+        <div className="min-w-0">
           <p className="flex items-center gap-1.5 text-label-sm uppercase tracking-[0.2em] text-tertiary">
             <Icon name={tm.icon} size="16px" /> {tm.label}
           </p>
-          <h1 className="text-headline-lg-mobile text-primary md:text-display-lg">{f.name}</h1>
+          <h1 className="break-words text-headline-lg-mobile text-primary md:text-display-lg">{f.name}</h1>
           {f.latin && <p className="text-body-md italic text-on-surface-variant">{f.latin}</p>}
           <p className="mt-1 text-body-lg text-on-surface-variant">{f.tagline}</p>
+          {f.updatedAt && <p className="mt-2 text-label-sm text-on-surface-variant">Atjaunots <time dateTime={f.updatedAt}>{new Intl.DateTimeFormat("lv-LV", { day: "2-digit", month: "2-digit", year: "numeric", timeZone: "UTC" }).format(new Date(`${f.updatedAt}T00:00:00Z`))}</time></p>}
         </div>
       </header>
+
+      {f.shortAnswer && <Card tone="container" accent="primary" className="mb-md p-md sm:mb-lg"><p className="text-body-md leading-relaxed text-on-surface sm:text-body-lg">{f.shortAnswer}</p></Card>}
+
+      <nav aria-label="Ceļveža sadaļas" className="mb-md flex flex-wrap gap-2 sm:mb-lg">
+        {[
+          ...(f.comparison ? [{ href: "#augu-atskiribas", label: "Augu atšķirības" }] : []),
+          { href: "#stadisana", label: "Stādīšana" },
+          { href: "#kopsana", label: "Kopšana" },
+          ...(f.winter?.trim() ? [{ href: "#parziemosana", label: "Pārziemošana" }] : []),
+          ...(f.problems?.length ? [{ href: "#problemas", label: "Problēmas" }] : []),
+          ...(f.faq?.length ? [{ href: "#jautajumi", label: "Jautājumi" }] : []),
+          ...(f.sources?.length ? [{ href: "#avoti", label: "Avoti" }] : []),
+        ].map((link) => <a key={link.href} href={link.href} className="inline-flex min-h-11 items-center rounded-full bg-surface-container px-4 py-2 text-label-md text-primary hover:underline">{link.label}</a>)}
+      </nav>
 
       {f.image && <ContentFigure image={f.image} priority />}
 
@@ -130,6 +163,7 @@ export default async function FlowerPage({ params }: { params: Promise<{ slug: s
         {f.intro.map((p, i) => (
           <p key={i} className="text-body-lg leading-relaxed text-on-surface-variant">{p}</p>
         ))}
+        <SectionSources flower={f} section="intro" />
       </div>
 
       {/* Facts */}
@@ -138,23 +172,29 @@ export default async function FlowerPage({ params }: { params: Promise<{ slug: s
         {facts.map((x) => (
           <Card key={x.label} tone="container" className="p-sm">
             <p className="text-label-sm uppercase tracking-wide text-on-surface-variant">{x.label}</p>
-            <p className="text-body-md text-on-surface">{x.value}</p>
+            {x.href ? <a href={x.href} className="inline-flex min-h-11 items-center text-body-md text-primary underline underline-offset-2">{x.value}</a> : <p className="text-body-md text-on-surface">{x.value}</p>}
           </Card>
         ))}
+        {f.lifeCycle && <Card tone="container" className="col-span-2 p-sm sm:col-span-3"><p className="text-label-sm uppercase tracking-wide text-on-surface-variant">Dzīves cikls un audzēšana</p><p className="text-body-md text-on-surface">{f.lifeCycle}</p></Card>}
       </div>
 
-      {/* Moon timing — signature feature */}
-      <Card tone="highest" elevated accent="primary" className="mb-lg p-md">
-        <div className="mb-sm flex items-center gap-2">
-          <Icon name="brightness_3" className="text-primary" />
-          <h2 className="text-headline-md text-on-surface">Labākais laiks pēc Mēness</h2>
-        </div>
-        <p className="mb-sm text-body-md text-on-surface">{f.moonText}</p>
-        <RecipeTodayBadge phase={f.moonPhase} element={f.moonElement} />
-      </Card>
+      {f.comparison && (
+        <section className="mb-lg" aria-labelledby="augu-atskiribas">
+          <h2 id="augu-atskiribas" className="mb-sm scroll-mt-24 text-headline-md text-on-surface">{f.comparison.heading}</h2>
+          <dl className="grid gap-3 sm:grid-cols-2">
+            {f.comparison.items.map((item) => (
+              <div key={item.name} className="rounded-xl border border-outline-variant/20 bg-surface-container p-md">
+                <dt className="mb-2 font-semibold text-on-surface">{item.name}</dt>
+                <dd className="text-body-md leading-relaxed text-on-surface-variant">{item.description}</dd>
+              </div>
+            ))}
+          </dl>
+          <SectionSources flower={f} section="comparison" />
+        </section>
+      )}
 
       {/* Planting */}
-      <h2 className="mb-sm text-headline-md text-on-surface">Kā stādīt</h2>
+      <h2 id="stadisana" className="mb-sm scroll-mt-24 text-headline-md text-on-surface">Kā stādīt</h2>
       <Card tone="high" elevated className="mb-lg p-md">
         <ol className="space-y-sm">
           {f.planting.map((s, i) => (
@@ -166,10 +206,11 @@ export default async function FlowerPage({ params }: { params: Promise<{ slug: s
             </li>
           ))}
         </ol>
+        <SectionSources flower={f} section="planting" />
       </Card>
 
       {/* Care */}
-      <h2 className="mb-sm text-headline-md text-on-surface">Kā kopt {nameAcc}</h2>
+      <h2 id="kopsana" className="mb-sm scroll-mt-24 text-headline-md text-on-surface">Kā kopt {nameAcc}</h2>
       <Card tone="high" className="mb-lg p-md">
         <ul className="space-y-1.5">
           {f.care.map((s, i) => (
@@ -178,22 +219,24 @@ export default async function FlowerPage({ params }: { params: Promise<{ slug: s
             </li>
           ))}
         </ul>
+        <SectionSources flower={f} section="care" />
       </Card>
 
       {f.winter?.trim() && (
         <section className="mb-lg">
           <h2 id="parziemosana" className="mb-sm scroll-mt-24 text-headline-md text-on-surface">Kā pārziemot {nameAcc}</h2>
           <Card tone="container" accent="secondary" className="flex items-start gap-sm p-md">
-            <Icon name="ac_unit" className="text-secondary" size="20px" />
-            <p className="text-body-md leading-relaxed text-on-surface-variant">{f.winter}</p>
+            <Icon name="ac_unit" className="shrink-0 text-secondary" size="20px" />
+            <div className="space-y-sm">{f.winter.split(/\n\s*\n/).map((paragraph, index) => <p key={index} className="text-body-md leading-relaxed text-on-surface-variant">{paragraph}</p>)}</div>
           </Card>
+          <SectionSources flower={f} section="winter" />
           {f.winterImage && <ContentFigure image={f.winterImage} />}
         </section>
       )}
 
       {f.problems?.length ? (
         <>
-          <h2 className="mb-sm text-headline-md text-on-surface">Biežākās problēmas</h2>
+          <h2 id="problemas" className="mb-sm scroll-mt-24 text-headline-md text-on-surface">Biežākās problēmas</h2>
           <Card tone="high" className="mb-lg p-md">
             <ul className="space-y-1.5">
               {f.problems.map((s, i) => (
@@ -202,6 +245,7 @@ export default async function FlowerPage({ params }: { params: Promise<{ slug: s
                 </li>
               ))}
             </ul>
+            <SectionSources flower={f} section="problems" />
             <Link href="/kaitekli" className="mt-sm inline-flex items-center gap-1 text-label-md text-primary hover:underline">
               Skatīt kaitēkļu un slimību ceļvedi <Icon name="arrow_forward" size="16px" />
             </Link>
@@ -218,7 +262,7 @@ export default async function FlowerPage({ params }: { params: Promise<{ slug: s
 
       {f.faq?.length ? (
         <>
-          <h2 className="mb-sm text-headline-md text-on-surface">Biežākie jautājumi</h2>
+          <h2 id="jautajumi" className="mb-sm scroll-mt-24 text-headline-md text-on-surface">Biežākie jautājumi</h2>
           <div className="mb-lg space-y-2">
             {f.faq.map((q) => (
               <Card key={q.q} tone="container" className="p-md">
@@ -229,6 +273,21 @@ export default async function FlowerPage({ params }: { params: Promise<{ slug: s
           </div>
         </>
       ) : null}
+
+      {f.sources?.length ? <section className="mb-lg rounded-xl border border-outline-variant/20 p-md" aria-labelledby="avoti">
+        <h2 id="avoti" className="mb-sm scroll-mt-24 text-headline-md text-on-surface">Avoti un audzēšanas apstākļi</h2>
+        <p className="mb-sm text-body-md leading-relaxed text-on-surface-variant">Šie avoti pamato augu īpašības un kopšanas paņēmienus. Ārvalstu kalendāros minētie mēneši un ziemcietības vērtējumi nav garantija Latvijas dārzam: darbu laiku pielāgo vietējām salnām, augsnei un konkrētajai šķirnei.</p>
+        <ol className="space-y-1">{f.sources.map((source, index) => <li key={source.url} id={`avots-${index + 1}`} className="flex scroll-mt-24 items-baseline gap-2 text-body-md"><span className="shrink-0 text-on-surface-variant">[{index + 1}]</span><a href={source.url} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-11 items-center break-words py-2 text-primary underline underline-offset-2">{source.label}</a></li>)}</ol>
+      </section> : null}
+
+      <Card tone="highest" accent="primary" className="mb-lg p-md">
+        <div className="mb-sm flex items-center gap-2">
+          <Icon name="brightness_3" className="shrink-0 text-primary" />
+          <h2 className="text-headline-md text-on-surface">Mēness tradīcijas orientieris</h2>
+        </div>
+        <p className="text-body-md leading-relaxed text-on-surface">{f.moonText}</p>
+      </Card>
+      <DataNote variant="moon" className="mb-lg" />
 
       {f.links?.length ? (
         <div className="mb-lg border-t border-outline-variant/10 pt-md">
@@ -255,8 +314,6 @@ export default async function FlowerPage({ params }: { params: Promise<{ slug: s
           </div>
         </section>
       )}
-
-      <DataNote variant="moon" className="mb-lg" />
 
       {siblings.length > 0 && (
         <div className="border-t border-outline-variant/10 pt-md">

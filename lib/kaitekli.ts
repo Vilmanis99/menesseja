@@ -1,10 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 
-/** Garden problem (pest or disease) content type. Driven by the competitor finding
- *  that "zemesvēzis" is the fastest-rising Latvian gardening keyword — problem-driven
- *  search is huge. Our edge: every problem is solved with a NATURAL remedy that links
- *  straight into our own recipe vault (/receptes) + the AI photo tool (/diagnoze). */
+/** Pest and disease guides: identification, proportionate action and prevention. */
 
 export type ProblemType = "kaiteklis" | "slimiba";
 
@@ -22,7 +19,7 @@ export interface GardenProblem {
   affects: string[]; // skartie augi (brīvs teksts, lv)
   signs: string[]; // kā atpazīt
   intro: string[];
-  control: string[]; // dabīgas apkarošanas metodes
+  control: string[]; // pamatoti rīcības soļi
   recipeSlugs: string[]; // saites uz /receptes (tikai reālas slugs)
   prevention: string[];
   moonNote?: string;
@@ -37,8 +34,8 @@ export interface GardenProblem {
 }
 
 export const PROBLEM_TYPE_META: Record<ProblemType, { label: string; icon: string; blurb: string }> = {
-  kaiteklis: { label: "Kaitēkļi", icon: "pest_control", blurb: "Kukaiņi, gliemeži un citi dārza apēdāji." },
-  slimiba: { label: "Slimības", icon: "coronavirus", blurb: "Sēnītes un puves — kā atpazīt un apturēt." },
+  kaiteklis: { label: "Kaitēkļi", icon: "pest_control", blurb: "Kukaiņi, ērces, gliemeži un citi dzīvnieki: pazīmes un bojājumu mazināšana." },
+  slimiba: { label: "Slimības", icon: "microbiology", blurb: "Lapu aplikums, plankumi un puves: pazīmju pārbaude un rīcība." },
 };
 
 export const PROBLEM_TYPE_ORDER: ProblemType[] = ["kaiteklis", "slimiba"];

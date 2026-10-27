@@ -1,0 +1,404 @@
+{
+  "date": "2026-10-27",
+  "status": "two_guides_rewritten_with_section_sources",
+  "scope": "Padziļināti pārskatīti tikai asteru un neaizmirstuļu ceļveži. Citu puķu ceļvežu saturu šis aģents nemainīja.",
+  "method": "Primāru botānisko, universitāšu extension un selekcionāru audzēšanas avotu salīdzināšana. Ārvalstu audzētavu ražošanas režīmi atdalīti no mājas dārza norādēm un no Latvijas apstākļiem pielāgotiem orientieriem.",
+  "filesChanged": [
+    "content/flowers/asteres.json",
+    "content/flowers/neaizmirstules.json",
+    "content/audits/flower-guides-asteres-neaizmirstules-2026-10-27.json"
+  ],
+  "preserved": [
+    "Abi slug un kanoniskie ceļvežu URL",
+    "Auga name un emoji",
+    "Esošie image.id, attēlu faili un avotu URL centrālajā attēlu katalogā",
+    "Esošie related ieraksti"
+  ],
+  "pages": [
+    {
+      "slug": "asteres",
+      "taxon": "Callistephus chinensis",
+      "type": "viengadiga",
+      "sources": [
+        {
+          "label": "RHS — Callistephus chinensis: augums un kopšana",
+          "url": "https://www.rhs.org.uk/plants/156433/callistephus-chinensis/details"
+        },
+        {
+          "label": "NC State Extension — viengadīgā dārza astere",
+          "url": "https://plants.ces.ncsu.edu/plants/callistephus-chinensis/common-name/annual-aster/"
+        },
+        {
+          "label": "Iowa State Extension — sēklu dīgšanas nosacījumi",
+          "url": "https://yardandgarden.extension.iastate.edu/how-to/germination-requirements-annuals-and-vegetables"
+        },
+        {
+          "label": "UC IPM — viengadīgo asteru slimības",
+          "url": "https://ipm.ucanr.edu/agriculture/floriculture-and-ornamental-nurseries/aster-china/"
+        },
+        {
+          "label": "RHS — asteru ģintis un to audzēšanas atšķirības",
+          "url": "https://www.rhs.org.uk/plants/aster/growing-guide"
+        },
+        {
+          "label": "Iowa State Extension — dēstu norūdīšana un izstādīšana",
+          "url": "https://yardandgarden.extension.iastate.edu/how-to/selecting-hardening-and-planting-bedding-plants"
+        }
+      ],
+      "claimAudit": [
+        {
+          "claims": [
+            "Viengadīgs dzīves cikls; neaudzē kā ziemcietes ceru",
+            "Šķirņu atšķirīgs augstums un pildījums",
+            "Augsnes mitrums un laba notece, saulaina vieta"
+          ],
+          "fields": [
+            "latin",
+            "shortAnswer",
+            "lifeCycle",
+            "height",
+            "intro",
+            "care",
+            "winter"
+          ],
+          "sources": [
+            "https://www.rhs.org.uk/plants/156433/callistephus-chinensis/details",
+            "https://plants.ces.ncsu.edu/plants/callistephus-chinensis/common-name/annual-aster/"
+          ]
+        },
+        {
+          "claims": [
+            "Dēstu audzēšanas orientieris 6–8 nedēļas",
+            "Viegli pārklātas sēklas, ap 21 °C, orientējoši 7–10 dienas",
+            "Pēc sadīgšanas nepieciešama gaisma un piemērots mitrums"
+          ],
+          "fields": [
+            "plantWhen",
+            "planting",
+            "faq"
+          ],
+          "sources": [
+            "https://yardandgarden.extension.iastate.edu/how-to/germination-requirements-annuals-and-vegetables"
+          ],
+          "limit": "70 °F pārrēķināti aptuveni 21 °C. Tas nav garantēts dīgšanas ātrums visām šķirnēm un sēklu partijām."
+        },
+        {
+          "claims": [
+            "Pakāpeniska dēstu norūdīšana 7–10 dienas",
+            "Izstādīšana pēc salnu riska beigām",
+            "Saudzīga pāreja no aizsargātas vietas uz āra sauli un vēju"
+          ],
+          "fields": [
+            "planting",
+            "faq"
+          ],
+          "sources": [
+            "https://yardandgarden.extension.iastate.edu/how-to/selecting-hardening-and-planting-bedding-plants",
+            "https://www.rhs.org.uk/plants/aster/growing-guide"
+          ],
+          "limit": "Iowa sezonas datumus un mēslojuma recepti nepārņēmām. Latvijas martu–aprīli lietojam tikai kā plānošanas piemēru, skaitot atpakaļ no drošas vietējās izstādīšanas."
+        },
+        {
+          "claims": [
+            "Var sēt arī tieši dobē pavasarī",
+            "Atstatums pielāgojams šķirnes pieauguša auga platumam",
+            "Augstajām šķirnēm var vajadzēt balstu; noziedējušo ziedu novākšana"
+          ],
+          "fields": [
+            "planting",
+            "care"
+          ],
+          "sources": [
+            "https://www.rhs.org.uk/plants/156433/callistephus-chinensis/details",
+            "https://plants.ces.ncsu.edu/plants/callistephus-chinensis/common-name/annual-aster/"
+          ],
+          "limit": "25–40 cm ir praktisks šķirnei pielāgojams orientieris, balstīts publicētajā augu platuma diapazonā, ne universāla sugas norma. Vēlākas sējas un vēlākas ziedēšanas saistība ir plānošanas secinājums, ne konkrētas Latvijas šķirnes izmēģinājums."
+        },
+        {
+          "claims": [
+            "Vīšana var būt saistīta ar mitrumu, sakņu puvēm vai dažādām vītes slimībām",
+            "Fusarium var izraisīt vienpusēju dzeltēšanu un vadaudu brūnēšanu",
+            "Verticillium pazīmes var būt ļoti līdzīgas",
+            "Ierosinātāji augsnē saglabājas daudzus gadus"
+          ],
+          "fields": [
+            "problems",
+            "faq"
+          ],
+          "sources": [
+            "https://ipm.ucanr.edu/agriculture/floriculture-and-ornamental-nurseries/aster-china/"
+          ],
+          "limit": "Pazīmes nav laboratoriska diagnoze; apgalvojums visbiežāk tā ir fuzarioze noņemts. Kalifornijas slimību biežumu neattiecinām uz Latviju."
+        },
+        {
+          "claims": [
+            "Vietas maiņa un veselīgs sējas materiāls mazina risku",
+            "Bojātos augus aizvāc un ierobežo augsnes pārnešanu",
+            "Pārmitrums veicina sakņu puves un dēstu izkrišanu",
+            "Pelēka apsarme uz bojātiem ziediem var liecināt par Botrytis"
+          ],
+          "fields": [
+            "planting",
+            "care",
+            "winter",
+            "problems"
+          ],
+          "sources": [
+            "https://ipm.ucanr.edu/agriculture/floriculture-and-ornamental-nurseries/aster-china/",
+            "https://plants.ces.ncsu.edu/plants/callistephus-chinensis/common-name/annual-aster/"
+          ],
+          "limit": "Noņemta 3–4 gadu augsekas garantija. UC IPM min audzēšanu ne biežāk kā reizi 5 gados inficētā vietā, taču ceļvedis šo skaitli nepārvērš par drošu mājas dobes attīrīšanas termiņu. Nepārņemti fumiganti, fungicīdi, devas vai ASV produktu norādes."
+        },
+        {
+          "claims": [
+            "Callistephus atšķiras no daudzgadīgajiem Aster un Symphyotrichum",
+            "Symphyotrichum ietver pazīstamas rudens asteru grupas",
+            "Daļa sugu joprojām paliek Aster ģintī"
+          ],
+          "fields": [
+            "intro",
+            "comparison",
+            "faq"
+          ],
+          "sources": [
+            "https://www.rhs.org.uk/plants/aster/growing-guide",
+            "https://plants.ces.ncsu.edu/plants/callistephus-chinensis/common-name/annual-aster/"
+          ],
+          "limit": "Nosaukums Asteres saglabāts A–Z rādītājam. Visām ģintīm nav piešķirta vienāda ziemcietība vai ziedēšanas laiks."
+        }
+      ],
+      "removedClaims": [
+        "Tieši dobē sētas asteres vienmēr ir izturīgākas un veselīgākas",
+        "Fiksēts drošs izstādīšanas datums Latvijas piekrastei un iekšzemei",
+        "Automātiska fuzariozes diagnoze pēc vīšanas",
+        "Paštaisīts ziepjūdens kā universāls laputu risinājums",
+        "Daudzgadīgo asteru dalīšana kā viengadīgās asteres kopšanas solis",
+        "Nepamatota folklora un īpaša Mēness ietekmes garantija"
+      ],
+      "imageReview": {
+        "id": "asteres",
+        "decision": "Saglabāts ID un esošais foto; parakstā neidentificēta konkrēta šķirne. Centrālā kataloga avots identificē Callistephus chinensis.",
+        "source": "https://commons.wikimedia.org/wiki/File:Callistephus_chinensis_2023-08-28_9180.jpg",
+        "limit": "Primārās foto lapas atkārtota atvēršana šajā pārbaudē neizdevās; izmantots iepriekš reģistrētais lokālais avota ieraksts, netika apgalvots jauns šķirnes apstiprinājums."
+      }
+    },
+    {
+      "slug": "neaizmirstules",
+      "taxon": "Myosotis sylvatica",
+      "type": "divgadiga",
+      "sources": [
+        {
+          "label": "Latvijas Daba — meža neaizmirstule un tās pazīmes Latvijā",
+          "url": "https://www.latvijasdaba.lv/augi/myosotis-sylvatica-ehrh-ex-hoffm/"
+        },
+        {
+          "label": "RHS — Myosotis sylvatica dzīves cikls un audzēšana",
+          "url": "https://www.rhs.org.uk/plants/41558/myosotis-sylvatica/details"
+        },
+        {
+          "label": "NC State Extension — īsmūžīga ziemciete un pašizsēja",
+          "url": "https://plants.ces.ncsu.edu/plants/myosotis-sylvatica/"
+        },
+        {
+          "label": "Benary — Sylva sērijas sēja un gaismas prasība",
+          "url": "https://www.benary.com/products/myosotis-sylvatica-sylva"
+        },
+        {
+          "label": "PanAmerican Seed — Mon Amie dīgšana un ziedēšana",
+          "url": "https://www.panamseed.com/utility/CultureSheetPDF.aspx?pagename=culture.aspx&txtPHID=043504917&type=Per"
+        },
+        {
+          "label": "RHS — Myosotis scorpioides ūdenstilpju malām",
+          "url": "https://www.rhs.org.uk/plants/11292/myosotis-scorpioides/details"
+        },
+        {
+          "label": "RHS — īstās miltrasas pazīmes un ierobežošana",
+          "url": "https://www.rhs.org.uk/disease/powdery-mildews"
+        }
+      ],
+      "claimAudit": [
+        {
+          "claims": [
+            "Meža neaizmirstule ir Myosotis sylvatica",
+            "Suga ir daudzgadīga; dārzkopībā īsmūžīga un bieži audzēta divgadīgā ciklā",
+            "Latvijas botāniskais avots norāda ziedēšanu maijā–jūlijā"
+          ],
+          "fields": [
+            "latin",
+            "type",
+            "shortAnswer",
+            "lifeCycle",
+            "tagline",
+            "bloom",
+            "bloomMonths",
+            "intro"
+          ],
+          "sources": [
+            "https://www.latvijasdaba.lv/augi/myosotis-sylvatica-ehrh-ex-hoffm/",
+            "https://www.rhs.org.uk/plants/41558/myosotis-sylvatica/details",
+            "https://plants.ces.ncsu.edu/plants/myosotis-sylvatica/"
+          ],
+          "limit": "type=divgadiga ir audzēšanas grupa, ne apgalvojums, ka visi īpatņi obligāti dzīvo tieši divus gadus. Savvaļas sugas ziedēšanas logs negarantē vienādu ziedēšanas ilgumu dārza šķirnēm."
+        },
+        {
+          "claims": [
+            "Vasaras sēja nākamā pavasara ziediem",
+            "Dažām sērijām nepieciešams aukstuma periods ziedu ierosmei",
+            "Sēja retos sējumos, dēstu pāraudzēšana un vienmērīgs mitrums"
+          ],
+          "fields": [
+            "plantWhen",
+            "planting",
+            "faq"
+          ],
+          "sources": [
+            "https://plants.ces.ncsu.edu/plants/myosotis-sylvatica/",
+            "https://www.benary.com/products/myosotis-sylvatica-sylva"
+          ],
+          "limit": "Jūnijs–jūlijs ir piesardzīgs Latvijas dārza orientieris ar laiku rozešu nostiprināšanai. Benary profesionālās audzētavas kalendārs līdz augustam nav pārņemts kā universāls pēdējais sējas termiņš Latvijā."
+        },
+        {
+          "claims": [
+            "Sylva sērijai dīgšanai nepieciešama gaisma",
+            "Sylva norādītais režīms ir 18–22 °C un ap 10–20 dienām",
+            "Gaismu aizturoša bieza sēklu apbēršana šai sērijai neder"
+          ],
+          "fields": [
+            "planting",
+            "faq"
+          ],
+          "sources": [
+            "https://www.benary.com/products/myosotis-sylvatica-sylva"
+          ],
+          "limit": "Šīs prasības attiecinātas uz nosaukto sēriju, ne automātiski uz visām Myosotis sēklām."
+        },
+        {
+          "claims": [
+            "Mon Amie tehniskajā lapā sēklas neapber",
+            "Gaisma dīgšanas sākumā norādīta kā izvēles nosacījums",
+            "Mon Amie ziedu ierosmei nav vajadzīga vernalizācija"
+          ],
+          "fields": [
+            "lifeCycle",
+            "intro",
+            "planting",
+            "comparison",
+            "faq"
+          ],
+          "sources": [
+            "https://www.panamseed.com/utility/CultureSheetPDF.aspx?pagename=culture.aspx&txtPHID=043504917&type=Per"
+          ],
+          "limit": "Apbēršana un gaismas nepieciešamība ir dažādi parametri. Nekonstruēts pretējs universāls padoms visas neaizmirstules sēt tumsā. Audzētavas dienu skaits, mēslojuma koncentrācijas un augšanas regulatori nav pārnesti mājas dārzam."
+        },
+        {
+          "claims": [
+            "Mitra, ūdeni caurlaidīga, organiskām vielām bagāta augsne",
+            "Saule ir pieļaujama; karstā vietā palīdz pēcpusdienas ēna",
+            "Pašizsēja un tās ierobežošana ar noziedējušo daļu aizvākšanu",
+            "Augu augums un platums atšķiras starp sugai piederīgām šķirnēm"
+          ],
+          "fields": [
+            "height",
+            "sun",
+            "care",
+            "faq"
+          ],
+          "sources": [
+            "https://www.rhs.org.uk/plants/41558/myosotis-sylvatica/details",
+            "https://plants.ces.ncsu.edu/plants/myosotis-sylvatica/",
+            "https://www.benary.com/products/myosotis-sylvatica-sylva",
+            "https://www.panamseed.com/utility/CultureSheetPDF.aspx?pagename=culture.aspx&txtPHID=043504917&type=Per"
+          ],
+          "limit": "Nav saglabāta garantija, ka reiz iesēts stādījums vienmēr atjaunosies tieši vajadzīgajā vietā vai daudzumā."
+        },
+        {
+          "claims": [
+            "Suga var pārziemot dobē, bet rezultāts nav vienāds visām šķirnēm un vietām",
+            "Pārmitrums, vēla iesakņošanās un podi ir atsevišķi vērtējami apstākļi"
+          ],
+          "fields": [
+            "hardy",
+            "winter"
+          ],
+          "sources": [
+            "https://www.rhs.org.uk/plants/41558/myosotis-sylvatica/details",
+            "https://plants.ces.ncsu.edu/plants/myosotis-sylvatica/",
+            "https://www.benary.com/products/myosotis-sylvatica-sylva"
+          ],
+          "limit": "RHS H6 un ASV zonas nav pasniegtas kā garantija visā Latvijā. Ražotāja frost-free norādes attiecas uz profesionālas produkcijas kvalitāti, ne pierāda, ka suga vispār nav ziemcietīga. Rozešu nepārklāšana ar biezu slapju materiālu ir praktiska drenāžas piesardzība, ne konkrēts Latvijas ziemas izmēģinājums."
+        },
+        {
+          "claims": [
+            "Myosotis sylvatica ir uzņēmīga pret miltrasu",
+            "Balts miltains aplikums, sausuma stress un sabiezinājums jāvērtē kopā",
+            "Augsnes mitruma pārbaude jāveic pirms papildu laistīšanas",
+            "Mon Amie augstā substrāta pH var rasties hloroze"
+          ],
+          "fields": [
+            "care",
+            "problems",
+            "faq"
+          ],
+          "sources": [
+            "https://www.rhs.org.uk/disease/powdery-mildews",
+            "https://www.rhs.org.uk/plants/41558/myosotis-sylvatica/details",
+            "https://plants.ces.ncsu.edu/plants/myosotis-sylvatica/",
+            "https://www.panamseed.com/utility/CultureSheetPDF.aspx?pagename=culture.aspx&txtPHID=043504917&type=Per"
+          ],
+          "limit": "Nav solīta izārstēšana ar pārstādīšanu vai visu lapu noņemšanu; netiek ieteiktas paštaisītas smidzinājumu receptes vai nepārbaudītas devas."
+        },
+        {
+          "claims": [
+            "Myosotis scorpioides ir cita, mitrājiem un ūdenstilpju malām piemērota suga",
+            "Tās audzēšanas apstākļi nav universāli visām neaizmirstulēm"
+          ],
+          "fields": [
+            "intro",
+            "comparison"
+          ],
+          "sources": [
+            "https://www.rhs.org.uk/plants/11292/myosotis-scorpioides/details",
+            "https://www.latvijasdaba.lv/augi/myosotis-sylvatica-ehrh-ex-hoffm/"
+          ],
+          "limit": "Foto pēc zieda krāsas vien neapstiprina šīs sugas."
+        }
+      ],
+      "additionalEvidenceReviewed": [
+        {
+          "url": "https://www.benary.com/sites/default/files/content/media/files/Benary_Technical_Guide_2025_2.pdf",
+          "detail": "Bellamy sērijas tehniskajās norādēs ir No cover un gaisma nav nepieciešama dīgšanai; izmantots kā papildu salīdzinājums, publiskajā ceļvedī nosauktas Sylva un Mon Amie sērijas."
+        }
+      ],
+      "removedClaims": [
+        "Viengadīga suga vai obligāti tikai otrajā gadā ziedošs augs",
+        "Visām neaizmirstulītēm vienāda gaismas prasība sēklu dīgšanai",
+        "Visa Latvija vienmēr pārziemo bez segšanas un zudumiem",
+        "Karsta, saulaina vieta ir vienīgais vīšanas vai slimību cēlonis",
+        "Pārstādīšana vienmēr atjauno savītušu augu",
+        "Mēness laikā sula ceļas augšup un tādēļ dīgšana kļūst možāka",
+        "Nepārbaudīts piemiņas un mīlestības zieda folkloras izklāsts"
+      ],
+      "imageReview": {
+        "id": "neaizmirstules",
+        "decision": "Esošais ID saglabāts. Parakstā skaidri pateikts, ka foto nav sugas identifikācijas paraugs.",
+        "source": "https://commons.wikimedia.org/wiki/File:Flower,_Forget-me-not_%22Bubbles_Blue%22_-_Flickr_-_nekonomania.jpg",
+        "evidence": "Atvērtajā Commons lapā ir autora nosaukums Forget-me-not Bubbles Blue, bet kategorija Unidentified Myosotis; nav droši apstiprinātas sugas Myosotis sylvatica."
+      }
+    }
+  ],
+  "editorialLimits": [
+    "Ziedēšanas un sējas mēneši ir plānošanas orientieri; tie neaizstāj vietējo prognozi, augsnes stāvokli un konkrētās šķirnes aprakstu.",
+    "Pamatprasības balstītas avotos, bet atsevišķu praktisko soļu pielāgošana Latvijas mājas dārzam ir redakcionāla sintēze, ne vietējo salīdzinošo izmēģinājumu rezultāts.",
+    "Netiek noteikta auga slimība vai suga tikai pēc raksta foto; avoti neapstiprina laboratorisku diagnozi.",
+    "Ārvalstu ķīmisko līdzekļu reģistrācija, profesionālās mēslošanas koncentrācijas un augšanas regulatoru receptes nav pārņemtas.",
+    "MoonText atstāts kā tradīcijas skaidrojums; neviens izmantotais audzēšanas avots nav norādīts kā Mēness iedarbības pierādījums."
+  ],
+  "checks": [
+    "Abi satura JSON un šis audits parsējas.",
+    "Visi sectionSources URL ir attiecīgās lapas sources masīvā; katrai no sešām paredzētajām sadaļām ir avoti.",
+    "Saglabāti slug, image.id un related slugs; related failu esamība pārbaudīta lokāli.",
+    "Folklore lauks noņemts abiem rakstiem; updatedAt abos ir 2026-10-27.",
+    "Asterēm 6 avoti; neaizmirstulēm 7, jo pievienots arī Latvijas botāniskais avots sugas nosaukumam un ziedēšanas logam.",
+    "Būvi, lietotnes tipu integrāciju, pārlūka pārbaudi un publicēšanu veic galvenais aģents."
+  ]
+}

@@ -4,7 +4,7 @@ import { REGIONS } from "@/lib/regions";
 import { getAllArticles } from "@/lib/articles";
 import { topSlugs } from "@/lib/tops";
 import { recipeSlugs } from "@/lib/recipes";
-import { flowerSlugs } from "@/lib/flowers";
+import { getAllFlowers } from "@/lib/flowers";
 import { BLOOM_PERIODS } from "@/lib/bloom-periods";
 import { getAllProblems } from "@/lib/kaitekli";
 import { MONTH_SLUGS, CALENDAR_YEARS, SITE_URL } from "@/lib/seo";
@@ -17,6 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const reviewed = new Date(`${DATA_REVIEWED}-01`);
   const seasonalUpdate = new Date(SEASONAL_LINKS_UPDATED_AT);
   const articles = getAllArticles();
+  const flowers = getAllFlowers();
   // Per-item review dates or the actual date of the seasonal-link/calendar
   // changes. Do not stamp unchanged pages with today's build date.
   const newestArticle = articles.reduce(
@@ -80,9 +81,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: "monthly",
   }));
 
-  const flowerPages: MetadataRoute.Sitemap = flowerSlugs().map((slug) => ({
-    url: url(`/pukes/${slug}`),
-    lastModified: seasonalUpdate,
+  const flowerPages: MetadataRoute.Sitemap = flowers.map((flower) => ({
+    url: url(`/pukes/${flower.slug}`),
+    lastModified: flower.updatedAt && flower.updatedAt > SEASONAL_LINKS_UPDATED_AT ? new Date(flower.updatedAt) : seasonalUpdate,
     priority: 0.8,
     changeFrequency: "monthly",
   }));
@@ -102,7 +103,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   // Flowers with a /pukes content page redirect there from /augi — list only the canonical URL.
-  const flowerSet = new Set(flowerSlugs());
+  const flowerSet = new Set(flowers.map((flower) => flower.slug));
   const cropPages: MetadataRoute.Sitemap = CROPS.filter((c) => !flowerSet.has(c.id)).map((c) => ({
     url: url(`/augi/${c.id}`),
     lastModified: reviewed,

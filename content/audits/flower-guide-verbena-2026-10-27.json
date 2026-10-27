@@ -1,0 +1,98 @@
+{
+  "date": "2026-10-27",
+  "status": "content_review_completed",
+  "guide": "/pukes/verbena",
+  "scope": "Zemie dobju un podu Glandularia × hybrida (sin. Verbena × hybrida) hibrīdi. Citu verbēnu sugu pilni audzēšanas ceļveži nav šīs pārskatīšanas daļa.",
+  "method": "Primāru botānisko un dārzkopības institūciju publisko avotu salīdzinājums. Lielbritānijas un ASV kalendāra termiņi vai ziemcietības novērtējumi nav pārnesti kā Latvijas vietējie izmēģinājumu dati.",
+  "filesChanged": [
+    "content/flowers/verbena.json",
+    "content/audits/flower-guide-verbena-2026-10-27.json"
+  ],
+  "claims": [
+    {
+      "topic": "Nosaukums un tvērums",
+      "decision": "Pieņemtais nosaukums un pazīstamais sinonīms norādīti kopā; nošķirtas trīs citas Verbena sugas.",
+      "sources": [
+        "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:969568-1",
+        "https://www.rhs.org.uk/plants/verbena/growing-guide",
+        "https://www.rhs.org.uk/plants/18816/verbena-officinalis/details"
+      ]
+    },
+    {
+      "topic": "Dzīvescikls un ziemošana",
+      "decision": "Bioloģiskais dzīvescikls atdalīts no praktiskās vienas sezonas audzēšanas. Istabas pārziemināšana un spraudeņi ir iespējas, ne panākumu solījums.",
+      "sources": [
+        "https://plantfinder.mobot.org/PlantFinderDetails.aspx?basic=Verbena&isprofile=0&taxonid=263340",
+        "https://www.rhs.org.uk/plants/verbena/growing-guide"
+      ]
+    },
+    {
+      "topic": "Saule, sausums un ziedēšana",
+      "decision": "Noņemts solījums, ka augs karstumā tikai uzplaukst. Ilgstoša sausuma ietekme un regulāra mitruma pārbaude podā aprakstīta atsevišķi.",
+      "sources": [
+        "https://plantfinder.mobot.org/PlantFinderDetails.aspx?basic=Verbena&isprofile=0&taxonid=263340",
+        "https://www.rhs.org.uk/plants/verbena/growing-guide"
+      ]
+    },
+    {
+      "topic": "Podu drenāža",
+      "decision": "Akmeņu/keramzīta slāņa ieteikums aizstāts ar noteces atverēm, substrātu un liekā ūdens izliešanu.",
+      "sources": [
+        "https://extension.illinois.edu/container-gardens/container-drainage-options"
+      ]
+    },
+    {
+      "topic": "Sēja un izstādīšana",
+      "decision": "Termiņš piesaistīts vietējām salnām un konkrētās šķirnes instrukcijām. Noņemti garantēti datumi pa Latvijas reģioniem un vispārīgs apgalvojums par lēnu dīgšanu.",
+      "sources": [
+        "https://plantfinder.mobot.org/PlantFinderDetails.aspx?basic=Verbena&isprofile=0&taxonid=263340",
+        "https://www.rhs.org.uk/plants/verbena/growing-guide"
+      ]
+    },
+    {
+      "topic": "Mēslošana un griešana",
+      "decision": "Noņemts obligāts mēslošanas grafiks un universāla apgriešana par trešdaļu. Ieteikumi piesaistīti substrātam, līdzekļa instrukcijai un šķirnei.",
+      "sources": [
+        "https://www.rhs.org.uk/plants/verbena/growing-guide",
+        "https://plantfinder.mobot.org/PlantFinderDetails.aspx?basic=Verbena&isprofile=0&taxonid=263340"
+      ]
+    },
+    {
+      "topic": "Miltrasa",
+      "decision": "Labots vēsa un mitra laika vienīgā cēloņa iespaids; noņemta laistīšanas pie saknēm pasniegšana kā ārstēšana. Nav pievienotas paštaisītu līdzekļu vai fungicīdu receptes.",
+      "sources": [
+        "https://www.rhs.org.uk/disease/powdery-mildews"
+      ]
+    },
+    {
+      "topic": "Folklora un Mēness",
+      "decision": "Izņemta nepamatota Latvijas audzēšanas vēsture un spēka virzīšanās augšup skaidrojums. Mēness norāde skaidri atdalīta no audzēšanas prasībām.",
+      "evidenceLimit": "Šajā avotu kopā nav pamatojuma iepriekšējiem vēsturiskajiem vai fizioloģiskajiem apgalvojumiem; nav apgalvots, ka veikts pilns etnobotānikas vai Mēness ietekmes literatūras pārskats."
+    }
+  ],
+  "preserved": {
+    "slug": "verbena",
+    "name": "Verbēna",
+    "imageId": "verbena",
+    "type": "viengadiga",
+    "typeMeaning": "Praktiskā audzēšanas grupa, ne bioloģiskā dzīvescikla apgalvojums."
+  },
+  "sourceAccess": [
+    {
+      "url": "https://plantfinder.mobot.org/PlantFinderDetails.aspx?basic=Verbena&isprofile=0&taxonid=263340",
+      "status": "Primārā avota teksts pārbaudīts meklētāja indeksētajā lapas izvilkumā; atkārtots tiešais atvērums deva 502. Tas nav pamats apgalvot, ka saite vienmēr ir sasniedzama."
+    }
+  ],
+  "remainingLimits": [
+    "Avoti nav Latvijas šķirņu vai reģionu lauka izmēģinājumi. Vienas sezonas audzēšanas ieteikums ir piesardzīga saljutīguma interpretācija Latvijas dārzam.",
+    "Jūnijs–septembris palicis kā orientējošs vietnes ziedēšanas kalendāra intervāls, ne no vietējiem fenoloģiskiem datiem iegūta garantija.",
+    "Atsevišķu komerciālu sēriju izmēri, sējas tehnoloģija, pašattīrīšanās un slimību izturība nav pārbaudīta visām šķirnēm; priekšroka konkrētā auga etiķetei un audzētāja instrukcijai.",
+    "Foto ID saglabāts pēc jau pārbaudītā hibrīda attēla; precīza šķirne nav identificēta un tai nav piedēvētas īpašas kopšanas prasības.",
+    "Verbena bonariensis, V. rigida un V. officinalis salīdzinājums palīdz noteikt ceļveža tvērumu, bet nav pilna noteikšanas atslēga vai Latvijas ziemcietības novērtējums.",
+    "Nav universālas spraudeņu apsakņošanās vai telpu pārziemošanas garantijas; detalizēta komerciāla pavairošanas tehnoloģija nav pievienota."
+  ],
+  "checks": [
+    "Abu JSON failu parsēšana izieta; saglabāti slug/name/image ID, ir 6 avoti, 5 FAQ un 4 salīdzinājuma ieraksti. Visu sadaļu un audita apgalvojumu URL sakrīt ar avotu ierakstiem; saistīto puķu faili eksistē. git diff --check bez kļūdām.",
+    "Projekta būvi, veidnes integrāciju, pārlūka pārbaudi un publicēšanu veic galvenais aģents."
+  ]
+}

@@ -4,58 +4,149 @@
   "emoji": "🌼",
   "type": "daudzgadiga",
   "latin": "Chrysanthemum",
-  "image": { "id": "krizantemas", "caption": "Podos audzētas krizantēmas — tādas Latvijā rudenī pērk Svecīšu vakariem. Lielākā daļa šo šķirņu dārzā neziemo." },
-  "tagline": "Vēlā rudens dārza karaliene un Latvijas galvenā Svecīšu vakaru puķe — zied, kad gandrīz viss cits jau atziedējis, līdz pat pirmajām salnām.",
-  "bloom": "Septembris–oktobris (līdz salnām)",
-  "bloomMonths": [9, 10],
-  "height": "30–90 cm (atkarībā no šķirnes)",
+  "image": {
+    "id": "krizantemas",
+    "caption": "Podos audzētas krizantēmas rudenīgai kompozīcijai. Pārziemošana atkarīga no šķirnes un audzēšanas apstākļiem; pēc ziedu foto ziemcietību noteikt nevar."
+  },
+  "updatedAt": "2026-10-27",
+  "shortAnswer": "Ilgstošam stādījumam izvēlies nosauktu dārza šķirni ar pārbaudītu ziemcietību un stādi pavasarī. Ziedošu rudens podu laisti pēc substrāta mitruma, ļaujot liekajam ūdenim notecēt. Tā pārziemošanu neapsola ne kompakta forma, ne vārds “dārza” uz etiķetes.",
+  "lifeCycle": "Daudzgadīgs augs; konkrētas šķirnes spēja pārziemot ārā jāvērtē atsevišķi.",
+  "tagline": "Dārza šķirne un rudens podu augs var izskatīties līdzīgi, taču to izvēle un ziemošana atšķiras.",
+  "bloom": "Vasaras beigas–rudens; atkarīgs no šķirnes un apstākļiem",
+  "bloomMonths": [
+    8,
+    9,
+    10
+  ],
+  "height": "Atkarīgs no šķirnes; pārbaudi etiķeti",
   "sun": "Saule",
   "hardy": false,
   "difficulty": "vidēji",
-  "plantWhen": "Izturīgās dārza šķirnes vislabāk stādīt pavasarī vai vasaras sākumā, lai līdz ziemai labi ieaug; podu krizantēmas pērk ziedēšanai rudenī",
+  "plantWhen": "Daudzgadīgam stādījumam — pavasarī; telpās audzētus jaunos augus norūda un izstāda pēc salnu riska.",
   "moonPhase": "augošs",
   "moonElement": "ziedi",
-  "moonText": "Krizantēmas ir ziedu augi — pēc biodinamiskās tradīcijas tās stāda un kopj ziedu (gaisa) dienās, virszemes stādīšanu plānojot augošā Mēnesī. Sakneņu sadalīšanu un sakņu darbus tradicionāli atstāj dilstošam Mēnesim. Tā ir sena dārza tradīcija, ne ziedēšanas garantija — krizantēmai daudz svarīgāka ir saulaina vieta un savlaicīga, izturīgas šķirnes stādīšana, lai tā līdz ziemai paspēj ieaugt.",
+  "moonText": "Ja izmanto Mēness kalendāru, uztver to kā personisku dārza tradīciju. Stādīšanu un kopšanu pieskaņo auga stāvoklim, augsnes mitrumam un laikapstākļiem; Mēness diena negarantē ziedēšanu vai pārziemošanu.",
   "intro": [
-    "Krizantēma ir vēlā rudens dārza karaliene — puķe, kas uzplaukst tieši tad, kad dālijas jau salnas paņēmušas un dobe gatavojas miegam. No septembra līdz pat pirmajām īstajām salnām tā tur krāsu: sārtas, dzeltenas, baltas, vara un bronzas toņos, no maziem pomponiem līdz lielām, pildītām galviņām. Tieši šī spēja ziedēt aukstā, mitrā rudenī krizantēmu padara par neaizstājamu — un Latvijā tā ir kļuvusi arī par galveno Svecīšu vakaru un kapu puķi, ko novembra sākumā nes piemiņai.",
-    "Te slēpjas svarīgākais, kas par krizantēmām jāzina jau pirms pirkšanas. Veikalu un tirgus podu krizantēmas, kas rudenī parādās kuplos, apaļos puduros, vairumā gadījumu NAV ziemcietīgas — tās ir audzētas ātrai ziedēšanai podā un Latvijas ziemu atklātā laukā parasti nepārcieš. Pa īstam ziemo tikai zemās, izturīgās dārza šķirnes (tās dažkārt sauc arī par Korejas jeb mazziedu krizantēmām), un arī tās — tikai ar rūpīgu segumu un sausu, drenētu vietu. Ja šo atšķirību zina jau veikalā, vilšanās pavasarī būs daudz mazāka."
+    "Šis ceļvedis ir par dārzos un podos audzētajām krizantēmu šķirnēm un hibrīdiem. Tās ir daudzgadīgi augi, tomēr daļu izmanto vienas sezonas kompozīcijām. Ziemcietību nevar noteikt pēc auga augstuma, zieda lieluma vai tā, ka augs pārdots podā.",
+    "Pirms pirkuma noskaidro šķirni, paredzēto audzēšanas vietu un ziedēšanas laiku. Dobē svarīga ir arī pietiekami agra ziedēšana: vēla šķirne var nepaspēt atvērt pumpurus pirms sala. Ārvalstu ziemcietības norāde viena pati negarantē rezultātu konkrētā Latvijas dārzā."
   ],
+  "comparison": {
+    "heading": "Kādu krizantēmu tu audzē?",
+    "items": [
+      {
+        "name": "Nosaukta dārza šķirne",
+        "description": "Ilgstošam stādījumam meklē ziņas par šķirnes ziemcietību un ziedēšanu līdzīgos apstākļos. Pavasara stādījumam ir vairāk laika iesakņoties. Arī dārza šķirnes mēdz pārdot podos."
+      },
+      {
+        "name": "Ziedošs rudens pods bez šķirnes ziņām",
+        "description": "Izmanto sezonas krāsai, bet pārziemošanu uzskati par mēģinājumu. No ziedu foto vai pārdošanas vietas vien nevar secināt, ka augs noteikti pārziemos vai noteikti ies bojā."
+      },
+      {
+        "name": "Floristikas vai siltumnīcas šķirne",
+        "description": "Var būt paredzēta kontrolētai uzziedināšanai un aizsargātiem apstākļiem. Saglabāšana telpās vēl nenozīmē, ka nākamajā gadā tā laikus uzziedēs dobē."
+      }
+    ]
+  },
   "planting": [
-    "Izvēlies izturīgu, zemu dārza krizantēmu (nevis veikala podu krizantēmu, kas paredzēta vienai sezonai), ja gribi, lai augs ziemo — to nopērc stādaudzētavā vai iegūsti, sadalot kaimiņa veco puduri.",
-    "Stādi pavasarī vai vasaras pirmajā pusē — jo agrāk sezonā krizantēma ieaug, jo lielāka iespēja, ka tā pārziemo; rudenī pirkts un iestādīts augs ziemu pārdzīvo reti.",
-    "Vieta — saulaina, atklāta un, galvenais, ar sausu, labi drenētu augsni; krizantēma daudz biežāk iet bojā no ziemas slapjuma un sasaluša ūdens pie saknēm nekā no aukstuma.",
-    "Smagā mālā un zemās vietās iestrādā kompostu, smilti vai grants, lai ūdens neuzkrājas; ja vieta mēdz mitrumu turēt, stādi nelielā paaugstinājumā.",
-    "Atstatums 30–40 cm; pēc stādīšanas aplej un viegli apmulčē, taču mulču netur tieši pie stublāja, lai tas nesāktu pūt.",
-    "Lai krūms kļūtu kupls un nestīdzētu, jūnijā un vēlreiz jūlija sākumā vari apknaibīt dzinumu galotnes — tā augs sazaro un veido vairāk ziedu."
+    "Daudzgadīgam stādījumam izvēlies pavasari. Jaunus, telpās audzētus stādus pirms izstādīšanas pakāpeniski pieradini pie āra apstākļiem un sagaidi salnu riska mazināšanos. Vēlu rudenī iestādītam ziedošam augam līdz ziemai var nepietikt laika iesakņoties.",
+    "Atvēli saulainu vietu un augsni, kas saglabā mitrumu, bet kurā nestāv ūdens. Pastāvīgi slapja ieplaka neder; ja ūdens novadīšanu nevar uzlabot, izvēlies citu vietu. Stādi tikpat dziļi kā podā un atstatumu pieskaņo šķirnes pieaugušajam platumam.",
+    "Pēc iestādīšanas aplaisti un pirmajā laikā regulāri pārbaudi sakņu kamola mitrumu. Neļauj tam pilnīgi izkalst, bet nelaisti jau piesātinātu augsni.",
+    "Podam vajadzīgi ūdens noteces caurumi un konteineraugiem piemērots substrāts. Izņem podu no dekoratīvā ietvara, ja tajā krājas ūdens. Ļoti šaurā podā augošu krizantēmu var uzmanīgi pārlikt lielākā traukā, saglabājot sakņu kamolu."
   ],
   "care": [
-    "Laisti mēreni un pie saknes, ne pa lapām — krizantēma nemīl ne ilgstošu sausumu, ne pārliecīgu slapjumu; vasarā sausā laikā palaisti pamatīgi pāris reižu nedēļā.",
-    "Mēslo mēreni vasarā ar pilnvērtīgu mēslojumu, bet augusta beigās slāpekli pārtrauc, lai dzinumi nobriest un augs labāk sagatavojas ziemai.",
-    "Augstākajām šķirnēm vējainā vietā ieliec atbalstu — pilnie rudens ziedi ir smagi un rudens lietū viegli nogulstas.",
-    "Lai krūms būtu kupls un blīvs, jaunos dzinumus vasaras pirmajā pusē apknaibi (pinch) — pēc jūlija vidus to vairs nedari, lai netraucē ziedpumpuru veidošanos.",
-    "Novītušos ziedus izgriez — tas pagarina ziedēšanu un krūmu uztur kārtīgāku.",
-    "Reizi 2–3 gados pavasarī puduri sadali un pārstādi: krizantēmas vidus mēdz izplokt un novecot, un sadalīšana augu atjauno."
+    "Laisti augsni pie auga, kad tā sāk apžūt; podā mitrumu pārbaudi biežāk. Laistīšanas biežumu nosaka laiks, poda izmērs un auga patēriņš, ne noteikts reižu skaits nedēļā. Pēc laistīšanas izlej paliktnī sakrājušos ūdeni.",
+    "Mēslošanu pieskaņo augsnei un substrātam. Dobē vispirms novērtē augšanu un esošo barības vielu nodrošinājumu; podā ievēro izvēlētā mēslojuma etiķeti un to, vai substrātam mēslojums jau pievienots. Papildu mēslojums neaizstāj pareizu laistīšanu.",
+    "Ja šķirnei vajag kuplāku formu, pavasarī vai vasaras sākumā jaunam dzinumam izknieb mīksto galotni virs lapu pāra. Galotņošana nav obligāta visām šķirnēm un var aizkavēt ziedēšanu. Ziedošu rudens podu vairs neveido ar atkārtotu galotņošanu; turpmāko formēšanu pieskaņo šķirnes audzētāja norādēm.",
+    "Augstus dzinumus laikus atbalsti. Noziedējušās ziedkopas un bojātās daļas izņem, lai augs paliek sakopts. Sabiezējušu dārza ceru pavasarī, sākoties augšanai, var sadalīt; katrai daļai atstāj dzīvus dzinumus un saknes."
   ],
-  "winter": "Veikala podu krizantēmas Latvijā parasti NAV ziemcietīgas un atklātā laukā ziemu nepārdzīvo — tās der uztvert kā rudens sezonas puķi vienai reizei. Pārziemot var tikai zemās, izturīgās dārza šķirnes, un arī tām vajag palīdzību. Pēc tam, kad salna ziedus paņēmusi, stublājus nogriez aptuveni 10–15 cm augstumā un puduri rūpīgi piesedz — ar egļu zariem, sausu lapu kārtu vai kūdru; svarīgāka par siltumu ir sausa, drenēta vieta, jo krizantēma biežāk aiziet bojā no slapjuma un izsutēšanas nekā no sala. Segumu nenes pārāk agri un pavasarī, kad pāri lielie sali, atklāj laikus, lai augs zem seguma neizsut. Drošākais paņēmiens izturīgu šķirņu saglabāšanai ir rudenī izrakt nelielu puduri, ielikt podā un pārziemot gaišā, vēsā bezsala telpā, bet pavasarī pēc salnām stādīt atpakaļ laukā.",
+  "winter": "Dobē. Labi ieaugušai, vietai piemērotai dārza šķirnei veselos stublājus var atstāt līdz pavasarim. Kad augsne sāk sasalt, sakņu zonu sargā ar irdenu mulču; tās uzdevums ir mazināt sasalšanas un atkušanas svārstības. Bojātu augu atliekas aizvāc. Pavasarī segumu pakāpeniski noņem un vecos stublājus nogriež, sākoties jaunajai augšanai. Segums nepadara neizturīgu šķirni ziemcietīgu.\n\nPodā vai telpās. Nezināmai vai sala jutīgai šķirnei izvēlies vēsu bezsala glabāšanas vietu pirms poda sasalšanas. Ja augs saglabā zaļas lapas vai aug, tam vajag gaismu. Pilnīgi miera stāvoklī esošām dārza krizantēmām aprakstīta arī vēsa, tumša glabāšana; šo paņēmienu neattiecina automātiski uz lapainu, ziedošu vai nezināmas šķirnes augu. Regulāri apskati sakņu kamolu: miera laikā uzturi to tikai viegli mitru, ne slapju un ne pilnīgi izkaltušu. Noziedējušo augu var saīsināt glabāšanai, bet dobē atstāta cera rudens nogriešana nav tā pati darbība.\n\nPavasarī, atsākoties augšanai, pārvieto augu gaismā un pakāpeniski palielini laistīšanu. Telpās izaugušos jaunos dzinumus norūda un no vēlām salnām sargā. Šķirnes saglabāšanās negarantē atkārtotu ziedēšanu Latvijas āra sezonā.",
   "problems": [
-    "Augs neizdzīvo ziemu — visbiežākais iemesls ir slapja, nedrenēta vieta vai tas, ka stādīta veikala podu (neziemcietīga) krizantēma; izvēlies izturīgu šķirni, sausu vietu un piesedz.",
-    "Miltrasa un lapu plankumainība mitrā, sutīgā rudenī — palīdz retāks stādījums, laistīšana pie saknes un slimo lapu aizvākšana.",
-    "Laputis uz jaunajiem dzinumiem un pumpuriem — noskalo ar ūdens strūklu vai apstrādā ar ziepjūdeni, smagākā gadījumā ar atļautu līdzekli."
+    "Vīst vai dzeltē lapas: vispirms pārbaudi mitrumu arī sakņu kamolā un noteces caurumus. Sausums un pārmitrums var radīt līdzīgus simptomus; pēc lapu krāsas vien nenosaki cēloni.",
+    "Plankumi, balts apsarms vai pelējums: iespējami dažādi ierosinātāji. Uzlabo gaisa cirkulāciju, laisti augsni un aizvāc bojātās daļas. Strauji progresējošus bojājumus parādi speciālistam; viena pazīme neapstiprina konkrētu slimību.",
+    "Laputis uz dzinumiem un pumpuriem: nelielu koloniju uzmanīgi noskalo ar ūdeni, nebojājot ziedus, un atkārtoti apskati augu. Saglabā dabiskos plēsējus; paštaisītu ziepju vai mazgāšanas līdzekļu maisījumu šeit neiesakām.",
+    "Pumpuri neattīstās līdz ziediem: iespējamie iemesli ir šķirnei par īsu sezona, vēla galotņošana vai nakts apgaismojums. Krizantēmu ziedpumpuru veidošanos ietekmē nepārtrauktas tumsas ilgums, un šķirnes reaģē atšķirīgi."
   ],
-  "folklore": "Latvijā krizantēma ir cieši saaugusi ar piemiņas tradīciju: rudenī, ap Svecīšu vakariem novembra sākumā, tā ir biežākā kapu puķe, ko nes tuviniekiem — tās izturība pret aukstumu un spēja ziedēt vēlā rudenī to padara par dabisku atceres un cieņas zīmi laikā, kad pārējais dārzs jau atdusas. Daudzviet pasaulē, īpaši Austrumāzijā, krizantēma ir cieņas un mūžības simbols, bet vairākās Eiropas valstīs — tieši piemiņas un kapu puķe; arī Latvijā tā šo nozīmi nes ar godu.",
   "faq": [
     {
-      "q": "Kāpēc rudenī nopirktā krizantēma pavasarī neuzdīga?",
-      "a": "Visticamāk, tā bija veikala podu krizantēma — kupls, apaļš augs, kas audzēts ātrai ziedēšanai podā. Tādas vairumā gadījumu nav ziemcietīgas un Latvijas ziemu atklātā laukā nepārdzīvo. Pa īstam ziemo tikai zemās, izturīgās dārza šķirnes, kas iestādītas pavasarī, sausā un drenētā vietā un rudenī piesegtas."
+      "q": "Vai visas veikalā pirktās krizantēmas ir viengadīgas?",
+      "a": "Nē. Veikalā var pārdot arī daudzgadīgas dārza šķirnes. Noskaidro šķirni un audzēšanas norādes; pārdotais pods pats par sevi nenosaka ziemcietību."
     },
     {
-      "q": "Kā panākt, lai dārza krizantēma pārziemo?",
-      "a": "Izvēlies izturīgu zemu šķirni, stādi to pavasarī saulainā, sausā un labi drenētā vietā, lai tā līdz ziemai labi ieaug. Rudenī pēc salnas nogriez stublājus un puduri piesedz ar egļu zariem vai sausām lapām. Vissvarīgākā ir tieši sausa vieta — krizantēma biežāk iet bojā no ziemas slapjuma nekā no aukstuma. Pavasarī segumu atklāj laikus, lai augs neizsut."
+      "q": "Vai pārziemo tikai zemās, sīkziedu krizantēmas?",
+      "a": "Auga augstums un zieda izmērs nav pietiekami ziemcietības kritēriji. Izvēlies šķirni pēc pārbaudītas piemērotības klimatam, ne tikai izskata."
     },
     {
-      "q": "Vai krizantēmas var stādīt kapos, lai zied katru gadu?",
-      "a": "Var, bet ar nosacījumu. Veikala podu krizantēmas, ko rudenī nes uz kapiem, ir skaista vienas sezonas piemiņas puķe, taču nākamgad parasti neatdzīvojas. Ja vēlies daudzgadīgu krizantēmu kapu kopiņā, stādi pavasarī izturīgu dārza šķirni saulainā, sausā vietā un rudenī piesedz — tad ir laba iespēja, ka tā ziedēs arī nākamajā rudenī."
+      "q": "Vai rudenī visi stublāji jānogriež?",
+      "a": "Nē. Dobē ziemojošam veselam ceram vecos stublājus var atstāt līdz pavasarim. Telpās glabājamu noziedējušu augu var saīsināt; bojātās daļas aizvāc abos gadījumos."
+    },
+    {
+      "q": "Vai podu krizantēma var pārziemot tumšā pagrabā?",
+      "a": "To neiesaka kā universālu paņēmienu. Tumša glabāšana attiecināma uz miera stāvoklī esošu dārza augu; zaļiem vai jauniem dzinumiem vajag gaismu. Telpai jāatbilst izvēlētajam glabāšanas režīmam, un kamols nedrīkst pārmitrināties vai izkalst."
+    },
+    {
+      "q": "Vai krizantēmas vienmēr jāgalotņo līdz vienam jūlija datumam?",
+      "a": "Nē. Nepieciešamība un pēdējais galotņošanas laiks atkarīgs no šķirnes un vēlamās formas. Vēla galotņošana atliek ziedēšanu; īsā sezonā drošāk nepārnest citam klimatam dotu kalendāra datumu."
     }
   ],
-  "related": ["dalijas", "asteres", "rudbekijas", "atraitnites"]
+  "sources": [
+    {
+      "label": "RHS: krizantēmu stādīšana, podi un ziemošana",
+      "url": "https://www.rhs.org.uk/plants/chrysanthemum/growing-guide"
+    },
+    {
+      "label": "Iowa State University Extension: dārza un floristikas krizantēmas",
+      "url": "https://yardandgarden.extension.iastate.edu/how-to/growing-chrysanthemums-iowa"
+    },
+    {
+      "label": "University of Minnesota: šķirņu ziemcietības pārbaudes un galotņošana",
+      "url": "https://maes.umn.edu/150-hardy"
+    },
+    {
+      "label": "Illinois Extension: ieaugšanās, ziemošana un ziedēšanas traucējumi",
+      "url": "https://extension.illinois.edu/blogs/good-growing/2021-09-10-why-do-my-mums-always-die-how-grow-and-care-fall-mums-your-garden"
+    },
+    {
+      "label": "Penn State Extension: krizantēmu kopšana un podu saglabāšana",
+      "url": "https://extension.psu.edu/chrysanthemum-care"
+    },
+    {
+      "label": "Clemson Extension: slimību un kaitēkļu pazīmes",
+      "url": "https://hgic.clemson.edu/factsheet/chrysanthemum-diseases-insect-pests/"
+    }
+  ],
+  "sectionSources": {
+    "intro": [
+      "https://yardandgarden.extension.iastate.edu/how-to/growing-chrysanthemums-iowa",
+      "https://maes.umn.edu/150-hardy"
+    ],
+    "comparison": [
+      "https://yardandgarden.extension.iastate.edu/how-to/growing-chrysanthemums-iowa",
+      "https://maes.umn.edu/150-hardy"
+    ],
+    "planting": [
+      "https://www.rhs.org.uk/plants/chrysanthemum/growing-guide",
+      "https://yardandgarden.extension.iastate.edu/how-to/growing-chrysanthemums-iowa",
+      "https://extension.psu.edu/chrysanthemum-care"
+    ],
+    "care": [
+      "https://www.rhs.org.uk/plants/chrysanthemum/growing-guide",
+      "https://maes.umn.edu/150-hardy",
+      "https://extension.psu.edu/chrysanthemum-care"
+    ],
+    "winter": [
+      "https://www.rhs.org.uk/plants/chrysanthemum/growing-guide",
+      "https://extension.illinois.edu/blogs/good-growing/2021-09-10-why-do-my-mums-always-die-how-grow-and-care-fall-mums-your-garden",
+      "https://extension.psu.edu/chrysanthemum-care"
+    ],
+    "problems": [
+      "https://hgic.clemson.edu/factsheet/chrysanthemum-diseases-insect-pests/",
+      "https://extension.illinois.edu/blogs/good-growing/2021-09-10-why-do-my-mums-always-die-how-grow-and-care-fall-mums-your-garden"
+    ]
+  },
+  "related": [
+    "dalijas",
+    "asteres",
+    "rudbekijas",
+    "atraitnites"
+  ]
 }

@@ -5,63 +5,120 @@
   "type": "kaiteklis",
   "latin": "Aphidoidea",
   "severity": "vidējs",
-  "tagline": "Sīki sulu sūcoši kukaiņi, kas savairojas zibenīgi un ātri novājina augu, bet ar laiku ņemšanos no tiem var atbrīvoties bez ķīmijas.",
+  "tagline": "Laputu kolonijas meklē uz jaunajiem dzinumiem un lapu apakšpusē. Rīcību izvēlies pēc kaitējuma augam, ne tikai pēc kukaiņu skaita.",
   "affects": [
+    "Rozes",
     "Pupas un pupiņas",
     "Ābeles",
-    "Plūmes un ķirši",
-    "Rozes",
+    "Plūmes",
     "Upenes un jāņogas",
     "Gurķi",
     "Paprika un tomāti",
-    "Salāti un kāposti",
-    "Daudzi puķu un dārzeņu stādi"
+    "Salāti un kāposti"
   ],
   "signs": [
-    "Sīki, 1–3 mm gari kukaiņi (zaļi, melni, pelēki vai dzeltenīgi) blīvās kolonijās uz jaunajām lapām, dzinumu galotnēm un ziedpumpuru kātiņiem.",
-    "Lapas čokurojas, sarullējas, kļūst līkas un sāk dzeltēt; jaunie dzinumi aug kropli.",
-    "Lapas un apkārtējās virsmas kļūst lipīgas no medusrasas — salda, spīdīga pārklājuma.",
-    "Uz lipīgās medusrasas vēlāk uzmetas melnas kvēpsēnītes, un lapas izskatās kā ar sodrējiem.",
-    "Ap augu rosās daudz skudru — tās aizsargā laputis un barojas ar medusrasu."
+    "Uz dzinumu galiem, pumpuriem vai jauno lapu apakšpusē ir mīksti, bumbierveidīgi kukaiņi. Krāsa var būt zaļa, melna, dzeltena vai cita; daļai pieaugušo ir spārni.",
+    "Ar lupu vēdera aizmugurē daudzām laputīm var saskatīt divus īsus cauruļveida izaugumus. Tie palīdz atšķirt laputis no citiem sīkiem kukaiņiem.",
+    "Stipri apsēstie jaunie dzinumi un lapas deformējas, čokurojas vai aug lēnāk. Jau saritinātā lapā kolonija var būt paslēpta.",
+    "Var būt lipīga medusrasa, balti nomestie kukaiņu apvalki un melns kvēpsēņu pārklājums. Medusrasu izdala arī citi sūcējkukaiņi, tādēļ meklē pašu kaitēkli.",
+    "Skudras pie kolonijas var baroties ar medusrasu un traucēt laputu plēsējiem. Skudru klātbūtne viena pati vēl nenozīmē, ka augam ir laputis."
   ],
   "intro": [
-    "Laputis ir vienas no biežākajām dārza viešņām, un gandrīz katrs dārznieks ar tām agrāk vai vēlāk sastopas. Tās ir sīki, mīkstmiesas kukaiņi, kas ar smailo snuķīti caurdur lapas un dzinumus un sūc augu sulu. Pa vienai tās gandrīz nemana, taču laputis vairojas neticami ātri — siltā laikā jauna paaudze nāk dažu dienu laikā, tāpēc no pāris kukaiņiem ātri izveidojas blīva kolonija.",
-    "Pati sulas sūkšana augu novājina: lapas čokurojas, dzinumi aug kropli, raža sarūk. Bet bīstamāka par tiešo kaitējumu bieži ir netiešā nelaime — laputis pārnēsā augu vīrusus, un to izdalītā lipīgā medusrasa kļūst par augsni kvēpsēnītēm, kas aizsedz lapas un traucē fotosintēzei. Tieši tāpēc laputis ir vērts pamanīt agri un rīkoties, kamēr kolonija vēl nav milzīga."
+    "Laputis ir dažādu sugu sulu sūcēji ar atšķirīgiem saimniekaugiem. Kolonija sezonā var augt ātri, tomēr dažas laputis uz veselīga, ieauguša auga parasti nav iemesls tūlītējai apstrādei. Jauni stādi un stipri deformēti augšanas gali jāvēro rūpīgāk.",
+    "Apskati ne tikai laputis, bet arī to ēdājus. Mārītes, zeltacīšu un ziedmušu kāpuri, kā arī parazītiskās lapsenītes palīdz samazināt kolonijas. Pavasarī tie var savairoties vēlāk par laputīm. Mērķis ir saglabāt auga veselību, ne padarīt dārzu pilnīgi brīvu no kukaiņiem."
   ],
   "control": [
-    "Noskalo laputis ar spēcīgu ūdens strūklu no šļūtenes — vienkāršākais un pārsteidzoši efektīvs paņēmiens. Liela daļa nokritušo laputu uz augu vairs neuzrāpjas. Atkārto pēc dažām dienām, jo allaž kāda paliek pāri.",
-    "Mazākiem stādiem un ļaunākajām kolonijām strādā mehāniska vākšana — saberz laputis ar pirkstiem (var cimdā) vai nogriez stipri apsēstos dzinumu galus un iznes no dārza. Tā ir lēna, taču visdrošākā metode mazā platībā.",
-    "Apsmidzini ar maigu ziepjūdeni: dažas tējkarotes šķidru saimniecības vai augu eļļas ziepju — nevis trauku mazgāšanas līdzekli — uz litru ūdens. Ziepes bojā laputu mīksto apvalku. Smidzini vēsā laikā vai vakarā, noteikti arī lapu apakšpusē, un pēc dienas vai divām atkārto. Vispirms pārbaudi uz dažām lapām, vai augs ziepes panes.",
-    "Pievelc laputu dabiskos ienaidniekus — mārītes un to kāpurus, zeltacītes, plēsīgās ziedmušas. Tās noēd laputis lielos daudzumos. Palīdz, ja dārzā aug ziedoši augi (kliņģerītes, salvija, dilles, pelašķi) un netiek izsmidzināta ķīmija, kas iznīcina arī derīgos kukaiņus.",
-    "Atbaidi laputis ar vērmeļu uzlejumu — rūgtā smarža tās attur no augu apdzīvošanas. Tas ir profilaktisks un atbaidošs līdzeklis, nevis triecienierocis pret jau esošu blīvu koloniju, tāpēc smidzini regulāri un iesāc, tiklīdz parādās pirmās laputis.",
-    "Apputini lapas ar smalkiem koku pelniem (vislabāk uz rasas vai pēc vieglas apsmidzināšanas, lai pelni pielīp). Pelni padara lapas laputīm nepatīkamas un attur tās. Tas ir palīglīdzeklis, ko der apvienot ar noskalošanu vai ziepjūdeni.",
-    "Ierobežo skudras, kas laputis sargā un pat pārnēsā uz jauniem augiem. Ja apkaro skudru takas (piemēram, ar lipīgu joslu ap stumbru), dabiskie laputu ienaidnieki var darīt savu darbu netraucēti."
+    "Apskati vairākus dzinumus un lapu apakšpuses. Salīdzini jauno augšanu ar veselīgu auga daļu; ja kaitējuma nav un redzami plēsēji, turpini novērošanu.",
+    "Nelielu koloniju noņem ar pirkstiem vai noskalo ar ūdeni. Strūklas stiprumu pielāgo augam, lai nesalauztu stādu vai pumpurus; atbalsti trauslo dzinumu.",
+    "Pēc dažām dienām pārbaudi tos pašus dzinumus un blakus augus. Atkārto mehānisko noņemšanu, ja kolonija atjaunojas un turpina bojāt jauno augšanu. Vecā lapas deformācija pēc laputu pazušanas var saglabāties.",
+    "Nenosmidzini koloniju kopā ar tās plēsējiem. Sevišķi sargā mārīšu, zeltacīšu un ziedmušu kāpurus; to iznīcināšana var paildzināt problēmu.",
+    "Ja uz telpauga kaitēklis ir izplatījies, atsevišķi apskati blakus podus un atkārto pārbaudi pie laistīšanas. Smidzinājums neaizstāj lapu apakšpuses pārbaudi.",
+    "Ja kaitējums saglabājas un apsver augu aizsardzības līdzekli, izvēlies konkrētajam augam un laputīm paredzētu lietojumu Latvijas reģistrā. Sadzīves ziepes vai trauku līdzeklis nav tas pats, kas augu apstrādei paredzēts preparāts."
   ],
-  "recipeSlugs": [
-    "vermelu-uzlejums",
-    "koku-pelnu-skidums"
-  ],
+  "recipeSlugs": [],
   "prevention": [
-    "Nepārbaro augus ar slāpekli. Tieši pārmērīgs slāpeklis dod mīkstus, sulīgus dzinumus, ko laputis ļoti iemīļo — tāpēc nātru virca šeit NAV palīgs, bet drīzāk pat veicina laputu savairošanos. Mēslo mēreni un līdzsvaroti.",
-    "Regulāri pārlūko augus, īpaši dzinumu galotnes un lapu apakšpuses. Jo agrāk pamani pirmās laputis, jo vieglāk ar tām tikt galā, kamēr kolonija vēl maza.",
-    "Veido dārzā daudzveidību un atstāj vietu ziedošiem augiem (kliņģerītes, dilles, pelašķi, salvija), kas pievelk mārītes, zeltacītes un ziedmušas — dabiskos laputu ēdājus.",
-    "Ievēro pietiekamu atstatumu starp augiem un nodrošini labu vēdināšanu — blīvi, ēnaini un mitri sabiezinājumi laputīm patīk vislabāk.",
-    "Stādi stiprus, veselīgus stādus pareizā laikā un pieturies pie augu maiņas dārzā — novājināti vai sastresoti augi piesaista kaitēkļus vieglāk nekā spirgti."
+    "Augšanas sezonā regulāri pārbaudi jaunos dzinumus, pumpurus un lapu apakšpuses, īpaši pēc jaunu augu iegādes.",
+    "Veido ziedēšanu dažādos sezonas laikos, lai dārzā būtu barība laputu dabiskajiem ienaidniekiem. Tas atbalsta to klātbūtni, bet negarantē laputu neesamību.",
+    "Nepārmēslo ar slāpekli. Pārāk spēcīga, sulīga jaunā augšana var veicināt laputu savairošanos; mēslojumu pielāgo auga faktiskajām vajadzībām.",
+    "Izvairies no nevajadzīgas plašas insekticīdu lietošanas: tā var skart arī kukaiņus, kas laputu skaitu ierobežo.",
+    "Pieraksti, kuri augi atkārtoti cieš. Dažādām laputu sugām ir atšķirīgi saimniekaugi; viena krūma kolonija nenozīmē, ka visi tuvējie augi būs vienādi apdraudēti."
   ],
-  "moonNote": "Tradicionāli kaitēkļu apkarošanu un atbaidošo uzlejumu smidzināšanu veic dilstošā Mēness laikā. Tā ir senču ieraža, nevis garantija — galvenais tomēr ir pamanīt laputis agri un rīkoties, neatkarīgi no Mēness fāzes.",
-  "folklore": "Vecie dārznieki teic: kur dārzā daudz skudru ap kādu krūmu, tur jau gaidāmas laputis — skudras tās gana kā savu lopiņu. Tāpēc rosīgas skudru takas augšup pa stumbru bija vecā zīme aplūkot dzinumu galus tuvāk.",
   "faq": [
     {
-      "q": "Vai nātru virca palīdz pret laputīm?",
-      "a": "Nē. Pret laputīm nātru virca nav pretlīdzeklis. Tā ir slāpekļa bagāts mēslojums, un tieši pārmērīgs slāpeklis dod mīkstus, sulīgus dzinumus, kas laputis pievelk — tāpēc nātru virca laputu problēmu var pat saasināt. Atbaidīšanai labāk der vērmeļu uzlējums, bet pašu koloniju visefektīvāk noskalo ar ūdeni vai apstrādā ar maigu ziepjūdeni."
+      "q": "Vai katra laputu kolonija jāiznīcina?",
+      "a": "Nē. Ja augs aug labi un kolonija ir neliela, pietiek vērot. Rīkojies, ja bojājas jaunie dzinumi vai stādi, un vienlaikus pārbaudi dabisko ienaidnieku klātbūtni."
     },
     {
-      "q": "Kāpēc ap manu augu ir tik daudz skudru?",
-      "a": "Skudras barojas ar laputu izdalīto saldo medusrasu un par to laputis aizsargā no plēsējiem, pat pārnēsā uz jauniem dzinumiem. Daudz skudru parasti ir droša zīme, ka tuvumā ir laputu kolonija. Ja ierobežo skudru takas, dabiskie laputu ienaidnieki — mārītes un zeltacītes — var darīt savu darbu netraucēti."
+      "q": "Vai drīkst smidzināt paštaisītu ziepjūdeni?",
+      "a": "Sadzīves ziepju un mazgāšanas līdzekļu sastāvs atšķiras; maisījums var apdedzināt lapas. Neseko universālai karotīšu receptei. Ja vajadzīgs līdzeklis, izvēlies attiecīgajam augam paredzētu produktu un ievēro tā marķējumu."
     },
     {
-      "q": "Kas ir lipīgais pārklājums un melnais aplikums uz lapām?",
-      "a": "Lipīgā, saldā kārtiņa ir medusrasa — laputu izdalījumi. Uz tās vēlāk uzmetas melnās kvēpsēnītes, kas lapas pārklāj ar sodrējiem līdzīgu aplikumu un traucē augam fotosintēzi. Tā nav atsevišķa slimība, bet gan laputu klātbūtnes sekas — tiklīdz tiec galā ar laputīm, problēma pamazām pāriet, un lapas var noskalot ar ūdeni."
+      "q": "Vai vērmeļu uzlējums un pelni ir drošs risinājums?",
+      "a": "Šajā ceļvedī tiem nav dots iedarbības solījums vai deva. Pret redzamu koloniju vispirms izmanto mehānisku noņemšanu un atkārtotu pārbaudi; nepamatota smidzināšana var aizkavēt rezultāta novērtēšanu."
+    },
+    {
+      "q": "Kāpēc lapas paliek kroplas, lai gan laputu vairs nav?",
+      "a": "Bojāta lapa ne vienmēr atgūst sākotnējo formu. Vērtē jaunās lapas un pārbaudi, vai kukaiņi atgriežas. Ja turpinās raibums vai izteikta deformācija, jāvērtē arī citi cēloņi, tostarp vīrusi; laputu noņemšana vīrusu neizārstē."
     }
-  ]
+  ],
+  "shortAnswer": "Vispirms atrodi pašas laputis: mīkstus kukaiņus kolonijās uz jaunajiem dzinumiem vai lapu apakšpusē. Nelielu koloniju uz veselīga auga var novērot. Ja cieš jaunā augšana, laputis saudzīgi noskalo vai noņem ar roku un saudzē to dabiskos ienaidniekus. Čokurota lapa vai skudras vien diagnozi neapstiprina.",
+  "compare": {
+    "heading": "Kas var izskatīties līdzīgi?",
+    "intro": "Diagnozi balsti uz redzamo kaitēkli un vairākām pazīmēm kopā.",
+    "items": [
+      {
+        "name": "Tīklērces",
+        "note": "Biežāk redzami sīki gaiši punktējumi un smalks tīklojums; pašas ērces meklējamas ar lupu.",
+        "href": "/kaitekli/tiklerces"
+      },
+      {
+        "name": "Baltblusiņas",
+        "note": "Uz lapu apakšpuses ir balti, spārnoti pieaugušie un nekustīgākas jaunās stadijas; arī tās var radīt medusrasu.",
+        "href": "/kaitekli/baltblusina"
+      },
+      {
+        "name": "Tomātu lapu čokurošanās",
+        "note": "Lapas var saritināties arī audzēšanas apstākļu dēļ. Bez atrastiem kukaiņiem nesāc laputu apkarošanu.",
+        "href": "/raksti/kapec-tomatu-lapas-cokurojas"
+      }
+    ]
+  },
+  "relatedLinks": [
+    {
+      "label": "Kāpēc tomātu lapas čokurojas",
+      "href": "/raksti/kapec-tomatu-lapas-cokurojas"
+    },
+    {
+      "label": "Tīklērču pazīmes un ierobežošana",
+      "href": "/kaitekli/tiklerces"
+    }
+  ],
+  "sources": [
+    {
+      "label": "RHS — laputu pazīmes un samērīga ierobežošana",
+      "url": "https://www.rhs.org.uk/biodiversity/aphids"
+    },
+    {
+      "label": "University of Minnesota — laputu atpazīšana un ūdens strūklas izmantošana",
+      "url": "https://extension.umn.edu/garden-and-home/yard-and-garden/yard-and-garden-insects/aphids"
+    },
+    {
+      "label": "RHS — laputu dabiskie ienaidnieki",
+      "url": "https://www.rhs.org.uk/biodiversity/aphid-predators"
+    },
+    {
+      "label": "University of Minnesota — telpaugu kaitēkļi un paštaisītu ziepju maisījumu risks",
+      "url": "https://extension.umn.edu/garden-and-home/yard-and-garden/yard-and-garden-insects/insects-on-indoor-plants"
+    },
+    {
+      "label": "University of California IPM — laputu ierobežošana un slāpekļa mēslojums",
+      "url": "https://ipm.ucanr.edu/home-and-landscape/aphids/"
+    },
+    {
+      "label": "VAAD — augu aizsardzības līdzekļu lietošanas nosacījumi",
+      "url": "https://www.vaad.gov.lv/lv/lietosanas-nosacijumi-0"
+    }
+  ],
+  "safetyNote": "Ja izmanto augu aizsardzības līdzekli, pārbaudi aktuālo Latvijas marķējumu: augu, kaitēkli, devu un nogaidīšanas laiku līdz ražas novākšanai. Ārvalstu avotā minēta produkta pieejamība nenozīmē atļautu lietojumu Latvijā.",
+  "updatedAt": "2026-10-27"
 }

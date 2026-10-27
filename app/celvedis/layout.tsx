@@ -4,7 +4,7 @@ import { canonical } from "@/lib/seo";
 export const metadata: Metadata = {
   title: "Sējas ceļvedis — kad sēt, stādīt un novākt katru augu",
   description:
-    "Meklē un filtrē visus augus pēc kategorijas, mēneša un grūtības: sējas logi Latvijai, Mēness dienas un augsnes temperatūras katrai kultūrai.",
+    "Ko šomēnes sēt un stādīt Latvijā? Filtrē augus pēc mēneša, darbības un kategorijas. Sēja, stādīšana, ražas novākšana un ziedēšana ir nošķirta.",
   alternates: { canonical: canonical("/celvedis") },
 };
 

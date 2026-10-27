@@ -3,62 +3,72 @@
   "name": "Asteres",
   "emoji": "🌸",
   "type": "viengadiga",
-  "latin": "Callistephus / Aster",
-  "image": { "id": "asteres", "caption": "Viengadīgo asteru ziedi var būt adatveida, pildīti vai vienkārši — attēlā adatveida šķirne." },
-  "tagline": "Rudens un 1. septembra puķe — viengadīgās asteres zied no augusta līdz salnām, daudzgadīgās ziemasteres tās pārņem un zied vēl tad, kad dārzs jau gandrīz tukšs.",
-  "bloom": "Augusts–oktobris (līdz pirmajām salnām)",
+  "latin": "Callistephus chinensis",
+  "image": {
+    "id": "asteres",
+    "caption": "Viengadīgās asteres ziedkopa; ziedu forma un krāsa atšķiras starp šķirnēm."
+  },
+  "tagline": "Viengadīgās dārza asteres dobēm un pušķiem: saulaina vieta, veselīgi dēsti un mitra, bet ūdeni caurlaidīga augsne.",
+  "bloom": "Vasaras nogale–rudens; parasti augusts–oktobris, atkarībā no šķirnes un laikapstākļiem",
   "bloomMonths": [
     8,
     9,
     10
   ],
-  "height": "20–80 cm (atkarībā no šķirnes)",
+  "height": "Apmēram 20–90 cm; atkarīgs no šķirnes",
   "sun": "Saule",
   "hardy": false,
   "difficulty": "vidēji",
-  "plantWhen": "Viengadīgās sēj telpās martā–aprīlī vai tieši dobē maijā; stādus laukā pēc pēdējām salnām",
+  "plantWhen": "Dēstiem 6–8 nedēļas pirms izstādīšanas; laukā pēc norūdīšanas un salnu riska beigām",
   "moonPhase": "augošs",
   "moonElement": "ziedi",
-  "moonText": "Asteres ir ziedu augi, tāpēc pēc biodinamiskās tradīcijas tās sēj un kopj ziedu (gaisa) dienās augošā Mēness laikā — kad svarīgākā auga daļa ir tieši ziedi. Daudzgadīgo ziemasteru sadalīšanu un pārstādīšanu, kas ir sakņu darbs, tradicionāli plāno dilstošā Mēness laikā. Tā ir sena dārza tradīcija, ne garantija — asterēm daudz svarīgāk ir silta sējas vieta, saule un, galvenais, katru gadu mainīta stādīšanas vieta, lai izvairītos no fuzariozes.",
+  "moonText": "Ziedu dienas un augošs Mēness šeit norādīti kā biodinamiskās dārzkopības tradīcija. Tie nav dīgšanas vai ziedēšanas garantija. Sēšanas laiku izvēlies pēc šķirnes, dēstu attīstības un vietējiem laikapstākļiem.",
   "intro": [
-    "Astere ir klasiskā Latvijas rudens un skolas puķe — tieši viņas košie ziedi gadu desmitiem rotā 1. septembra pušķus un pavada vasaru projām, kad lielākā daļa dārza jau nogurusi. Svarīgi saprast, ka «asteres» ir divi pavisam dažādi augi. VIENGADĪGĀS asteres (Callistephus chinensis) ir tās lielziedu, kupli pildītās rudens puķes, ko audzē no sēklas katru gadu un kas rudens salnās aiziet bojā. DAUDZGADĪGĀS asteres jeb ziemasteres (Aster) ir ziemcietīgi daudzgadīgi augi ar daudziem maziem zvaigznīšu ziediem, kas vienā vietā aug gadiem un katru rudeni atplaukst no jauna.",
-    "Šajā ierakstā galvenokārt runa ir par viengadīgo asteri — to košo skolas puķi, ko sēj no sēklas. Tā mīl sauli, auglīgu augsni un zied no augusta līdz pat oktobrim, taču tai ir viena nopietna vājā vieta: fuzariozes vīte, sēņu slimība, kas augu dažu dienu laikā novītina. Galvenais aizsardzības paņēmiens ir vienkāršs un sens — asteres katru gadu stāda jaunā vietā un neatgriežas pie tās pašas dobes vismaz trīs četrus gadus. Ja šo likumu ievēro, asteres ir pateicīga un krāšņa rudens puķe."
+    "Šis ceļvedis ir par viengadīgo dārza asteri Callistephus chinensis. Tai ir gan zemas apmaļu šķirnes, gan gariem kātiem piemērotas pušķu asteres. Ziedkopas var būt vienkāršas, daļēji pildītas vai blīvi pildītas, tāpēc viena fotogrāfija nerāda visu šķirņu izskatu.",
+    "Ar vārdu asteres apzīmē arī citus augus. Daudzas rudens miķelītes pieder Symphyotrichum, bet daļa daudzgadīgo sugu joprojām ir Aster ģintī. Pirms sēklu vai stādu izvēles pārbaudi zinātnisko nosaukumu: šeit aprakstītā pavasara sēja un vienas sezonas cikls attiecas uz Callistephus."
   ],
   "planting": [
-    "Viengadīgās asteres sēj telpās martā vai aprīlī siltā, gaišā palodzē; dīgst aptuveni nedēļas laikā ap 18–20 °C, un dēstus pēc otrās īstās lapiņas pārpiķē atsevišķos podiņos.",
-    "Vienkāršāks ceļš ir sēt tieši dobē maijā, kad augsne sasilusi — tieši sētas asteres zied nedaudz vēlāk, bet mēdz būt veselīgākas un izturīgākas.",
-    "Pirms stādīšanas laukā dēstus 7–10 dienas norūdi, un laukā nes tikai pēc pēdējām pavasara salnām — piekrastē ap maija sākumu, iekšzemē līdz pat maija beigām, jo jaunie dēsti aukstumu nepanes.",
-    "Izvēlies saulainu vietu ar irdenu, auglīgu, labi drenētu augsni; smagā, mitrā mālā un ēnā asteres slimo daudz biežāk.",
-    "GALVENAIS likums: katru gadu stādi asteres jaunā vietā un neatgriezies pie tās pašas dobes vismaz 3–4 gadus — tā izvairās no fuzariozes, kas augsnē uzkrājas.",
-    "Atstatums dobē 20–30 cm atkarībā no šķirnes; pēc stādīšanas aplej un viegli apmulčē."
+    "Sāc ar šķirnes izvēli un sējas plānu. Dēstu audzēšanai paredzi ap 6–8 nedēļām; Latvijas dārzam tas bieži nozīmē sēju martā vai aprīlī. Precīzo brīdi skaiti atpakaļ no savā vietā drošas izstādīšanas, ne no viena visai Latvijai noteikta datuma.",
+    "Sēj tīrā traukā ar noteces atverēm un dēstiem paredzētu substrātu. Sēklas izliec reti un viegli apber ar plānu substrāta kārtu. Ap 21 °C dīgsti bieži parādās 7–10 dienās; citā temperatūrā tas var prasīt ilgāk. Šķirnes paciņas norādes ir svarīgākas par šo orientieri.",
+    "Līdz sadīgšanai uzturi vienmērīgu mitrumu. Pēc tam dod daudz gaismas un svaiga gaisa; substrātu neturi pastāvīgi slapju. Ja sēts kopējā kastītē, dēstus ar īstajām lapām pārstādi atsevišķi, saudzējot saknes.",
+    "Pirms izstādīšanas 7–10 dienas pakāpeniski pieradini dēstus āra gaismai un vējam. Sāc aizsargātā pusēnā, uzturēšanos saulē pagarini pamazām. Ja prognozē salnu, dēstus atkal novieto aizsargātā vietā.",
+    "Dobē izvēlies sauli un auglīgu augsni, no kuras liekais ūdens aizplūst. Atstatumu pielāgo šķirnei; bieži vajag ap 25–40 cm, kuplām šķirnēm vairāk. Stādi tādā pašā dziļumā kā podiņā, aplaisti un pārbaudi mitrumu arī nākamajās dienās.",
+    "Var sēt arī tieši dobē pavasarī, kad augsne ir iesilusi un sagatavojama. Vēlāka sēja parasti atliek ziedēšanu; nav pamata solīt, ka šādi augi vienmēr būs veselīgāki. Ja dobē iepriekš novērota asteru vīte, izvēlies citu vietu un nepārnes uz to vecās dobes augsni."
   ],
   "care": [
-    "Laisti regulāri un mēreni, pie saknes, ne pa lapām un ziediem — slapjas lapas vakaros veicina sēņu slimības.",
-    "Mēslo mēreni: pārāk daudz svaiga kūtsmēslu vai slāpekļa dod kuplus lakstus, vājus stublājus un veicina puvi; labāk pavasarī iestrādā kompostu un ziedēšanas laikā dod kālijā bagātu mēslojumu.",
-    "Augsto, lielziedu šķirņu kuplos ziedus vējš un lietus viegli nolauž — vajadzības gadījumā ieliec atbalstu.",
-    "Regulāri nogriez novītušos ziedus, lai ziedēšana turpinās ilgāk; asteres ir lieliska griežamā puķe vāzei.",
-    "Daudzgadīgo ziemasteru cerus reizi 3–4 gados pavasarī sadali, lai vidus neizplok un ziedēšana nesarūk.",
-    "Augsni starp augiem turi irdenu un tīru no nezālēm — laba gaisa kustība ap stublājiem samazina slimību risku."
+    "Laisti pie augsnes, kad tā sāk izžūt. Karstumā pārbaudi gan dobi, gan podus; ūdeni nelej pēc kalendāra, ja sakņu zona vēl slapja. Neatstāj augus ilgstoši izkaltušus.",
+    "Pietiekami auglīga augsne ir pamats. Papildu mēslojumu izvēlies pēc augsnes un substrāta nodrošinājuma, ievērojot produkta norādes; lielāka deva nav drošs veids, kā iegūt vairāk ziedu.",
+    "Augstās šķirnes atbalsti savlaicīgi, kamēr stublāji vēl nav sagāzušies. Balstu piesien brīvi, lai tas neiegriežas stublājā.",
+    "Novāc noziedējušās ziedkopas, ja sēklas nevāc. Tas palīdz turpināt ziedēšanu; ziedkātus pušķiem griez ar tīru instrumentu.",
+    "Retini pārāk ciešu stādījumu un regulāri apskati lapu apakšpuses un stublāju pamatnes. Asteres nākamgad izvieto citur: vietas maiņa mazina augsnē saglabājošos slimību risku, bet viena pati to nenovērš."
   ],
-  "winter": "Viengadīgās asteres (Callistephus) Latvijā ATKLĀTĀ laukā nepārziemo — tās ir viengadīgas puķes, ko pirmā stiprākā rudens salna iznīcina; rudenī augus izrok un liek kompostā (ja tie nav bijuši slimi ar fuzariozi — tad labāk izmet, ne kompostā), bet nākampavasar sēj no jauna. Daudzgadīgās asteres jeb ziemasteres (Aster) turpretī ir ziemcietīgas un ziemo laukā bez īpaša seguma; rudenī novītušos stublājus var nogriezt vai atstāt līdz pavasarim, un jaunās, pavasarī stādītās vai sadalītās ziemasteres pirmajā ziemā labāk pamulčēt ar lapām vai kompostu.",
+  "winter": "Callistephus chinensis dzīves cikls beidzas vienā sezonā; šo asteri nav paredzēts pārziemināt kā ziemcieti. Sezonas beigās aizvāc augu atliekas. Vīšanas vai puves skartos augus neliec atpakaļ dobē un neizmanto par mulču. Daudzgadīgo Aster un Symphyotrichum pārziemošana ir cits jautājums, ko vērtē pēc konkrētās sugas, šķirnes un augsnes drenāžas.",
   "problems": [
-    "Fuzariozes vīte — astere pēkšņi novīst un nokalst, bieži no vienas puses, stublāja pamatne tumst; tā ir astera galvenā kaite. Tā saglabājas augsnē, tāpēc svarīgākā aizsardzība ir vietas maiņa katru gadu, veselas sēklas, tikai veselu augu kompostēšana un mērena, ne pārmitra augsne.",
-    "Pārmitra, smaga augsne un slapjas lapas veicina arī melnkāju dēstiem un citu puvi — sēj pietiekami reti, laisti pie saknes un nodrošini drenāžu.",
-    "Laputis uz jaunajiem dzinumiem un pumpuriem — tās pārnēsā arī vīrusus, tāpēc apkaro savlaicīgi ar ziepjūdeni vai bioloģiskiem līdzekļiem."
+    "Augs vīst: vispirms pārbaudi augsnes mitrumu un saknes. Sausums, pārmitrums un sakņu puves var izskatīties līdzīgi. Vienpusēja dzeltēšana un brūni vadaudi stublājā rada aizdomas par vīti, taču neapstiprina tieši fuzariozi; līdzīgas pazīmes dod arī verticilārā vīte.",
+    "Aizdomas par infekciozu vīti: stipri skarto augu izņem ar saknēm, notīri instrumentus un izvairies pārnest augsni uz veselo augu vietām. Ierosinātāji augsnē var saglabāties daudzus gadus; 3–4 gadu pārtraukums nav droša dobes attīrīšanas garantija. Atkārtotu bojājumu gadījumā diagnozi precizē pie augu aizsardzības speciālista.",
+    "Dēsti sagāžas vai sakņu kakls pūst: nepārlaisti un pārbaudi noteci. Pārmitrā substrātā iespējama dēstu izkrišana; bojātos augus atdala, bet nākamajai sējai izmanto tīrus traukus un jaunu substrātu.",
+    "Brūnējoši, slapji ziedi ar pelēku apsarmi var liecināt par pelēko puvi. Aizvāc bojātās daļas, uzlabo gaisa kustību un laisti augsni, nevis ziedus. Kaitēkļu gadījumā vispirms atrodi pašu kaitēkli; pēc lapu čokurošanās vien neizvēlies apstrādi un neizmanto nepārbaudītu ziepjūdens recepti."
   ],
-  "folklore": "Astere Latvijā ir cieši saaugusi ar rudeni un skolas sākumu — košs asteru pušķis 1. septembrī skolotājam ir tradīcija, ko atceras teju katrs. Daudzās lauku sētās asteres un dālijas pie mājas bija pašsaprotama rudens dobe, un cilvēki mēdza teikt, ka, kamēr asteres zied, vasara vēl nav galā. Pati astera nosaukuma sakne nāk no grieķu vārda «zvaigzne» — pēc ziedu zvaigznītes formas.",
   "faq": [
     {
-      "q": "Ar ko atšķiras viengadīgās asteres no daudzgadīgajām ziemasterēm?",
-      "a": "Viengadīgās asteres (Callistephus chinensis) ir lielziedu, bieži pildītās rudens skolas puķes, ko audzē no sēklas katru gadu un kas rudens salnās aiziet bojā. Daudzgadīgās asteres jeb ziemasteres (Aster) ir ziemcietīgi daudzgadīgi augi ar daudziem maziem zvaigznīšu ziediem; tās aug vienā vietā gadiem un katru rudeni atplaukst no jauna."
+      "q": "Kad Latvijā sēt asteres dēstiem?",
+      "a": "Orientieris ir 6–8 nedēļas pirms plānotās izstādīšanas, bieži marts–aprīlis. Laukā stādi pēc norūdīšanas, kad vietējā prognoze vairs neliecina par salnu risku. Piekrastes vai iekšzemes nosaukums viens pats nenosaka drošu datumu."
     },
     {
-      "q": "Kāpēc manas asteres pēkšņi novīst un nokalst?",
-      "a": "Visbiežāk tā ir fuzariozes vīte — sēņu slimība, kas augu novītina dažu dienu laikā un saglabājas augsnē. Galvenā aizsardzība ir asteres katru gadu stādīt jaunā vietā un neatgriezties pie tās pašas dobes 3–4 gadus, izmantot veselas sēklas, izvairīties no pārmitras augsnes un slimos augus nelikt kompostā."
+      "q": "Vai asteru sēklas jāapber?",
+      "a": "Callistephus chinensis sēklas viegli pārklāj ar plānu substrāta kārtu. Tās nesēj dziļi. Iowa State norāda ap 21 °C un 7–10 dienas līdz dīgšanai kā orientieri, ne garantiju katrai sēklu partijai."
     },
     {
-      "q": "Kad sēt un stādīt viengadīgās asteres?",
-      "a": "Sēklas sēj telpās martā–aprīlī siltā palodzē vai tieši dobē maijā, kad augsne sasilusi. Stādus laukā nes tikai pēc pēdējām pavasara salnām — piekrastē ap maija sākumu, iekšzemē līdz pat maija beigām. Tieši dobē maijā sētas asteres mēdz būt izturīgākas, bet uzzied nedaudz vēlāk."
+      "q": "Vai novītušu asteri var izglābt ar laistīšanu?",
+      "a": "Tikai tad, ja cēlonis tiešām ir ūdens trūkums un saknes vēl darbojas. Pārmitrā augsnē papildu laistīšana var pasliktināt stāvokli. Ja mitruma pietiek, pārbaudi saknes un stublāja pamatni; aizdomās par infekciju skarto augu atdala."
+    },
+    {
+      "q": "Vai asteres nākamgad izaugs no tā paša cera?",
+      "a": "Viengadīgā Callistephus chinensis nav ilggadīgs cers. No jauna izauguši augi var būt sējeņi. Daudzgadīgo Aster un Symphyotrichum ceru kopšanu nevajag pārnest uz viengadīgajām asterēm."
+    },
+    {
+      "q": "Kāpēc asteres zied vēlāk, nekā gaidīts?",
+      "a": "Salīdzini šķirnes norādīto agrīnumu, sējas laiku un audzēšanas apstākļus. Vēla sēja vai aizkavēta dēstu attīstība nobīda arī ziedēšanu. Ne katra šķirne jebkurā Latvijas vasarā būs uzziedējusi līdz vienam izvēlētam datumam."
     }
   ],
   "related": [
@@ -66,5 +76,81 @@
     "gladiolas",
     "rudbekijas",
     "ehinacija"
-  ]
+  ],
+  "updatedAt": "2026-10-27",
+  "shortAnswer": "Viengadīgās asteres sēj dēstiem apmēram 6–8 nedēļas pirms plānotās izstādīšanas. Sēklas viegli apber, dēstus norūda un izstāda, kad vairs nedraud salnas. Audzē saulē, nepieļaujot ne ilgstošu sausumu, ne pārmitrumu. Tās nav daudzgadīgās miķelītes, un ziemā šos pašus augus nesaglabā nākamajai sezonai.",
+  "lifeCycle": "Viengadīga puķe: no sēklas līdz ziediem vienā augšanas sezonā. Nākamajam gadam audzē jaunus augus.",
+  "comparison": {
+    "heading": "Viengadīgā astere vai daudzgadīgā miķelīte?",
+    "items": [
+      {
+        "name": "Callistephus chinensis",
+        "description": "Šī ceļveža augs: viengadīga dārza astere, ko ik sezonu audzē no jauna. Šķirnēm ir dažāds augstums un pildījums."
+      },
+      {
+        "name": "Symphyotrichum",
+        "description": "Šeit ietilpst daudzas pazīstamās rudens ziemasteres jeb miķelītes, piemēram, Jaunanglijas asteres. Dārzu ziemcietes parasti atjauno un pavairo, dalot cerus."
+      },
+      {
+        "name": "Aster",
+        "description": "Joprojām atsevišķa ģints ar daudzgadīgām sugām, piemēram, Aster amellus. Visas daudzgadīgās asteres nav vienādi augi ar vienādu ziedēšanas laiku un kopšanu."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "label": "RHS — Callistephus chinensis: augums un kopšana",
+      "url": "https://www.rhs.org.uk/plants/156433/callistephus-chinensis/details"
+    },
+    {
+      "label": "NC State Extension — viengadīgā dārza astere",
+      "url": "https://plants.ces.ncsu.edu/plants/callistephus-chinensis/common-name/annual-aster/"
+    },
+    {
+      "label": "Iowa State Extension — sēklu dīgšanas nosacījumi",
+      "url": "https://yardandgarden.extension.iastate.edu/how-to/germination-requirements-annuals-and-vegetables"
+    },
+    {
+      "label": "UC IPM — viengadīgo asteru slimības",
+      "url": "https://ipm.ucanr.edu/agriculture/floriculture-and-ornamental-nurseries/aster-china/"
+    },
+    {
+      "label": "RHS — asteru ģintis un to audzēšanas atšķirības",
+      "url": "https://www.rhs.org.uk/plants/aster/growing-guide"
+    },
+    {
+      "label": "Iowa State Extension — dēstu norūdīšana un izstādīšana",
+      "url": "https://yardandgarden.extension.iastate.edu/how-to/selecting-hardening-and-planting-bedding-plants"
+    }
+  ],
+  "sectionSources": {
+    "intro": [
+      "https://www.rhs.org.uk/plants/156433/callistephus-chinensis/details",
+      "https://plants.ces.ncsu.edu/plants/callistephus-chinensis/common-name/annual-aster/",
+      "https://www.rhs.org.uk/plants/aster/growing-guide"
+    ],
+    "planting": [
+      "https://yardandgarden.extension.iastate.edu/how-to/germination-requirements-annuals-and-vegetables",
+      "https://yardandgarden.extension.iastate.edu/how-to/selecting-hardening-and-planting-bedding-plants",
+      "https://www.rhs.org.uk/plants/156433/callistephus-chinensis/details",
+      "https://ipm.ucanr.edu/agriculture/floriculture-and-ornamental-nurseries/aster-china/"
+    ],
+    "care": [
+      "https://www.rhs.org.uk/plants/156433/callistephus-chinensis/details",
+      "https://plants.ces.ncsu.edu/plants/callistephus-chinensis/common-name/annual-aster/",
+      "https://www.rhs.org.uk/plants/aster/growing-guide"
+    ],
+    "winter": [
+      "https://plants.ces.ncsu.edu/plants/callistephus-chinensis/common-name/annual-aster/",
+      "https://www.rhs.org.uk/plants/aster/growing-guide"
+    ],
+    "problems": [
+      "https://ipm.ucanr.edu/agriculture/floriculture-and-ornamental-nurseries/aster-china/",
+      "https://plants.ces.ncsu.edu/plants/callistephus-chinensis/common-name/annual-aster/"
+    ],
+    "comparison": [
+      "https://www.rhs.org.uk/plants/aster/growing-guide",
+      "https://plants.ces.ncsu.edu/plants/callistephus-chinensis/common-name/annual-aster/"
+    ]
+  }
 }

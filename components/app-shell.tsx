@@ -10,7 +10,6 @@ import { RegionProvider } from "@/components/region-context";
 import { GardenProvider } from "@/components/garden-context";
 import { AuthProvider } from "@/components/auth-context";
 import { AccountButton } from "@/components/account-button";
-import { Onboarding } from "@/components/onboarding";
 import { GardenToast } from "@/components/garden-toast";
 import { SiteFooter } from "@/components/site-footer";
 import { MobileMenu } from "@/components/mobile-menu";
@@ -25,6 +24,7 @@ function SideLink({ item, active }: { item: NavItem; active: boolean }) {
   return (
     <Link
       href={item.href}
+      aria-current={active ? "page" : undefined}
       className={clsx(
         "flex items-center gap-sm rounded-lg px-sm py-sm transition-all duration-200",
         active
@@ -41,19 +41,19 @@ function SideLink({ item, active }: { item: NavItem; active: boolean }) {
 function Sidebar() {
   const pathname = usePathname();
   return (
-    <aside className="fixed left-0 top-0 z-30 hidden h-screen w-64 flex-col border-r border-outline-variant/20 bg-surface-container px-sm py-md shadow-lg shadow-primary/5 md:flex print:hidden">
-      <div className="mb-lg px-xs">
+    <aside className="fixed left-0 top-0 z-30 hidden h-screen w-64 flex-col overflow-y-auto border-r border-outline-variant/20 bg-surface-container px-sm py-md shadow-lg shadow-primary/5 md:flex print:hidden">
+      <div className="mb-lg shrink-0 px-xs">
         <span className="block text-headline-md text-primary">Mēness Sēja</span>
         <p className="mt-xs text-label-sm uppercase tracking-widest text-on-surface-variant/70">
           Latvijas dārza almanahs
         </p>
       </div>
-      <nav className="flex-1 space-y-1">
+      <nav aria-label="Galvenā navigācija" className="flex-1 space-y-1">
         {NAV_ITEMS.map((item) => (
           <SideLink key={item.href} item={item} active={isActive(pathname, item.href)} />
         ))}
       </nav>
-      <div className="space-y-1 border-t border-outline-variant/10 pt-md">
+      <div className="shrink-0 space-y-1 border-t border-outline-variant/10 pt-md">
         {NAV_FOOTER.map((item) => (
           <SideLink key={item.href} item={item} active={isActive(pathname, item.href)} />
         ))}
@@ -135,7 +135,6 @@ export function AppShell({ children }: { children: React.ReactNode }) {
           </div>
           <BottomNav onMenu={() => setMenuOpen(true)} />
           <MobileMenu open={menuOpen} onClose={() => setMenuOpen(false)} />
-          <Onboarding />
           <GardenToast />
           <ConsentManager />
         </GardenProvider>

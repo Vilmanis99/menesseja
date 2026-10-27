@@ -10,6 +10,9 @@ import { cropForAffect } from "@/lib/crop-pests";
 import { cropHref } from "@/lib/flowers";
 import { canonical, SITE_NAME, og } from "@/lib/seo";
 import { DATA_REVIEWED } from "@/lib/sources";
+import { ContentFigure } from "@/components/content-figure";
+import { problemImage } from "@/lib/problem-images";
+import { contentImage } from "@/lib/content-images";
 
 export const dynamicParams = false;
 
@@ -37,6 +40,7 @@ export default async function ProblemPage({ params }: { params: Promise<{ slug: 
   if (!p) notFound();
 
   const tm = PROBLEM_TYPE_META[p.type];
+  const identificationImage = problemImage(p.slug);
   const sev = SEVERITY_META[p.severity];
   const recipes = (p.recipeSlugs ?? [])
     .map((s) => getRecipe(s))
@@ -48,7 +52,7 @@ export default async function ProblemPage({ params }: { params: Promise<{ slug: 
     "@type": "Article",
     headline: `${p.name} — pazīmes un ierobežošana`,
     about: p.name,
-    ...(p.image ? { image: canonical(p.image.src) } : {}),
+    ...(identificationImage ? { image: canonical(contentImage(identificationImage.id).src) } : p.image ? { image: canonical(p.image.src) } : {}),
     inLanguage: "lv",
     dateModified: p.updatedAt ?? `${DATA_REVIEWED}-01`,
     isPartOf: { "@type": "WebSite", name: SITE_NAME, url: canonical("/") },
@@ -109,7 +113,11 @@ export default async function ProblemPage({ params }: { params: Promise<{ slug: 
         </aside>
       )}
 
-      {p.image && (
+      <nav aria-label="Ceļveža sadaļas" className="mb-md flex flex-wrap gap-2">
+        {[{ href: "#atpazisana", label: "Kā atpazīt" }, { href: "#riciba", label: "Ko darīt tagad" }, { href: "#profilakse", label: "Profilakse" }, ...(p.sources?.length ? [{ href: "#problem-sources-heading", label: "Avoti" }] : [])].map((link) => <a key={link.href} href={link.href} className="inline-flex min-h-11 items-center rounded-full border border-outline-variant/30 px-4 text-label-md text-primary hover:bg-surface-container-high">{link.label}</a>)}
+      </nav>
+
+      {identificationImage ? <ContentFigure image={identificationImage} priority /> : p.image && (
         <figure className="mb-md overflow-hidden rounded-xl border border-outline-variant/10">
           {/* Real, correctly-licensed identification photo — far better than an emoji
               for actually recognising the pest on your own plant. */}
@@ -136,7 +144,7 @@ export default async function ProblemPage({ params }: { params: Promise<{ slug: 
       </div>
 
       {/* Signs */}
-      <h2 className="mb-sm text-headline-md text-on-surface">Kā atpazīt</h2>
+      <h2 id="atpazisana" className="mb-sm scroll-mt-24 text-headline-md text-on-surface">Kā atpazīt</h2>
       <Card tone="high" elevated className="mb-lg p-md">
         <ul className="space-y-1.5">
           {p.signs.map((s, i) => (
@@ -190,7 +198,7 @@ export default async function ProblemPage({ params }: { params: Promise<{ slug: 
         </>
       ) : null}
 
-      <h2 className="mb-sm text-headline-md text-on-surface">Ko darīt tagad</h2>
+      <h2 id="riciba" className="mb-sm scroll-mt-24 text-headline-md text-on-surface">Ko darīt tagad</h2>
       <Card tone="high" elevated accent="primary" className="mb-md p-md">
         <ol className="space-y-sm">
           {p.control.map((s, i) => (
@@ -214,7 +222,7 @@ export default async function ProblemPage({ params }: { params: Promise<{ slug: 
       {recipes.length > 0 && (
         <Card tone="container" accent="secondary" className="mb-lg p-md">
           <p className="mb-sm flex items-center gap-2 text-label-md uppercase tracking-wide text-secondary">
-            <Icon name="science" size="16px" /> Gatavas receptes pret šo
+            <Icon name="science" size="16px" /> Saistītās receptes
           </p>
           <div className="flex flex-wrap gap-2">
             {recipes.map((r) => (
@@ -227,7 +235,7 @@ export default async function ProblemPage({ params }: { params: Promise<{ slug: 
       )}
 
       {/* Prevention */}
-      <h2 className="mb-sm text-headline-md text-on-surface">Kā novērst</h2>
+      <h2 id="profilakse" className="mb-sm scroll-mt-24 text-headline-md text-on-surface">Kā mazināt atkārtošanās risku</h2>
       <Card tone="high" className="mb-lg p-md">
         <ul className="space-y-1.5">
           {p.prevention.map((s, i) => (
@@ -287,7 +295,7 @@ export default async function ProblemPage({ params }: { params: Promise<{ slug: 
 
       {p.sources && p.sources.length > 0 && (
         <section className="mb-lg border-t border-outline-variant/10 pt-md" aria-labelledby="problem-sources-heading">
-          <h2 id="problem-sources-heading" className="text-headline-md text-on-surface">Avoti un pārbaude</h2>
+          <h2 id="problem-sources-heading" className="scroll-mt-24 text-headline-md text-on-surface">Avoti un pārbaude</h2>
           <p className="mt-1 text-label-md text-on-surface-variant">
             Saturs pārbaudīts {p.updatedAt ? new Intl.DateTimeFormat("lv-LV").format(new Date(`${p.updatedAt}T12:00:00Z`)) : "redakcijas pārbaudē"}.
           </p>

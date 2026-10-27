@@ -1,0 +1,88 @@
+{
+  "date": "2026-10-27",
+  "status": "verified-local-not-published",
+  "page": "/celvedis",
+  "cause": [
+    "Annual list was the default",
+    "Current-month filter included harvest and flower bloom"
+  ],
+  "changes": [
+    "Riga current month with sowing/planting default",
+    "Separate harvest, flowering and all-activity filters",
+    "Month selection including annual planning",
+    "Explicit action on crop cards; growing notes hidden in harvest-only views",
+    "Planting metadata for 13 crops; consistent timeline, annual table, monthly lists and crop-page labels",
+    "Winter garlic separated by name and note from summer garlic; existing ID preserved"
+  ],
+  "source": {
+    "url": "https://www.saimnieks.lv/raksts/ziemas-kiploki",
+    "authors": [
+      "Gita Riekstiņa",
+      "Jūlija Vilcāne",
+      "Līva Purmale"
+    ],
+    "date": "2023-12-14",
+    "supports": "Winter garlic planted in autumn; summer garlic in early spring"
+  },
+  "rejectedSource": {
+    "url": "https://laukutikls.lv/sites/laukutikls.lv/files/informativie_materiali/kiploki_internetam.pdf",
+    "reason": "Search index contains relevant text but direct retrieval redirects to homepage"
+  },
+  "validation": {
+    "testsPassed": 19,
+    "newTests": 5,
+    "typescript": true,
+    "uiValidation": true,
+    "productionBuildPages": 326,
+    "contentValidation": true,
+    "existingContentWarnings": 66,
+    "browserMonths": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "sowingResultCounts": [
+      0,
+      7,
+      21,
+      43,
+      65,
+      47,
+      10,
+      4,
+      7,
+      7,
+      0,
+      0
+    ],
+    "octoberHarvestCount": 16,
+    "octoberFloweringCount": 8,
+    "mobileWidths": [
+      320,
+      375
+    ],
+    "desktopWidth": 1280,
+    "consoleErrors": 0,
+    "annualSsrRows": 75
+  },
+  "proofs": [
+    "/tmp/menesseja-sowing-guide-proof-2026-10-27/oktobra-stadisana.png",
+    "/tmp/menesseja-sowing-guide-proof-2026-10-27/oktobra-raza.png",
+    "/tmp/menesseja-sowing-guide-proof-2026-10-27/ziemas-kiploki-mobilais.png",
+    "/tmp/menesseja-sowing-guide-ssr-check.json"
+  ],
+  "limits": [
+    "No full agronomic review of all 75 crop windows",
+    "Summer garlic does not yet have a separate crop calendar entry",
+    "Garlic article changes limited to season distinction and planting language; other cultivation claims not fully reviewed"
+  ]
+}

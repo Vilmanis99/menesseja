@@ -894,5 +894,47 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
     "changes": "Attēls samazināts un pārveidots WebP formātā.",
     "reviewedAt": "2026-10-26"
+  },
+  "rozu-laputu-kolonija": {
+    "src": "/images/pests/laputis-rozes.webp",
+    "width": 1200,
+    "height": 800,
+    "alt": "Rozīgas rožu laputis kolonijā uz zaļa rožu pumpura un tā kātiņa",
+    "author": "Whitney Cranshaw, Colorado State University / © Bugwood.org",
+    "sourceName": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Macrosiphum_rosae_5422190.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/95/Macrosiphum_rosae_5422190.jpg",
+    "license": "CC BY 3.0 US",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/us/",
+    "changes": "Attēls samazināts un pārveidots WebP formātā; kadrs saglabāts pilnībā.",
+    "reviewedAt": "2026-10-27"
+  },
+  "miltrasa-cukini-salidzinajums": {
+    "src": "/images/pests/miltrasa-salidzinajums.webp",
+    "width": 1200,
+    "height": 900,
+    "alt": "Divas cukīni lapas: kreisajā dabisks gaišs raksts, labajā balts miltrasas aplikums",
+    "author": "Schlaghecken Josef",
+    "sourceName": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zucchini_Echter-Mehltau_Schlaghecken.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/51/Zucchini_Echter-Mehltau_Schlaghecken.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "changes": "Attēls samazināts un pārveidots WebP formātā; kadrs saglabāts pilnībā.",
+    "reviewedAt": "2026-10-27"
+  },
+  "lakstu-puve-tomata-lapa": {
+    "src": "/images/pests/lakstu-puve-tomats.webp",
+    "width": 1200,
+    "height": 900,
+    "alt": "Tomāta lapa ar neregulāriem brūniem un tumšiem lakstu puves bojājumiem lapu malās",
+    "author": "Goldlocki",
+    "sourceName": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:TomateBlattPhytophthorainfestans.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e1/TomateBlattPhytophthorainfestans.jpg",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "changes": "Attēls samazināts un pārveidots WebP formātā; kadrs saglabāts pilnībā.",
+    "reviewedAt": "2026-10-27"
   }
 }

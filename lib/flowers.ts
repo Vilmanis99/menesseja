@@ -3,12 +3,9 @@ import path from "node:path";
 import type { ContentImageUse } from "./content-images";
 import type { RecipePhase, RecipeElement } from "./recipes";
 
-/** Ornamental-flower content type. The single biggest traffic category in the
- *  Latvian gardening market (peonijas, narcises, pelargonijas …) — and the one
- *  that fits the Moon engine best: blooms are sown/tended on flower (ziedu/gaiss)
- *  days. Each page pairs real Latvia growing data with that Moon angle + folklore. */
-
-export type FlowerType = "daudzgadiga" | "sipolpuke" | "viengadiga" | "krums";
+/** Practical growing groups; the species' biological life cycle is described separately. */
+export type FlowerType = "daudzgadiga" | "sipolpuke" | "viengadiga" | "divgadiga" | "krums";
+export type FlowerSourceSection = "intro" | "planting" | "care" | "winter" | "problems" | "comparison";
 
 export interface Flower {
   slug: string;
@@ -24,10 +21,16 @@ export interface Flower {
   emoji: string;
   type: FlowerType;
   tagline: string;
+  updatedAt?: string;
+  shortAnswer?: string;
+  lifeCycle?: string;
+  sources?: { label: string; url: string }[];
+  sectionSources?: Partial<Record<FlowerSourceSection, string[]>>;
+  comparison?: { heading: string; items: { name: string; description: string }[] };
   bloom: string; // "Jūnijs–jūlijs"
   height: string; // "60–100 cm"
   sun: string; // "Saule" | "Saule / pussēna" | "Pussēna"
-  hardy: boolean; // pārziemo Latvijā bez izrakšanas
+  hardy: boolean; // Legacy grouping hint; not a guarantee. Display the winter conditions instead.
   difficulty: "viegli" | "vidēji" | "grūti";
   plantWhen: string; // "Septembris–oktobris (sīpoli)"
   moonPhase: RecipePhase;
@@ -52,10 +55,11 @@ export const FLOWER_TYPE_META: Record<FlowerType, { label: string; icon: string;
   daudzgadiga: { label: "Daudzgadīgās", icon: "local_florist", blurb: "Iestādi reizi — zied gadiem." },
   sipolpuke: { label: "Sīpolpuķes", icon: "spa", blurb: "Sīpoli un gumi — pavasara un vasaras krāsas." },
   viengadiga: { label: "Viengadīgās", icon: "potted_plant", blurb: "Vienas sezonas spožums dobēm un balkoniem." },
+  divgadiga: { label: "Divgadīgā audzēšanā", icon: "local_florist", blurb: "Sēj vienā sezonā, galveno ziedēšanu sagaida nākamajā." },
   krums: { label: "Ziedoši krūmi", icon: "park", blurb: "Dārza karkass, kas zied gadu no gada." },
 };
 
-export const FLOWER_TYPE_ORDER: FlowerType[] = ["daudzgadiga", "sipolpuke", "viengadiga", "krums"];
+export const FLOWER_TYPE_ORDER: FlowerType[] = ["daudzgadiga", "sipolpuke", "viengadiga", "divgadiga", "krums"];
 
 const DIR = path.join(process.cwd(), "content", "flowers");
 

@@ -2,60 +2,155 @@
   "slug": "verbena",
   "name": "Verbēna",
   "nameAcc": "verbēnu",
-  "latin": "Verbena",
-  "image": { "id": "verbena", "caption": "Dārza verbēna podā zied līdz rudens salnām; Latvijā to audzē kā viengadīgu puķi." },
+  "latin": "Glandularia × hybrida (sin. Verbena × hybrida)",
+  "image": {
+    "id": "verbena",
+    "caption": "Dārza verbēnas hibrīds ar sarkanbaltiem ziediem. Šis ceļvedis ir par zemajām dobju un podu verbēnām; konkrēta šķirne šeit nav noteikta."
+  },
   "emoji": "💜",
   "type": "viengadiga",
-  "tagline": "Nenogurstoša saulmīle, kas balkona kastes un dobes klāj ar krāsu līdz pat rudens salnām.",
-  "bloom": "Jūnijs–septembris",
-  "bloomMonths": [6, 7, 8, 9],
-  "height": "20–40 cm",
+  "tagline": "Zemās un nokarenās dārza verbēnas saulainām dobēm, balkona kastēm un podiem.",
+  "updatedAt": "2026-10-27",
+  "shortAnswer": "Dobju un podu verbēnu hibrīdiem vajag sauli, ūdeni caurlaidīgu augsni un aizsardzību no salnām. Podā mitrumu pārbaudi regulāri: sausumizturība nenozīmē izturību pret ilgstošu izkalšanu. Latvijā tos parasti audzē vienai sezonai; iecienītu augu var mēģināt saglabāt ar spraudeņiem telpās.",
+  "lifeCycle": "Saljutīgs, parasti īsmūžīgs daudzgadīgs hibrīds; Latvijas dārzā praktiski audzējams vienai sezonai.",
+  "bloom": "Vasara līdz rudens salnām; parasti jūnijs–septembris",
+  "bloomMonths": [
+    6,
+    7,
+    8,
+    9
+  ],
+  "height": "Bieži ap 30 cm; atkarīgs no šķirnes",
   "sun": "Saule",
   "hardy": false,
   "difficulty": "viegli",
-  "plantWhen": "Stādus laukā un balkonā pēc pēdējām salnām, maija beigās",
+  "plantWhen": "Pēc vietējo salnu riska mazināšanās, stādus iepriekš norūdot",
   "moonPhase": "augošs",
   "moonElement": "ziedi",
-  "moonText": "Verbēnu kā ziedu augu pēc biodinamiskās tradīcijas sēj un stāda ziedu (gaisa) dienās — kad Mēness ir Dvīņos, Svaros vai Ūdensvīrā — un labāk augošā Mēnesī, kad spēks virzās uz augšu. Tā ir veca dārznieku tradīcija, ne garantija: daudz svarīgāk ir nogaidīt, līdz salnas beigušās, un iestādīt siltā, saulainā vietā.",
+  "moonText": "Mēness kalendāra ziedu dienas ir tradīcijas orientieris, ne pierādīta prasība verbēnu audzēšanai. Stādīšanu nosaka salnu risks, auga gatavība un augšanas apstākļi.",
   "intro": [
-    "Verbēna ir pateicīga viengadīga puķe balkona kastēm, podiem un dobju malām. Tā veido zemus, plašus pleķus, kas vasaras gaitā pārklājas ar maziem ziediņiem ciešās ķekaros — sarkanā, rozā, violetā, zilganā un baltā krāsā, bieži ar gaišāku actiņu vidū. Daudzas mūsdienu šķirnes aug noliekušās un labi pārkaras pār poda malu, tāpēc verbēna ir iecienīta arī piekaramajos groziņos un kastēs.",
-    "Latvijā verbēnu audzē kā viengadīgu puķi — mūsu ziemu atklātā laukā tā neiztur un sasalst. Tās lielā priekšrocība ir izturība pret karstumu un sausumu: kad citas balkona puķes vasaras svelmē noplok, verbēna saulītē tikai uzplaukst. Tā zied ilgi un nenogurstoši, gandrīz bez pārtraukuma no jūnija līdz pirmajām rudens salnām, un ir lieliska pirmā puķe iesācējam, kas grib daudz krāsas par mazu piepūli."
+    "Ar nosaukumu verbēna pārdod atšķirīgus augus. Šeit aprakstīti zemie dobju un podu dārza hibrīdi Glandularia × hybrida, kuru pazīstamais sinonīms ir Verbena × hybrida. Tie veido kuplus vai nokarenus dzinumus ar nelieliem ziediem blīvās, noapaļotās ziedkopās. Pērkot pārbaudi arī šķirnes nosaukumu un augšanas formu: kompakts dobju augs un pārkarens balkona kastes augs aizņems atšķirīgu vietu.",
+    "Viengadīga šeit apzīmē audzēšanas veidu. Bioloģiski šie hibrīdi var dzīvot ilgāk par vienu sezonu, taču atklātā Latvijas dārzā uz to pārziemošanu nepaļaujies. Ziedēšanas sākums atkarīgs no šķirnes un stāda attīstības, beigas — no laikapstākļiem; kalendārā norādītie mēneši ir orientieris."
   ],
+  "comparison": {
+    "heading": "Kura verbēna ir tavā dārzā?",
+    "items": [
+      {
+        "name": "Glandularia × hybrida jeb Verbena × hybrida",
+        "description": "Šī ceļveža zemie un nokarenie dobju un podu hibrīdi. Dažādu krāsu blīvas ziedkopas; saljutīgi augi sezonas stādījumiem."
+      },
+      {
+        "name": "Verbena bonariensis",
+        "description": "Cita suga, kurai raksturīgi gari, slaidi stublāji un violetu ziedu kopas. Pārbaudi etiķetē pilnu nosaukumu; augstums viens pats nav droša atpazīšanas pazīme."
+      },
+      {
+        "name": "Verbena rigida",
+        "description": "Atsevišķa daudzgadīga suga, kas veido zemākus, blīvākus stādījumus. Tās sausumizturības aprakstu nepārnes uz visām podu verbēnām."
+      },
+      {
+        "name": "Verbena officinalis",
+        "description": "Stāvs daudzgadīgs augs ar sīkiem, gaiši violetiem ziediem skrajās vārpās. Tas nav zemās dobju verbēnas cits nosaukums."
+      }
+    ]
+  },
   "planting": [
-    "Stādus laukā un balkonā stādi tikai pēc pēdējām salnām — iekšzemē (Vidzemē, Latgalē) drošāk maija beigās, Zemgalē ap 15. maiju, piekrastē var jau ap maija vidu. Verbēna ir siltummīle un aukstumu nepanes.",
-    "Dobē atstāj 20–30 cm atstatumu starp augiem, lai tie izplešas un saaug kuplā paklājā; balkona kastēs un podos pietiek ar 15–20 cm.",
-    "Stādi tikpat dziļi, cik augs auga podiņā, vieglā, labi caurlaidīgā augsnē. Podu un kastu dibenā ieliec drenāžu (keramzītu vai akmentiņus), jo verbēna necieš ūdens sastāvēšanu pie saknēm.",
-    "Izvēlies pašu saulaināko vietu, kāda dārzā ir — jo vairāk saules, jo kuplāka ziedēšana; ēnā verbēna stiepjas un zied vāji.",
-    "Ja audzē no sēklas, sēj jau februārī–martā uz palodzes, jo no sēklas līdz ziedam paiet vairāki mēneši; sēklas dīgst lēni un nevienmērīgi, tāpēc iesācējam vieglāk ir nopirkt gatavus stādus.",
-    "Stādīšanas dienu izvēlies bez karstuma, vēlams vakarpusē, un pēc stādīšanas labi aplej, lai augsne piegulst saknēm."
+    "Izvēlies saulainu vietu ar augsni, kurā neuzkrājas ūdens. Šķirnes paredzētais platums nosaka stādīšanas atstatumu un poda izvēli; vienāds centimetru skaits visām verbēnām neder.",
+    "Podam vai balkona kastei vajag atvērtas noteces atveres un podaugiem piemērotu substrātu. Akmeņu vai keramzīta slānis zem substrāta neaizstāj noteci un neuzlabo drenāžu. Pēc laistīšanas izlej sakrājušos ūdeni no paliktņa vai dekoratīvā ārējā poda.",
+    "Iekštelpās audzētus stādus pakāpeniski pieradini āra apstākļiem. Pastāvīgā vietā izstādi, kad mazinājies salnu risks, vadoties pēc vietējās prognozes un dārza mikroklimata. Konkrēts maija datums negarantē drošību nevienā Latvijas reģionā; salnu prognozes gadījumā pārvietojamus podus ienes telpās.",
+    "Sējai izvēlies tieši dobju verbēnas šķirnes sēklas. Plānošanas orientieris ir sēja telpās aptuveni 8–10 nedēļas pirms paredzētās izstādīšanas pēc salnām, bet priekšroka ir konkrētās paciņas norādēm par termiņu, sēklu piesegšanu un dīgšanas apstākļiem. No paša auga ievāktas sēklas var nedot vecākaugam līdzīgu rezultātu."
   ],
   "care": [
-    "Laisti mēreni un regulāri — verbēna panes īslaicīgu sausumu labāk nekā pārliešanu. Ļauj augsnes virskārtai apžūt starp laistīšanas reizēm; karstā vasarā balkona kastes var prasīt ūdeni katru dienu, vēsā laikā retāk. Laisti pie saknes, ne pa lapām.",
-    "Mēslo ziedēšanas laikā ik pa 1–2 nedēļām ar mēslojumu ziedošajiem augiem (vairāk kālija un fosfora, mazāk slāpekļa) — citādi būs daudz lapu, bet maz ziedu. Podos un kastēs barības vielas izskalojas ātrāk, tāpēc tur mēslošana ir īpaši svarīga.",
-    "Regulāri noņem nokaltušos ziedu ķekarus — tas pamudina augu ziedēt no jauna un pagarina ziedēšanas laiku. Daudzas mūsdienu šķirnes pašas atjauno ziedus, bet kopšana joprojām palīdz.",
-    "Ja augs vasaras vidū izstiepies vai ziedēšana atslābst, apgriez to par apmēram trešdaļu — pēc tam tas atkal kļūst kuplāks un saražo jaunus ziedus.",
-    "Tur saulainā, vējainā vietā ar labu gaisa kustību; pārāk blīvi un mitri novietoti augi vieglāk slimo ar miltrasu. Atbalsts verbēnai nav vajadzīgs, jo tā aug zema un pārkarena."
+    "Podā pārbaudi mitrumu arī zem substrāta virskārtas. Kad tas sācis apžūt, aplaisti sakņu kamolu un ļauj liekajam ūdenim notecēt; nelieto nemainīgu laistīšanas grafiku. Karstumā mazu kasti pārbaudi katru dienu. Dobē ieaugušam augam ūdens parasti vajadzīgs retāk, taču ilgstošs karstums un sausums var apturēt augšanu un ziedēšanu.",
+    "Pirms mēslošanas noskaidro, vai substrāts jau satur mēslojumu. Podos papildmēslojumu lieto atbilstoši izvēlētā līdzekļa devai un lietošanas biežumam; ziedēšanas periodam piemērots kāliju saturošs mēslojums. Dobē regulāra papildmēslošana nav automātiski nepieciešama. Vairāk mēslojuma nav risinājums izkaltušam vai pārmitram augam.",
+    "Noņem noziedējušās ziedkopas, ja šķirnei tās paliek pie auga; tas var veicināt turpmāku ziedēšanu. Jaunam augam dzinumu galotņu izkniebšana var palīdzēt sazaroties.",
+    "Atstāj vietu gaisa kustībai starp augiem un regulāri apskati lapas. Nenovieto cieši saspiestas kastes tikai tāpēc, lai uzreiz iegūtu pilnu ziedu sienu. Spraudeņu saglabāšanai izvēlies veselus dzinumus."
   ],
-  "winter": "Verbēna Latvijā atklātā laukā nepārziemo — to audzē kā viengadīgu puķi. Rudenī pēc pirmajām salnām augs nokalst, un to vienkārši izņem no dobes vai kastes un liek kompostā; nākamsezon stāda no jauna. Atšķirībā no dālijām vai bumbuļbegonijām verbēnai nav gumu vai bumbuļu, ko izrakt un glabāt. Ja gribi saglabāt kādu īpašu šķirni, vasaras beigās var apsakņot dažus spraudeņus un pārziemot jaunos augus uz gaišas, vēsas palodzes (ideāli +10…+15 °C), taču iesācējam vienkāršāk ir pavasarī iegādāties svaigus stādus.",
+  "winter": "Zemos dobju hibrīdus neplāno pārziemināt dobē vai ārā atstātā podā. Ja vēlies augu saglabāt, vasaras beigās, kamēr tas vēl veselīgi aug, ņem dzinumu spraudeņus un izaudzē jaunus augus. RHS iesaka verbēnām arī jauno dzinumu spraudeņus pavasarī un vasaras sākumā; vasaras beigās izmanto daļēji nobriedušus dzinumus. Apsakņotos augus ziemā tur gaišā vietā, kas nesasalst. Var mēģināt telpās saglabāt arī visu podaugu, taču nav vienas drošas temperatūras receptes visām šķirnēm un telpām. Ja piemērotas vietas nav, nākamajā pavasarī audzē vai iegādājies jaunus stādus.",
   "problems": [
-    "Miltrasa (balta pūkaina aplikums uz lapām) — uzbrūk blīvi novietotiem, vēsā un mitrā stāvošiem augiem; risinājums ir saulaina, vējaina vieta, atstatums starp augiem un laistīšana pie saknes, ne pa lapām.",
-    "Daudz lapu, bet maz ziedu parasti nozīmē pārāk maz saules vai pārāk daudz slāpekļa mēslojuma — pārvieto saulītē un izvēlies mēslojumu ziedošajiem augiem.",
-    "Pārliešana un slikta drenāža izraisa sakņu puvi (lapas kļūst dzeltenas un ļenganas) — laisti retāk un nodrošini ūdens noteci no poda vai kastes."
+    "Balts, miltains aplikums uz lapām var liecināt par miltrasu. To veicina slikta gaisa kustība un paaugstināts gaisa mitrums, bet infekcija iespējama arī sausos apstākļos; atkārtots sausuma stress palielina uzņēmību. Atbrīvo augiem vietu, uzturi vienmērīgāku mitrumu pie saknēm, noņem skartos dzinumus un nepārmēslo. Laistīšana pie saknēm viena pati slimību neizārstē.",
+    "Vīšana nav automātisks signāls liet vēl ūdeni. Vispirms pārbaudi substrātu un poda noteci: izkaltis sakņu kamols un ilgstoši pārmitras saknes abi var radīt problēmas. Slapjā substrātā gaisa trūkums veicina sakņu puvi; ar dzeltenām lapām vien nepietiek, lai noteiktu cēloni.",
+    "Ja ziedēšana kļūst vāja, pārbaudi saules daudzumu, mitrumu un stāda vispārējo stāvokli. Ilgstošs sausums vai noēnojums ir iemesls vispirms labot augšanas apstākļus, ne uzreiz palielināt mēslojuma devu."
   ],
-  "folklore": "Verbēna ir sena dārza un balkona puķe, kas Latvijas lauku dārzos un pilsētu palodzēs iekoptas dobēs sastopama jau paaudzēm — tās zemais, ziedošais paklājs bijis pateicīgs veids, kā piepildīt dobes malas un balkona kastes ar krāsu visu vasaru.",
   "faq": [
     {
-      "q": "Vai verbēna pārziemos Latvijā dārzā vai uz balkona?",
-      "a": "Nē. Verbēnu Latvijā audzē kā viengadīgu puķi — tā nav ziemcietīga un mūsu ziemu atklātā laukā nepārcieš. Rudenī augs nokalst un to izņem; nākampavasar stāda no jauna. Gumu vai bumbuļu, ko izrakt un glabāt, tai nav."
+      "q": "Vai verbēna ir viengadīga vai daudzgadīga?",
+      "a": "Zemie dārza hibrīdi ir saljutīgi daudzgadīgi augi, kurus Latvijā parasti audzē vienai vasarai. Verbena bonariensis, V. rigida un V. officinalis ir citas sugas ar atšķirīgām īpašībām."
     },
     {
-      "q": "Kad verbēnu drīkst izstādīt laukā vai balkonā?",
-      "a": "Tikai pēc pēdējām pavasara salnām. Iekšzemē (Vidzemē, Latgalē) drošāk gaidīt līdz maija beigām, Zemgalē ap 15. maiju, piekrastē var jau ap maija vidu. Verbēna ir siltummīle, un pāragri iznests augs no nakts salnas var aiziet bojā."
+      "q": "Kad verbēnu var izstādīt balkonā?",
+      "a": "Kad mazinājies vietējo salnu risks un stāds pakāpeniski pieradināts āra apstākļiem. Pārbaudi prognozi arī pēc izstādīšanas; kalendāra datums nav salnu beigu garantija."
     },
     {
-      "q": "Kāpēc mana verbēna zied vāji?",
-      "a": "Visbiežāk trūkst saules vai ir par daudz slāpekļa mēslojuma. Verbēnai vajag pašu saulaināko vietu dārzā. Pārvieto to saulītē, baro ar mēslojumu ziedošajiem augiem un regulāri noņem nokaltušos ziedus; ja augs izstiepies, apgriez to par trešdaļu."
+      "q": "Vai podu verbēna iztiks bez laistīšanas?",
+      "a": "Nē. Ierobežots substrāta daudzums ātri izžūst, un ilgstošs sausums var novājināt augu. Laisti pēc faktiskā mitruma, ne tikai pēc dienu skaita."
+    },
+    {
+      "q": "Vai dobju verbēnu var izaudzēt no sēklām?",
+      "a": "Jā, ja izvēlēta sējai piedāvāta šķirne. Izpildi sēklu paciņas norādes; paša ievāktās hibrīda sēklas var neatkārtot vecākauga īpašības. Šķirnes saglabāšanai izmanto spraudeņus."
+    },
+    {
+      "q": "Vai dobju verbēnu podā var saglabāt līdz pavasarim?",
+      "a": "Var mēģināt, ja ir gaiša, nesalstoša vieta. Vasaras beigās var sagatavot arī spraudeņus. Ārā palicis pods nav droša pārziemošanas vieta šeit aprakstītajiem hibrīdiem."
     }
   ],
-  "related": ["petunijas", "pelargonijas", "begonijas"]
+  "sources": [
+    {
+      "label": "Kew Plants of the World Online — Glandularia × hybrida un sinonīmi",
+      "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:969568-1"
+    },
+    {
+      "label": "RHS — verbēnu grupas, stādīšana, kopšana un pavairošana",
+      "url": "https://www.rhs.org.uk/plants/verbena/growing-guide"
+    },
+    {
+      "label": "Missouri Botanical Garden — Verbena × hybrida, dzīvescikls un audzēšana",
+      "url": "https://plantfinder.mobot.org/PlantFinderDetails.aspx?basic=Verbena&isprofile=0&taxonid=263340"
+    },
+    {
+      "label": "University of Illinois Extension — ūdens notece podos un grants slāņa mīts",
+      "url": "https://extension.illinois.edu/container-gardens/container-drainage-options"
+    },
+    {
+      "label": "RHS — miltrasas pazīmes un augšanas apstākļu nozīme",
+      "url": "https://www.rhs.org.uk/disease/powdery-mildews"
+    },
+    {
+      "label": "RHS — Verbena officinalis sugas apraksts",
+      "url": "https://www.rhs.org.uk/plants/18816/verbena-officinalis/details"
+    }
+  ],
+  "sectionSources": {
+    "intro": [
+      "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:969568-1",
+      "https://plantfinder.mobot.org/PlantFinderDetails.aspx?basic=Verbena&isprofile=0&taxonid=263340"
+    ],
+    "planting": [
+      "https://www.rhs.org.uk/plants/verbena/growing-guide",
+      "https://plantfinder.mobot.org/PlantFinderDetails.aspx?basic=Verbena&isprofile=0&taxonid=263340",
+      "https://extension.illinois.edu/container-gardens/container-drainage-options"
+    ],
+    "care": [
+      "https://www.rhs.org.uk/plants/verbena/growing-guide",
+      "https://plantfinder.mobot.org/PlantFinderDetails.aspx?basic=Verbena&isprofile=0&taxonid=263340"
+    ],
+    "winter": [
+      "https://www.rhs.org.uk/plants/verbena/growing-guide",
+      "https://plantfinder.mobot.org/PlantFinderDetails.aspx?basic=Verbena&isprofile=0&taxonid=263340"
+    ],
+    "problems": [
+      "https://www.rhs.org.uk/disease/powdery-mildews",
+      "https://extension.illinois.edu/container-gardens/container-drainage-options",
+      "https://plantfinder.mobot.org/PlantFinderDetails.aspx?basic=Verbena&isprofile=0&taxonid=263340"
+    ],
+    "comparison": [
+      "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:969568-1",
+      "https://www.rhs.org.uk/plants/verbena/growing-guide",
+      "https://www.rhs.org.uk/plants/18816/verbena-officinalis/details"
+    ]
+  },
+  "related": [
+    "petunijas",
+    "pelargonijas",
+    "begonijas"
+  ]
 }

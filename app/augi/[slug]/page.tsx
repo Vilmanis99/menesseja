@@ -12,7 +12,7 @@ import {
   CROPS,
   CATEGORIES,
   ACTIVITY_KEYS,
-  ACTIVITY_META,
+  cropActivityMeta,
   DIFFICULTY_LABEL,
   MONTHS_LV_FULL,
 } from "@/lib/planting-crops";
@@ -55,12 +55,13 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const crop = CROPS.find((c) => c.id === slug);
   if (!crop) return {};
   const sow = rangeText(crop.sowOutdoors ?? crop.sowIndoors);
+  const action = crop.outdoorAction === "plant" ? "stādīt" : "sēt";
   const title = crop.id === "rediisi"
     ? "Kad sēt redīsus un kā tos audzēt Latvijā"
-    : crop.category === "pukes" ? `${crop.name} — audzēšana, ziedēšana un kopšana` : `${crop.name} — kad sēt, stādīt un novākt Latvijā`;
+    : crop.category === "pukes" ? `${crop.name} — audzēšana, ziedēšana un kopšana` : `${crop.name} — kad ${crop.outdoorAction === "plant" ? "stādīt" : "sēt, stādīt"} un novākt Latvijā`;
   const description = crop.id === "rediisi"
     ? "Kad sēt redīsus pavasarī un vasaras otrajā pusē, cik dziļi sēt, kā laistīt un ko darīt, ja neveidojas sakne. Praktiski padomi Latvijai."
-    : crop.category === "pukes" ? `${crop.name}: sēja, stādīšana, ziedēšana un kopšana. Kā izvēlēties piemērotu vietu un pārbaudīt šķirnes ziemcietību.` : (`${crop.name}: kad sēt${sow ? ` (${sow})` : ""}, stādīt un novākt Latvijas klimatam, ` +
+    : crop.category === "pukes" ? `${crop.name}: sēja, stādīšana, ziedēšana un kopšana. Kā izvēlēties piemērotu vietu un pārbaudīt šķirnes ziemcietību.` : (`${crop.name}: kad ${action}${sow ? ` (${sow})` : ""} un novākt Latvijas klimatam, ` +
       `labākās Mēness dienas un kaimiņaugi. ${crop.note ?? ""}`).trim();
   return {
     title,
@@ -83,7 +84,9 @@ export default async function CropPage({ params }: { params: Promise<{ slug: str
   const isFlower = crop.category === "pukes";
   const category = CATEGORIES.find((c) => c.id === crop.category);
   const elem = ELEMENT_META[PART_ELEMENT[cropPart(crop.id)]];
-  const soil = SOIL_TEMP_MIN[crop.id];
+  const soil = crop.id === "kiploki" ? undefined : SOIL_TEMP_MIN[crop.id];
+  const isPlanted = crop.outdoorAction === "plant";
+  const action = isPlanted ? "stādīt" : "sēt";
   const good = goodCompanions(crop.id);
   const bad = badCompanions(crop.id);
   const pests = pestsForCrop(crop);
@@ -95,7 +98,7 @@ export default async function CropPage({ params }: { params: Promise<{ slug: str
     .slice(0, 8);
 
   const activities = ACTIVITY_KEYS.filter((k) => crop[k]).map((k) => ({
-    label: isFlower && k === "harvest" ? "Ziedēšana" : ACTIVITY_META[k].label,
+    label: cropActivityMeta(crop, k).label,
     when: rangeText(crop[k]),
   }));
 
@@ -108,7 +111,7 @@ export default async function CropPage({ params }: { params: Promise<{ slug: str
   const facts: { label: string; value: string }[] = [
     ...(crop.daysToHarvest ? [{ label: isFlower ? "Augšanas cikls" : "Līdz ražai", value: crop.daysToHarvest }] : []),
     ...(crop.sun ? [{ label: "Gaisma", value: crop.sun }] : []),
-    ...(soil ? [{ label: "Augsne sējai", value: `≥ ${soil}°C` }] : []),
+    ...(soil ? [{ label: isPlanted ? "Augsne stādīšanai" : "Augsne sējai", value: `≥ ${soil}°C` }] : []),
     { label: "Grūtība", value: DIFFICULTY_LABEL[crop.difficulty] },
     { label: "Mēness diena tradīcijā", value: `${elem.partLabel} (${elem.label})` },
   ];
@@ -116,7 +119,7 @@ export default async function CropPage({ params }: { params: Promise<{ slug: str
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: `${crop.name} — kad sēt un stādīt Latvijā`,
+    headline: `${crop.name} — kad ${action} Latvijā`,
     about: crop.name,
     inLanguage: "lv",
     dateModified: content?.updatedAt ?? `${DATA_REVIEWED}-01`,
@@ -138,9 +141,9 @@ export default async function CropPage({ params }: { params: Promise<{ slug: str
   const currentMonthName = MONTHS_LV_LOCATIVE[currentMonth - 1];
   const capitalizedMonth = `${currentMonthName[0].toUpperCase()}${currentMonthName.slice(1)}`;
   const seasonMessage = isFlower ? (isHarvestingNow ? `${capitalizedMonth} iespējama ziedēšana; laiks atkarīgs no sugas un šķirnes.` : null) : isSowingNow && isHarvestingNow
-    ? `${capitalizedMonth} vari gan sēt nākamo porciju, gan novākt gatavos augus.`
+    ? `${capitalizedMonth} iespējama gan ${isPlanted ? "stādīšana" : "sēja"}, gan gatavo augu novākšana; pārbaudi šķirni un apstākļus.`
     : isSowingNow
-      ? `${capitalizedMonth} šis augs ir sējams.`
+      ? `${capitalizedMonth} iespējama šī auga ${isPlanted ? "stādīšana" : "sēja"}, ja laikapstākļi un augsne ir piemēroti.`
       : isHarvestingNow
         ? `${capitalizedMonth} ir šī auga ražas laiks.`
         : null;
@@ -148,9 +151,9 @@ export default async function CropPage({ params }: { params: Promise<{ slug: str
     ? ` No sējas līdz ražai aptuveni ${crop.daysToHarvest.toLowerCase()}.`
     : "";
   const faq: { q: string; a: string }[] = [
-    sowWhen ? { q: `${crop.name} — kad sēt Latvijā?`, a: `Sējas laika orientieris: ${sowWhen}. Precīzs laiks atkarīgs no laikapstākļiem un tava reģiona — siltummīļus laukā tikai pēc pēdējās salnas.` } : null,
+    sowWhen ? { q: `${crop.name} — kad ${action} Latvijā?`, a: `${isPlanted ? "Stādīšanas" : "Sējas"} laika orientieris: ${sowWhen}. Precīzs laiks atkarīgs no laikapstākļiem un tava reģiona — siltummīļus laukā tikai pēc pēdējās salnas.` } : null,
     harvestLoc ? { q: `${crop.name} — ${isFlower ? "kad zied?" : "kad novākt?"}`, a: isFlower ? `Ziedēšanas orientieris: ${harvestLoc}. Precīzs laiks atkarīgs no sugas, šķirnes un sējas laika.` : `Parasti novāc ${harvestLoc}.${daysClause}` } : null,
-    soil ? { q: `${crop.name} — cik siltai jābūt augsnei?`, a: `Sējai augsnei vajadzētu būt vismaz ${soil}°C. Vēsākā augsnē sēklas dīgst lēni vai sapūst.` } : null,
+    soil ? { q: `${crop.name} — cik siltai jābūt augsnei?`, a: `${isPlanted ? "Stādīšanai" : "Sējai"} augsnes temperatūras orientieris ir vismaz ${soil}°C. Ņem vērā arī augsnes mitrumu un salnu risku.` } : null,
     good.length ? { q: `Ar ko ${crop.name.toLowerCase()} sader dārzā?`, a: `Labi kaimiņi: ${good.map((id) => CROPS.find((c) => c.id === id)?.name).filter(Boolean).join(", ")}.` } : null,
   ].filter((x): x is { q: string; a: string } => x !== null).concat(content?.faq ?? []);
 
@@ -203,7 +206,7 @@ export default async function CropPage({ params }: { params: Promise<{ slug: str
         <div className="mt-md flex flex-wrap gap-2 text-label-sm text-on-surface-variant">
           {sowWhen && (
             <span className="inline-flex min-h-8 items-center gap-1.5 rounded-full bg-surface-container px-3">
-              <Icon name="psychiatry" size="16px" className="text-primary" /> Sēj: {sowWhen}
+              <Icon name="psychiatry" size="16px" className="text-primary" /> {isPlanted ? "Stāda" : "Sēj"}: {sowWhen}
             </span>
           )}
           {harvestLoc && (
@@ -238,7 +241,9 @@ export default async function CropPage({ params }: { params: Promise<{ slug: str
       {crop.note && (
         <Card tone="container" className="mb-md flex items-start gap-sm p-md">
           <Icon name="tips_and_updates" className="text-primary" />
-          <p className="text-body-lg text-on-surface-variant">{crop.note}</p>
+          <div><p className="text-body-lg text-on-surface-variant">{crop.note}</p>
+            {crop.noteSource && <a href={crop.noteSource.url} target="_blank" rel="noreferrer" className="mt-2 inline-flex min-h-11 items-center text-label-sm text-primary hover:underline">Avots: {crop.noteSource.label}</a>}
+          </div>
         </Card>
       )}
 
@@ -395,7 +400,7 @@ export default async function CropPage({ params }: { params: Promise<{ slug: str
           <Icon name={elem.icon} className={elem.color} /> Labākās Mēness dienas
         </h2>
         <p className="text-body-md text-on-surface-variant">
-          {crop.name} ir {PART_GENITIVE[elem.part].toLowerCase()} kultūra — sēj un kop to{" "}
+          {crop.name} ir {PART_GENITIVE[elem.part].toLowerCase()} kultūra — Mēness tradīcijā to iesaka {action} un kopt{" "}
           <strong className="text-on-surface">{PART_GENITIVE[elem.part].toLowerCase()} dienās</strong> ({elem.label} elements),
           kad Mēness atrodas atbilstošajā zvaigznājā.
         </p>

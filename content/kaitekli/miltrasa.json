@@ -2,65 +2,117 @@
   "slug": "miltrasa",
   "name": "Miltrasa",
   "emoji": "🍂",
-  "latin": "Erysiphe",
   "type": "slimiba",
   "severity": "vidējs",
-  "tagline": "Balts, miltains aplikums uz lapām, kas izplatās siltā laikā ar mitrām naktīm un sablīvētos, slikti vēdinātos stādījumos.",
+  "tagline": "Balts, miltains pārklājums var būt īstā miltrasa. Vispirms atšķir to no neīstās miltrasas un auga dabiskā lapu raksta.",
   "affects": [
-    "Ķirbji",
     "Gurķi",
-    "Kabači",
-    "Cukīni",
+    "Kabači un cukīni",
+    "Ķirbji",
     "Rozes",
-    "Flokši (phlox)",
+    "Flokši",
     "Vīnogas",
-    "Krizantēmas un citi dekoratīvie augi"
+    "Upenes un ērkšķogas",
+    "Ābeles"
   ],
   "signs": [
-    "Uz lapu virspuses parādās balts vai pelēkbalts, miltains aplikums, ko viegli notrīt ar pirkstu",
-    "Sākumā tikai atsevišķi plankumi, vēlāk klājums izplešas pa visu lapu un kātiem",
-    "Skartās lapas dzeltē, savīst, kļūst trauslas un priekšlaicīgi nokalst",
-    "Augi vājāk aug un ziedēšana vai ražošana samazinās",
-    "Smagos gadījumos aplikums pārklāj arī pumpurus, ziedus un jaunos dzinumus"
+    "Uz lapas virspuses vai apakšpuses veidojas balti līdz pelēcīgi, miltaini plankumi. Tie var saplūst lielākā klājumā un skart arī kātus vai dzinumus.",
+    "Gurķiem un kabačiem sākumā var būt bāli dzelteni laukumi; miltainais klājums jāmeklē arī uz vecākajām un noēnotajām lapām.",
+    "Stipri skartas lapas dzeltē un kalst. Dažiem augiem jaunās lapas un dzinumi deformējas, taču pazīmes atšķiras starp sugām.",
+    "Ja gurķa lapā dominē dzelteni, dzīslu ierobežoti stūraini plankumi un apakšpusē ir tumši pelēks vai violets pūkojums, iespējama neīstā miltrasa.",
+    "Kabaču un cukīni šķirnēm var būt dabiski gaiši laukumi. Vienāds raksts uz veselām lapām bez virspusēja miltaina klājuma nav pietiekams pamats slimības diagnozei."
   ],
   "intro": [
-    "Miltrasa ir viena no izplatītākajām sēņu slimībām Latvijas dārzos. To viegli atpazīt pēc baltā, it kā ar miltiem apkaisītā aplikuma uz lapām. Atšķirībā no daudzām citām slimībām, miltrasa labi attīstās tieši siltā un sausā laikā, taču ar augstu gaisa mitrumu naktīs un rītos — tādā sutīgā gaisā, kāds bieži veidojas blīvos, slikti vēdinātos stādījumos vai siltumnīcās.",
-    "Slimība pati par sevi reti nogalina augu uzreiz, bet tā nopietni vājina to: lapas zaudē spēju normāli fotosintezēt, augs nogurst, raža un ziedēšana mazinās. Tāpēc svarīgi rīkoties laikus — jau pie pirmajām pazīmēm. Pilnībā izskaust miltrasu ar dabīgiem līdzekļiem ne vienmēr izdodas, taču ar laicīgu rīcību, slimo lapu noņemšanu un labu gaisa cirkulāciju to var noturēt savaldāmu līdz pat sezonas beigām."
+    "Ar miltrasu te domāta īstā miltrasa — vairāku radniecīgu sēņu izraisītu slimību grupa. Tā nav viena suga, kas vienādi apdraud visus augus: dažādi ierosinātāji bieži inficē noteiktus, radniecīgus saimniekaugus. Tādēļ rožu miltrasa automātiski nenozīmē gurķu inficēšanos.",
+    "Mitrs gaiss un blīvs lapojums var palīdzēt infekcijai, taču daudzām miltrasas sēnēm brīvs ūdens uz lapas nav vajadzīgs. Slimība var izplatīties arī sausā laikā. Ķirbjaugiem liels lapu zudums pasliktina ražas kvalitāti un atsedz augļus saulei; sezonas beigu bojājumu vērtējums atšķiras no agras infekcijas vēl augošā stādījumā."
   ],
   "control": [
-    "Tiklīdz pamani pirmos baltos plankumus, nogriez un iznīcini skartās lapas un dzinumus. Šī mehāniskā vākšana ir efektīvākais solis — tā tieši samazina sēnes daudzumu. Slimās lapas nemet kompostā, bet izved no dārza vai sadedzini.",
-    "Atretini stādījumu: izgriez liekos dzinumus un blakus augus, lai uzlabotu gaisa plūsmu. Brīva gaisa cirkulācija ir viens no svarīgākajiem faktoriem — tā ļauj lapām ātri nožūt un apgrūtina sēnes attīstību.",
-    "Laisti augus zem saknes, nevis pa lapām, un to dari no rīta, lai lapas dienas laikā pagūst nožūt. Mitras lapas vakarā veicina slimību.",
-    "Pārmiglo augus ar atšķaidītu piena šķīdumu (aptuveni 1 daļa piena uz 9 daļām ūdens) ik pēc dažām dienām saulainā laikā. Tā ir maiga, dabīga palīgmetode, kas dažkārt bremzē izplatīšanos, taču negaidi no tās brīnumu — tā vislabāk darbojas profilaktiski un kombinācijā ar pārējiem soļiem.",
-    "Stiprini augu izturību ar kosas novārījumu — tajā esošais silīcijs nostiprina lapu audus un palīdz augiem labāk pretoties sēnei. Smidzini profilaktiski un atkārto pēc lietus.",
-    "Atbalsti augu vispārējo veselību ar komposta teju kā lapu mēslojumu — spēcīgs, labi barots augs vieglāk iztur slimības spiedienu. Tas ir atbalsta, nevis tiešas apkarošanas līdzeklis.",
-    "Smagi skartus, gandrīz pilnībā aplipušus augus (piemēram, atsevišķas ķirbju vai gurķu lapas) ir vērtīgāk pavisam noņemt, nekā centīgi ārstēt — tā pasargā pārējos stādījumus."
+    "Pirms griešanas apskati abas lapas puses un salīdzini vairākas lapas. Pārbaudi, vai redzi virspusēju klājumu, nevis tikai auga rakstu vai atsevišķus izžuvuša smidzinājuma plankumus.",
+    "Ja bojāti tikai daži dzinumi vai lapas, noņem stipri skartās daļas. Neatlapo visu augu vienā reizē: veselās lapas vajadzīgas augšanai un augļu aizsardzībai no saules.",
+    "Atbrīvo lapojumu no nezālēm un uzlabo gaisa kustību. Siltumnīcu vēdini; balstāmus augus sakārto tā, lai lapas nebūtu saspiestas blīvā masā.",
+    "Pārbaudi augsnes mitrumu un laisti sakņu zonā, kad nepieciešams. Izvairies no atkārtotas izžūšanas un pārlaistīšanas. Lapu ilgstoša slapināšana var veicināt citas slimības, pat ja tā nav īstās miltrasas priekšnoteikums.",
+    "Vēro, vai klājums parādās uz jaunām lapām. Ja stādījums vēl ražo un slimība turpina izplatīties, precizē diagnozi un izvēlies attiecīgajai kultūrai paredzētu risinājumu; neatkārto dažādus paštaisītus maisījumus pēc kārtas.",
+    "Sezonas beigās savāc slimās augu atliekas. Nākamajai sezonai pieraksti skarto šķirni un audzēšanas apstākļus, lai izvēlētos izturīgāku šķirni un piemērotāku stādīšanas vietu."
   ],
-  "recipeSlugs": [
-    "kosas-novarijums",
-    "komposta-teja"
-  ],
+  "recipeSlugs": [],
   "prevention": [
-    "Ievēro atstatumu starp augiem un nestādi pārāk blīvi — gaiss starp augiem ir labākā profilakse pret miltrasu.",
-    "Izvēlies pret miltrasu izturīgākas šķirnes (daudziem gurķiem, ķirbjiem, flokšiem un rozēm tādas ir pieejamas) — tas ievērojami atvieglo sezonu.",
-    "Ievēro augu maiņu: nestādi vienu un to pašu kultūru gadu pēc gada tajā pašā vietā, lai augsnē neuzkrātos slimības.",
-    "Rudenī rūpīgi savāc un iznīcini nokritušās slimās lapas — sēne pārziemo augu atliekās un pavasarī atkal uzbrūk.",
-    "Nepārmēslo ar slāpekli — pārāk daudz slāpekļa rada mīkstas, sulīgas lapas, kuras miltrasa skar vieglāk. Stādi saulainās, labi vēdinātās vietās."
+    "Izvēlies šķirni ar norādītu izturību pret miltrasu, ja attiecīgajai kultūrai tāda pieejama. Izturība samazina risku, bet nenozīmē pilnīgu imunitāti.",
+    "Ievēro augam vajadzīgo atstatumu un apgaismojumu. Sauli mīlošas kultūras neaudzē ilgstoši noēnotā, bezvēja stūrī.",
+    "Nodrošini vienmērīgu mitrumu sakņu zonā un drenāžu. Mēslojumu pielāgo auga vajadzībām; pārmērīgs slāpeklis veicina uzņēmīgu jauno augšanu.",
+    "Savāc stipri inficētās atliekas un pārbaudi jutīgus daudzgadīgos augus arī nākamajā sezonā. Augu maiņa viena pati neaptur pa gaisu atnestās sporas."
   ],
-  "moonNote": "Tradicionāli slimību un kaitēkļu apkarošanu saista ar dilstošo Mēnesi, taču pret miltrasu izšķirošais ir rīkoties uzreiz, tiklīdz to pamani — negaidi konkrētu Mēness fāzi, jo slimība izplatās ātri.",
-  "folklore": "Vecie dārznieki teica, ka miltrasa \"uzsēžas\" tur, kur augiem trūkst gaisa un saules — un pieredze to apstiprina: gaisīgā, saulainā dārzā balto aplikumu redz daudz retāk.",
   "faq": [
     {
-      "q": "Vai miltrasu var pilnībā izārstēt ar dabīgiem līdzekļiem?",
-      "a": "Pilnībā izskaust to dabīgi ne vienmēr izdodas, it īpaši smagos gadījumos. Tomēr ar laicīgu slimo lapu noņemšanu, labu gaisa cirkulāciju un atbalstošu smidzināšanu (kosas novārījums, atšķaidīts piens) slimību parasti var noturēt savaldāmu un saglabāt ražu. Galvenais ir rīkoties agri."
+      "q": "Vai miltrasu izraisa laistīšana uz lapām?",
+      "a": "Īstajai miltrasai ūdens kārtiņa uz lapas nav nepieciešama. Mitrs gaiss, blīvs lapojums un auga uzņēmība ir nozīmīgi; ilgstoši slapjas lapas savukārt var veicināt citas slimības."
     },
     {
-      "q": "Vai miltrasa pāriet no viena auga uz citu?",
-      "a": "Jā, sēnes sporas izplatās ar gaisu un var pārnest slimību uz blakus augiem. Tāpēc svarīgi laikus noņemt skartās lapas un nodrošināt atstatumu starp stādījumiem. Ievēro arī, ka dažādiem augiem (piemēram, gurķiem un rozēm) miltrasu izraisa nedaudz atšķirīgas sēnes, taču profilakses principi ir vienādi."
+      "q": "Vai jānogriež visas baltās lapas?",
+      "a": "Nē. Ja noņem visas lapas, augs zaudē lielu daļu augšanai vajadzīgās virsmas un augļi paliek saulē. Noņem stipri bojātās daļas, saglabā funkcionējošo lapojumu un vērtē slimības turpmāko izplatību."
     },
     {
-      "q": "Vai balto aplikumu var vienkārši noskalot ar ūdeni?",
-      "a": "Noskalošana īslaicīgi samazina aplikumu, bet neiznīcina sēni, un mitrās lapas pat var veicināt tālāku izplatīšanos. Daudz drošāk ir nogriezt un iznīcināt skartās lapas, nevis tās slapināt. Ja smidzini, dari to no rīta, lai lapas pa dienu nožūst."
+      "q": "Vai piens, soda, kosas novārījums vai komposta tēja izārstēs miltrasu?",
+      "a": "Nav pamata solīt vienādu efektu visām kultūrām vai dot universālu devu. Pētījums par vienu maisījumu un augu nav garantija citam. Paštaisīts šķīdums nav automātiski līdzvērtīgs augu aizsardzības līdzeklim; nekombinē dažādus smidzinājumus bez pārbaudītiem lietošanas norādījumiem."
+    },
+    {
+      "q": "Vai miltrasa no gurķiem pāries uz rozēm?",
+      "a": "Ne obligāti. Īsto miltrasu izraisa dažādas sēnes ar atšķirīgiem saimniekaugiem. Tomēr tuvumā esoši uzņēmīgi tās pašas vai radniecīgas sugas augi var būt apdraudēti."
     }
-  ]
+  ],
+  "shortAnswer": "Īstajai miltrasai raksturīgi balti, miltaini plankumi, kas palielinās uz lapas virsmas. Pārbaudi abas lapas puses un auga sugu. Uzlabo gaisa kustību, nepieļauj sausuma stresu un noņem stipri bojātās daļas, saglabājot veselās lapas. Slimībai nav vajadzīga slapja lapa; viena smidzināšanas recepte neder visiem augiem.",
+  "compare": {
+    "heading": "Balts aplikums ne vienmēr ir īstā miltrasa",
+    "items": [
+      {
+        "name": "Neīstā miltrasa gurķiem",
+        "note": "Dzeltenus, stūrainus plankumus ierobežo dzīslas; mitrumā lapas apakšpusē var būt tumšs pūkojums. Ierosinātājs un ierobežošana atšķiras."
+      },
+      {
+        "name": "Dabisks kabaču lapu raksts",
+        "note": "Dažām šķirnēm gaišie laukumi ir normāla pazīme. Salīdzini vairākas veselīgi augošas lapas un meklē īstu virspusēju klājumu."
+      },
+      {
+        "name": "Smidzinājuma atliekas",
+        "note": "Noskaidro, vai augs nesen apstrādāts. Plankuma notīrīšana viena pati droši neapstiprina un neizslēdz miltrasu."
+      }
+    ]
+  },
+  "relatedLinks": [
+    {
+      "label": "Balts aplikums uz gurķu un kabaču lapām",
+      "href": "/raksti/kapec-gurkiem-balts-aplikums-uz-lapam"
+    },
+    {
+      "label": "Gurķu audzēšanas ceļvedis",
+      "href": "/augi/gurki"
+    }
+  ],
+  "sources": [
+    {
+      "label": "RHS — īstās miltrasas saimniekaugi, mitrums un kopšanas pasākumi",
+      "url": "https://www.rhs.org.uk/disease/powdery-mildews"
+    },
+    {
+      "label": "University of Minnesota — ķirbjaugu īstā miltrasa",
+      "url": "https://extension.umn.edu/agriculture/specialty-crops/vegetable-farming/disease-management/powdery-mildew-of-cucurbits"
+    },
+    {
+      "label": "University of Minnesota — ķirbjaugu neīstās miltrasas atšķiršanas pazīmes",
+      "url": "https://extension.umn.edu/agriculture/specialty-crops/vegetable-farming/disease-management/downy-mildew-of-cucurbits"
+    },
+    {
+      "label": "University of Minnesota — dabiski balti laukumi uz cukīni lapām",
+      "url": "https://blog-fruit-vegetable-ipm.extension.umn.edu/2026/07/weekly-vegetable-update-july-23-2026.html"
+    },
+    {
+      "label": "University of California IPM — miltrasas bojājumi un līdzekļu lietošanas ierobežojumi",
+      "url": "https://ipm.ucanr.edu/home-and-landscape/powdery-mildew-on-ornamentals/"
+    },
+    {
+      "label": "VAAD — augu aizsardzības līdzekļu lietošanas nosacījumi",
+      "url": "https://www.vaad.gov.lv/lv/lietosanas-nosacijumi-0"
+    }
+  ],
+  "safetyNote": "Līdzekļa izvēli nosaka precīza diagnoze un kultūraugs. Pirms lietošanas pārbaudi aktuālo Latvijas marķējumu; ārvalstu ieteikumu devas un produktu saraksti nav automātiski pārņemami.",
+  "updatedAt": "2026-10-27"
 }

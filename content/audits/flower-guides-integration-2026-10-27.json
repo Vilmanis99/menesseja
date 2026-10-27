@@ -1,0 +1,105 @@
+{
+  "date": "2026-10-27",
+  "status": "verified_local_unpublished",
+  "scope": "Četru puķu ceļvežu satura pārskata integrācija. Pārējo 27 saturs nav pilnībā faktoloģiski pārbaudīts.",
+  "reviewedGuides": [
+    {
+      "slug": "asteres",
+      "sources": 6,
+      "faq": 5,
+      "modified": "2026-10-27"
+    },
+    {
+      "slug": "krizantemas",
+      "sources": 6,
+      "faq": 5,
+      "modified": "2026-10-27"
+    },
+    {
+      "slug": "neaizmirstules",
+      "sources": 7,
+      "faq": 5,
+      "modified": "2026-10-27"
+    },
+    {
+      "slug": "verbena",
+      "sources": 6,
+      "faq": 5,
+      "modified": "2026-10-27"
+    }
+  ],
+  "rootReview": "Galvenais aģents izlasīja visu četru ceļvežu gala saturu un auditus; neatkarīgi salīdzināja asteru sējas un slimību avotus, neaizmirstuļu šķirņu norādes un Latvijas Daba ierakstu, verbēnu kopšanas un podu drenāžas avotus, krizantēmu ziemošanas pieejas.",
+  "checks": {
+    "domainTests": 14,
+    "typescript": "Passed via production build",
+    "uiValidation": "Passed",
+    "contentValidation": "Passed: 31 flower guides, 4 with section sources; 66 known content warnings (27 flower reviews + 39 existing items)",
+    "productionBuild": "Passed; 326 pages",
+    "initialHtml": {
+      "pages_checked": 31,
+      "reviewed_guides": [
+        {
+          "slug": "asteres",
+          "sources": 6,
+          "faq": 5,
+          "modified": "2026-10-27"
+        },
+        {
+          "slug": "krizantemas",
+          "sources": 6,
+          "faq": 5,
+          "modified": "2026-10-27"
+        },
+        {
+          "slug": "neaizmirstules",
+          "sources": 7,
+          "faq": 5,
+          "modified": "2026-10-27"
+        },
+        {
+          "slug": "verbena",
+          "sources": 6,
+          "faq": 5,
+          "modified": "2026-10-27"
+        }
+      ],
+      "checks": [
+        "one H1",
+        "unique IDs",
+        "internal anchors",
+        "photos",
+        "source anchors",
+        "JSON-LD citations and dates",
+        "visible review dates",
+        "FAQ",
+        "server-rendered answers",
+        "no new review dates on other guides"
+      ]
+    },
+    "sitemap": "All four canonical guide URLs retain their addresses with lastmod 2026-10-27",
+    "browser": {
+      "allFourGuides": "320 px final build: no horizontal overflow, correct dates. 375 px before final spacing reduction: images loaded, source anchors present, no overflow.",
+      "finalTargetedChecks": [
+        "375 px: shorter Myosotis introduction and date visually checked",
+        "375 px: chrysanthemum winter link and three separate paragraphs",
+        "812 px landscape: chrysanthemum layout without overflow",
+        "1440 px: aster source list and comparison navigation",
+        "Aster planting shortcut and specific source [3] resolve correctly",
+        "Browser console: no errors captured",
+        "Viewport override reset to default"
+      ]
+    },
+    "gitDiffCheck": "Passed"
+  },
+  "screenshots": [
+    "/tmp/menesseja-flower-guides-proof-2026-10-27/neaizmirstulites-mobilais.png",
+    "/tmp/menesseja-flower-guides-proof-2026-10-27/asteru-avoti.png"
+  ],
+  "limitations": [
+    "No publication or Search Console submission in this increment.",
+    "The remaining 27 flower guides need individual source reviews.",
+    "Foreign cultivation guidance is not a Latvian cultivar trial.",
+    "MoBot direct page returned 502; primary source text verified in the search index.",
+    "Myosotis photo is retained as a genus illustration, with its species uncertainty stated in the caption."
+  ]
+}

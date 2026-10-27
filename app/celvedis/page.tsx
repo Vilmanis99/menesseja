@@ -2,7 +2,7 @@ import Link from "next/link";
 import { PageHeader } from "@/components/ui/page-header";
 import { JsonLd } from "@/components/json-ld";
 import { SowingGuide } from "@/components/sowing-guide";
-import { CROPS, CATEGORIES, MONTHS_LV_FULL, type Crop, type Category } from "@/lib/planting-crops";
+import { CROPS, CATEGORIES, type Crop } from "@/lib/planting-crops";
 import { cropHref } from "@/lib/flowers";
 import { canonical, SITE_NAME } from "@/lib/seo";
 
@@ -40,20 +40,13 @@ export default function CelvedisPage() {
         eyebrow="Interaktīvais rīks"
         title="Sējas ceļvedis"
         display
-        subtitle="Katras kultūras sējas, stādīšanas un ražas logi Latvijas klimatam — kopā ar labākajām Mēness dienām un augsnes siltumu."
+        subtitle="Ko šomēnes sēt un stādīt Latvijā? Izvēlies mēnesi un darbību; ražas novākšanai un ziedēšanai ir atsevišķi skati."
       />
-      <p className="mb-md max-w-2xl text-body-md text-on-surface-variant">
-        Ieraksti dārzeņa vai puķes nosaukumu vai izvēlies kategoriju, lai atrastu, kad to sēt,
-        stādīt un novākt Latvijā. Pārlūko visu{" "}
-        <Link href="/augi" className="text-primary hover:underline">augu enciklopēdiju</Link> vai atver{" "}
-        <Link href="/kalendars" className="text-primary hover:underline">Mēness kalendāru</Link>.
-      </p>
-
-      <SowingGuide />
+      <SowingGuide cropLinks={Object.fromEntries(CROPS.map((crop) => [crop.id, cropHref(crop.id)]))} />
 
       <section className="mt-lg">
         <h2 className="mb-sm text-headline-md text-on-surface">
-          Sējas un ražas laiki — visas {CROPS.length} kultūras
+          Visa gada tabula — {CROPS.length} kultūras
         </h2>
         <p className="mb-md max-w-2xl text-body-md text-on-surface-variant">
           Kopsavilkuma tabula visam gadam. Mēneši ir orientējoši Latvijas vidējiem apstākļiem —
@@ -70,8 +63,8 @@ export default function CelvedisPage() {
                     <th className="py-2 pr-3 font-semibold">Augs</th>
                     <th className="py-2 pr-3 font-semibold">Sēj telpās</th>
                     <th className="py-2 pr-3 font-semibold">Sēj laukā</th>
-                    <th className="py-2 pr-3 font-semibold">Stāda</th>
-                    <th className="py-2 font-semibold">Novāc</th>
+                    <th className="py-2 pr-3 font-semibold">Stāda laukā</th>
+                    <th className="py-2 font-semibold">{category.id === "pukes" ? "Zied" : "Novāc"}</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -83,8 +76,8 @@ export default function CelvedisPage() {
                         </Link>
                       </th>
                       <td className="py-2 pr-3 text-on-surface-variant">{range(crop.sowIndoors)}</td>
-                      <td className="py-2 pr-3 text-on-surface-variant">{range(crop.sowOutdoors)}</td>
-                      <td className="py-2 pr-3 text-on-surface-variant">{range(crop.transplant)}</td>
+                      <td className="py-2 pr-3 text-on-surface-variant">{range(crop.outdoorAction === "plant" ? undefined : crop.sowOutdoors)}</td>
+                      <td className="py-2 pr-3 text-on-surface-variant">{[crop.outdoorAction === "plant" ? crop.sowOutdoors : undefined, crop.transplant].filter(Boolean).map((value) => range(value)).join("; ") || "—"}</td>
                       <td className="py-2 text-on-surface-variant">{range(crop.harvest)}</td>
                     </tr>
                   ))}

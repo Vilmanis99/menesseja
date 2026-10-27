@@ -1,0 +1,179 @@
+{
+  "date": "2026-10-27",
+  "status": "targeted_name_review_completed",
+  "scope": "Mērķēta lib/flower-names.ts problemātisko latvisko, zinātnisko un sarunvalodas nosaukumu pārbaude. Nav veikts pilns visu ierakstu taksonomijas, ziemcietības, ziedēšanas laiku vai saistīto puķu ceļvežu audits.",
+  "method": "Salīdzināti Latvijas leksikogrāfiskie un botāniskie avoti, VAAD sugu saraksti, RHS un Surfinia selekcionāra dati. Pašas vietnes teksts un nekvalitatīvi tulkojumu portāli nav izmantoti nosaukumu atbilstību apstiprināšanai.",
+  "filesChanged": [
+    "lib/flower-names.ts",
+    "content/audits/flower-names-review-2026-10-27.json"
+  ],
+  "counts": {
+    "extraNamesBefore": 56,
+    "extraNamesAfter": 57,
+    "folkNamesBefore": 11,
+    "folkNamesAfter": 9,
+    "publicSources": 6,
+    "meaning": "Nosaukumu ieraksti, ne unikālu sugu skaits. Sarakstā ir gan ģintis, gan sugas un dārzkopības grupas."
+  },
+  "findings": [
+    {
+      "entry": "Leduspuķes",
+      "decision": "Dorotheanthus bellidiformis aizstāts ar Begonia Semperflorens Cultorum Group; pievienots nosaukums ilgziedu begonijas un saite uz /pukes/begonijas.",
+      "evidence": "Jelgavas pašvaldības stādījumu aprakstā leduspuķes identificētas kā Begonia semperflorens šķirne. RHS un USDA šos dobju hibrīdus apraksta kā Semperflorens Cultorum grupu.",
+      "sources": [
+        "https://www.jelgava.lv/jaunumi/driksas-krasta-uzziedejusi-puku-dobe-latvijas-konturas-forma-pilsetas-apstadijumus-sovasar-rotas-vairak-neka-30-000-puku/",
+        "https://www.rhs.org.uk/plants/25707/begonia-semperflorens-hort/details",
+        "https://npgsweb.ars-grin.gov/gringlobal/taxon/taxonomydetail?id=405258"
+      ]
+    },
+    {
+      "entry": "Sausziedi",
+      "decision": "Vispārīgais izmantošanas grupas apzīmējums aizstāts ar konkrēto nosaukumu Seglapu salmenes (Xerochrysum bracteatum).",
+      "sources": [
+        "https://www.vaad.gov.lv/sites/vaad/files/digtspejas_noteiksanas_metodes_2020_w-3.pdf",
+        "https://www.vaad.gov.lv/lv/media/209/download",
+        "https://tezaurs.lv/salmene:1"
+      ],
+      "sourceLimit": "VAAD 2020. gada tabulas latviskais un zinātniskais pāris bija pieejams meklētāja indeksētajā izvilkumā; tieša vecā PDF adreses atvēršana atgrieza 404. Jaunākajā sasniedzamajā VAAD sugu sarakstā apstiprināts Xerochrysum bracteatum un agrākais Helichrysum bracteatum, ar kuru latviskais nosaukums dots Tēzaurā."
+    },
+    {
+      "entry": "Sedumi (laimiņi)",
+      "decision": "Vienā ierakstā sajauktās ģintis atdalītas: Čīkstenes — Hylotelephium; Laimiņi (sedumi) — Sedum.",
+      "sources": [
+        "https://www.darzkopibasinstituts.lv/sites/dobele/files/files/articles/Stalazs_2024a.pdf",
+        "https://www.latvijasdaba.lv/augi/sedum-telephium-l-sstr/"
+      ],
+      "sourceDetail": "Stalažs 2024, 70.–71. lpp.; Latvijas Daba rāda arī vēsturiskā Sedum telephium nosaukuma lietojumu. Dārzkopībā vecie Sedum nosaukumi joprojām sastopami."
+    },
+    {
+      "entry": "Prīmulas (gaiļbiksītes)",
+      "decision": "No visas Primula ģints ieraksta izņemta vienādošana ar gaiļbiksītēm. Gaiļbiksīte botāniskajā nosaukumā ir Primula veris, ne visu prīmulu sugu un šķirņu kopnosaukums.",
+      "sources": [
+        "https://www.latvijasdaba.lv/augi/primula-veris-l/",
+        "https://www.darzkopibasinstituts.lv/sites/dobele/files/files/articles/Stalazs_2024a.pdf"
+      ]
+    },
+    {
+      "entry": "Rudens asteres (siliņi)",
+      "decision": "Pievienots Symphyotrichum ģintij atbilstošais nosaukums ziemasteres; tautas nosaukumu tabulā saglabāti miķelīši/miķelītes ar grupas robežas skaidrojumu. Siliņi noņemti kā šajā pārbaudē nepamatots sinonīms.",
+      "sources": [
+        "https://www.darzkopibasinstituts.lv/sites/dobele/files/files/articles/Stalazs_2024a.pdf",
+        "https://tezaurs.lv/miķelīte:1"
+      ],
+      "sourceDetail": "Stalažs 2024, 154. lpp. Vārdnīcā sastopama agrāk plašāk lietotā Aster klasifikācija; tā nav izmantota, lai visas miķelītes vienādotu tikai ar Symphyotrichum."
+    },
+    {
+      "entry": "Vijolītes",
+      "decision": "Nosaukums precizēts uz Smaržīgās vijolītes, lai tas atbilstu norādītajai sugai Viola odorata.",
+      "sources": [
+        "https://www.darzkopibasinstituts.lv/sites/dobele/files/files/articles/Stalazs_2024a.pdf"
+      ]
+    },
+    {
+      "entry": "Cīnijas",
+      "decision": "Saglabāta sākotnējā rakstība. VAAD tabulā ir Cinijas, bet Tēzaura cīnija šķirkļa terminoloģijas piezīme pamato cīnija ar LZA Terminoloģijas komisijas 1973. gada vārdnīcu. Viena atšķirīga institucionāla tabula nav pietiekams pamats pasludināt sākotnējo rakstību par kļūdu.",
+      "sources": [
+        "https://tezaurs.lv/cīnija",
+        "https://www.vaad.gov.lv/sites/vaad/files/digtspejas_noteiksanas_metodes_2020_w-3.pdf"
+      ],
+      "sourceLimit": "Attiecīgā terminoloģijas piezīme un VAAD rakstība pārbaudīta meklētāja indeksētajos izvilkumos; pilnu vēsturiskās vārdnīcas izdevumu šajā darbā nepārbaudījām."
+    },
+    {
+      "entry": "Kliņģerītes, kreses, levkojas un kannas",
+      "decision": "No īsajām piezīmēm noņemtas ārstniecības/ēdamības norādes, kas šajā nosaukumu rādītājā nav izskaidrotas. Levkojām atstāta smaržīgu ziedkopu pazīme bez nepamatoti šaura vakara ierobežojuma. Kannām izņemts neprecīzais gumu apzīmējums; tās veido sakneņus.",
+      "sources": [
+        "https://www.rhs.org.uk/plants/48284/matthiola-incana/details",
+        "https://www.rhs.org.uk/plants/2997/canna/details",
+        "https://www.rhs.org.uk/plants/types/annuals-biennials/sowing-spring"
+      ],
+      "limit": "Ēdamības norāžu noņemšana nenozīmē apgalvojumu, ka minētie augi nav ēdami. Rādītājs nav pārtikas vai ārstniecības lietojuma ceļvedis."
+    }
+  ],
+  "folkNames": [
+    {
+      "name": "Pujenes",
+      "decision": "Peoniju sarunvalodas nosaukums saglabāts; pievienots avots.",
+      "source": "https://mlvv.tezaurs.lv/pujene:1"
+    },
+    {
+      "name": "Jurģīnes",
+      "decision": "Dāliju apvidvārds saglabāts; norādīta izlokšņu variantu pastāvēšana.",
+      "source": "https://lavi.lu.lv/wp-content/uploads/2021/03/NIV-J-K-publicesanai-30.06.2020.pdf"
+    },
+    {
+      "name": "Gerānijas (ģerānijas)",
+      "decision": "Skaidrots, ka sarunvalodas atbilstība pelargonijām nav viennozīmīga: vārdnīcā gerānija apzīmē arī Geranium jeb gandrenes. Saglabāta meklēšanai ierastā forma ar ģ.",
+      "source": "https://tezaurs.lv/gerānija"
+    },
+    {
+      "name": "Kreimenes",
+      "decision": "Precizēta šajā rādītājā domātā Convallaria majalis atbilstība.",
+      "source": "https://tezaurs.lv/kreimene"
+    },
+    {
+      "name": "Mārtiņrozes",
+      "decision": "Atbilstība sašaurināta līdz sīkziedu krizantēmām.",
+      "source": "https://llvv.tezaurs.lv/mārtiņroze"
+    },
+    {
+      "name": "Miķelīši (miķelītes)",
+      "decision": "Saglabāts ar paskaidrojumu par vairākām daudzgadīgo asteru grupām; izņemts nepamatotais siliņi.",
+      "source": "https://tezaurs.lv/miķelīte:1"
+    },
+    {
+      "name": "Skalbes",
+      "decision": "Iris atbilstība saglabāta kā dārzkopības konteksta nosaukums; pievienots avots.",
+      "source": "https://tezaurs.lv/skalbe:1"
+    },
+    {
+      "name": "Surfīnijas",
+      "decision": "Precizēts Surfinia® šķirņu sērijas statuss. Nav visu nokareno petūniju sinonīms; selekcionāra sarakstā ir arī citas auguma formas.",
+      "source": "https://suntoryflowers.com/retailers/surfinia/"
+    },
+    {
+      "name": "Margrietiņas",
+      "decision": "Pīpenes saglabātas kā galvenā norāde, pievienojot apvidus nozīmju robežu, tostarp Bellis perennis lietojumu.",
+      "source": "https://tezaurs.lv/margrietiņas:1"
+    }
+  ],
+  "removedUnverifiedAliases": [
+    {
+      "alias": "Siliņi",
+      "reason": "Neatrasts pietiekams botānisks vai leksikogrāfisks pamatojums atbilstībai rudens asterēm. Tas nav apgalvojums, ka šāds apvidvārds nevar pastāvēt."
+    },
+    {
+      "alias": "Peļu hiacintes",
+      "reason": "Pārbaudē atrasti tulkojumu portāli un pašas vietnes atkārtojums, ne uzticams Latvijas nosaukumu avots. Muskari kā pamata ieraksts saglabāti."
+    },
+    {
+      "alias": "Nasturcijas",
+      "reason": "Noņemta viennozīmīga vienādošana ar kresēm. Tēzaurs rāda arī paķērsas nozīmi, un pārbaudītajos leksikogrāfiskajos avotos netika pietiekami pamatota viena droša atbilstība. Tirdzniecības lietojums Tropaeolum majus nozīmē nav noliegts.",
+      "source": "https://tezaurs.lv/nasturcija"
+    }
+  ],
+  "dataCompatibility": {
+    "existingExportsPreserved": ["EXTRA_FLOWER_NAMES", "FOLK_NAMES"],
+    "optionalFolkNameFieldsAdded": ["note", "sourceUrl"],
+    "newExport": "FLOWER_NAME_SOURCES: { label: string; url: string }[]",
+    "searchNameNeeded": false
+  },
+  "checks": [
+    "TypeScript transpileModule izpildīts bez sintakses diagnostikas kļūdām; eksportu masīvi ielādēti un pārbaudīti.",
+    "57 EXTRA ierakstos nav precīzu name vai latin dublikātu.",
+    "Avotu URL ir sintaktiski derīgas HTTPS adreses; nav apgalvota visu ārējo saišu nepārtraukta sasniedzamība.",
+    "Leduspuķu saite atbilst content/flowers/begonijas.json un /pukes/begonijas maršrutam. Esošās neļķu saites atbilst content/crops/nelkes.json.",
+    "Pilnu projekta būvi, lapas integrāciju, pārlūka pārbaudi un publicēšanu veic galvenais aģents."
+  ],
+  "recommendationsForPageOwner": [
+    "Balkona puķes saglabāt kā tematisku ceļvedi, ne puķes nosaukumu skaita ierakstu.",
+    "Ievadā paskaidrot, ka rādītājā ir ģinšu, sugu un dārzkopības grupu nosaukumi, ne visu Latvijas puķu vai unikālu sugu pilns saraksts.",
+    "FAQ skaidrot leduspuķu saistību ar begonijām, Geranium/Pelargonium atšķirību un Surfinia® sērijas nozīmi.",
+    "Sugu noteikšanai izmantot latīnisko nosaukumu un vairākas pazīmes; vienāds tautas nosaukums vai viens zieda foto nav pietiekams pamats precīzai identifikācijai."
+  ],
+  "remainingLimits": [
+    "Nav patstāvīgi pārbaudīts katrs sākotnējais saraksta nosaukums, visi taksonomiskie sinonīmi vai katras ģints sugu un hibrīdu pārklājums.",
+    "Atstātās īsās audzēšanas piezīmes ārpus norādītajiem labojumiem nav pilnībā pārbaudītas Latvijas apstākļiem.",
+    "Saistītajos pilnajos ceļvežos var palikt atšķirīga nosaukumu lietošana, īpaši asteru ģinšu un pelargoniju sarunvalodas nosaukumu jautājumā; šo ceļvežu tekstus šis aģents nemainīja.",
+    "Ģints un tās sugas ieraksti, piemēram, Neļķes un Turku neļķes, nav kļūdaini dublikāti, bet pārklājas taksonomiski."
+  ]
+}

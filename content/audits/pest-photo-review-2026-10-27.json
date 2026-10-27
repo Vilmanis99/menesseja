@@ -1,0 +1,77 @@
+{
+  "reviewedAt": "2026-10-27",
+  "scope": [
+    "laputis",
+    "miltrasa",
+    "lakstu-puve"
+  ],
+  "method": "Pārbaudītas Wikimedia Commons failu aprakstu lapas, fotogrāfu atribūcija un izvēlētā licence. Lejupielādēti oriģināli ar TLS verifikāciju; visi trīs apskatīti ar view_image. Saglabāts pilns kadrs, attēli samazināti un pārkodēti WebP bez saturiskas rediģēšanas.",
+  "existingAssetReview": "Esošajā reģistrā ir gurķu neīstās miltrasas un tomātu galotņu puves foto. Tie nav īstās miltrasas vai lakstu puves aizstājēji, tāpēc izveidoti trīs atsevišķi precīzi ieraksti.",
+  "renderingRequirements": [
+    "Miltrasas salīdzinājuma foto rādīt pilnā kadrā (object-contain vai dabiska malu attiecība), saglabājot abas lapas.",
+    "Rādīt autora atribūciju, avota un licences saites un izmaiņu norādi.",
+    "Foto nepasniegt kā Latvijā pašu uzņemtu attēlu vai automātisku diagnozi."
+  ],
+  "images": [
+    {
+      "id": "rozu-laputu-kolonija",
+      "slug": "laputis",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Macrosiphum_rosae_5422190.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/95/Macrosiphum_rosae_5422190.jpg",
+      "author": "Whitney Cranshaw, Colorado State University / © Bugwood.org",
+      "license": "CC BY 3.0 US",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/us/",
+      "sourceDimensions": [
+        3072,
+        2048
+      ],
+      "outputDimensions": [
+        1200,
+        800
+      ],
+      "outputBytes": 50212,
+      "sha256": "572fa5ab181237e079e615467ce53decb0316b3e611fe4bd28c0b0f973a63ff2",
+      "verification": "Avota aprakstā identificēta Macrosiphum rosae kolonija uz rozes pumpura. Vizuāli redzami rozīgi kukaiņi pie pumpura pamatnes; neizmantojam šo foto kā visu laputu sugu izskata garantiju."
+    },
+    {
+      "id": "miltrasa-cukini-salidzinajums",
+      "slug": "miltrasa",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zucchini_Echter-Mehltau_Schlaghecken.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/51/Zucchini_Echter-Mehltau_Schlaghecken.jpg",
+      "author": "Schlaghecken Josef",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "sourceDimensions": [
+        4608,
+        3456
+      ],
+      "outputDimensions": [
+        1200,
+        900
+      ],
+      "outputBytes": 249466,
+      "sha256": "1a0fdb9702da0f8332eae91f4404feb78739ce633290b2e9ddd15f42d46e0d62",
+      "verification": "Avota attēla anotācija skaidri atšķir dabisko rakstu kreisajā lapā un īstās miltrasas bojājumu labajā. Precīzu miltrasas ierosinātāja sugu avots neapstiprina (min divas iespējas), tāpēc foto netiek dots viens precīzs sēnes sugas nosaukums. Pilns kadrs saglabāts, lai abas puses būtu salīdzināmas."
+    },
+    {
+      "id": "lakstu-puve-tomata-lapa",
+      "slug": "lakstu-puve",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:TomateBlattPhytophthorainfestans.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e1/TomateBlattPhytophthorainfestans.jpg",
+      "author": "Goldlocki",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "sourceDimensions": [
+        3264,
+        2448
+      ],
+      "outputDimensions": [
+        1200,
+        900
+      ],
+      "outputBytes": 175090,
+      "sha256": "18248fc275bbb92882ca72dff5b4916ec3c7ffb6c3baaf76606bb28d9426c9ef",
+      "verification": "Goldlocki paša foto avota aprakstā noteikts tomāts un Phytophthora infestans. Vizuāli pārbaudīti neregulāri tumši bojājumi uz tomāta lapas. Balta sporulācija attēlā nav pietiekami skaidra, lai to solītu anotācijā. Foto parāda vienu slimības izpausmi un pats par sevi neapstiprina cita auga diagnozi."
+    }
+  ]
+}

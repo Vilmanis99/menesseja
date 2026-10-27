@@ -1,0 +1,130 @@
+{
+  "date": "2026-10-27",
+  "scope": "Padziļināti pārskatītas tikai laputis, miltrasa un lakstu puve; pārējās kaitēkļu lapas un saistīto rakstu pilns saturs šajā darbā nav pārbaudīts.",
+  "method": "Primāro RHS, universitāšu extension un VAAD tematisko avotu salīdzināšana. Anglijas un ASV produktu pieejamība, devas un sezonu kalendāri nav pārņemti kā Latvijas norādījumi.",
+  "status": "rewritten_with_topic_sources",
+  "imagesChanged": false,
+  "pages": [
+    {
+      "slug": "laputis",
+      "changedClaims": [
+        "Aizstāts apgalvojums par obligātu strauju auga novājināšanu ar kaitējuma novērtēšanu un samērīgu rīcību.",
+        "Noņemtas paštaisītu ziepju devas, vērmeļu un pelnu iedarbības garantijas un atbilstošās recepšu saites.",
+        "Medusrasa, čokurošanās un skudras vairs netiek pasniegtas kā droša diagnoze bez pašu kukaiņu atrašanas.",
+        "Precizēta dabisko ienaidnieku nozīme, slāpekļa pārbagātība un atšķiršana no tīklērcēm un baltblusiņām."
+      ],
+      "evidence": [
+        {
+          "claim": "Samērīga rīcība, koloniju pārbaude un sugu atšķirības",
+          "sources": [
+            "https://www.rhs.org.uk/biodiversity/aphids",
+            "https://extension.umn.edu/garden-and-home/yard-and-garden/yard-and-garden-insects/aphids"
+          ]
+        },
+        {
+          "claim": "Paštaisītas ziepes var bojāt augus; produkta lietojums jāpārbauda",
+          "sources": [
+            "https://extension.umn.edu/garden-and-home/yard-and-garden/yard-and-garden-insects/insects-on-indoor-plants",
+            "https://www.vaad.gov.lv/lv/lietosanas-nosacijumi-0"
+          ]
+        },
+        {
+          "claim": "Dabiskie ienaidnieki un pārmērīga slāpekļa ierobežošana",
+          "sources": [
+            "https://www.rhs.org.uk/biodiversity/aphid-predators",
+            "https://ipm.ucanr.edu/home-and-landscape/aphids/"
+          ]
+        }
+      ],
+      "limits": [
+        "Nav solīta jebkuras laputu sugas noteikšana pēc vienas fotogrāfijas.",
+        "Nav izvēlēts konkrēts Latvijas augu aizsardzības līdzeklis vai deva."
+      ]
+    },
+    {
+      "slug": "miltrasa",
+      "changedClaims": [
+        "Noņemts Erysiphe kā universāls ierosinātājs; izskaidrota vairāku ierosinātāju saimniekaugu specifika.",
+        "Labots apgalvojums, ka slapjas lapas veicina tieši īsto miltrasu; nodalīts gaisa mitrums, sausuma stress un citām slimībām nozīmīgs lapu slapjums.",
+        "Noņemtas piena devas, kosas novārījuma un komposta tējas ārstēšanas/stiprināšanas garantijas un recepšu saites.",
+        "Pievienota atšķiršana no neīstās miltrasas, dabiska cukīni lapu raksta un smidzinājuma atliekām.",
+        "Noņemts padoms nogriezt visas skartās lapas; saglabājams funkcionējošs lapojums."
+      ],
+      "evidence": [
+        {
+          "claim": "Saimniekaugu specifika, mitrums un kopšanas pasākumi",
+          "sources": [
+            "https://www.rhs.org.uk/disease/powdery-mildews",
+            "https://extension.umn.edu/agriculture/specialty-crops/vegetable-farming/disease-management/powdery-mildew-of-cucurbits"
+          ]
+        },
+        {
+          "claim": "Neīstās miltrasas un dabiska lapu raksta pazīmes",
+          "sources": [
+            "https://extension.umn.edu/agriculture/specialty-crops/vegetable-farming/disease-management/downy-mildew-of-cucurbits",
+            "https://blog-fruit-vegetable-ipm.extension.umn.edu/2026/07/weekly-vegetable-update-july-23-2026.html"
+          ]
+        },
+        {
+          "claim": "Apstrādes ierobežojumi un Latvijas lietojuma nosacījumi",
+          "sources": [
+            "https://ipm.ucanr.edu/home-and-landscape/powdery-mildew-on-ornamentals/",
+            "https://www.vaad.gov.lv/lv/lietosanas-nosacijumi-0"
+          ]
+        }
+      ],
+      "limits": [
+        "Piena un citu paštaisītu maisījumu efektivitāte nav pasludināta par neiespējamu; nav dota universāla garantija vai deva dažādiem augiem.",
+        "Latvijas kultūrai piemērots līdzeklis jāizvēlas pēc diagnozes un aktuālā marķējuma."
+      ]
+    },
+    {
+      "slug": "lakstu-puve",
+      "changedClaims": [
+        "Noņemta garantija, ka slimo lapu nogriešana izārstē augu vai izglābj visu ražu.",
+        "Nodalīta atsevišķu lapu noņemšana, stipri inficētu tomātu izņemšana un kartupeļu lakstu noņemšana.",
+        "RHS aptuveni divu nedēļu intervāls pēc lakstu noņemšanas saistīts ar bumbuļu mizas nostiprināšanos, ne ražas glābšanas garantiju.",
+        "Noņemtas kosas novārījuma efektivitātes norādes un recepšu saite.",
+        "Precizēta šķietami veselu bumbuļu glabāšanas riska robeža; parasta mājas komposta kaudze nodalīta no profesionālas apsaimniekošanas.",
+        "Pievienota atšķiršana no sausplankumainības un tomātu lapu pelējuma; minēts, ka apsarmes trūkums slimību neizslēdz."
+      ],
+      "evidence": [
+        {
+          "claim": "Latvijas slimības pazīmes, stublāju forma, infekcijas avoti un sausplankumainība",
+          "sources": [
+            "https://noverojumi.vaad.gov.lv/images/Kartupeli_WEB.pdf"
+          ]
+        },
+        {
+          "claim": "Atsevišķu lapu nogriešanas ierobežotais efekts un siltumnīcu risks",
+          "sources": [
+            "https://www.rhs.org.uk/disease/tomato-blight"
+          ]
+        },
+        {
+          "claim": "Kartupeļu lakstu noņemšana, aptuveni divu nedēļu nogaidīšana un glabāšanas risks",
+          "sources": [
+            "https://www.rhs.org.uk/disease/potato-blight"
+          ]
+        },
+        {
+          "claim": "Stipri inficētu tomātu izņemšana, sausa laika darbi un izplatīšanās",
+          "sources": [
+            "https://extension.psu.edu/tomato-potato-late-blight-in-the-home-garden",
+            "https://extension.umn.edu/agriculture/specialty-crops/vegetable-farming/disease-management/late-blight"
+          ]
+        }
+      ],
+      "limits": [
+        "VAAD buklets ir 2015. gada pazīmju un profilakses avots; aktuāli līdzekļi no tā netiek izvēlēti.",
+        "ASV un Anglijas produktu reģistrācija nav pārnesta uz Latviju.",
+        "Raksts nepiedāvā laboratoriski apstiprinātu diagnozi pēc foto un negarantē ražas saglabāšanu."
+      ]
+    }
+  ],
+  "checks": [
+    "Visi 3 JSON parsējas; saglabāti slug, datu pamatstruktūra un esošie attēlu lauki.",
+    "Iekšējās relatedLinks un compare saites pārbaudītas pret vietējiem satura failiem.",
+    "Kopējo būvi, satura validāciju un pārlūka pārbaudi veic galvenais aģents pēc integrācijas."
+  ]
+}

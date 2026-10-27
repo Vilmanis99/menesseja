@@ -1,0 +1,107 @@
+{
+  "date": "2026-10-27",
+  "status": "content_review_completed",
+  "scope": "Pilns krizantēmu ceļveža redakcionāls faktu pārskats; ne šķirņu izmēģinājums Latvijā.",
+  "filesChanged": [
+    "content/flowers/krizantemas.json",
+    "content/audits/flower-guide-krizantemas-2026-10-27.json"
+  ],
+  "preserved": {
+    "slug": "krizantemas",
+    "name": "Krizantēmas",
+    "image": {
+      "id": "krizantemas",
+      "caption": "Podos audzētas krizantēmas rudenīgai kompozīcijai. Pārziemošana atkarīga no šķirnes un audzēšanas apstākļiem; pēc ziedu foto ziemcietību noteikt nevar."
+    }
+  },
+  "claimToSource": [
+    {
+      "fields": [
+        "shortAnswer",
+        "lifeCycle",
+        "intro",
+        "comparison",
+        "faq[0]",
+        "faq[1]"
+      ],
+      "claim": "Daudzgadība, ziemcietība, pārdošana podā un audzēšanas mērķis nav sinonīmi.",
+      "sources": [
+        "https://yardandgarden.extension.iastate.edu/how-to/growing-chrysanthemums-iowa",
+        "https://maes.umn.edu/150-hardy"
+      ],
+      "boundary": "Ārvalstu šķirņu rezultāti nav pārnesti kā Latvijas ziemcietības garantija."
+    },
+    {
+      "fields": [
+        "plantWhen",
+        "planting"
+      ],
+      "claim": "Agrāka ieaugšanās, saulaina vieta, mitrumu saglabājoša caurlaidīga augsne, pareizs dziļums, poda notece.",
+      "sources": [
+        "https://www.rhs.org.uk/plants/chrysanthemum/growing-guide",
+        "https://yardandgarden.extension.iastate.edu/how-to/growing-chrysanthemums-iowa",
+        "https://extension.psu.edu/chrysanthemum-care"
+      ]
+    },
+    {
+      "fields": [
+        "care",
+        "faq[4]"
+      ],
+      "claim": "Ūdens un mēslojums pēc vajadzības; galotņošana atkarīga no mērķa un var atlikt ziedēšanu.",
+      "sources": [
+        "https://www.rhs.org.uk/plants/chrysanthemum/growing-guide",
+        "https://maes.umn.edu/150-hardy",
+        "https://extension.psu.edu/chrysanthemum-care"
+      ],
+      "boundary": "Nav universāla laistīšanas biežuma, devas vai pēdējā galotņošanas datuma."
+    },
+    {
+      "fields": [
+        "winter",
+        "faq[2]",
+        "faq[3]"
+      ],
+      "claim": "Dobes stublāju atstāšana un telpās glabājama auga saīsināšana ir atšķirīgas darbības.",
+      "sources": [
+        "https://extension.illinois.edu/blogs/good-growing/2021-09-10-why-do-my-mums-always-die-how-grow-and-care-fall-mums-your-garden",
+        "https://www.rhs.org.uk/plants/chrysanthemum/growing-guide",
+        "https://extension.psu.edu/chrysanthemum-care"
+      ],
+      "boundary": "Illinois miera auga tumšā glabāšana nav vispārināta uz zaļu vai ziedošu floristikas augu. Gaismas vajadzības sasaistīšana ar zaļiem dzinumiem ir avotu salīdzinājumā izmantots piesardzīgs redakcionāls secinājums."
+    },
+    {
+      "fields": [
+        "problems"
+      ],
+      "claim": "Pazīmes jāvērtē kopā ar mitrumu; slimību higiēna, laputu noskalošana, ziedēšanu ietekmējošais nakts ilgums.",
+      "sources": [
+        "https://hgic.clemson.edu/factsheet/chrysanthemum-diseases-insect-pests/",
+        "https://extension.illinois.edu/blogs/good-growing/2021-09-10-why-do-my-mums-always-die-how-grow-and-care-fall-mums-your-garden"
+      ],
+      "boundary": "Nav diagnozes pēc viena simptoma vai ASV pesticīdu ieteikumu pārneses uz Latviju."
+    }
+  ],
+  "removed": [
+    "Tikai zemas šķirnes pārziemo",
+    "Veikalā nopirktas podu krizantēmas pielīdzinātas neziemcietīgām",
+    "Visiem vienāda rudens nogriešana",
+    "Nefiksētos apstākļos noteikts laistīšanas reižu skaits un galotņošanas datumi",
+    "Paštaisīts ziepjūdens",
+    "Nepamatoti folkloras un piemiņas tradīciju vispārinājumi"
+  ],
+  "limits": [
+    "Latvijas konkrētu šķirņu salīdzinājumi un garantēta sala robeža nav pārbaudīti; pirms pirkuma jāmeklē šķirnei un vietai atbilstoša pieredze.",
+    "Avoti ziemošanu apraksta dažādos klimatos. Atlasīti skaidri nošķirti kopšanas ceļi, ne viens universāls režīms.",
+    "hardy:false saglabāts esošās shēmas savietojamībai; tas neapgalvo, ka visas krizantēmas neziemo. Lietotājam paredzētā atbilde ir lifeCycle un winter.",
+    "Foto šķirnes nav identificētas; esošais piesardzīgais caption saglabāts.",
+    "MoonText ir personiskas tradīcijas skaidrojums, ne efektivitātes apgalvojums."
+  ],
+  "checks": {
+    "jsonParse": true,
+    "sectionSourceUrlsPresentInSources": true,
+    "sourceCount": 6,
+    "faqCount": 5,
+    "buildDeployUi": "Nav veikts; root integrācijas pārziņā."
+  }
+}

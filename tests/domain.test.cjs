@@ -19,6 +19,136 @@ const { subscribeToNewsletter } = require("../lib/brevo.ts");
 const { sowingDay } = require("../lib/biodynamic.ts");
 const { adjacentMonth } = require("../lib/seasonal.ts");
 const { monthPlan } = require("../lib/month-plan.ts");
+const { EMPTY_ARTICLE_FILTERS, matchesArticle, readArticleFilters, articleSearchParams } = require("../lib/article-search.ts");
+const { EMPTY_PROBLEM_FILTERS, matchesProblem, readProblemFilters, problemSearchParams, problemSearchText } = require("../lib/problem-search.ts");
+const { flowerDirectoryEntries, matchesFlower, readFlowerQuery, flowerSearchParams } = require("../lib/flower-directory.ts");
+const { EXTRA_FLOWER_NAMES, FOLK_NAMES } = require("../lib/flower-names.ts");
+const { CROPS, cropActivityMeta } = require("../lib/planting-crops.ts");
+const { defaultSowingFilters, guideActivities, matchesSowingCrop } = require("../lib/sowing-guide-filter.ts");
+
+test("October sowing excludes carrots and beets while their harvest stays discoverable", () => {
+  const filters = defaultSowingFilters(new Date("2026-10-27T12:00:00Z"));
+  assert.equal(filters.month, 10);
+  assert.equal(filters.activity, "sowing");
+  const sowing = CROPS.filter((crop) => matchesSowingCrop(crop, filters)).map((crop) => crop.id);
+  for (const id of ["burkani", "bietes", "tomati", "kirbji", "krizantemas"]) assert.ok(!sowing.includes(id), id);
+  for (const id of ["kiploki", "tulpes"]) assert.ok(sowing.includes(id), id);
+  const harvest = CROPS.filter((crop) => matchesSowingCrop(crop, { ...filters, activity: "harvest" }));
+  for (const id of ["burkani", "bietes"]) assert.ok(harvest.some((crop) => crop.id === id), id);
+  assert.ok(harvest.every((crop) => crop.category !== "pukes"));
+  assert.deepEqual(guideActivities(CROPS.find((crop) => crop.id === "krizantemas"), 10, "flowering"), ["harvest"]);
+});
+
+test("root-crop sowing and harvest remain distinct through all twelve months", () => {
+  const months = Array.from({ length: 12 }, (_, index) => index + 1);
+  for (const [id, sow, harvest] of [["burkani", [4, 5, 6], [7, 8, 9, 10]], ["bietes", [5, 6], [8, 9, 10]]]) {
+    const crop = CROPS.find((item) => item.id === id);
+    assert.deepEqual(months.filter((month) => guideActivities(crop, month, "sowing").length), sow);
+    assert.deepEqual(months.filter((month) => guideActivities(crop, month, "harvest").length), harvest);
+  }
+  const tomato = CROPS.find((crop) => crop.id === "tomati");
+  assert.deepEqual(guideActivities(tomato, 3, "sowing"), ["sowIndoors"]);
+  assert.deepEqual(guideActivities(tomato, 6, "sowing"), ["transplant"]);
+  for (const month of [1, 12]) assert.ok(CROPS.every((crop) => guideActivities(crop, month, "sowing").length === 0));
+});
+
+test("annual planning, categories and Latvian search do not bypass the selected season", () => {
+  const filters = { month: 10, activity: "sowing", category: "all", query: "BURKANI" };
+  const carrot = CROPS.find((crop) => crop.id === "burkani");
+  assert.equal(matchesSowingCrop(carrot, filters), false);
+  assert.equal(matchesSowingCrop(carrot, { ...filters, month: 0 }), true);
+  assert.equal(matchesSowingCrop(carrot, { ...filters, month: 0, category: "pukes" }), false);
+  const geranium = CROPS.find((crop) => crop.id === "pelargonijas");
+  assert.equal(matchesSowingCrop(geranium, { ...filters, month: 0, query: "geranijas" }), true);
+  assert.deepEqual(guideActivities(carrot, 13, "all"), []);
+  assert.deepEqual(guideActivities(carrot, -1, "all"), []);
+});
+
+test("bulbs, tubers and winter garlic are labeled as planting rather than sowing", () => {
+  for (const id of ["kiploki", "kartupeli", "topinamburs", "sipoli", "peonijas", "tulpes", "narcises", "ranunkuli", "dalijas", "gladiolas", "lilijas", "krokusi", "hiacintes"]) {
+    assert.equal(cropActivityMeta(CROPS.find((crop) => crop.id === id), "sowOutdoors").label, "Stādīt laukā", id);
+  }
+  assert.equal(cropActivityMeta(CROPS.find((crop) => crop.id === "burkani"), "sowOutdoors").label, "Sēt laukā");
+  const garlic = CROPS.find((crop) => crop.id === "kiploki");
+  assert.equal(garlic.name, "Ziemas ķiploki");
+  assert.match(garlic.note, /Vasaras ķiplokus stāda agrā pavasarī/);
+  assert.deepEqual(guideActivities(garlic, 4, "sowing"), []);
+  assert.equal(cropActivityMeta(CROPS.find((crop) => crop.id === "tulpes"), "harvest").label, "Ziedēšana");
+});
+
+test("the guide defaults to the Riga month at month and year boundaries", () => {
+  assert.equal(defaultSowingFilters(new Date("2026-09-30T21:30:00Z")).month, 10);
+  assert.equal(defaultSowingFilters(new Date("2026-10-31T22:30:00Z")).month, 11);
+  assert.equal(defaultSowingFilters(new Date("2026-12-31T22:30:00Z")).month, 1);
+});
+
+test("flower names resolve folk and botanical searches without counting topic pages as plants", () => {
+  const flowers = fs.readdirSync(path.join(__dirname, "../content/flowers")).map((file) => JSON.parse(fs.readFileSync(path.join(__dirname, "../content/flowers", file), "utf8")));
+  const entries = flowerDirectoryEntries(flowers);
+  assert.equal(entries.length, flowers.length - 1 + EXTRA_FLOWER_NAMES.length);
+  assert.equal(new Set(entries.map((entry) => entry.id)).size, entries.length);
+  assert.equal(entries.some((entry) => entry.name === "Balkona puķes"), false);
+  for (const [query, name] of [["PUJENES", "Peonijas"], ["jurgines", "Dālijas"], ["Paeonia", "Peonijas"], ["kreimenes", "Maijpuķītes (kreimenes)"], ["Hylotelephium", "Čīkstenes"], ["leduspukes", "Leduspuķes (ilgziedu begonijas)"]]) {
+    assert.ok(entries.filter((entry) => matchesFlower(entry, query)).some((entry) => entry.name === name), query);
+  }
+  for (const alias of FOLK_NAMES) assert.ok(entries.some((entry) => matchesFlower(entry, alias.folk)), alias.folk);
+  assert.equal(entries.filter((entry) => matchesFlower(entry, "pujenes neeksistējošs")).length, 0);
+  const ledus = entries.find((entry) => entry.name.startsWith("Leduspuķes"));
+  assert.equal(ledus.href, "/pukes/begonijas");
+  assert.match(ledus.latin, /^Begonia /);
+  assert.ok(entries.findIndex((entry) => entry.name === "Čīkstenes") < entries.findIndex((entry) => entry.name === "Dālijas"));
+  const search = flowerSearchParams("  pujenes  ", "?utm_source=test&q=vecs");
+  assert.equal(readFlowerQuery(search), "pujenes");
+  assert.equal(flowerSearchParams("", search), "utm_source=test");
+  assert.equal(readFlowerQuery("?q=" + "a".repeat(200)).length, 120);
+});
+
+test("pest search combines Latvian names, host plants and type filters with restorable URLs", () => {
+  const problem = JSON.parse(fs.readFileSync(path.join(__dirname, "../content/kaitekli/tiklerces.json"), "utf8"));
+  const item = { type: problem.type, searchText: [problem.name, problem.latin, ...problem.affects, ...problem.signs].join(" ") };
+  assert.ok(matchesProblem(item, { query: "TIKLERCES", type: "kaiteklis" }));
+  assert.ok(matchesProblem(item, { query: problem.affects[0], type: "visi" }));
+  assert.equal(matchesProblem(item, { query: "tīklērces", type: "slimiba" }), false);
+  assert.equal(matchesProblem(item, { query: "tīklērces neeksistējošs", type: "visi" }), false);
+  const filters = { query: "balts aplikums", type: "slimiba" };
+  const search = problemSearchParams(filters, "?utm_source=test&veids=visi&q=vecs");
+  assert.deepEqual(readProblemFilters(search), filters);
+  assert.equal(problemSearchParams(EMPTY_PROBLEM_FILTERS, search), "utm_source=test");
+  assert.deepEqual(readProblemFilters("?veids=nezināms"), EMPTY_PROBLEM_FILTERS);
+  assert.equal(readProblemFilters("?q=" + "a".repeat(200)).query.length, 120);
+  for (const [query, slug] of [["balts aplikums", "miltrasa"], ["tīkls", "tiklerces"], ["lipigas lapas", "laputis"], ["lipigas lapas", "baltblusina"]]) {
+    const guide = JSON.parse(fs.readFileSync(path.join(__dirname, `../content/kaitekli/${slug}.json`), "utf8"));
+    assert.ok(matchesProblem({ type: guide.type, searchText: problemSearchText(guide) }, { ...EMPTY_PROBLEM_FILTERS, query }), `${query} should find ${slug}`);
+  }
+});
+
+test("article search finds Latvian keyboard variants, reordered words and editorial aliases", () => {
+  const dahlia = JSON.parse(fs.readFileSync(path.join(__dirname, "../content/articles/ka-glabat-dalijas-ziema.json"), "utf8"));
+  const searchable = { ...dahlia, searchTerms: [dahlia.primaryQuery, ...(dahlia.aliases ?? [])] };
+  for (const query of ["DĀLIJU GLABĀŠANA", "daliju glabasana", "glabasana, daliju", "  dāliju   pārziemināšana  "]) {
+    assert.ok(matchesArticle(searchable, { ...EMPTY_ARTICLE_FILTERS, query }), query);
+  }
+  assert.equal(matchesArticle(searchable, { ...EMPTY_ARTICLE_FILTERS, query: "dāliju tomāti" }), false);
+  assert.equal(matchesArticle(searchable, { ...EMPTY_ARTICLE_FILTERS, category: "Problēmas" }), false);
+  const seasonal = { ...searchable, seasonalMonths: [10, 11] };
+  assert.ok(matchesArticle(seasonal, { ...EMPTY_ARTICLE_FILTERS, month: 11 }));
+  assert.equal(matchesArticle(seasonal, { ...EMPTY_ARTICLE_FILTERS, month: 4 }), false);
+});
+
+test("article filter URLs survive navigation, reject invalid filters and preserve campaign tags", () => {
+  const filters = { query: "dāliju glabāšana", category: "Praktiski", month: 11 };
+  const categories = ["Visi", "Praktiski", "Problēmas"];
+  const search = articleSearchParams(filters, "?utm_source=test&menesis=marts&q=vecs&kategorija=Pamati");
+  assert.deepEqual(readArticleFilters(search, categories), filters);
+  assert.equal(new URLSearchParams(search).get("utm_source"), "test");
+  assert.equal(articleSearchParams(EMPTY_ARTICLE_FILTERS, search), "utm_source=test");
+  assert.deepEqual(readArticleFilters("?menesis=13&kategorija=nav", categories), EMPTY_ARTICLE_FILTERS);
+  assert.equal(readArticleFilters("?q=" + "a".repeat(200), categories).query.length, 120);
+  for (let month = 1; month <= 12; month++) {
+    const next = { ...EMPTY_ARTICLE_FILTERS, month };
+    assert.deepEqual(readArticleFilters(articleSearchParams(next), categories), next);
+  }
+});
 
 test("daily advice respects the season even on a fruit day and across Riga New Year", () => {
   const october = sowingDay(new Date("2026-10-26T10:00:00Z"));

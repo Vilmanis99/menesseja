@@ -5,56 +5,122 @@
   "latin": "Phytophthora infestans",
   "type": "slimiba",
   "severity": "nopietns",
-  "tagline": "Bīstamākā kartupeļu un tomātu slimība mitrā, siltā vasarā — strauji iznīcina lakstus un sapūdē bumbuļus un augļus.",
+  "tagline": "Strauji augoši brūni lapu un stublāju bojājumi kartupeļiem vai tomātiem, īpaši ilgstošā mitrumā. Ar vienu plankumu diagnozei nepietiek.",
   "affects": [
     "Kartupeļi",
-    "Tomāti",
-    "Retāk baklažāni un citi nakteņu dzimtas augi"
+    "Tomāti"
   ],
   "signs": [
-    "Uz lapām parādās brūni vai melni, slapji izskatīgi plankumi, bieži sākumā uz lapu malām un galiem",
-    "Plankumu apakšpusē mitrā laikā veidojas tievs, balts pūkains pelējums",
-    "Uz stumbriem un lapu kātiem rodas tumši brūni, gandrīz melni svītrveida plankumi",
-    "Lakstu puve izplatās ļoti strauji — dažas siltas, lietainas dienas, un visi laksti var nomelnēt un sabrukt",
-    "Kartupeļu bumbuļiem ādā ieliekti pelēkbrūni plankumi, mīkstums brūns un pūstošs; tomātiem augļi kļūst cieti brūni un pūst"
+    "Uz lapām ir neregulāri, strauji augoši brūni laukumi, kas sākumā var izskatīties ūdeņaini. Plankuma mala mēdz būt pelēcīgi vai gaiši zaļa.",
+    "Mitrā laikā lapas apakšpusē pie bojājuma robežas var veidoties smalka balta apsarme. Sausumā tās var nebūt; apsarmes trūkums lakstu puvi neizslēdz.",
+    "Uz lapu kātiem un stublājiem rodas tumši brūni bojājumi. Slimība var sākties arī uz stublāja, un tad redzamas baltas apsarmes var nebūt.",
+    "Tomātu augļiem var būt stingri brūni, nevienmērīgi laukumi. Vēlāk bojājumam var pievienoties mīkstā puve.",
+    "Kartupeļu bumbuļiem zem mizas ir brūngani līdz sarkanbrūni bojājumi; sākumā audi var būt stingri. Daļa infekciju kļūst pamanāmas tikai glabāšanas laikā."
   ],
   "intro": [
-    "Lakstu puve ir sēnei līdzīgs organisms, kas vasaras siltajā un mitrajā laikā — parasti jūlijā un augustā — var dažu dienu laikā iznīcināt visu kartupeļu un tomātu lauku. Sporas izplatās ar lietus pilieniem, rasu un vēju, tāpēc slimība uzliesmo tieši pēc siltām, lietainām vai miglainām dienām, kad lapas ilgi paliek slapjas.",
-    "Šī ir tā pati slimība, kas 19. gadsimtā izraisīja Īrijas badu, un tā joprojām ir nopietnākā nakteņu dzimtas augu slimība. Svarīgi saprast — ar dabīgām metodēm lakstu puvi nevar izārstēt, kad tā jau plosās. Tāpēc galvenais ir PROFILAKSE un ātra rīcība: pamanot pirmos plankumus, slimās daļas tūlīt jānoņem, lai izglābtu pārējo ražu."
+    "Lakstu puvi izraisa Phytophthora infestans — sēnei līdzīgs organisms. Tas apdraud gan kartupeļus, gan tomātus. Ilgstošs lapu slapjums un piemērota temperatūra ļauj infekcijai strauji attīstīties; tā nav tikai karstuma vai viena konkrēta vasaras mēneša problēma.",
+    "Infekcija var nonākt stādījumā ar inficētiem bumbuļiem vai stādiem un ar vēja nestām sporām. Dārzā atstāti kartupeļi un atkritumu kaudzes var kļūt par vietēju avotu. Augu maiņa un sakopšana samazina risku, bet neizslēdz infekciju no kaimiņu stādījumiem."
   ],
   "control": [
-    "Pamanot pirmos plankumus, nekavējoties nogriez un iznīcini slimās lapas un stumbrus — tā ir efektīvākā rīcība, jo izsmidzināmie līdzekļi infekciju neapturēs.",
-    "Ja slimība strauji izplatās pa kartupeļu lakstiem, nopļauj un aizvāc visus lakstus 2–3 nedēļas pirms rakšanas — tā sporas neaizskalojas līdz bumbuļiem augsnē.",
-    "Visas slimās lapas, stumbrus un augļus iznīcini — sadedzini vai izved ar atkritumiem. NEKAD nemet kompostā, jo infekcija saglabājas.",
-    "Tomātiem noņem apakšējās lapas un visus skartos augļus; izlauz papildu dzinumus, lai krūms būtu gaisīgs un ātri apžūtu pēc lietus.",
-    "Slapjā laikā nestrādā augu vidū un nesmidzini neko no augšas — staigājot pa slapjiem lakstiem un slacinot lapas, tu pats iznēsā sporas.",
-    "Kartupeļus, kas jau ir izrakti, pirms uzglabāšanas labi nožāvē un pāršķiro — slimos bumbuļus izmet, lai puve neizplatās glabātavā.",
-    "Profilaktiski, vēl pirms slimības pazīmēm, augus var stiprināt ar kosas novārījumu — silīcijs nostiprina lapu virskārtu. Tā ir tikai profilakse, kas neaizvieto pārējos pasākumus un neizārstē jau saslimušu augu."
+    "Apskati vairākus augus, abas lapu puses un stublājus. Nofotografē bojājuma malu un salīdzini izmaiņas nākamajā apskatē. Ja pazīmes nav skaidras, precizē diagnozi pie augu aizsardzības speciālista.",
+    "Ja skartas tikai atsevišķas lapas, tās saudzīgi noņem un aizvāc. Tas var nedaudz palēnināt izplatību, bet nav apliecinājums, ka augs izārstēts. Turpini vērot arī šķietami veselos blakus augus.",
+    "Tomātiem ar plašiem stublāja un lapotnes bojājumiem izņem stipri slimo augu. Sakopšanu veic, kad lapotne sausa; slimo materiālu neatstāj ejās vai blakus veselajiem augiem.",
+    "Kartupeļiem, ja slimība plaši izplatījusies vai skar stublājus, nogriez lakstus pie augsnes un savāc atliekas. Bumbuļus rok pēc mizas nostiprināšanās — aptuveni divas nedēļas pēc lakstu noņemšanas, pielāgojot darbu augsnes apstākļiem.",
+    "Slimo materiālu neliec parastā mājas komposta kaudzē. Nodod to atbilstoši vietējā atkritumu apsaimniekotāja norādēm; neizplati bojātus bumbuļus un neglabā tos sēklai.",
+    "Glabāšanai ražu atlasi īpaši rūpīgi. Bumbuļus no skarta stādījuma ilgstoši glabāt ir riskanti arī bez sākotnēji redzamiem plankumiem. Ja tos glabā, pārbaudi regulāri un izņem bojātos.",
+    "Laisti augsni, uzturi gaisa kustību un nepieļauj ilgstošu kondensātu siltumnīcā. Uzlējums vai lapu mēslojums neatjauno jau bojātus audus un neaizstāj slimības ierobežošanas plānu."
   ],
-  "recipeSlugs": [
-    "kosas-novarijums"
-  ],
+  "recipeSlugs": [],
   "prevention": [
-    "Audzē izturīgas šķirnes — ir kartupeļu un tomātu šķirnes, kas pret lakstu puvi ir noturīgākas; iesācējam tas ir vienkāršākais ceļš uz veselīgu ražu.",
-    "Ievēro augu maiņu — kartupeļus un tomātus tajā pašā vietā atkārtoti stādi ne biežāk kā reizi 3–4 gados, lai augsnē neuzkrātos infekcija.",
-    "Stādi retināti un gaisīgi, lai pēc lietus un rasas laksti ātri apžūtu; biezi sastādīti augi ilgāk paliek slapji un saslimst pirmie.",
-    "Tomātus pēc iespējas audzē zem nojumes vai siltumnīcā, lai lapas nesaslapst no lietus — sausas lapas saslimst daudz retāk.",
-    "Nesmidzini augus no augšas un laisti tikai pie saknes no rīta, lai lapas paspētu apžūt; vakara laistīšana atstāj lapas slapjas visu nakti."
+    "Stādi veselus kartupeļu bumbuļus un tomātu stādus. Līdz nākamajai sezonai aizvāc kartupeļu atlikumus un iznīcini kartupeļu augus, kas izauguši no zemē palikušiem bumbuļiem.",
+    "Izvēlies šķirnes ar norādītu izturību pret lakstu puvi. Arī tās ilgstoši labvēlīgos slimības apstākļos var saslimt.",
+    "Ievēro augu maiņu un pietiekamu atstatumu. Tomātus balsti un vēdini; kartupeļu vagas apraušot, bumbuļi tiek labāk pasargāti no sporām, ko lietus ieskalo augsnē.",
+    "Mitrā laikā biežāk apskati uzņēmīgos stādījumus. Pārbaudi arī apakšējo, noēnoto lapojumu un stublājus; nepaļaujies tikai uz baltas apsarmes atrašanu.",
+    "Pirms iespējamas augu aizsardzības līdzekļa lietošanas pārbaudi tā paredzēto kultūru, slimību un lietošanas laiku Latvijas reģistrā. Profilaktiska aizsardzība un jau slimā auga izārstēšana nav viens un tas pats."
   ],
-  "moonNote": "Tradicionāli dilstošā Mēnesī veic slimo lakstu griešanu un kartupeļu lakstu pļaušanu pirms rakšanas. Tomēr atceries — lakstu puve negaida Mēness fāzes: pamanot slimību, rīkojies nekavējoties, neatkarīgi no kalendāra.",
-  "folklore": "Veci dārznieki zina: ja jūlijā uznāk silti, smacīgi un lietaini laiki ar rīta miglu, kartupeļu lauks jāapskata katru dienu — \"puve nāk ar siltu lietu\". Senāk lakstus steidzās nopļaut tūlīt, tiklīdz tie sāka melnēt, lai paglābtu bumbuļus zemē.",
   "faq": [
     {
-      "q": "Vai slimos lakstus drīkst likt kompostā?",
-      "a": "Nē, nekādā gadījumā. Lakstu puves infekcija kompostā var saglabāties un nākamgad atgriezties dārzā. Slimās lapas, stumbrus un augļus sadedzini vai izved ar atkritumiem."
+      "q": "Vai slimo lapu nogriešana izglābs visu augu?",
+      "a": "Tas nav garantēts. Dažu skarto lapu noņemšana var tikai nedaudz palēnināt progresu. Stublāju bojājumi un jauni plankumi citās auga daļās liecina, ka ar lokālu lapu noņemšanu nepietiek."
     },
     {
-      "q": "Vai ar kosas novārījumu var izārstēt jau slimu augu?",
-      "a": "Nē. Kosas novārījums tikai stiprina lapas profilaktiski, pirms slimība parādījusies. Kad plankumi jau redzami, vienīgais, kas palīdz, ir ātri noņemt un iznīcināt slimās daļas, lai izglābtu pārējo ražu."
+      "q": "Vai siltumnīcā lakstu puve nevar parādīties?",
+      "a": "Var. Segums mazina lietus ietekmi, taču sporas var ienākt caur durvīm vai vēdināšanas atverēm. Ja lapotne ilgstoši mitra, arī siltumnīcā slimība var izplatīties strauji."
     },
     {
-      "q": "Vai kartupeļus no slima lauka var ēst un glabāt?",
-      "a": "Veselos, neskartos bumbuļus var ēst. Pirms glabāšanas tos rūpīgi nožāvē un pāršķiro — visus bumbuļus ar brūniem, ieliektiem plankumiem vai pūstošu mīkstumu izmet, jo glabātavā tie sabojās arī pārējos."
+      "q": "Kāpēc slimās atliekas nelikt mājas kompostā?",
+      "a": "Parasta kaudze ne vienmēr sasniedz vajadzīgo temperatūru visā apjomā. Inficēti bumbuļi var saglabāties un nākamajā gadā izaugt. Tas nenozīmē, ka visi profesionāli apsaimniekoti kompostēšanas procesi ir vienādi; ievēro sava apsaimniekotāja pieņemšanas nosacījumus."
+    },
+    {
+      "q": "Vai kosas novārījums izārstēs lakstu puvi?",
+      "a": "Šajā ceļvedī tam nav dots ārstēšanas solījums. Kad lapas un stublāji jau bojāti, svarīga ir diagnoze, slimā materiāla aizvākšana un atlikušā stādījuma aizsardzība, ne atkārtoti nepārbaudītu maisījumu izmēģinājumi."
+    },
+    {
+      "q": "Kad rakt kartupeļus pēc slimo lakstu nogriešanas?",
+      "a": "Parasti nogaida aptuveni divas nedēļas, lai nostiprinātos bumbuļu miza, tad novāc piemērotos augsnes apstākļos. Skarta stādījuma bumbuļiem vajadzīga rūpīga atlase un atkārtotas pārbaudes; sākotnēji veselīgs izskats negarantē glabāšanās kvalitāti."
     }
-  ]
+  ],
+  "shortAnswer": "Ja kartupeļiem vai tomātiem strauji palielinās brūni plankumi, pārbaudi arī stublājus un lapu apakšpusi. Mitrumā plankuma malā var būt balta apsarme. Noņem bojāto materiālu, sargā lapas no ilgstoša slapjuma un seko blakus augiem. Atsevišķu lapu nogriešana var nedaudz palēnināt slimību, bet neizārstē inficētu augu.",
+  "compare": {
+    "heading": "Ar ko lakstu puvi var sajaukt?",
+    "intro": "Atsevišķa fotogrāfija ne vienmēr ļauj droši noteikt ierosinātāju. Vērtē bojājuma formu, augšanas ātrumu un pārējās auga daļas.",
+    "items": [
+      {
+        "name": "Sausplankumainība (Alternaria)",
+        "note": "Raksturīgāki tumši plankumi ar koncentriskiem lokiem, bieži sākumā uz apakšējām lapām. Tā ir cita slimība."
+      },
+      {
+        "name": "Tomātu lapu pelējums",
+        "note": "Siltumnīcā lapu plankumi un pārklājums apakšpusē var atgādināt lakstu puvi. Pārbaudi plankuma krāsu un visas pazīmes kopā.",
+        "href": "/raksti/kapec-tomatiem-bruni-plankumi-uz-lapam"
+      },
+      {
+        "name": "Īstā miltrasa",
+        "note": "Parasti redzams balts, miltains klājums. Lakstu puvei raksturīgāki strauji augoši brūni audu bojājumi.",
+        "href": "/kaitekli/miltrasa"
+      }
+    ]
+  },
+  "relatedLinks": [
+    {
+      "label": "Fitoftora tomātiem — padziļināts rīcības ceļvedis",
+      "href": "/raksti/fitoftora-tomatiem"
+    },
+    {
+      "label": "Kartupeļu lakstu puve un ražas aizsardzība",
+      "href": "/raksti/kapec-kartupeliem-lakstu-puve"
+    },
+    {
+      "label": "Augu maiņas plāns dārzam",
+      "href": "/raksti/augu-maina-darza"
+    }
+  ],
+  "sources": [
+    {
+      "label": "VAAD — kartupeļu slimības un kaitēkļi: lakstu puve un sausplankumainība, 4.–7. lpp.",
+      "url": "https://noverojumi.vaad.gov.lv/images/Kartupeli_WEB.pdf"
+    },
+    {
+      "label": "RHS — kartupeļu lakstu puve, lakstu noņemšana un ražas glabāšana",
+      "url": "https://www.rhs.org.uk/disease/potato-blight"
+    },
+    {
+      "label": "RHS — tomātu lakstu puve un lapu noņemšanas ierobežotā iedarbība",
+      "url": "https://www.rhs.org.uk/disease/tomato-blight"
+    },
+    {
+      "label": "University of Minnesota — lakstu puves pazīmes un izplatīšanās",
+      "url": "https://extension.umn.edu/agriculture/specialty-crops/vegetable-farming/disease-management/late-blight"
+    },
+    {
+      "label": "Penn State Extension — stipri inficētu tomātu izņemšana un darbība sausā laikā",
+      "url": "https://extension.psu.edu/tomato-potato-late-blight-in-the-home-garden"
+    },
+    {
+      "label": "VAAD — augu aizsardzības līdzekļu lietošanas nosacījumi",
+      "url": "https://www.vaad.gov.lv/lv/lietosanas-nosacijumi-0"
+    }
+  ],
+  "safetyNote": "Nesmidzini pēc nejauša plankuma diagnozes. Ja vajadzīgs augu aizsardzības līdzeklis, ievēro aktuālo Latvijas marķējumu un nogaidīšanas laiku līdz ražas novākšanai; ārvalstu produkta ieteikums nav Latvijas lietojuma atļauja.",
+  "updatedAt": "2026-10-27"
 }

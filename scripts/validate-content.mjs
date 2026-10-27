@@ -13,6 +13,7 @@ const tops = loadDir("tops");
 const errors = [];
 const warnings = [];
 const images = JSON.parse(fs.readFileSync(path.join(root, "content", "images.json"), "utf8"));
+const problemImages = JSON.parse(fs.readFileSync(path.join(root, "content", "problem-images.json"), "utf8"));
 
 for (const [id, image] of Object.entries(images)) {
   const file = typeof image.src === "string" && /^\/images\/[a-z0-9/._-]+$/.test(image.src) && !image.src.includes("..")
@@ -49,7 +50,9 @@ const intents = new Set(["problem", "how-to", "seasonal", "reference"]);
 const routeRoots = new Set(["", "augi", "pukes", "kaitekli", "receptes", "raksti", "topi", "kalendars", "ko-set", "planotajs", "kopiena", "iesutit", "macies", "par", "privatums", "regioni", "celvedis", "meness"]);
 
 function validDate(value) {
-  return /^\d{4}-\d{2}-\d{2}$/.test(value) && !Number.isNaN(Date.parse(`${value}T00:00:00Z`));
+  if (typeof value !== "string" || !/^\d{4}-\d{2}-\d{2}$/.test(value)) return false;
+  const date = new Date(`${value}T00:00:00Z`);
+  return !Number.isNaN(date.getTime()) && date.toISOString().slice(0, 10) === value;
 }
 
 function resolves(href) {
@@ -69,6 +72,62 @@ function resolves(href) {
 }
 
 const calendar = JSON.parse(fs.readFileSync(path.join(root, "content", "calendar-guides.json"), "utf8"));
+let flowersWithSources = 0;
+const flowerTypes = new Set(["daudzgadiga", "sipolpuke", "viengadiga", "divgadiga", "krums"]);
+const flowerSourceSections = new Set(["intro", "planting", "care", "winter", "problems", "comparison"]);
+for (const slug of flowers) {
+  const flower = JSON.parse(fs.readFileSync(path.join(root, "content", "flowers", `${slug}.json`), "utf8"));
+  const location = `pukes/${slug}`;
+  if (flower.slug !== slug) errors.push(`${location}: slug nesakrīt ar faila nosaukumu`);
+  for (const field of ["name", "tagline", "bloom", "height", "sun", "plantWhen"]) {
+    if (typeof flower[field] !== "string" || !flower[field].trim()) errors.push(`${location}: trūkst ${field}`);
+  }
+  if (!flowerTypes.has(flower.type)) errors.push(`${location}: nederīga audzēšanas grupa`);
+  if (flower.updatedAt !== undefined && !validDate(flower.updatedAt)) errors.push(`${location}: nederīgs atjaunošanas datums`);
+  if (!Array.isArray(flower.bloomMonths) || !flower.bloomMonths.length || flower.bloomMonths.some((month) => !Number.isInteger(month) || month < 1 || month > 12) || new Set(flower.bloomMonths).size !== flower.bloomMonths.length) errors.push(`${location}: nederīgi ziedēšanas mēneši`);
+  for (const field of ["intro", "planting", "care"]) {
+    if (!Array.isArray(flower[field]) || !flower[field].length || flower[field].some((value) => typeof value !== "string" || !value.trim())) errors.push(`${location}: nepilnīgs ${field}`);
+  }
+  if (flower.sources?.length) {
+    flowersWithSources++;
+    if (!Array.isArray(flower.sources) || flower.sources.some((source) => !source.label || !/^https:\/\//.test(source.url)) || new Set(flower.sources.map((source) => source.url)).size !== flower.sources.length) errors.push(`${location}: nederīgi vai atkārtoti avoti`);
+    if (!validDate(flower.updatedAt)) errors.push(`${location}: pārskatītam saturam vajag datumu`);
+    for (const field of ["shortAnswer", "lifeCycle"]) if (typeof flower[field] !== "string" || !flower[field].trim()) errors.push(`${location}: pārskatītam saturam trūkst ${field}`);
+    for (const section of ["intro", "planting", "care", ...(flower.winter ? ["winter"] : []), ...(flower.problems?.length ? ["problems"] : []), ...(flower.comparison ? ["comparison"] : [])]) {
+      if (!flower.sectionSources?.[section]?.length) errors.push(`${location}: sadaļai ${section} trūkst avotu`);
+    }
+  } else warnings.push(`${location}: vēl vajadzīga padziļināta avotu pārbaude`);
+  for (const [section, urls] of Object.entries(flower.sectionSources ?? {})) {
+    if (!flowerSourceSections.has(section) || !Array.isArray(urls) || !urls.length || new Set(urls).size !== urls.length || urls.some((url) => !flower.sources?.some((source) => source.url === url))) errors.push(`${location}: ${section} atsaucēm jābūt unikālām saitēm no ceļveža avotu saraksta`);
+  }
+  if (flower.comparison && (!flower.comparison.heading || !Array.isArray(flower.comparison.items) || flower.comparison.items.length < 2 || flower.comparison.items.some((item) => !item.name || !item.description))) errors.push(`${location}: nepilnīgs augu salīdzinājums`);
+  if (flower.faq?.some((item) => !item.q || !item.a)) errors.push(`${location}: nepilnīgs jautājums vai atbilde`);
+  for (const link of flower.links ?? []) if (!link.label || !resolves(link.href)) errors.push(`${location}: neatrisināta saite ${link.href}`);
+  for (const related of flower.related ?? []) if (!flowers.has(related) || related === slug) errors.push(`${location}: nederīgs saistītais ceļvedis ${related}`);
+}
+
+for (const [slug, image] of Object.entries(problemImages)) {
+  if (!pests.has(slug)) errors.push(`kaitēkļu foto: nezināms ceļvedis ${slug}`);
+  validateImageUse(image, `kaitekli/${slug}`);
+}
+for (const slug of pests) {
+  const problem = JSON.parse(fs.readFileSync(path.join(root, "content", "kaitekli", `${slug}.json`), "utf8"));
+  if (problem.slug !== slug || !problem.name || !problem.tagline) errors.push(`kaitekli/${slug}: nepilnīgs nosaukums vai apraksts`);
+  if (!["kaiteklis", "slimiba"].includes(problem.type)) errors.push(`kaitekli/${slug}: nederīgs veids`);
+  for (const field of ["affects", "signs", "intro", "control", "prevention"]) {
+    if (!Array.isArray(problem[field]) || !problem[field].length || problem[field].some((value) => typeof value !== "string" || !value.trim())) errors.push(`kaitekli/${slug}: nepilnīgs ${field}`);
+  }
+  if (problem.sources?.length) {
+    if (problem.sources.some((source) => !source.label || !/^https:\/\//.test(source.url))) errors.push(`kaitekli/${slug}: nederīgs avots`);
+    if (!validDate(problem.updatedAt)) errors.push(`kaitekli/${slug}: pārbaudītam saturam vajag datumu`);
+  } else warnings.push(`kaitekli/${slug}: vēl vajadzīga avotu pārbaude`);
+  for (const recipe of problem.recipeSlugs ?? []) if (!recipes.has(recipe)) errors.push(`kaitekli/${slug}: nezināma recepte ${recipe}`);
+  for (const link of [...(problem.relatedLinks ?? []), ...(problem.compare?.items ?? [])]) {
+    if (link.href && !resolves(link.href)) errors.push(`kaitekli/${slug}: neatrisināta saite ${link.href}`);
+  }
+  if (problem.image && (!/^\/(?:images|kaitekli)\/[a-z0-9/._-]+$/.test(problem.image.src) || problem.image.src.includes("..") || !fs.existsSync(path.join(root, "public", problem.image.src)))) errors.push(`kaitekli/${slug}: nav agrāk pievienotā foto faila`);
+}
+
 if (!validDate(calendar.updatedAt)) errors.push("Kalendāriem vajag atjaunošanas datumu");
 if (Object.keys(calendar.months).length !== 12) errors.push("Vajag tieši 12 mēnešu ceļvežus");
 for (const [id, source] of Object.entries(calendar.sources)) {
@@ -150,4 +209,4 @@ if (errors.length) {
   console.error(`Satura kļūdas (${errors.length}):\n- ${errors.join("\n- ")}`);
   process.exit(1);
 }
-console.log(`Saturs derīgs: ${articles.size} raksti, 12 mēnešu ceļveži, ${Object.keys(images).length} attēli ar avotiem, ${warnings.length} plānoti FAQ uzlabojumi.`);
+console.log(`Saturs derīgs: ${articles.size} raksti, ${flowers.size} puķu ceļveži (${flowersWithSources} ar sadaļu avotiem), ${pests.size} kaitēkļu/slimību ceļveži, 12 mēnešu ceļveži, ${Object.keys(images).length} attēli ar avotiem, ${warnings.length} plānoti satura uzlabojumi.`);

@@ -6,7 +6,7 @@ import { Card } from "@/components/ui/card";
 import { Icon } from "@/components/ui/icon";
 import { JsonLd } from "@/components/json-ld";
 import { DataNote } from "@/components/data-note";
-import { CROPS, MONTHS_LV_FULL, ACTIVITY_META, type ActivityKey } from "@/lib/planting-crops";
+import { CROPS, MONTHS_LV_FULL, ACTIVITY_META, cropActivityMeta, type ActivityKey } from "@/lib/planting-crops";
 import { cropEmoji } from "@/lib/crop-visual";
 import { MONTH_SLUGS, monthFromSlug, MONTH_TIPS, MONTHS_LV_LOCATIVE, canonical, SITE_NAME, og } from "@/lib/seo";
 import { MONTH_GUIDES } from "@/lib/month-guides";
@@ -24,7 +24,7 @@ export function generateStaticParams() {
 
 const GROUPS: { key: ActivityKey; title: string; icon: string }[] = [
   { key: "sowIndoors", title: "Sēt telpās dēstiem", icon: "yard" },
-  { key: "sowOutdoors", title: "Sēt tieši laukā", icon: "grass" },
+  { key: "sowOutdoors", title: "Sēt vai stādīt tieši laukā", icon: "grass" },
   { key: "transplant", title: "Stādīt laukā", icon: "potted_plant" },
   { key: "harvest", title: "Novākt ražu", icon: "agriculture" },
 ];
@@ -54,6 +54,7 @@ export default async function KoSetPage({ params }: { params: Promise<{ month: s
   if (!month) notFound();
   const name = MONTHS_LV_FULL[month - 1];
   const guide = MONTH_GUIDES[month];
+  const calendarHref = monthCalendarHref(month);
 
   const groups = GROUPS.map((g) => ({
     ...g,
@@ -94,6 +95,16 @@ export default async function KoSetPage({ params }: { params: Promise<{ month: s
           <p className="mt-xs max-w-2xl text-body-lg text-on-surface-variant">{MONTH_TIPS[month - 1]}</p>
         </header>
       </Card>
+
+      {calendarHref !== "/kalendars" && (
+        <TrackedLink href={`${calendarHref}#menesa-darbi`} source={`ko-set:${slug}`} placement="month-work-guide" className="mb-lg flex min-h-14 items-center justify-between gap-sm rounded-xl border border-primary/30 bg-surface-container p-md hover:border-primary/60">
+          <span>
+            <span className="block text-title-md text-primary">Pilns mēneša darbu ceļvedis</span>
+            <span className="mt-xs block text-body-md text-on-surface-variant">Ko darīt {MONTHS_LV_LOCATIVE[month - 1]}, kad sākt un kā paveikt katru darbu.</span>
+          </span>
+          <Icon name="arrow_forward" className="shrink-0 text-primary" />
+        </TrackedLink>
+      )}
 
       {guide && (
         <>
@@ -136,6 +147,7 @@ export default async function KoSetPage({ params }: { params: Promise<{ month: s
                         <div className="min-w-0 flex-1">
                           <Link href={cropHref(c.id)} className="inline-flex min-h-11 items-center font-semibold text-on-surface hover:text-primary hover:underline">{c.name}</Link>
                           <p className="text-label-sm text-on-surface-variant">{c.daysToHarvest ?? "Skaties auga ceļvedī"}</p>
+                          <p className="text-label-sm font-semibold text-primary">{cropActivityMeta(c, g.key).label}</p>
                         </div>
                       </div>
                       <p className="mt-2 flex-1 text-body-md leading-relaxed text-on-surface-variant">{guide.cropNotes[c.id] ?? c.note}</p>
@@ -173,7 +185,7 @@ export default async function KoSetPage({ params }: { params: Promise<{ month: s
           <p className="font-semibold text-on-surface">Sēt saskaņā ar Mēnesi?</p>
           <p className="text-body-md text-on-surface-variant">Skaties šī mēneša Mēness sējas kalendāru ar elementu dienām.</p>
         </div>
-        <Link href={monthCalendarHref(month)} className="inline-flex min-h-11 shrink-0 items-center gap-1 text-label-md text-primary hover:underline">
+        <Link href={calendarHref} className="inline-flex min-h-11 shrink-0 items-center gap-1 text-label-md text-primary hover:underline">
           Kalendārs <Icon name="arrow_forward" size="16px" />
         </Link>
       </Card>

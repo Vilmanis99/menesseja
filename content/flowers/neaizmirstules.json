@@ -1,61 +1,75 @@
 {
   "slug": "neaizmirstules",
   "name": "Neaizmirstulītes",
-  "latin": "Myosotis",
-  "image": { "id": "neaizmirstules", "caption": "Neaizmirstulītes zied maijā un izsējas pašas, tāpēc nākamajā pavasarī parādās atkal." },
+  "latin": "Myosotis sylvatica",
+  "image": {
+    "id": "neaizmirstules",
+    "caption": "Neaizmirstulīšu ziedi; foto avotā suga nav droši noteikta, tādēļ attēls nav Myosotis sylvatica identifikācijas paraugs."
+  },
   "emoji": "🌸",
-  "type": "viengadiga",
-  "tagline": "Maigi zilas pavasara puķītes, kas pašas izsējas un atgriežas dobē gadu no gada.",
-  "bloom": "Maijs–jūnijs",
+  "type": "divgadiga",
+  "tagline": "Meža neaizmirstules pavasara dobēm: sēja, pašizsēja un kopšana.",
+  "bloom": "Maijs–jūlijs; dārza šķirņu ziedēšanas ilgums atkarīgs no šķirnes un sezonas",
   "bloomMonths": [
     5,
-    6
+    6,
+    7
   ],
-  "height": "15–30 cm",
-  "sun": "Saule / pusēna",
+  "height": "Apmēram 15–30 cm; zemās šķirnes var būt kompaktākas",
+  "sun": "Saule / pusēna; karstā vietā vēlama pēcpusdienas ēna",
   "hardy": true,
   "difficulty": "viegli",
-  "plantWhen": "Sēj vasarā (jūnijs–jūlijs); zied nākamā pavasarī",
+  "plantWhen": "Parastajam divgadīgajam ciklam sēj vasarā, bieži jūnijā–jūlijā; šķirņu sērijām termiņi atšķiras",
   "moonPhase": "augošs",
   "moonElement": "ziedi",
-  "moonText": "Neaizmirstulīte ir ziedu augs, tāpēc sēšanu un kopšanu tradicionāli saista ar ziedu jeb gaisa dienām (Mēness Dvīņos, Svaros, Ūdensvīrā). Sēklas tradicionāli sēj augošā Mēness laikā, kad sula ceļas uz augšu un dīgšana ir možāka — taču pats galvenais ir iesēt vasarā, lai augs paspēj izveidot lapu rozeti pirms ziemas, nevis trāpīt tieši konkrētajā dienā.",
+  "moonText": "Sēju ziedu dienās un augošā Mēness laikā izmanto biodinamiskās dārzkopības tradīcijā. Tā neaizstāj šķirnes dīgšanas norādes, mitruma kontroli vai vajadzīgo attīstības laiku līdz ziemai.",
   "intro": [
-    "Neaizmirstulīte ir viena no tām klasiskajām pavasara dobes puķēm, ko Latvijā mēdz stādīt kopā ar atraitnītēm un tulpēm — tās maigi zilie ziediņi veido tādu kā miglainu paklāju, uz kura tulpju spožās krāsas izskatās vēl skaistākas. Tā ir zema, pieticīga un ziemcietīga: iesēta vienreiz, tā ar gadiem pati izsējas un atgriežas dobē, tāpēc to bieži uzskata par puķi, kas dārzā nostiprinās uz palikšanu. Tieši ar šo vieglumu un pavasarīgo zilumu neaizmirstulīte ir tik mīļa daudziem dārzkopjiem.",
-    "Lai gan to bieži audzē kā vienas sezonas dobes puķi, patiesībā neaizmirstulīte ir divgadīgs augs: sēta vasarā, pirmajā gadā tā izveido tikai lapu rozeti, pārziemo un zied tikai nākamā gada pavasarī. Pēc ziedēšanas tā nobriedina sēklas un izsējas pati, tā ka dobē neaizmirstulītes turpina parādīties pašas no sevis gadiem ilgi. Tā mīl pusēnu un mitru augsni — karstā saulē un sausumā tai klājas grūti, tāpēc vislabāk tā jūtas vēsākā, ne pārāk izkaltušā stūrī."
+    "Ceļvedis attiecas uz Myosotis sylvatica — meža neaizmirstuli un tās dārza šķirnēm. Sīkie ziedi visbiežāk ir zili ar gaišu actiņu, taču pieejamas arī baltas un rozā formas. Zemie ceri iederas dobju malās un starp pavasara sīpolpuķēm.",
+    "Apzīmējums divgadīga šeit raksturo ierasto audzēšanas ciklu, ne obligātu auga mūža ilgumu. Dārzā var saglabāties īsmūžīgs cers un parādīties jauni pašizsējas augi. Pavasara ziedēšanai daudzas šķirnes sēj iepriekšējā vasarā, bet īpašām sērijām aukstuma periods nav vajadzīgs.",
+    "Ne visas neaizmirstulītes audzē vienādi. Dīķu malu Myosotis scorpioides ir cita suga ar izteikti mitras vietas prasībām. Dārza sēklu paciņai meklē sugas un šķirnes nosaukumu; zila zieda attēls vien šo atšķirību nepaskaidro."
   ],
   "planting": [
-    "Sēklas sēj vasarā, no jūnija līdz jūlijam, lai augs līdz rudenim paspēj izveidot stipru lapu rozeti un labi pārziemot — sēts vēlu, tas līdz aukstumam var nepaspēt nostiprināties.",
-    "Izvēlies vietu pusēnā vai vieglā saulē, kur augsne paliek vēsa un mitra; tieši karstā, sausā saulē neaizmirstulītei klājas vissliktāk.",
-    "Sēj seklu — sēkliņas tikai viegli pieber ar zemi vai gandrīz neapber, jo tās dīgst gaišumā; sējas vietu uztur mitru, līdz parādās dīgsti.",
-    "Stādiņus vai izretinātos augus pārstāda dobē uz pastāvīgo vietu rudenī vai agri pavasarī, atstājot starp tiem apmēram 15–25 cm.",
-    "Pavasara kompozīcijām neaizmirstulītes stāda kopā ar tulpēm, narcisēm un atraitnītēm — zilais fons lieliski papildina spilgtos sīpolpuķu ziedus."
+    "Izvēlies audzēšanas ciklu. Parastai ziedēšanai nākamajā pavasarī sēj vasarā; jūnijs–jūlijs dod laiku izveidot spēcīgu rozeti līdz ziemai. Tas ir plānošanas orientieris Latvijas dārzam, ne visām šķirnēm vienāds termiņš.",
+    "Sēj reti dēstu kasetē vai smalki sagatavotā sējas dobītē. Substrātu samitrini jau pirms sējas. Sīkās sēklas neieroc dziļi; tās uzmanīgi piespied virsmai un turpmāko apbēršanu pielāgo paciņas norādei.",
+    "Gaismas prasība nav universāla. Piemēram, Benary sērijai Sylva norāda gaismu dīgšanai un 18–22 °C; tādēļ sēklas neatstāj zem biezas, gaismu aizturošas kārtas. Mon Amie sērijai selekcionārs norāda neapbērtas sēklas, bet gaismu dīgšanas sākumā — kā izvēles nosacījumu.",
+    "Sējumu uzturi vienmērīgi mitru ar saudzīgu laistīšanu. Sylva sērijai dīgšana aprakstīta ap 10–20 dienās; šo laiku nepārnes uz visām šķirnēm. Pēc sadīgšanas nodrošini gaismu un vēdināšanu, lai dēsti neizstīdzētu.",
+    "Pastāvīgajai vietai izvēlies humusu saturošu, mitrumu uzturošu augsni ar noteci. Saulē jāspēj nodrošināt mitrumu; karstā, ātri izkalstošā dobē noder pusēna. Dēstus pārstādi, kad tie izveidojuši sakņu kamoliņu, atstājot aptuveni 15–25 cm vai šķirnei norādīto attālumu.",
+    "Rudenī stādi pietiekami agri, lai augi pirms augsnes sasalšanas iesakņotos. Pavasarī iegādātus ziedošus podaugus neizliec no siltām telpām tieši salā: novērtē, vai tie jau pieradināti āra apstākļiem, un seko prognozei."
   ],
   "care": [
-    "Uzturi augsni mitru, īpaši sausās un karstās vasarās — neaizmirstulīte necieš izkaltušu zemi un karstumā ātri novīst, tāpēc laisti regulāri, bet bez pārliešanas.",
-    "Stādi to vēsākā, daļēji ēnainā vietā; pārāk saulainā un sutīgā stūrī augs ne tikai cieš, bet arī biežāk slimo ar miltrasu.",
-    "Mēslojums īpaši nav vajadzīgs — pietiek ar labu, humusā bagātu dārza zemi vai nedaudz komposta; pārmērīga mēslošana dod kuplas lapas, bet mazāk ziedu.",
-    "Ja negribi, lai augs izsējas par plašu, daļu noziedējušos ziedu nogriez pirms sēklu nobriešanas; ja vēlies pašizsēju, atstāj ziedkātus mierā.",
-    "Pēc ziedēšanas, kad augs sāk kalst un izskatās nekārtīgs, vecos eksemplārus var izravēt — vietā jau parasti gaida jaunie pašizsējas dīgsti."
+    "Mitrums ir svarīgāks par biežu papildmēslošanu. Pārbaudi augsni pie saknēm un laisti, kad tā sāk izžūt; podā pārliecinies, ka ūdens var aizplūst. Saule pati par sevi nav slikta vieta, ja augsnei pietiek mitruma.",
+    "Dobē uzturi augsnes auglību ar nobriedušu kompostu. Ja nepieciešama papildu mēslošana, ievēro izvēlētā līdzekļa un substrāta norādes; profesionālo stādu audzētavu mēslojuma koncentrācijas nepārņem kā mājas dārza recepti.",
+    "Izlem, cik daudz pašizsējas vēlies. Lai to mazinātu, noziedējušos ziedkātus nogriez pirms sēklu nobriešanas. Lai atjaunotu stādījumu, atstāj dažus veselus augus sēklām un vēlāk izretini pārāk blīvi sadīgušos.",
+    "Pēc ziedēšanas ceri var zaudēt dekorativitāti. Novecojušos augus aizvāc, kad esi izlēmis par sēklu atstāšanu; pirms ravēšanas apskati, vai starp tiem nav jauno rozešu. Pašizsēja nenozīmē, ka nākamgad augi būs tieši tajā pašā vietā vai daudzumā.",
+    "Neļauj stādījumam kļūt par blīvu, nevēdināmu paklāju. Izņem liekos dīgstus un apskati lapas; savlaicīga retināšana ir vienkāršāka par vēlākas slimības ierobežošanu."
   ],
-  "winter": "Neaizmirstulīte Latvijā ir ziemcietīga un pārziemo atklātā laukā bez segšanas. Vasarā iesētie augi pārziemo lapu rozetes stadijā un zied nākamā gada pavasarī, pēc tam atstājot sēklas, no kurām izaug jauni augi. Īpaša ziemas aizsardzība nav vajadzīga, taču pliku, bezsniega ziemu gadījumā jaunos stādījumus var viegli apklāt ar lapām vai skuju zariem.",
+  "winter": "Dobē iesakņojusies Myosotis sylvatica parasti pārziemo ar lapu rozeti, taču rezultātu ietekmē šķirne, ziemas apstākļi un stādījuma vieta. Nav pamata visām Latvijas vietām solīt pārziemošanu bez zudumiem. Nepieļauj ilgstoši stāvošu ūdeni un neapber rozetes sirdi ar biezu, slapju materiālu. Vēlu iestādīti un podos atstāti augi jāvērtē atsevišķi. Nākamā pavasara augs var būt arī jauns sējenis, ne iepriekšējā cera turpinājums.",
   "problems": [
-    "Miltrasa — uz lapām parādās balts, miltains aplikums, īpaši siltā, sutīgā un par sausu vietā; palīdz vēsāka, gaišāka vieta ar labu gaisa kustību un slimo lapu aizvākšana.",
-    "Vīšana sausumā un karstā saulē — augs noliecas un dzeltē, ja zeme izkaltusi vai vieta pārāk saulaina; pārceļot to vēsākā, mitrākā stūrī, tas atgūstas.",
-    "Pārmērīga pašizsēja — laika gaitā neaizmirstulītes var izplatīties pa visu dobi; ja tas nav vēlams, daļu ziedu nogriez pirms sēklu nogatavošanās un liekos dīgstus izravē."
+    "Balts, miltains pārklājums uz lapām var liecināt par īsto miltrasu. Samazini sausuma stresu un stādījuma sabiezinājumu, aizvāc stipri skartās daļas. Slimība nav pierādījums, ka vainīga tikai pārāk saulaina vieta; nepieciešams vērtēt pazīmes un augšanas apstākļus kopā.",
+    "Vīšana: vispirms pārbaudi augsni. Sausam sakņu kamolam palīdz rūpīga aplaistīšana un aizsardzība no karstuma. Ja augsne jau slapja vai saknes bojātas, vēl vairāk ūdens nepalīdzēs. Nepārstādi karstumā novājinātu augu tikai tāpēc, ka tas vienreiz savītis.",
+    "Lapas dzeltē: iespējama novecošana pēc ziedēšanas, mitruma problēma vai barības vielu pieejamības traucējumi. Mon Amie audzēšanas norādēs īpaši minēts hlorozes risks pārāk augstā substrāta pH; mēslojuma devu nepalielini, pirms nav saprasts iemesls.",
+    "Pārāk daudz sējeņu: liekos izravē vai pārstādi, kamēr tie mazi, un nākamajā reizē atstāj mazāk sēklu nesošu augu. Pašizsējas ierobežošana ir kopšanas darbs, ne slimības ārstēšana."
   ],
-  "folklore": "Neaizmirstulīte jau pašā nosaukumā nes vēstījumu — to gan latviski, gan citās valodās saista ar atmiņu, uzticību un domu \"neaizmirsti mani\", tāpēc tā nereti tika dāvināta kā piemiņas un mīlestības zieds. Ziedu augus pēc biodinamiskās tradīcijas saista ar ziedu jeb gaisa dienām, taču to der uztvert kā jauku dārza ritmu, ne ražas garantiju.",
   "faq": [
     {
-      "q": "Kad sēt neaizmirstulītes?",
-      "a": "Sēklas sēj vasarā, no jūnija līdz jūlijam. Pirmajā gadā augs izveido tikai lapu rozeti, pārziemo un zied tikai nākamā pavasarī (maijā–jūnijā). Tāpēc neaizmirstulīte faktiski ir divgadīga, nevis īsta vienas sezonas puķe."
+      "q": "Vai neaizmirstulīte ir viengadīga vai divgadīga?",
+      "a": "Myosotis sylvatica ir īsmūžīga daudzgadīga suga, kuru bieži audzē divgadīgā ciklā. Atsevišķas sērijas, piemēram, Mon Amie, var ziedēt sējas gadā bez aukstuma perioda. Tāpēc ar uzrakstu neaizmirstulīte vien nepietiek, lai noteiktu sējas plānu."
     },
     {
-      "q": "Vai neaizmirstulītes katru gadu jāsēj no jauna?",
-      "a": "Nav obligāti. Pēc ziedēšanas augs nobriedina sēklas un izsējas pats, tāpēc dobē neaizmirstulītes parasti atgriežas gadu no gada bez papildu sēšanas. Ja gribi tās konkrētā vietā vai noteiktā daudzumā, vari sēt arī apzināti vasarā."
+      "q": "Vai neaizmirstulīšu sēklām vajag gaismu vai tumsu?",
+      "a": "Skaties konkrēto šķirni. Sylva audzētājs prasa gaismu; Mon Amie audzētājs norāda, ka gaisma dīgšanas sākumā nav obligāta, bet sēklas neapber. Gaismas nepieciešamība un sēklas apbēršana ir divi dažādi jautājumi, tāpēc universāls padoms visas sēt tumsā būtu kļūdains."
     },
     {
-      "q": "Kāpēc manas neaizmirstulītes vīst un slimo?",
-      "a": "Visbiežāk vainojama pārāk saulaina, karsta un sausa vieta. Neaizmirstulīte mīl pusēnu un mitru augsni; karstumā un sausumā tā vīst, bet sutīgā vietā uz lapām var parādīties miltrasa. Pārceļ to vēsākā, daļēji ēnainā stūrī un uzturi augsni vienmērīgi mitru."
+      "q": "Vai jāsēj katru gadu no jauna?",
+      "a": "Ne vienmēr: atstājot nogatavoties sēklām, bieži rodas pašizsēja. Tās daudzums un vieta nav paredzami. Konkrētai dobes kompozīcijai dēstus labāk izaudzēt vai pārstādīt apzināti."
+    },
+    {
+      "q": "Vai neaizmirstulītes drīkst stādīt saulē?",
+      "a": "Jā, ja augsne neizkalst. Karstā vietā pēcpusdienas ēna palīdz saglabāt vēsāku un vienmērīgāk mitru sakņu zonu. Tā nav puķe, kurai der tikai dziļa ēna vai pastāvīgi slapja augsne."
+    },
+    {
+      "q": "Ko darīt pēc ziedēšanas?",
+      "a": "Ja pašizsēju nevēlies, nogriez ziedkātus pirms sēklu nobriešanas. Ja vēlies jaunus augus, dažus veselus cerus atstāj sēklām. Novecojušos augus pēc tam aizvāc un jaunos sējeņus izretini."
     }
   ],
   "related": [
@@ -63,5 +77,91 @@
     "tulpes",
     "narcises",
     "hiacintes"
-  ]
+  ],
+  "updatedAt": "2026-10-27",
+  "shortAnswer": "Myosotis sylvatica ir īsmūžīga daudzgadīga puķe, ko bieži audzē kā divgadīgu: sēj vasarā, ļauj izveidot rozeti un gaida ziedus nākamajā pavasarī. Tai der mitra, bet ūdeni caurlaidīga augsne saulē vai pusēnā. Sēklu apbēršanu un gaismas prasību pārbaudi konkrētās šķirnes instrukcijā.",
+  "lifeCycle": "Īsmūžīga daudzgadīga suga; dārzā bieži audzē divgadīgā ciklā. Dažas šķirņu sērijas var uzziedēt arī sējas gadā.",
+  "comparison": {
+    "heading": "Kuru neaizmirstulīti un audzēšanas ciklu izvēlēties?",
+    "items": [
+      {
+        "name": "Myosotis sylvatica",
+        "description": "Šī ceļveža suga: īsmūžīga daudzgadīga puķe, ko bieži sēj vasarā nākamā pavasara ziedēšanai. Tai piemērota mitra, ūdeni caurlaidīga dārza augsne."
+      },
+      {
+        "name": "Pirmajā gadā ziedošas sērijas",
+        "description": "Piemēram, Mon Amie ir Myosotis sylvatica sērija, kurai ziedu ierosmei nav vajadzīgs aukstuma periods. Tai jāseko atsevišķai audzēšanas instrukcijai."
+      },
+      {
+        "name": "Myosotis scorpioides",
+        "description": "Mitrāju un ūdenstilpju malu daudzgadīga suga. Tās kopšanu un vietas izvēli nevajag automātiski attiecināt uz dārza Myosotis sylvatica."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "label": "Latvijas Daba — meža neaizmirstule un tās pazīmes Latvijā",
+      "url": "https://www.latvijasdaba.lv/augi/myosotis-sylvatica-ehrh-ex-hoffm/"
+    },
+    {
+      "label": "RHS — Myosotis sylvatica dzīves cikls un audzēšana",
+      "url": "https://www.rhs.org.uk/plants/41558/myosotis-sylvatica/details"
+    },
+    {
+      "label": "NC State Extension — īsmūžīga ziemciete un pašizsēja",
+      "url": "https://plants.ces.ncsu.edu/plants/myosotis-sylvatica/"
+    },
+    {
+      "label": "Benary — Sylva sērijas sēja un gaismas prasība",
+      "url": "https://www.benary.com/products/myosotis-sylvatica-sylva"
+    },
+    {
+      "label": "PanAmerican Seed — Mon Amie dīgšana un ziedēšana",
+      "url": "https://www.panamseed.com/utility/CultureSheetPDF.aspx?pagename=culture.aspx&txtPHID=043504917&type=Per"
+    },
+    {
+      "label": "RHS — Myosotis scorpioides ūdenstilpju malām",
+      "url": "https://www.rhs.org.uk/plants/11292/myosotis-scorpioides/details"
+    },
+    {
+      "label": "RHS — īstās miltrasas pazīmes un ierobežošana",
+      "url": "https://www.rhs.org.uk/disease/powdery-mildews"
+    }
+  ],
+  "sectionSources": {
+    "intro": [
+      "https://www.latvijasdaba.lv/augi/myosotis-sylvatica-ehrh-ex-hoffm/",
+      "https://www.rhs.org.uk/plants/41558/myosotis-sylvatica/details",
+      "https://plants.ces.ncsu.edu/plants/myosotis-sylvatica/",
+      "https://www.panamseed.com/utility/CultureSheetPDF.aspx?pagename=culture.aspx&txtPHID=043504917&type=Per",
+      "https://www.rhs.org.uk/plants/11292/myosotis-scorpioides/details"
+    ],
+    "planting": [
+      "https://plants.ces.ncsu.edu/plants/myosotis-sylvatica/",
+      "https://www.benary.com/products/myosotis-sylvatica-sylva",
+      "https://www.panamseed.com/utility/CultureSheetPDF.aspx?pagename=culture.aspx&txtPHID=043504917&type=Per"
+    ],
+    "care": [
+      "https://www.rhs.org.uk/plants/41558/myosotis-sylvatica/details",
+      "https://plants.ces.ncsu.edu/plants/myosotis-sylvatica/",
+      "https://www.benary.com/products/myosotis-sylvatica-sylva",
+      "https://www.rhs.org.uk/disease/powdery-mildews"
+    ],
+    "winter": [
+      "https://www.rhs.org.uk/plants/41558/myosotis-sylvatica/details",
+      "https://plants.ces.ncsu.edu/plants/myosotis-sylvatica/",
+      "https://www.benary.com/products/myosotis-sylvatica-sylva"
+    ],
+    "problems": [
+      "https://www.rhs.org.uk/disease/powdery-mildews",
+      "https://plants.ces.ncsu.edu/plants/myosotis-sylvatica/",
+      "https://www.panamseed.com/utility/CultureSheetPDF.aspx?pagename=culture.aspx&txtPHID=043504917&type=Per"
+    ],
+    "comparison": [
+      "https://www.rhs.org.uk/plants/41558/myosotis-sylvatica/details",
+      "https://www.panamseed.com/utility/CultureSheetPDF.aspx?pagename=culture.aspx&txtPHID=043504917&type=Per",
+      "https://www.rhs.org.uk/plants/11292/myosotis-scorpioides/details",
+      "https://www.latvijasdaba.lv/augi/myosotis-sylvatica-ehrh-ex-hoffm/"
+    ]
+  }
 }

@@ -1,4 +1,4 @@
-import { ACTIVITY_KEYS, ACTIVITY_META, MONTHS_LV, type Crop } from "@/lib/planting-crops";
+import { ACTIVITY_KEYS, cropActivityMeta, MONTHS_LV, MONTHS_LV_FULL, type Crop } from "@/lib/planting-crops";
 
 const PCT = 100 / 12;
 
@@ -32,20 +32,21 @@ export function ActivityBar({ crop, currentMonth }: { crop: Crop; currentMonth: 
         const range = crop[k]!;
         const left = (range[0] - 1) * PCT;
         const width = (range[1] - range[0] + 1) * PCT;
-        const meta = ACTIVITY_META[k];
+        const meta = cropActivityMeta(crop, k);
+        const period = range[0] === range[1] ? MONTHS_LV_FULL[range[0] - 1] : `${MONTHS_LV_FULL[range[0] - 1]}–${MONTHS_LV_FULL[range[1] - 1]}`;
         return (
-          <div key={k} className="relative h-5 overflow-hidden rounded bg-background/40">
+          <div key={k} role="img" aria-label={`${meta.label}: ${period}`} title={`${meta.label}: ${period}`} className="relative h-5 overflow-hidden rounded bg-background/40">
             {/* current-month marker */}
-            <div
+            {currentMonth > 0 && <div
               className="absolute top-0 bottom-0 bg-secondary/15"
               style={{ left: `${(currentMonth - 1) * PCT}%`, width: `${PCT}%` }}
-            />
+            />}
             <div
               className="absolute top-0 bottom-0 flex items-center rounded px-1.5"
               style={{ left: `${left}%`, width: `${width}%`, backgroundColor: meta.color }}
             >
               <span className="truncate text-[10px] font-semibold" style={{ color: labelColor(meta.color) }}>
-                {crop.category === "pukes" && k === "harvest" ? "Zied" : meta.short}
+                {meta.short}
               </span>
             </div>
           </div>

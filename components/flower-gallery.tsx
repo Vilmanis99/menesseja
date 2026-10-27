@@ -2,31 +2,20 @@ import Image from "next/image";
 import { TrackedLink } from "@/components/tracked-link";
 import { contentImage } from "@/lib/content-images";
 
-export interface FlowerGalleryItem {
-  name: string;
-  latin?: string;
-  href: string;
-  imageId: string;
-}
-
-export function FlowerGallery({ items }: { items: FlowerGalleryItem[] }) {
-  return <section id="puku-atteli" className="mb-lg scroll-mt-24" aria-labelledby="flower-photos-title">
-    <h2 id="flower-photos-title" className="text-headline-md text-on-surface">Puķu nosaukumi un attēli</h2>
-    <p className="mt-sm max-w-3xl text-body-md text-on-surface-variant">{items.length} puķes attēlos, lai nosaukumu saistītu ar ziedu. Vienas sugas šķirnes var izskatīties atšķirīgi; atver ceļvedi, lai uzzinātu vairāk par audzēšanu.</p>
-    <div className="mt-md grid grid-cols-2 gap-sm sm:grid-cols-3 sm:gap-md lg:grid-cols-4">
-      {items.map((item) => {
-        const asset = contentImage(item.imageId);
-        return <figure key={item.href} className="overflow-hidden rounded-xl border border-outline-variant/15 bg-surface-container">
-          <TrackedLink href={item.href} source="flower-index" placement="photo" className="block hover:bg-surface-container-high">
-            <Image src={asset.src} alt={asset.alt} width={asset.width} height={asset.height} sizes="(max-width: 639px) 50vw, (max-width: 1023px) 33vw, 25vw" className="aspect-[4/3] w-full object-cover" />
-            <span className="block px-sm pt-sm text-title-md text-primary">{item.name} →</span>
-            {item.latin && <span className="block px-sm text-body-sm italic text-on-surface-variant">{item.latin}</span>}
-          </TrackedLink>
-          <figcaption className="px-sm pb-sm pt-1 text-label-sm text-on-surface-variant">
-            Foto: {asset.author} · <a href={asset.sourceUrl} className="underline">{asset.sourceName}</a> · <a href={asset.licenseUrl} className="underline">{asset.license}</a>
-          </figcaption>
-        </figure>;
-      })}
-    </div>
-  </section>;
+/** Server-rendered card; the full registry stays out of the search bundle. */
+export function FlowerPhotoCard({ name, latin, href, imageId, caption }: {
+  name: string; latin?: string; href: string; imageId: string; caption?: string;
+}) {
+  const asset = contentImage(imageId);
+  return <figure className="overflow-hidden rounded-xl border border-outline-variant/20 bg-surface-container">
+    <TrackedLink href={href} source="flower-index" placement="photo" className="block hover:bg-surface-container-high">
+      <Image src={asset.src} alt={asset.alt} width={asset.width} height={asset.height} sizes="(max-width: 639px) 100vw, (max-width: 1279px) 50vw, 33vw" className="aspect-[4/3] w-full bg-surface-container-lowest object-contain" />
+      <span className="block px-sm pt-sm text-title-md text-primary">{name} →</span>
+      {latin && <span className="block px-sm text-body-sm italic text-on-surface-variant">{latin}</span>}
+    </TrackedLink>
+    <figcaption className="space-y-2 px-sm pb-sm pt-2 text-on-surface-variant">
+      {caption && <p className="text-body-sm">{caption}</p>}
+      <p className="text-label-sm leading-relaxed">Foto: {asset.author} · <a href={asset.sourceUrl} className="underline underline-offset-2">{asset.sourceName}</a> · <a href={asset.licenseUrl} className="underline underline-offset-2">{asset.license}</a>{asset.changes ? `. ${asset.changes}` : ""}</p>
+    </figcaption>
+  </figure>;
 }

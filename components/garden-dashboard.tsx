@@ -156,10 +156,10 @@ export function GardenAreas() {
   }
 
   return (
-    <section id="mans-darzs">
+    <section>
       <div className="mb-sm flex items-center justify-between">
         <SectionLabel icon="nature_people" iconClassName="text-primary">
-          Mans dārzs
+          {hasExamples ? "Parauga augi" : "Tavi augi"}
         </SectionLabel>
         {hasExamples && (
           <button
