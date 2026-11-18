@@ -10,7 +10,7 @@ import { JsonLd } from "@/components/json-ld";
 import { CalendarExplorer } from "@/components/calendar-explorer";
 import { NewsletterSignup } from "@/components/newsletter-signup";
 import { newsletterConfigured } from "@/lib/brevo";
-import { moonForDate, moonPhasesForMonth } from "@/lib/moon";
+import { dailyPhaseName, moonForDate, moonPhasesForMonth } from "@/lib/moon";
 import { SeasonalLinks } from "@/components/seasonal-links";
 import { sowingDay, isRestDay, ELEMENT_META, PART_GENITIVE, type Element } from "@/lib/biodynamic";
 import { latviaNoon, latviaDateParts } from "@/lib/day-anchor";
@@ -18,7 +18,7 @@ import { cropPart } from "@/lib/crop-part";
 import { cropHref } from "@/lib/flowers";
 import { cropEmoji } from "@/lib/crop-visual";
 import { CROPS, MONTHS_LV_FULL, MONTHS_LV_GENITIVE } from "@/lib/planting-crops";
-import { MONTH_SLUGS, CALENDAR_YEARS, MONTH_TIPS, MONTHS_LV_LOCATIVE, canonical, SITE_NAME } from "@/lib/seo";
+import { MONTH_SLUGS, calendarYears, MONTH_TIPS, MONTHS_LV_LOCATIVE, canonical, SITE_NAME } from "@/lib/seo";
 
 // The month block below is dated, so the prerendered HTML must not go stale.
 export const revalidate = 3600;
@@ -47,6 +47,7 @@ function sowableThisMonth(element: Element, month: number) {
 export default function KalendarsPage() {
   const now = new Date();
   const { year, month, day } = latviaDateParts(now);
+  const years = calendarYears(now);
   const nameFull = MONTHS_LV_FULL[month - 1];
   const nameGen = MONTHS_LV_GENITIVE[month - 1];
   const nameLoc = MONTHS_LV_LOCATIVE[month - 1];
@@ -59,7 +60,10 @@ export default function KalendarsPage() {
   });
 
   const today = days.find((d) => d.day === day) ?? days[0];
-  const keyPhases = moonPhasesForMonth(year, month).filter((p) => p.frac === 0 || p.frac === 0.5);
+  const phases = moonPhasesForMonth(year, month);
+  const eventToday = phases.find((p) => latviaDateParts(p.date).day === day);
+  const phaseLabel = dailyPhaseName(today.moon, eventToday);
+  const keyPhases = phases.filter((p) => p.frac === 0 || p.frac === 0.5);
   const restDays = days.filter((d) => d.rest).map((d) => d.day);
 
   const byElement = ELEMENTS.map((element) => {
@@ -87,15 +91,15 @@ export default function KalendarsPage() {
 
       <PageHeader
         eyebrow="Senču gudrība · Maria Thun"
-        title={`Mēness kalendārs ${year}`}
+        title="Mēness kalendārs un sējas dienas"
         display
         subtitle={`${nameFull} ${year} · Mēness fāzes un sezonas darbi Latvijā`}
       />
 
       <CalendarNavigation year={year} month={month} overview />
 
-      <nav aria-label="Gada kalendāri" className="mb-lg flex flex-wrap gap-2">
-        {[year, ...(month >= 10 ? [year + 1] : [])].filter((y) => CALENDAR_YEARS.includes(y)).map((y) => (
+      <nav aria-label="Kalendāri un darbu plāni" className="mb-lg flex flex-wrap gap-2">
+        {[year, ...(month >= 10 ? [year + 1] : [])].filter((y) => years.includes(y)).map((y) => (
           <Link key={y} href={`/kalendars/${y}`} className="inline-flex min-h-11 items-center gap-1.5 rounded-full border border-primary/40 bg-primary-container/20 px-4 text-label-md font-semibold text-primary hover:bg-primary-container/40">
             <Icon name="calendar_month" size="18px" /> Mēness kalendārs {y} — viss gads
           </Link>
@@ -103,13 +107,16 @@ export default function KalendarsPage() {
         <Link href="/kalendars/istabas-augu-parstadisana" className="inline-flex min-h-11 items-center gap-1.5 rounded-full border border-outline-variant/30 px-4 text-label-md text-primary hover:bg-surface-container">
           <Icon name="potted_plant" size="18px" /> Istabas augu pārstādīšanas dienas
         </Link>
+        <Link href="/darza-darbi-sonedel" className="inline-flex min-h-11 items-center gap-1.5 rounded-full border border-outline-variant/30 px-4 text-label-md text-primary hover:bg-surface-container">
+          <Icon name="checklist" size="18px" /> Dārza darbi šonedēļ
+        </Link>
       </nav>
 
       <p className="mb-lg max-w-2xl text-body-lg text-on-surface-variant">
-        Šodien, {today.day}. {nameLoc}, ir {today.moon.name.toLowerCase()}.
-        Zemāk redzi {nameGen} jauno un pilno Mēnesi, biodinamiskās sakņu, lapu, ziedu un augļu dienas
-        un sezonai piemērotus augus. Interaktīvajā kalendārā vari atvērt jebkuru dienu vai izdrukāt mēnesi.
-        Darbu laiku pielāgo augsnes temperatūrai un salnām.
+        Šodien, {today.day}. {nameLoc}, ir {phaseLabel.toLowerCase()}.{" "}
+        <Link href="/meness" className="text-primary hover:underline">Šodienas Mēness apgaismojums un tuvākā fāžu maiņa</Link>.
+        {" "}Zemāk atradīsi {nameGen} jauna Mēness un pilnmēness laikus, sakņu, lapu, ziedu un augļu dienas
+        un sezonai piemērotus dārza darbus.
       </p>
 
       {/* Server-rendered substance: without this the page reached search engines
@@ -126,9 +133,8 @@ export default function KalendarsPage() {
               <p className="text-label-sm uppercase tracking-[0.15em] text-tertiary">
                 {today.day}. {nameGen}
               </p>
-              <p className="text-headline-sm text-on-surface">{today.moon.name}</p>
+              <p className="text-headline-sm text-on-surface">{phaseLabel}</p>
               <p className="mt-1 text-body-md text-on-surface-variant">
-                {today.moon.waxing ? "Augošs" : "Dilstošs"} Mēness ·{" "}
                 {PART_GENITIVE[today.sow.part]} diena
               </p>
               <p className="mt-xs text-body-md text-on-surface-variant">{today.sow.advice}</p>
@@ -136,7 +142,7 @@ export default function KalendarsPage() {
           </Card>
 
           <Card tone="low" elevated className="p-md">
-            <h3 className="mb-sm text-title-md text-on-surface">Mēneša atskaites punkti</h3>
+            <h3 className="mb-sm text-title-md text-on-surface">Jauns Mēness un pilnmēness {nameLoc}</h3>
             <ul className="space-y-1.5 text-body-md text-on-surface-variant">
               {keyPhases.map((p) => (
                 <li key={p.date.toISOString()} className="flex items-start gap-2">
@@ -178,7 +184,7 @@ export default function KalendarsPage() {
               </p>
               {crops.length > 0 && (
                 <p className="mt-xs text-body-md text-on-surface-variant">
-                  Ko sēt:{" "}
+                  Ko sēt vai stādīt:{" "}
                   {crops.map((c, i) => (
                     <span key={c.id}>
                       {i > 0 && ", "}
@@ -211,7 +217,7 @@ export default function KalendarsPage() {
       <section className="mb-lg">
         <h2 className="mb-sm text-headline-md text-on-surface">Visi mēneši</h2>
         <div className="space-y-1.5">
-          {CALENDAR_YEARS.map((y) => (
+          {years.map((y) => (
             <div key={y} className="flex flex-wrap items-center gap-1.5">
               <Link href={`/kalendars/${y}`} className="inline-flex min-h-8 w-14 shrink-0 items-center text-label-md font-semibold text-primary hover:underline">{y}.</Link>
               {MONTH_SLUGS.map((slug, i) => (

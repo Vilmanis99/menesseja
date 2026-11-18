@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-27",
+  "updatedAt": "2026-11-18",
   "sources": {
     "seeds": {
       "label": "RHS — sēklu ievākšana un glabāšana",
@@ -145,7 +145,8 @@
   "months": {
     "1": {
       "title": "Janvāris dārzā: pārbaudi krājumus un sagatavo izpildāmu plānu",
-      "description": "Janvāra dārza kalendārs: sēklu pārbaude, dobju un dēstu plānošana, glabātavas uzraudzība. Mēness fāzes Latvijas laikā un mēneša dienu tabula.",
+      "description": "Pārbaudi veco sēklu dīgtspēju un aprēķini dēstu sējas laiku pēc plānotās izstādīšanas.",
+      "showPhaseDatesInIntro": true,
       "image": {
         "id": "seklu-pacinas",
         "caption": "Pirms sēklu pirkuma pieraksti, ko audzēsi un cik vietas tam ir. Sugas un šķirnes prasības ir svarīgākas par košo paciņas priekšpusi."
@@ -2135,7 +2136,8 @@
     },
     "12": {
       "title": "Decembris dārzā: no sezonas pierakstiem līdz nākamā gada plānam",
-      "description": "Decembra dārza darbi Latvijā: sēklu krājumi, dobju plāns, glabātavas pārbaude un gatavošanās pavasarim. Mēness fāzes un katras dienas kalendārs.",
+      "description": "Pārskati sēklu krājumus un pārbaudi, kā glabājas dāliju gumi.",
+      "showPhaseDatesInIntro": true,
       "image": {
         "id": "seklu-pacinas",
         "caption": "Sēklu paciņu izvēle var būt plaša. Vispirms nosaki audzēšanas vietu, auga prasības un vajadzīgo daudzumu; paciņas attēls viens pats nav izvēles pamats."

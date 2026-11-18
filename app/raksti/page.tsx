@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
 import { JsonLd } from "@/components/json-ld";
 import { ArticleLibrary, type ArticleTeaser } from "@/components/article-library";
-import { getAllArticles } from "@/lib/articles";
+import { articlePhoto, getAllArticles } from "@/lib/articles";
 import { canonical, SITE_NAME, MONTH_SLUGS } from "@/lib/seo";
 import { latviaDateParts } from "@/lib/day-anchor";
 import { seasonalLinks, monthCalendarHref } from "@/lib/seasonal";
 import { KnowledgeHub } from "@/components/knowledge-hub";
-import { contentImage } from "@/lib/content-images";
 
 export const revalidate = 3600;
 
@@ -34,19 +33,10 @@ export default function RakstiIndex() {
     return seasonDifference || b.updatedAt.localeCompare(a.updatedAt) || a.title.localeCompare(b.title, "lv");
   });
   const teasers: ArticleTeaser[] = sorted.map(({ slug, title, excerpt, category, intent, readMinutes, updatedAt, seasonalMonths, primaryQuery, aliases, body }) => {
-    const imageUse = body.map((section) => section.image ?? section.images?.[0]).find(Boolean);
-    const asset = imageUse ? contentImage(imageUse.id) : undefined;
     return {
       slug, title, excerpt, category, intent, readMinutes, updatedAt, seasonalMonths,
       searchTerms: [primaryQuery, ...(aliases ?? [])],
-      ...(asset && imageUse ? {
-        photo: {
-          src: asset.src, width: asset.width, height: asset.height, alt: asset.alt,
-          author: asset.author, sourceName: asset.sourceName, sourceUrl: asset.sourceUrl,
-          license: asset.license, licenseUrl: asset.licenseUrl, changes: asset.changes,
-          caption: imageUse.caption,
-        },
-      } : {}),
+      photo: articlePhoto(body),
     };
   });
   const featuredSlugs = [...new Set([

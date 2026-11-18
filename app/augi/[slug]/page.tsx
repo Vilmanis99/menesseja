@@ -22,8 +22,7 @@ import { ELEMENT_META, PART_GENITIVE } from "@/lib/biodynamic";
 import { SOIL_TEMP_MIN } from "@/lib/sowing-thresholds";
 import { goodCompanions, badCompanions } from "@/lib/companions";
 import { pestsForCrop } from "@/lib/crop-pests";
-import { canonical, SITE_NAME, MONTHS_LV_LOCATIVE, og } from "@/lib/seo";
-import { DATA_REVIEWED } from "@/lib/sources";
+import { canonical, SITE_NAME, MONTH_SLUGS, MONTHS_LV_LOCATIVE, og } from "@/lib/seo";
 import { getCropContent } from "@/lib/crop-content";
 import { getAllArticles } from "@/lib/articles";
 import { monthCalendarHref } from "@/lib/seasonal";
@@ -54,15 +53,16 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const crop = CROPS.find((c) => c.id === slug);
   if (!crop) return {};
+  const content = getCropContent(slug);
   const sow = rangeText(crop.sowOutdoors ?? crop.sowIndoors);
   const action = crop.outdoorAction === "plant" ? "stādīt" : "sēt";
-  const title = crop.id === "rediisi"
-    ? "Kad sēt redīsus un kā tos audzēt Latvijā"
-    : crop.category === "pukes" ? `${crop.name} — audzēšana, ziedēšana un kopšana` : `${crop.name} — kad ${crop.outdoorAction === "plant" ? "stādīt" : "sēt, stādīt"} un novākt Latvijā`;
-  const description = crop.id === "rediisi"
-    ? "Kad sēt redīsus pavasarī un vasaras otrajā pusē, cik dziļi sēt, kā laistīt un ko darīt, ja neveidojas sakne. Praktiski padomi Latvijai."
-    : crop.category === "pukes" ? `${crop.name}: sēja, stādīšana, ziedēšana un kopšana. Kā izvēlēties piemērotu vietu un pārbaudīt šķirnes ziemcietību.` : (`${crop.name}: kad ${action}${sow ? ` (${sow})` : ""} un novākt Latvijas klimatam, ` +
-      `labākās Mēness dienas un kaimiņaugi. ${crop.note ?? ""}`).trim();
+  const isFlower = crop.category === "pukes";
+  const title = content?.title ?? (isFlower
+    ? `${crop.name} — audzēšana, ziedēšana un kopšana`
+    : `${crop.name} — kad ${crop.outdoorAction === "plant" ? "stādīt" : "sēt, stādīt"} un novākt Latvijā`);
+  const description = content?.description ?? (isFlower
+    ? `${crop.name}: sēja, stādīšana, ziedēšana un kopšana. Kā izvēlēties piemērotu vietu un pārbaudīt šķirnes ziemcietību.`
+    : `${crop.name}: kad ${action}${sow ? ` (${sow})` : ""} un novākt Latvijas klimatam, labākās Mēness dienas un kaimiņaugi. ${crop.note ?? ""}`.trim());
   return {
     title,
     description,
@@ -119,10 +119,10 @@ export default async function CropPage({ params }: { params: Promise<{ slug: str
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: `${crop.name} — kad ${action} Latvijā`,
+    headline: content?.title ?? `${crop.name} — kad ${action} Latvijā`,
     about: crop.name,
     inLanguage: "lv",
-    dateModified: content?.updatedAt ?? `${DATA_REVIEWED}-01`,
+    dateModified: content?.updatedAt,
     isPartOf: { "@type": "WebSite", name: SITE_NAME, url: canonical("/") },
     publisher: { "@type": "Organization", name: SITE_NAME, url: canonical("/") },
     author: { "@type": "Organization", name: SITE_NAME, url: canonical("/") },
@@ -198,7 +198,7 @@ export default async function CropPage({ params }: { params: Promise<{ slug: str
             <p className="text-label-sm uppercase tracking-[0.2em] text-tertiary">{category?.label}</p>
             <h1 className="text-headline-lg-mobile text-primary md:text-display-lg">{crop.name}</h1>
             <p className="mt-1 max-w-[36rem] text-body-lg text-on-surface-variant">
-              Praktiska audzēšanas rokasgrāmata Latvijas apstākļiem
+              {content?.description ?? "Praktiska audzēšanas rokasgrāmata Latvijas apstākļiem"}
             </p>
           </div>
         </header>
@@ -263,12 +263,16 @@ export default async function CropPage({ params }: { params: Promise<{ slug: str
         </ul>
         {sowMonths.length > 0 && (
           <p className="mt-md flex flex-wrap items-center gap-x-2 gap-y-1 text-label-md">
-            <span className="text-on-surface-variant">Mēness kalendārs:</span>
-            {sowMonths.map((m) => (
-              <Link key={m} href={monthCalendarHref(m)} className="inline-flex min-h-11 items-center capitalize text-primary hover:underline">
-                {MONTHS_LV_FULL[m - 1]}
-              </Link>
-            ))}
+            <span className="text-on-surface-variant">Mēnešu ceļveži</span>
+            {sowMonths.map((m) => {
+              const calendarHref = monthCalendarHref(m);
+              const href = calendarHref === "/kalendars" ? `/ko-set/${MONTH_SLUGS[m - 1]}` : calendarHref;
+              return (
+                <Link key={m} href={href} className="inline-flex min-h-11 items-center capitalize text-primary hover:underline">
+                  {MONTHS_LV_FULL[m - 1]}
+                </Link>
+              );
+            })}
           </p>
         )}
         <DataNote variant="planting" withSources className="mt-md" />
@@ -344,7 +348,7 @@ export default async function CropPage({ params }: { params: Promise<{ slug: str
       {content && (
         <section className="article-reading-surface -mx-2 mb-lg p-4 sm:mx-0 sm:p-lg" aria-labelledby="growing-guide-heading">
           <p className="text-label-sm uppercase tracking-[0.18em] text-tertiary">{isFlower ? "No sējas līdz ziediem" : "No sējas līdz ražai"}</p>
-          <h2 id="growing-guide-heading" className="mb-md text-headline-lg-mobile text-on-surface">{crop.name} audzēšana</h2>
+          <h2 id="growing-guide-heading" className="mb-md text-headline-lg-mobile text-on-surface">{crop.name} — audzēšanas ceļvedis</h2>
           {content.intro && (
             <div className="mb-lg space-y-3 text-body-lg leading-relaxed text-on-surface-variant">
               <TextParagraphs text={content.intro} />

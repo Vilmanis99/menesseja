@@ -15,17 +15,14 @@ import { monthPlan } from "@/lib/month-plan";
 import { repottingDays, dayRanges } from "@/lib/repotting";
 import { contentImage } from "@/lib/content-images";
 import { MONTHS_LV_FULL } from "@/lib/planting-crops";
-import { MONTH_SLUGS, CALENDAR_YEARS, canonical, SITE_NAME, og } from "@/lib/seo";
+import { MONTH_SLUGS, calendarYears, calendarYearFromSlug, canonical, SITE_NAME, og } from "@/lib/seo";
 
-export const dynamicParams = false;
+export const dynamic = "force-static";
+export const dynamicParams = true;
+export const revalidate = 3600;
 
 export function generateStaticParams() {
-  return CALENDAR_YEARS.map((year) => ({ year: String(year) }));
-}
-
-function parseYear(value: string): number | null {
-  const year = Number(value);
-  return CALENDAR_YEARS.includes(year) ? year : null;
+  return calendarYears().map((year) => ({ year: String(year) }));
 }
 
 const DATE_FMT = new Intl.DateTimeFormat("lv-LV", { day: "numeric", month: "long", timeZone: "Europe/Riga" });
@@ -48,7 +45,7 @@ function yearPhases(year: number) {
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ year: string }> }): Promise<Metadata> {
-  const year = parseYear((await params).year);
+  const year = calendarYearFromSlug((await params).year);
   if (!year) return {};
   const title = `Mēness kalendārs ${year} — pilnmēness, fāzes un dārza darbi Latvijā`;
   const description = `${year}. gada Mēness kalendārs Latvijai: visi pilnmēness un jauna Mēness datumi Latvijas laikā, katra mēneša dārza darbi un saites uz sējas dienām.`;
@@ -61,13 +58,14 @@ export async function generateMetadata({ params }: { params: Promise<{ year: str
 }
 
 export default async function YearCalendarPage({ params }: { params: Promise<{ year: string }> }) {
-  const year = parseYear((await params).year);
+  const year = calendarYearFromSlug((await params).year);
   if (!year) notFound();
   const months = yearPhases(year);
   const fullMoons = months.flatMap((m) => m.full);
   const newMoons = months.flatMap((m) => m.new);
-  const prevYear = CALENDAR_YEARS.includes(year - 1) ? year - 1 : null;
-  const nextYear = CALENDAR_YEARS.includes(year + 1) ? year + 1 : null;
+  const years = calendarYears();
+  const prevYear = years.includes(year - 1) ? year - 1 : null;
+  const nextYear = years.includes(year + 1) ? year + 1 : null;
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -158,11 +156,11 @@ export default async function YearCalendarPage({ params }: { params: Promise<{ y
                   {m.name} {year}
                   <Icon name="arrow_forward" size="18px" className="print:hidden" />
                 </Link>
-                <ul className="mt-2 flex flex-wrap gap-x-3 gap-y-1 text-label-md text-on-surface-variant">
+                <ul className="mt-2 grid gap-1 text-label-md text-on-surface-variant">
                   {m.phases.map((p) => (
                     <li key={p.date.toISOString()} className="inline-flex items-center gap-1">
-                      <MoonPhase phase={p.frac} size={18} glow={false} idPrefix={`year-${year}-${p.date.getTime()}`} />
-                      {DATE_FMT.format(p.date)}
+                      <span aria-hidden="true"><MoonPhase phase={p.frac} size={18} glow={false} idPrefix={`year-${year}-${p.date.getTime()}`} /></span>
+                      {p.name} · {DATE_FMT.format(p.date)}
                     </li>
                   ))}
                 </ul>

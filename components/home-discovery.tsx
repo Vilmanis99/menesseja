@@ -5,16 +5,16 @@ import { calendarGuide } from "@/lib/calendar-guides";
 import { contentImage } from "@/lib/content-images";
 import { latviaDateParts } from "@/lib/day-anchor";
 import { monthPlan } from "@/lib/month-plan";
+import { MONTHS_LV_FULL } from "@/lib/planting-crops";
 import { adjacentMonth } from "@/lib/seasonal";
 import { MONTHS_LV_LOCATIVE } from "@/lib/seo";
 
 /** Public, server-rendered starting points alongside the personal garden. */
 export function HomeDiscovery({ date }: { date: Date }) {
   const { year, month } = latviaDateParts(date);
-  const current = adjacentMonth(year, month, 0);
-  const next = adjacentMonth(year, month, 1);
+  const current = adjacentMonth(year, month, 0, date);
+  const upcoming = [1, 2, 3].map((offset) => adjacentMonth(year, month, offset, date));
   const guideHref = current.href.startsWith("/kalendars/") ? `${current.href}#menesa-darbi` : current.href;
-  const nextHref = next.href.startsWith("/kalendars/") ? `${next.href}#menesa-darbi` : next.href;
   const plan = monthPlan(month);
   const guide = calendarGuide(month);
   const asset = contentImage(guide.image.id);
@@ -50,10 +50,19 @@ export function HomeDiscovery({ date }: { date: Date }) {
               <TrackedLink href={guideHref} source="home" placement="season-feature" className="inline-flex min-h-11 items-center justify-center gap-2 rounded-lg bg-primary px-md py-sm text-label-md font-semibold text-on-primary hover:brightness-110">
                 Skatīt mēneša darbus <Icon name="arrow_forward" size="18px" />
               </TrackedLink>
-              <TrackedLink href={nextHref} source="home" placement="next-month" className="inline-flex min-h-11 items-center gap-1 text-body-md text-primary underline underline-offset-4">
-                Plāns nākamajam mēnesim
-              </TrackedLink>
             </div>
+            <nav aria-labelledby="upcoming-calendars" className="mt-md">
+              <h3 id="upcoming-calendars" className="text-title-md text-on-surface">Nākamo trīs mēnešu kalendāri</h3>
+              <ul className="flex flex-wrap gap-x-md">
+                {upcoming.map((target, index) => (
+                  <li key={target.href}>
+                    <TrackedLink href={target.href} source="home" placement={index === 0 ? "next-month" : "upcoming-month"} className="inline-flex min-h-11 items-center text-body-md capitalize text-primary underline underline-offset-4">
+                      {MONTHS_LV_FULL[target.month - 1]} {target.year}
+                    </TrackedLink>
+                  </li>
+                ))}
+              </ul>
+            </nav>
           </div>
           <figure className="border-t border-outline-variant/20 lg:border-l lg:border-t-0">
             <Image src={asset.src} alt={asset.alt} width={asset.width} height={asset.height} sizes="(min-width: 1024px) 38vw, (min-width: 768px) calc(100vw - 352px), calc(100vw - 48px)" priority className="aspect-[3/2] w-full object-contain bg-surface-container" />

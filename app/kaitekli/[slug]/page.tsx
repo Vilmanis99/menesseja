@@ -9,7 +9,6 @@ import { getRecipe } from "@/lib/recipes";
 import { cropForAffect } from "@/lib/crop-pests";
 import { cropHref } from "@/lib/flowers";
 import { canonical, SITE_NAME, og } from "@/lib/seo";
-import { DATA_REVIEWED } from "@/lib/sources";
 import { ContentFigure } from "@/components/content-figure";
 import { problemImage } from "@/lib/problem-images";
 import { contentImage } from "@/lib/content-images";
@@ -54,7 +53,7 @@ export default async function ProblemPage({ params }: { params: Promise<{ slug: 
     about: p.name,
     ...(identificationImage ? { image: canonical(contentImage(identificationImage.id).src) } : p.image ? { image: canonical(p.image.src) } : {}),
     inLanguage: "lv",
-    dateModified: p.updatedAt ?? `${DATA_REVIEWED}-01`,
+    dateModified: p.updatedAt,
     isPartOf: { "@type": "WebSite", name: SITE_NAME, url: canonical("/") },
     publisher: { "@type": "Organization", name: SITE_NAME, url: canonical("/") },
     author: { "@type": "Organization", name: SITE_NAME, url: canonical("/") },

@@ -8,7 +8,7 @@ import { ContentFigure } from "@/components/content-figure";
 import { ContentTable } from "@/components/content-table";
 import { HydrangeaPruningDiagram } from "@/components/hydrangea-pruning-diagram";
 import { GreenhouseWinterDiagram } from "@/components/greenhouse-winter-diagram";
-import { getArticle, getRelatedArticles, articleSlugs, articleFaq, headingSlug } from "@/lib/articles";
+import { getArticle, getRelatedArticles, articleSlugs, articleFaq, articlePhoto, headingSlug } from "@/lib/articles";
 import { NewsletterSignup } from "@/components/newsletter-signup";
 import { newsletterConfigured } from "@/lib/brevo";
 import { ArticleEngagement } from "@/components/article-engagement";
@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title: a.seoTitle ?? a.title,
     description: a.excerpt,
     alternates: { canonical: canonical(`/raksti/${a.slug}`) },
-    openGraph: og({ path: `/raksti/${a.slug}`, title: a.seoTitle ?? a.title, description: a.excerpt, image: `/raksti/${a.slug}/opengraph-image` }),
+    openGraph: og({ path: `/raksti/${a.slug}`, title: a.seoTitle ?? a.title, description: a.excerpt, image: articlePhoto(a.body) ?? `/raksti/${a.slug}/opengraph-image` }),
   };
 }
 
@@ -39,12 +39,23 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
   if (!a) notFound();
   const isMoonTopic = ["Pamati", "Biodinamika"].includes(a.category);
   const related = getRelatedArticles(a);
+  const photo = articlePhoto(a.body);
 
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: a.title,
     description: a.excerpt,
+    image: photo && {
+      "@type": "ImageObject",
+      url: canonical(photo.src),
+      contentUrl: canonical(photo.src),
+      caption: photo.caption,
+      width: photo.width,
+      height: photo.height,
+      creditText: `${photo.author} · ${photo.sourceName}`,
+      license: photo.licenseUrl,
+    },
     inLanguage: "lv",
     datePublished: a.publishedAt,
     dateModified: a.updatedAt,

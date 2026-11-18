@@ -1,68 +1,146 @@
 {
   "slug": "begonijas",
   "name": "Begonijas",
-  "latin": "Begonia",
-  "image": { "id": "begonijas", "caption": "Bumbuļbegonijas zieds. Bumbuļus rudenī izrok un ziemu glabā vēsā, sausā vietā." },
+  "latin": "Begonia × tuberhybrida un Begonia Semperflorens Cultorum Group",
+  "image": {
+    "id": "begonijas",
+    "caption": "Bumbuļbegonijas zieds. Bumbuļus rudenī izrok un ziemu glabā vēsā, sausā vietā."
+  },
   "emoji": "🌺",
   "type": "viengadiga",
-  "tagline": "Ēnaino dobju un balkonu krāšņākā puķe, kas zied no vasaras sākuma līdz pat salnām.",
-  "bloom": "Jūnijs–septembris",
+  "tagline": "Bumbuļbegonijas un leduspuķes dobēm, podiem un balkonu kastēm.",
+  "bloom": "Vasarā līdz rudens salnām",
   "bloomMonths": [
     6,
     7,
     8,
     9
   ],
-  "height": "20–40 cm",
-  "sun": "Pusēna",
+  "height": "Atkarīgs no šķirnes un auguma formas",
+  "sun": "Gaiša pusēna",
   "hardy": false,
   "difficulty": "vidēji",
-  "plantWhen": "Bumbuļus dīdzina mājās marts–aprīlis, laukā stāda pēc salnām maija beigās.",
+  "plantWhen": "Bumbuļus sāk diedzēt telpās martā vai aprīlī. Norūdītus stādus izstāda pēc salnu riska beigām.",
   "moonPhase": "augošs",
   "moonElement": "ziedi",
-  "moonText": "Pēc biodinamikas tradīcijas (Marija Tūna) puķes sēj un kopj ziedu jeb gaisa dienās — kad Mēness Dvīņos, Svaros vai Ūdensvīrā —, un virszemes daļas labāk stāda augošā Mēnesī. Tomēr atceries: tā ir tradīcija, ne garantija, un siltums, augsne un laikapstākļi begonijai ir daudz svarīgāki par Mēness dienu.",
+  "moonText": "Biodinamiskajā tradīcijā begonijas kā ziedu augus saista ar ziedu dienām. Pirms izstādīšanas pārbaudi nakts temperatūras prognozi savā dārzā.",
   "intro": [
-    "Begonijas ir viena no retajām puķēm, kas patiesi mīl ēnu un pusēnu — tieši tur, kur lielākā daļa vasaras puķu kļūst gareni un izstīdz, begonija zied bagātīgi un nepārtraukti. Tāpēc tā ir ideāla izvēle ēnainām dobēm zem kokiem, ziemeļu pusē pie mājas sienas un balkona kastēm, kur saule ielūkojas vien no rīta vai vakara pusē. Latvijā visbiežāk audzē bumbuļbegonijas (Begonia × tuberhybrida) ar lielajiem, rožu vai neļķu līdzīgajiem ziediem, kā arī sīkziedu pastāvīgi ziedošās begonijas (Begonia semperflorens) dobju malām un paklājiem.",
-    "Svarīgākais, kas jāzina iesācējam: begonija Latvijā NEPĀRZIEMO atklātā laukā. Tā ir izteikti siltummīļa puķe un iet bojā jau pie pirmās vieglās salnas. Bumbuļbegonijas bumbuļus rudenī izrok un glabā vēsā, bezsala telpā līdz nākamajam pavasarim — tad tos vēlreiz var izmantot. Pastāvīgi ziedošās begonijas parasti audzē kā viengadīgas puķes un pavasarī pērk no jauna, lai gan to var arī ievietot podā un pārziemot mājās uz palodzes."
+    "Dobes malai noder kompakta leduspuķe ar sīkiem ziediem. Nokarenam podam vai kastei var izvēlēties nokarenas bumbuļbegonijas šķirni. Pērkot saglabā etiķeti, lai rudenī zinātu, kā sagatavot tieši šo augu ziemai."
   ],
   "planting": [
-    "Bumbuļus dīdzini jau marta beigās–aprīlī: ieliec tos podiņos ar mitru augsni ar ieliekto (cauruma) pusi uz augšu, viegli apber un turi siltā, gaišā vietā +18…+20 °C.",
-    "Laukā vai balkona kastē stādus pārvieto tikai pēc pēdējās salnas — Latvijā tās ir maija beigas (Zemgalē ap 15. maiju, Vidzemē un Latgalē līdz pat maija beigām). Pirms tam stādus pāris dienas norūdi svaigā gaisā.",
-    "Stādu atstatums dobē 20–25 cm, sīkziedu pastāvīgi ziedošajām begonijām pietiek ar 15–20 cm. Stādīšanas dziļumu saglabā tādu pašu, kāds bija podā — bumbuli neapber pārāk dziļi.",
-    "Izvēlies pusēnu vai izkliedētu ēnu un irdenu, humusbagātu, mitrumu turošu, bet labi drenētu augsni. Smagā, mitrā augsnē bumbuļi viegli pūst.",
-    "Balkona kastēs un podos noteikti gādā par drenāžas caurumiem un kārtīgu kvalitatīvu puķu substrātu — begonija podos jūtas lieliski."
+    "Bumbuļbegonijas martā vai aprīlī sāc diedzēt telpās ap +18 °C. Bumbuli sekli ieguldi viegli mitrā substrātā ar iedobi uz augšu. Laistot sargā iedobi no ūdens uzkrāšanās.",
+    "Leduspuķi stādi kā apsakņotu stādu dobē vai podā ar noteces caurumiem. Atstatumu izvēlies pēc šķirnes paredzētā platuma.",
+    "Abu grupu stādus pakāpeniski pieradini pie āra gaismas un vēja. Izstādi, kad augsne sasilusi un vietējā prognozē vairs nav salnu. Bumbuļbegonijām izvēlies no stipra vēja pasargātu vietu ar izkliedētu gaismu."
   ],
   "care": [
-    "Laisti regulāri, lai augsne ir vienmērīgi mitra, bet ne slapja. Lej pie saknes, ne uz lapām un ziediem — uz mitrām lapām viegli parādās pelēkā puve.",
-    "No jūnija līdz augustam ik pa 2 nedēļām pamēslo ar puķu mēslojumu, kurā ir vairāk kālija un fosfora nekā slāpekļa — tas dod bagātīgu ziedēšanu, nevis tikai lapas.",
-    "Lielo ziedu bumbuļbegonijām karstā laikā var noderēt neliels atbalsta mietiņš, jo smagie ziedi un trauslie kāti viegli lūst.",
-    "Regulāri izlauz nokaltušos ziedus un bojātās lapas — tas pagarina ziedēšanu un mazina puves risku.",
-    "Karstās, sausās dienās begonija labprāt aug vēsākā, vējainā vietā; pārāk saulainā vietā lapas apdeg un kļūst brūnas malās.",
-    "Podu un balkona begonijas vasarā žūst ātrāk — karstā laikā tās var nākties laistīt katru dienu."
+    "Pārbaudi mitrumu ar pirkstu. Kad poda substrāta virskārta nedaudz apžuvusi, aplaisti pie saknēm un ļauj liekajam ūdenim iztecēt. Zem jumta piekārtam grozam lietus var netikt klāt.",
+    "Augšanas un ziedēšanas laikā podā audzētu begoniju papildmēslo atbilstoši mēslojuma norādēm. Bumbuļbegonijām, kuru lapas rudenī sāk dzeltēt, pārtrauc mēslošanu un pakāpeniski samazini laistīšanu.",
+    "Lielziedu bumbuļbegonijām balsti smagos dzinumus un izvēlies aizvēju. Lapas un stublāji ir trausli."
   ],
-  "winter": "Begonija Latvijā atklātā laukā nepārziemo. Bumbuļbegonijas izrok rudenī, pirms pirmajām salnām (iekšzemē septembra beigās, piekrastē ap oktobra vidu) vai tūlīt pēc tam, kad pirmā viegla salna nokaltējusi virszemes daļu. Stublājus nogriez, bumbuļus ļauj dažas dienas apžūt, notīri zemi un glabā kastē ar sausu kūdru vai smiltīm vēsā, bezsala telpā +5…+10 °C (piemēram, pagrabā). Pavasarī tos no jauna dīdzina. Pastāvīgi ziedošās begonijas parasti audzē kā viengadīgas un nākampavasar pērk no jauna, vai arī ieved podā istabā uz gaišas palodzes.",
+  "winter": "Bumbuļbegoniju izcel, pirms sals sasniedz bumbuli. Ja pods vēl ārā un naktī sola salnu, ienes to zem jumta vietā bez sala. Apžāvē izceltos bumbuļus telpā prom no tiešas saules. Kad stublāju atlikumi ir sausi un viegli atdalās, uzmanīgi notīri zemi.\n\nNovembrī un decembrī pa laikam pārbaudi glabātavu. Izņem mīkstos vai pūstošos bumbuļus. Telpas temperatūru pārbaudi arī aukstākajās naktīs, īpaši neapkurinātā šķūnī vai uz slēgta balkona.",
   "problems": [
-    "Pelēkā puve (Botrytis) — uz lapām un ziediem parādās pelēks, pūkains aplikums mitrā, vēsā laikā. Laisti pie saknes, neturi augus pārāk blīvi un noņem bojātās daļas.",
-    "Bumbuļu puve — pārāk slapjā, smagā augsnē vai pārlaistot bumbulis sapūst. Gādā par drenāžu un nepārlej.",
-    "Salna un aukstums — begonija iet bojā jau pie vieglas salnas. Nesteidzies ar stādīšanu laukā pirms maija beigām un rudenī laikus izroc bumbuļus."
+    "Bumbuļi kļūst mīksti vai pūst. Pārbaudi, vai kastē nav sakrājies mitrums, un izņem bojātos bumbuļus.",
+    "Pēc iestādīšanas bumbulis pūst. Pārbaudi, vai podam ir noteces caurumi un iedobē pēc laistīšanas nestāv ūdens.",
+    "Trauslie dzinumi lūst. Augstākās bumbuļbegonijas atbalsti un pārvieto kasti aizvējā."
   ],
-  "folklore": "Latvijā begonija ilgi bijusi tradicionāla \"vecmāmiņas palodzes\" un balkona puķe — to nodeva no rokas rokā, dāvinot kaimiņienei kādu bumbuli vai spraudeni. Tā kļuva par pilsētu balkonu un lauku māju lieveņu pazīmi, kur vasarā plīvoja sarkani un rozā ziedi pat tur, kur saule reti spīdēja.",
   "faq": [
     {
-      "q": "Vai begonijas bumbuļus var atstāt zemē pārziemot?",
-      "a": "Nē. Latvijā begonija atklātā laukā nepārziemo — to nogalina jau pirmā viegla salna. Bumbuļi rudenī jāizrok un jāglabā vēsā, bezsala telpā +5…+10 °C, un pavasarī tos var stādīt no jauna."
+      "q": "Vai leduspuķei rudenī jāmeklē bumbulis?",
+      "a": "Leduspuķei ir šķiedrainas saknes. Ja gribi saglabāt augu, pirms salnām iestādi to podā un ienes gaišā telpā. Dobes stādījumu var arī atjaunot ar jauniem stādiem pavasarī."
+    },
+    {
+      "q": "Vai bumbuļbegoniju visu ziemu var turēt ziedošu istabā?",
+      "a": "Bumbuļbegonijai rudenī iestājas miera periods arī telpās. Lapu dzeltēšana sezonas beigās ir signāls pakāpeniski samazināt laistīšanu un sagatavot bumbuli glabāšanai. Ziemā ziedošās Elatior grupas telpu begonijas pieder citai grupai."
     },
     {
       "q": "Kad begoniju drīkst stādīt laukā?",
-      "a": "Tikai pēc pēdējās pavasara salnas — Latvijā tās ir maija beigas (Zemgalē ap 15. maiju, Vidzemē un Latgalē vēlāk). Pirms tam bumbuļus dīdzina mājās jau no marta beigām."
-    },
-    {
-      "q": "Kāpēc begonijas lapas kļūst brūnas vai apdeg?",
-      "a": "Visbiežāk tāpēc, ka aug pārāk saulainā vai sausā vietā. Begonija ir ēnu un pusēnu puķe — pārvieto to vēsākā, izkliedētas gaismas vietā un laisti regulāri, lej pie saknes, ne uz lapām."
+      "a": "Pēc pakāpeniskas norūdīšanas, kad augsne sasilusi un tavā dārzā vairs nedraud salnas. Līdz tam aukstās naktīs podus turi telpās."
     }
   ],
   "related": [
     "pelargonijas",
     "petunijas"
-  ]
+  ],
+  "seoTitle": "Begonijas — kā stādīt, kopt un pārziemināt",
+  "seoDescription": "Kā atšķirt bumbuļbegoniju no leduspuķes, kad stādīt abas ārā un kā saglabāt līdz pavasarim. Bumbuļu glabāšana un podā augošas begonijas kopšana ziemā.",
+  "updatedAt": "2026-11-18",
+  "shortAnswer": "Bumbuļbegonijai ziemā vajadzīgs miera periods. Rudenī izcel bumbuli, apžāvē un glabā vēsā telpā bez sala. Leduspuķei ir smalkas saknes. Ja vēlies to saglabāt, pirms salnām ienes augu podā gaišā telpā un ziemā laisti retāk.",
+  "lifeCycle": "Abas šeit aprakstītās grupas ir saljutīgi daudzgadīgi augi, ko Latvijas dobēs bieži audzē vienu vasaru. Nākamajai sezonai var saglabāt bumbuļbegonijas bumbuli vai leduspuķi ar saknēm.",
+  "comparison": {
+    "heading": "Kāda begonija aug tavā podā?",
+    "items": [
+      {
+        "name": "Bumbuļbegonijas",
+        "description": "Uz etiķetes bieži rakstīts Begonia × tuberhybrida. Ir gan stāvas, gan nokarenas šķirnes. Pie stublāju pamatnes ir bumbulis, kurā augs uzkrāj barības vielas nākamajai sezonai."
+      },
+      {
+        "name": "Leduspuķes jeb ilgziedu begonijas",
+        "description": "Meklē nosaukumu Semperflorens. Tām parasti ir spožas zaļas vai bronzas krāsas lapas un sīki ziedi ķekaros. Saknes ir šķiedrainas. Ziemai saglabā pašu augu podā."
+      }
+    ]
+  },
+  "winterTable": {
+    "headers": [
+      "Kas jāsaglabā",
+      "Vieta ziemā",
+      "Kopšana līdz pavasarim"
+    ],
+    "rows": [
+      [
+        "Vesels, apžāvēts bumbuļbegonijas bumbulis",
+        "Tumša, vēsa vieta bez sala, ap +7 °C.",
+        "Ievieto vermikulītā caurumotā maisā. Ik pa laikam pārbaudi, vai bumbulis ir stingrs. Pavasarī atsāc diedzēšanu."
+      ],
+      [
+        "Leduspuķe ar lapām un smalkām saknēm",
+        "Gaiša vieta telpās, pasargāta no tiešas pusdienlaika saules.",
+        "Pirms salnām ienes augu podā. Laisti mazāk nekā vasarā. Substrātam starp reizēm ļauj nedaudz apžūt."
+      ]
+    ]
+  },
+  "sources": [
+    {
+      "label": "RHS — dārza begoniju grupas, stādīšana un ziemošana",
+      "url": "https://www.rhs.org.uk/plants/begonias/outdoors"
+    },
+    {
+      "label": "Minesotas Universitāte — bumbuļbegoniju diedzēšana un bumbuļu glabāšana",
+      "url": "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/tuberous-begonias"
+    },
+    {
+      "label": "Ziemeļkarolīnas štata universitāte — leduspuķu pazīmes un pārziemināšana podā",
+      "url": "https://plants.ces.ncsu.edu/plants/begonia-wax-types/"
+    },
+    {
+      "label": "RHS — telpu begonijas un ziemā ziedošie hibrīdi",
+      "url": "https://www.rhs.org.uk/plants/begonias/houseplants"
+    }
+  ],
+  "sectionSources": {
+    "intro": [
+      "https://www.rhs.org.uk/plants/begonias/outdoors",
+      "https://plants.ces.ncsu.edu/plants/begonia-wax-types/"
+    ],
+    "comparison": [
+      "https://www.rhs.org.uk/plants/begonias/outdoors",
+      "https://plants.ces.ncsu.edu/plants/begonia-wax-types/"
+    ],
+    "planting": [
+      "https://www.rhs.org.uk/plants/begonias/outdoors",
+      "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/tuberous-begonias"
+    ],
+    "care": [
+      "https://www.rhs.org.uk/plants/begonias/outdoors",
+      "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/tuberous-begonias"
+    ],
+    "winter": [
+      "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/tuberous-begonias",
+      "https://plants.ces.ncsu.edu/plants/begonia-wax-types/",
+      "https://www.rhs.org.uk/plants/begonias/outdoors"
+    ],
+    "problems": [
+      "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/tuberous-begonias",
+      "https://www.rhs.org.uk/plants/begonias/outdoors"
+    ]
+  }
 }

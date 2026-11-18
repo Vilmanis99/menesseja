@@ -12,7 +12,6 @@ import { getFlower, getAllFlowers, flowerSlugs, FLOWER_TYPE_META, type Flower, t
 import { CROPS } from "@/lib/planting-crops";
 import { canonical, SITE_NAME, og } from "@/lib/seo";
 import { BLOOM_PERIODS } from "@/lib/bloom-periods";
-import { SEASONAL_LINKS_UPDATED_AT } from "@/lib/seasonal";
 
 export const dynamicParams = false;
 
@@ -83,7 +82,7 @@ export default async function FlowerPage({ params }: { params: Promise<{ slug: s
     headline: `${f.name} — kad stādīt un kā kopt Latvijā`,
     about: f.name,
     inLanguage: "lv",
-    dateModified: f.updatedAt && f.updatedAt > SEASONAL_LINKS_UPDATED_AT ? f.updatedAt : SEASONAL_LINKS_UPDATED_AT,
+    dateModified: f.updatedAt,
     mainEntityOfPage: canonical(`/pukes/${f.slug}`),
     ...(f.sources?.length ? { citation: f.sources.map((source) => source.url) } : {}),
     ...(f.image ? { image: canonical(contentImage(f.image.id).src) } : {}),

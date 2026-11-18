@@ -1,7 +1,8 @@
 import type { MetadataRoute } from "next";
 import { SITE_URL } from "@/lib/seo";
 
-const PRIVATE = ["/api/", "/iestatijumi", "/diagnoze"];
+// HTML pages excluded from search must remain crawlable for their noindex tag.
+const DISALLOW = "/api/";
 
 // Major AI / generative-search crawlers. We explicitly WELCOME them so the site
 // can be cited in ChatGPT, Claude, Perplexity, Google AI Overviews etc. — our
@@ -36,8 +37,8 @@ const AI_BOTS = [
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: [
-      { userAgent: "*", allow: "/", disallow: PRIVATE },
-      { userAgent: AI_BOTS, allow: "/", disallow: PRIVATE },
+      { userAgent: "*", allow: "/", disallow: DISALLOW },
+      { userAgent: AI_BOTS, allow: "/", disallow: DISALLOW },
     ],
     sitemap: `${SITE_URL}/sitemap.xml`,
     host: SITE_URL,

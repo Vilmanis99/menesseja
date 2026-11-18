@@ -47,6 +47,9 @@ export default function DarzsPage() {
         <TodayBanner />
         <DashboardReminders />
         <ThisWeek />
+        <TrackedLink href="/darza-darbi-sonedel" source="home" placement="weekly-plan" className="mb-lg inline-flex min-h-11 items-center gap-2 text-body-md font-semibold text-primary hover:underline">
+          <Icon name="checklist" size="20px" /> Dārza darbi šonedēļ
+        </TrackedLink>
         <HarvestSummary />
         <GardenAreas />
       </section>

@@ -42,9 +42,7 @@ export async function generateMetadata({ params }: { params: Promise<{ month: st
   if (!m) return {};
   const loc = MONTHS_LV_LOCATIVE[m - 1];
   const title = m === 7 ? "Ko vēl sēt jūlijā otrajai ražai Latvijā" : `Ko sēt ${loc} Latvijā — dārza darbi un sēja`;
-  const description = m === 7
-    ? "Ko jūlijā vēl paspēt iesēt rudens ražai: Ķīnas kāposti, kolrābji, rāceņi, dilles, redīsi un salāti ar svarīgām karstuma niansēm."
-    : `Ko sēt, stādīt un novākt ${loc} Latvijas dārzā: pilns saraksts pa darbiem, sezonas padomi un labākās Mēness dienas.`;
+  const description = MONTH_GUIDES[m]?.description ?? `Ko sēt, stādīt un novākt ${loc} Latvijas dārzā.`;
   return { title, description, alternates: { canonical: canonical(`/ko-set/${month}`) }, openGraph: og({ path: `/ko-set/${month}`, title, description }) };
 }
 
@@ -70,6 +68,7 @@ export default async function KoSetPage({ params }: { params: Promise<{ month: s
     "@context": "https://schema.org",
     "@type": "Article",
     headline: `Ko sēt ${MONTHS_LV_LOCATIVE[month - 1]} Latvijā`,
+    description: guide?.description,
     inLanguage: "lv",
     dateModified: guide?.updatedAt && guide.updatedAt > SEASONAL_LINKS_UPDATED_AT ? guide.updatedAt : SEASONAL_LINKS_UPDATED_AT,
     isPartOf: { "@type": "WebSite", name: SITE_NAME, url: canonical("/") },
@@ -183,7 +182,11 @@ export default async function KoSetPage({ params }: { params: Promise<{ month: s
         <Icon name="brightness_3" className="text-primary" size="28px" />
         <div className="flex-1">
           <p className="font-semibold text-on-surface">Sēt saskaņā ar Mēnesi?</p>
-          <p className="text-body-md text-on-surface-variant">Skaties šī mēneša Mēness sējas kalendāru ar elementu dienām.</p>
+          <p className="text-body-md text-on-surface-variant">
+            {calendarHref === "/kalendars"
+              ? "Atver aktuālo Mēness kalendāru un apskati tuvākās sējas dienas."
+              : `Apskati Mēness fāzes un elementu dienas ${MONTHS_LV_LOCATIVE[month - 1]}.`}
+          </p>
         </div>
         <Link href={calendarHref} className="inline-flex min-h-11 shrink-0 items-center gap-1 text-label-md text-primary hover:underline">
           Kalendārs <Icon name="arrow_forward" size="16px" />

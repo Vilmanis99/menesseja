@@ -1,6 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
-import type { ContentImageUse } from "./content-images";
+import { contentImage, type ContentImageUse } from "./content-images";
 
 export interface ArticleSection {
   heading?: string;
@@ -90,6 +90,16 @@ export function getAllArticles(): Article[] {
 
 export function getArticle(slug: string): Article | null {
   return read(`${slug}.json`);
+}
+
+/** The first credited photo shown in the article, including photo comparisons. */
+export function articlePhoto(body: ArticleSection[]) {
+  for (const section of body) {
+    const image = section.image ?? section.images?.[0];
+    if (!image) continue;
+    const { src, width, height, alt, author, sourceName, sourceUrl, license, licenseUrl, changes } = contentImage(image.id);
+    return { src, width, height, alt, author, sourceName, sourceUrl, license, licenseUrl, changes, caption: image.caption };
+  }
 }
 
 function overlap(a: string[] | undefined, b: string[] | undefined): number {

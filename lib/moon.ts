@@ -73,6 +73,19 @@ export function phaseName(phase: number): string {
   return PHASE_NAMES.find((b) => p < b.max)?.name ?? "Jauns mēness";
 }
 
+/** Reserve exact quarter names for the Riga date when the event occurs.
+ * The noon appearance can fall in the same phase band on adjacent days. */
+export function dailyPhaseName(moon: MoonInfo, event?: PrincipalMoonPhase): string {
+  if (event) return event.name;
+  switch (moon.name) {
+    case "Pilns mēness": return "Gandrīz pilns mēness";
+    case "Jauns mēness": return moon.waxing ? "Augošs sirpis" : "Dilstošs sirpis";
+    case "Pirmais ceturksnis": return "Augošs mēness";
+    case "Pēdējais ceturksnis": return "Dilstošs mēness";
+    default: return moon.name;
+  }
+}
+
 /** Genitive forms, for sentences like "Dilstoša sirpja laikā …" — the
  *  nominative phase name dropped into prose reads as a case error in Latvian. */
 const PHASE_GENITIVE: Record<string, string> = {

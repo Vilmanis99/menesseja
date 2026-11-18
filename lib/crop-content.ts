@@ -9,6 +9,8 @@ export interface CropSection {
 }
 
 export interface CropContent {
+  title?: string;
+  description?: string;
   intro: string;
   image?: ContentImageUse;
   sections: CropSection[];

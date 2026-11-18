@@ -5,9 +5,13 @@
   "intent": "how-to",
   "excerpt": "Kā skābēt kāpostus: sāls aprēķins, piemērots trauks, temperatūra, vairāku nedēļu rūgšana un glabāšana. Bez nepārbaudītiem solījumiem par kraukšķi.",
   "shortAnswer": "Kāpostus skābē pēc pārbaudītas receptes, ar precīzu sāls daudzumu un pilnībā zem šķidruma. Izvēlētajā metodē paredzi vairākas nedēļas: NCHFP norāda ap 3–4 nedēļām pie +21 līdz +24 °C un ilgāk vēsumā. Pabeigtu skābējumu glabā ledusskapī; garša viena pati nepierāda procesa pabeigšanu.",
-  "primaryQuery": "skābēti kāposti pēc senču gudrības: Mēness, šķirnes un kraukšķa noslēpums",
+  "primaryQuery": "kā skābēt kāpostus",
+  "aliases": [
+    "kāpostu skābēšanas dienas",
+    "kad skābēt kāpostus novembrī"
+  ],
   "publishedAt": "2026-07-06",
-  "updatedAt": "2026-10-06",
+  "updatedAt": "2026-11-18",
   "entities": {},
   "relatedSlugs": [
     "ka-marinet-gurkus-kraukskigus",
@@ -33,6 +37,19 @@
   ],
   "readMinutes": 3,
   "body": [
+    {
+      "heading": "Kad sākt kāpostu skābēšanu?",
+      "paragraphs": [
+        "Arī novembrī sākuma dienu izvēlies pēc ražas. Mājas konservēšanas centrs NCHFP iesaka svaigas, stingras galviņas sagriezt un sākt skābēt 24–48 stundas pēc novākšanas. Ja kāpostus pērc, izvēlies stingras, nebojātas galviņas.",
+        "Ja ģimenē skābēšanas dienu izvēlas pēc Mēness fāzes, kalendārs palīdz turpināt šo tradīciju. Lai ieplānotu, kad kāposti varētu būt gatavi, pieraksti sākuma datumu un izmēri telpas temperatūru. Receptē rūgšanas ilgums ir atkarīgs no temperatūras."
+      ],
+      "sourceUrls": [
+        "https://nchfp.uga.edu/how/ferment/recipes/sauerkraut/"
+      ],
+      "anchorAliases": [
+        "sencu-gudriba-ko-ticejumi-par-menesi-patiesam-saka"
+      ]
+    },
     {
       "heading": "Sagatavo kāpostus un piemērotu trauku",
       "paragraphs": [
@@ -111,14 +128,10 @@
     {
       "heading": "Glabāšana pēc skābēšanas",
       "paragraphs": [
-        "Pabeigtu skābējumu glabā pārsegtu ledusskapī. Pagrabs bez temperatūras kontroles nav automātiski līdzvērtīgs ledusskapim. Ja vēlies aizvākotas burkas glabāt istabas temperatūrā, jāievēro atsevišķā konservēšanas metode un apstrādes laiks.",
-        "Mēness dienu vari izvēlēties kā ģimenes tradīciju, taču tā neaizstāj nosvērtu sāli, temperatūru un pareizu glabāšanu. Šeit nav piedēvēta zinātniski pārbaudīta ietekme uz rūgšanu."
+        "Pabeigtu skābējumu glabā pārsegtu ledusskapī. Pagrabs bez temperatūras kontroles nav automātiski līdzvērtīgs ledusskapim. Ja vēlies aizvākotas burkas glabāt istabas temperatūrā, jāievēro atsevišķā konservēšanas metode un apstrādes laiks."
       ],
       "sourceUrls": [
         "https://nchfp.uga.edu/how/ferment/recipes/sauerkraut/"
-      ],
-      "anchorAliases": [
-        "sencu-gudriba-ko-ticejumi-par-menesi-patiesam-saka"
       ]
     },
     {
@@ -134,6 +147,10 @@
     }
   ],
   "links": [
+    {
+      "label": "Mēness fāzes šomēnes",
+      "href": "/kalendars"
+    },
     {
       "label": "Kāpostu audzēšana",
       "href": "/augi/kaposti"

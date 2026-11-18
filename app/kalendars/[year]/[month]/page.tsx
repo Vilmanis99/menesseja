@@ -9,10 +9,10 @@ import { Icon } from "@/components/ui/icon";
 import { MoonPhase } from "@/components/moon-phase";
 import { JsonLd } from "@/components/json-ld";
 import { DataNote } from "@/components/data-note";
-import { moonForDate, moonPhasesForMonth } from "@/lib/moon";
+import { dailyPhaseName, moonForDate, moonPhasesForMonth, type PrincipalMoonPhase } from "@/lib/moon";
 import { SeasonalLinks } from "@/components/seasonal-links";
 import { sowingDay, isRestDay, ELEMENT_META, PART_GENITIVE, type Element } from "@/lib/biodynamic";
-import { latviaNoon } from "@/lib/day-anchor";
+import { latviaDateParts, latviaNoon } from "@/lib/day-anchor";
 import { calendarGuide, CALENDAR_GUIDES_UPDATED_AT } from "@/lib/calendar-guides";
 import { contentImage } from "@/lib/content-images";
 import { MONTH_GUIDES } from "@/lib/month-guides";
@@ -27,21 +27,33 @@ import { cropHref } from "@/lib/flowers";
 import { cropEmoji } from "@/lib/crop-visual";
 import { CROPS, MONTHS_LV_FULL, MONTHS_LV_GENITIVE } from "@/lib/planting-crops";
 import { REGIONS } from "@/lib/regions";
-import { MONTH_SLUGS, monthFromSlug, CALENDAR_YEARS, MONTHS_LV_LOCATIVE, canonical, SITE_NAME, og } from "@/lib/seo";
+import { MONTH_SLUGS, monthFromSlug, calendarYears, calendarYearFromSlug, MONTHS_LV_LOCATIVE, canonical, SITE_NAME, og } from "@/lib/seo";
 
-export const dynamicParams = false;
+export const dynamic = "force-static";
+export const dynamicParams = true;
+export const revalidate = 3600;
 
 export function generateStaticParams() {
-  return CALENDAR_YEARS.flatMap((year) =>
+  return calendarYears().flatMap((year) =>
     MONTH_SLUGS.map((month) => ({ year: String(year), month })),
   );
 }
 
 function parse(yearStr: string, monthSlug: string) {
-  const year = Number(yearStr);
+  const year = calendarYearFromSlug(yearStr);
   const month = monthFromSlug(monthSlug);
-  if (!CALENDAR_YEARS.includes(year) || !month) return null;
+  if (year === null || !month) return null;
   return { year, month };
+}
+
+function phaseIntro(year: number, month: number, phases: PrincipalMoonPhase[], task: string) {
+  const monthName = MONTHS_LV_LOCATIVE[month - 1];
+  const dates = phases.filter((phase) => phase.frac === 0 || phase.frac === 0.5).map((phase, index) => {
+    const date = `${latviaDateParts(phase.date).day}. ${monthName}`;
+    const name = phase.frac === 0 ? "jaunmēness" : "pilnmēness";
+    return index === 0 ? `Latvijā ${year}. gada ${date} iestājas ${name}` : `${date} – ${name}`;
+  });
+  return `${dates.join(", ")}. ${task}`;
 }
 
 export async function generateMetadata({
@@ -56,7 +68,9 @@ export async function generateMetadata({
   // Title targets both "dārza darbu kalendārs [mēnesis]" (dominant LV phrase) and "mēness kalendārs".
   const title = `${year}. gada ${nameGen} dārza darbu un Mēness kalendārs`;
   const guide = calendarGuide(p.month);
-  const description = `${year}. gads. ${guide.description}`;
+  const description = guide.showPhaseDatesInIntro
+    ? phaseIntro(p.year, p.month, moonPhasesForMonth(p.year, p.month), guide.description)
+    : `${year}. gads. ${guide.description}`;
   return {
     title,
     description,
@@ -109,6 +123,8 @@ export default async function MonthCalendarPage({
   });
 
   const keyPhases = moonPhasesForMonth(year, month);
+  const intro = guide.showPhaseDatesInIntro ? phaseIntro(year, month, keyPhases, guide.description) : guide.description;
+  const eventsByDay = new Map(keyPhases.map((phase) => [latviaDateParts(phase.date).day, phase]));
   const repotRanges = dayRanges(repottingDays(year, month).map((d) => d.day));
 
   const elements: Element[] = ["zeme", "udens", "gaiss", "uguns"];
@@ -117,7 +133,7 @@ export default async function MonthCalendarPage({
     "@context": "https://schema.org",
     "@type": "WebPage",
     name: `${year}. gada ${nameGen} Mēness sējas kalendārs`,
-    description: guide.description,
+    description: intro,
     dateModified: CALENDAR_GUIDES_UPDATED_AT,
     image: canonical(contentImage(guide.image.id).src),
     inLanguage: "lv",
@@ -131,7 +147,7 @@ export default async function MonthCalendarPage({
     let y = year;
     if (m < 1) { m = 12; y -= 1; }
     if (m > 12) { m = 1; y += 1; }
-    if (!CALENDAR_YEARS.includes(y)) return null;
+    if (!calendarYears().includes(y)) return null;
     return { href: `/kalendars/${y}/${MONTH_SLUGS[m - 1]}`, label: `${MONTHS_LV_FULL[m - 1]} ${y}` };
   };
   const prev = adj(-1);
@@ -155,7 +171,7 @@ export default async function MonthCalendarPage({
           Dārza darbu kalendārs — {name} {year}
         </h1>
         <p className="mt-xs max-w-2xl text-body-lg text-on-surface-variant">
-          {guide.description}
+          {intro}
         </p>
         <div className="mt-sm print:hidden">
           <PrintButton />
@@ -201,7 +217,7 @@ export default async function MonthCalendarPage({
           </Card>
         ))}
       </div>
-      <p className="month-phase-note mb-lg text-label-sm text-on-surface-variant">Fāžu maiņas norādītas pēc Latvijas laika; dienu tabulā fāze aprēķināta plkst. 10.00 UTC.</p>
+      <p className="month-phase-note mb-lg text-label-sm text-on-surface-variant">Fāžu maiņas norādītas pēc Latvijas laika. Dienu tabulā attēlots Mēness izskats plkst. 10.00 UTC. Jauna Mēness, pilnmēness un ceturkšņu nosaukumi atzīmē to iestāšanās dienu Latvijā.</p>
 
       <CalendarMonthGuide month={month} />
 
@@ -260,7 +276,7 @@ export default async function MonthCalendarPage({
             <div key={d.day} className="flex items-center gap-2 px-sm py-2 sm:gap-3 sm:px-md print:break-inside-avoid">
               <span className="w-7 shrink-0 text-body-md font-semibold text-on-surface">{d.day}.</span>
               <MoonPhase phase={d.moon.phase} size={26} glow={false} idPrefix={`calendar-day-${d.day}`} />
-              <span className="w-24 shrink-0 text-label-sm text-on-surface-variant sm:w-28">{d.moon.name}</span>
+              <span className="w-24 shrink-0 text-label-sm text-on-surface-variant sm:w-28">{dailyPhaseName(d.moon, eventsByDay.get(d.day))}</span>
               {d.rest ? (
                 <span className="flex items-center gap-1 text-label-sm text-on-surface-variant">
                   <Icon name="block" size="14px" /> Atpūtas diena

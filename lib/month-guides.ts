@@ -1,4 +1,5 @@
 export interface MonthGuide {
+  description: string;
   shortAnswer: string;
   checklistTitle: string;
   priorityCropIds: string[];
@@ -16,6 +17,7 @@ export interface MonthGuide {
  */
 export const MONTH_GUIDES: Partial<Record<number, MonthGuide>> = {
   1: {
+    description: "Janvārī pārbaudi sēklu dīgtspēju un saplāno dobes. Noskaidro, kad sākt dēstus telpās un kā novērtēt, vai tiem pietiks gaismas.",
     shortAnswer: "Janvārī Latvijas dobēs parasti nesēj. Pārskati atlikušās sēklas, pārbaudi vecāko paciņu dīgtspēju un uzzīmē dobju plānu. Dēstu sējas datumus rēķini no paredzētās izstādīšanas, nevis sāc visu uzreiz. Agrīna sēja ir lietderīga tikai tad, ja vari nodrošināt konkrētajam augam vajadzīgo gaismu un temperatūru.",
     checklistTitle: "Sagatavo sezonu bez steigas",
     priorityCropIds: [], cropNotes: {},
@@ -35,6 +37,7 @@ export const MONTH_GUIDES: Partial<Record<number, MonthGuide>> = {
     ], updatedAt: "2026-10-06",
   },
   2: {
+    description: "Februārī telpās vari sēt papriku un selerijas. Sējas laiku izvēlies pēc šķirnes, pieejamās gaismas un plānotās izstādīšanas.",
     shortAnswer: "Februārī vari sākt paprikas un seleriju dēstus, ja izvēlētās šķirnes audzēšanas ilgums un izstādīšanas plāns to prasa. Uz tumšas palodzes nesteidzies ar tomātiem un gurķiem. Vispirms sagatavo tīrus sēšanas traukus, substrātu un gaismu; ārā nesēj sasalušā vai pārmitrā augsnē.",
     checklistTitle: "Pirms pirmās dēstu sējas",
     priorityCropIds: [], cropNotes: {},
@@ -54,6 +57,7 @@ export const MONTH_GUIDES: Partial<Record<number, MonthGuide>> = {
     ], updatedAt: "2026-10-06",
   },
   3: {
+    description: "Martā sēj tomātus dēstiem un sagatavo siltumnīcu. Pārbaudi, kad augsne dobēs ir pietiekami apžuvusi pirmajiem darbiem.",
     shortAnswer: "Martā sēj tomātus un citus dēstus atbilstoši šķirnei un paredzētajai izstādīšanas vietai. Sagatavo siltumnīcu un seko dēstu gaismai un mitrumam. Dārza dobes apstrādā tikai tad, kad augsne ir atkususi un nav pārmitra; mēneša nosaukums pats par sevi vēl nenozīmē, ka var sēt laukā.",
     checklistTitle: "Sēja un siltumnīcas sagatavošana",
     priorityCropIds: [], cropNotes: {},
@@ -73,6 +77,7 @@ export const MONTH_GUIDES: Partial<Record<number, MonthGuide>> = {
     ], updatedAt: "2026-10-06",
   },
   4: {
+    description: "Aprīlī dobēs var sēt zirņus, redīsus, burkānus un salātus, kad zeme atkususi un apžuvusi. Skaties, kurus dēstus vēl paturēt telpās.",
     shortAnswer: "Aprīlī atkususi, pietiekami iesilusi un apstrādājama augsne ļauj sākt aukstumizturīgo kultūru sēju: zirņus, redīsus, burkānus un salātus. Termiņi piekrastē un Latvijas iekšzemē atšķiras. Siltummīļus vēl audzē aizsargātos apstākļos, bet esošos dēstus vajadzības gadījumā pārstādi lielākos traukos.",
     checklistTitle: "Pirmās sējas laukā",
     priorityCropIds: ["zirni", "rediisi", "burkani", "salati"],
@@ -93,6 +98,7 @@ export const MONTH_GUIDES: Partial<Record<number, MonthGuide>> = {
     ], updatedAt: "2026-10-06",
   },
   5: {
+    description: "Maijā sēj burkānus, bietes un dilles. Norūdi dēstus un pārbaudi vietējo salnu prognozi, pirms izstādi tomātus vai gurķus.",
     shortAnswer: "Maijā turpini aukstumizturīgo kultūru sēju un pakāpeniski norūdi dēstus. Tomātus, gurķus, papriku un ķirbjaugus laukā izstādi tikai pēc vietējiem salnu draudiem un pietiekamas augsnes iesilšanas. Neapkurināta siltumnīca aukstā naktī nav garantēta aizsardzība; dažviet jāgaida līdz jūnijam.",
     checklistTitle: "Droša dēstu izstādīšana",
     priorityCropIds: ["burkani", "bietes", "salati", "dilles"],
@@ -113,6 +119,7 @@ export const MONTH_GUIDES: Partial<Record<number, MonthGuide>> = {
     ], updatedAt: "2026-10-06",
   },
   6: {
+    description: "Jūnijā pēc salnu riska beigām izstādi siltummīļus. Salātus un dilles sēj vairākos piegājienos, lai tos varētu novākt pakāpeniski.",
     shortAnswer: "Jūnijā, kad salnu draudi beigušies un augsne iesilusi, vari izstādīt siltummīļus un sēt ātraudzīgas kultūras. Galvenie darbi ir vienmērīga laistīšana, ravēšana, balstu pārbaude un siltumnīcas vēdināšana. Salātus un dilles sēj mazās porcijās; karstumā izvēlies piemērotu šķirni un sargā jaunos sējumus no izžūšanas.",
     checklistTitle: "Palīdzi jaunajiem stādījumiem ieaugt",
     priorityCropIds: ["pupas", "dilles", "salati", "gurki"],
@@ -133,6 +140,7 @@ export const MONTH_GUIDES: Partial<Record<number, MonthGuide>> = {
     ], updatedAt: "2026-10-06",
   },
   7: {
+    description: "Ko jūlijā vēl paspēt iesēt rudens ražai: Ķīnas kāposti, kolrābji, rāceņi, dilles, redīsi un salāti ar svarīgām karstuma niansēm.",
     checklistTitle: "Trīs noteikumi otrajai ražai",
     shortAnswer:
       "Jūlijā vēl vari sēt Ķīnas kāpostus, kolrābjus, rāceņus, dilles un koriandru rudens ražai. Redīsus un lapu salātus sēj mazās porcijās, izvēloties vasarai piemērotu šķirni un vietu ar vieglu pēcpusdienas ēnu. Spinātus karstā laikā labāk atstāt jūlija beigām vai augusta sākumam, jo garā diena un sausums veicina izziedēšanu.",
@@ -187,6 +195,7 @@ export const MONTH_GUIDES: Partial<Record<number, MonthGuide>> = {
     updatedAt: "2026-07-14",
   },
   8: {
+    description: "Augustā pēc agrās ražas dobē vēl var sēt redīsus, spinātus un salātus. Izvēlies īsa augšanas laika šķirni un pieskati mitrumu.",
     shortAnswer: "Augustā novāc ražu un brīvajās dobēs izvēlies īsu augšanas laiku: redīsus, salātus, dilles vai spinātus, kad karstums mazinājies. Sējas iespējas sarūk līdz ar īsāku dienu un rudens salnu tuvošanos. Ja stādi zemenes vai dali peonijas, atstāj tām laiku iesakņoties un seko mitrumam.",
     checklistTitle: "Raža un nākamie stādījumi",
     priorityCropIds: ["spinati", "rediisi", "salati", "dilles"],
@@ -207,6 +216,7 @@ export const MONTH_GUIDES: Partial<Record<number, MonthGuide>> = {
     ], updatedAt: "2026-10-06",
   },
   9: {
+    description: "Septembrī atlasi dārzeņus glabāšanai un plāno sīpolpuķu stādīšanu. Noskaidro, ko vēl var iesēt atbrīvotajās dobēs.",
     shortAnswer: "Septembrī galvenie darbi ir ražas novākšana, atlase glabāšanai un tukšo dobju sagatavošana. Sīpolpuķes stādi pēc konkrētās sugas ieteikumiem; tulpēm nesteidzies, ja augsne vēl silta. Vēlu sējot zaļmēslojumu vai lapu kultūras, ņem vērā, vai tās paspēs ieaugt līdz aukstumam.",
     checklistTitle: "Sagatavo dārzu rudenim",
     priorityCropIds: ["narcises", "krokusi", "hiacintes"],
@@ -227,6 +237,7 @@ export const MONTH_GUIDES: Partial<Record<number, MonthGuide>> = {
     ], updatedAt: "2026-10-06",
   },
   10: {
+    description: "Oktobrī atdzisušā, nesasalušā augsnē stādi ziemas ķiplokus un tulpes. Apskati arī dāliju izrakšanas un siltumnīcas sakopšanas darbus.",
     shortAnswer: "Oktobrī atdzisušā, vēl nesasalušā augsnē stādi ziemas ķiplokus un tulpes, ja vieta nav pārmitra. Dālijas izroc pirms augsnes sasalšanas un sagatavo glabāšanai. Pēc vasaras kultūru novākšanas iztīri siltumnīcu, bet tukšās dobes pasargā ar piemērotu segumu.",
     checklistTitle: "Stādīšana un glabāšana pirms ziemas",
     priorityCropIds: ["kiploki", "tulpes"],
@@ -247,7 +258,8 @@ export const MONTH_GUIDES: Partial<Record<number, MonthGuide>> = {
     ], updatedAt: "2026-10-06",
   },
   11: {
-    shortAnswer: "Novembrī vairāk rūpējies par glabāto ražu un dārza sagatavošanu ziemai nekā sēju laukā. Jutīgo augu aizsardzību izvēlies pēc sugas, audzēšanas vietas un prognozes. Iztīri un nožāvē instrumentus, pārskati sēklas un neapstrādā dobes, ja augsne ir sasalusi vai pārmitra.",
+    description: "Novembrī pārbaudi pagrabā glabātās saknes un bumbuļus. Ja novāc kāpostus skābēšanai, izvēlies sākuma laiku pēc ražas stāvokļa.",
+    shortAnswer: "Novembrī pārbaudi glabāto ražu un gatavo dārzu ziemai. Ja novāc kāpostus skābēšanai, sāc 24–48 stundas pēc novākšanas, kamēr galviņas ir svaigas un stingras. Mēness fāzi vari izvēlēties pēc ģimenes tradīcijas. Jutīgo augu aizsardzību pielāgo sugai un laika prognozei. Nožāvē instrumentus un pārskati sēklas, kamēr dobes ir sasalušas vai pārmitras.",
     checklistTitle: "Pārziemošana un inventāra kopšana",
     priorityCropIds: [], cropNotes: {},
     checklist: [
@@ -263,9 +275,11 @@ export const MONTH_GUIDES: Partial<Record<number, MonthGuide>> = {
     sources: [
       { label: "RHS — rudens beigu darbi un glabātās ražas pārbaude", url: "https://www.rhs.org.uk/advice/grow-your-own/in-month/november-jobs" },
       { label: "RHS — dārza instrumentu tīrīšana un glabāšana", url: "https://www.rhs.org.uk/garden-jobs/cleaning-tools" },
-    ], updatedAt: "2026-10-06",
+      { label: "NCHFP — svaigu kāpostu izvēle un skābēšanas laiks", url: "https://nchfp.uga.edu/how/ferment/recipes/sauerkraut/" },
+    ], updatedAt: "2026-11-18",
   },
   12: {
+    description: "Decembrī pārskati sēklu krājumus un sagatavo nākamās sezonas sējas plānu. Pārbaudi, kā glabājas dālijas un citi dārza krājumi.",
     shortAnswer: "Decembrī plāno nākamo sezonu: atzīmē, kas izdevās, izvēlies audzēšanas vietai piemērotas šķirnes un pārskati esošos piederumus. Turpini pārbaudīt sēklas un glabātos dāliju bumbuļus. Sēju telpās sāc tikai tad, ja vari nodrošināt konkrētā auga prasības; agrāks datums pats par sevi negarantē labāku rezultātu.",
     checklistTitle: "Nākamās sezonas plāns",
     priorityCropIds: [], cropNotes: {},

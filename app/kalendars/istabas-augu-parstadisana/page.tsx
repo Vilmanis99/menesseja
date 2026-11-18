@@ -13,7 +13,7 @@ import { PART_GENITIVE } from "@/lib/biodynamic";
 import { latviaDateParts, latviaNoon } from "@/lib/day-anchor";
 import { contentImage } from "@/lib/content-images";
 import { MONTHS_LV_FULL } from "@/lib/planting-crops";
-import { MONTH_SLUGS, CALENDAR_YEARS, canonical, SITE_NAME, og } from "@/lib/seo";
+import { MONTH_SLUGS, calendarYears, canonical, SITE_NAME, og } from "@/lib/seo";
 
 // "Tuvākās dienas" is dated; refresh hourly like the other calendar hubs.
 export const revalidate = 3600;
@@ -88,7 +88,8 @@ export default function RepottingCalendarPage() {
   const next = upcoming(now, 8);
   const rest = planYear > year ? monthRows(year).filter((r) => r.month >= month) : [];
   const plan = monthRows(planYear);
-  const calendarYear = CALENDAR_YEARS.includes(planYear) ? planYear : null;
+  const years = calendarYears(now);
+  const calendarYear = years.includes(planYear) ? planYear : null;
 
   const faqJsonLd = {
     "@context": "https://schema.org",
@@ -106,7 +107,7 @@ export default function RepottingCalendarPage() {
   };
 
   const monthName = (r: ReturnType<typeof monthRows>[number], y: number) =>
-    CALENDAR_YEARS.includes(y) ? <Link href={`/kalendars/${y}/${r.slug}`} className="text-primary hover:underline">{r.name}</Link> : r.name;
+    years.includes(y) ? <Link href={`/kalendars/${y}/${r.slug}`} className="text-primary hover:underline">{r.name}</Link> : r.name;
   const table = (rows: ReturnType<typeof monthRows>, y: number) => (
     <>
     <div className="space-y-2 sm:hidden">

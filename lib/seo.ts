@@ -1,4 +1,6 @@
 import { MONTH_PLANS } from "./month-plan";
+import { latviaDateParts } from "./day-anchor";
+import type { ContentImage } from "./content-images";
 
 /** Canonical site origin (override via NEXT_PUBLIC_SITE_URL when deploying). */
 export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || "https://www.menesseja.lv").replace(/\/$/, "");
@@ -21,8 +23,17 @@ export const MONTHS_LV_LOCATIVE = [
   "jūlijā", "augustā", "septembrī", "oktobrī", "novembrī", "decembrī",
 ];
 
-/** Years we statically generate moon-calendar pages for. */
-export const CALENDAR_YEARS = [2025, 2026, 2027];
+/** Keep published archives and offer one full planning year ahead in Latvia. */
+export function calendarYears(asOf = new Date()): number[] {
+  const firstYear = 2025;
+  const lastYear = latviaDateParts(asOf).year + 1;
+  return Array.from({ length: lastYear - firstYear + 1 }, (_, index) => firstYear + index);
+}
+
+export function calendarYearFromSlug(slug: string, asOf = new Date()): number | null {
+  const year = Number(slug);
+  return String(year) === slug && calendarYears(asOf).includes(year) ? year : null;
+}
 
 /** Per-month seasonal tasks + folklore (index 0 = January) — unique editorial
  *  copy so month pages aren't pure templates. */
@@ -40,8 +51,12 @@ export function og(opts: {
   title: string;
   description: string;
   type?: "website" | "article";
-  image?: string;
+  image?: string | Pick<ContentImage, "src" | "alt" | "width" | "height">;
 }) {
+  const photo = opts.image;
+  const image = typeof photo === "object"
+    ? { url: canonical(photo.src), alt: photo.alt, width: photo.width, height: photo.height }
+    : canonical(photo ?? "/opengraph-image");
   return {
     title: opts.title,
     description: opts.description,
@@ -49,6 +64,6 @@ export function og(opts: {
     siteName: SITE_NAME,
     locale: "lv_LV",
     type: opts.type ?? "article",
-    images: [opts.image ? canonical(opts.image) : `${SITE_URL}/opengraph-image`],
+    images: [image],
   };
 }

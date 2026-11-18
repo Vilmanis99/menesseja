@@ -1,9 +1,10 @@
-import data from "@/content/calendar-guides.json";
+import * as data from "../content/calendar-guides.json";
 import type { ContentImageUse } from "./content-images";
 
 export interface CalendarGuide {
   title: string;
   description: string;
+  showPhaseDatesInIntro?: boolean;
   image: ContentImageUse;
   timeline: { period: string; focus: string; sectionIds: string[] }[];
   sections: {

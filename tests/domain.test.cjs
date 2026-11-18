@@ -12,7 +12,9 @@ require.extensions[".ts"] = (module, filename) => {
   module._compile(result.outputText, filename);
 };
 const { latviaDateParts, latviaDateKey } = require("../lib/day-anchor.ts");
-const { moonForDate, moonPhasesForMonth, nextPrincipalPhases, principalPhasesOnDate } = require("../lib/moon.ts");
+const { gardenWeek } = require("../lib/garden-week.ts");
+const { calendarYears, calendarYearFromSlug } = require("../lib/seo.ts");
+const { dailyPhaseName, moonForDate, moonPhasesForMonth, nextPrincipalPhases, principalPhasesOnDate } = require("../lib/moon.ts");
 const { seasonalLinks, seasonForMonth, monthCalendarHref } = require("../lib/seasonal.ts");
 const { track, ANALYTICS_CONSENT_KEY } = require("../lib/analytics.ts");
 const { subscribeToNewsletter } = require("../lib/brevo.ts");
@@ -37,6 +39,30 @@ test("October sowing excludes carrots and beets while their harvest stays discov
   for (const id of ["burkani", "bietes"]) assert.ok(harvest.some((crop) => crop.id === id), id);
   assert.ok(harvest.every((crop) => crop.category !== "pukes"));
   assert.deepEqual(guideActivities(CROPS.find((crop) => crop.id === "krizantemas"), 10, "flowering"), ["harvest"]);
+});
+
+test("weekly garden tasks merge overlapping periods and roll over at Riga Monday midnight", () => {
+  const sunday = gardenWeek(new Date("2026-11-22T21:59:59Z"));
+  assert.equal(latviaDateKey(sunday.start), "2026-11-16");
+  assert.equal(latviaDateKey(sunday.end), "2026-11-22");
+  const overlapping = sunday.tasks.filter((task) => task.section.id === "razas-glabasana");
+  assert.equal(overlapping.length, 1);
+  assert.equal(latviaDateKey(overlapping[0].start), "2026-11-16");
+  assert.equal(latviaDateKey(overlapping[0].end), "2026-11-22");
+  const monday = gardenWeek(new Date("2026-11-22T22:00:00Z"));
+  assert.equal(latviaDateKey(monday.start), "2026-11-23");
+  assert.equal(latviaDateKey(monday.end), "2026-11-29");
+});
+
+test("a New Year garden week draws tasks from each dated month and its actual days", () => {
+  const plan = gardenWeek(new Date("2027-01-01T12:00:00Z"));
+  assert.equal(latviaDateKey(plan.start), "2026-12-28");
+  assert.equal(latviaDateKey(plan.end), "2027-01-03");
+  assert.deepEqual([...new Set(plan.tasks.map((task) => `${task.year}-${task.month}`))], ["2026-12", "2027-1"]);
+  for (const task of plan.tasks) {
+    assert.equal(latviaDateKey(task.start), task.month === 12 ? "2026-12-28" : "2027-01-01");
+    assert.equal(latviaDateKey(task.end), task.month === 12 ? "2026-12-31" : "2027-01-03");
+  }
 });
 
 test("root-crop sowing and harvest remain distinct through all twelve months", () => {
@@ -159,7 +185,7 @@ test("daily advice respects the season even on a fruit day and across Riga New Y
   assert.match(sowingDay(new Date("2026-12-31T22:30:00Z")).advice, /dīgtspēju/);
   assert.equal(adjacentMonth(2026, 12, 1).href, "/kalendars/2027/janvaris");
   assert.equal(adjacentMonth(2027, 1, -1).href, "/kalendars/2026/decembris");
-  assert.equal(adjacentMonth(2027, 12, 1).href, "/ko-set/janvaris");
+  assert.equal(adjacentMonth(2027, 12, 1, new Date("2026-11-18T10:00:00Z")).href, "/ko-set/janvaris");
   for (let month = 1; month <= 12; month++) {
     assert.ok(monthPlan(month).prepare && monthPlan(month).supplies);
   }
@@ -232,11 +258,34 @@ test("today's full moon remains visible before and after its instant, but not on
   assert.ok(principalPhasesOnDate(new Date("2027-02-20T23:30:00Z")).some((p) => p.frac === 0.5));
 });
 
+test("exact phase names appear only on their astronomical Riga dates", () => {
+  const phases = moonPhasesForMonth(2026, 11);
+  const eventDates = new Map(phases.map((event) => [latviaDateKey(event.date), event.name]));
+  const principalNames = new Set(eventDates.values());
+  for (let day = 1; day <= 30; day++) {
+    const date = new Date(Date.UTC(2026, 10, day, 10));
+    const expected = eventDates.get(latviaDateKey(date));
+    const label = dailyPhaseName(moonForDate(date), principalPhasesOnDate(date)[0]);
+    if (expected) assert.equal(label, expected);
+    else assert.ok(!principalNames.has(label), `${latviaDateKey(date)}: ${label}`);
+  }
+  const labelAt = (iso) => {
+    const date = new Date(iso);
+    return dailyPhaseName(moonForDate(date), principalPhasesOnDate(date)[0]);
+  };
+  assert.equal(labelAt("2026-10-25T10:00:00Z"), "Gandrīz pilns mēness");
+  assert.equal(labelAt("2026-12-23T10:00:00Z"), "Gandrīz pilns mēness");
+  assert.notEqual(labelAt("2026-11-23T21:59:00Z"), "Pilns mēness");
+  assert.equal(labelAt("2026-11-23T22:01:00Z"), "Pilns mēness");
+  assert.equal(labelAt("2026-11-24T21:59:00Z"), "Pilns mēness");
+  assert.notEqual(labelAt("2026-11-24T22:01:00Z"), "Pilns mēness");
+});
+
 test("Riga month/year and calendar links roll over independently of server timezone", () => {
   const newYear = new Date("2026-12-31T22:30:00Z");
   assert.equal(latviaDateKey(newYear), "2027-01-01");
   assert.equal(monthCalendarHref(4, newYear), "/kalendars/2027/aprilis");
-  assert.equal(monthCalendarHref(4, new Date("2028-01-01T10:00:00Z")), "/kalendars");
+  assert.equal(monthCalendarHref(4, new Date("2028-01-01T10:00:00Z")), "/kalendars/2028/aprilis");
 });
 
 test("spring and summer remain discoverable and every curated destination exists", () => {
@@ -305,4 +354,31 @@ test("Brevo bad requests are errors, not proof of an already-confirmed contact",
     if (previousKey === undefined) delete process.env.BREVO_API_KEY; else process.env.BREVO_API_KEY = previousKey;
     if (previousTemplate === undefined) delete process.env.BREVO_DOI_TEMPLATE_ID; else process.env.BREVO_DOI_TEMPLATE_ID = previousTemplate;
   }
+});
+
+test("evergreen month links choose the next occurrence within the published calendar", () => {
+  const november = new Date("2026-11-18T10:00:00Z");
+  assert.equal(monthCalendarHref(1, november), "/kalendars/2027/janvaris");
+  assert.equal(monthCalendarHref(11, november), "/kalendars/2026/novembris");
+  assert.equal(monthCalendarHref(12, november), "/kalendars/2026/decembris");
+  assert.equal(monthCalendarHref(10, new Date("2026-10-31T21:59:00Z")), "/kalendars/2026/oktobris");
+  assert.equal(monthCalendarHref(10, new Date("2026-10-31T22:00:00Z")), "/kalendars/2027/oktobris");
+  assert.equal(monthCalendarHref(1, new Date("2027-12-01T10:00:00Z")), "/kalendars/2028/janvaris");
+});
+
+test("the calendar keeps archives and opens the next planning year at Riga New Year", () => {
+  const before = new Date("2026-12-31T21:59:59Z");
+  const after = new Date("2026-12-31T22:00:00Z");
+  assert.deepEqual(calendarYears(before), [2025, 2026, 2027]);
+  assert.deepEqual(calendarYears(after), [2025, 2026, 2027, 2028]);
+  assert.equal(calendarYearFromSlug("2028", before), null);
+  assert.equal(calendarYearFromSlug("2028", after), 2028);
+  assert.equal(calendarYearFromSlug("2025", after), 2025);
+  for (const slug of ["2024", "2029", "02026", "2026.0", "2.026e3", "foo"]) {
+    assert.equal(calendarYearFromSlug(slug, after), null);
+  }
+  const snapshot = new Date("2027-11-18T10:00:00Z");
+  assert.deepEqual([1, 2, 3].map((offset) => adjacentMonth(2027, 11, offset, snapshot).href), [
+    "/kalendars/2027/decembris", "/kalendars/2028/janvaris", "/kalendars/2028/februaris",
+  ]);
 });

@@ -1,14 +1,14 @@
 import { latviaDateParts } from "./day-anchor";
-import { CALENDAR_YEARS, MONTH_SLUGS } from "./seo";
+import { calendarYears, MONTH_SLUGS } from "./seo";
 
 export const SEASONAL_LINKS_UPDATED_AT = "2026-10-27";
 
 /** Adjacent calendar months, including December → January. */
-export function adjacentMonth(year: number, month: number, offset: number) {
+export function adjacentMonth(year: number, month: number, offset: number, asOf = new Date()) {
   seasonForMonth(month);
   const date = new Date(Date.UTC(year, month - 1 + offset, 1, 10));
   const target = { year: date.getUTCFullYear(), month: date.getUTCMonth() + 1 };
-  return { ...target, href: CALENDAR_YEARS.includes(target.year)
+  return { ...target, href: calendarYears(asOf).includes(target.year)
     ? `/kalendars/${target.year}/${MONTH_SLUGS[target.month - 1]}`
     : `/ko-set/${MONTH_SLUGS[target.month - 1]}` };
 }
@@ -21,11 +21,12 @@ export function seasonForMonth(month: number): "ziema" | "pavasaris" | "vasara" 
   return "ziema";
 }
 
-/** Evergreen monthly guides keep their URL when the calendar year changes. */
+/** Evergreen guides link to the current or next occurrence of the selected month in Latvia. */
 export function monthCalendarHref(month: number, date = new Date()): string {
   seasonForMonth(month);
-  const year = latviaDateParts(date).year;
-  return CALENDAR_YEARS.includes(year) ? `/kalendars/${year}/${MONTH_SLUGS[month - 1]}` : "/kalendars";
+  const today = latviaDateParts(date);
+  const year = month < today.month ? today.year + 1 : today.year;
+  return calendarYears(date).includes(year) ? `/kalendars/${year}/${MONTH_SLUGS[month - 1]}` : "/kalendars";
 }
 
 export interface SeasonalLink { href: string; label: string }
@@ -46,7 +47,7 @@ const MONTH_LINKS: SeasonalLink[][] = [
   [article("zemenu-stadisana-augusta", "Zemeņu stādīšana augustā"), article("kad-parstadit-peonijas", "Peoniju pārstādīšana"), bloom("vasara", "Kas zied augustā")],
   [article("ka-kopt-geranijas", "Pelargoniju sagatavošana ziemošanai"), article("tulpju-stadisana-rudeni", "Tulpju stādīšana rudenī"), article("baltas-sinepes-pec-razas", "Zaļmēslojums pēc ražas"), bloom("rudeni", "Puķes, kas zied rudenī")],
   [article("hortenziju-apgriesana", "Hortenzijas: ko griezt rudenī un ko atstāt"), article("siltumnicas-sagatavosana-sezonai", "Siltumnīcas sagatavošana ziemai"), article("ka-kopt-geranijas", "Pelargoniju pārziemošanas iespējas"), article("ka-glabat-dalijas-ziema", "Dāliju izrakšana un glabāšana"), article("tulpju-stadisana-rudeni", "Tulpju stādīšana rudenī"), bloom("rudeni", "Rudens puķes"), article("ka-uzglabat-darzenus-ziema", "Dārzeņu glabāšana ziemā")],
-  [article("siltumnicas-sagatavosana-sezonai", "Siltumnīca pirms sala un sniega"), article("ziemassvetku-kaktuss-nezied", "Ziemassvētku kaktuss: pumpuri un kopšana"), flower("rozes#parziemosana", "Rožu ziemošana dobē un podā"), article("ka-uzglabat-darzenus-ziema", "Dārzeņu glabāšana ziemā"), article("hortenziju-apgriesana", "Hortenziju rudens darbi un griešanas laiks"), article("ka-glabat-dalijas-ziema", "Dāliju glabāšana ziemā"), article("ka-glabat-seklas-un-parbaudit-digtspeju", "Sēklu glabāšana")],
+  [article("skabeti-kaposti", "Kad novembrī skābēt kāpostus"), article("siltumnicas-sagatavosana-sezonai", "Siltumnīca pirms sala un sniega"), article("ziemassvetku-kaktuss-nezied", "Ziemassvētku kaktuss: pumpuri un kopšana"), flower("rozes#parziemosana", "Rožu ziemošana dobē un podā"), article("ka-uzglabat-darzenus-ziema", "Dārzeņu glabāšana ziemā"), article("hortenziju-apgriesana", "Hortenziju rudens darbi un griešanas laiks"), article("ka-glabat-dalijas-ziema", "Dāliju glabāšana ziemā"), article("ka-glabat-seklas-un-parbaudit-digtspeju", "Sēklu glabāšana")],
   [article("ziemassvetku-kaktuss-nezied", "Kāpēc Ziemassvētku kaktuss nezied vai met pumpurus"), article("ziemassvetku-zvaigzne-puansetija", "Ziemassvētku zvaigznes kopšana"), article("amarillis-pec-ziedesanas", "Amarillis: kopšana un atkārtota ziedēšana"), article("siltumnicas-sagatavosana-sezonai", "Siltumnīcas apskate ziemā"), article("ka-izveleties-seklas-darzam", "Sēklu izvēle nākamajai sezonai"), article("augu-maina-darza", "Augu maiņas plāns")],
 ];
 

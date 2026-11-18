@@ -5,7 +5,7 @@ import { MoonPhase } from "@/components/moon-phase";
 import { Icon } from "@/components/ui/icon";
 import { InfoTip } from "@/components/ui/info-tip";
 import { Card } from "@/components/ui/card";
-import { moonForDate } from "@/lib/moon";
+import { dailyPhaseName, moonForDate, principalPhasesOnDate } from "@/lib/moon";
 import { sowingDay, ELEMENT_META, PART_GENITIVE, moonAscending, isRestDay } from "@/lib/biodynamic";
 import { useRegion } from "@/components/region-context";
 import { useWeather } from "@/lib/use-weather";
@@ -17,6 +17,7 @@ const DATE_FMT = new Intl.DateTimeFormat("lv-LV", {
   day: "numeric",
   month: "long",
   weekday: "long",
+  timeZone: "Europe/Riga",
 });
 
 /**
@@ -27,9 +28,10 @@ export function TodayBanner() {
   const mounted = useMounted();
   const { region, weatherCoords, coords, geoStatus, requestLocation } = useRegion();
   const weather = useWeather(weatherCoords);
-  const { moon, sow, today, ascending, rest } = useMemo(() => {
+  const { moon, phaseLabel, sow, today, ascending, rest } = useMemo(() => {
     const now = new Date();
-    return { moon: moonForDate(now), sow: sowingDay(now), today: now, ascending: moonAscending(now), rest: isRestDay(now) };
+    const moon = moonForDate(now);
+    return { moon, phaseLabel: dailyPhaseName(moon, principalPhasesOnDate(now)[0]), sow: sowingDay(now), today: now, ascending: moonAscending(now), rest: isRestDay(now) };
   }, []);
   const elem = ELEMENT_META[sow.element];
 
@@ -50,7 +52,7 @@ export function TodayBanner() {
               {coords && <Icon name="my_location" size="14px" className="text-primary" />}
             </p>
             <h2 className="flex items-center gap-1 text-headline-md text-on-surface">
-              {moon.name}
+              {phaseLabel}
               <InfoTip
                 text={
                   moon.waxing

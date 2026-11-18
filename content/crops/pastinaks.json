@@ -1,31 +1,56 @@
 {
-  "intro": "Pastinaks (Pastinaca sativa) ir vecs, bet nepelnīti aizmirsts garais sakņaugs, kas tuvs radinieks burkānam un pētersīļiem. Tā bālā, krēmkrāsas sakne aug visu sezonu un kļūst patiesi gardi salda tikai pēc pirmajām rudens salnām, kad ciete pārvēršas cukurā — tāpēc latviešu dārzā tas ir tipisks vēlais, izturīgais rudens kultūraugs.\n\nMēness sēja un biodinamika pastinaku tradicionāli pieskaita sakņu jeb Zemes dienām, kad senču ritmā ieteica strādāt ar sakņaugiem. Tā ir skaista kultūras tradīcija un dārza ritma palīgs, nevis pierādīts zinātnisks fakts — pētījumi par Mēness ietekmi ir ierobežoti un pretrunīgi. Daudz svarīgāk par Mēness fāzi ir augsnes temperatūra, mitrums un laikapstākļi, tāpēc šo aprakstu lasi kā praktisku ceļvedi, kur Mēness kalendārs ir tikai patīkams papildinājums."
-  ,
+  "title": "Pastinaks — sēja, ražas novākšana un glabāšana ziemā",
+  "description": "Pastinaks ir krēmkrāsas sakņaugs ar saldenu garšu. Latvijā to sēj tieši dobē aprīlī vai maijā. Rudenī saknes var izrakt glabāšanai vai daļu atstāt dobē.",
+  "intro": "Pastinaks (Pastinaca sativa) pirmajā gadā veido ēdamo sakni, otrajā gadā zied. Virtuvē to var cept kopā ar citiem sakņaugiem, pievienot zupai vai sarīvēt salātos. Vēss rudens laiks pastiprina saknes saldumu. Ja tā jau izaugusi pietiekami liela, maltītei vari to izrakt arī pirms salnām.",
   "sections": [
     {
-      "heading": "Kā sēt",
-      "body": "Pastinaku sēj tieši dobē, jo, tāpat kā burkāns, tas neiztur pārstādīšanu — garā sakne sazarojas. Latvijā labākais laiks ir aprīlī un maijā, kad augsne sasilusi vismaz līdz 5 °C; agrākā sēja vēsā zemē rūgst un dīgst nevienmērīgi. Sēklas iesēj ap 1–2 cm dziļi rindās ar 25–30 cm atstarpi un esi pacietīgs, jo dīgšana ir lēna — līdz pat 3 nedēļām. Vienmēr izmanto svaigas, šī gada sēklas, jo pastinaka sēklu dīgtspēja gada laikā strauji krīt."
+      "heading": "Kad rakt pastinakus un kurus atstāt dobē",
+      "body": "Kad rudenī lapas sāk dzeltēt, ar dārza dakšu izcel vienu sakni un pārbaudi tās izmēru. Dakšu iedur sāņus no saknes un uzmanīgi pacel augsni. Ja gribi pastinakus lietot ziemā, daļu izroc, kamēr zeme vēl apstrādājama. Sasalušā dobē garās saknes viegli pārlūst.\n\nLabi drenētā vietā daļu ražas vari atstāt zemē. Pirms pazūd lapas, iezīmē rindas galus un apsed dobi ar salmiem. Atlikušās saknes izroc atkusnī vai agrā pavasarī, pirms atsāk augt lapas un saknes kļūst koksnainas."
     },
     {
-      "heading": "Augsne un vieta",
-      "body": "Izvēlies saulainu vietu un dziļi irdenu, no akmeņiem un svaigiem kūtsmēsliem brīvu augsni, citādi sakne sadakšojas un izaug līka. Vislabāk padodas dziļi uzrakta, smilšmāla vai trūdvielām bagāta augsne ar neitrālu līdz vāji skābu reakciju (pH ap 6–7). Nestādi pastinaku vietā, kur pērn auguši burkāni, pētersīļi vai selerijas, jo tiem ir kopīgas slimības un kaitēkļi. Augsni gatavo jau rudenī, iestrādājot kompostu, nevis svaigus mēslus."
+      "heading": "Kā glabāt izraktās saknes",
+      "body": "Nogriez lakstus un atlasi stingras, nebojātas saknes. Dakšas ievainotās vai nolauztās izlieto pirmās. Pagrabā saknes var salikt kastē ar viegli mitrām smiltīm, lai tās nesavīst. Latvijas audzēšanas vadlīnijās optimālie apstākļi ir 0–1 °C un ļoti augsts gaisa mitrums. Ja pagrabs ir siltāks, pārbaudi krājumus biežāk un regulāri izņem bojātās saknes."
     },
     {
-      "heading": "Kopšana un laistīšana",
-      "body": "Kad dīgsti paaugušies, izretini tos līdz 10–12 cm atstarpei rindā, lai katrai saknei pietiek vietas izveidoties resnai. Ravē regulāri, jo lēni dīgstošos pastinakus nezāles viegli noslāpē, un saudzīgi irdini augsnes virskārtu. Laisti vienmērīgi, īpaši sausās vasarās — pēkšņa laistīšana pēc ilga sausuma liek saknēm ieplaisāt. Mēness ritmā darbus ar saknēm tradicionāli plānoja Zemes (sakņu) dienās, taču augsnes mitrums un laiks ir noteicošie."
+      "heading": "Kad un cik dziļi sēt pastinakus",
+      "body": "Sēj tieši pastāvīgajā vietā. Latvijas apstākļos sēju var sākt no aprīļa vidus, kad dobe ir apžuvusi un augsni var viegli sairdināt. Arī maija sākums der, ja pavasaris ir vēls. Izmanto svaigas sēklas. Iesēj ap 1 cm dziļi un starp rindām atstāj ap 35 cm.\n\nIezīmē rindu un uzturi virskārtu mitru. Pastinaks dīgst lēni. Vēsā pavasarī līdz pirmajiem dīgstiem var paiet pat četras nedēļas. Kad redzamas īstās lapas, pakāpeniski izretini sējumu, atstājot augiem aptuveni 10–15 cm."
     },
     {
-      "heading": "Biežākās problēmas un kaitēkļi",
-      "body": "Galvenais ienaidnieks ir burkānu muša, kuras kāpuri izgrauž ejas saknēs; palīdz smalks tīkls pār dobi un sēja tālāk no burkāniem. Sazarotas vai dakšveida saknes parasti norāda uz akmeņainu vai svaigi mēslotu augsni, nevis slimību. Mitros gados var parādīties sakņu puve un lapu pelēkie plankumi, tāpēc neturi stādījumu pārāk biezu un nodrošini gaisa plūsmu. Svarīgi: pastinaka lapu sula saulē var izraisīt ādas apdegumus, tāpēc ravējot un novācot valkā cimdus."
+      "heading": "Augsne, kopšana un šķirnes izvēle",
+      "body": "Garām, taisnām saknēm vajadzīga saulaina vieta ar dziļu, irdenu augsni. Akmeņainā vai sablīvētā dobē saknes biežāk sazarojas. Ja augsnes irdenais slānis ir sekls, izvēlies īsākas saknes šķirni vai ierīko paaugstinātu dobi. Šķirnes aprakstā pārbaudi arī augšanas ilgumu un piemērotību glabāšanai.\n\nPirmajās nedēļās regulāri ravē un sausā laikā laisti, lai zeme būtu vienmērīgi mitra. Ja iepriekš dobē auguši burkāni, selerijas vai pētersīļi, pastinakiem atrodi citu vietu. Retinot un griežot lakstus, uzvelc cimdus un garas piedurknes. Lapu sula uz ādas saules gaismā var radīt apdegumu."
     },
     {
-      "heading": "Šķirnes Latvijai",
-      "body": "Latvijas īsajai sezonai der pārbaudītas, izturīgas šķirnes ar vidēji garu augšanas laiku, piemēram 'Halblange White' (Pusgarais baltais), kas dod stabilu ražu arī smagākā augsnē. Garāku, gludu sakni veido 'Tender and True' un klasiskā 'Hollow Crown', savukārt slimībizturīgāka un ātrāka ir hibrīdšķirne 'Gladiator F1'. Iesācējam ieteicama pusgarā tipa šķirne, jo to vieglāk izrakt un tā labāk padodas blīvākā zemē."
-    },
-    {
-      "heading": "Novākšana un glabāšana",
-      "body": "Pastinaku nesteidzies novākt — atstāj to zemē līdz pirmajām salnām septembrī–novembrī, jo aukstums saknes padara saldas un garšīgas. Izrok uzmanīgi ar dakšu, lai nepārlauztu garo sakni, un nogriez lakstus. Latvijas apstākļos daļu ražas var atstāt zemē zem lapu vai salmu kārtas un izrakt pakāpeniski visu ziemu, līdz zeme sasalst pa īstam. Uzglabāšanai saknes liek vēsā, mitrā pagrabā smiltīs (0–4 °C), kur tās saglabājas vairākus mēnešus."
+      "heading": "Kāpēc saknes sazarojas vai tajās ir ejas",
+      "body": "Ja veselīga sakne sazarojusies, nākamajā sezonā pārbaudi augsnes dziļumu, izņem akmeņus un pirms sējas neiestrādā svaigus kūtsmēslus. Šauras, brūnganas ejas saknēs var atstāt burkānu mušas kāpuri. Ja bojājumi ir atkārtojušies, jaunajam sējumam izvēlies citu dobi un pārklāj to ar smalku kukaiņu tīklu."
     }
   ],
-  "folklore": "Senči mēdza teikt, ka sakņaugi, ko skar pirmā salna, ir veselīgākie un saldākie — un tieši pastinaks šo gudrību apliecina vislabāk, jo aukstumā kļūst tikai gardāks."
+  "relatedLinks": [
+    {
+      "label": "Kā uzglabāt dārzeņus ziemā",
+      "href": "/raksti/ka-uzglabat-darzenus-ziema"
+    },
+    {
+      "label": "Augu maiņa sakņu dārzā",
+      "href": "/raksti/augu-maina-darza"
+    }
+  ],
+  "sources": [
+    {
+      "label": "Zemkopības ministrija — pastinaku audzēšanas, novākšanas un glabāšanas vadlīnijas",
+      "url": "https://www.zm.gov.lv/lv/media/729/download?attachment="
+    },
+    {
+      "label": "Latvijas Mazpulki — darba lapas pastinaku pētījumam Latvijas dārzos",
+      "url": "https://mazpulki.lv/wp-content/uploads/2022/05/Pastinaki_darba_burtnica.pdf"
+    },
+    {
+      "label": "Royal Horticultural Society — pastinaku sēja, kopšana un novākšana",
+      "url": "https://www.rhs.org.uk/vegetables/parsnips/grow-your-own"
+    },
+    {
+      "label": "Utah State University Extension — pastinaku glabāšana pagrabā un dobē",
+      "url": "https://extension.usu.edu/yardandgarden/research/parsnips-in-the-garden"
+    }
+  ],
+  "updatedAt": "2026-11-18"
 }

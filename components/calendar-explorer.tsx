@@ -6,14 +6,14 @@ import { Card } from "@/components/ui/card";
 import { Chip } from "@/components/ui/chip";
 import { Icon } from "@/components/ui/icon";
 import { MoonPhase } from "@/components/moon-phase";
-import { moonForDate } from "@/lib/moon";
+import { dailyPhaseName, moonForDate, moonPhasesForMonth } from "@/lib/moon";
 import { sowingDay, ELEMENT_META, moonAscending, isRestDay, type Element, type PlantPart } from "@/lib/biodynamic";
 import { CROPS, MONTHS_LV_FULL, MONTHS_LV_GENITIVE, ACTIVITY_META } from "@/lib/planting-crops";
 import { cropPart } from "@/lib/crop-part";
 import { cropEmoji } from "@/lib/crop-visual";
 import { useMounted } from "@/lib/use-mounted";
 import { namedaysFor } from "@/lib/vardadienas";
-import { MONTH_SLUGS, CALENDAR_YEARS } from "@/lib/seo";
+import { MONTH_SLUGS, calendarYears } from "@/lib/seo";
 import { DataNote } from "@/components/data-note";
 import { track } from "@/lib/analytics";
 import { monthPlan } from "@/lib/month-plan";
@@ -86,6 +86,8 @@ export function CalendarExplorer() {
 
   const sel = sowingDay(selected);
   const selMoon = moonForDate(selected);
+  const phases = useMemo(() => moonPhasesForMonth(year, month + 1), [year, month]);
+  const selectedEvent = phases.find((phase) => latviaDateParts(phase.date).day === selected.getUTCDate());
   const selElem = ELEMENT_META[sel.element];
   const suggestions = cropsForDay(latviaDateParts(selected).month, sel.part);
 
@@ -100,7 +102,7 @@ export function CalendarExplorer() {
     <>
       <div className="mb-md flex flex-wrap items-center justify-between gap-2">
         <DataNote variant="moon" />
-        {CALENDAR_YEARS.includes(year) && (
+        {calendarYears(today).includes(year) && (
           <Link
             href={`/kalendars/${year}/${MONTH_SLUGS[month]}`}
             className="inline-flex shrink-0 items-center gap-1.5 rounded-full border border-outline-variant/30 bg-surface-container px-4 py-1.5 text-label-md text-on-surface transition-colors hover:border-primary/40 hover:text-primary"
@@ -194,7 +196,7 @@ export function CalendarExplorer() {
                 <p className="text-label-sm uppercase tracking-widest text-tertiary">
                   {sel.sign.symbol} {sel.sign.name}
                 </p>
-                <h3 className="text-headline-md text-on-surface">{selMoon.name}</h3>
+                <h3 className="text-headline-md text-on-surface">{dailyPhaseName(selMoon, selectedEvent)}</h3>
                 <p className="text-body-md text-on-surface-variant">
                   {Math.round(selMoon.illumination * 100)}% · {selMoon.waxing ? "augošs" : "dilstošs"}
                 </p>
