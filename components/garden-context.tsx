@@ -31,7 +31,7 @@ interface GardenState {
   hydrated: boolean;
   /** true while the logged-in garden is being pulled from / pushed to the cloud */
   syncing: boolean;
-  /** Last cloud-write failure, for the UI to surface (writes roll back). */
+  /** Most recent problem saving garden data, for the UI to surface. */
   syncError: string | null;
   clearSyncError: () => void;
 }
@@ -249,6 +249,7 @@ export function GardenProvider({ children }: { children: React.ReactNode }) {
     } else if (storageSet(STORAGE_KEY, JSON.stringify([...plants.filter((p) => !p.seed), plant]))) {
       recordSavedPlant(plant, "local", firstPlant);
     } else {
+      setSyncError("Augs pievienots šai sesijai. Pārlūkā neizdevās to saglabāt nākamajai reizei.");
       track("garden_add_error", { crop_id: cropId, reason: "local_storage" });
     }
   };

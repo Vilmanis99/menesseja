@@ -8,6 +8,7 @@ export interface ArticleSection {
   /** A small, credited photo comparison within the article. */
   images?: ContentImageUse[];
   diagram?: "hydrangea-pruning" | "greenhouse-winter";
+  calculator?: "seedling-sowing";
   /** Preserve links to headings used before an editorial rewrite. */
   anchorAliases?: string[];
   paragraphs: string[];

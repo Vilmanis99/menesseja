@@ -8,6 +8,8 @@ import { ContentFigure } from "@/components/content-figure";
 import { ContentTable } from "@/components/content-table";
 import { HydrangeaPruningDiagram } from "@/components/hydrangea-pruning-diagram";
 import { GreenhouseWinterDiagram } from "@/components/greenhouse-winter-diagram";
+import { SeedlingSowingCalculator } from "@/components/seedling-sowing-calculator";
+import { exampleTransplantDate } from "@/lib/seedling-sowing";
 import { getArticle, getRelatedArticles, articleSlugs, articleFaq, articlePhoto, headingSlug } from "@/lib/articles";
 import { NewsletterSignup } from "@/components/newsletter-signup";
 import { newsletterConfigured } from "@/lib/brevo";
@@ -164,6 +166,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
             )}
             {section.diagram === "hydrangea-pruning" && <HydrangeaPruningDiagram />}
             {section.diagram === "greenhouse-winter" && <GreenhouseWinterDiagram />}
+            {section.calculator === "seedling-sowing" && <SeedlingSowingCalculator initialDate={exampleTransplantDate()} />}
             {section.table && <ContentTable table={section.table} />}
             {section.items && (
               section.listStyle === "numbered" ? (

@@ -1,13 +1,14 @@
 {
   "title": "Kad sēt dēstus: rēķini atpakaļ no izstādīšanas datuma",
   "slug": "kad-set-destus-rekini-atpakal",
+  "seoTitle": "Kad sēt dēstus? Sējas datuma kalkulators",
   "category": "Praktiski",
   "intent": "how-to",
-  "excerpt": "Kad sēt dēstus: kā skaitīt atpakaļ no izstādīšanas, nepieskaitīt dīgšanu un norūdīšanu divreiz un koriģēt plānu aukstā pavasarī.",
+  "excerpt": "Aprēķini, kad sēt dēstus. Ievadi plānoto izstādīšanas datumu un šķirnei vajadzīgo nedēļu skaitu. Kalkulators parādīs agrāko un vēlāko sējas datumu.",
   "shortAnswer": "Sējas datumu rēķini no plānotās izstādīšanas: atņem laiku dīgšanai un dēstu izaudzēšanai, ja tas nav jau ietverts šķirnes norādēs. Norūdīšanu ieplāno audzēšanas beigās un neatskaiti divreiz. Izstādīšanas datumu vēlāk precizē pēc prognozes un augsnes, ne tikai kalendāra.",
   "primaryQuery": "kad sēt dēstus: rēķini atpakaļ no izstādīšanas datuma",
   "publishedAt": "2026-06-29",
-  "updatedAt": "2026-10-06",
+  "updatedAt": "2026-11-18",
   "entities": {},
   "relatedSlugs": [
     "destu-audzesana-uz-palodzes",
@@ -34,6 +35,14 @@
   ],
   "readMinutes": 3,
   "body": [
+    {
+      "heading": "Sējas kalkulators",
+      "calculator": "seedling-sowing",
+      "paragraphs": [
+        "Piemērā izstādīšana plānota 1. jūnijā, un no sējas līdz izstādīšanai paiet 6–8 nedēļas. Izvēlies savam dārzam piemērotu datumu un ievadi šķirnei paredzēto laiku līdz izstādīšanai, ieskaitot norūdīšanu. Ja norādīts viens skaitlis, ieraksti to abos laukos.",
+        "Ja nedēļas skaitītas no sadīgšanas, ievadi arī uz paciņas norādītās dīgšanas dienas. Ja nedēļas skaitītas no sējas, dīgšana jau ir ietverta."
+      ]
+    },
     {
       "heading": "1. Izvēlies izstādīšanas vietu un plāna datumu",
       "paragraphs": [
@@ -128,8 +137,10 @@
     }
   ],
   "seasonalMonths": [
+    1,
     2,
     3,
-    4
+    4,
+    12
   ]
 }

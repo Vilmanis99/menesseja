@@ -1,5 +1,16 @@
 # Mēness Sēja — gada saturs un izaugsmes darba kārtība
 
+## Prioritārie darbi no meklēšanas rezultāta līdz savam dārzam
+
+| Prioritāte | Darbs | Kā pārbaudīt rezultātu |
+|---|---|---|
+| 1 | Ziemas plānošanai papildināt esošo dēstu rakstu ar sējas datumu kalkulatoru. Savienot to ar decembra un janvāra ceļvežiem. | Izstādīšanai 1. jūnijā, rēķinot 6–8 nedēļas no sējas, iegūst 6.–20. aprīli. Ja vecumu skaita no sadīgšanas, ievadītās dīgšanas dienas pārbīda sēju agrāk. |
+| 2 | No mēneša ceļveža atvērt tieši tā mēneša un darbības augu atlasi. | No maija lapas atveras maija augi arī novembrī. Pēc pārlādes mēnesis un darbība saglabājas. |
+| 3 | Maija un jūnija lapās izskaidrot izvēli starp tiešo sēju, dēstu izstādīšanu un nogaidīšanu. | Katrā lapā lasītājs atrod vietējiem apstākļiem piemērotu sākšanas nosacījumu un saiti uz konkrētu audzēšanas pamācību. |
+| 4 | Saīsināt izvēlētā auga pievienošanu savam dārzam. | No auga kartītes var apstiprināt izvēlēto augu, norādīt vietu un atrast to savā dārzā arī pēc pārlādes. |
+| 5 | Līdz 25. novembrim pārbaudīt decembra un janvāra kalendāru indeksācijas statusu un Google izvēlēto kanonisko adresi. Pēc tam pārbaudīt maija un jūnija sējas ceļvežus. | Search Console URL Inspection pierakstīt katras lapas statusu un pēdējo pārmeklēšanu. Turpmāk katra mēneša sākumā pārbaudīt nākamos divus mēnešus. |
+| 6 | Kad Search Console pieejami pilni dati par 19. novembri–16. decembri, izvērtēt decembra kalendāru un dēstu rakstu. | Katrai adresei atlasīt vaicājumus, klikšķus, rādījumus un pozīciju. Decembra sezonālā pieprasījuma pieaugumu ņemt vērā, vērtējot labojumu ietekmi. |
+
 ## Satura izaugsmes 2. partija: ziemošana un telpaugi — 2026-10-27
 
 Pēc lietotāja norādes strādāt lielākās partijās pabeigtas septiņas tematiskās lapas. Trīs aģenti sagatavoja pelargoniju, rožu un kaktusa saturu; galvenais aģents pārskatīja gala tekstus, avotu būtiskos punktus un attēlus, paplašināja siltumnīcas rakstu un pabeidza kopīgo ieviešanu. **Visa partija lokāli ieviesta un pārbaudīta; nav publicēta.** Kopā ar iepriekšējo hortenziju darbu tā gaida atsevišķu laidienu; dzīvais laidiens joprojām ir `eda47d5`.

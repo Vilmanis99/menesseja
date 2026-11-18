@@ -12,6 +12,7 @@ require.extensions[".ts"] = (module, filename) => {
   module._compile(result.outputText, filename);
 };
 const { latviaDateParts, latviaDateKey } = require("../lib/day-anchor.ts");
+const { exampleTransplantDate, seedlingSowingWindow } = require("../lib/seedling-sowing.ts");
 const { gardenWeek } = require("../lib/garden-week.ts");
 const { calendarYears, calendarYearFromSlug } = require("../lib/seo.ts");
 const { dailyPhaseName, moonForDate, moonPhasesForMonth, nextPrincipalPhases, principalPhasesOnDate } = require("../lib/moon.ts");
@@ -26,7 +27,54 @@ const { EMPTY_PROBLEM_FILTERS, matchesProblem, readProblemFilters, problemSearch
 const { flowerDirectoryEntries, matchesFlower, readFlowerQuery, flowerSearchParams } = require("../lib/flower-directory.ts");
 const { EXTRA_FLOWER_NAMES, FOLK_NAMES } = require("../lib/flower-names.ts");
 const { CROPS, cropActivityMeta } = require("../lib/planting-crops.ts");
-const { defaultSowingFilters, guideActivities, matchesSowingCrop } = require("../lib/sowing-guide-filter.ts");
+const { defaultSowingFilters, guideActivities, matchesSowingCrop, readSowingPeriod, setSowingPeriod, sowingGuideHref } = require("../lib/sowing-guide-filter.ts");
+
+test("monthly guide links preserve their time of year and activity independent of the visiting date", () => {
+  const november = new Date("2026-11-18T12:00:00Z");
+  for (let month = 0; month <= 12; month++) {
+    for (const activity of ["sowing", "harvest", "flowering", "all"]) {
+      const params = new URL(sowingGuideHref(month, activity), "https://www.menesseja.lv").searchParams;
+      assert.deepEqual(readSowingPeriod(params, november), { month, activity });
+    }
+  }
+  const params = new URLSearchParams("menesis=unknown&darbiba=unknown&utm_source=guide");
+  assert.deepEqual(readSowingPeriod(params, november), { month: 11, activity: "sowing" });
+  setSowingPeriod(params);
+  assert.equal(params.toString(), "utm_source=guide");
+});
+
+test("seedling dates reflect both range endpoints, counting germination only for ages from emergence", () => {
+  const weeks = { min: "6", max: "8" };
+  const fromSowing = seedlingSowingWindow("2027-06-01", weeks);
+  const fromEmergence = seedlingSowingWindow("2027-06-01", weeks, { min: "5", max: "10" });
+  assert.deepEqual(fromSowing, { earliest: new Date("2027-04-06"), latest: new Date("2027-04-20") });
+  assert.deepEqual(fromEmergence, { earliest: new Date("2027-03-27"), latest: new Date("2027-04-15") });
+  const oneWeek = { min: "1", max: "1" };
+  for (const [transplant, sowing] of [["2028-02-29", "2028-02-22"], ["2027-01-01", "2026-12-25"], ["2027-03-29", "2027-03-22"]]) {
+    assert.deepEqual(seedlingSowingWindow(transplant, oneWeek), { earliest: new Date(sowing), latest: new Date(sowing) });
+  }
+});
+
+test("seedling calculator rejects impossible dates and incomplete or inverted durations", () => {
+  const weeks = { min: "1", max: "2" };
+  for (const date of ["", "0000-06-01", "0001-01-01", "2027-02-29", "2027-04-31", "2026-13-01", "2027-6-01", "2027-06-01T23:00:00Z"]) {
+    assert.ok(seedlingSowingWindow(date, weeks).error, date);
+  }
+  for (const value of ["", "0", "1.5", "-2", "1e1", "53"]) {
+    assert.ok(seedlingSowingWindow("2027-06-01", { min: value, max: value }).error, value);
+  }
+  assert.ok(seedlingSowingWindow("2027-06-01", { min: "8", max: "6" }).error);
+  assert.ok(seedlingSowingWindow("2027-06-01", weeks, { min: "9", max: "4" }).error);
+  assert.ok(seedlingSowingWindow("2027-06-01", weeks, { min: "", max: "10" }).error);
+  assert.ok(seedlingSowingWindow("2027-06-01", weeks, { min: "1", max: "366" }).error);
+});
+
+test("the next example June date uses Riga's day across winter and the start of June", () => {
+  for (const instant of ["2026-11-18T10:00:00Z", "2026-12-31T22:30:00Z", "2027-06-01T20:59:59Z"]) {
+    assert.equal(exampleTransplantDate(new Date(instant)), "2027-06-01");
+  }
+  assert.equal(exampleTransplantDate(new Date("2027-06-01T21:00:00Z")), "2028-06-01");
+});
 
 test("October sowing excludes carrots and beets while their harvest stays discoverable", () => {
   const filters = defaultSowingFilters(new Date("2026-10-27T12:00:00Z"));

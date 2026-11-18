@@ -41,7 +41,7 @@ export default function DarzsPage() {
             <h2 id="my-garden-heading" className="text-headline-lg-mobile text-on-surface md:text-headline-lg">Mans dārzs</h2>
             <p className="mt-1 text-body-md text-on-surface-variant">Tavi augi, kopšanas pieraksti un aktuālie darbi.</p>
           </div>
-          <div className="flex flex-wrap gap-2"><AddPlantButton /><Onboarding /></div>
+          <div className="flex flex-wrap gap-2"><AddPlantButton handleDeepLink /><Onboarding /></div>
         </div>
         <GardenWelcome />
         <TodayBanner />

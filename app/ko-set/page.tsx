@@ -3,8 +3,12 @@ import Link from "next/link";
 import { Card } from "@/components/ui/card";
 import { Icon } from "@/components/ui/icon";
 import { JsonLd } from "@/components/json-ld";
-import { MONTH_SLUGS, MONTH_TIPS, canonical, SITE_NAME } from "@/lib/seo";
+import { MONTH_SLUGS, MONTH_TIPS, MONTHS_LV_LOCATIVE, canonical, SITE_NAME } from "@/lib/seo";
 import { MONTHS_LV_FULL } from "@/lib/planting-crops";
+import { latviaDateParts } from "@/lib/day-anchor";
+import { SEEDLING_CALCULATOR_HREF } from "@/lib/seedling-sowing";
+
+export const revalidate = 3600;
 
 export const metadata: Metadata = {
   title: "Ko sēt pa mēnešiem — dārza darbu kalendārs Latvijai",
@@ -14,6 +18,7 @@ export const metadata: Metadata = {
 };
 
 export default function KoSetIndex() {
+  const { month } = latviaDateParts();
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
@@ -31,6 +36,14 @@ export default function KoSetIndex() {
           Izvēlies mēnesi un redzi, ko Latvijā sēt, stādīt un novākt — kopā ar sezonas padomiem un
           Mēness sējas dienām.
         </p>
+        <div className="mt-sm flex flex-wrap gap-x-md">
+          <Link href={`/ko-set/${MONTH_SLUGS[month - 1]}`} className="inline-flex min-h-11 items-center gap-1 text-label-md font-semibold text-primary hover:underline">
+            Dārza darbi {MONTHS_LV_LOCATIVE[month - 1]} <Icon name="arrow_forward" size="16px" />
+          </Link>
+          <Link href={SEEDLING_CALCULATOR_HREF} className="inline-flex min-h-11 items-center gap-1 text-label-md font-semibold text-primary hover:underline">
+            Aprēķināt dēstu sējas laiku <Icon name="arrow_forward" size="16px" />
+          </Link>
+        </div>
       </header>
       <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
         {MONTH_SLUGS.map((s, i) => (

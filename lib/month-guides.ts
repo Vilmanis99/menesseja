@@ -1,10 +1,13 @@
+import { SEEDLING_CALCULATOR_HREF } from "./seedling-sowing";
+
 export interface MonthGuide {
+  title?: string;
   description: string;
   shortAnswer: string;
   checklistTitle: string;
   priorityCropIds: string[];
   cropNotes: Record<string, string>;
-  checklist: { title: string; text: string; icon: string }[];
+  checklist: { title: string; text: string; icon: string; link?: { label: string; href: string } }[];
   relatedLinks: { label: string; href: string }[];
   sources: { label: string; url: string }[];
   updatedAt: string;
@@ -98,15 +101,31 @@ export const MONTH_GUIDES: Partial<Record<number, MonthGuide>> = {
     ], updatedAt: "2026-10-06",
   },
   5: {
-    description: "Maijā sēj burkānus, bietes un dilles. Norūdi dēstus un pārbaudi vietējo salnu prognozi, pirms izstādi tomātus vai gurķus.",
-    shortAnswer: "Maijā turpini aukstumizturīgo kultūru sēju un pakāpeniski norūdi dēstus. Tomātus, gurķus, papriku un ķirbjaugus laukā izstādi tikai pēc vietējiem salnu draudiem un pietiekamas augsnes iesilšanas. Neapkurināta siltumnīca aukstā naktī nav garantēta aizsardzība; dažviet jāgaida līdz jūnijam.",
-    checklistTitle: "Droša dēstu izstādīšana",
-    priorityCropIds: ["burkani", "bietes", "salati", "dilles"],
-    cropNotes: { bietes: "Sēj iesilušā, sagatavotā dobē un vēlāk izretini.", dilles: "Sēj nelielās porcijās, lai svaigi zaļumi būtu ilgāk.", gurki: "Tiešo sēju sāc tikai siltā augsnē pēc salnu draudiem; aukstā vietā nogaidi.", pupas: "Aukstā un pārmitrā augsnē sēklu bojāšanās risks ir lielāks; gaidi piemērotus apstākļus." },
+    title: "Ko sēt maijā Latvijā un kad izstādīt dēstus",
+    description: "Ko maijā sēt tieši dobē un ko audzēt podiņos? Augsnes siltums biešu sējai, nakts temperatūra gurķiem siltumnīcā un dēstu sagatavošana āra dobei.",
+    shortAnswer: "Maijā burkānus un zirņus vari sēt tieši dobē, tiklīdz zeme ir apžuvusi un viegli irdināma. Bietēm vajag siltāku augsni. Tomātus un kabačus, kas auguši telpās, pakāpeniski pieradini pie āra apstākļiem un izstādi, kad zeme iesilusi un vietējā prognoze vairs nesola salnas.",
+    checklistTitle: "Ko sēt dobē, ko podiņā un kad stādīt siltumnīcā?",
+    priorityCropIds: ["burkani", "zirni", "bietes", "dilles"],
+    cropNotes: { bietes: "Vēlāk izretini sadīgušās bietes, ievērojot uz sēklu paciņas norādīto attālumu.", dilles: "Sēj nelielās porcijās, lai svaigi zaļumi būtu ilgāk.", pupas: "Aukstā un pārmitrā augsnē sēklu bojāšanās risks ir lielāks. Ja audzē pākšu pupiņas, pagaidi, līdz augsne iesilusi un salnu draudi pārgājuši." },
     checklist: [
-      { title: "Norūdi pakāpeniski", text: "Palielini āra laiku pamazām. Pirmajās dienās sargā dēstus no stipras saules, vēja un aukstuma.", icon: "wb_twilight" },
-      { title: "Vēro nakts temperatūru", text: "Pārbaudi prognozi savā vietā un sagatavo plānu, kā dēstus pasargāsi pēkšņā aukstumā.", icon: "thermostat" },
-      { title: "Sagatavo vietu", text: "Balstus un laistīšanas iespēju ierīko laikus. Ievēro konkrētā auga attālumus, nevis sablīvē stādījumus.", icon: "potted_plant" },
+      {
+        title: "Bietes atklātā dobē",
+        text: "Pārbaudi augsni sējas dziļumā. Dārzkopības institūts galda bietēm iesaka sagaidīt 8–10 °C siltu augsni. Biešu dīgsti ir jutīgi pret salnām.",
+        icon: "grass",
+        link: { label: "Kā sēt bietes", href: "/augi/bietes" },
+      },
+      {
+        title: "Lauka gurķi podiņos",
+        text: "Ja līdz plānotajai izstādīšanai atlikušas apmēram divas nedēļas, sēj katru gurķi atsevišķā podiņā. Tā vēlāk varēsi pārcelt visu sakņu kamolu.",
+        icon: "potted_plant",
+        link: { label: "Aprēķini sējas laiku", href: SEEDLING_CALCULATOR_HREF },
+      },
+      {
+        title: "Gurķi neapkurinātā siltumnīcā",
+        text: "Ar minimālās temperatūras termometru pārbaudi, cik vēss siltumnīcā kļūst naktī. Gurķu dēstus stādi pastāvīgajā vietā, kad temperatūra arī naktī turas virs 12 °C.",
+        icon: "thermostat",
+        link: { label: "Gurķu audzēšana", href: "/augi/gurki" },
+      },
     ],
     relatedLinks: [
       { label: "Kā norūdīt dēstus", href: "/raksti/ka-rudit-destus" },
@@ -114,32 +133,53 @@ export const MONTH_GUIDES: Partial<Record<number, MonthGuide>> = {
       { label: "Balkona dārzs iesācējam", href: "/raksti/balkona-darzs-iesacejam" },
     ],
     sources: [
+      { label: "Dārzkopības institūts — burkānu, zirņu un biešu sēja", url: "https://www.darzkopibasinstituts.lv/lv/raksts/2020-04-06/stastam-par-aprili-daramajiem-darbiem-un-darzenu-sesanu" },
+      { label: "Zemkopības ministrija — lauka gurķu sēja un dēstu audzēšana (PDF, 9.–10. lpp.)", url: "https://www.zm.gov.lv/lv/media/765/download?attachment=#page=9" },
+      { label: "RHS — gurķu sēja podiņos un temperatūra siltumnīcā", url: "https://www.rhs.org.uk/vegetables/cucumbers/grow-your-own" },
       { label: "RHS — norūdīšana un izstādīšana pēc salnām", url: "https://www.rhs.org.uk/advice/grow-your-own/in-month/may-jobs" },
-      { label: "University of Minnesota Extension — dēstu audzēšana un izstādīšana", url: "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/starting-seeds-indoors" },
-    ], updatedAt: "2026-10-06",
+    ], updatedAt: "2026-11-18",
   },
   6: {
-    description: "Jūnijā pēc salnu riska beigām izstādi siltummīļus. Salātus un dilles sēj vairākos piegājienos, lai tos varētu novākt pakāpeniski.",
-    shortAnswer: "Jūnijā, kad salnu draudi beigušies un augsne iesilusi, vari izstādīt siltummīļus un sēt ātraudzīgas kultūras. Galvenie darbi ir vienmērīga laistīšana, ravēšana, balstu pārbaude un siltumnīcas vēdināšana. Salātus un dilles sēj mazās porcijās; karstumā izvēlies piemērotu šķirni un sargā jaunos sējumus no izžūšanas.",
-    checklistTitle: "Palīdzi jaunajiem stādījumiem ieaugt",
-    priorityCropIds: ["pupas", "dilles", "salati", "gurki"],
-    cropNotes: { pupas: "Vīteņšķirnēm pirms sējas ierīko stabilus balstus.", dilles: "Sēj atkārtoti nelielās porcijās un uzturi mitru sējas virskārtu.", salati: "Karstā vietā izvēlies vasarai piemērotu šķirni un nelielu sējumu.", gurki: "Siltā augsnē izvēlies konkrētajai audzēšanas vietai piemērotu šķirni." },
+    title: "Ko sēt jūnijā Latvijā un ko stādīt pēc salnām",
+    description: "Ko jūnijā iesēt pēc redīsu novākšanas un kad dobē izstādīt lauka gurķus vai kabačus? Praktiski orientieri sējai, dēstiem un nākamajai salātu ražai.",
+    shortAnswer: "Jūnijā pēc redīsu novākšanas vari sēt lapu salātus vai agrīnus burkānus. Lauka gurķu, kabaču un tomātu dēstus izstādi, kad augsne iesilusi un salnu draudi tavā dārzā pārgājuši. Aukstums Latvijā iespējams arī mēneša sākumā. Piemēram, 2023. gada 2. jūnijā Stendē reģistrēja −2,4 °C.",
+    checklistTitle: "Ko darīt ar gurķu sēklām, gataviem dēstiem un brīvu dobi?",
+    priorityCropIds: ["salati", "burkani", "dilles", "pupas"],
+    cropNotes: { pupas: "Vīteņšķirnēm pirms sējas ierīko stabilus balstus.", dilles: "Sēj atkārtoti nelielās porcijās un uzturi mitru sējas virskārtu.", salati: "Karstā vietā izvēlies vasarai piemērotu šķirni un nelielu sējumu." },
     checklist: [
-      { title: "Pārbaudi mitrumu", text: "Vēro augsni sakņu dziļumā un podus, kas izžūst ātrāk. Laisti pēc vajadzības, ne pēc viena grafika.", icon: "water_drop" },
-      { title: "Ierīko balstus", text: "Tomātus un vīteņpupas piesien, augot augumā. Pārbaudi, vai saites neiegriežas stublājā.", icon: "yard" },
-      { title: "Vēro siltumnīcu", text: "Saulainās dienās vēdini un apskati lapu apakšpuses. Problēmu vispirms atpazīsti, tikai tad izvēlies rīcību.", icon: "visibility" },
+      {
+        title: "Man ir lauka gurķu sēklas",
+        text: "Kad salnu risks pārgājis, izmēri augsnes temperatūru 2–3 cm dziļumā, kur sēsi gurķus. Virs 15 °C sēklas var sākt dīgt. Visstraujāk tās sadīgst 22–25 °C siltā augsnē.",
+        icon: "thermostat",
+        link: { label: "Kā sēt lauka gurķus", href: "/augi/gurki" },
+      },
+      {
+        title: "Man ir gurķu vai kabaču dēsti",
+        text: "Ja dēsti auguši telpās, vispirms pakāpeniski pieradini tos pie saules un vēja. Iesilušā dobē pārstādi ar visu sakņu kamolu un aplaisti. Ja atkal sola salnu, podiņus uz nakti ienes telpās.",
+        icon: "potted_plant",
+        link: { label: "Kad izstādīt dēstus laukā", href: "/raksti/kad-stadit-destus-lauka" },
+      },
+      {
+        title: "Dobē novākti pirmie redīsi",
+        text: "Iesēj īsu lapu salātu rindu un atstāj vietu nākamajai. Kad pirmajam sējumam izaugušas aptuveni četras īstās lapas, sēj nākamo rindu. Tā varēsi vākt svaigas lapas pakāpeniski.",
+        icon: "grass",
+        link: { label: "Salātu šķirnes un kopšana", href: "/augi/salati" },
+      },
     ],
     relatedLinks: [
       { label: "Kā laistīt dārzu karstumā", href: "/raksti/ka-laistit-darzu-karstuma" },
       { label: "Tomātu veidošana", href: "/raksti/tomatu-veidosana" },
-      { label: "Kāpēc hortenzijas nezied", href: "/raksti/kapec-hortenzijas-nezied" },
+      { label: "Salnu risks Latvijas dārzos", href: "/raksti/salnas-latvija" },
     ],
     sources: [
+      { label: "LVĢMC — 2023. gada jūnija sākuma salnas Latvijā", url: "https://klimats.meteo.lv/operativais_klimats/laikapstaklu_apskati/2023/junijs/" },
+      { label: "Zemkopības ministrija — lauka gurķu sēja un dēstu izstādīšana (PDF, 9.–10. lpp.)", url: "https://www.zm.gov.lv/lv/media/765/download?attachment=#page=9" },
+      { label: "RHS — salātu un citu dārzeņu atkārtota sēja", url: "https://www.rhs.org.uk/vegetables/successional-sowing" },
       { label: "RHS — vasaras sēja un augu balsti", url: "https://www.rhs.org.uk/advice/grow-your-own/in-month/june-jobs" },
-      { label: "University of Minnesota Extension — gurķu audzēšana", url: "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/growing-cucumbers" },
-    ], updatedAt: "2026-10-06",
+    ], updatedAt: "2026-11-18",
   },
   7: {
+    title: "Ko vēl sēt jūlijā otrajai ražai Latvijā",
     description: "Ko jūlijā vēl paspēt iesēt rudens ražai: Ķīnas kāposti, kolrābji, rāceņi, dilles, redīsi un salāti ar svarīgām karstuma niansēm.",
     checklistTitle: "Trīs noteikumi otrajai ražai",
     shortAnswer:

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Suspense } from "react";
 import { PageHeader } from "@/components/ui/page-header";
 import { JsonLd } from "@/components/json-ld";
 import { SowingGuide } from "@/components/sowing-guide";
@@ -42,7 +43,9 @@ export default function CelvedisPage() {
         display
         subtitle="Ko šomēnes sēt un stādīt Latvijā? Izvēlies mēnesi un darbību; ražas novākšanai un ziedēšanai ir atsevišķi skati."
       />
-      <SowingGuide cropLinks={Object.fromEntries(CROPS.map((crop) => [crop.id, cropHref(crop.id)]))} />
+      <Suspense fallback={null}>
+        <SowingGuide cropLinks={Object.fromEntries(CROPS.map((crop) => [crop.id, cropHref(crop.id)]))} />
+      </Suspense>
 
       <section className="mt-lg">
         <h2 className="mb-sm text-headline-md text-on-surface">

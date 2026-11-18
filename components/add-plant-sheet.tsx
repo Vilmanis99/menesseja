@@ -13,46 +13,46 @@ import { track } from "@/lib/analytics";
 
 /** "Pievienot augu" — opens an accessible sheet/modal. Also auto-opens when a
  *  crop page deep-links via ?pievienot=<cropId>. */
-export function AddPlantButton({ label = "Pievienot augu", onAdded }: { label?: string; onAdded?: () => void } = {}) {
-  const [open, setOpen] = useState(false);
-  const [initialCrop, setInitialCrop] = useState<string | null>(null);
+export function AddPlantButton({ label = "Pievienot augu", onAdded, handleDeepLink = false }: {
+  label?: string;
+  onAdded?: () => void;
+  handleDeepLink?: boolean;
+} = {}) {
+  const [selection, setSelection] = useState<{ cropId?: string; missingCrop?: boolean } | null>(null);
 
   useEffect(() => {
-    const id = new URLSearchParams(window.location.search).get("pievienot");
-    if (id && (id === "izveleties" || cropById(id))) {
-      setInitialCrop(id === "izveleties" ? null : id);
-      setOpen(true);
-      track("garden_add_started", { crop_id: id === "izveleties" ? undefined : id, source: "deep_link" });
-      // clean the URL so refresh doesn't re-open
-      const url = new URL(window.location.href);
-      url.searchParams.delete("pievienot");
-      window.history.replaceState({}, "", `${url.pathname}${url.search}${url.hash}`);
-    }
-  }, []);
+    if (!handleDeepLink) return;
+    const url = new URL(window.location.href);
+    const id = url.searchParams.get("pievienot");
+    if (id === null) return;
+    const cropId = cropById(id)?.id;
+    setSelection({ cropId, missingCrop: !cropId && id !== "izveleties" });
+    track("garden_add_started", { crop_id: cropId, source: "deep_link" });
+    url.searchParams.delete("pievienot");
+    window.history.replaceState(null, "", `${url.pathname}${url.search}${url.hash}`);
+  }, [handleDeepLink]);
 
   return (
     <>
-      <Button icon="add" onClick={() => { track("garden_add_started", { source: "dashboard" }); setOpen(true); }}>
+      <Button icon="add" onClick={() => { track("garden_add_started", { source: "dashboard" }); setSelection({}); }}>
         {label}
       </Button>
-      {open && (
-        <AddPlantSheet
-          initialCrop={initialCrop}
-          onAdded={onAdded}
-          onClose={() => {
-            setOpen(false);
-            setInitialCrop(null);
-          }}
-        />
+      {selection && (
+        <AddPlantSheet initialCrop={selection.cropId} missingCrop={selection.missingCrop} onAdded={onAdded} onClose={() => setSelection(null)} />
       )}
     </>
   );
 }
 
-function AddPlantSheet({ onClose, initialCrop, onAdded }: { onClose: () => void; initialCrop?: string | null; onAdded?: () => void }) {
-  const { addPlant } = useGarden();
-  const initialCat = (initialCrop && cropById(initialCrop)?.category) || "all";
-  const [cat, setCat] = useState<Category | "all">(initialCat);
+function AddPlantSheet({ onClose, initialCrop, missingCrop, onAdded }: {
+  onClose: () => void;
+  initialCrop?: string;
+  missingCrop?: boolean;
+  onAdded?: () => void;
+}) {
+  const { addPlant, hydrated } = useGarden();
+  const [selectedCrop, setSelectedCrop] = useState(() => initialCrop ? cropById(initialCrop) : undefined);
+  const [cat, setCat] = useState<Category | "all">("all");
   const [area, setArea] = useState<string>(GARDEN_AREAS[0]);
 
   const crops = CROPS.filter((c) => cat === "all" || c.category === cat);
@@ -73,7 +73,7 @@ function AddPlantSheet({ onClose, initialCrop, onAdded }: { onClose: () => void;
       {/* Header */}
       <div className="border-b border-outline-variant/10 p-md">
         <div className="flex items-center justify-between">
-          <h3 id="add-plant-title" className="text-headline-md text-on-surface">Pievienot augu</h3>
+          <h3 id="add-plant-title" className="text-headline-md text-on-surface">{selectedCrop?.name ?? "Pievienot augu"}</h3>
           <button
             onClick={onClose}
             aria-label="Aizvērt"
@@ -83,7 +83,7 @@ function AddPlantSheet({ onClose, initialCrop, onAdded }: { onClose: () => void;
           </button>
         </div>
         <p className="mt-1 text-body-md text-on-surface-variant">
-          Izvēlies zonu un augu. Tas parādīsies tavā dārzā — sekosim augšanai un atgādināsim darbus.
+          {selectedCrop ? "Izvēlies dārza zonu šim augam." : missingCrop ? "Saitē norādīto augu neatradām. Izvēlies zonu un augu no saraksta." : "Izvēlies zonu un augu, ko pievienot savam dārzam."}
         </p>
       </div>
 
@@ -99,37 +99,46 @@ function AddPlantSheet({ onClose, initialCrop, onAdded }: { onClose: () => void;
         </div>
       </div>
 
-      {/* Category filter */}
-      <div className="px-md pt-sm">
-        <div className="flex flex-wrap gap-2">
-          <Chip tone="neutral" active={cat === "all"} onClick={() => setCat("all")}>
-            Visi
-          </Chip>
-          {CATEGORIES.map((c) => (
-            <Chip key={c.id} tone="neutral" active={cat === c.id} onClick={() => setCat(c.id)}>
-              {c.label}
-            </Chip>
-          ))}
+      {selectedCrop ? (
+        <div className="flex flex-wrap items-center gap-2 p-md">
+          <Button icon="add" disabled={!hydrated} onClick={() => pick(selectedCrop.id)}>Pievienot dārzam</Button>
+          <Button variant="ghost" onClick={() => setSelectedCrop(undefined)}>Izvēlēties citu augu</Button>
         </div>
-      </div>
-
-      {/* Crop grid */}
-      <div className="custom-scrollbar grid grid-cols-2 gap-2 overflow-y-auto p-md sm:grid-cols-3">
-        {crops.map((c) => (
-          <button
-            key={c.id}
-            onClick={() => pick(c.id)}
-            className={`flex min-h-14 items-center gap-2 rounded-xl border bg-surface-container p-sm text-left transition-all duration-200 hover:border-primary/50 active:scale-[0.98] ${
-              c.id === initialCrop ? "border-primary ring-1 ring-primary" : "border-outline-variant/20"
-            }`}
-          >
-            <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-primary-container/40">
-              <span className="text-xl leading-none">{cropEmoji(c.id)}</span>
+      ) : (
+        <>
+          {/* Category filter */}
+          <div className="px-md pt-sm">
+            <div className="flex flex-wrap gap-2">
+              <Chip tone="neutral" active={cat === "all"} onClick={() => setCat("all")}>
+                Visi
+              </Chip>
+              {CATEGORIES.map((c) => (
+                <Chip key={c.id} tone="neutral" active={cat === c.id} onClick={() => setCat(c.id)}>
+                  {c.label}
+                </Chip>
+              ))}
             </div>
-            <span className="text-body-md text-on-surface">{c.name}</span>
-          </button>
-        ))}
-      </div>
+          </div>
+
+          {/* Crop grid */}
+          <div className="custom-scrollbar grid grid-cols-2 gap-2 overflow-y-auto p-md sm:grid-cols-3">
+            {crops.map((c) => (
+              <button
+                key={c.id}
+                onClick={() => pick(c.id)}
+                disabled={!hydrated}
+                className="flex min-h-14 items-center gap-2 rounded-xl border border-outline-variant/20 bg-surface-container p-sm text-left transition-all duration-200 hover:border-primary/50 active:scale-[0.98] disabled:opacity-50"
+              >
+                <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-primary-container/40">
+                  <span className="text-xl leading-none">{cropEmoji(c.id)}</span>
+                </div>
+                <span className="text-body-md text-on-surface">{c.name}</span>
+              </button>
+            ))}
+          </div>
+        </>
+      )}
+      {!hydrated && <p role="status" className="px-md pb-sm text-body-md text-on-surface-variant">Dārzs ielādējas…</p>}
     </Modal>
   );
 }

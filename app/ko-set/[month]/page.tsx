@@ -14,6 +14,8 @@ import { TrackedLink } from "@/components/tracked-link";
 import { MonthPreparation } from "@/components/month-preparation";
 import { SeasonalLinks } from "@/components/seasonal-links";
 import { monthCalendarHref, SEASONAL_LINKS_UPDATED_AT } from "@/lib/seasonal";
+import { SEEDLING_CALCULATOR_HREF } from "@/lib/seedling-sowing";
+import { sowingGuideHref } from "@/lib/sowing-guide-filter";
 
 export const dynamicParams = false;
 export const revalidate = 3600;
@@ -41,8 +43,9 @@ export async function generateMetadata({ params }: { params: Promise<{ month: st
   const m = monthFromSlug(month);
   if (!m) return {};
   const loc = MONTHS_LV_LOCATIVE[m - 1];
-  const title = m === 7 ? "Ko vēl sēt jūlijā otrajai ražai Latvijā" : `Ko sēt ${loc} Latvijā — dārza darbi un sēja`;
-  const description = MONTH_GUIDES[m]?.description ?? `Ko sēt, stādīt un novākt ${loc} Latvijas dārzā.`;
+  const guide = MONTH_GUIDES[m];
+  const title = guide?.title ?? `Ko sēt ${loc} Latvijā — dārza darbi un sēja`;
+  const description = guide?.description ?? `Ko sēt, stādīt un novākt ${loc} Latvijas dārzā.`;
   return { title, description, alternates: { canonical: canonical(`/ko-set/${month}`) }, openGraph: og({ path: `/ko-set/${month}`, title, description }) };
 }
 
@@ -63,6 +66,8 @@ export default async function KoSetPage({ params }: { params: Promise<{ month: s
       return (aIndex === -1 ? 99 : aIndex) - (bIndex === -1 ? 99 : bIndex);
     }),
   })).filter((g) => g.crops.length);
+  const hasSowing = groups.some((group) => group.key !== "harvest");
+  const showCalculator = month === 1 || month >= 11;
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -92,6 +97,18 @@ export default async function KoSetPage({ params }: { params: Promise<{ month: s
             {month === 7 ? "Ko vēl sēt jūlijā" : `Ko sēt ${MONTHS_LV_LOCATIVE[month - 1]} Latvijā`}
           </h1>
           <p className="mt-xs max-w-2xl text-body-lg text-on-surface-variant">{MONTH_TIPS[month - 1]}</p>
+          <div className="mt-sm flex flex-wrap gap-x-md">
+            {groups.length > 0 && (
+              <Link href={sowingGuideHref(month, hasSowing ? "sowing" : "harvest")} className="inline-flex min-h-11 items-center gap-1 text-label-md font-semibold text-primary hover:underline">
+                {hasSowing ? "Atlasīt sējamos un stādāmos augus" : "Atlasīt novācamos augus"} {MONTHS_LV_LOCATIVE[month - 1]} <Icon name="arrow_forward" size="16px" />
+              </Link>
+            )}
+            {(showCalculator || !groups.length) && (
+              <Link href={SEEDLING_CALCULATOR_HREF} className="inline-flex min-h-11 items-center gap-1 text-label-md font-semibold text-primary hover:underline">
+                Aprēķināt dēstu sējas laiku <Icon name="arrow_forward" size="16px" />
+              </Link>
+            )}
+          </div>
         </header>
       </Card>
 
@@ -122,6 +139,11 @@ export default async function KoSetPage({ params }: { params: Promise<{ month: s
                   <Icon name={item.icon} size="21px" className="text-primary" />
                   <h3 className="mt-2 text-body-md font-semibold text-on-surface">{item.title}</h3>
                   <p className="mt-1 text-label-md leading-relaxed text-on-surface-variant">{item.text}</p>
+                  {item.link && (
+                    <Link href={item.link.href} className="mt-1 inline-flex min-h-11 items-center gap-1 text-label-md font-semibold text-primary hover:underline">
+                      {item.link.label} <Icon name="arrow_forward" size="16px" />
+                    </Link>
+                  )}
                 </Card>
               ))}
             </div>

@@ -42,7 +42,7 @@ export function GardenToast() {
           {syncError}
         </div>
       )}
-      {msg && (
+      {msg && !syncError && (
         <div className="flex items-center gap-2 rounded-full border border-primary/30 bg-surface-container-highest px-4 py-2.5 text-body-md text-on-surface shadow-2xl">
           <Icon name="check_circle" size="20px" className="text-primary" />
           <span className="text-lg leading-none">{msg.emoji}</span>
