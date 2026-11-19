@@ -7,12 +7,16 @@
   "shortAnswer": "Ja esi pirmo gadu dārzā un atver Mēness sējas kalendāru, tas var likties kā svešvaloda — fāzes, zīmes, lapu un sakņu dienas.  Neuztraucies: pamatdoma ir vienkārša.",
   "primaryQuery": "kā lasīt Mēness sējas kalendāru",
   "publishedAt": "2026-06-04",
-  "updatedAt": "2026-06-04",
+  "updatedAt": "2026-11-18",
   "entities": {},
   "sources": [
     {
-      "label": "NASA — Moon phases and lunar cycle",
-      "url": "https://science.nasa.gov/moon/moon-phases/"
+      "label": "NASA — Mēness apriņķojums un fāžu cikls",
+      "url": "https://science.nasa.gov/moon/top-moon-questions/"
+    },
+    {
+      "label": "ASV Jūras spēku observatorija — Mēness fāzes un Mēness vecums",
+      "url": "https://aa.usno.navy.mil/faq/moon_phases"
     },
     {
       "label": "Maria Thun biodinamiskā kalendāra tradīcija",
@@ -30,14 +34,14 @@
     {
       "heading": "Kas ir tās Mēness fāzes",
       "paragraphs": [
-        "Mēness apriņķo Zemi apmēram 29,5 dienās, un šajā laikā mēs no Zemes redzam, ka tā apgaismotā daļa aug un atkal sarūk. Galvenās fāzes ir četras: jauns Mēness (debesīs neredzams), augošs Mēness (sirpis kļūst arvien lielāks), pilns Mēness (apaļš un spožs) un dilstošs Mēness (apgaismotā daļa atkal sarūk). Kalendārā šīs fāzes parasti redzamas kā mazas Mēness ikoniņas vai krāsu joslas.",
+        "Mēness apriņķo Zemi apmēram 27,3 dienās attiecībā pret tālajām zvaigznēm. No viena jaunmēness līdz nākamajam paiet vidēji 29,5 dienas, jo tikmēr arī Zeme pavirzās savā orbītā ap Sauli. Kalendārā ar datumu un laiku atzīmē četras galvenās fāzes — jaunmēnesi, pirmo ceturksni, pilnmēnesi un pēdējo ceturksni. No jaunmēness līdz pilnmēnesim Mēness aug, bet no pilnmēness līdz nākamajam jaunmēnesim tas dilst.",
         "Tradīcija saka tā: augošā Mēnesī sula it kā ceļas uz augšu, tāpēc tas ir labvēlīgs laiks augiem, ko audzē virs zemes — lapām, ziediem un augļiem. Dilstošā Mēnesī uzmanība pievēršas saknēm un visam, kas notiek zem zemes. Tā ir vienkārša doma, ko viegli atcerēties: aug Mēness — domā par to, kas aug uz augšu; dilst Mēness — domā par saknēm."
       ]
     },
     {
       "heading": "Lapu, sakņu, ziedu un augļu dienas",
       "paragraphs": [
-        "Biodinamikā Mēness ceļš pa debesīm tiek sadalīts pēc zvaigznāju zīmēm, un katra diena tiek pieskaitīta vienam no četriem elementiem. No tā rodas četri dienu veidi: lapu dienas (ūdens — labas lapu augiem), sakņu dienas (zeme — labas saknēm un bumbuļiem), ziedu dienas (gaiss — ziediem) un augļu dienas (uguns — augļiem un sēklām). Mūsu lietotnes kalendārā katrai dienai ir norāde, kuram veidam tā pieder, lai tev nav pašam jārēķina.",
+        "Mūsu sējas kalendārā dienas elementu nosaka pēc tā, kurā zvaigznāju joslas posmā Mēness atrodas dienas vidū. No tā rodas četri dienu veidi: lapu dienas (ūdens — labas lapu augiem), sakņu dienas (zeme — labas saknēm un bumbuļiem), ziedu dienas (gaiss — ziediem) un augļu dienas (uguns — augļiem un sēklām). Mūsu lietotnes kalendārā katrai dienai ir norāde, kuram veidam tā pieder, lai tev nav pašam jārēķina.",
         "Praktiski tas izskatās tā. Salātus, dilles un spinātus audzē lapu dēļ, tāpēc tradīcija iesaka tos sēt lapu dienās. Burkānus, ķiplokus un kartupeļus audzē sakņu dēļ — tiem domātas sakņu dienas. Tomātus, gurķus un pupas audzē augļu dēļ, tāpēc augļu dienas. Bet kliņģerītes un citus ziedus — ziedu dienās. Ja kalendārs un tava brīvdiena nesakrīt, neuztraucies: sēj tad, kad vari, jo svaiga, mitra augsne nozīmē vairāk nekā perfekta diena."
       ]
     },

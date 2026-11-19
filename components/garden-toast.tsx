@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { Icon } from "@/components/ui/icon";
 import { useGarden } from "@/components/garden-context";
-import { cropById } from "@/lib/garden";
+import { plantDisplayName } from "@/lib/plant-display-name";
 import { cropEmoji } from "@/lib/crop-visual";
 
 /** Transient confirmation when a plant is added, so the user sees what happened.
@@ -22,8 +22,7 @@ export function GardenToast() {
     if (!lastAddedId) return;
     const plant = plants.find((p) => p.id === lastAddedId);
     if (!plant) return;
-    const crop = cropById(plant.cropId);
-    setMsg({ text: `${crop?.name ?? "Augs"} pievienots — ${plant.area}`, emoji: cropEmoji(plant.cropId) });
+    setMsg({ text: `${plantDisplayName(plant)} pievienots — ${plant.area}`, emoji: cropEmoji(plant.cropId) });
     const t = setTimeout(() => setMsg(null), 3200);
     return () => clearTimeout(t);
   }, [lastAddedId]); // eslint-disable-line react-hooks/exhaustive-deps
@@ -46,7 +45,7 @@ export function GardenToast() {
         <div className="flex items-center gap-2 rounded-full border border-primary/30 bg-surface-container-highest px-4 py-2.5 text-body-md text-on-surface shadow-2xl">
           <Icon name="check_circle" size="20px" className="text-primary" />
           <span className="text-lg leading-none">{msg.emoji}</span>
-          {msg.text}
+          <span className="min-w-0 [overflow-wrap:anywhere]">{msg.text}</span>
         </div>
       )}
     </div>

@@ -7,7 +7,11 @@ import { Chip } from "@/components/ui/chip";
 import { Icon } from "@/components/ui/icon";
 import { Button } from "@/components/ui/button";
 import { Modal } from "@/components/ui/modal";
-import { SectionLabel } from "@/components/ui/section-label";
+import { PlantDetail } from "@/components/plant-detail";
+import { useGarden } from "@/components/garden-context";
+import { plantDisplayName } from "@/lib/plant-display-name";
+import { isGardenDate } from "@/lib/garden";
+import { latviaDateKey } from "@/lib/day-anchor";
 import { moonForDate } from "@/lib/moon";
 
 interface Entry {
@@ -19,143 +23,133 @@ interface Entry {
 }
 
 const STORAGE_KEY = "meness-seja:journal";
-const DATE_FMT = new Intl.DateTimeFormat("lv-LV", { day: "numeric", month: "long", year: "numeric" });
+const DATE_FMT = new Intl.DateTimeFormat("lv-LV", { dateStyle: "long", timeZone: "Europe/Riga" });
+const QUANTITY_FMT = new Intl.NumberFormat("lv-LV", { maximumFractionDigits: 10 });
 
-const SAMPLES: Entry[] = [
-  {
-    id: "sample-1",
-    date: "2026-05-12",
-    title: "Tomātu stādīšana siltumnīcā",
-    body: "Šodien beidzot pārvietoju 'Marmande' un 'Vērša Sirds' stādus uz pastāvīgo vietu. Zeme jau pietiekami sasilusi. Pievienoju nedaudz koka pelnu katrā bedrītē, kā vecmāmiņa mācīja.",
-    tags: ["Siltumnīca", "Tomāti"],
-  },
-  {
-    id: "sample-2",
-    date: "2026-05-05",
-    title: "Pirmā piparmētru raža",
-    body: "Piparmētras dobē jau ir nepārspēti kuplas. Pirmā tēja no svaigām lapām garšo pēc īstas vasaras sākuma. Novācu dilstošā Mēness fāzē, kaltēšanai.",
-    tags: ["Garšaugi", "Dilstošs mēness"],
-  },
-];
+function readNotes(): Entry[] {
+  const raw = localStorage.getItem(STORAGE_KEY);
+  if (raw === null) return [];
+  const notes: unknown = JSON.parse(raw);
+  if (!Array.isArray(notes) || !notes.every((note) => note && typeof note.id === "string"
+    && isGardenDate(note.date, "9999-12-31") && typeof note.title === "string" && typeof note.body === "string"
+    && Array.isArray(note.tags) && note.tags.every((tag: unknown) => typeof tag === "string"))) {
+    throw new Error("Neizdevās nolasīt piezīmes.");
+  }
+  return notes;
+}
 
 let counter = 0;
-const newId = () => `e-${Date.now().toString(36)}-${counter++}`;
+const newId = () => globalThis.crypto?.randomUUID?.() ?? `e-${Date.now().toString(36)}-${counter++}`;
 
 export default function DienasgramataPage() {
+  const { plants, hydrated: gardenReady, removePlant } = useGarden();
   const [entries, setEntries] = useState<Entry[]>([]);
   const [hydrated, setHydrated] = useState(false);
+  const [storageError, setStorageError] = useState("");
   const [composing, setComposing] = useState(false);
+  const [openPlantId, setOpenPlantId] = useState<string | null>(null);
+  const openPlant = plants.find((plant) => plant.id === openPlantId);
 
   useEffect(() => {
-    const raw = localStorage.getItem(STORAGE_KEY);
-    if (raw) {
+    function refresh(event?: StorageEvent) {
+      if (event && event.key !== null && event.key !== STORAGE_KEY) return;
       try {
-        setEntries(JSON.parse(raw) as Entry[]);
+        setEntries(readNotes());
+        setStorageError("");
       } catch {
-        /* ignore */
+        setStorageError("Neizdevās nolasīt šajā pārlūkā saglabātās piezīmes.");
       }
+      setHydrated(true);
     }
-    setHydrated(true);
+    refresh();
+    window.addEventListener("storage", refresh);
+    return () => window.removeEventListener("storage", refresh);
   }, []);
 
-  useEffect(() => {
-    if (hydrated) localStorage.setItem(STORAGE_KEY, JSON.stringify(entries));
-  }, [entries, hydrated]);
+  const timeline = useMemo(() => {
+    const notes = entries.map((entry) => ({
+      kind: "note" as const, key: `note:${entry.id}`, date: entry.date, entry,
+    }));
+    const harvests = plants.filter((plant) => !plant.seed).flatMap((plant) =>
+      (plant.log ?? []).filter((log) => log.type === "raza" && isGardenDate(log.date)).map((log) => ({
+        kind: "harvest" as const, key: `harvest:${plant.id}:${log.id}`, date: log.date, plant, log,
+      })),
+    );
+    return [...notes, ...harvests].sort((a, b) => b.date.localeCompare(a.date) || b.key.localeCompare(a.key));
+  }, [entries, plants]);
 
-  const all = useMemo(
-    () => [...entries, ...SAMPLES].sort((a, b) => b.date.localeCompare(a.date)),
-    [entries],
-  );
-
-  function addEntry(e: Omit<Entry, "id">) {
-    setEntries((prev) => [{ ...e, id: newId() }, ...prev]);
-    setComposing(false);
+  function changeNotes(update: (stored: Entry[]) => Entry[]): boolean {
+    try {
+      const next = update(readNotes());
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
+      setEntries(next);
+      setStorageError("");
+      return true;
+    } catch {
+      setStorageError("Piezīmes izmaiņas neizdevās saglabāt šajā pārlūkā.");
+      return false;
+    }
   }
 
-  function removeEntry(id: string) {
-    setEntries((prev) => prev.filter((x) => x.id !== id));
+  function addEntry(entry: Omit<Entry, "id">) {
+    if (changeNotes((stored) => [{ ...entry, id: newId() }, ...stored])) setComposing(false);
   }
 
   return (
     <>
       <PageHeader
         title="Dārza dienasgrāmata"
-        subtitle="Dokumentē dabas ritmu, savus atklājumus un sezonālās pārmaiņas savā personīgajā dārza hronikā."
-        action={<Button icon="edit_note" onClick={() => setComposing(true)}>Jauns ieraksts</Button>}
+        subtitle="Tavas piezīmes un stādījumu raža datumu secībā."
+        action={<Button disabled={!hydrated} icon="edit_note" onClick={() => setComposing(true)}>Jauns ieraksts</Button>}
       />
 
-      {composing && <ComposeSheet onClose={() => setComposing(false)} onSave={addEntry} />}
+      {composing && <ComposeSheet onClose={() => setComposing(false)} onSave={addEntry} error={storageError} />}
+      {openPlant && <PlantDetail key={openPlant.id} plant={openPlant} onClose={() => setOpenPlantId(null)}
+        onRemove={() => removePlant(openPlant.id)} />}
+      {storageError && !composing && <p role="alert" className="mb-sm text-body-md text-error">{storageError}</p>}
 
-      {/* Season summary */}
-      <div className="mb-lg grid grid-cols-1 gap-md md:grid-cols-3">
-        <Card tone="high" elevated linen className="p-md md:col-span-2">
-          <SectionLabel icon="eco" iconClassName="text-primary" className="mb-sm">
-            Sezonas kopsavilkums
-          </SectionLabel>
-          <div className="grid grid-cols-2 gap-md">
-            {[
-              { label: "Tavi ieraksti", value: `${entries.length}`, note: "šosezon" },
-              { label: "Pēdējais", value: all[0] ? DATE_FMT.format(new Date(all[0].date)) : "—", note: all[0]?.title ?? "" },
-            ].map((c) => (
-              <div key={c.label} className="rounded-xl bg-background/40 p-sm">
-                <p className="text-label-sm uppercase tracking-wider text-on-surface-variant">{c.label}</p>
-                <p className="mt-1 truncate text-headline-md text-primary">{c.value}</p>
-                <p className="truncate text-label-sm text-on-surface-variant">{c.note}</p>
-              </div>
-            ))}
-          </div>
-        </Card>
-
-        <Card tone="highest" accent="secondary" className="flex flex-col justify-center gap-sm p-md text-center">
-          <Icon name="local_fire_department" className="mx-auto text-secondary" size="32px" />
-          <p className="text-display-lg leading-none text-secondary">{entries.length + SAMPLES.length}</p>
-          <p className="text-label-md uppercase tracking-wider text-on-surface-variant">Ieraksti kopā</p>
-        </Card>
-      </div>
-
-      {/* Chronological flow */}
-      <SectionLabel icon="history" iconClassName="text-tertiary" className="mb-md">
-        Hronoloģiskā plūsma
-      </SectionLabel>
-      <div className="space-y-md">
-        {all.map((e) => {
-          const isMine = entries.some((x) => x.id === e.id);
-          return (
-            <Card key={e.id} tone="high" elevated className="flex flex-col gap-md p-md sm:flex-row">
-              <div className="flex h-32 w-full items-center justify-center rounded-lg bg-gradient-to-br from-primary-container/20 to-surface-container sm:w-48">
-                <Icon name="photo_camera" className="text-primary/40" size="40px" />
-              </div>
-              <div className="flex-1">
-                <div className="mb-1 flex items-center justify-between">
-                  <p className="text-label-md uppercase tracking-wider text-secondary">
-                    {DATE_FMT.format(new Date(e.date))}
-                  </p>
-                  {isMine && (
-                    <button
-                      onClick={() => removeEntry(e.id)}
-                      className="text-on-surface-variant/60 transition-colors hover:text-error"
-                      title="Dzēst ierakstu"
-                    >
-                      <Icon name="delete" size="18px" />
+      {hydrated && gardenReady ? <>
+        <dl className="mb-md flex flex-wrap gap-x-md gap-y-1 text-body-md text-on-surface-variant">
+          <div className="flex gap-2"><dt>Piezīmes</dt><dd className="font-semibold text-on-surface">{entries.length}</dd></div>
+          <div className="flex gap-2"><dt>Ražas ieraksti</dt><dd className="font-semibold text-on-surface">{timeline.length - entries.length}</dd></div>
+        </dl>
+        {timeline.length === 0 ? <p className="mb-md text-body-md text-on-surface-variant">Pievieno pirmo piezīmi. Šeit parādīsies arī raža, ko pierakstīsi auga kopšanas žurnālā.</p> :
+          <ol aria-label="Dienasgrāmatas ieraksti" className="space-y-md">
+            {timeline.map((row) => (
+              <li key={row.key}>
+                <Card tone="high" className="p-md">
+                  <time dateTime={row.date} className="text-label-md text-secondary">{DATE_FMT.format(new Date(row.date))}</time>
+                  {row.kind === "harvest" ? <>
+                    <h2 className="mt-1 break-words text-headline-md text-on-surface">Raža · {plantDisplayName(row.plant)}</h2>
+                    <p className="mt-1 text-body-md text-on-surface">
+                      {row.plant.area}
+                      {typeof row.log.amount === "number" && Number.isFinite(row.log.amount) && <> · {QUANTITY_FMT.format(row.log.amount)}{row.log.unit === "kg" ? " kg" : row.log.unit === "gab" ? " gab." : ""}</>}
+                    </p>
+                    {row.log.note && <p className="mt-1 whitespace-pre-wrap break-words text-body-md text-on-surface-variant">{row.log.note}</p>}
+                    <button type="button" onClick={() => setOpenPlantId(row.plant.id)}
+                      aria-label={`Atvērt kopšanas žurnālu · ${plantDisplayName(row.plant)}`}
+                      className="mt-1 inline-flex min-h-11 items-center text-body-md text-primary underline underline-offset-2">
+                      Atvērt kopšanas žurnālu
                     </button>
-                  )}
-                </div>
-                <h3 className="text-headline-md text-on-surface">{e.title}</h3>
-                <p className="mt-1 text-body-md text-on-surface-variant">{e.body}</p>
-                {e.tags.length > 0 && (
-                  <div className="mt-sm flex flex-wrap gap-2">
-                    {e.tags.map((t) => (
-                      <Chip key={t} tone="primary">
-                        {t}
-                      </Chip>
-                    ))}
-                  </div>
-                )}
-              </div>
-            </Card>
-          );
-        })}
-      </div>
+                  </> : <>
+                    <div className="flex items-start justify-between gap-2">
+                      <h2 className="mt-1 min-w-0 break-words text-headline-md text-on-surface">{row.entry.title}</h2>
+                      <button type="button" onClick={() => changeNotes((stored) => stored.filter((entry) => entry.id !== row.entry.id))}
+                        aria-label={`Dzēst ierakstu · ${row.entry.title}`} title="Dzēst ierakstu"
+                        className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-lg text-on-surface-variant hover:text-error">
+                        <Icon name="delete" size="18px" />
+                      </button>
+                    </div>
+                    {row.entry.body && <p className="mt-1 whitespace-pre-wrap break-words text-body-md text-on-surface-variant">{row.entry.body}</p>}
+                    {row.entry.tags.length > 0 && <div className="mt-sm flex flex-wrap gap-2">
+                      {row.entry.tags.map((tag, i) => <Chip key={i} tone="primary">{tag}</Chip>)}
+                    </div>}
+                  </>}
+                </Card>
+              </li>
+            ))}
+          </ol>}
+      </> : <p role="status" className="text-body-md text-on-surface-variant">Ielādē dienasgrāmatu…</p>}
     </>
   );
 }
@@ -163,11 +157,13 @@ export default function DienasgramataPage() {
 function ComposeSheet({
   onClose,
   onSave,
+  error,
 }: {
   onClose: () => void;
   onSave: (e: Omit<Entry, "id">) => void;
+  error: string;
 }) {
-  const today = new Date().toISOString().slice(0, 10);
+  const today = latviaDateKey();
   const moonTag = moonForDate(new Date()).name;
   const [title, setTitle] = useState("");
   const [body, setBody] = useState("");
@@ -226,6 +222,7 @@ function ComposeSheet({
         aria-label="Birkas"
         className="rounded-lg border border-outline-variant/30 bg-surface-container-low px-3 py-2 text-body-md text-on-surface outline-none focus:border-primary"
       />
+      {error && <p role="alert" className="text-body-sm text-error">{error}</p>}
       <Button icon="check" fullWidth onClick={submit} className="mt-sm" disabled={!title.trim()}>
         Saglabāt ierakstu
       </Button>

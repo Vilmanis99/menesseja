@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
-import { canonical } from "@/lib/seo";
+import { canonical, og } from "@/lib/seo";
+
+const title = "Mēness fāze šodien — augošs vai dilstošs Mēness";
+const description = "Kāds Mēness ir šodien — augošs vai dilstošs? Šodienas fāze un apgaismojums, tuvākais pilnmēness un jaunmēness, kā arī Mēness lēkta un rieta laiki piecās Latvijas pilsētās.";
 
 export const metadata: Metadata = {
-  title: "Mēness fāze šodien — augošs vai dilstošs Mēness",
-  description:
-    "Kāds Mēness ir šodien — augošs vai dilstošs? Šodienas fāze, apgaismojums un tuvākā jaunā Mēness un pilnmēness datumi un laiki Latvijā.",
+  title,
+  description,
+  openGraph: og({ path: "/meness", title, description, type: "website" }),
   alternates: { canonical: canonical("/meness") },
 };
 

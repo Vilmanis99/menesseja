@@ -1,11 +1,11 @@
 {
   "title": "TOP augi ziemas glabāšanai — dārzeņi, kas tevi pabaro līdz pavasarim",
-  "subtitle": "Pārbaudīti pagraba dārzeņi Latvijas klimatam, kas glabājas mēnešiem ilgi",
+  "subtitle": "Desmit dārzeņi ziemas krājumiem un piemērota glabāšanas vieta katram",
   "category": "Raža un glabāšana",
   "intro": [
     "Pašpietiekamība nesākas ar ražu, bet ar to, cik ilgi tā noglabājas. Latvijā veikala plaukti ziemā ir pilni, bet pašaudzēti dārzeņi pagrabā nozīmē, ka tava vasara turpina barot tevi vēl janvārī un februārī.",
     "Šeit ir dārzeņi, kas patiešām glabājas — ne nedēļu, bet mēnešus. Lielākā daļa ir vienkārši audzējami pat iesācējam, un tos novāc rudenī (septembrī–oktobrī), pirms pirmajām spēcīgajām salnām.",
-    "Godīgi: bez vēsa un mitra pagraba (ap 0–5 °C) daļa šī saraksta glabāsies īsāk. Ja tev ir tikai silts dzīvoklis, koncentrējies uz sīpoliem, ķiplokiem un ķirbjiem — tie iztur arī istabas temperatūru."
+    "Burkāniem un bietēm der auksts, mitrs pagrabs. Sīpoliem un ķiplokiem izvēlies vēsu, sausu vietu ar labu gaisa apmaiņu, bet ķirbjiem piemēroti 10–13 °C. Ja pieejama tikai silta virtuve, turi tajā nelielu sīpolu un ķiploku krājumu, ko drīzumā izlietosi."
   ],
   "items": [
     {
@@ -30,13 +30,13 @@
       "rank": 4,
       "cropId": "kiploki",
       "name": "Ķiploki",
-      "blurb": "Stāda RUDENĪ (septembrī–oktobrī), novāc jūlijā–augustā, un pēc kārtīgas izžāvēšanas tie glabājas siltā, sausā virtuvē 6–8 mēnešus bez pagraba. Iesācējam praktiski neiznīcināmi un visu ziemu pa rokai."
+      "blurb": "Ziemas ķiplokus stāda rudenī un novāc vasarā. Glabā tikai labi apžāvētas, nebojātas galviņas. Sausā, vēdināmā vietā ap 0 °C tās var glabāties 6–7 mēnešus. Siltā virtuvē glabāšanas laiks ir īsāks."
     },
     {
       "rank": 5,
       "cropId": "sipoli",
       "name": "Sīpoli",
-      "blurb": "Pēc novākšanas augustā labi jāizžāvē, un tad tie glabājas sausā, vēdināmā vietā istabas temperatūrā līdz pat pavasarim. Visvieglāk audzēt no sīpolu lociņiem — gandrīz garantēta raža pat pirmajā gadā."
+      "blurb": "Kad laksti noliekušies, sīpolus novāc un apžāvē, līdz kakliņi un ārējās zvīņas ir sausas. Ilgai glabāšanai izvēlies glabājamu šķirni un vēsu, sausu vietu ar gaisa apmaiņu. Tīkla maisā vai režģotā kastē gaiss piekļūst sīpoliem no visām pusēm."
     },
     {
       "rank": 6,
@@ -54,7 +54,7 @@
       "rank": 8,
       "cropId": "pastinaks",
       "name": "Pastinaks",
-      "blurb": "Vienīgais saraksta dārzenis, ko vari atstāt augsnē zem mulčas un izrakt pa ziemu — salna padara to saldāku. Aug lēni un nesteidzīgi, tāpēc ideāls aizmāršīgam iesācējam; pagrabā smiltīs glabājas tāpat kā burkāni."
+      "blurb": "Saknes var atstāt dobē un rakt pēc vajadzības, kamēr zeme ir rokama. Pēc salnām pastinaki kļūst saldāki. Daļu izroc pirms zemes sasalšanas, lai arī salā raža būtu pa rokai."
     },
     {
       "rank": 9,
@@ -66,9 +66,13 @@
       "rank": 10,
       "cropId": "topinamburs",
       "name": "Topinambūrs",
-      "blurb": "Visizturīgākais variants — bumbuļus var atstāt zemē visu ziemu un rakt pēc vajadzības, jo tie nesalst. Reiz iestādīts, tas atgriežas katru gadu pats; pagrabā gan glabājas slikti, tāpēc labākais \"pagrabs\" tam ir pati dārza zeme."
+      "blurb": "Bumbuļi labi pārziemo dobē, bet istabas temperatūrā pēc izrakšanas ātri apvīst. Aukstā vietā uzklāj biezu mulčas kārtu, lai augsne lēnāk sasaltu un bumbuļus būtu vieglāk izrakt. Zemē atstātie bumbuļi pavasarī atkal sadīgs."
     }
   ],
   "outro": "Sāc ar bietēm, burkāniem un sīpoliem — tie ir vieglākie un visuzticamākie, un jau pirmajā ziemā tu pats redzēsi, ka pašaudzēts pagrabs ir reālāks, nekā šķiet.",
-  "slug": "ziemas-glabasanai"
+  "slug": "ziemas-glabasanai",
+  "guideLink": {
+    "label": "Dārzeņu glabāšanas tabula — temperatūra, mitrums un glabāšanas laiks",
+    "href": "/raksti/ka-uzglabat-darzenus-ziema#kurs-darzenis-kados-apstaklos-glabajas"
+  }
 }

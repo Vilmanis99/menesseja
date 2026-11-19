@@ -8,9 +8,10 @@ export function adjacentMonth(year: number, month: number, offset: number, asOf 
   seasonForMonth(month);
   const date = new Date(Date.UTC(year, month - 1 + offset, 1, 10));
   const target = { year: date.getUTCFullYear(), month: date.getUTCMonth() + 1 };
-  return { ...target, href: calendarYears(asOf).includes(target.year)
-    ? `/kalendars/${target.year}/${MONTH_SLUGS[target.month - 1]}`
-    : `/ko-set/${MONTH_SLUGS[target.month - 1]}` };
+  const isCalendar = calendarYears(asOf).includes(target.year);
+  const slug = MONTH_SLUGS[target.month - 1];
+  const href = isCalendar ? `/kalendars/${target.year}/${slug}` : `/ko-set/${slug}`;
+  return { ...target, href, isCalendar };
 }
 
 export function seasonForMonth(month: number): "ziema" | "pavasaris" | "vasara" | "rudens" {
@@ -47,8 +48,8 @@ const MONTH_LINKS: SeasonalLink[][] = [
   [article("zemenu-stadisana-augusta", "Zemeņu stādīšana augustā"), article("kad-parstadit-peonijas", "Peoniju pārstādīšana"), bloom("vasara", "Kas zied augustā")],
   [article("ka-kopt-geranijas", "Pelargoniju sagatavošana ziemošanai"), article("tulpju-stadisana-rudeni", "Tulpju stādīšana rudenī"), article("baltas-sinepes-pec-razas", "Zaļmēslojums pēc ražas"), bloom("rudeni", "Puķes, kas zied rudenī")],
   [article("hortenziju-apgriesana", "Hortenzijas: ko griezt rudenī un ko atstāt"), article("siltumnicas-sagatavosana-sezonai", "Siltumnīcas sagatavošana ziemai"), article("ka-kopt-geranijas", "Pelargoniju pārziemošanas iespējas"), article("ka-glabat-dalijas-ziema", "Dāliju izrakšana un glabāšana"), article("tulpju-stadisana-rudeni", "Tulpju stādīšana rudenī"), bloom("rudeni", "Rudens puķes"), article("ka-uzglabat-darzenus-ziema", "Dārzeņu glabāšana ziemā")],
-  [article("skabeti-kaposti", "Kad novembrī skābēt kāpostus"), article("siltumnicas-sagatavosana-sezonai", "Siltumnīca pirms sala un sniega"), article("ziemassvetku-kaktuss-nezied", "Ziemassvētku kaktuss: pumpuri un kopšana"), flower("rozes#parziemosana", "Rožu ziemošana dobē un podā"), article("ka-uzglabat-darzenus-ziema", "Dārzeņu glabāšana ziemā"), article("hortenziju-apgriesana", "Hortenziju rudens darbi un griešanas laiks"), article("ka-glabat-dalijas-ziema", "Dāliju glabāšana ziemā"), article("ka-glabat-seklas-un-parbaudit-digtspeju", "Sēklu glabāšana")],
-  [article("ziemassvetku-kaktuss-nezied", "Kāpēc Ziemassvētku kaktuss nezied vai met pumpurus"), article("ziemassvetku-zvaigzne-puansetija", "Ziemassvētku zvaigznes kopšana"), article("amarillis-pec-ziedesanas", "Amarillis: kopšana un atkārtota ziedēšana"), article("siltumnicas-sagatavosana-sezonai", "Siltumnīcas apskate ziemā"), article("ka-izveleties-seklas-darzam", "Sēklu izvēle nākamajai sezonai"), article("augu-maina-darza", "Augu maiņas plāns")],
+  [article("skabeti-kaposti", "Kad sākt skābēt kāpostus Ziemassvētkiem"), article("siltumnicas-sagatavosana-sezonai", "Siltumnīca pirms sala un sniega"), article("ziemassvetku-kaktuss-nezied", "Ziemassvētku kaktuss: pumpuri un kopšana"), flower("rozes#parziemosana", "Rožu ziemošana dobē un podā"), article("ka-uzglabat-darzenus-ziema", "Dārzeņu glabāšana ziemā"), article("hortenziju-apgriesana", "Hortenziju rudens darbi un griešanas laiks"), article("ka-glabat-dalijas-ziema", "Dāliju glabāšana ziemā"), article("ka-glabat-seklas-un-parbaudit-digtspeju", "Sēklu glabāšana")],
+  [article("ziemassvetku-kaktuss-nezied", "Kāpēc Ziemassvētku kaktuss nezied vai met pumpurus"), article("skabeti-kaposti", "Kāpostu skābēšanas laiks svētku galdam"), article("ziemassvetku-zvaigzne-puansetija", "Ziemassvētku zvaigznes kopšana"), article("amarillis-pec-ziedesanas", "Amarillis: kopšana un atkārtota ziedēšana"), article("siltumnicas-sagatavosana-sezonai", "Siltumnīcas apskate ziemā"), article("ka-izveleties-seklas-darzam", "Sēklu izvēle nākamajai sezonai"), article("augu-maina-darza", "Augu maiņas plāns")],
 ];
 
 export function seasonalLinks(month: number): SeasonalLink[] {

@@ -4,7 +4,7 @@
   "emoji": "🌱",
   "type": "slimiba",
   "latin": "",
-  "tagline": "Augsnes sēnīšu izraisīta sējeņu slimība, kas jaunos dīgstus pie pamatnes padara tievus, melnus un noliec gar zemi.",
+  "tagline": "Dīgstu puve var bojāt sējeņa saknes un kātiņa pamatni. Ja vienā kastē sāk krist vairāki dīgsti, atdali to no pārējiem sējumiem.",
   "severity": "vidējs",
   "affects": [
     "Tomāti",
@@ -16,49 +16,64 @@
     "Vasaras puķes no sēklām"
   ],
   "signs": [
-    "Dīgsts pie pašas augsnes virsmas kļūst tievs, ūdeņains un satumst — it kā saspiests vai pārkniebts",
-    "Pamatne nomelnē vai paliek brūngana, un stādiņš nokrīt gar zemi, lai gan lapas vēl izskatās zaļas",
-    "Sējeņi sabrūk pa vienam un izplešas plankumā — bieži kādā mitrākā podiņa vietā",
-    "Sēklas vispār neuzdīgst vai uzdīgst un nobrūk vēl pirms parādās virspusē (sēklu puve)",
-    "Uz augsnes virsmas mēdz parādīties balta, pūkaina sēnīšu micēlija pārklājuma josla"
+    "Kātiņš pie zemes vienā vietā kļūst ļoti tievs, mīksts un ūdeņains. Sējenis šajā vietā saļimst.",
+    "Saknes ir īsas vai ar brūniem, iegrimušiem bojājumiem. Dažkārt kātiņš vēl izskatās stingrs.",
+    "Vairāki sējeņi kopīgā traukā sabrūk cits pēc cita.",
+    "Daži dīgsti iet bojā vēl pirms iznākšanas virs zemes. Tukša vieta sējumā pati par sevi slimību neapstiprina."
   ],
   "intro": [
-    "Melnkāja jeb sējeņu sabrukšana ir viena no biežākajām un nepatīkamākajām nelaimēm, kas piemeklē dēstu palodzi pavasarī. To izraisa nevis viena, bet vairākas augsnē mītošas sēnītes, kas uzbrūk tieši dīgsta vārīgajai pamatnei. Stādiņš no augšas vēl var izskatīties svaigs un zaļš, bet pie zemes kātiņš jau ir kļuvis tievs, melns un mīksts — un drīz vien viss dīgsts noliecas un sabrūk. Reizēm sēnīte tiek klāt sēklai vēl pirms tā paspēj uzdīgt.",
-    "Galvenais, kas jāsaprot: kad dīgsts reiz sabrucis, to izglābt vairs nevar — efektīvas zāles pret jau saslimušu sējeni nav. Tāpēc visa cīņa pret melnkāju ir cīņa par profilaksi: tīra augsne, neblīva sēja, mērena laistīšana un labs gaiss ap stādiņiem. Labā ziņa — ar dažiem vienkāršiem paradumiem melnkāju var gandrīz pilnībā novērst, un tieši to dara pieredzējuši dārznieki, nevis paļaujas uz kādu brīnumlīdzekli."
+    "Dīgstu puvi dēvē arī par melnkāju jeb melno kāju. Tā skar gan dārzeņu, gan puķu sējumus. Jaunie dīgsti ir īpaši jutīgi, tādēļ pēc pirmajām pazīmēm apskati arī veselā izskata kaimiņus tajā pašā traukā."
   ],
   "control": [
-    "Sabrukušos un noliekušos dīgstus nekavējoties izņem kopā ar augsni ap saknēm un izmet (ne kompostā) — slimo stādiņu izglābt nevar, un tas ir galvenais, ko vari izdarīt, lai apturētu izplatīšanos uz kaimiņiem.",
-    "Tūlīt pārtrauc lieko laistīšanu: ļauj augsnes virskārtai starp laistīšanas reizēm apžūt. Pārmitra augsne ir galvenais, kas baro melnkāju, tāpēc sausāks režīms bieži aptur izplatīšanos labāk nekā jebkurš uzlējums.",
-    "Uzlabo gaisa kustību — izvēdini telpu, novieto podiņus tālāk vienu no otra un, ja sēja bijusi pārāk bieza, retini dīgstus, lai katram ir gaiss apkārt. Mitrs, stāvošs gaiss starp blīviem dīgstiem ir ideāla vide sēnītei.",
-    "Laisti no apakšas (lej ūdeni paplātē, ne pa virsu lapām) un vienmēr ar siltāku, istabas temperatūras ūdeni — auksts ūdens un slapjas dīgstu pamatnes veicina slimību.",
-    "Pārkaisi augsnes virsmu ar plānu kārtiņu sausu smilšu, perlīta vai sasmalcinātas koksnes ogles — sausāka virskārta ap kātiņu apgrūtina sēnītei piekļūt pamatnei.",
-    "Veselos, vēl neskartos dīgstus profilaktiski stiprini ar maigu kumelīšu uzlējumu vai kosas novārījumu (sk. zemāk) — tie neizārstē saslimušos, bet palīdz noturēt veselos. Ja slimība turpina plesties, drošākais ir pārsēt no jauna tīrā augsnē un tīros traukos."
+    "Noņem skarto podu no kopīgās paplātes. Veselos podus novieto katru uz sava tīra paliktņa un izlej uzkrājušos ūdeni.",
+    "Izņem sabrukušos dīgstus ar piegulošo substrātu. Nomazgā rokas un notīri darbarīkus, pirms kop citus sējumus.",
+    "Pārbaudi, vai ūdens var brīvi iztecēt pa poda apakšu. Substrātu uzturi viegli mitru un pēc laistīšanas iztukšo paliktni.",
+    "Apskati atlikušos dīgstus. Ja vienā kastē turpina sabrukt arvien jauni sējeņi, sēj no jauna citā tīrā traukā ar svaigu sējas substrātu."
   ],
-  "recipeSlugs": [
-    "kumelisu-uzlejums",
-    "kosas-novarijums"
-  ],
+  "recipeSlugs": [],
   "prevention": [
-    "Sēj retāk un ar atstarpi — blīva sēja ir melnkājas galvenais cēlonis. Labāk iesēt mazāk sēklu un tās izretināt, nekā ļaut dīgstiem augt cieši kopā bez gaisa.",
-    "Lieto tīru, svaigu dēstu augsni un tīrus traukus. Iepriekšējā gada podiņus pirms lietošanas izmazgā ar karstu ūdeni; dārza zeme bez sagatavošanas bieži jau satur sēnīšu sporas.",
-    "Nelaisti par daudz un ļauj virskārtai starp reizēm apžūt. Mērena laistīšana ar siltu ūdeni no apakšas ir labākā profilakse pret pārmitrumu.",
-    "Nodrošini gaisošanu un gaismu — regulāri izvēdini telpu, neturi dīgstus pārāk siltā un tvanīgā vietā, un gādā, lai gaiss starp stādiņiem var kustēties.",
-    "Nesēj pārāk dziļi un pārāk agri aukstā augsnē — vēsa, mitra augsne palēnina dīgšanu un dod sēnītei vairāk laika uzbrukt. Pagaidi, līdz augsne mērenā siltumā, un dīgsti būs ātrāki un izturīgāki."
+    "Nākamajai sējai izmanto svaigu sējas substrātu un podiņus ar noteces caurumiem. Ja iepriekšējā kastē bija dīgstu puve, jaunajam sējumam izvēlies citu trauku.",
+    "Sēj ar sugai ieteikto atstarpi un dziļumā, kas norādīts uz sēklu paciņas. Starp dīgstiem atstāj vietu gaisa kustībai.",
+    "Pēc sadīgšanas nodrošini gaismu un regulāri pārbaudi substrātu ar pirkstu. Laisti tad, kad tas vajadzīgs, un ļauj liekajam ūdenim pilnībā notecēt."
   ],
-  "moonNote": "Tradicionāli augsnes darbus un sēnīšu problēmu ierobežošanu saista ar dilstošo Mēnesi, taču melnkāja ir tīri praktiska slimība — to izšķir augsnes tīrība, gaiss un mērena laistīšana, nevis Mēness fāze. Dīgstu stiprinošos uzlējumus pēc biodinamiskās tradīcijas mēdz smidzināt augošā Mēnesī lapu dienā.",
-  "folklore": "Senāk Latvijā dēstus audzēja vēsās dārza istabās un palodzēs, un vecmāmiņas teica, ka dīgstiem jādod \"elpot\" — par daudz lutināti un slapjumā turēti stādiņi \"noplok\", tāpēc tos labāk turēja gaišā, vēdināmā vietā un laistīja taupīgi.",
   "faq": [
     {
       "q": "Vai sabrukušu sējeni var izglābt?",
-      "a": "Nē. Kad dīgsta pamatne kļuvusi tieva un melna un stādiņš noliecies, audi jau ir bojāti un atjaunoties nevar. Tādu dīgstu izņem un izmet (ne kompostā), bet pārējos veselos sargā ar sausāku režīmu un labāku gaisu. Pret melnkāju strādā tikai profilakse, ne ārstēšana."
+      "a": "Dīgsts ar sapuvušu kātiņa pamatni parasti aiziet bojā. Izņem to kopā ar piegulošo substrātu. Pārējos tās pašas kastes sējeņus turpini vērot."
     },
     {
-      "q": "Kāpēc melnkāja parādās tieši manai dēstu palodzei?",
-      "a": "Visbiežāk vainīga pārmitra augsne, par biezu iesēti dīgsti un stāvošs, mitrs gaiss. Pievieno tam vēl atkārtoti lietotus netīrus podiņus vai aukstu augsni — un sēnītēm ir ideāli apstākļi. Izlabojot šīs lietas, melnkāja parasti pazūd pati no sevis."
+      "q": "Vai veselos dēstus drīkst laistīt no apakšas?",
+      "a": "Jā, tīrā, atsevišķā paliktnī. Podu, kurā ir aizdomas par dīgstu puvi, turi atsevišķi. Katram veselajam podiņam izmanto tīru ūdeni un pēc laistīšanas izlej atlikumu."
     },
     {
-      "q": "Vai kumelīšu uzlējums vai kosas novārījums izārstē melnkāju?",
-      "a": "Nē, tie neizārstē jau saslimušos dīgstus. Tie ir maigi profilakses līdzekļi, kas palīdz stiprināt vēl veselos stādiņus — kumelīte palīdz noturēt mazos sēnīšu draudus, bet kosas silīcijs nostiprina audus. Galvenais joprojām paliek tīra augsne, neblīva sēja un mērena laistīšana."
+      "q": "Ko darīt, ja dīgsti turpina krist vienā kastē?",
+      "a": "Atstāj kasti atsevišķi no veselajiem sējumiem. Ja zudumi turpinās, sagatavo citu tīru trauku un sēj jaunas sēklas svaigā sējas substrātā."
     }
-  ]
+  ],
+  "shortAnswer": "Ja dēsti aug atsevišķos podiņos, pārvieto skarto podu prom no pārējiem. Ja visi aug vienā kastē, novieto šo kasti atsevišķi. Izņem sabrukušos dīgstus ar piegulošo substrātu un pārbaudi tuvākos sējeņus.",
+  "relatedLinks": [
+    {
+      "label": "Kā atšķirt dīgstu puvi no stīdzēšanas",
+      "href": "/raksti/melna-kaja-destiem"
+    },
+    {
+      "label": "Dēstu audzēšana uz palodzes",
+      "href": "/raksti/destu-audzesana-uz-palodzes"
+    }
+  ],
+  "sources": [
+    {
+      "label": "Minesotas Universitāte — kā pasargāt sējeņus no dīgstu puves",
+      "url": "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/yard-and-garden-problems/how-to-prevent-seedling-damping-off"
+    },
+    {
+      "label": "Karaliskā dārzkopības biedrība (RHS) — dīgstu puves pazīmes un profilakse",
+      "url": "https://www.rhs.org.uk/disease/damping-off"
+    },
+    {
+      "label": "Jūtas štata universitāte — ko darīt ar slimajiem sējeņiem",
+      "url": "https://extension.usu.edu/planthealth/research/damping-off"
+    }
+  ],
+  "updatedAt": "2026-11-19"
 }

@@ -14,6 +14,7 @@ export interface CropContent {
   intro: string;
   image?: ContentImageUse;
   sections: CropSection[];
+  worksheet?: { label: string; href: string };
   folklore?: string;
   faq?: { q: string; a: string }[];
   relatedLinks?: { label: string; href: string }[];

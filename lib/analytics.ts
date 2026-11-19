@@ -23,6 +23,7 @@ export type AnalyticsEvent =
   | "calendar_opened"
   | "calendar_print"
   | "calendar_month_select"
+  | "weekly_task_completed"
   | "planner_started"
   | "planner_saved"
   | "social_visit";

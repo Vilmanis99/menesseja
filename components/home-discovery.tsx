@@ -14,7 +14,7 @@ export function HomeDiscovery({ date }: { date: Date }) {
   const { year, month } = latviaDateParts(date);
   const current = adjacentMonth(year, month, 0, date);
   const upcoming = [1, 2, 3].map((offset) => adjacentMonth(year, month, offset, date));
-  const guideHref = current.href.startsWith("/kalendars/") ? `${current.href}#menesa-darbi` : current.href;
+  const guideHref = current.isCalendar ? `${current.href}#menesa-darbi` : current.href;
   const plan = monthPlan(month);
   const guide = calendarGuide(month);
   const asset = contentImage(guide.image.id);

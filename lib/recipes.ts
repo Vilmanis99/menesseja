@@ -1,7 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 
-export type RecipePurpose = "meslojums" | "kaitekli" | "slimibas" | "augsne" | "stadu-stiprinasana";
+export type RecipePurpose = "meslojums" | "kaitekli" | "slimibas" | "augsne" | "stadu-stiprinasana" | "tradicionala-kopsana";
 export type RecipePhase = "augošs" | "dilstošs" | "jebkurš";
 export type RecipeElement = "lapas" | "saknes" | "ziedi" | "augli" | "jebkurs";
 
@@ -28,10 +28,11 @@ export const PURPOSE_META: Record<RecipePurpose, { label: string; icon: string }
   augsne: { label: "Augsnei", icon: "landslide" },
   slimibas: { label: "Pret slimībām", icon: "healing" },
   kaitekli: { label: "Pret kaitēkļiem", icon: "pest_control" },
+  "tradicionala-kopsana": { label: "Dārza tradīcijas", icon: "menu_book" },
   "stadu-stiprinasana": { label: "Stādu stiprināšana", icon: "spa" },
 };
 
-export const PURPOSE_ORDER: RecipePurpose[] = ["meslojums", "augsne", "stadu-stiprinasana", "slimibas", "kaitekli"];
+export const PURPOSE_ORDER: RecipePurpose[] = ["meslojums", "augsne", "stadu-stiprinasana", "slimibas", "kaitekli", "tradicionala-kopsana"];
 
 const DIR = path.join(process.cwd(), "content", "recipes");
 

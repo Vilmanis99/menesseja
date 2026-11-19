@@ -7,13 +7,14 @@
   "shortAnswer": "Pāri palikušas sausas sēklas glabā marķētās paciņās, vēsā vietā un pasargātas no mitruma. Pirms sējas šaubīgo partiju pārbaudi: uz mitra papīra novieto zināmu sēklu skaitu, nodrošini sugai piemērotus dīgšanas apstākļus un saskaiti sadīgušās. Neliels mājas tests ir orientieris, ne garantija, ka tāds pats rezultāts būs dobē.",
   "primaryQuery": "kā glabāt sēklas un pārbaudīt dīgtspēju",
   "publishedAt": "2026-10-06",
-  "updatedAt": "2026-10-06",
+  "updatedAt": "2026-11-19",
   "seasonalMonths": [1, 2, 3, 9, 10, 11, 12],
   "entities": {},
   "relatedSlugs": ["ka-izveleties-seklas-darzam", "kapec-seklas-nedigst", "kad-set-destus-rekini-atpakal"],
   "sources": [
     { "label": "RHS — sēklu ievākšana un glabāšana", "url": "https://www.rhs.org.uk/propagation/seed-collecting-storing" },
     { "label": "University of Minnesota Extension — dārzeņu sēklu glabāšana", "url": "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/saving-vegetable-seeds" },
+    { "label": "University of New Hampshire Extension — dīgtspējas aprēķins un parauga lielums", "url": "https://extension.unh.edu/blog/2018/12/are-my-leftover-seeds-last-year-still-good-or-do-i-need-buy-new-ones" },
     { "label": "Illinois Extension — sēklu dīgtspējas pārbaude", "url": "https://extension.illinois.edu/blogs/ilriverhort/2017-02-03-test-seed-viability" }
   ],
   "readMinutes": 4,
@@ -46,9 +47,18 @@
       ]
     },
     {
-      "heading": "Kā izmantot rezultātu",
+      "heading": "Mana sēklu dīgtspējas pārbaude",
+      "calculator": "seed-germination",
+      "paragraphs": ["Procenti rāda, kāda daļa parauga sadīga pārbaudes apstākļos. Dobē rezultātu ietekmē arī augsne un laikapstākļi.", "Partiju saglabā šajā pārlūkā. Vēlāk to varēsi atvērt no saraksta vai saglabātās grāmatzīmes."],
+      "sourceUrls": ["https://extension.unh.edu/blog/2018/12/are-my-leftover-seeds-last-year-still-good-or-do-i-need-buy-new-ones"]
+    },
+    {
+      "heading": "Kā aprēķināt parauga dīgtspēju",
+      "anchorAliases": ["ka-izmantot-rezultatu"],
+      "sourceUrls": ["https://extension.unh.edu/blog/2018/12/are-my-leftover-seeds-last-year-still-good-or-do-i-need-buy-new-ones"],
       "paragraphs": [
-        "Ja no 10 sēklām sadīgušas 8, šajā paraugā rezultāts ir 80%. Tik mazs paraugs dod tikai aptuvenu novērtējumu. Dobē dīgšanu ietekmēs arī augsnes mitrums, temperatūra, sējas dziļums un citi apstākļi.",
+        "Sadīgušo sēklu skaitu izdali ar pārbaudīto sēklu skaitu un reizini ar 100. Ja pārbaudīji 12 sēklas un sadīga 9, parauga dīgtspēja ir 9 ÷ 12 × 100 = 75 %. Uz paciņas pieraksti arī “9 no 12” un pārbaudes datumu.",
+        "Piecu sēklu paraugā viena sēkla maina rezultātu par 20 procentpunktiem. Ja pēc šādas pārbaudes vēl šaubies par sēklu iegādi un paciņā to pietiek, pārbaudi vēl vienu tās pašas partijas paraugu. Dobē sadīgšanu ietekmē arī augsnes mitrums, temperatūra un sējas dziļums.",
         "Ja rezultāts ir vājš, vispirms pārliecinies, ka izvēlējies piemērotus pārbaudes apstākļus. Svarīgam, ierobežota laika sējumam apsver citu sēklu partiju. Ja dīgtspēja ir pieņemama, glabā sēklas tālāk un sēj atbilstoši kultūras prasībām."
       ]
     },
@@ -64,6 +74,7 @@
   "links": [
     { "label": "Kā izvēlēties sēklas dārzam", "href": "/raksti/ka-izveleties-seklas-darzam" },
     { "label": "Kāpēc iesētās sēklas nedīgst", "href": "/raksti/kapec-seklas-nedigst" },
+    { "label": "Decembra darbu ceļvedis", "href": "/ko-set/decembris" },
     { "label": "Janvāra darbu ceļvedis", "href": "/ko-set/janvaris" }
   ]
 }

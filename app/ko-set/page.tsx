@@ -8,7 +8,8 @@ import { MONTHS_LV_FULL } from "@/lib/planting-crops";
 import { latviaDateParts } from "@/lib/day-anchor";
 import { SEEDLING_CALCULATOR_HREF } from "@/lib/seedling-sowing";
 
-export const revalidate = 3600;
+// The featured guide follows the request’s current Latvian month.
+export const revalidate = 0;
 
 export const metadata: Metadata = {
   title: "Ko sēt pa mēnešiem — dārza darbu kalendārs Latvijai",

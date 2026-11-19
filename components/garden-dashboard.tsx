@@ -10,10 +10,13 @@ import { useRegion } from "@/components/region-context";
 import { useWeather } from "@/lib/use-weather";
 import { buildReminders } from "@/lib/reminders";
 import { useMounted } from "@/lib/use-mounted";
-import { cropById, plantStatus, type Plant } from "@/lib/garden";
+import { plantDisplayName } from "@/lib/plant-display-name";
+import { isGardenDate, LOG_META, plantStatus, type LogEntry, type Plant } from "@/lib/garden";
+import { latviaDateKey } from "@/lib/day-anchor";
 import { cropEmoji } from "@/lib/crop-visual";
 import { PlantDetail } from "@/components/plant-detail";
-import { AddPlantButton } from "@/components/add-plant-sheet";
+
+const careDate = new Intl.DateTimeFormat("lv-LV", { day: "2-digit", month: "2-digit", year: "numeric", timeZone: "Europe/Riga" });
 
 export function DashboardReminders() {
   const mounted = useMounted();
@@ -22,7 +25,7 @@ export function DashboardReminders() {
   const weather = useWeather(weatherCoords);
 
   const reminders = useMemo(
-    () => buildReminders({ plants, region, weather: weather.data }),
+    () => buildReminders({ plants: plants.filter((plant) => !plant.seed), region, weather: weather.data }),
     [plants, region, weather.data],
   );
 
@@ -60,6 +63,7 @@ function AreaCard({ area, plants }: { area: string; plants: Plant[] }) {
   const { removePlant, lastAddedId } = useGarden();
   const [detail, setDetail] = useState<Plant | null>(null);
   const newRef = useRef<HTMLButtonElement>(null);
+  const today = latviaDateKey();
 
   // Scroll the freshly-added plant into view so the user sees the result
   useEffect(() => {
@@ -78,41 +82,34 @@ function AreaCard({ area, plants }: { area: string; plants: Plant[] }) {
       </div>
       <div className="space-y-sm">
         {plants.map((p) => {
-          const crop = cropById(p.cropId);
           const st = plantStatus(p);
           const isNew = p.id === lastAddedId;
+          const last = p.log?.reduce<LogEntry | undefined>((latest, entry) => (
+            isGardenDate(entry.date, today) && (!latest || entry.date > latest.date) ? entry : latest
+          ), undefined);
           return (
             <button
               key={p.id}
               ref={isNew ? newRef : undefined}
               onClick={() => setDetail(p)}
-              className={`group/plant min-h-11 w-full rounded-lg py-1 text-left transition-all hover:opacity-90 ${
-                isNew ? "bg-primary-container/15 p-2 ring-1 ring-primary/50" : ""
+              aria-haspopup="dialog"
+              className={`group/plant block min-h-11 w-full space-y-2 rounded-lg border border-outline-variant/30 bg-background/30 p-sm text-left transition-colors hover:border-primary/50 focus-visible:outline-primary ${
+                isNew ? "ring-1 ring-primary/50" : ""
               }`}
             >
-              <div className="mb-1 flex items-center justify-between gap-2 text-body-md">
-                <span className="flex items-center gap-2 text-on-surface">
-                  <span className="text-base leading-none">{cropEmoji(p.cropId)}</span>
-                  {crop?.name ?? p.cropId}
-                  {p.seed && (
-                    <span className="rounded-full bg-surface-variant/60 px-1.5 py-0.5 text-[10px] uppercase tracking-wide text-on-surface-variant">
-                      paraugs
-                    </span>
-                  )}
-                </span>
-                <span
-                  className={
-                    st.tone === "secondary"
-                      ? "font-bold text-secondary"
-                      : st.tone === "primary"
-                        ? "text-primary-fixed"
-                        : "text-on-surface-variant"
-                  }
-                >
-                  {st.label}
-                </span>
-              </div>
-              <ProgressBar value={st.progress} tone={st.tone} glow={st.tone === "secondary"} />
+              <span className="flex items-baseline gap-2 text-body-md font-semibold text-on-surface">
+                <span aria-hidden="true" className="shrink-0">{cropEmoji(p.cropId)}</span>
+                <span className="min-w-0 [overflow-wrap:anywhere]">{plantDisplayName(p)}</span>
+                {p.seed && <span className="text-label-sm font-normal text-on-surface-variant">Paraugs</span>}
+              </span>
+              {!p.seed && last && (
+                <span className="block text-body-sm text-on-surface-variant">Pēdējais ieraksts · {LOG_META[last.type]?.label ?? "Kopšanas ieraksts"} · <time dateTime={last.date}>{careDate.format(new Date(last.date))}</time></span>
+              )}
+              {st.progress !== null && <span className="block text-label-sm text-on-surface-variant">{st.label}</span>}
+              {st.progress !== null && <ProgressBar value={st.progress} tone={st.tone} glow={st.tone === "secondary"} />}
+              <span className="flex items-center justify-between gap-2 text-label-md font-semibold text-primary">
+                {p.seed ? "Aplūkot piemēru" : "Pierakstīt kopšanu"} <Icon name="chevron_right" size="18px" />
+              </span>
             </button>
           );
         })}
@@ -128,53 +125,26 @@ function AreaCard({ area, plants }: { area: string; plants: Plant[] }) {
   );
 }
 
-export function GardenAreas() {
-  const { plants, hydrated, hasExamples, clearExamples } = useGarden();
+export function GardenAreas({ examples = false }: { examples?: boolean }) {
+  const { plants } = useGarden();
 
   const byArea = useMemo(() => {
     const map = new Map<string, Plant[]>();
     for (const p of plants) {
+      if (Boolean(p.seed) !== examples) continue;
       const list = map.get(p.area) ?? [];
       list.push(p);
       map.set(p.area, list);
     }
     return [...map.entries()];
-  }, [plants]);
+  }, [plants, examples]);
 
-  if (hydrated && plants.length === 0) {
-    return (
-      <Card tone="high" elevated className="flex flex-col items-center gap-sm p-lg text-center">
-        <Icon name="potted_plant" className="text-primary/40" size="48px" />
-        <p className="text-body-lg text-on-surface">Tavs dārzs vēl ir tukšs.</p>
-        <p className="text-body-md text-on-surface-variant">
-          Pievieno pirmo augu, un mēs sekosim tā augšanai saskaņā ar Mēness ritmu.
-        </p>
-        {/* The header button scrolls out of view on mobile — act right here. */}
-        <AddPlantButton />
-      </Card>
-    );
-  }
-
+  if (!byArea.length) return null;
   return (
-    <section>
-      <div className="mb-sm flex items-center justify-between">
-        <SectionLabel icon="nature_people" iconClassName="text-primary">
-          {hasExamples ? "Parauga augi" : "Tavi augi"}
-        </SectionLabel>
-        {hasExamples && (
-          <button
-            onClick={clearExamples}
-            className="flex min-h-11 items-center gap-1 rounded-lg px-2 text-label-sm text-on-surface-variant transition-colors hover:bg-error/10 hover:text-error"
-          >
-            <Icon name="delete_sweep" size="16px" /> Noņemt paraugus
-          </button>
-        )}
-      </div>
-      <div className="grid grid-cols-1 gap-md sm:grid-cols-2">
-        {byArea.map(([area, list]) => (
-          <AreaCard key={area} area={area} plants={list} />
-        ))}
-      </div>
-    </section>
+    <div className="grid grid-cols-1 gap-md sm:grid-cols-2">
+      {byArea.map(([area, list]) => (
+        <AreaCard key={area} area={area} plants={list} />
+      ))}
+    </div>
   );
 }

@@ -4,7 +4,7 @@
   "category": "Praktiski",
   "intent": "how-to",
   "excerpt": "Ko darīt ar amarilli (hipeastru) pēc ziedēšanas: kad nogriezt ziedkātu, kā kopt lapas vasarā, kā sarīkot miera periodu un panākt, lai sīpols uzzied atkal.",
-  "shortAnswer": "Pēc ziedēšanas nogriez novītušos ziedus, bet lapas atstāj: laisti un mēslo augu gaišā vietā, jo lapas uzkrāj sīpolā spēku nākamajiem ziediem. Rudenī sarīko miera periodu — 8–12 nedēļas vēsumā (7–13 °C) bez laistīšanas. Pēc tam sīpolu novieto siltā, gaišā vietā; ziedi parasti parādās pēc 4–6 nedēļām.",
+  "shortAnswer": "Podā augošam amarillim nogriez novītušos ziedus un saglabā zaļās lapas. Novieto augu gaišā vietā, laisti, kad substrāta virskārta apžūst, un augšanas laikā mēslo. Vaskotu sīpolu bez poda ziedēšanas laikā nelaisti. Ja vēlies to saglabāt, pēc pēdējā ziedkāta noziedēšanas uzmanīgi noņem vasku un iestādi veselo sīpolu podā ar noteces caurumiem.",
   "primaryQuery": "amarillis pēc ziedēšanas",
   "aliases": [
     "amarillis pēc noziedēšanas",
@@ -12,7 +12,7 @@
     "hipeastrs"
   ],
   "publishedAt": "2026-10-26",
-  "updatedAt": "2026-10-26",
+  "updatedAt": "2026-11-19",
   "seasonalMonths": [
     12,
     1,
@@ -37,6 +37,10 @@
     {
       "label": "ASPCA — Amaryllis (toksiskums dzīvniekiem)",
       "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/amaryllis"
+    },
+    {
+      "label": "Aiovas štata universitāte — amarillis podā un vaskota sīpola kopšana",
+      "url": "https://yardandgarden.extension.iastate.edu/how-to/all-about-amaryllis"
     }
   ],
   "readMinutes": 4,
@@ -44,7 +48,7 @@
     {
       "heading": "Uzreiz pēc ziedēšanas",
       "paragraphs": [
-        "Amarilla sīpols nākamajiem ziediem krāj spēku no lapām. Tāpēc pēc ziedēšanas augu neizmet un lapas negriez."
+        "Podā augošam amarillim zaļās lapas palīdz papildināt sīpola rezerves. Pēc ziedēšanas turpini to kopt."
       ],
       "items": [
         "Novītušos ziedus nogriez, lai augs netērē spēku sēklām.",
@@ -62,6 +66,16 @@
       ]
     },
     {
+      "heading": "Ko darīt ar vaskotu amarilli",
+      "paragraphs": [
+        "Vaskots sīpols bez poda zied no savām rezervēm. Kamēr tas zied, ūdens un mēslojums tam nav vajadzīgs. Vienam sīpolam var būt vairāki ziedkāti, tāpēc nogaidi, līdz noziedējis arī pēdējais.",
+        "Ja vēlies mēģināt sīpolu saglabāt, uzmanīgi noņem vasku. Tā pamatnē var būt jaunas, vaskā ieaugušas saknītes. Cietu, veselīgu sīpolu iestādi podā ar noteces caurumiem, augšējo pusi atstājot virs substrāta. Mīksti, iegrimuši plankumi var liecināt par puvi. Arī veselam sīpolam pēc ziedēšanas var būt vajadzīga vairāk nekā viena augšanas sezona, lai atkal uzziedētu."
+      ],
+      "sourceUrls": [
+        "https://yardandgarden.extension.iastate.edu/how-to/all-about-amaryllis"
+      ]
+    },
+    {
       "heading": "Pavasaris un vasara: lapu laiks",
       "paragraphs": [
         "Kamēr lapas aug, laisti regulāri un mēslo ar istabas augu mēslojumu pēc iepakojuma norādēm. Šajā laikā veidojas nākamā gada ziedi.",
@@ -75,10 +89,10 @@
     {
       "heading": "Rudens: miera periods",
       "paragraphs": [
-        "Miera periods ļauj noteikt, kad amarillis atkal ziedēs. Ja to sāc oktobra sākumā, ziedi parasti atveras janvārī vai februārī. Ziemassvētku ziediem miera periodu sāc jau augusta beigās."
+        "Amarillis var uzziedēt arī bez miera perioda. Vēsu atpūtu var izmantot, ja vēlies ieplānot nākamo ziedēšanu. Ja to sāc oktobra sākumā, ziedi parasti atveras janvārī vai februārī. Ja nākamajā ziemā vēlies ziedus ap Ziemassvētkiem, atpūtu ieplāno jau augusta beigās. Tabulā dots piemērs ziedēšanai pēc gadumijas."
       ],
       "items": [
-        "Septembra beigās pārtrauc mēslot un laistīt; ļauj lapām pakāpeniski nodzeltēt.",
+        "Izvēlētā miera perioda sākumā pārtrauc mēslot un laistīt. Ļauj lapām pakāpeniski nodzeltēt.",
         "Nokaltušās lapas nogriez.",
         "Podu ar sīpolu novieto vēsā, tumšā vietā (7–13 °C) uz 8–12 nedēļām un nelaisti. Der vēsa kāpņu telpa vai pagrabs, kur nesalst.",
         "Reizēm pārbaudi, vai sīpols ir ciets un bez pelējuma."
@@ -156,15 +170,16 @@
             "Nelaisti, kamēr nav jaunu dzinumu; mīkstu, pūstošu sīpolu izmet"
           ],
           [
-            "Vaskā iepakots sīpols",
-            "Sīpols bez saknēm, pārklāts ar vasku",
-            "Tas paredzēts vienai ziedēšanai; ja sīpols vēl ciets, vasku noņem un iestādi podā"
+            "Pēc ziedēšanas vaskā sīpola rezerves izsīkušas",
+            "Iestādītais sīpols veido lapas, bet nākamajā sezonā ziedkāta vēl nav",
+            "Saglabā zaļās lapas un turpini kopt augu gaišā vietā, lai sīpols varētu atgūt spēkus."
           ]
         ]
       },
       "sourceUrls": [
         "https://extension.illinois.edu/blogs/good-growing/2021-12-03-how-take-care-amaryllis-and-get-them-rebloom",
-        "https://www.rhs.org.uk/plants/hippeastrum/growing-guide"
+        "https://www.rhs.org.uk/plants/hippeastrum/growing-guide",
+        "https://yardandgarden.extension.iastate.edu/how-to/all-about-amaryllis"
       ]
     },
     {

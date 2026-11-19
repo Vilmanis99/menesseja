@@ -79,6 +79,11 @@ export default async function TopListPage({ params }: { params: Promise<{ slug: 
         {t.intro.map((p, i) => (
           <p key={i} className="text-body-lg leading-relaxed text-on-surface-variant">{p}</p>
         ))}
+        {t.guideLink && (
+          <Link href={t.guideLink.href} className="inline-flex min-h-11 items-center gap-1 text-body-md text-primary underline">
+            <Icon name="arrow_forward" size="16px" /> {t.guideLink.label}
+          </Link>
+        )}
       </div>
 
       <ol className="mb-lg space-y-md">

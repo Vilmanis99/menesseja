@@ -6,15 +6,39 @@
  * Tas nav visu nosaukumu un audzēšanas īpašību pilns botāniskais audits.
  */
 
+import type { ContentImageUse } from "./content-images";
+
 export interface FlowerNameEntry {
   name: string;
   href?: string;
   latin?: string;
+  indoorGuide?: boolean;
+  aliases?: string[];
+  image?: ContentImageUse;
   /** Īss, noderīgs raksturojums sarakstam (≤ ~8 vārdi). */
   note?: string;
 }
 
 export const EXTRA_FLOWER_NAMES: FlowerNameEntry[] = [
+  // Istabas puķu ceļvežos aplūkota audzēšana telpās.
+  {
+    name: "Amarillis", latin: "Hippeastrum", aliases: ["hipeastrs"],
+    href: "/raksti/amarillis-pec-ziedesanas", indoorGuide: true,
+    note: "Podos par amarilli parasti sauc hipeastru.",
+    image: { id: "amarillis-palodze", caption: "Ziedošs hipeastrs uz palodzes." },
+  },
+  {
+    name: "Ziemassvētku kaktuss", latin: "Schlumbergera", aliases: ["šlumbergera"],
+    href: "/raksti/ziemassvetku-kaktuss-nezied", indoorGuide: true,
+    note: "Veikalos ar šo nosaukumu sastopamas vairākas šlumbergeras un to hibrīdi.",
+    image: { id: "kaktuss-schlumbergera-buckleyi", caption: "Schlumbergera × buckleyi ir noapaļotas stublāja segmentu malas un nokarens zieds." },
+  },
+  {
+    name: "Ziemassvētku zvaigzne", latin: "Euphorbia pulcherrima", aliases: ["puansetija"],
+    href: "/raksti/ziemassvetku-zvaigzne-puansetija", indoorGuide: true,
+    note: "Sīkie ziedi atrodas krāsaino seglapu vidū.",
+    image: { id: "puansetija", caption: "Puansetija ar sarkanām seglapām." },
+  },
   // — vasaras puķes un divgadīgās; daļa sugu ir sala neizturīgas ziemcietes —
   { name: "Alises", latin: "Lobularia maritima", note: "zemas, medaini smaržīgas apmaļu puķes" },
   { name: "Balzamīnes", latin: "Impatiens walleriana", note: "ziedi ēnainām dobēm un podiem" },
@@ -37,7 +61,7 @@ export const EXTRA_FLOWER_NAMES: FlowerNameEntry[] = [
   { name: "Salvijas (krāšņās)", latin: "Salvia splendens", note: "sarkanās dobju “sveces”" },
   { name: "Seglapu salmenes", latin: "Xerochrysum bracteatum", note: "sausziedes žāvēšanai un ziemas pušķiem" },
   { name: "Smaržīgie zirnīši", latin: "Lathyrus odoratus", note: "smaržīgi vīteņi pie atbalsta" },
-  { name: "Turku neļķes", href: "/augi/nelkes", latin: "Dianthus barbatus", note: "divgadīgās sētu neļķes" },
+  { name: "Turku neļķes", href: "/augi/nelkes", latin: "Dianthus barbatus", note: "divgadīgās sētu neļķes", image: { id: "turku-nelkes", caption: "Turku neļķu (Dianthus barbatus) ziedkopas. Citu neļķu sugu izskats un audzēšana var atšķirties." } },
   { name: "Uzpirkstītes", latin: "Digitalis purpurea", note: "augsti ziedu torņi; augs indīgs" },
 
   // — daudzgadīgās (ziemcietes) —
@@ -51,7 +75,6 @@ export const EXTRA_FLOWER_NAMES: FlowerNameEntry[] = [
   { name: "Lauztā sirds", latin: "Lamprocapnos spectabilis", note: "sirsniņveida ziedi ēnainām vietām" },
   { name: "Liatres", latin: "Liatris spicata", note: "violetas ziedu sveces tauriņiem" },
   { name: "Lupīnas", latin: "Lupinus polyphyllus", note: "krāšņas ziedu vārpas jūnijā" },
-  { name: "Maijpuķītes (kreimenes)", latin: "Convallaria majalis", note: "smaržīgā maija klasika ēnā" },
   { name: "Mārpuķītes", latin: "Bellis perennis", note: "mazās pavasara zālāja puķītes" },
   { name: "Neļķes", href: "/augi/nelkes", latin: "Dianthus", note: "smaržīgas apmaļu un dobju puķes" },
   { name: "Pīpenes", latin: "Leucanthemum", note: "lielās baltās “margrietiņas” dobēm" },
@@ -70,7 +93,6 @@ export const EXTRA_FLOWER_NAMES: FlowerNameEntry[] = [
   { name: "Ķeizarkroņi", latin: "Fritillaria imperialis", note: "augstas pavasara puķes ar nokareniem ziediem" },
   { name: "Muskari", latin: "Muscari", note: "zilās pavasara pērlītes" },
   { name: "Puškīnijas", latin: "Puschkinia scilloides", note: "maigi zilas agrā pavasara puķītes" },
-  { name: "Sniegpulkstenītes", latin: "Galanthus nivalis", note: "pirmās puķes cauri sniegam" },
   { name: "Zilsniedzes", latin: "Scilla siberica", note: "koši zils pavasara paklājs" },
 
   // — ziedoši krūmi —
@@ -117,6 +139,7 @@ export const FOLK_NAMES: FolkName[] = [
   {
     folk: "Kreimenes",
     standard: "Maijpuķītes",
+    slug: "maijpukites",
     note: "Šeit domāta parastā kreimene jeb maijpuķīte (Convallaria majalis).",
     sourceUrl: "https://tezaurs.lv/kreimene",
   },

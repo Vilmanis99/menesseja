@@ -1,9 +1,9 @@
 {
-  "intro": "Paprika ir viens no siltumprasīgākajiem dārzeņiem mūsu platuma grādos, un tieši tāpēc tā Latvijā ir gana izaicinoša kultūra (grūtības pakāpe 3 no 5). Augs ir izteikti saulesmīlis, aug lēni un raibajai vasarai bieži neuztic — tāpēc to gandrīz vienmēr stāda no agri sētiem dēstiem un audzē siltumnīcā vai labi aizvēsinātā saulainā vietā. No sējas līdz pirmajai ražai paiet ilgs ceļš: stādus mēdz sēt jau februārī vai martā, dārzā vai siltumnīcā tos pārstāda maijā–jūnijā, bet sulīgos augļus var lasīt no jūlija līdz septembrim.",
+  "intro": "Paprikas sējas laiku nosaka tas, kad dēstus varēsi izstādīt siltumnīcā vai saulainā, no vēja pasargātā vietā. Ja plāno izstādīt 1. jūnijā, tad, rēķinot 8–10 nedēļas atpakaļ, sējas laiks ir no 23. marta līdz 6. aprīlim. Agrākai izstādīšanai apsildāmā siltumnīcā sēju var plānot agrāk.",
   "sections": [
     {
       "heading": "Kā sēt",
-      "body": "Paprika aug lēni, tāpēc dēstus sēj agri — februāra beigās vai martā — siltā telpā, kur augsne ir vismaz 22–25 °C; vēsumā sēklas dīgst gausi un nevienmērīgi. Sēj 0,5–1 cm dziļi un nodrošini papildu apgaismojumu, jo īsajās ziemas dienās dēsti izstiepjas. Tieši zemē Latvijā sēt nav vērts — līdz augļu nogatavošanai vienkārši pietrūkst siltuma. Pārstādi dārzā vai siltumnīcā tikai tad, kad augsne sasilusi vismaz līdz 15 °C un salnu vairs nedraud (parasti maija beigās vai jūnija sākumā)."
+      "body": "No sējas līdz paprikas dēstu izstādīšanai vari plānot aptuveni 8–10 nedēļas. Dīgšana šajā intervālā jau ietilpst. Kalkulatorā izvēlies plānoto izstādīšanas datumu un paprikas piemēru. Ja šķirnes audzētājs norāda citu ilgumu, vari mainīt nedēļu skaitu. Uz sēklu paciņas norādītās dienas līdz ražai izmanto augļu novākšanas plānošanai.\n\nSēj traukā ar mitru substrātu. Sēklu dīgšanai optimālā substrāta temperatūra ir 25–30 °C. Pēc sadīgšanas dēstiem vajag labu apgaismojumu. Pirms izstādīšanas siltumnīcā pārbaudi divas lietas — vai dēstiem ir 5–6 īstās lapas un vai augsne dobē sasilusi vismaz līdz 15 °C. Neapkurinātā siltumnīcā ņem vērā arī gaidāmo nakts aukstumu."
     },
     {
       "heading": "Augsne un vieta",
@@ -23,8 +23,29 @@
     },
     {
       "heading": "Novākšana un glabāšana",
-      "body": "Augļus var lasīt tehniskajā gatavībā (zaļus, dzeltenus pēc šķirnes) jau ap jūlija beigām vai gaidīt pilno gatavību, kad tie kļūst sarkani, oranži vai dzelteni un saldāki. Lasīšana ar dārza šķērēm, atstājot kātiņu, rosina augu veidot jaunus augļus. Svaigu papriku ledusskapī glabā 1–2 nedēļas; ilgākai uzglabāšanai to sasaldē sagrieztu vai kaltē. Pirms pirmajām rudens salnām novāc visus augļus — arī tos, kas vēl nav nogatavojušies, jo telpā tie var pakāpeniski sārtoties."
+      "body": "Zaļu saldo papriku var sākt novākt aptuveni 70–80 dienas pēc dēstu izstādīšanas. Pilnīgai šķirnes krāsas attīstībai var vajadzēt vēl 2–3 nedēļas. Laiks atšķiras pēc šķirnes un audzēšanas apstākļiem. Lasīšana ar dārza šķērēm, atstājot kātiņu, rosina augu veidot jaunus augļus. Svaigu papriku ledusskapī glabā 1–2 nedēļas; ilgākai uzglabāšanai to sasaldē sagrieztu vai kaltē. Pirms pirmajām rudens salnām novāc visus augļus — arī tos, kas vēl nav nogatavojušies, jo telpā tie var pakāpeniski sārtoties."
     }
   ],
-  "folklore": "Biodinamiskajā tradīcijā papriku saista ar augļu dienām. Praktiskai izstādīšanai vispirms izvērtē augsnes siltumu, nakts temperatūru un vietējo salnu risku."
+  "folklore": "Biodinamiskajā tradīcijā papriku saista ar augļu dienām. Praktiskai izstādīšanai vispirms izvērtē augsnes siltumu, nakts temperatūru un vietējo salnu risku.",
+  "relatedLinks": [
+    {
+      "label": "Aprēķini paprikas sējas laiku pēc izstādīšanas datuma",
+      "href": "/raksti/kad-set-destus-rekini-atpakal#sejas-kalkulators"
+    }
+  ],
+  "sources": [
+    {
+      "label": "Zemkopības ministrija — paprikas dīgšana un izstādīšana siltumnīcā (14. lpp.)",
+      "url": "https://www.zm.gov.lv/lv/media/741/download?attachment=#page=14"
+    },
+    {
+      "label": "Merilendas Universitāte — dēstu sējas laiks pirms izstādīšanas",
+      "url": "https://extension.umd.edu/resource/starting-vegetable-seeds-indoors"
+    },
+    {
+      "label": "Merilendas Universitāte — zaļas un pilnīgi nogatavojušās paprikas novākšana",
+      "url": "https://extension.umd.edu/resource/growing-peppers-home-garden"
+    }
+  ],
+  "updatedAt": "2026-11-18"
 }

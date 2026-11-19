@@ -1,7 +1,9 @@
-import * as data from "../content/calendar-guides.json";
+import data from "../content/calendar-guides.json";
 import type { ContentImageUse } from "./content-images";
 
 export interface CalendarGuide {
+  updatedAt?: string;
+  shortcuts?: { label: string; href: string }[];
   title: string;
   description: string;
   showPhaseDatesInIntro?: boolean;
@@ -30,4 +32,9 @@ export function calendarGuide(month: number): CalendarGuide {
   const guide = Number.isInteger(month) && guides[String(month)];
   if (!guide) throw new RangeError("Invalid calendar guide month");
   return guide;
+}
+
+export function calendarGuideUpdatedAt(month: number): string {
+  const updated = calendarGuide(month).updatedAt;
+  return updated && updated > CALENDAR_GUIDES_UPDATED_AT ? updated : CALENDAR_GUIDES_UPDATED_AT;
 }

@@ -1,0 +1,144 @@
+{
+  "slug": "sniegpulkstenites",
+  "name": "Sniegpulkstenītes",
+  "nameAcc": "sniegpulkstenītes",
+  "latin": "Galanthus nivalis",
+  "aliases": [
+    "baltā sniegpulkstenīte",
+    "sniegbaltā sniegpulkstenīte",
+    "sniegpulkstenīši"
+  ],
+  "image": {
+    "id": "sniegpulkstenites-ziedi",
+    "caption": "Sniegpulkstenīšu pudurī redzamas šaurās lapas un pa vienam nokarenam ziedam kāta galā."
+  },
+  "identificationImage": {
+    "id": "sniegpulkstenite-zieda-tuvplans",
+    "caption": "Atvērtam ziedam starp garajām ārējām apziedņa lapām redzamas īsākās iekšējās lapas ar zaļu zīmi."
+  },
+  "emoji": "🌱",
+  "type": "sipolpuke",
+  "seoTitle": "Sniegpulkstenītes Latvijā — kā atpazīt, stādīt un dalīt",
+  "seoDescription": "Kad Latvijā zied sniegpulkstenītes, kā pēc zieda tās atšķirt no pavasara pienpulkstenītēm un kad pēc noziedēšanas dalīt sīpolu puduri.",
+  "tagline": "Agra pavasara sīpolpuķe ar vienu nokarenu baltu ziedu kāta galā.",
+  "updatedAt": "2026-11-19",
+  "shortAnswer": "Sniegpulkstenītēm izvēlies vietu zem lapu koka vai krūma, kur augsne saglabā veldzi un liekais ūdens aizplūst. Pēc noziedēšanas atstāj lapas. Kad tās sāk dzeltēt, puduri var sadalīt un sīpolus uzreiz iestādīt citā vietā.",
+  "lifeCycle": "Daudzgadīga sīpolpuķe. Pavasarī lapas papildina sīpola rezerves, vasarā virszemes daļas atmirst. Zemē pie vecā sīpola veidojas jauni sīpoli, un puduris pamazām plešas.",
+  "bloom": "Latvijā visbiežāk marta vidū. Atkarībā no gada ziedi novēroti no februāra līdz maijam.",
+  "bloomMonths": [
+    2,
+    3,
+    4,
+    5
+  ],
+  "height": "7–20 cm",
+  "sun": "Pusēna, piemēram, zem lapu kokiem",
+  "hardy": true,
+  "difficulty": "viegli",
+  "plantWhen": "Sadalītu puduri stādi pavasarī, kad lapas sāk dzeltēt. Rudenī pirktus sīpolus iestādi uzreiz.",
+  "moonPhase": "jebkurš",
+  "moonElement": "jebkurs",
+  "moonText": "Pudura dalīšanas laiku rāda lapas. Kad tās pēc ziedēšanas sāk dzeltēt, sagatavo jauno vietu un pārstādi sīpolus.",
+  "intro": [
+    "Baltā sniegpulkstenīte (Galanthus nivalis) Latvijas avotos sastopama arī ar nosaukumu «sniegbaltā sniegpulkstenīte». No sīpola izaug šauras, pelēcīgi zaļas lapas. Starp tām paceļas kāts ar vienu baltu ziedu. Lai saskatītu zieda rakstu, aplūko atvērušos ziedu no sāniem un nedaudz no apakšas.",
+    "Latvijas fenoloģisko novērojumu apkopojumā par 1970.–2018. gadu ziedēšanas sākums visbiežāk reģistrēts ap 17. martu. Atšķirība pa gadiem var būt liela pat vienā dārzā. Ukros vienpadsmit novērojumu gados pirmie ziedi reģistrēti gan februāra sākumā, gan aprīļa vidū. Savā dārzā vari pierakstīt dienu, kad atvēries pirmais zieds, un salīdzināt to ar nākamo pavasari."
+  ],
+  "comparison": {
+    "heading": "Sniegpulkstenīte vai pavasara pienpulkstenīte?",
+    "items": [
+      {
+        "name": "Baltā sniegpulkstenīte (Galanthus nivalis)",
+        "description": "Parastam, nepildītam ziedam trīs garās ārējās apziedņa lapas atveras ap trim īsām iekšējām. Iekšējo lapu galos redzama zaļa zīme."
+      },
+      {
+        "name": "Pavasara pienpulkstenīte jeb baltpulkstenīte (Leucojum vernum)",
+        "description": "Visas sešas apziedņa lapas ir aptuveni vienāda garuma un kopā veido zvaniņu. Katru galu rotā zaļš vai dzeltenīgs plankums."
+      }
+    ]
+  },
+  "planting": [
+    "Izvēlies pusēnainu dobes malu, kur pavasarī tiek gaisma un vasarā lapu koka vainags noēno zemi. Ja pēc lietus tur ilgi stāv peļķe, izraugies citu vietu. Pirms stādīšanas augsnē vari iejaukt lapu trūdzemi vai nobriedušu kompostu.",
+    "Pavasarī no audzētavas var iegādāties arī jau noziedējušus augus ar zaļām lapām. Iestādi tos tajā pašā dziļumā, kādā tie auguši. Savā dārzā ceru ērtāk pārcelt, kad lapas sāk dzeltēt un sīpolu vietu vēl var redzēt.",
+    "Rudenī iegādātus sīpolus iestādi drīz pēc saņemšanas. Mazie sīpoli glabājot viegli izkalst, tāpēc dobi sagatavo jau pirms pirkuma."
+  ],
+  "care": [
+    "Ja sniegpulkstenītes aug zālienā, pirmajā pļaušanas reizē atstāj zaļās lapas augam. Šo laukumiņu varēs nopļaut, kad lapas nodzeltējušas.",
+    "Lai paplašinātu stādījumu, sagatavo jauno vietu pirms pudura izcelšanas. Uzmanīgi atdali nelielas sīpolu grupas, saudzējot saknes, un uzreiz pārstādi tās iepriekšējā dziļumā. Atzīmē vietu ar mietiņu, lai vasarā, kad lapas pazudušas, tur nejauši neieraktu lāpstu.",
+    "Arī vasarā sīpoliem piemērota augsne, kas saglabā nedaudz mitruma. Pēc ilgāka sausuma pārbaudi zemi zem koka vainaga, kur lietus var nebūt ticis līdz dobei."
+  ],
+  "winter": "Iesakņojušos sniegpulkstenīšu puduri ziemā atstāj dobē. Kad sniega sega sāk irt, no zemes var parādīties pirmie asni. Bieza, ilgstoša sniega sega var aizkavēt ziedēšanu arī tad, ja citā dārzā sniegpulkstenītes jau atvērušās.",
+  "problems": [
+    "Ja lapas pazūd dažas nedēļas pēc noziedēšanas, ļauj tām dabiski atmirt. Vasarā vietu pie sīpoliem var aizņemt vēlāk plaukstoši kaimiņaugi.",
+    "Ja no nopirktas paciņas pavasarī nekas neizaug, viens iespējamais iemesls ir sīpolu izkalšana pirms iestādīšanas. Nākamreiz izvēlies svaigi izraktus sīpolus vai pavasarī iegādājies augus podiņā."
+  ],
+  "faq": [
+    {
+      "q": "Kad Latvijā zied sniegpulkstenītes?",
+      "a": "Daudzgadu novērojumos visbiežāk ziedēšana sākusies marta vidū. Siltā gadā ziedi var atvērties jau februārī, pēc sniegotas ziemas tos var sagaidīt vēlāk."
+    },
+    {
+      "q": "Vai pēc noziedēšanas drīkst nogriezt lapas?",
+      "a": "Pagaidi, līdz lapas pašas nodzeltē. Kamēr tās ir zaļas, augs vēl papildina sīpola rezerves nākamajai sezonai."
+    },
+    {
+      "q": "Kad var dalīt sniegpulkstenīšu puduri?",
+      "a": "Pavasara beigās, kad vēl redzams puduris un lapas sāk dzeltēt. Sadalītās grupas uzreiz iestādi citā vietā tādā pašā dziļumā."
+    }
+  ],
+  "related": [
+    "krokusi",
+    "narcises"
+  ],
+  "sources": [
+    {
+      "label": "Latvijas daba — baltās sniegpulkstenītes pazīmes un ziedēšanas periods",
+      "url": "https://www.latvijasdaba.lv/augi/galanthus-nivalis-l/"
+    },
+    {
+      "label": "Gunta Kalvāne un Andis Kalvāns — Latvijas fenoloģiskais kalendārs, 1970.–2018. gada novērojumi",
+      "url": "https://www.foliageographica.lu.lv/fileadmin/user_upload/LU.LV/Apaksvietnes/Fakultates/www.gzzf.lu.lv/Folia_Geographica/FG_raksti_2020/11-Kalvane___Kalvans__pp.95-103_.pdf"
+    },
+    {
+      "label": "Latvijas Universitāte — pavasara parādību novērojumi Ukros",
+      "url": "https://eztf.lu.lv/fileadmin/user_upload/LU.LV/Apaksvietnes/Fakultates/www.gzzf.lu.lv/Folia_Geographica/FG_Raksti_2001/74_Geografiski_raksti_20012001_Geografiskie_raksti_IX.pdf"
+    },
+    {
+      "label": "RHS — sniegpulkstenīšu stādīšana un puduru dalīšana",
+      "url": "https://www.rhs.org.uk/plants/snowdrops/growing-guide"
+    },
+    {
+      "label": "RHS — Galanthus nivalis audzēšanas apstākļi un pazīmes",
+      "url": "https://www.rhs.org.uk/plants/7568/galanthus-nivalis/details"
+    },
+    {
+      "label": "Kjū Karaliskais botāniskais dārzs — pavasara pienpulkstenītes zieda uzbūve",
+      "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:65769-1/general-information"
+    }
+  ],
+  "sectionSources": {
+    "intro": [
+      "https://www.latvijasdaba.lv/augi/galanthus-nivalis-l/",
+      "https://www.foliageographica.lu.lv/fileadmin/user_upload/LU.LV/Apaksvietnes/Fakultates/www.gzzf.lu.lv/Folia_Geographica/FG_raksti_2020/11-Kalvane___Kalvans__pp.95-103_.pdf",
+      "https://eztf.lu.lv/fileadmin/user_upload/LU.LV/Apaksvietnes/Fakultates/www.gzzf.lu.lv/Folia_Geographica/FG_Raksti_2001/74_Geografiski_raksti_20012001_Geografiskie_raksti_IX.pdf"
+    ],
+    "comparison": [
+      "https://www.latvijasdaba.lv/augi/galanthus-nivalis-l/",
+      "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:65769-1/general-information"
+    ],
+    "planting": [
+      "https://www.rhs.org.uk/plants/snowdrops/growing-guide",
+      "https://www.rhs.org.uk/plants/7568/galanthus-nivalis/details"
+    ],
+    "care": [
+      "https://www.rhs.org.uk/plants/snowdrops/growing-guide",
+      "https://www.rhs.org.uk/plants/7568/galanthus-nivalis/details"
+    ],
+    "winter": [
+      "https://eztf.lu.lv/fileadmin/user_upload/LU.LV/Apaksvietnes/Fakultates/www.gzzf.lu.lv/Folia_Geographica/FG_Raksti_2001/74_Geografiski_raksti_20012001_Geografiskie_raksti_IX.pdf",
+      "https://www.rhs.org.uk/plants/7568/galanthus-nivalis/details"
+    ],
+    "problems": [
+      "https://www.rhs.org.uk/plants/snowdrops/growing-guide"
+    ]
+  }
+}

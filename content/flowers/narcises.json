@@ -2,11 +2,14 @@
   "slug": "narcises",
   "name": "Narcises",
   "latin": "Narcissus",
-  "image": { "id": "narcises", "caption": "Narcises zied aprīlī un maijā; grauzēji to sīpolus parasti neaiztiek." },
+  "image": {
+    "id": "narcises",
+    "caption": "Ziedošas dārza narcises pavasarī."
+  },
   "emoji": "🌼",
   "type": "sipolpuke",
-  "tagline": "Pirmais īstais pavasara prieks — iestādi rudenī un aizmirsti uz gadiem.",
-  "bloom": "Aprīlis–maijs",
+  "tagline": "Rudenī stādāmas dārza narcises un ziemā telpās uzziedināmās Paperwhite narcises.",
+  "bloom": "Dobē aprīlī–maijā. Paperwhite var uzziedināt telpās ziemā.",
   "bloomMonths": [
     4,
     5
@@ -15,31 +18,32 @@
   "sun": "Saule / pusēna",
   "hardy": true,
   "difficulty": "viegli",
-  "plantWhen": "Sīpolus stāda rudenī, sept.–okt.",
+  "plantWhen": "Dārza narcišu sīpolus stādi septembrī vai oktobrī. Paperwhite sīpolus ziemas ziedēšanai stādi podā telpās.",
   "moonPhase": "dilstošs",
   "moonElement": "saknes",
   "moonText": "Sīpolu stādīšana ir sakņu darbs, tāpēc pēc biodinamiskās tradīcijas to dara dilstošā Mēnesī un sakņu dienā, kad uzskata, ka spēks plūst uz augu apakšdaļu. Tā ir tradīcija, ne garantija — daudz svarīgāk ir iestādīt laikus, kamēr augsne vēl silta, lai sīpols paspēj apsakņoties pirms sala.",
   "intro": [
     "Narcises ir viena no pateicīgākajām pavasara puķēm Latvijas dārzam. Tās zied tieši tad, kad gribas krāsu visvairāk — kad sniegs tikko nokusis un pārējais dārzs vēl guļ. Dzeltenās, baltās un krēmkrāsas trompetītes pacietīgi pārcieš mūsu pavasara untumus, un pat vēla aprīļa salna tām parasti nekaitē.",
-    "Lielākais ieguvums ir tas, ka narcises ir patiesi neprasīgas. Iestādi sīpolus rudenī, un nākamajos pavasaros tās uzdīgs pašas, gadu no gada, pamazām vairojoties un veidojot arvien kuplākus pudurus. Tās pārziemo Latvijā atklātā laukā bez izrakšanas, un atšķirībā no tulpēm tās nemēdz ēst peles un strupastes — narcišu sīpoli ir indīgi, tāpēc grauzēji tos neaiztiek."
+    "Ziemcietīgas dārza šķirnes piemērotā dobē var augt daudzus gadus. Puduris pamazām paplašinās, veidojoties jauniem sīpoliem. Ja izvēlies narcises ziemas ziedēšanai istabā, saglabā etiķeti ar šķirnes nosaukumu, lai zinātu, ko darīt ar augu pēc noziedēšanas."
   ],
   "planting": [
-    "Stādi sīpolus rudenī, septembrī–oktobrī, kamēr augsne vēl silta — sīpolam vajag 4–6 nedēļas, lai apsakņotos pirms īstā sala.",
+    "Dārza šķirņu sīpolus stādi rudenī. Parasti tās stāda septembrī vai oktobrī. Daugmales audzētāja pieredzē sīpoli var apsakņoties arī novembrī, ja pēc stādīšanas vēl ilgstoši saglabājas silts laiks.",
     "Stādīšanas dziļums: aptuveni 2–3 sīpola augstumi, parasti 12–15 cm līdz sīpola pamatnei; mazākiem savvaļas tipiem pietiek ar 8–10 cm.",
-    "Atstatums starp sīpoliem 8–12 cm; lai dobe izskatās dabiskāka, stādi grupās pa 5–9 sīpoliem, nevis rindā pa vienam.",
+    "Ja puduris dobē paliks vairākus gadus, starp sīpoliem atstāj ap 10–20 cm. Dabiskākam izskatam tos var stādīt grupās.",
     "Izvēlies saulainu vai pusēnainu vietu ar labi caurlaidīgu augsni — narcises necieš mitru, applūstošu vietu, kur sīpoli var sapūt.",
     "Liec sīpolu ar smailo galu uz augšu un saknīšu plāksnīti uz leju; ja šaubies, kā sīpols turējies, var stādīt sāniski, tas pats izlīdzinās.",
-    "Pēc stādīšanas viegli aplaisti, lai augsne piegulst sīpolam, un atzīmē vietu — pavasarī viegli aizmirst, kur tieši kas iestādīts."
+    "Pēc stādīšanas viegli aplaisti, lai augsne piegulst sīpolam, un atzīmē vietu — pavasarī viegli aizmirst, kur tieši kas iestādīts.",
+    "Paperwhite sīpolu ziemas ziedēšanai liec podā ar noteces caurumiem. Sīpola galotni atstāj virs substrāta. Pēc laistīšanas ļauj liekajam ūdenim iztecēt. Kad dzinumi aug, podu novieto gaišā vietā."
   ],
   "care": [
     "Pavasarī, kad parādās asni, narcises gandrīz nav jālaista — pavasara mitrums parasti pietiek; sausā periodā ziedēšanas laikā var papildus aplaistīt.",
     "Mēslošanu, ja gribi, dod agri pavasarī ar kālijā un fosforā bagātu mēslojumu vai komposta kārtu; izvairies no liela slāpekļa, kas dod lapas, bet vāji ziedus.",
-    "Atbalsts nav vajadzīgs — narcises stāv pašas; augstākās šķirnes lietū var nedaudz noliekties, bet pašas atkal izslejas.",
+    "Dobē lielākā daļa narcišu stāv bez balsta. Telpās gariem Paperwhite ziedkātiem var noderēt atbalsts.",
     "Nokaltušos ziedus noņem, lai augs netērē spēku sēklu veidošanā — tā nākamgad būs vairāk ziedu.",
     "Lapas NEDRĪKST nogriezt, kamēr tās zaļas — ļauj tām dabiski nodzeltēt un nokalst (parasti 6 nedēļas pēc ziedēšanas), jo tieši tad sīpols uzkrāj spēku nākamajai sezonai.",
     "Reizi 4–5 gados, ja pudurs sabiezējis un sāk vāji ziedēt, sīpolus var izrakt pēc lapu nokalšanas, atdalīt un pārstādīt."
   ],
-  "winter": "Narcises ir pilnībā ziemcietīgas Latvijā un paliek zemē — izrakt nav vajadzības. Tikko iestādītus sīpolus pirmajā ziemā vēsākā vietā vai jaunā dobē var piesegt ar lapu vai skuju kārtu, bet vēlākos gados arī tas nav obligāti. Pavasarī piesegumu noņem, tiklīdz parādās pirmie asni.",
+  "winter": "Dobē iestādītās ziemcietīgās narcises atstāj zemē. Ja vieta ir kaila un pakļauta stipram salam, stādījumu vari mulčēt, kad augsnes virskārta sāk sasalt.\n\nPaperwhite narcises ir sala jutīgas. Ziedošo podu ziemā turi telpās un sargā no sala. Latvijā šos sīpolus parasti izvēlas vienai ziedēšanas reizei telpās. Ja sīpols nopirkts bez etiķetes, pēc baltās ziedu krāsas vien tā ziemcietību noteikt nevar.",
   "problems": [
     "Sapuvuši sīpoli — gandrīz vienmēr mitras, smagas augsnes dēļ; risinājums ir caurlaidīga vieta un nepārlaistīt.",
     "Lapas ir, ziedu nav (\"aklās\" narcises) — biežākais iemesls ir pāragra lapu nogriešana iepriekšējā gadā vai pārāk sabiezējis, izsmelts pudurs; ļauj lapām nokalst un ik pa gadiem pārstādi.",
@@ -49,7 +53,7 @@
   "faq": [
     {
       "q": "Vai narcises rudenī obligāti jāizrok un jāglabā?",
-      "a": "Nē. Narcises ir ziemcietīgas un paliek zemē visu gadu — atšķirībā no dālijām vai bumbuļbegonijām tās nav jāizrok. Izrakt vajag tikai tad, ja gribi pudurus pārdalīt vai pārstādīt, un to dara pēc lapu nokalšanas."
+      "a": "Ziemcietīgas dārza narcises atstāj dobē arī rudenī. Ja puduris ir pārāk sabiezējis, izroc un sadali sīpolus, kad lapas nodzeltējušas. Ziemā telpās ziedošu Paperwhite narcisi sargā no sala."
     },
     {
       "q": "Kāpēc manas narcises uzdīga, bet neziedēja?",
@@ -57,11 +61,72 @@
     },
     {
       "q": "Vai narcises var stādīt pavasarī?",
-      "a": "Īsti nē — narcišu sīpoliem vajag aukstuma periodu ziemā, lai pavasarī ziedētu, tāpēc tos stāda rudenī (sept.–okt.). Ja sīpoli palikuši pāri, pavasarī iestādīti tie parasti gadu izlaiž un labi ziedēt sāk tikai nākamajā sezonā."
+      "a": "Sausus dārza narcišu sīpolus vislabāk stādīt rudenī. Pavasarī var stādīt podiņā izaudzētu ziemcietīgas šķirnes narcisi. Pēc noziedēšanas saglabā zaļās lapas, līdz tās pašas nodzeltē."
+    },
+    {
+      "q": "Vai Paperwhite narcises pirms stādīšanas jāatdzesē?",
+      "a": "Paperwhite narcises, piemēram, šķirne ‘Ziva’, telpās uzzied bez iepriekšējas atdzesēšanas. Ziemā sīpolu stādi podā un ļauj tam apsakņoties. Ziedēšanas laiks būs atkarīgs no šķirnes, sīpola un istabas temperatūras."
     }
   ],
   "related": [
     "tulpes",
     "peonijas"
-  ]
+  ],
+  "updatedAt": "2026-11-18",
+  "shortAnswer": "Dārza narcišu sīpolus Latvijas dobēs stādi rudenī. Ziemcietīgas šķirnes paliek zemē un zied pavasarī. Ja uz etiķetes ir Paperwhite vai Narcissus papyraceus, sīpolu ziemā vari uzziedināt telpās bez iepriekšējas atdzesēšanas. Šīs narcises ir sala jutīgas.",
+  "lifeCycle": "Narcises ir daudzgadīgas sīpolpuķes. Pēc ziedēšanas zaļās lapas palīdz sīpolam uzkrāt rezerves. Ziemošanas vietu izvēlies pēc šķirnes.",
+  "seoDescription": "Kad Latvijā stādīt narcises dobē un ko darīt ar podiņā noziedējušu narcisi. Kā ziemā telpās bez atdzesēšanas uzziedināt Paperwhite narcišu sīpolus.",
+  "links": [
+    {
+      "label": "Hiacinšu uzziedināšana telpās",
+      "href": "/raksti/hiacintes-podina-un-glaze"
+    }
+  ],
+  "sources": [
+    {
+      "label": "Daugmales peonijas — dārza narcišu audzēšana Latvijā",
+      "url": "https://daugmalespeonijas.lv/wp/?page_id=620"
+    },
+    {
+      "label": "RHS — dārza narcišu stādīšana un kopšana",
+      "url": "https://www.rhs.org.uk/plants/daffodils/growing-guide"
+    },
+    {
+      "label": "Aiovas Štata universitāte — Paperwhite šķirnes un uzziedināšana telpās",
+      "url": "https://yardandgarden.extension.iastate.edu/how-to/forcing-paperwhite-narcissus-bulbs"
+    },
+    {
+      "label": "RHS — Narcissus papyraceus nosaukumi un ziemcietība",
+      "url": "https://www.rhs.org.uk/plants/82666/narcissus-paper-white/details"
+    },
+    {
+      "label": "RHS — biežākie iemesli, kāpēc narcises nezied",
+      "url": "https://www.rhs.org.uk/problems/daffodil-blindness"
+    }
+  ],
+  "sectionSources": {
+    "intro": [
+      "https://www.rhs.org.uk/plants/daffodils/growing-guide",
+      "https://www.rhs.org.uk/plants/82666/narcissus-paper-white/details"
+    ],
+    "planting": [
+      "https://daugmalespeonijas.lv/wp/?page_id=620",
+      "https://www.rhs.org.uk/plants/daffodils/growing-guide",
+      "https://yardandgarden.extension.iastate.edu/how-to/forcing-paperwhite-narcissus-bulbs"
+    ],
+    "care": [
+      "https://daugmalespeonijas.lv/wp/?page_id=620",
+      "https://www.rhs.org.uk/plants/daffodils/growing-guide",
+      "https://yardandgarden.extension.iastate.edu/how-to/forcing-paperwhite-narcissus-bulbs"
+    ],
+    "winter": [
+      "https://daugmalespeonijas.lv/wp/?page_id=620",
+      "https://yardandgarden.extension.iastate.edu/how-to/forcing-paperwhite-narcissus-bulbs",
+      "https://www.rhs.org.uk/plants/82666/narcissus-paper-white/details"
+    ],
+    "problems": [
+      "https://www.rhs.org.uk/plants/daffodils/growing-guide",
+      "https://www.rhs.org.uk/problems/daffodil-blindness"
+    ]
+  }
 }

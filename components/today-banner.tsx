@@ -38,7 +38,7 @@ export function TodayBanner() {
   if (!mounted) return <Card tone="high" elevated className="mb-lg h-[150px] animate-pulse" />;
 
   const w = weather.data;
-  const frost = w ? w.minTonightC < 1 : false;
+  const low = w?.minTonightC;
 
   return (
     <Card tone="high" elevated linen className="mb-lg">
@@ -124,8 +124,12 @@ export function TodayBanner() {
               </div>
               <div className="text-center">
                 <Icon name="thermostat" className="text-secondary" size="28px" />
-                <p className="text-headline-md leading-tight text-on-surface">{Math.round(w.soilC)}°</p>
-                <p className="text-label-sm text-on-surface-variant">augsne</p>
+                {w.soilC === null ? (
+                  <p className="text-body-md leading-tight text-on-surface">Nav datu</p>
+                ) : (
+                  <p className="text-headline-md leading-tight text-on-surface">{w.soilC.toLocaleString("lv-LV")}°</p>
+                )}
+                <p className="text-label-sm text-on-surface-variant">augsnes prognoze<br />6 cm dziļumā</p>
               </div>
               <button
                 onClick={weather.retry}
@@ -154,11 +158,11 @@ export function TodayBanner() {
       </div>
 
       {/* Frost warning ribbon */}
-      {frost && (
+      {typeof low === "number" && low < 1 && (
         <div className="flex items-center gap-2 border-t border-error/30 bg-error-container/30 px-md py-sm">
           <Icon name="ac_unit" className="text-error" size="20px" />
           <p className="text-body-md text-on-error-container">
-            Salnas brīdinājums — naktī {Math.round(w!.minTonightC)}°C. Apsedz jutīgos stādus.
+            Salnas brīdinājums. Tuvāko 18 stundu prognozē līdz {low.toLocaleString("lv-LV")} °C. Apsedz jutīgos stādus.
           </p>
         </div>
       )}

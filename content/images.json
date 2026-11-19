@@ -1006,5 +1006,61 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
     "changes": "Pārveidots WebP formātā; saglabāts pilnais kadrs. Atvasinātais attēls pieejams ar to pašu licenci.",
     "reviewedAt": "2026-10-27"
+  },
+  "sniegpulkstenites-ziedi": {
+    "src": "/images/flowers/sniegpulkstenites-ziedi.webp",
+    "width": 1024,
+    "height": 794,
+    "alt": "Balti, nokareni sniegpulkstenīšu ziedi un šauras lapas starp pērnajām koku lapām",
+    "author": "Thomas",
+    "sourceName": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Galanthus_Nivalis_(Common_Snowdrop).jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Galanthus_Nivalis_%28Common_Snowdrop%29.jpg",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "changes": "Attēls samazināts un pārveidots WebP formātā. Saglabāts pilns kadrs.",
+    "reviewedAt": "2026-11-19"
+  },
+  "sniegpulkstenite-zieda-tuvplans": {
+    "src": "/images/flowers/sniegpulkstenite-zieda-tuvplans.webp",
+    "width": 675,
+    "height": 900,
+    "alt": "Viens nokarens sniegpulkstenītes zieds ar zaļu plankumu uz īsākās iekšējās apziedņa lapas",
+    "author": "Ilario Cavada",
+    "sourceName": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Galanthus_nivalis_(primo_piano).jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Galanthus_nivalis_%28primo_piano%29.jpg",
+    "license": "Publiskais īpašums",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:Galanthus_nivalis_(primo_piano).jpg#Licensing",
+    "changes": "Attēls samazināts un pārveidots WebP formātā. Saglabāts pilns kadrs.",
+    "reviewedAt": "2026-11-19"
+  },
+  "maijpukites-ziedi": {
+    "src": "/images/flowers/maijpukites-ziedi.webp",
+    "width": 780,
+    "height": 900,
+    "alt": "Maijpuķītes baltie zvanveida ziedi ķekarā starp platām zaļām lapām",
+    "author": "Cathy DeWitt",
+    "sourceName": "NC State Extension",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/convallaria-majalis/",
+    "originalUrl": "https://eit-planttoolbox-prod.s3.amazonaws.com/media/images/Convallaria-majalis-_49E2jzfRcguq.jpeg",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "changes": "Attēls samazināts un pārveidots WebP formātā. Saglabāts pilns kadrs.",
+    "reviewedAt": "2026-11-19"
+  },
+  "maijpukites-ogas": {
+    "src": "/images/flowers/maijpukites-ogas.webp",
+    "width": 675,
+    "height": 900,
+    "alt": "Sarkanas, apaļas maijpuķītes ogas nokarenā ķekarā uz zaļu lapu fona",
+    "author": "H Zell",
+    "sourceName": "NC State Extension",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/convallaria-majalis/",
+    "originalUrl": "https://eit-planttoolbox-prod.s3.amazonaws.com/media/images/Convallaria_majalis__qEvZZCdvGgIQ.jfif",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "changes": "Attēls samazināts un pārveidots WebP formātā. Saglabāts pilns kadrs. Atvasinātais attēls pieejams ar to pašu licenci.",
+    "reviewedAt": "2026-11-19"
   }
 }

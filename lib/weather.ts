@@ -1,7 +1,11 @@
 // ---- Open-Meteo raw shape (only the fields we request) ----
 export interface OpenMeteoResponse {
   current: { time: string; temperature_2m: number; weather_code: number };
-  hourly: { time: string[]; temperature_2m: number[]; soil_temperature_6cm: number[] };
+  hourly: {
+    time: string[];
+    temperature_2m?: (number | null)[] | null;
+    soil_temperature_6cm?: (number | null)[] | null;
+  };
   daily: {
     time: string[];
     temperature_2m_min: number[];
@@ -19,35 +23,36 @@ export interface DailyForecast {
 
 export interface Weather {
   airC: number;
-  /** Soil temp at 6cm for the current hour */
-  soilC: number;
+  /** Modeled soil temperature at 6 cm for the current hour, if available. */
+  soilC: number | null;
   code: number;
-  /** Tonight's forecast low (next daily min) */
-  minTonightC: number;
+  /** Lowest available hourly air temperature over the next 18 hours. */
+  minTonightC: number | null;
   daily: DailyForecast[];
 }
 
-/** Index of the hourly reading at the current hour (0 if not found). */
+/** Index of the current hour, or -1 if the hourly forecast omits it. */
 function currentHourIndex(data: OpenMeteoResponse): number {
   const now = data.current.time.slice(0, 13); // YYYY-MM-DDTHH
-  const idx = data.hourly.time.findIndex((t) => t.slice(0, 13) === now);
-  return idx >= 0 ? idx : 0;
+  return data.hourly.time.findIndex((t) => t.slice(0, 13) === now);
 }
 
-/** Lowest air temp over the next ~18 h — the actual coming-night low. */
-function minNextNight(data: OpenMeteoResponse, fromIdx: number): number {
-  const temps = data.hourly.temperature_2m.slice(fromIdx, fromIdx + 18);
-  if (!temps.length) return data.daily.temperature_2m_min[0] ?? 0;
-  return Math.round(Math.min(...temps) * 10) / 10;
+function minNext18Hours(data: OpenMeteoResponse, fromIdx: number): number | null {
+  if (fromIdx < 0) return null;
+  const temps = data.hourly.temperature_2m
+    ?.slice(fromIdx, fromIdx + 18)
+    .filter((value): value is number => typeof value === "number" && Number.isFinite(value));
+  return temps?.length ? Math.round(Math.min(...temps) * 10) / 10 : null;
 }
 
 export function normalizeWeather(data: OpenMeteoResponse): Weather {
   const idx = currentHourIndex(data);
+  const soil = data.hourly.soil_temperature_6cm?.[idx];
   return {
     airC: Math.round(data.current.temperature_2m * 10) / 10,
-    soilC: Math.round((data.hourly.soil_temperature_6cm[idx] ?? data.current.temperature_2m) * 10) / 10,
+    soilC: typeof soil === "number" && Number.isFinite(soil) ? Math.round(soil * 10) / 10 : null,
     code: data.current.weather_code,
-    minTonightC: minNextNight(data, idx),
+    minTonightC: minNext18Hours(data, idx),
     daily: data.daily.time.map((date, i) => ({
       date,
       min: Math.round(data.daily.temperature_2m_min[i]),

@@ -4,51 +4,79 @@
   "latin": "Thysanoptera",
   "emoji": "🐛",
   "type": "kaiteklis",
-  "tagline": "Sudrabaini, spīdīgi svītrojumi un sīki tumši punktiņi uz lapām — gandrīz neredzamie tripši izsūc augu šūnas siltumnīcā un uz sīpoliem.",
+  "tagline": "Sudrabaini svītrojumi un sīki melni punktiņi uz lapām ir raksturīgas tripšu bojājumu pazīmes telpaugiem, siltumnīcas augiem un sīpoliem.",
+  "shortAnswer": "Paliec baltu papīra lapu zem zieda vai bojātās lapas un viegli to pakrati. Ja uz papīra redzi sīkus, iegarenus, kustīgus kukaiņus un uz auga ir sudrabaini bojājumi ar melniem punktiņiem, iespējami tripši. Skarto telpaugu uzreiz novieto atsevišķi un pārbaudi augus, kas tam stāvējuši blakus.",
   "severity": "vidējs",
-  "affects": ["sīpoli un ķiploki", "siltumnīcas gurķi, paprika un tomāti", "telpaugi un puķes (rozes, krizantēmas)", "daudzi dārzeņi un dekoratīvie augi"],
+  "affects": [
+    "sīpoli un ķiploki",
+    "siltumnīcas gurķi, paprika un tomāti",
+    "telpaugi un puķes (rozes, krizantēmas)",
+    "daudzi dārzeņi un dekoratīvie augi"
+  ],
   "signs": [
     "Uz lapām parādās sudrabaini vai bālgani, spīdīgi svītrojumi un plankumi — tur, kur tripši izsūkuši šūnu saturu.",
-    "Pie sudrabainajām vietām redzami sīki, tumši, melni punktiņi — tripšu izkārnījumi.",
-    "Sīpolu loki kļūst sudrabaini, izliecas un kūko, augi vājāk aug.",
+    "Pie sudrabainajiem bojājumiem bieži redzami sīki, melni punktiņi — tripšu izkārnījumi.",
+    "Uz sīpolu lokiem veidojas gaišas, iegarenas svītras. Stipri bojāti loki deformējas un aug vājāk.",
     "Ziedi (īpaši rozēm un krizantēmām) deformējas, plankumojas un priekšlaicīgi novīst.",
-    "Pie pamanīšanas — uz lapas apakšpuses sīki (1–2 mm), iegareni, gaiši vai tumši, ļoti kustīgi kukainīši; tos labi saskata pret balta papīra fonu."
+    "Ar lupu apskati lapu apakšpuses, jaunos dzinumus un ziedus. Pieaugušie tripši ir sīki, iegareni kukaiņi ar šauriem spārniem. Kāpuri ir bez spārniem un parasti gaišāki."
   ],
   "intro": [
-    "Tripši ir niecīgi (1–2 mm), iegareni kukaiņi ar smalkām, bārkstainām spārnu maliņām, kurus ar neapbruņotu aci pamanīt grūti — biežāk pirmo ievēro to atstāto sudrabaino svītrojumu uz lapām. Tie ar īpašu mutes aparātu izplēš augu šūnas un izsūc to saturu; izsūktās, gaisu pildītās šūnas tad spīd sudrabaini. Tripši savairojas ļoti ātri, īpaši siltā, sausā gaisā, tāpēc visvairāk tie kaitē siltumnīcās, telpaugiem un sīpolu stādījumiem karstās vasarās.",
-    "Bez tiešā kaitējuma daži tripši pārnēsā arī augu vīrusus, tāpēc tos nav vērts atstāt bez ievērības. Reizē ar dabīgiem līdzekļiem tos pilnībā izskaust ne vienmēr izdodas, jo tie slēpjas dziļi ziedos un lapu pamatnēs, taču ar augstu gaisa mitrumu, lipīgajiem slazdiem, regulāru smidzināšanu un dabīgo ienaidnieku atbalstu tripšu populāciju var noturēt savaldāmu un pasargāt ražu."
+    "Tripši ir sīki, iegareni kukaiņi ar bārkstainām spārnu malām. Bieži vispirms pamana to atstātos bojājumus. Tripši pārdur auga virsmas šūnas un izsūc to saturu. Uz lapām un ziedlapām paliek gaiši plankumi vai sudrabaini svītrojumi.",
+    "Tripši mēdz slēpties pumpuros un jauno lapu krokās. Dažas sugas arī pārnēsā augu vīrusus. Pārbaudot augu, pievērs uzmanību jaunajām lapām un ziediem. Vecie bojājumi saglabājas arī pēc tam, kad kaitēkļu vairs nav."
   ],
   "control": [
-    "Izkar siltumnīcā vai pie skartajiem augiem zilos un dzeltenos lipīgos slazdus — tripši uz tiem labprāt nosēžas; tie reizē ķer kaitēkli un rāda, cik tā daudz. Tas ir viens no ērtākajiem līdzekļiem siltumnīcā.",
-    "Paaugstini gaisa mitrumu un regulāri smidzini augus ar ūdeni (īpaši lapu apakšpusi) — tripši nemīl mitru gaisu, un smidzināšana traucē to vairošanos; siltumnīcā vēdini, lai nekrātos sutīgs, karsts gaiss.",
-    "Smidzini skartos augus ar vērmeļu uzlējumu — rūgtais, asais izvilkums atbaida tripšus; apstrādā arī lapu apakšpusi un atkārto ik pēc dažām dienām, jo paaudzes nāk ātri.",
-    "Papildu apkarošanai smidzini ar atšķaidītu ziepjūdeni (mīkstās kālija ziepes) — tas nosmacē mīkstos kāpurus un pieaugušos; smidzini vēsā dienas daļā un noskalo jutīgākajiem augiem pēc dažām stundām.",
-    "Stiprini augu izturību ar kosas novārījumu — silīcijs nostiprina lapu audus un padara tos kaitēklim grūtāk caururbjamus; tā ir atbalsta, ne tiešas apkarošanas metode.",
-    "Smagi skartās lapas un ziedus nogriez un iznīcini — tieši ziedos un jaunajos dzinumos tripši slēpjas un vairojas visvairāk.",
-    "Siltumnīcā piesaisti vai ielaid dabīgos ienaidniekus (plēsīgās ērces, skropstaiņus, plēsīgās blaktis) — bioloģiskā kontrole pret tripšiem darbojas labi tieši slēgtā telpā."
+    "Atdali skarto telpaugu no pārējiem un pārbaudi tuvumā stāvējušos augus. Apskati arī pumpurus un jaunās lapas. Viegli uzsit pa ziedu vai lapu virs balta papīra, lai ar lupu varētu apskatīt nokritušos kukaiņus.",
+    "Ja bojāti tikai daži ziedi vai lapas, nogriez stipri skartās daļas un iznes tās no telpas. Augam, kura lapas var mazgāt, saudzīgi noskalo lapu abas puses ar ūdeni.",
+    "Pie auga novieto zilu vai dzeltenu līmes kartīti. Tā palīdz pamanīt lidojošos pieaugušos tripšus un novērot, vai to skaits mainās. Uz auga palikušos kāpurus un auga audos paslēptās olas kartīte nenoķer.",
+    "Atkārtoti apskati jaunās lapas un ziedus. Augu liec atpakaļ pie pārējiem, kad vairākās secīgās pārbaudēs vairs neatrodi dzīvus tripšus un jaunās lapas aug bez svaigiem bojājumiem.",
+    "Siltumnīcā pret tripšiem izmanto arī bioloģisko kontroli, piemēram, plēsējērces. Piemērotu sugu izvēlas atbilstoši kaitēklim un audzēšanas apstākļiem."
   ],
-  "recipeSlugs": ["vermelu-uzlejums", "kosas-novarijums"],
+  "recipeSlugs": [],
   "prevention": [
-    "Regulāri (vismaz reizi nedēļā) pārbaudi lapu apakšpuses un izkar lipīgos slazdus profilaktiski — agri pamanītu tripšu populāciju apturēt ir daudz vieglāk nekā jau izplatījušos.",
-    "Uzturi siltumnīcā labu mitrumu un vēdināšanu — karsts, sauss, sutīgs gaiss ir tieši tas, kas tripšiem patīk vislabāk.",
-    "Jaunus, iepirktus stādus un telpaugus pirms pievienošanas pārējiem dažas dienas patur atsevišķi un pārbaudi — tripšus dārzā un siltumnīcā visbiežāk ienes ar pirktiem augiem.",
-    "Rudenī iztīri siltumnīcu no augu atliekām un nezālēm — tripši un to kūniņas pārziemo augsnes virskārtā un atliekās.",
-    "Ievēro augu maiņu un nestādi sīpolus gadiem ilgi vienā vietā — tas mazina kaitēkļa uzkrāšanos augsnē."
+    "Jaunu telpaugu vienu līdz divas nedēļas turi atsevišķi no kolekcijas. Pirms pirkšanas un vēlreiz mājās apskati lapu abas puses, dzinumu galus un ziedus. Ja atrodi kaitēkļus, turpini augu turēt atsevišķi arī pēc šā sākotnējā novērošanas laika.",
+    "Kopjot telpaugus un siltumnīcas augus, regulāri apskati jaunās lapas un pumpurus. Siltumnīcā līmes kartītes palīdz laikus pamanīt lidojošos pieaugušos tripšus.",
+    "Siltumnīcā izvāc bojātās augu atliekas un ravē nezāles, uz kurām tripši var turpināt baroties."
   ],
   "moonNote": "Kaitēkļu apkarošanu pēc tradīcijas saista ar dilstošo Mēnesi, taču tripši vairojas tik ātri, ka izšķiroša ir savlaicība — rīkojies uzreiz pie pirmajām sudrabainajām pēdām, negaidot konkrētu Mēness fāzi.",
-  "folklore": "Vecie dārznieki sīpolu loku sudrabaino spīdumu sauca par «sudrabu lokos» un zināja to par sliktu zīmi — sausā, karstā vasarā tādi loki signalizēja, ka stādījumam trūkst mitruma un tas jāatbalsta ar laistīšanu un apsmidzināšanu.",
+  "folklore": "",
+  "safetyNote": "Pašjaukti ziepju vai trauku mazgāšanas līdzekļa šķīdumi var apdedzināt lapas. Ja vajadzīga apstrāde ar augu aizsardzības līdzekli, izvēlies Latvijā atļautu līdzekli, kura marķējumā norādīts attiecīgais augs, kaitēklis un lietošanas vieta. Ievēro marķējuma norādes.",
   "faq": [
     {
       "q": "Kā saprast, vai tie ir tripši, nevis ērces vai laputis?",
-      "a": "Tripšus izdod sudrabainais, spīdīgais svītrojums uz lapām kopā ar sīkiem melniem punktiņiem (izkārnījumiem). Tīklērces atstāj smalkus, gaišus punktiņus un zirnekļtīklu, bet laputis — lipīgu medusrasu un sarullētas lapas. Lai pārliecinātos, pakrati lapu pār baltu papīru: tripši ir sīki, iegareni un ļoti kustīgi."
+      "a": "Tripšiem raksturīgas sudrabainas svītras un sīki, melni izkārnījumu punkti. Viegli pakratot ziedu vai lapu virs balta papīra, var ieraudzīt iegarenus, kustīgus kukaiņus. Tīklērces parasti atstāj sīku, gaišu punktējumu un stiprāk bojātās vietās arī smalku tīklojumu. Laputis bieži sēž bariņos uz jaunajiem dzinumiem un atstāj lipīgu medusrasu."
     },
     {
       "q": "Kāpēc tripši siltumnīcā tik grūti izskaužami?",
-      "a": "Tie slēpjas dziļi ziedos, lapu pamatnēs un augsnes virskārtā, kur smidzinājums viņus nesasniedz, un vairojas ļoti ātri. Tāpēc viena apstrāde nelīdz — vajag atkārtot smidzināšanu ik pēc dažām dienām, kombinēt ar lipīgajiem slazdiem, augstu mitrumu un, ja iespējams, dabīgajiem ienaidniekiem."
+      "a": "Tripši slēpjas ziedos un lapu krokās. Daudzu sugu olas attīstās auga audos, bet kūniņas var atrasties augsnē vai auga spraugās. Tāpēc pēc bojāto daļu noņemšanas regulāri pārbaudi jaunos dzinumus un ar līmes kartītēm vēro pieaugušo tripšu skaitu."
     },
     {
       "q": "Vai tripši ir bīstami ražai vai tikai izskatam?",
       "a": "Abējādi. Viegls bojājums galvenokārt pasliktina izskatu un nedaudz vājina augu, bet liela populācija būtiski mazina ražu, deformē ziedus un augļus, un daži tripši pārnēsā augu vīrusus. Tāpēc tos nav vērts atstāt bez ievērības — jo agrāk rīkojies, jo vieglāk noturēt savaldāmus."
+    },
+    {
+      "q": "Cik ilgi telpaugs jātur atsevišķi?",
+      "a": "Jaunu, šķietami veselu telpaugu novēro atsevišķi vienu līdz divas nedēļas. Ja tripšus jau esi atradis, turpini augu turēt atsevišķi, līdz vairākās pārbaudēs vairs neatrodi dzīvus kukaiņus un jaunajām lapām nav svaigu bojājumu."
     }
-  ]
+  ],
+  "relatedLinks": [
+    {
+      "label": "Tīklērces un to atstātās pēdas uz lapām",
+      "href": "/kaitekli/tiklerces"
+    }
+  ],
+  "sources": [
+    {
+      "label": "Kalifornijas Universitāte — tripšu pazīmes, novērošana un ierobežošana",
+      "url": "https://ipm.ucanr.edu/home-and-landscape/thrips/"
+    },
+    {
+      "label": "Minesotas Universitāte — telpaugu pārbaude un kaitēkļu ierobežošana",
+      "url": "https://extension.umn.edu/garden-and-home/yard-and-garden/yard-and-garden-insects/insects-on-indoor-plants"
+    },
+    {
+      "label": "Valsts augu aizsardzības dienests — augu aizsardzības līdzekļu lietošanas nosacījumi",
+      "url": "https://www.vaad.gov.lv/lv/lietosanas-nosacijumi-0"
+    }
+  ],
+  "updatedAt": "2026-11-18"
 }

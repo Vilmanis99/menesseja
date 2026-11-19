@@ -31,6 +31,14 @@
     {
       "label": "LLKC, Māris Narvils — 2026. gada pavasara riski",
       "url": "https://llkc.lv/aktualitates/sausuma-riski-pavasari/"
+    },
+    {
+      "label": "University of Maryland Extension — paprikas sējas laiks līdz izstādīšanai",
+      "url": "https://extension.umd.edu/resource/starting-vegetable-seeds-indoors"
+    },
+    {
+      "label": "University of Kentucky — kātu un sakņu seleriju sējas laiks līdz izstādīšanai (PDF)",
+      "url": "https://ccd.uky.edu/sites/default/files/2024-11/ccd-cp-092_celery-and-celeriac.pdf"
     }
   ],
   "readMinutes": 3,
@@ -40,7 +48,12 @@
       "calculator": "seedling-sowing",
       "paragraphs": [
         "Piemērā izstādīšana plānota 1. jūnijā, un no sējas līdz izstādīšanai paiet 6–8 nedēļas. Izvēlies savam dārzam piemērotu datumu un ievadi šķirnei paredzēto laiku līdz izstādīšanai, ieskaitot norūdīšanu. Ja norādīts viens skaitlis, ieraksti to abos laukos.",
-        "Ja nedēļas skaitītas no sadīgšanas, ievadi arī uz paciņas norādītās dīgšanas dienas. Ja nedēļas skaitītas no sējas, dīgšana jau ir ietverta."
+        "Ja nedēļas skaitītas no sadīgšanas, ievadi arī uz paciņas norādītās dīgšanas dienas. Ja nedēļas skaitītas no sējas, dīgšana jau ir ietverta.",
+        "Merilendas Universitāte paprikai iesaka aptuveni 8–10 nedēļas no sējas līdz izstādīšanai, bet Kentuki Universitāte kātu un sakņu selerijām iesaka 10–12 nedēļas. Abos piemēros dīgšanas laiks jau ir iekļauts. Izvēloties augu, kalkulators aizpilda nedēļas. Izstādīšanas datumu savam dārzam izvēlies pēc vietējiem apstākļiem."
+      ],
+      "sourceUrls": [
+        "https://extension.umd.edu/resource/starting-vegetable-seeds-indoors",
+        "https://ccd.uky.edu/sites/default/files/2024-11/ccd-cp-092_celery-and-celeriac.pdf"
       ]
     },
     {
@@ -113,6 +126,7 @@
     {
       "heading": "Biežākie jautājumi",
       "paragraphs": [
+        "Kā saglabāt sējas laiku? Ieraksti auga vai šķirnes nosaukumu un lejupielādē aprēķinu kā .ics failu. Atver vai importē failu savā kalendārā. Sējas periods aptver gan pirmo, gan pēdējo norādīto dienu. Vari arī atvērt saiti uz aprēķinu un saglabāt to grāmatzīmēs. Atverot šo saiti, atjaunosies ievadītās vērtības.",
         "Vai dīgšanas laiks vienmēr jāpieskaita? Tikai tad, ja izmantotais dēstu vecums skaitīts no sadīgšanas. Skaitot no sējas, tas jau ir ietverts.",
         "Ko darīt, ja plānotajā dienā ir auksts? Atliec izstādīšanu un pārbaudi dēstu vietu, gaismu un poda tilpumu. Pārāk auksta pastāvīgā vieta nav labs risinājums pāraugušiem stādiem.",
         "Vai pēc Mēness kalendāra jāmaina aprēķins? Vispirms izvēlies augam piemērotu audzēšanas intervālu un apstākļus. Tradicionālā dienas izvēle tos nevar aizstāt."

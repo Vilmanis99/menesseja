@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { track } from "@/lib/analytics";
 import { storageGet, storageRemove, storageSet } from "@/lib/safe-storage";
 
 export function WeeklyTaskCheck({ task, week, heading }: { task: string; week: string; heading: string }) {
@@ -21,8 +22,12 @@ export function WeeklyTaskCheck({ task, week, heading }: { task: string; week: s
         className="h-5 w-5 shrink-0 accent-primary" onChange={(event) => {
           const checked = event.target.checked;
           setDone(checked);
-          if (checked) storageSet(key, week);
-          else if (storageGet(key) === week) storageRemove(key);
+          if (checked) {
+            storageSet(key, week);
+            track("weekly_task_completed", { plan_week: week, task_id: task });
+          } else if (storageGet(key) === week) {
+            storageRemove(key);
+          }
         }} />
       Paveikts
     </label>

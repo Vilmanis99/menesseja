@@ -7,6 +7,7 @@ import { JsonLd } from "@/components/json-ld";
 import { DataNote } from "@/components/data-note";
 import { ContentFigure } from "@/components/content-figure";
 import { ContentTable } from "@/components/content-table";
+import { SnowdropFlowering } from "@/components/snowdrop-flowering";
 import { contentImage } from "@/lib/content-images";
 import { getFlower, getAllFlowers, flowerSlugs, FLOWER_TYPE_META, type Flower, type FlowerSourceSection } from "@/lib/flowers";
 import { CROPS } from "@/lib/planting-crops";
@@ -135,6 +136,7 @@ export default async function FlowerPage({ params }: { params: Promise<{ slug: s
 
       <nav aria-label="Ceļveža sadaļas" className="mb-md flex flex-wrap gap-2 sm:mb-lg">
         {[
+          ...(f.slug === "sniegpulkstenites" ? [{ href: "#kad-zied-latvija", label: "Kad zied Latvijā?" }] : []),
           ...(f.comparison ? [{ href: "#augu-atskiribas", label: "Augu atšķirības" }] : []),
           { href: "#stadisana", label: "Stādīšana" },
           { href: "#kopsana", label: "Kopšana" },
@@ -166,6 +168,8 @@ export default async function FlowerPage({ params }: { params: Promise<{ slug: s
         <SectionSources flower={f} section="intro" />
       </div>
 
+      {f.slug === "sniegpulkstenites" && <SnowdropFlowering />}
+
       {/* Facts */}
       <h2 className="mb-sm text-headline-md text-on-surface">Galvenais īsumā</h2>
       <div className="mb-lg grid grid-cols-2 gap-2 sm:grid-cols-3">
@@ -192,6 +196,8 @@ export default async function FlowerPage({ params }: { params: Promise<{ slug: s
           <SectionSources flower={f} section="comparison" />
         </section>
       )}
+
+      {f.identificationImage && <ContentFigure image={f.identificationImage} />}
 
       {/* Planting */}
       <h2 id="stadisana" className="mb-sm scroll-mt-24 text-headline-md text-on-surface">Kā stādīt</h2>

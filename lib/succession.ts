@@ -1,4 +1,5 @@
-import { cropById, type Plant } from "@/lib/garden";
+import { cropById, isGardenDate, type Plant } from "./garden";
+import { latviaDateKey } from "./day-anchor";
 
 /**
  * Crops worth re-sowing on an interval for a continuous harvest, and the gap
@@ -36,17 +37,16 @@ export function nextSowing(plant: Plant, now: Date = new Date()): NextSowing | n
   const crop = cropById(plant.cropId);
   if (!crop) return null;
 
-  const base = new Date(plant.sownAt);
-  if (isNaN(base.getTime())) return null;
-
-  // First interval after sowing, then skip any occurrences already missed by
-  // more than a couple of days — suggesting a 3-weeks-ago date helps nobody.
+  const today = latviaDateKey(now);
+  if (!isGardenDate(plant.sownOn, today)) return null;
+  const base = Date.parse(plant.sownOn);
   const interval = weeks * 7 * 86400000;
-  let t = base.getTime() + interval;
-  while (t < now.getTime() - 2 * 86400000) t += interval;
-  const date = new Date(t);
+  const first = base + interval;
+  const oldestUseful = Date.parse(today) - 2 * 86400000;
+  const missed = Math.max(0, Math.ceil((oldestUseful - first) / interval));
+  const date = new Date(first + missed * interval);
 
-  const m = date.getMonth() + 1;
+  const m = date.getUTCMonth() + 1;
   const sow = crop.sowOutdoors ?? crop.sowIndoors;
   const inWindow = !!sow && m >= sow[0] && m <= sow[1];
 

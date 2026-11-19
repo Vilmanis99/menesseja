@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Sitemap regeneration reads these collections from disk after the build.
+  // Both routes read the editorial collections on the server after deployment.
   outputFileTracingIncludes: {
+    "/meklet": ["./content/{articles,crops,flowers,kaitekli,recipes,tops}/*.json"],
     "/sitemap.xml": ["./content/{articles,crops,flowers,kaitekli,recipes,tops}/*.json"],
   },
   images: {

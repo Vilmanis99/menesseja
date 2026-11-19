@@ -1,9 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import Link from "next/link";
 import { Card } from "@/components/ui/card";
-import { Chip } from "@/components/ui/chip";
 import { Icon } from "@/components/ui/icon";
 import { MoonPhase } from "@/components/moon-phase";
 import { dailyPhaseName, moonForDate, moonPhasesForMonth } from "@/lib/moon";
@@ -12,6 +10,7 @@ import { CROPS, MONTHS_LV_FULL, MONTHS_LV_GENITIVE, ACTIVITY_META } from "@/lib/
 import { cropPart } from "@/lib/crop-part";
 import { cropEmoji } from "@/lib/crop-visual";
 import { useMounted } from "@/lib/use-mounted";
+import { holidayNameForDay, latvianHolidaysForMonth } from "@/lib/latvian-holidays";
 import { namedaysFor } from "@/lib/vardadienas";
 import { MONTH_SLUGS, calendarYears } from "@/lib/seo";
 import { DataNote } from "@/components/data-note";
@@ -59,20 +58,35 @@ function cropsForDay(month: number, part: PlantPart): DayCrop[] {
   return out;
 }
 
-export function CalendarExplorer() {
-  useEffect(() => track("calendar_opened", { source: "calendar_page" }), []);
+export function CalendarExplorer({ period }: { period?: { year: number; month: number } }) {
+  const source = period ? "calendar_month" : "calendar_page";
+  useEffect(() => track("calendar_opened", { source }), [source]);
   const mounted = useMounted();
   const today = useMemo(() => { const { year, month, day } = latviaDateParts(); return latviaNoon(year, month, day); }, []);
-  const [cursor, setCursor] = useState(() => latviaNoon(today.getUTCFullYear(), today.getUTCMonth() + 1, 1));
-  const [selected, setSelected] = useState<Date>(today);
+  const [selected, setSelected] = useState(() => {
+    if (!period || (period.year === today.getUTCFullYear() && period.month === today.getUTCMonth() + 1)) return today;
+    return latviaNoon(period.year, period.month, 1);
+  });
 
-  const year = cursor.getUTCFullYear();
-  const month = cursor.getUTCMonth();
-  function changeMonth(offset: number) {
+  const year = selected.getUTCFullYear();
+  const month = selected.getUTCMonth();
+  function monthControl(offset: -1 | 1) {
     const next = latviaNoon(year, month + 1 + offset, 1);
-    setCursor(next);
-    setSelected(next);
-    track("calendar_month_select", { selected_year: next.getUTCFullYear(), selected_month: next.getUTCMonth() + 1 });
+    const nextYear = next.getUTCFullYear();
+    const nextMonth = next.getUTCMonth();
+    const label = offset === -1 ? "Iepriekšējais mēnesis" : "Nākamais mēnesis";
+    const icon = <Icon name={offset === -1 ? "chevron_left" : "chevron_right"} />;
+    const className = "flex h-11 w-11 items-center justify-center rounded-lg text-on-surface-variant transition-colors hover:bg-surface-variant hover:text-primary disabled:opacity-40";
+    const record = () => track("calendar_month_select", { selected_year: nextYear, selected_month: nextMonth + 1 });
+    if (period) {
+      if (!calendarYears(today).includes(nextYear)) return <button type="button" disabled aria-label={label} className={className}>{icon}</button>;
+      return (
+        <a href={`/kalendars/${nextYear}/${MONTH_SLUGS[nextMonth]}#interaktivais-kalendars`} aria-label={label} onClick={record} className={className}>
+          {icon}
+        </a>
+      );
+    }
+    return <button type="button" aria-label={label} className={className} onClick={() => { setSelected(next); record(); }}>{icon}</button>;
   }
 
   const days = useMemo(() => {
@@ -84,6 +98,8 @@ export function CalendarExplorer() {
     return cells;
   }, [year, month]);
 
+  const holidays = useMemo(() => latvianHolidaysForMonth(year, month + 1), [year, month]);
+  const selectedHoliday = holidayNameForDay(holidays, selected.getUTCDate());
   const sel = sowingDay(selected);
   const selMoon = moonForDate(selected);
   const phases = useMemo(() => moonPhasesForMonth(year, month + 1), [year, month]);
@@ -103,13 +119,13 @@ export function CalendarExplorer() {
       <div className="mb-md flex flex-wrap items-center justify-between gap-2">
         <DataNote variant="moon" />
         {calendarYears(today).includes(year) && (
-          <Link
-            href={`/kalendars/${year}/${MONTH_SLUGS[month]}`}
+          <a
+            href={period ? "#visas-dienas" : `/kalendars/${year}/${MONTH_SLUGS[month]}`}
             className="inline-flex shrink-0 items-center gap-1.5 rounded-full border border-outline-variant/30 bg-surface-container px-4 py-1.5 text-label-md text-on-surface transition-colors hover:border-primary/40 hover:text-primary"
           >
-            <Icon name="print" size="18px" />
-            Drukājams {MONTHS_LV_GENITIVE[month]} kalendārs
-          </Link>
+            <Icon name={period ? "calendar_month" : "print"} size="18px" />
+            {period ? "Dienu tabula" : `Drukājams ${MONTHS_LV_GENITIVE[month]} kalendārs`}
+          </a>
         )}
       </div>
 
@@ -117,23 +133,11 @@ export function CalendarExplorer() {
         {/* Calendar grid */}
         <Card tone="low" elevated linen className="p-md lg:col-span-8">
           <div className="mb-md flex items-center justify-between">
-            <button
-              onClick={() => changeMonth(-1)}
-              aria-label="Iepriekšējais mēnesis"
-              className="flex h-11 w-11 items-center justify-center rounded-lg text-on-surface-variant transition-colors hover:bg-surface-variant hover:text-primary"
-            >
-              <Icon name="chevron_left" />
-            </button>
+            {monthControl(-1)}
             <h2 className="text-headline-md capitalize text-on-surface">
               {MONTHS_LV_FULL[month]} {year}
             </h2>
-            <button
-              onClick={() => changeMonth(1)}
-              aria-label="Nākamais mēnesis"
-              className="flex h-11 w-11 items-center justify-center rounded-lg text-on-surface-variant transition-colors hover:bg-surface-variant hover:text-primary"
-            >
-              <Icon name="chevron_right" />
-            </button>
+            {monthControl(1)}
           </div>
 
           <div className="mb-2 grid grid-cols-7 gap-1">
@@ -152,9 +156,15 @@ export function CalendarExplorer() {
               const isSel = sameDay(d, selected);
               const isToday = sameDay(d, today);
               const rest = isRestDay(d);
+              const holiday = holidayNameForDay(holidays, d.getUTCDate());
+              const dateLabel = `${d.getUTCDate()}. ${MONTHS_LV_FULL[month]} ${year}`;
               return (
                 <button
                   key={i}
+                  type="button"
+                  aria-label={holiday ? `${dateLabel}, ${holiday}` : dateLabel}
+                  title={holiday || undefined}
+                  aria-pressed={isSel}
                   onClick={() => setSelected(d)}
                   className={`relative flex aspect-square flex-col items-center justify-center gap-0.5 rounded-lg border transition-all hover:scale-105 ${
                     isSel
@@ -162,7 +172,7 @@ export function CalendarExplorer() {
                       : "border-transparent bg-background/40 hover:border-primary/30"
                   }`}
                 >
-                  <span className={`text-label-sm ${isToday ? "font-bold text-secondary" : "text-on-surface"}`}>
+                  <span className={`text-label-sm ${isToday ? "font-bold text-secondary" : "text-on-surface"} ${holiday ? "underline decoration-2 underline-offset-2" : ""}`}>
                     {d.getUTCDate()}
                   </span>
                   <MoonPhase phase={m.phase} size={18} glow={false} />
@@ -175,6 +185,8 @@ export function CalendarExplorer() {
               );
             })}
           </div>
+
+          {holidays.length > 0 && <p className="mt-sm text-label-sm text-on-surface-variant">Svētku dienu un ar tām saistīto brīvdienu datumi ir pasvītroti.</p>}
 
           {/* Element legend */}
           <div className="mt-md flex flex-wrap gap-3 border-t border-outline-variant/10 pt-md">
@@ -190,6 +202,10 @@ export function CalendarExplorer() {
         {/* Selected day detail */}
         <div className="flex flex-col gap-md lg:col-span-4">
           <Card tone="highest" elevated accent="primary" className="p-md">
+            <p aria-live="polite" aria-atomic="true" className="mb-sm text-body-md font-semibold text-on-surface">
+              <time dateTime={latviaDateKey(selected)}>{selected.getUTCDate()}. {MONTHS_LV_FULL[month]}</time>
+              {selectedHoliday && <span className="text-primary"> · {selectedHoliday}</span>}
+            </p>
             <div className="flex items-center gap-md">
               <MoonPhase phase={selMoon.phase} size={72} />
               <div>

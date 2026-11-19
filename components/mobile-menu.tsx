@@ -2,16 +2,10 @@
 
 import { useEffect, useRef } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { clsx } from "@/lib/clsx";
 import { Icon } from "@/components/ui/icon";
-import { NAV_ITEMS, NAV_FOOTER, type NavItem } from "@/components/nav-config";
+import { GARDEN_HREF, NAV_ITEMS, NAV_FOOTER, type NavCurrent, type NavItem } from "@/components/nav-config";
 import { AccountButton } from "@/components/account-button";
-
-function isActive(pathname: string, href: string): boolean {
-  if (href === "/") return pathname === "/";
-  return pathname === href || pathname.startsWith(href + "/");
-}
 
 /**
  * Mobile navigation drawer. Slides in from the LEFT (where users instinctively
@@ -19,8 +13,7 @@ function isActive(pathname: string, href: string): boolean {
  * 4 bottom-bar items + a footer, so Kaitēkļi / Raksti / Receptes were nearly
  * undiscoverable. Opened from the top-bar hamburger and the bottom-bar "Izvēlne".
  */
-export function MobileMenu({ open, onClose }: { open: boolean; onClose: () => void }) {
-  const pathname = usePathname();
+export function MobileMenu({ open, onClose, current }: { open: boolean; onClose: () => void; current: (href: string) => NavCurrent }) {
   const panelRef = useRef<HTMLDivElement>(null);
   const closeButtonRef = useRef<HTMLButtonElement>(null);
 
@@ -58,18 +51,19 @@ export function MobileMenu({ open, onClose }: { open: boolean; onClose: () => vo
       window.cancelAnimationFrame(focusFrame);
       window.removeEventListener("keydown", onKey);
       document.body.style.overflow = "";
-      previouslyFocused?.focus();
+      previouslyFocused?.focus({ preventScroll: true });
     };
   }, [open, onClose]);
 
   const Row = (item: NavItem) => {
-    const active = isActive(pathname, item.href);
+    const active = current(item.href);
+    const Tag = item.href === GARDEN_HREF ? "a" : Link;
     return (
-      <Link
+      <Tag
         key={item.href}
         href={item.href}
         onClick={onClose}
-        aria-current={active ? "page" : undefined}
+        aria-current={active}
         className={clsx(
           "flex items-center gap-sm rounded-lg px-sm py-sm transition-colors",
           active
@@ -77,9 +71,9 @@ export function MobileMenu({ open, onClose }: { open: boolean; onClose: () => vo
             : "text-on-surface-variant hover:bg-surface-variant/40",
         )}
       >
-        <Icon name={item.icon} fill={active} />
+        <Icon name={item.icon} fill={Boolean(active)} />
         <span className="text-body-md">{item.label}</span>
-      </Link>
+      </Tag>
     );
   };
 
@@ -109,7 +103,7 @@ export function MobileMenu({ open, onClose }: { open: boolean; onClose: () => vo
         )}
       >
         <div className="flex items-center justify-between px-md py-md">
-          <span className="text-headline-md text-primary">Mēness Sēja</span>
+          <a href="/" onClick={onClose} aria-label="Mēness Sēja — sākums" className="text-headline-md text-primary">Mēness Sēja</a>
           <button
             ref={closeButtonRef}
             type="button"

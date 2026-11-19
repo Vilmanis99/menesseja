@@ -1,11 +1,11 @@
 {
   "slug": "petunijas",
   "name": "Petūnijas",
-  "latin": "Petunia",
+  "latin": "Petunia × hybrida",
   "image": { "id": "petunijas", "caption": "Petūnijas puķu kastē zied no jūnija līdz salnām, ja tās regulāri laista un mēslo." },
   "emoji": "🌸",
   "type": "viengadiga",
-  "tagline": "Kā kopt petūnijas, lai tās kupli zied visu vasaru — laistīšana, mēslošana un novītušo ziedu noņemšana Latvijas balkonu karalienei.",
+  "tagline": "Petūnijas no sēklām vai jaunstādiem dobēm, balkona kastēm un piekaramiem podiem.",
   "bloom": "Jūnijs–septembris (līdz pirmajām salnām)",
   "bloomMonths": [
     6,
@@ -17,62 +17,137 @@
   "sun": "Saule",
   "hardy": false,
   "difficulty": "vidēji",
-  "plantWhen": "Sēklas sēj telpās feb.–martā; stādus laukā pēc pēdējām salnām, maija beigās.",
+  "plantWhen": "Sēj aptuveni 10 nedēļas pirms plānotās izstādīšanas. Norūdītus stādus izstādi, kad tavā dārzā beidzies salnu risks.",
   "moonPhase": "augošs",
   "moonElement": "ziedi",
   "moonText": "Biodinamikā petūnijas — tāpat kā citas puķes — sēj un kopj ziedu (gaisa elementa) dienās, augošā Mēnesī, jo augam svarīgākā daļa ir tieši ziedi. Tā tomēr ir tradīcija, ne garantija: petūniju sīkajām sēklām daudz svarīgāks ir siltums, gaisma un mitrums, tāpēc kalendāru uztver kā darba ritmu, ne kā likumu.",
   "intro": [
-    "Petūnija (Petunia) ir bez pārspīlējuma populārākā Latvijas balkonu un podu puķe — neviena cita viengadīgā nedod tik kuplu, nepārtrauktu ziedu klājienu visu vasaru, turklāt visdažādākajās krāsās: no tīri baltas līdz tumši violetai, sārtai, dzeltenai un pat svītrotai. Tā lieliski jūtas puķu kastēs pie palodzes, piekaramajos podos un terases traukos, un karstā vasarā ar regulāru kopšanu pārvēršas par īstu ziedu kaskādi. Tieši tāpēc petūnija ir tā puķe, ko vasarā ierauga teju uz katra otrā balkona.",
-    "Petūnija nāk no siltām zemēm un ir izteikti jutīga pret aukstumu — pat viegla salna to nogalina, tāpēc laukā to nes tikai pēc pēdējām pavasara salnām, mūsu pusē maija beigās. Sēklas ir ļoti sīkas, gandrīz kā putekļi, un tām dīgšanai vajadzīga gaisma, tāpēc audzēšana no sēklas prasa nedaudz pacietības un siltu palodzi. Iesācējam vienkāršāk ir pirkt gatavus stādus maijā, bet, ja gribi izaudzēt pats, sēšanu sāc jau februārī vai martā."
+    "Izvēloties petūniju dobei vai balkona kastei, pārbaudi gan ziedu lielumu, gan dzinumu garumu. Kompaktas šķirnes veido zemu ceru, savukārt nokarenas šķirnes var aizpildīt piekaramu podu. Abās grupās ir dažādas šķirnes, un uz etiķetes norādītais pieauguša auga platums palīdz izvēlēties podu."
   ],
   "planting": [
-    "Sēj telpās februārī–martā: sīkās sēklas izkaisi pa mitra sējas substrāta virsmu un NEAPBER ar zemi — tām dīgšanai vajadzīga gaisma; tikai viegli piespied.",
-    "Sēklas dīgst 22–24 °C siltumā un gaišā vietā 7–14 dienu laikā; turi substrātu mitru, bet ne slapju, un pārklāj trauku ar caurspīdīgu plēvi vai stiklu, līdz parādās dīgsti.",
-    "Kad dēstiem ir 2–3 īstās lapiņas, pārpiķē tos atsevišķos podiņos; lai augi kuplotu, galotnes vēlāk vari nokniebt.",
-    "Pirms stādīšanas laukā 7–10 dienas dēstus rūdi — iznes dienā ārā pakāpeniski, lai pierod pie saules un vēja.",
-    "Stādus laukā vai podos stāda tikai pēc pēdējām salnām, maija beigās, saulainā vietā; atstatums dobē 20–30 cm, podā 3–5 augi uz balkona kasti.",
-    "Trauka apakšā nodrošini drenāžu un izmanto auglīgu, labi drenētu zemi — petūnija ir izsalkusi un slāpst pārmitrā augsnē."
+    "Ja vēlies izstādīt petūnijas jūnija sākumā, desmit nedēļas atpakaļ ir marta beigas. Ja mērķis ir jau maijā ziedoša nokarenā petūnija, Bulduru agronomes aprakstītajā audzēšanas praksē sēj janvāra otrajā pusē vai februārī. Ziedoša stāda izaudzēšana var aizņemt 12–16 nedēļas. Agrai sējai vajag gaišu vietu arī pēc sadīgšanas.",
+    "Sīkās sēklas izkaisi uz samitrināta sējas substrāta un viegli piespied. Tām dīgšanai vajag gaismu. Trauku pārklāj ar caurspīdīgu vāku, novieto siltā, gaišā vietā ārpus tiešas saules. Uzturi virsmu viegli mitru. Dīgšanas ilgums atkarīgs no šķirnes un temperatūras.",
+    "Tiklīdz parādās dīgsti, noņem pārsegu. Kad izaugušas vairākas īstās lapas, pārpiķē atsevišķos podiņos. Augus pakāpeniski pieradini pie āra gaismas un vēja.",
+    "Izstādi saulainā vietā pēc vietējām pavasara salnām. Podos vajadzīgas noteces atveres. Starp stādiem atstāj vietu, ņemot vērā uz etiķetes norādīto šķirnes platumu."
   ],
   "care": [
-    "Īsumā: kā kopt petūnijas — laisti regulāri (podos karstā laikā līdz pat katru dienu), mēslo ik 7–14 dienas ar kālijā bagātu puķu mēslojumu, regulāri noņem novītušos ziedus un vasaras vidū apgriez izstiepušos dzinumus. Tieši šie četri soļi nodrošina kuplu, nepārtrauktu ziedēšanu līdz salnām.",
-    "Laisti regulāri un bagātīgi, īpaši podos un karstā laikā — vasarā dažkārt katru dienu; lej pie saknes, ne pa ziediem, jo slapji ziedi viegli sapūst.",
-    "Mēslo ik pa 7–14 dienām ar puķēm domātu, kālijā un fosforā bagātu mēslojumu — petūnija ir liela ēdāja, un tieši regulāra barošana nodrošina nepārtrauktu ziedēšanu.",
-    "Regulāri noņem novītušos ziedus un sēklu pogaļas (deadheading) — tas pamudina augu dzīt arvien jaunus pumpurus un netērēt spēku sēklām.",
-    "Ja augs izstiepjas un kļūst pliks vidusdaļā, vasaras vidū drosmīgi apgriez dzinumus par trešdaļu — pēc pāris nedēļām tas atjaunosies kuplāks un ziedēs no jauna.",
-    "Saulainā, vēja aizvējā vietā petūnija zied viskošāk; ēnā tā izstiepjas un ziedu ir maz.",
-    "Pēc stipra lietus pārskati augus — lielziedu šķirņu ziedi lietū viegli saplok un kļūst lipīgi; mazziedu (surfīnijas, miljonu zvaniņu tipa) šķirnes lietu panes labāk."
+    "Saulainā vietā petūnijas zied bagātīgāk. Karstā laikā pārbaudi podu katru dienu. Kad virskārta sāk žūt, aplaisti pie saknēm un ļauj liekajam ūdenim iztecēt. Mēslojuma devu un lietošanas biežumu izvēlies pēc konkrētā līdzekļa norādēm.",
+    "Lielziedu un pildītajām petūnijām izņem noziedējušos ziedus kopā ar sēklu pogaļām. Daudzas sīkziedu šķirnes noziedējušos ziedus nomet pašas.",
+    "Ja dzinumu vidus kļuvis kails, saīsini garākos dzinumus, atstājot tiem zaļas lapas. Pēc stipra lietus pārbaudi lielos ziedus un izņem bojātos."
   ],
-  "winter": "Petūnija Latvijā ATKLĀTĀ laukā nepārziemo — tā ir viengadīga, siltummīloša puķe, ko pirmā rudens salna iznīcina. Parasti to rudenī vienkārši izrok un izmet (vai liek kompostā). Teorētiski podā augušu augu var pārziemot kā istabas augu gaišā, vēsā (10–15 °C) telpā, taču praksē tas ir grūti un reti atmaksājas — vienkāršāk un drošāk katru pavasari sākt ar jauniem stādiem vai izsēt no jauna.",
+  "winter": "Latvijā dārza petūnijas dobē nepārziemo. Ja vēlies saglabāt podā augošu petūniju, pirms salnām ienes to gaišā telpā un novieto tālāk no radiatora. Pavasarī pieradini augu pie āra apstākļiem no jauna.",
   "problems": [
-    "Pārmitra augsne un slikta drenāža izraisa sakņu un stublāja puvi — podiem obligāti vajag drenāžas caurumus, un nedrīkst ļaut ūdenim stāvēt paliktnī.",
-    "Laputis un baltblusiņas (siltumnīcas baltblusiņa) mēdz apmesties uz jaunajiem dzinumiem un lapu apakšpusēm; palīdz ziepjūdens apsmidzināšana vai bioloģiski līdzekļi.",
-    "Bālas, dzeltenīgas lapas un vāja ziedēšana parasti nozīmē barības vai gaismas trūkumu — pārbaudi, vai augs saņem pietiekami saules un regulāru mēslojumu."
+    "Ja dzinumi stiepjas un ziedu kļūst maz, pārbaudi, cik ilgi augu apspīd saule.",
+    "Ja augs vīst mitrā zemē, pārbaudi poda noteces atveres un sakņu stāvokli. Ilgstošs pārmitrums veicina sakņu puvi.",
+    "Uz jaunajiem dzinumiem un lapu apakšpusē var būt laputu kolonijas. Apskati tuvplānā arī blakus esošos augus."
   ],
-  "folklore": "Petūnija Latvijā ir samērā jauna ienācēja, tāpēc senu tautas ticējumu tai nav — toties tā kļuvusi par mūsdienu vasaras balkonu neatņemamu simbolu, un daudzās mājās košās petūniju kastes pie palodzes ir kā ģimenes lepnums un sava stūrīša rota, ko kaimiņi cits citam mēdz pat apskaust.",
   "faq": [
     {
       "q": "Kā kopt petūnijas, lai kupli zied?",
-      "a": "Kupla ziedēšana balstās uz četrām lietām: saulainu vietu, regulāru laistīšanu pie saknes, mēslošanu ik 7–14 dienas ar kālijā un fosforā bagātu puķu mēslojumu un novītušo ziedu (sēklu pogaļu) regulāru noņemšanu. Ja augs vasaras vidū izstiepjas un kļūst pliks, drosmīgi apgriez dzinumus par trešdaļu — pēc pāris nedēļām petūnija atjaunojas kuplāka un zied no jauna līdz pirmajām salnām."
+      "a": "Izvēlies saulainu vietu, laisti, kad poda virskārta sāk žūt, un mēslo pēc līdzekļa norādēm. Lielziedu un pildītajām šķirnēm izņem vecos ziedus ar sēklu pogaļām. Daudzām sīkziedu šķirnēm vecie ziedi nobirst paši."
     },
     {
       "q": "Cik bieži laistīt un mēslot petūnijas?",
-      "a": "Laisti regulāri un bagātīgi, lejot pie saknes, ne pa ziediem: balkona podos un karstā, saulainā laikā tas nereti nozīmē katru dienu, bet dobē retāk — vadies pēc augsnes, kam jābūt mitrai, ne slapjai. Mēslo ik 7–14 dienas ar puķēm domātu, kālijā bagātu mēslojumu visu ziedēšanas sezonu; petūnija ir liela ēdāja, un tieši regulāra barošana uztur nepārtrauktu ziedēšanu."
+      "a": "Karstumā podu pārbaudi ik dienu. Laisti, kad virskārta sāk žūt, un ļauj liekajam ūdenim iztecēt. Dobē augsne parasti izžūst lēnāk. Mēslošanas biežumu izvēlies pēc konkrētā mēslojuma devas un lietošanas norādēm."
     },
     {
       "q": "Kāpēc manas petūnijas izstiepušās un zied tikai galotnēs?",
-      "a": "Tas notiek, ja augam trūkst saules vai tas nav apgriezts. Pārvieto podu saulainākā vietā un vasaras vidū drosmīgi apgriez dzinumus par trešdaļu — pēc pāris nedēļām augs atjaunosies kuplāks un ziedēs no jauna. Palīdz arī regulāra mēslošana un novītušo ziedu noņemšana."
+      "a": "Biežs iemesls ir ēna vai gari, maz sazaroti dzinumi. Pārbaudi, cik daudz saules saņem augs. Garos dzinumus vari apgriezt, saglabājot zaļās lapas, lai izaugtu jauni sāndzinumi."
     },
     {
       "q": "Vai petūnijas var sēt tieši dobē vai podā ārā?",
-      "a": "Praksē nē. Sēklas ir ļoti sīkas, tām vajadzīga gaisma un silta (22–24 °C) vide, un Latvijas īsajā vasarā tieši laukā sētas petūnijas paspētu uzziedēt par vēlu. Tāpēc tās sēj telpās februārī–martā vai pērk gatavus stādus un laukā stāda pēc salnām, maija beigās."
+      "a": "Latvijā petūnijas agrāk uzzied, ja sēklas iesēj telpās un izaudzē dēstus. Piemērotā sējas diena ir atkarīga no šķirnes un paredzētās izstādīšanas. Norūdītos stādus iznes laukā pēc salnām."
     },
     {
       "q": "Vai petūnijas pārziemo Latvijā?",
-      "a": "Nē. Petūnija ir viengadīga, siltummīloša puķe, ko jau pirmā rudens salna nogalina — atklātā laukā tā nepārziemo. Rudenī augus izrok un izmet, bet nākampavasar sēj no jauna vai pērc jaunus stādus."
+      "a": "Atklātā laukā Latvijas ziemā petūnijas izsalst. Podu ar veselīgu augu pirms salnām var ienest gaišā telpā un turēt tālāk no radiatoriem."
     }
   ],
   "related": [
     "pelargonijas",
     "begonijas"
-  ]
+  ],
+  "shortAnswer": "Petūniju sējas laiku rēķini atpakaļ no brīža, kad dēstus varēsi droši iznest ārā. Daudzām sēklu šķirnēm līdz izstādīšanai vajag ap 10 nedēļām. Ja vēlies tieši Surfinia® šķirni, pavasarī meklē jaunstādu. Šo petūniju sēriju audzētavas pavairo ar spraudeņiem.",
+  "lifeCycle": "Dārza petūnija ir saljutīgs daudzgadīgs augs, ko Latvijas dobēs un balkona kastēs parasti audzē vienu sezonu.",
+  "comparison": {
+    "heading": "Ko izvēlēties balkona kastei?",
+    "items": [
+      {
+        "name": "Petūniju sēklas",
+        "description": "Uz paciņas pārbaudi šķirnes nosaukumu un augumu. No sēklām var izaudzēt arī nokarenas petūnijas."
+      },
+      {
+        "name": "Surfinia® stādi",
+        "description": "Surfinia® ir konkrēta petūniju sērija. Audzētavas šķirnes pavairo ar spraudeņiem. Ja svarīga tieši izvēlētā krāsa un auguma forma, meklē stādu ar attiecīgās šķirnes etiķeti."
+      },
+      {
+        "name": "Kalibrahojas jeb «miljonu zvaniņi»",
+        "description": "Šo sīkziedu balkona augu uz etiķetes apzīmē ar Calibrachoa. Tā ir petūnijām radniecīga ģints ar līdzīgiem piltuvveida ziediem."
+      }
+    ]
+  },
+  "updatedAt": "2026-11-18",
+  "seoTitle": "Petūnijas — kad sēt, kā izvēlēties stādu un kopt",
+  "seoDescription": "Kad Latvijā sēt petūnijas un kad tās izstādīt pēc salnām. Kā izvēlēties sēklu šķirni vai Surfinia® stādu, atpazīt kalibrahojas un kopt puķes balkona kastē.",
+  "links": [
+    {
+      "label": "Februāra sējas ceļvedis",
+      "href": "/ko-set/februaris"
+    },
+    {
+      "label": "Aprēķināt sējas datumu no plānotās izstādīšanas",
+      "href": "/raksti/kad-set-destus-rekini-atpakal#sejas-kalkulators"
+    }
+  ],
+  "sources": [
+    {
+      "label": "Bulduru agronomes Laimas Ozoliņas pieredze nokareno petūniju audzēšanā Latvijā",
+      "url": "https://lasi.lv/darzs-daba/padoms-roka/kad-jasej-nokarenas-petunijas.10733"
+    },
+    {
+      "label": "Aiovas Štata universitāte — petūniju sēja telpās",
+      "url": "https://yardandgarden.extension.iastate.edu/how-to/how-start-petunias-seed-indoors"
+    },
+    {
+      "label": "Surfinia® selekcionāri — sērijas pavairošana",
+      "url": "https://surfinia-official.com/story/"
+    },
+    {
+      "label": "Ziemeļkarolīnas Štata universitāte — kalibrahojas un nosaukums Million Bells",
+      "url": "https://plants.ces.ncsu.edu/plants/calibrachoa-x-hybrida/"
+    },
+    {
+      "label": "Ziemeļkarolīnas Štata universitāte — dārza petūniju dzīves cikls, ziemošana un iespējamās problēmas",
+      "url": "https://plants.ces.ncsu.edu/plants/petunia-x-hybrida/"
+    },
+    {
+      "label": "Klemsonas Universitāte — petūniju grupas un kopšana",
+      "url": "https://hgic.clemson.edu/factsheet/petunia/"
+    }
+  ],
+  "sectionSources": {
+    "intro": [
+      "https://plants.ces.ncsu.edu/plants/petunia-x-hybrida/"
+    ],
+    "comparison": [
+      "https://lasi.lv/darzs-daba/padoms-roka/kad-jasej-nokarenas-petunijas.10733",
+      "https://surfinia-official.com/story/",
+      "https://plants.ces.ncsu.edu/plants/calibrachoa-x-hybrida/"
+    ],
+    "planting": [
+      "https://lasi.lv/darzs-daba/padoms-roka/kad-jasej-nokarenas-petunijas.10733",
+      "https://yardandgarden.extension.iastate.edu/how-to/how-start-petunias-seed-indoors"
+    ],
+    "care": [
+      "https://hgic.clemson.edu/factsheet/petunia/",
+      "https://lasi.lv/darzs-daba/padoms-roka/kad-jasej-nokarenas-petunijas.10733"
+    ],
+    "winter": [
+      "https://plants.ces.ncsu.edu/plants/petunia-x-hybrida/"
+    ],
+    "problems": [
+      "https://plants.ces.ncsu.edu/plants/petunia-x-hybrida/",
+      "https://hgic.clemson.edu/factsheet/petunia/"
+    ]
+  }
 }

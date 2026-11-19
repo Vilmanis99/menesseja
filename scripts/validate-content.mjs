@@ -75,9 +75,17 @@ const calendar = JSON.parse(fs.readFileSync(path.join(root, "content", "calendar
 let flowersWithSources = 0;
 const flowerTypes = new Set(["daudzgadiga", "sipolpuke", "viengadiga", "divgadiga", "krums"]);
 const flowerSourceSections = new Set(["intro", "planting", "care", "winter", "problems", "comparison"]);
+for (const slug of crops) {
+  const { worksheet } = JSON.parse(fs.readFileSync(path.join(root, "content", "crops", slug + ".json"), "utf8"));
+  if (worksheet && (!worksheet.label?.trim() || !/^\/veidlapas\/[a-z0-9-]+\.pdf$/.test(worksheet.href) || !fs.existsSync(path.join(root, "public", worksheet.href)))) {
+    errors.push(`augi/${slug}: nav derīgas darba lapas vai PDF faila`);
+  }
+}
+
 for (const slug of flowers) {
   const flower = JSON.parse(fs.readFileSync(path.join(root, "content", "flowers", `${slug}.json`), "utf8"));
   const location = `pukes/${slug}`;
+  validateImageUse(flower.identificationImage, `${location}: atpazīšanas foto`);
   if (flower.slug !== slug) errors.push(`${location}: slug nesakrīt ar faila nosaukumu`);
   for (const field of ["name", "tagline", "bloom", "height", "sun", "plantWhen"]) {
     if (typeof flower[field] !== "string" || !flower[field].trim()) errors.push(`${location}: trūkst ${field}`);
@@ -146,6 +154,9 @@ for (let month = 1; month <= 12; month++) {
   if (!guide.description || guide.description.length > 200) errors.push(`kalendārs ${month}: nederīgs apraksts`);
   validateImageUse(guide.image, `kalendārs ${month}`);
   if (!Array.isArray(guide.sections) || guide.sections.length < 5) errors.push(`kalendārs ${month}: nepilnīgs darbu skaidrojums`);
+  if (guide.shortcuts && (!Array.isArray(guide.shortcuts) || guide.shortcuts.some((link) =>
+    !link.label?.trim() || !link.href?.startsWith("/") || !resolves(link.href)
+  ))) errors.push(`kalendārs ${month}: nederīga praktiskā darba īsceļa saite`);
   const taskIds = new Set();
   for (const section of guide.sections ?? []) {
     if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(section.id) || taskIds.has(section.id)) errors.push(`kalendārs ${month}: nederīgs vai dublēts darba enkurs`);

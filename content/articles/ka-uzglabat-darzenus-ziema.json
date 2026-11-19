@@ -13,7 +13,7 @@
     "kā uzglabāt sīpolus"
   ],
   "publishedAt": "2026-10-26",
-  "updatedAt": "2026-10-26",
+  "updatedAt": "2026-11-19",
   "seasonalMonths": [
     9,
     10,
@@ -42,6 +42,14 @@
     {
       "label": "Penn State Extension — Preserving late season fall vegetables",
       "url": "https://extension.psu.edu/preserving-late-season-fall-vegetables"
+    },
+    {
+      "label": "RHS — pastinaku novākšana ziemā",
+      "url": "https://www.rhs.org.uk/vegetables/parsnips/grow-your-own"
+    },
+    {
+      "label": "RHS — topinambūru novākšana un pārziemināšana",
+      "url": "https://www.rhs.org.uk/vegetables/jerusalem-artichokes/grow-your-own"
     }
   ],
   "readMinutes": 4,
@@ -91,6 +99,12 @@
             "2–6 mēneši"
           ],
           [
+            "Topinambūri",
+            "Ap 0 °C",
+            "90–95%",
+            "2–5 mēneši"
+          ],
+          [
             "Kartupeļi",
             "3–4 °C",
             "90%",
@@ -138,6 +152,18 @@
         "caption": "Novākti sīpoli žūst vēdināmā vietā. Glabāšanā tos liek tikai tad, kad laksti un ārējās mizas ir pilnīgi sausas."
       },
       "sourceUrls": [
+        "https://barron.extension.wisc.edu/files/2023/02/Storing-Vegetables-at-HOme.pdf"
+      ]
+    },
+    {
+      "heading": "Kad ražu var atstāt dobē",
+      "paragraphs": [
+        "Pastinaku saknes un topinambūru bumbuļus var atstāt dobē un rakt pēc vajadzības. Rudenī ar mietiņu atzīmē rindas un uzklāj salmus, lai augsne lēnāk sasaltu. Pirms ilgstoša sala izroc tik daudz, cik drīzumā vajadzēs.",
+        "Istabas temperatūrā izraktie topinambūri ātri apvīst. Ja ir auksta, mitra glabātava, tabulā vari pārbaudīt tiem piemērotos apstākļus. Pavasarī pārziemojušos pastinakus novāc, pirms atsāk augt lapas."
+      ],
+      "sourceUrls": [
+        "https://www.rhs.org.uk/vegetables/parsnips/grow-your-own",
+        "https://www.rhs.org.uk/vegetables/jerusalem-artichokes/grow-your-own",
         "https://barron.extension.wisc.edu/files/2023/02/Storing-Vegetables-at-HOme.pdf"
       ]
     },
@@ -203,6 +229,10 @@
     }
   ],
   "links": [
+    {
+      "label": "10 dārzeņi, ko audzēt ziemas krājumiem",
+      "href": "/topi/ziemas-glabasanai"
+    },
     {
       "label": "Kad novākt sīpolus",
       "href": "/raksti/kad-novakt-sipolus"

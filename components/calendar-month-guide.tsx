@@ -1,7 +1,7 @@
 import { ContentFigure } from "@/components/content-figure";
 import { TrackedLink } from "@/components/tracked-link";
 import { Icon } from "@/components/ui/icon";
-import { calendarGuide, CALENDAR_SOURCES, CALENDAR_GUIDES_UPDATED_AT } from "@/lib/calendar-guides";
+import { calendarGuide, calendarGuideUpdatedAt, CALENDAR_SOURCES } from "@/lib/calendar-guides";
 import { MONTHS_LV_LOCATIVE } from "@/lib/seo";
 
 export function CalendarWorkPlan({ month }: { month: number }) {
@@ -32,6 +32,7 @@ export function CalendarWorkPlan({ month }: { month: number }) {
 
 export function CalendarMonthGuide({ month }: { month: number }) {
   const guide = calendarGuide(month);
+  const updatedAt = calendarGuideUpdatedAt(month);
   return (
     <section id="menesa-darbi" className="article-reading-surface -mx-2 mb-lg scroll-mt-24 p-4 sm:mx-0 sm:p-8 print:hidden" aria-labelledby="month-guide-heading">
       <p className="text-label-sm uppercase tracking-[0.15em] text-tertiary">Praktiskais mēneša ceļvedis</p>
@@ -78,7 +79,7 @@ export function CalendarMonthGuide({ month }: { month: number }) {
         <ul className="mt-sm space-y-1 text-body-md text-primary">
           {guide.sourceIds.map((id) => <li key={id}><a className="inline-flex min-h-11 items-center underline decoration-primary/30 underline-offset-2 hover:decoration-primary" href={CALENDAR_SOURCES[id].url}>{CALENDAR_SOURCES[id].label}</a></li>)}
         </ul>
-        <p className="mt-sm text-label-sm text-on-surface-variant">Mēneša darbu ceļvedis atjaunots <time dateTime={CALENDAR_GUIDES_UPDATED_AT}>{new Intl.DateTimeFormat("lv-LV", { timeZone: "Europe/Riga" }).format(new Date(`${CALENDAR_GUIDES_UPDATED_AT}T12:00:00Z`))}</time></p>
+        <p className="mt-sm text-label-sm text-on-surface-variant">Mēneša darbu ceļvedis atjaunots <time dateTime={updatedAt}>{new Intl.DateTimeFormat("lv-LV", { timeZone: "Europe/Riga" }).format(new Date(`${updatedAt}T12:00:00Z`))}</time></p>
       </footer>
     </section>
   );

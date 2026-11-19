@@ -1,11 +1,12 @@
-import { CROPS, MONTHS_LV_FULL, accusative, type Crop } from "@/lib/planting-crops";
-import { sowingDay, PART_GENITIVE } from "@/lib/biodynamic";
-import { cropPart } from "@/lib/crop-part";
-import { soilReadiness } from "@/lib/sowing-thresholds";
-import { nextSowing } from "@/lib/succession";
-import { cropById, plantStatus, type Plant } from "@/lib/garden";
-import type { Region } from "@/lib/regions";
-import type { Weather } from "@/lib/weather";
+import { latviaDateKey } from "./day-anchor";
+import { CROPS, accusative, type Crop } from "./planting-crops";
+import { sowingDay, PART_GENITIVE } from "./biodynamic";
+import { cropPart } from "./crop-part";
+import { soilReadiness, soilTemperatureFact } from "./sowing-thresholds";
+import { nextSowing } from "./succession";
+import { cropById, gardenHarvestWindow, isGardenDate, type Plant } from "./garden";
+import type { Region } from "./regions";
+import type { Weather } from "./weather";
 
 export interface Reminder {
   id: string;
@@ -38,18 +39,20 @@ interface Inputs {
  * Ordered by urgency, capped so the dashboard stays scannable on mobile.
  */
 export function buildReminders({ plants, region, weather, date = new Date() }: Inputs): Reminder[] {
-  const month = date.getMonth() + 1;
+  const today = latviaDateKey(date);
+  const currentDay = Date.parse(today);
+  const month = Number(today.slice(5, 7));
   const sow = sowingDay(date);
   const out: Reminder[] = [];
 
   // 1) Frost tonight — most urgent
-  if (weather && weather.minTonightC < 1) {
+  if (typeof weather?.minTonightC === "number" && Number.isFinite(weather.minTonightC) && weather.minTonightC < 1) {
     out.push({
       id: "frost",
       icon: "ac_unit",
       tone: "secondary",
       title: "Salnas brīdinājums",
-      meta: `Naktī ${Math.round(weather.minTonightC)}°C • apsedz jutīgos stādus`,
+      meta: `Tuvāko 18 stundu prognozē līdz ${weather.minTonightC.toLocaleString("lv-LV")} °C • apsedz jutīgos stādus`,
     });
   }
 
@@ -71,25 +74,28 @@ export function buildReminders({ plants, region, weather, date = new Date() }: I
   for (const plant of plants) {
     const crop = cropById(plant.cropId);
     if (!crop) continue;
-    const ageDays = (date.getTime() - new Date(plant.sownAt).getTime()) / 86400000;
-    const grown = plantStatus(plant, date).progress >= 80;
-    if (inMonth(crop.harvest, month) && grown) {
-      // Ornamental crops bloom; they aren't "harvested".
-      const isFlower = crop.category === "pukes";
+    const area = plant.cultivar ? `${plant.area} · ${plant.cultivar}` : plant.area;
+    const window = gardenHarvestWindow(plant, date);
+    if (window && currentDay >= window.earliest.getTime() && currentDay <= window.latest.getTime()) {
       out.push({
         id: `harvest-${plant.id}`,
-        icon: isFlower ? "local_florist" : "agriculture",
+        icon: "agriculture",
         tone: "primary",
-        title: isFlower ? `Ziedēšanas laiks — ${crop.name}` : `Laiks novākt — ${accusative(crop.name)}`,
-        meta: isFlower ? `${plant.area} • ${MONTHS_LV_FULL[month - 1]}` : `${plant.area} • raža ${MONTHS_LV_FULL[month - 1]}`,
+        title: `Pārbaudi ražas gatavību — ${crop.name}`,
+        meta: `${area} • aptuvenais ražas periods pēc ierakstītā datuma`,
       });
-    } else if (inMonth(crop.transplant, month) && ageDays >= 21) {
+    } else if (crop.sowIndoors && !crop.sowOutdoors && inMonth(crop.transplant, month) && !plant.plantedOn &&
+      isGardenDate(plant.sownOn, today) && currentDay - Date.parse(plant.sownOn) >= 21 * 86400000) {
+      const soil = soilTemperatureFact(crop);
+      const condition = soil?.activity === "transplant"
+        ? `${soil.label} — ${soil.value}`
+        : "ņem vērā stādu gatavību un vietējo salnu prognozi";
       out.push({
         id: `transplant-${plant.id}`,
         icon: "yard",
         tone: "primary",
-        title: `Laiks stādīt laukā — ${accusative(crop.name)}`,
-        meta: `${plant.area} • īstais laiks`,
+        title: `Pārbaudi, vai vari stādīt ${accusative(crop.name).toLowerCase()}`,
+        meta: `${area} • ${condition}`,
       });
     }
     // Succession: time to sow the next batch for a continuous harvest
@@ -100,7 +106,7 @@ export function buildReminders({ plants, region, weather, date = new Date() }: I
         icon: "restart_alt",
         tone: "primary",
         title: `Laiks atkārtoti sēt — ${accusative(crop.name)}`,
-        meta: `${plant.area} • atkārtotā sēja nepārtrauktai ražai`,
+        meta: `${area} • atkārtotā sēja nepārtrauktai ražai`,
       });
     }
   }
@@ -114,25 +120,33 @@ export function buildReminders({ plants, region, weather, date = new Date() }: I
       (inMonth(c.sowOutdoors, month) || inMonth(c.sowIndoors, month) || inMonth(c.transplant, month)),
   );
   if (candidate) {
-    const canSow = inMonth(candidate.sowOutdoors, month) || inMonth(candidate.sowIndoors, month);
-    const ready = soilReadiness(candidate.id, weather?.soilC);
-    const soilNote =
-      weather && ready.min !== undefined
-        ? ready.ready
-          ? `augsne ${Math.round(weather.soilC)}° ✓`
-          : `gaidi siltāku augsni (≥${ready.min}°)`
-        : "labvēlīga zīme";
+    const activity = inMonth(candidate.sowOutdoors, month) ? "sowOutdoors"
+      : inMonth(candidate.sowIndoors, month) ? "sowIndoors" : "transplant";
+    const action = activity === "sowIndoors" ? "sēj telpās"
+      : activity === "sowOutdoors" && candidate.outdoorAction !== "plant" ? "plāno sēt laukā" : "plāno stādīt";
+    const soil = soilTemperatureFact(candidate);
+    let soilNote = "labvēlīga zīme";
+    if (soil?.activity === activity) {
+      soilNote = `${soil.label} — ${soil.value}`;
+      if (!soil.greenhouse && typeof weather?.soilC === "number" && Number.isFinite(weather.soilC)) {
+        const estimate = weather.soilC.toLocaleString("lv-LV");
+        const ready = soilReadiness(candidate.id, weather.soilC).ready;
+        const checkInBed = activity === "sowOutdoors" && candidate.outdoorAction !== "plant"
+          ? "pārbaudi sējas dziļumā" : "pārbaudi dobē";
+        soilNote += ` • 6 cm dziļumā prognozēti ${estimate} °C, ${ready ? checkInBed : "nogaidi"}`;
+      }
+    }
     out.push({
       id: "element-day",
       icon: sow.element === "udens" ? "water_drop" : sow.element === "zeme" ? "spa" : "eco",
       tone: "primary",
-      title: `${PART_GENITIVE[sow.part]} diena — ${canSow ? "sēj" : "stādi"} ${accusative(candidate.name).toLowerCase()}`,
+      title: `${PART_GENITIVE[sow.part]} diena — ${action} ${accusative(candidate.name).toLowerCase()}`,
       meta: `${sow.sign.symbol} ${sow.sign.name} • ${soilNote}`,
     });
   }
 
   // 4) Generic soil-ready nudge if nothing else fired
-  if (out.length === 0 && weather) {
+  if (out.length === 0 && typeof weather?.soilC === "number" && Number.isFinite(weather.soilC)) {
     out.push({
       id: "soil",
       icon: "thermostat",

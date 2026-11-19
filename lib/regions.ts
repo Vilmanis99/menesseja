@@ -20,7 +20,8 @@ export interface Region {
   lastFrostDate: { month: number; day: number };
   /** Frost-free growing days */
   growingDays: number;
-  /** Representative town coordinates for weather lookups */
+  /** Representative city for the regional coordinates below. */
+  city: string;
   lat: number;
   lon: number;
   summary: string;
@@ -43,7 +44,8 @@ export const REGIONS: Region[] = [
     lastFrost: "5. maijs",
     lastFrostDate: { month: 5, day: 5 },
     growingDays: 195,
-    lat: 56.97, // Kuldīga
+    city: "Kuldīga",
+    lat: 56.97,
     lon: 21.97,
     summary:
       "Maigākās ziemas Latvijā, bet vējains piekrastes klimats prasa vēja aizsegus dārzeņiem.",
@@ -61,7 +63,8 @@ export const REGIONS: Region[] = [
     lastFrost: "28. maijs",
     lastFrostDate: { month: 5, day: 28 },
     growingDays: 175,
-    lat: 57.31, // Cēsis
+    city: "Cēsis",
+    lat: 57.31,
     lon: 25.27,
     summary:
       "Izteiktas reljefa svārstības. Ziemeļvidzemē salnas var atgriezties pat jūnija sākumā.",
@@ -79,7 +82,8 @@ export const REGIONS: Region[] = [
     lastFrost: "15. maijs",
     lastFrostDate: { month: 5, day: 15 },
     growingDays: 185,
-    lat: 56.65, // Jelgava
+    city: "Jelgava",
+    lat: 56.65,
     lon: 23.71,
     summary:
       "Auglīgā Zemgales līdzenuma melnzeme — Latvijas labākā lauksaimniecības zeme ar siltām vasarām.",
@@ -97,7 +101,8 @@ export const REGIONS: Region[] = [
     lastFrost: "20. maijs",
     lastFrostDate: { month: 5, day: 20 },
     growingDays: 165,
-    lat: 55.87, // Daugavpils
+    city: "Daugavpils",
+    lat: 55.87,
     lon: 26.52,
     summary:
       "Ezeru zeme ar izteikti kontinentālu klimatu — aukstākās ziemas un karstas, īsas vasaras.",
@@ -115,7 +120,8 @@ export const REGIONS: Region[] = [
     lastFrost: "10. maijs",
     lastFrostDate: { month: 5, day: 10 },
     growingDays: 190,
-    lat: 56.95, // Rīga
+    city: "Rīga",
+    lat: 56.95,
     lon: 24.11,
     summary:
       "Rīgas līča ietekme mīkstina klimatu — silts mikroklimats ar garu veģetācijas sezonu.",

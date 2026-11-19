@@ -1,4 +1,4 @@
-import registry from "@/content/images.json";
+import registry from "../content/images.json";
 
 /** Credits belong to the asset; the explanation belongs to its use in a page. */
 export interface ContentImageUse {

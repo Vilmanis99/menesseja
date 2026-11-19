@@ -10,21 +10,20 @@ import { CROPS, CATEGORIES, type Category } from "@/lib/planting-crops";
 import { cropById } from "@/lib/garden";
 import { cropEmoji } from "@/lib/crop-visual";
 import { companionStatus, companionReason, goodCompanions, badCompanions } from "@/lib/companions";
-import { useMounted } from "@/lib/use-mounted";
+import {
+  loadPlanner, savePlanner, PLANNER_COLS as COLS, PLANNER_ROWS as ROWS,
+  type PlannerIssue, type PlannerState,
+} from "@/lib/planner-storage";
 import { moonForDate } from "@/lib/moon";
 import { sowingDay, ELEMENT_META, PART_GENITIVE } from "@/lib/biodynamic";
 import { track } from "@/lib/analytics";
 
-const COLS = 12;
-const ROWS = 8;
-const STORAGE_KEY = "meness-seja:planner"; // legacy single-plan key (migrated)
-const PLANS_KEY = "meness-seja:planner-plans";
-
-interface Plan {
-  id: string;
-  name: string;
-  placements: Record<number, string>;
-}
+const STORAGE_MESSAGES: Record<PlannerIssue, string> = {
+  unavailable: "Pārlūks liedz piekļuvi saglabātajiem plāniem. Vari turpināt plānot šajā cilnē un lejupielādēt savu izkārtojumu.",
+  invalid: "Iepriekšējo plānu neizdevās atvērt. Tā dati paliek pārlūkā. Šajā cilnē veidoto izkārtojumu vari lejupielādēt.",
+  conflict: "Pārlūkā ir cita plānu versija. Vispirms lejupielādē šīs cilnes izkārtojumu. Pārlādējot lapu, atvērsies pārlūkā saglabātā versija.",
+  write: "Izmaiņas pašlaik ir tikai šajā cilnē. Mēģini saglabāt vēlreiz vai lejupielādē savu izkārtojumu.",
+};
 
 let planSeq = 0;
 const newPlanId = () => `pl-${Date.now().toString(36)}-${planSeq++}`;
@@ -63,82 +62,115 @@ const COMPANIONS = [
   },
 ] as const;
 
-type Placements = Record<number, string>; // cellIndex → cropId
+type PlannerSession = ReturnType<typeof loadPlanner>;
 
 export default function PlanotajsPage() {
-  useEffect(() => track("planner_started", { source: "planner_page" }), []);
-  const [plans, setPlans] = useState<Plan[]>([{ id: "p1", name: "Mans plāns", placements: {} }]);
-  const [activeId, setActiveId] = useState("p1");
-  const [selected, setSelected] = useState<string | null>(null);
-  const [erasing, setErasing] = useState(false);
-  const [hydrated, setHydrated] = useState(false);
-  const [savedFlash, setSavedFlash] = useState(false);
+  const [initial, setInitial] = useState<PlannerSession | null>(null);
 
-  // Hydrate plans (or migrate a legacy single plan)
   useEffect(() => {
-    const raw = localStorage.getItem(PLANS_KEY);
-    if (raw) {
-      try {
-        const parsed = JSON.parse(raw) as { plans: Plan[]; activeId: string };
-        if (parsed.plans?.length) {
-          setPlans(parsed.plans);
-          setActiveId(parsed.activeId ?? parsed.plans[0].id);
-        }
-      } catch {
-        /* ignore */
-      }
-    } else {
-      const legacy = localStorage.getItem(STORAGE_KEY);
-      if (legacy) {
-        try {
-          setPlans([{ id: "p1", name: "Mans plāns", placements: JSON.parse(legacy) }]);
-        } catch {
-          /* ignore */
-        }
-      }
-    }
-    setHydrated(true);
+    setInitial(loadPlanner());
+    track("planner_started", { source: "planner_page" });
   }, []);
 
-  // Auto-persist after hydration
-  useEffect(() => {
-    if (hydrated) localStorage.setItem(PLANS_KEY, JSON.stringify({ plans, activeId }));
-  }, [plans, activeId, hydrated]);
+  return (
+    <>
+      <PageHeader
+        title="Dārza plānotājs"
+        display
+        subtitle="Izvēlies augu no bibliotēkas un atzīmē režģī, kur to stādīsi."
+      />
+      <p className="mb-md max-w-2xl text-body-lg text-on-surface-variant">
+        Izkārto dobes un pārbaudi, kuri dārzeņi, garšaugi un puķes labi aug blakus.
+      </p>
+      <noscript>Lai izveidotu un saglabātu dobju plānu, pārlūkā ieslēdz JavaScript.</noscript>
+      {initial && <PlannerEditor initial={initial} />}
+    </>
+  );
+}
 
-  const active = plans.find((p) => p.id === activeId) ?? plans[0];
+function cellLabel(index: number) {
+  return `Rinda ${Math.floor(index / COLS) + 1}, kolonna ${index % COLS + 1}`;
+}
+
+function PlannerEditor({ initial }: { initial: PlannerSession }) {
+  const [session, setSession] = useState(initial);
+  const [selected, setSelected] = useState<string | null>(null);
+  const [erasing, setErasing] = useState(false);
+  const [confirmed, setConfirmed] = useState(false);
+  const [unsaved, setUnsaved] = useState(false);
+  const { plans, activeId } = session.state;
+  const active = plans.find((plan) => plan.id === activeId) ?? plans[0];
   const placements = active.placements;
 
-  const setPlacements = (
-    updater: Placements | ((prev: Placements) => Placements),
-  ) =>
-    setPlans((prev) =>
-      prev.map((p) =>
-        p.id === active.id
-          ? { ...p, placements: typeof updater === "function" ? updater(p.placements) : updater }
-          : p,
-      ),
-    );
+  function persist(state: PlannerState, manual = false, baseline = session.baseline) {
+    const result = savePlanner(baseline, state);
+    setSession({
+      state,
+      baseline: result.ok ? result.baseline : baseline,
+      issue: result.ok ? null : result.issue,
+    });
+    setUnsaved(!result.ok && (unsaved || state !== session.state));
+    setConfirmed(manual && result.ok);
+    if (manual && result.ok) {
+      const activePlan = state.plans.find((plan) => plan.id === state.activeId) ?? state.plans[0];
+      track("planner_saved", { plan_count: state.plans.length, placed_count: Object.keys(activePlan.placements).length });
+    }
+  }
+
+  function save() {
+    if (session.issue && !unsaved) {
+      const latest = loadPlanner();
+      if (!latest.issue) {
+        persist(latest.state, true, latest.baseline);
+        return;
+      }
+    }
+    persist(session.state, true);
+  }
+
+  function setPlacements(next: Record<number, string>) {
+    persist({ activeId, plans: plans.map((plan) => plan.id === activeId ? { ...plan, placements: next } : plan) });
+  }
 
   function addPlan() {
     const id = newPlanId();
-    setPlans((prev) => [...prev, { id, name: `Plāns ${prev.length + 1}`, placements: {} }]);
-    setActiveId(id);
-  }
-  function deletePlan() {
-    if (plans.length <= 1) {
-      setPlacements({});
-      return;
-    }
-    const remaining = plans.filter((p) => p.id !== active.id);
-    setPlans(remaining);
-    setActiveId(remaining[0].id);
-  }
-  function renamePlan() {
-    const name = prompt("Plāna nosaukums:", active.name)?.trim();
-    if (name) setPlans((prev) => prev.map((p) => (p.id === active.id ? { ...p, name } : p)));
+    persist({ activeId: id, plans: [...plans, { id, name: `Plāns ${plans.length + 1}`, placements: {} }] });
   }
 
-  const mounted = useMounted();
+  function deletePlan() {
+    if (plans.length <= 1) {
+      if (Object.keys(placements).length) setPlacements({});
+      return;
+    }
+    const remaining = plans.filter((plan) => plan.id !== active.id);
+    persist({ plans: remaining, activeId: remaining[0].id });
+  }
+
+  function renamePlan() {
+    const name = prompt("Plāna nosaukums:", active.name)?.trim();
+    if (name && name !== active.name) {
+      persist({ activeId, plans: plans.map((plan) => plan.id === activeId ? { ...plan, name } : plan) });
+    }
+  }
+
+  function downloadPlans() {
+    const sections = plans.map((plan) => {
+      const cells = Object.entries(plan.placements).map(([index, id]) =>
+        `${cellLabel(Number(index))} — ${cropById(id)?.name ?? id}`
+      );
+      return [plan.name, ...(cells.length ? cells : ["Tukšs plāns"])].join("\n");
+    });
+    const file = new Blob([sections.join("\n\n") + "\n"], { type: "text/plain;charset=utf-8" });
+    const url = URL.createObjectURL(file);
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = "dobu-plani.txt";
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+    window.setTimeout(() => URL.revokeObjectURL(url), 1000);
+  }
+
   const moon = useMemo(() => {
     const now = new Date();
     return { phase: moonForDate(now), sow: sowingDay(now) };
@@ -196,49 +228,23 @@ export default function PlanotajsPage() {
   }, [placements]);
 
   function handleCell(i: number) {
-    setPlacements((prev) => {
-      const next = { ...prev };
-      if (erasing || (!selected && next[i])) {
-        delete next[i];
-      } else if (selected) {
-        next[i] = selected;
-      }
-      return next;
-    });
+    const next = { ...placements };
+    if (erasing || !selected) {
+      if (!next[i]) return;
+      delete next[i];
+    } else {
+      if (next[i] === selected) return;
+      next[i] = selected;
+    }
+    setPlacements(next);
   }
-
-  function save() {
-    localStorage.setItem(PLANS_KEY, JSON.stringify({ plans, activeId }));
-    track("planner_saved", { plan_count: plans.length, placed_count: Object.keys(placements).length });
-    setSavedFlash(true);
-    setTimeout(() => setSavedFlash(false), 1800);
-  }
-
-  // Server-rendered scaffold (date-independent) so crawlers see the H1 + intro.
-  const staticHeader = (
-    <>
-      <PageHeader
-        title="Dārza plānotājs"
-        display
-        subtitle="Izvēlies augu no bibliotēkas un uzklikšķini uz režģa, lai to iestādītu. Plāns saglabājas automātiski."
-      />
-      <p className="mb-md max-w-2xl text-body-lg text-on-surface-variant">
-        Dārza plānotājs ļauj izkārtot dobes un sekot, kuri augi sader kā labi kaimiņi un kuri ne.
-        Plāns saglabājas automātiski tavā pārlūkā.
-      </p>
-    </>
-  );
-
-  if (!mounted) return staticHeader;
 
   return (
     <>
-      {staticHeader}
-
       {/* Plan selector */}
       <div className="mb-md flex flex-wrap items-center gap-2">
         {plans.map((p) => (
-          <Chip key={p.id} tone="neutral" active={p.id === activeId} onClick={() => setActiveId(p.id)}>
+          <Chip key={p.id} tone="neutral" active={p.id === activeId} onClick={() => { if (p.id !== activeId) persist({ plans, activeId: p.id }); }}>
             {p.name}
           </Chip>
         ))}
@@ -259,13 +265,13 @@ export default function PlanotajsPage() {
       </div>
 
       <div className="grid grid-cols-1 gap-gutter lg:grid-cols-12">
-        <div className="flex flex-col gap-md lg:col-span-8">
+        <div className="flex min-w-0 flex-col gap-md lg:col-span-8">
           {/* Grid workspace */}
           <Card tone="low" elevated linen className="p-md">
             <div className="mb-md flex flex-wrap items-center justify-between gap-sm">
               <div className="flex flex-wrap gap-sm">
-                <Button icon={savedFlash ? "check" : "save"} className="px-sm py-xs" onClick={save}>
-                  {savedFlash ? "Saglabāts!" : "Saglabāt plānu"}
+                <Button icon={confirmed ? "check" : "save"} className="px-sm py-xs" onClick={save}>
+                  Saglabāt plānu
                 </Button>
                 <Button
                   variant={erasing ? "primary" : "ghost"}
@@ -295,6 +301,15 @@ export default function PlanotajsPage() {
               </div>
             </div>
 
+            <p role="status" className={`mb-sm text-body-md ${session.issue ? "text-error" : "text-on-surface-variant"}`}>
+              {session.issue ? STORAGE_MESSAGES[session.issue] : confirmed ? "Plāns saglabāts šajā pārlūkā." : "Izmaiņas automātiski saglabājas šajā pārlūkā."}
+            </p>
+            {session.issue && (
+              <Button variant="ghost" icon="download" className="mb-sm" onClick={downloadPlans}>
+                Lejupielādēt plānus (.txt)
+              </Button>
+            )}
+
             {/* Grid (scrolls horizontally on small screens) */}
             <div className="custom-scrollbar overflow-x-auto">
               <div
@@ -310,6 +325,7 @@ export default function PlanotajsPage() {
                     <button
                       key={i}
                       onClick={() => handleCell(i)}
+                      aria-label={`${cellLabel(i)}: ${crop?.name ?? cropId ?? "Tukša"}`}
                       title={bad ? `${crop?.name} — nesader ar kaimiņu!` : crop?.name}
                       className={`relative flex aspect-square items-center justify-center rounded border transition-all hover:scale-105 ${
                         crop

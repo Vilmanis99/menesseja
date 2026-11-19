@@ -30,7 +30,7 @@ export function Onboarding() {
 
   return (
     <>
-      <Button variant="outline" icon="help_outline" onClick={() => { setStep(0); setShow(true); }}>Īsā pamācība</Button>
+      <Button variant="outline" icon="help_outline" onClick={() => { setStep(0); setShow(true); }}>Par dārzu un reģiona izvēli</Button>
       {show && <Modal
         onClose={finish}
         labelledBy="garden-intro-title"
@@ -106,8 +106,7 @@ export function Onboarding() {
               <Icon name="celebration" className="text-secondary" size="48px" />
               <h2 ref={stepTitle} tabIndex={-1} id="garden-intro-title" className="text-headline-md text-on-surface">Viss gatavs!</h2>
               <p className="max-w-[20rem] text-body-md text-on-surface-variant">
-                Sākumlapā redzēsi šodienas Mēness fāzi un padomus. Pievieno savus augus ar pogu
-                <strong className="text-on-surface"> “Pievienot augu”</strong>, un mēs sekosim to augšanai.
+                Pie sava auga nospied “Pierakstīt kopšanu”. Tad vari atzīmēt laistīšanu, novāktās ražas datumu vai savu novērojumu.
               </p>
               <Button fullWidth icon="check" onClick={finish}>
                 Uz dārzu

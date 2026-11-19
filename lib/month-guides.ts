@@ -25,19 +25,26 @@ export const MONTH_GUIDES: Partial<Record<number, MonthGuide>> = {
     checklistTitle: "Sagatavo sezonu bez steigas",
     priorityCropIds: [], cropNotes: {},
     checklist: [
-      { title: "Pārskati sēklas", text: "Pieraksti augu, šķirni un atlikumu. Pirms jauna pirkuma pārbaudi šaubīgo sēklu dīgtspēju.", icon: "inventory_2" },
-      { title: "Uzzīmē dobes", text: "Atzīmē iepriekšējo sezonu stādījumus un vietas, kur pietiek saules un ir pieejams ūdens.", icon: "grid_on" },
+      {
+        title: "Pārskati sēklas", icon: "inventory_2",
+        text: "Pieraksti augu, šķirni un atlikumu. Pirms jauna pirkuma pārbaudi šaubīgo sēklu dīgtspēju.",
+        link: { label: "Pierakstīt sēklu dīgtspējas pārbaudi", href: "/raksti/ka-glabat-seklas-un-parbaudit-digtspeju#mana-seklu-digtspejas-parbaude" },
+      },
+      {
+        title: "Uzzīmē dobes", icon: "grid_on",
+        text: "Atzīmē iepriekšējo sezonu stādījumus un vietas, kur pietiek saules un ir pieejams ūdens.",
+        link: { label: "Izkārtot augus dobju plānotājā", href: "/planotajs" },
+      },
       { title: "Pārbaudi glabātavu", text: "Apskati glabāto ražu un dāliju bumbuļus. Bojātos izņem un noskaidro mitruma vai temperatūras cēloni.", icon: "thermostat" },
     ],
     relatedLinks: [
       { label: "Kā izvēlēties sēklas savam dārzam", href: "/raksti/ka-izveleties-seklas-darzam" },
-      { label: "Sēklu glabāšana un dīgtspējas pārbaude", href: "/raksti/ka-glabat-seklas-un-parbaudit-digtspeju" },
       { label: "Kad sēt dēstus: rēķini atpakaļ", href: "/raksti/kad-set-destus-rekini-atpakal" },
     ],
     sources: [
       { label: "RHS — ziemas darbi un augu maiņas plānošana", url: "https://www.rhs.org.uk/advice/grow-your-own/in-month/january-jobs" },
       { label: "University of Minnesota Extension — sezonas un šķirņu plānošana", url: "https://extension.umn.edu/about/our-stories/news/garden-planning-in-the-new-year" },
-    ], updatedAt: "2026-10-06",
+    ], updatedAt: "2026-11-19",
   },
   2: {
     description: "Februārī telpās vari sēt papriku un selerijas. Sējas laiku izvēlies pēc šķirnes, pieejamās gaismas un plānotās izstādīšanas.",
@@ -45,8 +52,16 @@ export const MONTH_GUIDES: Partial<Record<number, MonthGuide>> = {
     checklistTitle: "Pirms pirmās dēstu sējas",
     priorityCropIds: [], cropNotes: {},
     checklist: [
-      { title: "Aprēķini sējas laiku", text: "Siltumnīcai un laukam būs atšķirīgs izstādīšanas laiks. Pārbaudi konkrētās šķirnes ieteikumus.", icon: "schedule" },
-      { title: "Novērtē gaismu", text: "Siltumā ar nepietiekamu gaismu dēsti izstīdz. Ierobežo sējumu daudzumu līdz aprūpējamam apjomam.", icon: "light_mode" },
+      {
+        title: "Aprēķini sējas laiku", icon: "schedule",
+        text: "No sējas līdz izstādīšanai paprikai rēķini aptuveni 8–10 nedēļas, kātu un sakņu selerijām 10–12 nedēļas. Dīgšana šajā laikā jau ietilpst. Pārbaudi arī šķirnes norādes.",
+        link: { label: "Atvērt sējas kalkulatoru", href: SEEDLING_CALCULATOR_HREF },
+      },
+      {
+        title: "Novērtē gaismu", icon: "light_mode",
+        text: "Siltumā ar nepietiekamu gaismu dēsti izstīdz. Ja februārī sēj nokarenās petūnijas agrīnai ziedēšanai, jau iepriekš sagatavo gaišu vietu dēstiem.",
+        link: { label: "Petūniju sēklas un jaunstādi", href: "/pukes/petunijas#augu-atskiribas" },
+      },
       { title: "Sagatavo traukus", text: "Iztīri atkārtoti lietojamos podus un pārliecinies, ka tiem ir drenāžas atveres un paliktnis.", icon: "potted_plant" },
     ],
     relatedLinks: [
@@ -56,8 +71,10 @@ export const MONTH_GUIDES: Partial<Record<number, MonthGuide>> = {
     ],
     sources: [
       { label: "University of Minnesota Extension — dēstu sākšana telpās", url: "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/starting-seeds-indoors" },
+      { label: "Merilendas Universitāte — dēstu sējas laiks pirms izstādīšanas", url: "https://extension.umd.edu/resource/starting-vegetable-seeds-indoors" },
+      { label: "Kentuki Universitāte — kātu un sakņu seleriju audzēšana", url: "https://ccd.uky.edu/sites/default/files/2024-11/ccd-cp-092_celery-and-celeriac.pdf" },
       { label: "RHS — sējas sagatavošana ziemas beigās", url: "https://www.rhs.org.uk/advice/grow-your-own/in-month/february-jobs" },
-    ], updatedAt: "2026-10-06",
+    ], updatedAt: "2026-11-18",
   },
   3: {
     description: "Martā sēj tomātus dēstiem un sagatavo siltumnīcu. Pārbaudi, kad augsne dobēs ir pietiekami apžuvusi pirmajiem darbiem.",
@@ -325,7 +342,10 @@ export const MONTH_GUIDES: Partial<Record<number, MonthGuide>> = {
     priorityCropIds: [], cropNotes: {},
     checklist: [
       { title: "Pieraksti pieredzi", text: "Atzīmē ražu, kopšanas grūtības un šķirnes. Nākamās sezonas izvēles balsti savā audzēšanas vietā.", icon: "edit_note" },
-      { title: "Izveido īsu sarakstu", text: "Vispirms izvēlies augus un aprēķini daudzumu, pēc tam sēklas. Pārbaudi, kas jau ir mājās.", icon: "checklist" },
+      {
+        title: "Izveido īsu sarakstu", text: "Pārskati sēklu krājumus un pieraksti trūkstošās šķirnes. Ja šaubies par vecas paciņas dīgtspēju, sāc ar nelielu saskaitītu paraugu.", icon: "checklist",
+        link: { label: "Sākt sēklu dīgtspējas pārbaudi", href: "/raksti/ka-glabat-seklas-un-parbaudit-digtspeju#mana-seklu-digtspejas-parbaude" },
+      },
       { title: "Pārbaudi glabāšanu", text: "Sēklu paciņas turi sausas un marķētas. Bumbuļu glabātavai vajag stabilu vēsumu bez sasalšanas.", icon: "inventory_2" },
     ],
     relatedLinks: [
@@ -336,6 +356,6 @@ export const MONTH_GUIDES: Partial<Record<number, MonthGuide>> = {
     sources: [
       { label: "University of Minnesota Extension — nākamās sezonas plānošana", url: "https://extension.umn.edu/about/our-stories/news/garden-planning-in-the-new-year" },
       { label: "RHS — sēklu glabāšana", url: "https://www.rhs.org.uk/propagation/seed-collecting-storing" },
-    ], updatedAt: "2026-10-06",
+    ], updatedAt: "2026-11-19",
   },
 };

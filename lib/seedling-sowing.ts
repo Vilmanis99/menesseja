@@ -43,3 +43,52 @@ export function seedlingSowingWindow(transplant: string, growingWeeks: DurationR
   if (earliest.getUTCFullYear() < 1) return { error: "Izvēlies vēlāku izstādīšanas datumu." };
   return { earliest, latest };
 }
+
+export const SEEDLING_PLAN_NAME_MAX = 80;
+const planHashPrefix = "#sejas-kalkulators?";
+
+export interface SeedlingPlan {
+  transplant: string;
+  fromEmergence: boolean;
+  weeks: DurationRange;
+  days: DurationRange;
+  name: string;
+}
+
+function planName(value: string): string {
+  return Array.from(value.replace(/[\u0000-\u001f\u007f-\u009f]/g, " ").trim()).slice(0, SEEDLING_PLAN_NAME_MAX).join("");
+}
+
+/** A saved calculation stays on the original article. Its values are carried in the URL fragment. */
+export function seedlingPlanHash(plan: SeedlingPlan): string {
+  const range = seedlingSowingWindow(plan.transplant, plan.weeks, plan.fromEmergence ? plan.days : undefined);
+  if ("error" in range) throw new RangeError(range.error);
+  const params = new URLSearchParams({
+    datums: plan.transplant,
+    nedelas: Number(plan.weeks.min) + "-" + Number(plan.weeks.max),
+  });
+  if (plan.fromEmergence) params.set("digsana", Number(plan.days.min) + "-" + Number(plan.days.max));
+  const name = planName(plan.name);
+  if (name) params.set("augs", name);
+  return planHashPrefix + params.toString();
+}
+
+function savedRange(value: string | null): DurationRange | null {
+  const match = /^(\d{1,3})-(\d{1,3})$/.exec(value ?? "");
+  return match ? { min: match[1], max: match[2] } : null;
+}
+
+export function readSeedlingPlanHash(hash: string): SeedlingPlan | null {
+  if (!hash.startsWith(planHashPrefix) || hash.length > 1800) return null;
+  const params = new URLSearchParams(hash.slice(planHashPrefix.length));
+  if (["datums", "nedelas", "digsana", "augs"].some((key) => params.getAll(key).length > 1)) return null;
+
+  const transplant = params.get("datums") ?? "";
+  const weeks = savedRange(params.get("nedelas"));
+  const fromEmergence = params.has("digsana");
+  const days = fromEmergence ? savedRange(params.get("digsana")) : { min: "", max: "" };
+  if (!weeks || !days) return null;
+  const range = seedlingSowingWindow(transplant, weeks, fromEmergence ? days : undefined);
+  if ("error" in range) return null;
+  return { transplant, weeks, fromEmergence, days, name: planName(params.get("augs") ?? "") };
+}

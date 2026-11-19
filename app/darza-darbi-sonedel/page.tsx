@@ -8,7 +8,8 @@ import { gardenWeek } from "@/lib/garden-week";
 import { latviaDateKey } from "@/lib/day-anchor";
 import { canonical, MONTH_SLUGS, og } from "@/lib/seo";
 
-export const revalidate = 3600;
+// The weekly checklist changes when Monday starts in Riga.
+export const revalidate = 0;
 const path = "/darza-darbi-sonedel";
 const title = "Dārza darbi šonedēļ Latvijā";
 const description = "Šīs nedēļas darbu saraksts Latvijas dārzam. Pie katra darba redzēsi, kad sākt, ko darīt vispirms un kur atrast pilno ceļvedi.";

@@ -1,8 +1,6 @@
-/**
- * Minimum soil temperature (°C at ~6 cm) for reliable germination / planting,
- * keyed by crop id from lib/planting-crops.ts. Used with live soil data to tell
- * the gardener whether the ground is warm enough to sow.
- */
+import type { Crop } from "@/lib/planting-crops";
+
+/** Soil temperature guidelines for the outdoor activity in the crop calendar. */
 export const SOIL_TEMP_MIN: Record<string, number> = {
   // Cool-season — sow as soon as ground thaws
   rediisi: 5,
@@ -15,7 +13,6 @@ export const SOIL_TEMP_MIN: Record<string, number> = {
   // Slightly warmer
   bietes: 7,
   sipoli: 7,
-  kiploki: 7,
   kaposti: 8,
   brokoli: 8,
   ziedkaposti: 8,
@@ -26,8 +23,8 @@ export const SOIL_TEMP_MIN: Record<string, number> = {
   pupas: 10,
   metra: 8,
   timians: 8,
-  tomati: 12,
-  gurki: 14,
+  tomati: 14,
+  gurki: 15,
   kabaci: 12,
   kirbji: 12,
   baziliks: 12,
@@ -43,7 +40,6 @@ export const SOIL_TEMP_MIN: Record<string, number> = {
   pastinaks: 5,
   kalji: 7,
   raceni: 5,
-  selerijas: 10,
   puravi: 7,
   marrutki: 6,
   topinamburs: 7,
@@ -60,15 +56,37 @@ export const SOIL_TEMP_MIN: Record<string, number> = {
   nelkes: 10,
 };
 
+function soilThreshold(cropId: string) {
+  const min = SOIL_TEMP_MIN[cropId];
+  if (min === undefined) return undefined;
+  // The Latvian cucumber guide specifies soil warmer than 15 °C at sowing depth.
+  const exclusive = cropId === "gurki";
+  const value = `${exclusive ? "virs" : "vismaz"} ${min} °C`;
+  return { min, exclusive, value };
+}
+
+export function soilTemperatureFact(crop: Crop) {
+  const threshold = soilThreshold(crop.id);
+  if (!threshold) return undefined;
+  const greenhouse = crop.id === "paprika";
+  if (crop.sowOutdoors) {
+    const label = crop.outdoorAction === "plant" ? "Augsne stādīšanai" : "Augsne tiešajai sējai";
+    return { label, value: threshold.value, activity: "sowOutdoors" as const, greenhouse };
+  }
+  if (!crop.transplant) return undefined;
+  const label = greenhouse ? "Augsne dēstu izstādīšanai siltumnīcā"
+    : crop.sowIndoors ? "Augsne dēstu izstādīšanai laukā" : "Augsne stādīšanai";
+  return { label, value: threshold.value, activity: "transplant" as const, greenhouse };
+}
+
 export interface SoilReadiness {
-  /** Threshold for this crop, or undefined if unknown */
   min?: number;
-  /** True when soilC ≥ threshold */
   ready: boolean;
 }
 
 export function soilReadiness(cropId: string, soilC: number | undefined): SoilReadiness {
-  const min = SOIL_TEMP_MIN[cropId];
-  if (min === undefined || soilC === undefined) return { min, ready: false };
-  return { min, ready: soilC >= min };
+  const threshold = soilThreshold(cropId);
+  const ready = threshold !== undefined && soilC !== undefined
+    && (threshold.exclusive ? soilC > threshold.min : soilC >= threshold.min);
+  return { min: threshold?.min, ready };
 }

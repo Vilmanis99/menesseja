@@ -21,7 +21,10 @@ export interface PlantRow {
   user_id: string;
   crop_id: string;
   area: string;
+  cultivar?: string | null;
   sown_date: string | null;
+  sown_on: string | null;
+  planted_on: string | null;
   status: string | null;
   seed: boolean;
   created_at: string;

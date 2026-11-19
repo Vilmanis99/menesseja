@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { TrackedLink } from "@/components/tracked-link";
 import type { Metadata } from "next";
 import { CalendarNavigation } from "@/components/calendar-navigation";
 import { MonthChecklist, MonthPreparation } from "@/components/month-preparation";
@@ -20,8 +21,8 @@ import { cropEmoji } from "@/lib/crop-visual";
 import { CROPS, MONTHS_LV_FULL, MONTHS_LV_GENITIVE } from "@/lib/planting-crops";
 import { MONTH_SLUGS, calendarYears, MONTH_TIPS, MONTHS_LV_LOCATIVE, canonical, SITE_NAME } from "@/lib/seo";
 
-// The month block below is dated, so the prerendered HTML must not go stale.
-export const revalidate = 3600;
+// The overview and year in its metadata both follow the current Riga date.
+export const revalidate = 0;
 
 export function generateMetadata(): Metadata {
   const { year } = latviaDateParts();
@@ -107,9 +108,9 @@ export default function KalendarsPage() {
         <Link href="/kalendars/istabas-augu-parstadisana" className="inline-flex min-h-11 items-center gap-1.5 rounded-full border border-outline-variant/30 px-4 text-label-md text-primary hover:bg-surface-container">
           <Icon name="potted_plant" size="18px" /> Istabas augu pārstādīšanas dienas
         </Link>
-        <Link href="/darza-darbi-sonedel" className="inline-flex min-h-11 items-center gap-1.5 rounded-full border border-outline-variant/30 px-4 text-label-md text-primary hover:bg-surface-container">
+        <TrackedLink href="/darza-darbi-sonedel" source="calendar-overview" placement="weekly-plan" className="inline-flex min-h-11 items-center gap-1.5 rounded-full border border-outline-variant/30 px-4 text-label-md text-primary hover:bg-surface-container">
           <Icon name="checklist" size="18px" /> Dārza darbi šonedēļ
-        </Link>
+        </TrackedLink>
       </nav>
 
       <p className="mb-lg max-w-2xl text-body-lg text-on-surface-variant">

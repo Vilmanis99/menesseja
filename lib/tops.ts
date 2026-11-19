@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import type { ArticleLink } from "./articles";
 
 export interface TopItem {
   rank: number;
@@ -14,6 +15,7 @@ export interface TopList {
   subtitle: string;
   category: string;
   intro: string[];
+  guideLink?: ArticleLink;
   items: TopItem[];
   outro: string;
 }

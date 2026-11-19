@@ -11,7 +11,7 @@
     "puansetija"
   ],
   "publishedAt": "2026-10-26",
-  "updatedAt": "2026-10-26",
+  "updatedAt": "2026-11-19",
   "seasonalMonths": [
     11,
     12,
@@ -30,6 +30,10 @@
     {
       "label": "ASPCA — Poinsettia (toksiskums dzīvniekiem)",
       "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/poinsettia"
+    },
+    {
+      "label": "Misisipi štata universitāte — puansetijas kopšana pēc svētkiem",
+      "url": "https://extension.msstate.edu/publications/selecting-and-maintaining-poinsettias"
     }
   ],
   "readMinutes": 3,
@@ -89,7 +93,7 @@
     {
       "heading": "Kāpēc puansetija met lapas",
       "paragraphs": [
-        "Lapu nobiršanai parasti ir viens no četriem iemesliem. Salīdzini pazīmes un maini apstākļus; jau bojātās lapas vairs neatjaunosies."
+        "Pievērs uzmanību tam, kad un kuras lapas augs zaudē. Ja dažas dienas pēc pirkuma sāk birt zaļās lapas, pārbaudi augsnes mitrumu un vietas temperatūru. Savukārt ziemas beigās krāsainās seglapas var pakāpeniski izbalēt un nobirt arī veselam augam."
       ],
       "table": {
         "headers": [
@@ -117,12 +121,18 @@
             "Lapas krīt pakāpeniski pēc vairākām nedēļām pie radiatora",
             "Pārāk silta vieta",
             "Pārvieto vēsākā vietā, kur ir 16–21 °C"
+          ],
+          [
+            "Pēc vairākām nedēļām krāsainās seglapas pamazām izbalo un nobirst, stublāji paliek stingri",
+            "Ziedēšanas laiks tuvojas beigām",
+            "Ja augu saglabā, ļauj substrātam starp laistīšanas reizēm vairāk apžūt. Aplaisti tik daudz, lai stublāji nesāktu sačokuroties."
           ]
         ]
       },
       "sourceUrls": [
         "https://extension.illinois.edu/houseplants/caring-poinsettias",
-        "https://hort.extension.wisc.edu/poinsettia-trivia-care/"
+        "https://hort.extension.wisc.edu/poinsettia-trivia-care/",
+        "https://extension.msstate.edu/publications/selecting-and-maintaining-poinsettias"
       ]
     },
     {

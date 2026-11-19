@@ -50,6 +50,52 @@ export function moonPhasesForMonth(year: number, month: number): PrincipalMoonPh
   });
 }
 
+export interface MoonInterval {
+  waxing: boolean;
+  start: Date;
+  end: Date;
+}
+
+/** Complete [start, end) waxing and waning intervals overlapping this Riga civil month. */
+export function moonIntervalsForMonth(
+  year: number,
+  month: number,
+  phases: readonly PrincipalMoonPhase[] = moonPhasesForMonth(year, month),
+): MoonInterval[] {
+  const isTurn = (phase: PrincipalMoonPhase) => phase.frac === 0 || phase.frac === 0.5;
+  const previous = month === 1 ? moonPhasesForMonth(year - 1, 12) : moonPhasesForMonth(year, month - 1);
+  const next = month === 12 ? moonPhasesForMonth(year + 1, 1) : moonPhasesForMonth(year, month + 1);
+  // Every month has at least one turning point, including a February without a new moon.
+  const turns = [...previous.filter(isTurn).slice(-1), ...phases.filter(isTurn), ...next.filter(isTurn).slice(0, 1)];
+  const intervals: MoonInterval[] = [];
+  for (let i = 0; i + 1 < turns.length; i++) {
+    const start = turns[i];
+    const end = turns[i + 1].date;
+    // If the first in-month event falls at local midnight on day one, the previous interval has ended.
+    if (i === 0 && latviaDateParts(new Date(end.getTime() - 1)).month !== month) continue;
+    intervals.push({ waxing: start.frac === 0, start: start.date, end });
+  }
+  return intervals;
+}
+
+/** Whole elapsed days and remaining whole hours since conjunction, at the supplied instant. */
+export function lunarAgeAt(date: Date): { newMoon: Date; days: number; hours: number } {
+  const { year, month } = latviaDateParts(date);
+  const cursor = new Date(Date.UTC(year, month - 1, 1));
+
+  // A short February can have no new moon, so early March can still belong to January's lunation.
+  for (let offset = 0; offset < 3; offset++) {
+    const phases = moonPhasesForMonth(cursor.getUTCFullYear(), cursor.getUTCMonth() + 1);
+    const last = phases.reverse().find((phase) => phase.frac === 0 && phase.date <= date);
+    if (last) {
+      const elapsedHours = Math.floor((date.getTime() - last.date.getTime()) / 3_600_000);
+      return { newMoon: last.date, days: Math.floor(elapsedHours / 24), hours: elapsedHours % 24 };
+    }
+    cursor.setUTCMonth(cursor.getUTCMonth() - 1);
+  }
+  throw new RangeError("No preceding new moon found");
+}
+
 /** A same-day event remains visible after its exact instant has passed. */
 export function principalPhasesOnDate(date: Date): PrincipalMoonPhase[] {
   const { year, month } = latviaDateParts(date);

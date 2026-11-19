@@ -94,13 +94,17 @@ export default function ParPage() {
           <Icon name="calculate" /> Kā tiek rēķinātas Mēness dienas
         </h2>
         <ul className="space-y-2 text-body-md text-on-surface-variant">
-          <li className="flex gap-2"><Icon name="brightness_3" size="18px" className="mt-0.5 text-primary" /> <span><strong className="text-on-surface">Mēness fāzes</strong> — no astronomiskiem aprēķiniem (sinodiskais cikls), precizitāte ~1 diena.</span></li>
-          <li className="flex gap-2"><Icon name="auto_awesome" size="18px" className="mt-0.5 text-primary" /> <span><strong className="text-on-surface">Elementu dienas</strong> — pēc Marijas Tūnas biodinamiskās sistēmas (Mēness zvaigznāja zīme → elements → auga daļa).</span></li>
+          <li className="flex gap-2"><Icon name="brightness_3" size="18px" className="mt-0.5 text-primary" /> <span><strong className="text-on-surface">Mēness fāzes</strong> — četru galveno fāžu iestāšanās brīžus aprēķinām ar Astronomy Engine un rādām pēc Latvijas laika. Dienas kartītē Mēness apgaismoto daļu aprēķinām plkst. 12.00 pēc Latvijas ziemas laika vai plkst. 13.00 pēc vasaras laika.</span></li>
+          <li className="flex gap-2">
+            <Icon name="calendar_today" size="18px" className="mt-0.5 text-primary" />
+            <span><strong className="text-on-surface">Mēness vecumu</strong> skaitām diennaktīs kopš jaunmēness brīža. Tradicionālo Mēness dienu Rīgā skaitām no pirmās dienas jaunmēness brīdī, dienas numuru mainot pie katra nākamā Mēness lēkta Rīgā.</span>
+          </li>
+          <li className="flex gap-2"><Icon name="auto_awesome" size="18px" className="mt-0.5 text-primary" /> <span><strong className="text-on-surface">Elementu dienas</strong> — kalendārā Mēness ceļu iedalām 12 nevienāda platuma posmos pēc zvaigznājiem. Pēc Mēness vietas šajā joslā dienas vidū piešķiram lapu, sakņu, ziedu vai augļu dienu atbilstoši biodinamiskajai tradīcijai.</span></li>
           <li className="flex gap-2"><Icon name="ac_unit" size="18px" className="mt-0.5 text-primary" /> <span><strong className="text-on-surface">Salnas un augšanas dienas</strong> — pēc LVĢMC klimata normām katram reģionam.</span></li>
           <li className="flex gap-2"><Icon name="potted_plant" size="18px" className="mt-0.5 text-primary" /> <span><strong className="text-on-surface">Sējas logi</strong> — pielāgoti Latvijas klimatam un slīpēti praksē; orientējoši, pārbaudi savam reģionam.</span></li>
           <li className="flex gap-2"><Icon name="cloud" size="18px" className="mt-0.5 text-primary" /> <span><strong className="text-on-surface">Laikapstākļi un augsnes temperatūra</strong> — no Open-Meteo (reāllaika dati).</span></li>
         </ul>
-        <p className="mt-sm text-label-sm text-on-surface-variant">Dati pēdējoreiz pārskatīti: {DATA_REVIEWED}.</p>
+        <p className="mt-sm text-label-sm text-on-surface-variant">Sējas un salnu dati pēdējoreiz pārskatīti {DATA_REVIEWED}.</p>
       </Card>
 
       <Card tone="highest" elevated accent="secondary" className="mb-md p-md">
@@ -120,6 +124,12 @@ export default function ParPage() {
           <Icon name="menu_book" className="text-primary" /> Avoti
         </h2>
         <ul className="space-y-2">
+          <li className="flex items-center gap-2 text-body-md">
+            <Icon name="link" size="16px" className="text-primary" />
+            <a href="https://github.com/cosinekitty/astronomy/tree/master/source/js#moon-phases" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+              Astronomy Engine — Mēness fāžu aprēķini
+            </a>
+          </li>
           {SOURCES.map((s) => (
             <li key={s.url} className="flex items-center gap-2 text-body-md">
               <Icon name="link" size="16px" className="text-primary" />

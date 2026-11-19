@@ -1,5 +1,9 @@
 {
-  "intro": "Tomāts ir mīļākais siltummīlis Latvijas dārzā: kaut arī tas nāk no siltākiem novadiem, ar laicīgu dēstu audzēšanu un siltumnīcas vai saulaina dobes stūra palīdzību tas labi padodas arī mūsu īsajā sezonā. No izstādīšanas līdz pirmajiem nogatavojušiem augļiem parasti paiet 60–85 dienas, tāpēc tomātus gandrīz vienmēr sāk audzēt no dēstiem uz palodzes jau martā un aprīlī.\n\nDaudzi dārznieki sējas brīdi mēdz saskaņot ar mēness ritmu, tomātus saistot ar tā sauktajām augļu jeb uguns dienām. Tā ir sena, patīkama tradīcija, taču godīgi jāsaka: zinātniskie pierādījumi par mēness ietekmi uz ražu ir ierobežoti un pretrunīgi. Daudz svarīgāks par kalendāru ir siltums — stādus laukā drīkst likt tikai pēc pēdējām pavasara salnām (Latvijā ap maija beigām), kad augsne sasilusi vismaz līdz 12 °C, jo viena salnas nakts var nogalināt visus dēstus.",
+  "intro": "Tomāts ir mīļākais siltummīlis Latvijas dārzā: kaut arī tas nāk no siltākiem novadiem, ar laicīgu dēstu audzēšanu un siltumnīcas vai saulaina dobes stūra palīdzību tas labi padodas arī mūsu īsajā sezonā. No izstādīšanas līdz pirmajiem nogatavojušiem augļiem parasti paiet 65–90 dienas atkarībā no šķirnes, tāpēc tomātus gandrīz vienmēr sāk audzēt no dēstiem uz palodzes jau martā un aprīlī.\n\nDaudzi dārznieki sējas brīdi mēdz saskaņot ar mēness ritmu, tomātus saistot ar tā sauktajām augļu jeb uguns dienām. Tā ir sena, patīkama tradīcija, taču godīgi jāsaka: zinātniskie pierādījumi par mēness ietekmi uz ražu ir ierobežoti un pretrunīgi. Pirms izstādīšanas laukā pārliecinies, ka vietējā prognozē vairs nedraud salnas. Izmēri augsnes temperatūru dobē. Zemkopības ministrijas vadlīnijās lauka tomātiem ieteikts sagaidīt vismaz 14–15 °C, bet par optimālu minēta 15–18 °C silta augsne.",
+  "worksheet": {
+    "label": "Tomātu sezonas pieraksts (aizpildāms PDF)",
+    "href": "/veidlapas/tomatu-sezonas-pieraksts.pdf"
+  },
   "sections": [
     {
       "heading": "Kā sēt",
@@ -23,8 +27,23 @@
     },
     {
       "heading": "Novākšana un glabāšana",
-      "body": "Tomātus sāk lasīt no jūlija līdz septembrim, novācot augļus, tiklīdz tie iekrāsojušies un nedaudz padevīgi pieskārienā — pilnīgi nogatavojušies augļi ir garšīgākie, bet tos ēd dažu dienu laikā. Vasaras beigās, kad naktis kļūst vēsas un tuvojas pirmās salnas, visus atlikušos augļus, arī zaļos, novāc, jo aukstumā tie vairs nenobriest un viegli sabojājas. Zaļie tomāti labi nogatavojas istabas siltumā, izklāti vienā kārtā tumšā, sausā vietā, un nogatavošanos paātrina, ja blakus noliek ābolu vai jau sarkanu tomātu. Svaigus tomātus neglabā ledusskapī, jo aukstums atņem aromātu — pārpalikumu labāk pārstrādā sulā, biezenī vai marinādē ziemai."
+      "body": "Sezonas pierakstā atzīmē, kad pie auga pamanīji pirmo šķirnei gatavo augli. Gatava tomāta krāsa var būt arī dzeltena, oranža vai svītraina. Salīdzini ar šķirnes aprakstu uz paciņas.\n\nJa tuvojas salna, novāc arī pilnu izmēru sasniegušos augļus, kas vēl gatavojas. Istabā tos saliec vienā kārtā un regulāri pārskati. Augļiem, kuri jau sāk mainīt krāsu, ir labākas izredzes nogatavoties. Arī daļa pilna izmēra zaļo tomātu vēl nogatavosies, bet mazie, nenobriedušie augļi var palikt cieti. Atsevišķi pieraksti, ja pirmo gatavo tomātu ieguvi pēc nogatavināšanas telpās."
     }
   ],
-  "folklore": "Senču gudrība māca, ka augļu dārzeņus, pie kuriem pieder arī tomāts, labi sēt un stādīt augļu jeb uguns dienās augošā Mēness laikā, kad augu dzīvības spēks virzās uz augšu un augļiem — taču to der uztvert kā jauku dārza darbu ritmu un kultūras mantojumu, nevis ražas garantiju, jo tomātam patiesībā vissvarīgākais ir siltums, saule un drošība no maija salnām."
+  "folklore": "Senču gudrība māca, ka augļu dārzeņus, pie kuriem pieder arī tomāts, labi sēt un stādīt augļu jeb uguns dienās augošā Mēness laikā, kad augu dzīvības spēks virzās uz augšu un augļiem — taču to der uztvert kā jauku dārza darbu ritmu un kultūras mantojumu, nevis ražas garantiju, jo tomātam patiesībā vissvarīgākais ir siltums, saule un drošība no maija salnām.",
+  "sources": [
+    {
+      "label": "Zemkopības ministrija — lauka tomātu dēstu izstādīšana un augsnes temperatūra (14.–15. lpp.)",
+      "url": "https://www.zm.gov.lv/lv/media/741/download?attachment=#page=15"
+    },
+    {
+      "label": "Merilendas Universitāte — tomātu ražas laiks pēc dēstu izstādīšanas",
+      "url": "https://extension.umd.edu/resource/growing-tomatoes-home-garden"
+    },
+    {
+      "label": "Minesotas Universitāte — augļu briedums un nogatavināšana telpās",
+      "url": "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/growing-tomatoes"
+    }
+  ],
+  "updatedAt": "2026-11-19"
 }

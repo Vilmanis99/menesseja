@@ -6,11 +6,20 @@ export interface NavItem {
   primary?: boolean;
 }
 
+export const GARDEN_HREF = "/#mans-darzs";
+
+export type NavCurrent = "page" | "location" | undefined;
+
+export function navCurrent(pathname: string, href: string, inGarden: boolean): NavCurrent {
+  if (href === GARDEN_HREF) return pathname === "/" && inGarden ? "location" : undefined;
+  return pathname === href || pathname.startsWith(href + "/") ? "page" : undefined;
+}
+
 /** Single source of truth for sidebar + drawer + bottom nav, in display order.
  *  Content sections first; Raksti + Augu enciklopēdija promoted out of the old
  *  footer group so our main content is actually discoverable. */
 export const NAV_ITEMS: NavItem[] = [
-  { href: "/", label: "Dārzs", icon: "nature_people", primary: true },
+  { href: GARDEN_HREF, label: "Mans dārzs", icon: "nature_people", primary: true },
   { href: "/kalendars", label: "Kalendārs", icon: "calendar_month", primary: true },
   { href: "/pukes", label: "Puķes", icon: "local_florist", primary: true },
   { href: "/kaitekli", label: "Kaitēkļi", icon: "pest_control", primary: true },

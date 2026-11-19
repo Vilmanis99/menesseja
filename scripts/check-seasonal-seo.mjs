@@ -1,8 +1,23 @@
+import { readFile } from "node:fs/promises";
 import { parseArgs } from "node:util";
 
-const { values } = parseArgs({ options: { from: { type: "string" }, help: { type: "boolean" } } });
+const { values } = parseArgs({ options: {
+  from: { type: "string" },
+  sitemap: { type: "boolean" },
+  "expect-sitemap": { type: "string" },
+  include: { type: "string", multiple: true },
+  help: { type: "boolean" },
+} });
 if (values.help) {
-  console.log("npm run seo:season [-- --from YYYY-MM]\nPārbauda trīs mēnešus. Pēc noklusējuma sāk ar nākamo mēnesi pēc Latvijas laika.\nGoogle URL Inspection papildus izmanto vides mainīgo GSC_ACCESS_TOKEN ar webmasters.readonly piekļuvi. GSC_SITE_URL var norādīt citu šī domēna Search Console īpašumu.");
+  console.log([
+    "npm run seo:season -- [--from YYYY-MM] [--sitemap] [--expect-sitemap fails] [--include /raksti/...]",
+    "Pārbauda trīs mēnešus, sākot ar norādīto vai nākamo mēnesi pēc Latvijas laika.",
+    "--sitemap papildus pārbauda visas publiskajā vietnes kartē uzskaitītās lapas.",
+    "--expect-sitemap salīdzina publiskās kartes adreses ar norādītā produkcijas laidiena vietnes kartes XML failu.",
+    "--include pievieno konkrētu menesseja.lv lapu. Šo opciju var atkārtot.",
+    "Google indeksa statusa nolasīšanai izmanto GSC_ACCESS_TOKEN ar webmasters.readonly piekļuvi.",
+    "GSC_SITE_URL var norādīt citu šī domēna Search Console īpašumu.",
+  ].join("\n"));
   process.exit(0);
 }
 const origin = "https://www.menesseja.lv";
@@ -22,16 +37,53 @@ for (let offset = 0; offset < 3; offset++) {
   paths.add(`/kalendars/${date.getUTCFullYear()}`);
 }
 
+function isPagePath(path) {
+  return path.startsWith("/") && !path.startsWith("//") && !/[?#\\]/.test(path)
+    && new URL(path, origin).pathname === path;
+}
+for (const path of values.include ?? []) {
+  if (!isPagePath(path)) throw new Error("--include jānorāda menesseja.lv lapas ceļš, piemēram, /raksti/amarillis-pec-ziedesanas.");
+  paths.add(path);
+}
+
 function request(url, options = {}) {
   return fetch(url, { redirect: "manual", signal: AbortSignal.timeout(20000), ...options });
+}
+
+function parseSitemapUrls(xml, reference = false) {
+  const source = reference ? "Norādītais būves XML" : "sitemap.xml";
+  const markup = xml.replace(/<!--[\s\S]*?-->/g, "");
+  if (!/<urlset\b[^>]*(?:\/>|>[\s\S]*<\/urlset\s*>)/.test(markup)) throw new Error(`${source} nesatur pilnu URL sarakstu.`);
+  const entries = new Set();
+  for (const [, raw] of markup.matchAll(/<loc>\s*([^<]+?)\s*<\/loc>/g)) {
+    const path = raw === origin ? "/" : raw.slice(origin.length);
+    if (!raw.startsWith(origin) || !isPagePath(path)) {
+      if (reference) throw new Error("Norādītajā būves XML atrasta adrese ārpus menesseja.lv lapu saraksta.");
+      console.error("Vietnes kartē atrasta adrese ārpus menesseja.lv lapu saraksta.");
+      process.exitCode = 1;
+      continue;
+    }
+    entries.add(origin + path);
+  }
+  if (reference && !entries.size) throw new Error("Norādītajā būves XML nav pārbaudāmu lapu.");
+  return entries;
 }
 
 async function sitemapUrls() {
   const response = await request(origin + "/sitemap.xml");
   if (response.status !== 200) throw new Error(`sitemap.xml HTTP ${response.status}`);
-  const xml = await response.text();
-  if (!/<urlset[\s>]/.test(xml)) throw new Error("sitemap.xml nesatur URL sarakstu.");
-  return new Set(Array.from(xml.matchAll(/<loc>\s*([^<]+?)\s*<\/loc>/g), (match) => match[1]));
+  const entries = parseSitemapUrls(await response.text());
+  if (!entries.size) unavailable(new Error("Vietnes kartē nav pārbaudāmu lapu."));
+  return entries;
+}
+
+function compareSitemaps(actual, expected) {
+  const missing = [...expected].filter(url => !actual.has(url)).sort();
+  const unexpected = [...actual].filter(url => !expected.has(url)).sort();
+  console.log(`Vietnes kartē ir ${actual.size} adreses, būves XML ir ${expected.size}. Trūkst ${missing.length}, neparedzētas ${unexpected.length}.`);
+  for (const url of missing) console.error(`Publiskajā vietnes kartē trūkst ${url}`);
+  for (const url of unexpected) console.error(`Neparedzēta adrese publiskajā vietnes kartē ${url}`);
+  if (missing.length || unexpected.length) process.exitCode = 1;
 }
 
 async function googlebotRules() {
@@ -112,10 +164,16 @@ async function inspectGoogle(url) {
     headers: { Authorization: `Bearer ${token}`, "Content-Type": "application/json" },
     body: JSON.stringify({ inspectionUrl: url, siteUrl: property, languageCode: "lv" }),
   });
-  if (!response.ok) throw new Error(`URL Inspection HTTP ${response.status}`);
+  if (!response.ok) {
+    const error = new Error(`URL Inspection HTTP ${response.status}`);
+    error.status = response.status;
+    throw error;
+  }
   const result = (await response.json()).inspectionResult?.indexStatusResult;
-  const verdict = result?.verdict ?? "VERDICT_UNSPECIFIED";
-  const label = { PASS: "indeksēts", NEUTRAL: "izslēgts", FAIL: "Google konstatēja kļūdu" }[verdict] || "nav apstiprināts";
+  if (!result?.verdict) throw new Error("Google atbildē nav indeksa pārbaudes rezultāta.");
+  const verdict = result.verdict;
+  const canonicalMatches = !result.googleCanonical || new URL(result.googleCanonical).href === url;
+  const label = { PASS: canonicalMatches ? "indeksēts" : "Google izvēlējās citu kanonisko adresi", NEUTRAL: "izslēgts", FAIL: "Google konstatēja kļūdu" }[verdict] || "nav apstiprināts";
   const details = [
     `Google: ${label} (${verdict})`,
     result?.coverageState ?? "iemesls nav norādīts",
@@ -123,14 +181,25 @@ async function inspectGoogle(url) {
     `Google canonical: ${result?.googleCanonical ?? "nav datu"}`,
   ];
   console.log("  " + details.join(" · "));
-  if (verdict !== "PASS" || (result?.googleCanonical && result.googleCanonical !== url)) process.exitCode = 1;
+  if (verdict !== "PASS" || !canonicalMatches) process.exitCode = 1;
+  return verdict;
 }
 
 function unavailable(error) {
   console.error(`Pārbaudes resurss nav pieejams: ${error.message}`);
   process.exitCode = 1;
 }
+const referenceFile = values["expect-sitemap"];
+const expected = referenceFile === undefined ? null : parseSitemapUrls(await readFile(referenceFile, "utf8"), true);
 const [sitemap, robots] = await Promise.all([sitemapUrls().catch(unavailable), googlebotRules().catch(unavailable)]);
+if (expected && sitemap) compareSitemaps(sitemap, expected);
+if (values.sitemap && sitemap) {
+  for (const url of sitemap) paths.add(new URL(url).pathname);
+}
+let publicPass = 0;
+let googleRead = 0;
+let googlePass = 0;
+let inspect = Boolean(token);
 if (!token) console.log("Google indekss nav pārbaudīts. GSC_ACCESS_TOKEN nav pieejams.");
 console.log("Publiski pārbaudām HTTP 200, vietnes karti, Googlebot piekļuvi, kanonisko adresi un noindex.");
 for (const path of paths) {
@@ -150,12 +219,22 @@ for (const path of paths) {
   }
   console.log(`${path} — ${findings.length ? findings.join("; ") : "publiskās pārbaudes izturētas"}`);
   if (findings.length) process.exitCode = 1;
-  if (token) {
+  else publicPass++;
+  if (inspect) {
     try {
-      await inspectGoogle(url);
+      const verdict = await inspectGoogle(url);
+      googleRead++;
+      if (verdict === "PASS") googlePass++;
     } catch (error) {
       console.error(`  Google statuss nav pārbaudīts: ${error.message}`);
+      if ([401, 429].includes(error.status)) {
+        inspect = false;
+        console.error("Tālāk turpinās publiskās pārbaudes. Google pieprasījumiem jāpārbauda piekļuve vai kvota.");
+      }
       process.exitCode = 1;
     }
   }
 }
+console.log(`Publiskās pārbaudes izturēja ${publicPass} no ${paths.size} adresēm.`);
+console.log(`Google indeksa rezultāti saņemti ${googleRead} no ${paths.size} adresēm.`);
+if (googleRead) console.log(`Google norādīja PASS ${googlePass} adresēm.`);

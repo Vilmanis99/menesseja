@@ -140,10 +140,20 @@
     "hydrangeas": {
       "label": "RHS — hortenziju audzēšana un aizsardzība ziemā",
       "url": "https://www.rhs.org.uk/plants/hydrangea/shrubby/growing-guide"
+    },
+    "celery-seedlings": {
+      "label": "Kentuki Universitāte — kātu un sakņu seleriju audzēšana",
+      "url": "https://ccd.uky.edu/sites/default/files/2024-11/ccd-cp-092_celery-and-celeriac.pdf"
     }
   },
   "months": {
     "1": {
+      "updatedAt": "2026-11-19",
+      "shortcuts": [
+        {"label": "Sēklu pārbaude", "href": "/raksti/ka-glabat-seklas-un-parbaudit-digtspeju#mana-seklu-digtspejas-parbaude"},
+        {"label": "Aprēķināt sējas laiku", "href": "/raksti/kad-set-destus-rekini-atpakal#sejas-kalkulators"},
+        {"label": "Ko darīt ar noziedējušu hiacinti?", "href": "/raksti/hiacintes-podina-un-glaze#ko-darit-ar-hiacinti-pec-ziedesanas"}
+      ],
       "title": "Janvāris dārzā: pārbaudi krājumus un sagatavo izpildāmu plānu",
       "description": "Pārbaudi veco sēklu dīgtspēju un aprēķini dēstu sējas laiku pēc plānotās izstādīšanas.",
       "showPhaseDatesInIntro": true,
@@ -171,8 +181,8 @@
             "seeds"
           ],
           "link": {
-            "href": "/raksti/ka-glabat-seklas-un-parbaudit-digtspeju",
-            "label": "Sēklu pārbaude mājās"
+            "href": "/raksti/ka-glabat-seklas-un-parbaudit-digtspeju#mana-seklu-digtspejas-parbaude",
+            "label": "Pierakstīt vai papildināt sēklu pārbaudi"
           }
         },
         {
@@ -181,7 +191,7 @@
           "heading": "Sakārto kultūras pēc dēstu audzēšanas ilguma",
           "when": "Mēneša vidū; faktiskā sēja sākas tikai tad, kad pienācis aprēķinātais intervāls.",
           "paragraphs": [
-            "Plānošanas sākuma orientieri atšķiras: paprikai ap 8–10 nedēļām, tomātiem bieži ap 6–8, gurķiem ap 3–4 nedēļām pirms izstādīšanas. Šķirne un audzēšanas apstākļi šo ilgumu maina."
+            "Paprikai no sējas līdz izstādīšanai vari plānot aptuveni 8–10 nedēļas. Tajās jau ietilpst dīgšanas laiks. Tomātiem kā orientieri bieži izmanto 6–8 nedēļas, gurķiem 3–4 nedēļas. Pārbaudi arī šķirnes norādes un izvērtē apstākļus savā siltumnīcā vai dobē."
           ],
           "steps": [
             "Izveido atsevišķu rindu siltumnīcai un laukam. Pie abām ieraksti provizorisko izstādīšanas laiku.",
@@ -194,8 +204,8 @@
             "seed-timing"
           ],
           "link": {
-            "href": "/raksti/kad-set-destus-rekini-atpakal",
-            "label": "Kā rēķināt sējas intervālu"
+            "href": "/raksti/kad-set-destus-rekini-atpakal#sejas-kalkulators",
+            "label": "Aprēķini sējas laiku pēc izstādīšanas datuma"
           }
         },
         {
@@ -334,14 +344,15 @@
             "Februāra kandidāti var būt paprika, selerijas, puravi un atsevišķas lēni augošas vasaras puķes. Tas nav uzdevums iesēt visus šos augus neatkarīgi no vietas un šķirnes."
           ],
           "steps": [
-            "Pie katras paciņas ieraksti gala vietu un izvēlēto intervālu. Paprikai kā sākuma orientieri vari izvērtēt 8–10 nedēļu dēstu laiku.",
+            "Izvēlies izstādīšanas datumu katrai audzēšanas vietai. No tā paprikai atskaiti aptuveni 8–10 nedēļas, kātu un sakņu selerijām 10–12 nedēļas. Abos intervālos dīgšana ir ieskaitīta.",
             "Seleriju un puķu sīkajām sēklām pārbaudi gaismas un apbēršanas prasības; tās nedrīkst visas apbērt tāpat kā lielas sēklas.",
             "Atzīmē, kuras kultūras atliksi uz martu vai aprīli. Gurķiem februāris parastam neapkurināta dārza plānam būtu ievērojami par agru."
           ],
           "avoid": "Siltā palodze nenozīmē, ka pēc diviem mēnešiem būs gatava arī izstādīšanas vieta.",
           "sourceIds": [
             "seed-care",
-            "seedlings"
+            "seedlings",
+            "celery-seedlings"
           ],
           "link": {
             "href": "/augi/paprika",
@@ -452,7 +463,8 @@
         "seed-care",
         "seedlings",
         "greenhouse",
-        "dahlias"
+        "dahlias",
+        "celery-seedlings"
       ],
       "timeline": [
         {
@@ -2135,6 +2147,11 @@
       ]
     },
     "12": {
+      "updatedAt": "2026-11-19",
+      "shortcuts": [
+        {"label": "Sēklu pārbaude", "href": "/raksti/ka-glabat-seklas-un-parbaudit-digtspeju#mana-seklu-digtspejas-parbaude"},
+        {"label": "Kāpēc nezied Ziemassvētku kaktuss?", "href": "/raksti/ziemassvetku-kaktuss-nezied#ko-parbaudit-sodien"}
+      ],
       "title": "Decembris dārzā: no sezonas pierakstiem līdz nākamā gada plānam",
       "description": "Pārskati sēklu krājumus un pārbaudi, kā glabājas dāliju gumi.",
       "showPhaseDatesInIntro": true,
@@ -2231,8 +2248,8 @@
             "seed-test"
           ],
           "link": {
-            "href": "/raksti/ka-glabat-seklas-un-parbaudit-digtspeju",
-            "label": "Dīgtspējas pārbaudes skaidrojums"
+            "href": "/raksti/ka-glabat-seklas-un-parbaudit-digtspeju#mana-seklu-digtspejas-parbaude",
+            "label": "Saglabāt paraugu un aprēķināt dīgtspēju"
           }
         },
         {

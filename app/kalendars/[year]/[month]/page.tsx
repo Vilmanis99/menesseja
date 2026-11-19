@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { DatedCalendarExplorer } from "@/components/dated-calendar-explorer";
 import { CalendarNavigation } from "@/components/calendar-navigation";
 import { MonthChecklist, MonthPreparation } from "@/components/month-preparation";
 import { CalendarMonthGuide, CalendarWorkPlan } from "@/components/calendar-month-guide";
@@ -9,15 +10,18 @@ import { Icon } from "@/components/ui/icon";
 import { MoonPhase } from "@/components/moon-phase";
 import { JsonLd } from "@/components/json-ld";
 import { DataNote } from "@/components/data-note";
-import { dailyPhaseName, moonForDate, moonPhasesForMonth, type PrincipalMoonPhase } from "@/lib/moon";
+import { dailyPhaseName, moonForDate, moonIntervalsForMonth, moonPhasesForMonth, type PrincipalMoonPhase } from "@/lib/moon";
 import { SeasonalLinks } from "@/components/seasonal-links";
 import { sowingDay, isRestDay, ELEMENT_META, PART_GENITIVE, type Element } from "@/lib/biodynamic";
 import { latviaDateParts, latviaNoon } from "@/lib/day-anchor";
-import { calendarGuide, CALENDAR_GUIDES_UPDATED_AT } from "@/lib/calendar-guides";
+import { calendarGuide, calendarGuideUpdatedAt } from "@/lib/calendar-guides";
 import { contentImage } from "@/lib/content-images";
 import { MONTH_GUIDES } from "@/lib/month-guides";
+import { holidayNameForDay, latvianHolidaysForMonth, LATVIAN_HOLIDAYS_SOURCE } from "@/lib/latvian-holidays";
 import { namedaysForDay } from "@/lib/vardadienas";
+import { TrackedLink } from "@/components/tracked-link";
 import { PrintButton } from "@/components/print-button";
+import { WinterDaylight } from "@/components/winter-daylight";
 import { NewsletterSignup } from "@/components/newsletter-signup";
 import { newsletterConfigured } from "@/lib/brevo";
 import { repottingDays, dayRanges, REPOT_SEASON_NOTE } from "@/lib/repotting";
@@ -32,6 +36,9 @@ import { MONTH_SLUGS, monthFromSlug, calendarYears, calendarYearFromSlug, MONTHS
 export const dynamic = "force-static";
 export const dynamicParams = true;
 export const revalidate = 3600;
+
+const weekdayShort = new Intl.DateTimeFormat("lv-LV", { weekday: "short", timeZone: "Europe/Riga" });
+const weekdayLong = new Intl.DateTimeFormat("lv-LV", { weekday: "long", timeZone: "Europe/Riga" });
 
 export function generateStaticParams() {
   return calendarYears().flatMap((year) =>
@@ -81,6 +88,7 @@ export async function generateMetadata({
 
 const SOW_KEYS = ["sowIndoors", "sowOutdoors", "transplant"] as const;
 const PHASE_DATE_FMT = new Intl.DateTimeFormat("lv-LV", { day: "numeric", month: "long", timeZone: "Europe/Riga" });
+const PHASE_YEAR_DATE_FMT = new Intl.DateTimeFormat("lv-LV", { day: "numeric", month: "long", year: "numeric", timeZone: "Europe/Riga" });
 const PHASE_TIME_FMT = new Intl.DateTimeFormat("lv-LV", { hour: "2-digit", minute: "2-digit", timeZone: "Europe/Riga" });
 function sowableThisMonth(element: Element, month: number) {
   const part = ELEMENT_META[element].part;
@@ -108,6 +116,7 @@ export default async function MonthCalendarPage({
   const nameLoc = MONTHS_LV_LOCATIVE[month - 1]; // "jūnijā" — "in June"
   const guide = calendarGuide(month);
 
+  const holidays = latvianHolidaysForMonth(year, month);
   const count = new Date(Date.UTC(year, month, 0)).getUTCDate();
   const days = Array.from({ length: count }, (_, i) => {
     // latviaNoon → classification is identical no matter the build server's TZ
@@ -119,10 +128,13 @@ export default async function MonthCalendarPage({
       sow: sowingDay(date),
       rest: isRestDay(date),
       names: namedaysForDay(month, i + 1),
+      holiday: holidayNameForDay(holidays, i + 1),
     };
   });
 
+  const hasLunarEclipse = year === 2027 && month === 2;
   const keyPhases = moonPhasesForMonth(year, month);
+  const intervals = moonIntervalsForMonth(year, month, keyPhases);
   const intro = guide.showPhaseDatesInIntro ? phaseIntro(year, month, keyPhases, guide.description) : guide.description;
   const eventsByDay = new Map(keyPhases.map((phase) => [latviaDateParts(phase.date).day, phase]));
   const repotRanges = dayRanges(repottingDays(year, month).map((d) => d.day));
@@ -134,7 +146,7 @@ export default async function MonthCalendarPage({
     "@type": "WebPage",
     name: `${year}. gada ${nameGen} Mēness sējas kalendārs`,
     description: intro,
-    dateModified: CALENDAR_GUIDES_UPDATED_AT,
+    dateModified: calendarGuideUpdatedAt(month),
     image: canonical(contentImage(guide.image.id).src),
     inLanguage: "lv",
     isPartOf: { "@type": "WebSite", name: SITE_NAME, url: canonical("/") },
@@ -173,6 +185,47 @@ export default async function MonthCalendarPage({
         <p className="mt-xs max-w-2xl text-body-lg text-on-surface-variant">
           {intro}
         </p>
+        {guide.shortcuts && (
+          <nav aria-label={`Praktiskie darbi ${nameLoc}`} className="mt-sm print:hidden">
+            <ul className="flex flex-wrap gap-x-3">
+              <li>
+                <a href="#visas-dienas" className="inline-flex min-h-11 items-center gap-1 text-body-md font-semibold text-primary underline decoration-primary/40 underline-offset-4 hover:decoration-primary">
+                  Visas {count} dienas<span aria-hidden="true"> ↓</span>
+                </a>
+              </li>
+              {guide.shortcuts.map(({ href, label }) => (
+                <li key={href}>
+                  <TrackedLink href={href} source={`kalendars/${year}/${mSlug}`} placement="month_shortcut"
+                    className="inline-flex min-h-11 items-center gap-1 text-body-md font-semibold text-primary underline decoration-primary/40 underline-offset-4 hover:decoration-primary">
+                    {label}<span aria-hidden="true"> →</span>
+                  </TrackedLink>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        )}
+        {holidays.length > 0 && (
+          <nav aria-label="Svētku dienas Latvijā" className="mt-md border-y border-outline-variant/30 py-sm print:hidden">
+            <div className="flex flex-wrap items-baseline justify-between gap-x-sm">
+              <h2 className="text-headline-md text-on-surface">Svētku dienas {nameLoc}</h2>
+              <a href={LATVIAN_HOLIDAYS_SOURCE} className="text-label-md text-on-surface-variant underline underline-offset-2">
+                Likums par svētku dienām
+              </a>
+            </div>
+            <ul className="mt-xs grid gap-x-md sm:grid-cols-2">
+              {days.filter((d) => d.holiday).map((d) => (
+                <li key={d.day}>
+                  <a href={`#diena-${d.day}`} className="inline-flex min-h-11 items-center gap-2 text-body-md text-primary hover:underline">
+                    <time dateTime={d.date.toISOString().slice(0, 10)} className="shrink-0 font-semibold">
+                      {PHASE_DATE_FMT.format(d.date)}
+                    </time>
+                    <span>{d.holiday}</span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        )}
         <div className="mt-sm print:hidden">
           <PrintButton />
         </div>
@@ -187,8 +240,12 @@ export default async function MonthCalendarPage({
         {[
           { href: "#menesa-darbi", label: "Praktiskais ceļvedis" },
           { href: "#meness-fazes", label: "Mēness fāzes" },
+          ...(month === 12 || month === 1 ? [{ href: "#dienas-garums", label: "Dienas garums" }] : []),
+          { href: "#augoss-un-dilstoss-meness", label: "Augošs un dilstošs Mēness" },
+          ...(hasLunarEclipse ? [{ href: "#meness-aptumsums", label: "Mēness aptumsums" }] : []),
           { href: "#seja-stadisana", label: "Sēja un stādīšana" },
           { href: "#visas-dienas", label: "Dienu tabula" },
+          { href: "#interaktivais-kalendars", label: "Interaktīvais kalendārs" },
         ].map((link) => <a key={link.href} href={link.href} className="inline-flex min-h-11 items-center rounded-full border border-outline-variant/30 px-4 text-label-md text-primary hover:bg-surface-container">{link.label}</a>)}
       </nav>
 
@@ -202,6 +259,8 @@ export default async function MonthCalendarPage({
       </Card>
 
       <CalendarWorkPlan month={month} />
+
+      {(month === 12 || month === 1) && <WinterDaylight year={year} month={month} />}
 
       {/* Key phases */}
       <h2 id="meness-fazes" className="mb-sm scroll-mt-24 text-headline-md text-on-surface">Mēness fāzes {nameLoc}</h2>
@@ -218,6 +277,53 @@ export default async function MonthCalendarPage({
         ))}
       </div>
       <p className="month-phase-note mb-lg text-label-sm text-on-surface-variant">Fāžu maiņas norādītas pēc Latvijas laika. Dienu tabulā attēlots Mēness izskats plkst. 10.00 UTC. Jauna Mēness, pilnmēness un ceturkšņu nosaukumi atzīmē to iestāšanās dienu Latvijā.</p>
+
+      <section className="mb-lg print:mb-2" aria-labelledby="augoss-un-dilstoss-meness">
+        <h2 id="augoss-un-dilstoss-meness" tabIndex={-1} className="mb-xs scroll-mt-24 text-headline-md text-on-surface print:mb-0! print:text-[12px]!">
+          Kad Mēness aug un kad dilst {nameLoc}?
+        </h2>
+        <p className="mb-sm text-body-md text-on-surface-variant print:hidden">
+          Mēness aug no jaunmēness līdz pilnmēnesim un pēc tam dilst līdz nākamajam jaunmēnesim. Laiki norādīti pēc Latvijas laika.
+        </p>
+        <dl className="divide-y divide-outline-variant/30 print:grid print:auto-cols-fr print:grid-flow-col print:gap-2 print:divide-y-0">
+          {intervals.map(({ waxing, start, end }) => {
+            const crossesYear = latviaDateParts(start).year !== latviaDateParts(end).year;
+            const dateFormat = crossesYear ? PHASE_YEAR_DATE_FMT : PHASE_DATE_FMT;
+            return (
+              <div key={start.toISOString()} className="py-sm sm:flex sm:items-baseline sm:gap-md print:block print:py-0">
+                <dt className="text-body-md font-semibold text-on-surface sm:w-36 sm:shrink-0 print:w-auto print:text-[10px] print:leading-tight">
+                  {waxing ? "Augošs Mēness" : "Dilstošs Mēness"}
+                </dt>
+                <dd className="text-body-md text-on-surface-variant print:text-[10px] print:leading-tight">
+                  <time dateTime={start.toISOString()}>{dateFormat.format(start)} <span className="whitespace-nowrap">plkst. {PHASE_TIME_FMT.format(start)}</span></time>
+                  {" – "}
+                  <time dateTime={end.toISOString()}>{dateFormat.format(end)} <span className="whitespace-nowrap">plkst. {PHASE_TIME_FMT.format(end)}</span></time>
+                </dd>
+              </div>
+            );
+          })}
+        </dl>
+      </section>
+
+      {hasLunarEclipse && (
+        <Card tone="container" className="mb-lg p-md print:mb-2 print:px-2 print:py-1">
+          <h2 id="meness-aptumsums" className="mb-sm scroll-mt-24 text-headline-md text-on-surface print:mb-0! print:text-[12px]!">Pusēnas Mēness aptumsums naktī no 20. uz 21. februāri</h2>
+          <p className="mb-sm text-body-md text-on-surface-variant print:hidden">
+            Rīgā Mēness visu aptumsuma laiku būs virs horizonta. Skaidrā laikā ap aptumsuma maksimumu
+            varēs pamanīt, ka viena pilnmēness mala kļuvusi nedaudz tumšāka. Mēness šķērsos Zemes pusēnu,
+            tāpēc aptumšojums būs viegls.
+          </p>
+          <p className="mb-sm text-body-md text-on-surface-variant print:mb-0 print:text-[10px] print:leading-tight">
+            Pēc Latvijas laika aptumsums sāksies <time dateTime="2027-02-20T23:12:00+02:00">20. februārī ap plkst. 23.12</time>.
+            Maksimums būs pēc pusnakts, <time dateTime="2027-02-21T01:13:00+02:00">21. februārī ap plkst. 01.13</time>,
+            un aptumsums beigsies <time dateTime="2027-02-21T03:13:00+02:00">ap plkst. 03.13</time>.
+          </p>
+          <p className="flex flex-wrap gap-x-md gap-y-1 text-label-md print:hidden">
+            <a className="text-primary underline" href="https://eclipse.gsfc.nasa.gov/LEplot/LEplot2001/LE2027Feb20N.pdf">NASA aptumsuma shēma (PDF)</a>
+            <a className="text-primary underline" href="https://www.timeanddate.com/eclipse/in/latvia/riga?iso=20270220">Aptumsuma redzamība Rīgā</a>
+          </p>
+        </Card>
+      )}
 
       <CalendarMonthGuide month={month} />
 
@@ -267,14 +373,21 @@ export default async function MonthCalendarPage({
         </Card>
       </section>
 
+      <DatedCalendarExplorer key={`${year}-${month}`} year={year} month={month} />
+
       {/* Day-by-day table */}
       <h2 id="visas-dienas" className="mb-sm scroll-mt-24 text-headline-md text-on-surface">Visas dienas — {name} {year}</h2>
       <Card tone="low" elevated className="month-day-table mb-lg divide-y divide-outline-variant/10 p-0">
         {days.map((d) => {
           const meta = ELEMENT_META[d.sow.element];
           return (
-            <div key={d.day} className="flex items-center gap-2 px-sm py-2 sm:gap-3 sm:px-md print:break-inside-avoid">
-              <span className="w-7 shrink-0 text-body-md font-semibold text-on-surface">{d.day}.</span>
+            <div key={d.day} id={`diena-${d.day}`} tabIndex={-1} className="flex scroll-mt-24 flex-wrap items-center gap-x-2 gap-y-0.5 px-sm py-2 target:bg-primary-container/30 sm:flex-nowrap sm:gap-x-3 sm:px-md print:flex-nowrap print:break-inside-avoid">
+              <span className="w-10 shrink-0 text-body-md font-semibold text-on-surface sm:w-20 print:w-16">
+                <time dateTime={d.date.toISOString().slice(0, 10)} className="flex flex-col leading-tight sm:flex-row sm:items-baseline sm:gap-1 print:flex-row print:gap-1">
+                  {d.day}.
+                  <abbr title={weekdayLong.format(d.date)} className="text-label-sm font-normal text-on-surface-variant no-underline">{weekdayShort.format(d.date)}</abbr>
+                </time>
+              </span>
               <MoonPhase phase={d.moon.phase} size={26} glow={false} idPrefix={`calendar-day-${d.day}`} />
               <span className="w-24 shrink-0 text-label-sm text-on-surface-variant sm:w-28">{dailyPhaseName(d.moon, eventsByDay.get(d.day))}</span>
               {d.rest ? (
@@ -287,7 +400,12 @@ export default async function MonthCalendarPage({
                   {d.sow.sign.symbol} {meta.partLabel}
                 </span>
               )}
-              {d.names.length > 0 && (
+              {d.holiday ? (
+                <span className="min-w-0 basis-full text-label-sm sm:ml-auto sm:basis-auto sm:text-right print:ml-auto print:basis-auto print:text-right">
+                  <strong className="font-semibold text-primary">{d.holiday}</strong>
+                  {d.names.length > 0 && <span className="hidden text-tertiary sm:inline print:inline"> · {d.names.join(", ")}</span>}
+                </span>
+              ) : d.names.length > 0 && (
                 <span className="ml-auto hidden min-w-0 truncate text-right text-label-sm text-tertiary sm:block print:block">
                   {d.names.join(", ")}
                 </span>
@@ -336,9 +454,9 @@ export default async function MonthCalendarPage({
         <Link href={`/kalendars/${year}`} className="inline-flex items-center gap-1 text-label-md text-primary hover:underline">
           Mēness kalendārs {year} <Icon name="arrow_forward" size="16px" />
         </Link>
-        <Link href="/kalendars" className="inline-flex items-center gap-1 text-label-md text-primary hover:underline">
+        <a href="#interaktivais-kalendars" className="inline-flex items-center gap-1 text-label-md text-primary hover:underline">
           Interaktīvais kalendārs <Icon name="arrow_forward" size="16px" />
-        </Link>
+        </a>
         <Link href="/macies" className="text-label-md text-on-surface-variant hover:text-primary">Kas ir Mēness sēja?</Link>
         <Link href="/augi" className="text-label-md text-on-surface-variant hover:text-primary">Augu enciklopēdija</Link>
         <Link href="/raksti" className="text-label-md text-on-surface-variant hover:text-primary">Raksti</Link>

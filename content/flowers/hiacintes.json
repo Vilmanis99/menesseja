@@ -5,6 +5,10 @@
   "image": { "id": "hiacintes", "caption": "Hiacintes ziedkopa dārza dobē pavasarī." },
   "emoji": "🌸",
   "type": "sipolpuke",
+  "updatedAt": "2026-11-18",
+  "seoDescription": "Kad rudenī stādīt hiacinšu sīpolus, kā noteikt stādīšanas dziļumu un kā pavasarī pārstādīt dobē podiņā noziedējušu hiacinti.",
+  "shortAnswer": "Hiacinšu sīpolus pavasara ziedēšanai dārzā stādi rudenī. Latvijā labs orientieris ir septembra beigas un oktobris. Ja novembrī zeme vēl ir irdena un vieta labi novada ūdeni, sīpolus vēl var iestādīt. Podiņā jau noziedējušu hiacinti pavasarī var pārcelt dobē ar visām zaļajām lapām.",
+  "lifeCycle": "Daudzgadīga sīpolpuķe. Pēc ziedēšanas lapas turpina barot sīpolu. Vēlākos gados ziedkopa var būt irdenāka.",
   "tagline": "Smaržīgākā pavasara puķe — viens pats hiacinšu pudurītis piesmaržo visu dārza stūri.",
   "bloom": "Aprīlis–maijs",
   "bloomMonths": [4, 5],
@@ -12,7 +16,7 @@
   "sun": "Saule",
   "hardy": true,
   "difficulty": "viegli",
-  "plantWhen": "Sīpolus stāda rudenī, sept.–okt., ~15 cm dziļi",
+  "plantWhen": "Rudenī, parasti septembra beigās vai oktobrī",
   "moonPhase": "dilstošs",
   "moonElement": "saknes",
   "moonText": "Sīpolu stādīšana ir sakņu darbs, tāpēc pēc biodinamiskās tradīcijas hiacintes liek zemē dilstošā Mēnesī. Tradīcija dod ritmu, bet svarīgākais ir paspēt rudenī laikus, lai sīpols apsakņojas pirms sala.",
@@ -21,40 +25,80 @@
     "Dārzā hiacintes ir pateicīgākas, nekā daudzi domā: Latvijas ziemu tās pārcieš labi, sevišķi, ja iestādītas pietiekami dziļi un vieta nav slapja. Gadu gaitā vālītes kļūst dabiskākas un irdenākas nekā pirmajā pavasarī — daudziem tieši tā patīk labāk."
   ],
   "planting": [
-    "Stādi rudenī, septembrī–oktobrī, lai sīpols paspēj apsakņoties pirms sala.",
-    "Dziļums ~15 cm līdz sīpola pamatnei — dziļāka stādīšana Latvijā ir hiacintes labākā ziemas aizsardzība; atstatums 10–15 cm.",
-    "Vieta — saulaina, ar irdenu, caurlaidīgu augsni; slapjums sīpoliem ir bīstamāks par salu.",
-    "Smagā augsnē bedrītes dibenā ieber 3–5 cm smilšu spilventiņu.",
-    "Strādā cimdos — hiacinšu sīpoli jutīgai ādai var izraisīt niezi."
+    "Izvēlies saulainu dobi, kur pēc lietus nekrājas ūdens. Stādi rudenī. Latvijas audzētavas “Daugmales peonijas” pieredzē labs laiks ir septembra beigas un oktobris, piemērotā augsnē arī novembris.",
+    "Mēri no augsnes virskārtas līdz sīpola pamatnei. Par orientieri izmanto divus līdz trīs sīpola augstumus. Piemēram, 5 cm augstam sīpolam tie ir 10–15 cm. Ievieto sīpolu ar smailo galu uz augšu.",
+    "Starp sīpoliem atstāj aptuveni 10 cm. Pēc iestādīšanas aplaisti, lai augsne piekļaujas sīpolam.",
+    "Strādā cimdos, jo sīpolu virsma jutīgai ādai var izraisīt niezi."
   ],
   "care": [
-    "Pavasarī, asniem parādoties, var dot nedaudz komposta — ar to pietiek visam gadam.",
-    "Ziedēšanas laikā sausā pavasarī palaisti — vālīte noturēsies ilgāk.",
-    "Novītušo vālīti nogriez, bet lapas atstāj, līdz tās pilnībā nodzeltē — tās baro sīpolu.",
-    "Smagas vālītes pirmajā gadā var atbalstīt ar neuzkrītošu mietiņu.",
-    "Reizi vairākos gados sabiezējušu puduri vasarā (pēc lapu nokalšanas) izrok un izstādi plašāk."
+    "Ja augšanas laikā ilgstoši ir sauss, aplaisti pie saknēm. Podiņā pārbaudi, vai liekais ūdens var iztecēt.",
+    "Novītušo ziedkātu nogriez pie pamatnes. Zaļās lapas atstāj, līdz tās dabiski nodzeltē un nokalst.",
+    "Pavasarī podiņā noziedējušu hiacinti vari pārstādīt saulainā, caurlaidīgā dobē arī ar vēl zaļām lapām. Turpini laistīt sausā laikā, kamēr lapas aug."
   ],
-  "winter": "Latvijā hiacintes ziemo atklātā laukā, ja iestādītas ~15 cm dziļi caurlaidīgā augsnē. Pirmajā ziemā un aukstākos iekšzemes dārzos stādījumu der viegli piesegt ar lapām vai egļu zariem — pavasarī segumu noņem agri, tiklīdz parādās asni.",
+  "winter": "Zemē iestādītai hiacintei izvēlies labi drenētu vietu. Daugmales audzētāja pieredzē sīpoli siltā dobē pie dienvidu sienas ir sekmīgi ziemojuši arī bez piesegšanas. Virs zemes novietotā podā sīpoli ir jutīgāki pret stipru salu. Aukstā vietā podu pārvieto aizvējā un nosiltini tā sānus.",
   "problems": [
-    "Sīpolu puve slapjā vietā — stādi caurlaidīgā augsnē ar smilšu drenāžu.",
-    "Peles un strupastes var aiztikt sīpolus — palīdz stādīšana sietiņos un narcises blakus.",
-    "Otrajā gadā vālīte irdenāka — tas ir normāli; hiacinte dārzā pamazām pāriet uz dabiskāku ziedēšanu."
+    "Ja dobe pēc lietus ilgi paliek slapja, izvēlies citu stādīšanas vietu. Mīkstus sīpolus vai sīpolus ar puves pazīmēm izbrāķē.",
+    "Otrajā pavasarī ziedkopa var būt mazāka vai irdenāka. Pirmās ziedēšanas blīvumu ietekmē arī apstākļi audzētavā."
   ],
-  "folklore": "Hiacintes smarža vecajās Latvijas mājās bija pavasara svētku smarža — podiņā uzdzītas hiacintes lika uz palodzes Lieldienām, un dārza hiacinšu pudurītis pie celiņa skaitījās viesmīlīgas mājas zīme.",
   "faq": [
     {
+      "q": "Kad Latvijā stāda hiacinšu sīpolus?",
+      "a": "Dārzā tos parasti stāda septembra beigās vai oktobrī. Siltā rudenī stādīšana iespējama arī novembrī, ja augsni vēl var apstrādāt un dobe nav pārmitra."
+    },
+    {
       "q": "Vai hiacintes pārziemo Latvijā?",
-      "a": "Jā — ja iestādītas ~15 cm dziļi, caurlaidīgā, ne slapjā augsnē. Pirmajā ziemā un aukstākos novados der viegls lapu vai skuju segums."
+      "a": "Hiacintes var pārziemot dobē. Izvēlies siltu, saulainu vietu ar caurlaidīgu augsni. Ārā atstātu podu stiprā salā sargā no caursalšanas."
     },
     {
       "q": "Kāpēc hiacinte otrajā gadā zied irdenāk?",
-      "a": "Tas ir dabiski: pirmā gada superblīvā vālīte nāk no audzētavas uzkrātā spēka. Dārzā hiacinte pāriet uz dabiskāku, vieglāku ziedēšanu — augs ir vesels, tikai izskatās dabiskāk."
+      "a": "Audzētavā sagatavotam sīpolam pirmā ziedkopa mēdz būt ļoti blīva. Turpmāk ziedu skaits var samazināties arī veselīgam augam."
     },
     {
       "q": "Vai podiņa hiacinti no veikala var iestādīt dārzā?",
-      "a": "Var! Pēc noziedēšanas telpās ļauj lapām nodzeltēt, tad sīpolu pavasarī vai rudenī iestādi dārzā ~15 cm dziļi. Nākamajā vai aiznākamajā pavasarī tā uzziedēs dobē."
+      "a": "Jā. Pavasarī pēc noziedēšanas nogriez ziedkātu un iestādi augu dobē, saglabājot zaļās lapas. Sīpolam var būt vajadzīgs laiks, lai atjaunotos. Nākamā ziedkopa var būt retāka."
     }
   ],
+  "sources": [
+    {
+      "label": "Daugmales peonijas — hiacinšu audzēšanas pieredze Latvijā",
+      "url": "https://daugmalespeonijas.lv/wp/?page_id=615"
+    },
+    {
+      "label": "Bulduru tehnikuma dārznieču pieredze — podiņā noziedējušu sīpolpuķu pārstādīšana",
+      "url": "https://www.lsm.lv/raksts/dzive-stils/darzs-un-majas/15.05.2026-izmest-vai-iestadit-darzniecu-padomi-par-podinu-narcisem-hiacintem-primulam-un-mazajam-rozitem.a647254/"
+    },
+    {
+      "label": "RHS — hiacintes dobē un podā, kopšana pēc ziedēšanas",
+      "url": "https://www.rhs.org.uk/plants/hyacinth/growing-guide"
+    },
+    {
+      "label": "Viskonsinas Universitāte — sīpolpuķu stādīšanas dziļuma mērīšana",
+      "url": "https://hort.extension.wisc.edu/planting-spring-bulbs/"
+    }
+  ],
+  "sectionSources": {
+    "intro": [
+      "https://daugmalespeonijas.lv/wp/?page_id=615",
+      "https://www.rhs.org.uk/plants/hyacinth/growing-guide"
+    ],
+    "planting": [
+      "https://daugmalespeonijas.lv/wp/?page_id=615",
+      "https://hort.extension.wisc.edu/planting-spring-bulbs/",
+      "https://www.rhs.org.uk/plants/hyacinth/growing-guide"
+    ],
+    "care": [
+      "https://www.lsm.lv/raksts/dzive-stils/darzs-un-majas/15.05.2026-izmest-vai-iestadit-darzniecu-padomi-par-podinu-narcisem-hiacintem-primulam-un-mazajam-rozitem.a647254/",
+      "https://www.rhs.org.uk/plants/hyacinth/growing-guide"
+    ],
+    "winter": [
+      "https://daugmalespeonijas.lv/wp/?page_id=615",
+      "https://www.rhs.org.uk/plants/hyacinth/growing-guide"
+    ],
+    "problems": [
+      "https://www.rhs.org.uk/plants/hyacinth/growing-guide",
+      "https://daugmalespeonijas.lv/wp/?page_id=615"
+    ]
+  },
   "links": [{ "label": "Hiacintes podiņā un glāzē: uzziedināšana telpās", "href": "/raksti/hiacintes-podina-un-glaze" }],
   "related": ["krokusi", "narcises", "tulpes", "lilijas"]
 }

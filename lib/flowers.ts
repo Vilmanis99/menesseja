@@ -10,7 +10,9 @@ export type FlowerSourceSection = "intro" | "planting" | "care" | "winter" | "pr
 export interface Flower {
   slug: string;
   image?: ContentImageUse;
+  identificationImage?: ContentImageUse;
   name: string; // Latvian
+  aliases?: string[];
   /** Accusative for "Kā kopt …" headings when it differs from the lowercased name (lavanda → lavandu). */
   nameAcc?: string;
   latin?: string;

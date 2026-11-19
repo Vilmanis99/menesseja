@@ -2,35 +2,27 @@
 
 import { useState } from "react";
 import { Icon } from "@/components/ui/icon";
+import { PlantCultivarEditor } from "@/components/cultivar-field";
+import { plantDisplayName } from "@/lib/plant-display-name";
+import { PlantDateForm } from "@/components/plant-date-form";
 import { Button } from "@/components/ui/button";
 import { Chip } from "@/components/ui/chip";
 import { Modal } from "@/components/ui/modal";
 import { ProgressBar } from "@/components/ui/progress-bar";
 import { useGarden } from "@/components/garden-context";
-import { cropById, plantStatus, LOG_META, type Plant, type LogType } from "@/lib/garden";
+import { cropById, harvestAmountError, harvestDateError, harvestEstimate, isGardenDate, plantStatus, LOG_META, type Plant, type LogEntry, type LogType } from "@/lib/garden";
 import { cropEmoji } from "@/lib/crop-visual";
 import { cropPart, PART_ELEMENT } from "@/lib/crop-part";
 import { ELEMENT_META } from "@/lib/biodynamic";
-import { SOIL_TEMP_MIN } from "@/lib/sowing-thresholds";
+import { soilTemperatureFact } from "@/lib/sowing-thresholds";
 import { nextSowing } from "@/lib/succession";
-import { DIFFICULTY_LABEL, MONTHS_LV_FULL } from "@/lib/planting-crops";
+import { latviaDateKey } from "@/lib/day-anchor";
+import { DIFFICULTY_LABEL } from "@/lib/planting-crops";
 
-const DATE_FMT = new Intl.DateTimeFormat("lv-LV", { day: "numeric", month: "long", year: "numeric" });
-const SHORT_FMT = new Intl.DateTimeFormat("lv-LV", { day: "numeric", month: "short" });
-
-function harvestEstimate(plant: Plant): string {
-  const crop = cropById(plant.cropId);
-  if (!crop) return "—";
-  const nums = crop.daysToHarvest?.match(/\d+/g);
-  if (nums) {
-    const avg = nums[1] ? (parseInt(nums[0]) + parseInt(nums[1])) / 2 : parseInt(nums[0]);
-    const d = new Date(plant.sownAt);
-    d.setDate(d.getDate() + avg);
-    return `~${DATE_FMT.format(d)}`;
-  }
-  if (crop.harvest) return `${MONTHS_LV_FULL[crop.harvest[0] - 1]}–${MONTHS_LV_FULL[crop.harvest[1] - 1]}`;
-  return "Daudzgadīgs";
-}
+const DATE_FMT = new Intl.DateTimeFormat("lv-LV", { timeZone: "Europe/Riga", day: "numeric", month: "long", year: "numeric" });
+const QUANTITY_FMT = new Intl.NumberFormat("lv-LV", { maximumFractionDigits: 10 });
+const LOG_DATE_FMT = new Intl.DateTimeFormat("lv-LV", { timeZone: "Europe/Riga", day: "2-digit", month: "2-digit", year: "numeric" });
+const SHORT_FMT = new Intl.DateTimeFormat("lv-LV", { timeZone: "Europe/Riga", day: "numeric", month: "short" });
 
 export function PlantDetail({
   plant,
@@ -41,38 +33,69 @@ export function PlantDetail({
   onClose: () => void;
   onRemove: () => void;
 }) {
-  const { plants, addLog, removeLog, addPlant } = useGarden();
+  const { plants, addLog, removeLog, addPlant, recordPlantDate, syncing } = useGarden();
   const live = plants.find((p) => p.id === plant.id) ?? plant;
   const crop = cropById(live.cropId);
 
+  const [editingDates, setEditingDates] = useState(false);
   const [logType, setLogType] = useState<LogType>("laistits");
   const [note, setNote] = useState("");
+  const [savingLog, setSavingLog] = useState(false);
+  const [logFailed, setLogFailed] = useState(false);
+  const [savedLog, setSavedLog] = useState<Pick<LogEntry, "type" | "date"> | null>(null);
+  const [showAllLogs, setShowAllLogs] = useState(false);
   const [amount, setAmount] = useState("");
+  const [harvestUnit, setHarvestUnit] = useState<NonNullable<LogEntry["unit"]>>("kg");
+  const [harvestDate, setHarvestDate] = useState<string | null>(null);
 
   if (!crop) return null;
   const st = plantStatus(live);
   const elem = ELEMENT_META[PART_ELEMENT[cropPart(live.cropId)]];
-  const soil = SOIL_TEMP_MIN[live.cropId];
+  const soil = soilTemperatureFact(crop);
   const succ = nextSowing(live);
+  const today = latviaDateKey();
+  const sownOn = isGardenDate(live.sownOn, today) ? live.sownOn : null;
+  const amountError = logType === "raza" ? harvestAmountError(amount, harvestUnit) : null;
+  const harvestError = logType === "raza" ? harvestDateError(live, harvestDate ?? today, today) : null;
+  const plantedOn = live.plantedOn && isGardenDate(live.plantedOn) ? live.plantedOn : null;
+  const entries = [...(live.log ?? [])].sort((a, b) => String(b.date ?? "").localeCompare(String(a.date ?? "")));
 
-  function submitLog() {
-    addLog(live.id, {
-      date: new Date().toISOString().slice(0, 10),
-      type: logType,
-      note: note.trim() || undefined,
-      amount: logType === "raza" && amount ? Number(amount) : undefined,
-      unit: logType === "raza" ? "kg" : undefined,
-    });
-    setNote("");
-    setAmount("");
+  async function submitLog() {
+    if (live.seed || savingLog || syncing) return;
+    const currentDay = latviaDateKey();
+    const date = logType === "raza" ? harvestDate ?? currentDay : currentDay;
+    if (logType === "raza" && (harvestDateError(live, date, currentDay) || amountError)) return;
+    setSavingLog(true);
+    setLogFailed(false);
+    setSavedLog(null);
+    try {
+      const saved = await addLog(live.id, {
+        date,
+        type: logType,
+        note: note.trim() || undefined,
+        amount: logType === "raza" && amount ? Number(amount) : undefined,
+        unit: logType === "raza" && amount ? harvestUnit : undefined,
+      });
+      if (saved) {
+        setSavedLog({ type: logType, date });
+        if (entries.filter((entry) => entry.date > date).length >= 3) setShowAllLogs(true);
+        setNote("");
+        setAmount("");
+        setHarvestDate(null);
+        setHarvestUnit("kg");
+      } else setLogFailed(true);
+    } catch {
+      setLogFailed(true);
+    } finally {
+      setSavingLog(false);
+    }
   }
 
   const rows: { icon: string; label: string; value: string }[] = [
     { icon: "location_on", label: "Zona", value: live.area },
-    { icon: "event", label: "Iestādīts", value: DATE_FMT.format(new Date(live.sownAt)) },
-    { icon: "agriculture", label: "Gaidāmā raža", value: harvestEstimate(live) },
+    { icon: "agriculture", label: crop.category === "pukes" ? "Aptuvenais ziedēšanas laiks" : "Aptuvenais ražas laiks", value: harvestEstimate(live) },
     { icon: elem.icon, label: "Labākā Mēness diena", value: `${elem.partLabel} (${elem.label})` },
-    ...(soil ? [{ icon: "thermostat", label: "Augsne sējai", value: `≥ ${soil}°C` }] : []),
+    ...(soil ? [{ icon: "thermostat", label: soil.label, value: soil.value }] : []),
     ...(crop.sun ? [{ icon: "wb_sunny", label: "Gaisma", value: crop.sun }] : []),
     { icon: "eco", label: "Grūtība", value: DIFFICULTY_LABEL[crop.difficulty] },
   ];
@@ -86,25 +109,139 @@ export function PlantDetail({
     >
       <>
         {/* Header */}
-        <div className="sticky top-0 flex items-start justify-between gap-2 border-b border-outline-variant/10 bg-surface-container-high p-md">
-          <div className="flex items-center gap-3">
+        <div className="sticky top-0 z-10 flex items-start justify-between gap-2 border-b border-outline-variant/10 bg-surface-container-high p-md">
+          <div className="flex min-w-0 items-center gap-3">
             <span className="text-4xl leading-none">{cropEmoji(live.cropId)}</span>
-            <div>
-              <h3 id="plant-detail-title" className="text-headline-md text-on-surface">{crop.name}</h3>
-              <p className="text-body-md text-on-surface-variant">{st.label}</p>
+            <div className="min-w-0">
+              <h3 id="plant-detail-title" className="text-headline-md text-on-surface [overflow-wrap:anywhere]">{plantDisplayName(live)}</h3>
+              <p className="text-body-md text-on-surface-variant">{live.seed ? "Parauga augs" : live.area}</p>
             </div>
           </div>
           <button
             onClick={onClose}
             aria-label="Aizvērt"
-            className="flex h-11 w-11 items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-variant/50 hover:text-primary"
+            className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-variant/50 hover:text-primary"
           >
             <Icon name="close" />
           </button>
         </div>
 
         <div className="space-y-md p-md">
-          <ProgressBar value={st.progress} tone={st.tone} glow={st.tone === "secondary"} />
+          {/* Care log */}
+          {live.seed ? (
+            <section className="space-y-2" aria-labelledby="example-care-heading">
+              <h4 id="example-care-heading" className="text-title-md text-on-surface">Kopšanas žurnāla piemērs</h4>
+              <p className="text-body-md text-on-surface-variant">Savā dārzā vari pierakstīt, kad augu laistīji, mēsloji vai ievāci ražu.</p>
+              <div className="flex items-center gap-sm rounded-lg bg-background/40 p-sm text-on-surface">
+                <Icon name="water_drop" className="text-primary" size="20px" />
+                <div>
+                  <p className="font-semibold">Laistīts · <time dateTime={today}>{LOG_DATE_FMT.format(new Date(today))}</time></p>
+                  <p className="text-body-md text-on-surface-variant">Aplaistīju pēc augsnes mitruma pārbaudes.</p>
+                </div>
+              </div>
+            </section>
+          ) : (
+            <section aria-labelledby="plant-care-heading">
+              <h4 id="plant-care-heading" className="mb-sm text-title-md text-on-surface">Kopšanas žurnāls</h4>
+              <fieldset disabled={savingLog || syncing} aria-label="Ieraksta veids" className="mb-sm flex flex-wrap gap-2">
+                {(Object.keys(LOG_META) as LogType[]).map((t) => (
+                  <Chip key={t} tone="neutral" active={t === logType} onClick={() => { setLogType(t); setLogFailed(false); setSavedLog(null); }}>
+                    {LOG_META[t].label}
+                  </Chip>
+                ))}
+              </fieldset>
+              <form onSubmit={(event) => { event.preventDefault(); void submitLog(); }}>
+                <fieldset disabled={savingLog || syncing} aria-label="Kopšanas ieraksts" className="flex min-w-0 flex-wrap gap-2">
+                  {logType === "raza" && (
+                    <>
+                      <div className="w-full">
+                        <label className="inline-flex max-w-full flex-col gap-1 text-label-md text-on-surface">
+                          Ražas novākšanas datums
+                          <input type="date" required min={sownOn ?? undefined} max={today} value={harvestDate ?? today}
+                            onChange={(event) => setHarvestDate(event.target.value)} aria-invalid={Boolean(harvestError)}
+                            aria-describedby={harvestError ? "harvest-date-error" : undefined}
+                            className="min-h-11 min-w-0 rounded-lg border border-outline-variant/30 bg-surface-container-low px-3 py-2 text-body-md text-on-surface" />
+                        </label>
+                        {harvestError && <p id="harvest-date-error" role="status" className="mt-1 text-body-sm text-error">{harvestError}</p>}
+                      </div>
+                      <div className="grid w-full grid-cols-[minmax(0,1fr)_minmax(5.5rem,0.55fr)] gap-2">
+                        <label className="flex min-w-0 flex-col gap-1 text-label-md text-on-surface">
+                          Ražas daudzums
+                          <input type="number" value={amount} onChange={(event) => setAmount(event.target.value)}
+                            inputMode={harvestUnit === "gab" ? "numeric" : "decimal"} step={harvestUnit === "gab" ? "1" : "any"} min={harvestUnit === "gab" ? "1" : "0"}
+                            aria-invalid={Boolean(amountError)} aria-describedby={amountError ? "harvest-amount-error" : "harvest-amount-help"}
+                            className="min-h-11 min-w-0 rounded-lg border border-outline-variant/30 bg-surface-container-low px-3 py-2 text-body-md text-on-surface" />
+                        </label>
+                        <label className="flex min-w-0 flex-col gap-1 text-label-md text-on-surface">
+                          Mērvienība
+                          <select value={harvestUnit} onChange={(event) => setHarvestUnit(event.target.value === "gab" ? "gab" : "kg")}
+                            className="min-h-11 min-w-0 rounded-lg border border-outline-variant/30 bg-surface-container-low px-2 py-2 text-body-md text-on-surface">
+                            <option value="kg">kg</option>
+                            <option value="gab">gab.</option>
+                          </select>
+                        </label>
+                      </div>
+                      <p id="harvest-amount-help" className="w-full text-body-sm text-on-surface-variant">Ja pieraksti tikai ražas datumu, daudzumu atstāj tukšu.</p>
+                      {amountError && <p id="harvest-amount-error" role="status" className="w-full text-body-sm text-error">{amountError}</p>}
+                    </>
+                  )}
+                  <input
+                    value={note}
+                    onChange={(e) => setNote(e.target.value)}
+                    placeholder="Piezīme (neobligāti)"
+                    aria-label="Piezīme"
+                    className="min-w-0 flex-1 rounded-lg border border-outline-variant/30 bg-surface-container-low px-3 py-2 text-body-md text-on-surface outline-none focus:border-primary"
+                  />
+                  <Button type="submit" icon="check" className="px-sm py-xs" disabled={Boolean(harvestError || amountError)}>
+                    Saglabāt ierakstu
+                  </Button>
+                  {logFailed && <p role="alert" className="w-full text-body-sm text-error">Ieraksta saglabāšana neizdevās. Vari mēģināt vēlreiz.</p>}
+                </fieldset>
+              </form>
+
+              <div role="status" aria-live="polite" className={savedLog ? "mt-xs text-body-md text-primary" : "sr-only"}>
+                {savedLog && <>Saglabāts auga žurnālā. {LOG_META[savedLog.type].label} · <time dateTime={savedLog.date}>{LOG_DATE_FMT.format(new Date(savedLog.date))}</time></>}
+              </div>
+              {entries.length > 0 && (
+                <ul className="mt-sm space-y-1.5" aria-label="Saglabātie kopšanas ieraksti">
+                  {(showAllLogs ? entries : entries.slice(0, 3)).map((l) => (
+                    <li key={l.id} className="flex items-center gap-2 rounded-lg bg-background/40 px-3 py-2 text-body-md">
+                      <Icon name={LOG_META[l.type]?.icon ?? "edit_note"} size="18px" className="shrink-0 text-primary" />
+                      <div className="min-w-0 flex-1">
+                        <span className="text-on-surface">{LOG_META[l.type]?.label ?? "Kopšanas ieraksts"}</span>
+                        {typeof l.amount === "number" && Number.isFinite(l.amount) && <span className="ml-2 text-secondary">{QUANTITY_FMT.format(l.amount)}{l.unit === "gab" ? " gab." : l.unit === "kg" ? " kg" : ""}</span>}
+                        {l.note && <p className="break-words text-on-surface-variant">{l.note}</p>}
+                      </div>
+                      {isGardenDate(l.date, today)
+                        ? <time dateTime={l.date} className="whitespace-nowrap text-label-sm text-on-surface-variant">{LOG_DATE_FMT.format(new Date(l.date))}</time>
+                        : <span className="text-label-sm text-on-surface-variant">Datums nav zināms</span>}
+                      <button
+                        onClick={() => { setSavedLog(null); removeLog(live.id, l.id); }}
+                        aria-label="Dzēst ierakstu"
+                        className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-on-surface-variant/70 transition-colors hover:bg-surface-variant/50 hover:text-error"
+                      >
+                        <Icon name="close" size="14px" />
+                      </button>
+                    </li>
+                  ))}
+                </ul>
+              )}
+              {entries.length > 3 && (
+                <button type="button" aria-expanded={showAllLogs} onClick={() => setShowAllLogs(!showAllLogs)}
+                  className="mt-1 inline-flex min-h-11 items-center text-label-md font-semibold text-primary underline underline-offset-2">
+                  {showAllLogs ? "Rādīt pēdējos trīs" : `Skatīt visus ierakstus (${entries.length})`}
+                </button>
+              )}
+            </section>
+          )}
+
+          {!live.seed && <PlantCultivarEditor key={live.id} plant={live} />}
+          {st.progress !== null && (
+            <div className="space-y-1">
+              <p className="text-body-sm text-on-surface-variant">{st.label}</p>
+              <ProgressBar value={st.progress} tone={st.tone} glow={st.tone === "secondary"} />
+            </div>
+          )}
 
           <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
             {rows.map((r) => (
@@ -113,10 +250,40 @@ export function PlantDetail({
                 <div>
                   <p className="text-label-sm uppercase tracking-wide text-on-surface-variant">{r.label}</p>
                   <p className="text-body-md text-on-surface">{r.value}</p>
+                  {r.icon === "agriculture" && <p className="text-label-sm text-on-surface-variant">Laiku ietekmē šķirne un augšanas apstākļi.</p>}
                 </div>
               </div>
             ))}
           </div>
+
+          <section className="space-y-sm">
+            <h4 className="text-label-md font-semibold text-on-surface">Sējas un stādīšanas datumi</h4>
+            {sownOn && (
+              <p className="text-body-md text-on-surface">Iesēts {DATE_FMT.format(new Date(sownOn))}</p>
+            )}
+            {plantedOn && (
+              <p className="text-body-md text-on-surface">{crop.sowIndoors && crop.transplant ? "Dēsts izstādīts" : "Iestādīts"} {DATE_FMT.format(new Date(plantedOn))}</p>
+            )}
+            {!sownOn && !plantedOn && <p className="text-body-md text-on-surface-variant">Datums nav norādīts.</p>}
+            {!live.seed && (editingDates ? (
+              <PlantDateForm
+                crop={crop}
+                plant={live}
+                disabled={syncing}
+                onSave={async (start) => {
+                  if (start.action === "unknown") return false;
+                  const saved = await recordPlantDate(live.id, start.action, start.date);
+                  if (saved) setEditingDates(false);
+                  return saved;
+                }}
+                onCancel={() => setEditingDates(false)}
+              />
+            ) : (
+              <Button variant="outline" icon="edit" disabled={syncing} onClick={() => setEditingDates(true)}>
+                {sownOn || plantedOn ? "Labot vai papildināt datumus" : "Pierakstīt datumu"}
+              </Button>
+            ))}
+          </section>
 
           {/* Succession */}
           {succ && (
@@ -126,13 +293,13 @@ export function PlantDetail({
                 Atkārtotā sēja: nākamā partija ~{SHORT_FMT.format(succ.date)}
                 {!succ.inWindow && " (ārpus sējas loga)"}
               </span>
-              <Button
+              {!live.seed && <Button
                 variant="outline"
                 className="ml-auto px-sm py-xs"
-                onClick={() => addPlant(live.cropId, live.area)}
+                onClick={() => addPlant(live.cropId, live.area, { action: "sown", date: latviaDateKey() }, live.cultivar ?? undefined)}
               >
                 Atzīmēt kā iesētu
-              </Button>
+              </Button>}
             </div>
           )}
 
@@ -143,66 +310,7 @@ export function PlantDetail({
             </div>
           )}
 
-          {/* Care log */}
-          <div>
-            <h4 className="mb-sm text-label-md uppercase tracking-wider text-on-surface">Kopšanas žurnāls</h4>
-            <div className="mb-sm flex flex-wrap gap-2">
-              {(Object.keys(LOG_META) as LogType[]).map((t) => (
-                <Chip key={t} tone="neutral" active={t === logType} onClick={() => setLogType(t)}>
-                  {LOG_META[t].label}
-                </Chip>
-              ))}
-            </div>
-            <div className="flex flex-wrap gap-2">
-              {logType === "raza" && (
-                <input
-                  value={amount}
-                  onChange={(e) => setAmount(e.target.value)}
-                  type="number"
-                  inputMode="decimal"
-                  placeholder="kg"
-                  aria-label="Ražas daudzums kg"
-                  className="w-20 rounded-lg border border-outline-variant/30 bg-surface-container-low px-3 py-2 text-body-md text-on-surface outline-none focus:border-primary"
-                />
-              )}
-              <input
-                value={note}
-                onChange={(e) => setNote(e.target.value)}
-                onKeyDown={(e) => e.key === "Enter" && submitLog()}
-                placeholder="Piezīme (neobligāti)"
-                aria-label="Piezīme"
-                className="min-w-0 flex-1 rounded-lg border border-outline-variant/30 bg-surface-container-low px-3 py-2 text-body-md text-on-surface outline-none focus:border-primary"
-              />
-              <Button icon="add" className="px-sm py-xs" onClick={submitLog}>
-                Pievienot
-              </Button>
-            </div>
-
-            {live.log && live.log.length > 0 && (
-              <ul className="mt-sm space-y-1.5">
-                {live.log.map((l) => (
-                  <li key={l.id} className="flex items-center gap-2 rounded-lg bg-background/40 px-3 py-2 text-body-md">
-                    <Icon name={LOG_META[l.type].icon} size="18px" className="text-primary" />
-                    <span className="text-on-surface">{LOG_META[l.type].label}</span>
-                    {l.amount != null && <span className="text-secondary">{l.amount} {l.unit}</span>}
-                    {l.note && <span className="text-on-surface-variant">— {l.note}</span>}
-                    <span className="ml-auto text-label-sm capitalize text-on-surface-variant/70">
-                      {SHORT_FMT.format(new Date(l.date))}
-                    </span>
-                    <button
-                      onClick={() => removeLog(live.id, l.id)}
-                      aria-label="Dzēst ierakstu"
-                      className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-on-surface-variant/70 transition-colors hover:bg-surface-variant/50 hover:text-error"
-                    >
-                      <Icon name="close" size="14px" />
-                    </button>
-                  </li>
-                ))}
-              </ul>
-            )}
-          </div>
-
-          <Button
+          {!live.seed && <Button
             variant="ghost"
             icon="delete"
             fullWidth
@@ -212,7 +320,7 @@ export function PlantDetail({
             }}
           >
             Izņemt no dārza
-          </Button>
+          </Button>}
         </div>
       </>
     </Modal>

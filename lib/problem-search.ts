@@ -13,6 +13,7 @@ const SEARCH_TERMS: Record<string, string[]> = {
   laputis: ["lipīgas lapas", "lipīga lapa", "lapas čokurojas"],
   baltblusina: ["lipīgas lapas", "lipīga lapa", "balti kukaiņi"],
   tiklerces: ["tīkls", "smalks tīkls", "zirnekļa tīkls"],
+  melnkaja: ["melnā kāja", "dēsti nogāžas"],
   miltrasa: ["balts aplikums", "balts pārklājums", "miltaini plankumi"],
   "lakstu-puve": ["brūni plankumi", "tomātu puve", "kartupeļu puve"],
 };

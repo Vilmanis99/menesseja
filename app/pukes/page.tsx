@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { FlowerDirectory } from "@/components/flower-directory";
 import { FlowerPhotoCard } from "@/components/flower-gallery";
-import { PageHeader } from "@/components/ui/page-header";
+import { FlowerAtlasCover } from "@/components/flower-atlas-cover";
 import { Card } from "@/components/ui/card";
 import { JsonLd } from "@/components/json-ld";
 import { DataNote } from "@/components/data-note";
@@ -13,8 +13,8 @@ import { flowerDirectoryEntries } from "@/lib/flower-directory";
 import { canonical, SITE_NAME, og } from "@/lib/seo";
 
 const TOTAL_NAMES = flowerDirectoryEntries(getAllFlowers()).length;
-const TITLE = `Puķu nosaukumi no A līdz Z — ${TOTAL_NAMES} Latvijas dārza puķes`;
-const DESCRIPTION = `Puķu nosaukumi alfabēta secībā: ${TOTAL_NAMES} nosaukumu ieraksti ar latīniskajiem un tautas nosaukumiem. Meklē puķi, salīdzini īstas fotogrāfijas un atver audzēšanas ceļvedi.`;
+const TITLE = "Puķu nosaukumi no A līdz Z — dārza un istabas puķes";
+const DESCRIPTION = `Dārza un istabas puķu nosaukumi alfabēta secībā. Meklē starp ${TOTAL_NAMES} ierakstiem pēc latviskā, latīniskā vai tautas nosaukuma, salīdzini foto un atrodi kopšanas ceļvedi.`;
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -38,8 +38,8 @@ export default function PukesPage() {
   const items = allNames.map((item) => {
     const flower = flowers.find((f) => item.href === `/pukes/${f.slug}`);
     // A species-specific entry gets its own photo, never a generic genus photo.
-    const image = flower?.image ?? (item.name === "Turku neļķes" ? { id: "turku-nelkes", caption: "Turku neļķu (Dianthus barbatus) ziedkopas. Citu neļķu sugu izskats un audzēšana var atšķirties." } : undefined);
-    const photo = image && item.href && (flower?.name === item.name || item.name === "Turku neļķes")
+    const image = item.image ?? (flower?.name === item.name ? flower.image : undefined);
+    const photo = image && item.href
       ? <FlowerPhotoCard name={item.name} latin={item.latin} href={item.href} imageId={image.id} caption={image.caption} /> : undefined;
     return { ...item, photo };
   });
@@ -55,8 +55,7 @@ export default function PukesPage() {
   return <>
     <JsonLd data={jsonLd} />
     <JsonLd data={{ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: FAQ.map((q) => ({ "@type": "Question", name: q.q, acceptedAnswer: { "@type": "Answer", text: q.a } })) }} />
-    <PageHeader eyebrow="Puķu ceļvedis" title="Puķu nosaukumi no A līdz Z" subtitle={`${TOTAL_NAMES} nosaukumi: atrodi puķi, salīdzini īstas fotogrāfijas un izvēlies, ko audzēt savā dārzā.`} />
-    <p className="mb-md max-w-3xl text-body-md text-on-surface-variant">Apkopoti dārzos audzētu puķu nosaukumi — ģintis, sugas un audzēšanas grupas. Saite “Ceļvedis” atver stādīšanas un kopšanas aprakstu; pārējiem nosaukumiem šeit ir īsa uzziņa.</p>
+    <FlowerAtlasCover nameCount={allNames.length} />
 
     <FlowerDirectory items={items} />
 
@@ -105,7 +104,7 @@ export default function PukesPage() {
 
     <section aria-labelledby="flower-sources-title" className="rounded-xl border border-outline-variant/20 p-md">
       <h2 id="flower-sources-title" className="text-title-md text-on-surface">Nosaukumu un atpazīšanas avoti</h2>
-      <p className="mt-2 text-body-sm text-on-surface-variant">Nosaukumu precizējumi pārskatīti 2026. gada 27. oktobrī. Avoti palīdz izprast konkrētu nosaukumu vai atpazīšanas principu; tie nav visu saistīto kopšanas ceļvežu ekspertīze. Katras fotogrāfijas avots un licence norādīti pie attēla.</p>
+      <p className="mt-2 text-body-sm text-on-surface-variant">Dārza puķu nosaukumu precizējumi pārskatīti 2026. gada 27. oktobrī, istabas puķu izlase pievienota 18. novembrī. Katras fotogrāfijas avots un licence norādīti pie attēla.</p>
       <ul className="mt-sm space-y-2 text-body-md">
         {FLOWER_NAME_SOURCES.map((source) => <li key={source.url}><a href={source.url} className="text-primary underline underline-offset-2">{source.label}</a></li>)}
         <li><a href="https://botsoc.scot/learn/" className="text-primary underline underline-offset-2">Botanical Society of Scotland: augu nosaukumi un pazīmes atpazīšanai</a></li>

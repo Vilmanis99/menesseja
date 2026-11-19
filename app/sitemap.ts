@@ -11,7 +11,7 @@ import { getAllProblems } from "@/lib/kaitekli";
 import { MONTH_SLUGS, calendarYears, SITE_URL } from "@/lib/seo";
 import { MONTH_GUIDES } from "@/lib/month-guides";
 import { SEASONAL_LINKS_UPDATED_AT } from "@/lib/seasonal";
-import { CALENDAR_GUIDES_UPDATED_AT } from "@/lib/calendar-guides";
+import { CALENDAR_GUIDES_UPDATED_AT, calendarGuideUpdatedAt } from "@/lib/calendar-guides";
 
 export const revalidate = 3600;
 
@@ -115,9 +115,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const years = calendarYears();
   const monthPages: MetadataRoute.Sitemap = years.flatMap((year) =>
-    MONTH_SLUGS.map((m) => ({
+    MONTH_SLUGS.map((m, index) => ({
       url: url(`/kalendars/${year}/${m}`),
-      lastModified: new Date(CALENDAR_GUIDES_UPDATED_AT),
+      lastModified: new Date(calendarGuideUpdatedAt(index + 1)),
       priority: 0.7,
       changeFrequency: "yearly" as const,
     })),

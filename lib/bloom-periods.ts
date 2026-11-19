@@ -84,7 +84,7 @@ export const BLOOM_PERIODS: BloomPeriod[] = [
   },
   {
     slug: "pavasari",
-    updatedAt: "2026-10-06",
+    updatedAt: "2026-11-19",
     months: [3, 4, 5],
     h1: "Pavasara puķes",
     title: "Pavasara puķes — kas zied martā, aprīlī un maijā Latvijā",
@@ -95,6 +95,7 @@ export const BLOOM_PERIODS: BloomPeriod[] = [
     care:
       "Tulpju, narcišu un krokusu sīpolus nākamā pavasara ziedēšanai parasti stāda iepriekšējā rudenī. Pavasarī kop jau augošās puķes un pēc sīpolpuķu noziedēšanas ļauj lapām dabiski nodzeltēt. Citu puķu stādīšanas laiku pārbaudi katra auga ceļvedī — visam sarakstam viens termiņš neder.",
     relatedLinks: [
+      { href: "/pukes/sniegpulkstenites", label: "Sniegpulkstenīšu atpazīšana un kopšana" },
       { href: "/raksti/tulpju-stadisana-rudeni", label: "Kad stādīt tulpju sīpolus" },
       { href: "/pukes/narcises", label: "Narcišu stādīšana un kopšana" },
       { href: "/ko-set/aprilis", label: "Ko sēt un stādīt aprīlī" },
@@ -106,7 +107,7 @@ export const BLOOM_PERIODS: BloomPeriod[] = [
       },
       {
         q: "Kuras pavasara puķes zied vispirms?",
-        a: "Krokusi un sniegpulkstenīši — tie parādās jau martā, bieži vēl starp sniega laukumiem. Tiem seko narcises un hiacintes aprīlī, tad tulpes aprīlī–maijā.",
+        a: "Starp pirmajām zied sniegpulkstenītes un agri ziedošie krokusi. Latvijas daudzgadu novērojumos sniegpulkstenītes visbiežāk sākušas ziedēt marta vidū. Pēc siltas ziemas pirmie ziedi var atvērties jau februārī.",
       },
     ],
   },

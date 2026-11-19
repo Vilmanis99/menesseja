@@ -15,6 +15,11 @@ export function MonthChecklist({ month }: { month: number }) {
         <Icon name={item.icon} className="text-primary" />
         <h3 className="mt-sm text-title-md text-on-surface">{item.title}</h3>
         <p className="mt-xs text-body-md text-on-surface-variant">{item.text}</p>
+        {item.link && (
+          <TrackedLink href={item.link.href} source={`calendar:${month}`} placement="month-checklist-task" className="mt-1 inline-flex min-h-11 items-center gap-1 text-label-md font-semibold text-primary hover:underline">
+            {item.link.label} <Icon name="arrow_forward" size="16px" />
+          </TrackedLink>
+        )}
       </Card>)}
     </div>
     <TrackedLink href={`/ko-set/${MONTH_SLUGS[month - 1]}`} source="calendar" placement="month-checklist" className="mt-sm inline-flex min-h-11 items-center gap-2 text-body-md text-primary hover:underline">
