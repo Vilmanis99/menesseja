@@ -1,0 +1,145 @@
+{
+  "title": "Kā kopt Persijas ciklamenu podiņā?",
+  "seoTitle": "Ciklamena podiņā — laistīšana, dzeltenas lapas un kopšana",
+  "slug": "ciklamena-podina",
+  "category": "Praktiski",
+  "intent": "how-to",
+  "excerpt": "Kā veikalā izvēlēties Persijas ciklamenu, atrast tai vēsu vietu un aplaistīt gar poda malu. Pēc pumpuriem un lapām novērtē, kas augam vajadzīgs pēc ziedēšanas.",
+  "shortAnswer": "Ziedošai ciklamenai izvēlies gaišu, vēsu vietu prom no radiatora. Pirms laistīšanas aptausti zemi. Ja virskārta apžuvusi, aplaisti gar poda malu un ļauj ūdenim notecēt. Ja lapas dzeltē, bet zeme vēl slapja, izlej ūdeni no dekoratīvā poda un ļauj virskārtai apžūt.",
+  "primaryQuery": "ciklamena podiņā",
+  "aliases": ["Persijas ciklamena", "alpu vijolītes kopšana", "ciklamenai dzeltē lapas", "ciklamena pēc noziedēšanas"],
+  "publishedAt": "2026-11-19",
+  "updatedAt": "2026-11-19",
+  "seasonalMonths": [11, 12, 1, 2],
+  "showGardenAction": false,
+  "sources": [
+    {
+      "label": "Aiovas Valsts universitāte — ciklamenas izvēle, laistīšana un miera periods",
+      "url": "https://yardandgarden.extension.iastate.edu/how-to/all-about-cyclamen"
+    },
+    {
+      "label": "Viskonsinas Universitāte Medisonā — Persijas ciklamenas augšanas ritms un lapu dzeltēšana",
+      "url": "https://hort.extension.wisc.edu/articles/cyclamen/"
+    },
+    {
+      "label": "LSM saruna ar Nacionālā botāniskā dārza speciālisti Silviju Rožkalni par ciklamenām Latvijā, 2025. gada 4. marts",
+      "url": "https://www.lsm.lv/raksts/dzive--stils/darzs-un-majas/04.03.2025-ciklamenas-koss-uzmundrinajums-tumsajos-ziemas-menesos.a385904/"
+    },
+    {
+      "label": "Čikāgas Botāniskais dārzs — ziedošas ciklamenas kopšana un laistīšana gar poda malu",
+      "url": "https://www.chicagobotanic.org/plant-information/cyclamen-plant-care"
+    },
+    {
+      "label": "RHS — dārzā audzējamās ciklamenu sugas",
+      "url": "https://www.rhs.org.uk/plants/cyclamen/growing-guide"
+    }
+  ],
+  "readMinutes": 3,
+  "body": [
+    {
+      "heading": "Ko apskatīt, izvēloties ciklamenu",
+      "paragraphs": [
+        "Ziemā puķu veikalos pārdod galvenokārt Persijas ciklamenas (Cyclamen persicum) šķirnes. Sarunvalodā tās sauc arī par alpu vijolītēm. Uz atsevišķiem kātiem virs lapu cera paceļas ziedi ar izteikti atliektām ziedlapām. Sirdsveida lapām bieži ir sudrabains zīmējums.",
+        "Saudzīgi pašķir lapas un ieskaties dziļāk cerā. Izvēlies augu ar stingrām lapām, dažiem atvērtiem ziediem un vairākiem jauniem pumpuriem zem lapojuma. Tā vari novērtēt arī to, cik daudz ziedu vēl tikai gaidāms."
+      ],
+      "image": {
+        "id": "persijas-ciklamena",
+        "caption": "Persijas ciklamenai ziedlapas raksturīgi atliecas augšup. Jaunos pumpurus meklē zem lapu cera."
+      },
+      "sourceUrls": [
+        "https://yardandgarden.extension.iastate.edu/how-to/all-about-cyclamen",
+        "https://hort.extension.wisc.edu/articles/cyclamen/",
+        "https://www.lsm.lv/raksts/dzive--stils/darzs-un-majas/04.03.2025-ciklamenas-koss-uzmundrinajums-tumsajos-ziemas-menesos.a385904/"
+      ]
+    },
+    {
+      "heading": "Kur likt ziedošu ciklamenu decembrī",
+      "paragraphs": [
+        "Izvēlies gaišu vietu ar izkliedētu gaismu. Nacionālā botāniskā dārza speciāliste Silvija Rožkalne Persijas ciklamenai iesaka ap 12–14 °C. Ja dzīvoklī tik vēsas vietas nav, izvēlies vēsāko gaišo logu un pārbaudi, vai tieši zem poda nesilda radiators. Vēsumā ziedi parasti saglabājas ilgāk.",
+        "Pie šo puķu ziemas krāsām strādājuši arī Latvijas selekcionāri. Tukumā 1964. gadā izveidota baltziedu šķirne ‘Tukuma Baltā’ un lašrozā ‘Tukuma Lašu’. Salaspilī botāniskais dārzs ciklamenu šķirnes audzējis un salīdzinājis jau kopš sešdesmitajiem gadiem."
+      ],
+      "sourceUrls": [
+        "https://www.lsm.lv/raksts/dzive--stils/darzs-un-majas/04.03.2025-ciklamenas-koss-uzmundrinajums-tumsajos-ziemas-menesos.a385904/",
+        "https://hort.extension.wisc.edu/articles/cyclamen/"
+      ]
+    },
+    {
+      "heading": "Kā laistīt gar poda malu",
+      "paragraphs": [
+        "Ziedēšanas laikā augsnei jāsaglabā neliels mitrums. Pārbaudi virskārtu ar pirkstu. Kamēr tā vēl mitra, laistīšanu atliec un pārbaudi zemi nākamajā dienā."
+      ],
+      "items": [
+        "Kad virskārta apžuvusi, izcel audzēšanas podiņu no dekoratīvā apvalka.",
+        "Lēnām lej ūdeni uz augsnes gar poda malu. Cera vidū no guma aug lapas un ziedkāti. Ja tur ilgstoši krājas ūdens, pieaug puves risks.",
+        "Ļauj liekajam ūdenim iztecēt pa podiņa apakšu. Podiņu liec atpakaļ tukšā apvalkā."
+      ],
+      "listStyle": "numbered",
+      "sourceUrls": [
+        "https://yardandgarden.extension.iastate.edu/how-to/all-about-cyclamen",
+        "https://www.chicagobotanic.org/plant-information/cyclamen-plant-care"
+      ]
+    },
+    {
+      "heading": "Ciklamenai dzeltē lapas. Ko pārbaudīt?",
+      "paragraphs": [
+        "Dzeltēšanu var izraisīt gan izkalšana, gan pārmitrums. Pirms laistīšanas apskati augsni un pumpurus. Ziedošam augam ar jauniem pumpuriem un jau noziedējušam augam pavasarī vajadzīga atšķirīga kopšana."
+      ],
+      "table": {
+        "headers": ["Ko redzi un satausti", "Pirmā darbība"],
+        "rows": [
+          ["Augs vēl zied, lapas kļuvušas mīkstas, zeme ir sausa un pods viegls.", "Samitrini visu sakņu kamolu, lejot gar poda malu. Ļauj ūdenim notecēt."],
+          ["Lapas dzeltē, sakņu kamols ir slapjš, dekoratīvajā podā stāv ūdens.", "Iztukšo apvalku un pārbaudi, vai audzēšanas podam ir caurumi. Nākamo reizi laisti, kad virskārta apžuvusi."],
+          ["Zeme ir viegli mitra, bet pumpuri sakalst pirms atvēršanās.", "Pārbaudi, vai augu neskar karsts gaiss un vai tas saņem pietiekami daudz gaismas. Ja vajag, pārcel uz vēsāku, gaišu vietu."],
+          ["Pavasarī ziedēšana beigusies, jauni pumpuri neveidojas un lapas pamazām dzeltē.", "Iespējams, sākas miera periods. Laistīšanas starplaikus pamazām pagarini."]
+        ]
+      },
+      "sourceUrls": [
+        "https://hort.extension.wisc.edu/articles/cyclamen/",
+        "https://yardandgarden.extension.iastate.edu/how-to/all-about-cyclamen"
+      ]
+    },
+    {
+      "heading": "Kā izskatās ciklamenas dabiskais lapu raksts?",
+      "paragraphs": [
+        "Aplūko vairākas lapas. Daudzām Persijas ciklamenām uz zaļa fona atkārtojas sudrabains zīmējums. Par dzeltēšanu liecina agrāk zaļās lapas daļas krāsas maiņa."
+      ],
+      "image": {
+        "id": "persijas-ciklamena-lapas",
+        "caption": "Šai ciklamenai sudrabainais raksts atkārtojas gar lapu malām, bet vidus ir tumšzaļš."
+      },
+      "sourceUrls": [
+        "https://hort.extension.wisc.edu/articles/cyclamen/",
+        "https://yardandgarden.extension.iastate.edu/how-to/all-about-cyclamen"
+      ]
+    },
+    {
+      "heading": "Ko darīt ar ciklamenu pēc noziedēšanas",
+      "paragraphs": [
+        "Kad lapas pamazām nodzeltē un atmirst, gumu vari saglabāt podā vēsā, no tiešas saules pasargātā vietā. Kamēr lapu nav, ilgstoši slapja zeme var gumu sapūdēt. Kad parādās jaunās lapas, atgriez podu gaišā vietā un atkal laisti atbilstoši tam, cik ātri augsne apžūst.",
+        "Ja vasarā podu iznes ārā, pirms salnām ienes atpakaļ telpās. Persijas ciklamena ir jutīga pret salu. Ja vēlies ciklamenu dobei, skaties sugas nosaukumu uz etiķetes. Dārzos audzē arī citas sugas, tostarp Cyclamen coum un efejlapu ciklamenu (Cyclamen hederifolium)."
+      ],
+      "sourceUrls": [
+        "https://hort.extension.wisc.edu/articles/cyclamen/",
+        "https://www.lsm.lv/raksts/dzive--stils/darzs-un-majas/04.03.2025-ciklamenas-koss-uzmundrinajums-tumsajos-ziemas-menesos.a385904/",
+        "https://www.rhs.org.uk/plants/cyclamen/growing-guide"
+      ]
+    },
+    {
+      "heading": "Biežākie jautājumi",
+      "paragraphs": [
+        "Vai ciklamenu var laistīt no apakšas? Jā. Ja zeme apžuvusi, podiņu ar drenāžas caurumiem uz aptuveni 15 minūtēm ieliec ūdenī. Pēc tam izcel un ļauj tam notecēt.",
+        "Vai sudrabaini plankumi uz lapām ir slimība? Daudzām šķirnēm sudrabains marmorējums ir dabisks. Apskati, vai lapas ir stingras un līdzīgs zīmējums atkārtojas uz vairākām lapām.",
+        "Vai ciklamena atkal ziedēs nākamajos Ziemassvētkos? Vesels gums pēc miera perioda var atsākt augt un atkal ziedēt. Ziedēšanas laiks ir atkarīgs no šķirnes un augšanas apstākļiem."
+      ],
+      "sourceUrls": [
+        "https://hort.extension.wisc.edu/articles/cyclamen/",
+        "https://yardandgarden.extension.iastate.edu/how-to/all-about-cyclamen"
+      ]
+    }
+  ],
+  "links": [
+    {"label": "Salīdzini četras ziemā ziedošas istabas puķes pēc foto", "href": "/pukes#ziemas-telpaugi"},
+    {"label": "Ko pārbaudīt, ja Ziemassvētku kaktusam birst pumpuri", "href": "/raksti/ziemassvetku-kaktuss-nezied"}
+  ],
+  "relatedSlugs": ["ziemassvetku-zvaigzne-puansetija", "ziemassvetku-kaktuss-nezied"]
+}

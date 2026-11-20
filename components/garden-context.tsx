@@ -1,7 +1,7 @@
 "use client";
 
 import { createContext, useContext, useEffect, useMemo, useRef, useState } from "react";
-import { CULTIVAR_MAX_LENGTH, CultivarConflictError, harvestAmountError, harvestDateError, isGardenDate, normalizeCultivar, plantDateError, type Plant, type LogEntry, type LogType, type PlantStart } from "@/lib/garden";
+import { CULTIVAR_MAX_LENGTH, CultivarConflictError, LOG_META, datedLogError, harvestAmountError, isGardenDate, normalizeCultivar, plantDateError, type Plant, type LogEntry, type PlantStart } from "@/lib/garden";
 import { useAuth } from "@/components/auth-context";
 import { storageGet, storageSet, storageRemove } from "@/lib/safe-storage";
 import { isSupabaseConfigured } from "@/lib/supabase/config";
@@ -121,11 +121,10 @@ export function GardenProvider({ children }: { children: React.ReactNode }) {
         if (Array.isArray(arr)) {
           // Stored data is untrusted: drop entries that would crash a render
           // (LOG_META lookup on an unknown log type, missing ids).
-          const LOG_TYPES = new Set<LogType>(["laistits", "meslots", "kaite", "raza", "piezime"]);
           const valid = arr.filter((p): p is Plant => !!p && typeof p.id === "string" && typeof p.cropId === "string");
           if (strict && valid.length !== arr.length) throw new Error(unreadableGarden);
           return valid.map((p) => {
-            const log = Array.isArray(p.log) ? p.log.filter((l) => !!l && typeof l.id === "string" && LOG_TYPES.has(l.type)) : [];
+            const log = Array.isArray(p.log) ? p.log.filter((l) => !!l && typeof l.id === "string" && Object.hasOwn(LOG_META, l.type)) : [];
             if (strict && p.log != null && (!Array.isArray(p.log) || log.length !== p.log.length)) throw new Error(unreadableGarden);
             return { ...p, cultivar: p.cultivar === null ? null : normalizeCultivar(p.cultivar) ?? undefined, log };
           });
@@ -460,7 +459,11 @@ export function GardenProvider({ children }: { children: React.ReactNode }) {
     function validate(plant?: Plant) {
       if (!plant) return "Stādījums vairs nav pieejams.";
       if (!isGardenDate(entry.date)) return "Norādi īstu datumu līdz šodienai.";
-      if (entry.type === "raza") return harvestDateError(plant, entry.date) ?? harvestAmountError(String(entry.amount ?? ""), entry.unit ?? "kg");
+      if (entry.type === "raza" || entry.type === "ziedesana") {
+        const dateIssue = datedLogError(plant, entry.type, entry.date);
+        if (dateIssue) return dateIssue;
+      }
+      if (entry.type === "raza") return harvestAmountError(String(entry.amount ?? ""), entry.unit ?? "kg");
       return null;
     }
     const issue = validate(plants.find((p) => p.id === plantId));

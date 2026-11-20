@@ -25,7 +25,7 @@ export default function DarzsPage() {
   return (
     <>
       <PageHeader
-        eyebrow="Latvijas dārza almanahs"
+        eyebrow="Dārza kalendārs un padomi Latvijai"
         title="Dārzs katrā gadalaikā"
         subtitle="Mēneša darbi, augu audzēšana un praktiskas atbildes — vienuviet."
         display

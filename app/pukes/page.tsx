@@ -3,6 +3,7 @@ import Link from "next/link";
 import { FlowerDirectory } from "@/components/flower-directory";
 import { FlowerPhotoCard } from "@/components/flower-gallery";
 import { FlowerAtlasCover } from "@/components/flower-atlas-cover";
+import { WinterHouseplantComparison } from "@/components/winter-houseplant-comparison";
 import { Card } from "@/components/ui/card";
 import { JsonLd } from "@/components/json-ld";
 import { DataNote } from "@/components/data-note";
@@ -58,6 +59,7 @@ export default function PukesPage() {
     <FlowerAtlasCover nameCount={allNames.length} />
 
     <FlowerDirectory items={items} />
+    <WinterHouseplantComparison />
 
     <section id="tautas-nosaukumi" className="mb-lg scroll-mt-24" aria-labelledby="folk-names-title">
       <h2 id="folk-names-title" className="text-headline-md text-on-surface">Puķu tautas un sarunvalodas nosaukumi</h2>
@@ -66,7 +68,7 @@ export default function PukesPage() {
         {FOLK_NAMES.map((entry) => <div key={entry.folk} className="rounded-xl border border-outline-variant/20 bg-surface-container p-sm">
           <dt className="text-title-md text-on-surface">{entry.folk}</dt>
           <dd className="mt-1 text-body-md text-on-surface-variant">
-            {entry.slug ? <Link href={`/pukes/${entry.slug}`} className="inline-flex min-h-11 items-center text-primary underline underline-offset-2">{entry.standard} →</Link> : <a href={`/pukes?q=${encodeURIComponent(entry.standard.split("(")[0].trim())}#puku-nosaukumi`} className="inline-flex min-h-11 items-center text-primary underline underline-offset-2">{entry.standard} →</a>}
+            {entry.slug ? <Link href={`/pukes/${entry.slug}`} className="inline-flex min-h-11 items-center text-primary underline underline-offset-2">{entry.standard} →</Link> : <a href={`/pukes?q=${encodeURIComponent(entry.standard.split("(")[0].trim())}#burts-${entry.standard[0].toLocaleLowerCase("lv")}`} className="inline-flex min-h-11 items-center text-primary underline underline-offset-2">{entry.standard} →</a>}
             {entry.note && <p className="mt-1 text-body-sm">{entry.note}</p>}
             {entry.sourceUrl && <a href={entry.sourceUrl} className="mt-1 inline-flex min-h-11 items-center text-body-sm text-primary underline underline-offset-2">Nosaukuma avots</a>}
           </dd>

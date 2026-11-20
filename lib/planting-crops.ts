@@ -103,6 +103,13 @@ export const CROPS: Crop[] = [
 
   // ── Puķes ─────────────────────────────────────────────────
   { id: "kalendula", name: "Kliņģerītes", category: "pukes", difficulty: 1, daysToHarvest: "50–60 dienas", sun: "Saule", sowOutdoors: [4, 6], harvest: [6, 10], note: "Atvaira kaitēkļus — lieliska dārzeņu kaimiņe. Ziedi ēdami." },
+  {
+    id: "rudzupukes", name: "Rudzupuķes", category: "pukes", difficulty: 1, sun: "Saule",
+    aliases: ["zilā rudzupuķe", "parastā rudzupuķe", "Centaurea cyanus", "Cyanus segetum"],
+    sowOutdoors: [4, 5], harvest: [6, 9], daysToHarvest: "Zied no jūnija līdz septembrim",
+    note: "Latvijā parasti sēj tieši dobē aprīļa beigās vai maija sākumā. Ja tavā dārzā augsne vēl sasalusi vai piemirkusi, pagaidi, līdz to var sastrādāt.",
+    noteSource: { label: "Dārza ABC — rudzupuķu sēja dobē", url: "https://www.darzaabc.lv/lv/rudzupukes-vasaras-pukes" },
+  },
   { id: "samtenes", name: "Samtenes", category: "pukes", difficulty: 1, daysToHarvest: "50–70 dienas", sun: "Saule", sowIndoors: [3, 4], transplant: [5, 6], harvest: [6, 10], note: "Atbaida nematodes un laputis — sēj starp dārzeņiem." },
   { id: "saulespukes", name: "Saulespuķes", category: "pukes", difficulty: 1, daysToHarvest: "80–100 dienas", sun: "Saule", sowOutdoors: [5, 5], harvest: [8, 9], note: "Sēj tieši laukā pēc salnām. Bērniem ļoti pateicīgas." },
   { id: "nelkes", name: "Neļķes", category: "pukes", difficulty: 2, daysToHarvest: "Atkarīgs no sugas", sun: "Saule", sowIndoors: [3, 4], transplant: [5, 6], harvest: [6, 8], note: "Sējas un ziedēšanas laiks atkarīgs no sugas un šķirnes. Pirms pirkuma pārbaudi ziemcietību; neļķēm vajadzīga augsne, kurā neuzkrājas ūdens." },

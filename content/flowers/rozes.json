@@ -76,6 +76,10 @@
     {
       "q": "Kad pavasarī noņemt ziemas segumu?",
       "a": "Kad augsne atkūst un stiprākais aukstums atkāpjas, sāc atvēršanu un noņemšanu pa daļām. Neatstāj rozi noslēgtā, sasilstošā segumā līdz garu dzinumu izaugšanai; turpmāko aizsardzību pielāgo prognozei."
+    },
+    {
+      "q": "Kāpēc rozes pumpurs vāzē neatveras?",
+      "a": "Viens no iemesliem ir pārāk agra nogriešana. Kamēr ziedlapas vēl cieši piekļaujas cita citai, nogriezta roze vāzē var arī neizplaukt. Ja griez rozes savā dārzā, izvēlies pumpuru, kam ārējās ziedlapas jau sāk atvērties."
     }
   ],
   "related": [
@@ -85,10 +89,28 @@
     "floksi"
   ],
   "seoTitle": "Rozes: stādīšana, kopšana un ieziemošana Latvijā",
-  "seoDescription": "Kā stādīt un ziemai sagatavot rozes: atšķirības starp parka, tējhibrīdu, vīteņrozēm un augststumbra rozēm, podu pārziemināšana un biežākās slimības.",
-  "updatedAt": "2026-10-27",
+  "seoDescription": "Kā stādīt un ieziemot rozes Latvijā, pasargāt vīteņrozes un rozes podos. Saņēmi pušķi? Apskati, kuras lapas noņemt un kā kopt rozes vāzē.",
+  "updatedAt": "2026-11-20",
   "shortAnswer": "Rožu kopšanu un ziemas aizsardzību izvēlas pēc šķirnes, stāda formas un augšanas vietas. Pirmā salna vēl nav signāls blīvai segšanai. Jutīgām dobju rozēm aizsargā pamatni, vīteņrozēm arī vajadzīgos garos dzinumus, augststumbra rozēm vainaga potējumu, bet podos — visu sakņu kamolu.",
   "lifeCycle": "Daudzgadīgi lapu krūmi. Vienas šķirnes zied vienreiz vasarā, citas atkārtoti; dzinumu un ziedpumpuru ziemcietība atšķiras.",
+  "cutFlowers": {
+    "heading": "Kā kopt grieztas rozes vāzē?",
+    "summary": "Grieztām rozēm nedaudz saīsini kātus, liec tās tīrā vāzē un izvēlies vēsu vietu tālāk no radiatora.",
+    "steps": [
+      {
+        "heading": "Saņemot pušķi, sagatavo vāzi",
+        "text": "Izmazgā vāzi un ielej tajā tīru ūdeni. Ja pušķim līdzi ir ziedu barības paciņa, izšķīdini tās saturu uz iepakojuma norādītajā ūdens daudzumā. Pieliec kātus pie vāzes un noņem tās lapas, kas atrastos zem ūdens."
+      },
+      {
+        "heading": "Saīsini kātus un uzreiz liec rozes ūdenī",
+        "text": "Ar tīru, asu nazi vai dārza šķērēm slīpi nogriez aptuveni 2 cm no katra kāta gala. Pārbaudi, vai visi kātu gali sniedzas ūdenī. Vāzi turi tālāk no radiatora un trauka ar gataviem augļiem."
+      },
+      {
+        "heading": "Nākamajās dienās pārbaudi ūdeni",
+        "text": "Katru dienu apskati ūdens līmeni. Ja ūdens ir dzidrs, bet tā kļuvis mazāk, pielej svaigu ūdeni. Ja ūdens saduļķojies vai sācis smakot, uzreiz izmazgā vāzi un ūdeni pilnībā nomaini. Arī dzidru ūdeni maini ik pēc divām līdz četrām dienām, pie reizes nedaudz saīsinot kātu galus. Izņem novītušos ziedus."
+      }
+    ]
+  },
   "comparison": {
     "heading": "Kāda roze aug tavā dārzā?",
     "items": [
@@ -226,9 +248,21 @@
     {
       "label": "RHS — tējhibrīdrožu un floribundrožu griešana",
       "url": "https://www.rhs.org.uk/plants/roses/modern-bush/pruning-guide"
+    },
+    {
+      "label": "Aiovas Valsts universitāte — dāvinātu griezto ziedu kopšana",
+      "url": "https://yardandgarden.extension.iastate.edu/faq/i-received-cut-flowers-valentines-day-how-do-i-prolong-their-life"
+    },
+    {
+      "label": "Karaliskā dārzkopības biedrība (RHS) — ziedu griešana un kopšana vāzē",
+      "url": "https://www.rhs.org.uk/plants/for-places/cut-flowers-conditioning"
     }
   ],
   "sectionSources": {
+    "cutFlowers": [
+      "https://yardandgarden.extension.iastate.edu/faq/i-received-cut-flowers-valentines-day-how-do-i-prolong-their-life",
+      "https://www.rhs.org.uk/plants/for-places/cut-flowers-conditioning"
+    ],
     "intro": [
       "https://www.rhs.org.uk/plants/roses/growing-guide/",
       "https://rose.org/growing-roses-in-pots-winterizing-your-roses/",

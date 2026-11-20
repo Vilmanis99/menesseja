@@ -48,7 +48,8 @@ export function FlowerDirectory({ items }: { items: FlowerDirectoryItem[] }) {
   function reset() { setQuery(""); setMonth(0); save("", 0); input.current?.focus(); }
 
   return <div onClickCapture={(event) => { if ((event.target as Element).closest("a")) save(); }}>
-    <form role="search" aria-label="Puķu nosaukumu meklēšana" className="mb-md rounded-xl border border-outline-variant/20 bg-surface-container-low p-sm sm:p-md" onSubmit={(event) => { event.preventDefault(); save(); heading.current?.focus({ preventScroll: true }); heading.current?.scrollIntoView({ block: "start" }); }}>
+    <noscript><style>{`#flower-filters { display: none; }`}</style></noscript>
+    <form id="flower-filters" role="search" aria-label="Puķu nosaukumu meklēšana" className="mb-md rounded-xl border border-outline-variant/20 bg-surface-container-low p-sm sm:p-md" onSubmit={(event) => { event.preventDefault(); save(); heading.current?.focus({ preventScroll: true }); heading.current?.scrollIntoView({ block: "start" }); }}>
       <label htmlFor="flower-search" className="mb-2 block text-title-md text-on-surface">Meklē puķi pēc nosaukuma</label>
       <div className="grid grid-cols-[minmax(0,1fr)_auto] gap-2">
         <input ref={input} id="flower-search" type="search" name="q" maxLength={120} value={query} onChange={(event) => update(event.target.value)} onBlur={() => save()} aria-controls="puku-nosaukumi puku-atteli" aria-describedby="flower-search-help" placeholder="Peonijas, pujenes, Paeonia…" className="min-h-11 min-w-0 rounded-lg border border-outline-variant/30 bg-surface-container px-3 text-body-md text-on-surface focus:border-primary" />
@@ -76,7 +77,7 @@ export function FlowerDirectory({ items }: { items: FlowerDirectoryItem[] }) {
     </form>
 
     <nav aria-label="Puķu saraksta sadaļas" className="mb-md flex flex-wrap gap-2">
-      {[["#puku-nosaukumi", "Nosaukumi A–Z"], ["#puku-atteli", `Attēli (${photos.length})`], ["#tautas-nosaukumi", "Tautas nosaukumi"], ["#puku-izvele", "Izvēle dārzam"]].map(([href, label]) => <a key={href} href={href} className="inline-flex min-h-11 items-center rounded-full border border-outline-variant/30 px-4 text-body-sm text-primary hover:bg-surface-container">{label}</a>)}
+      {[["#puku-nosaukumi", "Nosaukumi A–Z"], ["#puku-atteli", `Attēli (${photos.length})`], ["#ziemas-telpaugi", "Ziemas telpaugi"], ["#tautas-nosaukumi", "Tautas nosaukumi"], ["#puku-izvele", "Izvēle dārzam"]].map(([href, label]) => <a key={href} href={href} className="inline-flex min-h-11 items-center rounded-full border border-outline-variant/30 px-4 text-body-sm text-primary hover:bg-surface-container">{label}</a>)}
     </nav>
 
     <section id="puku-atteli" className="mb-lg scroll-mt-24" aria-labelledby="flower-photos-title">
@@ -113,7 +114,7 @@ export function FlowerDirectory({ items }: { items: FlowerDirectoryItem[] }) {
                 {item.href ? <Link href={item.href} className="inline-flex min-h-11 flex-wrap items-baseline gap-x-2 py-2 text-body-md font-semibold text-primary hover:underline"><span>{item.name}</span><span className="text-label-sm font-normal">{item.indoorGuide ? "Kopšana telpās" : item.name === "Neļķes" ? "Turku neļķu ceļvedis" : "Ceļvedis"} →</span></Link> : <p className="text-body-md font-semibold text-on-surface">{item.name}</p>}
                 {item.latin && <p className="text-body-sm italic text-on-surface-variant">{item.latin}</p>}
                 {item.note && <p className="mt-1 text-body-sm text-on-surface-variant">{item.note}</p>}
-                {item.aliases.length > 0 && <p className="mt-1 text-body-sm text-on-surface-variant">Arī {item.aliases.join(", ")}. {item.hasFolkName && <a href="#tautas-nosaukumi" className="text-primary underline underline-offset-2">Nosaukumu skaidrojumi</a>}</p>}
+                {item.aliases.length > 0 && <p className="mt-1 text-body-sm text-on-surface-variant"><span className="font-medium">Saistītie nosaukumi</span> · {item.aliases.join(", ")}. {item.hasFolkName && <a href="#tautas-nosaukumi" className="text-primary underline underline-offset-2">Nosaukumu skaidrojumi</a>}</p>}
               </li>)}
             </ul>
           </div>)}

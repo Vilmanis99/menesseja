@@ -1,5 +1,4 @@
 import type { Metadata, Viewport } from "next";
-import { Literata, Hanken_Grotesk } from "next/font/google";
 import { AppShell } from "@/components/app-shell";
 import { PwaRegister } from "@/components/pwa-register";
 import { Analytics } from "@/components/analytics";
@@ -7,6 +6,7 @@ import { AdSense } from "@/components/adsense";
 import { AhrefsAnalytics } from "@/components/ahrefs-analytics";
 import { JsonLd } from "@/components/json-ld";
 import { SITE_URL } from "@/lib/seo";
+import "./fonts/typography.css";
 import "./globals.css";
 
 const ORG_JSONLD = {
@@ -40,19 +40,12 @@ const WEBSITE_JSONLD = {
   publisher: { "@type": "Organization", name: "Mēness Sēja", url: SITE_URL },
 };
 
-const literata = Literata({
-  subsets: ["latin", "latin-ext"],
-  display: "swap",
-  variable: "--font-literata",
-  weight: ["400", "600", "700"],
-});
-
-const hanken = Hanken_Grotesk({
-  subsets: ["latin", "latin-ext"],
-  display: "swap",
-  variable: "--font-hanken",
-  weight: ["400", "500", "600", "700"],
-});
+const PRELOADED_FONTS = [
+  "/fonts/literata-latin-ext.d6299ba7463f3a10.woff2",
+  "/fonts/literata-latin.c614760279d75a6f.woff2",
+  "/fonts/hanken-grotesk-latin-ext.a1376a563717f1ef.woff2",
+  "/fonts/hanken-grotesk-latin.1f21c6eaa0000f33.woff2",
+];
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -87,8 +80,11 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="lv" className={`${literata.variable} ${hanken.variable}`}>
+    <html lang="lv">
       <head>
+        {PRELOADED_FONTS.map((href) => (
+          <link key={href} rel="preload" href={href} as="font" type="font/woff2" crossOrigin="anonymous" />
+        ))}
         {/* Warm up the font origins so the (render-blocking) icon stylesheet
             resolves faster on mobile — cuts LCP without an icon-text flash. */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />

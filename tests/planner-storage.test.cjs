@@ -9,7 +9,7 @@ require.extensions[".ts"] = (module, filename) => {
   });
   module._compile(outputText, filename);
 };
-const { emptyPlanner, loadPlanner, savePlanner } = require("../lib/planner-storage.ts");
+const { editPlannerCell, emptyPlanner, loadPlanner, savePlanner } = require("../lib/planner-storage.ts");
 
 const multi = "meness-seja:planner-plans";
 const legacy = "meness-seja:planner";
@@ -131,4 +131,16 @@ test("a later edit cannot overwrite another tab's saved changes or resurrect its
   values.delete(multi);
   assert.equal(savePlanner(saved.baseline, edited).issue, "conflict");
   assert.equal(values.has(multi), false);
+});
+
+test("choosing a crop or an occupied cell preserves the plan until a free cell or the eraser is used", () => {
+  const original = Object.freeze({ 0: "burkani", 23: "unknown-legacy-crop" });
+  for (const [cell, selected, erase] of [[0, null, false], [0, "rudzupukes", false],
+    [23, "rudzupukes", false], [1, null, false], [1, null, true]]) {
+    assert.equal(editPlannerCell(original, cell, selected, erase), original);
+  }
+  const withFlower = editPlannerCell(original, 1, "rudzupukes", false);
+  assert.deepEqual(withFlower, { ...original, 1: "rudzupukes" });
+  assert.equal(editPlannerCell(withFlower, 1, "rudzupukes", false), withFlower);
+  assert.deepEqual(editPlannerCell(withFlower, 1, null, true), original);
 });

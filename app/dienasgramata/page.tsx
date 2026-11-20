@@ -10,7 +10,7 @@ import { Modal } from "@/components/ui/modal";
 import { PlantDetail } from "@/components/plant-detail";
 import { useGarden } from "@/components/garden-context";
 import { plantDisplayName } from "@/lib/plant-display-name";
-import { isGardenDate } from "@/lib/garden";
+import { isGardenDate, LOG_META } from "@/lib/garden";
 import { latviaDateKey } from "@/lib/day-anchor";
 import { moonForDate } from "@/lib/moon";
 
@@ -66,16 +66,21 @@ export default function DienasgramataPage() {
     return () => window.removeEventListener("storage", refresh);
   }, []);
 
-  const timeline = useMemo(() => {
+  const { timeline, harvestCount, floweringCount } = useMemo(() => {
     const notes = entries.map((entry) => ({
       kind: "note" as const, key: `note:${entry.id}`, date: entry.date, entry,
     }));
-    const harvests = plants.filter((plant) => !plant.seed).flatMap((plant) =>
-      (plant.log ?? []).filter((log) => log.type === "raza" && isGardenDate(log.date)).map((log) => ({
-        kind: "harvest" as const, key: `harvest:${plant.id}:${log.id}`, date: log.date, plant, log,
-      })),
+    const plantEvents = plants.filter((plant) => !plant.seed).flatMap((plant) =>
+      (plant.log ?? [])
+        .filter((log) => (log.type === "raza" || log.type === "ziedesana") && isGardenDate(log.date))
+        .map((log) => ({ kind: "plant" as const, key: `event:${plant.id}:${log.id}`, date: log.date, plant, log })),
     );
-    return [...notes, ...harvests].sort((a, b) => b.date.localeCompare(a.date) || b.key.localeCompare(a.key));
+    const harvestCount = plantEvents.filter(({ log }) => log.type === "raza").length;
+    return {
+      timeline: [...notes, ...plantEvents].sort((a, b) => b.date.localeCompare(a.date) || b.key.localeCompare(a.key)),
+      harvestCount,
+      floweringCount: plantEvents.length - harvestCount,
+    };
   }, [entries, plants]);
 
   function changeNotes(update: (stored: Entry[]) => Entry[]): boolean {
@@ -99,7 +104,7 @@ export default function DienasgramataPage() {
     <>
       <PageHeader
         title="Dārza dienasgrāmata"
-        subtitle="Tavas piezīmes un stādījumu raža datumu secībā."
+        subtitle="Tavas piezīmes, augu ziedēšana un raža datumu secībā."
         action={<Button disabled={!hydrated} icon="edit_note" onClick={() => setComposing(true)}>Jauns ieraksts</Button>}
       />
 
@@ -111,19 +116,20 @@ export default function DienasgramataPage() {
       {hydrated && gardenReady ? <>
         <dl className="mb-md flex flex-wrap gap-x-md gap-y-1 text-body-md text-on-surface-variant">
           <div className="flex gap-2"><dt>Piezīmes</dt><dd className="font-semibold text-on-surface">{entries.length}</dd></div>
-          <div className="flex gap-2"><dt>Ražas ieraksti</dt><dd className="font-semibold text-on-surface">{timeline.length - entries.length}</dd></div>
+          <div className="flex gap-2"><dt>Ziedēšanas ieraksti</dt><dd className="font-semibold text-on-surface">{floweringCount}</dd></div>
+          <div className="flex gap-2"><dt>Ražas ieraksti</dt><dd className="font-semibold text-on-surface">{harvestCount}</dd></div>
         </dl>
-        {timeline.length === 0 ? <p className="mb-md text-body-md text-on-surface-variant">Pievieno pirmo piezīmi. Šeit parādīsies arī raža, ko pierakstīsi auga kopšanas žurnālā.</p> :
+        {timeline.length === 0 ? <p className="mb-md text-body-md text-on-surface-variant">Pievieno pirmo piezīmi. Šeit parādīsies arī ziedēšana un raža, ko pierakstīsi auga kopšanas žurnālā.</p> :
           <ol aria-label="Dienasgrāmatas ieraksti" className="space-y-md">
             {timeline.map((row) => (
               <li key={row.key}>
                 <Card tone="high" className="p-md">
                   <time dateTime={row.date} className="text-label-md text-secondary">{DATE_FMT.format(new Date(row.date))}</time>
-                  {row.kind === "harvest" ? <>
-                    <h2 className="mt-1 break-words text-headline-md text-on-surface">Raža · {plantDisplayName(row.plant)}</h2>
+                  {row.kind === "plant" ? <>
+                    <h2 className="mt-1 break-words text-headline-md text-on-surface">{LOG_META[row.log.type].label} · {plantDisplayName(row.plant)}</h2>
                     <p className="mt-1 text-body-md text-on-surface">
                       {row.plant.area}
-                      {typeof row.log.amount === "number" && Number.isFinite(row.log.amount) && <> · {QUANTITY_FMT.format(row.log.amount)}{row.log.unit === "kg" ? " kg" : row.log.unit === "gab" ? " gab." : ""}</>}
+                      {row.log.type === "raza" && typeof row.log.amount === "number" && Number.isFinite(row.log.amount) && <> · {QUANTITY_FMT.format(row.log.amount)}{row.log.unit === "kg" ? " kg" : row.log.unit === "gab" ? " gab." : ""}</>}
                     </p>
                     {row.log.note && <p className="mt-1 whitespace-pre-wrap break-words text-body-md text-on-surface-variant">{row.log.note}</p>}
                     <button type="button" onClick={() => setOpenPlantId(row.plant.id)}

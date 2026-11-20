@@ -53,6 +53,7 @@ export const CROP_EMOJI: Record<string, string> = {
   oregano: "🌿",
   // Puķes
   kalendula: "🌼",
+  rudzupukes: "🌼",
   samtenes: "🌼",
   saulespukes: "🌻",
   nelkes: "🌸",

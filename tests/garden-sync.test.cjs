@@ -23,6 +23,25 @@ function clientFor(handler) {
   });
 }
 
+test("a flowering observation round trips with its date and without harvest quantities", async () => {
+  let saved;
+  const client = clientFor((table, params, options) => {
+    if (options.method === "POST") {
+      assert.equal(table, "plant_logs");
+      saved = JSON.parse(options.body);
+      return new Response(null, { status: 201 });
+    }
+    assert.equal(params.get("user_id"), "eq.user");
+    return Response.json(table === "plants" ? [{ id: "plant", crop_id: "rudzupukes", area: "Lielā dobe" }] : [saved]);
+  });
+  const event = { id: "bloom", type: "ziedesana", date: "2026-07-08", note: "Atvērās pirmie ziedi." };
+  await insertLog(client, "user", "plant", event);
+  assert.equal(saved.amount, null);
+  assert.equal(saved.unit, null);
+  const [plant] = await fetchGarden(client, "user");
+  assert.deepEqual(plant.log, [{ ...event, amount: undefined, unit: undefined }]);
+});
+
 test("legacy cloud dates remain unconfirmed and an unavailable snapshot rejects", async () => {
   const plants = [
     { id: "old", sown_date: "2025-05-30", area: "Dobe", crop_id: "tomati" },

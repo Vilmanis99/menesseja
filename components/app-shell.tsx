@@ -77,7 +77,7 @@ function Sidebar({ current }: { current: (href: string) => NavCurrent }) {
       <div className="mb-lg shrink-0 px-xs">
         <a href="/" aria-label="Mēness Sēja — sākums" className="block w-fit text-headline-md text-primary">Mēness Sēja</a>
         <p className="mt-xs text-label-sm uppercase tracking-widest text-on-surface-variant/70">
-          Latvijas dārza almanahs
+          Dārza kalendārs un padomi Latvijai
         </p>
       </div>
       <nav aria-label="Galvenā navigācija" className="flex-1 space-y-1">

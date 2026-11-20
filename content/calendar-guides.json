@@ -148,7 +148,7 @@
   },
   "months": {
     "1": {
-      "updatedAt": "2026-11-19",
+      "updatedAt": "2026-11-20",
       "shortcuts": [
         {"label": "Sēklu pārbaude", "href": "/raksti/ka-glabat-seklas-un-parbaudit-digtspeju#mana-seklu-digtspejas-parbaude"},
         {"label": "Aprēķināt sējas laiku", "href": "/raksti/kad-set-destus-rekini-atpakal#sejas-kalkulators"},
@@ -227,6 +227,10 @@
             "seedlings"
           ],
           "link": {
+            "href": "/planotajs",
+            "label": "Izkārtot izvēlētos augus dobē"
+          },
+          "articleLink": {
             "href": "/raksti/cik-liela-pirma-dobe",
             "label": "Cik lielu dobi varēsi aprūpēt"
           }
@@ -328,6 +332,11 @@
       ]
     },
     "2": {
+      "updatedAt": "2026-11-20",
+      "shortcuts": [
+        {"label": "Aprēķināt sējas laiku", "href": "/raksti/kad-set-destus-rekini-atpakal#sejas-kalkulators"},
+        {"label": "Kā kopt rozes vāzē?", "href": "/pukes/rozes#rozes-vaze"}
+      ],
       "title": "Februāris dārzā: pirmie dēsti sākas ar gaismu un pareizu termiņu",
       "description": "Februāra dārza darbi: dēstu sējas laiks, gaismas un trauku sagatavošana, paprikas un seleriju plāns. Mēness fāzes un dienu kalendārs Latvijai.",
       "image": {
@@ -2147,10 +2156,11 @@
       ]
     },
     "12": {
-      "updatedAt": "2026-11-19",
+      "updatedAt": "2026-11-20",
       "shortcuts": [
         {"label": "Sēklu pārbaude", "href": "/raksti/ka-glabat-seklas-un-parbaudit-digtspeju#mana-seklu-digtspejas-parbaude"},
-        {"label": "Kāpēc nezied Ziemassvētku kaktuss?", "href": "/raksti/ziemassvetku-kaktuss-nezied#ko-parbaudit-sodien"}
+        {"label": "Kāpēc nezied Ziemassvētku kaktuss?", "href": "/raksti/ziemassvetku-kaktuss-nezied#ko-parbaudit-sodien"},
+        {"label": "Istabas puķes pēc foto", "href": "/pukes#ziemas-telpaugi"}
       ],
       "title": "Decembris dārzā: no sezonas pierakstiem līdz nākamā gada plānam",
       "description": "Pārskati sēklu krājumus un pārbaudi, kā glabājas dāliju gumi.",
@@ -2258,7 +2268,7 @@
           "heading": "Uzzīmē dobes mērogā un ieraksti iepriekšējās kultūras",
           "when": "Mēneša vidū, kad sēklu un ražas pieraksti ir apkopoti. Pirms pirkumiem pārbaudi izmērus dabā.",
           "paragraphs": [
-            "Plāns kļūst izmantojams, kad tajā ir celiņi un reāli augu attālumi. Piemēram, 10 cm rūtiņa plānā var nozīmēt vienu metru dārzā; izvēlies vienu mērogu un pieturies pie tā."
+            "Zīmējot dobi uz rūtiņu papīra, viena rūtiņa var apzīmēt, piemēram, 20 cm dārzā. Dobju plānotājā vienā plānā atzīmē, kas kur auga šogad, un otrā izkārto nākamā gada augus. Katra plāna nosaukumā ieraksti gadu."
           ],
           "steps": [
             "Atzīmē dobes platumu un garumu, ēnojumu, ūdens punktu un celiņus. Vispirms rezervē vietu pārvietošanai.",
@@ -2270,6 +2280,10 @@
             "january"
           ],
           "link": {
+            "href": "/planotajs",
+            "label": "Izveidot nākamā gada dobes plānu"
+          },
+          "articleLink": {
             "href": "/raksti/augu-maina-darza",
             "label": "Augu maiņa mazā dārzā"
           }

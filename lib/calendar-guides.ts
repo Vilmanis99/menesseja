@@ -19,6 +19,7 @@ export interface CalendarGuide {
     avoid: string;
     sourceIds: string[];
     link: { label: string; href: string };
+    articleLink?: { label: string; href: string };
   }[];
   faq: { q: string; a: string }[];
   sourceIds: string[];

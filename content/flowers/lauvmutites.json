@@ -1,0 +1,116 @@
+{
+  "slug": "lauvmutites",
+  "name": "Lauvmutītes",
+  "nameAcc": "lauvmutītes",
+  "latin": "Antirrhinum majus",
+  "aliases": ["lielā lauvmutīte", "lielās lauvmutītes"],
+  "image": {
+    "id": "lauvmutites-ziedkopa",
+    "caption": "Lauvmutītes ziedi sakārtoti ķekarā dzinuma galā. Apakšējie ziedi atveras, kamēr augšējos vēl sedz pumpuri."
+  },
+  "identificationImage": {
+    "id": "lauvmutites-zieds",
+    "caption": "Raksturīgajam lauvmutītes ziedam ir augšlūpa un apakšlūpa. Kamene, nolaižoties uz apakšlūpas, var atvērt ieeju ziedā."
+  },
+  "emoji": "🌸",
+  "type": "viengadiga",
+  "seoTitle": "Lauvmutītes — kad sēt, kā audzēt podā un griezt pušķim",
+  "seoDescription": "Lauvmutīšu sējas laiks pirms izstādīšanas, sīko sēklu diedzēšana gaismā un šķirnes izvēle. Kā kopt lauvmutītes podā un kad griezt ziedkātus vāzei.",
+  "tagline": "Zemās šķirnes der balkona podiem, bet no garajiem ziedkātiem var griezt pušķus.",
+  "updatedAt": "2026-11-19",
+  "shortAnswer": "Lauvmutītes sēj telpās 8–10 nedēļas pirms plānotās izstādīšanas. Sīkās sēklas piespied mitra substrāta virsmai un atstāj gaismā. Ja savā dārzā plāno stādīt 20. maijā, sējas laiks pēc šā aprēķina ir 11.–25. marts.",
+  "shortAnswerLink": {"label": "Aprēķini savu sējas laiku", "href": "/raksti/kad-set-destus-rekini-atpakal#sejas-kalkulators-lauvmutites"},
+  "lifeCycle": "Lielā lauvmutīte ir īsmūža daudzgadīgs augs. Latvijas dārzā to parasti sēj kā vasaras puķi un ziedus sagaida tajā pašā sezonā.",
+  "bloom": "No vasaras sākuma līdz rudenim atkarībā no šķirnes un sējas laika. Karstumā ziedēšana var pieklust.",
+  "bloomMonths": [6, 7, 8, 9],
+  "height": "Aptuveni 15–90 cm atkarībā no šķirnes",
+  "sun": "Saulaina vieta, aug arī vieglā pusēnā",
+  "hardy": false,
+  "difficulty": "vidēji",
+  "plantWhen": "Sēj telpās 8–10 nedēļas pirms izstādīšanas. Pieradinātus dēstus stādi dobē, kad tavā dārzā pārgājis pavasara salnu risks.",
+  "moonPhase": "jebkurš",
+  "moonElement": "jebkurs",
+  "moonText": "Sējas laiku rēķini no dienas, kad vari izstādīt dēstus savā dārzā. Līdz tam tiem vajadzīga gaiša vieta un telpa saknēm.",
+  "intro": [
+    "Lielo lauvmutīti var pazīt pēc zieda sānskata. Parastajā zieda formā augšlūpa paceļas pāri izliektai apakšlūpai, un abas saskaras kā aizvērta mutīte. Ir arī šķirnes ar atvērtu vai pildītu ziedu. Visām vērts apskatīt ziedkopu kopumā — uz viena dzinuma redzami gan jau atvērušies ziedi, gan vēl neatplaukuši pumpuri.",
+    "Izvēloties sēklas, vispirms apskati uz paciņas norādīto auga augstumu. Vienas krāsas lauvmutītes var būt gan zemi ceri balkona podam, gan gandrīz metru gari augi, kam dobē laikus jāparedz balsts."
+  ],
+  "comparison": {
+    "heading": "Kuru lauvmutīti izvēlēties podam, kuru pušķiem?",
+    "items": [
+      {
+        "name": "Zema, kompakta šķirne",
+        "description": "Izvēlies podam vai dobes priekšmalai, ja gribi skatīt ziedus visā cera augstumā. Šķirnes aprakstā meklē norādi par kompaktu augumu un pārbaudi augstumu centimetros."
+      },
+      {
+        "name": "Augsta šķirne grieztiem ziediem",
+        "description": "Vāzei noder garš, taisns kāts. Atvēli šķirnei vietu saulainā dobē aizvējā. Balstu ievieto laikus, kamēr kāti ir taisni un ziedkopas vēl nav kļuvušas smagas."
+      }
+    ]
+  },
+  "planting": [
+    "Februārī vari izvēlēties šķirni un saskaitīt atpakaļ 8–10 nedēļas no sava izstādīšanas datuma. Ja nakts salnas tavā dārzā mēdz atgriezties vēl maija beigās, pārbīdi attiecīgi arī sēju. Uz paciņas pārbaudi konkrētās šķirnes norādes.",
+    "Piepildi sējas trauku ar smalku, samitrinātu dēstu substrātu. Izkaisi sēklas reti un viegli tās piespied. Atstāj sēklas virspusē, jo dīgšanai vajag gaismu. Aiovas Valsts universitātes tabulā ap 21 °C dīgšanai paredzētas 7–14 dienas. Tās jau ietilpst 8–10 nedēļās no sējas līdz izstādīšanai.",
+    "Kad dēstus jau vari satvert aiz lapas, izpiķē pa vienam mazos podiņos un tālāk audzē gaišā, vēsākā vietā. Pirms izstādīšanas pakāpeniski pieradini tos pie āra apstākļiem. Dobē ievēro atstatumu, ko paredz tavas šķirnes augums."
+  ],
+  "care": [
+    "Laisti augsni pie saknēm. Podam vajag atveres, pa kurām var iztecēt liekais ūdens. Saulainā laikā pārbaudi substrātu arī zem virskārtas — mazā podā sakņu kamols žūst ātrāk.",
+    "Ja audzē ziedus vāzei, griez kātu, kad ķekara lejasdaļā atvērušies pirmie ziedi un augstāk pumpuri jau iekrāsojušies. Nogriezto kātu uzreiz ieliec ūdenī un turi stāvus, citādi galotne var izliekties.",
+    "Dobē un podā nogriez izziedējušos ķekarus, lai paildzinātu ziedēšanu. Pirms griešanas aplūko ķekara augšpusi — kamēr tur vēl plaukst pumpuri, ziedkopa turpinās ziedēt."
+  ],
+  "winter": "Maigā klimatā lauvmutītes var dzīvot vairākus gadus. Latvijas dārzā pārziemošana ir nedroša, tāpēc nākamās vasaras stādījumu plāno no sēklām vai jauniem stādiem. Ja atradi tieši savam podam vai pušķiem piemērotu šķirni, saglabā paciņu ar tās nosaukumu.",
+  "problems": [
+    "Ja pēc divām nedēļām sējas traukā vēl nav asnu, pārbaudi, vai sēklas palikušas gaismā un substrāta virskārta ir mitra. Vēsākā vietā dīgšanas laiks var atšķirties no tabulā dotā.",
+    "Ja lapu virspusē redzi bāli dzeltenus plankumus, apgriez lapu otrādi. Tumšbrūni, putekļaini spilventiņi tieši zem plankumiem ir raksturīgi lauvmutīšu rūsai. Noplūc skartās lapas, bet sezonas beigās aizvāc arī slimo augu atliekas."
+  ],
+  "faq": [
+    {
+      "q": "Vai lauvmutītes jāsēj jau februārī?",
+      "a": "Aprēķini sējas laiku pēc savas izstādīšanas iespējas. Piemēram, ja izstādīšana plānota 20. maijā, 8–10 nedēļas iepriekš ir 11.–25. marts. Agrākai sējai vajadzīga pietiekami gaiša vieta, kur dēstiem augt ilgāk."
+    },
+    {
+      "q": "Vai lauvmutīšu sēklas jāapber ar zemi?",
+      "a": "Atstāj tās uz iepriekš samitrinātas substrāta virsmas un viegli piespied. Sēklām dīgšanai vajag gaismu."
+    },
+    {
+      "q": "Kad griezt lauvmutītes pušķim?",
+      "a": "Izvēlies ziedkātu ar dažiem atvērtiem apakšējiem ziediem un jau iekrāsotiem pumpuriem virs tiem. Ieliec kātu ūdenī un, nesot mājās, turi to stāvus."
+    }
+  ],
+  "links": [
+    {"label": "Kā februārī sagatavoties dēstu sējai", "href": "/ko-set/februaris#month-checklist-heading"},
+    {"label": "Kā novērtēt salnu risku savā dārzā", "href": "/raksti/salnas-latvija"}
+  ],
+  "related": ["petunijas", "samtenes"],
+  "sources": [
+    {"label": "Aiovas Valsts universitāte — lauvmutīšu sējas laiks, gaisma un dīgšana", "url": "https://yardandgarden.extension.iastate.edu/how-to/germination-requirements-annuals-and-vegetables"},
+    {"label": "Ziemeļkarolīnas Valsts universitāte — lielās lauvmutītes pazīmes, augums un audzēšana", "url": "https://plants.ces.ncsu.edu/plants/antirrhinum-majus/"},
+    {"label": "RHS — lauvmutīšu sēja, piķēšana un izstādīšana", "url": "https://www.rhs.org.uk/education-learning/children-young-people/family-activities/grow-it/antirrhinum"},
+    {"label": "Misisipi Valsts universitāte — lauvmutīšu ziedu formas un piemērots brīdis griešanai", "url": "https://extension.msstate.edu/publications/snapdragon-antirrhinum-majus-for-the-farmer-florist"},
+    {"label": "Kalifornijas Universitāte Deivisā — kāpēc grieztie lauvmutīšu ziedkāti izliecas", "url": "https://postharvest.ucdavis.edu/produce-facts-sheets/snapdragon"},
+    {"label": "RHS — lielās lauvmutītes augšanas apstākļi un noziedējušo ziedkopu izgriešana", "url": "https://www.rhs.org.uk/plants/69565/antirrhinum-majus/details"},
+    {"label": "RHS — lauvmutīšu rūsas pazīmes un slimo lapu novākšana", "url": "https://www.rhs.org.uk/disease/antirrhinum-rust"}
+  ],
+  "sectionSources": {
+    "intro": [
+      "https://plants.ces.ncsu.edu/plants/antirrhinum-majus/",
+      "https://extension.msstate.edu/publications/snapdragon-antirrhinum-majus-for-the-farmer-florist"
+    ],
+    "comparison": ["https://plants.ces.ncsu.edu/plants/antirrhinum-majus/"],
+    "planting": [
+      "https://yardandgarden.extension.iastate.edu/how-to/germination-requirements-annuals-and-vegetables",
+      "https://www.rhs.org.uk/education-learning/children-young-people/family-activities/grow-it/antirrhinum"
+    ],
+    "care": [
+      "https://plants.ces.ncsu.edu/plants/antirrhinum-majus/",
+      "https://extension.msstate.edu/publications/snapdragon-antirrhinum-majus-for-the-farmer-florist",
+      "https://postharvest.ucdavis.edu/produce-facts-sheets/snapdragon",
+      "https://www.rhs.org.uk/plants/69565/antirrhinum-majus/details"
+    ],
+    "winter": ["https://plants.ces.ncsu.edu/plants/antirrhinum-majus/"],
+    "problems": [
+      "https://yardandgarden.extension.iastate.edu/how-to/germination-requirements-annuals-and-vegetables",
+      "https://www.rhs.org.uk/disease/antirrhinum-rust"
+    ]
+  }
+}

@@ -20,6 +20,8 @@ interface IndexedPage { page: PortalResult; names: string[]; nameWords: string[]
 function collections(): Page[] {
   const pages: Page[] = [
     { href: "/pukes", title: "Puķu atlants", group: "Augi un puķes", description: "Puķu nosaukumi no A līdz Z, fotogrāfijas un kopšanas ceļveži.", aliases: ["puķes", "puķu nosaukumi", "puķu nosaukumi alfabēta secībā"] },
+    { href: "/pukes#ziemas-telpaugi", title: "Ziemā ziedošas istabas puķes pēc foto", group: "Augi un puķes",
+      description: "Salīdzini ziedu, lapu un stublāju pazīmes un atver atrastās puķes kopšanas ceļvedi.", aliases: ["istabas puķes nosaukumi", "istabas puķes podos", "ziemas telpaugi", "istabas puķes pēc attēla"] },
     { href: "/pukes/sniegpulkstenites#kad-zied-latvija", title: "Kad zied Latvijā? Sniegpulkstenītes Ukros un Rankā", group: "Augi un puķes",
       description: "Salīdzini abās vietās reģistrēto ziedēšanas sākumu 16 gados.", aliases: ["kad zied Latvijā", "kad zied sniegpulkstenītes", "sniegpulkstenīšu ziedēšanas datumi"] },
     { href: "/augi", title: "Augu enciklopēdija", group: "Augi un puķes", description: "Dārzeņu, ogu, garšaugu un puķu audzēšanas ceļveži." },
@@ -52,6 +54,16 @@ function collections(): Page[] {
   const flowers = getAllFlowers();
   for (const flower of flowers) {
     pages.push({ href: `/pukes/${flower.slug}`, title: flower.name, description: flower.tagline, group: "Augi un puķes" });
+    if (flower.cutFlowers) {
+      pages.push({
+        href: `/pukes/${flower.slug}#${flower.slug}-vaze`,
+        title: flower.cutFlowers.heading,
+        description: flower.cutFlowers.summary,
+        group: "Augi un puķes",
+        aliases: [`${flower.name} vāzē`, ...(flower.slug === "rozes" ? ["rožu pušķis", "grieztas rozes", "dāvinātās rozes"] : [])],
+        details: flower.cutFlowers.steps.map((step) => `${step.heading} ${step.text}`).join(" "),
+      });
+    }
   }
   const flowerSlugs = new Set(flowers.map((flower) => flower.slug));
   for (const crop of CROPS) {
@@ -62,7 +74,7 @@ function collections(): Page[] {
   }
   const byHref = new Map(pages.map((page) => [page.href, page]));
   for (const flower of flowerDirectoryEntries(flowers)) {
-    const aliases = [flower.name, flower.latin ?? "", ...flower.aliases];
+    const aliases = [flower.name, flower.latin ?? "", ...flower.aliases, ...(flower.comparedNames ?? [])];
     const page = flower.href && byHref.get(flower.href);
     if (page) page.aliases = [...(page.aliases ?? []), ...aliases];
     else if (!flower.href) {

@@ -10,7 +10,7 @@ import { Chip } from "@/components/ui/chip";
 import { Modal } from "@/components/ui/modal";
 import { ProgressBar } from "@/components/ui/progress-bar";
 import { useGarden } from "@/components/garden-context";
-import { cropById, harvestAmountError, harvestDateError, harvestEstimate, isGardenDate, plantStatus, LOG_META, type Plant, type LogEntry, type LogType } from "@/lib/garden";
+import { cropById, datedLogError, harvestAmountError, harvestEstimate, isGardenDate, plantStatus, LOG_META, type DatedLogType, type Plant, type LogEntry, type LogType } from "@/lib/garden";
 import { cropEmoji } from "@/lib/crop-visual";
 import { cropPart, PART_ELEMENT } from "@/lib/crop-part";
 import { ELEMENT_META } from "@/lib/biodynamic";
@@ -46,7 +46,7 @@ export function PlantDetail({
   const [showAllLogs, setShowAllLogs] = useState(false);
   const [amount, setAmount] = useState("");
   const [harvestUnit, setHarvestUnit] = useState<NonNullable<LogEntry["unit"]>>("kg");
-  const [harvestDate, setHarvestDate] = useState<string | null>(null);
+  const [logDates, setLogDates] = useState<Partial<Record<DatedLogType, string>>>({});
 
   if (!crop) return null;
   const st = plantStatus(live);
@@ -56,15 +56,18 @@ export function PlantDetail({
   const today = latviaDateKey();
   const sownOn = isGardenDate(live.sownOn, today) ? live.sownOn : null;
   const amountError = logType === "raza" ? harvestAmountError(amount, harvestUnit) : null;
-  const harvestError = logType === "raza" ? harvestDateError(live, harvestDate ?? today, today) : null;
+  const datedType = logType === "raza" || logType === "ziedesana" ? logType : null;
+  const selectedDate = datedType ? logDates[datedType] ?? today : today;
+  const dateError = datedType ? datedLogError(live, datedType, selectedDate, today) : null;
+  const logTypes = (Object.keys(LOG_META) as LogType[]).filter((type) => type !== "ziedesana" || crop.category === "pukes");
   const plantedOn = live.plantedOn && isGardenDate(live.plantedOn) ? live.plantedOn : null;
   const entries = [...(live.log ?? [])].sort((a, b) => String(b.date ?? "").localeCompare(String(a.date ?? "")));
 
   async function submitLog() {
     if (live.seed || savingLog || syncing) return;
     const currentDay = latviaDateKey();
-    const date = logType === "raza" ? harvestDate ?? currentDay : currentDay;
-    if (logType === "raza" && (harvestDateError(live, date, currentDay) || amountError)) return;
+    const date = datedType ? logDates[datedType] ?? currentDay : currentDay;
+    if ((datedType && datedLogError(live, datedType, date, currentDay)) || amountError) return;
     setSavingLog(true);
     setLogFailed(false);
     setSavedLog(null);
@@ -81,7 +84,7 @@ export function PlantDetail({
         if (entries.filter((entry) => entry.date > date).length >= 3) setShowAllLogs(true);
         setNote("");
         setAmount("");
-        setHarvestDate(null);
+        setLogDates({});
         setHarvestUnit("kg");
       } else setLogFailed(true);
     } catch {
@@ -144,7 +147,7 @@ export function PlantDetail({
             <section aria-labelledby="plant-care-heading">
               <h4 id="plant-care-heading" className="mb-sm text-title-md text-on-surface">Kopšanas žurnāls</h4>
               <fieldset disabled={savingLog || syncing} aria-label="Ieraksta veids" className="mb-sm flex flex-wrap gap-2">
-                {(Object.keys(LOG_META) as LogType[]).map((t) => (
+                {logTypes.map((t) => (
                   <Chip key={t} tone="neutral" active={t === logType} onClick={() => { setLogType(t); setLogFailed(false); setSavedLog(null); }}>
                     {LOG_META[t].label}
                   </Chip>
@@ -152,18 +155,20 @@ export function PlantDetail({
               </fieldset>
               <form onSubmit={(event) => { event.preventDefault(); void submitLog(); }}>
                 <fieldset disabled={savingLog || syncing} aria-label="Kopšanas ieraksts" className="flex min-w-0 flex-wrap gap-2">
+                  {datedType && (
+                    <div className="w-full">
+                      <label className="inline-flex max-w-full flex-col gap-1 text-label-md text-on-surface">
+                        {datedType === "ziedesana" ? "Kad redzēji ziedus?" : "Ražas novākšanas datums"}
+                        <input type="date" required min={sownOn ?? undefined} max={today} value={selectedDate}
+                          onChange={(event) => setLogDates({ ...logDates, [datedType]: event.target.value })} aria-invalid={Boolean(dateError)}
+                          aria-describedby={dateError ? "log-date-error" : undefined}
+                          className="min-h-11 min-w-0 rounded-lg border border-outline-variant/30 bg-surface-container-low px-3 py-2 text-body-md text-on-surface" />
+                      </label>
+                      {dateError && <p id="log-date-error" role="status" className="mt-1 text-body-sm text-error">{dateError}</p>}
+                    </div>
+                  )}
                   {logType === "raza" && (
                     <>
-                      <div className="w-full">
-                        <label className="inline-flex max-w-full flex-col gap-1 text-label-md text-on-surface">
-                          Ražas novākšanas datums
-                          <input type="date" required min={sownOn ?? undefined} max={today} value={harvestDate ?? today}
-                            onChange={(event) => setHarvestDate(event.target.value)} aria-invalid={Boolean(harvestError)}
-                            aria-describedby={harvestError ? "harvest-date-error" : undefined}
-                            className="min-h-11 min-w-0 rounded-lg border border-outline-variant/30 bg-surface-container-low px-3 py-2 text-body-md text-on-surface" />
-                        </label>
-                        {harvestError && <p id="harvest-date-error" role="status" className="mt-1 text-body-sm text-error">{harvestError}</p>}
-                      </div>
                       <div className="grid w-full grid-cols-[minmax(0,1fr)_minmax(5.5rem,0.55fr)] gap-2">
                         <label className="flex min-w-0 flex-col gap-1 text-label-md text-on-surface">
                           Ražas daudzums
@@ -192,7 +197,7 @@ export function PlantDetail({
                     aria-label="Piezīme"
                     className="min-w-0 flex-1 rounded-lg border border-outline-variant/30 bg-surface-container-low px-3 py-2 text-body-md text-on-surface outline-none focus:border-primary"
                   />
-                  <Button type="submit" icon="check" className="px-sm py-xs" disabled={Boolean(harvestError || amountError)}>
+                  <Button type="submit" icon="check" className="px-sm py-xs" disabled={Boolean(dateError || amountError)}>
                     Saglabāt ierakstu
                   </Button>
                   {logFailed && <p role="alert" className="w-full text-body-sm text-error">Ieraksta saglabāšana neizdevās. Vari mēģināt vēlreiz.</p>}

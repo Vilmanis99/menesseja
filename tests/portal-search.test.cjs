@@ -21,6 +21,12 @@ test("server catalogue ranks specific reader questions ahead of broader matches"
   for (const [query, expected] of [
     ["kāpēc nezied hortenzija", "/raksti/kapec-hortenzijas-nezied"],
     ["Puķu nosaukumi", "/pukes"],
+    ["istabas pukes nosaukumi", "/pukes#ziemas-telpaugi"],
+    ["alpu vijolītes", "/raksti/ciklamena-podina"],
+    ["rozes vāzē", "/pukes/rozes#rozes-vaze"],
+    ["rozu puskis", "/pukes/rozes#rozes-vaze"],
+    ["rozes", "/pukes/rozes"],
+    ["Primula veris", "/pukes/primulas"],
     ["  SKABETI  KAPOSTI  ", "/raksti/skabeti-kaposti"],
     ["mēness fāze šodien", "/meness"],
     ["janvāris 2027", "/kalendars/2027/janvaris"],

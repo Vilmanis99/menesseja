@@ -1,7 +1,8 @@
 import { CROPS, MONTHS_LV_FULL, type Crop } from "./planting-crops";
 import { latviaDateKey } from "./day-anchor";
 
-export type LogType = "laistits" | "meslots" | "kaite" | "raza" | "piezime";
+export type LogType = "laistits" | "meslots" | "kaite" | "raza" | "ziedesana" | "piezime";
+export type DatedLogType = "raza" | "ziedesana";
 
 export interface LogEntry {
   id: string;
@@ -16,6 +17,7 @@ export interface LogEntry {
 export const LOG_META: Record<LogType, { label: string; icon: string }> = {
   laistits: { label: "Laistīts", icon: "water_drop" },
   meslots: { label: "Mēslots", icon: "compost" },
+  ziedesana: { label: "Ziedēšana", icon: "local_florist" },
   kaite: { label: "Kaite", icon: "pest_control" },
   raza: { label: "Raža", icon: "agriculture" },
   piezime: { label: "Piezīme", icon: "edit_note" },
@@ -80,9 +82,11 @@ export function harvestAmountError(input: string, unit: NonNullable<LogEntry["un
   return null;
 }
 
-export function harvestDateError(plant: Pick<Plant, "sownOn">, date: string, today = latviaDateKey()): string | null {
-  if (!isGardenDate(date, today)) return "Norādi ražas datumu līdz šodienai ieskaitot.";
-  if (isGardenDate(plant.sownOn, today) && date < plant.sownOn) return "Ražas datums nevar būt pirms šā auga sējas.";
+export function datedLogError(plant: Pick<Plant, "sownOn">, type: DatedLogType, date: string, today = latviaDateKey()): string | null {
+  if (!isGardenDate(date, today)) return type === "ziedesana" ? "Norādi ziedēšanas datumu līdz šodienai ieskaitot." : "Norādi ražas datumu līdz šodienai ieskaitot.";
+  if (isGardenDate(plant.sownOn, today) && date < plant.sownOn) {
+    return type === "ziedesana" ? "Ziedēšanas datums nevar būt pirms šā auga sējas." : "Ražas datums nevar būt pirms šā auga sējas.";
+  }
   return null;
 }
 
@@ -91,8 +95,9 @@ export function plantDateError(plant: Pick<Plant, "sownOn" | "plantedOn" | "log"
   if (action === "sown" && isGardenDate(plant.plantedOn, today) && date > plant.plantedOn) {
     return "Sējas datumam jābūt pirms izstādīšanas vai tajā pašā dienā.";
   }
-  if (action === "sown" && plant.log?.some((entry) => entry.type === "raza" && isGardenDate(entry.date, today) && entry.date < date)) {
-    return "Sējas datums nevar būt pēc jau pierakstītas šā auga ražas.";
+  if (action === "sown") {
+    const earlier = plant.log?.find((entry) => (entry.type === "raza" || entry.type === "ziedesana") && isGardenDate(entry.date, today) && entry.date < date);
+    if (earlier) return earlier.type === "ziedesana" ? "Sējas datums nevar būt pēc jau pierakstītas šā auga ziedēšanas." : "Sējas datums nevar būt pēc jau pierakstītas šā auga ražas.";
   }
   if (action === "planted" && isGardenDate(plant.sownOn, today) && date < plant.sownOn) {
     return "Izstādīšanas datumam jābūt sējas dienā vai vēlāk.";

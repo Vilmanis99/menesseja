@@ -10,22 +10,24 @@ require.extensions[".ts"] = (module, filename) => {
   module._compile(outputText, filename);
 };
 
-const { harvestAmountError, harvestDateError, plantDateError } = require("../lib/garden.ts");
+const { datedLogError, harvestAmountError, plantDateError } = require("../lib/garden.ts");
 const { latviaDateKey } = require("../lib/day-anchor.ts");
 
-test("historical harvests respect the actual sowing day and the current day in Riga", () => {
+test("harvest and flowering observations respect the actual sowing day and the current day in Riga", () => {
   const today = latviaDateKey(new Date("2026-03-01T22:30:00Z"));
   assert.equal(today, "2026-03-02");
-  assert.equal(harvestDateError({}, today, today), null);
-  assert.equal(harvestDateError({}, "2024-02-29", today), null);
-  for (const invalid of ["", "2025-02-29", "2026-03-03", "2025-13-01"]) {
-    assert.ok(harvestDateError({}, invalid, today));
-  }
   const plant = { sownOn: "2025-05-01", plantedOn: "2026-02-20" };
-  assert.ok(harvestDateError(plant, "2025-04-30", today));
-  assert.equal(harvestDateError(plant, "2025-05-01", today), null);
-  assert.equal(harvestDateError(plant, "2025-09-12", today), null);
-  assert.equal(harvestDateError({ sownAt: "2026-03-01" }, "2025-09-12", today), null);
+  for (const type of ["raza", "ziedesana"]) {
+    assert.equal(datedLogError({}, type, today, today), null);
+    assert.equal(datedLogError({}, type, "2024-02-29", today), null);
+    for (const invalid of ["", "2025-02-29", "2026-03-03", "2025-13-01"]) {
+      assert.ok(datedLogError({}, type, invalid, today));
+    }
+    assert.ok(datedLogError(plant, type, "2025-04-30", today));
+    assert.equal(datedLogError(plant, type, "2025-05-01", today), null);
+    assert.equal(datedLogError(plant, type, "2025-09-12", today), null);
+    assert.equal(datedLogError({ sownAt: "2026-03-01" }, type, "2025-09-12", today), null);
+  }
 });
 
 test("editing a sowing date respects past harvests while a moved plant retains its earlier harvest", () => {
@@ -38,6 +40,9 @@ test("editing a sowing date respects past harvests while a moved plant retains i
   assert.equal(plantDateError(plant, "sown", "2025-08-01", "2026-03-02"), null);
   assert.ok(plantDateError(plant, "sown", "2025-08-02", "2026-03-02"));
   assert.equal(plantDateError(plant, "planted", "2026-02-20", "2026-03-02"), null);
+  const flowering = { log: [{ type: "ziedesana", date: "2025-07-10" }] };
+  assert.equal(plantDateError(flowering, "sown", "2025-07-10", "2026-03-02"), null);
+  assert.match(plantDateError(flowering, "sown", "2025-07-11", "2026-03-02"), /ziedēšanas/);
 });
 
 test("an optional harvest amount supports positive weights or whole counts", () => {

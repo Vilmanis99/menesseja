@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { TrackedLink } from "@/components/tracked-link";
 import { notFound } from "next/navigation";
 import { Card } from "@/components/ui/card";
 import { Icon } from "@/components/ui/icon";
@@ -7,6 +8,7 @@ import { JsonLd } from "@/components/json-ld";
 import { DataNote } from "@/components/data-note";
 import { ContentFigure } from "@/components/content-figure";
 import { ContentTable } from "@/components/content-table";
+import { RoseVaseDiagram } from "@/components/rose-vase-diagram";
 import { SnowdropFlowering } from "@/components/snowdrop-flowering";
 import { contentImage } from "@/lib/content-images";
 import { getFlower, getAllFlowers, flowerSlugs, FLOWER_TYPE_META, type Flower, type FlowerSourceSection } from "@/lib/flowers";
@@ -58,6 +60,8 @@ export default async function FlowerPage({ params }: { params: Promise<{ slug: s
   if (!f) notFound();
 
   const tm = FLOWER_TYPE_META[f.type];
+  const crop = CROPS.find((item) => item.id === f.slug);
+  const sowing = f.plantingMethod === "sow";
   const nameAcc = f.nameAcc ?? f.name.toLowerCase();
   const all = getAllFlowers();
   const related = (f.related ?? [])
@@ -72,7 +76,7 @@ export default async function FlowerPage({ params }: { params: Promise<{ slug: s
     { label: "Ziedēšana", value: f.bloom },
     { label: "Augstums", value: f.height },
     { label: "Gaisma", value: f.sun },
-    { label: "Stādīšana", value: f.plantWhen },
+    { label: sowing ? "Sējas laiks" : "Stādīšana", value: f.plantWhen },
     { label: "Grūtība", value: f.difficulty },
     { label: "Pārziemošana", value: "Skatīt šī auga nosacījumus →", href: "#parziemosana" },
   ];
@@ -80,7 +84,7 @@ export default async function FlowerPage({ params }: { params: Promise<{ slug: s
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: `${f.name} — kad stādīt un kā kopt Latvijā`,
+    headline: f.seoTitle ?? `${f.name} — kad stādīt un kā kopt Latvijā`,
     about: f.name,
     inLanguage: "lv",
     dateModified: f.updatedAt,
@@ -107,6 +111,22 @@ export default async function FlowerPage({ params }: { params: Promise<{ slug: s
       }
     : null;
 
+  const guideNav = (
+    <nav aria-label="Ceļveža sadaļas" className="mb-md flex flex-wrap gap-2 sm:mb-lg">
+      {[
+        ...(f.cutFlowers ? [{ href: `#${f.slug}-vaze`, label: `${f.name} vāzē` }] : []),
+        ...(f.slug === "sniegpulkstenites" ? [{ href: "#kad-zied-latvija", label: "Kad zied Latvijā?" }] : []),
+        ...(f.comparison ? [{ href: "#augu-atskiribas", label: "Augu atšķirības" }] : []),
+        { href: "#stadisana", label: sowing ? "Sēja" : "Stādīšana" },
+        { href: "#kopsana", label: "Kopšana" },
+        ...(f.winter?.trim() ? [{ href: "#parziemosana", label: "Pārziemošana" }] : []),
+        ...(f.problems?.length ? [{ href: "#problemas", label: "Problēmas" }] : []),
+        ...(f.faq?.length ? [{ href: "#jautajumi", label: "Jautājumi" }] : []),
+        ...(f.sources?.length ? [{ href: "#avoti", label: "Avoti" }] : []),
+      ].map((link) => <a key={link.href} href={link.href} className="inline-flex min-h-11 items-center rounded-full bg-surface-container px-4 py-2 text-label-md text-primary hover:underline">{link.label}</a>)}
+    </nav>
+  );
+
   return (
     <article className="mx-auto max-w-3xl">
       <JsonLd data={jsonLd} />
@@ -129,30 +149,34 @@ export default async function FlowerPage({ params }: { params: Promise<{ slug: s
           {f.latin && <p className="text-body-md italic text-on-surface-variant">{f.latin}</p>}
           <p className="mt-1 text-body-lg text-on-surface-variant">{f.tagline}</p>
           {f.updatedAt && <p className="mt-2 text-label-sm text-on-surface-variant">Atjaunots <time dateTime={f.updatedAt}>{new Intl.DateTimeFormat("lv-LV", { day: "2-digit", month: "2-digit", year: "numeric", timeZone: "UTC" }).format(new Date(`${f.updatedAt}T00:00:00Z`))}</time></p>}
+          {crop?.category === "pukes" && (crop.sowOutdoors || crop.transplant) && (
+            <TrackedLink source={`pukes:${crop.id}`} placement="plan-flower" href={`/planotajs?augs=${crop.id}`} className="mt-2 inline-flex min-h-11 items-center gap-2 rounded-lg border border-outline-variant px-3 text-label-md font-semibold text-primary hover:bg-surface-container focus-visible:outline-primary">
+              <Icon name="grid_view" size="18px" /> Ieplānot dobē
+            </TrackedLink>
+          )}
         </div>
       </header>
 
-      {f.shortAnswer && <Card tone="container" accent="primary" className="mb-md p-md sm:mb-lg"><p className="text-body-md leading-relaxed text-on-surface sm:text-body-lg">{f.shortAnswer}</p></Card>}
+      {f.cutFlowers && guideNav}
+      {f.shortAnswer && (
+        <Card tone="container" accent="primary" className="mb-md p-md sm:mb-lg">
+          <p className="text-body-md leading-relaxed text-on-surface sm:text-body-lg">{f.shortAnswer}</p>
+          {f.shortAnswerLink && (
+            <Link href={f.shortAnswerLink.href} className="mt-sm inline-flex min-h-11 items-center gap-2 rounded-lg bg-primary px-4 py-2 text-label-md font-semibold text-on-primary hover:brightness-110">
+              {f.shortAnswerLink.label} <Icon name="arrow_forward" size="18px" />
+            </Link>
+          )}
+        </Card>
+      )}
 
-      <nav aria-label="Ceļveža sadaļas" className="mb-md flex flex-wrap gap-2 sm:mb-lg">
-        {[
-          ...(f.slug === "sniegpulkstenites" ? [{ href: "#kad-zied-latvija", label: "Kad zied Latvijā?" }] : []),
-          ...(f.comparison ? [{ href: "#augu-atskiribas", label: "Augu atšķirības" }] : []),
-          { href: "#stadisana", label: "Stādīšana" },
-          { href: "#kopsana", label: "Kopšana" },
-          ...(f.winter?.trim() ? [{ href: "#parziemosana", label: "Pārziemošana" }] : []),
-          ...(f.problems?.length ? [{ href: "#problemas", label: "Problēmas" }] : []),
-          ...(f.faq?.length ? [{ href: "#jautajumi", label: "Jautājumi" }] : []),
-          ...(f.sources?.length ? [{ href: "#avoti", label: "Avoti" }] : []),
-        ].map((link) => <a key={link.href} href={link.href} className="inline-flex min-h-11 items-center rounded-full bg-surface-container px-4 py-2 text-label-md text-primary hover:underline">{link.label}</a>)}
-      </nav>
+      {!f.cutFlowers && guideNav}
 
       {f.image && <ContentFigure image={f.image} priority />}
 
       {/* Conversion into the app — only for flowers tracked in the crop data */}
-      {CROPS.some((c) => c.id === f.slug) && (
+      {crop && (
         <Link
-          href={`/?pievienot=${f.slug}`}
+          href={`/?pievienot=${crop.id}`}
           className="mb-lg flex items-center gap-2 rounded-xl bg-primary px-md py-sm font-bold text-on-primary shadow-md shadow-primary/20 transition-all hover:brightness-110"
         >
           <Icon name="add" size="20px" />
@@ -200,7 +224,7 @@ export default async function FlowerPage({ params }: { params: Promise<{ slug: s
       {f.identificationImage && <ContentFigure image={f.identificationImage} />}
 
       {/* Planting */}
-      <h2 id="stadisana" className="mb-sm scroll-mt-24 text-headline-md text-on-surface">Kā stādīt</h2>
+      <h2 id="stadisana" className="mb-sm scroll-mt-24 text-headline-md text-on-surface">{sowing ? "Kā sēt" : "Kā stādīt"}</h2>
       <Card tone="high" elevated className="mb-lg p-md">
         <ol className="space-y-sm">
           {f.planting.map((s, i) => (
@@ -227,6 +251,25 @@ export default async function FlowerPage({ params }: { params: Promise<{ slug: s
         </ul>
         <SectionSources flower={f} section="care" />
       </Card>
+
+      {f.cutFlowers && (
+        <section className="mb-lg" aria-labelledby={`${f.slug}-vaze`}>
+          <h2 id={`${f.slug}-vaze`} className="mb-sm scroll-mt-24 text-headline-md text-on-surface">{f.cutFlowers.heading}</h2>
+          <p className="mb-md text-body-lg leading-relaxed text-on-surface">{f.cutFlowers.summary}</p>
+          <div className="space-y-md sm:flex sm:flex-row-reverse sm:items-start sm:gap-md sm:space-y-0">
+            {f.slug === "rozes" && <div className="mx-auto max-w-[24rem] sm:sticky sm:top-24 sm:w-2/5 sm:shrink-0"><RoseVaseDiagram /></div>}
+            <ol className="min-w-0 list-decimal space-y-sm pl-6 marker:font-semibold marker:text-primary">
+              {f.cutFlowers.steps.map((step) => (
+                <li key={step.heading} className="pl-1">
+                  <h3 className="text-title-md text-on-surface">{step.heading}</h3>
+                  <p className="mt-1 text-body-md leading-relaxed text-on-surface-variant">{step.text}</p>
+                </li>
+              ))}
+            </ol>
+          </div>
+          <SectionSources flower={f} section="cutFlowers" />
+        </section>
+      )}
 
       {f.winter?.trim() && (
         <section className="mb-lg">

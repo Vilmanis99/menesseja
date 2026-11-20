@@ -6,6 +6,7 @@ import type { Flower } from "./flowers";
 export interface FlowerDirectoryEntry extends FlowerNameEntry {
   id: string;
   bloomMonths?: number[];
+  comparedNames?: string[];
   aliases: string[];
   hasFolkName: boolean;
 }
@@ -14,14 +15,15 @@ const baseName = (name: string) => normalizeArticleQuery(name.split("(")[0]);
 
 /** Counts names (including genera and subgroups), not unique species. */
 export function flowerDirectoryEntries(
-  flowers: Pick<Flower, "slug" | "name" | "latin" | "aliases" | "bloomMonths" | "tagline">[],
+  flowers: Pick<Flower, "slug" | "name" | "latin" | "aliases" | "bloomMonths" | "tagline" | "comparison">[],
   extra: FlowerNameEntry[] = EXTRA_FLOWER_NAMES,
   folk: FolkName[] = FOLK_NAMES,
 ): FlowerDirectoryEntry[] {
-  const entries: (FlowerNameEntry & { id: string; bloomMonths?: number[] })[] = [
+  const entries: (FlowerNameEntry & Pick<FlowerDirectoryEntry, "id" | "bloomMonths" | "comparedNames">)[] = [
     ...flowers.filter((flower) => flower.slug !== "balkona-pukes").map((flower) => ({
       id: flower.slug, name: flower.name, latin: flower.latin, note: flower.tagline,
       aliases: flower.aliases, bloomMonths: flower.bloomMonths, href: `/pukes/${flower.slug}`,
+      comparedNames: flower.comparison?.items.map((item) => item.name),
     })),
     ...extra.map((entry) => ({ ...entry, id: normalizeArticleQuery(entry.name).replace(/ /g, "-") })),
   ];
@@ -36,7 +38,7 @@ export function flowerDirectoryEntries(
 
 export function matchesFlower(entry: FlowerDirectoryEntry, query: string, month = 0): boolean {
   if (month && !entry.bloomMonths?.includes(month)) return false;
-  const text = normalizeArticleQuery([entry.name, entry.latin, entry.note, ...entry.aliases,
+  const text = normalizeArticleQuery([entry.name, entry.latin, entry.note, ...entry.aliases, ...(entry.comparedNames ?? []),
     entry.indoorGuide && "istabas puķes telpaugi", "puķu nosaukumi"].filter(Boolean).join(" "));
   return normalizeArticleQuery(query).split(" ").filter(Boolean).every((term) => text.includes(term));
 }

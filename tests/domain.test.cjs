@@ -228,11 +228,18 @@ test("flower names resolve folk and botanical searches without counting topic pa
     assert.ok(entries.filter((entry) => matchesFlower(entry, query)).some((entry) => entry.name === name), query);
   }
   for (const alias of FOLK_NAMES) assert.ok(entries.some((entry) => matchesFlower(entry, alias.folk)), alias.folk);
+  const primroses = entries.find((entry) => entry.id === "primulas");
+  for (const query of ["Primula veris", "vulgaris primula", "gailbiksite", "bezstumbra primula"]) {
+    assert.ok(matchesFlower(primroses, query, 5), query);
+    assert.equal(matchesFlower(primroses, query, 12), false, query);
+  }
+  assert.ok(!primroses.aliases.includes("Primula veris"));
+  assert.ok(matchesFlower(entries.find((entry) => entry.id === "hortenzijas"), "Hydrangea arborescens"));
   const indoor = entries.filter((entry) => matchesFlower(entry, "istabas pukes nosaukumi"));
-  assert.deepEqual(indoor.map((entry) => entry.name), ["Amarillis", "Ziemassvētku kaktuss", "Ziemassvētku zvaigzne"]);
+  assert.deepEqual(indoor.map((entry) => entry.name), ["Amarillis", "Persijas ciklamena", "Ziemassvētku kaktuss", "Ziemassvētku zvaigzne"]);
   assert.deepEqual(entries.filter((entry) => matchesFlower(entry, "telpaugi")), indoor);
   const images = JSON.parse(fs.readFileSync(path.join(__dirname, "../content/images.json"), "utf8"));
-  for (const [index, query] of ["hipeastrs", "slumbergera", "puansetija"].entries()) {
+  for (const [index, query] of ["hipeastrs", "alpu vijolites", "slumbergera", "puansetija"].entries()) {
     const entry = indoor[index];
     assert.ok(matchesFlower(entry, query) && matchesFlower(entry, entry.latin));
     const slug = entry.href.replace(/^\/raksti\//, "");
@@ -268,6 +275,26 @@ test("flower bloom months combine with names and keep unrelated URL parameters",
   assert.equal(readFlowerMonth(flowerSearchParams("Convallaria", url)), 5);
   assert.equal(flowerSearchParams("", url, 0), "utm_source=kalendars");
   assert.equal(readFlowerMonth("menesis=invalid"), 0);
+});
+
+test("cornflowers have one profile, a spring direct-sowing window and a separate summer flowering window", () => {
+  const crop = CROPS.find((item) => item.id === "rudzupukes");
+  const guide = JSON.parse(fs.readFileSync(path.join(__dirname, "../content/flowers/rudzupukes.json"), "utf8"));
+  const entries = flowerDirectoryEntries([guide]);
+  const names = entries.filter((item) => item.id === crop.id);
+  assert.equal(names.length, 1);
+  assert.equal(names[0].href, "/pukes/rudzupukes");
+  assert.equal(crop.category, "pukes");
+  assert.equal(cropActivityMeta(crop, "sowOutdoors").label, "Sēt laukā");
+  assert.deepEqual(guide.bloomMonths, [6, 7, 8, 9]);
+  for (let month = 1; month <= 12; month++) {
+    const sow = month === 4 || month === 5;
+    const bloom = guide.bloomMonths.includes(month);
+    assert.deepEqual(guideActivities(crop, month, "sowing"), sow ? ["sowOutdoors"] : []);
+    assert.equal(matchesFlower(names[0], "Centaurea cyanus", month), bloom);
+    assert.equal(matchesSowingCrop(crop, { month, category: "pukes", activity: "flowering", query: "zila rudzupuke" }), bloom);
+    assert.deepEqual(guideActivities(crop, month, "harvest"), []);
+  }
 });
 
 test("pest search combines Latvian names, host plants and type filters with restorable URLs", () => {
@@ -577,6 +604,8 @@ test("spring and summer remain discoverable and every curated destination exists
   assert.ok(seasonalLinks(3).some((l) => l.href === "/pukes/kas-zied/pavasari"));
   assert.ok(seasonalLinks(7).some((l) => l.href === "/pukes/kas-zied/vasara"));
   assert.ok(seasonalLinks(10).some((l) => l.href === "/pukes/kas-zied/rudeni"));
+  const winterPhotos = "/pukes#ziemas-telpaugi";
+  for (const month of [1, 12]) assert.ok(seasonalLinks(month).some((link) => link.href === winterPhotos));
   for (let month = 1; month <= 12; month++) for (const link of seasonalLinks(month)) {
     if (link.href.startsWith("/raksti/")) {
       assert.ok(fs.existsSync(path.join(__dirname, "..", "content", "articles", `${link.href.slice(8)}.json`)), link.href);
@@ -586,7 +615,7 @@ test("spring and summer remain discoverable and every curated destination exists
       assert.ok(fs.existsSync(flowerFile), link.href);
       if (anchor) assert.ok(JSON.parse(fs.readFileSync(flowerFile, "utf8")).winter?.trim(), link.href);
     } else {
-      assert.ok(["/pukes/kas-zied/pavasari", "/pukes/kas-zied/vasara", "/pukes/kas-zied/rudeni"].includes(link.href), link.href);
+      assert.ok([winterPhotos, "/pukes/kas-zied/pavasari", "/pukes/kas-zied/vasara", "/pukes/kas-zied/rudeni"].includes(link.href), link.href);
     }
   }
 });

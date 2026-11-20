@@ -57,6 +57,12 @@ export function CalendarMonthGuide({ month }: { month: number }) {
           <TrackedLink href={section.link.href} source={`calendar:${month}`} placement="month-guide" className="inline-flex min-h-11 items-center gap-2 text-body-md text-primary underline decoration-primary/30 underline-offset-2 hover:decoration-primary">
             {section.link.label}<Icon name="arrow_forward" size="18px" />
           </TrackedLink>
+          {section.articleLink && (
+            <p><TrackedLink href={section.articleLink.href} source={`calendar:${month}`} placement="month-guide"
+              className="inline-flex min-h-11 items-center text-body-md text-on-surface-variant underline underline-offset-2 hover:text-primary">
+              {section.articleLink.label}
+            </TrackedLink></p>
+          )}
           <p className="mt-sm text-label-sm leading-relaxed text-on-surface-variant">Avoti: {section.sourceIds.map((id, index) => <span key={id}>{index > 0 && " · "}<a href={CALENDAR_SOURCES[id].url} className="underline underline-offset-2">{CALENDAR_SOURCES[id].label}</a></span>)}</p>
         </section>
       ))}

@@ -1,0 +1,105 @@
+{
+  "slug": "primulas",
+  "name": "Prīmulas",
+  "nameAcc": "prīmulas",
+  "latin": "Primula",
+  "aliases": ["prīmula podiņā", "parastā prīmula", "bezstumbra prīmula", "gaiļbiksīte"],
+  "image": {
+    "id": "primula-vulgaris-ziedi",
+    "caption": "Parastā prīmula (Primula vulgaris). Sugas gaiši dzeltenie ziedi paceļas katrs uz sava kātiņa no lapu rozetes."
+  },
+  "identificationImage": {
+    "id": "primula-veris-ziedkopa",
+    "caption": "Gaiļbiksīte (Primula veris). Viena ziedneša galā vairāki dzelteni ziedi noliekušies uz vienu pusi."
+  },
+  "emoji": "🌼",
+  "type": "daudzgadiga",
+  "seoTitle": "Prīmulas podiņā — kā laistīt un ko darīt pēc noziedēšanas",
+  "seoDescription": "Kā kopt ziedošu prīmulu podiņā, kad to var izstādīt dārzā un pēc kā atšķirt parasto prīmulu no Latvijas pļavās ziedošās gaiļbiksītes.",
+  "tagline": "Ko darīt ar prīmulu podiņā pēc noziedēšanas?",
+  "updatedAt": "2026-11-19",
+  "shortAnswer": "Dārza šķirnei pēc noziedēšanas atstāj zaļās lapas un uzturi zemi viegli mitru. Pavasarī pakāpeniski pieradini augu pie āra apstākļiem un iestādi gaišā pusēnā. Ja dāvinātajai prīmulai nav etiķetes, vari to paturēt podā gaišā, vēsā vietā. Dobē tā var nepārziemot.",
+  "lifeCycle": "Parastā prīmula un gaiļbiksīte ir daudzgadīgas. Veikalos ziemas beigās pārdod arī siltumnīcās uzziedinātas šķirnes un telpām paredzētas prīmulu sugas.",
+  "bloom": "Gaiļbiksīte Latvijas dabā zied aprīlī un maijā. Podiņā uzziedinātu prīmulu var iegādāties jau ziemas beigās.",
+  "bloomMonths": [4, 5],
+  "height": "Parastā prīmula līdz apmēram 20 cm, gaiļbiksīte 10–30 cm",
+  "sun": "Podiņā gaiša, vēsa vieta. Dārza prīmulai piemērota gaiša pusēna.",
+  "hardy": false,
+  "difficulty": "vidēji",
+  "plantWhen": "Dārzam piemērotu šķirni stādi pavasarī vai rudenī. Siltumā audzētu podiņa augu pavasarī pie āra apstākļiem pieradini pakāpeniski.",
+  "moonPhase": "jebkurš",
+  "moonElement": "jebkurs",
+  "moonText": "Izstādīšanai izvēlies brīdi, kad augs pieradis pie āra apstākļiem un dobe ir apstrādājama. Laistīšanas vajadzību pārbaudi podā vai dobē pie saknēm.",
+  "intro": [
+    "Ja prīmula dāvināta februārī, apskati etiķeti, pirms izlem, kur tā augs pavasarī. Noder sugas vai šķirnes nosaukums un norāde par audzēšanu dārzā. Uzraksts «Primula» nosauc visu ģinti. Ziedu krāsa un lielums vien nepasaka, kā augs pārcietīs Latvijas ziemu.",
+    "Abās fotogrāfijās redzamas botāniskās sugas — parastā prīmula un gaiļbiksīte. Lai tās atšķirtu, ar skatienu seko vienam ziedam lejup līdz lapām. Parastajai prīmulai zieda kātiņš sākas rozetē, bet gaiļbiksītei vairāku ziedu kātiņi satiekas viena kopīga ziedneša galā."
+  ],
+  "comparison": {
+    "heading": "Parastā prīmula, gaiļbiksīte vai podiņā uzziedināta šķirne?",
+    "items": [
+      {"name": "Parastā prīmula (Primula vulgaris)", "description": "Parastajai prīmulai ar gaiši dzelteniem ziediem katrs zieds paceļas no lapu rozetes uz atsevišķa kātiņa. Dārzā tai piemērota pusēna un zeme, kas saglabā mitrumu."},
+      {"name": "Gaiļbiksīte (Primula veris)", "description": "Dzeltenajiem, nokarenajiem ziediem ir bāli dzeltenzaļš kauss. Tos viegli aplūkot no sāniem. Latvijā gaiļbiksītes var sastapt pļavās un mežmalās, īpaši aprīļa beigās un maijā."},
+      {"name": "Pavasara prīmula no veikala", "description": "Lieli violeti, sarkani, balti vai divkrāsu ziedi bieži ir šķirnes pazīme. Agrīno lielziedu sortimentā ir arī augi īslaicīgai audzēšanai podos. Ja gribi saglabāt ceru dobē, meklē konkrētas šķirnes nosaukumu un audzētāja ziņas par ziemcietību."}
+    ]
+  },
+  "planting": [
+    "Kad dārzam piemērotā prīmula nozied, atstāj tai zaļās lapas. Kamēr ārā vēl sals vai zeme sasalusi, turi podu gaišā, vēsā vietā un pārbaudi, vai sakņu kamols joprojām ir viegli mitrs.",
+    "Pavasarī sāc ar dažām stundām aizvējā, vieglā ēnā. Pirmās naktis podu ienes atpakaļ, pēc tam pakāpeniski pagarini ārā pavadīto laiku. Uz palodzes plaukušai prīmulai pēkšņa saules, vēja un aukstuma maiņa var bojāt lapas.",
+    "Izvēlies dobi gaišā pusēnā. Ja pēc lietus izvēlētajā vietā ilgi stāv ūdens vai vasarā zeme izkalst cieta, atrodi piemērotāku vietu. Pēc iestādīšanas aplaisti un turpmāk pārbaudi, vai augsne pie saknēm saglabā mitrumu."
+  ],
+  "care": [
+    "Ziedošu prīmulu turi gaišā, vēsā vietā, aptuveni 13–16 °C, tālāk no radiatora. Šādos apstākļos ziedi var turēties vairākas nedēļas. Saulainā dienā pārbaudi, vai pats pods pie loga nav sakarsis.",
+    "Pirms laistīšanas pacel audzēšanas podiņu no dekoratīvā apvalka un aptausti substrātu. Ja tas sāk apžūt, aplaisti un ļauj ūdenim notecēt pa poda caurumiem. Izlej ūdeni, kas sakrājies apvalka dibenā.",
+    "Vasarā arī dobē vēro vietu ap ceru. Ja prīmula saņem tiešu sauli lielu dienas daļu, augsnei jāspēj saglabāt mitrumu. Vietā, kas ik vasaru izkalst, dārza prīmulai labāk izvēlēties gaišu pusēnu."
+  ],
+  "winter": "Gaiļbiksīte Latvijā pārziemo savvaļā, un parastā prīmula ir ziemcietīga dārza suga. Ziemas beigās iegādāta podiņa turpmākā izturība atkarīga no sugas un šķirnes. Ja etiķete pazudusi, pavasarī vari izmēģināt augu dobē, bet pārziemošanu un tikpat bagātīgu ziedēšanu nākamgad paredzēt nevar.",
+  "problems": [
+    "Ja lapas podā sašļūk, vispirms pārbaudi zemi un dekoratīvā poda apakšu. Sauss, viegls sakņu kamols jāaplaista. Ja zeme jau slapja un pods stāv ūdenī, izlej lieko ūdeni un atstāj notecēt.",
+    "Ja prīmula dobē veido lapas, bet zied maz, apskati gaismu, kad kokiem izplaukušas lapas. Dziļa ēna var kavēt ziedēšanu. Dažām agrīnajām podu šķirnēm arī piemērotā vietā nākamās sezonas ziedi ir mazāki un retāki."
+  ],
+  "faq": [
+    {"q": "Vai noziedējušu prīmulu bez etiķetes var stādīt dārzā?", "a": "Vari izmēģināt, kad salnas beigušās. Sākumā dienā iznes podu aizvējā, naktī ienes atpakaļ. Kad augs pieradis, izvēlies dobi gaišā pusēnā. Dažas podu prīmulas audzē vienai ziedēšanas sezonai. Pat ja augs pārziemo, nākamgad ziedu var būt mazāk."},
+    {"q": "Vai februārī nopirktu ziedošu prīmulu drīkst uzreiz iznest uz balkona?", "a": "Ja naktīs gaidāms sals, paturi podu vēsā, gaišā telpā. Siltumnīcā vai istabā audzētu prīmulu pie āra apstākļiem pieradini pakāpeniski, kad laiks kļuvis piemērots."},
+    {"q": "Vai prīmula un gaiļbiksīte ir viens un tas pats augs?", "a": "Gaiļbiksīte ir viena konkrēta prīmulu suga, Primula veris. Tās nokarenie dzeltenie ziedi veido kopīgu ziedkopu. Prīmulu ģintī ir arī parastā prīmula, citas sugas un dārzos audzēti hibrīdi."}
+  ],
+  "sources": [
+    {"label": "Aiovas Valsts universitāte — florista prīmulas kopšana podiņā", "url": "https://yardandgarden.extension.iastate.edu/faq/i-recently-purchased-primrose-florist-how-do-i-care-it"},
+    {"label": "RHS — parastās prīmulas sugas pazīmes, augsne un ziemcietība", "url": "https://www.rhs.org.uk/plants/13904/primula-vulgaris-subsp-vulgaris-pr-prim/details"},
+    {"label": "Latvijas Nacionālais dabas muzejs — gaiļbiksītes pazīmes un ziedēšanas laiks", "url": "https://www.ldm.gov.lv/lv/pakalpojumi/briviem-briziem/celvezi-daba/augi-un-taurini"},
+    {"label": "Latvijas daba — gaiļbiksītes ziedkopa, augstums un atradnes", "url": "https://www.latvijasdaba.lv/augi/primula-veris-l/"},
+    {"label": "RHS — dārza prīmulu šķirņu izmēģinājums Bridžvoterā, 2021.–2023. gads", "url": "https://www.rhs.org.uk/plants/trials-awards/plant-trial-results/primula-vernales-section"},
+    {"label": "RHS — prīmulas dobēs un sezonas podos, ziedēšana turpmākajos gados", "url": "https://www.rhs.org.uk/plants/primula/primroses-and-polyanthus"},
+    {"label": "RHS — telpās audzētu stādu pakāpeniska pieradināšana āra apstākļiem", "url": "https://www.rhs.org.uk/prevention-protection/hardening-off-tender-plants"}
+  ],
+  "sectionSources": {
+    "intro": [
+      "https://www.rhs.org.uk/plants/13904/primula-vulgaris-subsp-vulgaris-pr-prim/details",
+      "https://www.latvijasdaba.lv/augi/primula-veris-l/",
+      "https://www.rhs.org.uk/plants/trials-awards/plant-trial-results/primula-vernales-section"
+    ],
+    "comparison": [
+      "https://www.rhs.org.uk/plants/13904/primula-vulgaris-subsp-vulgaris-pr-prim/details",
+      "https://www.ldm.gov.lv/lv/pakalpojumi/briviem-briziem/celvezi-daba/augi-un-taurini",
+      "https://www.latvijasdaba.lv/augi/primula-veris-l/",
+      "https://www.rhs.org.uk/plants/trials-awards/plant-trial-results/primula-vernales-section"
+    ],
+    "planting": [
+      "https://www.rhs.org.uk/plants/primula/primroses-and-polyanthus",
+      "https://www.rhs.org.uk/plants/trials-awards/plant-trial-results/primula-vernales-section",
+      "https://www.rhs.org.uk/prevention-protection/hardening-off-tender-plants"
+    ],
+    "care": [
+      "https://yardandgarden.extension.iastate.edu/faq/i-recently-purchased-primrose-florist-how-do-i-care-it",
+      "https://www.rhs.org.uk/plants/13904/primula-vulgaris-subsp-vulgaris-pr-prim/details"
+    ],
+    "winter": [
+      "https://www.ldm.gov.lv/lv/pakalpojumi/briviem-briziem/celvezi-daba/augi-un-taurini",
+      "https://www.rhs.org.uk/plants/13904/primula-vulgaris-subsp-vulgaris-pr-prim/details",
+      "https://www.rhs.org.uk/plants/primula/primroses-and-polyanthus"
+    ],
+    "problems": [
+      "https://yardandgarden.extension.iastate.edu/faq/i-recently-purchased-primrose-florist-how-do-i-care-it",
+      "https://www.rhs.org.uk/plants/primula/primroses-and-polyanthus"
+    ]
+  }
+}

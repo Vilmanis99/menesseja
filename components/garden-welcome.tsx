@@ -18,11 +18,13 @@ export function GardenOverview() {
       <div className="mb-md">
         <h2 id="my-garden-heading" className="text-headline-lg-mobile text-on-surface md:text-headline-lg">Mans dārzs</h2>
         <p className="mt-1 max-w-2xl text-body-lg leading-relaxed text-on-surface-variant">
-          {hasPlants ? "Atver augu, lai pierakstītu laistīšanu vai ražu." : "Pievieno augu, ko audzē dobē, siltumnīcā vai uz palodzes. Te varēsi pierakstīt, kad to laistīji un cik ražas ievāci."}
+          {hasPlants ? "Atver augu un pieraksti, kad to laistīji, kad tas ziedēja vai ko novāci." : "Pievieno augu, ko audzē dobē, siltumnīcā vai uz palodzes. Tā žurnālā varēsi pierakstīt kopšanu, ziedēšanu un ražu."}
         </p>
-        <div className="mt-sm flex flex-wrap items-center gap-x-md gap-y-2">
+        <div className="mt-sm flex flex-wrap items-center gap-x-2 gap-y-1 sm:gap-x-md">
           <AddPlantButton label={hydrated && !hasPlants ? "Pievienot pirmo augu" : "Pievienot augu"} handleDeepLink />
-
+          <Link href="/planotajs" className="inline-flex min-h-11 items-center gap-2 text-body-md text-primary underline underline-offset-4">
+            Atvērt dobes plānu
+          </Link>
         </div>
         {hydrated && !hasPlants && !user && <p className="mt-2 text-body-md text-on-surface-variant">Vari sākt bez konta. Viesa pieraksti glabājas šajā pārlūkā.</p>}
       </div>
@@ -32,7 +34,7 @@ export function GardenOverview() {
           <h3 id="garden-plants-heading" className="sr-only min-[360px]:not-sr-only min-[360px]:mb-sm min-[360px]:block min-[360px]:text-title-md min-[360px]:text-on-surface">Tavi augi</h3>
           <GardenAreas />
           <Link href="/dienasgramata" className="mt-2 inline-flex min-h-11 items-center gap-2 text-body-md text-primary underline underline-offset-4">
-            <Icon name="menu_book" size="18px" /> Raža un piezīmes
+            <Icon name="menu_book" size="18px" /> Dārza dienasgrāmata
           </Link>
         </section>
         <HarvestSummary />

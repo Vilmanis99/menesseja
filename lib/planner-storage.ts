@@ -28,6 +28,17 @@ export function emptyPlanner(placements: Plan["placements"] = {}): PlannerState 
   return { plans: [{ id: "p1", name: "Mans plāns", placements }], activeId: "p1" };
 }
 
+/** A placement fills an empty cell. Only the eraser removes an existing plant. */
+export function editPlannerCell(placements: Plan["placements"], cell: number, selected: string | null, erasing: boolean): Plan["placements"] {
+  if (erasing && placements[cell]) {
+    const next = { ...placements };
+    delete next[cell];
+    return next;
+  }
+  if (!erasing && selected && !placements[cell]) return { ...placements, [cell]: selected };
+  return placements;
+}
+
 function isRecord(value: unknown): value is Record<string, unknown> {
   return typeof value === "object" && value !== null && !Array.isArray(value);
 }

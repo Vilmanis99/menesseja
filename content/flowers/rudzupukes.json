@@ -1,0 +1,99 @@
+{
+  "slug": "rudzupukes",
+  "name": "Rudzupuķes",
+  "nameAcc": "rudzupuķes",
+  "latin": "Centaurea cyanus",
+  "aliases": ["zilā rudzupuķe", "parastā rudzupuķe", "Cyanus segetum", "kalnu rudzupuķe"],
+  "image": {
+    "id": "zila-rudzupuke",
+    "caption": "Zilās rudzupuķes (Centaurea cyanus) ziedu kurvītī platāki malējie ziedi ietver sīku stobrziedu viduci."
+  },
+  "identificationImage": {
+    "id": "kalnu-dzelzene",
+    "caption": "Kalnu dzelzenei (Centaurea montana) malējie ziedi ir dziļi šķelti šaurās, izspūrušās daivās. Šī dārza ziemciete pavasarī atjaunojas no sakneņa."
+  },
+  "emoji": "🌼",
+  "type": "viengadiga",
+  "plantingMethod": "sow",
+  "seoTitle": "Rudzupuķes — kad sēt dobē un kā atšķirt kalnu dzelzeni",
+  "seoDescription": "Kad Latvijā sēt zilās rudzupuķes, cik dziļu veidot vadziņu un kā izretināt dīgstus. Pēc ziediem un lapām atšķir viengadīgo rudzupuķi no kalnu dzelzenes.",
+  "updatedAt": "2026-11-19",
+  "tagline": "Zilā rudzupuķe ir sējama vasaras puķe. Tai līdzīgā kalnu dzelzene ir ziemciete.",
+  "shortAnswer": "Zilo rudzupuķi sēj tieši saulainā dobē, kad augsne apžuvusi tik tālu, ka to var sadrupināt ar grābekli. Latvijā sējai par orientieri izmanto aprīļa beigas vai maija sākumu. Sēklas liec ap 1 cm dziļā vadziņā un pārklāj ar zemi. Nākamvasar tajā pašā vietā var ziedēt jauni pašizsējas augi.",
+  "lifeCycle": "Zilā rudzupuķe zied un ražo sēklas vienu reizi. Pavasarī sēta, tā dzīves ciklu pabeidz tajā pašā gadā. Arī rudenī sadīdzis augs var pārziemot un uzziedēt nākamajā vasarā.",
+  "bloom": "Latvijā zilā rudzupuķe zied no jūnija līdz septembrim. Dārzā sākumu ietekmē sējas laiks.",
+  "bloomMonths": [6, 7, 8, 9],
+  "height": "Zilā rudzupuķe Latvijas floras aprakstā ir 20–60 cm gara. Dārza šķirnēm pārbaudi augstumu uz paciņas.",
+  "sun": "Atklāta, saulaina vieta ar ūdenscaurlaidīgu augsni",
+  "hardy": false,
+  "difficulty": "viegli",
+  "plantWhen": "Sēj tieši dobē pavasarī. Orientieris ir aprīļa beigas vai maija sākums, kad augsne ir apstrādājama.",
+  "moonPhase": "jebkurš",
+  "moonElement": "jebkurs",
+  "moonText": "Sējas dienu izvēlies pēc zemes stāvokļa. Ja vadziņā krājas ūdens vai zeme līp pie grābekļa, pagaidi, līdz dobes virskārta apžuvusi.",
+  "intro": [
+    "Tīruma malā zilā rudzupuķe piesaista skatienu ar koši zilu maliņu ap violetu viduci. Tas, kas no attāluma izskatās pēc viena zieda, ir kurvītis ar daudziem sīkiem ziediem. Stublājs zarojas, un katra zara galā veidojas savs kurvītis.",
+    "Dārzā tai piemērota brīva, saulaina dobes mala. Ja gribi rudzupuķes zālienā, sagatavo nelielu atklātas augsnes laukumu. Sēklas, kas iebirušas blīvā velēnā, nonāk pavisam citos apstākļos nekā uz uzirdinātas tīruma augsnes."
+  ],
+  "comparison": {
+    "heading": "Zilā rudzupuķe vai kalnu dzelzene?",
+    "items": [
+      {
+        "name": "Zilā rudzupuķe (Centaurea cyanus)",
+        "description": "Zarainajam stublājam augšdaļā ir šauras, gandrīz lineāras lapas. Savvaļas formai malējie ziedi izplešas kā mazas zilas piltuves ap violetu viduci. Dārza šķirnēm ir arī citas krāsas. Pēc sēklu nogatavošanās auga mūžs beidzas."
+      },
+      {
+        "name": "Kalnu dzelzene (Centaurea montana)",
+        "description": "Aplūko lapu zem ziedkopas. Tā ir platāka, iegarena un apakšpusē klāta ar matiņiem. Zilie malējie ziedi sadalīti garās, šaurās daivās. Stublājam parasti ir maz zaru, un augs ar laiku izplešas ar sakneņiem."
+      }
+    ]
+  },
+  "planting": [
+    "Aprīļa beigās vai maija sākumā pārbaudi iecerēto vietu. Kad zeme ir atkususi un apžuvusi, izravē nezāles un ar grābekli sadrupini virskārtu. Ja zeme vēl salīp slapjos pikučos, ar sēju pagaidi.",
+    "Ar grābekļa kātu ievelc ap 1 cm dziļu vadziņu. Ja dobes virskārta ir sausa, aplaisti vadziņu un ļauj ūdenim iesūkties. Izsēj sēklas reti, pārklāj ar irdenu zemi un rindu abos galos atzīmē. Ja veido vairākas rindas, starp tām vari atstāt ap 30 cm.",
+    "Kad redzams, kur dīgsti sagājuši cieši kopā, izretini tos. Par atskaites punktu vari izmantot ap 30 cm starp palikušajiem augiem. Ja izvēlētās šķirnes paciņā dots cits atstatums, ievēro šķirnes norādi."
+  ],
+  "care": [
+    "Dīgšanas laikā seko, vai vadziņas virsma ilgstoši neizkalst. Laisti ar smalku strūklu, lai sēklas paliek vietā. Kad augi ieaugušies, tiem piemērota mēreni mitra zeme, no kuras liekais ūdens aizplūst.",
+    "Ja dobē gribi puķes pušķiem, griez ziedošos kātus un izņem noziedējušos kurvīšus. Ja vēlies pašizsēju, dažus kurvīšus atstāj augā līdz sēklu nogatavošanās laikam.",
+    "Augstākai šķirnei, kuras kāti sāk gāzties, laikus ieliec balstu. Ja rudzupuķes ik gadu sašķiebjas pret gaismu, nākamajai sējai izvēlies saulaināku dobes daļu."
+  ],
+  "winter": "Zilās rudzupuķes jau noziedējušais augs pēc sēklu ienākšanās iet bojā. Dobē var pārziemot sēklas un arī rudenī sadīguši jauni augi. Kalnu dzelzene savukārt ir ilggadīgs stādījums — zem zemes saglabājas saknenis, no kura var ataugt tas pats augs.",
+  "problems": [
+    "Pēc sējas zālienā rudzupuķes neparādās. Pārbaudi, vai sēklām bijusi saskare ar zemi. Nākamreiz sēj izravētā, uzirdinātā laukumiņā un atzīmē rindu, lai ravējot varētu saudzēt dīgstus.",
+    "Augi ir cieši cits pie cita, kāti izliecas. Pārbaudi atstatumus un to, cik daudz saules dobei tiek dienas gaitā. Sabiezinātu sējumu izretini, augstus kātus vajadzības gadījumā atbalsti."
+  ],
+  "faq": [
+    {
+      "q": "Vai rudzupuķes nākamgad atkal ziedēs?",
+      "a": "Ja zilās rudzupuķes kurvīšos nogatavojās sēklas, nākamgad tur var parādīties jauni augi. Ja visas ziedkopas nogriezi pušķiem, paredzamāku rezultātu dos jauna sēja. Kalnu dzelzene ir daudzgadīga un var atkal ziedēt no tā paša sakneņa."
+    },
+    {
+      "q": "Vai rudzupuķēm jāaudzē dēsti?",
+      "a": "Zilo rudzupuķi var sēt uzreiz vietā, kur tā ziedēs. Pavasarī sagaidi irdeni apstrādājamu augsni, izveido seklu vadziņu un pēc sadīgšanas izretini pārāk ciešos augus."
+    },
+    {
+      "q": "Kā atšķirt abas sugas, ja abām ir zili ziedi?",
+      "a": "Aplūko malējos ziedus un stublāja lapas kopā. Zilajai rudzupuķei ziedu piltuvītes ir platākas un augšējās lapas šauras. Kalnu dzelzenei ziedu malas ir izteikti izspūrušas un lapas platākas."
+    }
+  ],
+  "related": ["samtenes", "saulespukes"],
+  "sources": [
+    {"label": "Botāniķe Rūta Sniedze-Kretalova — zilā rudzupuķe Latvijas Nacionālajā enciklopēdijā", "url": "https://enciklopedija.lv/skirklis/146462-zil%C4%81-rudzupu%C4%B7e"},
+    {"label": "Kjū Karaliskais botāniskais dārzs — Centaurea cyanus un tās dzīves cikls", "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:190310-1"},
+    {"label": "Latvijas daba — kalnu dzelzenes stublājs, lapas un ziedu kurvītis", "url": "https://www.latvijasdaba.lv/augi/centaurea-montana-l/"},
+    {"label": "Māra Muktupāvela — rudzupuķu sējas laiks Latvijas dārzā, «Spēles par augiem», 26. lpp.", "url": "https://maciunmacies.valoda.lv/wp-content/uploads/2019/10/SpelesParAugiem.pdf#page=26"},
+    {"label": "RHS — rudzupuķu tiešā sēja, vadziņas dziļums un retināšana", "url": "https://www.rhs.org.uk/education-learning/children-young-people/family-activities/grow-it/cornflower"},
+    {"label": "Ziemeļkarolīnas Valsts universitāte — zilās rudzupuķes kopšana, balstīšana un pašizsēja", "url": "https://plants.ces.ncsu.edu/plants/centaurea-cyanus/"},
+    {"label": "Valsts augu aizsardzības dienests — zilā rudzupuķe ziemotspējīgo sugu grupā, 30. lpp.", "url": "https://noverojumi.vaad.gov.lv/images/Nezales_buklets_WEB_v2025.pdf"},
+    {"label": "RHS — kalnu dzelzenes augums un daudzgadīgais saknenis", "url": "https://www.rhs.org.uk/plants/3364/centaurea-montana/details"}
+  ],
+  "sectionSources": {
+    "intro": ["https://enciklopedija.lv/skirklis/146462-zil%C4%81-rudzupu%C4%B7e", "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:190310-1"],
+    "comparison": ["https://enciklopedija.lv/skirklis/146462-zil%C4%81-rudzupu%C4%B7e", "https://www.latvijasdaba.lv/augi/centaurea-montana-l/", "https://www.rhs.org.uk/plants/3364/centaurea-montana/details"],
+    "planting": ["https://maciunmacies.valoda.lv/wp-content/uploads/2019/10/SpelesParAugiem.pdf#page=26", "https://www.rhs.org.uk/education-learning/children-young-people/family-activities/grow-it/cornflower"],
+    "care": ["https://plants.ces.ncsu.edu/plants/centaurea-cyanus/", "https://www.rhs.org.uk/education-learning/children-young-people/family-activities/grow-it/cornflower"],
+    "winter": ["https://noverojumi.vaad.gov.lv/images/Nezales_buklets_WEB_v2025.pdf", "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:190310-1", "https://www.rhs.org.uk/plants/3364/centaurea-montana/details"],
+    "problems": ["https://enciklopedija.lv/skirklis/146462-zil%C4%81-rudzupu%C4%B7e", "https://www.rhs.org.uk/education-learning/children-young-people/family-activities/grow-it/cornflower", "https://plants.ces.ncsu.edu/plants/centaurea-cyanus/"]
+  }
+}

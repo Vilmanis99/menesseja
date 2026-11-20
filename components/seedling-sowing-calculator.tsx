@@ -9,8 +9,9 @@ import {
 import { useMounted } from "@/lib/use-mounted";
 
 const cropExamples = [
-  { name: "Paprika", min: "8", max: "10" },
-  { name: "Kātu un sakņu selerijas", min: "10", max: "12" },
+  { slug: "paprika", name: "Paprika", min: "8", max: "10" },
+  { slug: "selerijas", name: "Kātu un sakņu selerijas", min: "10", max: "12" },
+  { slug: "lauvmutites", name: "Lauvmutītes", min: "8", max: "10" },
 ];
 
 const dateFormat = new Intl.DateTimeFormat("lv-LV", { timeZone: "UTC", dateStyle: "long" });
@@ -22,6 +23,10 @@ const calculatorHash = "#" + calculatorId;
 
 function defaultPlan(transplant: string): SeedlingPlan {
   return { transplant, fromEmergence: false, weeks: { min: "6", max: "8" }, days: { min: "", max: "" }, name: "" };
+}
+
+function cropPlan(transplant: string, { name, min, max }: typeof cropExamples[number]): SeedlingPlan {
+  return { ...defaultPlan(transplant), name, weeks: { min, max } };
 }
 
 export function SeedlingSowingCalculator({ initialDate }: { initialDate: string }) {
@@ -38,18 +43,21 @@ export function SeedlingSowingCalculator({ initialDate }: { initialDate: string 
     function restore(initial: boolean) {
       const fragment = window.location.hash;
       const isPlanLink = fragment.startsWith(calculatorHash + "?");
+      const example = cropExamples.find((crop) => fragment === calculatorHash + "-" + crop.slug);
       const saved = isPlanLink ? readSeedlingPlanHash(fragment) : null;
       setInvalidLink(isPlanLink && !saved);
       if (saved) {
         setPlan(saved);
+      } else if (example) {
+        setPlan((current) => cropPlan(initial ? exampleTransplantDate() : current.transplant, example));
       } else if (initial || isPlanLink || (hadSavedPlan && (!fragment || fragment === calculatorHash))) {
         setPlan(defaultPlan(exampleTransplantDate()));
       }
       hadSavedPlan = isPlanLink;
       window.cancelAnimationFrame(frame);
-      if (isPlanLink) {
+      if (isPlanLink || example) {
         frame = window.requestAnimationFrame(() => {
-          document.getElementById(calculatorId)?.scrollIntoView({ behavior: "instant", block: "start" });
+          document.getElementById(example ? fragment.slice(1) : calculatorId)?.scrollIntoView({ behavior: "instant", block: "start" });
         });
       }
     }
@@ -102,9 +110,9 @@ export function SeedlingSowingCalculator({ initialDate }: { initialDate: string 
         <fieldset className="min-w-0">
           <legend className="mb-xs text-label-md font-semibold text-on-surface">Aizpildi ar auga piemēru</legend>
           <div className="flex flex-wrap gap-2">
-            {cropExamples.map(({ name, min, max }) => (
-              <button key={name} type="button" onClick={() => edit({ name, fromEmergence: false, weeks: { min, max }, days: { min: "", max: "" } })} className="min-h-11 rounded-lg border border-primary/30 px-3 text-label-md font-semibold text-primary hover:bg-primary-container/25">
-                {name} ({min}–{max} nedēļas)
+            {cropExamples.map((crop) => (
+              <button key={crop.slug} id={calculatorId + "-" + crop.slug} type="button" onClick={() => edit(cropPlan(transplant, crop))} className="min-h-11 scroll-mt-48 rounded-lg border border-primary/30 px-3 text-label-md font-semibold text-primary hover:bg-primary-container/25">
+                {crop.name} ({crop.min}–{crop.max} nedēļas)
               </button>
             ))}
           </div>

@@ -19,26 +19,35 @@ export interface FlowerNameEntry {
   note?: string;
 }
 
-export const EXTRA_FLOWER_NAMES: FlowerNameEntry[] = [
-  // Istabas puķu ceļvežos aplūkota audzēšana telpās.
+export const WINTER_HOUSEPLANTS = [
   {
     name: "Amarillis", latin: "Hippeastrum", aliases: ["hipeastrs"],
     href: "/raksti/amarillis-pec-ziedesanas", indoorGuide: true,
     note: "Podos par amarilli parasti sauc hipeastru.",
-    image: { id: "amarillis-palodze", caption: "Ziedošs hipeastrs uz palodzes." },
+    image: { id: "amarillis-palodze", caption: "Liels piltuvveida zieds ar garām putekšņlapām." },
+  },
+  {
+    name: "Persijas ciklamena", latin: "Cyclamen persicum", aliases: ["ciklamenas", "alpu vijolīte", "alpu vijolītes"],
+    href: "/raksti/ciklamena-podina", indoorGuide: true,
+    note: "Ziemā podos zied Persijas ciklamenas šķirnes.",
+    image: { id: "persijas-ciklamena", caption: "Ziedi noliecas, bet to ziedlapas atliecas uz augšu." },
   },
   {
     name: "Ziemassvētku kaktuss", latin: "Schlumbergera", aliases: ["šlumbergera"],
     href: "/raksti/ziemassvetku-kaktuss-nezied", indoorGuide: true,
     note: "Veikalos ar šo nosaukumu sastopamas vairākas šlumbergeras un to hibrīdi.",
-    image: { id: "kaktuss-schlumbergera-buckleyi", caption: "Schlumbergera × buckleyi ir noapaļotas stublāja segmentu malas un nokarens zieds." },
+    image: { id: "kaktuss-schlumbergera-buckleyi", caption: "Ziedi nokaras plakanu, posmainu dzinumu galos." },
   },
   {
     name: "Ziemassvētku zvaigzne", latin: "Euphorbia pulcherrima", aliases: ["puansetija"],
     href: "/raksti/ziemassvetku-zvaigzne-puansetija", indoorGuide: true,
     note: "Sīkie ziedi atrodas krāsaino seglapu vidū.",
-    image: { id: "puansetija", caption: "Puansetija ar sarkanām seglapām." },
+    image: { id: "puansetija", caption: "Sīkos ziedus centrā apņem košas seglapas." },
   },
+] satisfies FlowerNameEntry[];
+
+export const EXTRA_FLOWER_NAMES: FlowerNameEntry[] = [
+  ...WINTER_HOUSEPLANTS,
   // — vasaras puķes un divgadīgās; daļa sugu ir sala neizturīgas ziemcietes —
   { name: "Alises", latin: "Lobularia maritima", note: "zemas, medaini smaržīgas apmaļu puķes" },
   { name: "Balzamīnes", latin: "Impatiens walleriana", note: "ziedi ēnainām dobēm un podiem" },
@@ -50,14 +59,12 @@ export const EXTRA_FLOWER_NAMES: FlowerNameEntry[] = [
   { name: "Kliņģerītes", latin: "Calendula officinalis", note: "dzelteni un oranži vasaras ziedi" },
   { name: "Kosmejas", latin: "Cosmos bipinnatus", note: "vieglas, mežģīņlapainas vasaras puķes" },
   { name: "Kreses", latin: "Tropaeolum majus", note: "apaļas lapas un spilgti ziedi" },
-  { name: "Lauvmutītes", latin: "Antirrhinum majus", note: "bērnu iemīļotās “runājošās” puķes" },
   { name: "Leduspuķes (ilgziedu begonijas)", href: "/pukes/begonijas", latin: "Begonia Semperflorens Cultorum Group", note: "kompaktas begonijas dobēm un podiem" },
   { name: "Levkojas", latin: "Matthiola incana", note: "smaržīgas ziedkopas dobēm un pušķiem" },
   { name: "Lobēlijas", latin: "Lobelia erinus", note: "zilu ziedu mākoņi podiem un kastēm" },
   { name: "Magones", latin: "Papaver", note: "vasaras klasika, sēj tieši dobē" },
   { name: "Smaržīgās vakarenes", latin: "Hesperis matronalis", note: "divgadīga, smaržo vakaros" },
   { name: "Portulakas", latin: "Portulaca grandiflora", note: "sukulentas puķītes karstumam" },
-  { name: "Rudzupuķes", latin: "Centaurea cyanus", note: "zilā lauka klasika, viegli sējama" },
   { name: "Salvijas (krāšņās)", latin: "Salvia splendens", note: "sarkanās dobju “sveces”" },
   { name: "Seglapu salmenes", latin: "Xerochrysum bracteatum", note: "sausziedes žāvēšanai un ziemas pušķiem" },
   { name: "Smaržīgie zirnīši", latin: "Lathyrus odoratus", note: "smaržīgi vīteņi pie atbalsta" },
@@ -78,7 +85,6 @@ export const EXTRA_FLOWER_NAMES: FlowerNameEntry[] = [
   { name: "Mārpuķītes", latin: "Bellis perennis", note: "mazās pavasara zālāja puķītes" },
   { name: "Neļķes", href: "/augi/nelkes", latin: "Dianthus", note: "smaržīgas apmaļu un dobju puķes" },
   { name: "Pīpenes", latin: "Leucanthemum", note: "lielās baltās “margrietiņas” dobēm" },
-  { name: "Prīmulas", latin: "Primula", note: "dažādas sugas un dārza hibrīdi" },
   { name: "Pulkstenītes", latin: "Campanula", note: "zilie zvaniņi jūnijā–jūlijā" },
   { name: "Rudens asteres (ziemasteres)", latin: "Symphyotrichum", note: "daudzgadīgas asteres vasaras nogalei un rudenim" },
   { name: "Čīkstenes", latin: "Hylotelephium", note: "sulīgas lapas un blīvas ziedkopas" },

@@ -56,6 +56,7 @@ export const CROP_PART: Record<string, PlantPart> = {
   oregano: "lapas",
   // Flowers
   kalendula: "ziedi",
+  rudzupukes: "ziedi",
   samtenes: "ziedi",
   saulespukes: "ziedi",
   nelkes: "ziedi",

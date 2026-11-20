@@ -200,6 +200,11 @@ export default async function CropPage({ params }: { params: Promise<{ slug: str
             <p className="mt-1 max-w-[36rem] text-body-lg text-on-surface-variant">
               {content?.description ?? "Praktiska audzēšanas rokasgrāmata Latvijas apstākļiem"}
             </p>
+            {isFlower && (crop.sowOutdoors || crop.transplant) && (
+              <TrackedLink source={`augi:${crop.id}`} placement="plan-flower" href={`/planotajs?augs=${crop.id}`} className="mt-2 inline-flex min-h-11 items-center gap-2 rounded-lg border border-outline-variant px-3 text-label-md font-semibold text-primary hover:bg-surface-container focus-visible:outline-primary">
+                <Icon name="grid_view" size="18px" /> Ieplānot dobē
+              </TrackedLink>
+            )}
           </div>
         </header>
 

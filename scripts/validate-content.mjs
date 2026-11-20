@@ -71,10 +71,15 @@ function resolves(href) {
   return true;
 }
 
+function validInternalLink(link) {
+  return typeof link?.label === "string" && link.label.trim().length > 0
+    && typeof link.href === "string" && link.href.startsWith("/") && !link.href.startsWith("//") && resolves(link.href);
+}
+
 const calendar = JSON.parse(fs.readFileSync(path.join(root, "content", "calendar-guides.json"), "utf8"));
 let flowersWithSources = 0;
 const flowerTypes = new Set(["daudzgadiga", "sipolpuke", "viengadiga", "divgadiga", "krums"]);
-const flowerSourceSections = new Set(["intro", "planting", "care", "winter", "problems", "comparison"]);
+const flowerSourceSections = new Set(["intro", "planting", "care", "winter", "problems", "comparison", "cutFlowers"]);
 for (const slug of crops) {
   const { worksheet } = JSON.parse(fs.readFileSync(path.join(root, "content", "crops", slug + ".json"), "utf8"));
   if (worksheet && (!worksheet.label?.trim() || !/^\/veidlapas\/[a-z0-9-]+\.pdf$/.test(worksheet.href) || !fs.existsSync(path.join(root, "public", worksheet.href)))) {
@@ -91,6 +96,7 @@ for (const slug of flowers) {
     if (typeof flower[field] !== "string" || !flower[field].trim()) errors.push(`${location}: trūkst ${field}`);
   }
   if (!flowerTypes.has(flower.type)) errors.push(`${location}: nederīga audzēšanas grupa`);
+  if (flower.plantingMethod !== undefined && !["sow", "plant"].includes(flower.plantingMethod)) errors.push(`${location}: nederīgs sējas vai stādīšanas veids`);
   if (flower.updatedAt !== undefined && !validDate(flower.updatedAt)) errors.push(`${location}: nederīgs atjaunošanas datums`);
   if (!Array.isArray(flower.bloomMonths) || !flower.bloomMonths.length || flower.bloomMonths.some((month) => !Number.isInteger(month) || month < 1 || month > 12) || new Set(flower.bloomMonths).size !== flower.bloomMonths.length) errors.push(`${location}: nederīgi ziedēšanas mēneši`);
   for (const field of ["intro", "planting", "care"]) {
@@ -108,13 +114,24 @@ for (const slug of flowers) {
   for (const [section, urls] of Object.entries(flower.sectionSources ?? {})) {
     if (!flowerSourceSections.has(section) || !Array.isArray(urls) || !urls.length || new Set(urls).size !== urls.length || urls.some((url) => !flower.sources?.some((source) => source.url === url))) errors.push(`${location}: ${section} atsaucēm jābūt unikālām saitēm no ceļveža avotu saraksta`);
   }
+  if (flower.cutFlowers) {
+    const { heading, summary, steps } = flower.cutFlowers;
+    const hasText = (value) => typeof value === "string" && Boolean(value.trim());
+    if (!hasText(heading) || !hasText(summary) || !Array.isArray(steps) || !steps.length ||
+        steps.some((step) => !hasText(step?.heading) || !hasText(step?.text)) ||
+        !flower.sectionSources?.cutFlowers?.length) errors.push(`${location}: nepilnīgi griezto ziedu kopšanas norādījumi vai trūkst avotu`);
+  }
   if (flower.comparison && (!flower.comparison.heading || !Array.isArray(flower.comparison.items) || flower.comparison.items.length < 2 || flower.comparison.items.some((item) => !item.name || !item.description))) errors.push(`${location}: nepilnīgs augu salīdzinājums`);
   if (flower.faq?.some((item) => !item.q || !item.a)) errors.push(`${location}: nepilnīgs jautājums vai atbilde`);
   if (flower.winterTable) {
     const { headers, rows } = flower.winterTable;
     if (!flower.winter?.trim() || !Array.isArray(headers) || headers.length < 2 || headers.some((cell) => typeof cell !== "string" || !cell.trim()) || !Array.isArray(rows) || !rows.length || rows.some((row) => !Array.isArray(row) || row.length !== headers.length || row.some((cell) => typeof cell !== "string" || !cell.trim()))) errors.push(`${location}: nederīga pārziemošanas tabula`);
   }
-  for (const link of flower.links ?? []) if (!link.label || !resolves(link.href)) errors.push(`${location}: neatrisināta saite ${link.href}`);
+  const links = [...(flower.links ?? [])];
+  if (flower.shortAnswerLink) links.push(flower.shortAnswerLink);
+  for (const link of links) {
+    if (!link.label?.trim() || !link.href?.trim() || !resolves(link.href)) errors.push(`${location}: neatrisināta saite ${link.href}`);
+  }
   for (const related of flower.related ?? []) if (!flowers.has(related) || related === slug) errors.push(`${location}: nederīgs saistītais ceļvedis ${related}`);
 }
 
@@ -154,9 +171,7 @@ for (let month = 1; month <= 12; month++) {
   if (!guide.description || guide.description.length > 200) errors.push(`kalendārs ${month}: nederīgs apraksts`);
   validateImageUse(guide.image, `kalendārs ${month}`);
   if (!Array.isArray(guide.sections) || guide.sections.length < 5) errors.push(`kalendārs ${month}: nepilnīgs darbu skaidrojums`);
-  if (guide.shortcuts && (!Array.isArray(guide.shortcuts) || guide.shortcuts.some((link) =>
-    !link.label?.trim() || !link.href?.startsWith("/") || !resolves(link.href)
-  ))) errors.push(`kalendārs ${month}: nederīga praktiskā darba īsceļa saite`);
+  if (guide.shortcuts && (!Array.isArray(guide.shortcuts) || guide.shortcuts.some((link) => !validInternalLink(link)))) errors.push(`kalendārs ${month}: nederīga praktiskā darba īsceļa saite`);
   const taskIds = new Set();
   for (const section of guide.sections ?? []) {
     if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(section.id) || taskIds.has(section.id)) errors.push(`kalendārs ${month}: nederīgs vai dublēts darba enkurs`);
@@ -166,6 +181,7 @@ for (let month = 1; month <= 12; month++) {
     if (!section.sourceIds?.length || section.sourceIds.some((id) => !Object.hasOwn(calendar.sources, id) || !guide.sourceIds?.includes(id))) errors.push(`kalendārs ${month}: darbam trūkst avota`);
     if (!section.heading || !section.paragraphs?.length || section.paragraphs.some((p) => !p.trim())) errors.push(`kalendārs ${month}: tukša sadaļa`);
     if (!section.link?.label || !section.link?.href || !resolves(section.link.href)) errors.push(`kalendārs ${month}: neatrisināta ceļveža saite`);
+    if (section.articleLink !== undefined && !validInternalLink(section.articleLink)) errors.push(`kalendārs ${month}: nederīga raksta saite`);
   }
   if (!Array.isArray(guide.timeline) || guide.timeline.length !== 3 || guide.timeline.some((stage) => !stage.period || !stage.focus || !stage.sectionIds?.length || stage.sectionIds.some((id) => !taskIds.has(id)))) errors.push(`kalendārs ${month}: nepilnīga darbu secība vai neatrisināts enkurs`);
   if (new Set(guide.timeline?.flatMap((stage) => stage.sectionIds) ?? []).size !== taskIds.size) errors.push(`kalendārs ${month}: darbu secībā trūkst kāda uzdevuma`);

@@ -24,6 +24,7 @@ export type AnalyticsEvent =
   | "calendar_print"
   | "calendar_month_select"
   | "weekly_task_completed"
+  | "planner_crop_placed"
   | "planner_started"
   | "planner_saved"
   | "social_visit";

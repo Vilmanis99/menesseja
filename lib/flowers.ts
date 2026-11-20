@@ -5,7 +5,7 @@ import type { RecipePhase, RecipeElement } from "./recipes";
 
 /** Practical growing groups; the species' biological life cycle is described separately. */
 export type FlowerType = "daudzgadiga" | "sipolpuke" | "viengadiga" | "divgadiga" | "krums";
-export type FlowerSourceSection = "intro" | "planting" | "care" | "winter" | "problems" | "comparison";
+export type FlowerSourceSection = "intro" | "planting" | "care" | "winter" | "problems" | "comparison" | "cutFlowers";
 
 export interface Flower {
   slug: string;
@@ -25,6 +25,7 @@ export interface Flower {
   tagline: string;
   updatedAt?: string;
   shortAnswer?: string;
+  shortAnswerLink?: { label: string; href: string };
   lifeCycle?: string;
   sources?: { label: string; url: string }[];
   sectionSources?: Partial<Record<FlowerSourceSection, string[]>>;
@@ -35,6 +36,7 @@ export interface Flower {
   hardy: boolean; // Legacy grouping hint; not a guarantee. Display the winter conditions instead.
   difficulty: "viegli" | "vidēji" | "grūti";
   plantWhen: string; // "Septembris–oktobris (sīpoli)"
+  plantingMethod?: "sow" | "plant";
   moonPhase: RecipePhase;
   moonElement: RecipeElement; // ziedi (lielākā daļa) vai saknes (sīpoli/sakneņi)
   moonText: string;
@@ -44,6 +46,7 @@ export interface Flower {
   intro: string[];
   planting: string[]; // kā stādīt — dziļums, atstatums
   care: string[]; // laistīšana, mēslošana, atbalsts
+  cutFlowers?: { heading: string; summary: string; steps: { heading: string; text: string }[] };
   winter?: string; // pārziemošana
   winterTable?: { headers: string[]; rows: string[][] };
   winterImage?: ContentImageUse;
